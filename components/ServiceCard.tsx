@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Clock } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import type { Service } from "@/lib/types";
 import { euro } from "@/lib/pricing";
 
@@ -32,10 +32,6 @@ export default function ServiceCard({ service }: { service: Service }) {
           ) : (
             <p className="font-display text-sm font-semibold text-ink-600">Preis auf Anfrage</p>
           )}
-          <p className="mt-0.5 flex items-center gap-1 text-xs text-ink-500">
-            <Clock className="h-3.5 w-3.5" aria-hidden />
-            {service.duration}
-          </p>
         </div>
         <span className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-50 text-brand-700 transition-colors duration-200 group-hover:bg-brand-700 group-hover:text-white">
           <ArrowRight className="h-4 w-4" aria-hidden />
