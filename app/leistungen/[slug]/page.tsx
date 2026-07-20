@@ -45,7 +45,7 @@ export default async function ServiceDetailPage({
 
   return (
     <>
-      <section className="bg-grid bg-ink-50 py-14 sm:py-16">
+      <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-14 sm:py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <p className="text-sm font-semibold uppercase tracking-wider text-brand-700">
             {categoryLabels[service.category]}

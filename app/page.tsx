@@ -64,7 +64,11 @@ export default function HomePage() {
     <>
       {/* ============ HERO ============ */}
       <section className="bg-hero relative overflow-hidden">
-        <div className="bg-grid absolute inset-0" aria-hidden />
+        <div className="absolute inset-0 overflow-hidden" aria-hidden>
+          <div className="blob -top-24 right-[-8%] h-[26rem] w-[26rem] bg-brand-300/40" />
+          <div className="blob blob-delayed left-[-10%] top-1/4 h-80 w-80 bg-cyan-300/30" />
+          <div className="blob bottom-[-30%] right-1/3 h-72 w-72 bg-brand-400/25" />
+        </div>
         <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-4 pb-16 pt-14 sm:px-6 lg:grid-cols-2 lg:pb-24 lg:pt-20">
           <div>
             <p className="inline-flex items-center gap-2 rounded-full border border-brand-200 bg-white/80 px-3.5 py-1.5 text-xs font-semibold text-brand-700 shadow-sm backdrop-blur">
