@@ -221,8 +221,8 @@ export default function AuftragForm() {
                       </span>
                       <span className="mt-1 block text-xs text-ink-500">
                         {s.price.serviceFee !== null
-                          ? `ab ${euro(s.price.serviceFee)} · ${s.duration}`
-                          : `Preis auf Anfrage · ${s.duration}`}
+                          ? `ab ${euro(s.price.serviceFee)}`
+                          : "Preis auf Anfrage"}
                       </span>
                     </button>
                   );
