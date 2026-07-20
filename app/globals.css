@@ -1,23 +1,23 @@
 @import "tailwindcss";
 
 /*
- * EasyZulassung Designsystem
- * — Petrol/Teal als Markenfarbe (bewusst kein Standard-Behörden-Blau)
+ * EasyZulassung Designsystem v2
+ * — Kräftiges Royal-Blau als Markenfarbe (Vorbild-Optik kfz-go: lebendig, digital)
  * — Tiefes Slate-Navy für Text und dunkle Flächen
  * — Amber nur als Signal-Akzent (sparsam)
  * — Lexend (Headings) + Source Sans 3 (Body), geladen via next/font
  */
 @theme {
-  --color-brand-50: #f0fdfa;
-  --color-brand-100: #ccfbf1;
-  --color-brand-200: #99f6e4;
-  --color-brand-300: #5eead4;
-  --color-brand-400: #2dd4bf;
-  --color-brand-500: #14b8a6;
-  --color-brand-600: #0d9488;
-  --color-brand-700: #0f766e;
-  --color-brand-800: #115e59;
-  --color-brand-900: #134e4a;
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-200: #bfdbfe;
+  --color-brand-300: #93c5fd;
+  --color-brand-400: #60a5fa;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+  --color-brand-800: #1e40af;
+  --color-brand-900: #1e3a8a;
 
   --color-ink-50: #f8fafc;
   --color-ink-100: #f1f5f9;
@@ -39,7 +39,8 @@
   --font-display: var(--font-lexend), ui-sans-serif, system-ui, sans-serif;
 
   --shadow-card: 0 1px 2px rgb(2 6 23 / 0.06), 0 8px 24px -8px rgb(2 6 23 / 0.12);
-  --shadow-card-hover: 0 2px 4px rgb(2 6 23 / 0.08), 0 16px 40px -12px rgb(15 118 110 / 0.25);
+  --shadow-card-hover: 0 2px 4px rgb(2 6 23 / 0.08), 0 16px 40px -12px rgb(37 99 235 / 0.3);
+  --shadow-glow: 0 0 0 4px rgb(37 99 235 / 0.12), 0 12px 32px -8px rgb(37 99 235 / 0.35);
 }
 
 html {
@@ -89,10 +90,41 @@ h1, h2, h3, h4 {
 /* Dezente Hintergrund-Raster für Hero-Flächen */
 .bg-grid {
   background-image:
-    linear-gradient(to right, rgb(15 118 110 / 0.06) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(15 118 110 / 0.06) 1px, transparent 1px);
+    linear-gradient(to right, rgb(37 99 235 / 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(37 99 235 / 0.07) 1px, transparent 1px);
   background-size: 44px 44px;
 }
+
+/* Hero-Verlauf: helles Blau → Weiß */
+.bg-hero {
+  background:
+    radial-gradient(60rem 32rem at 85% -10%, rgb(59 130 246 / 0.14), transparent 60%),
+    radial-gradient(40rem 28rem at -10% 110%, rgb(37 99 235 / 0.10), transparent 60%),
+    linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);
+}
+
+/* Sanft schwebende Karten (Hero-Diagramm) */
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+}
+.animate-floaty { animation: floaty 5s ease-in-out infinite; }
+.animate-floaty-delayed { animation: floaty 5s ease-in-out 2.5s infinite; }
+
+/* Wandernde gestrichelte Verbindungslinien */
+@keyframes dashmove {
+  to { stroke-dashoffset: -20; }
+}
+.animate-dash {
+  stroke-dasharray: 4 6;
+  animation: dashmove 1.2s linear infinite;
+}
+
+/* Drehender Prüf-Indikator */
+@keyframes spinslow {
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow { animation: spinslow 2.4s linear infinite; }
 
 /* Marquee-/Puls-Animationen deaktivieren, wenn reduzierte Bewegung gewünscht */
 @media (prefers-reduced-motion: reduce) {
