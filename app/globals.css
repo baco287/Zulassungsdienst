@@ -133,6 +133,45 @@ h1, h2, h3, h4 {
 }
 .animate-spin-slow { animation: spinslow 2.4s linear infinite; }
 
+/* Timeline-Effekte („So funktioniert’s“) */
+@keyframes fillbar {
+  0% { width: 0; }
+  60% { width: 100%; }
+  100% { width: 100%; }
+}
+.animate-fillbar { animation: fillbar 2.8s ease-in-out infinite; }
+
+@keyframes tickloop {
+  0% { opacity: 0.15; transform: scale(0.75); }
+  12% { opacity: 1; transform: scale(1); }
+  85% { opacity: 1; }
+  100% { opacity: 0.15; transform: scale(0.75); }
+}
+.animate-tick { animation: tickloop 3.6s ease-in-out infinite; }
+
+@keyframes drivealong {
+  0% { transform: translateX(0); opacity: 0; }
+  12% { opacity: 1; }
+  88% { opacity: 1; }
+  100% { transform: translateX(8.5rem); opacity: 0; }
+}
+.animate-drive { animation: drivealong 3s ease-in-out infinite; }
+
+@keyframes pulsering {
+  0% { box-shadow: 0 0 0 0 rgb(37 99 235 / 0.35); }
+  70% { box-shadow: 0 0 0 12px rgb(37 99 235 / 0); }
+  100% { box-shadow: 0 0 0 0 rgb(37 99 235 / 0); }
+}
+.animate-pulsering { animation: pulsering 2.4s ease-out infinite; }
+
+@keyframes signdraw {
+  0% { stroke-dashoffset: 60; }
+  45% { stroke-dashoffset: 0; }
+  80% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: 60; }
+}
+.animate-sign { stroke-dasharray: 60; animation: signdraw 3.2s ease-in-out infinite; }
+
 /* Marquee-/Puls-Animationen deaktivieren, wenn reduzierte Bewegung gewünscht */
 @media (prefers-reduced-motion: reduce) {
   html {
