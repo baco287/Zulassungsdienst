@@ -1,1 +1,192 @@
-mirror: Not connected
+== lftp-Version ==
+LFTP | Version 4.9.2 | Copyright (c) 1996-2020 Alexander V. Lukyanov
+== DNS ==
+85.13.168.82    <FTP_USERNAME>.kasserver.com
+== TLS-Probe (curl, ohne Login-Erwartung) ==
+*  subjectAltName: host "<FTP_USERNAME>.kasserver.com" matched cert's "*.kasserver.com"
+*  issuer: C=GB; O=Sectigo Limited; CN=Sectigo Public Server Authentication CA DV R36
+*  SSL certificate verify ok.
+*   Certificate level 0: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
+*   Certificate level 1: Public key type RSA (3072/128 Bits/secBits), signed using sha384WithRSAEncryption
+*   Certificate level 2: Public key type RSA (4096/152 Bits/secBits), signed using sha384WithRSAEncryption
+} [5 bytes data]
+> USER anonymous
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [297 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [297 bytes data]
+* old SSL session ID is stale, removing
+{ [5 bytes data]
+< 331 Password required for anonymous
+} [5 bytes data]
+> PASS ftp@example.com
+{ [5 bytes data]
+< 530 Login incorrect.
+* Access denied: 530
+* Closing connection
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS alert, close notify (256):
+} [2 bytes data]
+== lftp-Lauf ==
+---- Resolving host address...
+---- IPv6 is not supported or configured
+---- 1 address found: 85.13.168.82
+ftp://<FTP_USERNAME>.kasserver.com
+---- Connecting to <FTP_USERNAME>.kasserver.com (85.13.168.82) port 21
+<--- 220 FTP on dd56414.kasserver.com ready
+---> FEAT
+<--- 211-Features:
+<---  AUTH TLS
+<---  CCC
+<---  CLNT
+<---  CSID
+<---  EPRT
+<---  EPSV
+<---  HOST
+<---  LANG es-ES;fr-FR;en-US;ru-RU;it-IT
+<---  MDTM
+<---  MFF modify;UNIX.group;UNIX.mode;
+<---  MFMT
+<---  MLST modify*;perm*;size*;type*;unique*;UNIX.group*;UNIX.groupname*;UNIX.mode*;UNIX.owner*;UNIX.ownername*;
+<---  PBSZ
+<---  PROT
+<---  RANG STREAM
+<---  REST STREAM
+<---  SIZE
+<---  SSCN
+<---  TVFS
+<---  UTF8
+<--- 211 End
+---> CLNT lftp/4.9.2
+<--- 200 OK
+---> LANG
+<--- 200 Using default language de_DE.UTF-8
+---> OPTS UTF8 ON
+<--- 200 UTF8 set to on
+---> HOST <FTP_USERNAME>.kasserver.com
+<--- 504 <FTP_USERNAME>.kasserver.com: Unknown hostname provided
+---> USER anonymous
+<--- 331 Password required for anonymous
+---> PASS lftp@
+<--- 530 Login incorrect.
+---- Server reply matched ftp:retry-530-anonymous, retrying
+---- Closing control socket
+---- Connecting to <FTP_USERNAME>.kasserver.com (85.13.168.82) port 21
+<--- 220 FTP on dd56414.kasserver.com ready
+---> FEAT
+<--- 211-Features:
+<---  AUTH TLS
+<---  CCC
+<---  CLNT
+<---  CSID
+<---  EPRT
+<---  EPSV
+<---  HOST
+<---  LANG es-ES;fr-FR;en-US;ru-RU;it-IT
+<---  MDTM
+<---  MFF modify;UNIX.group;UNIX.mode;
+<---  MFMT
+<---  MLST modify*;perm*;size*;type*;unique*;UNIX.group*;UNIX.groupname*;UNIX.mode*;UNIX.owner*;UNIX.ownername*;
+<---  PBSZ
+<---  PROT
+<---  RANG STREAM
+<---  REST STREAM
+<---  SIZE
+<---  SSCN
+<---  TVFS
+<---  UTF8
+<--- 211 End
+---> CLNT lftp/4.9.2
+<--- 200 OK
+---> LANG
+<--- 200 Using default language de_DE.UTF-8
+---> OPTS UTF8 ON
+<--- 200 UTF8 set to on
+---> HOST <FTP_USERNAME>.kasserver.com
+<--- 504 <FTP_USERNAME>.kasserver.com: Unknown hostname provided
+---> USER anonymous
+<--- 331 Password required for anonymous
+---> PASS lftp@
+<--- 530 Login incorrect.
+---- Server reply matched ftp:retry-530-anonymous, retrying
+---- Closing control socket
+---- Connecting to <FTP_USERNAME>.kasserver.com (85.13.168.82) port 21
+<--- 220 FTP on dd56414.kasserver.com ready
+---> FEAT
+<--- 211-Features:
+<---  AUTH TLS
+<---  CCC
+<---  CLNT
+<---  CSID
+<---  EPRT
+<---  EPSV
+<---  HOST
+<---  LANG es-ES;fr-FR;en-US;ru-RU;it-IT
+<---  MDTM
+<---  MFF modify;UNIX.group;UNIX.mode;
+<---  MFMT
+<---  MLST modify*;perm*;size*;type*;unique*;UNIX.group*;UNIX.groupname*;UNIX.mode*;UNIX.owner*;UNIX.ownername*;
+<---  PBSZ
+<---  PROT
+<---  RANG STREAM
+<---  REST STREAM
+<---  SIZE
+<---  SSCN
+<---  TVFS
+<---  UTF8
+<--- 211 End
+---> CLNT lftp/4.9.2
+<--- 200 OK
+---> LANG
+<--- 200 Using default language de_DE.UTF-8
+---> OPTS UTF8 ON
+<--- 200 UTF8 set to on
+---> HOST <FTP_USERNAME>.kasserver.com
+<--- 504 <FTP_USERNAME>.kasserver.com: Unknown hostname provided
+---> USER anonymous
+<--- 331 Password required for anonymous
+---> PASS lftp@
+<--- 530 Login incorrect.
+---- Server reply matched ftp:retry-530-anonymous, retrying
+---- Closing control socket
+---- Connecting to <FTP_USERNAME>.kasserver.com (85.13.168.82) port 21
+<--- 220 FTP on dd56414.kasserver.com ready
+---> FEAT
+<--- 211-Features:
+<---  AUTH TLS
+<---  CCC
+<---  CLNT
+<---  CSID
+<---  EPRT
+<---  EPSV
+<---  HOST
+<---  LANG es-ES;fr-FR;en-US;ru-RU;it-IT
+<---  MDTM
+<---  MFF modify;UNIX.group;UNIX.mode;
+<---  MFMT
+<---  MLST modify*;perm*;size*;type*;unique*;UNIX.group*;UNIX.groupname*;UNIX.mode*;UNIX.owner*;UNIX.ownername*;
+<---  PBSZ
+<---  PROT
+<---  RANG STREAM
+<---  REST STREAM
+<---  SIZE
+<---  SSCN
+<---  TVFS
+<---  UTF8
+<--- 211 End
+---> CLNT lftp/4.9.2
+<--- 200 OK
+---> LANG
+<--- 200 Using default language de_DE.UTF-8
+---> OPTS UTF8 ON
+<--- 200 UTF8 set to on
+---> HOST <FTP_USERNAME>.kasserver.com
+<--- 504 <FTP_USERNAME>.kasserver.com: Unknown hostname provided
+---> USER anonymous
+<--- 331 Password required for anonymous
+---> PASS lftp@
+<--- 530 Login incorrect.
+---- Server reply matched ftp:retry-530-anonymous, retrying
+---- Closing control socket
+mirror: Fatal error: max-retries exceeded (530 Login incorrect.)
