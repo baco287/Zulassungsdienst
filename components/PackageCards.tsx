@@ -2,40 +2,40 @@ import Link from "next/link";
 import { Check } from "lucide-react";
 
 /**
- * Drei Paket-Karten (Struktur-Vorbild: gängige SaaS-/Zulassungsdienst-Pricing-
- * Sektionen). Preise/Konditionen: siehe lib/services.ts bzw. Preisseite –
- * die Karten verlinken in den Auftrags-Assistenten bzw. zur Kontaktaufnahme.
+ * Drei Paket-Karten im Festpreis-Modell (Komplettpreise inkl. amtlicher
+ * Gebühren, Kennzeichen und Versand — Preisniveau marktüblicher
+ * Festpreis-Anbieter, Stand Juli 2026). Details: lib/services.ts.
  */
 const packages = [
   {
-    name: "Privat",
-    tagline: "Für einzelne Fahrzeuge",
-    price: "ab 24,90 €",
-    priceNote: "je Vorgang, zzgl. amtl. Gebühren",
+    name: "Abmeldung",
+    tagline: "Der schnellste Weg zur Stilllegung",
+    price: "34,90 €",
+    priceNote: "Komplettpreis inkl. amtlicher Gebühren",
     features: [
-      "Neuzulassung, Ummeldung & Abmeldung",
-      "Digitale Vollmacht – keine eID nötig",
-      "Kennzeichen inkl. Versand organisiert",
-      "Persönliche Ansprechperson",
+      "Vollständig digital – kein Versand nötig",
+      "Meist noch am selben Werktag erledigt",
+      "Abmeldebestätigung per E-Mail",
+      "Keine eID, keine AusweisApp nötig",
       "Support per WhatsApp & E-Mail",
     ],
-    cta: { label: "Auswählen", href: "/auftrag/" },
+    cta: { label: "Jetzt abmelden", href: "/auftrag/?leistung=abmeldung" },
     highlight: false,
   },
   {
-    name: "Komplett-Service",
-    tagline: "Unser Rundum-sorglos-Paket",
-    price: "ab 79,90 €",
-    priceNote: "je Zulassung, zzgl. amtl. Gebühren & Kennzeichen",
+    name: "Zulassung Komplett",
+    tagline: "Neuzulassung · Umschreibung · Wiederzulassung",
+    price: "129,00 €",
+    priceNote: "Komplettpreis inkl. Gebühren, Kennzeichen & Versand",
     features: [
-      "Alles aus Privat inklusive",
-      "Wunschkennzeichen-Reservierung",
-      "Express-Bearbeitung nach Verfügbarkeit",
-      "Dokumenten-Check vor Einreichung",
-      "Statusupdates zu jedem Schritt",
-      "Abhol-/Bringservice regional",
+      "Alle amtlichen Gebühren enthalten",
+      "Kennzeichen inkl. Prägung & Siegelung",
+      "Versicherter Versand zu Ihnen",
+      "Digitale Vollmacht – keine eID nötig",
+      "Persönliche Ansprechperson",
+      "Wunschkennzeichen als Zusatz möglich",
     ],
-    cta: { label: "Auswählen", href: "/auftrag/" },
+    cta: { label: "Jetzt zulassen", href: "/auftrag/" },
     highlight: true,
   },
   {
@@ -44,11 +44,11 @@ const packages = [
     price: "Individuell",
     priceNote: "Staffelpreise nach Volumen",
     features: [
-      "Alles aus Komplett-Service inklusive",
-      "Sammelabwicklung & Rahmenvollmacht",
       "Feste Konditionen je Vorgangsart",
+      "Sammelabwicklung & Rahmenvollmacht",
       "Tägliche Abholung möglich",
       "Fester Ansprechpartner mit Direktdurchwahl",
+      "Monatliche Sammelrechnung",
     ],
     cta: { label: "Angebot anfordern", href: "/kontakt/" },
     highlight: false,

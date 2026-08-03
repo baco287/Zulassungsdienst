@@ -97,29 +97,52 @@ export default async function ServiceDetailPage({
           {/* Preis-Box */}
           <Reveal delay={0.1}>
             <aside className="lg:sticky lg:top-24 h-fit rounded-2xl border border-ink-200 bg-white p-6 shadow-card">
-              <h2 className="font-display text-lg font-bold text-ink-900">Preisstruktur</h2>
+              <h2 className="font-display text-lg font-bold text-ink-900">
+                {p.inclusive ? "Komplettpreis" : "Preisstruktur"}
+              </h2>
               <dl className="mt-4 space-y-3 text-sm">
                 <div className="flex items-baseline justify-between gap-4">
-                  <dt className="text-ink-600">Arbeitspreis EasyZulassung</dt>
+                  <dt className="text-ink-600">
+                    {p.inclusive ? "Festpreis EasyZulassung" : "Arbeitspreis EasyZulassung"}
+                  </dt>
                   <dd className="text-right font-display text-lg font-bold text-brand-700">
-                    {p.serviceFee !== null ? `ab ${euro(p.serviceFee)}` : "auf Anfrage"}
+                    {p.serviceFee !== null
+                      ? p.inclusive
+                        ? euro(p.serviceFee)
+                        : `ab ${euro(p.serviceFee)}`
+                      : "auf Anfrage"}
                   </dd>
                 </div>
-                {p.officialFeeRange && (
-                  <div className="flex items-baseline justify-between gap-4">
-                    <dt className="text-ink-600">Amtliche Gebühren</dt>
-                    <dd className="text-right font-medium text-ink-800">
-                      {euroRange(p.officialFeeRange)}
-                    </dd>
-                  </div>
-                )}
-                {p.plateCostRange && (
-                  <div className="flex items-baseline justify-between gap-4">
-                    <dt className="text-ink-600">Kennzeichen (Paar)</dt>
-                    <dd className="text-right font-medium text-ink-800">
-                      {euroRange(p.plateCostRange)}
-                    </dd>
-                  </div>
+                {p.inclusive ? (
+                  <ul className="space-y-1.5 rounded-xl bg-brand-50 p-3 text-ink-700">
+                    {["Amtliche Gebühren", "Kennzeichen & Prägung", "Versicherter Versand"]
+                      .filter((item) => !(service.slug === "abmeldung" && item !== "Amtliche Gebühren"))
+                      .map((item) => (
+                        <li key={item} className="flex items-center gap-2">
+                          <CheckCircle2 className="h-4 w-4 shrink-0 text-brand-600" aria-hidden />
+                          {item} <span className="ml-auto font-semibold text-brand-700">inklusive</span>
+                        </li>
+                      ))}
+                  </ul>
+                ) : (
+                  <>
+                    {p.officialFeeRange && (
+                      <div className="flex items-baseline justify-between gap-4">
+                        <dt className="text-ink-600">Amtliche Gebühren</dt>
+                        <dd className="text-right font-medium text-ink-800">
+                          {euroRange(p.officialFeeRange)}
+                        </dd>
+                      </div>
+                    )}
+                    {p.plateCostRange && (
+                      <div className="flex items-baseline justify-between gap-4">
+                        <dt className="text-ink-600">Kennzeichen (Paar)</dt>
+                        <dd className="text-right font-medium text-ink-800">
+                          {euroRange(p.plateCostRange)}
+                        </dd>
+                      </div>
+                    )}
+                  </>
                 )}
               </dl>
               {!p.verified && (

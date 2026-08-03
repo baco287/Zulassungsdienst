@@ -5,8 +5,14 @@ export type ServiceCategory = "zulassung" | "kennzeichen" | "dokumente" | "servi
 export type Audience = "privat" | "gewerblich" | "beide";
 
 export interface PriceInfo {
-  /** Arbeitspreis von EasyZulassung in Euro (brutto). null = noch nicht festgelegt. */
+  /** Preis von EasyZulassung in Euro (brutto). null = noch nicht festgelegt. */
   serviceFee: number | null;
+  /**
+   * true = Komplettpreis: amtliche Gebühren, Kennzeichen und Versand sind
+   * bereits enthalten (Pricing-Modell wie marktübliche Festpreis-Anbieter).
+   * false/undefined = Arbeitspreis zzgl. Gebühren/Kennzeichen.
+   */
+  inclusive?: boolean;
   /**
    * true = Preis ist final festgelegt.
    * false = PLATZHALTER: Wert dient nur der Orientierung und wird in der UI

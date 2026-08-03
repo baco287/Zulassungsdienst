@@ -209,8 +209,8 @@ export default function HomePage() {
               Transparente Preise
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-ink-600">
-              Wählen Sie das Paket, das zu Ihnen passt. Amtliche Gebühren und Kennzeichen
-              weisen wir immer getrennt aus – 1:1, ohne Aufschlag.
+              Ein Preis, alles drin: Amtliche Gebühren, Kennzeichen und Versand sind in
+              unseren Komplettpreisen bereits enthalten.
             </p>
           </Reveal>
           <Reveal delay={0.1} className="mt-12">

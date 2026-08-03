@@ -24,9 +24,15 @@ export default function ServiceCard({ service }: { service: Service }) {
         <div>
           {service.price.serviceFee !== null ? (
             <>
-              <p className="text-xs text-ink-500">Arbeitspreis {service.price.verified ? "" : "(unverbindlich)"}</p>
+              <p className="text-xs text-ink-500">
+                {service.price.inclusive
+                  ? "Komplettpreis – alles inklusive"
+                  : `Arbeitspreis ${service.price.verified ? "" : "(unverbindlich)"}`}
+              </p>
               <p className="font-display text-lg font-bold text-brand-700">
-                ab {euro(service.price.serviceFee)}
+                {service.price.inclusive
+                  ? euro(service.price.serviceFee)
+                  : `ab ${euro(service.price.serviceFee)}`}
               </p>
             </>
           ) : (

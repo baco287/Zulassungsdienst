@@ -20,11 +20,10 @@ export const services: Service[] = [
     description:
       "Wir übernehmen die vollständige Erstzulassung Ihres Fahrzeugs: Prüfung der Unterlagen, Beantragung bei der zuständigen Zulassungsbehörde, Kennzeichen und Versand aller Dokumente zu Ihnen nach Hause oder in Ihr Autohaus. Sie sparen sich Termin, Wartezeit und Behördengang – und Ihr Fahrzeug ist in der Regel innerhalb weniger Werktage angemeldet.",
     price: {
-      serviceFee: 79.9,
-      verified: false,
-      officialFeeRange: [12.8, 30.0],
-      plateCostRange: [20, 35],
-      note: "Komplettpreis auf Wunsch inkl. Kennzeichen und Versand – im Angebot ausgewiesen.",
+      serviceFee: 129.0,
+      inclusive: true,
+      verified: true,
+      note: "Komplettpreis: amtliche Gebühren, Kennzeichen und Versand inklusive.",
     },
     checklist: [
       "Zulassungsbescheinigung Teil II (Fahrzeugbrief) oder CoC-Papier",
@@ -48,11 +47,10 @@ export const services: Service[] = [
     description:
       "Nach einem Umzug muss das Fahrzeug auf die neue Anschrift umgemeldet werden. Wir erledigen die Ummeldung bei der zuständigen Behörde, kümmern uns auf Wunsch um neue Kennzeichen (oder die Mitnahme Ihres bisherigen Kennzeichens) und senden Ihnen die aktualisierten Papiere zu.",
     price: {
-      serviceFee: 79.9,
-      verified: false,
-      officialFeeRange: [12.8, 27.0],
-      plateCostRange: [20, 35],
-      note: "Kennzeichen nur nötig, wenn das bisherige nicht mitgenommen wird.",
+      serviceFee: 129.0,
+      inclusive: true,
+      verified: true,
+      note: "Komplettpreis inkl. Gebühren, Kennzeichen und Versand – auch bei Kennzeichenmitnahme.",
     },
     checklist: [
       "Zulassungsbescheinigung Teil I (Fahrzeugschein)",
@@ -75,10 +73,10 @@ export const services: Service[] = [
     description:
       "Die Abmeldung (Außerbetriebsetzung) ist der schnellste Vorgang: Sie übermitteln uns die Sicherheitscodes von Fahrzeugschein und Kennzeichen – wir melden Ihr Fahrzeug digital bei der Zulassungsbehörde ab und Sie erhalten die Abmeldebestätigung per E-Mail. Ganz ohne Versand, in der Regel taggleich.",
     price: {
-      serviceFee: 24.9,
-      verified: false,
-      officialFeeRange: [3.0, 16.0],
-      note: "Kein Kennzeichen- und Versandkostenanteil – vollständig digital.",
+      serviceFee: 34.9,
+      inclusive: true,
+      verified: true,
+      note: "Komplettpreis inkl. amtlicher Gebühren – vollständig digital, kein Versand nötig.",
     },
     checklist: [
       "Zulassungsbescheinigung Teil I mit freigelegtem Sicherheitscode",
@@ -99,10 +97,10 @@ export const services: Service[] = [
     description:
       "Ein stillgelegtes Fahrzeug soll zurück auf die Straße? Wir prüfen, welche Unterlagen die Behörde für die Wiederzulassung verlangt (u. a. gültige HU), beantragen die Zulassung und organisieren Kennzeichen und Versand.",
     price: {
-      serviceFee: 79.9,
-      verified: false,
-      officialFeeRange: [12.8, 30.0],
-      plateCostRange: [20, 35],
+      serviceFee: 129.0,
+      inclusive: true,
+      verified: true,
+      note: "Komplettpreis: amtliche Gebühren, Kennzeichen und Versand inklusive.",
     },
     checklist: [
       "Zulassungsbescheinigung Teil I und II",
@@ -126,10 +124,10 @@ export const services: Service[] = [
     description:
       "Beim Kauf eines Gebrauchtwagens muss das Fahrzeug auf die neue Halterin oder den neuen Halter umgeschrieben werden. Wir übernehmen die komplette Umschreibung inklusive Kennzeichen – so ist das Fahrzeug schnell und rechtssicher auf Sie zugelassen.",
     price: {
-      serviceFee: 79.9,
-      verified: false,
-      officialFeeRange: [12.8, 27.0],
-      plateCostRange: [20, 35],
+      serviceFee: 129.0,
+      inclusive: true,
+      verified: true,
+      note: "Komplettpreis: amtliche Gebühren, Kennzeichen und Versand inklusive.",
     },
     checklist: [
       "Zulassungsbescheinigung Teil I und II",
@@ -153,10 +151,10 @@ export const services: Service[] = [
     description:
       "Bei einem Umzug innerhalb desselben Zulassungsbezirks genügt die Änderung der Adresse in der Zulassungsbescheinigung. Wir erledigen das für Sie digital – Sie erhalten die aktualisierten Papiere bequem per Post.",
     price: {
-      serviceFee: null,
-      verified: false,
-      officialFeeRange: [10.9, 14.3],
-      note: "Preis auf Anfrage – abhängig vom Zulassungsbezirk.",
+      serviceFee: 129.0,
+      inclusive: true,
+      verified: true,
+      note: "Wird als Umschreibung abgewickelt – Komplettpreis inkl. Gebühren und Versand.",
     },
     checklist: [
       "Zulassungsbescheinigung Teil I",

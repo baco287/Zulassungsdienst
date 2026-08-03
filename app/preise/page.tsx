@@ -22,8 +22,9 @@ export default function PreisePage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <h1 className="font-display text-4xl font-bold text-ink-900 sm:text-5xl">Preise</h1>
           <p className="mt-4 max-w-2xl text-lg text-ink-600">
-            Wir weisen unsere Arbeitspreise, die amtlichen Gebühren und die Kennzeichenkosten
-            getrennt aus. Amtliche Kosten reichen wir <strong>1:1 ohne Aufschlag</strong> weiter.
+            <strong>Ein Preis, alles drin:</strong> Bei unseren Zulassungsleistungen sind
+            amtliche Gebühren, Kennzeichen und Versand bereits enthalten – keine
+            versteckten Kosten, keine Überraschungen.
           </p>
         </div>
       </section>
@@ -43,9 +44,9 @@ export default function PreisePage() {
                     <thead>
                       <tr className="border-b border-ink-200 bg-ink-50 text-left font-display text-xs uppercase tracking-wider text-ink-600">
                         <th scope="col" className="px-5 py-3.5 font-semibold">Leistung</th>
-                        <th scope="col" className="px-5 py-3.5 text-right font-semibold">Arbeitspreis</th>
+                        <th scope="col" className="px-5 py-3.5 text-right font-semibold">Preis</th>
                         <th scope="col" className="px-5 py-3.5 text-right font-semibold">Amtliche Gebühren</th>
-                        <th scope="col" className="px-5 py-3.5 text-right font-semibold">Kennzeichen</th>
+                        <th scope="col" className="px-5 py-3.5 text-right font-semibold">Kennzeichen &amp; Versand</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -62,7 +63,7 @@ export default function PreisePage() {
                           <td className="px-5 py-4 text-right">
                             {s.price.serviceFee !== null ? (
                               <span className="font-display font-bold text-ink-900">
-                                ab {euro(s.price.serviceFee)}
+                                {s.price.inclusive ? euro(s.price.serviceFee) : `ab ${euro(s.price.serviceFee)}`}
                                 {!s.price.verified && (
                                   <span className="ml-1.5 align-middle rounded bg-accent-400/20 px-1.5 py-0.5 text-[10px] font-semibold uppercase text-accent-600">
                                     unverbindlich
@@ -74,10 +75,24 @@ export default function PreisePage() {
                             )}
                           </td>
                           <td className="px-5 py-4 text-right text-ink-700">
-                            {s.price.officialFeeRange ? euroRange(s.price.officialFeeRange) : "–"}
+                            {s.price.inclusive ? (
+                              <span className="font-semibold text-brand-700">inklusive ✓</span>
+                            ) : s.price.officialFeeRange ? (
+                              euroRange(s.price.officialFeeRange)
+                            ) : (
+                              "–"
+                            )}
                           </td>
                           <td className="px-5 py-4 text-right text-ink-700">
-                            {s.price.plateCostRange ? euroRange(s.price.plateCostRange) : "–"}
+                            {s.price.inclusive ? (
+                              <span className="font-semibold text-brand-700">
+                                {s.slug === "abmeldung" ? "entfällt (digital)" : "inklusive ✓"}
+                              </span>
+                            ) : s.price.plateCostRange ? (
+                              euroRange(s.price.plateCostRange)
+                            ) : (
+                              "–"
+                            )}
                           </td>
                         </tr>
                       ))}
