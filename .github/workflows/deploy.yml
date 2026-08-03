@@ -92,20 +92,28 @@ jobs:
           set -o pipefail
           sudo apt-get update -qq
           sudo apt-get install -y -qq lftp
+          # Diagnose-Proben vor dem eigentlichen Deploy:
+          {
+            echo "== lftp-Version =="; lftp --version | head -1
+            echo "== DNS =="; getent hosts "$FTP_SERVER" || echo "DNS-AUFLOESUNG FEHLGESCHLAGEN"
+            echo "== TLS-Probe (curl, ohne Login-Erwartung) =="
+            curl -sv --max-time 20 --ssl-reqd "ftp://$FTP_SERVER/" 2>&1 | tail -25 || true
+            echo "== lftp-Lauf =="
+          } > /tmp/lftp.log
           # Hauptnutzer wurzelt auf "/" – Website liegt im Domain-Ordner.
-          # --delete hält das Zielverzeichnis exakt synchron zum Build.
+          # Explizites open statt Host-Argument; --delete hält das Ziel synchron.
           lftp -d -u "$FTP_USERNAME","$FTP_PASSWORD" -e "
             set ftp:ssl-force true;
             set ftp:ssl-protect-data true;
             set ssl:verify-certificate true;
-            set ssl:priority 'NORMAL:-VERS-TLS1.3';
             set ftp:passive-mode true;
-            set net:max-retries 3;
+            set net:max-retries 2;
             set net:timeout 60;
-            set net:reconnect-interval-base 5;
+            open $FTP_SERVER;
+            pwd;
             mirror -R --delete --verbose=1 ./out/ /deutschezulassung.de/;
             bye
-          " "$FTP_SERVER" 2>&1 | tee /tmp/lftp.log
+          " 2>&1 | tee -a /tmp/lftp.log
 
       # Bei Fehlschlag: geschwärztes Log auf Branch "deploy-logs" ablegen,
       # damit die Diagnose ohne Actions-UI-Zugriff möglich ist.
