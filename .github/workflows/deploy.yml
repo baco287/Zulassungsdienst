@@ -63,6 +63,23 @@ jobs:
         if: env.HAS_FTP != ''
         run: npm run build
 
+      - name: Secrets auf Vollständigkeit prüfen
+        if: env.HAS_FTP != ''
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          MISSING=""
+          [ -z "$FTP_SERVER" ] && MISSING="$MISSING FTP_SERVER"
+          [ -z "$FTP_USERNAME" ] && MISSING="$MISSING FTP_USERNAME"
+          [ -z "$FTP_PASSWORD" ] && MISSING="$MISSING FTP_PASSWORD"
+          if [ -n "$MISSING" ]; then
+            echo "FEHLENDE ODER LEERE SECRETS:$MISSING" | tee /tmp/lftp.log
+            exit 1
+          fi
+          echo "Alle drei Secrets vorhanden." | tee /tmp/lftp.log
+
       # lftp statt FTP-Deploy-Action: umgeht den bekannten
       # "tlsv1 alert decode error" (TLS-Session-Reuse) mit kasserver-FTPS.
       - name: Per FTPS zu all-inkl deployen (lftp)
