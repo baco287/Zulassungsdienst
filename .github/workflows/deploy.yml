@@ -80,8 +80,11 @@ jobs:
             set ftp:ssl-force true;
             set ftp:ssl-protect-data true;
             set ssl:verify-certificate true;
+            set ssl:priority 'NORMAL:-VERS-TLS1.3';
+            set ftp:passive-mode true;
             set net:max-retries 3;
-            set net:timeout 30;
-            mirror -R --delete --parallel=4 --verbose=1 ./out/ /deutschezulassung.de/;
+            set net:timeout 60;
+            set net:reconnect-interval-base 5;
+            mirror -R --delete --verbose=1 ./out/ /deutschezulassung.de/;
             bye
           " "$FTP_SERVER"
