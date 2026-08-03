@@ -72,4 +72,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
           local-dir: ./out/
-          server-dir: ${{ secrets.FTP_SERVER_DIR || '/' }}
+          # Hauptnutzer wurzelt auf "/" – Website liegt im Domain-Ordner:
+          server-dir: /deutschezulassung.de/
