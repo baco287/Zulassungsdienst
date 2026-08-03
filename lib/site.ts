@@ -8,15 +8,15 @@
  */
 
 export const site = {
-  name: "EasyZulassung",
+  name: "DeutscheZulassung",
   claim: "Kfz-Zulassung. Einfach digital.",
   description:
-    "EasyZulassung übernimmt Ihre Kfz-Zulassung komplett digital: Neuzulassung, Ummeldung und Abmeldung ohne Behördengang – deutschlandweit, transparent und persönlich betreut.",
-  url: "https://www.easyzulassung.de", // [TODO] finale Domain eintragen
+    "DeutscheZulassung übernimmt Ihre Kfz-Zulassung komplett digital: Neuzulassung, Ummeldung und Abmeldung ohne Behördengang – deutschlandweit, transparent und persönlich betreut.",
+  url: "https://www.deutschezulassung.de", // [TODO] finale Domain eintragen
   locale: "de_DE",
 
   contact: {
-    email: "info@easyzulassung.de", // [TODO] echtes Postfach einrichten
+    email: "info@deutschezulassung.de", // [TODO] echtes Postfach einrichten
     phone: "+49 000 00000000", // [TODO] echte Rufnummer
     phoneDisplay: "0000 / 000 00 00", // [TODO]
     /** Nummer im wa.me-Format ohne "+" – [TODO] WhatsApp-Business-Nummer eintragen. */
@@ -25,7 +25,7 @@ export const site = {
   },
 
   company: {
-    legalName: "[TODO] Firmierung, z. B. EasyZulassung UG (haftungsbeschränkt)",
+    legalName: "[TODO] Firmierung, z. B. DeutscheZulassung UG (haftungsbeschränkt)",
     street: "[TODO] Straße Hausnummer",
     zipCity: "[TODO] PLZ Ort",
     register: "[TODO] Registergericht / HRB",

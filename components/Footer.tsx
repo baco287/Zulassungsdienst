@@ -14,7 +14,7 @@ export default function Footer() {
             <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-600 text-white">
               <CarFront className="h-5 w-5" aria-hidden />
             </span>
-            Easy<span className="text-brand-400">Zulassung</span>
+            Deutsche<span className="text-brand-400">Zulassung</span>
           </div>
           <p className="mt-4 max-w-xs text-sm leading-relaxed">
             Ihr digitaler Zulassungsdienst: transparent, schnell und persönlich betreut –

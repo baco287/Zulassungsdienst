@@ -5,9 +5,9 @@ import CTASection from "@/components/CTASection";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Über uns – wer hinter EasyZulassung steht",
+  title: "Über uns – wer hinter DeutscheZulassung steht",
   description:
-    "EasyZulassung verbindet moderne Software mit persönlichem Service: Lernen Sie unser Team und unsere Mission kennen – Kfz-Zulassung ohne Behördenstress.",
+    "DeutscheZulassung verbindet moderne Software mit persönlichem Service: Lernen Sie unser Team und unsere Mission kennen – Kfz-Zulassung ohne Behördenstress.",
 };
 
 const values = [
@@ -39,7 +39,7 @@ export default function UeberUnsPage() {
       <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-14 sm:py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <h1 className="font-display text-4xl font-bold text-ink-900 sm:text-5xl">
-            Über EasyZulassung
+            Über DeutscheZulassung
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-ink-600">
             Wir glauben: Ein Auto anzumelden sollte so einfach sein wie eine Pizza zu
@@ -58,7 +58,7 @@ export default function UeberUnsPage() {
               <p className="mt-4 leading-relaxed text-ink-700">
                 Jedes Jahr werden in Deutschland Millionen Fahrzeuge an-, um- und
                 abgemeldet – und noch immer bedeutet das für die meisten: Termin ergattern,
-                Wartemarke ziehen, Formulare ausfüllen. EasyZulassung wurde gegründet, um
+                Wartemarke ziehen, Formulare ausfüllen. DeutscheZulassung wurde gegründet, um
                 genau das zu ändern. Wir kombinieren die digitalen Behördenverfahren
                 (i-Kfz) mit einer Software, die Unterlagen prüft, Abläufe automatisiert und
                 Sie jederzeit über den Stand informiert – während echte Menschen die Fälle

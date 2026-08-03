@@ -5,7 +5,7 @@ import CTASection from "@/components/CTASection";
 export const metadata: Metadata = {
   title: "So funktioniert’s – Ablauf der Online-Zulassung",
   description:
-    "In 7 einfachen Schritten zur fertigen Kfz-Zulassung: So läuft Ihr Auftrag bei EasyZulassung ab – von der Auswahl bis zur Zustellung von Kennzeichen und Papieren.",
+    "In 7 einfachen Schritten zur fertigen Kfz-Zulassung: So läuft Ihr Auftrag bei DeutscheZulassung ab – von der Auswahl bis zur Zustellung von Kennzeichen und Papieren.",
 };
 
 export default function AblaufPage() {

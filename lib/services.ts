@@ -1,7 +1,7 @@
 import type { Service } from "./types";
 
 /**
- * Leistungskatalog von EasyZulassung.
+ * Leistungskatalog von DeutscheZulassung.
  *
  * Neue Leistungen können einfach ergänzt werden: Objekt anhängen,
  * eindeutigen `slug` vergeben – Listen-, Detail-, Preis- und
@@ -262,7 +262,7 @@ export const services: Service[] = [
     teaser:
       "Ein Ansprechpartner, transparente Preise, alles digital – Ihr persönlicher Zulassungsservice.",
     description:
-      "Vom ersten Foto Ihrer Unterlagen bis zur Zustellung der fertigen Papiere: Bei EasyZulassung haben Sie eine feste Ansprechperson, die Ihren Auftrag begleitet. Sie reichen alles digital ein – per Formular oder WhatsApp – und wir melden uns, sobald Ihr Fahrzeug zugelassen ist.",
+      "Vom ersten Foto Ihrer Unterlagen bis zur Zustellung der fertigen Papiere: Bei DeutscheZulassung haben Sie eine feste Ansprechperson, die Ihren Auftrag begleitet. Sie reichen alles digital ein – per Formular oder WhatsApp – und wir melden uns, sobald Ihr Fahrzeug zugelassen ist.",
     price: {
       serviceFee: null,
       verified: false,

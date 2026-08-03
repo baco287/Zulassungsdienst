@@ -10,7 +10,7 @@ import type { ServiceCategory } from "@/lib/types";
 export const metadata: Metadata = {
   title: "Preise – transparent und ohne versteckte Kosten",
   description:
-    "Transparente Preisübersicht von EasyZulassung: Arbeitspreise, amtliche Gebühren und Kennzeichenkosten getrennt ausgewiesen – ohne versteckte Aufschläge.",
+    "Transparente Preisübersicht von DeutscheZulassung: Arbeitspreise, amtliche Gebühren und Kennzeichenkosten getrennt ausgewiesen – ohne versteckte Aufschläge.",
 };
 
 const order: ServiceCategory[] = ["zulassung", "kennzeichen", "dokumente", "service"];

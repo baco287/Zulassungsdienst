@@ -8,7 +8,7 @@
  * │ die öffentlich einsehbare Preisstruktur etablierter Online-           │
  * │ Zulassungsdienste (Recherche Juli 2026: Komplettpreise ca. 120–129 €  │
  * │ je Zulassungsvorgang inkl. Gebühren/Kennzeichen, ca. 30–35 € je       │
- * │ Abmeldung). EasyZulassung weist Arbeitspreis, amtliche Gebühren und   │
+ * │ Abmeldung). DeutscheZulassung weist Arbeitspreis, amtliche Gebühren und   │
  * │ Kennzeichen bewusst GETRENNT aus.                                     │
  * │                                                                        │
  * │ Einträge mit `verified: false` sind PLATZHALTER und werden in der UI  │

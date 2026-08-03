@@ -2,7 +2,7 @@ import type { FaqItem } from "./types";
 
 export const faqItems: FaqItem[] = [
   {
-    question: "Wie funktioniert die Online-Zulassung über EasyZulassung?",
+    question: "Wie funktioniert die Online-Zulassung über DeutscheZulassung?",
     answer:
       "Sie wählen Ihre Leistung aus, übermitteln uns Ihre Unterlagen digital (Fotos oder Scans genügen) und erteilen uns eine Vollmacht. Wir prüfen alles, führen den Vorgang bei der zuständigen Zulassungsbehörde durch und senden Ihnen Kennzeichen und Papiere zu – bei Abmeldungen erhalten Sie die Bestätigung meist noch am selben Werktag per E-Mail.",
     category: "ablauf",
@@ -26,7 +26,7 @@ export const faqItems: FaqItem[] = [
     category: "ablauf",
   },
   {
-    question: "In welchen Regionen ist EasyZulassung tätig?",
+    question: "In welchen Regionen ist DeutscheZulassung tätig?",
     answer:
       "Digitale Vorgänge wickeln wir deutschlandweit ab. Den persönlichen Abhol- und Bringservice bieten wir regional an – sprechen Sie uns einfach an.",
     category: "allgemein",

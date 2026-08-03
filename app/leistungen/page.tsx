@@ -8,7 +8,7 @@ import type { ServiceCategory } from "@/lib/types";
 export const metadata: Metadata = {
   title: "Leistungen – alle Zulassungsdienste im Überblick",
   description:
-    "Neuzulassung, Ummeldung, Abmeldung, Wunschkennzeichen und mehr: Alle Kfz-Zulassungsleistungen von EasyZulassung im Überblick – für Privat- und Gewerbekunden.",
+    "Neuzulassung, Ummeldung, Abmeldung, Wunschkennzeichen und mehr: Alle Kfz-Zulassungsleistungen von DeutscheZulassung im Überblick – für Privat- und Gewerbekunden.",
 };
 
 const order: ServiceCategory[] = ["zulassung", "kennzeichen", "dokumente", "service"];

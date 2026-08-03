@@ -103,7 +103,7 @@ export default async function ServiceDetailPage({
               <dl className="mt-4 space-y-3 text-sm">
                 <div className="flex items-baseline justify-between gap-4">
                   <dt className="text-ink-600">
-                    {p.inclusive ? "Festpreis EasyZulassung" : "Arbeitspreis EasyZulassung"}
+                    {p.inclusive ? "Festpreis DeutscheZulassung" : "Arbeitspreis DeutscheZulassung"}
                   </dt>
                   <dd className="text-right font-display text-lg font-bold text-brand-700">
                     {p.serviceFee !== null
@@ -162,7 +162,7 @@ export default async function ServiceDetailPage({
                   <ArrowRight className="h-4 w-4" aria-hidden />
                 </Link>
                 <a
-                  href={whatsAppLink(`Hallo EasyZulassung, ich interessiere mich für: ${service.name}.`)}
+                  href={whatsAppLink(`Hallo DeutscheZulassung, ich interessiere mich für: ${service.name}.`)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex w-full items-center justify-center gap-2 rounded-xl border border-ink-300 px-5 py-3.5 font-display font-semibold text-ink-800 transition-colors duration-200 hover:border-brand-400 hover:bg-brand-50"

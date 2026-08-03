@@ -340,7 +340,7 @@ export default function HomePage() {
             </Reveal>
             <Reveal delay={0.18}>
               <a
-                href={whatsAppLink("Hallo EasyZulassung, ich habe eine Frage.")}
+                href={whatsAppLink("Hallo DeutscheZulassung, ich habe eine Frage.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block h-full cursor-pointer rounded-2xl border border-ink-200 bg-white p-6 text-center shadow-card transition-all duration-200 hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-card-hover"

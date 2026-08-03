@@ -1,6 +1,6 @@
-# EasyZulassung – Website
+# DeutscheZulassung – Website
 
-Moderne, responsive Website für den digitalen Kfz-Zulassungsdienst **EasyZulassung**
+Moderne, responsive Website für den digitalen Kfz-Zulassungsdienst **DeutscheZulassung**
 (Projekt „Zulassungsdienst“). Phase 1: professionelle Web-Präsenz mit Online-Auftrag
 über reale Kanäle (WhatsApp / E-Mail). Phase 2+: Automatisierung (siehe unten).
 

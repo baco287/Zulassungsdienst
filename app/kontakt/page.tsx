@@ -5,7 +5,7 @@ import { site, whatsAppLink } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Kontakt – wir sind für Sie da",
   description:
-    "Kontaktieren Sie EasyZulassung per WhatsApp, E-Mail oder Telefon. Wir beantworten Ihre Fragen zur Kfz-Zulassung schnell und persönlich.",
+    "Kontaktieren Sie DeutscheZulassung per WhatsApp, E-Mail oder Telefon. Wir beantworten Ihre Fragen zur Kfz-Zulassung schnell und persönlich.",
 };
 
 const channels = [
@@ -13,7 +13,7 @@ const channels = [
     icon: MessageCircle,
     title: "WhatsApp",
     text: "Der schnellste Weg: Frage stellen, Fotos senden, Antwort erhalten.",
-    href: whatsAppLink("Hallo EasyZulassung, ich habe eine Frage."),
+    href: whatsAppLink("Hallo DeutscheZulassung, ich habe eine Frage."),
     label: "Chat starten",
     external: true,
   },

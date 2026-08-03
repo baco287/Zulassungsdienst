@@ -6,7 +6,7 @@ import { site, whatsAppLink } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Online-Auftrag – Zulassung jetzt beauftragen",
   description:
-    "Beauftragen Sie Ihre Kfz-Zulassung online: Leistung wählen, Daten eingeben, absenden – EasyZulassung übernimmt den Rest. Unverbindliche Anfrage in 2 Minuten.",
+    "Beauftragen Sie Ihre Kfz-Zulassung online: Leistung wählen, Daten eingeben, absenden – DeutscheZulassung übernimmt den Rest. Unverbindliche Anfrage in 2 Minuten.",
 };
 
 export default function AuftragPage() {
@@ -36,7 +36,7 @@ export default function AuftragPage() {
               Senden Sie uns Ihre Anfrage formlos per WhatsApp – Fotos der Unterlagen genügen.
             </p>
             <a
-              href={whatsAppLink("Hallo EasyZulassung, ich möchte eine Zulassung beauftragen.")}
+              href={whatsAppLink("Hallo DeutscheZulassung, ich möchte eine Zulassung beauftragen.")}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-brand-700 px-4 py-3 font-display text-sm font-semibold text-white transition-colors duration-200 hover:bg-brand-800"

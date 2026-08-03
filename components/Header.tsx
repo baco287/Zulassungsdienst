@@ -31,7 +31,7 @@ export default function Header() {
             <CarFront className="h-5 w-5" aria-hidden />
           </span>
           <span>
-            Easy<span className="text-brand-700">Zulassung</span>
+            Deutsche<span className="text-brand-700">Zulassung</span>
           </span>
         </Link>
 
@@ -57,7 +57,7 @@ export default function Header() {
 
         <div className="hidden items-center gap-2 lg:flex">
           <a
-            href={whatsAppLink("Hallo EasyZulassung, ich habe eine Frage zur Kfz-Zulassung.")}
+            href={whatsAppLink("Hallo DeutscheZulassung, ich habe eine Frage zur Kfz-Zulassung.")}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-ink-200 px-3 py-2 text-sm font-medium text-ink-700 transition-colors duration-200 hover:border-brand-300 hover:bg-brand-50 hover:text-brand-800"
@@ -103,7 +103,7 @@ export default function Header() {
           ))}
           <div className="mt-3 flex flex-col gap-2">
             <a
-              href={whatsAppLink("Hallo EasyZulassung, ich habe eine Frage zur Kfz-Zulassung.")}
+              href={whatsAppLink("Hallo DeutscheZulassung, ich habe eine Frage zur Kfz-Zulassung.")}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 rounded-lg border border-ink-200 px-4 py-3 text-base font-medium text-ink-700"

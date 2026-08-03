@@ -5,7 +5,7 @@ export type ServiceCategory = "zulassung" | "kennzeichen" | "dokumente" | "servi
 export type Audience = "privat" | "gewerblich" | "beide";
 
 export interface PriceInfo {
-  /** Preis von EasyZulassung in Euro (brutto). null = noch nicht festgelegt. */
+  /** Preis von DeutscheZulassung in Euro (brutto). null = noch nicht festgelegt. */
   serviceFee: number | null;
   /**
    * true = Komplettpreis: amtliche Gebühren, Kennzeichen und Versand sind

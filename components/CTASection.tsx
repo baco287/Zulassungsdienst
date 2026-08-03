@@ -22,7 +22,7 @@ export default function CTASection() {
             Auftrag starten
           </Link>
           <a
-            href={whatsAppLink("Hallo EasyZulassung, ich möchte eine Kfz-Zulassung beauftragen.")}
+            href={whatsAppLink("Hallo DeutscheZulassung, ich möchte eine Kfz-Zulassung beauftragen.")}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 rounded-xl border border-ink-700 px-8 py-4 font-display text-base font-semibold text-white transition-colors duration-200 hover:border-brand-500 hover:bg-ink-900"

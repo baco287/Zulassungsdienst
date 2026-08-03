@@ -60,7 +60,7 @@ function validateStep(step: number, v: OrderRequest): Errors {
 function buildMessage(v: OrderRequest): string {
   const service = getService(v.serviceSlug);
   return [
-    "Neue Auftragsanfrage über easyzulassung.de",
+    "Neue Auftragsanfrage über deutschezulassung.de",
     "",
     `Leistung: ${service?.name ?? v.serviceSlug}`,
     `Kundenart: ${v.audience === "privat" ? "Privatkunde" : "Gewerbekunde"}`,
