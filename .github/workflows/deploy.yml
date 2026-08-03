@@ -1,4 +1,4 @@
-name: Deploy zu GitHub Pages
+name: Build & Deploy
 
 on:
   push:
@@ -13,7 +13,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
+  # ── Staging: GitHub Pages (baco287.github.io/Zulassungsdienst) ──────────
+  deploy-pages:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,7 +27,7 @@ jobs:
       - name: Abhängigkeiten installieren
         run: npm ci
 
-      - name: Build (statischer Export mit basePath)
+      - name: Build (mit basePath für github.io-Unterpfad)
         run: npm run build
         env:
           NEXT_PUBLIC_BASE_PATH: /Zulassungsdienst
@@ -36,3 +37,39 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
+
+  # ── Produktion: all-inkl Webspace (deutschezulassung.de) ────────────────
+  # Läuft erst, wenn die Secrets FTP_SERVER / FTP_USERNAME / FTP_PASSWORD
+  # im Repo hinterlegt sind (Settings → Secrets and variables → Actions).
+  deploy-allinkl:
+    runs-on: ubuntu-latest
+    env:
+      HAS_FTP: ${{ secrets.FTP_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+        if: env.HAS_FTP != ''
+
+      - uses: actions/setup-node@v4
+        if: env.HAS_FTP != ''
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Abhängigkeiten installieren
+        if: env.HAS_FTP != ''
+        run: npm ci
+
+      - name: Build (Root-Pfad für eigene Domain)
+        if: env.HAS_FTP != ''
+        run: npm run build
+
+      - name: Per FTP zu all-inkl deployen
+        if: env.HAS_FTP != ''
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          local-dir: ./out/
+          server-dir: ${{ secrets.FTP_SERVER_DIR || '/' }}
