@@ -1,10 +1,7 @@
 /**
  * Zentrale Stammdaten der Website.
- *
- * ┌─────────────────────────────────────────────────────────────────┐
- * │ PLATZHALTER: Alle mit [TODO] markierten Werte müssen vor dem    │
- * │ Livegang durch echte Unternehmensdaten ersetzt werden!          │
- * └─────────────────────────────────────────────────────────────────┘
+ * Markenkonstruktion: „DeutscheZulassung“ ist ein Angebot der
+ * Volt Gas UG (haftungsbeschränkt) – siehe company.brandNote.
  */
 
 export const site = {
@@ -12,25 +9,28 @@ export const site = {
   claim: "Kfz-Zulassung. Einfach digital.",
   description:
     "DeutscheZulassung übernimmt Ihre Kfz-Zulassung komplett digital: Neuzulassung, Ummeldung und Abmeldung ohne Behördengang – deutschlandweit, transparent und persönlich betreut.",
-  url: "https://www.deutschezulassung.de", // [TODO] finale Domain eintragen
+  url: "https://www.deutschezulassung.de",
   locale: "de_DE",
 
   contact: {
-    email: "info@deutschezulassung.de", // [TODO] echtes Postfach einrichten
-    phone: "+49 000 00000000", // [TODO] echte Rufnummer
-    phoneDisplay: "0000 / 000 00 00", // [TODO]
-    /** Nummer im wa.me-Format ohne "+" – [TODO] WhatsApp-Business-Nummer eintragen. */
-    whatsapp: "490000000000",
+    email: "info@deutschezulassung.de",
+    phone: "+49 176 25041651",
+    phoneDisplay: "0176 / 250 416 51",
+    /** Nummer im wa.me-Format ohne "+". */
+    whatsapp: "4917625041651",
     hours: "Mo–Fr 8:00–18:00 Uhr",
   },
 
   company: {
-    legalName: "[TODO] Firmierung, z. B. DeutscheZulassung UG (haftungsbeschränkt)",
-    street: "[TODO] Straße Hausnummer",
-    zipCity: "[TODO] PLZ Ort",
-    register: "[TODO] Registergericht / HRB",
-    vatId: "[TODO] USt-IdNr.",
-    responsible: "[TODO] Verantwortliche Person (V. i. S. d. § 18 MStV)",
+    legalName: "Volt Gas UG (haftungsbeschränkt)",
+    brandNote:
+      "„DeutscheZulassung“ ist ein Angebot der Volt Gas UG (haftungsbeschränkt).",
+    street: "Pappelallee 64",
+    zipCity: "10437 Berlin",
+    register: "Amtsgericht Charlottenburg (Berlin), HRB 289458 B",
+    vatId:
+      "Die Umsatzsteuer-Identifikationsnummer (§ 27a UStG) ist beantragt und wird nach Erteilung ergänzt.",
+    responsible: "Ahmet Kerim Akan",
   },
 } as const;
 
