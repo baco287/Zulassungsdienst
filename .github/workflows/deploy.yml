@@ -100,9 +100,13 @@ jobs:
             curl -sv --max-time 20 --ssl-reqd "ftp://$FTP_SERVER/" 2>&1 | tail -25 || true
             echo "== lftp-Lauf =="
           } > /tmp/lftp.log
+          # Zugangsdaten via ~/.netrc – lftp nutzt sie beim open automatisch
+          # (robust gegen Sonderzeichen; -u griff beim open im Skript nicht).
+          printf 'machine %s\nlogin %s\npassword %s\n' \
+            "$FTP_SERVER" "$FTP_USERNAME" "$FTP_PASSWORD" > ~/.netrc
+          chmod 600 ~/.netrc
           # Hauptnutzer wurzelt auf "/" – Website liegt im Domain-Ordner.
-          # Explizites open statt Host-Argument; --delete hält das Ziel synchron.
-          lftp -d -u "$FTP_USERNAME","$FTP_PASSWORD" -e "
+          lftp -d -e "
             set ftp:ssl-force true;
             set ftp:ssl-protect-data true;
             set ssl:verify-certificate true;
@@ -114,6 +118,7 @@ jobs:
             mirror -R --delete --verbose=1 ./out/ /deutschezulassung.de/;
             bye
           " 2>&1 | tee -a /tmp/lftp.log
+          rm -f ~/.netrc
 
       # Bei Fehlschlag: geschwärztes Log auf Branch "deploy-logs" ablegen,
       # damit die Diagnose ohne Actions-UI-Zugriff möglich ist.
