@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="24" fill="#2563eb"/>
+  <g transform="translate(10,34)">
+    <rect x="0" y="0" width="108" height="60" rx="10" fill="#ffffff"/>
+    <path d="M10 0 h12 v60 h-12 a10 10 0 0 1 -10 -10 v-40 a10 10 0 0 1 10 -10 z" fill="#1d4ed8"/>
+    <g fill="#facc15">
+      <circle cx="11" cy="12" r="1.8"/>
+      <circle cx="7" cy="17" r="1.8"/>
+      <circle cx="15" cy="17" r="1.8"/>
+      <circle cx="7" cy="24" r="1.8"/>
+      <circle cx="15" cy="24" r="1.8"/>
+      <circle cx="11" cy="29" r="1.8"/>
+    </g>
+    <text x="11" y="52" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="16" fill="#ffffff">D</text>
+    <text x="64" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="38" letter-spacing="-1" fill="#0f172a">DZ</text>
+  </g>
+</svg>
