@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { CarFront, Mail, MessageCircle, Phone, ShieldCheck } from "lucide-react";
+import { Mail, MessageCircle, Phone, ShieldCheck } from "lucide-react";
+import Logo from "./Logo";
 import { site, whatsAppLink } from "@/lib/site";
 import { sortedServices } from "@/lib/services";
 
@@ -10,12 +11,7 @@ export default function Footer() {
     <footer className="border-t border-ink-200 bg-ink-950 text-ink-300">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <div className="flex items-center gap-2 font-display text-lg font-bold text-white">
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-600 text-white">
-              <CarFront className="h-5 w-5" aria-hidden />
-            </span>
-            Deutsche<span className="text-brand-400">Zulassung</span>
-          </div>
+          <Logo variant="dark" markClassName="h-10 w-auto" textClassName="text-lg" />
           <p className="mt-4 max-w-xs text-sm leading-relaxed">
             Ihr digitaler Zulassungsdienst: transparent, schnell und persönlich betreut –
             von der Neuzulassung bis zur Abmeldung.
