@@ -3,8 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, MessageCircle } from "lucide-react";
-import Logo from "./Logo";
+import { Menu, X, MessageCircle, CarFront } from "lucide-react";
 import { site, whatsAppLink } from "@/lib/site";
 
 const nav = [
@@ -28,7 +27,12 @@ export default function Header() {
           className="flex items-center gap-2 font-display text-lg font-bold text-ink-900"
           aria-label={`${site.name} – Startseite`}
         >
-          <Logo variant="light" markClassName="h-10 w-auto" textClassName="text-lg" />
+          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-700 text-white">
+            <CarFront className="h-5 w-5" aria-hidden />
+          </span>
+          <span>
+            Deutsche<span className="text-brand-700">Zulassung</span>
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Hauptnavigation">
