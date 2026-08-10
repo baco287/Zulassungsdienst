@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap: https://www.deutschezulassung.de/sitemap.xml
+Sitemap: https://deutschezulassung.de/sitemap.xml
