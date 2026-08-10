@@ -17,7 +17,6 @@ import {
 import HeroFlowAnimation from "@/components/HeroFlowAnimation";
 import ServiceCard from "@/components/ServiceCard";
 import PackageCards from "@/components/PackageCards";
-import Testimonials from "@/components/Testimonials";
 import AuftragForm from "@/components/AuftragForm";
 import FaqAccordion from "@/components/FaqAccordion";
 import CTASection from "@/components/CTASection";
@@ -43,7 +42,7 @@ const ablaufSteps = [
   {
     icon: Headset,
     title: "Wir melden uns",
-    text: "Sie erhalten schnell eine Rückmeldung mit verbindlichem Angebot und Checkliste.",
+    text: "Sie erhalten schnell Ihre Festpreis-Bestätigung samt Unterlagen-Checkliste.",
   },
   {
     icon: Handshake,
@@ -81,7 +80,7 @@ export default function HomePage() {
             <h1 className="mt-6 font-display text-4xl font-bold leading-[1.1] text-ink-900 sm:text-5xl lg:text-6xl">
               Fahrzeug-Zulassung
               <br />
-              <span className="bg-gradient-to-r from-brand-600 to-brand-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-brand-600 to-brand-500 bg-clip-text text-transparent">
                 leicht gemacht
               </span>
             </h1>
@@ -106,7 +105,7 @@ export default function HomePage() {
             </div>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-ink-600">
               <span className="flex items-center gap-1.5">
-                <ShieldCheck className="h-4 w-4 text-brand-600" aria-hidden /> DSGVO-konform
+                <ShieldCheck className="h-4 w-4 text-brand-600" aria-hidden /> Verschlüsselte Übertragung
               </span>
               <span className="flex items-center gap-1.5">
                 <Laptop className="h-4 w-4 text-brand-600" aria-hidden /> i-Kfz-Verfahren
@@ -238,29 +237,14 @@ export default function HomePage() {
               In 4 Schritten zum Auftrag
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-ink-600">
-              Beantworten Sie ein paar kurze Fragen – wir melden uns umgehend mit Ihrem
-              verbindlichen Angebot zurück.
+              Beantworten Sie ein paar kurze Fragen – wir melden uns umgehend mit Ihrer
+              Festpreis-Bestätigung zurück.
             </p>
           </Reveal>
           <Reveal delay={0.1} className="mt-10">
             <div className="rounded-2xl border border-ink-200 bg-white p-6 shadow-card sm:p-8">
               <AuftragForm />
             </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* ============ KUNDENSTIMMEN ============ */}
-      <section id="kundenstimmen" className="py-16 sm:py-24">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <Reveal className="text-center">
-            <Eyebrow>Kundenstimmen</Eyebrow>
-            <h2 className="mt-3 font-display text-3xl font-bold text-ink-900 sm:text-4xl">
-              Das erwartet Sie bei uns
-            </h2>
-          </Reveal>
-          <Reveal delay={0.1} className="mt-12">
-            <Testimonials />
           </Reveal>
         </div>
       </section>

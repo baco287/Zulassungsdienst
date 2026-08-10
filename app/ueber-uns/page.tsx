@@ -14,7 +14,7 @@ const values = [
   {
     icon: Laptop,
     title: "Digital gedacht",
-    text: "Unsere Prozesse sind von Grund auf für die Online-Abwicklung gebaut – vom Dokumenten-Upload bis zur behördlichen i-Kfz-Schnittstelle. Das macht uns schneller und günstiger als der klassische Weg.",
+    text: "Unsere Prozesse sind von Grund auf für die Online-Abwicklung gebaut – vom Dokumenten-Upload bis zur behördlichen i-Kfz-Schnittstelle. Das macht uns schneller und bequemer als der klassische Weg.",
   },
   {
     icon: HeartHandshake,
@@ -24,7 +24,7 @@ const values = [
   {
     icon: ShieldCheck,
     title: "Vertrauen verdient",
-    text: "Wir gehen mit Fahrzeugpapieren und persönlichen Daten um, wie wir es uns selbst wünschen würden: verschlüsselt, sparsam und DSGVO-konform.",
+    text: "Wir gehen mit Fahrzeugpapieren und persönlichen Daten um, wie wir es uns selbst wünschen würden: verschlüsselt, sparsam und nach den Vorgaben der DSGVO.",
   },
   {
     icon: Sparkles,

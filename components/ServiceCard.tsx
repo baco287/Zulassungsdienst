@@ -26,8 +26,8 @@ export default function ServiceCard({ service }: { service: Service }) {
             <>
               <p className="text-xs text-ink-500">
                 {service.price.inclusive
-                  ? "Komplettpreis – alles inklusive"
-                  : `Arbeitspreis ${service.price.verified ? "" : "(unverbindlich)"}`}
+                  ? "Komplettpreis inkl. MwSt. – alles inklusive"
+                  : `Servicepreis ${service.price.verified ? "" : "(unverbindlich)"}`}
               </p>
               <p className="font-display text-lg font-bold text-brand-700">
                 {service.price.inclusive

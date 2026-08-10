@@ -31,6 +31,7 @@ jobs:
         run: npm run build
         env:
           NEXT_PUBLIC_BASE_PATH: /Zulassungsdienst
+          NEXT_PUBLIC_STAGING: "1" 
 
       - name: Auf gh-pages-Branch veröffentlichen
         uses: peaceiris/actions-gh-pages@v4

@@ -10,7 +10,7 @@ import type { ServiceCategory } from "@/lib/types";
 export const metadata: Metadata = {
   title: "Preise – transparent und ohne versteckte Kosten",
   description:
-    "Transparente Preisübersicht von DeutscheZulassung: Arbeitspreise, amtliche Gebühren und Kennzeichenkosten getrennt ausgewiesen – ohne versteckte Aufschläge.",
+    "Komplettpreise inkl. MwSt., amtlicher Gebühren, Kennzeichen und Versand: 129 Euro je Zulassung, 34,90 Euro je Abmeldung – ohne versteckte Kosten.",
 };
 
 const order: ServiceCategory[] = ["zulassung", "kennzeichen", "dokumente", "service"];

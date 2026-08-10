@@ -9,7 +9,7 @@ export const site = {
   claim: "Kfz-Zulassung. Einfach digital.",
   description:
     "DeutscheZulassung übernimmt Ihre Kfz-Zulassung komplett digital: Neuzulassung, Ummeldung und Abmeldung ohne Behördengang – deutschlandweit, transparent und persönlich betreut.",
-  url: "https://www.deutschezulassung.de",
+  url: "https://deutschezulassung.de",
   locale: "de_DE",
 
   contact: {

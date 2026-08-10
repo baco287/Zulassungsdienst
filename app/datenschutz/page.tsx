@@ -9,68 +9,90 @@ export const metadata: Metadata = {
 
 export default function DatenschutzPage() {
   return (
-    <LegalPage title="Datenschutzerklärung">
+    <LegalPage title="Datenschutzerklärung" placeholder={false}>
       <section>
         <h2>1. Verantwortlicher</h2>
         <p>
           {site.company.legalName}, {site.company.street}, {site.company.zipCity},
-          E-Mail: {site.contact.email}
+          E-Mail: {site.contact.email}, Telefon: {site.contact.phoneDisplay}.
         </p>
+        <p>{site.company.brandNote}</p>
       </section>
       <section>
-        <h2>2. Welche Daten wir verarbeiten</h2>
+        <h2>2. Hosting und Server-Logfiles</h2>
         <p>
-          Bei Nutzung unseres Auftrags- und Kontaktformulars verarbeiten wir die von Ihnen
-          angegebenen Daten (Name, Kontaktdaten, Fahrzeug- und Auftragsdaten sowie
-          hochgeladene Dokumente) ausschließlich zur Bearbeitung Ihrer Anfrage und zur
-          Durchführung des Zulassungsauftrags (Art. 6 Abs. 1 lit. b DSGVO).
+          Diese Website wird bei der ALL-INKL.COM – Neue Medien Münnich (Hauptstraße 68,
+          02742 Friedersdorf, Deutschland) gehostet. Mit dem Hoster besteht ein Vertrag
+          über Auftragsverarbeitung nach Art. 28 DSGVO. Beim Aufruf der Website
+          verarbeitet der Hoster automatisch Informationen in sogenannten
+          Server-Logfiles (IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene
+          Seite, Browsertyp und Betriebssystem, Referrer-URL). Die Verarbeitung erfolgt
+          auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO zur Sicherstellung eines
+          störungsfreien und sicheren Betriebs. Die Logfiles werden nach den beim Hoster
+          üblichen Fristen automatisch gelöscht.
         </p>
-      </section>
-      <section>
-        <h2>3. WhatsApp-Kommunikation</h2>
         <p>
-          Wenn Sie uns über WhatsApp kontaktieren, gelten ergänzend die
-          Datenschutzhinweise von WhatsApp (Meta Platforms Ireland Ltd.). Übermitteln Sie
-          sensible Dokumente nur, wenn Sie mit der Verarbeitung über WhatsApp
-          einverstanden sind – alternativ steht Ihnen unser Formular- und E-Mail-Weg offen.
-          [TODO: Bei Einführung der WhatsApp Business API Abschnitt um
-          Auftragsverarbeitung und Speicherfristen ergänzen.]
+          Schriftarten werden lokal von unserem Server geladen (Self-Hosting); es
+          findet keine Verbindung zu Google Fonts oder anderen externen
+          Schriftdiensten statt. Diese Website verwendet keine Cookies, keine
+          Analyse-Dienste und keine Tracking-Technologien.
         </p>
       </section>
       <section>
-        <h2>4. Weitergabe an Behörden und Dienstleister</h2>
+        <h2>3. Anfrage- und Auftragsdaten</h2>
+        <p>
+          Bei Nutzung unseres Auftrags-Assistenten oder bei Kontaktaufnahme verarbeiten
+          wir die von Ihnen angegebenen Daten (Name, Kontaktdaten, Fahrzeug- und
+          Auftragsdaten sowie übermittelte Dokumente) ausschließlich zur Bearbeitung
+          Ihrer Anfrage und zur Durchführung des Zulassungsauftrags (Art. 6 Abs. 1
+          lit. b DSGVO). Der Auftrags-Assistent selbst überträgt keine Daten an uns –
+          die von Ihnen zusammengestellte Nachricht wird erst durch Ihren aktiven
+          Versand per WhatsApp oder E-Mail an uns übermittelt.
+        </p>
+      </section>
+      <section>
+        <h2>4. WhatsApp-Kommunikation</h2>
+        <p>
+          Wenn Sie uns über WhatsApp kontaktieren, verarbeitet WhatsApp (Meta Platforms
+          Ireland Ltd., Dublin, Irland) Ihre Daten nach eigenen Datenschutzbestimmungen;
+          dabei kann es zu einer Übermittlung in Drittländer (USA) kommen. Die Nutzung
+          von WhatsApp ist freiwillig – Sie können uns alternativ jederzeit per E-Mail
+          oder Telefon erreichen. Übermitteln Sie sensible Dokumente über WhatsApp nur,
+          wenn Sie mit dieser Verarbeitung einverstanden sind (Art. 6 Abs. 1 lit. a
+          DSGVO).
+        </p>
+      </section>
+      <section>
+        <h2>5. Weitergabe an Behörden und Dienstleister</h2>
         <p>
           Zur Durchführung des Auftrags übermitteln wir erforderliche Daten an die
           zuständige Zulassungsbehörde sowie ggf. an Versanddienstleister und
-          Kennzeichenhersteller. Eine darüberhinausgehende Weitergabe erfolgt nicht.
+          Kennzeichenhersteller (Art. 6 Abs. 1 lit. b DSGVO). Eine darüber hinausgehende
+          Weitergabe an Dritte erfolgt nicht.
         </p>
       </section>
       <section>
-        <h2>5. Speicherdauer</h2>
+        <h2>6. Speicherdauer</h2>
         <p>
-          Auftragsdaten speichern wir nur so lange, wie es für die Abwicklung und die
-          gesetzlichen Aufbewahrungspflichten (insb. § 147 AO: bis zu 10 Jahre für
-          Rechnungsdaten) erforderlich ist. Anfragedaten ohne Auftrag löschen wir
-          spätestens nach [TODO: Frist festlegen, z. B. 6 Monaten].
-        </p>
-      </section>
-      <section>
-        <h2>6. Hosting & Server-Logs</h2>
-        <p>
-          [TODO: Hosting-Anbieter benennen (z. B. Vercel, IONOS …), AV-Vertrag
-          schließen und Abschnitt zu Server-Logfiles, TLS-Verschlüsselung und ggf.
-          CDN ergänzen.] Diese Website verwendet keine Tracking-Cookies und keine
-          Analyse-Dienste.
+          Auftrags- und Rechnungsdaten speichern wir für die Dauer der Abwicklung und
+          anschließend im Rahmen der gesetzlichen Aufbewahrungspflichten (§ 147 AO,
+          § 257 HGB: sechs bzw. zehn Jahre). Anfragedaten, aus denen kein Auftrag
+          entsteht, löschen wir spätestens sechs Monate nach der letzten Kommunikation.
+          Kopien von Ausweisdokumenten und Vollmachten löschen wir nach Abschluss des
+          Auftrags, soweit keine gesetzliche Aufbewahrungspflicht besteht.
         </p>
       </section>
       <section>
         <h2>7. Ihre Rechte</h2>
         <p>
           Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16),
-          Löschung (Art. 17), Einschränkung (Art. 18), Datenübertragbarkeit (Art. 20)
-          sowie Widerspruch (Art. 21). Erteilte Einwilligungen können Sie jederzeit mit
-          Wirkung für die Zukunft widerrufen. Beschwerden richten Sie an die für Sie
-          zuständige Datenschutz-Aufsichtsbehörde.
+          Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18),
+          Datenübertragbarkeit (Art. 20) sowie Widerspruch gegen Verarbeitungen auf
+          Grundlage von Art. 6 Abs. 1 lit. f DSGVO (Art. 21). Erteilte Einwilligungen
+          können Sie jederzeit mit Wirkung für die Zukunft widerrufen. Sie haben
+          außerdem das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren;
+          für uns zuständig ist die Berliner Beauftragte für Datenschutz und
+          Informationsfreiheit, Alt-Moabit 59–61, 10555 Berlin.
         </p>
       </section>
     </LegalPage>

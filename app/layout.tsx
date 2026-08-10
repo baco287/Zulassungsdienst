@@ -33,6 +33,7 @@ export const metadata: Metadata = {
     "Halterwechsel",
     "Wunschkennzeichen",
   ],
+  alternates: { canonical: "./" },
   openGraph: {
     type: "website",
     locale: site.locale,
@@ -40,7 +41,10 @@ export const metadata: Metadata = {
     title: `${site.name} – ${site.claim}`,
     description: site.description,
   },
-  robots: { index: true, follow: true },
+  robots:
+    process.env.NEXT_PUBLIC_STAGING === "1"
+      ? { index: false, follow: false }
+      : { index: true, follow: true },
 };
 
 const jsonLd = {
@@ -51,6 +55,14 @@ const jsonLd = {
   url: site.url,
   email: site.contact.email,
   telephone: site.contact.phone,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: site.company.street,
+    addressLocality: "Berlin",
+    postalCode: "10437",
+    addressCountry: "DE",
+  },
+  openingHours: "Mo-Fr 08:00-18:00",
   areaServed: "DE",
   priceRange: "€€",
 };

@@ -217,10 +217,10 @@ export const services: Service[] = [
     description:
       "Wir prüfen die Verfügbarkeit Ihres Wunschkennzeichens, reservieren es bei der Zulassungsstelle und übernehmen Prägung und Zuteilung im Rahmen Ihrer Zulassung.",
     price: {
-      serviceFee: 19.9,
-      verified: false,
-      officialFeeRange: [12.8, 12.8],
-      note: "Zzgl. amtliche Wunschkennzeichen-Gebühr; buchbar als Zusatz zu jeder Zulassung.",
+      serviceFee: 34.9,
+      inclusive: true,
+      verified: true,
+      note: "Zusatz zu jeder Zulassung – Komplettpreis inkl. amtlicher Reservierungs- und Zuteilungsgebühr.",
     },
     checklist: [
       "Ihr Wunschkürzel (2–3 Alternativen empfohlen)",

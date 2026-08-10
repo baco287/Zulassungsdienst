@@ -16,7 +16,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "Was kostet die Zulassung insgesamt?",
     answer:
-      "Bei uns gilt der Komplettpreis: 129 € für Neuzulassung, Umschreibung oder Wiederzulassung – amtliche Gebühren, Kennzeichen und versicherter Versand sind bereits enthalten. Die Abmeldung kostet 34,90 € inklusive Gebühren. Keine versteckten Kosten; Sonderfälle weisen wir vor Beauftragung transparent aus.",
+      "Bei uns gilt der Komplettpreis: 129 € für Neuzulassung, Umschreibung oder Wiederzulassung – amtliche Gebühren, Kennzeichen und versicherter Versand sind bereits enthalten. Die Abmeldung kostet 34,90 € inklusive Gebühren. Alle Preise verstehen sich inkl. MwSt. Keine versteckten Kosten; Sonderfälle weisen wir vor Beauftragung transparent aus.",
     category: "preise",
   },
   {
@@ -24,6 +24,18 @@ export const faqItems: FaqItem[] = [
     answer:
       "Abmeldungen erledigen wir in der Regel taggleich. Neuzulassungen, Ummeldungen und Halterwechsel dauern je nach Behörde meist 1–3 Werktage zuzüglich Versand der Kennzeichen und Papiere.",
     category: "ablauf",
+  },
+  {
+    question: "Wie und wann bezahle ich?",
+    answer:
+      "Mit Ihrer Festpreis-Bestätigung erhalten Sie unsere Rechnung. Sie zahlen bequem per Überweisung; erst nach Zahlungseingang reichen wir den Vorgang bei der Behörde ein bzw. versenden Kennzeichen und Dokumente. Weitere Zahlungsarten (z. B. PayPal) sind in Vorbereitung. Alle Preise inkl. MwSt.",
+    category: "preise",
+  },
+  {
+    question: "Ummeldung, Umschreibung, Halterwechsel – was ist der Unterschied?",
+    answer:
+      "Ummeldung: Sie sind umgezogen und das Fahrzeug bleibt auf Sie zugelassen. Halterwechsel (auch Umschreibung genannt): Das Fahrzeug wechselt den Besitzer, z. B. nach einem Gebrauchtwagenkauf. Adressänderung: Nur die Anschrift in den Papieren wird aktualisiert. Alle drei kosten bei uns denselben Komplettpreis von 129 € – wählen Sie im Zweifel einfach eine Leistung aus, wir prüfen den passenden Vorgang für Sie.",
+    category: "allgemein",
   },
   {
     question: "In welchen Regionen ist DeutscheZulassung tätig?",
@@ -52,7 +64,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "Was passiert, wenn die Behörde meinen Antrag ablehnt?",
     answer:
-      "Das kommt selten vor – meist fehlt dann ein Dokument, das wir vorab mit Ihnen klären. Sollte ein Vorgang tatsächlich nicht durchführbar sein, berechnen wir Ihnen keinen Arbeitspreis; bereits verauslagte amtliche Gebühren müssen wir weitergeben.",
+      "Das kommt selten vor – meist fehlt dann ein Dokument, das wir vorab mit Ihnen klären. Sollte ein Vorgang tatsächlich nicht durchführbar sein, berechnen wir Ihnen keinen Servicepreis – Sie tragen lediglich bereits verauslagte amtliche Gebühren.",
     category: "preise",
   },
   {

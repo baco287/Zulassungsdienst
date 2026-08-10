@@ -22,7 +22,7 @@ export default function Footer() {
           </p>
           <p className="mt-4 flex items-center gap-2 text-xs text-ink-400">
             <ShieldCheck className="h-4 w-4 text-brand-400" aria-hidden />
-            Sichere, DSGVO-konforme Datenverarbeitung
+            Verschlüsselte Übertragung · keine Tracking-Cookies
           </p>
         </div>
 

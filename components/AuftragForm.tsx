@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import {
   AlertCircle,
@@ -8,6 +8,7 @@ import {
   ArrowRight,
   Check,
   CheckCircle2,
+  Copy,
   Mail,
   MessageCircle,
   ShieldCheck,
@@ -95,6 +96,17 @@ export default function AuftragForm() {
   const [direction, setDirection] = useState(1);
   const [values, setValues] = useState<OrderRequest>(initial);
   const [errors, setErrors] = useState<Errors>({});
+  const [copied, setCopied] = useState(false);
+  const stepContainerRef = useRef<HTMLDivElement>(null);
+  const stepChanged = useRef(false);
+
+  // Barrierefreiheit: nach Schrittwechsel Fokus auf die neue Überschrift setzen,
+  // damit Screenreader den Kontextwechsel mitbekommen.
+  useEffect(() => {
+    if (stepChanged.current) {
+      stepContainerRef.current?.querySelector("h2")?.focus();
+    }
+  }, [step]);
 
   // Vorauswahl über ?leistung=slug → direkt zu Schritt 2.
   useEffect(() => {
@@ -117,12 +129,14 @@ export default function AuftragForm() {
     const e = validateStep(step, values);
     setErrors(e);
     if (Object.keys(e).length === 0) {
+      stepChanged.current = true;
       setDirection(1);
       setStep((s) => Math.min(s + 1, 3));
     }
   }
 
   function back() {
+    stepChanged.current = true;
     setDirection(-1);
     setErrors({});
     setStep((s) => Math.max(s - 1, 0));
@@ -152,7 +166,7 @@ export default function AuftragForm() {
               <span
                 className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-bold transition-colors duration-300 ${
                   done
-                    ? "bg-emerald-500 text-white"
+                    ? "bg-emerald-600 text-white"
                     : current
                       ? "bg-brand-600 text-white shadow-[var(--shadow-glow)]"
                       : "bg-ink-100 text-ink-500"
@@ -177,11 +191,11 @@ export default function AuftragForm() {
         })}
       </ol>
 
-      <motion.div key={step} {...slide}>
+      <motion.div key={step} {...slide} ref={stepContainerRef}>
         {/* Schritt 1: Leistung wählen */}
         {step === 0 && (
           <div>
-            <h2 className="font-display text-xl font-bold text-ink-900">
+            <h2 tabIndex={-1} className="font-display text-xl font-bold text-ink-900 outline-none">
               Was möchten Sie erledigen?
             </h2>
             <div
@@ -222,7 +236,7 @@ export default function AuftragForm() {
                       <span className="mt-1 block text-xs text-ink-500">
                         {s.price.serviceFee !== null
                           ? s.price.inclusive
-                            ? `${euro(s.price.serviceFee)} – alles inklusive`
+                            ? `${euro(s.price.serviceFee)} inkl. MwSt. – alles inklusive`
                             : `ab ${euro(s.price.serviceFee)}`
                           : "Preis auf Anfrage"}
                       </span>
@@ -237,7 +251,7 @@ export default function AuftragForm() {
         {/* Schritt 2: Details */}
         {step === 1 && (
           <div>
-            <h2 className="font-display text-xl font-bold text-ink-900">
+            <h2 tabIndex={-1} className="font-display text-xl font-bold text-ink-900 outline-none">
               {service ? `${service.name} – ein paar Details` : "Ein paar Details"}
             </h2>
             <fieldset className="mt-5">
@@ -284,6 +298,7 @@ export default function AuftragForm() {
                   value={values.zip}
                   onChange={(e) => set("zip", e.target.value)}
                   aria-invalid={!!errors.zip}
+                  aria-describedby={errors.zip ? "err-zip" : undefined}
                   className={inputClass(!!errors.zip)}
                   placeholder="10115"
                 />
@@ -299,12 +314,14 @@ export default function AuftragForm() {
                   value={values.city}
                   onChange={(e) => set("city", e.target.value)}
                   aria-invalid={!!errors.city}
+                  aria-describedby={errors.city ? "err-city" : undefined}
                   className={inputClass(!!errors.city)}
                   placeholder="Berlin"
                 />
               </div>
             </div>
-            <FieldError id="err-zip" message={errors.zip ?? errors.city} />
+            <FieldError id="err-zip" message={errors.zip} />
+            <FieldError id="err-city" message={errors.city} />
 
             <div className="mt-5">
               <label htmlFor="vehicle" className="mb-1.5 block text-sm font-semibold text-ink-800">
@@ -338,7 +355,7 @@ export default function AuftragForm() {
         {/* Schritt 3: Kontakt */}
         {step === 2 && (
           <div>
-            <h2 className="font-display text-xl font-bold text-ink-900">
+            <h2 tabIndex={-1} className="font-display text-xl font-bold text-ink-900 outline-none">
               Wie erreichen wir Sie?
             </h2>
             <div className="mt-5 space-y-5">
@@ -353,6 +370,7 @@ export default function AuftragForm() {
                   value={values.name}
                   onChange={(e) => set("name", e.target.value)}
                   aria-invalid={!!errors.name}
+                  aria-describedby={errors.name ? "err-name" : undefined}
                   className={inputClass(!!errors.name)}
                   placeholder="Max Mustermann"
                 />
@@ -369,6 +387,7 @@ export default function AuftragForm() {
                   value={values.email}
                   onChange={(e) => set("email", e.target.value)}
                   aria-invalid={!!errors.email}
+                  aria-describedby={errors.email ? "err-email" : undefined}
                   className={inputClass(!!errors.email)}
                   placeholder="max@beispiel.de"
                 />
@@ -385,6 +404,7 @@ export default function AuftragForm() {
                   value={values.phone}
                   onChange={(e) => set("phone", e.target.value)}
                   aria-invalid={!!errors.phone}
+                  aria-describedby={errors.phone ? "err-phone" : undefined}
                   className={inputClass(!!errors.phone)}
                   placeholder="0151 23456789"
                 />
@@ -398,8 +418,8 @@ export default function AuftragForm() {
         {step === 3 && (
           <div>
             <div className="flex items-center gap-3">
-              <CheckCircle2 className="h-7 w-7 text-emerald-500" aria-hidden />
-              <h2 className="font-display text-xl font-bold text-ink-900">
+              <CheckCircle2 className="h-7 w-7 text-emerald-600" aria-hidden />
+              <h2 tabIndex={-1} className="font-display text-xl font-bold text-ink-900 outline-none">
                 Alles beisammen – jetzt absenden
               </h2>
             </div>
@@ -408,6 +428,14 @@ export default function AuftragForm() {
               <div className="flex justify-between gap-4">
                 <dt className="text-ink-500">Leistung</dt>
                 <dd className="font-semibold text-ink-900">{service?.name}</dd>
+              </div>
+              <div className="flex justify-between gap-4">
+                <dt className="text-ink-500">Preis</dt>
+                <dd className="font-display font-bold text-brand-700">
+                  {service?.price.serviceFee != null
+                    ? `${euro(service.price.serviceFee)} inkl. MwSt.${service.price.inclusive ? " – alles inklusive" : ""}`
+                    : "auf Anfrage – Festpreis folgt mit der Bestätigung"}
+                </dd>
               </div>
               <div className="flex justify-between gap-4">
                 <dt className="text-ink-500">Kundenart</dt>
@@ -457,6 +485,14 @@ export default function AuftragForm() {
               </aside>
             )}
 
+            <p className="mt-4 text-xs leading-relaxed text-ink-600">
+              Mit unserer Festpreis-Bestätigung erhalten Sie die Rechnung – Sie zahlen
+              bequem per Überweisung. Informationen zu Ihrem Widerrufsrecht finden Sie{" "}
+              <a href="/widerruf/" className="font-medium text-brand-700 underline underline-offset-2">
+                hier
+              </a>
+              .
+            </p>
             <label className="mt-5 flex cursor-pointer items-start gap-3 text-sm text-ink-700">
               <input
                 type="checkbox"
@@ -523,6 +559,26 @@ export default function AuftragForm() {
                 Per E-Mail senden
               </a>
             </div>
+            <button
+              type="button"
+              onClick={async () => {
+                if (!values.consent) {
+                  setErrors({ consent: "Bitte stimmen Sie der Verarbeitung Ihrer Daten zu." });
+                  return;
+                }
+                try {
+                  await navigator.clipboard.writeText(messageText);
+                  setCopied(true);
+                  setTimeout(() => setCopied(false), 3000);
+                } catch {
+                  /* Clipboard nicht verfügbar – Nutzer kann Text manuell markieren */
+                }
+              }}
+              className="mt-3 flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl border border-ink-200 px-4 py-2.5 text-sm font-medium text-ink-600 transition-colors duration-200 hover:border-brand-300 hover:text-ink-900"
+            >
+              <Copy className="h-4 w-4" aria-hidden />
+              {copied ? "Kopiert! Senden Sie die Nachricht an " + site.contact.email : "Falls sich nichts öffnet: Nachricht kopieren"}
+            </button>
             <p className="mt-3 flex items-center gap-2 text-xs text-ink-500">
               <ShieldCheck className="h-4 w-4 text-brand-600" aria-hidden />
               Öffnet Ihre App mit fertiger Nachricht – Sie behalten die volle Kontrolle.

@@ -11,7 +11,7 @@ const packages = [
     name: "Abmeldung",
     tagline: "Der schnellste Weg zur Stilllegung",
     price: "34,90 €",
-    priceNote: "Komplettpreis inkl. amtlicher Gebühren",
+    priceNote: "Komplettpreis inkl. MwSt. und amtlicher Gebühren",
     features: [
       "Vollständig digital – kein Versand nötig",
       "Meist noch am selben Werktag erledigt",
@@ -26,7 +26,7 @@ const packages = [
     name: "Zulassung Komplett",
     tagline: "Neuzulassung · Umschreibung · Wiederzulassung",
     price: "129,00 €",
-    priceNote: "Komplettpreis inkl. Gebühren, Kennzeichen & Versand",
+    priceNote: "Komplettpreis inkl. MwSt., Gebühren, Kennzeichen & Versand",
     features: [
       "Alle amtlichen Gebühren enthalten",
       "Kennzeichen inkl. Prägung & Siegelung",

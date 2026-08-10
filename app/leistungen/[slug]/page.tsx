@@ -103,7 +103,7 @@ export default async function ServiceDetailPage({
               <dl className="mt-4 space-y-3 text-sm">
                 <div className="flex items-baseline justify-between gap-4">
                   <dt className="text-ink-600">
-                    {p.inclusive ? "Festpreis DeutscheZulassung" : "Arbeitspreis DeutscheZulassung"}
+                    {p.inclusive ? "Festpreis DeutscheZulassung" : "Servicepreis DeutscheZulassung"}
                   </dt>
                   <dd className="text-right font-display text-lg font-bold text-brand-700">
                     {p.serviceFee !== null
@@ -151,7 +151,7 @@ export default async function ServiceDetailPage({
                 </p>
               )}
               {p.note && <p className="mt-3 text-xs text-ink-500">{p.note}</p>}
-              <p className="mt-3 text-xs leading-relaxed text-ink-400">{priceDisclaimer}</p>
+              <p className="mt-3 text-xs leading-relaxed text-ink-600">{priceDisclaimer}</p>
 
               <div className="mt-6 space-y-3">
                 <Link

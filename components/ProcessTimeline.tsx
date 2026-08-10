@@ -79,7 +79,7 @@ function VisualBestaetigen() {
         <div className="mt-1 h-px w-32 bg-ink-300" />
         <p className="mt-1 text-[10px] font-medium text-ink-400">Digitale Vollmacht</p>
       </div>
-      <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-500 text-white">
+      <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-600 text-white">
         <Check className="h-4 w-4" />
       </span>
     </div>
@@ -93,7 +93,7 @@ function VisualPruefung() {
       {items.map((t, i) => (
         <li key={t} className="flex items-center gap-2 text-xs font-medium text-ink-700">
           <span
-            className="animate-tick flex h-4.5 w-4.5 items-center justify-center rounded-full bg-emerald-500 text-white"
+            className="animate-tick flex h-4.5 w-4.5 items-center justify-center rounded-full bg-emerald-600 text-white"
             style={{ animationDelay: `${i * 0.55}s`, height: "1.125rem", width: "1.125rem" }}
           >
             <Check className="h-3 w-3" />
@@ -144,7 +144,7 @@ function VisualZustellung() {
 function VisualFertig() {
   return (
     <div className="flex items-center gap-3" aria-hidden>
-      <span className="animate-pulsering flex h-10 w-10 items-center justify-center rounded-full bg-emerald-500 text-white">
+      <span className="animate-pulsering flex h-10 w-10 items-center justify-center rounded-full bg-emerald-600 text-white">
         <BadgeCheck className="h-5 w-5" />
       </span>
       <span className="rounded-lg border-2 border-ink-800 bg-white px-3 py-1 font-display text-sm font-bold tracking-widest text-ink-900">
@@ -173,7 +173,7 @@ const stations = [
   {
     icon: PenLine,
     title: "Auftrag digital bestätigen",
-    text: "Sie erhalten unser verbindliches Angebot samt Vollmacht digital. Ein Klick bzw. eine Unterschrift – und wir legen los.",
+    text: "Sie erhalten unsere Festpreis-Bestätigung samt Vollmacht digital. Eine Unterschrift – und wir legen los.",
     visual: VisualBestaetigen,
   },
   {
@@ -254,7 +254,7 @@ export default function ProcessTimeline() {
             <span
               className={`absolute left-6 top-8 z-10 flex h-12 w-12 -translate-x-1/2 items-center justify-center rounded-2xl text-white shadow-lg lg:left-1/2 ${
                 i === stations.length - 1
-                  ? "bg-emerald-500 shadow-emerald-500/30"
+                  ? "bg-emerald-600 shadow-emerald-500/30"
                   : "bg-brand-600 shadow-brand-600/30"
               } ${reduced ? "" : "animate-pulsering"}`}
               style={{ animationDelay: `${i * 0.3}s` }}

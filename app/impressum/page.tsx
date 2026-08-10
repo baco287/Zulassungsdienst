@@ -67,12 +67,7 @@ export default function ImpressumPage() {
         </p>
       </section>
       <section>
-        <h2>EU-Streitschlichtung</h2>
-        <p>
-          Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung
-          (OS) bereit: https://ec.europa.eu/consumers/odr/. Unsere E-Mail-Adresse
-          finden Sie oben im Impressum.
-        </p>
+        <h2>Verbraucherstreitbeilegung</h2>
         <p>
           Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor
           einer Verbraucherschlichtungsstelle teilzunehmen.

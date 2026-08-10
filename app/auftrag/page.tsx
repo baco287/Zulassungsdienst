@@ -18,7 +18,7 @@ export default function AuftragPage() {
             Online-Auftrag
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-ink-600">
-            Zwei Minuten, unverbindlich: Wir melden uns mit einem verbindlichen Angebot
+            Zwei Minuten, unverbindlich: Wir melden uns mit Ihrer Festpreis-Bestätigung
             und der Liste der nächsten Schritte.
           </p>
           <div className="mt-8 rounded-2xl border border-ink-200 bg-white p-6 shadow-card sm:p-8">
