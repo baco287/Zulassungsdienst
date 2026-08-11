@@ -499,6 +499,7 @@ export default function AuftragForm() {
                 checked={values.consent}
                 onChange={(e) => set("consent", e.target.checked)}
                 aria-invalid={!!errors.consent}
+                aria-describedby={errors.consent ? "err-consent" : undefined}
                 className="mt-0.5 h-5 w-5 shrink-0 cursor-pointer rounded border-ink-300 accent-brand-600"
               />
               <span>
@@ -516,48 +517,54 @@ export default function AuftragForm() {
             <FieldError id="err-consent" message={errors.consent} />
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-              <a
-                href={values.consent ? whatsAppLink(messageText) : undefined}
-                onClick={(e) => {
-                  if (!values.consent) {
-                    e.preventDefault();
-                    setErrors({ consent: "Bitte stimmen Sie der Verarbeitung Ihrer Daten zu." });
+              {/* Sende-CTAs: bei fehlendem Consent echte, fokussierbare Buttons
+                  mit aria-disabled (statt hrefloser Anker) – barrierefrei. */}
+              {values.consent ? (
+                <a
+                  href={whatsAppLink(messageText)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-xl bg-brand-600 px-6 py-4 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
+                >
+                  <MessageCircle className="h-5 w-5" aria-hidden />
+                  Per WhatsApp senden
+                </a>
+              ) : (
+                <button
+                  type="button"
+                  aria-disabled="true"
+                  onClick={() =>
+                    setErrors({ consent: "Bitte stimmen Sie der Verarbeitung Ihrer Daten zu." })
                   }
-                }}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`flex flex-1 items-center justify-center gap-2 rounded-xl px-6 py-4 font-display font-semibold text-white transition-colors duration-200 ${
-                  values.consent
-                    ? "cursor-pointer bg-brand-600 hover:bg-brand-700"
-                    : "cursor-not-allowed bg-ink-300"
-                }`}
-              >
-                <MessageCircle className="h-5 w-5" aria-hidden />
-                Per WhatsApp senden
-              </a>
-              <a
-                href={
-                  values.consent
-                    ? `mailto:${site.contact.email}?subject=${encodeURIComponent(
-                        `Auftragsanfrage: ${service?.name ?? "Kfz-Zulassung"}`
-                      )}&body=${encodeURIComponent(messageText)}`
-                    : undefined
-                }
-                onClick={(e) => {
-                  if (!values.consent) {
-                    e.preventDefault();
-                    setErrors({ consent: "Bitte stimmen Sie der Verarbeitung Ihrer Daten zu." });
+                  className="flex flex-1 cursor-not-allowed items-center justify-center gap-2 rounded-xl bg-ink-300 px-6 py-4 font-display font-semibold text-white"
+                >
+                  <MessageCircle className="h-5 w-5" aria-hidden />
+                  Per WhatsApp senden
+                </button>
+              )}
+              {values.consent ? (
+                <a
+                  href={`mailto:${site.contact.email}?subject=${encodeURIComponent(
+                    `Auftragsanfrage: ${service?.name ?? "Kfz-Zulassung"}`
+                  )}&body=${encodeURIComponent(messageText)}`}
+                  className="flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-xl border-2 border-ink-300 bg-white px-6 py-4 font-display font-semibold text-ink-800 transition-colors duration-200 hover:border-brand-400 hover:bg-brand-50"
+                >
+                  <Mail className="h-5 w-5" aria-hidden />
+                  Per E-Mail senden
+                </a>
+              ) : (
+                <button
+                  type="button"
+                  aria-disabled="true"
+                  onClick={() =>
+                    setErrors({ consent: "Bitte stimmen Sie der Verarbeitung Ihrer Daten zu." })
                   }
-                }}
-                className={`flex flex-1 items-center justify-center gap-2 rounded-xl border-2 px-6 py-4 font-display font-semibold transition-colors duration-200 ${
-                  values.consent
-                    ? "cursor-pointer border-ink-300 bg-white text-ink-800 hover:border-brand-400 hover:bg-brand-50"
-                    : "cursor-not-allowed border-ink-200 bg-ink-50 text-ink-400"
-                }`}
-              >
-                <Mail className="h-5 w-5" aria-hidden />
-                Per E-Mail senden
-              </a>
+                  className="flex flex-1 cursor-not-allowed items-center justify-center gap-2 rounded-xl border-2 border-ink-200 bg-ink-50 px-6 py-4 font-display font-semibold text-ink-500"
+                >
+                  <Mail className="h-5 w-5" aria-hidden />
+                  Per E-Mail senden
+                </button>
+              )}
             </div>
             <button
               type="button"

@@ -5,7 +5,7 @@ import CTASection from "@/components/CTASection";
 export const metadata: Metadata = {
   title: "So funktioniert’s – Ablauf der Online-Zulassung",
   description:
-    "In 7 einfachen Schritten zur fertigen Kfz-Zulassung: So läuft Ihr Auftrag bei DeutscheZulassung ab – von der Auswahl bis zur Zustellung von Kennzeichen und Papieren.",
+    "Schritt für Schritt zur fertigen Kfz-Zulassung: So läuft Ihr Auftrag bei DeutscheZulassung ab – von der Auswahl bis zur Zustellung von Kennzeichen und Papieren.",
 };
 
 export default function AblaufPage() {
@@ -18,7 +18,7 @@ export default function AblaufPage() {
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-ink-600">
             Vom ersten Klick bis zum Kennzeichen an Ihrer Tür: Ihr Zulassungsauftrag
-            in sieben Schritten – komplett digital, mit persönlicher Betreuung.
+            im Detail – komplett digital, mit persönlicher Betreuung.
           </p>
         </div>
       </section>

@@ -38,6 +38,12 @@ export const metadata: Metadata = {
     type: "website",
     locale: site.locale,
     siteName: site.name,
+    url: site.url,
+    title: `${site.name} – ${site.claim}`,
+    description: site.description,
+  },
+  twitter: {
+    card: "summary_large_image",
     title: `${site.name} – ${site.claim}`,
     description: site.description,
   },

@@ -147,7 +147,7 @@ export default async function ServiceDetailPage({
               </dl>
               {!p.verified && (
                 <p className="mt-4 rounded-lg bg-accent-400/15 px-3 py-2 text-xs font-medium text-accent-600">
-                  Unverbindliche Orientierung – verbindliches Angebot vor Beauftragung.
+                  Unverbindliche Orientierung – verbindliche Festpreis-Bestätigung vor Beauftragung.
                 </p>
               )}
               {p.note && <p className="mt-3 text-xs text-ink-500">{p.note}</p>}

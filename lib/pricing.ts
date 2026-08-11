@@ -34,7 +34,7 @@ export const plateCosts: [number, number] = [20, 35];
 
 /** Hinweistext, der überall neben Preisangaben erscheint. */
 export const priceDisclaimer =
-  "Alle Preise inkl. MwSt. Bei Komplettpreisen sind amtliche Gebühren, Kennzeichen und Versand bereits enthalten. Sonderfälle (z. B. Sondergrößen, Express, auswärtige Behörden) weisen wir vor Beauftragung transparent aus – Sie erhalten immer ein verbindliches Angebot.";
+  "Alle Preise inkl. MwSt. Bei Komplettpreisen sind amtliche Gebühren, Kennzeichen und Versand bereits enthalten. Sonderfälle (z. B. Sondergrößen, Express, auswärtige Behörden) weisen wir vorab transparent aus – Sie erhalten immer eine verbindliche Festpreis-Bestätigung.";
 
 /** Formatiert einen Betrag als deutschen Euro-String. */
 export function euro(value: number): string {
