@@ -64,7 +64,7 @@ const jsonLd = {
       description: site.description,
       url: site.url,
       logo: `${site.url}/icon.svg`,
-      image: `${site.url}/opengraph-image.png`,
+      image: `${site.url}/opengraph-image`,
       email: site.contact.email,
       telephone: site.contact.phone,
       address: {
