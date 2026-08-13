@@ -3,16 +3,21 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   ArrowRight,
+  BookOpen,
   CheckCircle2,
   Clock,
   FileCheck2,
   Info,
   MessageCircle,
 } from "lucide-react";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import FaqAccordion from "@/components/FaqAccordion";
 import Reveal from "@/components/Reveal";
 import { getService, services, categoryLabels } from "@/lib/services";
+import { getServiceContent } from "@/lib/serviceContent";
+import { getGuide } from "@/lib/ratgeber";
 import { euro, euroRange, priceDisclaimer } from "@/lib/pricing";
-import { whatsAppLink } from "@/lib/site";
+import { site, whatsAppLink } from "@/lib/site";
 
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
@@ -26,9 +31,11 @@ export async function generateMetadata({
   const { slug } = await params;
   const service = getService(slug);
   if (!service) return {};
+  const content = getServiceContent(slug);
   return {
     title: `${service.name} online beauftragen`,
     description: service.teaser,
+    keywords: content?.keywords,
   };
 }
 
@@ -42,12 +49,64 @@ export default async function ServiceDetailPage({
   if (!service) notFound();
 
   const p = service.price;
+  const content = getServiceContent(slug);
+  const relatedServices =
+    content?.related.map((s) => getService(s)).filter((s) => s !== undefined) ?? [];
+  const relatedGuides =
+    content?.guides.map((g) => getGuide(g)).filter((g) => g !== undefined) ?? [];
+
+  const pageUrl = `${site.url}/leistungen/${service.slug}/`;
+
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: service.name,
+    serviceType: service.name,
+    description: service.teaser,
+    url: pageUrl,
+    areaServed: { "@type": "Country", name: "Deutschland" },
+    provider: {
+      "@type": "LocalBusiness",
+      name: site.name,
+      url: site.url,
+      telephone: site.contact.phone,
+    },
+    ...(p.serviceFee !== null && p.verified
+      ? {
+          offers: {
+            "@type": "Offer",
+            price: p.serviceFee.toFixed(2),
+            priceCurrency: "EUR",
+            url: pageUrl,
+            description: p.note,
+          },
+        }
+      : {}),
+  };
+
+  const faqJsonLd = content?.faq.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: content.faq.map((f) => ({
+          "@type": "Question",
+          name: f.question,
+          acceptedAnswer: { "@type": "Answer", text: f.answer },
+        })),
+      }
+    : null;
 
   return (
     <>
       <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-14 sm:py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <p className="text-sm font-semibold uppercase tracking-wider text-brand-700">
+          <Breadcrumbs
+            items={[
+              { name: "Leistungen", href: "/leistungen/" },
+              { name: service.shortName ?? service.name },
+            ]}
+          />
+          <p className="mt-6 text-sm font-semibold uppercase tracking-wider text-brand-700">
             {categoryLabels[service.category]}
           </p>
           <h1 className="mt-2 font-display text-4xl font-bold text-ink-900 sm:text-5xl">
@@ -92,6 +151,99 @@ export default async function ServiceDetailPage({
                 </p>
               </div>
             </Reveal>
+
+            {content?.sections.map((section) => (
+              <Reveal key={section.heading}>
+                <div>
+                  <h2 className="font-display text-2xl font-bold text-ink-900">
+                    {section.heading}
+                  </h2>
+                  {section.paragraphs.map((para) => (
+                    <p key={para.slice(0, 40)} className="mt-4 leading-relaxed text-ink-700">
+                      {para}
+                    </p>
+                  ))}
+                  {section.list && (
+                    <ul className="mt-4 space-y-2.5">
+                      {section.list.map((item) => (
+                        <li key={item} className="flex items-start gap-3 text-ink-700">
+                          <CheckCircle2
+                            className="mt-0.5 h-5 w-5 shrink-0 text-brand-600"
+                            aria-hidden
+                          />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </Reveal>
+            ))}
+
+            {content && content.faq.length > 0 && (
+              <Reveal>
+                <div>
+                  <h2 className="font-display text-2xl font-bold text-ink-900">
+                    Häufige Fragen – {service.shortName ?? service.name}
+                  </h2>
+                  <div className="mt-5">
+                    <FaqAccordion items={content.faq} />
+                  </div>
+                </div>
+              </Reveal>
+            )}
+
+            {relatedGuides.length > 0 && (
+              <Reveal>
+                <div>
+                  <h2 className="flex items-center gap-2 font-display text-2xl font-bold text-ink-900">
+                    <BookOpen className="h-6 w-6 text-brand-700" aria-hidden />
+                    Passende Ratgeber-Artikel
+                  </h2>
+                  <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+                    {relatedGuides.map((guide) => (
+                      <li key={guide.slug}>
+                        <Link
+                          href={`/ratgeber/${guide.slug}/`}
+                          className="group flex h-full flex-col rounded-xl border border-ink-200 bg-white p-4 transition-colors duration-200 hover:border-brand-300 hover:bg-brand-50/50"
+                        >
+                          <span className="font-display font-semibold text-ink-900 group-hover:text-brand-800">
+                            {guide.title}
+                          </span>
+                          <span className="mt-2 flex items-center gap-1 text-sm font-medium text-brand-700">
+                            Artikel lesen
+                            <ArrowRight className="h-3.5 w-3.5" aria-hidden />
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </Reveal>
+            )}
+
+            {relatedServices.length > 0 && (
+              <Reveal>
+                <div>
+                  <h2 className="font-display text-2xl font-bold text-ink-900">
+                    Verwandte Leistungen
+                  </h2>
+                  <ul className="mt-5 flex flex-wrap gap-3">
+                    {relatedServices.map((rel) => (
+                      <li key={rel.slug}>
+                        <Link
+                          href={`/leistungen/${rel.slug}/`}
+                          className="flex items-center gap-2 rounded-xl border border-ink-200 bg-white px-4 py-2.5 text-sm font-medium text-ink-800 transition-colors duration-200 hover:border-brand-300 hover:bg-brand-50 hover:text-brand-800"
+                        >
+                          {rel.shortName ?? rel.name}
+                          <ArrowRight className="h-3.5 w-3.5 text-brand-700" aria-hidden />
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </Reveal>
+            )}
           </div>
 
           {/* Preis-Box */}
@@ -175,6 +327,17 @@ export default async function ServiceDetailPage({
           </Reveal>
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
     </>
   );
 }

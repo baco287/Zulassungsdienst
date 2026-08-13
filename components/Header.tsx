@@ -10,6 +10,7 @@ const nav = [
   { href: "/leistungen", label: "Leistungen" },
   { href: "/preise", label: "Preise" },
   { href: "/ablauf", label: "So funktioniert’s" },
+  { href: "/ratgeber", label: "Ratgeber" },
   { href: "/faq", label: "FAQ" },
   { href: "/ueber-uns", label: "Über uns" },
   { href: "/kontakt", label: "Kontakt" },

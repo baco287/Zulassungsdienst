@@ -1,0 +1,37 @@
+# DeutscheZulassung
+
+> DeutscheZulassung (deutschezulassung.de) ist ein digitaler Kfz-Zulassungsdienst für ganz Deutschland. Wir übernehmen Neuzulassung, Ummeldung, Abmeldung, Halterwechsel und Kennzeichen-Services komplett – ohne Behördengang und ohne Termin. Komplettpreis 129 € je Zulassungsvorgang (amtliche Gebühren, Kennzeichen und versicherter Versand inklusive), Abmeldung 34,90 €.
+
+Kunden reichen Unterlagen als Foto oder Scan ein (Formular oder WhatsApp), erteilen eine digitale
+Vollmacht und erhalten Kennzeichen und Papiere per versichertem Versand. Typische Dauer: 1–3 Werktage,
+Abmeldungen meist am selben Werktag. Kein Personalausweis mit Online-Funktion (eID) erforderlich.
+
+## Leistungen
+
+- [Neuzulassung](https://deutschezulassung.de/leistungen/neuzulassung/): Neu- oder Importfahrzeug erstmals zulassen, 129 € komplett
+- [Ummeldung](https://deutschezulassung.de/leistungen/ummeldung/): Fahrzeug nach Umzug ummelden, 129 € komplett
+- [Abmeldung](https://deutschezulassung.de/leistungen/abmeldung/): Außerbetriebsetzung, 34,90 €, meist taggleich
+- [Halterwechsel / Umschreibung](https://deutschezulassung.de/leistungen/halterwechsel/): Gebrauchtwagen auf neuen Halter umschreiben, 129 € komplett
+- [Wiederzulassung](https://deutschezulassung.de/leistungen/wiederzulassung/): stillgelegtes Fahrzeug wieder anmelden, 129 € komplett
+- [Wunschkennzeichen](https://deutschezulassung.de/leistungen/wunschkennzeichen/): Reservierung und Prägung, 34,90 € Zusatz
+- [Kurzzeitkennzeichen](https://deutschezulassung.de/leistungen/kurzzeitkennzeichen/): 5-Tages-Kennzeichen für Überführung und Probefahrt
+- [Zulassungsservice für Autohäuser & Gewerbe](https://deutschezulassung.de/leistungen/gewerbekunden/): Staffelpreise und Sammelabwicklung
+
+## Ratgeber
+
+- [Was kostet eine Kfz-Zulassung?](https://deutschezulassung.de/ratgeber/was-kostet-eine-kfz-zulassung/): alle Gebühren im Überblick
+- [Auto anmelden: benötigte Unterlagen](https://deutschezulassung.de/ratgeber/auto-anmelden-unterlagen/): vollständige Checkliste
+- [Auto ummelden nach Umzug](https://deutschezulassung.de/ratgeber/auto-ummelden-nach-umzug/): Fristen, Kosten, Kennzeichenmitnahme
+- [Auto abmelden](https://deutschezulassung.de/ratgeber/auto-abmelden-so-gehts/): Außerbetriebsetzung Schritt für Schritt
+- [eVB-Nummer](https://deutschezulassung.de/ratgeber/evb-nummer/): elektronische Versicherungsbestätigung erklärt
+- [i-Kfz: Auto online zulassen](https://deutschezulassung.de/ratgeber/i-kfz-online-zulassung/): Voraussetzungen und Grenzen
+- [Kennzeichen mitnehmen](https://deutschezulassung.de/ratgeber/kennzeichen-mitnehmen/): Regeln bei Umzug und Autokauf
+- [Glossar der Kfz-Zulassung](https://deutschezulassung.de/ratgeber/kfz-zulassung-glossar/): alle Begriffe von A bis Z
+
+## Weitere Seiten
+
+- [Preise](https://deutschezulassung.de/preise/): transparente Preisübersicht
+- [So funktioniert’s](https://deutschezulassung.de/ablauf/): der Ablauf in 7 Schritten
+- [FAQ](https://deutschezulassung.de/faq/): häufige Fragen und Antworten
+- [Online-Auftrag](https://deutschezulassung.de/auftrag/): Zulassung direkt beauftragen
+- [Kontakt](https://deutschezulassung.de/kontakt/): E-Mail, Telefon und WhatsApp

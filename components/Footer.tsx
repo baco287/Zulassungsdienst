@@ -52,6 +52,7 @@ export default function Footer() {
             <li><Link href="/ueber-uns" className="transition-colors duration-200 hover:text-white">Über uns</Link></li>
             <li><Link href="/ablauf" className="transition-colors duration-200 hover:text-white">So funktioniert’s</Link></li>
             <li><Link href="/preise" className="transition-colors duration-200 hover:text-white">Preise</Link></li>
+            <li><Link href="/ratgeber" className="transition-colors duration-200 hover:text-white">Ratgeber</Link></li>
             <li><Link href="/faq" className="transition-colors duration-200 hover:text-white">Häufige Fragen</Link></li>
             <li><Link href="/kontakt" className="transition-colors duration-200 hover:text-white">Kontakt</Link></li>
           </ul>

@@ -1,11 +1,30 @@
 import type { Metadata } from "next";
 import ProcessTimeline from "@/components/ProcessTimeline";
 import CTASection from "@/components/CTASection";
+import { processSteps } from "@/lib/processSteps";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "So funktioniert’s – Ablauf der Online-Zulassung",
   description:
     "Schritt für Schritt zur fertigen Kfz-Zulassung: So läuft Ihr Auftrag bei DeutscheZulassung ab – von der Auswahl bis zur Zustellung von Kennzeichen und Papieren.",
+};
+
+const howToJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "Kfz-Zulassung online beauftragen – so funktioniert’s",
+  description:
+    "In 7 Schritten zur fertigen Kfz-Zulassung ohne Behördengang: Leistung wählen, Unterlagen digital einreichen, Vollmacht erteilen – den Rest übernimmt DeutscheZulassung.",
+  inLanguage: "de",
+  totalTime: "P3D",
+  step: processSteps.map((s, i) => ({
+    "@type": "HowToStep",
+    position: i + 1,
+    name: s.title,
+    text: s.text,
+    url: `${site.url}/ablauf/`,
+  })),
 };
 
 export default function AblaufPage() {
@@ -30,6 +49,11 @@ export default function AblaufPage() {
       </section>
 
       <CTASection />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
+      />
     </>
   );
 }

@@ -2,9 +2,13 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import type { FaqItem } from "@/lib/types";
 
-export default function FaqAccordion({ items }: { items: FaqItem[] }) {
+interface AccordionItem {
+  question: string;
+  answer: string;
+}
+
+export default function FaqAccordion({ items }: { items: AccordionItem[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (

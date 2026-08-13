@@ -14,6 +14,7 @@ import {
   SearchCheck,
   Truck,
 } from "lucide-react";
+import { processSteps } from "@/lib/processSteps";
 
 /**
  * Grafische Timeline des Zulassungsablaufs („So funktioniert’s“):
@@ -157,50 +158,17 @@ function VisualFertig() {
 
 /* ---------- Stationen ---------- */
 
-const stations = [
-  {
-    icon: ClipboardList,
-    title: "Dienstleistung auswählen",
-    text: "Neuzulassung, Ummeldung, Abmeldung oder mehr – Sie wählen die passende Leistung und sehen sofort, welche Unterlagen benötigt werden.",
-    visual: VisualAuswahl,
-  },
-  {
-    icon: FileUp,
-    title: "Daten eingeben & Dokumente hochladen",
-    text: "Fahrzeug- und Kontaktdaten eintragen, Unterlagen als Foto oder Scan übermitteln – per Formular oder bequem über WhatsApp.",
-    visual: VisualUpload,
-  },
-  {
-    icon: PenLine,
-    title: "Auftrag digital bestätigen",
-    text: "Sie erhalten unsere Festpreis-Bestätigung samt Vollmacht digital. Eine Unterschrift – und wir legen los.",
-    visual: VisualBestaetigen,
-  },
-  {
-    icon: SearchCheck,
-    title: "Wir prüfen Ihre Unterlagen",
-    text: "Ihre persönliche Ansprechperson kontrolliert alles auf Vollständigkeit und klärt offene Punkte direkt mit Ihnen.",
-    visual: VisualPruefung,
-  },
-  {
-    icon: BadgeCheck,
-    title: "Zulassung wird durchgeführt",
-    text: "Wir führen den Vorgang bei der zuständigen Zulassungsbehörde durch – digital über das i-Kfz-Verfahren oder, wo nötig, persönlich vor Ort.",
-    visual: VisualBehoerde,
-  },
-  {
-    icon: Package,
-    title: "Kennzeichen & Dokumente kommen zu Ihnen",
-    text: "Fertige Papiere und geprägte, gesiegelte Kennzeichen werden versichert versendet oder – regional – persönlich vorbeigebracht.",
-    visual: VisualZustellung,
-  },
-  {
-    icon: PartyPopper,
-    title: "Fertig – ohne einen einzigen Behördengang",
-    text: "Sie erhalten die Abschlussbestätigung. Bei Abmeldungen ist das oft schon am selben Werktag der Fall.",
-    visual: VisualFertig,
-  },
+const stationVisuals = [
+  { icon: ClipboardList, visual: VisualAuswahl },
+  { icon: FileUp, visual: VisualUpload },
+  { icon: PenLine, visual: VisualBestaetigen },
+  { icon: SearchCheck, visual: VisualPruefung },
+  { icon: BadgeCheck, visual: VisualBehoerde },
+  { icon: Package, visual: VisualZustellung },
+  { icon: PartyPopper, visual: VisualFertig },
 ] as const;
+
+const stations = processSteps.map((step, i) => ({ ...step, ...stationVisuals[i] }));
 
 /* ---------- Timeline ---------- */
 
