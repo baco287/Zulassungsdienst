@@ -172,6 +172,19 @@ h1, h2, h3, h4 {
 }
 .animate-sign { stroke-dasharray: 60; animation: signdraw 3.2s ease-in-out infinite; }
 
+/* Chat-Illustration: Nachricht klappt herein, Tipp-Punkte hüpfen */
+@keyframes msgin {
+  0% { opacity: 0; transform: translateY(10px) scale(0.96); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+.animate-msg-in { animation: msgin 0.32s cubic-bezier(0.21, 0.65, 0.36, 1) both; }
+
+@keyframes typingdot {
+  0%, 60%, 100% { opacity: 0.3; transform: translateY(0); }
+  30% { opacity: 1; transform: translateY(-3px); }
+}
+.animate-typing { animation: typingdot 1.1s ease-in-out infinite; }
+
 /* Marquee-/Puls-Animationen deaktivieren, wenn reduzierte Bewegung gewünscht */
 @media (prefers-reduced-motion: reduce) {
   html {

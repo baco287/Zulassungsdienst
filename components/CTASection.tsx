@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { MessageCircle } from "lucide-react";
 import { whatsAppLink } from "@/lib/site";
 import Reveal from "./Reveal";
+import WhatsAppIcon from "./WhatsAppIcon";
 
 export default function CTASection() {
   return (
@@ -27,7 +27,7 @@ export default function CTASection() {
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 rounded-xl border border-ink-700 px-8 py-4 font-display text-base font-semibold text-white transition-colors duration-200 hover:border-brand-500 hover:bg-ink-900"
           >
-            <MessageCircle className="h-5 w-5" aria-hidden />
+            <WhatsAppIcon className="h-5 w-5" />
             Per WhatsApp
           </a>
         </div>

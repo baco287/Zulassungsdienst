@@ -3,8 +3,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, MessageCircle, CarFront } from "lucide-react";
+import { Menu, X, CarFront } from "lucide-react";
 import { site, whatsAppLink } from "@/lib/site";
+import WhatsAppIcon from "./WhatsAppIcon";
 
 const nav = [
   { href: "/leistungen", label: "Leistungen" },
@@ -64,7 +65,7 @@ export default function Header() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-ink-200 px-3 py-2 text-sm font-medium text-ink-700 transition-colors duration-200 hover:border-brand-300 hover:bg-brand-50 hover:text-brand-800"
           >
-            <MessageCircle className="h-4 w-4" aria-hidden />
+            <WhatsAppIcon className="h-4 w-4" />
             WhatsApp
           </a>
           <Link
@@ -110,7 +111,7 @@ export default function Header() {
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 rounded-lg border border-ink-200 px-4 py-3 text-base font-medium text-ink-700"
             >
-              <MessageCircle className="h-5 w-5" aria-hidden />
+              <WhatsAppIcon className="h-5 w-5" />
               Per WhatsApp schreiben
             </a>
             <Link

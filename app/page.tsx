@@ -11,7 +11,6 @@ import {
   Laptop,
   Mail,
   MapPin,
-  MessageCircle,
   MessagesSquare,
   Phone,
   Rocket,
@@ -25,6 +24,7 @@ import FaqAccordion from "@/components/FaqAccordion";
 import CTASection from "@/components/CTASection";
 import Maxx from "@/components/Maxx";
 import Reveal from "@/components/Reveal";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
 import { sortedServices } from "@/lib/services";
 import { faqItems } from "@/lib/faq";
 import { site, whatsAppLink } from "@/lib/site";
@@ -224,8 +224,8 @@ export default function HomePage() {
                   fotografieren Sie Ihre Unterlagen ab – fertig. Zum selben Festpreis.
                 </p>
               </div>
-              <span className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-brand-700 px-6 py-3.5 font-display font-semibold text-white transition-colors duration-200 group-hover:bg-brand-800">
-                <MessageCircle className="h-5 w-5" aria-hidden />
+              <span className="inline-flex shrink-0 items-center gap-2.5 rounded-xl bg-[#25D366] px-6 py-3.5 font-display font-semibold text-white transition-colors duration-200 group-hover:bg-[#1DA851]">
+                <WhatsAppIcon className="h-5 w-5" />
                 Mehr erfahren
               </span>
             </Link>
@@ -498,8 +498,8 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="block h-full cursor-pointer rounded-2xl border border-ink-200 bg-white p-6 text-center shadow-card transition-all duration-200 hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-card-hover"
               >
-                <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-brand-600">
-                  <MessageCircle className="h-6 w-6" aria-hidden />
+                <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-[#25D366]/10">
+                  <WhatsAppIcon className="h-6 w-6" color="brand" />
                 </span>
                 <h3 className="mt-4 font-display text-base font-bold text-ink-900">WhatsApp</h3>
                 <p className="mt-2 text-sm text-ink-600">{site.contact.hours}</p>

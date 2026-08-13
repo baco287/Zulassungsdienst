@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Clock4, MessageCircle, ShieldCheck } from "lucide-react";
+import { Clock4, ShieldCheck } from "lucide-react";
 import AuftragForm from "@/components/AuftragForm";
 import { site, whatsAppLink } from "@/lib/site";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
 
 export const metadata: Metadata = {
   title: "Online-Auftrag – Zulassung jetzt beauftragen",
@@ -29,7 +30,7 @@ export default function AuftragPage() {
         <aside className="space-y-5 lg:pt-24">
           <div className="rounded-2xl border border-ink-200 bg-white p-6 shadow-card">
             <h2 className="flex items-center gap-2 font-display text-base font-bold text-ink-900">
-              <MessageCircle className="h-5 w-5 text-brand-700" aria-hidden />
+              <WhatsAppIcon className="h-5 w-5 text-brand-700" />
               Lieber direkt chatten?
             </h2>
             <p className="mt-2 text-sm text-ink-600">

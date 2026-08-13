@@ -15,6 +15,7 @@ import ChatMockup from "@/components/ChatMockup";
 import FaqAccordion from "@/components/FaqAccordion";
 import Maxx from "@/components/Maxx";
 import Reveal from "@/components/Reveal";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
 import { getService } from "@/lib/services";
 import { whatsappSteps } from "@/lib/whatsappFlow";
 import { euro } from "@/lib/pricing";
@@ -169,9 +170,9 @@ export default function WhatsAppZulassungPage() {
                   href={chatCta}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 rounded-xl bg-brand-700 px-7 py-4 font-display text-base font-semibold text-white shadow-lg transition-colors duration-200 hover:bg-brand-800"
+                  className="flex items-center justify-center gap-2.5 rounded-xl bg-[#25D366] px-7 py-4 font-display text-base font-semibold text-white shadow-lg transition-colors duration-200 hover:bg-[#1DA851]"
                 >
-                  <MessageCircle className="h-5 w-5" aria-hidden />
+                  <WhatsAppIcon className="h-5 w-5" />
                   Chat jetzt starten
                 </a>
                 <Link
@@ -330,9 +331,9 @@ export default function WhatsAppZulassungPage() {
               href={chatCta}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-8 py-4 font-display text-base font-semibold text-white shadow-lg transition-colors duration-200 hover:bg-brand-500"
+              className="flex items-center justify-center gap-2.5 rounded-xl bg-[#25D366] px-8 py-4 font-display text-base font-semibold text-white shadow-lg transition-colors duration-200 hover:bg-[#1DA851]"
             >
-              <MessageCircle className="h-5 w-5" aria-hidden />
+              <WhatsAppIcon className="h-5 w-5" />
               Chat starten
             </a>
           </div>

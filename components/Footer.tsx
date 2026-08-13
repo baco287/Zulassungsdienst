@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { CarFront, Mail, MessageCircle, Phone, ShieldCheck } from "lucide-react";
+import { CarFront, Mail, Phone, ShieldCheck } from "lucide-react";
 import { site, whatsAppLink } from "@/lib/site";
 import { sortedServices } from "@/lib/services";
+import WhatsAppIcon from "./WhatsAppIcon";
 
 export default function Footer() {
   const topServices = sortedServices.filter((s) => s.category === "zulassung").slice(0, 6);
@@ -91,7 +92,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 transition-colors duration-200 hover:text-white"
               >
-                <MessageCircle className="h-4 w-4 text-brand-400" aria-hidden />
+                <WhatsAppIcon className="h-4 w-4 text-brand-400" />
                 WhatsApp-Chat
               </a>
             </li>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Clock4, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Clock4, Mail, MapPin, Phone } from "lucide-react";
 import { site, whatsAppLink } from "@/lib/site";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
 
 export const metadata: Metadata = {
   title: "Kontakt – wir sind für Sie da",
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
 
 const channels = [
   {
-    icon: MessageCircle,
+    icon: WhatsAppIcon,
     title: "WhatsApp",
     text: "Der schnellste Weg: Frage stellen, Fotos senden, Antwort erhalten.",
     href: whatsAppLink("Hallo DeutscheZulassung, ich habe eine Frage."),

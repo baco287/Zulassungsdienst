@@ -8,8 +8,7 @@ import {
   Clock,
   FileCheck2,
   Info,
-  MessageCircle,
-} from "lucide-react";
+  } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FaqAccordion from "@/components/FaqAccordion";
 import Reveal from "@/components/Reveal";
@@ -18,6 +17,7 @@ import { getServiceContent } from "@/lib/serviceContent";
 import { getGuide } from "@/lib/ratgeber";
 import { euro, euroRange, priceDisclaimer } from "@/lib/pricing";
 import { site, whatsAppLink } from "@/lib/site";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
 
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
@@ -334,7 +334,7 @@ export default async function ServiceDetailPage({
                   rel="noopener noreferrer"
                   className="flex w-full items-center justify-center gap-2 rounded-xl border border-ink-300 px-5 py-3.5 font-display font-semibold text-ink-800 transition-colors duration-200 hover:border-brand-400 hover:bg-brand-50"
                 >
-                  <MessageCircle className="h-4 w-4 text-brand-700" aria-hidden />
+                  <WhatsAppIcon className="h-4 w-4 text-brand-700" />
                   Frage per WhatsApp
                 </a>
               </div>

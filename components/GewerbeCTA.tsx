@@ -1,6 +1,7 @@
-import { Mail, MessageCircle, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import Reveal from "@/components/Reveal";
 import { site, whatsAppLink } from "@/lib/site";
+import WhatsAppIcon from "./WhatsAppIcon";
 
 /**
  * B2B-Kontaktblock: „Angebot anfordern" per E-Mail, WhatsApp oder Telefon.
@@ -43,7 +44,7 @@ export default function GewerbeCTA({ context }: { context?: string }) {
                 rel="noopener noreferrer"
                 className="flex w-full items-center justify-center gap-2 rounded-[14px] border border-ink-600 px-7 py-3.5 font-display font-semibold text-white transition-colors duration-200 hover:border-brand-400 hover:bg-ink-800 sm:w-auto"
               >
-                <MessageCircle className="h-5 w-5" aria-hidden />
+                <WhatsAppIcon className="h-5 w-5" />
                 Per WhatsApp anfragen
               </a>
             </div>

@@ -10,13 +10,13 @@ import {
   CheckCircle2,
   Copy,
   Mail,
-  MessageCircle,
   ShieldCheck,
 } from "lucide-react";
 import { sortedServices, getService } from "@/lib/services";
 import { euro } from "@/lib/pricing";
 import { site, whatsAppLink } from "@/lib/site";
 import type { OrderRequest } from "@/lib/types";
+import WhatsAppIcon from "./WhatsAppIcon";
 
 /**
  * Auftrags-Assistent (Phase 1):
@@ -526,7 +526,7 @@ export default function AuftragForm() {
                   rel="noopener noreferrer"
                   className="flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-xl bg-brand-600 px-6 py-4 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
                 >
-                  <MessageCircle className="h-5 w-5" aria-hidden />
+                  <WhatsAppIcon className="h-5 w-5" />
                   Per WhatsApp senden
                 </a>
               ) : (
@@ -538,7 +538,7 @@ export default function AuftragForm() {
                   }
                   className="flex flex-1 cursor-not-allowed items-center justify-center gap-2 rounded-xl bg-ink-300 px-6 py-4 font-display font-semibold text-white"
                 >
-                  <MessageCircle className="h-5 w-5" aria-hidden />
+                  <WhatsAppIcon className="h-5 w-5" />
                   Per WhatsApp senden
                 </button>
               )}
