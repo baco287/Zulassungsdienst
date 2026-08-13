@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { services } from "@/lib/services";
 import { guides } from "@/lib/ratgeber";
+import { gewerbeSegments } from "@/lib/gewerbe";
 import { site } from "@/lib/site";
 
 export const dynamic = "force-static";
@@ -14,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/leistungen",
     "/preise",
     "/ablauf",
+    "/gewerbe",
     "/zulassung-per-whatsapp",
     "/auftrag",
     "/faq",
@@ -34,6 +36,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  const gewerbePages = gewerbeSegments.map((s) => ({
+    url: `${site.url}/gewerbe/${s.slug}/`,
+    lastModified: contentUpdated,
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+
   const guidePages = guides.map((g) => ({
     url: `${site.url}/ratgeber/${g.slug}/`,
     lastModified: new Date(g.dateModified),
@@ -41,5 +50,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...servicePages, ...guidePages];
+  return [...staticPages, ...servicePages, ...gewerbePages, ...guidePages];
 }

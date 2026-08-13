@@ -9,7 +9,8 @@ import { site, whatsAppLink } from "@/lib/site";
 const nav = [
   { href: "/leistungen", label: "Leistungen" },
   { href: "/preise", label: "Preise" },
-  { href: "/ablauf", label: "So funktioniert’s" },
+  { href: "/gewerbe", label: "Gewerbe" },
+  { href: "/ablauf", label: "Ablauf" },
   { href: "/ratgeber", label: "Ratgeber" },
   { href: "/faq", label: "FAQ" },
   { href: "/ueber-uns", label: "Über uns" },

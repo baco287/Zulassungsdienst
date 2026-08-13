@@ -28,6 +28,8 @@ export interface ServiceContent {
   related: string[];
   guides: string[];
   keywords: string[];
+  /** Optionaler hervorgehobener Verweis, z. B. auf eine Landingpage. */
+  ctaLink?: { href: string; label: string; text: string };
 }
 
 export const serviceContent: Record<string, ServiceContent> = {
@@ -486,6 +488,11 @@ export const serviceContent: Record<string, ServiceContent> = {
       "Zulassungsdienst Händler",
       "Fuhrpark Zulassung",
     ],
+    ctaLink: {
+      href: "/gewerbe/",
+      label: "Zum Gewerbekunden-Bereich",
+      text: "Alle Details für Autohäuser, Autohändler, Fuhrparks und Leasing-Anbieter – inklusive Branchenlösungen und Angebotsanfrage.",
+    },
   },
 
   "abhol-bringservice": {

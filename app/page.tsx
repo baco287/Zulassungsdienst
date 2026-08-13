@@ -430,7 +430,7 @@ export default function HomePage() {
                 Kundenfahrzeuge.
               </p>
               <Link
-                href="/leistungen/gewerbekunden/"
+                href="/gewerbe/"
                 className="mt-7 inline-flex items-center gap-2 rounded-[14px] bg-ink-900 px-7 py-3.5 font-display text-base font-semibold text-white transition-colors duration-200 hover:bg-ink-800"
               >
                 <Building2 className="h-5 w-5" aria-hidden />

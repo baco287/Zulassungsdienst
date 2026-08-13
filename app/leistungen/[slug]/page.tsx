@@ -180,6 +180,21 @@ export default async function ServiceDetailPage({
               </Reveal>
             ))}
 
+            {content?.ctaLink && (
+              <Reveal>
+                <div className="rounded-2xl border border-brand-200 bg-brand-50/60 p-6">
+                  <p className="leading-relaxed text-ink-700">{content.ctaLink.text}</p>
+                  <Link
+                    href={content.ctaLink.href}
+                    className="mt-4 inline-flex items-center gap-2 rounded-xl bg-brand-700 px-5 py-3 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-800"
+                  >
+                    {content.ctaLink.label}
+                    <ArrowRight className="h-4 w-4" aria-hidden />
+                  </Link>
+                </div>
+              </Reveal>
+            )}
+
             {content && content.faq.length > 0 && (
               <Reveal>
                 <div>
