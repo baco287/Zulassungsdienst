@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { services } from "@/lib/services";
 import { guides } from "@/lib/ratgeber";
 import { gewerbeSegments } from "@/lib/gewerbe";
+import { cities } from "@/lib/staedte";
 import { site } from "@/lib/site";
 
 export const dynamic = "force-static";
@@ -16,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/preise",
     "/ablauf",
     "/gewerbe",
+    "/kfz-zulassung",
     "/zulassung-per-whatsapp",
     "/auftrag",
     "/faq",
@@ -43,6 +45,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  const cityPages = cities.map((c) => ({
+    url: `${site.url}/kfz-zulassung/${c.slug}/`,
+    lastModified: contentUpdated,
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+
   const guidePages = guides.map((g) => ({
     url: `${site.url}/ratgeber/${g.slug}/`,
     lastModified: new Date(g.dateModified),
@@ -50,5 +59,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...servicePages, ...gewerbePages, ...guidePages];
+  return [...staticPages, ...servicePages, ...gewerbePages, ...cityPages, ...guidePages];
 }
