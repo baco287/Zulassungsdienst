@@ -1,7 +1,10 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowRight,
   BadgeCheck,
+  Building2,
+  CheckCircle2,
   Clock4,
   Handshake,
   Headset,
@@ -199,6 +202,49 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ============ UNTERLAGEN PER FOTO ============ */}
+      <section className="py-16 sm:py-24">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:gap-16">
+          <Reveal>
+            <div className="relative overflow-hidden rounded-3xl border border-ink-200 shadow-card">
+              <Image
+                src="/images/unterlagen-foto.jpg"
+                alt="Hände fotografieren die Zulassungsbescheinigung mit dem Smartphone am Küchentisch"
+                width={1264}
+                height={848}
+                className="h-auto w-full"
+                sizes="(min-width: 1024px) 550px, 100vw"
+              />
+            </div>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <div>
+              <Eyebrow>Kein Papierkram</Eyebrow>
+              <h2 className="mt-3 font-display text-3xl font-bold text-ink-900 sm:text-4xl">
+                Ein Foto Ihrer Unterlagen genügt
+              </h2>
+              <p className="mt-4 leading-relaxed text-ink-600">
+                Kein Kopieren, kein Einscannen, kein Postversand im Voraus: Sie fotografieren
+                Fahrzeugschein &amp; Co. einfach mit dem Handy und senden uns die Bilder per
+                Formular oder WhatsApp. Wir prüfen sofort, ob alles vollständig ist.
+              </p>
+              <ul className="mt-6 space-y-3">
+                {[
+                  "Unterlagen abfotografieren – Handyfotos reichen völlig",
+                  "Per WhatsApp oder Online-Formular übermitteln",
+                  "Wir prüfen auf Vollständigkeit und melden uns umgehend",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-ink-700">
+                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" aria-hidden />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* ============ PAKETE ============ */}
       <section id="pakete" className="py-16 sm:py-24">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -225,6 +271,59 @@ export default function HomePage() {
               Preisübersicht →
             </Link>
           </p>
+        </div>
+      </section>
+
+      {/* ============ VERSAND ============ */}
+      <section className="bg-ink-50 py-16 sm:py-24">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:gap-16">
+          <Reveal className="lg:order-2">
+            <div className="relative overflow-hidden rounded-3xl border border-ink-200 shadow-card">
+              <Image
+                src="/images/kennzeichen-versand.jpg"
+                alt="Frisch geprägtes Kennzeichenpaar mit Fahrzeugschein und Versandumschlag auf einem Holztisch"
+                width={1264}
+                height={848}
+                className="h-auto w-full"
+                sizes="(min-width: 1024px) 550px, 100vw"
+              />
+            </div>
+          </Reveal>
+          <Reveal delay={0.1} className="lg:order-1">
+            <div>
+              <Eyebrow>Lieferung</Eyebrow>
+              <h2 className="mt-3 font-display text-3xl font-bold text-ink-900 sm:text-4xl">
+                Kennzeichen &amp; Papiere direkt zu Ihnen
+              </h2>
+              <p className="mt-4 leading-relaxed text-ink-600">
+                Sobald die Behörde Ihren Vorgang bestätigt hat, lassen wir Ihre Kennzeichen
+                prägen und stempeln. Fertige Schilder und aktualisierte Papiere erhalten Sie
+                bequem nach Hause oder ins Autohaus – ohne einen einzigen Behördengang.
+              </p>
+              <ul className="mt-6 space-y-3">
+                {[
+                  "Versicherter Versand mit Sendungsverfolgung",
+                  "Regional auf Wunsch persönliche Zustellung",
+                  "Bei Abmeldungen: Bestätigung direkt per E-Mail – ganz ohne Versand",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-ink-700">
+                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" aria-hidden />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <Link
+                href="/ablauf"
+                className="group mt-6 inline-flex items-center gap-1.5 font-display text-sm font-semibold text-brand-600 hover:text-brand-700"
+              >
+                Den kompletten Ablauf ansehen
+                <ArrowRight
+                  className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5"
+                  aria-hidden
+                />
+              </Link>
+            </div>
+          </Reveal>
         </div>
       </section>
 
@@ -269,6 +368,45 @@ export default function HomePage() {
               Alle Fragen &amp; Antworten →
             </Link>
           </p>
+        </div>
+      </section>
+
+      {/* ============ GEWERBE ============ */}
+      <section className="py-16 sm:py-24">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:gap-16">
+          <Reveal>
+            <div className="relative overflow-hidden rounded-3xl border border-ink-200 shadow-card">
+              <Image
+                src="/images/autohaus.jpg"
+                alt="Moderner Autohaus-Showroom mit Neuwagen hinter einer Glasfassade"
+                width={1264}
+                height={848}
+                className="h-auto w-full"
+                sizes="(min-width: 1024px) 550px, 100vw"
+              />
+            </div>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <div>
+              <Eyebrow>Für Autohäuser &amp; Gewerbe</Eyebrow>
+              <h2 className="mt-3 font-display text-3xl font-bold text-ink-900 sm:text-4xl">
+                Zulassungen im Volumen – planbar und zuverlässig
+              </h2>
+              <p className="mt-4 leading-relaxed text-ink-600">
+                Sammelabwicklung, Staffelpreise und ein fester Ansprechpartner: Für Autohäuser,
+                Händler und Fuhrparks übernehmen wir Zulassungen bundesweit – auf Wunsch mit
+                täglicher Abholung Ihrer Unterlagen und Express-Abwicklung für eilige
+                Kundenfahrzeuge.
+              </p>
+              <Link
+                href="/leistungen/gewerbekunden/"
+                className="mt-7 inline-flex items-center gap-2 rounded-[14px] bg-ink-900 px-7 py-3.5 font-display text-base font-semibold text-white transition-colors duration-200 hover:bg-ink-800"
+              >
+                <Building2 className="h-5 w-5" aria-hidden />
+                Angebot für Gewerbekunden
+              </Link>
+            </div>
+          </Reveal>
         </div>
       </section>
 
