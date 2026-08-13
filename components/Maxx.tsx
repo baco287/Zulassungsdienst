@@ -15,8 +15,8 @@
 export type MaxxPose = "wave" | "phone" | "plain";
 
 const viewBoxes: Record<MaxxPose, string> = {
-  wave: "0 0 204 148",
-  phone: "0 0 216 150",
+  wave: "-4 0 212 148",
+  phone: "-4 0 228 148",
   plain: "12 22 176 100",
 };
 
@@ -85,25 +85,31 @@ export default function Maxx({ pose = "wave", className, label }: MaxxProps) {
           />
           <circle cx="6" cy="97" r="6.5" fill={ink} />
           {/* Smartphone */}
-          <rect x="184" y="40" width="26" height="48" rx="6" fill={ink} />
+          <rect x="184" y="26" width="36" height="62" rx="9" fill={ink} />
           <rect
-            x="187.5"
-            y="44.5"
-            width="19"
-            height="39"
-            rx="3"
+            x="189"
+            y="32"
+            width="26"
+            height="50"
+            rx="4"
             fill="var(--color-brand-100)"
           />
-          <rect x="191" y="50" width="12" height="7" rx="3.5" fill={brand} />
-          <rect x="191" y="61" width="9" height="6" rx="3" fill="var(--color-brand-300)" />
+          <rect x="193" y="39" width="18" height="9" rx="4.5" fill={brand} />
+          <rect x="197" y="53" width="14" height="8" rx="4" fill="var(--color-brand-300)" />
           {/* Arm greift das Telefon */}
           <path
-            d="M180 78C186 80 190 82 194 84"
+            d="M176 84C182 88 187 91 191 93"
             stroke={ink}
             strokeWidth={7}
             strokeLinecap="round"
           />
-          <circle cx="196" cy="85" r="7" fill={ink} />
+          <circle cx="193" cy="94" r="7.5" fill={ink} />
+          <path
+            d="M190 86h14"
+            stroke={ink}
+            strokeWidth={8}
+            strokeLinecap="round"
+          />
         </>
       )}
 

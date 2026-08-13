@@ -51,6 +51,7 @@ export default function Footer() {
           <ul className="mt-4 space-y-2 text-sm">
             <li><Link href="/ueber-uns" className="transition-colors duration-200 hover:text-white">Über uns</Link></li>
             <li><Link href="/ablauf" className="transition-colors duration-200 hover:text-white">So funktioniert’s</Link></li>
+            <li><Link href="/zulassung-per-whatsapp" className="transition-colors duration-200 hover:text-white">Zulassung per WhatsApp</Link></li>
             <li><Link href="/preise" className="transition-colors duration-200 hover:text-white">Preise</Link></li>
             <li><Link href="/ratgeber" className="transition-colors duration-200 hover:text-white">Ratgeber</Link></li>
             <li><Link href="/faq" className="transition-colors duration-200 hover:text-white">Häufige Fragen</Link></li>

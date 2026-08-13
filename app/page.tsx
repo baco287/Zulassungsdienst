@@ -23,6 +23,7 @@ import PackageCards from "@/components/PackageCards";
 import AuftragForm from "@/components/AuftragForm";
 import FaqAccordion from "@/components/FaqAccordion";
 import CTASection from "@/components/CTASection";
+import Maxx from "@/components/Maxx";
 import Reveal from "@/components/Reveal";
 import { sortedServices } from "@/lib/services";
 import { faqItems } from "@/lib/faq";
@@ -197,6 +198,36 @@ export default function HomePage() {
             >
               Jetzt starten
               <ArrowRight className="h-5 w-5" aria-hidden />
+            </Link>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ============ WHATSAPP-WEG ============ */}
+      <section className="py-8 sm:py-10">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <Reveal>
+            <Link
+              href="/zulassung-per-whatsapp"
+              className="group flex flex-col items-center gap-6 rounded-3xl border border-brand-200 bg-brand-50/70 p-7 transition-colors duration-200 hover:border-brand-400 hover:bg-brand-50 sm:flex-row sm:gap-8"
+            >
+              <Maxx pose="phone" className="h-24 w-auto shrink-0" />
+              <div className="flex-1 text-center sm:text-left">
+                <p className="font-display text-sm font-semibold uppercase tracking-wider text-brand-700">
+                  Noch bequemer
+                </p>
+                <h2 className="mt-1.5 font-display text-2xl font-bold text-ink-900">
+                  Erledigen Sie alles per WhatsApp
+                </h2>
+                <p className="mt-2 max-w-2xl text-ink-600">
+                  Kein Formular ausfüllen: Schreiben Sie uns einfach im Chat,
+                  fotografieren Sie Ihre Unterlagen ab – fertig. Zum selben Festpreis.
+                </p>
+              </div>
+              <span className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-brand-700 px-6 py-3.5 font-display font-semibold text-white transition-colors duration-200 group-hover:bg-brand-800">
+                <MessageCircle className="h-5 w-5" aria-hidden />
+                Mehr erfahren
+              </span>
             </Link>
           </Reveal>
         </div>

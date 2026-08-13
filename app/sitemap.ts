@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/leistungen",
     "/preise",
     "/ablauf",
+    "/zulassung-per-whatsapp",
     "/auftrag",
     "/faq",
     "/ratgeber",
