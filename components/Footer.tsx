@@ -53,6 +53,7 @@ export default function Footer() {
             <li><Link href="/ueber-uns" className="transition-colors duration-200 hover:text-white">Über uns</Link></li>
             <li><Link href="/ablauf" className="transition-colors duration-200 hover:text-white">So funktioniert’s</Link></li>
             <li><Link href="/zulassung-per-whatsapp" className="transition-colors duration-200 hover:text-white">Zulassung per WhatsApp</Link></li>
+            <li><Link href="/maxx" className="transition-colors duration-200 hover:text-white">Schnellstart mit Maxx</Link></li>
             <li><Link href="/gewerbe" className="transition-colors duration-200 hover:text-white">Für Gewerbekunden</Link></li>
             <li><Link href="/kfz-zulassung" className="transition-colors duration-200 hover:text-white">Kfz-Zulassung nach Stadt</Link></li>
             <li><Link href="/preise" className="transition-colors duration-200 hover:text-white">Preise</Link></li>

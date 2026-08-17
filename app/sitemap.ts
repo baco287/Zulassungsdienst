@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/gewerbe",
     "/kfz-zulassung",
     "/zulassung-per-whatsapp",
+    "/maxx",
     "/auftrag",
     "/faq",
     "/ratgeber",
