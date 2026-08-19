@@ -15,6 +15,8 @@ export interface ContentSection {
   paragraphs: string[];
   /** Optionale Aufzählung, wird nach den Absätzen gerendert. */
   list?: string[];
+  /** Optionale Tabelle (z. B. Gebührenübersicht), wird nach der Liste gerendert. */
+  table?: { headers: string[]; rows: string[][] };
 }
 
 export interface QA {

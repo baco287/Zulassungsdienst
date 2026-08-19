@@ -28,6 +28,8 @@ export interface Guide {
   /** Slugs weiterführender Artikel. */
   relatedGuides: string[];
   keywords: string[];
+  /** Offizielle Quellen (KBA, BMDV, Gesetze) – als Trust-Signal gerendert. */
+  sources?: { label: string; href: string }[];
 }
 
 export const guides: Guide[] = [
@@ -37,20 +39,40 @@ export const guides: Guide[] = [
     description:
       "Amtliche Gebühren, Kennzeichen, Wunschkennzeichen und Zulassungsdienst: Was eine Kfz-Zulassung 2026 wirklich kostet – mit konkreten Beträgen und Spartipps.",
     datePublished: "2026-08-13",
-    dateModified: "2026-08-13",
+    dateModified: "2026-08-19",
     sections: [
       {
         heading: "Die Kosten einer Kfz-Zulassung auf einen Blick",
         paragraphs: [
           "Die Gesamtkosten einer Zulassung setzen sich aus drei Bausteinen zusammen: den amtlichen Gebühren der Zulassungsbehörde, den Kennzeichenschildern und – falls Sie den Vorgang nicht selbst erledigen – dem Servicepreis eines Zulassungsdienstes. Je nach Vorgang und Kommune ergeben sich daraus typischerweise folgende Beträge:",
         ],
-        list: [
-          "Amtliche Gebühr Online-Zulassung (i-Kfz): ca. 12,80 – 18,00 €",
-          "Amtliche Gebühr am Schalter: ca. 26,30 – 30,00 € (je nach Vorgang und Kommune auch mehr)",
-          "Kennzeichenschilder (Paar): ca. 20 – 35 € beim Prägedienst",
-          "Wunschkennzeichen: ca. 12,80 € amtliche Reservierungs- und Zuteilungsgebühr",
-          "Abmeldung (Außerbetriebsetzung): ca. 3 – 16 € amtliche Gebühr",
+        table: {
+          headers: ["Vorgang", "i-Kfz online (selbst)", "Am Schalter (selbst)", "Über DeutscheZulassung"],
+          rows: [
+            ["Neuzulassung", "ca. 12,80 – 18,00 € + Kennzeichen", "ca. 26,30 – 30,00 € + Kennzeichen", "129 € komplett"],
+            ["Umschreibung / Halterwechsel", "ca. 12,80 – 18,00 € + ggf. Kennzeichen", "ca. 26,30 – 30,00 € + ggf. Kennzeichen", "129 € komplett"],
+            ["Ummeldung nach Umzug", "ca. 12,80 – 18,00 €", "ca. 26,30 – 30,00 €", "129 € komplett"],
+            ["Abmeldung", "ca. 3 – 16 €", "ca. 3 – 16 €", "34,90 € komplett"],
+            ["Wunschkennzeichen (Zusatz)", "ca. 12,80 € + Schilder", "ca. 12,80 € + Schilder", "34,90 € inkl. Schilder"],
+            ["Kennzeichenschilder (Paar)", "ca. 20 – 35 €", "ca. 20 – 35 €", "inklusive"],
+          ],
+        },
+      },
+      {
+        heading: "Selbst machen oder machen lassen? Der ehrliche Vergleich",
+        paragraphs: [
+          "Welcher Weg der richtige ist, hängt weniger vom Geld ab als von Ihren Voraussetzungen und Ihrer Zeit:",
         ],
+        table: {
+          headers: ["Kriterium", "i-Kfz online (selbst)", "Behörde vor Ort", "Zulassungsdienst"],
+          rows: [
+            ["Voraussetzungen", "eID-Ausweis mit PIN, Sicherheitscodes, ePayment", "Termin (oft Wochen Vorlauf)", "keine – Fotos der Unterlagen genügen"],
+            ["Zeitaufwand", "30–60 Min., wenn alles klappt", "halber Tag inkl. Anfahrt/Wartezeit", "ca. 10 Min. für die Beauftragung"],
+            ["Dauer bis zur Zulassung", "sofort (vorläufiger Nachweis), Plaketten per Post", "am Termin selbst", "1–3 Werktage + Versand"],
+            ["Gesamtkosten (Zulassung)", "ca. 35 – 55 €", "ca. 50 – 70 €", "129 € komplett"],
+            ["Scheitert häufig an …", "eID-PIN, alten Papieren, Portal-Fehlern", "Terminmangel", "–"],
+          ],
+        },
       },
       {
         heading: "Selbst zulassen oder Zulassungsdienst beauftragen?",
@@ -95,6 +117,11 @@ export const guides: Guide[] = [
       "Auto anmelden Kosten",
       "Zulassung Gebühren 2026",
       "was kostet Auto ummelden",
+    ],
+    sources: [
+      { label: "Kraftfahrt-Bundesamt: i-Kfz – internetbasierte Fahrzeugzulassung", href: "https://www.kba.de/DE/Themen/ZentraleRegister/iKfz/ikfz_node.html" },
+      { label: "Bundesministerium für Verkehr: Digitale Fahrzeugzulassung", href: "https://bmdv.bund.de/DE/Themen/Mobilitaet/Strassenverkehr/Fahrzeugzulassung/fahrzeugzulassung.html" },
+      { label: "Gebührenordnung für Maßnahmen im Straßenverkehr (GebOSt)", href: "https://www.gesetze-im-internet.de/st_gebo_2011/" },
     ],
   },
 
@@ -422,7 +449,7 @@ export const guides: Guide[] = [
     description:
       "Seit 2023 können alle Zulassungsvorgänge online erledigt werden (i-Kfz Stufe 4). Welche Voraussetzungen gelten, wo das Portal an Grenzen stößt und welche Alternativen es gibt.",
     datePublished: "2026-08-13",
-    dateModified: "2026-08-13",
+    dateModified: "2026-08-19",
     sections: [
       {
         heading: "Was ist i-Kfz?",
@@ -470,6 +497,11 @@ export const guides: Guide[] = [
     relatedServices: ["neuzulassung", "abmeldung", "gewerbekunden"],
     relatedGuides: ["auto-anmelden-unterlagen", "was-kostet-eine-kfz-zulassung"],
     keywords: ["i-Kfz", "Auto online zulassen", "Online-Zulassung Voraussetzungen", "Kfz online anmelden"],
+    sources: [
+      { label: "Kraftfahrt-Bundesamt: i-Kfz – internetbasierte Fahrzeugzulassung", href: "https://www.kba.de/DE/Themen/ZentraleRegister/iKfz/ikfz_node.html" },
+      { label: "AusweisApp des Bundes (eID-Funktion)", href: "https://www.ausweisapp.bund.de/" },
+      { label: "Fahrzeug-Zulassungsverordnung (FZV)", href: "https://www.gesetze-im-internet.de/fzv_2023/" },
+    ],
   },
 
   {

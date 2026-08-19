@@ -42,6 +42,18 @@ const dateFormat = new Intl.DateTimeFormat("de-DE", {
   year: "numeric",
 });
 
+/** Erzeugt stabile Anker-IDs aus Abschnittsüberschriften. */
+function headingId(heading: string): string {
+  return heading
+    .toLowerCase()
+    .replace(/ä/g, "ae")
+    .replace(/ö/g, "oe")
+    .replace(/ü/g, "ue")
+    .replace(/ß/g, "ss")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
 export default async function GuidePage({
   params,
 }: {
@@ -69,7 +81,12 @@ export default async function GuidePage({
     dateModified: guide.dateModified,
     inLanguage: "de",
     mainEntityOfPage: pageUrl,
-    author: { "@type": "Organization", name: site.name, url: site.url },
+    author: {
+      "@type": "Person",
+      name: site.company.responsible,
+      jobTitle: "Inhaber",
+      worksFor: { "@type": "Organization", name: site.name, url: site.url },
+    },
     publisher: { "@type": "Organization", name: site.name, url: site.url },
   };
 
@@ -96,21 +113,61 @@ export default async function GuidePage({
             {guide.title}
           </h1>
           <p className="mt-4 text-lg text-ink-600">{guide.description}</p>
-          <p className="mt-4 flex items-center gap-2 text-sm text-ink-500">
-            <CalendarDays className="h-4 w-4 text-brand-700" aria-hidden />
-            Aktualisiert am{" "}
-            <time dateTime={guide.dateModified}>
-              {dateFormat.format(new Date(guide.dateModified))}
-            </time>
-          </p>
+          <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-ink-500">
+            <span className="flex items-center gap-2">
+              <span
+                className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-700 font-display text-xs font-bold text-white"
+                aria-hidden
+              >
+                {site.company.responsible
+                  .split(" ")
+                  .map((n) => n[0])
+                  .slice(0, 2)
+                  .join("")}
+              </span>
+              Von <strong className="text-ink-700">{site.company.responsible}</strong>, Inhaber
+              von {site.name}
+            </span>
+            <span className="flex items-center gap-2">
+              <CalendarDays className="h-4 w-4 text-brand-700" aria-hidden />
+              Aktualisiert am{" "}
+              <time dateTime={guide.dateModified}>
+                {dateFormat.format(new Date(guide.dateModified))}
+              </time>
+            </span>
+          </div>
         </div>
       </section>
 
       <article className="py-14">
         <div className="mx-auto max-w-3xl space-y-10 px-4 sm:px-6">
+          {guide.sections.length >= 3 && (
+            <nav
+              aria-label="Inhaltsverzeichnis"
+              className="rounded-2xl border border-ink-200 bg-ink-50/60 p-5"
+            >
+              <p className="font-display text-sm font-bold uppercase tracking-wider text-ink-500">
+                Inhalt
+              </p>
+              <ol className="mt-3 space-y-1.5 text-sm">
+                {guide.sections.map((section, i) => (
+                  <li key={section.heading}>
+                    <a
+                      href={`#${headingId(section.heading)}`}
+                      className="flex gap-2 text-ink-700 transition-colors duration-200 hover:text-brand-700"
+                    >
+                      <span className="font-semibold text-brand-700">{i + 1}.</span>
+                      {section.heading}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          )}
+
           {guide.sections.map((section) => (
             <Reveal key={section.heading}>
-              <section>
+              <section id={headingId(section.heading)} className="scroll-mt-24">
                 <h2 className="font-display text-2xl font-bold text-ink-900">
                   {section.heading}
                 </h2>
@@ -132,9 +189,72 @@ export default async function GuidePage({
                     ))}
                   </ul>
                 )}
+                {section.table && (
+                  <div className="mt-5 overflow-x-auto rounded-xl border border-ink-200">
+                    <table className="w-full min-w-[36rem] border-collapse text-sm">
+                      <thead>
+                        <tr className="bg-ink-50 text-left">
+                          {section.table.headers.map((h) => (
+                            <th
+                              key={h}
+                              scope="col"
+                              className="px-4 py-3 font-display font-semibold text-ink-800"
+                            >
+                              {h}
+                            </th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {section.table.rows.map((row) => (
+                          <tr key={row[0]} className="border-t border-ink-200">
+                            {row.map((cell, ci) => (
+                              <td
+                                key={`${row[0]}-${ci}`}
+                                className={`px-4 py-3 align-top ${
+                                  ci === 0
+                                    ? "font-medium text-ink-800"
+                                    : ci === row.length - 1
+                                      ? "font-semibold text-brand-700"
+                                      : "text-ink-600"
+                                }`}
+                              >
+                                {cell}
+                              </td>
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
               </section>
             </Reveal>
           ))}
+
+          {guide.sources && guide.sources.length > 0 && (
+            <Reveal>
+              <section className="rounded-2xl border border-ink-200 bg-ink-50/60 p-5">
+                <h2 className="font-display text-sm font-bold uppercase tracking-wider text-ink-500">
+                  Offizielle Quellen
+                </h2>
+                <ul className="mt-3 space-y-1.5 text-sm">
+                  {guide.sources.map((source) => (
+                    <li key={source.href}>
+                      <a
+                        href={source.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-brand-700 underline underline-offset-2 hover:text-brand-800"
+                      >
+                        {source.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            </Reveal>
+          )}
 
           {guide.faq.length > 0 && (
             <Reveal>

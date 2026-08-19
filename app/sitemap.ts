@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/ablauf",
     "/gewerbe",
     "/kfz-zulassung",
+    "/rechner/kfz-steuer",
     "/zulassung-per-whatsapp",
     "/maxx",
     "/auftrag",
