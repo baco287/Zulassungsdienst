@@ -337,8 +337,83 @@ export const guides: Guide[] = [
       },
     ],
     relatedServices: ["neuzulassung", "halterwechsel", "kurzzeitkennzeichen"],
-    relatedGuides: ["auto-anmelden-unterlagen", "was-kostet-eine-kfz-zulassung"],
+    relatedGuides: ["evb-nummer-erhalten-was-nun", "auto-anmelden-unterlagen", "was-kostet-eine-kfz-zulassung"],
     keywords: ["eVB-Nummer", "elektronische Versicherungsbestätigung", "eVB sofort online", "eVB kostenlos"],
+  },
+
+  {
+    slug: "evb-nummer-erhalten-was-nun",
+    title: "eVB-Nummer erhalten – was jetzt? Die nächsten Schritte zur Zulassung",
+    description:
+      "Die eVB-Nummer ist da – aber was nun? Schritt für Schritt von der Versicherungsbestätigung zur fertigen Zulassung: Unterlagen, Wege, Fristen und typische Fehler.",
+    datePublished: "2026-08-19",
+    dateModified: "2026-08-19",
+    sections: [
+      {
+        heading: "Schritt 1: eVB-Nummer prüfen",
+        paragraphs: [
+          "Bevor Sie weitermachen, ein kurzer Check der 7-stelligen Nummer: Passt die eVB zum geplanten Vorgang? Eine normale Kfz-eVB gilt nicht für Kurzzeitkennzeichen, und bei Saisonkennzeichen muss der Saisonzeitraum zum Versicherungsvertrag passen. Prüfen Sie außerdem, auf wen die eVB ausgestellt ist – sie muss zum künftigen Halter gehören – und notieren Sie sich, wie lange sie gültig ist: Je nach Versicherer sind das wenige Wochen bis mehrere Monate.",
+          "Wichtig zu wissen: Die eVB allein ist noch kein Versicherungsschutz zum Losfahren. Der Schutz beginnt mit der Zulassung des Fahrzeugs – bis dahin ist die eVB nur die Bestätigung, dass Ihre Versicherung einspringen wird.",
+        ],
+      },
+      {
+        heading: "Schritt 2: Restliche Unterlagen zusammenstellen",
+        paragraphs: [
+          "Mit der eVB haben Sie das wichtigste Puzzlestück – für die Zulassung fehlen aber noch ein paar Dokumente:",
+        ],
+        list: [
+          "Personalausweis oder Reisepass (mit Meldebescheinigung)",
+          "Zulassungsbescheinigung Teil II (Fahrzeugbrief) bzw. CoC-Papier beim Neuwagen",
+          "Zulassungsbescheinigung Teil I und HU-Nachweis beim Gebrauchtwagen",
+          "SEPA-Lastschriftmandat für die Kfz-Steuer",
+          "Kaufvertrag (bei Umschreibung empfohlen)",
+        ],
+      },
+      {
+        heading: "Schritt 3: Zulassungsweg wählen",
+        paragraphs: [
+          "Jetzt haben Sie drei Möglichkeiten. Erstens der Schaltertermin bei der Zulassungsstelle: der klassische Weg – mit Terminsuche, Anfahrt und Wartezeit. Zweitens die Online-Zulassung über das i-Kfz-Portal Ihrer Behörde: die günstigste Option, aber nur mit Personalausweis mit aktivierter Online-Funktion, Dokumenten mit Sicherheitscodes und funktionierendem ePayment. Drittens ein Zulassungsdienst: Sie senden Fotos Ihrer Unterlagen samt eVB, erteilen eine digitale Vollmacht – und bekommen gestempelte Kennzeichen und Papiere nach Hause geliefert, ohne Termin und ohne eID.",
+          "Bei DeutscheZulassung geben Sie die eVB-Nummer einfach im Online-Auftrag oder per WhatsApp an – wir übernehmen ab hier den kompletten Behördenvorgang, in der Regel in 1–3 Werktagen.",
+        ],
+      },
+      {
+        heading: "Nicht zu lange warten – und diese Fehler vermeiden",
+        paragraphs: [
+          "Die eVB läuft ab: Wer die Zulassung monatelang aufschiebt, braucht irgendwann eine neue Nummer (kostenlos, aber vermeidbarer Aufwand). Drei Fehler sehen wir immer wieder: Erstens Zahlendreher beim Abtippen – die eVB besteht aus Buchstaben und Ziffern, am besten kopieren statt abtippen. Zweitens die falsche eVB-Art, etwa eine normale eVB für ein Kurzzeitkennzeichen. Drittens der Irrglaube, mit eVB dürfe man schon fahren – gefahren wird erst mit gültiger Zulassung und gestempelten Kennzeichen.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Darf ich mit der eVB-Nummer schon fahren?",
+        answer:
+          "Nein. Die eVB bestätigt nur, dass Versicherungsschutz ab Zulassung besteht. Gefahren werden darf erst, wenn das Fahrzeug zugelassen ist – mit gestempelten Kennzeichen oder, nach einer i-Kfz-Online-Zulassung, mit dem vorläufigen Zulassungsnachweis.",
+      },
+      {
+        question: "Wie schnell sollte ich die eVB nach Erhalt einlösen?",
+        answer:
+          "Möglichst zeitnah. Die eVB ist je nach Versicherer nur wenige Wochen bis Monate gültig; eine abgelaufene Nummer müssen Sie kostenlos neu anfordern. Über einen Zulassungsdienst ist die Zulassung meist in 1–3 Werktagen erledigt.",
+      },
+      {
+        question: "Kann ich dieselbe eVB für ein anderes Fahrzeug verwenden?",
+        answer:
+          "Nein, jede eVB gilt für genau einen Zulassungsvorgang. Wenn sich das Fahrzeug ändert (z. B. anderer Gebrauchtwagen gekauft), fordern Sie bei Ihrer Versicherung einfach eine neue eVB an.",
+      },
+      {
+        question: "Was passiert nach der Zulassung mit meiner Versicherung?",
+        answer:
+          "Die Zulassungsbehörde meldet die Zulassung elektronisch an Ihren Versicherer; damit beginnt der Vertrag automatisch. Sie müssen die Versicherung nicht separat informieren – die erste Beitragsrechnung kommt von selbst.",
+      },
+    ],
+    relatedServices: ["neuzulassung", "halterwechsel", "wiederzulassung"],
+    relatedGuides: ["evb-nummer", "auto-anmelden-unterlagen", "i-kfz-online-zulassung"],
+    keywords: [
+      "eVB-Nummer erhalten was nun",
+      "eVB einlösen",
+      "mit eVB Auto anmelden",
+      "eVB-Nummer nächste Schritte",
+      "wie lange eVB gültig",
+    ],
   },
 
   {
