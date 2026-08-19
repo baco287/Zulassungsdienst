@@ -14,10 +14,10 @@ export const site = {
 
   contact: {
     email: "info@deutschezulassung.de",
-    phone: "+49 176 25041651",
-    phoneDisplay: "0176 / 250 416 51",
+    phone: "+49 179 1528205",
+    phoneDisplay: "0179 / 152 82 05",
     /** Nummer im wa.me-Format ohne "+". */
-    whatsapp: "4917625041651",
+    whatsapp: "491791528205",
     hours: "Mo–Fr 8:00–18:00 Uhr",
   },
 
