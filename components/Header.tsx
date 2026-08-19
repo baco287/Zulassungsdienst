@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X, CarFront } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { site, whatsAppLink } from "@/lib/site";
 import WhatsAppIcon from "./WhatsAppIcon";
 
@@ -25,17 +26,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-ink-200 bg-white/90 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
-        <Link
-          href="/"
-          className="flex items-center gap-2 font-display text-lg font-bold text-ink-900"
-          aria-label={`${site.name} – Startseite`}
-        >
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-700 text-white">
-            <CarFront className="h-5 w-5" aria-hidden />
-          </span>
-          <span>
-            Deutsche<span className="text-brand-700">Zulassung</span>
-          </span>
+        <Link href="/" aria-label={`${site.name} – Startseite`} className="flex items-center">
+          <Image
+            src="/logo.png"
+            alt={`${site.name} – Kfz-Zulassung online`}
+            width={2075}
+            height={511}
+            priority
+            className="h-9 w-auto sm:h-10"
+          />
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Hauptnavigation">
