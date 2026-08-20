@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BadgeEuro, Info } from "lucide-react";
 import CTASection from "@/components/CTASection";
+import Kennzeichen from "@/components/Kennzeichen";
 import Reveal from "@/components/Reveal";
 import { categoryLabels, sortedServices } from "@/lib/services";
 import { euro, euroRange, officialFees, plateCosts, priceDisclaimer } from "@/lib/pricing";
@@ -55,9 +56,12 @@ export default function PreisePage() {
                           <th scope="row" className="px-5 py-4 text-left font-medium text-ink-900">
                             <Link
                               href={`/leistungen/${s.slug}/`}
-                              className="text-brand-700 underline-offset-2 hover:underline"
+                              className="inline-block w-60 rounded-[6px] transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
                             >
-                              {s.name}
+                              {/* Kurzname, wo vorhanden: ein Kennzeichen wirkt nur
+                                  als solches, wenn es nicht zum Fließtext ausufert.
+                                  uniform + feste Linkbreite: alle Schilder gleich lang. */}
+                              <Kennzeichen uniform>{s.shortName ?? s.name}</Kennzeichen>
                             </Link>
                           </th>
                           <td className="px-5 py-4 text-right">
