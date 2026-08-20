@@ -3,6 +3,7 @@
 import { useId, useRef, useState } from "react";
 import { AlertCircle, FileText, ImageIcon, Paperclip, Trash2, UploadCloud } from "lucide-react";
 import { UPLOAD_LIMITS, formatBytes, validateFiles } from "@/lib/order";
+import { DocHintToggle, getDocHint } from "./DocHint";
 
 /**
  * Auswahl der Unterlagen (Fotos oder PDF).
@@ -71,12 +72,23 @@ export default function DocumentUpload({
         <div className="mb-4 rounded-xl border border-brand-200 bg-brand-50 p-4">
           <p className="text-sm font-semibold text-ink-900">Diese Unterlagen brauchen wir:</p>
           <ul className="mt-2 space-y-1 text-sm text-ink-700">
-            {checklist.map((item) => (
-              <li key={item} className="flex gap-2">
-                <span className="mt-[0.45rem] h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500" aria-hidden />
-                {item}
-              </li>
-            ))}
+            {checklist.map((item) => {
+              const hint = getDocHint(item);
+              return (
+                <li key={item}>
+                  <span className="flex gap-2">
+                    <span
+                      className="mt-[0.45rem] h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500"
+                      aria-hidden
+                    />
+                    <span>
+                      {item}
+                      {hint && <DocHintToggle hint={hint} />}
+                    </span>
+                  </span>
+                </li>
+              );
+            })}
           </ul>
           <p className="mt-2.5 text-xs text-ink-500">
             Einfach mit dem Handy abfotografieren – Scans oder PDFs gehen genauso.
