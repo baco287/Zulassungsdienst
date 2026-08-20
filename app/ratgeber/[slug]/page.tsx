@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ArrowRight, CalendarDays, CheckCircle2 } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTASection from "@/components/CTASection";
 import FaqAccordion from "@/components/FaqAccordion";
 import Reveal from "@/components/Reveal";
+import SecurityCodeGuide from "@/components/SecurityCodeGuide";
 import { getGuide, guides } from "@/lib/ratgeber";
 import { getService } from "@/lib/services";
 import { site } from "@/lib/site";
@@ -228,9 +230,37 @@ export default async function GuidePage({
                     </table>
                   </div>
                 )}
+                {section.image && (
+                  <figure className="mt-5 overflow-hidden rounded-2xl border border-ink-200 bg-white shadow-card">
+                    <Image
+                      src={section.image.src}
+                      alt={section.image.alt}
+                      width={1264}
+                      height={848}
+                      className="h-auto w-full"
+                      sizes="(min-width: 768px) 720px, 100vw"
+                    />
+                    {section.image.caption && (
+                      <figcaption className="p-4 text-sm leading-relaxed text-ink-600">
+                        {section.image.caption}
+                      </figcaption>
+                    )}
+                  </figure>
+                )}
               </section>
             </Reveal>
           ))}
+
+          {(guide.slug === "auto-abmelden-so-gehts" ||
+            guide.slug === "i-kfz-online-zulassung") && (
+            <Reveal>
+              <section>
+                <SecurityCodeGuide
+                  variant={guide.slug === "i-kfz-online-zulassung" ? "zulassung" : "abmeldung"}
+                />
+              </section>
+            </Reveal>
+          )}
 
           {guide.sources && guide.sources.length > 0 && (
             <Reveal>

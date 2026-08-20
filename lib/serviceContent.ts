@@ -17,6 +17,8 @@ export interface ContentSection {
   list?: string[];
   /** Optionale Tabelle (z. B. Gebührenübersicht), wird nach der Liste gerendert. */
   table?: { headers: string[]; rows: string[][] };
+  /** Optionales Anleitungsbild, wird nach der Tabelle gerendert. */
+  image?: { src: string; alt: string; caption?: string };
 }
 
 export interface QA {

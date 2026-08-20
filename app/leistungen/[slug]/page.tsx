@@ -12,6 +12,7 @@ import {
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FaqAccordion from "@/components/FaqAccordion";
 import Reveal from "@/components/Reveal";
+import SecurityCodeGuide from "@/components/SecurityCodeGuide";
 import { getService, services, categoryLabels } from "@/lib/services";
 import { getServiceContent } from "@/lib/serviceContent";
 import { getGuide } from "@/lib/ratgeber";
@@ -179,6 +180,12 @@ export default async function ServiceDetailPage({
                 </div>
               </Reveal>
             ))}
+
+            {service.slug === "abmeldung" && (
+              <Reveal>
+                <SecurityCodeGuide variant="abmeldung" />
+              </Reveal>
+            )}
 
             {content?.ctaLink && (
               <Reveal>

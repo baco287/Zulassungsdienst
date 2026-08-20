@@ -144,6 +144,12 @@ export const guides: Guide[] = [
           "SEPA-Lastschriftmandat für die Kfz-Steuer",
           "Zulassungsbescheinigung Teil II (Fahrzeugbrief) – beim Neuwagen ggf. das CoC-Papier",
         ],
+        image: {
+          src: "/images/zb1-zb2-dokumente.jpg",
+          alt: "Zulassungsbescheinigung Teil I (Fahrzeugschein) und Teil II (Fahrzeugbrief) nebeneinander auf einem Tisch",
+          caption:
+            "Gut zu unterscheiden: links der kleine Fahrzeugschein (Teil I, gehört ins Auto), rechts der größere Fahrzeugbrief (Teil II, gehört sicher nach Hause).",
+        },
       },
       {
         heading: "Zusätzliche Unterlagen je nach Fall",
