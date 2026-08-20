@@ -60,7 +60,8 @@ export default function Footer() {
             <li><Link href="/kfz-zulassung" className="transition-colors duration-200 hover:text-white">Kfz-Zulassung nach Stadt</Link></li>
             <li><Link href="/preise" className="transition-colors duration-200 hover:text-white">Preise</Link></li>
             <li><Link href="/ratgeber" className="transition-colors duration-200 hover:text-white">Ratgeber</Link></li>
-            <li><Link href="/rechner/kfz-steuer" className="transition-colors duration-200 hover:text-white">Kfz-Steuer-Rechner</Link></li>
+            <li><Link href="/rechner" className="transition-colors duration-200 hover:text-white">Rechner &amp; Tools</Link></li>
+            <li><Link href="/vorlagen" className="transition-colors duration-200 hover:text-white">Vorlagen &amp; Downloads</Link></li>
             <li><Link href="/faq" className="transition-colors duration-200 hover:text-white">Häufige Fragen</Link></li>
             <li><Link href="/kontakt" className="transition-colors duration-200 hover:text-white">Kontakt</Link></li>
           </ul>

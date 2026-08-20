@@ -76,7 +76,9 @@ export default function KfzSteuerRechnerPage() {
     <>
       <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-14 sm:py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <Breadcrumbs items={[{ name: "Kfz-Steuer-Rechner" }]} />
+          <Breadcrumbs
+            items={[{ name: "Rechner", href: "/rechner/" }, { name: "Kfz-Steuer-Rechner" }]}
+          />
           <div className="mt-8 max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-wider text-brand-700">
               Kostenloses Tool

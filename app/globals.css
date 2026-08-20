@@ -196,3 +196,16 @@ h1, h2, h3, h4 {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Druckansicht: Navigation, Footer und als .no-print markierte Elemente ausblenden
+   (genutzt von den Vorlagen-Seiten unter /vorlagen). */
+@media print {
+  header,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+  }
+}

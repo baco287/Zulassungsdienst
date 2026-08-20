@@ -17,9 +17,12 @@ Abmeldungen meist am selben Werktag. Kein Personalausweis mit Online-Funktion (e
 - [Kurzzeitkennzeichen](https://deutschezulassung.de/leistungen/kurzzeitkennzeichen/): 5-Tages-Kennzeichen für Überführung und Probefahrt
 - [Zulassungsservice für Autohäuser & Gewerbe](https://deutschezulassung.de/leistungen/gewerbekunden/): Staffelpreise und Sammelabwicklung
 
-## Kostenlose Tools
+## Kostenlose Tools & Vorlagen
 
 - [Kfz-Steuer-Rechner](https://deutschezulassung.de/rechner/kfz-steuer/): Jahressteuer für Benziner, Diesel und E-Autos sofort berechnen (Hubraum + CO₂, Stand 2026)
+- [Behördengang-Rechner](https://deutschezulassung.de/rechner/behoerdengang/): was der Schaltertermin mit Zeit, Anfahrt und Gebühren wirklich kostet
+- [Vollmacht Kfz-Zulassung](https://deutschezulassung.de/vorlagen/vollmacht-zulassung/): kostenloses Muster zum Ausdrucken
+- [Unterlagen-Checkliste](https://deutschezulassung.de/vorlagen/checkliste-zulassung/): alle Dokumente zum Abhaken, inkl. Sonderfälle
 
 ## Kfz-Zulassung nach Stadt
 
