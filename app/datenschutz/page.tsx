@@ -45,9 +45,33 @@ export default function DatenschutzPage() {
           wir die von Ihnen angegebenen Daten (Name, Kontaktdaten, Fahrzeug- und
           Auftragsdaten sowie übermittelte Dokumente) ausschließlich zur Bearbeitung
           Ihrer Anfrage und zur Durchführung des Zulassungsauftrags (Art. 6 Abs. 1
-          lit. b DSGVO). Der Auftrags-Assistent selbst überträgt keine Daten an uns –
-          die von Ihnen zusammengestellte Nachricht wird erst durch Ihren aktiven
-          Versand per WhatsApp oder E-Mail an uns übermittelt.
+          lit. b DSGVO).
+        </p>
+        <p>
+          Wenn Sie das Formular absenden, werden Ihre Angaben verschlüsselt (TLS) an
+          unseren Webserver übertragen und von dort unmittelbar als E-Mail an unser
+          Postfach zugestellt. Sie erhalten dabei eine Referenznummer, über die Ihr
+          Vorgang zugeordnet wird. Alternativ können Sie uns Ihre Anfrage weiterhin
+          direkt per WhatsApp oder E-Mail senden.
+        </p>
+        <h3>Hochgeladene Unterlagen</h3>
+        <p>
+          Sie können uns Ihre Unterlagen (z. B. Zulassungsbescheinigung, Ausweisdokument,
+          eVB-Nachweis) als Foto oder PDF über das Auftragsformular oder über die Seite
+          „Unterlagen hochladen“ übermitteln. Diese Dateien werden{" "}
+          <strong>nicht auf dem Webserver gespeichert</strong>: Sie werden während der
+          Übertragung nur flüchtig verarbeitet, direkt an das genannte Postfach
+          weitergeleitet und anschließend serverseitig verworfen. Ein Dokumentenarchiv
+          auf dem Webserver besteht nicht.
+        </p>
+        <p>
+          Die Übermittlung der Unterlagen erfolgt freiwillig auf Grundlage Ihrer
+          Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sowie zur Vertragsdurchführung
+          (Art. 6 Abs. 1 lit. b DSGVO); soweit Ausweisdaten betroffen sind, stützt sich
+          die Verarbeitung zusätzlich auf § 20 PAuswG. Sie können Ihre Einwilligung
+          jederzeit mit Wirkung für die Zukunft widerrufen. Sie sind nicht verpflichtet,
+          Unterlagen über die Website zu übermitteln – der Versand per WhatsApp, E-Mail
+          oder Post ist gleichwertig möglich.
         </p>
       </section>
       <section>

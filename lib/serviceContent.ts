@@ -289,6 +289,11 @@ export const serviceContent: Record<string, ServiceContent> = {
         answer:
           "Nur die Zulassungsbescheinigung Teil I sowie Ihren Personalausweis mit neuer Adresse oder eine Meldebescheinigung. Den Rest übernehmen wir.",
       },
+      {
+        question: "Was kostet die Adressänderung?",
+        answer:
+          "90 € als Komplettpreis inkl. MwSt. – amtliche Gebühren und der Versand der aktualisierten Zulassungsbescheinigung sind enthalten. Damit ist die reine Adressänderung günstiger als eine vollständige Ummeldung (129 €), weil keine neuen Kennzeichen anfallen.",
+      },
     ],
     related: ["ummeldung", "halterwechsel"],
     guides: ["auto-ummelden-nach-umzug"],

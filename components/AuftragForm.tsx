@@ -9,20 +9,35 @@ import {
   Check,
   CheckCircle2,
   Copy,
+  Loader2,
   Mail,
   ShieldCheck,
 } from "lucide-react";
 import { sortedServices, getService } from "@/lib/services";
 import { euro } from "@/lib/pricing";
 import { site, whatsAppLink } from "@/lib/site";
+import {
+  buildMessage,
+  followUpWhatsAppLink,
+  mailtoLink,
+  submitOrder,
+  type SubmitResult,
+} from "@/lib/order";
 import type { OrderRequest } from "@/lib/types";
+import DocumentUpload from "./DocumentUpload";
 import WhatsAppIcon from "./WhatsAppIcon";
 
 /**
- * Auftrags-Assistent (Phase 1):
- * Vier Fragen-Schritte mit Fortschrittsanzeige und animierten Übergängen.
- * Am Ende wird eine strukturierte Nachricht erzeugt und über REALE Kanäle
- * versendet (vorbefülltes WhatsApp / mailto:) – kein simuliertes Backend.
+ * Auftrags-Assistent.
+ *
+ * Vier Schritte: Leistung → Details → Kontakt → Unterlagen & Absenden.
+ * Beim Absenden geht die Anfrage samt Anhängen an info@deutschezulassung.de
+ * (siehe lib/order.ts). Danach führen wir in den WhatsApp-Chat weiter, damit
+ * der Hauptkanal erhalten bleibt – nur eben mit einer Referenznummer, die
+ * Chat und Posteingang verbindet.
+ *
+ * Schlägt die Zustellung fehl, erscheinen die bisherigen Direktkanäle
+ * (vorbefülltes WhatsApp bzw. mailto:), damit niemand im Nichts landet.
  */
 
 const initial: OrderRequest = {
@@ -38,42 +53,38 @@ const initial: OrderRequest = {
   consent: false,
 };
 
-const stepLabels = ["Leistung", "Details", "Kontakt", "Absenden"] as const;
+const stepLabels = ["Leistung", "Details", "Kontakt", "Unterlagen"] as const;
 
-type Errors = Partial<Record<keyof OrderRequest, string>>;
+type Errors = Partial<Record<keyof OrderRequest | "contact" | "dateien", string>>;
 
 function validateStep(step: number, v: OrderRequest): Errors {
   const e: Errors = {};
-  if (step === 0 && !v.serviceSlug) e.serviceSlug = "Bitte wählen Sie eine Leistung aus.";
+  if (step === 0 && !v.serviceSlug) {
+    e.serviceSlug = "Bitte wählen Sie eine Leistung aus.";
+  }
   if (step === 1) {
     if (!/^\d{5}$/.test(v.zip.trim())) e.zip = "Bitte eine gültige Postleitzahl (5 Ziffern) angeben.";
     if (v.city.trim().length < 2) e.city = "Bitte Ihren Ort angeben.";
   }
   if (step === 2) {
     if (v.name.trim().length < 3) e.name = "Bitte Ihren vollständigen Namen angeben.";
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.email)) e.email = "Bitte eine gültige E-Mail-Adresse angeben.";
-    if (v.phone.trim().length < 6) e.phone = "Bitte eine Telefonnummer für Rückfragen angeben.";
-  }
-  if (step === 3 && !v.consent) e.consent = "Bitte stimmen Sie der Verarbeitung Ihrer Daten zu.";
-  return e;
-}
 
-function buildMessage(v: OrderRequest): string {
-  const service = getService(v.serviceSlug);
-  return [
-    "Neue Auftragsanfrage über deutschezulassung.de",
-    "",
-    `Leistung: ${service?.name ?? v.serviceSlug}`,
-    `Kundenart: ${v.audience === "privat" ? "Privatkunde" : "Gewerbekunde"}`,
-    `Name: ${v.name}`,
-    `E-Mail: ${v.email}`,
-    `Telefon: ${v.phone}`,
-    `PLZ/Ort: ${v.zip} ${v.city}`,
-    v.vehicle ? `Fahrzeug: ${v.vehicle}` : null,
-    v.message ? `Anmerkung: ${v.message}` : null,
-  ]
-    .filter((l): l is string => l !== null)
-    .join("\n");
+    const hasEmail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.email.trim());
+    const hasPhone = v.phone.replace(/\D/g, "").length >= 6;
+
+    if (v.email.trim() !== "" && !hasEmail) {
+      e.email = "Diese E-Mail-Adresse sieht nicht gültig aus.";
+    }
+    // Ein Kontaktweg genügt: Wer über WhatsApp kommt, hat oft keine E-Mail
+    // zur Hand – zwei Pflichtfelder kosten hier unnötig Abschlüsse.
+    if (!hasEmail && !hasPhone) {
+      e.contact = "Bitte hinterlassen Sie eine E-Mail-Adresse oder eine Telefonnummer.";
+    }
+  }
+  if (step === 3 && !v.consent) {
+    e.consent = "Bitte stimmen Sie der Verarbeitung Ihrer Daten zu.";
+  }
+  return e;
 }
 
 const inputClass = (hasError: boolean) =>
@@ -85,7 +96,7 @@ function FieldError({ id, message }: { id: string; message?: string }) {
   if (!message) return null;
   return (
     <p id={id} className="mt-1.5 flex items-center gap-1 text-sm text-red-600" role="alert">
-      <AlertCircle className="h-4 w-4" aria-hidden /> {message}
+      <AlertCircle className="h-4 w-4 shrink-0" aria-hidden /> {message}
     </p>
   );
 }
@@ -95,10 +106,21 @@ export default function AuftragForm() {
   const [step, setStep] = useState(0);
   const [direction, setDirection] = useState(1);
   const [values, setValues] = useState<OrderRequest>(initial);
+  const [files, setFiles] = useState<File[]>([]);
   const [errors, setErrors] = useState<Errors>({});
+  const [sending, setSending] = useState(false);
+  const [result, setResult] = useState<SubmitResult | null>(null);
   const [copied, setCopied] = useState(false);
+
   const stepContainerRef = useRef<HTMLDivElement>(null);
   const stepChanged = useRef(false);
+  const startedAt = useRef(0);
+
+  // Zeitpunkt des Formularaufrufs – der Endpoint verwirft Einsendungen,
+  // die schneller als drei Sekunden zurückkommen (Bot-Erkennung).
+  useEffect(() => {
+    startedAt.current = Date.now();
+  }, []);
 
   // Barrierefreiheit: nach Schrittwechsel Fokus auf die neue Überschrift setzen,
   // damit Screenreader den Kontextwechsel mitbekommen.
@@ -106,7 +128,7 @@ export default function AuftragForm() {
     if (stepChanged.current) {
       stepContainerRef.current?.querySelector("h2")?.focus();
     }
-  }, [step]);
+  }, [step, result]);
 
   // Vorauswahl über ?leistung=slug → direkt zu Schritt 2.
   useEffect(() => {
@@ -118,11 +140,14 @@ export default function AuftragForm() {
   }, []);
 
   const service = getService(values.serviceSlug);
-  const messageText = useMemo(() => buildMessage(values), [values]);
+  const messageText = useMemo(
+    () => buildMessage(values, result?.reference),
+    [values, result?.reference]
+  );
 
   function set<K extends keyof OrderRequest>(key: K, value: OrderRequest[K]) {
     setValues((v) => ({ ...v, [key]: value }));
-    setErrors((e) => ({ ...e, [key]: undefined }));
+    setErrors((e) => ({ ...e, [key]: undefined, contact: undefined }));
   }
 
   function next() {
@@ -142,6 +167,29 @@ export default function AuftragForm() {
     setStep((s) => Math.max(s - 1, 0));
   }
 
+  async function send() {
+    const e = validateStep(3, values);
+    setErrors(e);
+    if (Object.keys(e).length > 0) return;
+
+    setSending(true);
+    const outcome = await submitOrder({
+      kind: "auftrag",
+      values,
+      files,
+      startedAt: startedAt.current,
+    });
+    setSending(false);
+    setResult(outcome);
+
+    if (!outcome.ok && outcome.field) {
+      setErrors({ [outcome.field as keyof Errors]: outcome.error });
+    }
+    if (outcome.ok) {
+      stepChanged.current = true;
+    }
+  }
+
   /**
    * Schrittwechsel: keyed Remount mit Einblend-Animation.
    * (Bewusst ohne AnimatePresence-Exit – zuverlässig in jedem Renderer.)
@@ -153,6 +201,68 @@ export default function AuftragForm() {
         animate: { opacity: 1, x: 0 },
         transition: { duration: 0.28, ease: [0.21, 0.65, 0.36, 1] as const },
       };
+
+  // ── Erfolg: Anfrage ist im Posteingang, Kunde wechselt in den Chat ────────
+  if (result?.ok && result.reference) {
+    return (
+      <motion.div
+        {...(reduced ? {} : { initial: { opacity: 0, y: 12 }, animate: { opacity: 1, y: 0 } })}
+        ref={stepContainerRef}
+        className="text-center"
+      >
+        <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100">
+          <CheckCircle2 className="h-9 w-9 text-emerald-600" aria-hidden />
+        </span>
+        <h2 tabIndex={-1} className="mt-5 font-display text-2xl font-bold text-ink-900 outline-none">
+          Ihre Anfrage ist eingegangen
+        </h2>
+        <p className="mx-auto mt-3 max-w-md text-ink-600">
+          Wir haben Ihre Anfrage erhalten und melden uns mit der verbindlichen
+          Festpreis-Bestätigung – in der Regel noch am selben Werktag
+          ({site.contact.hours}).
+        </p>
+
+        <p className="mx-auto mt-5 inline-flex flex-col items-center rounded-xl border border-ink-200 bg-ink-50 px-6 py-3">
+          <span className="text-xs font-semibold uppercase tracking-wide text-ink-500">
+            Ihre Referenz
+          </span>
+          <span className="font-display text-xl font-bold tracking-wide text-ink-900">
+            {result.reference}
+          </span>
+        </p>
+
+        {files.length > 0 ? (
+          <p className="mt-4 text-sm text-emerald-700">
+            {files.length} {files.length === 1 ? "Unterlage" : "Unterlagen"} wurden mitgesendet.
+          </p>
+        ) : (
+          <p className="mt-4 text-sm text-ink-600">
+            Ihre Unterlagen können Sie uns direkt im Chat schicken – einfach abfotografieren.
+          </p>
+        )}
+
+        <a
+          href={followUpWhatsAppLink(result.reference, service?.name)}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-7 flex w-full items-center justify-center gap-2 rounded-xl bg-brand-600 px-6 py-4 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
+        >
+          <WhatsAppIcon className="h-5 w-5" />
+          Im WhatsApp-Chat fortsetzen
+        </a>
+        <p className="mt-3 text-xs text-ink-500">
+          Lieber per E-Mail? Antworten Sie einfach auf unsere Bestätigung an{" "}
+          <a
+            href={`mailto:${site.contact.email}`}
+            className="font-medium text-brand-700 underline underline-offset-2"
+          >
+            {site.contact.email}
+          </a>
+          .
+        </p>
+      </motion.div>
+    );
+  }
 
   return (
     <div>
@@ -358,6 +468,9 @@ export default function AuftragForm() {
             <h2 tabIndex={-1} className="font-display text-xl font-bold text-ink-900 outline-none">
               Wie erreichen wir Sie?
             </h2>
+            <p className="mt-2 text-sm text-ink-600">
+              E-Mail oder Telefon genügt – eines von beidem reicht uns.
+            </p>
             <div className="mt-5 space-y-5">
               <div>
                 <label htmlFor="name" className="mb-1.5 block text-sm font-semibold text-ink-800">
@@ -378,7 +491,7 @@ export default function AuftragForm() {
               </div>
               <div>
                 <label htmlFor="email" className="mb-1.5 block text-sm font-semibold text-ink-800">
-                  E-Mail-Adresse *
+                  E-Mail-Adresse
                 </label>
                 <input
                   id="email"
@@ -395,7 +508,7 @@ export default function AuftragForm() {
               </div>
               <div>
                 <label htmlFor="phone" className="mb-1.5 block text-sm font-semibold text-ink-800">
-                  Telefon (für Rückfragen) *
+                  Telefon / WhatsApp
                 </label>
                 <input
                   id="phone"
@@ -410,37 +523,43 @@ export default function AuftragForm() {
                 />
                 <FieldError id="err-phone" message={errors.phone} />
               </div>
+              <FieldError id="err-contact" message={errors.contact} />
             </div>
           </div>
         )}
 
-        {/* Schritt 4: Zusammenfassung + Absenden */}
+        {/* Schritt 4: Unterlagen, Zusammenfassung, Absenden */}
         {step === 3 && (
           <div>
-            <div className="flex items-center gap-3">
-              <CheckCircle2 className="h-7 w-7 text-emerald-600" aria-hidden />
-              <h2 tabIndex={-1} className="font-display text-xl font-bold text-ink-900 outline-none">
-                Alles beisammen – jetzt absenden
-              </h2>
+            <h2 tabIndex={-1} className="font-display text-xl font-bold text-ink-900 outline-none">
+              Unterlagen und Absenden
+            </h2>
+            <p className="mt-2 text-sm text-ink-600">
+              Sie können die Unterlagen jetzt mitschicken – oder später bequem im
+              WhatsApp-Chat nachreichen. Beides ist möglich.
+            </p>
+
+            <div className="mt-5">
+              <DocumentUpload
+                files={files}
+                onChange={setFiles}
+                checklist={service?.checklist}
+                serverError={errors.dateien}
+                label="Unterlagen jetzt mitschicken (optional)"
+              />
             </div>
 
-            <dl className="mt-5 space-y-2 rounded-xl border border-ink-200 bg-ink-50 p-4 text-sm">
+            <dl className="mt-6 space-y-2 rounded-xl border border-ink-200 bg-ink-50 p-4 text-sm">
               <div className="flex justify-between gap-4">
                 <dt className="text-ink-500">Leistung</dt>
                 <dd className="font-semibold text-ink-900">{service?.name}</dd>
               </div>
               <div className="flex justify-between gap-4">
                 <dt className="text-ink-500">Preis</dt>
-                <dd className="font-display font-bold text-brand-700">
+                <dd className="text-right font-display font-bold text-brand-700">
                   {service?.price.serviceFee != null
                     ? `${euro(service.price.serviceFee)} inkl. MwSt.${service.price.inclusive ? " – alles inklusive" : ""}`
                     : "auf Anfrage – Festpreis folgt mit der Bestätigung"}
-                </dd>
-              </div>
-              <div className="flex justify-between gap-4">
-                <dt className="text-ink-500">Kundenart</dt>
-                <dd className="font-medium text-ink-800">
-                  {values.audience === "privat" ? "Privatkunde" : "Autohaus / Gewerbe"}
                 </dd>
               </div>
               <div className="flex justify-between gap-4">
@@ -450,8 +569,12 @@ export default function AuftragForm() {
               <div className="flex justify-between gap-4">
                 <dt className="text-ink-500">Kontakt</dt>
                 <dd className="text-right font-medium text-ink-800">
-                  {values.email}
-                  <br />
+                  {values.email && (
+                    <>
+                      {values.email}
+                      <br />
+                    </>
+                  )}
                   {values.phone}
                 </dd>
               </div>
@@ -464,26 +587,10 @@ export default function AuftragForm() {
               {values.vehicle && (
                 <div className="flex justify-between gap-4">
                   <dt className="text-ink-500">Fahrzeug</dt>
-                  <dd className="font-medium text-ink-800">{values.vehicle}</dd>
+                  <dd className="text-right font-medium text-ink-800">{values.vehicle}</dd>
                 </div>
               )}
             </dl>
-
-            {service && (
-              <aside className="mt-4 rounded-xl border border-brand-200 bg-brand-50 p-4 text-sm text-ink-700">
-                <p className="font-semibold text-ink-900">
-                  Diese Unterlagen brauchen wir von Ihnen:
-                </p>
-                <ul className="mt-2 list-disc space-y-1 pl-5">
-                  {service.checklist.map((c) => (
-                    <li key={c}>{c}</li>
-                  ))}
-                </ul>
-                <p className="mt-2 text-xs text-ink-500">
-                  Noch nicht alles zur Hand? Trotzdem absenden – wir klären den Rest gemeinsam.
-                </p>
-              </aside>
-            )}
 
             <p className="mt-4 text-xs leading-relaxed text-ink-600">
               Mit unserer Festpreis-Bestätigung erhalten Sie die Rechnung – Sie zahlen
@@ -493,6 +600,7 @@ export default function AuftragForm() {
               </a>
               .
             </p>
+
             <label className="mt-5 flex cursor-pointer items-start gap-3 text-sm text-ink-700">
               <input
                 type="checkbox"
@@ -503,8 +611,8 @@ export default function AuftragForm() {
                 className="mt-0.5 h-5 w-5 shrink-0 cursor-pointer rounded border-ink-300 accent-brand-600"
               />
               <span>
-                Ich willige ein, dass meine Angaben zur Bearbeitung meiner Anfrage
-                verarbeitet werden. Details in der{" "}
+                Ich willige ein, dass meine Angaben und die übermittelten Unterlagen zur
+                Bearbeitung meiner Anfrage verarbeitet werden. Details in der{" "}
                 <a
                   href="/datenschutz/"
                   className="font-medium text-brand-700 underline underline-offset-2"
@@ -516,80 +624,89 @@ export default function AuftragForm() {
             </label>
             <FieldError id="err-consent" message={errors.consent} />
 
-            <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-              {/* Sende-CTAs: bei fehlendem Consent echte, fokussierbare Buttons
-                  mit aria-disabled (statt hrefloser Anker) – barrierefrei. */}
-              {values.consent ? (
-                <a
-                  href={whatsAppLink(messageText)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-xl bg-brand-600 px-6 py-4 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
-                >
-                  <WhatsAppIcon className="h-5 w-5" />
-                  Per WhatsApp senden
-                </a>
-              ) : (
-                <button
-                  type="button"
-                  aria-disabled="true"
-                  onClick={() =>
-                    setErrors({ consent: "Bitte stimmen Sie der Verarbeitung Ihrer Daten zu." })
-                  }
-                  className="flex flex-1 cursor-not-allowed items-center justify-center gap-2 rounded-xl bg-ink-300 px-6 py-4 font-display font-semibold text-white"
-                >
-                  <WhatsAppIcon className="h-5 w-5" />
-                  Per WhatsApp senden
-                </button>
-              )}
-              {values.consent ? (
-                <a
-                  href={`mailto:${site.contact.email}?subject=${encodeURIComponent(
-                    `Auftragsanfrage: ${service?.name ?? "Kfz-Zulassung"}`
-                  )}&body=${encodeURIComponent(messageText)}`}
-                  className="flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-xl border-2 border-ink-300 bg-white px-6 py-4 font-display font-semibold text-ink-800 transition-colors duration-200 hover:border-brand-400 hover:bg-brand-50"
-                >
-                  <Mail className="h-5 w-5" aria-hidden />
-                  Per E-Mail senden
-                </a>
-              ) : (
-                <button
-                  type="button"
-                  aria-disabled="true"
-                  onClick={() =>
-                    setErrors({ consent: "Bitte stimmen Sie der Verarbeitung Ihrer Daten zu." })
-                  }
-                  className="flex flex-1 cursor-not-allowed items-center justify-center gap-2 rounded-xl border-2 border-ink-200 bg-ink-50 px-6 py-4 font-display font-semibold text-ink-500"
-                >
-                  <Mail className="h-5 w-5" aria-hidden />
-                  Per E-Mail senden
-                </button>
-              )}
-            </div>
             <button
               type="button"
-              onClick={async () => {
-                if (!values.consent) {
-                  setErrors({ consent: "Bitte stimmen Sie der Verarbeitung Ihrer Daten zu." });
-                  return;
-                }
-                try {
-                  await navigator.clipboard.writeText(messageText);
-                  setCopied(true);
-                  setTimeout(() => setCopied(false), 3000);
-                } catch {
-                  /* Clipboard nicht verfügbar – Nutzer kann Text manuell markieren */
-                }
-              }}
-              className="mt-3 flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl border border-ink-200 px-4 py-2.5 text-sm font-medium text-ink-600 transition-colors duration-200 hover:border-brand-300 hover:text-ink-900"
+              onClick={send}
+              disabled={sending}
+              className="mt-6 flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-brand-600 px-6 py-4 font-display text-base font-semibold text-white transition-colors duration-200 hover:bg-brand-700 disabled:cursor-wait disabled:bg-brand-400"
             >
-              <Copy className="h-4 w-4" aria-hidden />
-              {copied ? "Kopiert! Senden Sie die Nachricht an " + site.contact.email : "Falls sich nichts öffnet: Nachricht kopieren"}
+              {sending ? (
+                <>
+                  <Loader2 className="h-5 w-5 animate-spin" aria-hidden />
+                  {files.length > 0 ? "Unterlagen werden übertragen …" : "Wird gesendet …"}
+                </>
+              ) : (
+                <>
+                  Anfrage kostenlos absenden
+                  <ArrowRight className="h-5 w-5" aria-hidden />
+                </>
+              )}
             </button>
-            <p className="mt-3 flex items-center gap-2 text-xs text-ink-500">
-              <ShieldCheck className="h-4 w-4 text-brand-600" aria-hidden />
-              Öffnet Ihre App mit fertiger Nachricht – Sie behalten die volle Kontrolle.
+
+            <p className="mt-3 flex items-center justify-center gap-2 text-xs text-ink-500">
+              <ShieldCheck className="h-4 w-4 shrink-0 text-brand-600" aria-hidden />
+              Verschlüsselte Übertragung · unverbindlich · kostenlos
             </p>
+
+            {/* Zustellung fehlgeschlagen → Direktkanäle als Rückfallebene */}
+            {result && !result.ok && result.fallback && (
+              <div className="mt-6 rounded-xl border-2 border-amber-300 bg-amber-50 p-4">
+                <p className="flex items-start gap-2 text-sm font-semibold text-amber-900">
+                  <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" aria-hidden />
+                  {result.error} Senden Sie uns Ihre Anfrage bitte direkt:
+                </p>
+                <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+                  <a
+                    href={whatsAppLink(messageText)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-brand-600 px-5 py-3 font-display text-sm font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
+                  >
+                    <WhatsAppIcon className="h-5 w-5" />
+                    Per WhatsApp senden
+                  </a>
+                  <a
+                    href={mailtoLink(values)}
+                    className="flex flex-1 items-center justify-center gap-2 rounded-xl border-2 border-ink-300 bg-white px-5 py-3 font-display text-sm font-semibold text-ink-800 transition-colors duration-200 hover:border-brand-400 hover:bg-brand-50"
+                  >
+                    <Mail className="h-5 w-5" aria-hidden />
+                    Per E-Mail senden
+                  </a>
+                </div>
+                <button
+                  type="button"
+                  onClick={async () => {
+                    try {
+                      await navigator.clipboard.writeText(messageText);
+                      setCopied(true);
+                      setTimeout(() => setCopied(false), 3000);
+                    } catch {
+                      /* Clipboard nicht verfügbar – Text lässt sich manuell markieren */
+                    }
+                  }}
+                  className="mt-3 flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl border border-ink-200 bg-white px-4 py-2.5 text-sm font-medium text-ink-600 transition-colors duration-200 hover:border-brand-300 hover:text-ink-900"
+                >
+                  <Copy className="h-4 w-4" aria-hidden />
+                  {copied
+                    ? `Kopiert! Senden Sie die Nachricht an ${site.contact.email}`
+                    : "Falls sich nichts öffnet: Nachricht kopieren"}
+                </button>
+                {files.length > 0 && (
+                  <p className="mt-3 text-xs text-amber-900">
+                    Ihre {files.length} {files.length === 1 ? "Datei" : "Dateien"} konnten so nicht
+                    übertragen werden – bitte hängen Sie sie im Chat oder in der E-Mail direkt an.
+                  </p>
+                )}
+              </div>
+            )}
+
+            {/* Korrigierbarer Fehler ohne Feldbezug */}
+            {result && !result.ok && !result.fallback && !result.field && (
+              <p className="mt-4 flex items-start gap-2 text-sm text-red-600" role="alert">
+                <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" aria-hidden />
+                {result.error}
+              </p>
+            )}
           </div>
         )}
       </motion.div>
@@ -599,9 +716,9 @@ export default function AuftragForm() {
         <button
           type="button"
           onClick={back}
-          disabled={step === 0}
+          disabled={step === 0 || sending}
           className={`flex items-center gap-1.5 rounded-xl px-4 py-2.5 font-display text-sm font-semibold transition-colors duration-200 ${
-            step === 0
+            step === 0 || sending
               ? "cursor-not-allowed text-ink-300"
               : "cursor-pointer text-ink-700 hover:bg-ink-100"
           }`}

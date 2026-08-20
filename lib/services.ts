@@ -151,10 +151,10 @@ export const services: Service[] = [
     description:
       "Bei einem Umzug innerhalb desselben Zulassungsbezirks genügt die Änderung der Adresse in der Zulassungsbescheinigung. Wir erledigen das für Sie digital – Sie erhalten die aktualisierten Papiere bequem per Post.",
     price: {
-      serviceFee: 129.0,
+      serviceFee: 90.0,
       inclusive: true,
       verified: true,
-      note: "Wird als Umschreibung abgewickelt – Komplettpreis inkl. Gebühren und Versand.",
+      note: "Komplettpreis inkl. amtlicher Gebühren und Versand der aktualisierten Papiere.",
     },
     checklist: [
       "Zulassungsbescheinigung Teil I",

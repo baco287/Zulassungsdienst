@@ -34,7 +34,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "Ummeldung, Umschreibung, Halterwechsel – was ist der Unterschied?",
     answer:
-      "Ummeldung: Sie sind umgezogen und das Fahrzeug bleibt auf Sie zugelassen. Halterwechsel (auch Umschreibung genannt): Das Fahrzeug wechselt den Besitzer, z. B. nach einem Gebrauchtwagenkauf. Adressänderung: Nur die Anschrift in den Papieren wird aktualisiert. Alle drei kosten bei uns denselben Komplettpreis von 129 € – wählen Sie im Zweifel einfach eine Leistung aus, wir prüfen den passenden Vorgang für Sie.",
+      "Ummeldung: Sie sind umgezogen und das Fahrzeug bleibt auf Sie zugelassen. Halterwechsel (auch Umschreibung genannt): Das Fahrzeug wechselt den Besitzer, z. B. nach einem Gebrauchtwagenkauf. Adressänderung: Nur die Anschrift in den Papieren wird aktualisiert. Ummeldung und Halterwechsel kosten bei uns 129 € komplett, die reine Adressänderung 90 € – wählen Sie im Zweifel einfach eine Leistung aus, wir prüfen den passenden Vorgang für Sie.",
     category: "allgemein",
   },
   {

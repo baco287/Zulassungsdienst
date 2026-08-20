@@ -64,6 +64,7 @@ export default function Footer() {
             <li><Link href="/vorlagen" className="transition-colors duration-200 hover:text-white">Vorlagen &amp; Downloads</Link></li>
             <li><Link href="/faq" className="transition-colors duration-200 hover:text-white">Häufige Fragen</Link></li>
             <li><Link href="/kontakt" className="transition-colors duration-200 hover:text-white">Kontakt</Link></li>
+            <li><Link href="/unterlagen" className="transition-colors duration-200 hover:text-white">Unterlagen hochladen</Link></li>
           </ul>
         </nav>
 
