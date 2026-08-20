@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowRight, BookOpen, Landmark } from "lucide-react";
+import { ArrowRight, BookOpen, CalendarX2, CheckCircle2, Landmark } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTASection from "@/components/CTASection";
 import FaqAccordion from "@/components/FaqAccordion";
@@ -29,7 +29,13 @@ export async function generateMetadata({
   return {
     title: `Kfz-Zulassung ${city.name} – ohne Termin & Behördengang`,
     description: city.description,
-    keywords: city.keywords,
+    keywords: [
+      ...city.keywords,
+      `Zulassungsstelle ${city.name} Termin`,
+      `Auto zulassen ${city.name} Termin`,
+      `Kfz-Zulassung ${city.name} Termin`,
+      `Termin Zulassungsstelle ${city.name} ausgebucht`,
+    ],
   };
 }
 
@@ -110,6 +116,48 @@ export default async function CityPage({
                 </Reveal>
               ))}
             </div>
+
+            <Reveal>
+              <section className="rounded-2xl border border-brand-200 bg-brand-50/60 p-6 sm:p-7">
+                <h2 className="flex items-start gap-3 font-display text-2xl font-bold text-ink-900">
+                  <CalendarX2 className="mt-1 h-6 w-6 shrink-0 text-brand-700" aria-hidden />
+                  Keinen Termin bei der Zulassungsstelle {city.inName} bekommen?
+                </h2>
+                <p className="mt-3 leading-relaxed text-ink-700">
+                  Damit sind Sie nicht allein – Zulassungstermine sind in vielen Städten
+                  Wochen im Voraus ausgebucht. Die gute Nachricht: <strong>Bei uns
+                  brauchen Sie keinen.</strong> Ihr Vorgang startet sofort nach der
+                  Beauftragung, den Behördenteil übernehmen wir.
+                </p>
+                <ul className="mt-4 space-y-2.5">
+                  {[
+                    "Sofort-Start statt Terminsuche – beauftragen Sie jetzt, wir legen los",
+                    "Kein Personalausweis mit Online-Funktion (eID) nötig",
+                    `Zulassung in 1–3 Werktagen, Abmeldung meist taggleich – Kennzeichen kommen per Versand`,
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-ink-700">
+                      <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" aria-hidden />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-5 flex flex-wrap items-center gap-4">
+                  <Link
+                    href="/auftrag/"
+                    className="inline-flex items-center gap-2 rounded-xl bg-brand-700 px-5 py-3 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-800"
+                  >
+                    Jetzt ohne Termin starten
+                    <ArrowRight className="h-4 w-4" aria-hidden />
+                  </Link>
+                  <Link
+                    href="/ratgeber/kein-termin-zulassungsstelle/"
+                    className="text-sm font-semibold text-brand-700 underline underline-offset-2 hover:text-brand-800"
+                  >
+                    Alle Optionen ohne Termin im Überblick
+                  </Link>
+                </div>
+              </section>
+            </Reveal>
 
             <Reveal>
               <div>

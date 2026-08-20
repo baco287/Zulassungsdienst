@@ -553,6 +553,81 @@ export const guides: Guide[] = [
   },
 
   {
+    slug: "kein-termin-zulassungsstelle",
+    title: "Kein Termin bei der Zulassungsstelle? Das können Sie jetzt tun",
+    description:
+      "Alle Termine bei der Zulassungsstelle ausgebucht? Diese vier Wege führen trotzdem zur Zulassung – von Storno-Slots über i-Kfz bis zum Zulassungsdienst ohne Termin.",
+    datePublished: "2026-08-20",
+    dateModified: "2026-08-20",
+    sections: [
+      {
+        heading: "Warum Termine bei Zulassungsstellen so knapp sind",
+        paragraphs: [
+          "In vielen Großstädten sind Zulassungstermine Wochen im Voraus ausgebucht: Personalmangel in den Ämtern trifft auf konstant hohe Nachfrage durch Umzüge, Fahrzeugkäufe und Saisongeschäft. Ohne Termin kommt man in den meisten Behörden gar nicht mehr an den Schalter – spontanes Erscheinen führt nur zur Abweisung am Empfang.",
+          "Wer ein frisch gekauftes Auto vor der Tür stehen hat oder eine Frist einhalten muss, braucht deshalb einen Plan B. Vier Optionen gibt es – geordnet von „mit Glück“ bis „funktioniert immer“.",
+        ],
+      },
+      {
+        heading: "Option 1: Storno-Termine und Nachbar-Standorte",
+        paragraphs: [
+          "Viele Terminportale geben stornierte Termine ohne Ankündigung wieder frei – oft früh morgens. Wer mehrmals täglich prüft (besonders zwischen 6 und 8 Uhr), erwischt manchmal einen kurzfristigen Slot. In größeren Städten lohnt außerdem der Blick auf alle Standorte der Behörde: Ein weiter entfernter Standort hat oft frühere Termine als der beliebte in der Innenstadt.",
+          "Verlassen sollte man sich darauf nicht – es bleibt Glückssache, und der Zeitaufwand für die tägliche Portal-Jagd summiert sich schnell.",
+        ],
+      },
+      {
+        heading: "Option 2: Die Online-Zulassung i-Kfz – ganz ohne Termin",
+        paragraphs: [
+          "Alle Standardvorgänge lassen sich seit 2023 über das i-Kfz-Portal der Behörde online erledigen – ein Termin ist dafür nicht nötig. Der Haken sind die Voraussetzungen: Personalausweis mit aktivierter Online-Funktion samt PIN, Fahrzeugdokumente mit Sicherheitscodes und funktionierende Online-Bezahlung. Scheitert einer dieser Punkte – bei älteren Papieren, Importen oder vergessener eID-PIN –, ist der Weg versperrt.",
+        ],
+      },
+      {
+        heading: "Option 3: Zulassungsdienst – der Weg, der immer funktioniert",
+        paragraphs: [
+          "Ein Zulassungsdienst braucht weder Ihren Termin noch Ihre eID: Sie fotografieren die Unterlagen, erteilen eine digitale Vollmacht, und der Dienst führt den Vorgang bei der Behörde durch – über eigene Zugänge, unabhängig von der öffentlichen Terminvergabe. Bei DeutscheZulassung startet Ihr Vorgang sofort nach Auftragseingang; die Zulassung ist in der Regel in 1–3 Werktagen erledigt, Abmeldungen meist noch am selben Werktag.",
+          "Das kostet mit 129 € (komplett inkl. Gebühren und Kennzeichen) mehr als der Schalter – dafür entfallen Terminsuche, Anfahrt und Wartezeit vollständig. Gerade wenn das neue Auto schon bezahlt vor der Tür steht, ist das oft der Unterschied zwischen „fährt diese Woche“ und „steht noch einen Monat“.",
+        ],
+      },
+      {
+        heading: "Option 4: Für Eilige – Express-Abwicklung",
+        paragraphs: [
+          "Wenn es besonders schnell gehen muss – etwa für eine Fahrzeugübergabe oder einen Auslieferungstermin –, kennzeichnen Sie den Auftrag bei uns als eilig: Express-Vorgänge reichen wir bevorzugt ein, je nach Behörde ist die Zulassung dann noch am selben oder nächsten Werktag fertig.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Kann ich ohne Termin einfach zur Zulassungsstelle gehen?",
+        answer:
+          "In den meisten Städten nicht mehr – der Zugang ist an gebuchte Termine gebunden, spontane Besucher werden abgewiesen. Nur wenige kleinere Behörden vergeben noch Wartemarken vor Ort.",
+      },
+      {
+        question: "Wie komme ich am schnellsten an einen kurzfristigen Behördentermin?",
+        answer:
+          "Storno-Slots abpassen: mehrmals täglich das Terminportal prüfen, besonders früh morgens, und alle Standorte der Behörde durchsuchen. Garantien gibt es dabei keine – wer es eilig hat, fährt mit i-Kfz (falls die Voraussetzungen passen) oder einem Zulassungsdienst sicherer.",
+      },
+      {
+        question: "Was kostet die Zulassung ohne eigenen Termin über einen Dienst?",
+        answer:
+          "Bei DeutscheZulassung 129 € als Komplettpreis inklusive amtlicher Gebühren, Kennzeichen und Versand – der Vorgang startet sofort, ganz ohne Behördentermin. Die Abmeldung kostet 34,90 € und ist meist taggleich erledigt.",
+      },
+      {
+        question: "Gilt das auch für meine Stadt?",
+        answer:
+          "Ja – wir arbeiten mit jeder deutschen Zulassungsbehörde zusammen, von Berlin bis in den kleinsten Landkreis. Auf unseren Stadtseiten finden Sie Details zu den 40 größten Städten.",
+      },
+    ],
+    relatedServices: ["neuzulassung", "halterwechsel", "abmeldung"],
+    relatedGuides: ["i-kfz-online-zulassung", "was-kostet-eine-kfz-zulassung", "auto-anmelden-unterlagen"],
+    keywords: [
+      "Zulassungsstelle kein Termin",
+      "Auto zulassen ohne Termin",
+      "Zulassungsstelle Termin ausgebucht",
+      "Kfz-Zulassung Termin Alternative",
+      "kurzfristiger Termin Zulassungsstelle",
+    ],
+  },
+
+  {
     slug: "kfz-zulassung-glossar",
     title: "Kfz-Zulassung von A bis Z: Die wichtigsten Begriffe erklärt",
     description:
