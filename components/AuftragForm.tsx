@@ -647,6 +647,11 @@ export default function AuftragForm() {
               <ShieldCheck className="h-4 w-4 shrink-0 text-brand-600" aria-hidden />
               Verschlüsselte Übertragung · unverbindlich · kostenlos
             </p>
+            {/* Einwand-Entkräftung direkt am Entscheidungspunkt statt nur im Kleingedruckten */}
+            <p className="mt-2 text-center text-xs leading-relaxed text-ink-500">
+              Der Auftrag entsteht erst, wenn Sie unsere Festpreis-Bestätigung annehmen –
+              bezahlt wird erst danach.
+            </p>
 
             {/* Zustellung fehlgeschlagen → Direktkanäle als Rückfallebene */}
             {result && !result.ok && result.fallback && (

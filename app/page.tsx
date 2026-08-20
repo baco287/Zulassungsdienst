@@ -17,6 +17,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import HeroFlowAnimation from "@/components/HeroFlowAnimation";
+import Kennzeichen from "@/components/Kennzeichen";
 import ServiceCard from "@/components/ServiceCard";
 import PackageCards from "@/components/PackageCards";
 import AuftragForm from "@/components/AuftragForm";
@@ -26,8 +27,15 @@ import Maxx from "@/components/Maxx";
 import Reveal from "@/components/Reveal";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
 import { sortedServices } from "@/lib/services";
+import { euro } from "@/lib/pricing";
 import { faqItems } from "@/lib/faq";
 import { site, whatsAppLink } from "@/lib/site";
+
+/** Die vier häufigsten Vorgänge – Direkteinstieg im Hero. */
+const heroSlugs = ["neuzulassung", "ummeldung", "abmeldung", "halterwechsel"] as const;
+const heroServices = heroSlugs
+  .map((slug) => sortedServices.find((s) => s.slug === slug))
+  .filter((s): s is NonNullable<typeof s> => s !== undefined);
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
@@ -92,20 +100,37 @@ export default function HomePage() {
               Der Service für Privatkunden, Autohäuser &amp; Gewerbe. In wenigen Minuten
               beauftragt – schnell, sicher und vollständig online.
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link
-                href="/auftrag"
-                className="flex items-center justify-center gap-2 rounded-[14px] bg-brand-600 px-8 py-4 font-display text-base font-semibold text-white shadow-lg shadow-brand-600/30 transition-all duration-200 hover:bg-brand-700 hover:shadow-brand-600/40"
-              >
-                Jetzt starten
-                <ArrowRight className="h-5 w-5" aria-hidden />
-              </Link>
-              <a
-                href="#ablauf"
-                className="flex items-center justify-center gap-2 rounded-[14px] border-2 border-ink-200 bg-white px-8 py-4 font-display text-base font-semibold text-ink-800 transition-colors duration-200 hover:border-brand-400 hover:bg-brand-50"
-              >
-                Mehr erfahren
-              </a>
+            {/* Direkteinstieg: Leistung wählen und mitten im Formular landen
+                (?leistung= überspringt dort Schritt 1). Kürzester Weg zum Auftrag. */}
+            <div className="mt-8">
+              <p className="font-display text-sm font-bold text-ink-900">
+                Was möchten Sie erledigen?
+              </p>
+              <div className="mt-3 grid max-w-md grid-cols-2 gap-3">
+                {heroServices.map((s) => (
+                  <Link
+                    key={s.slug}
+                    href={`/auftrag/?leistung=${s.slug}`}
+                    className="group rounded-[8px] transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
+                  >
+                    <Kennzeichen uniform>{s.shortName ?? s.name}</Kennzeichen>
+                    <span className="mt-1 block text-center text-xs text-ink-500">
+                      {s.price.serviceFee !== null
+                        ? `${euro(s.price.serviceFee)} komplett`
+                        : "Preis auf Anfrage"}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+              <p className="mt-4 text-sm text-ink-600">
+                Etwas anderes?{" "}
+                <Link
+                  href="/auftrag"
+                  className="font-semibold text-brand-700 underline underline-offset-2 hover:text-brand-800"
+                >
+                  Alle Leistungen im Auftrags-Assistenten
+                </Link>
+              </p>
             </div>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-ink-600">
               <span className="flex items-center gap-1.5">

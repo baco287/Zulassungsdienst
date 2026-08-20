@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Lexend, Source_Sans_3 } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import MobileCTA from "@/components/MobileCTA";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -125,6 +126,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <MobileCTA />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
