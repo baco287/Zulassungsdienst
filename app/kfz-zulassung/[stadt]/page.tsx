@@ -73,7 +73,7 @@ export default async function CityPage({
       price: "129.00",
       priceCurrency: "EUR",
       description:
-        "Komplettpreis je Zulassungsvorgang inkl. amtlicher Gebühren, Kennzeichen und Versand",
+        "Je Zulassungsvorgang inkl. amtlicher Gebühren und Versand; neue Kennzeichenschilder zzgl. 28,90 € pro Paar",
     },
   };
 

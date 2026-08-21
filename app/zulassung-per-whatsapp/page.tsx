@@ -85,7 +85,7 @@ const faq = [
   {
     question: "Kostet der Service per Chat mehr als das Online-Formular?",
     answer:
-      "Nein. Es gelten dieselben Festpreise: 129 € komplett für Neuzulassung, Ummeldung, Umschreibung oder Wiederzulassung und 34,90 € für die Abmeldung – jeweils inklusive amtlicher Gebühren. Der Weg über den Chat kostet keinen Cent extra.",
+      "Nein. Es gelten dieselben Festpreise: 129 € für Neuzulassung, Ummeldung, Umschreibung oder Wiederzulassung (zzgl. 28,90 € für neue Kennzeichenschilder) und 34,90 € für die Abmeldung – jeweils inklusive amtlicher Gebühren. Der Weg über den Chat kostet keinen Cent extra.",
   },
   {
     question: "Welche Vorgänge kann ich per Chat erledigen?",

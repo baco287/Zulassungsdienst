@@ -14,7 +14,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { sortedServices, getService } from "@/lib/services";
-import { euro } from "@/lib/pricing";
+import { euro, plateFee } from "@/lib/pricing";
 import { site, whatsAppLink } from "@/lib/site";
 import {
   buildMessage,
@@ -345,9 +345,11 @@ export default function AuftragForm() {
                       </span>
                       <span className="mt-1 block text-xs text-ink-500">
                         {s.price.serviceFee !== null
-                          ? s.price.inclusive
-                            ? `${euro(s.price.serviceFee)} inkl. MwSt. – alles inklusive`
-                            : `ab ${euro(s.price.serviceFee)}`
+                          ? s.price.platesExtra
+                            ? `${euro(s.price.serviceFee)} zzgl. Kennzeichen ${euro(plateFee)}`
+                            : s.price.inclusive
+                              ? `${euro(s.price.serviceFee)} inkl. MwSt. – alles inklusive`
+                              : `ab ${euro(s.price.serviceFee)}`
                           : "Preis auf Anfrage"}
                       </span>
                     </button>
@@ -558,7 +560,9 @@ export default function AuftragForm() {
                 <dt className="text-ink-500">Preis</dt>
                 <dd className="text-right font-display font-bold text-brand-700">
                   {service?.price.serviceFee != null
-                    ? `${euro(service.price.serviceFee)} inkl. MwSt.${service.price.inclusive ? " – alles inklusive" : ""}`
+                    ? service.price.platesExtra
+                      ? `${euro(service.price.serviceFee)} inkl. MwSt., zzgl. Kennzeichenschilder ${euro(plateFee)} (Paar), falls benötigt`
+                      : `${euro(service.price.serviceFee)} inkl. MwSt.${service.price.inclusive ? " – alles inklusive" : ""}`
                     : "auf Anfrage – Festpreis folgt mit der Bestätigung"}
                 </dd>
               </div>

@@ -9,6 +9,6 @@ export default function OgImage() {
     kicker: "Preise",
     title: "Transparente Preise ohne versteckte Kosten",
     subtitle:
-      "Komplettpreis 129 € je Zulassung – amtliche Gebühren, Kennzeichen und Versand inklusive.",
+      "129 € je Zulassung inkl. amtlicher Gebühren und Versand – Kennzeichenschilder zzgl. 28,90 €.",
   });
 }

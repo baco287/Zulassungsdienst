@@ -5,13 +5,13 @@ import CTASection from "@/components/CTASection";
 import Kennzeichen from "@/components/Kennzeichen";
 import Reveal from "@/components/Reveal";
 import { categoryLabels, sortedServices } from "@/lib/services";
-import { euro, euroRange, officialFees, plateCosts, priceDisclaimer } from "@/lib/pricing";
+import { euro, euroRange, officialFees, plateCosts, plateFee, priceDisclaimer } from "@/lib/pricing";
 import type { ServiceCategory } from "@/lib/types";
 
 export const metadata: Metadata = {
   title: "Preise – transparent und ohne versteckte Kosten",
   description:
-    "Komplettpreise inkl. MwSt., amtlicher Gebühren, Kennzeichen und Versand: 129 Euro je Zulassung, 34,90 Euro je Abmeldung – ohne versteckte Kosten.",
+    "Transparente Preise inkl. MwSt., amtlicher Gebühren und Versand: 129 Euro je Zulassung zzgl. Kennzeichenschilder 28,90 Euro, Abmeldung 34,90 Euro – ohne versteckte Kosten.",
 };
 
 const order: ServiceCategory[] = ["zulassung", "kennzeichen", "dokumente", "service"];
@@ -23,9 +23,10 @@ export default function PreisePage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <h1 className="font-display text-4xl font-bold text-ink-900 sm:text-5xl">Preise</h1>
           <p className="mt-4 max-w-2xl text-lg text-ink-600">
-            <strong>Ein Preis, alles drin:</strong> Bei unseren Zulassungsleistungen sind
-            amtliche Gebühren, Kennzeichen und Versand bereits enthalten – keine
-            versteckten Kosten, keine Überraschungen.
+            <strong>Transparent kalkuliert:</strong> Bei unseren Zulassungsleistungen sind
+            amtliche Gebühren und versicherter Versand bereits enthalten. Neue
+            Kennzeichenschilder kommen, falls benötigt, mit 28,90 € pro Paar dazu –
+            keine versteckten Kosten, keine Überraschungen.
           </p>
         </div>
       </section>
@@ -88,7 +89,12 @@ export default function PreisePage() {
                             )}
                           </td>
                           <td className="px-5 py-4 text-right text-ink-700">
-                            {s.price.inclusive ? (
+                            {s.price.platesExtra ? (
+                              <span>
+                                Schilder zzgl. {euro(plateFee)}
+                                <span className="block text-xs text-ink-500">Versand inklusive</span>
+                              </span>
+                            ) : s.price.inclusive ? (
                               <span className="font-semibold text-brand-700">
                                 {s.slug === "abmeldung" ? "entfällt (digital)" : "inklusive ✓"}
                               </span>

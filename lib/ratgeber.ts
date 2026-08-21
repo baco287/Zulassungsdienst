@@ -49,12 +49,12 @@ export const guides: Guide[] = [
         table: {
           headers: ["Vorgang", "i-Kfz online (selbst)", "Am Schalter (selbst)", "Über DeutscheZulassung"],
           rows: [
-            ["Neuzulassung", "ca. 12,80 – 18,00 € + Kennzeichen", "ca. 26,30 – 30,00 € + Kennzeichen", "129 € komplett"],
-            ["Umschreibung / Halterwechsel", "ca. 12,80 – 18,00 € + ggf. Kennzeichen", "ca. 26,30 – 30,00 € + ggf. Kennzeichen", "129 € komplett"],
+            ["Neuzulassung", "ca. 12,80 – 18,00 € + Kennzeichen", "ca. 26,30 – 30,00 € + Kennzeichen", "129 € + Kennzeichen"],
+            ["Umschreibung / Halterwechsel", "ca. 12,80 – 18,00 € + ggf. Kennzeichen", "ca. 26,30 – 30,00 € + ggf. Kennzeichen", "129 € + ggf. Kennzeichen"],
             ["Ummeldung nach Umzug", "ca. 12,80 – 18,00 €", "ca. 26,30 – 30,00 €", "129 € komplett"],
             ["Abmeldung", "ca. 3 – 16 €", "ca. 3 – 16 €", "34,90 € komplett"],
             ["Wunschkennzeichen (Zusatz)", "ca. 12,80 € + Schilder", "ca. 12,80 € + Schilder", "34,90 € inkl. Schilder"],
-            ["Kennzeichenschilder (Paar)", "ca. 20 – 35 €", "ca. 20 – 35 €", "inklusive"],
+            ["Kennzeichenschilder (Paar)", "ca. 20 – 35 €", "ca. 20 – 35 €", "28,90 €"],
           ],
         },
       },
@@ -78,7 +78,7 @@ export const guides: Guide[] = [
         heading: "Selbst zulassen oder Zulassungsdienst beauftragen?",
         paragraphs: [
           "Wer Zeit hat, einen Termin bekommt und alle Unterlagen beisammen hat, zahlt beim Selbermachen nur Gebühren und Schilder – zusammen meist 40 bis 70 €. Die Realität sieht oft anders aus: Termine sind in vielen Städten Wochen im Voraus ausgebucht, und ein halber Arbeitstag geht schnell verloren.",
-          "Ein Zulassungsdienst übernimmt den kompletten Vorgang gegen einen Servicepreis. Bei DeutscheZulassung gilt der Komplettpreis von 129 € für Neuzulassung, Umschreibung, Ummeldung oder Wiederzulassung – amtliche Gebühren, Kennzeichen und versicherter Versand sind darin bereits enthalten. Die Abmeldung kostet 34,90 € inklusive Gebühren. Sie zahlen also einen festen Betrag und wissen vorher genau, was auf Sie zukommt.",
+          "Ein Zulassungsdienst übernimmt den kompletten Vorgang gegen einen Servicepreis. Bei DeutscheZulassung kosten Neuzulassung, Umschreibung, Ummeldung und Wiederzulassung je 129 € – amtliche Gebühren und versicherter Versand sind darin bereits enthalten. Werden neue Kennzeichenschilder benötigt, kommen 28,90 € pro Paar dazu. Die Abmeldung kostet 34,90 € inklusive Gebühren. Sie wissen also vorher genau, was auf Sie zukommt.",
         ],
       },
       {
@@ -97,7 +97,7 @@ export const guides: Guide[] = [
       {
         question: "Was kostet ein Zulassungsdienst?",
         answer:
-          "Marktüblich sind Komplettpreise um 120 – 130 € pro Zulassungsvorgang inklusive Gebühren und Kennzeichen. DeutscheZulassung berechnet 129 € komplett; die Abmeldung kostet 34,90 €.",
+          "Marktüblich sind Preise um 120 – 130 € pro Zulassungsvorgang zzgl. Kennzeichen. DeutscheZulassung berechnet 129 € inkl. Gebühren und Versand, zzgl. 28,90 € für neue Kennzeichenschilder; die Abmeldung kostet 34,90 €.",
       },
       {
         question: "Ist die Online-Zulassung (i-Kfz) günstiger als der Schalter?",
@@ -240,7 +240,7 @@ export const guides: Guide[] = [
       {
         question: "Was kostet das Ummelden nach einem Umzug?",
         answer:
-          "Am Schalter zahlen Sie amtliche Gebühren von rund 26 – 30 € plus ggf. neue Kennzeichen. Über DeutscheZulassung kostet die Ummeldung 129 € komplett – inklusive Gebühren, Kennzeichen und Versand, ganz ohne Behördentermin.",
+          "Am Schalter zahlen Sie amtliche Gebühren von rund 26 – 30 € plus ggf. neue Kennzeichen. Über DeutscheZulassung kostet die Ummeldung 129 € inklusive Gebühren und Versand (neue Schilder ggf. zzgl. 28,90 €) – ganz ohne Behördentermin.",
       },
       {
         question: "Muss ich bei der Ummeldung die Versicherung wechseln?",
@@ -590,7 +590,7 @@ export const guides: Guide[] = [
         heading: "Option 3: Zulassungsdienst – der Weg, der immer funktioniert",
         paragraphs: [
           "Ein Zulassungsdienst braucht weder Ihren Termin noch Ihre eID: Sie fotografieren die Unterlagen, erteilen eine digitale Vollmacht, und der Dienst führt den Vorgang bei der Behörde durch – über eigene Zugänge, unabhängig von der öffentlichen Terminvergabe. Bei DeutscheZulassung startet Ihr Vorgang sofort nach Auftragseingang; die Zulassung ist in der Regel in 1–3 Werktagen erledigt, Abmeldungen meist noch am selben Werktag.",
-          "Das kostet mit 129 € (komplett inkl. Gebühren und Kennzeichen) mehr als der Schalter – dafür entfallen Terminsuche, Anfahrt und Wartezeit vollständig. Gerade wenn das neue Auto schon bezahlt vor der Tür steht, ist das oft der Unterschied zwischen „fährt diese Woche“ und „steht noch einen Monat“.",
+          "Das kostet mit 129 € zzgl. ggf. 28,90 € für Kennzeichen mehr als der Schalter – dafür entfallen Terminsuche, Anfahrt und Wartezeit vollständig. Gerade wenn das neue Auto schon bezahlt vor der Tür steht, ist das oft der Unterschied zwischen „fährt diese Woche“ und „steht noch einen Monat“.",
         ],
       },
       {
@@ -614,7 +614,7 @@ export const guides: Guide[] = [
       {
         question: "Was kostet die Zulassung ohne eigenen Termin über einen Dienst?",
         answer:
-          "Bei DeutscheZulassung 129 € als Komplettpreis inklusive amtlicher Gebühren, Kennzeichen und Versand – der Vorgang startet sofort, ganz ohne Behördentermin. Die Abmeldung kostet 34,90 € und ist meist taggleich erledigt.",
+          "Bei DeutscheZulassung 129 € inklusive amtlicher Gebühren und Versand, zzgl. 28,90 € für neue Kennzeichenschilder – der Vorgang startet sofort, ganz ohne Behördentermin. Die Abmeldung kostet 34,90 € und ist meist taggleich erledigt.",
       },
       {
         question: "Gilt das auch für meine Stadt?",

@@ -16,7 +16,7 @@ import SecurityCodeGuide from "@/components/SecurityCodeGuide";
 import { getService, services, categoryLabels } from "@/lib/services";
 import { getServiceContent } from "@/lib/serviceContent";
 import { getGuide } from "@/lib/ratgeber";
-import { euro, euroRange, priceDisclaimer } from "@/lib/pricing";
+import { euro, euroRange, priceDisclaimer, plateFee } from "@/lib/pricing";
 import { site, whatsAppLink } from "@/lib/site";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
 
@@ -291,12 +291,18 @@ export default async function ServiceDetailPage({
                   <ul className="space-y-1.5 rounded-xl bg-brand-50 p-3 text-ink-700">
                     {["Amtliche Gebühren", "Kennzeichen & Prägung", "Versicherter Versand"]
                       .filter((item) => !(service.slug === "abmeldung" && item !== "Amtliche Gebühren"))
-                      .map((item) => (
-                        <li key={item} className="flex items-center gap-2">
-                          <CheckCircle2 className="h-4 w-4 shrink-0 text-brand-600" aria-hidden />
-                          {item} <span className="ml-auto font-semibold text-brand-700">inklusive</span>
-                        </li>
-                      ))}
+                      .map((item) => {
+                        const extra = item === "Kennzeichen & Prägung" && p.platesExtra;
+                        return (
+                          <li key={item} className="flex items-center gap-2">
+                            <CheckCircle2 className="h-4 w-4 shrink-0 text-brand-600" aria-hidden />
+                            {item}{" "}
+                            <span className="ml-auto font-semibold text-brand-700">
+                              {extra ? `zzgl. ${euro(plateFee)}` : "inklusive"}
+                            </span>
+                          </li>
+                        );
+                      })}
                   </ul>
                 ) : (
                   <>

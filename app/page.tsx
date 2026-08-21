@@ -116,7 +116,9 @@ export default function HomePage() {
                     <Kennzeichen uniform>{s.shortName ?? s.name}</Kennzeichen>
                     <span className="mt-1 block text-center text-xs text-ink-500">
                       {s.price.serviceFee !== null
-                        ? `${euro(s.price.serviceFee)} komplett`
+                        ? s.price.platesExtra
+                          ? `${euro(s.price.serviceFee)} zzgl. Kennzeichen`
+                          : `${euro(s.price.serviceFee)} komplett`
                         : "Preis auf Anfrage"}
                     </span>
                   </Link>
@@ -310,8 +312,9 @@ export default function HomePage() {
               Transparente Preise
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-ink-600">
-              Ein Preis, alles drin: Amtliche Gebühren, Kennzeichen und Versand sind in
-              unseren Komplettpreisen bereits enthalten.
+              Transparent kalkuliert: Amtliche Gebühren und Versand sind in unseren
+              Preisen bereits enthalten – neue Kennzeichenschilder kommen, falls
+              benötigt, mit 28,90 € pro Paar dazu.
             </p>
           </Reveal>
           <Reveal delay={0.1} className="mt-12">

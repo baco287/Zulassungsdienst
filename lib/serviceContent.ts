@@ -57,7 +57,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       {
         question: "Was kostet eine Neuzulassung über DeutscheZulassung?",
         answer:
-          "Die Neuzulassung kostet bei uns 129 € als Komplettpreis. Amtliche Gebühren, beide Kennzeichenschilder und der versicherte Versand sind bereits enthalten – es kommen keine versteckten Kosten hinzu.",
+          "Die Neuzulassung kostet bei uns 129 € – amtliche Gebühren und der versicherte Versand sind bereits enthalten. Die beiden Kennzeichenschilder berechnen wir mit 28,90 € pro Paar zusätzlich. Es kommen keine versteckten Kosten hinzu.",
       },
       {
         question: "Wie lange dauert eine Neuzulassung?",
@@ -105,7 +105,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       {
         question: "Was kostet das Ummelden eines Autos?",
         answer:
-          "Bei DeutscheZulassung kostet die Ummeldung 129 € als Komplettpreis inklusive amtlicher Gebühren, neuer Kennzeichen (falls gewünscht) und versichertem Versand. Bei Kennzeichenmitnahme gilt derselbe Komplettpreis.",
+          "Bei DeutscheZulassung kostet die Ummeldung 129 € inklusive amtlicher Gebühren und versichertem Versand. Werden neue Kennzeichen gewünscht, kommen 28,90 € pro Paar für die Schilder dazu – bei Kennzeichenmitnahme entfällt das.",
       },
       {
         question: "Wie lange habe ich nach dem Umzug Zeit, mein Auto umzumelden?",
@@ -237,7 +237,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       {
         question: "Was kostet die Umschreibung eines Gebrauchtwagens?",
         answer:
-          "Bei DeutscheZulassung kostet der Halterwechsel 129 € als Komplettpreis – amtliche Gebühren, Kennzeichen und versicherter Versand inklusive. Möchten Sie das bisherige Kennzeichen übernehmen, bleibt es beim selben Preis.",
+          "Bei DeutscheZulassung kostet der Halterwechsel 129 € – amtliche Gebühren und versicherter Versand inklusive. Werden neue Kennzeichenschilder benötigt, kommen 28,90 € pro Paar dazu; übernehmen Sie das bisherige Kennzeichen, entfällt dieser Posten.",
       },
       {
         question: "Welche Unterlagen brauche ich für den Halterwechsel?",

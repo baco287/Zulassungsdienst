@@ -18,6 +18,8 @@ const OFFICIAL_FEE = 28;
 const PLATES = 27;
 const KM_RATE = 0.3;
 const OUR_PRICE = 129;
+/** Kennzeichenschilder (Paar) bei uns – für den fairen Vergleich mit einberechnet. */
+const OUR_PLATES = 28.9;
 
 export default function BehoerdengangRechner() {
   const [hours, setHours] = useState("3");
@@ -35,7 +37,7 @@ export default function BehoerdengangRechner() {
   const timeCost = valid ? hoursNum * rateNum : 0;
   const travelCost = valid ? kmNum * 2 * KM_RATE : 0;
   const selfTotal = OFFICIAL_FEE + PLATES + timeCost + travelCost;
-  const diff = selfTotal - OUR_PRICE;
+  const diff = selfTotal - (OUR_PRICE + OUR_PLATES);
 
   const inputClass =
     "mt-1.5 w-full rounded-xl border border-ink-300 bg-white px-4 py-3 text-ink-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-200";
@@ -134,11 +136,12 @@ export default function BehoerdengangRechner() {
               Über DeutscheZulassung
             </p>
             <p className="mt-1 font-display text-3xl font-bold text-brand-700">
-              {euro(OUR_PRICE)}
+              {euro(OUR_PRICE + OUR_PLATES)}
             </p>
             <p className="mt-3 text-sm leading-relaxed text-ink-700">
-              Komplettpreis inkl. Gebühren, Kennzeichen und Versand – Ihr Zeitaufwand:
-              ca. 10 Minuten für Fotos und digitale Vollmacht.
+              {euro(OUR_PRICE)} inkl. Gebühren und Versand + {euro(OUR_PLATES)} für das
+              neue Kennzeichenpaar – Ihr Zeitaufwand: ca. 10 Minuten für Fotos und
+              digitale Vollmacht.
             </p>
             <p className="mt-3 font-display text-sm font-bold">
               {diff >= 0 ? (

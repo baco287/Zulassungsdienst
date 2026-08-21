@@ -16,7 +16,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "Was kostet die Zulassung insgesamt?",
     answer:
-      "Bei uns gilt der Komplettpreis: 129 € für Neuzulassung, Umschreibung oder Wiederzulassung – amtliche Gebühren, Kennzeichen und versicherter Versand sind bereits enthalten. Die Abmeldung kostet 34,90 € inklusive Gebühren. Alle Preise verstehen sich inkl. MwSt. Keine versteckten Kosten; Sonderfälle weisen wir vor Beauftragung transparent aus.",
+      "Neuzulassung, Umschreibung oder Wiederzulassung kosten bei uns 129 € – amtliche Gebühren und versicherter Versand sind bereits enthalten. Werden neue Kennzeichenschilder benötigt, kommen 28,90 € pro Paar dazu; bei Kennzeichenmitnahme entfällt das. Die Abmeldung kostet 34,90 € inklusive Gebühren. Alle Preise verstehen sich inkl. MwSt. Keine versteckten Kosten; Sonderfälle weisen wir vor Beauftragung transparent aus.",
     category: "preise",
   },
   {

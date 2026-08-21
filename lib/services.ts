@@ -22,8 +22,9 @@ export const services: Service[] = [
     price: {
       serviceFee: 129.0,
       inclusive: true,
+      platesExtra: true,
       verified: true,
-      note: "Komplettpreis: amtliche Gebühren, Kennzeichen und Versand inklusive.",
+      note: "Inkl. amtlicher Gebühren und Versand. Kennzeichenschilder zzgl. 28,90 € pro Paar.",
     },
     checklist: [
       "Zulassungsbescheinigung Teil II (Fahrzeugbrief) oder CoC-Papier",
@@ -49,8 +50,9 @@ export const services: Service[] = [
     price: {
       serviceFee: 129.0,
       inclusive: true,
+      platesExtra: true,
       verified: true,
-      note: "Komplettpreis inkl. Gebühren, Kennzeichen und Versand – auch bei Kennzeichenmitnahme.",
+      note: "Inkl. amtlicher Gebühren und Versand. Neue Kennzeichenschilder zzgl. 28,90 € pro Paar – bei Kennzeichenmitnahme entfällt das.",
     },
     checklist: [
       "Zulassungsbescheinigung Teil I (Fahrzeugschein)",
@@ -93,14 +95,15 @@ export const services: Service[] = [
     category: "zulassung",
     audience: "beide",
     teaser:
-      "Abgemeldetes Fahrzeug wieder in Betrieb nehmen – inklusive neuer Kennzeichen und aller Formalitäten.",
+      "Abgemeldetes Fahrzeug wieder in Betrieb nehmen – wir kümmern uns um neue Kennzeichen und alle Formalitäten.",
     description:
       "Ein stillgelegtes Fahrzeug soll zurück auf die Straße? Wir prüfen, welche Unterlagen die Behörde für die Wiederzulassung verlangt (u. a. gültige HU), beantragen die Zulassung und organisieren Kennzeichen und Versand.",
     price: {
       serviceFee: 129.0,
       inclusive: true,
+      platesExtra: true,
       verified: true,
-      note: "Komplettpreis: amtliche Gebühren, Kennzeichen und Versand inklusive.",
+      note: "Inkl. amtlicher Gebühren und Versand. Kennzeichenschilder zzgl. 28,90 € pro Paar.",
     },
     checklist: [
       "Zulassungsbescheinigung Teil I und II",
@@ -122,12 +125,13 @@ export const services: Service[] = [
     teaser:
       "Gebrauchtwagen gekauft? Wir schreiben das Fahrzeug auf den neuen Halter um – auf Wunsch mit Wunschkennzeichen.",
     description:
-      "Beim Kauf eines Gebrauchtwagens muss das Fahrzeug auf die neue Halterin oder den neuen Halter umgeschrieben werden. Wir übernehmen die komplette Umschreibung inklusive Kennzeichen – so ist das Fahrzeug schnell und rechtssicher auf Sie zugelassen.",
+      "Beim Kauf eines Gebrauchtwagens muss das Fahrzeug auf die neue Halterin oder den neuen Halter umgeschrieben werden. Wir übernehmen die komplette Umschreibung samt neuer Kennzeichen (Schilder zzgl. 28,90 €) – so ist das Fahrzeug schnell und rechtssicher auf Sie zugelassen.",
     price: {
       serviceFee: 129.0,
       inclusive: true,
+      platesExtra: true,
       verified: true,
-      note: "Komplettpreis: amtliche Gebühren, Kennzeichen und Versand inklusive.",
+      note: "Inkl. amtlicher Gebühren und Versand. Kennzeichenschilder zzgl. 28,90 € pro Paar.",
     },
     checklist: [
       "Zulassungsbescheinigung Teil I und II",
@@ -219,8 +223,9 @@ export const services: Service[] = [
     price: {
       serviceFee: 34.9,
       inclusive: true,
+      platesExtra: true,
       verified: true,
-      note: "Zusatz zu jeder Zulassung – Komplettpreis inkl. amtlicher Reservierungs- und Zuteilungsgebühr.",
+      note: "Zusatz zu jeder Zulassung – inkl. amtlicher Reservierungs- und Zuteilungsgebühr. Die Prägung der Schilder ist mit den 28,90 € des Zulassungsvorgangs abgedeckt.",
     },
     checklist: [
       "Ihr Wunschkürzel (2–3 Alternativen empfohlen)",

@@ -8,8 +8,8 @@ export interface PriceInfo {
   /** Preis von DeutscheZulassung in Euro (brutto). null = noch nicht festgelegt. */
   serviceFee: number | null;
   /**
-   * true = Komplettpreis: amtliche Gebühren, Kennzeichen und Versand sind
-   * bereits enthalten (Pricing-Modell wie marktübliche Festpreis-Anbieter).
+   * true = amtliche Gebühren und Versand sind bereits enthalten.
+   * Kennzeichenschilder sind nur enthalten, wenn platesExtra NICHT gesetzt ist.
    * false/undefined = Arbeitspreis zzgl. Gebühren/Kennzeichen.
    */
   inclusive?: boolean;
@@ -19,6 +19,12 @@ export interface PriceInfo {
    * als "unverbindlich" bzw. "auf Anfrage" gekennzeichnet.
    */
   verified: boolean;
+  /**
+   * true = Kennzeichenschilder sind NICHT im Preis enthalten und werden,
+   * falls benötigt, mit dem Paarpreis aus lib/pricing.ts (plateFee) berechnet.
+   * Entfällt z. B. bei Kennzeichenmitnahme.
+   */
+  platesExtra?: boolean;
   /** Amtliche Gebühren (Spanne, brutto ≙ gebührenrechtlich ohne USt.). */
   officialFeeRange?: [number, number];
   /** Kennzeichenkosten (Spanne), falls für die Leistung relevant. */

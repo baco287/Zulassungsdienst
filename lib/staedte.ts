@@ -43,7 +43,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "B" },
       { label: "Zuständige Behörde", value: "LABO – Kfz-Zulassungsbehörde Berlin" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -90,7 +90,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "HH" },
       { label: "Zuständige Behörde", value: "Landesbetrieb Verkehr (LBV) Hamburg" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -101,7 +101,7 @@ export const cities: City[] = [
       {
         question: "Was kostet die Kfz-Zulassung in Hamburg über DeutscheZulassung?",
         answer:
-          "129 € als Komplettpreis für Neuzulassung, Umschreibung oder Ummeldung – amtliche LBV-Gebühren, HH-Kennzeichen und Versand inklusive. Die Abmeldung kostet 34,90 €.",
+          "129 € als Komplettpreis für Neuzulassung, Umschreibung oder Ummeldung – amtliche LBV-Gebühren und Versand inklusive, HH-Kennzeichenschilder zzgl. 28,90 €. Die Abmeldung kostet 34,90 €.",
       },
       {
         question: "Kann ich mein HH-Kennzeichen beim Umzug ins Umland behalten?",
@@ -132,7 +132,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "M" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle im KVR München" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -174,7 +174,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "K" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsamt der Stadt Köln" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -185,7 +185,7 @@ export const cities: City[] = [
       {
         question: "Was kostet die Zulassung in Köln?",
         answer:
-          "Über uns 129 € komplett – amtliche Gebühren, K-Kennzeichen und versicherter Versand inklusive. Selbst am Schalter zahlen Sie Gebühren plus Schilder; der Aufpreis für den Komplettservice ist überschaubar, die Zeitersparnis erheblich.",
+          "Über uns 129 € komplett – amtliche Gebühren und versicherter Versand inklusive, K-Kennzeichenschilder zzgl. 28,90 €. Selbst am Schalter zahlen Sie Gebühren plus Schilder; der Aufpreis für den Komplettservice ist überschaubar, die Zeitersparnis erheblich.",
       },
       {
         question: "Bieten Sie Wunschkennzeichen mit K an?",
@@ -210,13 +210,13 @@ export const cities: City[] = [
       "Kfz-Zulassung in Frankfurt ohne Behördengang: Wir übernehmen Ihre Zulassung, Ummeldung oder Abmeldung bei der Frankfurter Zulassungsbehörde – digital, Festpreis 129 €.",
     intro: [
       "Pendlerstadt Frankfurt: Viele arbeiten hier, wohnen im Umland – oder umgekehrt. Für die Kfz-Zulassungsbehörde der Stadt bleibt da wenig Zeit, zumal Termine rar sind und der Vorgang am Schalter dauert. Gerade nach einem Umzug in die Stadt oder einem Fahrzeugkauf soll es aber schnell gehen.",
-      "Wir erledigen Ihre Zulassung, während Sie arbeiten: digital eingereicht, von uns bei der Frankfurter Behörde durchgeführt, F-Kennzeichen inklusive. Auch für Zuzügler aus dem Rhein-Main-Gebiet – ob aus Offenbach, Bad Homburg oder Wiesbaden – wickeln wir die Ummeldung komplett ab.",
+      "Wir erledigen Ihre Zulassung, während Sie arbeiten: digital eingereicht, von uns bei der Frankfurter Behörde durchgeführt – inklusive fertig geprägter F-Kennzeichen (Schilder zzgl. 28,90 €). Auch für Zuzügler aus dem Rhein-Main-Gebiet – ob aus Offenbach, Bad Homburg oder Wiesbaden – wickeln wir die Ummeldung komplett ab.",
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "F" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Frankfurt am Main" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -258,7 +258,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "S" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Landeshauptstadt Stuttgart" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -300,7 +300,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "D" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Landeshauptstadt Düsseldorf" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -342,18 +342,18 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "L" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Leipzig" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
         question: "Ich bin neu in Leipzig – muss ich mein Kennzeichen wechseln?",
         answer:
-          "Nein. Seit 2015 dürfen Sie Ihr bisheriges Kennzeichen bundesweit mitnehmen – nur die Adresse in den Papieren wird aktualisiert. Wer lieber ein L-Kennzeichen möchte, bekommt es von uns inklusive Prägung.",
+          "Nein. Seit 2015 dürfen Sie Ihr bisheriges Kennzeichen bundesweit mitnehmen – nur die Adresse in den Papieren wird aktualisiert. Wer lieber ein L-Kennzeichen möchte, bekommt es von uns fertig geprägt (Schilder zzgl. 28,90 €).",
       },
       {
         question: "Was kostet die Kfz-Zulassung in Leipzig?",
         answer:
-          "129 € Komplettpreis über uns – amtliche Gebühren, Kennzeichen und versicherter Versand inklusive. Die Abmeldung kostet 34,90 € und ist meist taggleich erledigt.",
+          "129 € Komplettpreis über uns – amtliche Gebühren und versicherter Versand inklusive, Kennzeichenschilder zzgl. 28,90 €. Die Abmeldung kostet 34,90 € und ist meist taggleich erledigt.",
       },
       {
         question: "Funktioniert der Service auch im Landkreis Leipzig oder Nordsachsen?",
@@ -384,7 +384,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "H" },
       { label: "Zuständige Behörde", value: "Region Hannover, Fachbereich Verkehr (Zulassungsbehörde)" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -426,7 +426,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "N" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Nürnberg" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -437,7 +437,7 @@ export const cities: City[] = [
       {
         question: "Was kostet die Zulassung in Nürnberg über DeutscheZulassung?",
         answer:
-          "129 € komplett – amtliche Gebühren, Kennzeichen und versicherter Versand inklusive. Abmeldungen kosten 34,90 € und sind meist am selben Werktag erledigt.",
+          "129 € komplett – amtliche Gebühren und versicherter Versand inklusive, Kennzeichenschilder zzgl. 28,90 €. Abmeldungen kosten 34,90 € und sind meist am selben Werktag erledigt.",
       },
       {
         question: "Bekomme ich ein Wunschkennzeichen mit N?",
@@ -467,7 +467,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "DO" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Dortmund" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -509,7 +509,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "E" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Essen" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -551,7 +551,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "DU" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Duisburg" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -593,7 +593,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "BO" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Bochum" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -609,7 +609,7 @@ export const cities: City[] = [
       {
         question: "Was kostet mich das als Studentin oder Student?",
         answer:
-          "Denselben fairen Festpreis wie alle: 129 € komplett inklusive amtlicher Gebühren, Kennzeichen und Versand. Dafür entfallen Anfahrt, Wartezeit und der halbe Tag, den der Behördengang sonst kostet.",
+          "Denselben fairen Festpreis wie alle: 129 € inklusive amtlicher Gebühren und Versand, neue Kennzeichenschilder zzgl. 28,90 €. Dafür entfallen Anfahrt, Wartezeit und der halbe Tag, den der Behördengang sonst kostet.",
       },
     ],
     keywords: [
@@ -635,7 +635,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "W" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Wuppertal" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -677,7 +677,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "BI" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Bielefeld" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -719,7 +719,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "BN" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Bonn" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -761,13 +761,13 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "MS" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Münster" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
         question: "Ich habe ein Auto im Münsterland gekauft – ST- oder WAF-Kennzeichen behalten oder wechseln?",
         answer:
-          "Beides geht: Seit 2019 dürfen Sie das Kennzeichen des Vorbesitzers bundesweit übernehmen, auch über Kreisgrenzen hinweg. Wenn Sie lieber ein MS-Kennzeichen möchten, erledigen wir den Wechsel im selben Vorgang – inklusive Prägung und Versand.",
+          "Beides geht: Seit 2019 dürfen Sie das Kennzeichen des Vorbesitzers bundesweit übernehmen, auch über Kreisgrenzen hinweg. Wenn Sie lieber ein MS-Kennzeichen möchten, erledigen wir den Wechsel im selben Vorgang – die neuen Schilder kosten 28,90 € pro Paar, der Versand ist inklusive.",
       },
       {
         question: "Ich fahre nur im Sommer Auto oder Wohnmobil – gibt es dafür eine Lösung?",
@@ -803,7 +803,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "MG" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Mönchengladbach" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -845,7 +845,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "GE" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Gelsenkirchen" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -886,7 +886,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "HB" },
       { label: "Zuständige Behörde", value: "Bürgeramt / Zulassungsbehörde der Stadt Bremen" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -928,7 +928,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "DD" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Landeshauptstadt Dresden" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -970,7 +970,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "C" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Chemnitz" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -986,7 +986,7 @@ export const cities: City[] = [
       {
         question: "Was kostet die Kfz-Zulassung in Chemnitz über Sie?",
         answer:
-          "129 € als Komplettpreis – amtliche Gebühren, Kennzeichen und versicherter Versand sind enthalten. Eine Abmeldung kostet 34,90 € und ist meist taggleich erledigt.",
+          "129 € als Komplettpreis – amtliche Gebühren und versicherter Versand inklusive, Kennzeichenschilder zzgl. 28,90 €. Eine Abmeldung kostet 34,90 € und ist meist taggleich erledigt.",
       },
     ],
     keywords: [
@@ -1012,7 +1012,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "KI" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Landeshauptstadt Kiel" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -1054,7 +1054,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "HAL" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Halle (Saale)" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -1096,7 +1096,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "MD" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Landeshauptstadt Magdeburg" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -1138,7 +1138,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "HL" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Hansestadt Lübeck" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -1180,7 +1180,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "HRO" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Hansestadt Rostock" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -1222,7 +1222,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "EF" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Landeshauptstadt Erfurt" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -1264,7 +1264,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "BS" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Braunschweig" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -1280,7 +1280,7 @@ export const cities: City[] = [
       {
         question: "Was kostet die Kfz-Zulassung in Braunschweig über DeutscheZulassung?",
         answer:
-          "129 € als Komplettpreis für Neuzulassung, Umschreibung oder Ummeldung – amtliche Gebühren, BS-Kennzeichen und Versand inklusive. Die Abmeldung eines Fahrzeugs kostet 34,90 € und ist meist taggleich erledigt.",
+          "129 € als Komplettpreis für Neuzulassung, Umschreibung oder Ummeldung – amtliche Gebühren und Versand inklusive, BS-Kennzeichenschilder zzgl. 28,90 €. Die Abmeldung eines Fahrzeugs kostet 34,90 € und ist meist taggleich erledigt.",
       },
     ],
     keywords: [
@@ -1305,7 +1305,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "MA" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Mannheim" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -1347,7 +1347,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "KA" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Karlsruhe" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -1389,7 +1389,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "A" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Augsburg" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -1431,7 +1431,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "WI" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Landeshauptstadt Wiesbaden" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -1473,7 +1473,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "AC" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der StädteRegion Aachen" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -1515,7 +1515,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "FR" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Freiburg im Breisgau" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -1557,7 +1557,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "KR" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Krefeld" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -1599,7 +1599,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "MZ" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Landeshauptstadt Mainz" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -1641,7 +1641,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "KS" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Kassel" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -1683,7 +1683,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "OB" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Oberhausen" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Komplettpreis", value: "129 € inkl. Gebühren, Kennzeichen & Versand" },
+      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
     ],
     faq: [
       {
@@ -1699,7 +1699,7 @@ export const cities: City[] = [
       {
         question: "Was kostet die Kfz-Zulassung in Oberhausen über DeutscheZulassung?",
         answer:
-          "129 € als Komplettpreis – amtliche Gebühren, geprägte Kennzeichen und versicherter Versand sind enthalten. Die Abmeldung kostet 34,90 € und ist meist noch am selben Werktag erledigt.",
+          "129 € als Komplettpreis – amtliche Gebühren und versicherter Versand sind enthalten, geprägte Kennzeichenschilder kommen mit 28,90 € pro Paar dazu. Die Abmeldung kostet 34,90 € und ist meist noch am selben Werktag erledigt.",
       },
     ],
     keywords: [

@@ -26,10 +26,10 @@ const packages = [
     name: "Zulassung Komplett",
     tagline: "Neuzulassung · Umschreibung · Wiederzulassung",
     price: "129,00 €",
-    priceNote: "Komplettpreis inkl. MwSt., Gebühren, Kennzeichen & Versand",
+    priceNote: "Inkl. MwSt., Gebühren & Versand – Kennzeichen zzgl. 28,90 €",
     features: [
       "Alle amtlichen Gebühren enthalten",
-      "Kennzeichen inkl. Prägung & Siegelung",
+      "Kennzeichen geprägt & gesiegelt (zzgl. 28,90 €)",
       "Versicherter Versand zu Ihnen",
       "Digitale Vollmacht – keine eID nötig",
       "Persönliche Ansprechperson",

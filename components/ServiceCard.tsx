@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import type { Service } from "@/lib/types";
-import { euro } from "@/lib/pricing";
+import { euro, plateFee } from "@/lib/pricing";
 
 export default function ServiceCard({ service }: { service: Service }) {
   return (
@@ -25,9 +25,11 @@ export default function ServiceCard({ service }: { service: Service }) {
           {service.price.serviceFee !== null ? (
             <>
               <p className="text-xs text-ink-500">
-                {service.price.inclusive
-                  ? "Komplettpreis inkl. MwSt. – alles inklusive"
-                  : `Servicepreis ${service.price.verified ? "" : "(unverbindlich)"}`}
+                {service.price.platesExtra
+                  ? `Inkl. MwSt. – zzgl. Kennzeichen ${euro(plateFee)}`
+                  : service.price.inclusive
+                    ? "Komplettpreis inkl. MwSt. – alles inklusive"
+                    : `Servicepreis ${service.price.verified ? "" : "(unverbindlich)"}`}
               </p>
               <p className="font-display text-lg font-bold text-brand-700">
                 {service.price.inclusive

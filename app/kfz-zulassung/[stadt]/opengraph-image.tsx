@@ -21,6 +21,6 @@ export default async function OgImage({
   return createOgImage({
     kicker: "Digital statt Behördengang",
     title: `Kfz-Zulassung ${city.name}`,
-    subtitle: `Ohne Termin bei der Zulassungsstelle – Komplettpreis 129 € inkl. Gebühren, Kennzeichen und Versand.`,
+    subtitle: `Ohne Termin bei der Zulassungsstelle – 129 € inkl. Gebühren und Versand, Kennzeichen zzgl. 28,90 €.`,
   });
 }

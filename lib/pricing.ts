@@ -29,12 +29,19 @@ export const officialFees = {
   customPlate: [12.8, 12.8] as [number, number],
 } as const;
 
-/** Kennzeichenschilder (Paar), marktübliche Spanne. */
+/** Kennzeichenschilder (Paar), marktübliche Spanne – für Vergleichstabellen. */
 export const plateCosts: [number, number] = [20, 35];
+
+/**
+ * Unser Preis für ein Paar Kennzeichenschilder inkl. Prägung.
+ * Fällt nur an, wenn neue Schilder benötigt werden (nicht bei
+ * Kennzeichenmitnahme oder Abmeldung).
+ */
+export const plateFee = 28.9;
 
 /** Hinweistext, der überall neben Preisangaben erscheint. */
 export const priceDisclaimer =
-  "Alle Preise inkl. MwSt. Bei Komplettpreisen sind amtliche Gebühren, Kennzeichen und Versand bereits enthalten. Sonderfälle (z. B. Sondergrößen, Express, auswärtige Behörden) weisen wir vorab transparent aus – Sie erhalten immer eine verbindliche Festpreis-Bestätigung.";
+  "Alle Preise inkl. MwSt. Bei Komplettpreisen sind amtliche Gebühren und versicherter Versand bereits enthalten. Werden neue Kennzeichenschilder benötigt, berechnen wir diese mit 28,90 € pro Paar zusätzlich – bei Kennzeichenmitnahme entfällt das. Sonderfälle (z. B. Sondergrößen, Express, auswärtige Behörden) weisen wir vorab transparent aus – Sie erhalten immer eine verbindliche Festpreis-Bestätigung.";
 
 /** Formatiert einen Betrag als deutschen Euro-String. */
 export function euro(value: number): string {

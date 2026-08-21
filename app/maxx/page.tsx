@@ -73,7 +73,7 @@ const faq = [
   {
     question: "Was kostet das?",
     answer:
-      "129 € komplett für Zulassung, Ummeldung, Umschreibung oder Wiederzulassung – amtliche Gebühren, Kennzeichen und Versand sind drin. Die Abmeldung kostet 34,90 €. Den Endpreis bekommst du vorher verbindlich bestätigt.",
+      "129 € für Zulassung, Ummeldung, Umschreibung oder Wiederzulassung – amtliche Gebühren und Versand sind drin. Neue Kennzeichenschilder kosten 28,90 € pro Paar extra. Die Abmeldung kostet 34,90 €. Den Endpreis bekommst du vorher verbindlich bestätigt.",
   },
   {
     question: "Wie lange dauert es?",
@@ -186,7 +186,7 @@ export default function MaxxPage() {
       <section className="bg-ink-950 py-5">
         <div className="mx-auto flex max-w-6xl flex-wrap justify-between gap-x-8 gap-y-3 px-4 text-sm font-medium text-ink-300 sm:px-6">
           <span>
-            <b className="text-accent-400">129 €</b> komplett – Gebühren &amp; Schilder drin
+            <b className="text-accent-400">129 €</b> inkl. Gebühren – Schilder zzgl. 28,90 €
           </span>
           <span>
             <b className="text-accent-400">1–3</b> Werktage
