@@ -1,6 +1,6 @@
 # DeutscheZulassung
 
-> DeutscheZulassung (deutschezulassung.de) ist ein digitaler Kfz-Zulassungsdienst für ganz Deutschland. Wir übernehmen Neuzulassung, Ummeldung, Abmeldung, Halterwechsel und Kennzeichen-Services komplett – ohne Behördengang und ohne Termin. Komplettpreis 129 € je Zulassungsvorgang (amtliche Gebühren, Kennzeichen und versicherter Versand inklusive), Abmeldung 34,90 €.
+> DeutscheZulassung (deutschezulassung.de) ist ein digitaler Kfz-Zulassungsdienst für ganz Deutschland. Wir übernehmen Neuzulassung, Ummeldung, Abmeldung, Halterwechsel und Kennzeichen-Services komplett – ohne Behördengang und ohne Termin. 129 € je Zulassungsvorgang inkl. amtlicher Gebühren und versichertem Versand, neue Kennzeichenschilder zzgl. 28,90 € pro Paar, Abmeldung 34,90 €.
 
 Kunden reichen Unterlagen als Foto oder Scan ein (Formular oder WhatsApp), erteilen eine digitale
 Vollmacht und erhalten Kennzeichen und Papiere per versichertem Versand. Typische Dauer: 1–3 Werktage,
@@ -8,11 +8,11 @@ Abmeldungen meist am selben Werktag. Kein Personalausweis mit Online-Funktion (e
 
 ## Leistungen
 
-- [Neuzulassung](https://deutschezulassung.de/leistungen/neuzulassung/): Neu- oder Importfahrzeug erstmals zulassen, 129 € komplett
-- [Ummeldung](https://deutschezulassung.de/leistungen/ummeldung/): Fahrzeug nach Umzug ummelden, 129 € komplett
+- [Neuzulassung](https://deutschezulassung.de/leistungen/neuzulassung/): Neu- oder Importfahrzeug erstmals zulassen, 129 € zzgl. Kennzeichen
+- [Ummeldung](https://deutschezulassung.de/leistungen/ummeldung/): Fahrzeug nach Umzug ummelden, 129 € zzgl. Kennzeichen
 - [Abmeldung](https://deutschezulassung.de/leistungen/abmeldung/): Außerbetriebsetzung, 34,90 €, meist taggleich
-- [Halterwechsel / Umschreibung](https://deutschezulassung.de/leistungen/halterwechsel/): Gebrauchtwagen auf neuen Halter umschreiben, 129 € komplett
-- [Wiederzulassung](https://deutschezulassung.de/leistungen/wiederzulassung/): stillgelegtes Fahrzeug wieder anmelden, 129 € komplett
+- [Halterwechsel / Umschreibung](https://deutschezulassung.de/leistungen/halterwechsel/): Gebrauchtwagen auf neuen Halter umschreiben, 129 € zzgl. Kennzeichen
+- [Wiederzulassung](https://deutschezulassung.de/leistungen/wiederzulassung/): stillgelegtes Fahrzeug wieder anmelden, 129 € zzgl. Kennzeichen
 - [Wunschkennzeichen](https://deutschezulassung.de/leistungen/wunschkennzeichen/): Reservierung und Prägung, 34,90 € Zusatz
 - [Kurzzeitkennzeichen](https://deutschezulassung.de/leistungen/kurzzeitkennzeichen/): 5-Tages-Kennzeichen für Überführung und Probefahrt
 - [Zulassungsservice für Autohäuser & Gewerbe](https://deutschezulassung.de/leistungen/gewerbekunden/): Staffelpreise und Sammelabwicklung
