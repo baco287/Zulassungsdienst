@@ -54,6 +54,7 @@ export default function Footer() {
           <ul className="mt-4 space-y-2 text-sm">
             <li><Link href="/ueber-uns" className="transition-colors duration-200 hover:text-white">Über uns</Link></li>
             <li><Link href="/ablauf" className="transition-colors duration-200 hover:text-white">So funktioniert’s</Link></li>
+            <li><Link href="/anleitung" className="transition-colors duration-200 hover:text-white">Schritt-für-Schritt-Anleitung</Link></li>
             <li><Link href="/zulassung-per-whatsapp" className="transition-colors duration-200 hover:text-white">Zulassung per WhatsApp</Link></li>
             <li><Link href="/maxx" className="transition-colors duration-200 hover:text-white">Schnellstart mit Maxx</Link></li>
             <li><Link href="/gewerbe" className="transition-colors duration-200 hover:text-white">Für Gewerbekunden</Link></li>

@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/leistungen",
     "/preise",
     "/ablauf",
+    "/anleitung",
     "/gewerbe",
     "/kfz-zulassung",
     "/rechner",

@@ -22,11 +22,11 @@ export default function MobileCTA() {
   return (
     <>
       {/* Platzhalter, damit die Leiste den Seitenfuß nicht verdeckt */}
-      <div className="h-[4.5rem] lg:hidden" aria-hidden />
+      <div className="no-print h-[4.5rem] lg:hidden" aria-hidden />
 
       <nav
         aria-label="Schnellzugriff"
-        className="fixed inset-x-0 bottom-0 z-40 border-t border-ink-200 bg-white/95 px-3 pb-[max(0.625rem,env(safe-area-inset-bottom))] pt-2.5 backdrop-blur-md lg:hidden"
+        className="no-print fixed inset-x-0 bottom-0 z-40 border-t border-ink-200 bg-white/95 px-3 pb-[max(0.625rem,env(safe-area-inset-bottom))] pt-2.5 backdrop-blur-md lg:hidden"
       >
         <div className="mx-auto flex max-w-md gap-2.5">
           <a
