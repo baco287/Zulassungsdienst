@@ -83,6 +83,12 @@ jobs:
 
       # lftp statt FTP-Deploy-Action: umgeht den bekannten
       # "tlsv1 alert decode error" (TLS-Session-Reuse) mit kasserver-FTPS.
+      #
+      # Drei Mirror-Laeufe gegen das "unstyled window": Jeder Build erzeugt neue
+      # CSS-/JS-Hashes; wuerde das HTML vor den Assets landen, zeigt die Seite
+      # minutenlang keine Styles. Daher: (1) neue Assets zuerst hochladen (ohne
+      # Loeschen - alte bleiben fuer noch ausgeliefertes altes HTML verfuegbar),
+      # (2) HTML & Rest spiegeln, (3) erst zum Schluss verwaiste Assets loeschen.
       - name: Per FTPS zu all-inkl deployen (lftp)
         if: env.HAS_FTP != ''
         env:
@@ -116,7 +122,9 @@ jobs:
             set net:timeout 60;
             open $FTP_SERVER;
             pwd;
-            mirror -R --delete --verbose=1 ./out/ /deutschezulassung.de/;
+            mirror -R --verbose=1 ./out/_next/ /deutschezulassung.de/_next/;
+            mirror -R --delete --verbose=1 --exclude ^_next/ ./out/ /deutschezulassung.de/;
+            mirror -R --delete --verbose=1 ./out/_next/ /deutschezulassung.de/_next/;
             bye
           " 2>&1 | tee -a /tmp/lftp.log
           rm -f ~/.netrc
