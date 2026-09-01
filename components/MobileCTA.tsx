@@ -33,7 +33,7 @@ export default function MobileCTA() {
             href={whatsAppLink("Hallo DeutscheZulassung, ich habe eine Frage zur Kfz-Zulassung.")}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-1 items-center justify-center gap-2 rounded-xl border-2 border-ink-200 bg-white px-4 py-3 font-display text-sm font-semibold text-ink-800"
+            className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-[#25D366] px-4 py-3 font-display text-sm font-semibold text-white"
           >
             <WhatsAppIcon className="h-5 w-5 text-brand-700" />
             WhatsApp

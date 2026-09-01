@@ -62,7 +62,7 @@ export default function Header() {
             href={whatsAppLink("Hallo DeutscheZulassung, ich habe eine Frage zur Kfz-Zulassung.")}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-lg border border-ink-200 px-3 py-2 text-sm font-medium text-ink-700 transition-colors duration-200 hover:border-brand-300 hover:bg-brand-50 hover:text-brand-800"
+            className="flex items-center gap-2 rounded-lg bg-[#25D366] px-3 py-2 text-sm font-semibold text-white shadow-sm transition-colors duration-200 hover:bg-[#1DAA54]"
           >
             <WhatsAppIcon className="h-4 w-4" />
             WhatsApp
@@ -108,7 +108,7 @@ export default function Header() {
               href={whatsAppLink("Hallo DeutscheZulassung, ich habe eine Frage zur Kfz-Zulassung.")}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 rounded-lg border border-ink-200 px-4 py-3 text-base font-medium text-ink-700"
+              className="flex items-center justify-center gap-2 rounded-lg bg-[#25D366] px-4 py-3 text-base font-semibold text-white"
             >
               <WhatsAppIcon className="h-5 w-5" />
               Per WhatsApp schreiben
