@@ -36,7 +36,7 @@ export const gewerbeSegments: GewerbeSegment[] = [
     name: "Autohäuser",
     title: "Zulassungsservice für Autohäuser",
     description:
-      "Express-Zulassungen für Auslieferungstermine, tägliche Abholung und ein fester Ansprechpartner: der Zulassungsdienst für Autohäuser – bundesweit, planbar, zuverlässig.",
+      "Express-Zulassungen für Auslieferungstermine, tägliche Abholung und ein fester Ansprechpartner: der Zulassungsdienst für Autohäuser – bundesweit und planbar.",
     intro: [
       "Jede Auslieferung hängt an der Zulassung: Steht der Übergabetermin, müssen Kennzeichen und Papiere fertig sein – sonst platzt der Termin und die Kundschaft wartet. Gleichzeitig bindet der Weg zur Zulassungsstelle Personal, das im Verkauf oder in der Disposition fehlt.",
       "Wir übernehmen Ihre Neuzulassungen, Tageszulassungen und Umschreibungen im festen Rhythmus: Ihre Zulassungsabteilung übermittelt die Vorgänge digital oder gibt sie unserer täglichen Abholung mit – wir liefern gestempelte Kennzeichen und Papiere termingerecht zurück. Express-Vorgänge für kurzfristige Auslieferungen kennzeichnen Sie einfach als eilig.",

@@ -18,9 +18,9 @@ import { gewerbeSegments, gewerbeHubFaq } from "@/lib/gewerbe";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Zulassungsservice für Gewerbekunden – Autohäuser, Händler & Fuhrparks",
+  title: "Zulassungsservice für Autohäuser & Fuhrparks",
   description:
-    "Kfz-Zulassungen im Volumen: Sammelabwicklung, Staffelkonditionen und ein fester Ansprechpartner für Autohäuser, Autohändler, Fuhrparks und Leasing-Anbieter – bundesweit.",
+    "Kfz-Zulassungen im Volumen: Sammelabwicklung, Staffelkonditionen und ein fester Ansprechpartner für Autohäuser, Händler, Fuhrparks und Leasing.",
   keywords: [
     "Zulassungsservice Gewerbe",
     "Zulassungsdienst Autohaus",

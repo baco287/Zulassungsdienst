@@ -15,8 +15,8 @@ export default function Footer() {
           <Image
             src="/logo-hell.png"
             alt={`${site.name} – Kfz-Zulassung online`}
-            width={2075}
-            height={511}
+            width={600}
+            height={148}
             className="h-10 w-auto"
           />
           <p className="mt-4 max-w-xs text-sm leading-relaxed">

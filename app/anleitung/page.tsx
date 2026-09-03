@@ -8,9 +8,9 @@ import { anleitungSteps } from "@/lib/anleitung";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Auto online zulassen – Schritt-für-Schritt-Anleitung mit Bildern",
+  title: "Auto online zulassen – Anleitung mit Bildern",
   description:
-    "So läuft die Kfz-Zulassung mit DeutscheZulassung: 8 bebilderte Schritte vom Auftrag über Unterlagen und Sicherheitscodes bis zum Schildermacher vor Ort – ohne Behördengang.",
+    "So läuft die Kfz-Zulassung mit DeutscheZulassung: 8 bebilderte Schritte vom Auftrag über Unterlagen und Sicherheitscodes bis zum fertigen Kennzeichen.",
   keywords: [
     "Auto online zulassen Anleitung",
     "Kfz-Zulassung Schritt für Schritt",

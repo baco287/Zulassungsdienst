@@ -35,7 +35,7 @@ export default function MobileCTA() {
             rel="noopener noreferrer"
             className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-[#25D366] px-4 py-3 font-display text-sm font-semibold text-white"
           >
-            <WhatsAppIcon className="h-5 w-5 text-brand-700" />
+            <WhatsAppIcon className="h-5 w-5" />
             WhatsApp
           </a>
           <Link

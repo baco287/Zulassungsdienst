@@ -9,7 +9,7 @@ import Reveal from "@/components/Reveal";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Was kostet der Behördengang wirklich? Der Ersparnis-Rechner",
+  title: "Behördengang-Rechner: Was kostet er wirklich?",
   description:
     "Gebühren, Kennzeichen, Fahrtkosten und Ihre Zeit: Der Rechner zeigt, was die Kfz-Zulassung am Schalter wirklich kostet – ehrlich verglichen mit dem Zulassungsdienst.",
   keywords: [

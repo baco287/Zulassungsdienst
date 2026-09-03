@@ -6,7 +6,7 @@ import PrintButton from "@/components/PrintButton";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Vollmacht Kfz-Zulassung – kostenloses Muster zum Ausdrucken",
+  title: "Vollmacht Kfz-Zulassung – Muster zum Ausdrucken",
   description:
     "Kostenlose Vollmacht für die Kfz-Zulassung als Muster zum Ausdrucken: für Zulassung, Umschreibung, Ummeldung und Abmeldung durch eine bevollmächtigte Person.",
   keywords: [

@@ -22,7 +22,7 @@ import { euro } from "@/lib/pricing";
 import { site, whatsAppLink } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Kfz-Zulassung per WhatsApp – ohne Formular, ohne Behördengang",
+  title: "Kfz-Zulassung per WhatsApp – ohne Formular",
   description:
     "Auto abmelden, ummelden oder zulassen einfach per Chat: Unterlagen abfotografieren, senden, fertig. Ohne Formular, ohne Termin, zum Festpreis – deutschlandweit.",
   keywords: [

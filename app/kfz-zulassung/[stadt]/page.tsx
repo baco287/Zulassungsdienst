@@ -27,7 +27,7 @@ export async function generateMetadata({
   const city = getCity(stadt);
   if (!city) return {};
   return {
-    title: `Kfz-Zulassung ${city.name} – ohne Termin & Behördengang`,
+    title: `Kfz-Zulassung ${city.name} ohne Termin`,
     description: city.description,
     keywords: [
       ...city.keywords,

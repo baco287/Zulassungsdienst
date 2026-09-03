@@ -35,7 +35,7 @@ export interface Guide {
 export const guides: Guide[] = [
   {
     slug: "was-kostet-eine-kfz-zulassung",
-    title: "Was kostet eine Kfz-Zulassung? Alle Gebühren im Überblick (2026)",
+    title: "Was kostet eine Kfz-Zulassung? (2026)",
     description:
       "Amtliche Gebühren, Kennzeichen, Wunschkennzeichen und Zulassungsdienst: Was eine Kfz-Zulassung 2026 wirklich kostet – mit konkreten Beträgen und Spartipps.",
     datePublished: "2026-08-13",
@@ -127,9 +127,9 @@ export const guides: Guide[] = [
 
   {
     slug: "auto-anmelden-unterlagen",
-    title: "Auto anmelden: Diese Unterlagen brauchen Sie (Checkliste)",
+    title: "Auto anmelden: Unterlagen-Checkliste",
     description:
-      "Vollständige Checkliste für die Kfz-Anmeldung: Zulassungsbescheinigung, eVB-Nummer, SEPA-Mandat & Co. – plus Sonderfälle für Neuwagen, Gebrauchtwagen und Importe.",
+      "Checkliste für die Kfz-Anmeldung: Zulassungsbescheinigung, eVB-Nummer, SEPA-Mandat & Co. – plus Sonderfälle für Neuwagen, Gebrauchtwagen und Importe.",
     datePublished: "2026-08-13",
     dateModified: "2026-08-13",
     sections: [
@@ -260,9 +260,9 @@ export const guides: Guide[] = [
 
   {
     slug: "auto-abmelden-so-gehts",
-    title: "Auto abmelden: So geht die Außerbetriebsetzung (auch online)",
+    title: "Auto abmelden: So geht es (auch online)",
     description:
-      "Auto abmelden Schritt für Schritt: benötigte Unterlagen, Sicherheitscodes, Kosten und was mit Steuer und Versicherung passiert – inklusive Abmeldung ohne Behördengang.",
+      "Auto abmelden Schritt für Schritt: Unterlagen, Sicherheitscodes, Kosten und was mit Steuer und Versicherung passiert – auch ohne Behördengang.",
     datePublished: "2026-08-13",
     dateModified: "2026-08-13",
     sections: [
@@ -376,9 +376,9 @@ export const guides: Guide[] = [
 
   {
     slug: "evb-nummer-erhalten-was-nun",
-    title: "eVB-Nummer erhalten – was jetzt? Die nächsten Schritte zur Zulassung",
+    title: "eVB-Nummer erhalten – was jetzt?",
     description:
-      "Die eVB-Nummer ist da – aber was nun? Schritt für Schritt von der Versicherungsbestätigung zur fertigen Zulassung: Unterlagen, Wege, Fristen und typische Fehler.",
+      "Die eVB-Nummer ist da – was nun? Schritt für Schritt von der Versicherungsbestätigung zur fertigen Zulassung: Unterlagen, Wege, Fristen, typische Fehler.",
     datePublished: "2026-08-19",
     dateModified: "2026-08-19",
     sections: [
@@ -451,9 +451,9 @@ export const guides: Guide[] = [
 
   {
     slug: "i-kfz-online-zulassung",
-    title: "i-Kfz: Auto online zulassen – Voraussetzungen und Grenzen",
+    title: "i-Kfz: Auto online zulassen – so geht es",
     description:
-      "Seit 2023 können alle Zulassungsvorgänge online erledigt werden (i-Kfz Stufe 4). Welche Voraussetzungen gelten, wo das Portal an Grenzen stößt und welche Alternativen es gibt.",
+      "Seit 2023 gehen alle Zulassungsvorgänge online (i-Kfz Stufe 4). Welche Voraussetzungen gelten, wo das Portal an Grenzen stößt und welche Alternativen es gibt.",
     datePublished: "2026-08-13",
     dateModified: "2026-08-19",
     sections: [
@@ -560,9 +560,9 @@ export const guides: Guide[] = [
 
   {
     slug: "kein-termin-zulassungsstelle",
-    title: "Kein Termin bei der Zulassungsstelle? Das können Sie jetzt tun",
+    title: "Kein Termin bei der Zulassungsstelle?",
     description:
-      "Alle Termine bei der Zulassungsstelle ausgebucht? Diese vier Wege führen trotzdem zur Zulassung – von Storno-Slots über i-Kfz bis zum Zulassungsdienst ohne Termin.",
+      "Alle Termine bei der Zulassungsstelle ausgebucht? Vier Wege führen trotzdem zur Zulassung – von Storno-Slots über i-Kfz bis zum Zulassungsdienst ohne Termin.",
     datePublished: "2026-08-20",
     dateModified: "2026-08-20",
     sections: [
@@ -635,7 +635,7 @@ export const guides: Guide[] = [
 
   {
     slug: "kfz-zulassung-glossar",
-    title: "Kfz-Zulassung von A bis Z: Die wichtigsten Begriffe erklärt",
+    title: "Kfz-Zulassung von A bis Z: Glossar",
     description:
       "eVB, ZB I/II, CoC, HU, i-Kfz, GebOSt: Das Glossar erklärt alle wichtigen Begriffe rund um die Kfz-Zulassung – kurz, verständlich und aktuell.",
     datePublished: "2026-08-13",

@@ -5,7 +5,7 @@ import PrintButton from "@/components/PrintButton";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Checkliste Kfz-Zulassung – Unterlagen zum Abhaken (Druckvorlage)",
+  title: "Checkliste Kfz-Zulassung zum Ausdrucken",
   description:
     "Alle Unterlagen für die Kfz-Zulassung als kostenlose Checkliste zum Ausdrucken: Grundausstattung plus Sonderfälle für Gebrauchtwagen, Firmenwagen und EU-Importe.",
   keywords: [

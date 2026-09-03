@@ -123,7 +123,7 @@ export const cities: City[] = [
     name: "München",
     inName: "in München",
     description:
-      "Kfz-Zulassung in München ohne KVR-Termin: Wir erledigen Neuzulassung, Umschreibung und Abmeldung bei der Münchner Zulassungsbehörde – digital zum Festpreis von 129 €.",
+      "Kfz-Zulassung in München ohne KVR-Termin: Neuzulassung, Umschreibung und Abmeldung bei der Münchner Behörde – digital, 129 € zzgl. Kennzeichen.",
     intro: [
       "Die Kfz-Zulassungsstelle des Münchner Kreisverwaltungsreferats (KVR) an der Eichstätter Straße gehört zu den größten Zulassungsbehörden Deutschlands – entsprechend gefragt sind die Termine. Wer schnell ein Fahrzeug zulassen muss, etwa nach einem Neuwagenkauf beim Händler, steht oft vor ausgebuchten Kalendern.",
       "Wir übernehmen das für Sie: digital, ohne Termin, ohne Anfahrt quer durch die Stadt. Sie senden uns Fotos Ihrer Unterlagen, wir führen den Vorgang beim KVR durch – inklusive M-Kennzeichen, auf Wunsch als Wunschkennzeichen – und liefern alles versichert zu Ihnen nach Hause oder ins Autohaus.",
@@ -207,7 +207,7 @@ export const cities: City[] = [
     name: "Frankfurt am Main",
     inName: "in Frankfurt am Main",
     description:
-      "Kfz-Zulassung in Frankfurt ohne Behördengang: Wir übernehmen Ihre Zulassung, Ummeldung oder Abmeldung bei der Frankfurter Zulassungsbehörde – digital, Festpreis 129 €.",
+      "Kfz-Zulassung in Frankfurt ohne Behördengang: Zulassung, Ummeldung oder Abmeldung bei der Frankfurter Behörde – digital, 129 € zzgl. Kennzeichen.",
     intro: [
       "Pendlerstadt Frankfurt: Viele arbeiten hier, wohnen im Umland – oder umgekehrt. Für die Kfz-Zulassungsbehörde der Stadt bleibt da wenig Zeit, zumal Termine rar sind und der Vorgang am Schalter dauert. Gerade nach einem Umzug in die Stadt oder einem Fahrzeugkauf soll es aber schnell gehen.",
       "Wir erledigen Ihre Zulassung, während Sie arbeiten: digital eingereicht, von uns bei der Frankfurter Behörde durchgeführt – inklusive fertig geprägter F-Kennzeichen (Schilder zzgl. 28,90 €). Auch für Zuzügler aus dem Rhein-Main-Gebiet – ob aus Offenbach, Bad Homburg oder Wiesbaden – wickeln wir die Ummeldung komplett ab.",

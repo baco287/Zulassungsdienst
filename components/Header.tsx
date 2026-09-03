@@ -30,8 +30,8 @@ export default function Header() {
           <Image
             src="/logo.png"
             alt={`${site.name} – Kfz-Zulassung online`}
-            width={2075}
-            height={511}
+            width={600}
+            height={200}
             priority
             className="h-9 w-auto sm:h-10"
           />

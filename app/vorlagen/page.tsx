@@ -6,7 +6,7 @@ import CTASection from "@/components/CTASection";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Vorlagen & Downloads – Vollmacht und Checklisten zur Kfz-Zulassung",
+  title: "Vorlagen: Vollmacht & Checkliste Kfz-Zulassung",
   description:
     "Kostenlose Vorlagen rund um die Kfz-Zulassung: Vollmacht zum Ausdrucken und Unterlagen-Checkliste zum Abhaken – ohne Anmeldung, ohne Registrierung.",
 };

@@ -7,9 +7,9 @@ import Reveal from "@/components/Reveal";
 import { cities } from "@/lib/staedte";
 
 export const metadata: Metadata = {
-  title: "Kfz-Zulassung in Ihrer Stadt – ohne Termin & Behördengang",
+  title: "Kfz-Zulassung in Ihrer Stadt ohne Termin",
   description:
-    "Auto anmelden, ummelden oder abmelden – digital in Berlin, Hamburg, München, Köln und vielen weiteren Städten. Wir übernehmen den Behördengang, deutschlandweit zum Festpreis.",
+    "Auto anmelden, ummelden oder abmelden – digital in Berlin, Hamburg, München, Köln und über 40 weiteren Städten. Wir übernehmen den Behördengang.",
   keywords: [
     "Kfz-Zulassung ohne Termin",
     "Auto anmelden Stadt",

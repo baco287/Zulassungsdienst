@@ -7,8 +7,12 @@ import { site } from "@/lib/site";
 
 export const dynamic = "force-static";
 
-/** Stand der letzten größeren Inhaltsüberarbeitung der statischen Seiten. */
-const contentUpdated = new Date("2026-08-13");
+/**
+ * Build-Zeitpunkt als lastmod: Der statische Export entsteht bei jedem Deploy
+ * neu, und Preise, Anleitungen und Rechner ändern sich laufend – ein festes
+ * Datum hätte Google signalisiert, dass sich nichts tut.
+ */
+const contentUpdated = new Date();
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [

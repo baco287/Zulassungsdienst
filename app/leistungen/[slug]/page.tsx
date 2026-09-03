@@ -34,7 +34,7 @@ export async function generateMetadata({
   if (!service) return {};
   const content = getServiceContent(slug);
   return {
-    title: `${service.name} online beauftragen`,
+    title: `${service.shortName ?? service.name} online beauftragen`,
     description: service.teaser,
     keywords: content?.keywords,
   };
