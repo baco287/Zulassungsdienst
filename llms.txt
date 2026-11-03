@@ -1,68 +1,116 @@
 # DeutscheZulassung
 
-> DeutscheZulassung (deutschezulassung.de) ist ein digitaler Kfz-Zulassungsdienst für ganz Deutschland. Wir übernehmen Neuzulassung, Ummeldung, Abmeldung, Halterwechsel und Kennzeichen-Services komplett – ohne Behördengang und ohne Termin. 129 € je Zulassungsvorgang inkl. amtlicher Gebühren und versichertem Versand, neue Kennzeichenschilder zzgl. 28,90 € pro Paar, Abmeldung 34,90 €.
+> DeutscheZulassung (deutschezulassung.de) ist ein privater, digitaler Kfz-Zulassungsdienst für ganz Deutschland – keine Behörde. Wir übernehmen Neuzulassung, Ummeldung, Umschreibung, Wiederzulassung, Abmeldung und Kennzeichen-Services im Auftrag unserer Kundinnen und Kunden, ohne dass sie einen Behördentermin oder einen Personalausweis mit Online-Funktion (eID) brauchen. 127,89 € je Zulassungsvorgang inkl. amtlicher Gebühren und versichertem Versand, Kennzeichenschilder auf Wunsch zzgl. 28,79 € pro Paar, Abmeldung 33,79 €.
 
-Kunden reichen Unterlagen als Foto oder Scan ein (Formular oder WhatsApp), erteilen eine digitale
-Vollmacht und erhalten Kennzeichen und Papiere per versichertem Versand. Typische Dauer: 1–3 Werktage,
-Abmeldungen meist am selben Werktag. Kein Personalausweis mit Online-Funktion (eID) erforderlich.
+Kundinnen und Kunden beauftragen über das Online-Formular (Unterlagen als Foto hochladen) oder per WhatsApp, erhalten vorab eine verbindliche Festpreis-Bestätigung, erteilen eine Vollmacht und erhalten Papiere per versichertem Versand. Typische Dauer: 1–3 Werktage ab vollständigen Unterlagen, Abmeldungen meist am selben Werktag. Die Entscheidung über jede Zulassung trifft immer die zuständige Zulassungsbehörde.
 
-## Leistungen
+## Leistungen und Preise
 
-- [Neuzulassung](https://deutschezulassung.de/leistungen/neuzulassung/): Neu- oder Importfahrzeug erstmals zulassen, 129 € zzgl. Kennzeichen
-- [Ummeldung](https://deutschezulassung.de/leistungen/ummeldung/): Fahrzeug nach Umzug ummelden, 129 € zzgl. Kennzeichen
-- [Abmeldung](https://deutschezulassung.de/leistungen/abmeldung/): Außerbetriebsetzung, 34,90 €, meist taggleich
-- [Halterwechsel / Umschreibung](https://deutschezulassung.de/leistungen/halterwechsel/): Gebrauchtwagen auf neuen Halter umschreiben, 129 € zzgl. Kennzeichen
-- [Wiederzulassung](https://deutschezulassung.de/leistungen/wiederzulassung/): stillgelegtes Fahrzeug wieder anmelden, 129 € zzgl. Kennzeichen
-- [Wunschkennzeichen](https://deutschezulassung.de/leistungen/wunschkennzeichen/): Reservierung und Prägung, 34,90 € Zusatz
-- [Kurzzeitkennzeichen](https://deutschezulassung.de/leistungen/kurzzeitkennzeichen/): 5-Tages-Kennzeichen für Überführung und Probefahrt
-- [Zulassungsservice für Autohäuser & Gewerbe](https://deutschezulassung.de/leistungen/gewerbekunden/): Staffelpreise und Sammelabwicklung
+- [Neuzulassung](https://deutschezulassung.de/leistungen/neuzulassung/): Fabrikneues oder importiertes Fahrzeug erstmals zulassen – komplett digital, ohne Termin bei der Zulassungsstelle. 127,89 € inkl. amtlicher Gebühren und Versand, Kennzeichenschilder auf Wunsch zzgl. 28,79 €
+- [Ummeldung](https://deutschezulassung.de/leistungen/ummeldung/): Umzug oder neues Kennzeichen? Wir melden Ihr Fahrzeug auf die neue Adresse oder den neuen Zulassungsbezirk um. 127,89 € inkl. amtlicher Gebühren und Versand, Kennzeichenschilder auf Wunsch zzgl. 28,79 €
+- [Abmeldung](https://deutschezulassung.de/leistungen/abmeldung/): Fahrzeug verkauft, stillgelegt oder verschrottet? Die Außerbetriebsetzung erledigen wir noch am selben Werktag. 33,79 € komplett inkl. amtlicher Gebühren
+- [Wiederzulassung](https://deutschezulassung.de/leistungen/wiederzulassung/): Abgemeldetes Fahrzeug wieder in Betrieb nehmen – wir kümmern uns um neue Kennzeichen und alle Formalitäten. 127,89 € inkl. amtlicher Gebühren und Versand, Kennzeichenschilder auf Wunsch zzgl. 28,79 €
+- [Halterwechsel / Umschreibung](https://deutschezulassung.de/leistungen/halterwechsel/): Gebrauchtwagen gekauft? Wir schreiben das Fahrzeug auf den neuen Halter um – auf Wunsch mit Wunschkennzeichen. 127,89 € inkl. amtlicher Gebühren und Versand, Kennzeichenschilder auf Wunsch zzgl. 28,79 €
+- [Adressänderung](https://deutschezulassung.de/leistungen/adressaenderung/): Nur die Anschrift hat sich geändert? Wir aktualisieren Ihre Fahrzeugpapiere schnell und unkompliziert. 63,79 € komplett inkl. amtlicher Gebühren
+- [Kurzzeitkennzeichen](https://deutschezulassung.de/leistungen/kurzzeitkennzeichen/): Für Überführungs- und Probefahrten: 5 Tage gültiges Kurzzeitkennzeichen, schnell organisiert. Preis auf Anfrage
+- [Saisonkennzeichen](https://deutschezulassung.de/leistungen/saisonkennzeichen/): Motorrad, Cabrio oder Wohnmobil nur einen Teil des Jahres nutzen – Steuer und Versicherung sparen. Preis auf Anfrage
+- [Wunschkennzeichen](https://deutschezulassung.de/leistungen/wunschkennzeichen/): Ihre Initialen, Ihr Geburtsjahr, Ihr Wunschkürzel – wir prüfen, reservieren und lassen Ihr Wunschkennzeichen zuteilen. 11,69 € zusätzlich zu einer Zulassung – Verfügbarkeitsprüfung, Reservierung und Zuteilung, amtliche Gebühr enthalten; Kennzeichenschilder auf Wunsch zzgl. 28,79 €
+- [Ersatz bei Verlust (Dokumente & Kennzeichen)](https://deutschezulassung.de/leistungen/ersatz-dokumente/): Fahrzeugschein, Fahrzeugbrief oder Kennzeichen verloren? Wir kümmern uns um Ersatz und Neubeantragung. Preis auf Anfrage
+- [Preisübersicht](https://deutschezulassung.de/preise/): alle Preise, amtliche Gebühren und Zusatzleistungen
 
-## Kostenlose Tools & Vorlagen
+## Häufige Anliegen
 
-- [Kfz-Steuer-Rechner](https://deutschezulassung.de/rechner/kfz-steuer/): Jahressteuer für Benziner, Diesel und E-Autos sofort berechnen (Hubraum + CO₂, Stand 2026)
-- [Behördengang-Rechner](https://deutschezulassung.de/rechner/behoerdengang/): was der Schaltertermin mit Zeit, Anfahrt und Gebühren wirklich kostet
-- [Vollmacht Kfz-Zulassung](https://deutschezulassung.de/vorlagen/vollmacht-zulassung/): kostenloses Muster zum Ausdrucken
-- [Unterlagen-Checkliste](https://deutschezulassung.de/vorlagen/checkliste-zulassung/): alle Dokumente zum Abhaken, inkl. Sonderfälle
+- [Kfz-Zulassung ohne eID](https://deutschezulassung.de/kfz-zulassung-ohne-eid/): Auto online zulassen ohne eID, PIN oder AusweisApp: welche Wege es gibt, welche Unterlagen Sie brauchen und wann sich ein Zulassungsdienst wirklich lohnt.
+- [Auto abmelden ohne eID](https://deutschezulassung.de/auto-abmelden-ohne-eid/): Auto online abmelden ohne eID: warum die Abmeldung ohne Ausweis-Funktion geht, welche Sicherheitscodes Sie brauchen und wann sich ein Abmeldeservice lohnt.
+- [i-Kfz funktioniert nicht](https://deutschezulassung.de/ikfz-funktioniert-nicht/): i-Kfz funktioniert nicht? Die häufigsten Ursachen – von Ausweis, PIN und NFC über alte Papiere bis zu Import und Firmenauto – und was Sie selbst prüfen können.
+- [i-Kfz-Fehlermeldungen](https://deutschezulassung.de/ikfz-fehlermeldung/): i-Kfz-Fehlermeldung nachschlagen: was typische Meldungen von AusweisApp, Portal und Bezahlung sinngemäß bedeuten und welcher nächste Schritt jeweils hilft.
+- [Auto online anmelden](https://deutschezulassung.de/auto-online-anmelden/): Auto online anmelden: welcher Vorgang bei Neuwagen, Gebrauchtwagen, Wiederzulassung oder Umzug passt, welche Wege es gibt und welche Unterlagen nötig sind.
+- [Zulassungsdienst online](https://deutschezulassung.de/zulassungsdienst-online/): Zulassungsdienst online: was ein privater Dienst darf, wie er sich von Behörde und i-Kfz unterscheidet und woran Sie ein seriöses Angebot erkennen.
+
+## Zulassungsstellen
+
+- [Übersicht der Zulassungsstellen](https://deutschezulassung.de/zulassungsstelle/): Anschrift, Zuständigkeit, Kennzeichen und i-Kfz-Hinweise mit Quellenangabe
+- [Zulassungsstelle Aachen](https://deutschezulassung.de/zulassungsstelle/aachen/)
+- [Zulassungsstelle Augsburg](https://deutschezulassung.de/zulassungsstelle/augsburg/)
+- [Zulassungsstelle Berlin](https://deutschezulassung.de/zulassungsstelle/berlin/)
+- [Zulassungsstelle Bielefeld](https://deutschezulassung.de/zulassungsstelle/bielefeld/)
+- [Zulassungsstelle Bochum](https://deutschezulassung.de/zulassungsstelle/bochum/)
+- [Zulassungsstelle Bonn](https://deutschezulassung.de/zulassungsstelle/bonn/)
+- [Zulassungsstelle Braunschweig](https://deutschezulassung.de/zulassungsstelle/braunschweig/)
+- [Zulassungsstelle Bremen](https://deutschezulassung.de/zulassungsstelle/bremen/)
+- [Zulassungsstelle Chemnitz](https://deutschezulassung.de/zulassungsstelle/chemnitz/)
+- [Zulassungsstelle Dortmund](https://deutschezulassung.de/zulassungsstelle/dortmund/)
+- [Zulassungsstelle Dresden](https://deutschezulassung.de/zulassungsstelle/dresden/)
+- [Zulassungsstelle Duisburg](https://deutschezulassung.de/zulassungsstelle/duisburg/)
+- [Zulassungsstelle Düsseldorf](https://deutschezulassung.de/zulassungsstelle/duesseldorf/)
+- [Zulassungsstelle Erfurt](https://deutschezulassung.de/zulassungsstelle/erfurt/)
+- [Zulassungsstelle Essen](https://deutschezulassung.de/zulassungsstelle/essen/)
+- [Zulassungsstelle Frankfurt am Main](https://deutschezulassung.de/zulassungsstelle/frankfurt/)
+- [Zulassungsstelle Freiburg im Breisgau](https://deutschezulassung.de/zulassungsstelle/freiburg/)
+- [Zulassungsstelle Gelsenkirchen](https://deutschezulassung.de/zulassungsstelle/gelsenkirchen/)
+- [Zulassungsstelle Halle (Saale)](https://deutschezulassung.de/zulassungsstelle/halle/)
+- [Zulassungsstelle Hamburg](https://deutschezulassung.de/zulassungsstelle/hamburg/)
+- [Zulassungsstelle Hannover](https://deutschezulassung.de/zulassungsstelle/hannover/)
+- [Zulassungsstelle Karlsruhe](https://deutschezulassung.de/zulassungsstelle/karlsruhe/)
+- [Zulassungsstelle Kassel](https://deutschezulassung.de/zulassungsstelle/kassel/)
+- [Zulassungsstelle Kiel](https://deutschezulassung.de/zulassungsstelle/kiel/)
+- [Zulassungsstelle Köln](https://deutschezulassung.de/zulassungsstelle/koeln/)
+- [Zulassungsstelle Krefeld](https://deutschezulassung.de/zulassungsstelle/krefeld/)
+- [Zulassungsstelle Leipzig](https://deutschezulassung.de/zulassungsstelle/leipzig/)
+- [Zulassungsstelle Lübeck](https://deutschezulassung.de/zulassungsstelle/luebeck/)
+- [Zulassungsstelle Magdeburg](https://deutschezulassung.de/zulassungsstelle/magdeburg/)
+- [Zulassungsstelle Mainz](https://deutschezulassung.de/zulassungsstelle/mainz/)
+- [Zulassungsstelle Mannheim](https://deutschezulassung.de/zulassungsstelle/mannheim/)
+- [Zulassungsstelle Mönchengladbach](https://deutschezulassung.de/zulassungsstelle/moenchengladbach/)
+- [Zulassungsstelle München](https://deutschezulassung.de/zulassungsstelle/muenchen/)
+- [Zulassungsstelle Münster](https://deutschezulassung.de/zulassungsstelle/muenster/)
+- [Zulassungsstelle Nürnberg](https://deutschezulassung.de/zulassungsstelle/nuernberg/)
+- [Zulassungsstelle Oberhausen](https://deutschezulassung.de/zulassungsstelle/oberhausen/)
+- [Zulassungsstelle Rostock](https://deutschezulassung.de/zulassungsstelle/rostock/)
+- [Zulassungsstelle Stuttgart](https://deutschezulassung.de/zulassungsstelle/stuttgart/)
+- [Zulassungsstelle Wiesbaden](https://deutschezulassung.de/zulassungsstelle/wiesbaden/)
+- [Zulassungsstelle Wuppertal](https://deutschezulassung.de/zulassungsstelle/wuppertal/)
 
 ## Kfz-Zulassung nach Stadt
 
-- [Übersicht aller Städte](https://deutschezulassung.de/kfz-zulassung/): digital in jeder deutschen Stadt – wir arbeiten mit allen Zulassungsbehörden
-- [Berlin](https://deutschezulassung.de/kfz-zulassung/berlin/) · [Hamburg](https://deutschezulassung.de/kfz-zulassung/hamburg/) · [München](https://deutschezulassung.de/kfz-zulassung/muenchen/) · [Köln](https://deutschezulassung.de/kfz-zulassung/koeln/) · [Frankfurt](https://deutschezulassung.de/kfz-zulassung/frankfurt/) · [Stuttgart](https://deutschezulassung.de/kfz-zulassung/stuttgart/) · [Düsseldorf](https://deutschezulassung.de/kfz-zulassung/duesseldorf/) · [Leipzig](https://deutschezulassung.de/kfz-zulassung/leipzig/) · [Hannover](https://deutschezulassung.de/kfz-zulassung/hannover/) · [Nürnberg](https://deutschezulassung.de/kfz-zulassung/nuernberg/)
+- [Übersicht aller Städte](https://deutschezulassung.de/kfz-zulassung/)
+[Berlin](https://deutschezulassung.de/kfz-zulassung/berlin/) · [Hamburg](https://deutschezulassung.de/kfz-zulassung/hamburg/) · [München](https://deutschezulassung.de/kfz-zulassung/muenchen/) · [Köln](https://deutschezulassung.de/kfz-zulassung/koeln/) · [Frankfurt am Main](https://deutschezulassung.de/kfz-zulassung/frankfurt/) · [Stuttgart](https://deutschezulassung.de/kfz-zulassung/stuttgart/) · [Düsseldorf](https://deutschezulassung.de/kfz-zulassung/duesseldorf/) · [Leipzig](https://deutschezulassung.de/kfz-zulassung/leipzig/) · [Hannover](https://deutschezulassung.de/kfz-zulassung/hannover/) · [Nürnberg](https://deutschezulassung.de/kfz-zulassung/nuernberg/) · [Dortmund](https://deutschezulassung.de/kfz-zulassung/dortmund/) · [Essen](https://deutschezulassung.de/kfz-zulassung/essen/) · [Duisburg](https://deutschezulassung.de/kfz-zulassung/duisburg/) · [Bochum](https://deutschezulassung.de/kfz-zulassung/bochum/) · [Wuppertal](https://deutschezulassung.de/kfz-zulassung/wuppertal/) · [Bielefeld](https://deutschezulassung.de/kfz-zulassung/bielefeld/) · [Bonn](https://deutschezulassung.de/kfz-zulassung/bonn/) · [Münster](https://deutschezulassung.de/kfz-zulassung/muenster/) · [Mönchengladbach](https://deutschezulassung.de/kfz-zulassung/moenchengladbach/) · [Gelsenkirchen](https://deutschezulassung.de/kfz-zulassung/gelsenkirchen/) · [Bremen](https://deutschezulassung.de/kfz-zulassung/bremen/) · [Dresden](https://deutschezulassung.de/kfz-zulassung/dresden/) · [Chemnitz](https://deutschezulassung.de/kfz-zulassung/chemnitz/) · [Kiel](https://deutschezulassung.de/kfz-zulassung/kiel/) · [Halle (Saale)](https://deutschezulassung.de/kfz-zulassung/halle/) · [Magdeburg](https://deutschezulassung.de/kfz-zulassung/magdeburg/) · [Lübeck](https://deutschezulassung.de/kfz-zulassung/luebeck/) · [Rostock](https://deutschezulassung.de/kfz-zulassung/rostock/) · [Erfurt](https://deutschezulassung.de/kfz-zulassung/erfurt/) · [Braunschweig](https://deutschezulassung.de/kfz-zulassung/braunschweig/) · [Mannheim](https://deutschezulassung.de/kfz-zulassung/mannheim/) · [Karlsruhe](https://deutschezulassung.de/kfz-zulassung/karlsruhe/) · [Augsburg](https://deutschezulassung.de/kfz-zulassung/augsburg/) · [Wiesbaden](https://deutschezulassung.de/kfz-zulassung/wiesbaden/) · [Aachen](https://deutschezulassung.de/kfz-zulassung/aachen/) · [Freiburg im Breisgau](https://deutschezulassung.de/kfz-zulassung/freiburg/) · [Krefeld](https://deutschezulassung.de/kfz-zulassung/krefeld/) · [Mainz](https://deutschezulassung.de/kfz-zulassung/mainz/) · [Kassel](https://deutschezulassung.de/kfz-zulassung/kassel/) · [Oberhausen](https://deutschezulassung.de/kfz-zulassung/oberhausen/)
 
 ## Gewerbekunden
 
-- [Zulassungsservice für Gewerbekunden](https://deutschezulassung.de/gewerbe/): Sammelabwicklung, feste Ansprechpartner, Abrechnung pro Vorgang ohne Grundgebühr – bundesweit
-- [Für Autohäuser](https://deutschezulassung.de/gewerbe/autohaus/): Express-Zulassungen für Auslieferungstermine, Tageszulassungen, tägliche Abholung
-- [Für Autohändler](https://deutschezulassung.de/gewerbe/autohaendler/): Ankauf-Abmeldungen meist taggleich, bundesweite Umschreibungen, Kurzzeitkennzeichen
-- [Für Fuhrparks & Flotten](https://deutschezulassung.de/gewerbe/fuhrpark/): Sammelvorgänge im Batch, alle Zulassungsbezirke, Rechnung nach Kostenstellen
-- [Für Leasing & Auto-Abo](https://deutschezulassung.de/gewerbe/leasing/): Zulassung auf Endkunden, Versand an den Auslieferungsort, Rückläufer-Abmeldung
-
-## Zulassung per WhatsApp
-
-- [Kfz-Zulassung per WhatsApp](https://deutschezulassung.de/zulassung-per-whatsapp/): Alle Vorgänge lassen sich per Messenger beauftragen – Unterlagen abfotografieren, in den Chat senden, Vollmacht digital bestätigen. Kein Formular, keine Registrierung, kein Personalausweis mit Online-Funktion (eID) nötig. Gleiche Festpreise wie über das Formular. Antwort meist innerhalb weniger Minuten (Mo–Fr 8:00–18:00 Uhr). Alternativ per E-Mail oder Online-Formular.
-
-## Schnellstart
-
-- [Maxx – Schnellstart zur Kfz-Zulassung](https://deutschezulassung.de/maxx/): Vereinfachter Einstieg für alle, die sofort loslegen wollen. Drei Schritte (Nachricht schicken, Unterlagen abfotografieren, Kennzeichen erhalten), Auswahl der häufigsten Vorgänge und kurze Antworten. „Maxx“ ist das Maskottchen von DeutscheZulassung.
+- [Zulassungsservice für Gewerbekunden](https://deutschezulassung.de/gewerbe/): Sammelabwicklung, feste Ansprechpartner, Staffelpreise
+- [Autohäuser](https://deutschezulassung.de/gewerbe/autohaus/)
+- [Autohändler](https://deutschezulassung.de/gewerbe/autohaendler/)
+- [Fuhrparks & Flotten](https://deutschezulassung.de/gewerbe/fuhrpark/)
+- [Leasing & Auto-Abo](https://deutschezulassung.de/gewerbe/leasing/)
 
 ## Ratgeber
 
-- [Was kostet eine Kfz-Zulassung?](https://deutschezulassung.de/ratgeber/was-kostet-eine-kfz-zulassung/): alle Gebühren im Überblick
-- [Auto anmelden: benötigte Unterlagen](https://deutschezulassung.de/ratgeber/auto-anmelden-unterlagen/): vollständige Checkliste
-- [Auto ummelden nach Umzug](https://deutschezulassung.de/ratgeber/auto-ummelden-nach-umzug/): Fristen, Kosten, Kennzeichenmitnahme
-- [Auto abmelden](https://deutschezulassung.de/ratgeber/auto-abmelden-so-gehts/): Außerbetriebsetzung Schritt für Schritt
-- [eVB-Nummer](https://deutschezulassung.de/ratgeber/evb-nummer/): elektronische Versicherungsbestätigung erklärt
-- [eVB-Nummer erhalten – was jetzt?](https://deutschezulassung.de/ratgeber/evb-nummer-erhalten-was-nun/): die nächsten Schritte von der eVB zur fertigen Zulassung
-- [i-Kfz: Auto online zulassen](https://deutschezulassung.de/ratgeber/i-kfz-online-zulassung/): Voraussetzungen und Grenzen
-- [Kein Termin bei der Zulassungsstelle?](https://deutschezulassung.de/ratgeber/kein-termin-zulassungsstelle/): vier Wege zur Zulassung ohne Behördentermin – Storno-Slots, i-Kfz, Zulassungsdienst, Express
-- [Kennzeichen mitnehmen](https://deutschezulassung.de/ratgeber/kennzeichen-mitnehmen/): Regeln bei Umzug und Autokauf
-- [Glossar der Kfz-Zulassung](https://deutschezulassung.de/ratgeber/kfz-zulassung-glossar/): alle Begriffe von A bis Z
+- [Was kostet eine Kfz-Zulassung? (2026)](https://deutschezulassung.de/ratgeber/was-kostet-eine-kfz-zulassung/): Amtliche Gebühren, Kennzeichen, Wunschkennzeichen und Zulassungsdienst: Was eine Kfz-Zulassung 2026 wirklich kostet – mit konkreten Beträgen und Spartipps.
+- [Auto anmelden: Unterlagen-Checkliste](https://deutschezulassung.de/ratgeber/auto-anmelden-unterlagen/): Checkliste für die Kfz-Anmeldung: Zulassungsbescheinigung, eVB-Nummer, SEPA-Mandat & Co. – plus Sonderfälle für Neuwagen, Gebrauchtwagen und Importe.
+- [Auto ummelden nach Umzug: Fristen, Kosten und Ablauf](https://deutschezulassung.de/ratgeber/auto-ummelden-nach-umzug/): Nach dem Umzug das Auto ummelden: welche Frist gilt, was es kostet, ob Sie Ihr Kennzeichen behalten können – und wie die Ummeldung ohne Behördengang funktioniert.
+- [Auto abmelden: So geht es (auch online)](https://deutschezulassung.de/ratgeber/auto-abmelden-so-gehts/): Auto abmelden Schritt für Schritt: Unterlagen, Sicherheitscodes, Kosten und was mit Steuer und Versicherung passiert – auch ohne Behördengang.
+- [eVB-Nummer: Was sie ist und wie Sie sie sofort bekommen](https://deutschezulassung.de/ratgeber/evb-nummer/): Die elektronische Versicherungsbestätigung (eVB) einfach erklärt: wofür die 7-stellige Nummer nötig ist, wie Sie sie kostenlos erhalten und wie lange sie gültig ist.
+- [eVB-Nummer erhalten – was jetzt?](https://deutschezulassung.de/ratgeber/evb-nummer-erhalten-was-nun/): Die eVB-Nummer ist da – was nun? Schritt für Schritt von der Versicherungsbestätigung zur fertigen Zulassung: Unterlagen, Wege, Fristen, typische Fehler.
+- [i-Kfz: Auto online zulassen – so geht es](https://deutschezulassung.de/ratgeber/i-kfz-online-zulassung/): Seit 2023 gehen alle Zulassungsvorgänge online (i-Kfz Stufe 4). Welche Voraussetzungen gelten, wo das Portal an Grenzen stößt und welche Alternativen es gibt.
+- [Kennzeichen mitnehmen: bei Umzug und Autokauf erklärt](https://deutschezulassung.de/ratgeber/kennzeichen-mitnehmen/): Kennzeichenmitnahme bundesweit: Wann Sie Ihr Kfz-Kennzeichen bei Umzug oder Halterwechsel behalten können, was es kostet und wann sich neue Schilder lohnen.
+- [Kein Termin bei der Zulassungsstelle?](https://deutschezulassung.de/ratgeber/kein-termin-zulassungsstelle/): Alle Termine bei der Zulassungsstelle ausgebucht? Vier Wege führen trotzdem zur Zulassung – von Storno-Slots über i-Kfz bis zum Zulassungsdienst ohne Termin.
+- [Kfz-Zulassung von A bis Z: Glossar](https://deutschezulassung.de/ratgeber/kfz-zulassung-glossar/): eVB, ZB I/II, CoC, HU, i-Kfz, GebOSt: Das Glossar erklärt alle wichtigen Begriffe rund um die Kfz-Zulassung – kurz, verständlich und aktuell.
+- [Fahrzeugpapiere und Sicherheitscodes erklärt](https://deutschezulassung.de/ratgeber/fahrzeugpapiere-sicherheitscodes/): Zulassungsbescheinigung Teil I und II und Kennzeichen-Plaketten: wo die Sicherheitscodes sitzen, wann Sie sie brauchen und was bei alten Papieren gilt.
+- [Halterwechsel nach dem Autokauf: Pflichten und Ablauf](https://deutschezulassung.de/ratgeber/halterwechsel-nach-autokauf/): Gebrauchtwagen gekauft? Was Käufer und Verkäufer beim Halterwechsel tun müssen, welche Unterlagen nötig sind und wie es mit Kennzeichen, eVB und Steuer läuft.
+- [Auto verkauft: abmelden oder angemeldet übergeben?](https://deutschezulassung.de/ratgeber/auto-verkauft-abmelden/): Vor dem Verkauf abmelden oder angemeldet übergeben? Vor- und Nachteile, Pflichten des Verkäufers, Verkaufsmeldung, Kaufvertrag und Kurzzeitkennzeichen.
+- [Wunschkennzeichen reservieren: Regeln, Kosten, Fristen](https://deutschezulassung.de/ratgeber/wunschkennzeichen-reservieren/): So reservieren Sie ein Wunschkennzeichen: erlaubte Kombinationen und Längen, amtliche Gebühr, Dauer der Reservierung und was beim Umzug zu beachten ist.
+- [Fahrzeugzulassung für Unternehmen: Unterlagen & Ablauf](https://deutschezulassung.de/ratgeber/fahrzeugzulassung-unternehmen/): Firmenwagen zulassen: welche Unterlagen Einzelunternehmen und GmbH brauchen, wie die Vollmacht funktioniert und wie Fuhrparks ihre Zulassungen bündeln.
 
-## Weitere Seiten
+## Tools, Vorlagen und Kontakt
 
-- [Preise](https://deutschezulassung.de/preise/): transparente Preisübersicht
-- [So funktioniert’s](https://deutschezulassung.de/ablauf/): der Ablauf in 7 Schritten
-- [Bilderanleitung Schritt für Schritt](https://deutschezulassung.de/anleitung/): 8 bebilderte Schritte inkl. PDF – Kennzeichen prägt der Kunde beim lokalen Schildermacher (kein Versand durch uns)
-- [FAQ](https://deutschezulassung.de/faq/): häufige Fragen und Antworten
-- [Online-Auftrag](https://deutschezulassung.de/auftrag/): Zulassung direkt beauftragen
-- [Kontakt](https://deutschezulassung.de/kontakt/): E-Mail, Telefon und WhatsApp
+- [Kfz-Steuer-Rechner](https://deutschezulassung.de/rechner/kfz-steuer/)
+- [Behördengang-Rechner](https://deutschezulassung.de/rechner/behoerdengang/)
+- [Vollmacht Kfz-Zulassung](https://deutschezulassung.de/vorlagen/vollmacht-zulassung/)
+- [Unterlagen-Checkliste](https://deutschezulassung.de/vorlagen/checkliste-zulassung/)
+- [Zulassung per WhatsApp](https://deutschezulassung.de/zulassung-per-whatsapp/)
+- [Online-Auftrag](https://deutschezulassung.de/auftrag/)
+- [Über uns und wer Ihre Zulassung bearbeitet](https://deutschezulassung.de/ueber-uns/)
+- [Datensicherheit](https://deutschezulassung.de/datensicherheit/)
+- [FAQ](https://deutschezulassung.de/faq/)
+- [Kontakt](https://deutschezulassung.de/kontakt/): info@deutschezulassung.de, 0179 / 152 82 05, Mo–Fr 8:00–18:00 Uhr
