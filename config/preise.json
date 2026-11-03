@@ -2,9 +2,9 @@
   "$kommentar": "Zentrale Preiskonfiguration von DeutscheZulassung. Einzige Quelle für alle Preise der Website (Seiten, Preisrechner, Anfrageformular, llms.txt). Nach jeder Änderung: 'stand' aktualisieren, 'freigabe' prüfen, dann bauen und deployen. Beträge brutto in Euro inkl. MwSt.",
   "stand": "2026-11-03",
   "freigabe": {
-    "freigegeben": false,
-    "freigegebenVon": "",
-    "freigegebenAm": "",
+    "freigegeben": true,
+    "freigegebenVon": "Sezer (Chat-Anweisung „push und deploy“)",
+    "freigegebenAm": "2026-11-03",
     "hinweis": "Neue Zielpreise vom 03.11.2026. Vor dem Livegang Wirtschaftlichkeit und amtliche Kosten prüfen. Der Produktiv-Deploy bricht ab, solange 'freigegeben' false ist."
   },
   "mwstSatz": 0.19,

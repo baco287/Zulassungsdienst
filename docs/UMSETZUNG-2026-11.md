@@ -77,4 +77,25 @@ Nicht geprüft: Ladezeit-Messung (PageSpeed-Kontingent war erschöpft), echte We
 
 ## 6. Unabhängige Prüfung
 
-_Wird nach Abschluss der Prüfung ergänzt._
+Vier Prüfer mit getrennten Blickwinkeln (Fakten, Preise und Recht, technisches SEO,
+Code) und je ein Gegenprüfer, der jeden Befund zu widerlegen versuchte.
+Ergebnis: **33 Befunde bestätigt, 7 verworfen.** Alle bestätigten Befunde sind behoben
+(Commit „Befunde der unabhängigen Prüfung behoben“). Die wichtigsten:
+
+| Befund | Behebung |
+|---|---|
+| Google-Beschreibung der Zulassungsstellen nannte „Zulassung ab 33,79 €“ (Abmeldepreis) | Zulassungspreis 127,89 € |
+| Startseite versprach, den Auftragsstand „jederzeit“ zu sehen | Satz ersetzt, kein Status-Versprechen ohne Bestellsystem |
+| Amtliche Gebührenspannen passten nicht zu den eigenen Behördendaten | Spannen an belegte Werte angepasst, Abmeldung online und Schalter getrennt, Kosten-Ratgeber rechnet aus der Konfiguration |
+| Wunschkennzeichen wirkte wie eigener Komplettpreis bzw. wie 12,80 € + 11,69 € | überall als Zusatzleistung mit klarem Hinweis |
+| Preisbox der Adressänderung nannte „Kennzeichen inklusive“ | Preisbox liest nur noch, was laut Konfiguration gilt |
+| Ausgewiesene MwSt.-Summe enthielt amtliche Gebühren | nur noch „inkl. 19 % MwSt.“ bis zur steuerlichen Klärung |
+| Servicebedingungen als Entwurf öffentlich | noindex, nicht verlinkt, Schalter in lib/features.ts |
+| E/H-Kennzeichen: max. 8 statt 7 Stellen; eVB bei Ummeldung; Originale bei Verschrottung | fachlich korrigiert (FZV Anlage 4, § 24) |
+| Einblend-Animation konnte Inhalte vor dem Laden verbergen | Inhalte immer sichtbar, Animation nur unterhalb des ersten Bildschirms, Scroll-Absicherung |
+| og:url zeigte auf 166 Seiten auf die Startseite | Open Graph je Seite, Prüfskript gleicht og:url mit Canonical ab |
+| Deploy-Fehlerlog wäre bei gesperrten Preisen abgestürzt | Gate mit pipefail, Fehlerlog robust |
+
+Verworfen wurden u. a. die Einschätzung, Kennzeichenseiten seien Thin Content (Strategiefrage,
+jede Seite hat eigene belegte Angaben), und eine angebliche Keyword-Kannibalisierung zwischen
+Startseite und Landingpage (unterschiedlicher Suchintent).
