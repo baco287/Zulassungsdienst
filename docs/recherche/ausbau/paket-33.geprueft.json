@@ -1,0 +1,851 @@
+[
+  {
+    "slug": "flensburg",
+    "stadt": "Flensburg",
+    "bundesland": "Schleswig-Holstein",
+    "behoerde": "Stadt Flensburg – Gemeinsame Straßenverkehrsbehörde, Zulassungsstelle (Fachbereich Einwohnerservice, Schutz und Ordnung)",
+    "behoerdeQuelle": "https://www.flensburg.de/Leben-Soziales/B%C3%BCrgerservice/Abteilungen/Gemeinsame-Stra%C3%9Fenverkehrsbeh%C3%B6rde.php?ModID=9&FID=2529.977.1",
+    "traeger": "Stadt Flensburg (kreisfreie Stadt)",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungs- und Führerscheinstelle (Gemeinsame Straßenverkehrsbehörde)",
+        "strasse": "Gutenbergstraße 23",
+        "plz": "24941",
+        "ort": "Flensburg",
+        "quelle": "https://www.flensburg.de/Leben-Soziales/Verkehr/PKW-KFZ/KFZ-Zulassung-F%C3%BChrerschein/"
+      }
+    ],
+    "website": {
+      "url": "https://www.flensburg.de/Leben-Soziales/Verkehr/PKW-KFZ/KFZ-Zulassung-F%C3%BChrerschein/",
+      "quelle": "https://www.flensburg.de/Leben-Soziales/Verkehr/PKW-KFZ/KFZ-Zulassung-F%C3%BChrerschein/"
+    },
+    "terminUrl": {
+      "url": "https://reservation.frontdesksuite.com/schleswig-flensburg/termine",
+      "quelle": "https://www.flensburg.de/Leben-Soziales/B%C3%BCrgerservice/Abteilungen/Gemeinsame-Stra%C3%9Fenverkehrsbeh%C3%B6rde.php?ModID=9&FID=2529.977.1"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100012.OE.9029660&leistungId=99036020001000&p=010010",
+      "quelle": "https://www.schleswig-flensburg.de/Informationen-f%C3%BCr/Kfz-Halter/i-kfz-Online-Dienste-/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30–12:00",
+        "Di 07:30–12:00 und 13:30–15:30",
+        "Mi 07:30–12:00",
+        "Do 07:30–12:00 und 13:30–16:30",
+        "Fr 07:30–12:00"
+      ],
+      "hinweis": "Öffnungszeiten der Zulassungsstelle in Flensburg nur nach vorheriger (Online-)Terminvereinbarung; trotz Termin kann es zu Wartezeiten kommen.",
+      "quelle": "https://www.schleswig-flensburg.de/%C3%96ffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Für Einwohner der kreisfreien Stadt Flensburg (Kennzeichen FL) ist die „Stadt Flensburg – Kooperation Zulassungsstelle“, Gutenbergstraße 23, zuständig. Derselbe Standort dient zugleich als Zulassungsstelle für Einwohner des Kreises Schleswig-Flensburg (Kennzeichen SL), der eine weitere Zulassungsstelle in Schleswig betreibt.",
+      "quelle": "https://www.schleswig-flensburg.de/Was-erledige-ich-wo-/Erstzulassung-eines-Fahrzeugs-aus-einem-EU-Mitgliedstaat-beantragen.php?ModID=10&FID=3333.56.1&k_sub=1&kuo=1&ort=120.141"
+    },
+    "kuerzel": [
+      {
+        "code": "FL",
+        "bedeutung": "Flensburg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Zulassungs-Box (ausschließlich in Flensburg, ca. 10 m rechts neben dem Haupteingang): nur für Privatkunden, max. 2 Vorgänge, Abgabe rund um die Uhr; Bearbeitung längstens 5 Arbeitstage, Abholtermin in der Regel telefonisch.",
+        "quelle": "https://www.schleswig-flensburg.de/Informationen-f%C3%BCr/Kfz-Halter/Zulassungsbox/"
+      },
+      {
+        "text": "Für i-Kfz (Stufe 4, seit 01.02.2024) gelten getrennte Online-Links für die Stadt Flensburg und den Kreis Schleswig-Flensburg.",
+        "quelle": "https://www.schleswig-flensburg.de/Informationen-f%C3%BCr/Kfz-Halter/i-kfz-Online-Dienste-/"
+      },
+      {
+        "text": "Der Standort Gutenbergstraße 23 ist laut Kreis Schleswig-Flensburg auch eine der beiden Zulassungsstellen für Einwohner des Kreises (neben Schleswig).",
+        "quelle": "https://www.schleswig-flensburg.de/Was-erledige-ich-wo-/Zulassungsstelle-.php?ModID=10&FID=3333.1600.1&call=0&k_sub=0&kuo=1&ort=0&sfwort=0"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "neumuenster",
+    "stadt": "Neumünster",
+    "bundesland": "Schleswig-Holstein",
+    "behoerde": "Stadt Neumünster – Kfz-Zulassung (Kfz-Zulassungsstelle)",
+    "behoerdeQuelle": "https://www.neumuenster.de/buergerservice/dienstleistungen-a-z/detail/ausserbetriebsetzung-fuer-ein-fahrzeug-beantragen-8939019",
+    "traeger": "Stadt Neumünster (kreisfreie Stadt)",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle",
+        "strasse": "Plöner Straße 27",
+        "plz": "24534",
+        "ort": "Neumünster",
+        "quelle": "https://www.neumuenster.de/buergerservice/dienstleistungen-a-z/detail/ausserbetriebsetzung-fuer-ein-fahrzeug-beantragen-8939019"
+      }
+    ],
+    "website": {
+      "url": "https://www.neumuenster.de/verkehr-umwelt/mobilitaet-verkehr/strassenverkehr/kfz-zulassung",
+      "quelle": "https://www.neumuenster.de/verkehr-umwelt/mobilitaet-verkehr/strassenverkehr/kfz-zulassung"
+    },
+    "terminUrl": {
+      "url": "https://termin.neumuenster.de/",
+      "quelle": "https://www.neumuenster.de/verkehr-umwelt/mobilitaet-verkehr/strassenverkehr/kfz-zulassung"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100012.OE.267033530&leistungId=99036020001000&p=010040",
+      "quelle": "https://www.neumuenster.de/verkehr-umwelt/mobilitaet-verkehr/strassenverkehr/kfz-zulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Fr 08:00–12:00",
+        "Do auch 14:30–17:30"
+      ],
+      "hinweis": "Vorsprache grundsätzlich nur nach vorheriger Terminvereinbarung über die Online-Terminvergabe.",
+      "quelle": "https://www.neumuenster.de/buergerservice/dienstleistungen-a-z/detail/ausserbetriebsetzung-fuer-ein-fahrzeug-beantragen-8939019"
+    },
+    "zustaendigkeit": {
+      "text": "Stadtgebiet der kreisfreien Stadt Neumünster (Kennzeichen NMS). Neuzulassungen sind nur für in Neumünster gemeldete Personen und Firmen möglich.",
+      "quelle": "https://www.neumuenster.de/verkehr-umwelt/mobilitaet-verkehr/strassenverkehr/kfz-zulassung/auto-anmelden"
+    },
+    "kuerzel": [
+      {
+        "code": "NMS",
+        "bedeutung": "Neumünster",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Seit 01.04.2025 müssen Fahrzeuge für ein Ausfuhrkennzeichen in bestimmten Fällen wieder vorgeführt werden (z. B. ohne deutsche Fahrzeugdokumente); Termin über die Online-Terminvergabe unter dem Anliegen „Export-Fahrzeuge“.",
+        "quelle": "https://www.neumuenster.de/verkehr-umwelt/mobilitaet-verkehr/strassenverkehr/kfz-zulassung"
+      },
+      {
+        "text": "Seit 03.03.2026 kann ein QR-Code für den digitalen Fahrzeugschein beantragt werden; im Rahmen einer Zulassung kostenlos, als Einzelantrag 5,10 €.",
+        "quelle": "https://www.neumuenster.de/verkehr-umwelt/mobilitaet-verkehr/strassenverkehr/kfz-zulassung"
+      },
+      {
+        "text": "Schilderpräger befinden sich in direkter Nachbarschaft der Zulassungsbehörde.",
+        "quelle": "https://www.neumuenster.de/verkehr-umwelt/mobilitaet-verkehr/strassenverkehr/kfz-zulassung/auto-anmelden"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kreis-dithmarschen",
+    "stadt": "Kreis Dithmarschen",
+    "bundesland": "Schleswig-Holstein",
+    "behoerde": "Kreis Dithmarschen – Fachdienst Straßenverkehr, Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://reservation.frontdesksuite.com/dithmarschen/kfz/Home/Index?Culture=de&PageId=9d8505eb-7fe6-4767-85ae-8114eca172b2&ShouldStartReserveTimeFlow=False&ButtonId=00000000-0000-0000-0000-000000000000",
+    "traeger": "Kreis Dithmarschen",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle im Kreishaus",
+        "strasse": "Stettiner Straße 30",
+        "plz": "25746",
+        "ort": "Heide",
+        "quelle": "https://reservation.frontdesksuite.com/dithmarschen/kfz/Home/Index?Culture=de&PageId=9d8505eb-7fe6-4767-85ae-8114eca172b2&ShouldStartReserveTimeFlow=False&ButtonId=00000000-0000-0000-0000-000000000000"
+      }
+    ],
+    "website": {
+      "url": "https://www.dithmarschen.de/themen/kfz-fahrzeugzulassung-fuehrerschein/kfz-zulassungsbehoerde",
+      "quelle": "https://www.dithmarschen.de/themen/kfz-fahrzeugzulassung-fuehrerschein/kfz-zulassungsbehoerde"
+    },
+    "terminUrl": {
+      "url": "https://reservation.frontdesksuite.com/dithmarschen/kfz/Home/Index?Culture=de&PageId=9d8505eb-7fe6-4767-85ae-8114eca172b2&ShouldStartReserveTimeFlow=False&ButtonId=00000000-0000-0000-0000-000000000000",
+      "quelle": "https://www.dithmarschen.de/themen/kfz-fahrzeugzulassung-fuehrerschein/kfz-zulassungsbehoerde"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100012.OE.265849081&leistungId=99036020001000&p=010510",
+      "quelle": "https://www.dithmarschen.de/themen/kfz-fahrzeugzulassung-fuehrerschein/kfz-zulassungsbehoerde"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Fr 08:00–12:00",
+        "Do 14:00–17:00"
+      ],
+      "hinweis": "Allgemeine Öffnungszeiten der Kreisverwaltung (Kreishaus); für die Zulassungsstelle sind dort keine abweichenden Zeiten genannt. Alle Anliegen werden nur bei vorheriger Terminvergabe bearbeitet; Nachmittagstermine sind Privatkund*innen vorbehalten (laut Seite der Kfz-Zulassungsbehörde).",
+      "quelle": "https://www.dithmarschen.de/kreis-politik-verwaltung/verwaltung/kontaktdaten-oeffnungszeiten"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungen bzw. Umschreibungen werden ausschließlich für Fahrzeughalter*innen vorgenommen, deren Hauptwohnsitz im Kreis Dithmarschen angemeldet ist.",
+      "quelle": "https://reservation.frontdesksuite.com/dithmarschen/kfz/Home/Index?Culture=de&PageId=9d8505eb-7fe6-4767-85ae-8114eca172b2&ShouldStartReserveTimeFlow=False&ButtonId=00000000-0000-0000-0000-000000000000"
+    },
+    "kuerzel": [
+      {
+        "code": "HEI",
+        "bedeutung": "Heide",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MED",
+        "bedeutung": "Meldorf",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Nachmittagstermine in der Zulassungsstelle sind Privatkund*innen vorbehalten.",
+        "quelle": "https://www.dithmarschen.de/themen/kfz-fahrzeugzulassung-fuehrerschein/kfz-zulassungsbehoerde"
+      },
+      {
+        "text": "Online-Abmeldung über i-Kfz kostet knapp 3 € statt ca. 17 € vor Ort.",
+        "quelle": "https://www.dithmarschen.de/themen/kfz-fahrzeugzulassung-fuehrerschein/kfz-zulassungsbehoerde"
+      },
+      {
+        "text": "Zahlungen in den Onlinediensten (einschließlich Wunschkennzeichen) nur per Kreditkarte oder PayPal.",
+        "quelle": "https://www.dithmarschen.de/service/terminbuchung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten"
+    ]
+  },
+  {
+    "slug": "kreis-herzogtum-lauenburg",
+    "stadt": "Kreis Herzogtum Lauenburg",
+    "bundesland": "Schleswig-Holstein",
+    "behoerde": "Kreis Herzogtum Lauenburg – Der Landrat, Fachdienst 141 Straßenverkehr, Zulassungsbehörde für Kraftfahrzeuge",
+    "behoerdeQuelle": "https://www.kreis-rz.de/Politik-und-Verwaltung/Kreisverwaltung/Service-Ordnung-Gesundheit/Stra%C3%9Fenverkehr/Zulassungsbeh%C3%B6rde/",
+    "traeger": "Kreis Herzogtum Lauenburg",
+    "standorte": [
+      {
+        "bezeichnung": "Fachdienst Straßenverkehr – Zulassungsbehörde",
+        "strasse": "Kesselflickerstraße 2",
+        "plz": "21493",
+        "ort": "Elmenhorst (Ortsteil Lanken)",
+        "quelle": "https://www.kreis-rz.de/Politik-und-Verwaltung/Kreisverwaltung/Service-Ordnung-Gesundheit/Stra%C3%9Fenverkehr/Zulassungsbeh%C3%B6rde/"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-rz.de/Politik-und-Verwaltung/Kreisverwaltung/Service-Ordnung-Gesundheit/Stra%C3%9Fenverkehr/Zulassungsbeh%C3%B6rde/",
+      "quelle": "https://www.kreis-rz.de/Politik-und-Verwaltung/Kreisverwaltung/Service-Ordnung-Gesundheit/Stra%C3%9Fenverkehr/Zulassungsbeh%C3%B6rde/"
+    },
+    "terminUrl": {
+      "url": "https://tempus-termine.com/termine/index.php?anlagennr=28&anwendung=1&infotext=zulassung",
+      "quelle": "https://www.kreis-rz.de/Politik-und-Verwaltung/Kreisverwaltung/Service-Ordnung-Gesundheit/Stra%C3%9Fenverkehr/Zulassungsbeh%C3%B6rde/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100012.OE.255431713&leistungId=99036020001000&p=010530",
+      "quelle": "https://www.kreis-rz.de/Terminvereinbarung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Fr 7:30–11:00 (ohne Termin, mit Wartezeit)"
+      ],
+      "hinweis": "Besuch mit Online-Termin oder ohne Termin zu den genannten Zeiten mit Wartezeit; ohne Termin für Privatkunden sowie für Händler, Zulassungsdienste und Bevollmächtigte mit maximal 3 Vorgängen.",
+      "quelle": "https://www.kreis-rz.de/Politik-und-Verwaltung/Kreisverwaltung/Service-Ordnung-Gesundheit/Stra%C3%9Fenverkehr/Zulassungsbeh%C3%B6rde/"
+    },
+    "zustaendigkeit": {
+      "text": "Kreis Herzogtum Lauenburg: Zuständige Stelle für Einwohner des Kreises (z. B. auch der Stadt Geesthacht) ist die Zulassungsbehörde in Elmenhorst OT Lanken.",
+      "quelle": "https://www.kreis-rz.de/Service/Dienstleistungen/Kfz-Zulassung-von-Neufahrzeugen-Erstzulassung-.php?ModID=10&FID=3150.47.1&call=0&ort=298.32"
+    },
+    "kuerzel": [
+      {
+        "code": "RZ",
+        "bedeutung": "Ratzeburg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Gebühren vor Ort bitte bargeldlos mit Karte oder Smartphone zahlen; Bargeld wird nur noch im Ausnahmefall angenommen.",
+        "quelle": "https://www.kreis-rz.de/Politik-und-Verwaltung/Kreisverwaltung/Service-Ordnung-Gesundheit/Stra%C3%9Fenverkehr/Zulassungsbeh%C3%B6rde/"
+      },
+      {
+        "text": "Außerbetriebsetzung auch ohne Besuch möglich: online oder auf dem Postweg (Antrag, Kennzeichen und Zulassungsbescheinigung Teil I an den Fachdienst Straßenverkehr).",
+        "quelle": "https://www.kreis-rz.de/Politik-und-Verwaltung/Kreisverwaltung/Service-Ordnung-Gesundheit/Stra%C3%9Fenverkehr/Zulassungsbeh%C3%B6rde/"
+      },
+      {
+        "text": "Namens- oder Adressänderungen ohne Kennzeichenwechsel werden auch per Post entgegengenommen und bearbeitet.",
+        "quelle": "https://www.kreis-rz.de/Politik-und-Verwaltung/Kreisverwaltung/Service-Ordnung-Gesundheit/Stra%C3%9Fenverkehr/Zulassungsbeh%C3%B6rde/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kreis-nordfriesland",
+    "stadt": "Kreis Nordfriesland",
+    "bundesland": "Schleswig-Holstein",
+    "behoerde": "Kreis Nordfriesland – Fachdienst Recht, Ordnung und Ausländerangelegenheiten, Abteilung Verkehr (Zulassungsstellen Husum und Niebüll)",
+    "behoerdeQuelle": "https://www.nordfriesland.de/Kreis-Verwaltung/Kreisverwaltung/Fachdienst-Recht-Verkehr-und-Ausl%C3%A4nderangelegenheiten/",
+    "traeger": "Kreis Nordfriesland",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Husum",
+        "strasse": "Marktstraße 6",
+        "plz": "25813",
+        "ort": "Husum",
+        "quelle": "https://www.nordfriesland.de/Quicknavigation/Suchergebnis-Adressen/Kreis-Nordfriesland-Zulassungsstelle-Husum.php?ModID=9&FID=2271.26.1"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Niebüll",
+        "strasse": "Gerberstraße 5",
+        "plz": "25899",
+        "ort": "Niebüll",
+        "quelle": "https://www.nordfriesland.de/Quicknavigation/Suchergebnis-Adressen/Kreis-Nordfriesland-Zulassungsstelle-Nieb%C3%BCll.php?ModID=9&FID=2271.27.1"
+      }
+    ],
+    "website": {
+      "url": "https://www.nordfriesland.de/Kreis-Verwaltung/Kreisverwaltung/Fachdienst-Recht-Verkehr-und-Ausl%C3%A4nderangelegenheiten/Wartezeiten-Zulassungsstellen/",
+      "quelle": "https://www.nordfriesland.de/Kreis-Verwaltung/Kreisverwaltung/Fachdienst-Recht-Verkehr-und-Ausl%C3%A4nderangelegenheiten/Wartezeiten-Zulassungsstellen/"
+    },
+    "terminUrl": {
+      "url": "https://timeacle.com/business/index/id/3730",
+      "quelle": "https://www.nordfriesland.de/Quicknavigation/Suchergebnis-Adressen/Kreis-Nordfriesland-Zulassungsstelle-Husum.php?ModID=9&FID=2271.26.1"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100012.OE.248240877&leistungId=99036020001000&p=010540",
+      "quelle": "https://nordfriesland.buergerportal.sh/buergerportal/details/dienste/ansicht/kraftfahrzeug-zulassen-oder-ummelden-227680"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30–12:00",
+        "Di 07:30–12:00 und 13:30–16:00",
+        "Mi 07:30–12:00",
+        "Do 07:30–12:00 und 13:30–17:00",
+        "Fr 07:30–12:00"
+      ],
+      "hinweis": "Gleiche Zeiten in Husum und Niebüll; am 24. und 31. Dezember geschlossen. Vorab-Termin zwingend erforderlich (laut https://www.nordfriesland.de/Kreis-Verwaltung/Kreisverwaltung/Standorte-%C3%96ffnungszeiten/).",
+      "quelle": "https://www.nordfriesland.de/Quicknavigation/Suchergebnis-Adressen/Kreis-Nordfriesland-Zulassungsstelle-Husum.php?ModID=9&FID=2271.26.1"
+    },
+    "zustaendigkeit": {
+      "text": "Beide Zulassungsstellen in Nordfriesland (Husum und Niebüll) sind für das gesamte Kreisgebiet zuständig; freie Wahl der Zulassungsstelle.",
+      "quelle": "https://www.nordfriesland.de/Quicknavigation/Suchergebnis-Adressen/Kreis-Nordfriesland-Zulassungsstelle-Husum.php?ModID=9&FID=2271.26.1"
+    },
+    "kuerzel": [
+      {
+        "code": "NF",
+        "bedeutung": "Nordfriesland",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Freie Wahl zwischen Husum und Niebüll; Terminbuchung je Standort getrennt (Niebüll: https://timeacle.com/business/index/id/2661).",
+        "quelle": "https://www.nordfriesland.de/Quicknavigation/Suchergebnis-Adressen/Kreis-Nordfriesland-Zulassungsstelle-Nieb%C3%BCll.php?ModID=9&FID=2271.27.1"
+      },
+      {
+        "text": "In den Zulassungsstellen derzeit ausschließlich Kartenzahlung möglich.",
+        "quelle": "https://www.nordfriesland.de/Kreis-Verwaltung/Kreisverwaltung/Standorte-%C3%96ffnungszeiten/"
+      },
+      {
+        "text": "Hinweis der Zulassungsstelle: Der i-Kfz-Online-Dienst wird technisch weiterentwickelt; bei Problemen Vorgang dokumentieren und ggf. Termin für persönliche Antragstellung vereinbaren.",
+        "quelle": "https://nordfriesland.buergerportal.sh/buergerportal/details/dienste/ansicht/kraftfahrzeug-zulassen-oder-ummelden-227680"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kreis-ostholstein",
+    "stadt": "Kreis Ostholstein",
+    "bundesland": "Schleswig-Holstein",
+    "behoerde": "Kreis Ostholstein – Fachdienst Straßenverkehr, Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.kreis-oh.de/B%C3%BCrger-Kreis-Verwaltung/Auto-Verkehr/Kfz-Zulassung-OH-/",
+    "traeger": "Kreis Ostholstein",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Eutin",
+        "strasse": "Bürgermeister-Steenbock-Str. 20",
+        "plz": "23701",
+        "ort": "Eutin",
+        "quelle": "https://www.kreis-oh.de/B%C3%BCrger-Kreis-Verwaltung/B%C3%BCrgerservice/Dienstleistungen-von-A-Z/Erstzulassung-eines-Fahrzeugs-Neuzulassung-beantragen.php?object=tx,3906.2.1&ModID=10&FID=3906.665.1&NavID=2454.248.1&k_sub=1&kuo=1&ort=247.9"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-oh.de/B%C3%BCrger-Kreis-Verwaltung/Auto-Verkehr/Kfz-Zulassung-OH-/",
+      "quelle": "https://www.kreis-oh.de/B%C3%BCrger-Kreis-Verwaltung/Auto-Verkehr/Kfz-Zulassung-OH-/"
+    },
+    "terminUrl": {
+      "url": "https://termin.kreis-oh.de/m/kreis-ostholstein/extern/calendar/?uid=9f35a183-9ed1-4f06-9bd9-40f415b173fd",
+      "quelle": "https://www.kreis-oh.de/B%C3%BCrger-Kreis-Verwaltung/Online-Terminvergabe-Zulassungsstelle-Kreis-Ostholstein.php?object=tx,2454.20301.1"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100012.OE.279550882&leistungId=99036020001000&p=010550",
+      "quelle": "https://www.kreis-oh.de/B%C3%BCrger-Kreis-Verwaltung/Auto-Verkehr/Kfz-Zulassung-OH-/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Fr 07:30–12:00",
+        "Do 14:00–17:00"
+      ],
+      "hinweis": "Persönliche Bedienung bis auf wenige Ausnahmen nur mit zuvor online gebuchtem Termin; an gesetzlichen Feiertagen in Schleswig-Holstein sowie am 24.12. und 31.12. geschlossen.",
+      "quelle": "https://www.kreis-oh.de/B%C3%BCrger-Kreis-Verwaltung/Auto-Verkehr/Kfz-Zulassung-OH-/"
+    },
+    "zustaendigkeit": {
+      "text": "Kreis Ostholstein: Zuständige Stelle für Einwohner des Kreises (z. B. auch der Stadt Bad Schwartau) ist die Kfz-Zulassungsstelle in Eutin.",
+      "quelle": "https://www.kreis-oh.de/B%C3%BCrger-Kreis-Verwaltung/B%C3%BCrgerservice/Dienstleistungen-von-A-Z/Erstzulassung-eines-Fahrzeugs-Neuzulassung-beantragen.php?object=tx,3906.2.1&ModID=10&FID=3906.665.1&NavID=2454.248.1&k_sub=1&kuo=1&ort=247.9"
+    },
+    "kuerzel": [
+      {
+        "code": "OH",
+        "bedeutung": "Ostholstein",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Barzahlung nicht möglich; Zahlung mit allen gängigen Karten einschließlich Google Pay und Apple Pay am Schalter.",
+        "quelle": "https://www.kreis-oh.de/B%C3%BCrger-Kreis-Verwaltung/Auto-Verkehr/Kfz-Zulassung-OH-/"
+      },
+      {
+        "text": "Ohne Termin (mit Wartenummer am Check-in-Terminal): Anschriftenänderung bei Umzug innerhalb des Kreises, Abmeldung, Fahrzeugscheinheft für rote Dauerkennzeichen, Export- und Kurzzeitkennzeichen, Neusiegelung, Umkennzeichnung nach Kennzeichendiebstahl.",
+        "quelle": "https://www.kreis-oh.de/B%C3%BCrger-Kreis-Verwaltung/Online-Terminvergabe-Zulassungsstelle-Kreis-Ostholstein.php?object=tx,2454.20301.1"
+      },
+      {
+        "text": "Neue Termine für die folgenden drei Öffnungstage werden Montag bis Freitag zwischen 12:00 und 12:30 Uhr freigegeben, weitere automatisiert für max. 4 Wochen im Voraus.",
+        "quelle": "https://www.kreis-oh.de/B%C3%BCrger-Kreis-Verwaltung/Online-Terminvergabe-Zulassungsstelle-Kreis-Ostholstein.php?object=tx,2454.20301.1"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kreis-pinneberg",
+    "stadt": "Kreis Pinneberg",
+    "bundesland": "Schleswig-Holstein",
+    "behoerde": "Kreis Pinneberg – Fachbereich Bauen, Umwelt und Verkehr, Fachdienst Straßenverkehr (FD 24), Team Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.kreis-pinneberg.de/Verwaltung/Fachbereich+Bauen_+Umwelt+und+Verkehr/Fachdienst+Stra%C3%9Fenverkehr/%C3%96ffnungszeiten+_+Kontakt/Kontakt+Kfz-Zulassung.html",
+    "traeger": "Kreis Pinneberg",
+    "standorte": [
+      {
+        "bezeichnung": "Fachdienst Straßenverkehr – Kfz-Zulassung",
+        "strasse": "Ernst-Abbe-Straße 9",
+        "plz": "25337",
+        "ort": "Elmshorn",
+        "quelle": "https://www.kreis-pinneberg.de/Verwaltung/Fachbereich+Bauen_+Umwelt+und+Verkehr/Fachdienst+Stra%C3%9Fenverkehr/%C3%96ffnungszeiten+_+Kontakt/Kontakt+Kfz-Zulassung.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-pinneberg.de/Verwaltung/Fachbereich+Bauen_+Umwelt+und+Verkehr/Fachdienst+Stra%C3%9Fenverkehr/Team+Kfz-Zulassung.html",
+      "quelle": "https://www.kreis-pinneberg.de/Verwaltung/Fachbereich+Bauen_+Umwelt+und+Verkehr/Fachdienst+Stra%C3%9Fenverkehr/Team+Kfz-Zulassung.html"
+    },
+    "terminUrl": {
+      "url": "https://reservation.frontdesksuite.com/pinneberg/Termin",
+      "quelle": "https://www.kreis-pinneberg.de/Verwaltung/Fachbereich+Bauen_+Umwelt+und+Verkehr/Fachdienst+Stra%C3%9Fenverkehr/%C3%96ffnungszeiten+_+Kontakt.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100012.OE.9309353&leistungId=99036020001000&p=010560",
+      "quelle": "https://www.kreis-pinneberg.de/strassenverkehrsamt.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Fr 07:30–12:00",
+        "Di zusätzlich 14:00–17:30",
+        "Mo und Do zusätzlich 13:30–15:00"
+      ],
+      "hinweis": "Kundenbesuche nur nach vorheriger (Online-)Terminvereinbarung.",
+      "quelle": "https://www.kreis-pinneberg.de/Verwaltung/Fachbereich+Bauen_+Umwelt+und+Verkehr/Fachdienst+Stra%C3%9Fenverkehr/%C3%96ffnungszeiten+_+Kontakt.html"
+    },
+    "zustaendigkeit": {
+      "text": "Kreis Pinneberg: An- und Ummeldungen für Halter im Kreis Pinneberg (auch bei Fahrzeugen, die bisher in einem anderen Zulassungsbezirk registriert waren).",
+      "quelle": "https://www.kreis-pinneberg.de/Verwaltung/Fachbereich+Bauen_+Umwelt+und+Verkehr/Fachdienst+Stra%C3%9Fenverkehr/Team+Kfz-Zulassung/Inhalt/Umschreibung+au%C3%9Ferhalb.html"
+    },
+    "kuerzel": [
+      {
+        "code": "PI",
+        "bedeutung": "Pinneberg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Einchecken ist frühestens 5 Minuten vor dem gebuchten Termin möglich.",
+        "quelle": "https://www.kreis-pinneberg.de/Verwaltung/Fachbereich+Bauen_+Umwelt+und+Verkehr/Fachdienst+Stra%C3%9Fenverkehr/%C3%96ffnungszeiten+_+Kontakt.html"
+      },
+      {
+        "text": "Gebühren können auch per ec-cash (ec-Karte mit PIN) bezahlt werden.",
+        "quelle": "https://www.kreis-pinneberg.de/Verwaltung/Fachbereich+Bauen_+Umwelt+und+Verkehr/Fachdienst+Stra%C3%9Fenverkehr/Team+Kfz-Zulassung/Inhalt/Neuzulassung.html"
+      },
+      {
+        "text": "Unvollständige Vorgänge und falsch gebuchte Termine werden nicht bearbeitet.",
+        "quelle": "https://reservation.frontdesksuite.com/pinneberg/kfzzulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kreis-ploen",
+    "stadt": "Kreis Plön",
+    "bundesland": "Schleswig-Holstein",
+    "behoerde": "Kreis Plön – Amt für Sicherheit, Ordnung und Veterinärwesen, Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.kreis-ploen.de/B%C3%BCrgerservice/Schnell-gefunden/KFZ-Zulassung/",
+    "traeger": "Kreis Plön",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Plön (Gebäude zwischen Parkhaus und Haupteingang der Kreisverwaltung)",
+        "strasse": "Hamburger Straße 17–18",
+        "plz": "24306",
+        "ort": "Plön",
+        "quelle": "https://www.kreis-ploen.de/B%C3%BCrgerservice/Schnell-gefunden/KFZ-Zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-ploen.de/B%C3%BCrgerservice/Onlinedienste/Kfz-Zulassungsstelle/",
+      "quelle": "https://www.kreis-ploen.de/B%C3%BCrgerservice/Onlinedienste/Kfz-Zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://termine.kreis-ploen.de/",
+      "quelle": "https://www.kreis-ploen.de/B%C3%BCrgerservice/Onlinetermine-buchen/Zulassungsbeh%C3%B6rde-Privatpersonen-Gewerbetreibende/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100012.OE.222862101&leistungId=99036020001000&p=010570",
+      "quelle": "https://www.kreis-ploen.de/B%C3%BCrgerservice/Onlinedienste/Kfz-Zulassungsstelle/Internetbasierte-Fahrzeugzulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Di 7:30–11:30 und 14:00–16:00 (offene Sprechstunde mit Wartenummer, nur Standort Plön)"
+      ],
+      "hinweis": "Die Zulassungsstelle in Plön und Schwentinental ist seit 01.07.2023 ausschließlich mit Terminvergabe geöffnet; einzige Ausnahme ist die dienstägliche offene Sprechstunde in Plön. Reguläre Terminzeiten sind nicht veröffentlicht.",
+      "quelle": "https://www.kreis-ploen.de/B%C3%BCrgerservice/Schnell-gefunden/KFZ-Zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Kreis Plön: örtlich zuständig ist bei natürlichen Personen die Zulassungsbehörde des Wohnorts (Hauptwohnung), bei Firmen die des Sitzes bzw. der Niederlassung; Standorte Plön und Außenstelle Schwentinental.",
+      "quelle": "https://www.kreis-ploen.de/B%C3%BCrgerservice/Was-erledige-ich-wo-/Erstzulassung-eines-Fahrzeugs-aus-einem-EU-Mitgliedstaat-beantragen.php?ModID=10&FID=2156.56.1"
+    },
+    "kuerzel": [
+      {
+        "code": "PLÖ",
+        "bedeutung": "Plön",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Außenstelle Schwentinental (seit 01.12.2022) bietet das volle Dienstleistungsangebot der Zulassungsstelle; Besuch nur mit Online-Termin.",
+        "quelle": "https://www.kreis-ploen.de/B%C3%BCrgerservice/Pressedienst/Au%C3%9Fenstelle-der-Kfz-Zulassungsstelle-er%C3%B6ffnet-am-01-12-2022.php?ModID=255&FID=2158.3278.1"
+      },
+      {
+        "text": "Getrennte Online-Terminbuchung für Privatpersonen/Gewerbetreibende und für Kfz-Händler/Zulassungsdienste.",
+        "quelle": "https://termine.kreis-ploen.de/"
+      },
+      {
+        "text": "Die Kfz-Zulassungsbehörde befindet sich im Gebäude zwischen dem Parkhaus und dem Haupteingang der Kreisverwaltung.",
+        "quelle": "https://www.kreis-ploen.de/Politik-Verwaltung/Kreisverwaltung-Pl%C3%B6n/Standorte-und-Sprechzeiten/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "standorte[1].strasse",
+      "standorte[1].plz"
+    ]
+  },
+  {
+    "slug": "kreis-rendsburg-eckernfoerde",
+    "stadt": "Kreis Rendsburg-Eckernförde",
+    "bundesland": "Schleswig-Holstein",
+    "behoerde": "Kreis Rendsburg-Eckernförde – Kfz-Zulassungsbehörde (Rendsburg mit Außenstellen Eckernförde, Altenholz, Hohenwestedt)",
+    "behoerdeQuelle": "https://www.kreis-rendsburg-eckernfoerde.de/bauen-mobilitaet/verkehr/kfz-zulassungsbehoerde",
+    "traeger": "Kreis Rendsburg-Eckernförde",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Rendsburg",
+        "strasse": "Kaiserstraße 8",
+        "plz": "24768",
+        "ort": "Rendsburg",
+        "quelle": "https://www.kreis-rendsburg-eckernfoerde.de/bauen-mobilitaet/verkehr/kfz-zulassungsbehoerde"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Eckernförde (Außenstelle)",
+        "strasse": "Rendsburger Straße 109",
+        "plz": "24340",
+        "ort": "Eckernförde",
+        "quelle": "https://www.kreis-rendsburg-eckernfoerde.de/bauen-mobilitaet/verkehr/kfz-zulassungsbehoerde"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Altenholz (Außenstelle)",
+        "strasse": "Teichkoppel 72",
+        "plz": "24161",
+        "ort": "Altenholz",
+        "quelle": "https://www.kreis-rendsburg-eckernfoerde.de/bauen-mobilitaet/verkehr/kfz-zulassungsbehoerde"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Hohenwestedt (Außenstelle)",
+        "strasse": "Am Markt 17",
+        "plz": "24594",
+        "ort": "Hohenwestedt",
+        "quelle": "https://www.kreis-rendsburg-eckernfoerde.de/bauen-mobilitaet/verkehr/kfz-zulassungsbehoerde"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-rendsburg-eckernfoerde.de/bauen-mobilitaet/verkehr/kfz-zulassungsbehoerde",
+      "quelle": "https://www.kreis-rendsburg-eckernfoerde.de/bauen-mobilitaet/verkehr/kfz-zulassungsbehoerde"
+    },
+    "terminUrl": {
+      "url": "https://reservation.frontdesksuite.com/rendsburg-eckernforde/termine/Home/Index?Culture=de&PageId=30e8ff9d-4d80-479d-b527-3af2823e0e94&ButtonId=00000000-0000-0000-0000-000000000000",
+      "quelle": "https://www.kreis-rendsburg-eckernfoerde.de/bauen-mobilitaet/verkehr/kfz-zulassungsbehoerde"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100012.OE.9134570&leistungId=99036020001000&p=010580",
+      "quelle": "https://www.kreis-rendsburg-eckernfoerde.de/bauen-mobilitaet/verkehr/kfz-zulassungsbehoerde"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Rendsburg und Eckernförde: Mo 08:00–12:00",
+        "Rendsburg und Eckernförde: Di 08:00–12:00 und 14:00–17:30",
+        "Rendsburg und Eckernförde: Mi 07:15–12:00",
+        "Rendsburg und Eckernförde: Do 08:00–12:00 und 14:00–16:00",
+        "Rendsburg und Eckernförde: Fr 08:00–12:00",
+        "Altenholz: Mo 07:00–12:00 und 14:00–15:00",
+        "Altenholz: Di 07:00–12:00 und 14:00–17:00",
+        "Altenholz: Mi geschlossen",
+        "Altenholz: Do 07:00–12:00 und 14:00–15:00",
+        "Altenholz: Fr 07:00–11:00",
+        "Hohenwestedt: Mo 08:00–12:00",
+        "Hohenwestedt: Di 08:00–12:00",
+        "Hohenwestedt: Mi geschlossen",
+        "Hohenwestedt: Do 08:00–12:00 und 14:00–17:30",
+        "Hohenwestedt: Fr 08:00–11:30"
+      ],
+      "hinweis": "Besuch der Zulassungsbehörde nur mit Termin (laut https://www.kreis-rendsburg-eckernfoerde.de/bauen-mobilitaet/verkehr/kfz-zulassungsbehoerde); am 24. und 31. Dezember geschlossen.",
+      "quelle": "https://www.kreis-rendsburg-eckernfoerde.de/geschaeftszeiten/adressen-und-geschaeftszeiten-in-rendsburg"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsbezirk Kreis Rendsburg-Eckernförde mit vier Standorten (Rendsburg sowie Außenstellen Eckernförde, Altenholz, Hohenwestedt); ist am gewählten Standort kein Termin frei, kann ein anderer Standort gewählt werden.",
+      "quelle": "https://www.kreis-rendsburg-eckernfoerde.de/bauen-mobilitaet/verkehr/kfz-zulassungsbehoerde"
+    },
+    "kuerzel": [
+      {
+        "code": "RD",
+        "bedeutung": "Rendsburg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ECK",
+        "bedeutung": "Eckernförde",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termine werden zwei Wochen im Voraus freigegeben; tagesaktuelle Termine werden häufig am Vormittag frei.",
+        "quelle": "https://www.kreis-rendsburg-eckernfoerde.de/bauen-mobilitaet/verkehr/kfz-zulassungsbehoerde"
+      },
+      {
+        "text": "Die Außenstelle Altenholz hat eine eigene Terminbuchung: https://cqm.cleverq.de/public/appointments/kfz_altenholz/index.html?lang=de",
+        "quelle": "https://www.kreis-rendsburg-eckernfoerde.de/bauen-mobilitaet/verkehr/kfz-zulassungsbehoerde"
+      },
+      {
+        "text": "Zahlung je Standort unterschiedlich: Rendsburg bar und mit allen Kartenarten (auch Wallet), Eckernförde mit allen Kartenarten, Altenholz nur EC-Karte (Girocard).",
+        "quelle": "https://www.kreis-rendsburg-eckernfoerde.de/bauen-mobilitaet/verkehr/kfz-zulassungsbehoerde"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kreis-schleswig-flensburg",
+    "stadt": "Kreis Schleswig-Flensburg",
+    "bundesland": "Schleswig-Holstein",
+    "behoerde": "Kreis Schleswig-Flensburg – Straßenverkehrsbehörde, Zulassungsstellen Schleswig und Flensburg",
+    "behoerdeQuelle": "https://www.schleswig-flensburg.de/%C3%96ffnungszeiten/",
+    "traeger": "Kreis Schleswig-Flensburg",
+    "standorte": [
+      {
+        "bezeichnung": "Kreis Schleswig-Flensburg – Zulassungsstelle Schleswig",
+        "strasse": "St. Jürgener Str. 49",
+        "plz": "24837",
+        "ort": "Schleswig",
+        "quelle": "https://www.schleswig-flensburg.de/Was-erledige-ich-wo-/Erstzulassung-eines-Fahrzeugs-aus-einem-EU-Mitgliedstaat-beantragen.php?ModID=10&FID=3333.56.1&k_sub=1&kuo=1&ort=120.137"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Flensburg",
+        "strasse": "Gutenbergstraße 23",
+        "plz": "24941",
+        "ort": "Flensburg",
+        "quelle": "https://www.schleswig-flensburg.de/Was-erledige-ich-wo-/Erstzulassung-eines-Fahrzeugs-aus-einem-EU-Mitgliedstaat-beantragen.php?ModID=10&FID=3333.56.1&k_sub=1&kuo=1&ort=120.137"
+      }
+    ],
+    "website": {
+      "url": "https://www.schleswig-flensburg.de/Was-erledige-ich-wo-/Zulassungsstelle-.php?ModID=10&FID=3333.1600.1&call=0&k_sub=0&kuo=1&ort=0&sfwort=0",
+      "quelle": "https://www.schleswig-flensburg.de/Was-erledige-ich-wo-/Zulassungsstelle-.php?ModID=10&FID=3333.1600.1&call=0&k_sub=0&kuo=1&ort=0&sfwort=0"
+    },
+    "terminUrl": {
+      "url": "https://reservation.frontdesksuite.com/schleswig-flensburg/kfz",
+      "quelle": "https://www.schleswig-flensburg.de/Online-Angebote/Terminvergabe-und-Dienste-der-Stra%C3%9Fenverkehrsbeh%C3%B6rde/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100012.OE.270034367&leistungId=99036020001000&p=010590",
+      "quelle": "https://www.schleswig-flensburg.de/Informationen-f%C3%BCr/Kfz-Halter/i-kfz-Online-Dienste-/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30–12:00",
+        "Di 07:30–12:00 und 13:30–15:30",
+        "Mi 07:30–12:00",
+        "Do 07:30–12:00 und 13:30–16:30",
+        "Fr 07:30–12:00"
+      ],
+      "hinweis": "Gleiche Zeiten in Schleswig und Flensburg; Besuch nur nach erfolgter (Online-)Terminvereinbarung, trotz Termin sind Wartezeiten möglich.",
+      "quelle": "https://www.schleswig-flensburg.de/%C3%96ffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Für Einwohner des Kreises Schleswig-Flensburg (Kennzeichen SL) stehen die Zulassungsstellen in Schleswig (St. Jürgener Straße 49) und in Flensburg (Gutenbergstraße 23) zur Verfügung. Die kreisfreie Stadt Flensburg (FL) gehört nicht zum Kreis; deren Einwohner werden am Standort Gutenbergstraße über die „Stadt Flensburg – Kooperation Zulassungsstelle“ bedient.",
+      "quelle": "https://www.schleswig-flensburg.de/Was-erledige-ich-wo-/Zulassungsstelle-.php?ModID=10&FID=3333.1600.1&call=0&k_sub=0&kuo=1&ort=0&sfwort=0"
+    },
+    "kuerzel": [
+      {
+        "code": "SL",
+        "bedeutung": "Schleswig",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Zulassungsstelle in Schleswig ist umgezogen und befindet sich jetzt in der St. Jürgener Straße 49, 24837 Schleswig.",
+        "quelle": "https://www.schleswig-flensburg.de/%C3%96ffnungszeiten/"
+      },
+      {
+        "text": "Zulassungs-Box am Standort Flensburg: nur Privatkunden, max. 2 Vorgänge, Abgabe rund um die Uhr, Bearbeitung längstens 5 Arbeitstage.",
+        "quelle": "https://www.schleswig-flensburg.de/Informationen-f%C3%BCr/Kfz-Halter/Zulassungsbox/"
+      },
+      {
+        "text": "Für i-Kfz gelten getrennte Links für den Kreis Schleswig-Flensburg und die Stadt Flensburg.",
+        "quelle": "https://www.schleswig-flensburg.de/Informationen-f%C3%BCr/Kfz-Halter/i-kfz-Online-Dienste-/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kreis-segeberg",
+    "stadt": "Kreis Segeberg",
+    "bundesland": "Schleswig-Holstein",
+    "behoerde": "Kreis Segeberg – Kraftfahrzeug-Zulassungsbehörde (Hauptstelle Bad Segeberg, Außenstelle Norderstedt)",
+    "behoerdeQuelle": "https://www.segeberg.de/Lebenslagen/Klima-Wirtschaft-Verkehr/Kraftfahrzeuge-Zulassung-/",
+    "traeger": "Kreis Segeberg",
+    "standorte": [
+      {
+        "bezeichnung": "Kraftfahrzeug-Zulassungsbehörde Bad Segeberg (Hauptstelle)",
+        "strasse": "Waldemar-von-Mohl-Straße 2",
+        "plz": "23795",
+        "ort": "Bad Segeberg",
+        "quelle": "https://www.segeberg.de/Adressen/Kraftfahrzeug-Zulassungsbeh%C3%B6rde-Bad-Segeberg-Hauptstelle-.php?ModID=9&FID=3466.253.1"
+      },
+      {
+        "bezeichnung": "Kraftfahrzeug-Zulassungsbehörde Norderstedt (Außenstelle)",
+        "strasse": "Oststraße 20",
+        "plz": "22844",
+        "ort": "Norderstedt",
+        "quelle": "https://www.segeberg.de/Adressen/Kraftfahrzeug-Zulassungsbeh%C3%B6rde-Norderstedt-Au%C3%9Fenstelle-.php?ModID=9&FID=3466.252.1"
+      }
+    ],
+    "website": {
+      "url": "https://www.segeberg.de/Lebenslagen/Klima-Wirtschaft-Verkehr/Kraftfahrzeuge-Zulassung-/",
+      "quelle": "https://www.segeberg.de/Lebenslagen/Klima-Wirtschaft-Verkehr/Kraftfahrzeuge-Zulassung-/"
+    },
+    "terminUrl": {
+      "url": "https://cqm.cleverq.de/public/locations/kreis_segeberg/index.html?lang=de",
+      "quelle": "https://www.segeberg.de/Lebenslagen/Klima-Wirtschaft-Verkehr/Kraftfahrzeuge-Zulassung-/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100012.OE.266234245&leistungId=99036020001000&p=010600",
+      "quelle": "https://www.segeberg.de/Lebenslagen/Klima-Wirtschaft-Verkehr/Kraftfahrzeuge-Zulassung-/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Bad Segeberg: Mo–Fr 7:30–12:00",
+        "Bad Segeberg: Di und Do 14:00–16:00",
+        "Norderstedt: Mo–Fr 07:45–11:45",
+        "Norderstedt: Mo–Do 13:30–15:00"
+      ],
+      "hinweis": "Für beide Zulassungsstellen ist ein Online-Termin erforderlich. Zeiten Norderstedt laut https://www.segeberg.de/Adressen/Kraftfahrzeug-Zulassungsbeh%C3%B6rde-Norderstedt-Au%C3%9Fenstelle-.php?ModID=9&FID=3466.252.1.",
+      "quelle": "https://www.segeberg.de/Adressen/Kraftfahrzeug-Zulassungsbeh%C3%B6rde-Bad-Segeberg-Hauptstelle-.php?ModID=9&FID=3466.253.1"
+    },
+    "zustaendigkeit": {
+      "text": "Die KFZ-Zulassungsbehörden (Bad Segeberg und Norderstedt) sind zuständig für alle Halter*innen, die ihren Hauptwohnsitz oder Firmensitz im Kreis Segeberg haben.",
+      "quelle": "https://www.segeberg.de/Lebenslagen/Klima-Wirtschaft-Verkehr/Kraftfahrzeuge-Zulassung-/"
+    },
+    "kuerzel": [
+      {
+        "code": "SE",
+        "bedeutung": "Segeberg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Nach der Online-Reservierung muss der Termin per E-Mail innerhalb von 3 Stunden bestätigt werden, sonst verfällt er.",
+        "quelle": "https://www.segeberg.de/Lebenslagen/Klima-Wirtschaft-Verkehr/Kraftfahrzeuge-Zulassung-/"
+      },
+      {
+        "text": "Neue Termine werden werktags zwischen 12:00 und 12:30 Uhr für die nächsten drei Öffnungstage freigegeben, weitere gegen 19 Uhr.",
+        "quelle": "https://www.segeberg.de/Lebenslagen/Klima-Wirtschaft-Verkehr/Kraftfahrzeuge-Zulassung-/"
+      },
+      {
+        "text": "Gebühren am Kassenautomaten in bar, mit EC-Karte oder Visa/MasterCard zahlbar; kontaktlose Zahlung möglich.",
+        "quelle": "https://www.segeberg.de/Lebenslagen/Klima-Wirtschaft-Verkehr/Kraftfahrzeuge-Zulassung-/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kreis-steinburg",
+    "stadt": "Kreis Steinburg",
+    "bundesland": "Schleswig-Holstein",
+    "behoerde": "Kreis Steinburg – Ordnungsamt, Verkehrsaufsicht, Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.steinburg.de/kreisverwaltung/informationen-der-fachaemter/ordnungsamt/verkehrsaufsicht/kfz-zulassung.html",
+    "traeger": "Kreis Steinburg",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde (Dienstgebäude Verkehrsaufsicht)",
+        "strasse": "Adenauerallee 8",
+        "plz": "25524",
+        "ort": "Itzehoe",
+        "quelle": "https://www.steinburg.de/kreisverwaltung/leistungen-services/oeffnungszeiten/verkehrsaufsicht.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.steinburg.de/kreisverwaltung/informationen-der-fachaemter/ordnungsamt/verkehrsaufsicht/kfz-zulassung.html",
+      "quelle": "https://www.steinburg.de/kreisverwaltung/informationen-der-fachaemter/ordnungsamt/verkehrsaufsicht/kfz-zulassung.html"
+    },
+    "terminUrl": {
+      "url": "https://kreis-steinburg.saas.smartcjm.com/m/kreis-steinburg/extern/calendar/?uid=2a2180d3-1ecd-4899-8734-eaa48ec3d4e7",
+      "quelle": "https://www.steinburg.de/kreisverwaltung/informationen-der-fachaemter/ordnungsamt/verkehrsaufsicht/kfz-zulassung.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100012.OE.9089740&leistungId=99036020001000&p=010610",
+      "quelle": "https://www.steinburg.de/kreisverwaltung/informationen-der-fachaemter/ordnungsamt/verkehrsaufsicht/kfz-zulassung.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Fr 7:30–12:00",
+        "Mo und Di 14:00–15:15",
+        "Do 14:00–17:30"
+      ],
+      "hinweis": "Terminbuchung online; Termine werden im Drei-Wochen-Zeitraum angeboten. Telefonzeiten der Zulassungsbehörde Mo–Fr 07:30–12:00.",
+      "quelle": "https://www.steinburg.de/kreisverwaltung/leistungen-services/oeffnungszeiten/verkehrsaufsicht.html"
+    },
+    "zustaendigkeit": {
+      "text": "Die Kfz-Zulassungsbehörde des Kreises Steinburg ist Ansprechpartner für alle Zulassungen, Abmeldungen und Veränderungen von Fahrzeugen mit überwiegendem Standort im Kreis Steinburg.",
+      "quelle": "https://www.steinburg.de/kreisverwaltung/informationen-der-fachaemter/ordnungsamt/verkehrsaufsicht/kfz-zulassung/wissenswertes.html"
+    },
+    "kuerzel": [
+      {
+        "code": "IZ",
+        "bedeutung": "Itzehoe",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Online-Termine im Drei-Wochen-Zeitraum, Freigabe morgens gegen 7:00 Uhr; in sehr dringenden Fällen Notfalltermin per E-Mail mit Begründung anfragen.",
+        "quelle": "https://www.steinburg.de/kreisverwaltung/informationen-der-fachaemter/ordnungsamt/verkehrsaufsicht/kfz-zulassung.html"
+      },
+      {
+        "text": "Im Termin wird in der Regel nur das gebuchte Anliegen bearbeitet (z. B. keine Zulassung bei gebuchter Abmeldung).",
+        "quelle": "https://www.steinburg.de/kreisverwaltung/informationen-der-fachaemter/ordnungsamt/verkehrsaufsicht/kfz-zulassung.html"
+      },
+      {
+        "text": "Der Aufrufbildschirm für Termin- bzw. Aufrufnummern kann online verfolgt werden, auch aus dem eigenen Fahrzeug.",
+        "quelle": "https://www.steinburg.de/kreisverwaltung/informationen-der-fachaemter/ordnungsamt/verkehrsaufsicht/kfz-zulassung.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

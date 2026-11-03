@@ -1,0 +1,552 @@
+[
+  {
+    "slug": "regionalverband-saarbruecken",
+    "stadt": "Regionalverband Saarbrücken",
+    "bundesland": "Saarland",
+    "behoerde": "Landeshauptstadt Saarbrücken – Bürgerämter (Kfz-Zulassung für den Regionalverband Saarbrücken ohne Völklingen)",
+    "behoerdeQuelle": "https://www.saarbruecken.de/rathaus/buergerservice/kfz_angelegenheiten",
+    "traeger": "Landeshauptstadt Saarbrücken",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgeramt City",
+        "strasse": "Gerberstraße 4",
+        "plz": "66111",
+        "ort": "Saarbrücken",
+        "quelle": "https://www.saarbruecken.de/rathaus/buergerservice/kfz_angelegenheiten"
+      },
+      {
+        "bezeichnung": "Bürgeramt Dudweiler",
+        "strasse": "Am Markt 1",
+        "plz": "66125",
+        "ort": "Saarbrücken",
+        "quelle": "https://www.saarbruecken.de/rathaus/buergerservice/kfz_angelegenheiten"
+      },
+      {
+        "bezeichnung": "Bürgeramt Halberg",
+        "strasse": "Kurt-Schumacher-Straße 19",
+        "plz": "66130",
+        "ort": "Saarbrücken",
+        "quelle": "https://www.saarbruecken.de/rathaus/buergerservice/kfz_angelegenheiten"
+      },
+      {
+        "bezeichnung": "Bürgeramt West",
+        "strasse": "Burbacher Markt 20",
+        "plz": "66115",
+        "ort": "Saarbrücken",
+        "quelle": "https://www.saarbruecken.de/rathaus/buergerservice/kfz_angelegenheiten"
+      }
+    ],
+    "website": {
+      "url": "https://www.saarbruecken.de/rathaus/buergerservice/kfz_angelegenheiten",
+      "quelle": "https://www.saarbruecken.de/rathaus/buergerservice/kfz_angelegenheiten"
+    },
+    "terminUrl": {
+      "url": "https://terminvergabe.saarbruecken.de/",
+      "quelle": "https://www.saarbruecken.de/rathaus/onlinedienste/termine_online_buchen"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/saarland/saarbruecken/bsp_ikfz_antragstellung/#/",
+      "quelle": "https://www.saarbruecken.de/rathaus/onlinedienste/termine_online_buchen"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Di 7.30 bis 15 Uhr",
+        "Mi 7.30 bis 11.30 Uhr (freie Öffnungszeiten)",
+        "Do 7.30 bis 18 Uhr",
+        "Fr 7.30 bis 12 Uhr"
+      ],
+      "hinweis": "Gilt für alle vier Bürgerämter (City, Dudweiler, Halberg, West). Außer mittwochs Terminvereinbarung unter www.saarbruecken.de/terminebuchen oder +49 681 9050 notwendig.",
+      "quelle": "https://www.saarbruecken.de/rathaus/buergerservice/kfz_angelegenheiten"
+    },
+    "zustaendigkeit": {
+      "text": "Regionalverband Saarbrücken ohne die Stadt Völklingen: Die Kfz-Zulassung erfolgt bei den Bürgerämtern der Landeshauptstadt Saarbrücken. Die Stadt Völklingen (Kennzeichen VK) hat eine eigene Zulassungsstelle im Bürgerbüro.",
+      "quelle": "https://www.saarbruecken.de/rathaus/buergerservice/kfz_angelegenheiten"
+    },
+    "kuerzel": [
+      {
+        "code": "SB",
+        "bedeutung": "Saarbrücken (Regionalverband Saarbrücken ohne die Stadt Völklingen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Mittwochs bieten die Bürgerämter von 7.30 bis 11.30 Uhr freie Öffnungszeiten ohne vorherige Terminvereinbarung an; online sind Termine maximal 2 Wochen im Voraus buchbar.",
+        "quelle": "https://www.saarbruecken.de/rathaus/onlinedienste/termine_online_buchen"
+      },
+      {
+        "text": "Saarbrücker Neubürger können die Fahrzeug-Ummeldung gemeinsam mit ihrer Wohnsitzanmeldung am gleichen Arbeitsplatz im Bürgeramt erledigen lassen.",
+        "quelle": "https://www.saarbruecken.de/rathaus/buergerservice/kfz_angelegenheiten"
+      },
+      {
+        "text": "Auf einer Vollmacht muss das Kennzeichen oder die Fahrzeugidentifikationsnummer (FIN) des Fahrzeugs eingetragen sein, sonst wird sie bei der Zulassung nicht akzeptiert.",
+        "quelle": "https://www.saarbruecken.de/rathaus/buergerservice/kfz_angelegenheiten"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "traeger"
+    ]
+  },
+  {
+    "slug": "landkreis-merzig-wadern",
+    "stadt": "Landkreis Merzig-Wadern",
+    "bundesland": "Saarland",
+    "behoerde": "Landkreis Merzig-Wadern – Straßenverkehrs- und Kreisordnungsbehörde, Zulassungsstelle",
+    "behoerdeQuelle": "https://www.merzig-wadern.de/Service/Adressen/Zulassungsstelle.php?ModID=9&FID=2875.813.1",
+    "traeger": "Landkreis Merzig-Wadern",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Merzig (Kreisverwaltung)",
+        "strasse": "Bahnhofstraße 44",
+        "plz": "66663",
+        "ort": "Merzig",
+        "quelle": "https://www.merzig-wadern.de/Zulassung-Verkehr/Zulassungsstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://www.merzig-wadern.de/Zulassung-Verkehr/Zulassungsstelle/",
+      "quelle": "https://www.merzig-wadern.de/Zulassung-Verkehr/Zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://terminbuchung.merzig-wadern.de/m/zulassung/extern/calendar/?uid=002759e6-c4ff-4eb7-b950-2e5c50f78ce1&lang=de",
+      "quelle": "https://www.merzig-wadern.de/Zulassung-Verkehr/Zulassungsstelle/Terminvergabe/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/saarland/lkrmerzigwadern",
+      "quelle": "https://www.merzig-wadern.de/Zulassung-Verkehr/Zulassungsstelle/"
+    },
+    "oeffnungszeiten": null,
+    "zustaendigkeit": {
+      "text": "Landkreis Merzig-Wadern mit den Städten und Gemeinden Beckingen, Losheim am See, Merzig, Mettlach, Perl, Wadern und Weiskirchen.",
+      "quelle": "https://www.merzig-wadern.de/Zulassung-Verkehr/Zulassungsstelle/"
+    },
+    "kuerzel": [
+      {
+        "code": "MZG",
+        "bedeutung": "Merzig (Landkreis Merzig-Wadern)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Zulassungen sind grundsätzlich nur mit vorheriger Terminvereinbarung möglich (online oder telefonisch unter 06861 80-2400); das gilt sowohl für die Zulassungsstelle in Merzig als auch in Wadern.",
+        "quelle": "https://www.merzig-wadern.de/Service/%C3%96ffnungszeiten/"
+      },
+      {
+        "text": "Händlerschalter: Fahrzeughändler und Zulassungsdienste können Zulassungsvorgänge gesammelt abgeben und später fertig abholen – nur nach vorheriger Rücksprache (zulassung@merzig-wadern.de), spontane Abgaben werden nicht angenommen.",
+        "quelle": "https://www.merzig-wadern.de/Zulassung-Verkehr/Zulassungsstelle/H%C3%A4ndlerschalter/"
+      },
+      {
+        "text": "Der Kassenautomat in der Kfz-Zulassungsstelle ist aktuell außer Betrieb; Zahlung mit EC-Karte ist erwünscht, Barzahlung ist weiterhin möglich.",
+        "quelle": "https://www.merzig-wadern.de/Zulassung-Verkehr/Zulassungsstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten",
+      "standorte"
+    ]
+  },
+  {
+    "slug": "landkreis-neunkirchen",
+    "stadt": "Landkreis Neunkirchen",
+    "bundesland": "Saarland",
+    "behoerde": "Landkreis Neunkirchen – Straßenverkehrsbehörde und Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-neunkirchen.de/kfz-fuehrerschein/strassenverkehrsbehoerde/kfz-zulassungsstelle",
+    "traeger": "Landkreis Neunkirchen",
+    "standorte": [
+      {
+        "bezeichnung": "Straßenverkehrsbehörde und Zulassungsstelle",
+        "strasse": "Saarbrücker Straße 1",
+        "plz": "66538",
+        "ort": "Neunkirchen",
+        "quelle": "https://www.landkreis-neunkirchen.de/kfz-fuehrerschein/strassenverkehrsbehoerde/kfz-zulassungsstelle"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-neunkirchen.de/kfz-fuehrerschein/strassenverkehrsbehoerde/kfz-zulassungsstelle",
+      "quelle": "https://www.landkreis-neunkirchen.de/kfz-fuehrerschein/strassenverkehrsbehoerde/kfz-zulassungsstelle"
+    },
+    "terminUrl": {
+      "url": "https://wkz.landkreis-neunkirchen.de:8443/tnv/",
+      "quelle": "https://www.landkreis-neunkirchen.de/kfz-fuehrerschein/strassenverkehrsbehoerde/kfz-zulassungsstelle"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/saarland/lkrneunkirchen/bsp_ikfz_antragstellung/#/",
+      "quelle": "https://www.landkreis-neunkirchen.de/kfz-fuehrerschein/strassenverkehrsbehoerde/kfz-zulassungsstelle"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30–15:00 Uhr",
+        "Di 07:30–15:00 Uhr",
+        "Mi 07:30–12:30 Uhr",
+        "Do 07:30–16:00 Uhr",
+        "Fr 07:30–12:30 Uhr"
+      ],
+      "hinweis": "Vorsprachen sind – unabhängig von den Öffnungszeiten – ausschließlich nach vorheriger Terminvereinbarung möglich; für Außerbetriebsetzungen (Abmeldungen) wird kein Termin benötigt. In den Monaten April, Mai und Juni werden bereits ab 7 Uhr Termine angeboten.",
+      "quelle": "https://www.landkreis-neunkirchen.de/kfz-fuehrerschein/strassenverkehrsbehoerde/kfz-zulassungsstelle"
+    },
+    "zustaendigkeit": {
+      "text": "Landkreis Neunkirchen mit den Städten und Gemeinden Neunkirchen, Ottweiler, Illingen, Eppelborn, Spiesen-Elversberg, Schiffweiler und Merchweiler. Die Zulassungsstelle sitzt in Neunkirchen, die Kreisverwaltung in Ottweiler (Wilhelm-Heinrich-Str. 36).",
+      "quelle": "https://www.landkreis-neunkirchen.de/kfz-fuehrerschein/strassenverkehrsbehoerde/kfz-zulassungsstelle"
+    },
+    "kuerzel": [
+      {
+        "code": "NK",
+        "bedeutung": "Neunkirchen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "OTW",
+        "bedeutung": "Ottweiler (Altkennzeichen, seit 18.10.2021 wieder ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Täglich werden kurzfristige Termine für den Folgetag freigeschaltet, stornierte Termine werden sofort wieder freigegeben – häufiges Nachsehen im Terminportal lohnt sich.",
+        "quelle": "https://www.landkreis-neunkirchen.de/kfz-fuehrerschein/strassenverkehrsbehoerde/kfz-zulassungsstelle"
+      },
+      {
+        "text": "Für Händler und Zulassungsdienste gibt es von 07:30 bis 09:00 Uhr einen limitierten Abgabeservice (Teilnahme per E-Mail an haendlerschalter@landkreis-neunkirchen.de beantragen); Ausfuhrkennzeichen und Ersatzpapiere nur nach gesonderter Absprache.",
+        "quelle": "https://www.landkreis-neunkirchen.de/kfz-fuehrerschein/strassenverkehrsbehoerde/kfz-zulassungsstelle"
+      },
+      {
+        "text": "Bei der Abmeldung eines NK- oder OTW-Kennzeichens kann das Kennzeichen reserviert werden: 12 Monate für dasselbe Fahrzeug oder 3 Monate für ein anderes Fahrzeug.",
+        "quelle": "https://www.landkreis-neunkirchen.de/kfz-fuehrerschein/strassenverkehrsbehoerde/kfz-zulassungsstelle"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-saarlouis",
+    "stadt": "Landkreis Saarlouis",
+    "bundesland": "Saarland",
+    "behoerde": "Landkreis Saarlouis – KFZ-Zulassungsstelle (Landratsamt)",
+    "behoerdeQuelle": "https://www.kreis-saarlouis.de/KFZ-Zulassungsstelle.htm",
+    "traeger": "Landkreis Saarlouis",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt, Zulassungsstelle",
+        "strasse": "Kaiser-Wilhelm-Straße 3",
+        "plz": "66740",
+        "ort": "Saarlouis",
+        "quelle": "https://www.kreis-saarlouis.de/KFZ-Zulassungsstelle.htm"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-saarlouis.de/KFZ-Zulassungsstelle.htm",
+      "quelle": "https://www.kreis-saarlouis.de/KFZ-Zulassungsstelle.htm"
+    },
+    "terminUrl": {
+      "url": "https://kreis-saarlouis.saas.smartcjm.com/m/Strassenverkehrszulassungsstelle/extern/calendar/?uid=f4890242-8e65-4b12-af24-6a19b4a30ad6&lang=de",
+      "quelle": "https://www.kreis-saarlouis.de/KFZ-Zulassungsstelle.htm"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/saarland/lkrsaarlouis/bsp_ikfz_antragstellung/#/",
+      "quelle": "https://www.kreis-saarlouis.de/KFZ-Zulassungsstelle.htm"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 7:30–15:00 Uhr",
+        "Di 7:30–12:00 Uhr",
+        "Mi 7:30–16:30 Uhr",
+        "Do 7:30–15:00 Uhr",
+        "Fr 7:30–12:00 Uhr"
+      ],
+      "hinweis": "Nach Terminvereinbarung. Fahrzeugabmeldungen ohne Termin am Informations-/Schnellschalter; Notfall-Anmeldung werktags 07:30–08:30 Uhr.",
+      "quelle": "https://www.kreis-saarlouis.de/KFZ-Zulassungsstelle.htm"
+    },
+    "zustaendigkeit": {
+      "text": "Landkreis Saarlouis (Kfz-Zulassungsstelle des Landkreises im Landratsamt Saarlouis).",
+      "quelle": "https://www.kreis-saarlouis.de/KFZ-Zulassungsstelle.htm"
+    },
+    "kuerzel": [
+      {
+        "code": "SLS",
+        "bedeutung": "Saarlouis (Landkreis Saarlouis)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Fahrzeugabmeldungen können zu den Öffnungszeiten ohne Termin am Informations-/Schnellschalter erledigt werden (Zulassungsbescheinigung Teil I und Kennzeichen mitbringen).",
+        "quelle": "https://www.kreis-saarlouis.de/KFZ-Zulassungsstelle.htm"
+      },
+      {
+        "text": "Notfallsprechstunde ohne Termin werktags 07:30–08:30 Uhr: nur für dringende Anliegen, auf einen Vorgang beschränkt, in der Regel nur für Pkw (Anhänger, Wohnwagen und Motorräder gelten nicht als Notfall).",
+        "quelle": "https://www.kreis-saarlouis.de/KFZ-Zulassungsstelle.htm"
+      },
+      {
+        "text": "Neue Termine werden werktags um 08:30 Uhr für die jeweils laufende Woche freigeschaltet; pro Person ist nur eine Buchung erlaubt, Mehrfachbuchungen werden storniert.",
+        "quelle": "https://www.kreis-saarlouis.de/KFZ-Zulassungsstelle.htm"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "saarpfalz-kreis",
+    "stadt": "Saarpfalz-Kreis",
+    "bundesland": "Saarland",
+    "behoerde": "Saarpfalz-Kreis – KFZ-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.saarpfalz-kreis.de/buergerservice-views/abteilungen/SAL:department:559/kfz-zulassungsstelle/",
+    "traeger": "Saarpfalz-Kreis",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassungsstelle, Kreisverwaltung (Hauptgebäude, Zugang über Seiteneingang zur Straße „Am Forum“)",
+        "strasse": "Am Forum 1",
+        "plz": "66424",
+        "ort": "Homburg",
+        "quelle": "https://www.saarpfalz-kreis.de/buergerservice-views/abteilungen/SAL:department:559/kfz-zulassungsstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://www.saarpfalz-kreis.de/verkehr-mobilitaet/kfz-zulassung/",
+      "quelle": "https://www.saarpfalz-kreis.de/verkehr-mobilitaet/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://www.saarpfalz-kreis.de/verkehr-mobilitaet/kfz-zulassung/terminvergabe-privatperson/",
+      "quelle": "https://www.saarpfalz-kreis.de/verkehr-mobilitaet/kfz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/saarland/lkrsaarpfalzkreis/bsp_ikfz_antragstellung/#/",
+      "quelle": "https://www.saarpfalz-kreis.de/verkehr-mobilitaet/kfz-zulassung/online-funktionen-i-kfz/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:15–12:00 Uhr, 13:30–15:30 Uhr",
+        "Di 07:15–12:00 Uhr, 13:30–15:30 Uhr",
+        "Mi 07:15–12:00 Uhr",
+        "Do 07:15–12:00 Uhr, 13:30–15:30 Uhr",
+        "Fr 07:15–12:00 Uhr"
+      ],
+      "hinweis": "Alle Zulassungs-Anliegen werden über die Online-Terminvergabe koordiniert (nur mit Termin); ausgenommen ist die Außerbetriebsetzung, die am Informationsschalter zu den regulären Öffnungszeiten erledigt werden kann.",
+      "quelle": "https://www.saarpfalz-kreis.de/buergerservice-views/abteilungen/SAL:department:559/kfz-zulassungsstelle/"
+    },
+    "zustaendigkeit": {
+      "text": "Saarpfalz-Kreis ohne die Stadt St. Ingbert. Die Stadt St. Ingbert (Kennzeichen IGB) führt die Kfz-Zulassung für ihre Einwohner selbst im Bürgerservice-Center durch.",
+      "quelle": "https://www.buergerservice-portal.de/saarland/stingbert/"
+    },
+    "kuerzel": [
+      {
+        "code": "HOM",
+        "bedeutung": "Homburg (Saarpfalz-Kreis ohne die Stadt St. Ingbert)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Außerbetriebsetzungen sind ohne Termin am Informationsschalter zu den regulären Öffnungszeiten möglich; alle anderen Anliegen nur mit Online-Termin.",
+        "quelle": "https://www.saarpfalz-kreis.de/verkehr-mobilitaet/kfz-zulassung/"
+      },
+      {
+        "text": "Termine sind nur bis zu 14 Tage im Voraus buchbar; für Händler gibt es eine eigene Terminvergabe.",
+        "quelle": "https://www.saarpfalz-kreis.de/verkehr-mobilitaet/kfz-zulassung/"
+      },
+      {
+        "text": "Die KFZ-Zulassungsstelle ist nur über den Seiteneingang der Kreisverwaltung zur Straße „Am Forum“ und zum früheren DSD-Gelände zugänglich; der barrierefreie Zugang befindet sich am Haupteingang.",
+        "quelle": "https://www.saarpfalz-kreis.de/buergerservice-views/abteilungen/SAL:department:559/kfz-zulassungsstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-st-wendel",
+    "stadt": "Landkreis St. Wendel",
+    "bundesland": "Saarland",
+    "behoerde": "Landkreis Sankt Wendel – Straßenverkehrsamt / Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.landkreis-st-wendel.de/zulassungsstelle",
+    "traeger": "Landkreis Sankt Wendel",
+    "standorte": [
+      {
+        "bezeichnung": "Straßenverkehrsamt / Zulassungsbehörde (Wendelinuspark)",
+        "strasse": "Tritschlerstraße 5",
+        "plz": "66606",
+        "ort": "St. Wendel",
+        "quelle": "https://www.landkreis-st-wendel.de/zulassungsstelle"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-st-wendel.de/zulassungsstelle",
+      "quelle": "https://www.landkreis-st-wendel.de/zulassungsstelle"
+    },
+    "terminUrl": {
+      "url": "https://termin.lkwnd.de/",
+      "quelle": "https://www.landkreis-st-wendel.de/zulassungsstelle"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/saarland/lkrsanktwendel/bsp_ikfz_antragstellung/#/",
+      "quelle": "https://www.landkreis-st-wendel.de/zulassungsstelle"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Do 07:30–12:00 Uhr, 13:30–15:00 Uhr",
+        "Fr 07:30–12:00 Uhr",
+        "Erster Samstag im Monat 09:00–12:00 Uhr"
+      ],
+      "hinweis": "Vorsprachen bei der Zulassungsbehörde sind, unabhängig von den Öffnungszeiten, nur nach vorheriger Terminvereinbarung möglich.",
+      "quelle": "https://www.landkreis-st-wendel.de/zulassungsstelle"
+    },
+    "zustaendigkeit": {
+      "text": "Landkreis Sankt Wendel mit seinen acht Gemeinden Freisen, Marpingen, Namborn, Nohfelden, Nonnweiler, Oberthal, Tholey und der Kreisstadt St. Wendel.",
+      "quelle": "https://www.landkreis-st-wendel.de/"
+    },
+    "kuerzel": [
+      {
+        "code": "WND",
+        "bedeutung": "St. Wendel (Landkreis St. Wendel)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Abgabeservice für Händler und Zulassungsdienste nach vorheriger Terminvereinbarung: 07:00–07:30 Uhr (Mo–Fr, Zulassung am gleichen Tag) und 15:00–15:30 Uhr (Mo–Do, Zulassung am nächsten Tag).",
+        "quelle": "https://www.landkreis-st-wendel.de/zulassungsstelle"
+      },
+      {
+        "text": "Bezahlt werden kann mit Debitkarte (Maestro/VPay), Kreditkarte (u. a. MasterCard, VISA), PayPal, Google Pay und Apple Pay.",
+        "quelle": "https://www.landkreis-st-wendel.de/zulassungsstelle"
+      },
+      {
+        "text": "Ein Reisepass allein genügt für die Zulassung nicht; zusätzlich ist eine aktuell gültige Meldebestätigung erforderlich.",
+        "quelle": "https://www.landkreis-st-wendel.de/zulassungsstelle"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "st-ingbert",
+    "stadt": "St. Ingbert",
+    "bundesland": "Saarland",
+    "behoerde": "Stadt St. Ingbert – Bürgerservice-Center (Kfz-Zulassung), Geschäftsbereich Bürgerservice und Ordnung",
+    "behoerdeQuelle": "https://www.st-ingbert.de/info-service/terminbuchungen-online/",
+    "traeger": "Stadt St. Ingbert",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgerservice-Center im Rathaus",
+        "strasse": "Am Markt 12",
+        "plz": "66386",
+        "ort": "St. Ingbert",
+        "quelle": "https://www.st-ingbert.de/info-service/oeffnungszeiten/"
+      }
+    ],
+    "website": null,
+    "terminUrl": {
+      "url": "https://stadt-st-ingbert.termine-reservieren.online/",
+      "quelle": "https://www.st-ingbert.de/info-service/terminbuchungen-online/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/saarland/stingbert/bsp_ikfz_antragstellung/#/",
+      "quelle": "https://www.st-ingbert.de/serviceportal/?sf_paged=2"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–16:00 Uhr",
+        "Di 08:00–16:00 Uhr",
+        "Mi 08:00–11:30 Uhr",
+        "Do 08:00–18:00 Uhr",
+        "Fr 08:00–12:00 Uhr"
+      ],
+      "hinweis": "Öffnungszeiten des Bürgerservice-Centers (zuständig u. a. für Meldewesen, Kfz-Zulassung und Führerscheinstelle). Termine werden online gebucht; mittwochs 08:00–11:30 Uhr ist ein Besuch ohne Termin möglich.",
+      "quelle": "https://www.st-ingbert.de/info-service/oeffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Stadt St. Ingbert: Die Kfz-Zulassung und -Abmeldung für die Stadt St. Ingbert erfolgt bei der Stadt (Bürgerbüro/Bürgerservice-Center). Für den übrigen Saarpfalz-Kreis ist die KFZ-Zulassungsstelle des Saarpfalz-Kreises in Homburg zuständig.",
+      "quelle": "https://www.buergerservice-portal.de/saarland/stingbert/"
+    },
+    "kuerzel": [
+      {
+        "code": "IGB",
+        "bedeutung": "St. Ingbert (Stadt St. Ingbert, Mittelstadt im Saarpfalz-Kreis)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Das Bürgerservice-Center bietet Online-Termine getrennt für Kfz-Zulassung und Kfz-Zulassung Händler an; mittwochs 08:00–11:30 Uhr ist ein Besuch ohne Termin möglich.",
+        "quelle": "https://www.st-ingbert.de/info-service/terminbuchungen-online/"
+      },
+      {
+        "text": "Kfz-Zulassung und -Abmeldung können online über das Bürgerservice-Portal der Stadt erledigt werden; Fragen dazu beantwortet das Bürgerservice-Center unter bsc@st-ingbert.de.",
+        "quelle": "https://www.buergerservice-portal.de/saarland/stingbert/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "standorte",
+      "website"
+    ]
+  },
+  {
+    "slug": "voelklingen",
+    "stadt": "Völklingen",
+    "bundesland": "Saarland",
+    "behoerde": "Stadt Völklingen – Fachdienst 33 Bürgerbüro (Zulassungsstelle)",
+    "behoerdeQuelle": "https://www.voelklingen.de/service/rathaus-a-z-was-erledige-ich-wo?tx_gemeindepaket14v_buergerservice%5Baction%5D=show&tx_gemeindepaket14v_buergerservice%5Bcontroller%5D=Buergerservice&tx_gemeindepaket14v_buergerservice%5Bh%5D=5b5d&tx_gemeindepaket14v_buergerservice%5Bitem%5D=630&cHash=a76bf1041d4b4b63400d407594e64210",
+    "traeger": "Stadt Völklingen",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgerbüro im Neuen Rathaus",
+        "strasse": "Rathausplatz",
+        "plz": "66333",
+        "ort": "Völklingen",
+        "quelle": "https://www.voelklingen.de/service/buergerbuero"
+      }
+    ],
+    "website": {
+      "url": "https://www.voelklingen.de/service/buergerbuero",
+      "quelle": "https://www.voelklingen.de/service/buergerbuero"
+    },
+    "terminUrl": {
+      "url": "https://tevisonline.voelklingen.de/",
+      "quelle": "https://www.voelklingen.de/service/buergerbuero"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/saarland/voelklingen/bsp_ikfz_antragstellung/#/",
+      "quelle": "https://www.voelklingen.de/service/buergerbuero"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 8.00 bis 12.00 & 13.00 - 16.00",
+        "Di 8.00 bis 12.30",
+        "Mi 8.00 bis 12.00 & 13.30 bis 18.00",
+        "Do 8.00 bis 13.00",
+        "Fr 8.00 bis 12.00"
+      ],
+      "hinweis": "Öffnungszeiten des Bürgerbüros (Neues Rathaus). Der Besuch des Bürgerbüros ist nur nach vorheriger Terminvereinbarung möglich.",
+      "quelle": "https://www.voelklingen.de/service/oeffnungszeiten"
+    },
+    "zustaendigkeit": {
+      "text": "Stadt Völklingen (Mittelstadt im Regionalverband Saarbrücken) mit eigener Zulassungsstelle im Bürgerbüro. Für den übrigen Regionalverband Saarbrücken (ohne Völklingen) erfolgt die Kfz-Zulassung bei den Bürgerämtern der Landeshauptstadt Saarbrücken.",
+      "quelle": "https://www.saarbruecken.de/rathaus/buergerservice/kfz_angelegenheiten"
+    },
+    "kuerzel": [
+      {
+        "code": "VK",
+        "bedeutung": "Völklingen (Stadt Völklingen, Mittelstadt im Regionalverband Saarbrücken)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Neben langfristigen Terminen werden bei der digitalen Termin-Reservierung täglich ab 7.45 Uhr viele kurzfristige Termine angeboten; bei der Buchung ist immer der Name der Person anzugeben, für die der Termin gebucht wird.",
+        "quelle": "https://www.voelklingen.de/service/buergerbuero"
+      },
+      {
+        "text": "Die digitale Termin-Reservierung bietet eigene Termine für Kfz-Händler und Zulassungsdienste.",
+        "quelle": "https://www.voelklingen.de/"
+      },
+      {
+        "text": "Die Zahlung ist bar oder per EC-Karte möglich; bestehen rückständige Kfz-Steuern oder Gebühren, erfolgt die Zulassung erst nach deren Zahlung.",
+        "quelle": "https://www.voelklingen.de/service/rathaus-a-z-was-erledige-ich-wo?tx_gemeindepaket14v_buergerservice%5Baction%5D=show&tx_gemeindepaket14v_buergerservice%5Bcontroller%5D=Buergerservice&tx_gemeindepaket14v_buergerservice%5Bh%5D=5b5d&tx_gemeindepaket14v_buergerservice%5Bitem%5D=728&cHash=515a79a1a3906f92b01393b6596fa20f"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

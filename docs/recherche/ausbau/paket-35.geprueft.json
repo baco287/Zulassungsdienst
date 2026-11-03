@@ -1,0 +1,888 @@
+[
+  {
+    "slug": "landkreis-altenburger-land",
+    "stadt": "Landkreis Altenburger Land",
+    "bundesland": "Thüringen",
+    "behoerde": "Landratsamt Altenburger Land – Fachdienst Straßenverkehr, Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.altenburgerland.de/de/themen-a-bis-z/fuehrerschein-kfz/kfz-zulassung",
+    "traeger": "Landkreis Altenburger Land",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde (Fachdienst Straßenverkehr)",
+        "strasse": "Martin-Luther-Straße 1a",
+        "plz": "04600",
+        "ort": "Altenburg",
+        "quelle": "https://www.altenburgerland.de/de/themen-a-bis-z/fuehrerschein-kfz/kfz-zulassung"
+      }
+    ],
+    "website": {
+      "url": "https://www.altenburgerland.de/de/themen-a-bis-z/fuehrerschein-kfz/kfz-zulassung",
+      "quelle": "https://www.altenburgerland.de/de/themen-a-bis-z/fuehrerschein-kfz/kfz-zulassung"
+    },
+    "terminUrl": {
+      "url": "https://altenburger-land.konsentas.de/modules/ota_public/form/1/?signup_new=1",
+      "quelle": "https://www.altenburgerland.de/de/themen-a-bis-z/fuehrerschein-kfz/kfz-zulassung"
+    },
+    "ikfzUrl": {
+      "url": "https://www.altenburgerland.de/de/buergerservice-online/i-kfz-online-dienst",
+      "quelle": "https://www.altenburgerland.de/de/themen-a-bis-z/fuehrerschein-kfz/kfz-zulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Telefonische Terminvereinbarung: Mo–Fr 8:00–12:00 Uhr",
+        "Telefonische Terminvereinbarung: Di und Do 13:30–16:00 Uhr",
+        "Unterlagenabgabe für Zulassungsdienste, Autohäuser und Kfz-Händler: 7:30–8:00 Uhr"
+      ],
+      "hinweis": "Sprech- und Öffnungszeiten: ausschließlich per Terminvergabe (online oder telefonisch unter 03447 586-602)",
+      "quelle": "https://www.altenburgerland.de/de/landratsamt/oeffnungszeiten"
+    },
+    "zustaendigkeit": null,
+    "kuerzel": [
+      {
+        "code": "ABG",
+        "bedeutung": "Altenburg (Landkreis Altenburger Land)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SLN",
+        "bedeutung": "Schmölln (Altkennzeichen, seit 29.11.2012 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Zulassungsdienste, Autohäuser und Kfz-Händler können ihre Unterlagen von 7:30 bis 8:00 Uhr abgeben und nach Info über die Fertigstellung wieder abholen.",
+        "quelle": "https://www.altenburgerland.de/de/landratsamt/oeffnungszeiten"
+      },
+      {
+        "text": "Unterlagen werden nur vollständig angenommen, Kennzeichen sollten vorher geprägt werden; Zugang erhalten nur Antragsteller ohne Begleitperson.",
+        "quelle": "https://www.altenburgerland.de/de/landratsamt/oeffnungszeiten"
+      },
+      {
+        "text": "Für Zulassungsvorgänge im i-Kfz-Online-Dienst ist mindestens eine Anmeldung mit Elster-Zertifikat oder BundID nötig.",
+        "quelle": "https://www.altenburgerland.de/de/buergerservice-online/i-kfz-online-dienst"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "zustaendigkeit"
+    ]
+  },
+  {
+    "slug": "landkreis-eichsfeld",
+    "stadt": "Landkreis Eichsfeld",
+    "bundesland": "Thüringen",
+    "behoerde": "Landratsamt Eichsfeld – Amt für Öffentliche Sicherheit und Ordnung, Zulassungsstelle",
+    "behoerdeQuelle": "https://www.kreis-eic.de/behoerdensuche?tsaid_p020k01=351533&tsaid_p020k02=219555365&tsaid_p1c0300=351533&tsaid_c=00&tsaid_s=02&=&tsaid_p160300=351533&CHARSET=&tsaid_p010j06=Kraftfahrzeug+Zulassung&tsaid_qid=232593879&tsaid_p010201=",
+    "traeger": "Landkreis Eichsfeld",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle",
+        "strasse": "Göttinger Straße 5",
+        "plz": "37308",
+        "ort": "Heilbad Heiligenstadt",
+        "quelle": "https://www.kreis-eic.de/buergerservice/kfz-zulassung"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-eic.de/buergerservice/kfz-zulassung",
+      "quelle": "https://www.kreis-eic.de/buergerservice/kfz-zulassung"
+    },
+    "terminUrl": {
+      "url": "https://www.kreis-eic.de/#bookingwidget",
+      "quelle": "https://www.kreis-eic.de/buergerservice/kfz-zulassung"
+    },
+    "ikfzUrl": {
+      "url": "https://ikfz.ikfz-thueringen.de/i4/ikfz4/?LICENSEIDENTIFIER=eichsfeld_kreis",
+      "quelle": "https://www.kreis-eic.de/buergerservice/kfz-zulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:30–12:00 Uhr",
+        "Di 08:30–12:00 und 13:30–17:00 Uhr",
+        "Mi nach Vereinbarung",
+        "Do 08:30–12:00 und 13:30–17:00 Uhr",
+        "Fr nach Vereinbarung"
+      ],
+      "hinweis": "Allgemeine Öffnungszeiten des Landratsamts (auf der Kfz-Zulassungsseite angegeben); Vorsprache in der Zulassungsstelle grundsätzlich nur nach vorheriger Terminvereinbarung (online oder Tel. 03606 650-3630)",
+      "quelle": "https://www.kreis-eic.de/buergerservice/kfz-zulassung"
+    },
+    "zustaendigkeit": null,
+    "kuerzel": [
+      {
+        "code": "EIC",
+        "bedeutung": "Eichsfeld",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "HIG",
+        "bedeutung": "Heilbad Heiligenstadt (Altkennzeichen, seit 29.11.2012 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WBS",
+        "bedeutung": "Worbis (Altkennzeichen, seit 29.11.2012 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Vorsprache ist grundsätzlich nur nach vorheriger Terminvereinbarung möglich.",
+        "quelle": "https://www.kreis-eic.de/behoerdensuche?tsaid_p020k01=351533&tsaid_p020k02=219555365&tsaid_p1c0300=351533&tsaid_c=00&tsaid_s=02&=&tsaid_p160300=351533&CHARSET=&tsaid_p010j06=Kraftfahrzeug+Zulassung&tsaid_qid=232593879&tsaid_p010201="
+      },
+      {
+        "text": "Online-Kfz-Zulassung, Online-Außerbetriebsetzung und Online-Wiederzulassung über das i-Kfz-Portal; Wunschkennzeichen online reservierbar.",
+        "quelle": "https://www.kreis-eic.de/buergerservice/kfz-zulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "zustaendigkeit"
+    ]
+  },
+  {
+    "slug": "landkreis-gotha",
+    "stadt": "Landkreis Gotha",
+    "bundesland": "Thüringen",
+    "behoerde": "Landratsamt Gotha – Straßenverkehrsamt (Kfz-Zulassung)",
+    "behoerdeQuelle": "https://www.landkreis-gotha.de/service/kfz-zulassung/",
+    "traeger": "Landkreis Gotha",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Gotha, Straßenverkehrsamt",
+        "strasse": "18.-März-Straße 50",
+        "plz": "99867",
+        "ort": "Gotha",
+        "quelle": "https://www.landkreis-gotha.de/service/kfz-zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-gotha.de/service/kfz-zulassung/",
+      "quelle": "https://www.landkreis-gotha.de/service/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://cqm3.cleverq.de/public/appointments/kfz_gotha/index.html?lang=de",
+      "quelle": "https://www.landkreis-gotha.de/service/kfz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://ikfz.ikfz-thueringen.de/i4/ikfz4/?LICENSEIDENTIFIER=gotha_kreis",
+      "quelle": "https://www.landkreis-gotha.de/service/kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 8–12 Uhr",
+        "Di 8–12 und 13–17 Uhr",
+        "Mi 8–12 Uhr",
+        "Do 8–12 und 13–17 Uhr",
+        "Fr 8–12 Uhr"
+      ],
+      "hinweis": "Allgemeine Servicezeiten des Landratsamts; persönliche Absprachen nur nach Terminvereinbarung – auch während der Servicezeiten werden Anliegen vor Ort nur mit Termin bearbeitet",
+      "quelle": "https://www.landkreis-gotha.de/politik-verwaltung/servicezeiten-des-landratsamts/"
+    },
+    "zustaendigkeit": {
+      "text": "Straßenverkehrsamt des Landratsamts Gotha für die Zulassung von Autos, Lkw und Anhängern im Landkreis Gotha",
+      "quelle": "https://www.landkreis-gotha.de/service/kfz-zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "GTH",
+        "bedeutung": "Gotha",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Mit i-Kfz zugelassene Fahrzeuge dürfen dank sofortiger Inbetriebsetzung direkt im Straßenverkehr genutzt werden.",
+        "quelle": "https://www.landkreis-gotha.de/service/kfz-zulassung/"
+      },
+      {
+        "text": "Wunschkennzeichen können online abgefragt und reserviert werden.",
+        "quelle": "https://www.landkreis-gotha.de/service/kfz-zulassung/"
+      },
+      {
+        "text": "Wer sich mit Reisepass ausweist, braucht eine gültige Meldebescheinigung (nicht älter als ein Jahr).",
+        "quelle": "https://www.landkreis-gotha.de/service/kfz-zulassung/personaldokumente/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-greiz",
+    "stadt": "Landkreis Greiz",
+    "bundesland": "Thüringen",
+    "behoerde": "Landratsamt Greiz – Kfz-Zulassungsbehörde (Straßenverkehrsbehörde)",
+    "behoerdeQuelle": "https://www.landkreis-greiz.de/landkreis-greiz/organisatorisch/kreisverwaltung/redakteursebene-aemter/ordnungsamt/strassenverkehrsbehoerde/zulassung",
+    "traeger": "Landkreis Greiz",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Greiz, Straßenverkehrsbehörde / Kfz-Zulassungsbehörde",
+        "strasse": "Am Schafberge 5",
+        "plz": "07570",
+        "ort": "Weida",
+        "quelle": "https://www.landkreis-greiz.de/landkreis-greiz/organisatorisch/kreisverwaltung/redakteursebene-aemter/ordnungsamt/strassenverkehrsbehoerde/zulassung"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-greiz.de/landkreis-greiz/organisatorisch/kreisverwaltung/redakteursebene-aemter/ordnungsamt/strassenverkehrsbehoerde/zulassung",
+      "quelle": "https://www.landkreis-greiz.de/landkreis-greiz/organisatorisch/kreisverwaltung/redakteursebene-aemter/ordnungsamt/strassenverkehrsbehoerde/zulassung"
+    },
+    "terminUrl": null,
+    "ikfzUrl": {
+      "url": "https://ikfz.ikfz-thueringen.de/i4/ikfz4/?LICENSEIDENTIFIER=greiz_kreis",
+      "quelle": "https://www.landkreis-greiz.de/landkreis-greiz/organisatorisch/kreisverwaltung/redakteursebene-aemter/ordnungsamt/strassenverkehrsbehoerde/zulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo, Mi, Fr 8–12 Uhr",
+        "Di 8–15 Uhr",
+        "Do 8–17 Uhr"
+      ],
+      "hinweis": "Keine vorherige Terminvereinbarung erforderlich",
+      "quelle": "https://www.landkreis-greiz.de/landkreis-greiz/organisatorisch/kreisverwaltung/redakteursebene-aemter/ordnungsamt/strassenverkehrsbehoerde/zulassung"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsbehörde des Landkreises Greiz: An-, Um- und Abmeldung von Kraftfahrzeugen, Änderung von Halter- und technischen Daten, Ersatzpapiere sowie Ausfuhr- und Kurzzeitkennzeichen",
+      "quelle": "https://www.landkreis-greiz.de/landkreis-greiz/organisatorisch/kreisverwaltung/redakteursebene-aemter/ordnungsamt/strassenverkehrsbehoerde/zulassung"
+    },
+    "kuerzel": [
+      {
+        "code": "GRZ",
+        "bedeutung": "Greiz",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ZR",
+        "bedeutung": "Zeulenroda (Altkennzeichen, seit 29.11.2012 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Kfz-Zulassungsbehörde des Landkreises sitzt in Weida (Am Schafberge 5).",
+        "quelle": "https://www.landkreis-greiz.de/landkreis-greiz/organisatorisch/kreisverwaltung/redakteursebene-aemter/ordnungsamt/strassenverkehrsbehoerde/zulassung"
+      },
+      {
+        "text": "Vorsprache ohne vorherige Terminvereinbarung möglich.",
+        "quelle": "https://www.landkreis-greiz.de/landkreis-greiz/organisatorisch/kreisverwaltung/redakteursebene-aemter/ordnungsamt/strassenverkehrsbehoerde/zulassung"
+      },
+      {
+        "text": "Wunschkennzeichen können online reserviert werden.",
+        "quelle": "https://www.landkreis-greiz.de/landkreis-greiz/organisatorisch/kreisverwaltung/redakteursebene-aemter/ordnungsamt/strassenverkehrsbehoerde/zulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-hildburghausen",
+    "stadt": "Landkreis Hildburghausen",
+    "bundesland": "Thüringen",
+    "behoerde": "Landratsamt Hildburghausen – Fahrerlaubnis- und Zulassungsbehörde (KFZ-Zulassungsbehörde)",
+    "behoerdeQuelle": "https://www.landkreis-hildburghausen.de/Schnellnavigation/Fahrerlaubnis-Zulassung/",
+    "traeger": "Landkreis Hildburghausen",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassungsbehörde",
+        "strasse": "Wiesenstraße 18",
+        "plz": "98646",
+        "ort": "Hildburghausen",
+        "quelle": "https://www.landkreis-hildburghausen.de/Schnellnavigation/Fahrerlaubnis-Zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-hildburghausen.de/Schnellnavigation/Fahrerlaubnis-Zulassung/",
+      "quelle": "https://www.landkreis-hildburghausen.de/Schnellnavigation/Fahrerlaubnis-Zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/landkreis-hildburghausen/",
+      "quelle": "https://www.landkreis-hildburghausen.de/Schnellnavigation/Fahrerlaubnis-Zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=hildburghausen_kreis",
+      "quelle": "https://www.landkreis-hildburghausen.de/Schnellnavigation/Fahrerlaubnis-Zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08.00–12.00 Uhr",
+        "Di 08.00–12.00 und 13.30–17.00 Uhr",
+        "Mi geschlossen",
+        "Do 08.00–12.00 und 13.30–18.00 Uhr",
+        "Fr 08.00–12.00 Uhr"
+      ],
+      "hinweis": "Sprechzeiten der Fahrerlaubnis- und Zulassungsbehörde; die Bearbeitung der Anliegen erfolgt mit Termin",
+      "quelle": "https://www.landkreis-hildburghausen.de/Schnellnavigation/Fahrerlaubnis-Zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Fahrerlaubnis- und Zulassungsbehörde des Landkreises Hildburghausen",
+      "quelle": "https://www.landkreis-hildburghausen.de/Schnellnavigation/Fahrerlaubnis-Zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "HBN",
+        "bedeutung": "Hildburghausen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Online-Zulassung und -Abmeldung (i-Kfz) rund um die Uhr nutzbar – ohne Termin.",
+        "quelle": "https://www.landkreis-hildburghausen.de/Schnellnavigation/Fahrerlaubnis-Zulassung/"
+      },
+      {
+        "text": "Bei Reisepass ist eine Meldebescheinigung erforderlich, die nicht älter als 3 Monate ist.",
+        "quelle": "https://www.landkreis-hildburghausen.de/Schnellnavigation/Fahrerlaubnis-Zulassung/Zulassungswesen-/Neuzulassung-und-Tageszulassung/"
+      },
+      {
+        "text": "Für die Betriebserlaubnis von Simson-Fahrzeugen ist zuerst das Kraftfahrt-Bundesamt (KBA) zuständig.",
+        "quelle": "https://www.landkreis-hildburghausen.de/Schnellnavigation/Fahrerlaubnis-Zulassung/Zulassungswesen-/Simson-Betriebserlaubnis/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "ilm-kreis",
+    "stadt": "Ilm-Kreis",
+    "bundesland": "Thüringen",
+    "behoerde": "Landratsamt Ilm-Kreis – Verkehrsamt, Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.ilm-kreis.de/%C3%84mter/Verkehrsamt/Kfz-Zulassung/",
+    "traeger": "Ilm-Kreis",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Arnstadt (Hauptstelle)",
+        "strasse": "Ichtershäuser Straße 31",
+        "plz": "99310",
+        "ort": "Arnstadt",
+        "quelle": "https://www.ilm-kreis.de/Landkreis/Sprechzeiten-der-Kfz-Zulassungsbeh%C3%B6rde.php?object=tx,2778.2229.1&kuo=1&sub=0"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Ilmenau (Außenstelle im Bürgerservice)",
+        "strasse": "Krankenhausstraße 12 a",
+        "plz": "98693",
+        "ort": "Ilmenau",
+        "quelle": "https://www.ilm-kreis.de/Landkreis/Sprechzeiten-der-Kfz-Zulassungsbeh%C3%B6rde.php?object=tx,2778.2229.1&kuo=1&sub=0"
+      }
+    ],
+    "website": {
+      "url": "https://www.ilm-kreis.de/%C3%84mter/Verkehrsamt/Kfz-Zulassung/",
+      "quelle": "https://www.ilm-kreis.de/%C3%84mter/Verkehrsamt/Kfz-Zulassung/"
+    },
+    "terminUrl": null,
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=ilm_kreis",
+      "quelle": "https://www.ilm-kreis.de/Landkreis/Voraussetzungen-zur-Nutzung-des-i-Kfz-Portals.php?object=tx,2778.16872.1&kuo=2&sub=0"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Arnstadt: Mo 08:30–12:00 Uhr",
+        "Arnstadt: Di 08:30–12:00 und 13:30–18:00 Uhr",
+        "Arnstadt: Mi 08:30–12:00 Uhr",
+        "Arnstadt: Do 08:30–12:00 und 13:30–16:00 Uhr",
+        "Arnstadt: Fr 08:30–12:00 Uhr",
+        "Ilmenau: Mo 08:30–12:00 Uhr",
+        "Ilmenau: Di 08:30–12:00 und 13:30–16:00 Uhr",
+        "Ilmenau: Mi 08:30–12:00 Uhr",
+        "Ilmenau: Do 08:30–12:00 und 13:30–18:00 Uhr",
+        "Ilmenau: Fr 08:30–12:00 Uhr"
+      ],
+      "hinweis": "Terminvergabe derzeit ausgesetzt – Vorsprache ohne vorherige Terminvergabe zu den Öffnungszeiten möglich",
+      "quelle": "https://www.ilm-kreis.de/Landkreis/Terminvergabe.php?object=tx,2778.1758.1&kuo=1&sub=0"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Ilm-Kreises; maßgeblich ist der Wohnsitz des Fahrzeughalters (Privatpersonen: Hauptwohnsitz, Zulassung am Zweitwohnsitz nicht möglich; Firmen: Sitz oder Niederlassung)",
+      "quelle": "https://www.ilm-kreis.de/%C3%84mter/Verkehrsamt/Kfz-Zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "IK",
+        "bedeutung": "Ilm-Kreis",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ARN",
+        "bedeutung": "Arnstadt (Altkennzeichen, seit 29.11.2012 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "IL",
+        "bedeutung": "Ilmenau (Altkennzeichen, seit 29.11.2012 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "In der Außenstelle Ilmenau nur Regelzulassungen; rote Dauerkennzeichen (§§ 16, 17 FZV) und Einzelgenehmigungen nach § 13 EG-FGV nur in der Hauptstelle Arnstadt.",
+        "quelle": "https://www.ilm-kreis.de/Landkreis/Sprechzeiten-der-Kfz-Zulassungsbeh%C3%B6rde.php?object=tx,2778.2229.1&kuo=1&sub=0"
+      },
+      {
+        "text": "Bei komplizierten Fällen oder Sammelanträgen in den letzten 45 Minuten vor Schließung besteht kein Anspruch auf abschließende Bearbeitung am selben Tag.",
+        "quelle": "https://www.ilm-kreis.de/Landkreis/Sprechzeiten-der-Kfz-Zulassungsbeh%C3%B6rde.php?object=tx,2778.2229.1&kuo=1&sub=0"
+      },
+      {
+        "text": "Im i-Kfz-Portal des Ilm-Kreises nur Zahlung per Lastschrift (ohne Rückbuchungsoption) oder Kreditkarte, kein Giropay und kein PayPal.",
+        "quelle": "https://www.ilm-kreis.de/Landkreis/Voraussetzungen-zur-Nutzung-des-i-Kfz-Portals.php?object=tx,2778.16872.1&kuo=2&sub=0"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kyffhaeuserkreis",
+    "stadt": "Kyffhäuserkreis",
+    "bundesland": "Thüringen",
+    "behoerde": "Landratsamt Kyffhäuserkreis – Zulassungsstelle (Bürgerservice)",
+    "behoerdeQuelle": "https://www.kyffhaeuser.de/service-verwaltung/aemter-organigramm/ordnungsverwaltung/fuehrerscheinstelle/",
+    "traeger": "Kyffhäuserkreis",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Sondershausen (Hauptgeschäftsstelle, Bürgerservice)",
+        "strasse": "Markt 8",
+        "plz": "99706",
+        "ort": "Sondershausen",
+        "quelle": "https://www.kyffhaeuser.de/service-verwaltung/aemter-organigramm/ordnungsverwaltung/fuehrerscheinstelle/"
+      },
+      {
+        "bezeichnung": "Außenstelle Artern (Bürgerservice Artern)",
+        "strasse": "Straße der Jugend 8",
+        "plz": "06556",
+        "ort": "Artern",
+        "quelle": "https://www.kyffhaeuser.de/service-verwaltung/aemter-organigramm/ordnungsverwaltung/fuehrerscheinstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://www.kyffhaeuser.de/service-verwaltung/aemter-organigramm/ordnungsverwaltung/fuehrerscheinstelle/",
+      "quelle": "https://www.kyffhaeuser.de/service-verwaltung/aemter-organigramm/ordnungsverwaltung/fuehrerscheinstelle/"
+    },
+    "terminUrl": {
+      "url": "https://otv.lrakyf.de/",
+      "quelle": "https://www.kyffhaeuser.de/service-verwaltung/buergerservice-kyffhaeuserkreis/"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=kyffhaeuserkreis_kreis",
+      "quelle": "https://www.kyffhaeuser.de/service-verwaltung/buergerservice-kyffhaeuserkreis/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–12:00 und 13:00–15:00 Uhr",
+        "Di 08:00–12:00 und 13:00–18:00 Uhr",
+        "Mi 08:00–13:00 Uhr",
+        "Do 08:00–12:00 und 13:00–18:00 Uhr",
+        "Fr 08:00–13:00 Uhr"
+      ],
+      "hinweis": "Öffnungszeiten der Zulassungsstelle (gleiche Zeiten im Bürgerservice Artern); Online-Terminvergabe wird empfohlen, um Anliegen schneller bearbeiten zu können",
+      "quelle": "https://www.kyffhaeuser.de/service-verwaltung/aemter-organigramm/ordnungsverwaltung/fuehrerscheinstelle/"
+    },
+    "zustaendigkeit": null,
+    "kuerzel": [
+      {
+        "code": "KYF",
+        "bedeutung": "Kyffhäuser",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ART",
+        "bedeutung": "Artern (Altkennzeichen, seit 29.11.2012 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SDH",
+        "bedeutung": "Sondershausen (Altkennzeichen, seit 29.11.2012 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Kfz-Zulassung wird vom Bürgerservice des Landratsamts in Sondershausen und in der Außenstelle Artern erledigt.",
+        "quelle": "https://www.kyffhaeuser.de/service-verwaltung/adressen-oeffnungszeiten/"
+      },
+      {
+        "text": "Wunschkennzeichen können online konfiguriert werden.",
+        "quelle": "https://www.kyffhaeuser.de/service-verwaltung/buergerservice-kyffhaeuserkreis/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "zustaendigkeit"
+    ]
+  },
+  {
+    "slug": "landkreis-nordhausen",
+    "stadt": "Landkreis Nordhausen",
+    "bundesland": "Thüringen",
+    "behoerde": "Landratsamt Nordhausen – Kfz-Zulassungsbehörde im BürgerServiceZentrum",
+    "behoerdeQuelle": "https://landkreis-nordhausen.de/buergerservicezentrum",
+    "traeger": "Landkreis Nordhausen",
+    "standorte": [
+      {
+        "bezeichnung": "BürgerServiceZentrum (Kfz-Zulassung)",
+        "strasse": "Behringstraße 3",
+        "plz": "99734",
+        "ort": "Nordhausen",
+        "quelle": "https://landkreis-nordhausen.de/buergerservicezentrum"
+      }
+    ],
+    "website": {
+      "url": "https://landkreis-nordhausen.de/buergerservicezentrum",
+      "quelle": "https://landkreis-nordhausen.de/buergerservicezentrum"
+    },
+    "terminUrl": {
+      "url": "https://termine.landkreis-nordhausen.de/",
+      "quelle": "https://landkreis-nordhausen.de/buergerservicezentrum"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100038.OE.387361&leistungId=99036020001000&p=160620",
+      "quelle": "https://landkreis-nordhausen.de/online-zulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 8–12 Uhr",
+        "Di 8–16 Uhr",
+        "Do 8–18 Uhr",
+        "Fr 8–12 Uhr"
+      ],
+      "hinweis": "Terminvereinbarung erforderlich (online oder Tel. 03631 911-9119); ohne Termin am Serviceplatz nur Außerbetriebsetzungen, Ausfuhr- und Kurzzeitkennzeichen sowie Adressänderungen innerhalb des Landkreises",
+      "quelle": "https://landkreis-nordhausen.de/buergerservicezentrum"
+    },
+    "zustaendigkeit": null,
+    "kuerzel": [
+      {
+        "code": "NDH",
+        "bedeutung": "Nordhausen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Ohne Termin möglich: Außerbetriebsetzungen, Ausfuhr- und Kurzzeitkennzeichen sowie Adressänderungen innerhalb des Landkreises Nordhausen.",
+        "quelle": "https://landkreis-nordhausen.de/buergerservicezentrum"
+      },
+      {
+        "text": "Eigene Prägestelle im Landratsamt – Kennzeichen sind vor Ort erhältlich.",
+        "quelle": "https://landkreis-nordhausen.de/buergerservicezentrum"
+      },
+      {
+        "text": "Mit Termin 30 Minuten Parken direkt vor dem BürgerServiceZentrum; Tiefgarage während der Öffnungszeiten in der 1. Stunde kostenfrei.",
+        "quelle": "https://landkreis-nordhausen.de/buergerservicezentrum"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "zustaendigkeit"
+    ]
+  },
+  {
+    "slug": "saale-holzland-kreis",
+    "stadt": "Saale-Holzland-Kreis",
+    "bundesland": "Thüringen",
+    "behoerde": "Landratsamt Saale-Holzland-Kreis – Ordnungsamt, Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.saaleholzlandkreis.de/de/ordnungsamt.html",
+    "traeger": "Saale-Holzland-Kreis",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassung (Ordnungsamt)",
+        "strasse": "Claußstraße 3",
+        "plz": "07607",
+        "ort": "Eisenberg",
+        "quelle": "https://tevis.ekom21.de/shk/select2?md=2"
+      }
+    ],
+    "website": {
+      "url": "https://www.saaleholzlandkreis.de/de/kfzzulassungsbehoerde.html",
+      "quelle": "https://www.saaleholzlandkreis.de/de/kfzzulassungsbehoerde.html"
+    },
+    "terminUrl": {
+      "url": "https://tevis.ekom21.de/shk/?rs",
+      "quelle": "https://www.saaleholzlandkreis.de/de/kfzzulassungsbehoerde.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100038.OE.682097&leistungId=99036020001000&p=160740",
+      "quelle": "https://www.saaleholzlandkreis.de/de/kfzzulassungsbehoerde.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Fr 8:00–12:00 Uhr",
+        "Mo–Mi 13:00–15:30 Uhr",
+        "Do 13:00–17:30 Uhr"
+      ],
+      "hinweis": "Allgemeine Kontaktzeiten des Landratsamts; Zutritt zur Kfz-Zulassung nur mit zuvor vereinbartem und bestätigtem Termin (online oder über Tel. 115)",
+      "quelle": "https://www.saaleholzlandkreis.de/de/oeffnungs-und-kontaktzeiten.html"
+    },
+    "zustaendigkeit": null,
+    "kuerzel": [
+      {
+        "code": "SHK",
+        "bedeutung": "Saale-Holzland-Kreis",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "EIS",
+        "bedeutung": "Eisenberg (Altkennzeichen, seit 29.11.2012 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SRO",
+        "bedeutung": "Stadtroda (Altkennzeichen, seit 29.11.2012 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Zutritt zur Kfz-Zulassung nur mit zuvor vereinbartem und bestätigtem Termin – online oder über das Servicecenter (Tel. 115).",
+        "quelle": "https://www.saaleholzlandkreis.de/de/terminbuchung.html"
+      },
+      {
+        "text": "Digitaler Fahrzeugschein seit März 2026 über die i-Kfz-App; ein QR-Code der Zulassungsbehörde kostet 5,10 EUR.",
+        "quelle": "https://www.saaleholzlandkreis.de/de/kfzzulassungsbehoerde.html"
+      },
+      {
+        "text": "Kurzzeitkennzeichen: Voraussetzung ist ein Hauptwohnsitz im Saale-Holzland-Kreis, sonst Kaufvertrag mit Fahrzeugstandort im Kreis.",
+        "quelle": "https://tevis.ekom21.de/shk/select2?md=2"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "zustaendigkeit"
+    ]
+  },
+  {
+    "slug": "saale-orla-kreis",
+    "stadt": "Saale-Orla-Kreis",
+    "bundesland": "Thüringen",
+    "behoerde": "Landratsamt Saale-Orla-Kreis – Sachgebiet Verkehr, Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.saale-orla-kreis.de/de/kfz-zulassung.html",
+    "traeger": "Saale-Orla-Kreis",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Saale-Orla-Kreis (Hauptsitz)",
+        "strasse": "Oschitzer Straße 4",
+        "plz": "07907",
+        "ort": "Schleiz",
+        "quelle": "https://www.saale-orla-kreis.de/de/dienstleistung/leistung/279/wohnort/20000/kraftfahrzeugzulassung_-__gebraucht_zulassen.html"
+      },
+      {
+        "bezeichnung": "Außenstelle im Bürgerservice Pößneck",
+        "strasse": "Wohlfarthstraße 3-5",
+        "plz": "07381",
+        "ort": "Pößneck",
+        "quelle": "https://www.saale-orla-kreis.de/de/oeffnungszeiten.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.saale-orla-kreis.de/de/kfz-zulassung.html",
+      "quelle": "https://www.saale-orla-kreis.de/de/kfz-zulassung.html"
+    },
+    "terminUrl": {
+      "url": "https://www.saale-orla-kreis.de/termine/kfz-zulassung",
+      "quelle": "https://www.saale-orla-kreis.de/de/kfz-zulassung.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100038.OE.206738234&leistungId=99036020001000&p=160750",
+      "quelle": "https://www.saale-orla-kreis.de/de/kfz-zulassung.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 8:00–12:00 Uhr",
+        "Di 8:00–12:00 und 13:00–18:00 Uhr",
+        "Mi geschlossen",
+        "Do 8:00–12:00 und 13:00–17:00 Uhr",
+        "Fr 8:00–12:00 Uhr"
+      ],
+      "hinweis": "Kfz-Zulassung ausschließlich mit vorheriger Terminvereinbarung",
+      "quelle": "https://www.saale-orla-kreis.de/de/dienstleistung/leistung/279/wohnort/20000/kraftfahrzeugzulassung_-__gebraucht_zulassen.html"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig ist die Kfz-Zulassungsbehörde des Landkreises oder der kreisfreien Stadt des Hauptwohnsitzes bzw. Unternehmenssitzes; im Saale-Orla-Kreis das Landratsamt mit Zulassungsstellen in Schleiz und Pößneck",
+      "quelle": "https://www.saale-orla-kreis.de/de/dienstleistung/leistung/279/wohnort/20000/kraftfahrzeugzulassung_-__gebraucht_zulassen.html"
+    },
+    "kuerzel": [
+      {
+        "code": "SOK",
+        "bedeutung": "Saale-Orla-Kreis",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "LBS",
+        "bedeutung": "Bad Lobenstein (Altkennzeichen, seit 29.11.2012 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "PN",
+        "bedeutung": "Pößneck (Altkennzeichen, seit 29.11.2012 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SCZ",
+        "bedeutung": "Schleiz (Altkennzeichen, seit 29.11.2012 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termine für die Kfz-Zulassung können online wahlweise für Pößneck oder Schleiz gebucht werden.",
+        "quelle": "https://www.saale-orla-kreis.de/de/kfz-zulassung.html"
+      },
+      {
+        "text": "Bei Rückständen aus früheren Zulassungsvorgängen über 30 EUR keine Zulassung bis zur Begleichung; unter 30 EUR liegt die Zulassung im Ermessen der Behörde.",
+        "quelle": "https://www.saale-orla-kreis.de/de/dienstleistung/leistung/279/wohnort/20000/kraftfahrzeugzulassung_-__gebraucht_zulassen.html"
+      },
+      {
+        "text": "Online-Zulassung, Online-Außerbetriebsetzung und Wunschkennzeichen-Reservierung über das Behörden-Serviceportal.",
+        "quelle": "https://www.saale-orla-kreis.de/de/kfz-zulassung.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-saalfeld-rudolstadt",
+    "stadt": "Landkreis Saalfeld-Rudolstadt",
+    "bundesland": "Thüringen",
+    "behoerde": "Landratsamt Saalfeld-Rudolstadt – Fachbereich 2, Kfz-Zulassung",
+    "behoerdeQuelle": "https://kreis-slf.de/Landkreis-Politik/Verkehr-und-Mobilit%C3%A4t/KfZ-Zulassung-und-F%C3%BChrerschein/",
+    "traeger": "Landkreis Saalfeld-Rudolstadt",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassung und Führerscheinstelle Rudolstadt",
+        "strasse": "Schwarzburger Chaussee 12",
+        "plz": "07407",
+        "ort": "Rudolstadt",
+        "quelle": "https://kreis-slf.de/Landkreis-Politik/Verkehr-und-Mobilit%C3%A4t/KfZ-Zulassung-und-F%C3%BChrerschein/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Saalfeld",
+        "strasse": "Schloßstraße 24",
+        "plz": "07318",
+        "ort": "Saalfeld/Saale",
+        "quelle": "https://timeacle.com/business/index/id/176"
+      }
+    ],
+    "website": {
+      "url": "https://kreis-slf.de/Landkreis-Politik/Verkehr-und-Mobilit%C3%A4t/KfZ-Zulassung-und-F%C3%BChrerschein/",
+      "quelle": "https://kreis-slf.de/Landkreis-Politik/Verkehr-und-Mobilit%C3%A4t/KfZ-Zulassung-und-F%C3%BChrerschein/"
+    },
+    "terminUrl": {
+      "url": "https://timeacle.com/business/index/id/175",
+      "quelle": "https://kreis-slf.de/Landkreis-Politik/Verkehr-und-Mobilit%C3%A4t/KfZ-Zulassung-und-F%C3%BChrerschein/"
+    },
+    "ikfzUrl": {
+      "url": "https://ikfz.ikfz-thueringen.de/i4/ikfz4/?LICENSEIDENTIFIER=saalfeld-rudolstadt_kreis",
+      "quelle": "https://kreis-slf.de/Landkreis-Politik/Verkehr-und-Mobilit%C3%A4t/KfZ-Zulassung-und-F%C3%BChrerschein/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo, Mi, Fr 08:00–14:00 Uhr",
+        "Di, Do 08:00–18:00 Uhr"
+      ],
+      "hinweis": "Kfz-Zulassung und Führerscheinstelle nur mit Terminvereinbarung",
+      "quelle": "https://kreis-slf.de/Landkreis-Politik/Verkehr-und-Mobilit%C3%A4t/KfZ-Zulassung-und-F%C3%BChrerschein/"
+    },
+    "zustaendigkeit": null,
+    "kuerzel": [
+      {
+        "code": "SLF",
+        "bedeutung": "Saalfeld",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "RU",
+        "bedeutung": "Rudolstadt (Altkennzeichen, seit 29.11.2012 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Getrennte Online-Terminbuchung je Standort: Rudolstadt (Kfz-Zulassung und Führerscheinstelle) und Saalfeld (Kfz-Zulassung) unter https://timeacle.com/business/index/id/176.",
+        "quelle": "https://kreis-slf.de/Landkreis-Politik/Verkehr-und-Mobilit%C3%A4t/KfZ-Zulassung-und-F%C3%BChrerschein/"
+      },
+      {
+        "text": "Führerscheinangelegenheiten sind in Saalfeld nicht möglich, nur in Rudolstadt.",
+        "quelle": "https://timeacle.com/business/index/id/176"
+      },
+      {
+        "text": "i-Kfz: Gebühr direkt per Kreditkarte oder PayPal (auch Debitkarte); Antragsdaten gehen erst nach erfolgreicher Zahlung an die Zulassungsstelle; außer bei der Außerbetriebsetzung ist der elektronische Personalausweis zwingend.",
+        "quelle": "https://kreis-slf.de/Landkreis-Politik/Verkehr-und-Mobilit%C3%A4t/KfZ-Zulassung-und-F%C3%BChrerschein/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "zustaendigkeit"
+    ]
+  },
+  {
+    "slug": "landkreis-schmalkalden-meiningen",
+    "stadt": "Landkreis Schmalkalden-Meiningen",
+    "bundesland": "Thüringen",
+    "behoerde": "Landratsamt Schmalkalden-Meiningen – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.lra-sm.de/mv/kfz-zulassung/",
+    "traeger": "Landkreis Schmalkalden-Meiningen",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Hauptstelle Meiningen",
+        "strasse": "Charlottenstraße 5a",
+        "plz": "98617",
+        "ort": "Meiningen",
+        "quelle": "https://www.lra-sm.de/mv/kfz-zulassung/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Außenstelle Schmalkalden",
+        "strasse": "Sandgasse 2",
+        "plz": "98574",
+        "ort": "Schmalkalden",
+        "quelle": "https://www.lra-sm.de/mv/kfz-zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.lra-sm.de/mv/kfz-zulassung/",
+      "quelle": "https://www.lra-sm.de/mv/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termin.lra-sm.de/",
+      "quelle": "https://www.lra-sm.de/mv/kfz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/thueringen/lkrschmalkaldenmeiningen/bsp_ikfz_antragstellung/",
+      "quelle": "https://www.lra-sm.de/mv/kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Meiningen: Mo, Mi, Fr 08:30–12:00 Uhr",
+        "Meiningen: Di 08:30–12:00 und 13:00–15:30 Uhr",
+        "Meiningen: Do 08:30–12:00 und 13:00–17:30 Uhr",
+        "Schmalkalden: Mo 08:30–12:00 und 13:00–15:30 Uhr",
+        "Schmalkalden: Di, Mi, Fr 08:30–12:00 Uhr",
+        "Schmalkalden: Do 08:30–12:00 und 13:00–17:30 Uhr"
+      ],
+      "hinweis": "Erreichbarkeit laut Standortangaben; Vorsprachen in der Kfz-Zulassung nur nach vorheriger Terminvereinbarung",
+      "quelle": "https://www.lra-sm.de/mv/kfz-zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Zentrale Anlaufstelle für alle Fahrzeugangelegenheiten im Landkreis Schmalkalden-Meiningen; Aufgaben an zwei Standorten (Hauptstelle Meiningen, Außenstelle Schmalkalden)",
+      "quelle": "https://www.lra-sm.de/mv/kfz-zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "SM",
+        "bedeutung": "Schmalkalden",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MGN",
+        "bedeutung": "Meiningen (Altkennzeichen, seit 29.11.2012 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Zwei Zulassungsstandorte mit unterschiedlichen Nachmittagszeiten: Meiningen dienstags, Schmalkalden montags bis 15:30 Uhr; beide donnerstags bis 17:30 Uhr.",
+        "quelle": "https://www.lra-sm.de/mv/kfz-zulassung/"
+      },
+      {
+        "text": "Wunschkennzeichen-Suche und Online-Zulassung über das Bürgerservice-Portal.",
+        "quelle": "https://www.lra-sm.de/mv/kfz-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

@@ -1,0 +1,898 @@
+[
+  {
+    "slug": "landkreis-ammerland",
+    "stadt": "Landkreis Ammerland",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Ammerland – Straßenverkehrsamt, Zulassungsstelle",
+    "behoerdeQuelle": "https://www.ammerland.de/Service/Fach%C3%A4mter/Stra%C3%9Fenverkehrsamt/",
+    "traeger": "Landkreis Ammerland",
+    "standorte": [
+      {
+        "bezeichnung": "Straßenverkehrsamt des Landkreises Ammerland (Zulassungsstelle)",
+        "strasse": "Ammerlandallee 12",
+        "plz": "26655",
+        "ort": "Westerstede",
+        "quelle": "https://www.ammerland.de/Service/Fach%C3%A4mter/Stra%C3%9Fenverkehrsamt/"
+      }
+    ],
+    "website": {
+      "url": "https://www.ammerland.de/Service/Fach%C3%A4mter/Stra%C3%9Fenverkehrsamt/Zulassung.php?object=tx%7c4266.5.1&ModID=7&FID=2843.9040.1&NavID=2843.278",
+      "quelle": "https://www.ammerland.de/Service/Fach%C3%A4mter/Stra%C3%9Fenverkehrsamt/"
+    },
+    "terminUrl": {
+      "url": "https://onlinetermine.ammerland.de/select2?md=10",
+      "quelle": "https://www.ammerland.de/Service/Fach%C3%A4mter/Stra%C3%9Fenverkehrsamt/"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-ammerland-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=ammerland_kreis",
+      "quelle": "https://www.ammerland.de/Service/Fach%C3%A4mter/Stra%C3%9Fenverkehrsamt/Zulassung.php?object=tx%7c4266.5.1&ModID=7&FID=2843.9040.1&NavID=2843.278"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Mi 8:00–16:00 Uhr",
+        "Do 8:00–17:00 Uhr",
+        "Fr 8:00–12:00 Uhr",
+        "Jeden dritten Dienstag im Monat von 12:00 bis 14:00 Uhr geschlossen"
+      ],
+      "hinweis": "Nur mit Termin: Für den Besuch der Zulassungsstelle ist eine Terminvereinbarung zwingend erforderlich.",
+      "quelle": "https://www.ammerland.de/Service/%C3%96ffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Die Zulassungsstelle des Straßenverkehrsamts des Landkreises Ammerland (Westerstede) ist für alle Fragen und Abwicklungen rund um An-, Um- und Abmeldung von Fahrzeugen zuständig – für den gesamten Landkreis Ammerland mit den Gemeinden Apen, Bad Zwischenahn, Edewecht, Rastede, Westerstede und Wiefelstede.",
+      "quelle": "https://www.ammerland.de/Service/Fach%C3%A4mter/Stra%C3%9Fenverkehrsamt/Zulassung.php?object=tx%7c4266.5.1&ModID=7&FID=2843.9040.1&NavID=2843.278"
+    },
+    "kuerzel": [
+      {
+        "code": "WST",
+        "bedeutung": "Westerstede",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Ein Besuch der Zulassungsstelle ist nur mit vorher gebuchtem Termin möglich; alternativ bietet der Landkreis die Online-Zulassung über i-Kfz an.",
+        "quelle": "https://www.ammerland.de/Service/Fach%C3%A4mter/Stra%C3%9Fenverkehrsamt/Zulassung.php?object=tx%7c4266.5.1&ModID=7&FID=2843.9040.1&NavID=2843.278"
+      },
+      {
+        "text": "Die Zulassungsstelle ist jeden dritten Dienstag im Monat von 12:00 bis 14:00 Uhr geschlossen.",
+        "quelle": "https://www.ammerland.de/Service/%C3%96ffnungszeiten/"
+      },
+      {
+        "text": "Für Kfz-Händler stellt der Landkreis eine eigene Checkliste (PDF) zum Download bereit.",
+        "quelle": "https://www.ammerland.de/Service/Fach%C3%A4mter/Stra%C3%9Fenverkehrsamt/Zulassung.php?object=tx%7c4266.5.1&ModID=7&FID=2843.9040.1&NavID=2843.278"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-aurich",
+    "stadt": "Landkreis Aurich",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Aurich – Straßenverkehrsabteilung, Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-aurich.de/verwaltungsgliederung/dezernat-iii/buergerdienste-ordnung-und-sicherheit/strassenverkehrsabteilung/zulassungsstelle/",
+    "traeger": "Landkreis Aurich",
+    "standorte": [
+      {
+        "bezeichnung": "Straßenverkehrsbehörde Aurich (Aurich-Schirum)",
+        "strasse": "Korbweidenstraße 13",
+        "plz": "26605",
+        "ort": "Aurich",
+        "quelle": "https://www.landkreis-aurich.de/verwaltungsgliederung/dezernat-iii/buergerdienste-ordnung-und-sicherheit/strassenverkehrsabteilung/"
+      },
+      {
+        "bezeichnung": "Straßenverkehrsbehörde Norden (Gewerbegebiet- und Dienstleistungspark Leegemoor)",
+        "strasse": "Stellmacherstraße 23",
+        "plz": "26506",
+        "ort": "Norden",
+        "quelle": "https://www.landkreis-aurich.de/verwaltungsgliederung/dezernat-iii/buergerdienste-ordnung-und-sicherheit/strassenverkehrsabteilung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-aurich.de/verwaltungsgliederung/dezernat-iii/buergerdienste-ordnung-und-sicherheit/strassenverkehrsabteilung/zulassungsstelle/",
+      "quelle": "https://www.landkreis-aurich.de/verwaltungsgliederung/dezernat-iii/buergerdienste-ordnung-und-sicherheit/strassenverkehrsabteilung/zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/landkreis-aurich/",
+      "quelle": "https://www.landkreis-aurich.de/verwaltungsgliederung/dezernat-iii/buergerdienste-ordnung-und-sicherheit/strassenverkehrsabteilung/zulassungsstelle/"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-aurich-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=aurich_kreis",
+      "quelle": "https://www.landkreis-aurich.de/verwaltungsgliederung/dezernat-iii/buergerdienste-ordnung-und-sicherheit/strassenverkehrsabteilung/zulassungsstelle/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Do 08:00–12:00 Uhr und 14:30–16:00 Uhr",
+        "Fr 08:00–12:00 Uhr"
+      ],
+      "hinweis": "Nur mit Termin: Ein Besuch in der Zulassungsstelle ist grundsätzlich nur mit einem gebuchten Termin möglich (Servicezeiten laut Online-Kreishaus des Landkreises; Termine für persönliche Vorsprache nach Vereinbarung).",
+      "quelle": "https://www.kommune365.de/landkreis-aurich/einrichtung/zulassungsstelle"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsstelle des Landkreises Aurich mit zwei Standorten in Aurich (Schirum) und Norden; zuständig für Fahrzeughalter mit Erstwohnsitz im Landkreis Aurich.",
+      "quelle": "https://www.landkreis-aurich.de/verwaltungsgliederung/dezernat-iii/buergerdienste-ordnung-und-sicherheit/strassenverkehrsabteilung/"
+    },
+    "kuerzel": [
+      {
+        "code": "AUR",
+        "bedeutung": "Aurich",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "NOR",
+        "bedeutung": "Norden (Altkennzeichen, seit 15.11.2012 wieder ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Bezahlung vor Ort derzeit ausschließlich mit EC-Karte möglich.",
+        "quelle": "https://www.landkreis-aurich.de/verwaltungsgliederung/dezernat-iii/buergerdienste-ordnung-und-sicherheit/strassenverkehrsabteilung/zulassungsstelle/"
+      },
+      {
+        "text": "Händlerschalter für Zulassungsdienste, Autohäuser und gewerbliche Kfz-Händler von 07:30 bis 08:30 Uhr: in Aurich Abgabe der Aufträge mit Abholung am nächsten Tag, in Norden Nummer am Terminal ziehen (Donnerstagnachmittag geschlossen).",
+        "quelle": "https://www.landkreis-aurich.de/verwaltungsgliederung/dezernat-iii/buergerdienste-ordnung-und-sicherheit/strassenverkehrsabteilung/zulassungsstelle/"
+      },
+      {
+        "text": "Zulassungsdienste, Autohäuser und Kfz-Händler ohne Firmensitz im Landkreis Aurich müssen für ihre Anliegen einen regulären Termin über die Terminsoftware buchen.",
+        "quelle": "https://www.landkreis-aurich.de/verwaltungsgliederung/dezernat-iii/buergerdienste-ordnung-und-sicherheit/strassenverkehrsabteilung/zulassungsstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-celle",
+    "stadt": "Landkreis Celle",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Celle – Straßenverkehrsamt, Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-celle.de/Verwaltung-Politik/Verwaltung/Stra%C3%9Fenverkehrsamt/Zulassungsstelle/",
+    "traeger": "Landkreis Celle",
+    "standorte": [
+      {
+        "bezeichnung": "Außenstelle Bergen (Zulassungsstelle Bergen, Landkreis Celle)",
+        "strasse": "Harburger Str. 12",
+        "plz": "29303",
+        "ort": "Bergen",
+        "quelle": "https://www.stadt-bergen.de/Terminvergabe-Zulassungsstelle"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-celle.de/Verwaltung-Politik/Verwaltung/Stra%C3%9Fenverkehrsamt/Zulassungsstelle/",
+      "quelle": "https://www.landkreis-celle.de/Verwaltung-Politik/Verwaltung/Stra%C3%9Fenverkehrsamt/Zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://www.terminland.de/zulassungsbehoerde_celle/",
+      "quelle": "https://www.landkreis-celle.de/Verwaltung-Politik/Verwaltung/Stra%C3%9Fenverkehrsamt/Zulassungsstelle/"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-celle-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=celle_kreis",
+      "quelle": "https://www.landkreis-celle.de/Verwaltung-Politik/Verwaltung/Stra%C3%9Fenverkehrsamt/Zulassungsstelle/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Celle, Kundinnen und Kunden ohne Termin: Mo–Fr 08:00–12:00 Uhr"
+      ],
+      "hinweis": "Die Öffnungszeiten für Kunden ohne Termin sind bis auf Weiteres auf Mo–Fr 08:00–12:00 Uhr beschränkt; Termine online oder über die Hotline 05141 916 1515. Die Außenstelle Bergen ist nur nach vorheriger Terminvereinbarung zu besuchen.",
+      "quelle": "https://www.landkreis-celle.de/Verwaltung-Politik/Verwaltung/Stra%C3%9Fenverkehrsamt/Zulassungsstelle/"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsstelle des Straßenverkehrsamts des Landkreises Celle mit Hauptsitz in Celle (Speicherstraße 2) und Außenstelle in Bergen (Harburger Str. 12): An- und Abmeldung von Fahrzeugen, Änderungen in den Fahrzeugpapieren sowie Zuteilung von Kurzzeit- und roten Dauerkennzeichen.",
+      "quelle": "https://www.landkreis-celle.de/Verwaltung-Politik/Verwaltung/Stra%C3%9Fenverkehrsamt/Zulassungsstelle/"
+    },
+    "kuerzel": [
+      {
+        "code": "CE",
+        "bedeutung": "Celle",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termine für die Außenstelle Bergen werden über die Stadt Bergen vergeben: online (stadt-bergen.de/Terminvergabe-Zulassungsstelle) oder telefonisch unter 05051 479-301, -302 oder -303.",
+        "quelle": "https://www.landkreis-celle.de/Verwaltung-Politik/Verwaltung/Stra%C3%9Fenverkehrsamt/Zulassungsstelle/"
+      },
+      {
+        "text": "Termine für die Zulassungsstelle Celle können auch telefonisch über die Hotline 05141 916 1515 vereinbart werden.",
+        "quelle": "https://www.landkreis-celle.de/Verwaltung-Politik/Verwaltung/Stra%C3%9Fenverkehrsamt/Zulassungsstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "standorte[0].plz"
+    ]
+  },
+  {
+    "slug": "landkreis-cloppenburg",
+    "stadt": "Landkreis Cloppenburg",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Cloppenburg – Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.lkclp.de/unser-landkre/ordnung--verkehr/kfz-zulassung/aktuelle-informationen/aktuelle-informationen-der-kfz-zulassungsbehoerde",
+    "traeger": "Landkreis Cloppenburg",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassung Cloppenburg (Kreishaus)",
+        "strasse": "Eschstraße 29",
+        "plz": "49661",
+        "ort": "Cloppenburg",
+        "quelle": "https://www.lkclp.de/oeffnungszeiten-im-ueberblick"
+      },
+      {
+        "bezeichnung": "KFZ-Zulassung Friesoythe",
+        "strasse": "Emsstraße 1",
+        "plz": "26169",
+        "ort": "Friesoythe",
+        "quelle": "https://www.lkclp.de/oeffnungszeiten-im-ueberblick"
+      },
+      {
+        "bezeichnung": "KFZ-Zulassung Löningen",
+        "strasse": "Lindenallee 3",
+        "plz": "49624",
+        "ort": "Löningen",
+        "quelle": "https://www.lkclp.de/oeffnungszeiten-im-ueberblick"
+      }
+    ],
+    "website": {
+      "url": "https://www.lkclp.de/unser-landkre/ordnung--verkehr/kfz-zulassung",
+      "quelle": "https://www.lkclp.de/unser-landkre/ordnung--verkehr/kfz-zulassung"
+    },
+    "terminUrl": {
+      "url": "https://cqm.cleverq.de/public/locations/lk_cloppenburg/index.html?lang=de",
+      "quelle": "https://www.lkclp.de/unser-landkre/ordnung--verkehr/kfz-zulassung/online-zulassungsbehoerde"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-cloppenburg-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=cloppenburg_kreis",
+      "quelle": "https://www.lkclp.de/unser-landkre/ordnung--verkehr/kfz-zulassung/online-zulassungsbehoerde"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Cloppenburg: Mo–Do 07.30–15.00 Uhr, Fr 07.30–11.30 Uhr",
+        "Friesoythe: Mo–Do 7.30–14.00 Uhr, Fr 7.30–11.30 Uhr",
+        "Löningen: Mo–Do 8.30–12.30 Uhr, Fr 8.30–11.30 Uhr"
+      ],
+      "hinweis": "Termin über das Terminportal möglich; alternativ spontan innerhalb der Öffnungszeiten eine Wartemarke ziehen (Wartezeit einplanen).",
+      "quelle": "https://www.lkclp.de/oeffnungszeiten-im-ueberblick"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Cloppenburg mit Zulassungsstellen in Cloppenburg, Löningen und Friesoythe.",
+      "quelle": "https://www.lkclp.de/unser-landkre/ordnung--verkehr/kfz-zulassung/aktuelle-informationen/aktuelle-informationen-der-kfz-zulassungsbehoerde"
+    },
+    "kuerzel": [
+      {
+        "code": "CLP",
+        "bedeutung": "Cloppenburg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Besuch mit Online-Termin oder spontan ohne Termin: Am Ticketprinter (Nebeneingang Kreishaus) wird eine Wartemarke gezogen; beim Termin ist ein Nachweis der Terminnummer (Ausdruck oder Screenshot) vorzuzeigen.",
+        "quelle": "https://www.lkclp.de/unser-landkre/ordnung--verkehr/kfz-zulassung/aktuelle-informationen/terminvereinbarungen"
+      },
+      {
+        "text": "Für Kfz-Händler gibt es einen Händlerschalter; die Bearbeitung kann einige Tage dauern, der Abholtermin wird nach Bearbeitung vereinbart.",
+        "quelle": "https://www.lkclp.de/unser-landkre/ordnung--verkehr/kfz-zulassung/aktuelle-informationen/aktuelle-informationen-fuer-kfz-haendler"
+      },
+      {
+        "text": "Der Landkreis warnt vor nichtamtlichen Websites: Die Online-Außerbetriebsetzung über das offizielle Portal kostet lediglich 3,30 Euro.",
+        "quelle": "https://www.lkclp.de/unser-landkre/ordnung--verkehr/kfz-zulassung/aktuelle-informationen/aktuelle-informationen-der-kfz-zulassungsbehoerde"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-cuxhaven",
+    "stadt": "Landkreis Cuxhaven",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Cuxhaven – Ordnung & Straßenverkehr, Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-cuxhaven.de/Quicknavigation/%C3%96ffnungszeiten/Kfz-Zulassungsstelle/?kuo=2&sub=0",
+    "traeger": "Landkreis Cuxhaven",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassung Schiffdorf",
+        "strasse": "Zum Feldkamp 7",
+        "plz": "27619",
+        "ort": "Schiffdorf",
+        "quelle": "https://www.landkreis-cuxhaven.de/Quicknavigation/%C3%96ffnungszeiten/Kfz-Zulassungsstelle/?kuo=2&sub=0"
+      },
+      {
+        "bezeichnung": "Zulassung Hemmoor",
+        "strasse": "Rathausplatz 5",
+        "plz": "21745",
+        "ort": "Hemmoor",
+        "quelle": "https://www.landkreis-cuxhaven.de/Quicknavigation/%C3%96ffnungszeiten/Kfz-Zulassungsstelle/?kuo=2&sub=0"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-cuxhaven.de/Themenbereiche/Verkehr/Kfz-Zulassung/",
+      "quelle": "https://www.landkreis-cuxhaven.de/Themenbereiche/Verkehr/Kfz-Zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://reservationv5.frontdesksuite.com/cuxhaven/kfz-startseite",
+      "quelle": "https://www.landkreis-cuxhaven.de/Themenbereiche/Verkehr/Kfz-Zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-cuxhaven-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=cuxhaven_kreis",
+      "quelle": "https://www.landkreis-cuxhaven.de/Themenbereiche/Verkehr/Kfz-Zulassung/I-KFZ/?kuo=2&sub=0"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag bis Freitag 8.00 Uhr bis 12.00 Uhr",
+        "Montag bis Donnerstag 13.30 Uhr bis 15.30 Uhr"
+      ],
+      "hinweis": "Allgemeine Öffnungszeiten, die auf der Seite der Zulassungsstellen angezeigt werden; vorherige Terminvereinbarung wird empfohlen. Seit 01.06.2026 übergangsweise mittwochvormittags kein Termin- und Publikumsverkehr in den Zulassungsstellen (ab 13:00 Uhr regulär).",
+      "quelle": "https://www.landkreis-cuxhaven.de/Quicknavigation/%C3%96ffnungszeiten/Kfz-Zulassungsstelle/?kuo=2&sub=0"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Cuxhaven (Ordnung & Straßenverkehr) mit drei Zulassungsstellen in Cuxhaven, Schiffdorf und Hemmoor.",
+      "quelle": "https://www.landkreis-cuxhaven.de/Quicknavigation/%C3%96ffnungszeiten/Kfz-Zulassungsstelle/?kuo=2&sub=0"
+    },
+    "kuerzel": [
+      {
+        "code": "CUX",
+        "bedeutung": "Cuxhaven",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Seit dem 1. Juni 2026 haben die Zulassungsstellen Cuxhaven, Schiffdorf und Hemmoor übergangsweise mittwochvormittags geschlossen (auch die Hotline); ab 13:00 Uhr wird regulär bearbeitet, der Händlerschalter bleibt mittwochs ganztägig geschlossen.",
+        "quelle": "https://www.landkreis-cuxhaven.de/Quicknavigation/Aktuelles/Umfangreiche-Digitalisierungsma%C3%9Fnahmen-KFZ-Zulassungsstellen-des-Landkreises-Cuxhaven-%C3%BCbergangsweise-mit-verk%C3%BCrzten-%C3%96ffnungszeiten.php?object=tx,2736.6.1&ModID=7&FID=3189.7664.1&NavID=1779.4&La=1"
+      },
+      {
+        "text": "Neue Termine werden täglich um 8.00 Uhr freigeschaltet.",
+        "quelle": "https://www.landkreis-cuxhaven.de/Themenbereiche/Verkehr/Kfz-Zulassung/"
+      },
+      {
+        "text": "Am Standort Hemmoor ist seit dem 01.07.2026 nur noch Zahlung mit EC-Karte möglich; Bargeld wird nicht mehr angenommen.",
+        "quelle": "https://www.landkreis-cuxhaven.de/Themenbereiche/Verkehr/Kfz-Zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "standorte[0].plz",
+      "oeffnungszeiten"
+    ]
+  },
+  {
+    "slug": "landkreis-diepholz",
+    "stadt": "Landkreis Diepholz",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Diepholz – Fachdienst 31 BürgerService und Straßenverkehr (Kfz-Zulassung)",
+    "behoerdeQuelle": "https://www.diepholz.de/verkehr-und-ordnung/verkehr/buergerservice-und-strassenverkehr/",
+    "traeger": "Landkreis Diepholz",
+    "standorte": [
+      {
+        "bezeichnung": "BürgerService und Straßenverkehr Diepholz (Zulassungsstelle Diepholz)",
+        "strasse": "Prinzhornstraße 4",
+        "plz": "49356",
+        "ort": "Diepholz",
+        "quelle": "https://www.diepholz.de/verkehr-und-ordnung/verkehr/buergerservice-und-strassenverkehr/"
+      },
+      {
+        "bezeichnung": "BürgerService und Straßenverkehr Syke (Zulassungsstelle Syke)",
+        "strasse": "Amtshof 3",
+        "plz": "28857",
+        "ort": "Syke",
+        "quelle": "https://www.diepholz.de/verkehr-und-ordnung/verkehr/buergerservice-und-strassenverkehr/"
+      }
+    ],
+    "website": {
+      "url": "https://www.diepholz.de/verkehr-und-ordnung/verkehr/buergerservice-und-strassenverkehr/",
+      "quelle": "https://www.diepholz.de/verkehr-und-ordnung/verkehr/buergerservice-und-strassenverkehr/"
+    },
+    "terminUrl": {
+      "url": "https://termine2.crossing.de/755622723/Appointment/Index/1",
+      "quelle": "https://www.diepholz.de/verkehr-und-ordnung/verkehr/buergerservice-und-strassenverkehr/"
+    },
+    "ikfzUrl": {
+      "url": "http://landkreis-diepholz-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=diepholz_kreis",
+      "quelle": "https://www.diepholz.de/verkehr-und-ordnung/verkehr/buergerservice-und-strassenverkehr/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Mi 08:00–16:00 Uhr",
+        "Do 08:00–18:00 Uhr",
+        "Fr 08:00–13:00 Uhr"
+      ],
+      "hinweis": "Gilt für die Zulassungsstellen Diepholz und Syke (seit 1. November 2026 vereinheitlicht). Annahmeschluss 30 Minuten vor Ende der Sprechzeit; Diepholz: Ausfuhrkennzeichen und Verpflichtungserklärungen 1 Stunde vorher; Syke: Verpflichtungserklärung 1 Stunde, Ausfuhrkennzeichen 2 Stunden vorher.",
+      "quelle": "https://www.diepholz.de/verkehr-und-ordnung/verkehr/buergerservice-und-strassenverkehr/"
+    },
+    "zustaendigkeit": {
+      "text": "Landkreis Diepholz: Fahrzeuge werden im BürgerService des Landkreises in Diepholz und Syke zugelassen. Neuzulassungen, Umschreibungen, Wiederzulassungen, Kurzzeitkennzeichen, Abmeldungen und Adressänderungen sind zusätzlich in den Bürgerbüros der Städte Sulingen und Twistringen sowie der Gemeinden Barnstorf, Bruchhausen-Vilsen, Kirchdorf und Stuhr möglich.",
+      "quelle": "https://www.diepholz.de/verkehr-und-ordnung/verkehr/buergerservice-und-strassenverkehr/"
+    },
+    "kuerzel": [
+      {
+        "code": "DH",
+        "bedeutung": "Diepholz",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SY",
+        "bedeutung": "Syke (Altkennzeichen, seit 23.04.2018 wieder ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Bestimmte Zulassungsvorgänge (u. a. Neuzulassung, Umschreibung, Abmeldung, Adressänderung) können auch in den Bürgerbüros in Sulingen, Twistringen, Barnstorf, Bruchhausen-Vilsen, Kirchdorf und Stuhr erledigt werden.",
+        "quelle": "https://www.diepholz.de/verkehr-und-ordnung/verkehr/buergerservice-und-strassenverkehr/"
+      },
+      {
+        "text": "Die Zulassungsbescheinigung Teil I wird nur ausgehändigt, wenn ein SEPA-Lastschriftmandat für die Kfz-Steuer vorgelegt wird.",
+        "quelle": "https://www.diepholz.de/verkehr-und-ordnung/verkehr/buergerservice-und-strassenverkehr/"
+      },
+      {
+        "text": "Zulassungen, Änderungen und Abmeldungen sind auch online über i-Kfz Stufe 4 möglich; Zulassungsbescheinigung und Stempelplaketten kommen danach per Post, Kennzeichenschilder müssen selbst besorgt werden.",
+        "quelle": "https://www.diepholz.de/verkehr-und-ordnung/verkehr/buergerservice-und-strassenverkehr/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-emsland",
+    "stadt": "Landkreis Emsland",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Emsland – Fachbereich Straßenverkehr",
+    "behoerdeQuelle": "https://emsland.de/de/wirtschaft-und-struktur/fb36/Fahrzeug-und-Verkehr.php",
+    "traeger": "Landkreis Emsland",
+    "standorte": [
+      {
+        "bezeichnung": "Meppen (Kreishaus II)",
+        "strasse": "Ordeniederung 2",
+        "plz": "49716",
+        "ort": "Meppen",
+        "quelle": "https://emsland.de/de/wirtschaft-und-struktur/fb36/Fahrzeug-und-Verkehr.php"
+      },
+      {
+        "bezeichnung": "Außenstelle Lingen",
+        "strasse": "Am Wall-Süd 21",
+        "plz": "49808",
+        "ort": "Lingen (Ems)",
+        "quelle": "https://emsland.de/de/wirtschaft-und-struktur/fb36/Fahrzeug-und-Verkehr.php"
+      },
+      {
+        "bezeichnung": "Außenstelle Aschendorf",
+        "strasse": "Große Str. 32",
+        "plz": "26871",
+        "ort": "Papenburg",
+        "quelle": "https://emsland.de/de/wirtschaft-und-struktur/fb36/Fahrzeug-und-Verkehr.php"
+      }
+    ],
+    "website": {
+      "url": "https://emsland.de/de/wirtschaft-und-struktur/fb36/Fahrzeug-und-Verkehr.php",
+      "quelle": "https://emsland.de/de/wirtschaft-und-struktur/fb36/Fahrzeug-und-Verkehr.php"
+    },
+    "terminUrl": {
+      "url": "https://emsland.de/de/wirtschaft-und-struktur/fb36/Fahrzeug-und-Verkehr.php#anchor_dbed939d_Buchbare-Termine-rund-um-das-Thema-Auto-Fuehrerschein",
+      "quelle": "https://emsland.de/de/wirtschaft-und-struktur/fb36/Fahrzeug-und-Verkehr.php"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-emsland-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=emsland_kreis",
+      "quelle": "https://emsland.de/de/wirtschaft-und-struktur/fb36/Fahrzeug-und-Verkehr.php"
+    },
+    "oeffnungszeiten": null,
+    "zustaendigkeit": {
+      "text": "Der Fachbereich Straßenverkehr des Landkreises Emsland ist die zentrale Anlaufstelle u. a. für Zulassung, Abmeldung und Ummeldung von Kraftfahrzeugen im Landkreis Emsland; Termine rund um Auto und Führerschein sind in Meppen, Lingen (Ems) und Aschendorf (Papenburg) buchbar.",
+      "quelle": "https://emsland.de/de/wirtschaft-und-struktur/fb36/Fahrzeug-und-Verkehr.php"
+    },
+    "kuerzel": [
+      {
+        "code": "EL",
+        "bedeutung": "Emsland",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termine rund um Auto und Führerschein können online für drei Standorte gebucht werden: Meppen (Kreishaus II), Außenstelle Lingen (Ems) und Außenstelle Aschendorf in Papenburg.",
+        "quelle": "https://emsland.de/de/wirtschaft-und-struktur/fb36/Fahrzeug-und-Verkehr.php"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten"
+    ]
+  },
+  {
+    "slug": "landkreis-friesland",
+    "stadt": "Landkreis Friesland",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Friesland – Fachbereich Straßenverkehr, Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.friesland.de/buergerservice/dienstleistungen/kfz-zulassungsstelle-eingangsportal-901002938-20800.html?myMedium=1&selected_kommune=20800",
+    "traeger": "Landkreis Friesland",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Jever (Fachbereich Straßenverkehr)",
+        "strasse": "Am Bullhamm 13",
+        "plz": "26441",
+        "ort": "Jever",
+        "quelle": "https://www.friesland.de/buergerservice/dienstleistungen/kfz-zulassungsstelle-eingangsportal-901002938-20800.html?myMedium=1&selected_kommune=20800"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Varel (Dienstleistungszentrum)",
+        "strasse": "Karl-Nieraad-Str. 1",
+        "plz": "26316",
+        "ort": "Varel",
+        "quelle": "https://www.friesland.de/buergerservice/dienstleistungen/kfz-zulassungsstelle-eingangsportal-901002938-20800.html?myMedium=1&selected_kommune=20800"
+      }
+    ],
+    "website": {
+      "url": "https://www.friesland.de/buergerservice/dienstleistungen/kfz-zulassungsstelle-eingangsportal-901002938-20800.html?myMedium=1&selected_kommune=20800",
+      "quelle": "https://www.friesland.de/buergerservice/dienstleistungen/kfz-zulassungsstelle-eingangsportal-901002938-20800.html?myMedium=1&selected_kommune=20800"
+    },
+    "terminUrl": {
+      "url": "https://www.friesland.de/buergerservice/online/angebot/online-terminbuchung-kfz-zulassungsstelle-900000325-20800.html",
+      "quelle": "https://www.friesland.de/buergerservice/dienstleistungen/kfz-zulassungsstelle-eingangsportal-901002938-20800.html?myMedium=1&selected_kommune=20800"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-friesland-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=friesland_kreis",
+      "quelle": "https://www.friesland.de/buergerservice/dienstleistungen/i-kfz-internetbasierte-kfz-zulassung-901003299-20800.html?myMedium=1&selected_kommune=20800"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Jever: Mo–Mi 08.00–12.00 Uhr, Do 08.00–12.00 und 14.30–17.00 Uhr, Fr 08.00–12.00 Uhr",
+        "Varel: Mo 08.00–12.00 und 14.30–17.00 Uhr, Di–Fr 08.00–12.00 Uhr"
+      ],
+      "hinweis": "Nur mit Termin: Besuchszeiten des Fachbereichs Straßenverkehr; für den Besuch der Kfz-Zulassungsstellen Jever und Varel ist eine Terminbuchung erforderlich, Bearbeitungen ohne Termin sind nicht möglich.",
+      "quelle": "https://www.friesland.de/portal/seiten/fachbereich-strassenverkehr-besuchszeiten-und-termine--901000928-20800.html?rubrik=901000010"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Friesland mit Zulassungsstellen in Jever und Varel.",
+      "quelle": "https://www.friesland.de/buergerservice/dienstleistungen/kfz-zulassungsstelle-eingangsportal-901002938-20800.html?myMedium=1&selected_kommune=20800"
+    },
+    "kuerzel": [
+      {
+        "code": "FRI",
+        "bedeutung": "Friesland",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Bring+Send-Service: Auftrag online registrieren, Unterlagen in den Briefkasten der Zulassungsstelle Jever oder Varel einwerfen; die Unterlagen kommen nach wenigen Tagen per Post.",
+        "quelle": "https://www.friesland.de/buergerservice/dienstleistungen/kfz-zulassungsstelle-eingangsportal-901002938-20800.html?myMedium=1&selected_kommune=20800"
+      },
+      {
+        "text": "Bei der Buchung muss der Standort Jever oder Varel gewählt werden; am falschen Standort gebuchte Termine können nicht wahrgenommen werden.",
+        "quelle": "https://www.friesland.de/buergerservice/dienstleistungen/kfz-zulassungsstelle-eingangsportal-901002938-20800.html?myMedium=1&selected_kommune=20800"
+      },
+      {
+        "text": "Wer nicht online buchen kann, erhält einen Termin über das ServiceCenter unter 04461 919 8181 (E-Mail-Adresse erforderlich).",
+        "quelle": "https://www.friesland.de/buergerservice/dienstleistungen/kfz-zulassungsstelle-eingangsportal-901002938-20800.html?myMedium=1&selected_kommune=20800"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-gifhorn",
+    "stadt": "Landkreis Gifhorn",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Gifhorn – Verkehrsamt, Abteilung 3.4 Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-gifhorn.de/B%C3%BCrgerservices/Standorte-und-%C3%96ffnungszeiten/",
+    "traeger": "Landkreis Gifhorn",
+    "standorte": [
+      {
+        "bezeichnung": "Verkehrsamt des Landkreises Gifhorn (Kfz-Zulassungsstelle)",
+        "strasse": "Rockwellstraße 16",
+        "plz": "38518",
+        "ort": "Gifhorn",
+        "quelle": "https://www.landkreis-gifhorn.de/Service/KFZ-Zulassung.php?object=tx,4083.4652.1"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-gifhorn.de/Service/KFZ-Zulassung.php?object=tx,4083.4652.1",
+      "quelle": "https://www.landkreis-gifhorn.de/Service/KFZ-Zulassung.php?object=tx,4083.4652.1"
+    },
+    "terminUrl": {
+      "url": "https://openrathaus.gifhorn.de/dienstleistungen/-/egov-bis-detail/dienstleistung/45644/show",
+      "quelle": "https://www.landkreis-gifhorn.de/Service/KFZ-Zulassung.php?object=tx,4083.4652.1"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-gifhorn-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=gifhorn_kreis",
+      "quelle": "https://www.landkreis-gifhorn.de/Service/KFZ-Zulassung.php?object=tx,4083.4652.1"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Mi 07.30–12.00 Uhr und 13.00–16.00 Uhr",
+        "Do 07.30–12.00 Uhr und 13.00–17.00 Uhr",
+        "Fr 07.30–12.00 Uhr"
+      ],
+      "hinweis": "Zu diesen Zeiten können Termine vereinbart werden. Einzelne Vorgänge (Außerbetriebsetzungen, Kurzzeitkennzeichen, Plaketten-Ersatz, Ersatzkennzeichen) werden auch ohne Termin an der Information bearbeitet.",
+      "quelle": "https://www.landkreis-gifhorn.de/Service/KFZ-Zulassung.php?object=tx,4083.4652.1"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle (Abteilung 3.4) im Verkehrsamt des Landkreises Gifhorn, Rockwellstraße 16 in Gifhorn – zuständige Zulassungsbehörde für den Landkreis Gifhorn.",
+      "quelle": "https://www.landkreis-gifhorn.de/B%C3%BCrgerservices/Standorte-und-%C3%96ffnungszeiten/"
+    },
+    "kuerzel": [
+      {
+        "code": "GF",
+        "bedeutung": "Gifhorn",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Gewerbliche Kfz-Händler und Zulassungsdienste nutzen ausschließlich den Händlerschalter und buchen keine Termine.",
+        "quelle": "https://www.landkreis-gifhorn.de/Service/KFZ-Zulassung.php?object=tx,4083.4652.1"
+      },
+      {
+        "text": "Außerbetriebsetzungen, Kurzzeitkennzeichen, Plaketten-Ersatz und Ersatzkennzeichen werden auch ohne Termin an der Information bearbeitet.",
+        "quelle": "https://www.landkreis-gifhorn.de/Service/KFZ-Zulassung.php?object=tx,4083.4652.1"
+      },
+      {
+        "text": "Die Gebühren können bar oder mit Karte am Kassenautomaten bezahlt werden.",
+        "quelle": "https://www.landkreis-gifhorn.de/Service/KFZ-Zulassung.php?object=tx,4083.4652.1"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-goslar",
+    "stadt": "Landkreis Goslar",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Goslar – Fachdienst Verkehrswesen (Straßenverkehrsamt), Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-goslar.de/Wir-f%C3%BCr-Sie/Schnell-gefunden/Stra%C3%9Fenverkehrsamt/",
+    "traeger": "Landkreis Goslar",
+    "standorte": [
+      {
+        "bezeichnung": "Fachdienst Verkehrswesen / Straßenverkehrsamt (Auto-Service-Park, Gewerbegebiet Baßgeige)",
+        "strasse": "Stapelner Straße 8",
+        "plz": "38644",
+        "ort": "Goslar",
+        "quelle": "https://www.landkreis-goslar.de/Wir-f%C3%BCr-Sie/Verwaltung/Mitarbeiter-A-Z/Fachdienst-Verkehrswesen.php?ModID=9&FID=62.1416.1"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-goslar.de/Wir-f%C3%BCr-Sie/Schnell-gefunden/Stra%C3%9Fenverkehrsamt/",
+      "quelle": "https://www.landkreis-goslar.de/Wir-f%C3%BCr-Sie/Schnell-gefunden/Stra%C3%9Fenverkehrsamt/"
+    },
+    "terminUrl": {
+      "url": "https://formulare.landkreis-goslar.de/tvweb/select2?md=15",
+      "quelle": "https://www.landkreis-goslar.de/Wir-f%C3%BCr-Sie/Service/Terminbuchung/"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-goslar-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=goslar_kreis",
+      "quelle": "https://www.landkreis-goslar.de/Wir-f%C3%BCr-Sie/Schnell-gefunden/Stra%C3%9Fenverkehrsamt/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag - Freitag: 07:30 Uhr - 12:00 Uhr",
+        "Donnerstag: 13:00 Uhr - 17:00 Uhr"
+      ],
+      "hinweis": "Nur mit Termin: Für die Bearbeitung des Anliegens in der Zulassungsstelle wird ein Termin benötigt.",
+      "quelle": "https://www.landkreis-goslar.de/Wir-f%C3%BCr-Sie/Verwaltung/Mitarbeiter-A-Z/Fachdienst-Verkehrswesen.php?ModID=9&FID=62.1416.1"
+    },
+    "zustaendigkeit": {
+      "text": "Fachdienst Verkehrswesen des Landkreises Goslar (Straßenverkehrsamt im Auto-Service-Park, Goslar) mit Führerschein- und Zulassungsstelle für den Landkreis Goslar.",
+      "quelle": "https://www.landkreis-goslar.de/Wir-f%C3%BCr-Sie/Verwaltung/Interaktive-Verwaltung/Sicherheit-und-Ordnung/Verkehrswesen/"
+    },
+    "kuerzel": [
+      {
+        "code": "GS",
+        "bedeutung": "Goslar",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BRL",
+        "bedeutung": "Braunlage (Altkennzeichen, seit 15.11.2012 wieder ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "CLZ",
+        "bedeutung": "Clausthal-Zellerfeld (Altkennzeichen, seit 15.11.2012 wieder ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Das Straßenverkehrsamt liegt im Auto-Service-Park im Gewerbegebiet Baßgeige: ebenerdiger Zugang, ausreichend Parkplätze, erreichbar mit Stadtbus Linie 804 und HarzBus Linie 860 (Haltestellen Stadtwerke, Pracherstieg oder Cineplex).",
+        "quelle": "https://www.landkreis-goslar.de/Wir-f%C3%BCr-Sie/Verwaltung/Interaktive-Verwaltung/Sicherheit-und-Ordnung/Verkehrswesen/"
+      },
+      {
+        "text": "Werden online keine Termine angezeigt, sind sie ausgebucht; stornierte Termine stehen sofort wieder zur Buchung bereit.",
+        "quelle": "https://www.landkreis-goslar.de/Wir-f%C3%BCr-Sie/Verwaltung/Interaktive-Verwaltung/Sicherheit-und-Ordnung/Verkehrswesen/"
+      },
+      {
+        "text": "Ist keine Online-Buchung möglich, kann telefonisch eine Nachricht mit Name, Anliegen und Telefonnummer hinterlassen werden; es erfolgt ein Rückruf.",
+        "quelle": "https://www.landkreis-goslar.de/Wir-f%C3%BCr-Sie/Verwaltung/Interaktive-Verwaltung/Sicherheit-und-Ordnung/Verkehrswesen/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-goettingen",
+    "stadt": "Landkreis Göttingen",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Göttingen – Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.landkreisgoettingen.de/Themen-Leistungen/Verkehr-Mobilit%C3%A4t/Kraftfahrzeuge/Zulassungen-Um-und-Anmeldungen/",
+    "traeger": "Landkreis Göttingen",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassung Göttingen (Kreishaus Göttingen)",
+        "strasse": "Reinhäuser Landstraße 4",
+        "plz": "37083",
+        "ort": "Göttingen",
+        "quelle": "https://serviceportal.landkreis-goettingen.de/dienstleistungen/-/egov-bis-detail/einrichtung/3319/show"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassung Osterode am Harz (Außenstelle Bergstraße)",
+        "strasse": "Bergstraße 10",
+        "plz": "37520",
+        "ort": "Osterode am Harz",
+        "quelle": "https://serviceportal.landkreis-goettingen.de/dienstleistungen/-/egov-bis-detail/einrichtung/2835/show"
+      },
+      {
+        "bezeichnung": "Außenstelle der Kfz-Zulassungsbehörde Duderstadt",
+        "strasse": "Bostalstraße 9",
+        "plz": "37115",
+        "ort": "Duderstadt",
+        "quelle": "https://serviceportal.landkreis-goettingen.de/dienstleistungen/-/egov-bis-detail/einrichtung/3581/show"
+      },
+      {
+        "bezeichnung": "Außenstelle der Kfz-Zulassungsbehörde Hann. Münden",
+        "strasse": "Adalbert-Stifter-Straße 27",
+        "plz": "34346",
+        "ort": "Hann. Münden",
+        "quelle": "https://serviceportal.landkreis-goettingen.de/dienstleistungen/-/egov-bis-detail/einrichtung/3580/show"
+      },
+      {
+        "bezeichnung": "Außenstelle der Kfz-Zulassungsbehörde Bovenden (Flecken Bovenden)",
+        "strasse": "Rathausplatz 1",
+        "plz": "37120",
+        "ort": "Bovenden",
+        "quelle": "https://serviceportal.landkreis-goettingen.de/dienstleistungen/-/egov-bis-detail/einrichtung/3582/show"
+      },
+      {
+        "bezeichnung": "Außenstelle der Kfz-Zulassungsbehörde Staufenberg (Gemeinde Staufenberg)",
+        "strasse": "Hannoversche Straße 21",
+        "plz": "34355",
+        "ort": "Staufenberg",
+        "quelle": "https://www.landkreisgoettingen.de/Themen-Leistungen/Verkehr-Mobilit%C3%A4t/Kraftfahrzeuge/Zulassungen-Um-und-Anmeldungen/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreisgoettingen.de/Themen-Leistungen/Verkehr-Mobilit%C3%A4t/Kraftfahrzeuge/Zulassungen-Um-und-Anmeldungen/",
+      "quelle": "https://www.landkreisgoettingen.de/Themen-Leistungen/Verkehr-Mobilit%C3%A4t/Kraftfahrzeuge/Zulassungen-Um-und-Anmeldungen/"
+    },
+    "terminUrl": {
+      "url": "https://reservation.frontdesksuite.com/lkgoettingen/zulassung/Home/Index?Culture=de&PageId=e81ab7ac-642c-407f-9b89-80d4f77fde94&ShouldStartReserveTimeFlow=False&ButtonId=00000000-0000-0000-0000-000000000000",
+      "quelle": "https://serviceportal.landkreis-goettingen.de/dienstleistungen/-/egov-bis-detail/dienstleistung/4768/show"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-goettingen-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=goettingen_kreis",
+      "quelle": "https://www.landkreisgoettingen.de/Landkreis/Verwaltung/Online-Services/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Göttingen: Mo.-Fr. 08:00-12:00 Uhr, Mo. und Do. 13:00-16:00 Uhr",
+        "Osterode am Harz: Mo.-Fr. 08:00-12:00 Uhr, Mo. und Do. 13:00-16:00 Uhr",
+        "Duderstadt: Mo.-Fr. 08:00-12:00 Uhr, Do. 13:00-16:00 Uhr",
+        "Hann. Münden: Mo.-Fr. 08:00-12:00 Uhr, Do. 13:00-16:00 Uhr"
+      ],
+      "hinweis": "Nur mit Termin: Termine müssen über die Online-Terminvereinbarung gebucht werden. Die Außenstellen Bovenden und Staufenberg (in den dortigen Rathäusern) haben eigene Servicezeiten und eine eigene Terminvergabe.",
+      "quelle": "https://www.landkreisgoettingen.de/Themen-Leistungen/Verkehr-Mobilit%C3%A4t/Kraftfahrzeuge/Zulassungen-Um-und-Anmeldungen/"
+    },
+    "zustaendigkeit": {
+      "text": "Der Landkreis Göttingen ist Zulassungsbehörde für das Kreisgebiet ohne die Stadt Göttingen. Die Stadt Göttingen hat eine eigene Kfz-Zulassungsstelle (Fachdienst Straßenverkehr, Neues Rathaus, Hiroshimaplatz 1-4, 37083 Göttingen); beide vergeben das Kennzeichen GÖ. Die Kreis-Zulassungsstelle im Kreishaus (Reinhäuser Landstraße 4) liegt zwar in der Stadt Göttingen, ist aber für Einwohnerinnen und Einwohner des Landkreises zuständig.",
+      "quelle": "https://www.goettingen.de/buergerservice/dienstleistungen/fahrzeug-an-ab-und-ummelden-900000117-0.html?myMedium=1"
+    },
+    "kuerzel": [
+      {
+        "code": "GÖ",
+        "bedeutung": "Göttingen (wird auch von der Stadt Göttingen vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "DUD",
+        "bedeutung": "Duderstadt (Altkennzeichen, seit 15.11.2012 wieder ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "HMÜ",
+        "bedeutung": "Hann. Münden (Altkennzeichen, seit 15.11.2012 wieder ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "OHA",
+        "bedeutung": "Osterode am Harz (im Landkreis Göttingen seit 01.11.2016 ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Halterauskünfte und rote Dauerkennzeichen werden nur in den Zulassungsstellen Göttingen und Osterode am Harz bearbeitet.",
+        "quelle": "https://www.landkreisgoettingen.de/Themen-Leistungen/Verkehr-Mobilit%C3%A4t/Kraftfahrzeuge/Zulassungen-Um-und-Anmeldungen/"
+      },
+      {
+        "text": "Antragsannahmeschluss für Zulassungen ist 15 Minuten vor Ende der Servicezeiten; Ausfuhrkennzeichen können bis eine Stunde vor Ende beantragt werden.",
+        "quelle": "https://serviceportal.landkreis-goettingen.de/dienstleistungen/-/egov-bis-detail/dienstleistung/4768/show"
+      },
+      {
+        "text": "Ist am Wunschstandort kein Termin frei, kann an jedem anderen Standort des Landkreises gebucht werden.",
+        "quelle": "https://www.landkreisgoettingen.de/Themen-Leistungen/Verkehr-Mobilit%C3%A4t/Kraftfahrzeuge/Zulassungen-Um-und-Anmeldungen/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-grafschaft-bentheim",
+    "stadt": "Landkreis Grafschaft Bentheim",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Grafschaft Bentheim – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.grafschaft-bentheim.de/grafschaft/buergerservice-kreishaus-politik/terminvereinbarung.php",
+    "traeger": "Landkreis Grafschaft Bentheim",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Nordhorn (Kreishaus)",
+        "strasse": "van-Delden-Straße 1-7",
+        "plz": "48529",
+        "ort": "Nordhorn",
+        "quelle": "https://portal.grafschaft-bentheim.de/dienstleistungen/-/egov-bis-detail/einrichtung/157606/show"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Emlichheim",
+        "strasse": "Hauptstraße 28",
+        "plz": "49824",
+        "ort": "Emlichheim",
+        "quelle": "https://portal.grafschaft-bentheim.de/dienstleistungen/-/egov-bis-detail/einrichtung/157605/show"
+      }
+    ],
+    "website": {
+      "url": "https://www.grafschaft-bentheim.de/grafschaft/buergerservice-kreishaus-politik/terminvereinbarung.php",
+      "quelle": "https://www.grafschaft-bentheim.de/grafschaft/buergerservice-kreishaus-politik/terminvereinbarung.php"
+    },
+    "terminUrl": {
+      "url": "https://www.grafschaft-bentheim.de/grafschaft/buergerservice/termine-zulassungsstelle-nordhorn.php",
+      "quelle": "https://www.grafschaft-bentheim.de/grafschaft/buergerservice-kreishaus-politik/terminvereinbarung.php"
+    },
+    "ikfzUrl": {
+      "url": "https://portal.grafschaft-bentheim.de/dienstleistungen/-/egov-bis-detail/dienstleistung/690/show",
+      "quelle": "https://www.grafschaft-bentheim.de/grafschaft/buergerservice-kreishaus-politik/terminvereinbarung.php"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Nordhorn, freie Sprechzeiten (ohne Termin, mit Wartezeit): montags bis freitags von 07.30 bis 09.00 Uhr"
+      ],
+      "hinweis": "Außerhalb der freien Sprechzeiten nur mit Termin; in der Zulassungsstelle Emlichheim ist grundsätzlich eine vorherige Terminvereinbarung notwendig. Telefonisch ist die Zulassungsstelle montags bis freitags von 08.00 bis 12.00 Uhr erreichbar.",
+      "quelle": "https://www.grafschaft-bentheim.de/grafschaft/buergerservice-kreishaus-politik/terminvereinbarung.php"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle des Landkreises Grafschaft Bentheim mit Standorten in Nordhorn (Kreishaus) und Emlichheim.",
+      "quelle": "https://www.grafschaft-bentheim.de/grafschaft/buergerservice-kreishaus-politik/terminvereinbarung.php"
+    },
+    "kuerzel": [
+      {
+        "code": "NOH",
+        "bedeutung": "Nordhorn",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "In Nordhorn gibt es freie Sprechzeiten ohne Termin (mit Wartezeit) montags bis freitags von 07.30 bis 09.00 Uhr.",
+        "quelle": "https://www.grafschaft-bentheim.de/grafschaft/buergerservice/termine-zulassungsstelle-nordhorn.php"
+      },
+      {
+        "text": "In der Zulassungsstelle Emlichheim ist ausschließlich eine Terminvereinbarung möglich.",
+        "quelle": "https://portal.grafschaft-bentheim.de/dienstleistungen/-/egov-bis-detail/einrichtung/157605/show"
+      },
+      {
+        "text": "Online-An- und Abmeldung über i-Kfz ist rund um die Uhr möglich; ausgenommen sind u. a. Wechsel-, rote Dauer-, grüne, Oldtimer-, Ausfuhr- und Kurzzeitkennzeichen.",
+        "quelle": "https://portal.grafschaft-bentheim.de/dienstleistungen/-/egov-bis-detail/dienstleistung/690/show"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "website"
+    ]
+  }
+]

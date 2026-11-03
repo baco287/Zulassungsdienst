@@ -1,0 +1,819 @@
+[
+  {
+    "slug": "frankenthal",
+    "stadt": "Frankenthal (Pfalz)",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Stadtverwaltung Frankenthal (Pfalz) – Abteilung Straßenverkehr, Sachgebiet Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.frankenthal.de/stadt-frankenthal/de/buergerservice-views/abteilungen/RLP:department:348220/sachgebiet-zulassungsbehoerde/",
+    "traeger": "Stadt Frankenthal (Pfalz)",
+    "standorte": [
+      {
+        "bezeichnung": "Sachgebiet Zulassungsbehörde",
+        "strasse": "Hammstraße 20",
+        "plz": "67227",
+        "ort": "Frankenthal (Pfalz)",
+        "quelle": "https://www.frankenthal.de/stadt-frankenthal/de/buergerservice-views/abteilungen/RLP:department:348220/sachgebiet-zulassungsbehoerde/"
+      }
+    ],
+    "website": {
+      "url": "https://www.frankenthal.de/stadt-frankenthal/de/rathaus/buerger/buergerservice/dienstleistungen/fahrzeugzulassung/",
+      "quelle": "https://www.frankenthal.de/stadt-frankenthal/de/rathaus/buerger/buergerservice/dienstleistungen/fahrzeugzulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/frankenthal/select2?md=1",
+      "quelle": "https://www.frankenthal.de/stadt-frankenthal/de/buergerservice-views/abteilungen/RLP:department:348220/sachgebiet-zulassungsbehoerde/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.267889731&leistungId=99036020001000&p=073110",
+      "quelle": "https://www.frankenthal.de/stadt-frankenthal/de/rathaus/buerger/buergerservice/dienstleistungen/fahrzeugzulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–12:00",
+        "Di 08:00–12:00",
+        "Mi 08:00–12:00",
+        "Do 08:00–12:00 und 14:00–18:00",
+        "Fr 08:00–12:00"
+      ],
+      "hinweis": "Bitte vorab online einen Termin vereinbaren (Termine 30 Tage im Voraus buchbar). Zu den Öffnungszeiten auch ohne Termin möglich, dann Wartezeiten und vorzeitiger Annahmestopp möglich; Annahmeschluss ohne Termin 15 Minuten vor Ende der Öffnungszeiten.",
+      "quelle": "https://www.frankenthal.de/stadt-frankenthal/de/buergerservice-views/abteilungen/RLP:department:348220/sachgebiet-zulassungsbehoerde/"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsbehörde der kreisfreien Stadt Frankenthal (Pfalz). Seit 2. November 2026 ist sie zusätzlich Anlaufstelle für Bürgerinnen und Bürger des nördlichen Rhein-Pfalz-Kreises (Verbandsgemeinde Lambsheim-Heßheim mit Lambsheim, Heßheim, Beindersheim, Großniedesheim, Heuchelheim und Kleinniedesheim sowie Gemeinde Bobenheim-Roxheim) – und umgekehrt. In der Startphase erfolgt die Bearbeitung für Kreisbürger nur nach vorheriger Terminvereinbarung; Frankenthaler können weiterhin auch ohne Termin kommen.",
+      "quelle": "https://www.frankenthal.de/stadt-frankenthal/de/neuigkeiten/buerger-freizeit-sport/2026/wichtiger-baustein-fuer-buergerfreundliche-verwaltung-frankenthal-und-rhein-pfalz-kreis-starten-kooperation-bei-der-kfz-zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "FT",
+        "bedeutung": "Frankenthal",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Online-Termine und Wartemarken sind ausschließlich für Privatkunden; Händler und Zulassungsdienste nutzen von 8.00 bis 9.00 Uhr den Annahmeservice.",
+        "quelle": "https://www.frankenthal.de/stadt-frankenthal/de/buergerservice-views/abteilungen/RLP:department:348220/sachgebiet-zulassungsbehoerde/"
+      },
+      {
+        "text": "Kooperation mit dem Rhein-Pfalz-Kreis seit 2. November 2026: Die Zulassungsstelle Frankenthal ist auch Anlaufstelle für den nördlichen Rhein-Pfalz-Kreis.",
+        "quelle": "https://www.frankenthal.de/stadt-frankenthal/de/neuigkeiten/buerger-freizeit-sport/2026/wichtiger-baustein-fuer-buergerfreundliche-verwaltung-frankenthal-und-rhein-pfalz-kreis-starten-kooperation-bei-der-kfz-zulassung/"
+      },
+      {
+        "text": "Online-Dienste: Wunschkennzeichen reservieren, Fahrzeug zulassen oder ummelden, Fahrzeug abmelden und Leasingbriefauskunft anfordern.",
+        "quelle": "https://www.frankenthal.de/stadt-frankenthal/de/rathaus/buerger/buergerservice/dienstleistungen/fahrzeugzulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kaiserslautern",
+    "stadt": "Kaiserslautern",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Stadtverwaltung Kaiserslautern – KFZ-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.kaiserslautern.de/serviceportal/address/032403/index.html.de",
+    "traeger": "Stadt Kaiserslautern",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassungsstelle",
+        "strasse": "Merkurstraße 45",
+        "plz": "67663",
+        "ort": "Kaiserslautern",
+        "quelle": "https://www.kaiserslautern.de/serviceportal/address/032403/index.html.de"
+      }
+    ],
+    "website": {
+      "url": "https://www.kaiserslautern.de/serviceportal/address/032403/index.html.de",
+      "quelle": "https://www.kaiserslautern.de/serviceportal/address/032403/index.html.de"
+    },
+    "terminUrl": {
+      "url": "https://kaiserslautern.termine-reservieren.online/",
+      "quelle": "https://www.kaiserslautern.de/serviceportal/address/032403/index.html.de"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.11313678&leistungId=99036020001000&p=073120",
+      "quelle": "https://www.kaiserslautern.de/serviceportal/form/055252/index.html.de"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Mi 07:30–13:00",
+        "Do 07:30–12:00 und 14:00–17:30",
+        "Fr 07:30–12:00"
+      ],
+      "hinweis": "Online-Terminvereinbarung möglich; Besuch während der Öffnungszeiten auch ohne Termin, dann mit Wartezeiten. Bei sehr hohem Kundenaufkommen kann die Annahme vorzeitig gestoppt werden.",
+      "quelle": "https://www.kaiserslautern.de/serviceportal/address/032403/index.html.de"
+    },
+    "zustaendigkeit": {
+      "text": "KFZ-Zulassungsstelle der kreisfreien Stadt Kaiserslautern. Für den Landkreis Kaiserslautern – ebenfalls Kennzeichen KL – ist die KFZ-Zulassungsbehörde der Kreisverwaltung Kaiserslautern zuständig (Lauterstraße 8, 67657 Kaiserslautern, und Außenstelle Landstuhl, Bruchwiesenstraße 31).",
+      "quelle": "https://www.kaiserslautern-kreis.de/verwaltung/ordnung-verkehr-und-schulen/verkehrswesen/kfz-zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "KL",
+        "bedeutung": "Kaiserslautern (wird auch vom Landkreis Kaiserslautern ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Vor einer Zulassung wird geprüft, ob rückständige Kosten aus früheren Zulassungsvorgängen bestehen; auch bei Kfz-Steuer-Rückständen ist keine Zulassung möglich.",
+        "quelle": "https://www.kaiserslautern.de/serviceportal/dl/032387/index.html.de"
+      },
+      {
+        "text": "Bei Online-Beantragung werden zusätzliche Gebühren für den Versand der Zulassungsdokumente erhoben.",
+        "quelle": "https://www.kaiserslautern.de/serviceportal/dl/032387/index.html.de"
+      },
+      {
+        "text": "Die Stadt bietet einen bebilderten Online-Ratgeber zur internetbasierten Zulassung (KFZonline) an.",
+        "quelle": "https://www.kaiserslautern.de/serviceportal/ols/062641/index.html.de"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "koblenz",
+    "stadt": "Koblenz",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Stadtverwaltung Koblenz – Ordnungsamt, Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.koblenz.de/buergerservice/abteilungen/RLP:department:267133/kfz-zulassung-ordnungsamt/",
+    "traeger": "Stadt Koblenz",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassung (Ordnungsamt), Rauental",
+        "strasse": "Ludwig-Erhard-Straße 2",
+        "plz": "56073",
+        "ort": "Koblenz",
+        "quelle": "https://www.koblenz.de/buergerservice/abteilungen/RLP:department:267133/kfz-zulassung-ordnungsamt/"
+      }
+    ],
+    "website": {
+      "url": "https://www.koblenz.de/buergerservice/abteilungen/RLP:department:267133/kfz-zulassung-ordnungsamt/",
+      "quelle": "https://www.koblenz.de/buergerservice/abteilungen/RLP:department:267133/kfz-zulassung-ordnungsamt/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/koblenz/select2?md=10",
+      "quelle": "https://www.koblenz.de/buergerservice/abteilungen/RLP:department:267133/kfz-zulassung-ordnungsamt/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.197329839&leistungId=99036020001000&p=071110",
+      "quelle": "https://www.koblenz.de/buergerservice/leistungen/RLP:entry:72653:ANLR-VLR/kfz-kennzeichen-internetbasierte-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Fr 08:00–12:30",
+        "Mi zusätzlich 13:30–16:30"
+      ],
+      "hinweis": "Derzeit nur mit Terminvereinbarung!",
+      "quelle": "https://www.koblenz.de/buergerservice/abteilungen/RLP:department:267133/kfz-zulassung-ordnungsamt/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde der kreisfreien Stadt Koblenz. Die Online-Terminreservierung gilt nur für Kunden aus dem Stadtgebiet Koblenz, nicht für das umliegende Kreisgebiet; für den Landkreis Mayen-Koblenz (MYK) verweist die Stadt auf die Terminreservierung der Kreisverwaltung Mayen-Koblenz.",
+      "quelle": "https://www.koblenz.de/buergerservice/abteilungen/RLP:department:267133/kfz-zulassung-ordnungsamt/"
+    },
+    "kuerzel": [
+      {
+        "code": "KO",
+        "bedeutung": "Koblenz",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Neue Adresse im Stadtteil Rauental (Ludwig-Erhard-Straße 2) gilt seit 25.08.2026.",
+        "quelle": "https://www.koblenz.de/buergerservice/abteilungen/RLP:department:267133/kfz-zulassung-ordnungsamt/"
+      },
+      {
+        "text": "Gebühren können bar, mit EC-Karte (mit PIN) oder mit Kreditkarte direkt beim Sachbearbeiter gezahlt werden.",
+        "quelle": "https://www.koblenz.de/buergerservice/abteilungen/RLP:department:267133/kfz-zulassung-ordnungsamt/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "ludwigshafen",
+    "stadt": "Ludwigshafen am Rhein",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Stadtverwaltung Ludwigshafen am Rhein – Bereich Straßenverkehr, Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://ludwigshafen.de/buergerservice/kfz-zulassungsstelle",
+    "traeger": "Stadt Ludwigshafen am Rhein",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle (Straßenverkehr)",
+        "strasse": "Achtmorgenstraße 9",
+        "plz": "67065",
+        "ort": "Ludwigshafen",
+        "quelle": "https://ludwigshafen.de/buergerservice/kfz-zulassungsstelle"
+      }
+    ],
+    "website": {
+      "url": "https://ludwigshafen.de/buergerservice/kfz-zulassungsstelle",
+      "quelle": "https://ludwigshafen.de/buergerservice/kfz-zulassungsstelle"
+    },
+    "terminUrl": {
+      "url": "https://tevisweb.ludwigshafen.de/",
+      "quelle": "https://ludwigshafen.de/buergerservice/kfz-zulassungsstelle"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.197336545&leistungId=99036020001000&p=073140",
+      "quelle": "https://ludwigshafen.de/buergerservice/kfz-zulassungsstelle"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 8–13 Uhr",
+        "Di 7–13 Uhr",
+        "Mi 8–12 Uhr und 14–18 Uhr",
+        "Do 8–13 Uhr",
+        "Fr 7–12 Uhr"
+      ],
+      "hinweis": "Vorsprache nur nach vorheriger Terminvereinbarung möglich.",
+      "quelle": "https://ludwigshafen.de/buergerservice/kfz-zulassungsstelle"
+    },
+    "zustaendigkeit": {
+      "text": "Die Kfz-Zulassungsstelle in der Achtmorgenstraße ist nur für Bürgerinnen und Bürger aus dem Stadtgebiet der Stadt Ludwigshafen zuständig. Wer im Rhein-Pfalz-Kreis wohnt, wendet sich an den Rhein-Pfalz-Kreis.",
+      "quelle": "https://ludwigshafen.de/buergerservice/kfz-zulassungsstelle"
+    },
+    "kuerzel": [
+      {
+        "code": "LU",
+        "bedeutung": "Ludwigshafen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Eigene E-Mail-Adressen für Versicherungs-, Mängel-/Steuer-, Halterdaten- und Halterauskunftsangelegenheiten der Kfz-Zulassung.",
+        "quelle": "https://ludwigshafen.de/buergerservice/kfz-zulassungsstelle"
+      },
+      {
+        "text": "Online-Dienste: Wunschkennzeichen-Reservierung, i-Kfz-Zulassung/Umschreibung und i-Kfz-Abmeldung.",
+        "quelle": "https://ludwigshafen.de/buergerservice/kfz-zulassungsstelle"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "neustadt-weinstrasse",
+    "stadt": "Neustadt an der Weinstraße",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Stadtverwaltung Neustadt an der Weinstraße – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.neustadt.eu/Quicknavigation/Adressen/Kfz-Zulassungsstelle.php?ModID=9&FID=2579.371.1",
+    "traeger": "Stadt Neustadt an der Weinstraße",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle",
+        "strasse": "Hindenburgstraße 9a",
+        "plz": "67433",
+        "ort": "Neustadt an der Weinstraße",
+        "quelle": "https://www.neustadt.eu/Quicknavigation/Adressen/Kfz-Zulassungsstelle.php?ModID=9&FID=2579.371.1"
+      }
+    ],
+    "website": {
+      "url": "https://www.neustadt.eu/Quicknavigation/Adressen/Kfz-Zulassungsstelle.php?ModID=9&FID=2579.371.1",
+      "quelle": "https://www.neustadt.eu/Quicknavigation/Adressen/Kfz-Zulassungsstelle.php?ModID=9&FID=2579.371.1"
+    },
+    "terminUrl": {
+      "url": "https://www.neustadt.eu/Service/Online-Terminbuchung/",
+      "quelle": "https://www.neustadt.eu/Quicknavigation/Adressen/Kfz-Zulassungsstelle.php?ModID=9&FID=2579.371.1"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.347794940&leistungId=99036020001000&p=073160",
+      "quelle": "https://www.neustadt.eu/Service/Online-Serviceportal/Dienstleistungen-A-Z/Au%C3%9Ferbetriebsetzung-f%C3%BCr-ein-Fahrzeug-beantragen.php?ModID=10&FID=2636.2713.1&k_sub=1&kuo=1&ort=2579.1&sfwort=1"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 8:00–12:00 und 13:00–16:00",
+        "Di 8:00–12:00",
+        "Do 13:00–18:00"
+      ],
+      "hinweis": "Freie Öffnungszeiten ohne vorherige Terminvereinbarung; zusätzlich können Termine über das Online-Buchungssystem vereinbart werden.",
+      "quelle": "https://www.neustadt.eu/Quicknavigation/Adressen/Kfz-Zulassungsstelle.php?ModID=9&FID=2579.371.1"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle der kreisfreien Stadt Neustadt an der Weinstraße. Laut Leistungsbeschreibung sind für die Zulassung die Kreisverwaltungen bzw. die Stadtverwaltungen der kreisfreien Städte zuständig; als zuständige Stelle ist die Kfz-Zulassungsstelle Hindenburgstraße 9a genannt.",
+      "quelle": "https://www.neustadt.eu/Service/Online-Serviceportal/Dienstleistungen-A-Z/Au%C3%9Ferbetriebsetzung-f%C3%BCr-ein-Fahrzeug-beantragen.php?ModID=10&FID=2636.2713.1&k_sub=1&kuo=1&ort=2579.1&sfwort=1"
+    },
+    "kuerzel": [
+      {
+        "code": "NW",
+        "bedeutung": "Neustadt an der Weinstraße",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Zulassungsstelle und Führerscheinstelle bieten feste Zeiten ohne Termin (Zulassung: Mo, Di, Do); daneben Online-Terminbuchung.",
+        "quelle": "https://www.neustadt.eu/Quicknavigation/Adressen/Kfz-Zulassungsstelle.php?ModID=9&FID=2579.371.1"
+      },
+      {
+        "text": "Online-Dienste: Wunschkennzeichen reservieren, Außerbetriebsetzung, Leasingbriefauskunft sowie Online-Zulassung und Ummeldung.",
+        "quelle": "https://www.neustadt.eu/Service/Online-Serviceportal/Dienstleistungen-A-Z/Au%C3%9Ferbetriebsetzung-f%C3%BCr-ein-Fahrzeug-beantragen.php?ModID=10&FID=2636.2713.1&k_sub=1&kuo=1&ort=2579.1&sfwort=1"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "pirmasens",
+    "stadt": "Pirmasens",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Stadtverwaltung Pirmasens – Ordnungsamt, Abteilung Straßenverkehr (KFZ-Zulassungsstelle)",
+    "behoerdeQuelle": "https://www.pirmasens.de/buergerservice/abteilungen/RLP:department:346009/strassenverkehr/",
+    "traeger": "Stadt Pirmasens",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassungsstelle (Abteilung Straßenverkehr)",
+        "strasse": "Adam-Müller-Straße 69",
+        "plz": "66954",
+        "ort": "Pirmasens",
+        "quelle": "https://www.pirmasens.de/buergerservice/abteilungen/RLP:department:346009/strassenverkehr/"
+      }
+    ],
+    "website": {
+      "url": "https://www.pirmasens.de/leben-in-ps/verkehr-parken/strassenverkehr/kfz-zulassungsstelle/",
+      "quelle": "https://www.pirmasens.de/leben-in-ps/verkehr-parken/strassenverkehr/kfz-zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://terminvergabe.stadt-pirmasens.de/",
+      "quelle": "https://www.pirmasens.de/leben-in-ps/verkehr-parken/strassenverkehr/kfz-zulassungsstelle/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.230960551&leistungId=99036020001000&p=073170",
+      "quelle": "https://www.pirmasens.de/leben-in-ps/verkehr-parken/strassenverkehr/kfz-zulassungsstelle/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–12:00",
+        "Di 08:00–12:00",
+        "Mi 08:00–12:00",
+        "Do 08:00–12:00 und 14:00–18:00",
+        "Fr 08:00–12:00"
+      ],
+      "hinweis": "Annahmeschluss der Kfz-Zulassungsstelle jeweils 30 Minuten vor Ende der Öffnungszeiten. Online-Terminvereinbarung nur für Einwohner der Städte Pirmasens oder Zweibrücken bzw. für dort zugelassene Fahrzeuge.",
+      "quelle": "https://www.pirmasens.de/leben-in-ps/verkehr-parken/strassenverkehr/kfz-zulassungsstelle/"
+    },
+    "zustaendigkeit": {
+      "text": "KFZ-Zulassungsstelle der kreisfreien Stadt Pirmasens. Terminvereinbarung nur möglich, wenn man im Stadtgebiet Pirmasens oder Zweibrücken wohnt bzw. das Fahrzeug in Pirmasens oder Zweibrücken STADT zugelassen ist. Der Landkreis Südwestpfalz (Kennzeichen ebenfalls PS bzw. ZW) unterhält eine eigene Kfz-Zulassungsbehörde bei der Kreisverwaltung Südwestpfalz.",
+      "quelle": "https://www.pirmasens.de/leben-in-ps/verkehr-parken/strassenverkehr/kfz-zulassungsstelle/"
+    },
+    "kuerzel": [
+      {
+        "code": "PS",
+        "bedeutung": "Pirmasens (wird auch vom Landkreis Südwestpfalz ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Standortübergreifender Zulassungsservice: Einwohner von Pirmasens und Zweibrücken können ihr Fahrzeug an beiden Zulassungsstandorten zulassen oder außer Betrieb setzen.",
+        "quelle": "https://www.zweibruecken.de/de/verwaltung/aemter/ordnungsamt/buergerbuero/kraftfahrzeugangelegenheiten/standortuebergreifender-zulassungsservice-der-staedte-zweibruecken-und-pirmasens/"
+      },
+      {
+        "text": "Über das Online-Portal kann neben Zulassung, Ummeldung und Adressänderung auch ein digitaler Fahrzeugschein beantragt werden (kostenpflichtig).",
+        "quelle": "https://www.pirmasens.de/leben-in-ps/verkehr-parken/strassenverkehr/kfz-zulassungsstelle/"
+      },
+      {
+        "text": "Annahmeschluss jeweils 30 Minuten vor Ende der Öffnungszeiten.",
+        "quelle": "https://www.pirmasens.de/buergerservice/abteilungen/RLP:department:346009/strassenverkehr/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "speyer",
+    "stadt": "Speyer",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Stadtverwaltung Speyer – 231-BB II Bürgerbüro Industriestraße / Zulassungsstelle",
+    "behoerdeQuelle": "https://www.speyer.de/de/buergerservice/abteilungen/RLP:department:263337/231-bb-ii-buergerbuero-industriestrasse-zulassungsstelle/",
+    "traeger": "Stadt Speyer",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgerbüro Industriestraße / Zulassungsstelle",
+        "strasse": "Industriestraße 23",
+        "plz": "67346",
+        "ort": "Speyer",
+        "quelle": "https://www.speyer.de/de/buergerservice/abteilungen/RLP:department:263337/231-bb-ii-buergerbuero-industriestrasse-zulassungsstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://www.speyer.de/de/buergerservice/abteilungen/RLP:department:263337/231-bb-ii-buergerbuero-industriestrasse-zulassungsstelle/",
+      "quelle": "https://www.speyer.de/de/buergerservice/abteilungen/RLP:department:263337/231-bb-ii-buergerbuero-industriestrasse-zulassungsstelle/"
+    },
+    "terminUrl": null,
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.293803053&leistungId=99036020001000&p=073180",
+      "quelle": "https://www.speyer.de/de/buergerservice/leistungen/RLP:entry:73893/anmeldung-kfz/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo und Di 7:30–16:00",
+        "Mi 7:30–12:30",
+        "Do 7:30–18:00",
+        "Fr 7:30–12:30"
+      ],
+      "hinweis": "Vorsprachen in der Zulassungsstelle sind zu diesen Zeiten ohne Termin möglich. Bei großem Andrang kann es bereits vor Ende der Öffnungszeiten zu einem Annahmeschluss kommen.",
+      "quelle": "https://www.speyer.de/de/buergerservice/abteilungen/RLP:department:263337/231-bb-ii-buergerbuero-industriestrasse-zulassungsstelle/"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsstelle der kreisfreien Stadt Speyer im Bürgerbüro Industriestraße (Abteilung 231-BB II); die Kfz-Anmeldung ist dieser Abteilung als zuständiger Stelle zugeordnet.",
+      "quelle": "https://www.speyer.de/de/buergerservice/leistungen/RLP:entry:73893/anmeldung-kfz/"
+    },
+    "kuerzel": [
+      {
+        "code": "SP",
+        "bedeutung": "Speyer",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Im Bürgerbüro Industriestraße einschließlich Führerschein- und Zulassungsstelle kann nur noch bargeldlos gezahlt werden.",
+        "quelle": "https://www.speyer.de/de/buergerservice/abteilungen/RLP:department:263337/231-bb-ii-buergerbuero-industriestrasse-zulassungsstelle/"
+      },
+      {
+        "text": "Genereller Annahmeschluss für Ausfuhr- und Kurzzeitkennzeichen ist 30 Minuten vor Ende der Öffnungszeiten.",
+        "quelle": "https://www.speyer.de/de/buergerservice/abteilungen/RLP:department:263337/231-bb-ii-buergerbuero-industriestrasse-zulassungsstelle/"
+      },
+      {
+        "text": "Die Online-Terminvereinbarung gilt derzeit nur für das Bürgerbüro Maximilianstraße und die Führerscheinstelle; für die Zulassungsstelle ist kein Termin nötig.",
+        "quelle": "https://www.speyer.de/de/rathaus/verwaltung/online-terminvereinbarung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "worms",
+    "stadt": "Worms",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Stadtverwaltung Worms – Abteilung 3.11 Bürgerservicebüro (Kfz-Zulassungsstelle)",
+    "behoerdeQuelle": "https://www.worms.de/neu-de/buergerservice/abteilung.php?id=59fad925ae0f22.25464183",
+    "traeger": "Stadt Worms",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgerservicebüro Hauptstelle im Bürgerrathaus",
+        "strasse": "Folzstraße 5",
+        "plz": "67547",
+        "ort": "Worms",
+        "quelle": "https://www.worms.de/neu-de/buergerservice/abteilung.php?id=59fad925ae0f22.25464183"
+      }
+    ],
+    "website": {
+      "url": "https://www.worms.de/neu-de/buergerservice/dienstleistung.php?id=59fad91fe47e06.04139534",
+      "quelle": "https://www.worms.de/neu-de/buergerservice/dienstleistung.php?id=59fad91fe47e06.04139534"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/worms/",
+      "quelle": "https://www.worms.de/neu-de/buergerservice/abteilung.php?id=59fad925ae0f22.25464183"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.287354041&leistungId=99036020001000&p=073190",
+      "quelle": "https://www.worms.de/neu-de/buergerservice/dienstleistung.php?id=59fad91fe47e06.04139534"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Do 07:15–12:00",
+        "Mo–Do 13:00–16:00",
+        "Fr 07:15–12:00"
+      ],
+      "hinweis": "Hauptstelle; Vorsprache nur mit Terminvereinbarung möglich!",
+      "quelle": "https://www.worms.de/neu-de/buergerservice/abteilung.php?id=59fad925ae0f22.25464183"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle der kreisfreien Stadt Worms (Zulassungsbezirk Worms; \"Umschreibung von außerhalb bedeutet im Prinzip alles außer Worms\"). Fahrzeugzulassungen werden nur in der Hauptstelle Folzstraße bearbeitet, nicht in den vier Außenstellen (Neuhausen, Rheindürkheim, Pfeddersheim, Horchheim).",
+      "quelle": "https://www.worms.de/neu-de/buergerservice/abteilung.php?id=59fad925ae0f22.25464183"
+    },
+    "kuerzel": [
+      {
+        "code": "WO",
+        "bedeutung": "Worms",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Alle Services der Kfz-Zulassungsstelle gibt es nur in der Hauptstelle Folzstraße; die Außenstellen bieten keine Fahrzeugzulassung an.",
+        "quelle": "https://www.worms.de/neu-de/buergerservice/abteilung.php?id=59fad925ae0f22.25464183"
+      },
+      {
+        "text": "Bei Umzug nach Worms kann bei gleichem Halter auf die Umkennzeichnung verzichtet werden (eVB wird trotzdem benötigt).",
+        "quelle": "https://www.worms.de/neu-de/buergerservice/dienstleistung.php?id=t856582f16bd04ef4.04328239"
+      },
+      {
+        "text": "Online-Dienste: Kfz zulassen/ummelden/Halterdaten ändern, abmelden, Leasingbriefauskunft und Wunschkennzeichen-Reservierung.",
+        "quelle": "https://www.worms.de/neu-de/buergerservice/dienstleistung.php?id=59fad91fe47e06.04139534"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "zweibruecken",
+    "stadt": "Zweibrücken",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Stadtverwaltung Zweibrücken – Ordnungsamt, Bürgerbüro (Kraftfahrzeugangelegenheiten / Kfz-Zulassung)",
+    "behoerdeQuelle": "https://www.zweibruecken.de/de/verwaltung/aemter/ordnungsamt/buergerbuero/kraftfahrzeugangelegenheiten/",
+    "traeger": "Stadt Zweibrücken",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgerbüro – Ordnungsamt Kraftfahrzeugangelegenheiten",
+        "strasse": "Maxstraße 1",
+        "plz": "66482",
+        "ort": "Zweibrücken",
+        "quelle": "https://www.zweibruecken.de/de/verwaltung/aemter/ordnungsamt/buergerbuero/kraftfahrzeugangelegenheiten/"
+      }
+    ],
+    "website": {
+      "url": "https://www.zweibruecken.de/de/verwaltung/aemter/ordnungsamt/buergerbuero/kraftfahrzeugangelegenheiten/",
+      "quelle": "https://www.zweibruecken.de/de/verwaltung/aemter/ordnungsamt/buergerbuero/kraftfahrzeugangelegenheiten/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/zweibruecken/?rs",
+      "quelle": "https://www.zweibruecken.de/de/verwaltung/oeffnungszeiten/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.268263634&leistungId=99036020001000&p=073200",
+      "quelle": "https://www.zweibruecken.de/de/verwaltung/aemter/ordnungsamt/buergerbuero/kraftfahrzeugangelegenheiten/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 7:30–15:30",
+        "Di 07:30–11:30",
+        "Mi 07:30–11:30",
+        "Do 07:30–17:30",
+        "Fr 07:30–11:30"
+      ],
+      "hinweis": "Reguläre Öffnungszeiten (September bis Juni) für Bürgerbüro & Führerschein (Kraftfahrzeugangelegenheiten, Einwohnermeldeamt, Führerscheinstelle). Vorherige Terminvereinbarung wird empfohlen; ohne Termin ist mit längerer Wartezeit zu rechnen.",
+      "quelle": "https://www.zweibruecken.de/de/verwaltung/oeffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle der kreisfreien Stadt Zweibrücken. Einwohner von Zweibrücken und Pirmasens können ihr Fahrzeug unabhängig vom Wohnort an beiden Zulassungsstandorten (Zweibrücken und Pirmasens) zulassen oder außer Betrieb setzen; außerdem können Einwohner des Landkreises Südwestpfalz (der ebenfalls das Kennzeichen ZW ausgibt) ihre Fahrzeuge bei der Stadt Zweibrücken zulassen.",
+      "quelle": "https://www.zweibruecken.de/de/verwaltung/aemter/ordnungsamt/buergerbuero/kraftfahrzeugangelegenheiten/standortuebergreifender-zulassungsservice-der-staedte-zweibruecken-und-pirmasens/"
+    },
+    "kuerzel": [
+      {
+        "code": "ZW",
+        "bedeutung": "Zweibrücken (wird auch vom Landkreis Südwestpfalz ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Für Händler und Zulassungsdienste mit mehr als 3 Zulassungen gibt es gesonderte Zeitfenster (telefonisch oder per Mail abzustimmen); online gebuchte Termine werden in diesen Fällen storniert.",
+        "quelle": "https://www.zweibruecken.de/de/verwaltung/aemter/ordnungsamt/buergerbuero/kraftfahrzeugangelegenheiten/"
+      },
+      {
+        "text": "Seit 01.01.2017 wird bei zulassungsrelevanten Vorgängen die HU-Bescheinigung (TÜV) im Original oder in Kopie benötigt.",
+        "quelle": "https://www.zweibruecken.de/de/verwaltung/aemter/ordnungsamt/buergerbuero/kraftfahrzeugangelegenheiten/"
+      },
+      {
+        "text": "Standortübergreifender Zulassungsservice mit der Stadt Pirmasens; auch Einwohner des Landkreises Südwestpfalz können in Zweibrücken zulassen.",
+        "quelle": "https://www.zweibruecken.de/de/verwaltung/aemter/ordnungsamt/buergerbuero/kraftfahrzeugangelegenheiten/standortuebergreifender-zulassungsservice-der-staedte-zweibruecken-und-pirmasens/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "trier",
+    "stadt": "Trier",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Stadtverwaltung Trier – Bürgerdienste – Kfz-Zulassung und Fahrerlaubnisbehörde (Gemeinsame Kfz-Zulassungsstelle der Stadt Trier und des Landkreises Trier-Saarburg)",
+    "behoerdeQuelle": "https://www.trier.de/service/dienstleistungen-a-z/15763.Aemter-und-Dienststellen.html?catID=2892",
+    "traeger": "Stadt Trier (auf Grundlage einer öffentlich-rechtlichen Zweckvereinbarung mit dem Landkreis Trier-Saarburg)",
+    "standorte": [
+      {
+        "bezeichnung": "Hauptstelle Kfz-Zulassung",
+        "strasse": "Thyrsusstraße 17-19",
+        "plz": "54292",
+        "ort": "Trier",
+        "quelle": "https://www.trier.de/service/dienstleistungen-a-z/15763.Aemter-und-Dienststellen.html?catID=2892"
+      },
+      {
+        "bezeichnung": "Außenstelle Saarburg",
+        "strasse": "Graf-Siegfried-Str. 32",
+        "plz": "54439",
+        "ort": "Saarburg",
+        "quelle": "https://www.trier.de/service/dienstleistungen-a-z/15768.Lebenslagen-fuer-Buergerinnen-und-Buerger.html?detID=1014"
+      },
+      {
+        "bezeichnung": "Außenstelle Hermeskeil",
+        "strasse": "Langer Markt 12",
+        "plz": "54411",
+        "ort": "Hermeskeil",
+        "quelle": "https://www.trier.de/service/dienstleistungen-a-z/15768.Lebenslagen-fuer-Buergerinnen-und-Buerger.html?detID=1014"
+      }
+    ],
+    "website": {
+      "url": "https://www.trier.de/service/dienstleistungen-a-z/15763.Aemter-und-Dienststellen.html?catID=2892",
+      "quelle": "https://www.trier.de/service/dienstleistungen-a-z/15763.Aemter-und-Dienststellen.html?catID=2892"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/trier/",
+      "quelle": "https://www.trier.de/service/dienstleistungen-a-z/15763.Aemter-und-Dienststellen.html?catID=2892"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.197393853&leistungId=99036020001000&p=072110",
+      "quelle": "https://www.trier.de/service/dienstleistungen-a-z/15768.Lebenslagen-fuer-Buergerinnen-und-Buerger.html?detID=1014"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Hauptstelle Trier: Mo 07:00–13:00, Di 07:00–13:00, Mi 07:00–13:00, Do 10:00–18:00, Fr 07:00–13:00",
+        "Außenstelle Hermeskeil: Mo 07:30–11:30 und 13:00–14:30, Di 07:30–11:30, Mi 07:30–11:30 und 13:00–14:30, Do 07:30–11:30, Fr 07:30–11:30",
+        "Außenstelle Saarburg: Mo–Fr 07:30–10:30"
+      ],
+      "hinweis": "Hauptstelle: vorherige Terminvereinbarung erforderlich.",
+      "quelle": "https://www.trier.de/service/dienstleistungen-a-z/15768.Lebenslagen-fuer-Buergerinnen-und-Buerger.html?detID=1014"
+    },
+    "zustaendigkeit": {
+      "text": "Gemeinsame Kfz-Zulassungsstelle: In den drei Standorten Trier, Hermeskeil und Saarburg werden die Kfz-Zulassungen für die Stadt Trier und den Landkreis Trier-Saarburg durchgeführt. Grundlage ist eine öffentlich-rechtliche Zweckvereinbarung, nach der die Stadtverwaltung Trier die Kfz-Zulassungen auch für die Bürgerinnen und Bürger des Landkreises übernimmt.",
+      "quelle": "https://trier-saarburg.de/ihr-anliegen/zulassungsstelle/"
+    },
+    "kuerzel": [
+      {
+        "code": "TR",
+        "bedeutung": "Trier (Stadt Trier und Landkreis Trier-Saarburg)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SAB",
+        "bedeutung": "Saarburg (Altkennzeichen, seit 2012 wieder für den Landkreis Trier-Saarburg)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Das SAB-Kennzeichen kann nur von Bürgerinnen und Bürgern des Landkreises Trier-Saarburg beantragt werden (in allen drei Standorten); bei späterem Umzug in die Stadt Trier kann ein bereits zugeteiltes SAB-Kennzeichen bei der Umschreibung übernommen werden.",
+        "quelle": "https://www.trier.de/service/dienstleistungen-a-z/zusatzinformationen-aemter/17382.Wiedereinfuehrung-des-SAB-Unterscheidungskennzeichen.html"
+      },
+      {
+        "text": "Kostenlose Online-Leasingbriefauskunft: prüft, ob die Zulassungsbescheinigung Teil II bereits bei der Zulassungsbehörde eingegangen ist.",
+        "quelle": "https://www.trier.de/service/dienstleistungen-a-z/15763.Aemter-und-Dienststellen.html?catID=2892"
+      },
+      {
+        "text": "Die Hauptstelle Thyrsusstraße ist über Rampe und Aufzug barrierefrei erreichbar; kostenlose Parkplätze auf dem Hof, zwei Behindertenparkplätze.",
+        "quelle": "https://www.trier.de/service/dienstleistungen-a-z/15763.Aemter-und-Dienststellen.html?catID=2892"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landau",
+    "stadt": "Landau in der Pfalz",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Kreisverwaltung Südliche Weinstraße – Kfz-Zulassungsstelle (Referat 33 Straßenverkehr und Kfz-Zulassungsstelle), gemeinsame Zulassungsstelle für den Landkreis Südliche Weinstraße und die Stadt Landau",
+    "behoerdeQuelle": "https://www.suedliche-weinstrasse.de/Buergerservice/abteilungen/RLP:department:374647/kfz-zulassungsstelle/",
+    "traeger": "Landkreis Südliche Weinstraße (Kreisverwaltung, zugleich zuständig für die Stadt Landau in der Pfalz)",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle im Kreishaus (Kreisverwaltung Südliche Weinstraße)",
+        "strasse": "An der Kreuzmühle 2",
+        "plz": "76829",
+        "ort": "Landau in der Pfalz",
+        "quelle": "https://www.suedliche-weinstrasse.de/Buergerservice/abteilungen/RLP:department:374647/kfz-zulassungsstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://www.suedliche-weinstrasse.de/themenfelder/sicherheit-ordnung-verkehr/strassenverkehr-kfz-zulassung-und-fuehrerscheinstelle/kfz-zulassungsstelle/",
+      "quelle": "https://www.suedliche-weinstrasse.de/themenfelder/sicherheit-ordnung-verkehr/strassenverkehr-kfz-zulassung-und-fuehrerscheinstelle/kfz-zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://lk-suedliche-weinstrasse.saas.smartcjm.com/m/sva/extern/calendar/?uid=824ff5f9-7e19-40ef-ba08-c3837cb05d79&lang=de",
+      "quelle": "https://www.suedliche-weinstrasse.de/themenfelder/sicherheit-ordnung-verkehr/strassenverkehr-kfz-zulassung-und-fuehrerscheinstelle/kfz-zulassungsstelle/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.344047976&leistungId=99036020001000&p=073130",
+      "quelle": "https://www.suedliche-weinstrasse.de/themenfelder/sicherheit-ordnung-verkehr/strassenverkehr-kfz-zulassung-und-fuehrerscheinstelle/kfz-zulassungsstelle/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30–12:00 und 14:00–16:00",
+        "Di 07:30–12:00 und 14:00–16:00",
+        "Mi 07:30–12:00",
+        "Do 07:30–12:00 und 14:00–17:30",
+        "Fr 07:30–12:00"
+      ],
+      "hinweis": "Terminvereinbarung unbedingt erforderlich; ohne Termin ist kein Besuch möglich.",
+      "quelle": "https://www.suedliche-weinstrasse.de/Buergerservice/abteilungen/RLP:department:374647/kfz-zulassungsstelle/"
+    },
+    "zustaendigkeit": {
+      "text": "Gemeinsame Kfz-Zulassungsstelle für den Landkreis Südliche Weinstraße und die kreisfreie Stadt Landau in der Pfalz bei der Kreisverwaltung Südliche Weinstraße. Die Stadt Landau verweist auf die \"Kfz-Zulassungsstelle bei der Kreisverwaltung Südliche Weinstraße – zuständig für die Stadt Landau\".",
+      "quelle": "https://www.landau.de/Verwaltung-Politik/%C3%96ffentliche-Informationen/%C3%84mter-und-Abteilungen/index.php?object=tx%7c2644.2&ModID=10&FID=343.87.1"
+    },
+    "kuerzel": [
+      {
+        "code": "LD",
+        "bedeutung": "Landau (Stadt Landau in der Pfalz)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SÜW",
+        "bedeutung": "Südliche Weinstraße (Landkreis)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Getrennte Online-Zugänge (i-Kfz) für die Stadt Landau und den Landkreis SÜW – jeweils für Zulassung, Abmeldung und Wunschkennzeichen.",
+        "quelle": "https://www.suedliche-weinstrasse.de/themenfelder/sicherheit-ordnung-verkehr/strassenverkehr-kfz-zulassung-und-fuehrerscheinstelle/kfz-zulassungsstelle/"
+      },
+      {
+        "text": "Online gebuchte Termine müssen innerhalb einer Stunde über den Link in der Bestätigungs-E-Mail bestätigt werden, sonst verfällt die Reservierung; frei gewordene Termine werden früh morgens wieder eingestellt. Telefonische Terminvereinbarung unter 06341 940-309 möglich.",
+        "quelle": "https://www.suedliche-weinstrasse.de/themenfelder/sicherheit-ordnung-verkehr/strassenverkehr-kfz-zulassung-und-fuehrerscheinstelle/kfz-zulassungsstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-ahrweiler",
+    "stadt": "Landkreis Ahrweiler",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Kreisverwaltung Ahrweiler – Abteilung 3.2 Verkehrswirtschaft/Jagd u. Waffenwesen, Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://kreis-ahrweiler.de/verkehr_ordnung/kfz-zulassung/ihre-kfz-zulassung/",
+    "traeger": "Landkreis Ahrweiler",
+    "standorte": [
+      {
+        "bezeichnung": "Hauptstelle Kreisverwaltung Ahrweiler",
+        "strasse": "Wilhelmstraße 24-30",
+        "plz": "53474",
+        "ort": "Bad Neuenahr-Ahrweiler",
+        "quelle": "https://kreis-ahrweiler.de/verkehr_ordnung/kfz-zulassung/ihre-kfz-zulassung/"
+      },
+      {
+        "bezeichnung": "Außenstelle Sinzig (in den Räumlichkeiten der Caritas)",
+        "strasse": "Kripper Straße 26",
+        "plz": "53489",
+        "ort": "Sinzig",
+        "quelle": "https://kreis-ahrweiler.de/verkehr_ordnung/kfz-zulassung/ihre-kfz-zulassung/"
+      },
+      {
+        "bezeichnung": "Außenstelle Niederzissen (Verbandsgemeindeverwaltung)",
+        "strasse": "Kapellenstraße 12",
+        "plz": "56651",
+        "ort": "Niederzissen",
+        "quelle": "https://kreis-ahrweiler.de/verkehr_ordnung/kfz-zulassung/ihre-kfz-zulassung/"
+      },
+      {
+        "bezeichnung": "Außenstelle Adenau (Verbandsgemeindeverwaltung)",
+        "strasse": "Kirchstraße 15",
+        "plz": "53518",
+        "ort": "Adenau",
+        "quelle": "https://kreis-ahrweiler.de/verkehr_ordnung/kfz-zulassung/ihre-kfz-zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://kreis-ahrweiler.de/verkehr_ordnung/kfz-zulassung/",
+      "quelle": "https://kreis-ahrweiler.de/verkehr_ordnung/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/ahrweiler/select2?md=1",
+      "quelle": "https://kreis-ahrweiler.de/verkehr_ordnung/kfz-zulassung/ihre-kfz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.268107644&leistungId=99036020001000&p=071310",
+      "quelle": "https://kreis-ahrweiler.de/verkehr_ordnung/kfz-zulassung/internetbasierte-fahrzeugzulassung-i-kfz-online/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Hauptstelle Bad Neuenahr-Ahrweiler: Mo–Mi und Fr 7.30–12.00, Do 7.30–18.00 durchgehend",
+        "Außenstelle Sinzig: Mo–Fr 8.00–12.00, Do 8.00–18.00 durchgehend",
+        "Außenstelle Niederzissen: Mo–Fr 8.00–12.00",
+        "Außenstelle Adenau: Mo–Fr 8:00–12:00"
+      ],
+      "hinweis": "Anliegen können nur nach vorheriger Terminvereinbarung bearbeitet werden (online oder telefonisch unter 02641 975-660).",
+      "quelle": "https://kreis-ahrweiler.de/verkehr_ordnung/kfz-zulassung/ihre-kfz-zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsbehörde des Kreises Ahrweiler mit Hauptstelle in Bad Neuenahr-Ahrweiler und Außenstellen in Adenau, Niederzissen und Sinzig. Neuzulassung, Umschreibung, Abmeldung oder technische Änderung können Bürger und Kfz-Betriebe an einem frei wählbaren Standort erledigen; Sonderfälle (u. a. rote Kennzeichen, Fahrtenbücher, Problemfälle) nur in der Hauptstelle.",
+      "quelle": "https://kreis-ahrweiler.de/verkehr_ordnung/kfz-zulassung/ihre-kfz-zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "AW",
+        "bedeutung": "Ahrweiler",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Gebühren können in der Hauptstelle und in den Außenstellen bar sowie mit EC-Karte bezahlt werden.",
+        "quelle": "https://kreis-ahrweiler.de/verkehr_ordnung/kfz-zulassung/ihre-kfz-zulassung/"
+      },
+      {
+        "text": "Ausfuhrkennzeichen gibt es nur in der Hauptstelle und in der Außenstelle Sinzig; Mängelanzeigen werden in der Außenstelle Adenau mittwochs und donnerstags 13.00–16.00 Uhr bearbeitet.",
+        "quelle": "https://kreis-ahrweiler.de/verkehr_ordnung/kfz-zulassung/ihre-kfz-zulassung/"
+      },
+      {
+        "text": "Außenstelle Sinzig hat eine neue Adresse: Kripper Straße 26 (Räumlichkeiten der Caritas).",
+        "quelle": "https://kreis-ahrweiler.de/verkehr_ordnung/kfz-zulassung/ihre-kfz-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

@@ -24,15 +24,23 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const z = getZulassungsstelle(slug);
   if (!z) return {};
-  const codes = z.kuerzel.map((k) => k.code).join(", ");
+  const all = z.kuerzel.map((k) => k.code);
+  const codes = all.length > 3 ? `${all.slice(0, 3).join(", ")} u. a.` : all.join(", ");
+  // Beschreibung max. ca. 160 Zeichen: bei langen Namen stufenweise kürzer.
+  const description = [
+    `Zulassungsstelle ${z.stadt} (${codes}): Anschrift, Zuständigkeit, Termin und i-Kfz – mit Quellen. Ohne Termin über uns: Zulassung ${P.zulassung} inkl. Gebühren.`,
+    `Zulassungsstelle ${z.stadt} (${codes}): Anschrift, Termin und i-Kfz. Ohne Termin über uns: Zulassung ${P.zulassung} inkl. Gebühren.`,
+    `Zulassungsstelle ${z.stadt}: Anschrift, Termin, i-Kfz. Zulassung über uns ${P.zulassung} inkl. Gebühren.`,
+  ].find((d, i, list) => d.length <= 160 || i === list.length - 1)!;
   return {
     // Kurzer Stadtname (z. B. "Freiburg" statt "Freiburg im Breisgau"), Titel max. ~60 Zeichen.
     title: (() => {
       const name = getCity(z.slug)?.name ?? z.stadt;
       const t = `Zulassungsstelle ${name}: Adresse & Termin`;
-      return t.length + 20 <= 62 ? t : { absolute: t };
+      if (t.length + 20 <= 62) return t;
+      return t.length <= 62 ? { absolute: t } : { absolute: `Zulassungsstelle ${name}` };
     })(),
-    description: `Zulassungsstelle ${z.stadt} (${codes}): Anschrift, Zuständigkeit, Termin und i-Kfz – mit Quellen. Ohne Termin über uns: Zulassung ${P.zulassung} inkl. Gebühren.`,
+    description,
     alternates: { canonical: `/zulassungsstelle/${z.slug}/` },
   };
 }

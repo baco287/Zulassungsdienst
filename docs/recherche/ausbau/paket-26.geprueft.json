@@ -1,0 +1,128 @@
+[
+  {
+    "slug": "remscheid",
+    "stadt": "Remscheid",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Stadt Remscheid, Fachdienst Bürger, Sicherheit und Ordnung – Bürgerservice und Wahlen (Kfz-Zulassungsbehörde)",
+    "behoerdeQuelle": "https://serviceportal.remscheid.de/suche/-/vr-bis-detail/einrichtung/7334/show",
+    "traeger": "Stadt Remscheid",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgerservice und Wahlen, Dienstleistungszentrum",
+        "strasse": "Elberfelder Straße 32-36",
+        "plz": "42853",
+        "ort": "Remscheid",
+        "quelle": "https://serviceportal.remscheid.de/suche/-/vr-bis-detail/einrichtung/7334/show"
+      }
+    ],
+    "website": {
+      "url": "https://serviceportal.remscheid.de/suche/-/vr-bis-detail/dienstleistung/314767/show",
+      "quelle": "https://serviceportal.remscheid.de/suche/-/vr-bis-detail/dienstleistung/314767/show"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/remscheid/buergerservice/select2?md=1",
+      "quelle": "https://serviceportal.remscheid.de/suche/-/vr-bis-detail/dienstleistung/314767/show"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=remscheid_stadt",
+      "quelle": "https://serviceportal.remscheid.de/suche/-/vr-bis-detail/dienstleistung/314767/show"
+    },
+    "oeffnungszeiten": null,
+    "zustaendigkeit": {
+      "text": "Zulassungsbehörde der kreisfreien Stadt Remscheid. Kfz-Anliegen wie Neuzulassung, Umschreibung innerhalb Remscheids oder von außerhalb, Abmeldung und Anschriftenänderung laufen über den Bürgerservice der Stadt Remscheid.",
+      "quelle": "https://termine-reservieren.de/termine/remscheid/buergerservice/select2?md=1"
+    },
+    "kuerzel": [
+      {
+        "code": "RS",
+        "bedeutung": "Remscheid (nur Stadt Remscheid, kein Kreis mit gleichem Kürzel)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Online-Zulassung über das STVA-Portal der Stadt Remscheid: Neuzulassung, Wiederzulassung, Umschreibung mit Kennzeichenwechsel sowie vollautomatisiert Umschreibung ohne Kennzeichenwechsel, Abmeldung und Adressänderung. Kurzzeitkennzeichen, historische Kennzeichen und andere besondere Zulassungsformen gehen online nicht – dafür ist ein Besuch vor Ort oder ein Dienstleister nötig.",
+        "quelle": "https://serviceportal.remscheid.de/suche/-/vr-bis-detail/dienstleistung/314767/show"
+      },
+      {
+        "text": "Beim Online-Antrag prüft das System automatisch Kfz-Steuer- und Gebührenrückstände; gibt es Rückstände, wird der Antrag abgelehnt (Gebührenrückstände: persönliche Vorsprache beim Fachdienst Bürger, Sicherheit und Ordnung; Steuerrückstände: Hauptzollamt).",
+        "quelle": "https://serviceportal.remscheid.de/suche/-/vr-bis-detail/dienstleistung/314767/show"
+      },
+      {
+        "text": "Bei Diebstahl oder Verlust eines Kennzeichens ist eine Umkennzeichnung zwingend, ein Ersatzschild ist dann nicht möglich; die abhandengekommenen Kennzeichen werden für zehn Jahre gesperrt. Sind beschädigte Schilder noch vollständig vorhanden, können Ersatzkennzeichen geprägt werden.",
+        "quelle": "https://termine-reservieren.de/termine/remscheid/buergerservice/select2?md=1"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten"
+    ]
+  },
+  {
+    "slug": "solingen",
+    "stadt": "Solingen",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Stadt Solingen, Stadtdienst Bürgerservice – 33-12 Bürgerservice Fahrzeugzulassungen (Kfz-Zulassungsbehörde)",
+    "behoerdeQuelle": "https://service.solingen.de/detail/-/vr-bis-detail/einrichtung/13771/show",
+    "traeger": "Stadt Solingen",
+    "standorte": [
+      {
+        "bezeichnung": "33-12 Bürgerservice Fahrzeugzulassungen, Verwaltungsgebäude Gasstraße",
+        "strasse": "Gasstraße 22B",
+        "plz": "42657",
+        "ort": "Solingen",
+        "quelle": "https://service.solingen.de/detail/-/vr-bis-detail/einrichtung/13771/show"
+      }
+    ],
+    "website": {
+      "url": "https://service.solingen.de/detail/-/vr-bis-detail/einrichtung/13771/show",
+      "quelle": "https://service.solingen.de/detail/-/vr-bis-detail/einrichtung/13771/show"
+    },
+    "terminUrl": {
+      "url": "https://termin.solingen.de/select2?md=3",
+      "quelle": "https://service.solingen.de/detail/-/vr-bis-detail/dienstleistung/563603/show"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=solingen_stadt",
+      "quelle": "https://service.solingen.de/detail/-/vr-bis-detail/dienstleistung/665074/show"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–13:00 und 14:00–16:00",
+        "Di 08:00–13:00 und 14:00–16:00",
+        "Mi 08:00–13:00 und 14:00–16:00",
+        "Do 08:00–13:00 und 14:00–18:00",
+        "Fr 08:00–13:00"
+      ],
+      "hinweis": "Servicezeiten; Terminvereinbarung empfohlen (online oder telefonisch)",
+      "quelle": "https://service.solingen.de/detail/-/vr-bis-detail/einrichtung/13771/show"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde der kreisfreien Stadt Solingen. Zugelassen wird ausschließlich auf den Hauptwohnsitz, eine Zulassung auf einen Nebenwohnsitz ist nicht möglich.",
+      "quelle": "https://termin.solingen.de/select2?md=3"
+    },
+    "kuerzel": [
+      {
+        "code": "SG",
+        "bedeutung": "Solingen (nur Stadt Solingen, kein Kreis mit gleichem Kürzel)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Online-Zulassungsstelle (i-Kfz Stufe 4) u. a. für Neuzulassung, Umschreibung, Wiederzulassung, Adressänderung und Abmeldung. Privatpersonen melden sich mit BundID und Online-Ausweisfunktion an, Unternehmen mit dem Unternehmenskonto (Elster-Zertifikat). Die Zulassungsbescheinigungen kommen spätestens nach sechs Kalendertagen per Postzustellungsurkunde.",
+        "quelle": "https://service.solingen.de/detail/-/vr-bis-detail/dienstleistung/665074/show"
+      },
+      {
+        "text": "Wunschkennzeichen lassen sich online bis zu drei Monate im Voraus reservieren (höchstens zwei bei Mehrfachbedarf). Die Zuteilung ist an die erfassten Personendaten gebunden, Abtretungserklärungen werden nicht akzeptiert.",
+        "quelle": "https://service.solingen.de/detail/-/vr-bis-detail/dienstleistung/272826/show"
+      },
+      {
+        "text": "Kurzzeitkennzeichen: Hat das Fahrzeug keine gültige Hauptuntersuchung oder Betriebserlaubnis, ist die Zulassungsstelle am Standort des Fahrzeugs zuständig – auch für Antragsteller mit Hauptwohnsitz in Solingen.",
+        "quelle": "https://termin.solingen.de/select2?md=3"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

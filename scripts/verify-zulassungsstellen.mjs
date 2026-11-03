@@ -16,13 +16,13 @@
  *  - Standorte: Straßenname oder Postleitzahl müssen auf der Quellseite
  *    stehen, sonst wird der Standort verworfen.
  */
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { basename, join } from "node:path";
 
 const args = process.argv.slice(2);
 const outIdx = args.indexOf("--out");
 const outDir = outIdx >= 0 ? args[outIdx + 1] : ".";
-const files = args.filter((a, i) => a !== "--out" && i !== outIdx + 1);
+const files = args.filter((a, i) => a !== "--out" && a !== "--force" && i !== outIdx + 1);
 mkdirSync(outDir, { recursive: true });
 
 const BLOCKED_HOSTS = [
@@ -67,7 +67,7 @@ async function fetchPage(url) {
 }
 
 const normalize = (s) =>
-  s
+  String(s ?? "")
     .toLowerCase()
     .replace(/<[^>]+>/g, " ")
     .replace(/&nbsp;|&#160;/g, " ")
@@ -106,6 +106,11 @@ async function pool(items, n, fn) {
 
 const summary = [];
 for (const file of files) {
+  const name0 = basename(file).replace(/\.json$/, "");
+  if (!args.includes("--force") && existsSync(join(outDir, `${name0}.geprueft.json`))) {
+    console.log(`${name0}: bereits geprüft, übersprungen`);
+    continue;
+  }
   const raw = JSON.parse(readFileSync(file, "utf8"));
   const report = [];
   const cleaned = await pool(raw, 6, async (r) => {
@@ -164,6 +169,10 @@ for (const file of files) {
 
     const standorte = [];
     for (const s of r.standorte ?? []) {
+      if (!s || !s.strasse || !s.plz || !s.quelle) {
+        notes.push(`standort ${s?.bezeichnung ?? "?"}: unvollständig → verworfen`);
+        continue;
+      }
       if (blocked(s.quelle)) {
         notes.push(`standort ${s.bezeichnung}: Quelle nicht offiziell`);
         continue;
@@ -194,6 +203,7 @@ for (const file of files) {
   const name = basename(file).replace(/\.json$/, "");
   writeFileSync(join(outDir, `${name}.geprueft.json`), JSON.stringify(cleaned, null, 2) + "\n");
   const flagged = report.filter((x) => x.notes.length);
+  writeFileSync(join(outDir, `${name}.bericht.json`), JSON.stringify(flagged, null, 2) + "\n");
   summary.push({ datei: name, eintraege: cleaned.length, mitHinweisen: flagged.length, report: flagged });
   console.log(`${name}: ${cleaned.length} Einträge, ${flagged.length} mit Hinweisen`);
 }

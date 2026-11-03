@@ -1,0 +1,927 @@
+[
+  {
+    "slug": "landkreis-osnabrueck",
+    "stadt": "Landkreis Osnabrück",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Osnabrück – Verkehrsbehörde, Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-osnabrueck.de/fachthemen/ordnung-und-verkehr/verkehrsbehoerde-zulassungs-und-fuehrerscheinstelle",
+    "traeger": "Landkreis Osnabrück",
+    "standorte": [
+      {
+        "bezeichnung": "Kraftfahrzeugzulassungsstelle im Kreishaus Osnabrück",
+        "strasse": "Am Schölerberg 1",
+        "plz": "49082",
+        "ort": "Osnabrück",
+        "quelle": "https://www.landkreis-osnabrueck.de/verwaltung/wir-fuer-sie/aussenstellen/zulassungsstellen"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Bersenbrück",
+        "strasse": "Bramscher Straße 70",
+        "plz": "49593",
+        "ort": "Bersenbrück",
+        "quelle": "https://www.landkreis-osnabrueck.de/verwaltung/wir-fuer-sie/aussenstellen/zulassungsstellen"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Quakenbrück",
+        "strasse": "Markt 1",
+        "plz": "49610",
+        "ort": "Quakenbrück",
+        "quelle": "https://www.landkreis-osnabrueck.de/verwaltung/wir-fuer-sie/aussenstellen/zulassungsstellen"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Bramsche",
+        "strasse": "Hasestraße 11",
+        "plz": "49565",
+        "ort": "Bramsche",
+        "quelle": "https://www.landkreis-osnabrueck.de/verwaltung/wir-fuer-sie/aussenstellen/zulassungsstellen"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Wallenhorst",
+        "strasse": "Rathausallee 1",
+        "plz": "49134",
+        "ort": "Wallenhorst",
+        "quelle": "https://www.landkreis-osnabrueck.de/verwaltung/wir-fuer-sie/aussenstellen/zulassungsstellen"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Georgsmarienhütte",
+        "strasse": "Oeseder Str. 85",
+        "plz": "49124",
+        "ort": "Georgsmarienhütte",
+        "quelle": "https://www.landkreis-osnabrueck.de/verwaltung/wir-fuer-sie/aussenstellen/zulassungsstellen"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Melle (Stadthaus)",
+        "strasse": "Schürenkamp 16",
+        "plz": "49324",
+        "ort": "Melle",
+        "quelle": "https://www.landkreis-osnabrueck.de/verwaltung/wir-fuer-sie/aussenstellen/zulassungsstellen"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-osnabrueck.de/fachthemen/ordnung-und-verkehr/verkehrsbehoerde-zulassungs-und-fuehrerscheinstelle",
+      "quelle": "https://www.landkreis-osnabrueck.de/fachthemen/ordnung-und-verkehr/verkehrsbehoerde-zulassungs-und-fuehrerscheinstelle"
+    },
+    "terminUrl": {
+      "url": "https://otv.lkos.de/select2?md=2",
+      "quelle": "https://www.landkreis-osnabrueck.de/fachthemen/ordnung-und-verkehr/verkehrsbehoerde-zulassungs-und-fuehrerscheinstelle"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-osnabrueck-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=osnabrueck_kreis",
+      "quelle": "https://www.landkreis-osnabrueck.de/fachthemen/ordnung-und-verkehr/verkehrsbehoerde-zulassungs-und-fuehrerscheinstelle"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Kreishaus Osnabrück: Mo–Mi 8:00–16:00 Uhr",
+        "Kreishaus Osnabrück: Do 8:00–17:30 Uhr",
+        "Kreishaus Osnabrück: Fr 8:00–12:00 Uhr",
+        "Kreishaus Osnabrück: Sa 9:30–11:30 Uhr (nur Zulassungsstelle)",
+        "Bersenbrück: Mo 8:00–13:00 Uhr",
+        "Bersenbrück: Do 8:00–17:30 Uhr",
+        "Bersenbrück: Fr 8:00–13:00 Uhr"
+      ],
+      "hinweis": "Kreishaus: Zutritt nur mit Termin; Online-Termine gelten für die Zulassungsstellen im Kreishaus und in Bersenbrück, ohne Termin keine Bearbeitung. Die übrigen Zulassungsstellen (Bramsche, Georgsmarienhütte, Melle, Quakenbrück, Wallenhorst) bitte telefonisch oder per E-Mail kontaktieren.",
+      "quelle": "https://www.landkreis-osnabrueck.de/verwaltung/wir-fuer-sie/aussenstellen/zulassungsstellen"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsbehörde für den Landkreis Osnabrück. Die Stadt Osnabrück (ebenfalls Kennzeichen OS) hat eine eigene Zulassungsstelle (Stadthaus 1, Natruper-Tor-Wall 2) und ein eigenes Wunschkennzeichen-Portal. Laut Landkreis können Bürger aus Stadt und Landkreis Osnabrück die jeweils nächste Zulassungsstelle im Landkreis oder in der Stadt nutzen; in Bersenbrück und Quakenbrück sind jedoch keine Zulassungen für die Stadt Osnabrück möglich.",
+      "quelle": "https://www.landkreis-osnabrueck.de/fachthemen/ordnung-und-verkehr/verkehrsbehoerde-zulassungs-und-fuehrerscheinstelle"
+    },
+    "kuerzel": [
+      {
+        "code": "OS",
+        "bedeutung": "Osnabrück (Stadt und Landkreis Osnabrück)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BSB",
+        "bedeutung": "Bersenbrück (Altkennzeichen, seit 2018 wieder ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MEL",
+        "bedeutung": "Melle (Altkennzeichen, seit 2018 wieder ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WTL",
+        "bedeutung": "Wittlage (Altkennzeichen, seit 2018 wieder ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Online-Vorgänge über i-Kfz sind deutlich günstiger als am Schalter: Eine Abmeldung kostet am Schalter 16,50 Euro, online nur 3,30 Euro.",
+        "quelle": "https://www.landkreis-osnabrueck.de/fachthemen/ordnung-und-verkehr/verkehrsbehoerde-zulassungs-und-fuehrerscheinstelle"
+      },
+      {
+        "text": "Bei Terminen der Verkehrsbehörde ist die Zahlung nur per EC-Karte möglich.",
+        "quelle": "https://www.landkreis-osnabrueck.de/impressum-und-oeffnungszeiten"
+      },
+      {
+        "text": "Wunschkennzeichen werden getrennt für Landkreis und Stadt Osnabrück reserviert; die Reservierungsgebühr von 12,80 Euro wird bei der Zulassung bezahlt.",
+        "quelle": "https://www.landkreis-osnabrueck.de/fachthemen/ordnung-und-verkehr/verkehrsbehoerde-zulassungs-und-fuehrerscheinstelle"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-osterholz",
+    "stadt": "Landkreis Osterholz",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Osterholz – Straßenverkehrsamt, Sachgebiet Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-osterholz.de/fuer-buerger/dienstleistungen/auto-und-verkehr/kfz-zulassung/",
+    "traeger": "Landkreis Osterholz",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle im Kreishaus Osterholz-Scharmbeck",
+        "strasse": "Osterholzer Straße 23",
+        "plz": "27711",
+        "ort": "Osterholz-Scharmbeck",
+        "quelle": "https://www.landkreis-osterholz.de/fuer-buerger/dienstleistungen/auto-und-verkehr/kfz-zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-osterholz.de/fuer-buerger/dienstleistungen/auto-und-verkehr/kfz-zulassung/",
+      "quelle": "https://www.landkreis-osterholz.de/fuer-buerger/dienstleistungen/auto-und-verkehr/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termine.landkreis-osterholz.de/termine",
+      "quelle": "https://www.landkreis-osterholz.de/fuer-buerger/dienstleistungen/auto-und-verkehr/kfz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-osterholz-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=osterholz_kreis",
+      "quelle": "https://www.landkreis-osterholz.de/fuer-buerger/dienstleistungen/auto-und-verkehr/kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 8:00–12:00 und 14:00–16:00 Uhr",
+        "Di 8:00–18:00 Uhr",
+        "Mi 8:00–12:00 Uhr",
+        "Do 8:00–12:00 und 14:00–16:00 Uhr",
+        "Fr 8:00–12:00 Uhr"
+      ],
+      "hinweis": "Sämtliche Dienstleistungen im Straßenverkehrsamt nur nach vorheriger Terminvereinbarung.",
+      "quelle": "https://www.landkreis-osterholz.de/fuer-buerger/dienstleistungen/auto-und-verkehr/kfz-zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Landkreis Osterholz mit der Kreisstadt Osterholz-Scharmbeck, den Gemeinden Grasberg, Lilienthal, Ritterhude, Schwanewede und Worpswede sowie der Samtgemeinde Hambergen.",
+      "quelle": "https://www.landkreis-osterholz.de/unser-landkreis/der-landkreis-im-ueberblick/gemeinden-und-stadt/"
+    },
+    "kuerzel": [
+      {
+        "code": "OHZ",
+        "bedeutung": "Osterholz-Scharmbeck",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Vor Ort wird nicht bar bezahlt, sondern ausschließlich per Girocard, Debit- oder Kreditkarte sowie mit Google Pay oder Apple Pay.",
+        "quelle": "https://www.landkreis-osterholz.de/fuer-buerger/dienstleistungen/auto-und-verkehr/kfz-zulassung/"
+      },
+      {
+        "text": "Bitte 10 Minuten vor dem gebuchten Zeitfenster erscheinen.",
+        "quelle": "https://www.landkreis-osterholz.de/fuer-buerger/dienstleistungen/auto-und-verkehr/kfz-zulassung/"
+      },
+      {
+        "text": "Wunschkennzeichen werden online über wunschkennzeichen.kdo.de (Kreisschlüssel 03356) reserviert.",
+        "quelle": "https://www.landkreis-osterholz.de/fuer-buerger/dienstleistungen/auto-und-verkehr/kfz-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-peine",
+    "stadt": "Landkreis Peine",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Peine – Fachdienst Straßenverkehr, Team Zulassung",
+    "behoerdeQuelle": "https://www.landkreis-peine.de/Themen/Verkehr-Mobilit%C3%A4t/Zulassungsstelle/",
+    "traeger": "Landkreis Peine",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Peine (Fachdienst Straßenverkehr)",
+        "strasse": "Werner-Nordmeyer-Str. 17",
+        "plz": "31226",
+        "ort": "Peine",
+        "quelle": "https://www.landkreis-peine.de/Themen/Verkehr-Mobilit%C3%A4t/Zulassungsstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-peine.de/Themen/Verkehr-Mobilit%C3%A4t/Zulassungsstelle/",
+      "quelle": "https://www.landkreis-peine.de/Themen/Verkehr-Mobilit%C3%A4t/Zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://termin.landkreis-peine.de/select2?md=1",
+      "quelle": "https://www.landkreis-peine.de/Themen/Verkehr-Mobilit%C3%A4t/Zulassungsstelle/"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-peine-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=peine_kreis",
+      "quelle": "https://service.landkreis-peine.de/dienstleistungen/-/egov-bis-detail/dienstleistung/8333/show"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 8:00–13:00 Uhr",
+        "Di 8:00–13:00 und 14:00–16:00 Uhr",
+        "Mi 8:00–13:00 Uhr",
+        "Do 8:00–12:00 und 14:00–18:00 Uhr",
+        "Fr 8:00–12:00 Uhr"
+      ],
+      "hinweis": "Bearbeitung grundsätzlich nur nach vorheriger Terminvereinbarung. Ausnahme: Wartemarken für bestimmte Vorgänge (siehe Besonderheiten).",
+      "quelle": "https://www.landkreis-peine.de/Themen/Verkehr-Mobilit%C3%A4t/Zulassungsstelle/"
+    },
+    "zustaendigkeit": {
+      "text": "Landkreis Peine mit den Gemeinden Edemissen, Hohenhameln, Ilsede, Lengede, Peine, Vechelde und Wendeburg; Zulassungsstelle des Landkreises in Peine.",
+      "quelle": "https://www.landkreis-peine.de/Kreis-Politik/Einwohnerzahlen-und-Fl%C3%A4che/"
+    },
+    "kuerzel": [
+      {
+        "code": "PE",
+        "bedeutung": "Peine",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Ohne Termin: Wartemarken für Abmeldungen, Adressänderungen innerhalb des Landkreises, Kurzzeitkennzeichen und Namensänderungen ohne Halterwechsel gibt es vormittags sowie donnerstagnachmittags an der Infothek (dienstags 14–16 Uhr kein Sonderschalter).",
+        "quelle": "https://www.landkreis-peine.de/Themen/Verkehr-Mobilit%C3%A4t/Zulassungsstelle/"
+      },
+      {
+        "text": "Eine Abmeldung über das i-Kfz-Portal kostet 2,10 Euro Verwaltungsgebühr, vor Ort in der Zulassungsbehörde 15,90 Euro.",
+        "quelle": "https://service.landkreis-peine.de/dienstleistungen/-/egov-bis-detail/dienstleistung/8333/show"
+      },
+      {
+        "text": "Wunschkennzeichen werden online über wkz.landkreis-peine.de reserviert.",
+        "quelle": "https://www.landkreis-peine.de/Themen/Verkehr-Mobilit%C3%A4t/Zulassungsstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-rotenburg-wuemme",
+    "stadt": "Landkreis Rotenburg (Wümme)",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Rotenburg (Wümme) – Straßenverkehrsamt, Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.lk-row.de/portal/seiten/zulassung-1110-23700.html",
+    "traeger": "Landkreis Rotenburg (Wümme)",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassungsstelle Rotenburg (Wümme), Kreishaus",
+        "strasse": "Hopfengarten 2",
+        "plz": "27356",
+        "ort": "Rotenburg (Wümme)",
+        "quelle": "https://www.lk-row.de/portal/seiten/zulassung-1110-23700.html"
+      },
+      {
+        "bezeichnung": "KFZ-Zulassungsstelle Bremervörde, Kreishaus Bremervörde",
+        "strasse": "Amtsallee 7",
+        "plz": "27432",
+        "ort": "Bremervörde",
+        "quelle": "https://www.lk-row.de/portal/seiten/zulassung-1110-23700.html"
+      },
+      {
+        "bezeichnung": "KFZ-Zulassungsstelle Zeven",
+        "strasse": "Nelkenweg 70",
+        "plz": "27404",
+        "ort": "Zeven",
+        "quelle": "https://www.lk-row.de/portal/seiten/zulassung-1110-23700.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.lk-row.de/portal/seiten/zulassung-1110-23700.html",
+      "quelle": "https://www.lk-row.de/buergerservice/auto-und-verkehr/fuehrerschein-zulassung-bussgeld/"
+    },
+    "terminUrl": {
+      "url": "https://termin.lk-row.de/",
+      "quelle": "https://www.lk-row.de/portal/seiten/zulassung-1110-23700.html"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-rotenburg-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=rotenburg_kreis",
+      "quelle": "https://www.lk-row.de/portal/seiten/zulassung-1110-23700.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Rotenburg (Wümme): Mo und Di 7:30–11:30 und 14:00–15:30 Uhr",
+        "Rotenburg (Wümme): Mi 7:30–11:30 Uhr",
+        "Rotenburg (Wümme): Do 7:30–11:30 und 14:00–17:30 Uhr",
+        "Rotenburg (Wümme): Fr 7:30–11:30 Uhr",
+        "Bremervörde: Mo und Mi 7:30–11:30 und 14:00–15:30 Uhr",
+        "Bremervörde: Di 7:30–11:30 Uhr",
+        "Bremervörde: Do 7:30–11:30 und 14:00–17:30 Uhr",
+        "Bremervörde: Fr 7:30–11:30 Uhr",
+        "Zeven: Mo 7:30–11:30 Uhr",
+        "Zeven: Di und Mi 7:30–11:30 und 14:00–15:30 Uhr",
+        "Zeven: Do 7:30–11:30 und 14:00–17:30 Uhr",
+        "Zeven: Fr 7:30–11:30 Uhr"
+      ],
+      "hinweis": "Online-Termin möglich; alternativ weiterhin ohne Termin zu den Öffnungszeiten (Wartemarken).",
+      "quelle": "https://www.lk-row.de/portal/seiten/zulassung-1110-23700.html"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Rotenburg (Wümme) für An-, Ab- und Ummeldungen; das Straßenverkehrsamt unterhält dafür Zulassungsstellen in Rotenburg (Wümme), Bremervörde und Zeven.",
+      "quelle": "https://www.lk-row.de/portal/seiten/zulassung-1110-23700.html"
+    },
+    "kuerzel": [
+      {
+        "code": "ROW",
+        "bedeutung": "Rotenburg (Wümme)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BRV",
+        "bedeutung": "Bremervörde (Altkennzeichen, seit 2012 wieder ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termine können online für alle drei Zulassungsstellen gebucht werden; man kann aber weiterhin auch ohne Termin zu den Öffnungszeiten kommen.",
+        "quelle": "https://www.lk-row.de/portal/seiten/zulassung-1110-23700.html"
+      },
+      {
+        "text": "Bezahlt wird an der Kasse per EC-Karte mit PIN, VISA-Karte oder bar.",
+        "quelle": "https://www.lk-row.de/portal/seiten/zulassung-1110-23700.html"
+      },
+      {
+        "text": "Der größte Andrang herrscht meist montags und freitags sowie vor oder nach Feiertagen; empfohlen werden die frühen Morgenstunden oder der lange Donnerstag.",
+        "quelle": "https://www.lk-row.de/portal/seiten/zulassung-1110-23700.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-schaumburg",
+    "stadt": "Landkreis Schaumburg",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Schaumburg – Straßenverkehrsamt (Zulassungsbehörde)",
+    "behoerdeQuelle": "https://www.serviceportal-schaumburg.de/buergerservice/dienstleistungen/zulassung-fuer-neufahrzeug-900000360-0.html?myMedium=1&auswahl=0",
+    "traeger": "Landkreis Schaumburg",
+    "standorte": [
+      {
+        "bezeichnung": "Straßenverkehrsamt Stadthagen (Zulassungsstelle)",
+        "strasse": "Nordsehler Str. 38",
+        "plz": "31655",
+        "ort": "Stadthagen",
+        "quelle": "https://www.schaumburg.de/Landkreis/KFZ-Halter/"
+      },
+      {
+        "bezeichnung": "Zulassungsbehörde Außenstelle Rinteln",
+        "strasse": "Klosterstr. 20",
+        "plz": "31737",
+        "ort": "Rinteln",
+        "quelle": "https://www.schaumburg.de/Landkreis/KFZ-Halter/"
+      }
+    ],
+    "website": {
+      "url": "https://www.schaumburg.de/Landkreis/KFZ-Halter/",
+      "quelle": "https://www.schaumburg.de/Landkreis/KFZ-Halter/"
+    },
+    "terminUrl": {
+      "url": "https://www.serviceportal-schaumburg.de/buergerservice/online/angebot/online-terminvereinbarung-strassenverkehrsamt-standort-stadthagen-900000070-24500.html",
+      "quelle": "https://www.serviceportal-schaumburg.de/buergerservice/dienstleistungen/zulassung-fuer-neufahrzeug-900000360-0.html?myMedium=1&auswahl=0"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-schaumburg-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=schaumburg_kreis",
+      "quelle": "https://www.serviceportal-schaumburg.de/buergerservice/online/angebot/online-kfz-900000017-24500.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Stadthagen: Mo 8:00–13:00 Uhr",
+        "Stadthagen: Di–Mi 8:00–12:00 Uhr",
+        "Stadthagen: Do 8:00–12:00 und 13:00–16:00 Uhr",
+        "Stadthagen: Fr 8:00–12:00 Uhr",
+        "Rinteln: Mo 8:00–12:00 und 13:00–16:00 Uhr",
+        "Rinteln: Di und Mi 8:00–12:00 Uhr",
+        "Rinteln: Do 8:00–12:00 und 13:00–16:00 Uhr",
+        "Rinteln: Fr 8:00–12:00 Uhr"
+      ],
+      "hinweis": "Während der Öffnungszeiten auch ohne Termin; Online-Termin optional, keine telefonische Terminvereinbarung.",
+      "quelle": "https://www.schaumburg.de/Kreisverwaltung/%C3%96ffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Straßenverkehrsamt des Landkreises Schaumburg mit Zulassungsstelle in Stadthagen und Außenstelle Rinteln; zugelassen wird auf den Wohnort (bei mehreren Wohnungen Hauptwohnsitz) bzw. den Firmensitz im Landkreis Schaumburg.",
+      "quelle": "https://www.serviceportal-schaumburg.de/buergerservice/dienstleistungen/zulassung-fuer-neufahrzeug-900000360-0.html?myMedium=1&auswahl=0"
+    },
+    "kuerzel": [
+      {
+        "code": "SHG",
+        "bedeutung": "Stadthagen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "RI",
+        "bedeutung": "Rinteln (Altkennzeichen, seit 2012 wieder ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Anliegen können während der Öffnungszeiten ohne Termin erledigt werden; Online-Termine gibt es getrennt für Stadthagen und Rinteln, eine telefonische Terminvereinbarung wird nicht angeboten.",
+        "quelle": "https://www.serviceportal-schaumburg.de/buergerservice/dienstleistungen/zulassung-fuer-neufahrzeug-900000360-0.html?myMedium=1&auswahl=0"
+      },
+      {
+        "text": "Seit 01.05.2026 gilt auch in der Außenstelle Rinteln ausschließlich bargeldlose Zahlung; ein geeignetes bargeldloses Zahlungsmittel mitbringen.",
+        "quelle": "https://www.schaumburg.de/Landkreis/KFZ-Halter/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-stade",
+    "stadt": "Landkreis Stade",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Stade – Amt Straßenverkehr, Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-stade.de/leben-wohnen/verkehr/kfz-angelegenheiten/",
+    "traeger": "Landkreis Stade",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Stade",
+        "strasse": "Harburger Str. 193",
+        "plz": "21680",
+        "ort": "Stade",
+        "quelle": "https://www.landkreis-stade.de/buergerservice/dienstleistungen/erstzulassung-eines-fahrzeugs-neuzulassung-beantragen-900000103-0.html?selected_kommune=0"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungs-Außenstelle Buxtehude",
+        "strasse": "Ostmoorweg 3",
+        "plz": "21614",
+        "ort": "Buxtehude",
+        "quelle": "https://www.landkreis-stade.de/buergerservice/dienstleistungen/erstzulassung-eines-fahrzeugs-neuzulassung-beantragen-900000103-0.html?selected_kommune=0"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungs-Außenstelle Harsefeld (im Rathaus der Samtgemeinde)",
+        "strasse": "Herrenstr. 25",
+        "plz": "21698",
+        "ort": "Harsefeld",
+        "quelle": "https://www.landkreis-stade.de/buergerservice/dienstleistungen/erstzulassung-eines-fahrzeugs-neuzulassung-beantragen-900000103-0.html?selected_kommune=0"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungs-Außenstelle Himmelpforten (im Rathaus der Samtgemeinde)",
+        "strasse": "Mittelweg 2",
+        "plz": "21709",
+        "ort": "Himmelpforten",
+        "quelle": "https://www.landkreis-stade.de/buergerservice/dienstleistungen/erstzulassung-eines-fahrzeugs-neuzulassung-beantragen-900000103-0.html?selected_kommune=0"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-stade.de/leben-wohnen/verkehr/kfz-angelegenheiten/",
+      "quelle": "https://www.landkreis-stade.de/leben-wohnen/verkehr/kfz-angelegenheiten/"
+    },
+    "terminUrl": {
+      "url": "https://www.landkreis-stade.de/Terminvergabe",
+      "quelle": "https://www.landkreis-stade.de/buergerservice/dienstleistungen/erstzulassung-eines-fahrzeugs-neuzulassung-beantragen-900000103-0.html?selected_kommune=0"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-stade-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=stade_kreis",
+      "quelle": "https://www.landkreis-stade.de/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Stade und Buxtehude: Mo–Do 8:00–16:00 Uhr",
+        "Stade und Buxtehude: Fr 8:00–12:00 Uhr",
+        "Harsefeld (Annahmeschluss): Mo–Fr 7:30–11:30 Uhr",
+        "Harsefeld (Annahmeschluss): Mo–Mi 13:30–15:00 Uhr",
+        "Harsefeld (Annahmeschluss): Do 13:30–17:30 Uhr"
+      ],
+      "hinweis": "Sämtliche Zulassungsangelegenheiten nur nach vorheriger Terminvereinbarung. Für Himmelpforten sind keine Zeiten angegeben.",
+      "quelle": "https://www.landkreis-stade.de/buergerservice/dienstleistungen/erstzulassung-eines-fahrzeugs-neuzulassung-beantragen-900000103-0.html?selected_kommune=0"
+    },
+    "zustaendigkeit": {
+      "text": "Im Landkreis Stade stehen für Zulassungsangelegenheiten die Kfz-Zulassungsstelle Stade sowie die Außenstellen Buxtehude, Harsefeld und Himmelpforten zur Verfügung.",
+      "quelle": "https://www.landkreis-stade.de/buergerservice/dienstleistungen/erstzulassung-eines-fahrzeugs-neuzulassung-beantragen-900000103-0.html?selected_kommune=0"
+    },
+    "kuerzel": [
+      {
+        "code": "STD",
+        "bedeutung": "Stade",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Außenstellen in den Rathäusern der Samtgemeinden Harsefeld und Oldendorf-Himmelpforten haben eigene Online-Terminbuchungen; Stade und Buxtehude teilen sich eine.",
+        "quelle": "https://www.landkreis-stade.de/leben-wohnen/verkehr/kfz-angelegenheiten/"
+      },
+      {
+        "text": "Termine können auch per E-Mail an termin-zulassung@landkreis-stade.de vereinbart werden.",
+        "quelle": "https://www.landkreis-stade.de/buergerservice/verwaltung/strassenverkehr-901000018-20350.html"
+      },
+      {
+        "text": "Bei Kfz-Steuerrückständen oder offenen Gebühren aus früheren Zulassungsvorgängen wird die Zulassung verweigert; eine schriftliche Vollmacht ist auch unter Eheleuten nötig.",
+        "quelle": "https://www.landkreis-stade.de/buergerservice/dienstleistungen/erstzulassung-eines-fahrzeugs-neuzulassung-beantragen-900000103-0.html?selected_kommune=0"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-uelzen",
+    "stadt": "Landkreis Uelzen",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Uelzen – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-uelzen.de/home/sicherheit-ordnung-und-verkehr/verkehr/kfz-zulassung.aspx",
+    "traeger": "Landkreis Uelzen",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle im neuen Kreishaus",
+        "strasse": "Albrecht-Thaer-Str. 101",
+        "plz": "29525",
+        "ort": "Uelzen",
+        "quelle": "https://www.landkreis-uelzen.de/home/sicherheit-ordnung-und-verkehr/verkehr/kfz-zulassung.aspx"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-uelzen.de/home/sicherheit-ordnung-und-verkehr/verkehr/kfz-zulassung.aspx",
+      "quelle": "https://www.landkreis-uelzen.de/home/sicherheit-ordnung-und-verkehr/verkehr/kfz-zulassung.aspx"
+    },
+    "terminUrl": {
+      "url": "https://openkreishaus.landkreis-uelzen.de/dienstleistungen/-/egov-bis-detail/dienstleistung/1082/show",
+      "quelle": "https://www.landkreis-uelzen.de/home/sicherheit-ordnung-und-verkehr/verkehr/kfz-zulassung.aspx"
+    },
+    "ikfzUrl": {
+      "url": "https://openkreishaus.landkreis-uelzen.de/dienstleistungen/-/egov-bis-detail/dienstleistung/1087/show",
+      "quelle": "https://www.landkreis-uelzen.de/home/sicherheit-ordnung-und-verkehr/verkehr/kfz-zulassung.aspx"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 8:00–15:30 Uhr",
+        "Di 8:00–15:30 Uhr",
+        "Mi 8:00–12:00 Uhr",
+        "Do 8:00–12:00 und 13:30–17:00 Uhr",
+        "Fr 8:00–11:30 Uhr"
+      ],
+      "hinweis": "Allgemeine Erreichbarkeit; Anliegen werden grundsätzlich nur mit vorheriger Terminvereinbarung bearbeitet, Wartemarken nur in begrenzter Anzahl.",
+      "quelle": "https://www.landkreis-uelzen.de/home/sicherheit-ordnung-und-verkehr/verkehr/kfz-zulassung.aspx"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle des Landkreises Uelzen im Kreishaus Uelzen für Bürgerinnen und Bürger des Landkreises Uelzen.",
+      "quelle": "https://www.landkreis-uelzen.de/home/sicherheit-ordnung-und-verkehr/verkehr/kfz-zulassung.aspx"
+    },
+    "kuerzel": [
+      {
+        "code": "UE",
+        "bedeutung": "Uelzen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Bezahlt wird am Kassenautomaten im Wartebereich: bar, mit allen gängigen Kreditkarten oder EC-Karte.",
+        "quelle": "https://www.landkreis-uelzen.de/home/sicherheit-ordnung-und-verkehr/verkehr/kfz-zulassung.aspx"
+      },
+      {
+        "text": "Ohne Termin werden Wartemarken nur in begrenzter Anzahl und in einem begrenzten Zeitfenster ausgegeben, sofern Kapazitäten frei sind.",
+        "quelle": "https://www.landkreis-uelzen.de/home/sicherheit-ordnung-und-verkehr/verkehr/kfz-zulassung.aspx"
+      },
+      {
+        "text": "Die Zulassungsstelle ist ins neue Kreishaus an der Albrecht-Thaer-Str. 101 umgezogen.",
+        "quelle": "https://www.landkreis-uelzen.de/home/sicherheit-ordnung-und-verkehr/verkehr/kfz-zulassung.aspx"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-vechta",
+    "stadt": "Landkreis Vechta",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Vechta – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-vechta.de/themen/ordnung-verkehr/kfz-zulassung",
+    "traeger": "Landkreis Vechta",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Vechta",
+        "strasse": "Ravensberger Straße 20",
+        "plz": "49377",
+        "ort": "Vechta",
+        "quelle": "https://www.landkreis-vechta.de/themen/ordnung-verkehr/kfz-zulassung"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Damme",
+        "strasse": "Südring 32",
+        "plz": "49401",
+        "ort": "Damme",
+        "quelle": "https://www.landkreis-vechta.de/themen/ordnung-verkehr/kfz-zulassung"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-vechta.de/themen/ordnung-verkehr/kfz-zulassung",
+      "quelle": "https://www.landkreis-vechta.de/themen/ordnung-verkehr/kfz-zulassung"
+    },
+    "terminUrl": {
+      "url": "https://tempus-termine.com/termine/index.php?anlagennr=129&anlagentoken=yRt71HsP&anwendung=1",
+      "quelle": "https://www.landkreis-vechta.de/themen/ordnung-verkehr/kfz-zulassung"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-vechta-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=vechta_kreis",
+      "quelle": "https://www.landkreis-vechta.de/themen/ordnung-verkehr/kfz-zulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Vechta: Mo–Do 7:30–15:00 Uhr",
+        "Vechta: Fr 7:30–12:30 Uhr",
+        "Damme: Mo–Fr 8:00–12:00 Uhr"
+      ],
+      "hinweis": "Termine nur über die Online-Terminreservierung.",
+      "quelle": "https://www.landkreis-vechta.de/service/kontakt-oeffnungszeiten"
+    },
+    "zustaendigkeit": {
+      "text": "Landkreis Vechta; für Neuzulassung, Abmeldung oder Umschreibung sind die Kfz-Zulassungsstellen in Vechta und Damme zuständig.",
+      "quelle": "https://www.landkreis-vechta.de/themen/ordnung-verkehr/kfz-zulassung"
+    },
+    "kuerzel": [
+      {
+        "code": "VEC",
+        "bedeutung": "Vechta",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Kennzeichenverstärker mit dem Aufdruck „Landkreis Vechta – Starke Argumente“ gibt es für 2 Euro pro Paar.",
+        "quelle": "https://www.landkreis-vechta.de/themen/ordnung-verkehr/kfz-zulassung"
+      },
+      {
+        "text": "Es werden täglich weitere, auch kurzfristige Termine freigegeben; bei Ausbuchung in den nächsten Tagen erneut nachsehen.",
+        "quelle": "https://www.landkreis-vechta.de/themen/ordnung-verkehr/kfz-zulassung"
+      },
+      {
+        "text": "Kostenloses Parken im Parkhaus der Kreisverwaltung an der Johannesstraße.",
+        "quelle": "https://www.landkreis-vechta.de/service/kontakt-oeffnungszeiten"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-verden",
+    "stadt": "Landkreis Verden",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Verden – Fachdienst Ordnung und Verkehr, Kraftfahrzeug-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.landkreis-verden.de/verkehr-sicherheit-ordnung/kfz-zulassung/kontakt-oeffnungszeiten/",
+    "traeger": "Landkreis Verden",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde (Anbau des Landkreisgebäudes)",
+        "strasse": "Lindhooper Straße 67",
+        "plz": "27283",
+        "ort": "Verden (Aller)",
+        "quelle": "https://www.landkreis-verden.de/verkehr-sicherheit-ordnung/kfz-zulassung/kontakt-oeffnungszeiten/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-verden.de/verkehr-sicherheit-ordnung/kfz-zulassung/",
+      "quelle": "https://www.landkreis-verden.de/"
+    },
+    "terminUrl": {
+      "url": "https://landkreis-verden.termine-reservieren.online/",
+      "quelle": "https://www.landkreis-verden.de/verkehr-sicherheit-ordnung/kfz-zulassung/online-terminvereinbarung/"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-verden-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=verden_kreis",
+      "quelle": "https://www.landkreis-verden.de/verkehr-sicherheit-ordnung/kfz-zulassung/i-kfz-internetbasierte-fahrzeugzulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo und Di 7:30–15:30 Uhr (durchgehend)",
+        "Mi und Fr 7:30–12:00 Uhr",
+        "Do 8:00–12:00 und 14:00–18:00 Uhr"
+      ],
+      "hinweis": "Nur für Terminkunden geöffnet. Ausnahmen: dienstags 7:30–14:30 Uhr Tickets ohne Termin für Privatkunden; reine Abmeldungen und Kurzzeitkennzeichen ohne Termin.",
+      "quelle": "https://www.landkreis-verden.de/verkehr-sicherheit-ordnung/kfz-zulassung/kontakt-oeffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Kraftfahrzeug-Zulassungsbehörde des Landkreises Verden mit Sitz in Verden (Aller); laut Landkreis zuständig für alle Angelegenheiten, die das Fahrzeug betreffen.",
+      "quelle": "https://www.landkreis-verden.de/verkehr-sicherheit-ordnung/kfz-zulassung/hinweise-fuer-ihren-besuch/"
+    },
+    "kuerzel": [
+      {
+        "code": "VER",
+        "bedeutung": "Verden",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "An jedem Dienstag können Privatkunden von 7:30 bis 14:30 Uhr vor Ort ein Ticket ziehen und ohne Termin zulassen; je nach Andrang mit Wartezeit.",
+        "quelle": "https://www.landkreis-verden.de/verkehr-sicherheit-ordnung/kfz-zulassung/kontakt-oeffnungszeiten/"
+      },
+      {
+        "text": "Online-Termine nur für Privatkunden mit höchstens drei Vorgängen; Händler, Zulassungsdienste und Kunden mit mehr Vorgängen geben Unterlagen am Großkundenschalter ab.",
+        "quelle": "https://www.landkreis-verden.de/verkehr-sicherheit-ordnung/kfz-zulassung/online-terminvereinbarung/"
+      },
+      {
+        "text": "Bezahlt wird per EC-Karte mit PIN oder bar am Kassenautomaten; Kreditkarten werden nicht akzeptiert.",
+        "quelle": "https://www.landkreis-verden.de/verkehr-sicherheit-ordnung/kfz-zulassung/hinweise-fuer-ihren-besuch/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-wesermarsch",
+    "stadt": "Landkreis Wesermarsch",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Wesermarsch – Zulassungsstelle",
+    "behoerdeQuelle": "https://wesermarsch.de/services/fahrzeug-und-verkehr/fahrzeugzulassung-_zulassung/",
+    "traeger": "Landkreis Wesermarsch",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Brake (Hauptstelle)",
+        "strasse": "Poggenburger Str. 15",
+        "plz": "26919",
+        "ort": "Brake",
+        "quelle": "https://wesermarsch.de/services/fahrzeug-und-verkehr/fahrzeugzulassung-_zulassung/"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Nordenham (Zweigstelle)",
+        "strasse": "Walther-Rathenau-Str. 25",
+        "plz": "26954",
+        "ort": "Nordenham",
+        "quelle": "https://wesermarsch.de/services/fahrzeug-und-verkehr/fahrzeugzulassung-_zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://wesermarsch.de/services/fahrzeug-und-verkehr/fahrzeugzulassung-_zulassung/",
+      "quelle": "https://wesermarsch.de/services/fahrzeug-und-verkehr/fahrzeugzulassung-_zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://terminreservierung.landkreis-wesermarsch.de/qmaticwebbooking/#/",
+      "quelle": "https://wesermarsch.de/services/fahrzeug-und-verkehr/fahrzeugzulassung-_zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-wesermarsch-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=wesermarsch_kreis",
+      "quelle": "https://wesermarsch.de/services/fahrzeug-und-verkehr/fahrzeugzulassung-_zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Brake: Mo–Mi 7:30–15:30 Uhr",
+        "Brake: Do 7:30–16:30 Uhr",
+        "Brake: Fr 7:30–12:00 Uhr",
+        "Nordenham: Mo–Fr 8:00–11:15 Uhr"
+      ],
+      "hinweis": "Vorherige Terminreservierung erforderlich.",
+      "quelle": "https://wesermarsch.de/services/fahrzeug-und-verkehr/fahrzeugzulassung-_zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Landkreis Wesermarsch; für An-, Ab- und Ummeldungen stehen in der Wesermarsch zwei Standorte zur Verfügung: die Hauptstelle in Brake und die Zweigstelle in Nordenham.",
+      "quelle": "https://wesermarsch.de/services/fahrzeug-und-verkehr/fahrzeugzulassung-_zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "BRA",
+        "bedeutung": "Brake (Unterweser)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Zweigstelle Nordenham hat nur vormittags geöffnet (Mo–Fr 8:00–11:15 Uhr).",
+        "quelle": "https://wesermarsch.de/services/fahrzeug-und-verkehr/fahrzeugzulassung-_zulassung/"
+      },
+      {
+        "text": "Wunschkennzeichen lassen sich direkt über wunschkennzeichen.kdo.de (Kreisschlüssel 03461) reservieren.",
+        "quelle": "https://wesermarsch.de/services/fahrzeug-und-verkehr/fahrzeugzulassung-_zulassung/"
+      },
+      {
+        "text": "Im Fahrzeugschein und Fahrzeugbrief wird nur der Halter eingetragen, weitere Fahrer nicht; der Halter muss den Versicherungsschutz für andere Fahrer mit seiner Versicherung klären.",
+        "quelle": "https://wesermarsch.de/services/fahrzeug-und-verkehr/fahrzeugzulassung-_zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-wittmund",
+    "stadt": "Landkreis Wittmund",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Wittmund – Kfz.-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-wittmund.de/Leben-Wohnen/Wohnen/Verkehr/KFZ-Zulassung/",
+    "traeger": "Landkreis Wittmund",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz.-Zulassungsstelle (Verwaltungsgebäude II)",
+        "strasse": "Schloßstraße 11",
+        "plz": "26409",
+        "ort": "Wittmund",
+        "quelle": "https://www.landkreis-wittmund.de/Leben-Wohnen/Wohnen/Verkehr/KFZ-Zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-wittmund.de/Leben-Wohnen/Wohnen/Verkehr/KFZ-Zulassung/",
+      "quelle": "https://www.landkreis-wittmund.de/Leben-Wohnen/Wohnen/Verkehr/KFZ-Zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/wittmund/stva/?rs",
+      "quelle": "https://www.landkreis-wittmund.de/Leben-Wohnen/Wohnen/Verkehr/KFZ-Zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-wittmund-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=wittmund_kreis",
+      "quelle": "https://www.landkreis-wittmund.de/Leben-Wohnen/Wohnen/Verkehr/KFZ-Zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Fr 7:30–12:00 Uhr",
+        "Do zusätzlich 14:00–16:30 Uhr"
+      ],
+      "hinweis": "Zulassung nur mit Termin.",
+      "quelle": "https://www.landkreis-wittmund.de/Leben-Wohnen/Wohnen/Verkehr/KFZ-Zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz.-Zulassungsstelle des Landkreises Wittmund mit Sitz in Wittmund für den Landkreis Wittmund.",
+      "quelle": "https://www.landkreis-wittmund.de/Leben-Wohnen/Wohnen/Verkehr/KFZ-Zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "WTM",
+        "bedeutung": "Wittmund",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Der Kassenautomat wird zum 31.12.2026 außer Betrieb genommen; danach wird nur noch per Girocard, Kreditkarte oder kontaktlos per Smartphone bezahlt.",
+        "quelle": "https://www.landkreis-wittmund.de/Leben-Wohnen/Wohnen/Verkehr/KFZ-Zulassung/"
+      },
+      {
+        "text": "Nach der Online-Buchung kommen QR-Code und Kennung per E-Mail; erfolgt zehn Minuten nach Terminbeginn keine Anmeldung an der Aufrufanlage, wird der Termin automatisch storniert.",
+        "quelle": "https://www.landkreis-wittmund.de/Leben-Wohnen/Wohnen/Verkehr/KFZ-Zulassung/"
+      },
+      {
+        "text": "Telefonische Terminvergabe Mo–Fr 7:30–8:30 Uhr unter 04462 86 1725, nur wenn keine Selbstbuchung möglich ist.",
+        "quelle": "https://www.landkreis-wittmund.de/Leben-Wohnen/Wohnen/Verkehr/KFZ-Zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-wolfenbuettel",
+    "stadt": "Landkreis Wolfenbüttel",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Wolfenbüttel – Abteilung 320 Straßenverkehr (KFZ-Zulassungsstelle)",
+    "behoerdeQuelle": "https://www.lkwf.de/Themen-Leistungen/Themen/Verkehr-Mobilit%C3%A4t/Zulassung/",
+    "traeger": "Landkreis Wolfenbüttel",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassungsstelle (Abteilung 320 Straßenverkehr)",
+        "strasse": "Halchtersche Straße 26",
+        "plz": "38304",
+        "ort": "Wolfenbüttel",
+        "quelle": "https://www.lkwf.de/Themen-Leistungen/Themen/Verkehr-Mobilit%C3%A4t/Zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.lkwf.de/Themen-Leistungen/Themen/Verkehr-Mobilit%C3%A4t/Zulassung/",
+      "quelle": "https://www.lkwf.de/Themen-Leistungen/Themen/Verkehr-Mobilit%C3%A4t/Zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termine.lkwf.de/",
+      "quelle": "https://www.lkwf.de/Themen-Leistungen/Themen/Verkehr-Mobilit%C3%A4t/Zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-wolfenbuettel-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=wolfenbuettel_kreis",
+      "quelle": "https://www.lkwf.de/Themen-Leistungen/Themen/Verkehr-Mobilit%C3%A4t/Zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Fr 8:00–12:30 Uhr",
+        "Mo 14:00–16:00 Uhr",
+        "Do 14:00–18:00 Uhr"
+      ],
+      "hinweis": "Die KFZ-Zulassungsstelle arbeitet ausschließlich mit Terminvergaben (Zeiten der Abteilung 320 Straßenverkehr).",
+      "quelle": "https://www.lkwf.de/Themen-Leistungen/Themen/Verkehr-Mobilit%C3%A4t/Zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Abteilung 320 Straßenverkehr (KFZ-Zulassungsstelle) des Landkreises Wolfenbüttel. Bei Ausfuhrkennzeichen ist sie nur zuständig, wenn der Antragsteller bzw. sein Empfangsbevollmächtigter im Landkreis Wolfenbüttel wohnt.",
+      "quelle": "https://www.lkwf.de/Themen-Leistungen/Themen/Verkehr-Mobilit%C3%A4t/Zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "WF",
+        "bedeutung": "Wolfenbüttel",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termine im Ausnahmefall auch telefonisch oder per E-Mail buchbar; die telefonische Erreichbarkeit ist laut Landkreis teilweise eingeschränkt.",
+        "quelle": "https://www.lkwf.de/Themen-Leistungen/Themen/Verkehr-Mobilit%C3%A4t/Zulassung/"
+      },
+      {
+        "text": "Kartenzahlung ist bei den Zulassungsvorgängen möglich.",
+        "quelle": "https://www.lkwf.de/Themen-Leistungen/Themen/Verkehr-Mobilit%C3%A4t/Zulassung/"
+      },
+      {
+        "text": "Ausfuhrkennzeichen: Wer keinen Wohnsitz im Landkreis hat, braucht einen Empfangsbevollmächtigten mit Wohnsitz im Landkreis Wolfenbüttel; das Fahrzeug muss vorgeführt werden.",
+        "quelle": "https://www.lkwf.de/Themen-Leistungen/Themen/Verkehr-Mobilit%C3%A4t/Zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

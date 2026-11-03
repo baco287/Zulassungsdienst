@@ -1,0 +1,883 @@
+[
+  {
+    "slug": "landkreis-altenkirchen",
+    "stadt": "Landkreis Altenkirchen (Westerwald)",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Kreisverwaltung Altenkirchen – Abteilung Ordnung und Verkehr, Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.kreis-altenkirchen.de/INTERNET/B%C3%BCrgerservice/Was-erledige-ich-wo-/Kfz-Zulassung-Neuzulassung-eines-Fahrzeugs.php?object=tx,2154.10.1&ModID=10&FID=2154.124.1&NavID=2154.13&ort=",
+    "traeger": "Landkreis Altenkirchen (Westerwald)",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsbehörde Altenkirchen",
+        "strasse": "Rathausstraße 12",
+        "plz": "57610",
+        "ort": "Altenkirchen",
+        "quelle": "https://www.kreis-altenkirchen.de/INTERNET/B%C3%BCrgerservice/Was-erledige-ich-wo-/Kfz-Zulassung-Neuzulassung-eines-Fahrzeugs.php?object=tx,2154.10.1&ModID=10&FID=2154.124.1&NavID=2154.13&ort="
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Kirchen (Außenstelle der Kreisverwaltung im Rathaus der VG Kirchen)",
+        "strasse": "Lindenstraße 1",
+        "plz": "57548",
+        "ort": "Kirchen (Sieg)",
+        "quelle": "https://www.kirchen-sieg.de/buergerservice/zulassung"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-altenkirchen.de/INTERNET/B%C3%BCrgerservice/Was-erledige-ich-wo-/index.php?ModID=10&NavID=2154.13&kat=570.2",
+      "quelle": "https://www.kreis-altenkirchen.de/INTERNET/B%C3%BCrgerservice/Was-erledige-ich-wo-/index.php?ModID=10&NavID=2154.13&kat=570.2"
+    },
+    "terminUrl": {
+      "url": "https://timeacle.com/business/index/id/1672",
+      "quelle": "https://www.kreis-altenkirchen.de/INTERNET/B%C3%BCrgerservice/Online-Dienste/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.203545689&leistungId=99036020001000&p=071320",
+      "quelle": "https://www.kreis-altenkirchen.de/INTERNET/B%C3%BCrgerservice/Online-Dienste/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Altenkirchen: Mo–Fr 08:00–11:30 Uhr ohne Terminvergabe",
+        "Altenkirchen: Mo–Mi 13:30–16:00 Uhr nur mit Terminvergabe",
+        "Altenkirchen: Do 13:30–18:00 Uhr nur mit Terminvergabe",
+        "Kirchen (Sieg): Mo–Fr 08:00–12:00 Uhr ohne Terminvereinbarung"
+      ],
+      "hinweis": "Vormittags ohne Termin, nachmittags nur mit Termin. In Altenkirchen kann die Annahme schon vor 11:30 Uhr enden, wenn absehbar ist, dass die Bearbeitung nicht mehr abgeschlossen werden kann. Die Nachmittagszeiten in Kirchen sind wegen abweichender Angaben (13:00 bzw. 13:30 Uhr) nicht aufgeführt.",
+      "quelle": "https://www.kreis-altenkirchen.de/INTERNET/B%C3%BCrgerservice/%C3%96ffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständige Behörde für Kfz-Zulassungen im Landkreis Altenkirchen (Westerwald) ist die Kreisverwaltung Altenkirchen, Abteilung Ordnung und Verkehr, mit der Zulassungsbehörde in Altenkirchen und einer Außenstelle in Kirchen (Sieg).",
+      "quelle": "https://www.kreis-altenkirchen.de/INTERNET/B%C3%BCrgerservice/Was-erledige-ich-wo-/Kfz-Zulassung-Neuzulassung-eines-Fahrzeugs.php?object=tx,2154.10.1&ModID=10&FID=2154.124.1&NavID=2154.13&ort="
+    },
+    "kuerzel": [
+      {
+        "code": "AK",
+        "bedeutung": "Altenkirchen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Außenstelle in Kirchen (Sieg) liegt rechts neben dem Haupteingang des Rathauses Kirchen und ist barrierefrei erreichbar; Termine dort online über die VG Kirchen oder Tel. 02741/688228.",
+        "quelle": "https://www.kirchen-sieg.de/buergerservice/zulassung"
+      },
+      {
+        "text": "Für die Neuzulassung nennt die Kreisverwaltung u. a. eine EC-Karte als notwendige Unterlage; bei Vertretung zusätzlich Vollmacht, Ausweis des Halters (Kopie genügt) und Kopie der EC-Karte.",
+        "quelle": "https://www.kreis-altenkirchen.de/INTERNET/B%C3%BCrgerservice/Was-erledige-ich-wo-/Kfz-Zulassung-Neuzulassung-eines-Fahrzeugs.php?object=tx,2154.10.1&ModID=10&FID=2154.124.1&NavID=2154.13&ort="
+      },
+      {
+        "text": "Neuzulassung/Ummeldung, Außerbetriebsetzung, Wunschkennzeichen und Leasingbriefauskunft sind als Online-Dienste über das Behörden-Serviceportal verfügbar.",
+        "quelle": "https://www.kreis-altenkirchen.de/INTERNET/B%C3%BCrgerservice/Online-Dienste/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-alzey-worms",
+    "stadt": "Landkreis Alzey-Worms",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Kreisverwaltung Alzey-Worms – Referat 32 Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.kreis-alzey-worms.de/ueber-uns/die-kreisverwaltung-stellt-sich-vor/abteilungen-und-referate/referate/referat-32-kfz-zulassung/",
+    "traeger": "Landkreis Alzey-Worms",
+    "standorte": [
+      {
+        "bezeichnung": "Referat 32 – Kfz-Zulassung (Neubau)",
+        "strasse": "An der Hexenbleiche 34",
+        "plz": "55232",
+        "ort": "Alzey",
+        "quelle": "https://www.kreis-alzey-worms.de/dienstleistungen/fahrzeuge-an-um-oder-abmelden/"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-alzey-worms.de/ueber-uns/die-kreisverwaltung-stellt-sich-vor/abteilungen-und-referate/referate/referat-32-kfz-zulassung/",
+      "quelle": "https://www.kreis-alzey-worms.de/ueber-uns/die-kreisverwaltung-stellt-sich-vor/abteilungen-und-referate/referate/referat-32-kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/alzey-worms/select2?md=2",
+      "quelle": "https://www.kreis-alzey-worms.de/mein-anliegen/unsere-leistungen-fuer-sie/online-terminvergabe-1/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?processInstanceId=c%3AAaCPFRqRdFi6RgPgRABJBA",
+      "quelle": "https://www.kreis-alzey-worms.de/ueber-uns/die-kreisverwaltung-stellt-sich-vor/abteilungen-und-referate/referate/referat-32-kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Do 07:30–13:00 Uhr",
+        "Mo und Di 14:00–16:00 Uhr",
+        "Do 14:00–18:00 Uhr",
+        "Fr 07:30–12:00 Uhr"
+      ],
+      "hinweis": "Terminvergabe online oder unter 06731 408 7333; Info-Telefon 06731 408 7009.",
+      "quelle": "https://www.kreis-alzey-worms.de/ueber-uns/die-kreisverwaltung-stellt-sich-vor/abteilungen-und-referate/referate/referat-32-kfz-zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Referat 32 der Kreisverwaltung Alzey-Worms ist zuständig für Bürgerinnen und Bürger mit Wohnsitz im Landkreis Alzey-Worms, gewerbliche Kunden und Zulassungsdienste (An- und Abmeldung, Wiederzulassung, Umschreibung, Fahrzeugpapiere, Kennzeichen). Nicht zuständig ist es für Führerscheine (Führerscheinstelle), Kfz-Steuer (Zollämter) und Parkausweise (Stadt oder Verbandsgemeinde).",
+      "quelle": "https://www.kreis-alzey-worms.de/ueber-uns/die-kreisverwaltung-stellt-sich-vor/abteilungen-und-referate/referate/referat-32-kfz-zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "AZ",
+        "bedeutung": "Alzey",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Kfz-Zulassung sitzt im Neubau An der Hexenbleiche 34 in Alzey, nicht im Hauptgebäude der Kreisverwaltung (Ernst-Ludwig-Straße 36).",
+        "quelle": "https://www.kreis-alzey-worms.de/dienstleistungen/fahrzeuge-an-um-oder-abmelden/"
+      },
+      {
+        "text": "Fahrzeuge ohne in Deutschland ausgestellte Zulassungsbescheinigung Teil II (z. B. Importe) sowie Fahrzeuge für Ausfuhrkennzeichen müssen bei der Zulassungsbehörde vorgeführt werden.",
+        "quelle": "https://www.kreis-alzey-worms.de/dienstleistungen/fahrzeuge-an-um-oder-abmelden/"
+      },
+      {
+        "text": "Die Kfz-Zulassung bietet einen gesicherten, DSGVO-konformen Nachrichtenversand über send.kreis-alzey-worms.eu an.",
+        "quelle": "https://www.kreis-alzey-worms.de/ueber-uns/die-kreisverwaltung-stellt-sich-vor/abteilungen-und-referate/referate/referat-32-kfz-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-bad-duerkheim",
+    "stadt": "Landkreis Bad Dürkheim",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Kreisverwaltung Bad Dürkheim – Kraftfahrzeugzulassung, Kfz-Zulassungsbehörde, Personenbeförderungsgesetz (Ref. 33)",
+    "behoerdeQuelle": "https://www.kreis-bad-duerkheim.de/buergerservice-1/abteilungen/RLP:department:263507/kraftfahrzeugzulassung-kfz-zulassungsbehoerde-personenbefoerderungsgesetz-ref-33/",
+    "traeger": "Landkreis Bad Dürkheim",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassung im Kreishaus Bad Dürkheim",
+        "strasse": "Philipp-Fauth-Straße 11",
+        "plz": "67098",
+        "ort": "Bad Dürkheim",
+        "quelle": "https://www.kreis-bad-duerkheim.de/buergerservice-1/abteilungen/RLP:department:263507/kraftfahrzeugzulassung-kfz-zulassungsbehoerde-personenbefoerderungsgesetz-ref-33/"
+      },
+      {
+        "bezeichnung": "Kfz-Servicestelle Leiningerland (bei der Verbandsgemeindeverwaltung Leiningerland)",
+        "strasse": "Industriestraße 11",
+        "plz": "67269",
+        "ort": "Grünstadt",
+        "quelle": "https://www.kreis-bad-duerkheim.de/buergerservice-1/abteilungen/RLP:department:263508/kfz-servicestelle-leiningerland/"
+      },
+      {
+        "bezeichnung": "Kfz-Servicestelle Lambrecht (bei der Verbandsgemeindeverwaltung Lambrecht)",
+        "strasse": "Sommerbergstraße 3",
+        "plz": "67466",
+        "ort": "Lambrecht (Pfalz)",
+        "quelle": "https://www.kreis-bad-duerkheim.de/buergerservice-1/abteilungen/RLP:department:263509/kfz-servicestelle-lambrecht/"
+      },
+      {
+        "bezeichnung": "Kfz-Servicestelle Haßloch (bei der Gemeindeverwaltung Haßloch – Bürgerbüro)",
+        "strasse": "Langgasse 64",
+        "plz": "67454",
+        "ort": "Haßloch",
+        "quelle": "https://www.kreis-bad-duerkheim.de/buergerservice-1/abteilungen/RLP:department:263510/kfz-servicestelle-hassloch/"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-bad-duerkheim.de/buergerservice-1/abteilungen/RLP:department:263507/kraftfahrzeugzulassung-kfz-zulassungsbehoerde-personenbefoerderungsgesetz-ref-33/",
+      "quelle": "https://www.kreis-bad-duerkheim.de/buergerservice-1/abteilungen/RLP:department:263507/kraftfahrzeugzulassung-kfz-zulassungsbehoerde-personenbefoerderungsgesetz-ref-33/"
+    },
+    "terminUrl": null,
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.202335781&leistungId=99036020001000&p=073320",
+      "quelle": "https://www.kreis-bad-duerkheim.de/buergerservice-1/leistungen/RLP:entry:72327:ANLR-VLR/kfz-kfz-zulassung-online/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Bad Dürkheim (Kreishaus): Mo 07:30–12:30 und 14:00–15:30 Uhr",
+        "Bad Dürkheim (Kreishaus): Di, Mi 07:30–12:30 Uhr",
+        "Bad Dürkheim (Kreishaus): Do 07:30–12:30 und 14:00–17:30 Uhr",
+        "Bad Dürkheim (Kreishaus): Fr 07:30–11:30 Uhr",
+        "Lambrecht (Pfalz): Mo 08:30–11:30 und 13:30–15:30 Uhr",
+        "Lambrecht (Pfalz): Di, Mi 08:30–11:30 Uhr",
+        "Lambrecht (Pfalz): Do 08:30–11:30 und 13:30–15:30 Uhr",
+        "Lambrecht (Pfalz): Fr 08:30–11:30 Uhr",
+        "Haßloch: Mo 08:00–12:30 und 14:00–15:30 Uhr",
+        "Haßloch: Di 08:00–12:30 Uhr",
+        "Haßloch: Mi 08:00–11:30 Uhr",
+        "Haßloch: Do 08:00–12:30 und 14:00–16:30 Uhr",
+        "Haßloch: Fr 08:00–11:30 Uhr"
+      ],
+      "hinweis": "Kreishaus Bad Dürkheim ohne Termin; Servicestellen Lambrecht, Haßloch und Leiningerland (Grünstadt) nur nach Terminvereinbarung. Die Zeiten der Servicestelle Leiningerland sind wegen abweichender Angaben nicht aufgeführt.",
+      "quelle": "https://www.kreis-bad-duerkheim.de/buergerservice-1/abteilungen/RLP:department:263507/kraftfahrzeugzulassung-kfz-zulassungsbehoerde-personenbefoerderungsgesetz-ref-33/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde ist die Kreisverwaltung Bad Dürkheim (Ref. 33 in der Abteilung 3 Ordnung und Verkehr) mit Hauptstelle im Kreishaus Bad Dürkheim und Kfz-Servicestellen in Grünstadt (Leiningerland), Lambrecht (Pfalz) und Haßloch.",
+      "quelle": "https://www.kreis-bad-duerkheim.de/buergerservice-1/abteilungen/RLP:department:263507/kraftfahrzeugzulassung-kfz-zulassungsbehoerde-personenbefoerderungsgesetz-ref-33/"
+    },
+    "kuerzel": [
+      {
+        "code": "DÜW",
+        "bedeutung": "Dürkheim an der Weinstraße (Bad Dürkheim)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Im Kreishaus Bad Dürkheim kann die Kfz-Zulassung weiterhin ohne Termin besucht werden; in den Außenstellen Grünstadt, Lambrecht und Haßloch wird mit Terminvergabe gearbeitet.",
+        "quelle": "https://www.kreis-bad-duerkheim.de/buergerservice-1/abteilungen/RLP:department:263507/kraftfahrzeugzulassung-kfz-zulassungsbehoerde-personenbefoerderungsgesetz-ref-33/"
+      },
+      {
+        "text": "Wunschkennzeichen lassen sich online über das KFZ-Online-Portal (kfzonline.ekom21.de) reservieren.",
+        "quelle": "https://www.kreis-bad-duerkheim.de/buergerservice-1/leistungen/RLP:entry:72327:ANLR-VLR/kfz-kfz-zulassung-online/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "terminUrl"
+    ]
+  },
+  {
+    "slug": "landkreis-bad-kreuznach",
+    "stadt": "Landkreis Bad Kreuznach",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Kreisverwaltung Bad Kreuznach – Amt 3 Sicherheit, Ordnung und Verkehr, Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.kreis-badkreuznach.de/kreisverwaltung/organisation/amt-3-sicherheit-ordnung-und-verkehr/verkehr/kfz-zulassung/",
+    "traeger": "Landkreis Bad Kreuznach",
+    "standorte": [],
+    "website": {
+      "url": "https://www.kreis-badkreuznach.de/kreisverwaltung/organisation/amt-3-sicherheit-ordnung-und-verkehr/verkehr/kfz-zulassung/",
+      "quelle": "https://www.kreis-badkreuznach.de/kreisverwaltung/organisation/amt-3-sicherheit-ordnung-und-verkehr/verkehr/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/badkreuznach/select2?md=1",
+      "quelle": "https://www.kreis-badkreuznach.de/kreisverwaltung/organisation/amt-3-sicherheit-ordnung-und-verkehr/verkehr/kfz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.237256221&leistungId=99036020001000&p=071330",
+      "quelle": "https://www.kreis-badkreuznach.de/kreisverwaltung/organisation/amt-3-sicherheit-ordnung-und-verkehr/verkehr/kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Hauptstelle Bad Kreuznach: Mo–Fr 7:30–12:00 Uhr (Annahmeschluss 11:45 Uhr)",
+        "Hauptstelle Bad Kreuznach: Do zusätzlich 14:00–18:00 Uhr (Annahmeschluss 17:45 Uhr)",
+        "Außenstelle Kirn: Mo–Fr 7:30–11:00 Uhr"
+      ],
+      "hinweis": "Bevorzugt nach vorheriger Online-Terminvereinbarung. Ohne Termin nur sehr eingeschränkt mit Wartemarke; sind die Kapazitäten ausgeschöpft, werden keine Wartemarken mehr ausgegeben.",
+      "quelle": "https://www.kreis-badkreuznach.de/kreisverwaltung/organisation/amt-3-sicherheit-ordnung-und-verkehr/verkehr/kfz-zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Die Kreisverwaltung ist zuständig für Einwohner und Firmen der Verbandsgemeinden Bad Kreuznach, Kirner Land, Langenlonsheim-Stromberg, Nahe-Glan und Rüdesheim. Wer in der Stadt Bad Kreuznach wohnt (einschließlich Bad Münster am Stein-Ebernburg, Bosenheim, Ippesheim, Planig und Winzenheim), muss sich an die eigene Zulassungsbehörde der Stadt Bad Kreuznach wenden.",
+      "quelle": "https://www.kreis-badkreuznach.de/kreisverwaltung/organisation/amt-3-sicherheit-ordnung-und-verkehr/verkehr/kfz-zulassung/zustaendigkeiten/"
+    },
+    "kuerzel": [
+      {
+        "code": "KH",
+        "bedeutung": "Kreuznach (Bad Kreuznach)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Siegel auf den Kennzeichen dürfen vor der Außerbetriebsetzung oder Umschreibung nicht selbst entfernt werden. Werden sie vorab entstempelt, muss die Behörde das Kennzeichen für 10 Jahre sperren (gilt nicht für Online-Vorgänge).",
+        "quelle": "https://www.kreis-badkreuznach.de/kreisverwaltung/organisation/amt-3-sicherheit-ordnung-und-verkehr/verkehr/kfz-zulassung/"
+      },
+      {
+        "text": "Nach einem Umzug innerhalb des Kreises kann die Anschrift im Fahrzeugschein bei den meisten Einwohnermeldeämtern der Verbandsgemeinden eingetragen werden; vorher bei der VG nachfragen.",
+        "quelle": "https://www.kreis-badkreuznach.de/kreisverwaltung/organisation/amt-3-sicherheit-ordnung-und-verkehr/verkehr/kfz-zulassung/"
+      },
+      {
+        "text": "Bei der Online-Zulassung gibt es einen vorläufigen Zulassungsnachweis für bis zu 10 Tage Fahrt; Papiere und Siegel kommen per Post an die Halteradresse.",
+        "quelle": "https://www.kreis-badkreuznach.de/kreisverwaltung/organisation/amt-3-sicherheit-ordnung-und-verkehr/verkehr/kfz-zulassung/online-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "standorte.plz",
+      "standorte"
+    ]
+  },
+  {
+    "slug": "landkreis-bernkastel-wittlich",
+    "stadt": "Landkreis Bernkastel-Wittlich",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Kreisverwaltung Bernkastel-Wittlich – Fachbereich 21 Verkehr und Zulassung",
+    "behoerdeQuelle": "https://www.bernkastel-wittlich.de/buergerservice/abteilungen/RLP:department:340363/fachbereich-21-verkehr-und-zulassung/",
+    "traeger": "Landkreis Bernkastel-Wittlich",
+    "standorte": [
+      {
+        "bezeichnung": "Kreisverwaltung Bernkastel-Wittlich, Fachbereich 21 – Verkehr und Zulassung",
+        "strasse": "Kurfürstenstraße 16",
+        "plz": "54516",
+        "ort": "Wittlich",
+        "quelle": "https://www.bernkastel-wittlich.de/buergerservice/abteilungen/RLP:department:340363/fachbereich-21-verkehr-und-zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.bernkastel-wittlich.de/buergerservice/abteilungen/RLP:department:340363/fachbereich-21-verkehr-und-zulassung/",
+      "quelle": "https://www.bernkastel-wittlich.de/buergerservice/abteilungen/RLP:department:340363/fachbereich-21-verkehr-und-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/ikz/select2?md=5",
+      "quelle": "https://www.bernkastel-wittlich.de/ikz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.204469035&leistungId=99036020001000&p=072310",
+      "quelle": "https://www.bernkastel-wittlich.de/ikz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [],
+      "hinweis": "Bearbeitung nur nach vorheriger Terminvereinbarung (Online-Terminportal der gemeinsamen Kfz-Zulassung oder Hotline der Zulassungsstelle 06571 14-1021). Feste Schalterzeiten werden nicht genannt; die Bürgerberatung ist Mo–Do 07:00–18:00 Uhr und Fr 07:00–14:00 Uhr geöffnet.",
+      "quelle": "https://www.bernkastel-wittlich.de/buergerservice/abteilungen/RLP:department:340363/fachbereich-21-verkehr-und-zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde für den Landkreis Bernkastel-Wittlich ist die Kreisverwaltung in Wittlich (Fachbereich 21). Über die „Gemeinsame Zulassungsstelle“ der Landkreise Bernkastel-Wittlich, Cochem-Zell, Vulkaneifel und Eifelkreis Bitburg-Prüm lassen sich Zulassungsvorgänge unabhängig vom Wohnort erledigen.",
+      "quelle": "https://www.cochem-zell.de/aktuelles/nachrichten-aus-der-verwaltung/2025/februar/jetzt-auch-mit-dem-eifelkreis-vier-landkreise-bilden-gemeinsame-zulassungsstelle/"
+    },
+    "kuerzel": [
+      {
+        "code": "WIL",
+        "bedeutung": "Wittlich",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BKS",
+        "bedeutung": "Bernkastel (Bernkastel-Kues)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Gemeinsame Zulassungsstelle: Ein Fahrzeug kann z. B. auch bei der Kreisverwaltung in Bitburg mit WIL oder BKS angemeldet werden; zum Verbund gehören die Kennzeichen BIT, PRÜ, DAU, WIL, BKS, COC und ZEL.",
+        "quelle": "https://www.cochem-zell.de/aktuelles/nachrichten-aus-der-verwaltung/2025/februar/jetzt-auch-mit-dem-eifelkreis-vier-landkreise-bilden-gemeinsame-zulassungsstelle/"
+      },
+      {
+        "text": "Besucher melden sich vor dem Termin bei der Bürgerberatung und werden dort vom zuständigen Fachbereich abgeholt.",
+        "quelle": "https://www.bernkastel-wittlich.de/kreisverwaltung/oeffnungszeiten/"
+      },
+      {
+        "text": "Das Gebäude hat einen Aufzug und ist rollstuhlgeeignet.",
+        "quelle": "https://www.bernkastel-wittlich.de/buergerservice/abteilungen/RLP:department:340363/fachbereich-21-verkehr-und-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten.zeilen"
+    ]
+  },
+  {
+    "slug": "landkreis-birkenfeld",
+    "stadt": "Landkreis Birkenfeld",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Kreisverwaltung des Nationalparklandkreises Birkenfeld – Abt. 3 Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-birkenfeld.de/Verwaltung-2-Politik/Verwaltung/Was-erledige-ich-wo.htm/Aemter/Abt-3-Kfz-Zulassungsstelle.html",
+    "traeger": "Landkreis Birkenfeld (Nationalparklandkreis Birkenfeld)",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Birkenfeld",
+        "strasse": "Feckweilerhaide 15",
+        "plz": "55765",
+        "ort": "Birkenfeld",
+        "quelle": "https://www.landkreis-birkenfeld.de/Verwaltung-2-Politik/Verwaltung/Was-erledige-ich-wo.htm/Dienstleistungen/Kfz-Zulassung-eines-fabrikneuen-Fahrzeuges.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-birkenfeld.de/Verwaltung-2-Politik/Verwaltung/Was-erledige-ich-wo.htm/Aemter/Abt-3-Kfz-Zulassungsstelle.html",
+      "quelle": "https://www.landkreis-birkenfeld.de/Verwaltung-2-Politik/Verwaltung/Was-erledige-ich-wo.htm/Aemter/Abt-3-Kfz-Zulassungsstelle.html"
+    },
+    "terminUrl": {
+      "url": "https://termin-online-buchen.de/live/booking?cfid=000384000556",
+      "quelle": "https://www.landkreis-birkenfeld.de/Seiten/Termin-online.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.266513886&leistungId=99036020001000&p=071340",
+      "quelle": "https://www.landkreis-birkenfeld.de/Verwaltung-2-Politik/Verwaltung/Was-erledige-ich-wo.htm/Dienstleistungen/Kfz-Zulassung-eines-fabrikneuen-Fahrzeuges.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Fr 08:00–11:45 Uhr",
+        "Do 15:30–17:45 Uhr"
+      ],
+      "hinweis": "nur nach online Terminvergabe",
+      "quelle": "https://www.landkreis-birkenfeld.de/Seiten/Termin-online.html"
+    },
+    "zustaendigkeit": {
+      "text": "Die Zulassungsstelle Birkenfeld der Kreisverwaltung ist ausschließlich für die VG Birkenfeld und die VG Baumholder zuständig. Einwohner der Stadt Idar-Oberstein oder der VG Herrstein-Rhaunen müssen sich an die Zulassungsstelle Idar-Oberstein wenden.",
+      "quelle": "https://www.landkreis-birkenfeld.de/Seiten/Termin-online.html"
+    },
+    "kuerzel": [
+      {
+        "code": "BIR",
+        "bedeutung": "Birkenfeld",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Für Idar-Oberstein bietet die Stadtverwaltung Idar-Oberstein die Kfz-Zulassung im Bürgerbüro an, nur mit vorheriger Terminvereinbarung (online oder Tel. 06781/64-3800).",
+        "quelle": "https://www.idar-oberstein.de/politik-verwaltung/stadtverwaltung/verwaltungsleistungen/"
+      },
+      {
+        "text": "Die Kfz-Zulassungsstelle liegt in der Feckweilerhaide 15, nicht an der Hauptadresse der Kreisverwaltung (Schneewiesenstraße 25).",
+        "quelle": "https://www.landkreis-birkenfeld.de/Verwaltung-2-Politik/Verwaltung/Was-erledige-ich-wo.htm/Dienstleistungen/Kfz-Zulassung-eines-fabrikneuen-Fahrzeuges.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-cochem-zell",
+    "stadt": "Landkreis Cochem-Zell",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Kreisverwaltung Cochem-Zell – Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.cochem-zell.de/themen/kfz-fuehrerschein-verkehr/kfz-zulassungsstelle/",
+    "traeger": "Landkreis Cochem-Zell",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Cochem",
+        "strasse": "Endertplatz 2",
+        "plz": "56812",
+        "ort": "Cochem",
+        "quelle": "https://www.cochem-zell.de/themen/kfz-fuehrerschein-verkehr/kfz-zulassungsstelle/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsaußenstelle Zell",
+        "strasse": "Schloßstraße 69",
+        "plz": "56856",
+        "ort": "Zell",
+        "quelle": "https://www.cochem-zell.de/themen/kfz-fuehrerschein-verkehr/kfz-zulassungsstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://www.cochem-zell.de/themen/kfz-fuehrerschein-verkehr/kfz-zulassungsstelle/",
+      "quelle": "https://www.cochem-zell.de/themen/kfz-fuehrerschein-verkehr/kfz-zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/ikz/select2?md=5",
+      "quelle": "https://www.cochem-zell.de/themen/kfz-fuehrerschein-verkehr/kfz-zulassungsstelle/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.202052759&leistungId=99036020001000&p=071350",
+      "quelle": "https://www.bernkastel-wittlich.de/ikz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Mi 07:30–12:30 Uhr",
+        "Do 07:30–16:30 Uhr",
+        "Fr 07:30–12:30 Uhr"
+      ],
+      "hinweis": "Öffnungszeiten der KFZ-Zulassung der Kreisverwaltung. Termine sind auch außerhalb der allgemeinen Öffnungszeiten möglich (Behördennummer 115 oder online). Eigene Zeiten für die Außenstelle Zell werden nicht genannt.",
+      "quelle": "https://www.cochem-zell.de/themen/kfz-fuehrerschein-verkehr/kfz-zulassungsstelle/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Cochem-Zell (Cochem, Außenstelle Zell). Über die „Gemeinsame Zulassungsstelle“ mit Bernkastel-Wittlich, Vulkaneifel und dem Eifelkreis Bitburg-Prüm lassen sich Zulassungsvorgänge unabhängig vom Wohnort erledigen.",
+      "quelle": "https://www.cochem-zell.de/aktuelles/nachrichten-aus-der-verwaltung/2025/februar/jetzt-auch-mit-dem-eifelkreis-vier-landkreise-bilden-gemeinsame-zulassungsstelle/"
+    },
+    "kuerzel": [
+      {
+        "code": "COC",
+        "bedeutung": "Cochem",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ZEL",
+        "bedeutung": "Zell (Zell an der Mosel)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Seit 2023 Teil der „Gemeinsamen Zulassungsstelle“ (IKZ Eifel-Mosel-Hunsrück); Bürger können bei Terminengpässen eine andere Verwaltung im Verbund aufsuchen.",
+        "quelle": "https://www.cochem-zell.de/aktuelles/nachrichten-aus-der-verwaltung/2025/februar/jetzt-auch-mit-dem-eifelkreis-vier-landkreise-bilden-gemeinsame-zulassungsstelle/"
+      },
+      {
+        "text": "Die Schilderstellen im Verbund dürfen auch Kennzeichen für die anderen Landkreise prägen; die zulassende Behörde bringt ihr eigenes Siegel auf.",
+        "quelle": "https://www.cochem-zell.de/aktuelles/nachrichten-aus-der-verwaltung/2025/februar/jetzt-auch-mit-dem-eifelkreis-vier-landkreise-bilden-gemeinsame-zulassungsstelle/"
+      },
+      {
+        "text": "Die gemeinsame Terminverwaltung zeigt die freien Termine aller beteiligten Zulassungsstellen; der Standort ist bei der Buchung wählbar.",
+        "quelle": "https://www.cochem-zell.de/aktuelles/nachrichten-aus-der-verwaltung/2025/februar/jetzt-auch-mit-dem-eifelkreis-vier-landkreise-bilden-gemeinsame-zulassungsstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "donnersbergkreis",
+    "stadt": "Donnersbergkreis",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Kreisverwaltung Donnersbergkreis – Kfz-Zulassungsstelle (Abteilung Ordnung und Verkehr)",
+    "behoerdeQuelle": "https://www.donnersberg.de/buergerservice/kontakt-oeffnungszeiten/",
+    "traeger": "Donnersbergkreis",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle im Kreishaus",
+        "strasse": "Uhlandstraße 2",
+        "plz": "67292",
+        "ort": "Kirchheimbolanden",
+        "quelle": "https://www.donnersberg.de/buergerservice/kontakt-oeffnungszeiten/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Außenstelle Eisenberg (Servicebüro der VG Eisenberg)",
+        "strasse": "Hauptstraße 86",
+        "plz": "67304",
+        "ort": "Eisenberg (Pfalz)",
+        "quelle": "https://www.vg-eisenberg.de/rathaus/servicebuero-und-kfz-zulassung/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Außenstelle Rockenhausen (VG Nordpfälzer Land, Standort Rockenhausen)",
+        "strasse": "Bezirksamtsstraße 7",
+        "plz": "67806",
+        "ort": "Rockenhausen",
+        "quelle": "https://www.xn--nordpflzerland-bib.de/oeffnungszeiten/"
+      }
+    ],
+    "website": {
+      "url": "https://www.donnersberg.de/buergerservice/themenwelt/kfz-und-verkehr/",
+      "quelle": "https://www.donnersberg.de/buergerservice/themenwelt/kfz-und-verkehr/"
+    },
+    "terminUrl": {
+      "url": "https://www.etermin.net/donnersbergkreis",
+      "quelle": "https://www.donnersberg.de/buergerservice/online-terminvergabe/"
+    },
+    "ikfzUrl": null,
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Kreishaus Kirchheimbolanden: Mo–Mi 07:30–11:30 und 14:00–15:30 Uhr",
+        "Kreishaus Kirchheimbolanden: Do 07:30–11:30 und 14:00–17:30 Uhr",
+        "Kreishaus Kirchheimbolanden: Fr 07:30–11:30 Uhr",
+        "Rockenhausen: Mo und Di 08:00–15:30 Uhr",
+        "Rockenhausen: Mi und Fr 08:00–11:30 Uhr",
+        "Rockenhausen: Do 08:00–17:30 Uhr",
+        "Rockenhausen: Sa 10:00–11:30 Uhr"
+      ],
+      "hinweis": "nur mit Termin (alle Standorte). Die Öffnungszeiten der Außenstelle Eisenberg veröffentlicht die Verbandsgemeinde Eisenberg.",
+      "quelle": "https://www.donnersberg.de/buergerservice/kontakt-oeffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle der Kreisverwaltung Donnersbergkreis mit Hauptstelle im Kreishaus Kirchheimbolanden und Außenstellen in Eisenberg (Pfalz) und Rockenhausen.",
+      "quelle": "https://www.donnersberg.de/buergerservice/kontakt-oeffnungszeiten/"
+    },
+    "kuerzel": [
+      {
+        "code": "KIB",
+        "bedeutung": "Kirchheimbolanden",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ROK",
+        "bedeutung": "Rockenhausen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Seit März 2024 arbeitet die Zulassungsstelle im Kreishaus vollständig per Terminvergabe; die Außenstelle Eisenberg seit 1. August 2025 ebenfalls nur nach vorheriger Terminvergabe.",
+        "quelle": "https://www.donnersberg.de/buergerservice/kontakt-oeffnungszeiten/"
+      },
+      {
+        "text": "Die Außenstelle Rockenhausen hat auch samstags von 10:00 bis 11:30 Uhr geöffnet (nur mit Termin, Online-Buchung über die VG Nordpfälzer Land).",
+        "quelle": "https://www.donnersberg.de/buergerservice/kontakt-oeffnungszeiten/"
+      },
+      {
+        "text": "In Eisenberg müssen die Kennzeichen zur Anmeldung mitgebracht werden; Schilder gibt es bei Prägestellen in Kirchheimbolanden oder Grünstadt oder online.",
+        "quelle": "https://www.vg-eisenberg.de/rathaus/servicebuero-und-kfz-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "ikfzUrl"
+    ]
+  },
+  {
+    "slug": "eifelkreis-bitburg-pruem",
+    "stadt": "Eifelkreis Bitburg-Prüm",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Kreisverwaltung des Eifelkreises Bitburg-Prüm – Kfz-Zulassung (Fachbereich 08-02)",
+    "behoerdeQuelle": "https://www.bitburg-pruem.de/buergerservice-views/abteilungen/RLP:department:346954/kfz-zulassung-fachbereich-08-02/",
+    "traeger": "Eifelkreis Bitburg-Prüm",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Bitburg (Kreisverwaltung)",
+        "strasse": "Trierer Straße 1",
+        "plz": "54634",
+        "ort": "Bitburg",
+        "quelle": "https://www.bitburg-pruem.de/buergerservice-views/abteilungen/RLP:department:346954/kfz-zulassung-fachbereich-08-02/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Außenstelle Prüm",
+        "strasse": "Teichstraße 16",
+        "plz": "54595",
+        "ort": "Prüm",
+        "quelle": "https://www.bitburg-pruem.de/buergerservice-views/abteilungen/RLP:department:346954/kfz-zulassung-fachbereich-08-02/"
+      }
+    ],
+    "website": {
+      "url": "https://www.bitburg-pruem.de/buergerservice-views/abteilungen/RLP:department:346954/kfz-zulassung-fachbereich-08-02/",
+      "quelle": "https://www.bitburg-pruem.de/buergerservice-views/abteilungen/RLP:department:346954/kfz-zulassung-fachbereich-08-02/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/ikz/select2?md=5",
+      "quelle": "https://www.bernkastel-wittlich.de/ikz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.231536244&leistungId=99036020001000&p=072320",
+      "quelle": "https://www.bitburg-pruem.de/buergerservice/verwaltungsleistungen-a-z/kfz-wunschkennzeichen/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Fr 08:00–12:00 Uhr",
+        "Di zusätzlich 14:00–16:00 Uhr",
+        "Do zusätzlich 14:00–18:00 Uhr"
+      ],
+      "hinweis": "Terminvereinbarung erforderlich (online über das IKZ-Terminvergabeportal oder Tel. 06561 15-0). Gilt für die Zulassungsstellen Bitburg und Prüm.",
+      "quelle": "https://www.bitburg-pruem.de/buergerservice-views/abteilungen/RLP:department:346954/kfz-zulassung-fachbereich-08-02/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassung der Kreisverwaltung des Eifelkreises Bitburg-Prüm mit Standorten in Bitburg und Prüm. Über die „Gemeinsame Zulassungsstelle“ mit Bernkastel-Wittlich, Cochem-Zell und Vulkaneifel lassen sich Zulassungsvorgänge unabhängig vom Wohnort durchführen.",
+      "quelle": "https://www.bitburg-pruem.de/buergerservice/verwaltungsleistungen-a-z/kfz-wunschkennzeichen/"
+    },
+    "kuerzel": [
+      {
+        "code": "BIT",
+        "bedeutung": "Bitburg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "PRÜ",
+        "bedeutung": "Prüm",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termine für die Zulassungsstelle werden ausschließlich über das gemeinsame Terminvergabeportal der vier IKZ-Landkreise vergeben.",
+        "quelle": "https://www.bitburg-pruem.de/buergerservice/verwaltungsleistungen-a-z/kfz-wunschkennzeichen/"
+      },
+      {
+        "text": "Vor einem Online-Vorgang prüfen, ob das Portal verfügbar ist: Nach dem Freilegen der Sicherheitscodes darf das Fahrzeug nicht mehr auf öffentlichen Straßen fahren.",
+        "quelle": "https://www.bitburg-pruem.de/buergerservice/verwaltungsleistungen-a-z/kfz-wunschkennzeichen/"
+      },
+      {
+        "text": "Neben den Feiertagen ist die Kreisverwaltung an Heiligabend, Silvester, Rosenmontag, an Weiberfastnacht ab 12 Uhr und an Gründonnerstag ab 16 Uhr geschlossen.",
+        "quelle": "https://www.bitburg-pruem.de/buergerservice/oeffnungszeiten/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-germersheim",
+    "stadt": "Landkreis Germersheim",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Kreisverwaltung Germersheim – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.kreis-germersheim.de/buergerservice/ordnung-verkehr-wirtschaft-tourismus/kfz-zulassung-fuehrerscheinstelle-verkehr-oepnv/kfz-zulassung/",
+    "traeger": "Landkreis Germersheim",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungs- und Führerscheinstelle Germersheim (Hauptstelle)",
+        "strasse": "17er Straße 1",
+        "plz": "76726",
+        "ort": "Germersheim",
+        "quelle": "https://www.kreis-germersheim.de/buergerservice/dienstleistungen-ansprechpartner/standorte-oeffnungszeiten/oeffnungszeiten/"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Kandel (Außenstelle)",
+        "strasse": "Gartenstraße 8",
+        "plz": "76870",
+        "ort": "Kandel",
+        "quelle": "https://www.kreis-germersheim.de/buergerservice/dienstleistungen-ansprechpartner/standorte-oeffnungszeiten/oeffnungszeiten/"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-germersheim.de/buergerservice/ordnung-verkehr-wirtschaft-tourismus/kfz-zulassung-fuehrerscheinstelle-verkehr-oepnv/kfz-zulassung/",
+      "quelle": "https://www.kreis-germersheim.de/buergerservice/ordnung-verkehr-wirtschaft-tourismus/kfz-zulassung-fuehrerscheinstelle-verkehr-oepnv/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://kreis-germersheim.saas.smartcjm.com/m/verkehr/extern/calendar/?uid=898bb2c8-3761-47c0-bcc7-0744d4e1b2a5&wsid=7352a070-e895-489b-bf16-c3fc554171ca&lang=de",
+      "quelle": "https://www.kreis-germersheim.de/buergerservice/ordnung-verkehr-wirtschaft-tourismus/kfz-zulassung-fuehrerscheinstelle-verkehr-oepnv/kfz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.ab&oeId=L100039.OE.197128028&leistungId=99036026017000&p=073340",
+      "quelle": "https://www.kreis-germersheim.de/buergerservice/ordnung-verkehr-wirtschaft-tourismus/kfz-zulassung-fuehrerscheinstelle-verkehr-oepnv/kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Fr 8:00–12:00 Uhr",
+        "Di 13:30–16:00 Uhr",
+        "Do 13:30–18:00 Uhr"
+      ],
+      "hinweis": "Gilt für Germersheim und Kandel. Wartemarken während der Öffnungszeiten, Annahmeschluss 30 Minuten vor Dienstende; bei Ausfuhr- und Importzulassungen muss die Wartemarke eine Stunde vorher gezogen werden. Termine auch online oder telefonisch.",
+      "quelle": "https://www.kreis-germersheim.de/buergerservice/dienstleistungen-ansprechpartner/standorte-oeffnungszeiten/oeffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstellen der Kreisverwaltung Germersheim in Germersheim (Hauptstelle) und Kandel (Außenstelle) für den Landkreis Germersheim. Ausfuhrkennzeichen gibt es nur, wenn der regelmäßige Standort des Fahrzeugs im Landkreis liegt.",
+      "quelle": "https://www.kreis-germersheim.de/buergerservice/ordnung-verkehr-wirtschaft-tourismus/kfz-zulassung-fuehrerscheinstelle-verkehr-oepnv/kfz-zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "GER",
+        "bedeutung": "Germersheim",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Zulassungsdienste und Kfz-Handel mit mehr als drei Vorgängen geben Dokumententaschen bis 8:30 Uhr am Infoschalter ab (max. 20 Vorgänge täglich, davon max. 10 Außerbetriebsetzungen); Abholung ab 11:30 Uhr.",
+        "quelle": "https://www.kreis-germersheim.de/buergerservice/ordnung-verkehr-wirtschaft-tourismus/kfz-zulassung-fuehrerscheinstelle-verkehr-oepnv/kfz-zulassung/"
+      },
+      {
+        "text": "Kfz-Zulassung und Führerscheinstelle haben auf bargeldlose Zahlung umgestellt.",
+        "quelle": "https://www.kreis-germersheim.de/buergerservice/ordnung-verkehr-wirtschaft-tourismus/kfz-zulassung-fuehrerscheinstelle-verkehr-oepnv/kfz-zulassung/"
+      },
+      {
+        "text": "Die aktuellen Wartezeiten der Zulassungsstelle lassen sich online einsehen.",
+        "quelle": "https://www.kreis-germersheim.de/buergerservice/ordnung-verkehr-wirtschaft-tourismus/kfz-zulassung-fuehrerscheinstelle-verkehr-oepnv/kfz-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-kaiserslautern",
+    "stadt": "Landkreis Kaiserslautern",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Kreisverwaltung Kaiserslautern – KFZ-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.kaiserslautern-kreis.de/verwaltung/ordnung-verkehr-und-schulen/verkehrswesen/kfz-zulassung/",
+    "traeger": "Landkreis Kaiserslautern",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassungsbehörde Kreisverwaltung Kaiserslautern",
+        "strasse": "Lauterstraße 8",
+        "plz": "67657",
+        "ort": "Kaiserslautern",
+        "quelle": "https://www.kaiserslautern-kreis.de/verwaltung/ordnung-verkehr-und-schulen/verkehrswesen/kfz-zulassung/"
+      },
+      {
+        "bezeichnung": "KFZ-Zulassungsbehörde Außenstelle Landstuhl",
+        "strasse": "Bruchwiesenstraße 31",
+        "plz": "66849",
+        "ort": "Landstuhl",
+        "quelle": "https://www.kaiserslautern-kreis.de/verwaltung/ordnung-verkehr-und-schulen/verkehrswesen/kfz-zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.kaiserslautern-kreis.de/verwaltung/ordnung-verkehr-und-schulen/verkehrswesen/kfz-zulassung/",
+      "quelle": "https://www.kaiserslautern-kreis.de/verwaltung/ordnung-verkehr-und-schulen/verkehrswesen/kfz-zulassung/"
+    },
+    "terminUrl": null,
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.264993493&leistungId=99036020001000&p=073350",
+      "quelle": "https://www.kaiserslautern-kreis.de/verwaltung/ordnung-verkehr-und-schulen/verkehrswesen/kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo und Di 08:00–12:00 und 13:30–16:00 Uhr",
+        "Mi und Fr 08:00–12:00 Uhr",
+        "Do 08:00–12:00 und 13:30–18:00 Uhr"
+      ],
+      "hinweis": "Gilt für beide Zulassungsstellen (Kaiserslautern und Landstuhl). Nicht erst kurz vor Ende der Öffnungszeiten kommen: Bei großem Andrang ist die Erledigung nicht zugesichert.",
+      "quelle": "https://www.kaiserslautern-kreis.de/verwaltung/ordnung-verkehr-und-schulen/verkehrswesen/kfz-zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde der Kreisverwaltung Kaiserslautern für den Landkreis Kaiserslautern mit Standorten in Kaiserslautern (Lauterstraße 8) und Landstuhl; Umschreibungen unterscheidet sie nach „innerhalb des Landkreises“ und „von außerhalb des Landkreises“. Achtung: Die Kreisverwaltung sitzt in der Stadt Kaiserslautern, das Kürzel KL gilt laut Kennzeichenliste aber auch für die kreisfreie Stadt Kaiserslautern, die nicht zum Landkreis gehört.",
+      "quelle": "https://www.kaiserslautern-kreis.de/verwaltung/ordnung-verkehr-und-schulen/verkehrswesen/kfz-zulassung/standardfaelle-zulassungswesen/"
+    },
+    "kuerzel": [
+      {
+        "code": "KL",
+        "bedeutung": "Kaiserslautern (Landkreis und kreisfreie Stadt)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Wer statt Personalausweis einen Reisepass vorlegt, braucht eine Meldebescheinigung, die nicht älter als 14 Tage ist.",
+        "quelle": "https://www.kaiserslautern-kreis.de/verwaltung/ordnung-verkehr-und-schulen/verkehrswesen/kfz-zulassung/standardfaelle-zulassungswesen/"
+      },
+      {
+        "text": "Für die Kfz-Steuer sind ein SEPA-Lastschriftmandat und ein Kontonachweis des Halters (z. B. EC-Karte oder Kontoauszug) vorzulegen.",
+        "quelle": "https://www.kaiserslautern-kreis.de/verwaltung/ordnung-verkehr-und-schulen/verkehrswesen/kfz-zulassung/standardfaelle-zulassungswesen/"
+      },
+      {
+        "text": "Wunschkennzeichen lassen sich online über kfzonline.ekom21.de reservieren.",
+        "quelle": "https://www.kaiserslautern-kreis.de/verwaltung/ordnung-verkehr-und-schulen/verkehrswesen/kfz-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "terminUrl"
+    ]
+  },
+  {
+    "slug": "landkreis-kusel",
+    "stadt": "Landkreis Kusel",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Kreisverwaltung Kusel – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-kusel.de/buergerservice-und-verwaltung/themen/ordnung-verkehr/zulassungsstelle/",
+    "traeger": "Landkreis Kusel",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Kreisverwaltung Kusel",
+        "strasse": "Trierer Straße 49-51",
+        "plz": "66869",
+        "ort": "Kusel",
+        "quelle": "https://www.landkreis-kusel.de/buergerservice-und-verwaltung/themen/ordnung-verkehr/zulassungsstelle/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Außenstelle VG Oberes Glantal",
+        "strasse": "Rathausstraße 8",
+        "plz": "66901",
+        "ort": "Schönenberg-Kübelberg",
+        "quelle": "https://www.vgog.de/vg_oberes_glantal/B%C3%BCrgerservice/B%C3%BCrgerb%C3%BCro%20&%20Zulassungsstelle/Zulassungsstelle/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Außenstelle VG Lauterecken-Wolfstein (Standort Lauterecken)",
+        "strasse": "Schulstraße 6a",
+        "plz": "67742",
+        "ort": "Lauterecken",
+        "quelle": "https://www.vg-lw.de/buerger-verwaltung/buergerinformation/buergerbuero/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-kusel.de/buergerservice-und-verwaltung/themen/ordnung-verkehr/zulassungsstelle/",
+      "quelle": "https://www.landkreis-kusel.de/buergerservice-und-verwaltung/themen/ordnung-verkehr/zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/kreis-kusel/select2?md=1",
+      "quelle": "https://www.landkreis-kusel.de/buergerservice-und-verwaltung/themen/ordnung-verkehr/zulassungsstelle/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.ab&oeId=L100039.OE.248794537&leistungId=99036026017000&p=073360",
+      "quelle": "https://www.landkreis-kusel.de/buergerservice-und-verwaltung/buergerservice/online-dienste/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Kusel: Mo–Mi 07:15–12:00 und 13:00–15:00 Uhr",
+        "Kusel: Do 07:15–12:00 und 13:30–17:00 Uhr",
+        "Kusel: Fr 07:15–12:00 Uhr"
+      ],
+      "hinweis": "Vormittags mit oder ohne Termin, nachmittags nur nach vorheriger Terminvereinbarung. Wegen hohen Andrangs sind erhebliche Wartezeiten möglich; ein Termin wird empfohlen.",
+      "quelle": "https://www.landkreis-kusel.de/buergerservice-und-verwaltung/verwaltung/oeffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle der Kreisverwaltung Kusel mit Außenstellen in den Verbandsgemeinden Lauterecken-Wolfstein und Oberes Glantal.",
+      "quelle": "https://www.landkreis-kusel.de/buergerservice-und-verwaltung/themen/ordnung-verkehr/zulassungsstelle/"
+    },
+    "kuerzel": [
+      {
+        "code": "KUS",
+        "bedeutung": "Kusel",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Den QR-Code aus der Terminbestätigung zum Termin mitbringen: Er öffnet die Zwischentüren im Bürgerbüro. Ohne Termin gibt es Tickets am Terminal im Bürgerbüro.",
+        "quelle": "https://www.landkreis-kusel.de/aktuelles/pressemeldungen/mai-2026/ab-1-juni-neue-oeffnungszeiten/"
+      },
+      {
+        "text": "Die Außenstelle in Schönenberg-Kübelberg (VG Oberes Glantal) ist nur mit Termin nutzbar (Tel. 06373 504-216 oder -217); alle Vorgänge sind auch in der Hauptstelle Kusel möglich.",
+        "quelle": "https://www.vgog.de/vg_oberes_glantal/B%C3%BCrgerservice/B%C3%BCrgerb%C3%BCro%20&%20Zulassungsstelle/Zulassungsstelle/"
+      },
+      {
+        "text": "Termine für die Außenstelle Lauterecken bucht man über das Online-Terminportal der VG Lauterecken-Wolfstein.",
+        "quelle": "https://www.vg-lw.de/buerger-verwaltung/buergerinformation/buergerbuero/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

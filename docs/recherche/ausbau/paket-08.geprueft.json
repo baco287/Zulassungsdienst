@@ -1,0 +1,968 @@
+[
+  {
+    "slug": "landkreis-neuburg-schrobenhausen",
+    "stadt": "Landkreis Neuburg-Schrobenhausen",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Neuburg-Schrobenhausen – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://neuburg-schrobenhausen.de/B%C3%BCrgerservice/Fachbereiche/Kommunalrecht-Verkehrswesen-%C3%96ffentliche-Sicherheit-und-Ordnung/F%C3%BChrerschein-und-Zulassung/Kfz-Zulassung/",
+    "traeger": "Landkreis Neuburg-Schrobenhausen",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Neuburg-Schrobenhausen, Hauptgebäude (Kfz-Zulassungsstelle)",
+        "strasse": "Platz der Deutschen Einheit 1",
+        "plz": "86633",
+        "ort": "Neuburg a.d.Donau",
+        "quelle": "https://neuburg-schrobenhausen.de/B%C3%BCrgerservice/Fachbereiche/Kommunalrecht-Verkehrswesen-%C3%96ffentliche-Sicherheit-und-Ordnung/F%C3%BChrerschein-und-Zulassung/Kfz-Zulassung/"
+      },
+      {
+        "bezeichnung": "Landratsamt Neuburg-Schrobenhausen, Dienststelle Schrobenhausen",
+        "strasse": "Georg-Alber-Straße 27",
+        "plz": "86529",
+        "ort": "Schrobenhausen",
+        "quelle": "https://neuburg-schrobenhausen.de/Verwaltung-und-Politik/Organisation-Landratsamt/Adressen/Dienststelle-Schrobenhausen.php?ModID=9&FID=3453.525.1&KatID=0&kat=&kuo=1&call=0&bn=0&sfname=0&sfkat=0&sfplz=0&sfort=0&k_sub=0"
+      }
+    ],
+    "website": {
+      "url": "https://neuburg-schrobenhausen.de/B%C3%BCrgerservice/Fachbereiche/Kommunalrecht-Verkehrswesen-%C3%96ffentliche-Sicherheit-und-Ordnung/F%C3%BChrerschein-und-Zulassung/Kfz-Zulassung/",
+      "quelle": "https://neuburg-schrobenhausen.de/B%C3%BCrgerservice/Fachbereiche/Kommunalrecht-Verkehrswesen-%C3%96ffentliche-Sicherheit-und-Ordnung/F%C3%BChrerschein-und-Zulassung/Kfz-Zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://terminreservierung.neuburg-schrobenhausen.de/m/lra/extern/calendar/?uid=5ba34423-46d4-4c27-a577-12a6ee4e86ce",
+      "quelle": "https://neuburg-schrobenhausen.de/B%C3%BCrgerservice/Fachbereiche/Kommunalrecht-Verkehrswesen-%C3%96ffentliche-Sicherheit-und-Ordnung/F%C3%BChrerschein-und-Zulassung/Kfz-Zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerserviceportal.de/bayern/lkrneuburgschrobenhausen/bsp_ikfz_antragstellung",
+      "quelle": "https://neuburg-schrobenhausen.de/B%C3%BCrgerservice/Fachbereiche/Kommunalrecht-Verkehrswesen-%C3%96ffentliche-Sicherheit-und-Ordnung/F%C3%BChrerschein-und-Zulassung/Kfz-Zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30–12:00 und 14:00–16:00 (letzte Annahme 15:30)",
+        "Di 07:30–12:00 (letzte Annahme 11:30)",
+        "Mi 07:30–12:00 und 14:00–16:00 (letzte Annahme 15:30)",
+        "Do 07:30–12:00 und 14:00–16:00 (letzte Annahme 15:30)",
+        "Fr 07:30–12:00 (letzte Annahme 11:30)"
+      ],
+      "hinweis": "Zulassungsvorgänge nur mit vorheriger Terminvereinbarung (Termine maximal drei Wochen im Voraus)",
+      "quelle": "https://neuburg-schrobenhausen.de/B%C3%BCrgerservice/Fachbereiche/Kommunalrecht-Verkehrswesen-%C3%96ffentliche-Sicherheit-und-Ordnung/F%C3%BChrerschein-und-Zulassung/Kfz-Zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Neuburg-Schrobenhausen. Termine für Zulassungsangelegenheiten werden derzeit nur für Bürgerinnen und Bürger des Landkreises Neuburg-Schrobenhausen bearbeitet.",
+      "quelle": "https://neuburg-schrobenhausen.de/B%C3%BCrgerservice/Fachbereiche/Kommunalrecht-Verkehrswesen-%C3%96ffentliche-Sicherheit-und-Ordnung/F%C3%BChrerschein-und-Zulassung/Kfz-Zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "ND",
+        "bedeutung": "Neuburg an der Donau",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SOB",
+        "bedeutung": "Schrobenhausen (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termine werden für maximal drei Wochen im Voraus angezeigt; es werden nur die angemeldeten Vorgänge bearbeitet, verspätet wahrgenommene Termine können nicht bearbeitet werden.",
+        "quelle": "https://neuburg-schrobenhausen.de/B%C3%BCrgerservice/Fachbereiche/Kommunalrecht-Verkehrswesen-%C3%96ffentliche-Sicherheit-und-Ordnung/F%C3%BChrerschein-und-Zulassung/Kfz-Zulassung/"
+      },
+      {
+        "text": "Zum Termin pünktlich erscheinen und am Terminal vor der Zulassungsbehörde anmelden.",
+        "quelle": "https://neuburg-schrobenhausen.de/B%C3%BCrgerservice/Fachbereiche/Kommunalrecht-Verkehrswesen-%C3%96ffentliche-Sicherheit-und-Ordnung/F%C3%BChrerschein-und-Zulassung/Kfz-Zulassung/"
+      },
+      {
+        "text": "Laut Pressemitteilung des Landratsamts vom 18.04.2024 ist die Kfz-Zulassungsstelle in Schrobenhausen weiterhin geöffnet, ebenfalls nur mit vorheriger Terminvereinbarung.",
+        "quelle": "https://www.weichering.de/media-web/dateien/rathaus-aktuelles/fuehrerscheinstelle-sob.pdf"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "standorte"
+    ]
+  },
+  {
+    "slug": "landkreis-pfaffenhofen-an-der-ilm",
+    "stadt": "Landkreis Pfaffenhofen an der Ilm",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Pfaffenhofen a.d.Ilm – Zulassungsbehörde (Sachgebiet 63 Verkehrswesen)",
+    "behoerdeQuelle": "https://www.landkreis-pfaffenhofen.de/leben/mobilitaet/kfz-zulassung-fuehrerschein-und-verkehr/",
+    "traeger": "Landkreis Pfaffenhofen a.d.Ilm",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsbehörde Pfaffenhofen",
+        "strasse": "Pettenkoferstraße 5",
+        "plz": "85276",
+        "ort": "Pfaffenhofen a.d.Ilm",
+        "quelle": "https://www.landkreis-pfaffenhofen.de/leben/mobilitaet/kfz-zulassung-fuehrerschein-und-verkehr/?zulassungsbehoerde&orga=4b7eaa10bb54f22c0cbb8a12a91dd243"
+      },
+      {
+        "bezeichnung": "Zulassungsbehörde Außenstelle Nord – Vohburg",
+        "strasse": "Donaustraße 23",
+        "plz": "85088",
+        "ort": "Vohburg",
+        "quelle": "https://www.landkreis-pfaffenhofen.de/leben/mobilitaet/kfz-zulassung-fuehrerschein-und-verkehr/?zulassungsbehoerde&orga=4b7eaa10bb54f22c0cbb8a12a91dd243"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-pfaffenhofen.de/leben/mobilitaet/kfz-zulassung-fuehrerschein-und-verkehr/?zulassungsbehoerde&orga=4b7eaa10bb54f22c0cbb8a12a91dd243",
+      "quelle": "https://www.landkreis-pfaffenhofen.de/leben/mobilitaet/kfz-zulassung-fuehrerschein-und-verkehr/"
+    },
+    "terminUrl": {
+      "url": "https://online-dienste.landkreis-pfaffenhofen.de/m/lra-pfaffenhofen/extern/calendar/?uid=9661a0ae-8f8c-4763-a7b0-ccbede8f7ff3",
+      "quelle": "https://www.landkreis-pfaffenhofen.de/leben/mobilitaet/kfz-zulassung-fuehrerschein-und-verkehr/?zulassungsbehoerde&orga=4b7eaa10bb54f22c0cbb8a12a91dd243"
+    },
+    "ikfzUrl": {
+      "url": "https://www.landkreis-pfaffenhofen.de/landratsamt/online-services/genm/ikfz-service",
+      "quelle": "https://www.landkreis-pfaffenhofen.de/leben/mobilitaet/kfz-zulassung-fuehrerschein-und-verkehr/?zulassungsbehoerde&orga=4b7eaa10bb54f22c0cbb8a12a91dd243"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Pfaffenhofen: Mo–Fr 08:00–12:30",
+        "Pfaffenhofen: Mo und Mi 14:00–16:00",
+        "Pfaffenhofen: Do 14:00–17:00",
+        "Vohburg (Außenstelle Nord): Mo–Fr 08:00–12:00",
+        "Vohburg (Außenstelle Nord): Mo, Mi, Do 13:30–16:00"
+      ],
+      "hinweis": "Annahmeschluss 30 Minuten vor Ende der Öffnungszeit; Online-Termin möglich, Vorsprache ohne Termin während der Annahmezeiten ebenfalls möglich",
+      "quelle": "https://www.landkreis-pfaffenhofen.de/leben/mobilitaet/kfz-zulassung-fuehrerschein-und-verkehr/?zulassungsbehoerde&orga=4b7eaa10bb54f22c0cbb8a12a91dd243"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsbehörde des Landkreises Pfaffenhofen a.d.Ilm. Termine für Zulassungsangelegenheiten werden derzeit nur für Bürgerinnen und Bürger des Landkreises Pfaffenhofen a.d.Ilm bearbeitet; die erweiterte Zuständigkeit im Kfz-Zulassungswesen ist ausgesetzt.",
+      "quelle": "https://www.landkreis-pfaffenhofen.de/leben/mobilitaet/kfz-zulassung-fuehrerschein-und-verkehr/?zulassungsbehoerde&orga=4b7eaa10bb54f22c0cbb8a12a91dd243"
+    },
+    "kuerzel": [
+      {
+        "code": "PAF",
+        "bedeutung": "Pfaffenhofen an der Ilm",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Neben der Online-Terminvereinbarung (Termine maximal 30 Tage im Voraus) ist eine Vorsprache ohne Termin während der Annahmezeiten möglich.",
+        "quelle": "https://www.landkreis-pfaffenhofen.de/leben/mobilitaet/kfz-zulassung-fuehrerschein-und-verkehr/?zulassungsbehoerde&orga=4b7eaa10bb54f22c0cbb8a12a91dd243"
+      },
+      {
+        "text": "Die erweiterte Zuständigkeit im Kfz-Zulassungswesen ist im Landratsamt Pfaffenhofen und der Region weiterhin ausgesetzt; Halter anderer Zulassungsbezirke müssen sich an ihre zuständige Behörde wenden.",
+        "quelle": "https://www.landkreis-pfaffenhofen.de/leben/mobilitaet/kfz-zulassung-fuehrerschein-und-verkehr/?zulassungsbehoerde&orga=4b7eaa10bb54f22c0cbb8a12a91dd243"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-rosenheim",
+    "stadt": "Landkreis Rosenheim",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Rosenheim – Kfz-Zulassungsbehörden (Sachgebiet Verkehrswesen)",
+    "behoerdeQuelle": "https://www.landkreis-rosenheim.de/verkehr/",
+    "traeger": "Landkreis Rosenheim",
+    "standorte": [
+      {
+        "bezeichnung": "Verkehrszentrum Rosenheim – Führerscheinstelle und KFZ-Zulassungsstelle (Aicherpark)",
+        "strasse": "Äußere Oberaustraße 4",
+        "plz": "83026",
+        "ort": "Rosenheim",
+        "quelle": "https://www.landkreis-rosenheim.de/verkehr/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Wasserburg",
+        "strasse": "Staudhamer Feld 7a",
+        "plz": "83512",
+        "ort": "Wasserburg a. Inn",
+        "quelle": "https://www.landkreis-rosenheim.de/e-services/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-rosenheim.de/verkehr/",
+      "quelle": "https://www.landkreis-rosenheim.de/verkehr/"
+    },
+    "terminUrl": {
+      "url": "https://terminreservierung.lra-rosenheim.de/",
+      "quelle": "https://www.landkreis-rosenheim.de/e-services/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.landkreis-rosenheim.de/ikfz-online-zulassungsbehoerde/",
+      "quelle": "https://www.landkreis-rosenheim.de/verkehr/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Rosenheim (Verkehrszentrum): Mo–Fr 07:30–12:00",
+        "Rosenheim (Verkehrszentrum): Di und Do 13:00–17:00",
+        "Wasserburg: Mo–Fr 08:15–12:00",
+        "Wasserburg: Di und Mi 14:00–15:30",
+        "Wasserburg: Do 14:00–17:00"
+      ],
+      "hinweis": "Online-Terminreservierung für beide Zulassungsstellen möglich",
+      "quelle": "https://www.landkreis-rosenheim.de/e-services/"
+    },
+    "zustaendigkeit": {
+      "text": "Die Zulassungsstellen des Landratsamts sind für Halter mit Hauptwohnsitz oder Betriebssitz im Landkreis Rosenheim zuständig („nur für Landkreisbürger“). Die Stadt Rosenheim (ebenfalls Kennzeichen RO) ist ein eigener Zulassungsbezirk; über den Verbund der erweiterten Zuständigkeit (VeZ) können Fahrzeuge der Stadt Rosenheim sowie der Landkreise Altötting, Mühldorf, Traunstein, Miesbach, Bad Tölz-Wolfratshausen, Berchtesgaden, Garmisch-Partenkirchen, München, Starnberg und Fürstenfeldbruck aber auch beim Landratsamt Rosenheim angemeldet werden.",
+      "quelle": "https://www.landkreis-rosenheim.de/verkehr/"
+    },
+    "kuerzel": [
+      {
+        "code": "RO",
+        "bedeutung": "Rosenheim (Stadt und Landkreis Rosenheim)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "AIB",
+        "bedeutung": "Bad Aibling (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WS",
+        "bedeutung": "Wasserburg am Inn (Altkennzeichen, auch im Landkreis Mühldorf a. Inn)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Über den Verbund der erweiterten Zuständigkeit (VeZ) können im Landkreis Rosenheim auch Zulassungsvorgänge für andere oberbayerische Zulassungsbezirke durchgeführt werden.",
+        "quelle": "https://www.landkreis-rosenheim.de/verkehr/"
+      },
+      {
+        "text": "Die Stadt Rosenheim betreibt eine eigene Zulassungsbehörde mit eigener Online-Zulassung (i-Kfz) und Terminvergabe.",
+        "quelle": "https://www.rosenheim.de/buergerservice/mobilitaet/kfz-zulassung/"
+      },
+      {
+        "text": "Online reservierte Wunschkennzeichen bleiben 60 Tage reserviert; bei der Zulassung fällt dafür eine Gebühr von 12,80 € an.",
+        "quelle": "https://www.landkreis-rosenheim.de/e-services/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-starnberg",
+    "stadt": "Landkreis Starnberg",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Starnberg – BürgerService (Fachbereich 10), Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.lk-starnberg.de/B%C3%BCrgerservice/Verkehr/Kfz-Zulassung/",
+    "traeger": "Landkreis Starnberg",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Starnberg – BürgerService (Fachbereich 10)",
+        "strasse": "Strandbadstraße 2",
+        "plz": "82319",
+        "ort": "Starnberg",
+        "quelle": "https://www.lk-starnberg.de/B%C3%BCrgerservice/Verkehr/Kfz-Zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.lk-starnberg.de/B%C3%BCrgerservice/Verkehr/Kfz-Zulassung/",
+      "quelle": "https://www.lk-starnberg.de/B%C3%BCrgerservice/Verkehr/Kfz-Zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termine.lk-starnberg.de/m/lra-starnberg/extern/calendar/?uid=e0bc7272-79d4-4b70-bb4f-59278abe5450",
+      "quelle": "https://www.lk-starnberg.de/B%C3%BCrgerservice/Verkehr/Kfz-Zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrstarnberg/",
+      "quelle": "https://www.lk-starnberg.de/B%C3%BCrgerservice/Verkehr/Kfz-Zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 8:00–16:00",
+        "Di 8:00–16:00",
+        "Mi 8:00–14:00",
+        "Do 8:00–18:00",
+        "Fr 8:00–14:00"
+      ],
+      "hinweis": "Persönliche Besuche nur nach vorheriger Terminvereinbarung (Servicezeiten BürgerService)",
+      "quelle": "https://www.lk-starnberg.de/B%C3%BCrgerservice/Verkehr/Kfz-Zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassung für den Landkreis Starnberg (Firmenzulassungen nur, wenn der Gewerbebetrieb im Landkreis Starnberg angemeldet ist). Im Rahmen der erweiterten Zuständigkeit können auch Halter aus den Landkreisen München (außer München-Stadt), Altötting, Bad Tölz-Wolfratshausen, Berchtesgadener Land, Fürstenfeldbruck, Garmisch-Partenkirchen, Miesbach, Mühldorf, Traunstein, Rosenheim und der Stadt Rosenheim bestimmte Vorgänge in Starnberg erledigen.",
+      "quelle": "https://www.lk-starnberg.de/B%C3%BCrgerservice/Verkehr/Kfz-Zulassung/Erweiterte-Zust%C3%A4ndigkeit-im-Kfz-Zulassungswesen/"
+    },
+    "kuerzel": [
+      {
+        "code": "STA",
+        "bedeutung": "Starnberg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WOR",
+        "bedeutung": "Wolfratshausen (Altkennzeichen, auch in den Landkreisen Bad Tölz-Wolfratshausen und München)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Für Kfz-Zulassung ist eine Terminvereinbarung notwendig; Online-Terminbuchungen sind derzeit nur 7 Tage im Voraus möglich, die Terminbestätigung ist mitzubringen.",
+        "quelle": "https://www.lk-starnberg.de/B%C3%BCrgerservice/Verkehr/Kfz-Zulassung/"
+      },
+      {
+        "text": "Kfz-Zulassungen sind nur mit der Teilnahmeerklärung zum Lastschrifteinzugsverfahren für die Kfz-Steuer möglich (Ausnahme: Kurzzeitkennzeichen).",
+        "quelle": "https://www.lk-starnberg.de/B%C3%BCrgerservice/Verkehr/Kfz-Zulassung/"
+      },
+      {
+        "text": "Bei Zulassungen über die erweiterte Zuständigkeit erhält das Fahrzeug immer ein Kennzeichen der für den Hauptwohnsitz/Betriebssitz zuständigen Behörde; Oldtimer- und rote Dauerkennzeichen sind davon ausgenommen.",
+        "quelle": "https://www.lk-starnberg.de/B%C3%BCrgerservice/Verkehr/Kfz-Zulassung/Erweiterte-Zust%C3%A4ndigkeit-im-Kfz-Zulassungswesen/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-traunstein",
+    "stadt": "Landkreis Traunstein",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Traunstein – KFZ-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.traunstein.com/buergerservice/verkehrswesen/kfz-zulassungsbehoerde",
+    "traeger": "Landkreis Traunstein",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Traunstein – KFZ-Zulassungsstelle (Außenstelle)",
+        "strasse": "Kotzinger Str. 6",
+        "plz": "83278",
+        "ort": "Traunstein",
+        "quelle": "https://www.traunstein.com/buergerservice/verkehrswesen/kfz-zulassungsbehoerde"
+      }
+    ],
+    "website": {
+      "url": "https://www.traunstein.com/buergerservice/verkehrswesen/kfz-zulassungsbehoerde",
+      "quelle": "https://www.traunstein.com/buergerservice/verkehrswesen/kfz-zulassungsbehoerde"
+    },
+    "terminUrl": {
+      "url": "https://lra-traunstein.saas.smartcjm.com/m/zulassung/extern/calendar/?uid=ea6a7d09-01bd-4027-bed6-88d6b882167c",
+      "quelle": "https://www.traunstein.com/buergerservice/verkehrswesen/kfz-zulassungsbehoerde"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrtraunstein/bsp_ikfz_antragstellung#/",
+      "quelle": "https://www.traunstein.com/buergerservice/verkehrswesen/kfz-zulassungsbehoerde"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Fr 7:30–12:30",
+        "Mo und Do 13:30–16:30"
+      ],
+      "hinweis": "Serviceleistungen vor Ort nur mit vorheriger Terminvereinbarung (max. 14 Tage vorher)",
+      "quelle": "https://www.traunstein.com/buergerservice/verkehrswesen/kfz-zulassungsbehoerde"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Traunstein mit Sitz in Traunstein. Im Rahmen der erweiterten Zuständigkeit sind Anmeldungen, Abmeldungen und Änderungen auch für die Landkreise Berchtesgadener Land, Mühldorf, Miesbach, Bad Tölz, Starnberg, Garmisch-Partenkirchen, München, Fürstenfeldbruck, Altötting sowie Landkreis und Stadt Rosenheim möglich.",
+      "quelle": "https://www.traunstein.com/buergerservice/verkehrswesen/kfz-zulassungsbehoerde"
+    },
+    "kuerzel": [
+      {
+        "code": "TS",
+        "bedeutung": "Traunstein",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "LF",
+        "bedeutung": "Laufen (Salzach) (Altkennzeichen, auch in den Landkreisen Berchtesgadener Land und Altötting)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Pro Termin sind maximal drei Zulassungsvorgänge möglich.",
+        "quelle": "https://www.traunstein.com/buergerservice/verkehrswesen/kfz-zulassungsbehoerde"
+      },
+      {
+        "text": "Bestehen offene Forderungen gegenüber dem Hauptzollamt (Kfz-Steuer) oder dem Landratsamt, kann keine Zulassung erfolgen.",
+        "quelle": "https://www.traunstein.com/buergerservice/verkehrswesen/kfz-zulassungsbehoerde"
+      },
+      {
+        "text": "Das SEPA-Lastschriftmandat für die Kfz-Steuer muss bei jedem Zulassungsvorgang vom Halter unterschrieben vorliegen, auch bei abweichendem Zahler oder beantragter Steuerbefreiung.",
+        "quelle": "https://www.traunstein.com/buergerservice/verkehrswesen/kfz-zulassungsbehoerde"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-weilheim-schongau",
+    "stadt": "Landkreis Weilheim-Schongau",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Weilheim-Schongau – Sachbereich 31.1 Zulassungswesen",
+    "behoerdeQuelle": "https://www.weilheim-schongau.de/landratsamt/geschaeftsverteilungsplan/?Zulassungsstelle&view=org&orgid=6b37cb9c-4f99-403f-a7c4-a9eb516edcc5",
+    "traeger": "Landkreis Weilheim-Schongau",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Weilheim-Schongau, Zulassungsstelle Weilheim",
+        "strasse": "Stainhartstraße 7",
+        "plz": "82362",
+        "ort": "Weilheim i.OB",
+        "quelle": "https://www.weilheim-schongau.de/landratsamt/geschaeftsverteilungsplan/?Zulassungsstelle&view=org&orgid=6b37cb9c-4f99-403f-a7c4-a9eb516edcc5"
+      },
+      {
+        "bezeichnung": "Landratsamt Weilheim-Schongau, Zulassungsstelle Schongau",
+        "strasse": "Münzstraße 33",
+        "plz": "86956",
+        "ort": "Schongau",
+        "quelle": "https://www.weilheim-schongau.de/landratsamt/geschaeftsverteilungsplan/?Zulassungsstelle&view=org&orgid=6b37cb9c-4f99-403f-a7c4-a9eb516edcc5"
+      }
+    ],
+    "website": {
+      "url": "https://www.weilheim-schongau.de/landratsamt/geschaeftsverteilungsplan/?Zulassungsstelle&view=org&orgid=6b37cb9c-4f99-403f-a7c4-a9eb516edcc5",
+      "quelle": "https://www.weilheim-schongau.de/landratsamt/geschaeftsverteilungsplan/?Zulassungsstelle&view=org&orgid=6b37cb9c-4f99-403f-a7c4-a9eb516edcc5"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/weilheimschongau/",
+      "quelle": "https://www.weilheim-schongau.de/landratsamt/geschaeftsverteilungsplan/?Zulassungsstelle&view=org&orgid=6b37cb9c-4f99-403f-a7c4-a9eb516edcc5"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerserviceportal.de/bayern/lkrweilheimschongau/bsp_ikfz_antragstellung/",
+      "quelle": "https://www.weilheim-schongau.de/landratsamt/geschaeftsverteilungsplan/?Zulassungsstelle&view=org&orgid=6b37cb9c-4f99-403f-a7c4-a9eb516edcc5"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Weilheim: Mo 07:30–15:30 (Annahmeschluss)",
+        "Weilheim: Di 07:30–15:30 (Annahmeschluss)",
+        "Weilheim: Mi 08:00–12:30 (Annahmeschluss)",
+        "Weilheim: Do 07:30–11:45 und 13:00–17:45 (Annahmeschluss)",
+        "Weilheim: Fr 08:00–12:15 (Annahmeschluss)",
+        "Schongau: Mo 08:00–11:45 (Annahmeschluss)",
+        "Schongau: Di 08:00–11:45 und 14:00–15:45 (Annahmeschluss)",
+        "Schongau: Mi 08:00–11:45 (Annahmeschluss)",
+        "Schongau: Do 08:00–11:45 und 14:00–17:45 (Annahmeschluss)",
+        "Schongau: Fr 08:00–11:45 (Annahmeschluss)"
+      ],
+      "hinweis": "Terminvereinbarung dringend empfohlen; ohne Termin längere Wartezeiten bzw. bei sehr hohem Andrang keine Bearbeitung am selben Tag möglich",
+      "quelle": "https://www.weilheim-schongau.de/landratsamt/geschaeftsverteilungsplan/?Zulassungsstelle&view=org&orgid=6b37cb9c-4f99-403f-a7c4-a9eb516edcc5"
+    },
+    "zustaendigkeit": {
+      "text": "Die Zulassungsstellen des Landratsamts Weilheim-Schongau sind an zwei Standorten (Weilheim i.OB und Schongau) tätig; an beiden können sämtliche Schaltervorgänge erledigt werden.",
+      "quelle": "https://www.weilheim-schongau.de/landratsamt/geschaeftsverteilungsplan/?Zulassungsstelle&view=org&orgid=6b37cb9c-4f99-403f-a7c4-a9eb516edcc5"
+    },
+    "kuerzel": [
+      {
+        "code": "WM",
+        "bedeutung": "Weilheim in Oberbayern",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SOG",
+        "bedeutung": "Schongau (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Wartetickets können frühestens 15 Minuten vor Beginn der Öffnungszeit und maximal bis Annahmeschluss gezogen werden.",
+        "quelle": "https://www.weilheim-schongau.de/landratsamt/geschaeftsverteilungsplan/?Zulassungsstelle&view=org&orgid=6b37cb9c-4f99-403f-a7c4-a9eb516edcc5"
+      },
+      {
+        "text": "Gebühren sind sofort vor Ort zu zahlen: bar am Kassenautomaten oder per EC-Karte am Schalter.",
+        "quelle": "https://www.weilheim-schongau.de/landratsamt/geschaeftsverteilungsplan/?Zulassungsstelle&view=org&orgid=6b37cb9c-4f99-403f-a7c4-a9eb516edcc5"
+      },
+      {
+        "text": "Online über das Bürgerserviceportal möglich: Neuzulassung, Tageszulassung, Wiederzulassung, Umschreibung, Adressänderung und Außerbetriebsetzung.",
+        "quelle": "https://www.weilheim-schongau.de/landratsamt/geschaeftsverteilungsplan/?Zulassungsstelle&view=org&orgid=6b37cb9c-4f99-403f-a7c4-a9eb516edcc5"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "zustaendigkeit"
+    ]
+  },
+  {
+    "slug": "landkreis-deggendorf",
+    "stadt": "Landkreis Deggendorf",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Deggendorf – KFZ-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.landkreis-deggendorf.de/amt-service/haeufig-gesuchte-begriffe/kfz-zulassung/?view=org&orgid=13fe6cdf-d264-4a29-b5b4-de184c062236",
+    "traeger": "Landkreis Deggendorf",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Deggendorf – KFZ-Zulassungsbehörde Deggendorf",
+        "strasse": "Herrenstraße 18",
+        "plz": "94469",
+        "ort": "Deggendorf",
+        "quelle": "https://www.landkreis-deggendorf.de/amt-service/haeufig-gesuchte-begriffe/kfz-zulassung/?zulassungen-fuer-andere-zulassungsbezirke&orga=74351"
+      },
+      {
+        "bezeichnung": "Landratsamt Deggendorf – KFZ-Zulassungsbehörde, Außenstelle Osterhofen",
+        "strasse": "Bahnhofstraße 39",
+        "plz": "94486",
+        "ort": "Osterhofen",
+        "quelle": "https://www.landkreis-deggendorf.de/amt-service/haeufig-gesuchte-begriffe/kfz-zulassung/?zulassungen-fuer-andere-zulassungsbezirke&orga=74351"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-deggendorf.de/amt-service/haeufig-gesuchte-begriffe/kfz-zulassung/?view=org&orgid=13fe6cdf-d264-4a29-b5b4-de184c062236",
+      "quelle": "https://www.landkreis-deggendorf.de/amt-service/haeufig-gesuchte-begriffe/kfz-zulassung/?view=org&orgid=13fe6cdf-d264-4a29-b5b4-de184c062236"
+    },
+    "terminUrl": {
+      "url": "https://www.landkreis-deggendorf.de/amt-service/online-services/online-terminvergabe-zulassung/",
+      "quelle": "https://www.landkreis-deggendorf.de/amt-service/haeufig-gesuchte-begriffe/kfz-zulassung/?view=org&orgid=13fe6cdf-d264-4a29-b5b4-de184c062236"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerserviceportal.de/bayern/lkrdeggendorf/bsp_ikfz_antragstellung",
+      "quelle": "https://www.landkreis-deggendorf.de/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Deggendorf: Mo 07:30–12:30 und 13:30–16:00",
+        "Deggendorf: Di 07:30–12:30 und 13:30–16:00",
+        "Deggendorf: Mi 07:30–12:30",
+        "Deggendorf: Do 07:30–17:00",
+        "Deggendorf: Fr 07:30–12:00",
+        "Osterhofen: Mo–Do 07:30–12:00 und 13:30–15:00",
+        "Osterhofen: Fr 07:30–11:30"
+      ],
+      "hinweis": "Annahmeschluss 15 Minuten vor Ende; Online-Terminvereinbarung möglich",
+      "quelle": "https://www.landkreis-deggendorf.de/amt-service/haeufig-gesuchte-begriffe/kfz-zulassung/?zulassungen-fuer-andere-zulassungsbezirke&orga=74351"
+    },
+    "zustaendigkeit": {
+      "text": "KFZ-Zulassungsbehörde des Landkreises Deggendorf mit Standorten in Deggendorf und Osterhofen. In Deggendorf und Osterhofen kann zusätzlich für die Zulassungsbezirke Regen, Rottal-Inn, Dingolfing-Landau, Freyung-Grafenau, Stadt und Landkreis Passau, Stadt und Landkreis Straubing, Landkreis Landshut und Landkreis Kelheim zugelassen werden.",
+      "quelle": "https://www.landkreis-deggendorf.de/amt-service/haeufig-gesuchte-begriffe/kfz-zulassung/?zulassungen-fuer-andere-zulassungsbezirke&orga=74351"
+    },
+    "kuerzel": [
+      {
+        "code": "DEG",
+        "bedeutung": "Deggendorf",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Erweiterte Zuständigkeit: Zulassungen auch für Regen, Rottal-Inn, Dingolfing-Landau, Freyung-Grafenau, Stadt und Landkreis Passau, Stadt und Landkreis Straubing sowie die Landkreise Landshut und Kelheim.",
+        "quelle": "https://www.landkreis-deggendorf.de/amt-service/haeufig-gesuchte-begriffe/kfz-zulassung/?zulassungen-fuer-andere-zulassungsbezirke&orga=74351"
+      },
+      {
+        "text": "In Deggendorf hat die Zulassung montags auch nachmittags geöffnet (13:30–16:00), die Führerscheinstelle dagegen nicht.",
+        "quelle": "https://www.landkreis-deggendorf.de/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-dingolfing-landau",
+    "stadt": "Landkreis Dingolfing-Landau",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Dingolfing-Landau – Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://dingolfing-landau.de/leben-und-arbeiten/mobilitaet-oepnv-und-kfz/kfz/zulassungsstelle/",
+    "traeger": "Landkreis Dingolfing-Landau",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Hauptstelle Dingolfing",
+        "strasse": "Obere Stadt 1",
+        "plz": "84130",
+        "ort": "Dingolfing",
+        "quelle": "https://dingolfing-landau.de/leben-und-arbeiten/mobilitaet-oepnv-und-kfz/kfz/zulassungsstelle/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Außenstelle Landau",
+        "strasse": "Viehmarktstr. 3",
+        "plz": "94405",
+        "ort": "Landau a.d.Isar",
+        "quelle": "https://dingolfing-landau.de/leben-und-arbeiten/mobilitaet-oepnv-und-kfz/kfz/zulassungsstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://dingolfing-landau.de/leben-und-arbeiten/mobilitaet-oepnv-und-kfz/kfz/zulassungsstelle/",
+      "quelle": "https://dingolfing-landau.de/leben-und-arbeiten/mobilitaet-oepnv-und-kfz/kfz/zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://termin.landkreis-dingolfing-landau.de/Online-Terminvergabe/book-appointment",
+      "quelle": "https://dingolfing-landau.de/leben-und-arbeiten/mobilitaet-oepnv-und-kfz/kfz/zulassungsstelle/"
+    },
+    "ikfzUrl": {
+      "url": "https://dingolfing-landau.de/service-und-verwaltung/buergerservice/onlinezugangsgesetz-ozg/online-zulassungsservice/#/",
+      "quelle": "https://dingolfing-landau.de/leben-und-arbeiten/mobilitaet-oepnv-und-kfz/kfz/zulassungsstelle/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Dingolfing und Landau: Mo–Fr 07:30–12:00",
+        "Dingolfing und Landau: Mo, Di und Do 13:30–16:00"
+      ],
+      "hinweis": "Annahmeschluss jeweils 15 Minuten vor Öffnungszeitende; Online-Terminvereinbarung möglich",
+      "quelle": "https://dingolfing-landau.de/leben-und-arbeiten/mobilitaet-oepnv-und-kfz/kfz/zulassungsstelle/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Dingolfing-Landau (Hauptstelle Dingolfing, Außenstelle Landau). Halter mit Hauptwohn- oder Betriebssitz in den Landkreisen Deggendorf, Rottal-Inn, Kelheim, Landshut, Straubing-Bogen, Regen, Passau, Freyung-Grafenau sowie den Städten Passau und Straubing können diverse Zulassungsvorgänge ebenfalls hier erledigen.",
+      "quelle": "https://dingolfing-landau.de/leben-und-arbeiten/mobilitaet-oepnv-und-kfz/kfz/zulassungsstelle/zulassungen-fuer-andere-zulassungsbezirke/"
+    },
+    "kuerzel": [
+      {
+        "code": "DGF",
+        "bedeutung": "Dingolfing",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "LAN",
+        "bedeutung": "Landau an der Isar (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Beide Zulassungsbehörden (Hauptstelle Dingolfing und Außenstelle Landau) bieten die Leistungen vor Ort mit identischen Öffnungszeiten an.",
+        "quelle": "https://dingolfing-landau.de/leben-und-arbeiten/mobilitaet-oepnv-und-kfz/kfz/zulassungsstelle/"
+      },
+      {
+        "text": "Bei Zulassungen für andere Zulassungsbezirke erhält das Fahrzeug immer ein Kennzeichen der eigentlich zuständigen Behörde; bei bestehenden Gebührenrückständen kann keine Zulassung vollzogen werden.",
+        "quelle": "https://dingolfing-landau.de/leben-und-arbeiten/mobilitaet-oepnv-und-kfz/kfz/zulassungsstelle/zulassungen-fuer-andere-zulassungsbezirke/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-freyung-grafenau",
+    "stadt": "Landkreis Freyung-Grafenau",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Freyung-Grafenau – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.freyung-grafenau.de/zulassung",
+    "traeger": "Landkreis Freyung-Grafenau",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Freyung (Dienstgebäude Königsfeld, Hauptgebäude)",
+        "strasse": "Grafenauer Str. 44",
+        "plz": "94078",
+        "ort": "Freyung",
+        "quelle": "https://www.freyung-grafenau.de/zulassung"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Grafenau (Außenstelle)",
+        "strasse": "Rathausgasse 1",
+        "plz": "94481",
+        "ort": "Grafenau",
+        "quelle": "https://www.freyung-grafenau.de/zulassung"
+      }
+    ],
+    "website": {
+      "url": "https://www.freyung-grafenau.de/zulassung",
+      "quelle": "https://www.freyung-grafenau.de/zulassung"
+    },
+    "terminUrl": {
+      "url": "https://lk-frg.termine-reservieren.online/select2?md=5",
+      "quelle": "https://www.freyung-grafenau.de/zulassung"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrfreyunggrafenau/bsp_ikfz_antragstellung/#/",
+      "quelle": "https://www.freyung-grafenau.de/zulassung/online-dienste"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Freyung: Mo–Mi 07:30–13:00",
+        "Freyung: Do 07:30–17:00",
+        "Freyung: Fr 07:30–12:00",
+        "Grafenau: Mo, Mi, Do 07:30–13:00",
+        "Grafenau: Di 07:30–17:00",
+        "Grafenau: Fr 07:30–12:00"
+      ],
+      "hinweis": "Annahmeschluss in beiden Stellen 30 Minuten vor Öffnungszeitende; Termine online möglich, Besuch auch ohne Termin möglich",
+      "quelle": "https://www.freyung-grafenau.de/zulassung"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstellen des Landratsamts Freyung-Grafenau in Freyung (Hauptgebäude) und Grafenau (Außenstelle); zuständig u. a. für Neu- und Wiederzulassungen, Umschreibungen, Stilllegungen und Umkennzeichnungen.",
+      "quelle": "https://www.freyung-grafenau.de/zulassung"
+    },
+    "kuerzel": [
+      {
+        "code": "FRG",
+        "bedeutung": "Freyung-Grafenau",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GRA",
+        "bedeutung": "Grafenau (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WOS",
+        "bedeutung": "Wolfstein (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Während für das Landratsamt allgemein Termine telefonisch zu vereinbaren sind, können die Kfz-Zulassungsstellen Freyung und Grafenau auch ohne Termin aufgesucht werden.",
+        "quelle": "https://www.freyung-grafenau.de/zulassung"
+      },
+      {
+        "text": "Langer Tag: In Freyung donnerstags, in Grafenau dienstags jeweils bis 17:00 Uhr geöffnet.",
+        "quelle": "https://www.freyung-grafenau.de/zulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "zustaendigkeit"
+    ]
+  },
+  {
+    "slug": "landkreis-kelheim",
+    "stadt": "Landkreis Kelheim",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Kelheim – Kraftfahrzeug-Zulassungsbehörde (Sachgebiet 24)",
+    "behoerdeQuelle": "https://www.landkreis-kelheim.de/landratsamt/landratsamt/geschaeftsverteilung/?kraftfahrzeug-zulassungsbehoerde-kelheim&orga=2aa098725ec33428c19c361ca6f2e131",
+    "traeger": "Landkreis Kelheim",
+    "standorte": [
+      {
+        "bezeichnung": "Kraftfahrzeug-Zulassungsbehörde Kelheim (Landratsamt)",
+        "strasse": "Donaupark 12",
+        "plz": "93309",
+        "ort": "Kelheim",
+        "quelle": "https://www.landkreis-kelheim.de/landratsamt/landratsamt/geschaeftsverteilung/?kraftfahrzeug-zulassungsbehoerde-kelheim&orga=2aa098725ec33428c19c361ca6f2e131"
+      },
+      {
+        "bezeichnung": "Kraftfahrzeug-Zulassungsbehörde Mainburg (Landratsamt Kelheim – Dienststelle Mainburg)",
+        "strasse": "Regensburger Str. 1",
+        "plz": "84048",
+        "ort": "Mainburg",
+        "quelle": "https://www.landkreis-kelheim.de/landratsamt/landratsamt/geschaeftsverteilung/?kraftfahrzeug-zulassungsbehoerde-mainburg=&orga=002f0b7ab4ad823d117548a6b483cce9"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-kelheim.de/landratsamt/landratsamt/geschaeftsverteilung/?kraftfahrzeug-zulassungsbehoerde-kelheim&orga=2aa098725ec33428c19c361ca6f2e131",
+      "quelle": "https://www.landkreis-kelheim.de/landratsamt/landratsamt/geschaeftsverteilung/?kraftfahrzeug-zulassungsbehoerde-kelheim&orga=2aa098725ec33428c19c361ca6f2e131"
+    },
+    "terminUrl": {
+      "url": "https://terminbuchung.landkreis-kelheim.de/m/kfz-fsw/extern/calendar/?uid=e57e6c5e-c007-4178-a2b9-65be48bf7a32",
+      "quelle": "https://www.landkreis-kelheim.de/landratsamt/onlinedienste/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.landkreis-kelheim.de/landratsamt/onlinedienste/online-zulassungsbehoerde-ikfz-service/",
+      "quelle": "https://www.landkreis-kelheim.de/landratsamt/onlinedienste/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Kelheim und Mainburg: Mo–Fr 07:30–11:30",
+        "Kelheim und Mainburg: Di 13:30–15:30",
+        "Kelheim und Mainburg: Do 13:30–17:00"
+      ],
+      "hinweis": "Es muss mit längerer Wartezeit gerechnet werden; Online-Terminreservierung je Standort möglich",
+      "quelle": "https://www.landkreis-kelheim.de/landratsamt/landratsamt/oeffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Kraftfahrzeug-Zulassungsbehörde des Landratsamts Kelheim mit Standorten in Kelheim und Mainburg; bearbeitet u. a. Umschreibungen innerhalb des Landkreises und aus anderen Landkreisen.",
+      "quelle": "https://www.landkreis-kelheim.de/landratsamt/landratsamt/geschaeftsverteilung/?zulassung-von-kraftfahrzeugen&orga=9a9370898fd72792f37747dd7c760944"
+    },
+    "kuerzel": [
+      {
+        "code": "KEH",
+        "bedeutung": "Kelheim",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MAI",
+        "bedeutung": "Mainburg (Altkennzeichen, auch im Landkreis Landshut)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "PAR",
+        "bedeutung": "Parsberg (Altkennzeichen, auch im Landkreis Neumarkt i.d.OPf.)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "RID",
+        "bedeutung": "Riedenburg (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ROL",
+        "bedeutung": "Rottenburg an der Laaber (Altkennzeichen, auch im Landkreis Landshut)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "In der Dienststelle Mainburg wird nur noch bargeldlose Bezahlung akzeptiert; Barzahlung ist dort nicht möglich.",
+        "quelle": "https://www.landkreis-kelheim.de/landratsamt/landratsamt/geschaeftsverteilung/?kraftfahrzeug-zulassungsbehoerde-mainburg=&orga=002f0b7ab4ad823d117548a6b483cce9"
+      },
+      {
+        "text": "Für die Zulassungsstellen Kelheim und Mainburg gibt es jeweils eine eigene Online-Terminreservierung.",
+        "quelle": "https://www.landkreis-kelheim.de/landratsamt/onlinedienste/"
+      },
+      {
+        "text": "Das Landratsamt weist darauf hin, dass in Zulassungs- und Führerscheinstelle mit längerer Wartezeit gerechnet werden muss.",
+        "quelle": "https://www.landkreis-kelheim.de/landratsamt/landratsamt/oeffnungszeiten/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "zustaendigkeit"
+    ]
+  },
+  {
+    "slug": "landkreis-landshut",
+    "stadt": "Landkreis Landshut",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Landshut – Sachgebiet 34 Kraftfahrzeugzulassung",
+    "behoerdeQuelle": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung/",
+    "traeger": "Landkreis Landshut",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Landshut – Kfz-Zulassung",
+        "strasse": "Josef-Neumeier-Allee 1",
+        "plz": "84051",
+        "ort": "Essenbach",
+        "quelle": "https://www.landkreis-landshut.de/landratsamt/standorte-oeffnungszeiten/"
+      },
+      {
+        "bezeichnung": "KFZ-Zulassungsstelle Rottenburg",
+        "strasse": "Georg-Pöschl-Str. 25",
+        "plz": "84056",
+        "ort": "Rottenburg a.d.Laaber",
+        "quelle": "https://www.landkreis-landshut.de/landratsamt/standorte-oeffnungszeiten/"
+      },
+      {
+        "bezeichnung": "KFZ-Zulassungsstelle Vilsbiburg",
+        "strasse": "Ohmstr. 2 b",
+        "plz": "84137",
+        "ort": "Vilsbiburg",
+        "quelle": "https://www.landkreis-landshut.de/landratsamt/standorte-oeffnungszeiten/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung/",
+      "quelle": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung/"
+    },
+    "terminUrl": null,
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrlandshut/bsp_ikfz_antragstellung/#/",
+      "quelle": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Essenbach: Mo 08:00–11:30 und 13:30–15:00",
+        "Essenbach: Di–Mi 07:30–11:30",
+        "Essenbach: Do 08:00–11:30 und 13:30–16:30",
+        "Essenbach: Fr 08:00–11:30",
+        "Rottenburg und Vilsbiburg: Mo–Fr 07:30–12:00",
+        "Rottenburg und Vilsbiburg: Mo–Mi 13:30–15:30",
+        "Rottenburg und Vilsbiburg: Do 13:30–17:00 (Annahmeschluss jeweils 30 Minuten vorher)"
+      ],
+      "hinweis": "Terminvereinbarung im Vorfeld wird dringend empfohlen",
+      "quelle": "https://www.landkreis-landshut.de/landratsamt/standorte-oeffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsbehörde des Landkreises Landshut (Standorte Essenbach, Rottenburg a.d.Laaber, Vilsbiburg). Die Stadt Landshut hat eine eigene Zulassungsbehörde; beide nutzen das Kennzeichen LA. Über die erweiterte Zuständigkeit können auch Halter aus den Landkreisen Deggendorf, Dingolfing, Regen, Rottal-Inn, Straubing sowie den kreisfreien Städten Passau und Straubing bestimmte Vorgänge hier erledigen.",
+      "quelle": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung/?kfz-zulassung-informationen-zur-kfz-zulassung&orga=94d1b201ab96edd0acf240f0507222ab"
+    },
+    "kuerzel": [
+      {
+        "code": "LA",
+        "bedeutung": "Landshut (Stadt und Landkreis Landshut)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MAI",
+        "bedeutung": "Mainburg (Altkennzeichen, auch im Landkreis Kelheim)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MAL",
+        "bedeutung": "Mallersdorf (Altkennzeichen, auch im Landkreis Straubing-Bogen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ROL",
+        "bedeutung": "Rottenburg an der Laaber (Altkennzeichen, auch im Landkreis Kelheim)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "VIB",
+        "bedeutung": "Vilsbiburg (Altkennzeichen, auch im Landkreis Rottal-Inn)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Seit 06.10.2025 ist die frühere Kfz-Zulassungsstelle Landshut-Ergolding im Landratsamt am Standort Essenbach zu finden.",
+        "quelle": "https://www.landkreis-landshut.de/landratsamt/standorte-oeffnungszeiten/"
+      },
+      {
+        "text": "Bei einem Umzug zwischen Stadt und Landkreis Landshut kann das bisherige Kennzeichen behalten werden; die Umschreibung bei der neuen Behörde bleibt Pflicht.",
+        "quelle": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung/?kfz-zulassung-informationen-zur-kfz-zulassung&orga=94d1b201ab96edd0acf240f0507222ab"
+      },
+      {
+        "text": "Eine Online-Terminvereinbarung für die Kfz-Zulassung gibt es noch nicht; laut Landratsamt wird daran gearbeitet.",
+        "quelle": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "terminUrl"
+    ]
+  },
+  {
+    "slug": "landkreis-passau",
+    "stadt": "Landkreis Passau",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Passau – 434 Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.landkreis-passau.de/themen-haeufig-nachgefragt/zulassungsstellen/",
+    "traeger": "Landkreis Passau",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Salzweg",
+        "strasse": "Passauer Straße 39",
+        "plz": "94121",
+        "ort": "Salzweg",
+        "quelle": "https://www.landkreis-passau.de/themen-haeufig-nachgefragt/zulassungsstellen/?zulassungsstelle-salzweg&orga=61726"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Hauzenberg",
+        "strasse": "Bahnhofstr. 18",
+        "plz": "94051",
+        "ort": "Hauzenberg",
+        "quelle": "https://www.landkreis-passau.de/themen-haeufig-nachgefragt/zulassungsstellen/?zulassungsstelle-hauzenberg&orga=61802"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Pocking",
+        "strasse": "Simbacher Straße 16",
+        "plz": "94060",
+        "ort": "Pocking",
+        "quelle": "https://www.landkreis-passau.de/themen-haeufig-nachgefragt/zulassungsstellen/?zulassungsstelle-pocking&orga=61804"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Vilshofen an der Donau",
+        "strasse": "Passauer Straße 51",
+        "plz": "94474",
+        "ort": "Vilshofen an der Donau",
+        "quelle": "https://www.landkreis-passau.de/themen-haeufig-nachgefragt/zulassungsstellen/?zulassungsstelle-vilshofen-an-der-donau&orga=61838"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-passau.de/themen-haeufig-nachgefragt/zulassungsstellen/",
+      "quelle": "https://www.landkreis-passau.de/themen-haeufig-nachgefragt/zulassungsstellen/"
+    },
+    "terminUrl": {
+      "url": "https://landkreis-passau.flexappoint.de/#/",
+      "quelle": "https://www.landkreis-passau.de/themen-haeufig-nachgefragt/zulassungsstellen/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrpassau/bsp_ikfz_antragstellung#/",
+      "quelle": "https://www.landkreis-passau.de/themen-haeufig-nachgefragt/zulassungsstellen/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Alle vier Zulassungsstellen: Mo–Do 07:30–12:00 und 13:00–15:30",
+        "Alle vier Zulassungsstellen: Fr 07:30–11:30"
+      ],
+      "hinweis": "Online-Terminvereinbarung empfohlen (laut Landratsamt optional)",
+      "quelle": "https://www.landkreis-passau.de/themen-haeufig-nachgefragt/zulassungsstellen/"
+    },
+    "zustaendigkeit": {
+      "text": "Die Zulassungsstellen des Landratsamts Passau sind für den Landkreis Passau zuständig. Die Stadt Passau (ebenfalls Kennzeichen PA) betreibt eine eigene Zulassungsstelle; Privatpersonen, die außerhalb des Stadtgebiets wohnen, verweist die Stadt an die Zulassungsbehörde ihres Hauptwohnsitzes.",
+      "quelle": "https://www.passau.de/rathaus-buergerservice/dienstleistungen/a-z/zulassungsstelle/"
+    },
+    "kuerzel": [
+      {
+        "code": "PA",
+        "bedeutung": "Passau (Stadt und Landkreis Passau)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Der Landkreis betreibt vier Zulassungsstellen (Salzweg, Hauzenberg, Pocking, Vilshofen an der Donau) mit identischen Öffnungszeiten; der Sitz des Landratsamts am Domplatz 11 in Passau ist nicht als Zulassungsstelle aufgeführt.",
+        "quelle": "https://www.landkreis-passau.de/themen-haeufig-nachgefragt/zulassungsstellen/"
+      },
+      {
+        "text": "Für die Online-Dienste (Zulassung/Abmeldung) ist mindestens eine Anmeldung mit Elster-Zertifikat notwendig.",
+        "quelle": "https://www.landkreis-passau.de/themen-haeufig-nachgefragt/zulassungsstellen/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

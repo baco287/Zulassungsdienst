@@ -1,0 +1,431 @@
+[
+  {
+    "slug": "landkreis-teltow-flaeming",
+    "stadt": "Landkreis Teltow-Fläming",
+    "bundesland": "Brandenburg",
+    "behoerde": "Landkreis Teltow-Fläming – Straßenverkehrsamt, Sachgebiet Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.teltow-flaeming.de/was-erledige-ich-wo/aemter-und-struktur",
+    "traeger": "Landkreis Teltow-Fläming",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Luckenwalde",
+        "strasse": "Louis-Pasteur-Straße 5",
+        "plz": "14943",
+        "ort": "Luckenwalde",
+        "quelle": "https://www.teltow-flaeming.de/was-erledige-ich-wo/sachgebiet/kfz-zulassung"
+      }
+    ],
+    "website": {
+      "url": "https://www.teltow-flaeming.de/was-erledige-ich-wo/sachgebiet/kfz-zulassung",
+      "quelle": "https://www.teltow-flaeming.de/was-erledige-ich-wo/sachgebiet/kfz-zulassung"
+    },
+    "terminUrl": {
+      "url": "https://termine.teltow-flaeming.de/m/sva/extern/calendar/?uid=d137bf45-8c70-4f22-963c-f4567bd87442",
+      "quelle": "https://www.teltow-flaeming.de/sprechzeiten/kfz-zulassung-aktuell"
+    },
+    "ikfzUrl": {
+      "url": "https://ikfz.brandenburg.de/ikfz/de/kfz-zulassungsbehoerden/tf-teltow-flaeming/",
+      "quelle": "https://www.teltow-flaeming.de/sprechzeiten/kfz-zulassung-aktuell"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 8–12 Uhr",
+        "Di 8–12 und 13–15 Uhr",
+        "Mi 8–12 Uhr",
+        "Do 9–12 und 13–18 Uhr",
+        "Fr 8–12 Uhr"
+      ],
+      "hinweis": "Für Privatpersonen nur mit vorheriger Terminvereinbarung (online oder telefonisch unter 03371 608 2764); ohne gültigen Termin keine Bearbeitung. Bis zu drei Vorgänge pro Privatperson.",
+      "quelle": "https://www.teltow-flaeming.de/sprechzeiten/kfz-zulassung-aktuell"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassung für den Landkreis Teltow-Fläming durch das Straßenverkehrsamt des Landkreises, das als untere Straßenverkehrsbehörde u. a. die Zulassung von Kraftfahrzeugen wahrnimmt.",
+      "quelle": "https://www.teltow-flaeming.de/was-erledige-ich-wo/ansprechpersonen/amt/strassenverkehrsamt"
+    },
+    "kuerzel": [
+      {
+        "code": "TF",
+        "bedeutung": "Teltow-Fläming (Teltow, Fläming)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "JB",
+        "bedeutung": "Jüterbog (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "LUK",
+        "bedeutung": "Luckenwalde (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ZS",
+        "bedeutung": "Zossen (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Bezahlung in den Zulassungsstellen seit 5. Januar 2026 ausschließlich bargeldlos (EC-Kartenterminals an allen Arbeitsplätzen); Barzahlung nur in Ausnahmefällen, z. B. bei Verlust der Bezahlkarte.",
+        "quelle": "https://www.teltow-flaeming.de/sprechzeiten/kfz-zulassung-aktuell"
+      },
+      {
+        "text": "Händler, Zulassungsdienste und Autohäuser geben ihre Unterlagen seit 20. Juli 2026 schriftlich im Händlerzimmer ab: maximal 15 Vorgänge pro Tag, Abgabe Mo, Di, Mi und Fr 8–10 Uhr, Do 9–11 Uhr; Terminbuchungen nur noch für Kurzzeit- und Ausfuhrkennzeichen.",
+        "quelle": "https://www.teltow-flaeming.de/sprechzeiten/kfz-zulassung-aktuell"
+      },
+      {
+        "text": "Rote Dauerkennzeichen für Händler (TF-06XX), Fahrzeugscheinhefte dafür und rote Oldtimer-Kennzeichen (TF-07XX) sowie Bootszulassungen werden ohne vorherige Terminabsprache bearbeitet.",
+        "quelle": "https://www.teltow-flaeming.de/sprechzeiten/kfz-zulassung-aktuell"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-uckermark",
+    "stadt": "Landkreis Uckermark",
+    "bundesland": "Brandenburg",
+    "behoerde": "Landkreis Uckermark – Ordnungsamt, Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.uckermark.de/Ordnung-Verkehr-Sicherheit/Zulassung-Fahrerlaubnis/Kraftfahrzeug-Zulassung/",
+    "traeger": "Landkreis Uckermark",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde (Ordnungsamt) Prenzlau",
+        "strasse": "Karl-Marx-Straße 1",
+        "plz": "17291",
+        "ort": "Prenzlau",
+        "quelle": "https://www.uckermark.de/Ordnung-Verkehr-Sicherheit/Zulassung-Fahrerlaubnis/Kraftfahrzeug-Zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.uckermark.de/Ordnung-Verkehr-Sicherheit/Zulassung-Fahrerlaubnis/Kraftfahrzeug-Zulassung/",
+      "quelle": "https://www.uckermark.de/Ordnung-Verkehr-Sicherheit/Zulassung-Fahrerlaubnis/Kraftfahrzeug-Zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termine.uckermark.de/Ordnungsamt/Zulassungsstelle/Termin%C3%BCbersicht-Buchung/?fdirect=1",
+      "quelle": "https://www.uckermark.de/Ordnung-Verkehr-Sicherheit/Zulassung-Fahrerlaubnis/Kraftfahrzeug-Zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.ikfz-brandenburg.de/i4/ikfz4/?LICENSEIDENTIFIER=uckermark_kreis",
+      "quelle": "https://www.uckermark.de/Ordnung-Verkehr-Sicherheit/Zulassung-Fahrerlaubnis/Kraftfahrzeug-Zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–12:00 Uhr",
+        "Di 08:00–17:00 Uhr",
+        "Mi 12:30–15:00 Uhr",
+        "Do 08:00–15:00 Uhr",
+        "Fr 08:00–11:30 Uhr"
+      ],
+      "hinweis": "Online-Terminbuchung nur für Privatkunden; für jeden Vorgang ist ein eigener Termin zu buchen. Im Wartebereich eine Wartemarke für „Gebuchte Online-Termine“ ziehen.",
+      "quelle": "https://www.uckermark.de/Ordnung-Verkehr-Sicherheit/Zulassung-Fahrerlaubnis/Kraftfahrzeug-Zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig ist die Zulassungsbehörde, in deren Bereich Halterin oder Halter den Wohnsitz oder Betriebssitz hat – für Wohnsitz bzw. Betriebssitz im Landkreis Uckermark also die Kfz-Zulassungsbehörde des Landkreises in Prenzlau.",
+      "quelle": "https://www.uckermark.de/Ordnung-Verkehr-Sicherheit/Zulassung-Fahrerlaubnis/Kraftfahrzeug-Zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "UM",
+        "bedeutung": "Uckermark",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ANG",
+        "bedeutung": "Angermünde (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "PZ",
+        "bedeutung": "Prenzlau (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SDT",
+        "bedeutung": "Schwedt/Oder (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "TP",
+        "bedeutung": "Templin (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Wunschkennzeichen online reservierbar; die Reservierung wird gelöscht, wenn das Fahrzeug nicht innerhalb von 90 Tagen zugelassen wird. Gebühr 2,60 EUR (Reservierung) + 10,20 EUR (Wunschkennzeichen), erhoben erst bei der Zulassung.",
+        "quelle": "https://www.uckermark.de/Ordnung-Verkehr-Sicherheit/Zulassung-Fahrerlaubnis/Kraftfahrzeug-Zulassung/"
+      },
+      {
+        "text": "Online-Bankbriefauskunft: Prüfung, ob der Fahrzeugbrief (Zulassungsbescheinigung Teil II) von der Bank bereits bei der Zulassungsstelle hinterlegt wurde.",
+        "quelle": "https://www.uckermark.de/Ordnung-Verkehr-Sicherheit/Zulassung-Fahrerlaubnis/Kraftfahrzeug-Zulassung/"
+      },
+      {
+        "text": "Kosten laut Landkreis: Zulassungsantrag je nach Verwaltungsaufwand ab 26,80 EUR, Kennzeichen ab 10,20 EUR.",
+        "quelle": "https://www.uckermark.de/Ordnung-Verkehr-Sicherheit/Zulassung-Fahrerlaubnis/Kraftfahrzeug-Zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "brandenburg-an-der-havel",
+    "stadt": "Brandenburg an der Havel",
+    "bundesland": "Brandenburg",
+    "behoerde": "Zulassungsbehörde der Stadt Brandenburg an der Havel (Zulassungs- und Fahrerlaubnisbehörde)",
+    "behoerdeQuelle": "https://www.stadt-brandenburg.de/behoerden/zulassungsbehoerde",
+    "traeger": "Stadt Brandenburg an der Havel",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsbehörde im Technologie- und Gründerzentrum (TGZ)",
+        "strasse": "Friedrich-Franz-Straße 19",
+        "plz": "14770",
+        "ort": "Brandenburg an der Havel",
+        "quelle": "https://www.stadt-brandenburg.de/behoerden/zulassungsbehoerde"
+      }
+    ],
+    "website": {
+      "url": "https://www.stadt-brandenburg.de/behoerden/zulassungsbehoerde",
+      "quelle": "https://www.stadt-brandenburg.de/behoerden/zulassungsbehoerde"
+    },
+    "terminUrl": null,
+    "ikfzUrl": {
+      "url": "https://ikfz.brandenburg.de/ikfz/de/kfz-zulassungsbehoerden/brb-brandenburg-stadt/",
+      "quelle": "https://service.stadt-brandenburg.de/dienstleistungen/-/egov-bis-detail/dienstleistung/7312/show"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30–12:00 Uhr",
+        "Di 07:30–12:00 und 13:00–17:00 Uhr",
+        "Mi 07:30–12:00 Uhr",
+        "Do 07:30–12:00 und 13:00–17:00 Uhr",
+        "Fr 07:30–12:00 Uhr"
+      ],
+      "hinweis": "Vorsprache mit Wartemarke; die Wartemarken werden je nach Leistungsfähigkeit der Zulassungsbehörde kontingentiert. Ausgabe Mo–Fr ab 07:30 Uhr, Di und Do zusätzlich ab 13:00 Uhr, bis die letzte Marke ausgegeben ist. Im Einzelfall deutlich längere Wartezeiten.",
+      "quelle": "https://www.stadt-brandenburg.de/behoerden/zulassungsbehoerde"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig für die Stadt Brandenburg an der Havel sowie – aufgrund einer öffentlich-rechtlichen Vereinbarung mit dem Landkreis Potsdam-Mittelmark seit 07.02.2005 – für Einwohner und Gewerbetreibende der Ämter Ziesar, Wusterwitz und Beetzsee sowie der Ortsteile der Gemeinde Kloster Lehnin (nur aufgeführte Leistungen). Anträge aus anderen Gemeinden des Landkreises Potsdam-Mittelmark gehören zur Zulassungsbehörde des Landkreises Potsdam-Mittelmark.",
+      "quelle": "https://service.stadt-brandenburg.de/dienstleistungen/-/egov-bis-detail/dienstleistung/7513/show"
+    },
+    "kuerzel": [
+      {
+        "code": "BRB",
+        "bedeutung": "Brandenburg an der Havel",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Antragsteller mit Wohnsitz in den betreuten Potsdam-Mittelmark-Gemeinden können seit 06.11.2025 auch das Unterscheidungszeichen „BEL“ beantragen.",
+        "quelle": "https://service.stadt-brandenburg.de/dienstleistungen/-/egov-bis-detail/dienstleistung/7513/show"
+      },
+      {
+        "text": "Für Fahrzeuge aus Potsdam-Mittelmark sind in Brandenburg an der Havel keine Tageszulassung und kein Ersatz einer verlorenen Zulassungsbescheinigung Teil II möglich; Di 07:30–09:00 und Do 16:00–17:00 Uhr kann es bei PM-Vorgängen Einschränkungen geben.",
+        "quelle": "https://service.stadt-brandenburg.de/dienstleistungen/-/egov-bis-detail/dienstleistung/7513/show"
+      },
+      {
+        "text": "Online-Auskunft, ob der Fahrzeugbrief (Zulassungsbescheinigung Teil II) bereits bei der Zulassungsbehörde vorliegt.",
+        "quelle": "https://service.stadt-brandenburg.de/dienstleistungen/-/egov-bis-detail/dienstleistung/7312/show"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "terminUrl"
+    ]
+  },
+  {
+    "slug": "cottbus",
+    "stadt": "Cottbus",
+    "bundesland": "Brandenburg",
+    "behoerde": "Kfz-Zulassungsbehörde (Zulassungsstelle) der Stadt Cottbus/Chóśebuz – Fachbereich 33 Bürgerservice",
+    "behoerdeQuelle": "https://cottbus.de/verwaltung/gb-3/dz-3-1/fb-33-buergerservice/kfz-zulassungsbehoerde-zulassungsstelle/",
+    "traeger": "Stadt Cottbus/Chóśebuz",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde der Stadt Cottbus/Chóśebuz",
+        "strasse": "Karl-Marx-Straße 69",
+        "plz": "03044",
+        "ort": "Cottbus",
+        "quelle": "https://cottbus.de/verwaltung/gb-3/dz-3-1/fb-33-buergerservice/kfz-zulassungsbehoerde-zulassungsstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://cottbus.de/verwaltung/gb-3/dz-3-1/fb-33-buergerservice/kfz-zulassungsbehoerde-zulassungsstelle/",
+      "quelle": "https://cottbus.de/verwaltung/gb-3/dz-3-1/fb-33-buergerservice/kfz-zulassungsbehoerde-zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://tv.cottbus.de/10301-Cottbus/select2?md=3",
+      "quelle": "https://cottbus.de/verwaltung/gb-3/dz-3-1/fb-33-buergerservice/kfz-zulassungsbehoerde-zulassungsstelle/"
+    },
+    "ikfzUrl": {
+      "url": "https://ikfz.brandenburg.de/ikfz/de/kfz-zulassungsbehoerden/cb-cottbuschosebuz/",
+      "quelle": "https://cottbus.de/verwaltung/gb-3/dz-3-1/fb-33-buergerservice/kfz-zulassungsbehoerde-zulassungsstelle/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Di 13:00–18:00 Uhr (ohne Termin)"
+      ],
+      "hinweis": "Bürgeranliegen werden vorwiegend mit Termin bearbeitet (Online-Terminvereinbarung, E-Mail kfz-zulassung@cottbus.de oder Telefon 0355 612-4777). Dienstags 13:00–18:00 Uhr ist eine Vorsprache ohne Termin möglich; dann lange Wartezeiten, der Ticketautomat wird je nach Andrang gesperrt.",
+      "quelle": "https://cottbus.de/verwaltung/gb-3/dz-3-1/fb-33-buergerservice/kfz-zulassungsbehoerde-zulassungsstelle/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde der kreisfreien Stadt Cottbus/Chóśebuz – zuständig für Fahrzeughalter mit Wohnsitz bzw. Sitz in Cottbus. Der Landkreis Spree-Neiße (SPN) hat eine eigene Kfz-Zulassungsbehörde.",
+      "quelle": "https://ikfz.brandenburg.de/ikfz/de/kfz-zulassungsbehoerden/"
+    },
+    "kuerzel": [
+      {
+        "code": "CB",
+        "bedeutung": "Cottbus",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Pro Termin kann nur ein zusammenhängender Vorgang bearbeitet werden (z. B. Abmeldung des alten und Anmeldung des neuen Fahrzeugs).",
+        "quelle": "https://cottbus.de/verwaltung/gb-3/dz-3-1/fb-33-buergerservice/kfz-zulassungsbehoerde-zulassungsstelle/"
+      },
+      {
+        "text": "Wunschkennzeichen sollen vorab online unter wunschkennzeichen.cottbus.de auf den eigenen Namen reserviert werden.",
+        "quelle": "https://cottbus.de/verwaltung/gb-3/dz-3-1/fb-33-buergerservice/kfz-zulassungsbehoerde-zulassungsstelle/"
+      },
+      {
+        "text": "Die Kfz-Zulassungsbehörde teilt auch Kennzeichen für Kleinfahrzeuge (z. B. Boote) zu.",
+        "quelle": "https://cottbus.de/verwaltung/gb-3/dz-3-1/fb-33-buergerservice/kfz-zulassungsbehoerde-zulassungsstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "frankfurt-oder",
+    "stadt": "Frankfurt (Oder)",
+    "bundesland": "Brandenburg",
+    "behoerde": "Kfz-Zulassungsbehörde der Stadt Frankfurt (Oder) – Amt für Ordnung und Sicherheit, Abteilung Bürgerservice",
+    "behoerdeQuelle": "https://www.frankfurt-oder.de/Verwaltung-Stadtpolitik/Verwaltung/%C3%84mterverzeichnis/Abteilung-B%C3%BCrgerservice-Kfz-Zulassungsbeh%C3%B6rde.php?ModID=9&FID=2616.92.1",
+    "traeger": "Stadt Frankfurt (Oder)",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde, Stadthaus Haus 4",
+        "strasse": "Goepelstraße 38",
+        "plz": "15234",
+        "ort": "Frankfurt (Oder)",
+        "quelle": "https://www.frankfurt-oder.de/Verwaltung-Stadtpolitik/Verwaltung/%C3%84mterverzeichnis/Abteilung-B%C3%BCrgerservice-Kfz-Zulassungsbeh%C3%B6rde.php?ModID=9&FID=2616.92.1"
+      }
+    ],
+    "website": {
+      "url": "https://www.frankfurt-oder.de/Verwaltung-Stadtpolitik/Verwaltung/%C3%84mterverzeichnis/Abteilung-B%C3%BCrgerservice-Kfz-Zulassungsbeh%C3%B6rde.php?ModID=9&FID=2616.92.1",
+      "quelle": "https://www.frankfurt-oder.de/Verwaltung-Stadtpolitik/Verwaltung/%C3%84mterverzeichnis/Abteilung-B%C3%BCrgerservice-Kfz-Zulassungsbeh%C3%B6rde.php?ModID=9&FID=2616.92.1"
+    },
+    "terminUrl": {
+      "url": "https://termine.frankfurt-oder.de/m/stadthaus/extern/calendar/?uid=9c76f954-54fd-4b49-b21b-0699ece57fc4",
+      "quelle": "https://www.frankfurt-oder.de/Verwaltung-Stadtpolitik/Verwaltung/B%C3%BCrger-und-Unternehmensservice-A-Z/Kfz-Zulassungsbeh%C3%B6rde-Terminvereinbarung.php?ModID=10&FID=2616.358.1&kuo=1&ort=2616.1&sfwort=1"
+    },
+    "ikfzUrl": {
+      "url": "https://www.ikfz-brandenburg.de/i4/ikfz4/?LICENSEIDENTIFIER=frankfurt-oder_stadt",
+      "quelle": "https://www.frankfurt-oder.de/Verwaltung-Stadtpolitik/Verwaltung/B%C3%BCrger-und-Unternehmensservice-A-Z/Kfz-Zulassung-Neu-Fahrzeug-fabrikneues-Fahrzeug-.php?ModID=10&FID=2616.22.1&kuo=1&ort=2616.1&sfwort=1"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–12:00 Uhr",
+        "Di 09:00–12:00 und 13:00–18:00 Uhr",
+        "Mi geschlossen",
+        "Do 08:00–12:00 und 13:00–16:00 Uhr",
+        "Fr 08:00–12:00 Uhr"
+      ],
+      "hinweis": "Zugang ohne Termin möglich; zusätzlich Online-Terminbuchung. Die Stadt empfiehlt besonders für die Kfz-Zulassungsbehörde eine vorherige telefonische oder Online-Terminvereinbarung.",
+      "quelle": "https://www.frankfurt-oder.de/Verwaltung-Stadtpolitik/Verwaltung/%C3%84mterverzeichnis/Abteilung-B%C3%BCrgerservice-Kfz-Zulassungsbeh%C3%B6rde.php?ModID=9&FID=2616.92.1"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde der kreisfreien Stadt Frankfurt (Oder) – zuständig für Fahrzeughalter mit Wohnsitz bzw. Sitz in Frankfurt (Oder). Der Landkreis Oder-Spree (LOS) hat eine eigene Kfz-Zulassungsbehörde.",
+      "quelle": "https://ikfz.brandenburg.de/ikfz/de/kfz-zulassungsbehoerden/"
+    },
+    "kuerzel": [
+      {
+        "code": "FF",
+        "bedeutung": "Frankfurt (Oder)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Keine Zulassung bei offenen Gebührenforderungen der Kfz-Zulassungsbehörde gegenüber dem Halter oder bei Kfz-Steuerrückständen des Halters bei den Finanzämtern des Landes Brandenburg.",
+        "quelle": "https://www.frankfurt-oder.de/Verwaltung-Stadtpolitik/Verwaltung/B%C3%BCrger-und-Unternehmensservice-A-Z/Kfz-Zulassung-Neu-Fahrzeug-fabrikneues-Fahrzeug-.php?ModID=10&FID=2616.22.1&kuo=1&ort=2616.1&sfwort=1"
+      },
+      {
+        "text": "Antragstellung persönlich oder durch bevollmächtigte Dritte; die zugeteilten Kennzeichenschilder sind bei den Schilderprägern zu beschaffen.",
+        "quelle": "https://www.frankfurt-oder.de/Verwaltung-Stadtpolitik/Verwaltung/B%C3%BCrger-und-Unternehmensservice-A-Z/Kfz-Zulassung-Neu-Fahrzeug-fabrikneues-Fahrzeug-.php?ModID=10&FID=2616.22.1&kuo=1&ort=2616.1&sfwort=1"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "potsdam",
+    "stadt": "Potsdam",
+    "bundesland": "Brandenburg",
+    "behoerde": "Kfz-Zulassungsbehörde der Landeshauptstadt Potsdam (Arbeitsgruppe Bürgerservice Kfz-Zulassungen, Bereich Bürgerservice, Fachbereich Ordnung und Sicherheit)",
+    "behoerdeQuelle": "https://vv.potsdam.de/vv/oe/173010100000032362.php",
+    "traeger": "Landeshauptstadt Potsdam",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgerservice Kfz-Zulassungen",
+        "strasse": "Edisonallee 11-19",
+        "plz": "14473",
+        "ort": "Potsdam",
+        "quelle": "https://vv.potsdam.de/vv/oe/173010100000032362.php"
+      }
+    ],
+    "website": {
+      "url": "https://vv.potsdam.de/vv/oe/173010100000032362.php",
+      "quelle": "https://vv.potsdam.de/vv/oe/173010100000032362.php"
+    },
+    "terminUrl": {
+      "url": "https://termin.potsdam.de/",
+      "quelle": "https://vv.potsdam.de/vv/oe/173010100000032362.php"
+    },
+    "ikfzUrl": {
+      "url": "https://www.ikfz-brandenburg.de/i4/ikfz4/?LICENSEIDENTIFIER=potsdam_stadt",
+      "quelle": "https://www.potsdam.de/de/willkommen-auf-dem-i-kfz-portal-der-landeshauptstadt-potsdam"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–15:00 Uhr",
+        "Di 08:00–18:00 Uhr",
+        "Mi 08:00–12:00 Uhr",
+        "Do 08:00–18:00 Uhr",
+        "Fr 08:00–12:00 Uhr",
+        "Sa 08:00–12:00 Uhr"
+      ],
+      "hinweis": "Termin über die Terminverwaltung-Online Kfz-Zulassung oder telefonisch unter 0331 289-1110; Bürgerinnen und Bürger aus Potsdam-Mittelmark nur mit vorab online gebuchtem Termin. Samstage vor Ostern und Pfingsten sowie 24. und 31.12. geschlossen; am 23.12., 30.12. und Gründonnerstag Schluss um 16:00 Uhr.",
+      "quelle": "https://vv.potsdam.de/vv/oe/173010100000032362.php"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde der kreisfreien Landeshauptstadt Potsdam (Kürzel P). Nicht zu verwechseln mit dem Landkreis Potsdam-Mittelmark (PM): Dessen Bürgerinnen und Bürger können seit 2013 im Rahmen der erweiterten Zuständigkeit ausgewählte Zulassungsvorgänge in Potsdam erledigen (nur mit vorab gebuchtem Termin), erhalten aber immer ein Kennzeichen der für ihren Wohnort bzw. Betriebssitz zuständigen Behörde.",
+      "quelle": "https://vv.potsdam.de/vv/oe/173010100000032362.php"
+    },
+    "kuerzel": [
+      {
+        "code": "P",
+        "bedeutung": "Potsdam",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Auch samstags geöffnet (08:00–12:00 Uhr).",
+        "quelle": "https://vv.potsdam.de/vv/oe/173010100000032362.php"
+      },
+      {
+        "text": "Großkundenschalter für Zulassungsdienste, Autohäuser und Firmen: Termin per E-Mail an gks@rathaus.potsdam.de, Abgabe der Vorgänge von 7 bis 8 Uhr.",
+        "quelle": "https://vv.potsdam.de/vv/oe/173010100000032362.php"
+      },
+      {
+        "text": "Von der erweiterten Zuständigkeit für Potsdam-Mittelmark ausgenommen sind u. a. rote Kennzeichen, Wechselkennzeichen, Ersatzpapiere bei Verlust oder Diebstahl und der Verlust von Kennzeichen.",
+        "quelle": "https://vv.potsdam.de/vv/oe/173010100000032362.php"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

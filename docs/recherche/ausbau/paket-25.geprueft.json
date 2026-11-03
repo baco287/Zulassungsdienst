@@ -1,0 +1,948 @@
+[
+  {
+    "slug": "kreis-soest",
+    "stadt": "Kreis Soest",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kreis Soest – Abteilung Kfz-Zulassungen und Fahrerlaubnisse (Dezernat Ordnung, Bau, Immobilien, Kfz und Straßen), Zulassungsstellen Soest und Lippstadt",
+    "behoerdeQuelle": "https://www.kreis-soest.de/ansprechpartner-a-z-ausgabe/ansprechpartner-a-z/detailansicht/ansprechpartner/show/kfz-zulassungen-und-fahrerlaubnisse-soest",
+    "traeger": "Kreis Soest",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Soest (Verwaltungsgebäude Senator-Schwartz-Ring)",
+        "strasse": "Senator-Schwartz-Ring 21–23",
+        "plz": "59494",
+        "ort": "Soest",
+        "quelle": "https://www.kreis-soest.de/verkehr-wirtschaft/verkehr/zulassung/kfz/online-zulassung"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Lippstadt (Verwaltungsgebäude Lipperbruch)",
+        "strasse": "Mastholter Str. 230b",
+        "plz": "59558",
+        "ort": "Lippstadt",
+        "quelle": "https://www.kreis-soest.de/verkehr-wirtschaft/verkehr/zulassung/kfz/online-zulassung"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-soest.de/kfz-verkehr/alle-themen",
+      "quelle": "https://www.kreis-soest.de/kfz-verkehr/alle-themen"
+    },
+    "terminUrl": {
+      "url": "https://kreis-soest.termine-reservieren.online/",
+      "quelle": "https://www.kreis-soest.de/start/startseite/kontakt/termin/online-terminvergabe"
+    },
+    "ikfzUrl": null,
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag 8 bis 16 Uhr",
+        "Dienstag 7 bis 16 Uhr",
+        "Mittwoch 8 bis 12 Uhr",
+        "Donnerstag 8 bis 17 Uhr",
+        "Freitag 8 bis 12 Uhr",
+        "Samstag 8 bis 12 Uhr / jeden 2. Samstag im Monat (nur Zulassungsstelle Soest)"
+      ],
+      "hinweis": "Zeiten Montag bis Freitag gelten für Soest und Lippstadt gleichermaßen; Samstagsöffnung nur in Soest. Online-Terminvereinbarung möglich (trotz Termin kurze Wartezeiten möglich); eine generelle Terminpflicht wird auf den Seiten nicht genannt.",
+      "quelle": "https://www.kreis-soest.de/verkehr-wirtschaft/verkehr/zulassung/zulassung/zulassung-neues-fahrzeug"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Kreises Soest für Halter mit Wohnsitz bzw. Sitz im Kreisgebiet, d. h. in den 14 kreisangehörigen Kommunen Anröchte, Bad Sassendorf, Ense, Erwitte, Geseke, Lippetal, Lippstadt, Möhnesee, Rüthen, Soest, Warstein, Welver, Werl und Wickede (Ruhr). Die Städte Soest und Lippstadt sind kreisangehörig; ihre Zulassungsstellen werden vom Kreis betrieben.",
+      "quelle": "https://www.kreis-soest.de/kreis-politik/alle-themen/kommunen"
+    },
+    "kuerzel": [
+      {
+        "code": "SO",
+        "bedeutung": "Soest",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "LP",
+        "bedeutung": "Lippstadt (Altkennzeichen, im Rahmen der Kennzeichenliberalisierung wieder eingeführt)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Bei der Online-Terminbuchung kann zwischen den Standorten Soest und Lippstadt gewählt werden; die Zahl freier Termine ist an beiden Standorten oft sehr unterschiedlich.",
+        "quelle": "https://www.kreis-soest.de/start/startseite/kontakt/termin/online-terminvergabe"
+      },
+      {
+        "text": "Die Online-Zulassung (i-Kfz) steht laut Kreis wegen bekannt gewordener Sicherheitslücken aktuell nicht zur Verfügung (Stand 03.11.2026).",
+        "quelle": "https://www.kreis-soest.de/verkehr-wirtschaft/verkehr/zulassung/kfz/online-zulassung"
+      },
+      {
+        "text": "Bezahlt wird vor Ort per Girocard mit PIN, Kreditkarte (Mastercard, VISA) oder Debitkarte (Maestro, V-PAY); Kartenzahlung ist ausdrücklich erwünscht.",
+        "quelle": "https://www.kreis-soest.de/verkehr-wirtschaft/verkehr/zulassung/kennzeichen/wunschkennzeichen"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "ikfzUrl"
+    ]
+  },
+  {
+    "slug": "kreis-steinfurt",
+    "stadt": "Kreis Steinfurt",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kreis Steinfurt – Straßenverkehrsamt, Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.kreis-steinfurt.de/kv_steinfurt/Kreisverwaltung/%C3%84mter/Stra%C3%9Fenverkehrsamt/Kfz-Zulassungsstelle/",
+    "traeger": "Kreis Steinfurt",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Steinfurt",
+        "strasse": "Tecklenburger Str. 10",
+        "plz": "48565",
+        "ort": "Steinfurt",
+        "quelle": "https://www.kreis-steinfurt.de/kv_steinfurt/Kreisverwaltung/%C3%84mter/Stra%C3%9Fenverkehrsamt/Kfz-Zulassungsstelle/"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Tecklenburg",
+        "strasse": "Landrat-Schultz-Str. 1",
+        "plz": "49545",
+        "ort": "Tecklenburg",
+        "quelle": "https://www.kreis-steinfurt.de/kv_steinfurt/Kreisverwaltung/%C3%84mter/Stra%C3%9Fenverkehrsamt/Kfz-Zulassungsstelle/"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Rheine (ab 15.06.2026 wegen Sanierungsarbeiten vorübergehend geschlossen)",
+        "strasse": "Bayernstr. 58",
+        "plz": "48429",
+        "ort": "Rheine",
+        "quelle": "https://www.kreis-steinfurt.de/kv_steinfurt/Kreisverwaltung/%C3%84mter/Stra%C3%9Fenverkehrsamt/Kfz-Zulassungsstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-steinfurt.de/kv_steinfurt/Kreisverwaltung/%C3%84mter/Stra%C3%9Fenverkehrsamt/Kfz-Zulassungsstelle/",
+      "quelle": "https://www.kreis-steinfurt.de/kv_steinfurt/Kreisverwaltung/%C3%84mter/Stra%C3%9Fenverkehrsamt/Kfz-Zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://termine.kreis-steinfurt.de/select2?md=1",
+      "quelle": "https://www.kreis-steinfurt.de/kv_steinfurt/Kreisverwaltung/%C3%84mter/Stra%C3%9Fenverkehrsamt/Kfz-Zulassungsstelle/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.kreis-steinfurt.de/kv_steinfurt/live/Kreisverwaltung/%C3%84mter/Stra%C3%9Fenverkehrsamt/Kfz-Zulassungsstelle/OnlineZulassungiKFZ.html#/",
+      "quelle": "https://www.kreis-steinfurt.de/kv_steinfurt/Kreisverwaltung/%C3%84mter/Stra%C3%9Fenverkehrsamt/Kfz-Zulassungsstelle/Informationen%20zu%20i-Kfz/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Steinfurt: Vormittags 07:30–12:00 Uhr; Nachmittags: Montag 13:30–15:30 Uhr, Dienstag 13:30–15:30 Uhr, Donnerstag 13:30–17:00 Uhr",
+        "Tecklenburg: Vormittags 07:30–12:00 Uhr; Nachmittags: Montag 13:30–15:30 Uhr, Dienstag 13:30–17:00 Uhr, Donnerstag 13:30–15:30 Uhr",
+        "Rheine: ab 15.06.2026 aufgrund Sanierungsarbeiten geschlossen (reguläre Zeiten: Vormittags 07:30–12:00 Uhr; Nachmittags: Montag 13:30–17:00 Uhr, Dienstag 13:30–15:30 Uhr, Donnerstag 13:30–15:30 Uhr)"
+      ],
+      "hinweis": "Anliegen werden nur nach Terminvereinbarung bearbeitet; Termine sind ausschließlich online buchbar (max. acht Wochen im Voraus).",
+      "quelle": "https://www.kreis-steinfurt.de/kv_steinfurt/Kreisverwaltung/%C3%84mter/Stra%C3%9Fenverkehrsamt/Kfz-Zulassungsstelle/"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig, wenn Sie im Kreis Steinfurt wohnen oder hier Ihren Betriebssitz haben – also für alle 24 kreisangehörigen Städte und Gemeinden: Altenberge, Emsdetten, Greven, Hörstel, Hopsten, Horstmar, Ibbenbüren, Ladbergen, Laer, Lengerich, Lienen, Lotte, Metelen, Mettingen, Neuenkirchen, Nordwalde, Ochtrup, Recke, Rheine, Saerbeck, Steinfurt, Tecklenburg, Westerkappeln und Wettringen.",
+      "quelle": "https://www.kreis-steinfurt.de/kv_steinfurt/Kreisportrait/St%C3%A4dte%20&%20Gemeinden/"
+    },
+    "kuerzel": [
+      {
+        "code": "ST",
+        "bedeutung": "Steinfurt",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BF",
+        "bedeutung": "Burgsteinfurt (Altkennzeichen, im Rahmen der Kennzeichenliberalisierung wieder eingeführt)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "TE",
+        "bedeutung": "Tecklenburg (Altkennzeichen, im Rahmen der Kennzeichenliberalisierung wieder eingeführt)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termine werden nach Verfügbarkeit täglich nachgeschoben: um 07:30 Uhr für den gleichen Tag und um 15:30 Uhr für den Folgetag. In dringenden Fällen empfiehlt der Kreis i-Kfz oder einen Termin an einem entfernteren Standort im Kreis.",
+        "quelle": "https://www.kreis-steinfurt.de/kv_steinfurt/Kreisverwaltung/%C3%84mter/Stra%C3%9Fenverkehrsamt/Kfz-Zulassungsstelle/"
+      },
+      {
+        "text": "Die Zulassungsstelle Rheine ist wegen Sanierung nach einem Wasserschaden ab 15.06.2026 für voraussichtlich bis zu 5 Monate geschlossen; Termine gibt es in dieser Zeit nur in Steinfurt und Tecklenburg.",
+        "quelle": "https://www.kreis-steinfurt.de/kv_steinfurt/Kreisverwaltung/%C3%84mter/Stra%C3%9Fenverkehrsamt/Kfz-Zulassungsstelle/"
+      },
+      {
+        "text": "Bargeldlose Zulassungsstelle: Bezahlung mit EC-/Kreditkarte, Apple Pay, Google Pay oder ähnlichen elektronischen Zahlungsmitteln.",
+        "quelle": "https://www.kreis-steinfurt.de/kv_steinfurt/Kreisverwaltung/%C3%84mter/Stra%C3%9Fenverkehrsamt/Kfz-Zulassungsstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "ikfzUrl"
+    ]
+  },
+  {
+    "slug": "kreis-unna",
+    "stadt": "Kreis Unna",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kreis Unna – Führerschein- und Zulassungsstelle (Zulassungsstellen Unna und Lünen)",
+    "behoerdeQuelle": "https://www.kreis-unna.de/Mobilit%C3%A4t/Kfz/Zulassung/",
+    "traeger": "Kreis Unna",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Unna (Kreishaus Unna)",
+        "strasse": "Friedrich-Ebert-Straße 17",
+        "plz": "59425",
+        "ort": "Unna",
+        "quelle": "https://www.kreis-unna.de/Kontakt/Adressen/Zulassungsstelle.php?ModID=9&FID=3674.48.1&KatID=0&kuo=1&call=0&bn=0&sfname=0&sfkat=0&sfplz=0&sfort=0&k_sub=0"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Lünen (Kreishaus Lünen)",
+        "strasse": "Viktoriastraße 5",
+        "plz": "44532",
+        "ort": "Lünen",
+        "quelle": "https://www.kreis-unna.de/Kontakt/Adressen/Zulassungsstelle.php?ModID=9&FID=3674.48.1&KatID=0&kuo=1&call=0&bn=0&sfname=0&sfkat=0&sfplz=0&sfort=0&k_sub=0"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-unna.de/Mobilit%C3%A4t/Kfz/Zulassung/",
+      "quelle": "https://www.kreis-unna.de/Mobilit%C3%A4t/Kfz/Zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://tempus-termine.com/termine/index.php?anlagennr=92",
+      "quelle": "https://www.kreis-unna.de/Kontakt/Adressen/Zulassungsstelle.php?ModID=9&FID=3674.48.1&KatID=0&kuo=1&call=0&bn=0&sfname=0&sfkat=0&sfplz=0&sfort=0&k_sub=0"
+    },
+    "ikfzUrl": {
+      "url": "https://stva.kreis-unna.de/home",
+      "quelle": "https://www.kreis-unna.de/Serviceportal/Dienstleistungen/Darstellung-Dienstleistungen/Kfz-Online-Zulassung-eines-Fahrzeuges.php?ModID=10&FID=3674.769.1&call=suche"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Unna: Montag 7.30–16.30 Uhr",
+        "Unna: Dienstag 7.30–16.30 Uhr",
+        "Unna: Mittwoch 7.30–12.30 Uhr",
+        "Unna: Donnerstag 7.30–17.30 Uhr",
+        "Unna: Freitag 7.30–12.30 Uhr",
+        "Lünen: Montag 7.30–12.00 Uhr und 13.30–16.00 Uhr",
+        "Lünen: Dienstag 7.30–12.00 Uhr und 13.30–16.00 Uhr",
+        "Lünen: Mittwoch 7.30–12.00 Uhr",
+        "Lünen: Donnerstag 7.30–12.00 Uhr und 13.30–17.30 Uhr",
+        "Lünen: Freitag 7.30–12.00 Uhr"
+      ],
+      "hinweis": "Ein Besuch der Zulassungsstellen Unna und Lünen ist nur nach vorheriger Terminbuchung möglich (Ausnahme: Digitaler Fahrzeugschein und beschädigte Kennzeichen).",
+      "quelle": "https://www.kreis-unna.de/Kontakt/Adressen/Zulassungsstelle.php?ModID=9&FID=3674.48.1&KatID=0&kuo=1&call=0&bn=0&sfname=0&sfkat=0&sfplz=0&sfort=0&k_sub=0"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Kreises Unna für Halter in den zehn kreisangehörigen Städten und Gemeinden Bergkamen, Bönen, Fröndenberg/Ruhr, Holzwickede, Kamen, Lünen, Schwerte, Selm, Unna (Kreisstadt) und Werne. Die Kreisverwaltung unterhält dafür Zulassungsstellen in Unna und Lünen.",
+      "quelle": "https://www.kreis-unna.de/%C3%9Cber-uns/St%C3%A4dte-und-Gemeinden/"
+    },
+    "kuerzel": [
+      {
+        "code": "UN",
+        "bedeutung": "Unna",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "LÜN",
+        "bedeutung": "Lünen (Altkennzeichen, im Rahmen der Kennzeichenliberalisierung wieder eingeführt)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "LH",
+        "bedeutung": "Lüdinghausen (Altkennzeichen, im Rahmen der Kennzeichenliberalisierung wieder eingeführt; wird auch im Kreis Coesfeld vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Ohne Termin werden nur Anliegen zum digitalen Fahrzeugschein und zu beschädigten Kennzeichen bearbeitet; alle anderen Besuche erfordern eine vorherige Terminbuchung.",
+        "quelle": "https://www.kreis-unna.de/Kontakt/Adressen/Zulassungsstelle.php?ModID=9&FID=3674.48.1&KatID=0&kuo=1&call=0&bn=0&sfname=0&sfkat=0&sfplz=0&sfort=0&k_sub=0"
+      },
+      {
+        "text": "Die Zulassung von Fahrzeugen mit LH-Kennzeichen ist online nicht möglich, sondern nur vor Ort in den Zulassungsstellen Unna und Lünen.",
+        "quelle": "https://www.kreis-unna.de/Serviceportal/Dienstleistungen/Darstellung-Dienstleistungen/Kfz-Online-Zulassung-eines-Fahrzeuges.php?ModID=10&FID=3674.769.1&call=suche"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kreis-viersen",
+    "stadt": "Kreis Viersen",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kreis Viersen – Kfz-Zulassungsstelle (32/4 Fahrzeugzulassung)",
+    "behoerdeQuelle": "https://www.kreis-viersen.de/themen/auto-und-fuehrerschein/fahrzeug-und-zulassung/fahrzeug-anmeldenummelden",
+    "traeger": "Kreis Viersen",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle des Kreises Viersen (Hauptstelle, Dülken)",
+        "strasse": "Ransberg 39",
+        "plz": "41751",
+        "ort": "Viersen",
+        "quelle": "https://www.kreis-viersen.de/themen/auto-und-fuehrerschein/fahrzeug-und-zulassung"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle des Kreises Viersen (Nebenstelle Kempen)",
+        "strasse": "Heinrich-Horten-Straße 4B",
+        "plz": "47906",
+        "ort": "Kempen",
+        "quelle": "https://www.kreis-viersen.de/themen/auto-und-fuehrerschein/fahrzeug-und-zulassung"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-viersen.de/themen/auto-und-fuehrerschein/fahrzeug-und-zulassung",
+      "quelle": "https://www.kreis-viersen.de/themen/auto-und-fuehrerschein/fahrzeug-und-zulassung"
+    },
+    "terminUrl": {
+      "url": "https://tevis.krzn.de/tevisweb200/",
+      "quelle": "https://www.kreis-viersen.de/themen/auto-und-fuehrerschein/fahrzeug-und-zulassung"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.krzn.de/static/05166000.html#/",
+      "quelle": "https://www.kreis-viersen.de/themen/auto-und-fuehrerschein/fahrzeug-und-zulassung/fahrzeug-anmeldenummelden"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Hauptstelle Viersen: Montag und Mittwoch 07:30 Uhr bis 12:00 Uhr, 13:00 Uhr bis 16:00 Uhr",
+        "Hauptstelle Viersen: Dienstag, Donnerstag und Freitag 07:30 Uhr bis 12:00 Uhr",
+        "Nebenstelle Kempen: Montag, Dienstag und Donnerstag 07:30 Uhr bis 12:00 Uhr, 13:00 Uhr bis 16:00 Uhr",
+        "Nebenstelle Kempen: Mittwoch und Freitag 07:30 Uhr bis 12:00 Uhr"
+      ],
+      "hinweis": "An allen Tagen nur mit Terminreservierung.",
+      "quelle": "https://www.kreis-viersen.de/themen/auto-und-fuehrerschein/fahrzeug-und-zulassung"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle des Kreises Viersen für Halter in den neun kreisangehörigen Städten und Gemeinden Brüggen, Grefrath, Kempen, Nettetal, Niederkrüchten, Schwalmtal, Tönisvorst, Viersen und Willich.",
+      "quelle": "https://www.kreis-viersen.de/landkreis/kreis-viersen-zahlen"
+    },
+    "kuerzel": [
+      {
+        "code": "VIE",
+        "bedeutung": "Viersen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "KK",
+        "bedeutung": "Kempen/Krefeld (Altkennzeichen, im Rahmen der Kennzeichenliberalisierung wieder eingeführt)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Vor-Ort-Zulassungen, Ummeldungen und Fälle, in denen keine Online-Zulassung möglich ist, erfordern an beiden Standorten einen Termin; alternativ ist i-Kfz von zu Hause aus möglich.",
+        "quelle": "https://www.kreis-viersen.de/service/dienstleistungen/fahrzeug-anmeldung-ummeldung"
+      },
+      {
+        "text": "Wer nicht persönlich erscheinen kann und einen neuen Personalausweis mit Lesegerät besitzt, kann vorab online eine Vollmacht erteilen (www.kreis-viersen.de/kfzvollmacht).",
+        "quelle": "https://www.kreis-viersen.de/service/dienstleistungen/fahrzeug-anmeldung-ummeldung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kreis-warendorf",
+    "stadt": "Kreis Warendorf",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Zulassungsbehörde Kreis Warendorf (Zulassungsstellen Warendorf und Beckum)",
+    "behoerdeQuelle": "https://serviceportal.kreis-warendorf.de/detail/-/vr-bis-detail/einrichtung/561677/show",
+    "traeger": "Kreis Warendorf",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Warendorf (Kreishaus)",
+        "strasse": "Waldenburger Str. 2",
+        "plz": "48231",
+        "ort": "Warendorf",
+        "quelle": "https://serviceportal.kreis-warendorf.de/detail/-/vr-bis-detail/einrichtung/561679/show"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Beckum",
+        "strasse": "Auf dem Tigge 21a",
+        "plz": "59269",
+        "ort": "Beckum",
+        "quelle": "https://serviceportal.kreis-warendorf.de/detail/-/vr-bis-detail/einrichtung/561678/show"
+      }
+    ],
+    "website": {
+      "url": "https://serviceportal.kreis-warendorf.de/detail/-/vr-bis-detail/einrichtung/561677/show",
+      "quelle": "https://serviceportal.kreis-warendorf.de/detail/-/vr-bis-detail/einrichtung/561677/show"
+    },
+    "terminUrl": {
+      "url": "https://www.kreis-warendorf.de/unser-service/terminbuchung-online-belehrung-infektionsschutzgesetz-zulassungsstellen",
+      "quelle": "https://www.kreis-warendorf.de/unser-service/terminbuchung-online-belehrung-infektionsschutzgesetz-zulassungsstellen"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=warendorf_kreis",
+      "quelle": "https://serviceportal.kreis-warendorf.de/detail/-/vr-bis-detail/einrichtung/561677/show"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Warendorf: Montag 07:30 bis 12:00 Uhr",
+        "Warendorf: Dienstag 07:30 bis 12:30 Uhr, 13:30 bis 15:30 Uhr",
+        "Warendorf: Mittwoch 07:30 bis 12:30 Uhr, 13:30 bis 15:30 Uhr",
+        "Warendorf: Donnerstag 07:30 bis 12:30 Uhr, 13:30 bis 17:30 Uhr",
+        "Warendorf: Freitag 07:30 bis 12:00 Uhr",
+        "Warendorf: Samstag 08:30 bis 11:00 Uhr",
+        "Beckum: Montag 07:30 bis 12:00 Uhr",
+        "Beckum: Dienstag 07:30 bis 12:30 Uhr, 13:30 bis 17:30 Uhr",
+        "Beckum: Mittwoch 07:30 bis 12:30 Uhr, 13:30 bis 15:30 Uhr",
+        "Beckum: Donnerstag 07:30 bis 12:30 Uhr, 13:30 bis 15:30 Uhr",
+        "Beckum: Freitag 07:30 bis 12:00 Uhr"
+      ],
+      "hinweis": "Vormittags ohne vorherige Terminreservierung; nachmittags nur nach vorheriger Online-Terminreservierung.",
+      "quelle": "https://serviceportal.kreis-warendorf.de/detail/-/vr-bis-detail/einrichtung/561679/show"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsbehörde des Kreises Warendorf für Halter in den 13 kreisangehörigen Städten und Gemeinden Ahlen, Beckum, Beelen, Drensteinfurt, Ennigerloh, Everswinkel, Oelde, Ostbevern, Sassenberg, Sendenhorst, Telgte, Wadersloh und Warendorf.",
+      "quelle": "https://www.kreis-warendorf.de/unser-kreis/kreisportrait"
+    },
+    "kuerzel": [
+      {
+        "code": "WAF",
+        "bedeutung": "Warendorf",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BE",
+        "bedeutung": "Beckum (Altkennzeichen, im Rahmen der Kennzeichenliberalisierung wieder eingeführt)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Samstagssprechzeit (08:30–11:00 Uhr, nur Warendorf) ist Privatpersonen vorbehalten; Autohäuser, Händler und Zulassungsdienste werden gebeten, montags bis freitags zu kommen. Ausfuhrkennzeichen werden samstags nicht zugeteilt.",
+        "quelle": "https://serviceportal.kreis-warendorf.de/detail/-/vr-bis-detail/einrichtung/561679/show"
+      },
+      {
+        "text": "Zuteilung und Verlängerung roter Kennzeichen sind nur in der Zulassungsstelle Warendorf möglich; alle übrigen Dienstleistungen gibt es in Beckum und Warendorf.",
+        "quelle": "https://serviceportal.kreis-warendorf.de/detail/-/vr-bis-detail/einrichtung/561677/show"
+      },
+      {
+        "text": "Aktuell Zahlung mit Bargeld, EC-Karte oder Kreditkarte; ab Frühjahr 2027 sollen beide Zulassungsstellen bargeldlos werden (genauer Zeitpunkt noch offen).",
+        "quelle": "https://serviceportal.kreis-warendorf.de/detail/-/vr-bis-detail/einrichtung/561677/show"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kreis-wesel",
+    "stadt": "Kreis Wesel",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kreis Wesel – 36 Straßenverkehr: Zulassungs- und Führerscheinservice Wesel (36-1-3) und Dienstleistungszentrum Moers (36-1-2)",
+    "behoerdeQuelle": "https://www.kreis-wesel.de/orgaunit/36-1-3-zulassungsservice-wesel",
+    "traeger": "Kreis Wesel",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsservice Wesel (Kreishaus Wesel)",
+        "strasse": "Reeser Landstr. 31",
+        "plz": "46483",
+        "ort": "Wesel",
+        "quelle": "https://www.kreis-wesel.de/orgaunit/36-1-3-zulassungsservice-wesel"
+      },
+      {
+        "bezeichnung": "Dienstleistungszentrum (DLZ) Moers",
+        "strasse": "Mühlenstraße 15",
+        "plz": "47441",
+        "ort": "Moers",
+        "quelle": "https://www.kreis-wesel.de/orgaunit/36-1-2-dienstleistungszentrum-moers"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-wesel.de/leben-arbeiten/strassenverkehr-oepnv/zulassungs-und-fuehrerscheinservice",
+      "quelle": "https://www.kreis-wesel.de/leben-arbeiten/strassenverkehr-oepnv/zulassungs-und-fuehrerscheinservice"
+    },
+    "terminUrl": {
+      "url": "https://tevis.krzn.de/tevisweb080/select2?md=5",
+      "quelle": "https://www.kreis-wesel.de/serviceportal/terminvereinbarungen"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.krzn.de/static/05170000.html#/",
+      "quelle": "https://www.kreis-wesel.de/Fahrzeug-erstmalige-Zulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag – Dienstag 07:30 Uhr – 16:30 Uhr",
+        "Mittwoch 07:30 Uhr – 12:30 Uhr",
+        "Donnerstag 07:30 Uhr – 16:30 Uhr",
+        "Freitag 07:30 Uhr – 12:30 Uhr"
+      ],
+      "hinweis": "Geschäftszeiten gelten für Wesel und Moers. Privatkunden grundsätzlich nur nach vorheriger Online-Terminvereinbarung oder ohne Termin jeweils dienstags und donnerstags 07:30–11:00 Uhr.",
+      "quelle": "https://www.kreis-wesel.de/orgaunit/36-1-3-zulassungsservice-wesel"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Kreises Wesel für Halter in den 13 kreisangehörigen Städten und Gemeinden Alpen, Dinslaken, Hamminkeln, Hünxe, Kamp-Lintfort, Moers, Neukirchen-Vluyn, Rheinberg, Schermbeck, Sonsbeck, Voerde, Wesel und Xanten. Anlaufstellen für das gesamte Kreisgebiet sind der Zulassungsservice Wesel und das Dienstleistungszentrum Moers.",
+      "quelle": "https://www.kreis-wesel.de/politik-verwaltung/wappen-logo-und-kommunen-im-kreis-wesel"
+    },
+    "kuerzel": [
+      {
+        "code": "WES",
+        "bedeutung": "Wesel",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "DIN",
+        "bedeutung": "Dinslaken (Altkennzeichen, im Rahmen der Kennzeichenliberalisierung wieder eingeführt)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MO",
+        "bedeutung": "Moers (Altkennzeichen, im Rahmen der Kennzeichenliberalisierung wieder eingeführt)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Ohne Termin möglich: Außerbetriebsetzung (wenn das Fahrzeug im Kreis Wesel registriert oder der Antragsteller dort gemeldet ist), Adress- bzw. Namensänderung, Neusiegelung von Kennzeichenschildern, Umkennzeichnung bei Verlust/Diebstahl der Schilder, Verlust des Fahrzeugscheins und Kurzzeitkennzeichen.",
+        "quelle": "https://www.kreis-wesel.de/leben-arbeiten/strassenverkehr-oepnv/zulassungs-und-fuehrerscheinservice"
+      },
+      {
+        "text": "Zulassungsdienste und Autohäuser geben Zulassungsanträge täglich 07:30–12:00 Uhr in Wesel oder im DLZ Moers ab (Kennzeichen vorab geprägt); die Abholung erfolgt nach Terminvereinbarung. Die freie Sprechzeit dienstags/donnerstags gilt ausdrücklich nicht für sie.",
+        "quelle": "https://www.kreis-wesel.de/leben-arbeiten/strassenverkehr-oepnv/zulassungs-und-fuehrerscheinservice"
+      },
+      {
+        "text": "Online abmelden kann man über den Kreis Wesel Fahrzeuge mit WES-, MO- oder DIN-Kennzeichen sowie bei Umzug in den Kreis mitgenommene auswärtige Kennzeichen.",
+        "quelle": "https://www.kreis-wesel.de/serviceportal/dienstleistungena-z/fahrzeug-ausserbetriebsetzung-abmeldung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "bottrop",
+    "stadt": "Bottrop",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Stadt Bottrop – Straßenverkehrsamt, Führerschein- und Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.bottrop.de/vv/oe/dezernat3/36/Fuehrerschein-und-KFZ-Zulassungsstelle.php",
+    "traeger": "Stadt Bottrop (kreisfreie Stadt)",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle (Verwaltungsgebäude Händelstraße)",
+        "strasse": "Händelstr. 9",
+        "plz": "46236",
+        "ort": "Bottrop",
+        "quelle": "https://www.bottrop.de/vv/oe/dezernat3/36/Fuehrerschein-und-KFZ-Zulassungsstelle.php"
+      }
+    ],
+    "website": {
+      "url": "https://www.bottrop.de/vv/produkte/dezernat3/36/KFZ-Zulassung.php",
+      "quelle": "https://www.bottrop.de/vv/produkte/dezernat3/36/KFZ-Zulassung.php"
+    },
+    "terminUrl": {
+      "url": "https://tevis.krzn.de/tevisweb040/",
+      "quelle": "https://www.bottrop.de/vv/produkte/dezernat3/36/KFZ-Zulassung.php"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.krzn.de/static/05512000.html#/",
+      "quelle": "https://www.bottrop.de/vv/produkte/dezernat3/36/KFZ-Zulassung.php"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo – Fr 07:30 – 12:00 Uhr",
+        "Mo – Di 12:00 – 16:00 Uhr",
+        "Do 12:00 – 17:30 Uhr"
+      ],
+      "hinweis": "nur nach Terminvereinbarung – ein Einlass ohne Termin kann nicht gewährt werden",
+      "quelle": "https://www.bottrop.de/vv/oe/dezernat3/36/Fuehrerschein-und-KFZ-Zulassungsstelle.php"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle des Straßenverkehrsamtes der kreisfreien Stadt Bottrop für Halter mit Wohnsitz bzw. Sitz in Bottrop (inkl. Kirchhellen).",
+      "quelle": "https://www.bottrop.de/vv/produkte/dezernat3/36/KFZ-Zulassung.php"
+    },
+    "kuerzel": [
+      {
+        "code": "BOT",
+        "bedeutung": "Bottrop",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Zusätzlich zur regulären Terminbuchung werden täglich zwischen 07:30 und 08:00 Uhr je nach Kapazität weitere Tagestermine freigegeben.",
+        "quelle": "https://www.bottrop.de/vv/produkte/dezernat3/36/KFZ-Zulassung.php"
+      },
+      {
+        "text": "Kennzeichen dürfen höchstens 8 Stellen haben; bei E-, H- oder Saisonkennzeichen sind maximal 7 Stellen möglich (z. B. BOT-AB12 oder BOT-A123).",
+        "quelle": "https://www.bottrop.de/vv/produkte/dezernat3/36/KFZ-Zulassung.php"
+      },
+      {
+        "text": "Reservierte Wunschkennzeichen können schon vorab bei den ansässigen Schildermachern geprägt werden.",
+        "quelle": "https://www.bottrop.de/vv/produkte/dezernat3/36/KFZ-Zulassung.php"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "hagen",
+    "stadt": "Hagen",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Stadt Hagen – Zulassungsbehörde (Fachbereich Öffentliche Sicherheit und Ordnung)",
+    "behoerdeQuelle": "https://www.hagen.de/aus-dem-rathaus/fachbereiche-und-aemter/fachbereiche-a-z/zulassungsbehoerde/",
+    "traeger": "Stadt Hagen (kreisfreie Stadt)",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsbehörde (Verwaltungsgebäude Hohenlimburg)",
+        "strasse": "Freiheitstraße 3",
+        "plz": "58119",
+        "ort": "Hagen",
+        "quelle": "https://www.hagen.de/aus-dem-rathaus/fachbereiche-und-aemter/fachbereiche-a-z/zulassungsbehoerde/"
+      }
+    ],
+    "website": {
+      "url": "https://www.hagen.de/aus-dem-rathaus/fachbereiche-und-aemter/fachbereiche-a-z/zulassungsbehoerde/",
+      "quelle": "https://www.hagen.de/aus-dem-rathaus/fachbereiche-und-aemter/fachbereiche-a-z/zulassungsbehoerde/"
+    },
+    "terminUrl": {
+      "url": "https://terminvergabe.hagen.de/",
+      "quelle": "https://www.hagen.de/aus-dem-rathaus/fachbereiche-und-aemter/fachbereiche-a-z/zulassungsbehoerde/"
+    },
+    "ikfzUrl": {
+      "url": "https://services.hagen.de/kfz-anmeldung/#/",
+      "quelle": "https://serviceportal.hagen.de/leistung/zulassungsbehoerde-i-kfz-100.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 8 bis 12 Uhr und 13 bis 16 Uhr",
+        "Di 8 bis 12 Uhr und 13 bis 16 Uhr",
+        "Mi 8 bis 12 Uhr",
+        "Do 8 bis 12 Uhr und 13 bis 16 Uhr",
+        "Fr 8 bis 11 Uhr",
+        "Samstag und Sonntag: geschlossen"
+      ],
+      "hinweis": "Öffnungszeiten nur nach Terminvereinbarung; ohne Termin an der Information: Außerbetriebsetzung, Adressänderung (Umzug innerhalb Hagens) und Kurzzeitkennzeichen.",
+      "quelle": "https://www.hagen.de/aus-dem-rathaus/fachbereiche-und-aemter/fachbereiche-a-z/zulassungsbehoerde/"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsbehörde der kreisfreien Stadt Hagen für Halter mit Wohnsitz bzw. Sitz im Stadtgebiet Hagen.",
+      "quelle": "https://www.hagen.de/aus-dem-rathaus/fachbereiche-und-aemter/fachbereiche-a-z/zulassungsbehoerde/"
+    },
+    "kuerzel": [
+      {
+        "code": "HA",
+        "bedeutung": "Hagen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termine gibt es ausschließlich über die Online-Terminvergabe (mehrere Wochen im Voraus buchbar); per Telefon oder E-Mail werden grundsätzlich keine Termine vergeben.",
+        "quelle": "https://www.hagen.de/aus-dem-rathaus/fachbereiche-und-aemter/fachbereiche-a-z/zulassungsbehoerde/"
+      },
+      {
+        "text": "Außerbetriebsetzungen, Adressänderungen nach Umzug innerhalb Hagens und Kurzzeitkennzeichen werden ohne Termin während der Öffnungszeiten an der Information bearbeitet.",
+        "quelle": "https://www.hagen.de/aus-dem-rathaus/fachbereiche-und-aemter/fachbereiche-a-z/zulassungsbehoerde/"
+      },
+      {
+        "text": "Wer innerhalb Hagens umzieht, kann die neue Anschrift bei der Ummeldung im Bürgeramt gleich in den Fahrzeugschein eintragen lassen; ein zusätzlicher Gang zur Zulassungsbehörde ist dann nicht nötig.",
+        "quelle": "https://www.hagen.de/aus-dem-rathaus/fachbereiche-und-aemter/fachbereiche-a-z/zulassungsbehoerde/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "hamm",
+    "stadt": "Hamm",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Stadt Hamm – Kfz-Zulassung in den Bürgerämtern",
+    "behoerdeQuelle": "https://serviceportal.hamm.de/detail/-/vr-bis-detail/dienstleistung/2625/show",
+    "traeger": "Stadt Hamm (kreisfreie Stadt)",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgeramt Mitte (Rathausanbau, Erdgeschoss)",
+        "strasse": "Theodor-Heuss-Platz 16",
+        "plz": "59065",
+        "ort": "Hamm",
+        "quelle": "https://serviceportal.hamm.de/detail/-/vr-bis-detail/einrichtung/645/show"
+      },
+      {
+        "bezeichnung": "Bürgeramt Uentrop",
+        "strasse": "Alter Grenzweg 2",
+        "plz": "59071",
+        "ort": "Hamm",
+        "quelle": "https://serviceportal.hamm.de/detail/-/vr-bis-detail/einrichtung/646/show"
+      },
+      {
+        "bezeichnung": "Bürgeramt Rhynern",
+        "strasse": "Unnaer Straße 10-12",
+        "plz": "59069",
+        "ort": "Hamm",
+        "quelle": "https://serviceportal.hamm.de/detail/-/vr-bis-detail/einrichtung/647/show"
+      },
+      {
+        "bezeichnung": "Bürgeramt Pelkum",
+        "strasse": "Kamener Straße 177",
+        "plz": "59077",
+        "ort": "Hamm",
+        "quelle": "https://serviceportal.hamm.de/detail/-/vr-bis-detail/einrichtung/648/show"
+      },
+      {
+        "bezeichnung": "Bürgeramt Herringen",
+        "strasse": "Dortmunder Straße 245",
+        "plz": "59077",
+        "ort": "Hamm",
+        "quelle": "https://serviceportal.hamm.de/detail/-/vr-bis-detail/einrichtung/649/show"
+      },
+      {
+        "bezeichnung": "Bürgeramt Bockum-Hövel",
+        "strasse": "Teichweg 1",
+        "plz": "59075",
+        "ort": "Hamm",
+        "quelle": "https://serviceportal.hamm.de/detail/-/vr-bis-detail/einrichtung/680/show"
+      },
+      {
+        "bezeichnung": "Bürgeramt Heessen",
+        "strasse": "Amtsstraße 19",
+        "plz": "59073",
+        "ort": "Hamm",
+        "quelle": "https://serviceportal.hamm.de/detail/-/vr-bis-detail/einrichtung/681/show"
+      }
+    ],
+    "website": {
+      "url": "https://serviceportal.hamm.de/detail/-/vr-bis-detail/dienstleistung/2625/show",
+      "quelle": "https://serviceportal.hamm.de/detail/-/vr-bis-detail/dienstleistung/2625/show"
+    },
+    "terminUrl": null,
+    "ikfzUrl": {
+      "url": "http://kfz-online.hamm.de/",
+      "quelle": "https://serviceportal.hamm.de/detail/-/vr-bis-detail/dienstleistung/2686/show"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag 07:30 bis 16:00 Uhr",
+        "Dienstag 07:00 bis 16:00 Uhr",
+        "Mittwoch 09:00 bis 18:00 Uhr",
+        "Donnerstag 07:30 bis 16:00 Uhr",
+        "Freitag 07:30 bis 13:00 Uhr"
+      ],
+      "hinweis": "Servicezeiten gelten für alle sieben Bürgerämter. In den Bürgerämtern der Stadt Hamm ist keine Terminvereinbarung notwendig.",
+      "quelle": "https://serviceportal.hamm.de/detail/-/vr-bis-detail/einrichtung/645/show"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassung der kreisfreien Stadt Hamm für Halter mit Wohnsitz bzw. Sitz in Hamm; die Zulassung kann in jedem der sieben Bürgerämter (Mitte, Uentrop, Rhynern, Pelkum, Herringen, Bockum-Hövel, Heessen) erfolgen.",
+      "quelle": "https://serviceportal.hamm.de/detail/-/vr-bis-detail/dienstleistung/2625/show"
+    },
+    "kuerzel": [
+      {
+        "code": "HAM",
+        "bedeutung": "Hamm",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Kfz-Zulassungen sind dezentral in jedem der sieben Bürgerämter möglich.",
+        "quelle": "https://serviceportal.hamm.de/detail/-/vr-bis-detail/dienstleistung/2625/show"
+      },
+      {
+        "text": "Keine Terminvereinbarung nötig: Wegen geringer Wartezeiten kann man jederzeit zu den Öffnungszeiten vorsprechen.",
+        "quelle": "https://serviceportal.hamm.de/detail/-/vr-bis-detail/einrichtung/645/show"
+      },
+      {
+        "text": "Online-Vorgänge über i-Kfz sind laut Stadt durchschnittlich ca. 20 % günstiger als vor Ort.",
+        "quelle": "https://serviceportal.hamm.de/detail/-/vr-bis-detail/dienstleistung/2686/show"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "herne",
+    "stadt": "Herne",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Stadt Herne – Fachbereich 24 Bürgerdienste, Abteilung 24/4 KFZ-Zulassungsstelle",
+    "behoerdeQuelle": "https://serviceportal.herne.de/detail/-/vr-bis-detail/einrichtung/16773/show",
+    "traeger": "Stadt Herne (kreisfreie Stadt)",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassungsstelle (Abteilung 24/4)",
+        "strasse": "Südstraße 8",
+        "plz": "44625",
+        "ort": "Herne",
+        "quelle": "https://serviceportal.herne.de/detail/-/vr-bis-detail/einrichtung/16773/show"
+      }
+    ],
+    "website": {
+      "url": "https://serviceportal.herne.de/detail/-/vr-bis-detail/einrichtung/16773/show",
+      "quelle": "https://www.herne.de/Rathaus/Buergerservice/Buergerdienste/"
+    },
+    "terminUrl": {
+      "url": "https://tevis.krzn.de/tevisweb2000/select2?md=2",
+      "quelle": "https://serviceportal.herne.de/detail/-/vr-bis-detail/dienstleistung/72233/show"
+    },
+    "ikfzUrl": null,
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag 08:00 bis 12:00 Uhr, 13:00 bis 15:30 Uhr",
+        "Dienstag 08:00 bis 12:00 Uhr, 13:00 bis 15:30 Uhr",
+        "Mittwoch 08:00 bis 12:00 Uhr, 13:00 bis 15:30 Uhr",
+        "Donnerstag 08:00 bis 12:00 Uhr, 13:00 bis 18:00 Uhr",
+        "Freitag 08:00 bis 12:00 Uhr"
+      ],
+      "hinweis": "Die Kfz-Zulassungsstelle arbeitet ausschließlich mit Terminvereinbarungen; Anliegen können ohne Termin nicht bearbeitet werden, Terminvereinbarungen vor Ort sind nicht möglich.",
+      "quelle": "https://serviceportal.herne.de/detail/-/vr-bis-detail/einrichtung/16773/show"
+    },
+    "zustaendigkeit": {
+      "text": "KFZ-Zulassungsstelle der kreisfreien Stadt Herne für Halter mit Wohnsitz bzw. Sitz in Herne; neben HER wird auch das Altkennzeichen WAN (Wanne) vergeben.",
+      "quelle": "https://serviceportal.herne.de/detail/-/vr-bis-detail/einrichtung/16773/show"
+    },
+    "kuerzel": [
+      {
+        "code": "HER",
+        "bedeutung": "Herne",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WAN",
+        "bedeutung": "Wanne (Altkennzeichen für den heutigen Herner Stadtteil, im Rahmen der Kennzeichenliberalisierung wieder eingeführt)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Online-Termine sind bis maximal 14 Tage im Voraus buchbar (pro Tag ein Termin mit maximal 3 Vorgängen); tagesaktuelle Zusatztermine werden ab 07:15 Uhr (Vormittag) und ab 12:00 Uhr (Nachmittag) freigegeben. Beim Termin wird nur das gebuchte Anliegen bearbeitet.",
+        "quelle": "https://serviceportal.herne.de/detail/-/vr-bis-detail/einrichtung/16773/show"
+      },
+      {
+        "text": "Die Online-Terminvergabe ist ausschließlich für Privatkunden; Buchungen durch Kfz-Händler oder Zulassungsdienste sind untersagt und werden storniert.",
+        "quelle": "https://serviceportal.herne.de/detail/-/vr-bis-detail/dienstleistung/72233/show"
+      },
+      {
+        "text": "Aktuell bietet Herne keine i-Kfz-Dienstleistungen an (weder Online-Zulassung noch Online-Außerbetriebsetzung); Anliegen nur mit Termin vor Ort.",
+        "quelle": "https://serviceportal.herne.de/detail/-/vr-bis-detail/einrichtung/16773/show"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "ikfzUrl"
+    ]
+  },
+  {
+    "slug": "leverkusen",
+    "stadt": "Leverkusen",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Stadt Leverkusen – Fachbereich Ordnung und Straßenverkehr (36), Abteilung Zulassung und Fahrerlaubnisse (364), Zulassungsstelle (Sachgebiet 364-01)",
+    "behoerdeQuelle": "https://stva.leverkusen.de/",
+    "traeger": "Stadt Leverkusen (kreisfreie Stadt)",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle (Verwaltungsgebäude Haus-Vorster Straße)",
+        "strasse": "Haus-Vorster Straße 8",
+        "plz": "51379",
+        "ort": "Leverkusen",
+        "quelle": "https://leverkusen.kommunalportal.nrw/detail/-/vr-bis-detail/einrichtung/34360/show"
+      }
+    ],
+    "website": {
+      "url": "https://leverkusen.kommunalportal.nrw/detail/-/vr-bis-detail/einrichtung/34360/show",
+      "quelle": "https://www.leverkusen.de/service/kontakt"
+    },
+    "terminUrl": {
+      "url": "https://stva.leverkusen.de/",
+      "quelle": "https://www.leverkusen.de/service/online-termin"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100002.OE.128380308&leistungId=99036020001000&p=053160",
+      "quelle": "https://leverkusen.kommunalportal.nrw/detail/-/vr-bis-detail/dienstleistung/17637/show"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag 08:00 bis 12:00 Uhr, 13:30 bis 15:30 Uhr",
+        "Dienstag 08:00 bis 12:00 Uhr, 13:30 bis 15:30 Uhr",
+        "Mittwoch 08:00 bis 12:00 Uhr, 14:00 bis 18:00 Uhr",
+        "Donnerstag 08:00 bis 12:00 Uhr, 13:30 bis 15:30 Uhr",
+        "Freitag 08:00 bis 12:30 Uhr"
+      ],
+      "hinweis": "Zulassung vor Ort nach (Online-)Terminvereinbarung; Wartemarken für Zulassungsangelegenheiten werden bis 10 Minuten vor Schließung ausgegeben.",
+      "quelle": "https://leverkusen.kommunalportal.nrw/detail/-/vr-bis-detail/einrichtung/34360/show"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsbehörde der kreisfreien Stadt Leverkusen; zuständig ist die Zulassungsbehörde, in deren Bereich der Halter seinen Wohnsitz oder Betriebssitz hat, also Leverkusen für Halter im Stadtgebiet; neben LEV wird auch das Altkennzeichen OP (Opladen) vergeben.",
+      "quelle": "https://leverkusen.kommunalportal.nrw/detail/-/vr-bis-detail/dienstleistung/17637/show"
+    },
+    "kuerzel": [
+      {
+        "code": "LEV",
+        "bedeutung": "Leverkusen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "OP",
+        "bedeutung": "Opladen (Altkennzeichen, im Rahmen der Kennzeichenliberalisierung wieder eingeführt)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Zulassung kann online, per Post oder nach Online-Terminvereinbarung vor Ort beantragt werden.",
+        "quelle": "https://leverkusen.kommunalportal.nrw/detail/-/vr-bis-detail/dienstleistung/17637/show"
+      },
+      {
+        "text": "Abmeldungen (Außerbetriebsetzungen) sind vor Ort während der Öffnungszeiten ohne vorherige Terminvereinbarung möglich.",
+        "quelle": "https://leverkusen.kommunalportal.nrw/detail/-/vr-bis-detail/dienstleistung/17635/show"
+      },
+      {
+        "text": "Im Online-Verfahren (i-Kfz) werden die Gebühren per PayPal oder Kreditkarte bezahlt.",
+        "quelle": "https://leverkusen.kommunalportal.nrw/detail/-/vr-bis-detail/dienstleistung/17637/show"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "muelheim",
+    "stadt": "Mülheim an der Ruhr",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Stadt Mülheim an der Ruhr – Bürgeramt (Kfz-Zulassung)",
+    "behoerdeQuelle": "https://cms.muelheim-ruhr.de/rathaus/buergeramt",
+    "traeger": "Stadt Mülheim an der Ruhr (kreisfreie Stadt)",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgeramt Mülheim an der Ruhr (Innenstadt)",
+        "strasse": "Löhstraße 22–26",
+        "plz": "45468",
+        "ort": "Mülheim an der Ruhr",
+        "quelle": "https://cms.muelheim-ruhr.de/rathaus/buergeramt/online-terminvereinbarung-im-buergeramt"
+      }
+    ],
+    "website": {
+      "url": "https://cms.muelheim-ruhr.de/rathaus/buergeramt/alles-rund-um-fahrzeug-zulassungen",
+      "quelle": "https://cms.muelheim-ruhr.de/rathaus/buergeramt/alles-rund-um-fahrzeug-zulassungen"
+    },
+    "terminUrl": {
+      "url": "https://terminvergabe.muelheim-ruhr.de/?rs",
+      "quelle": "https://cms.muelheim-ruhr.de/rathaus/buergeramt/online-terminvereinbarung-im-buergeramt"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=muelheim_stadt",
+      "quelle": "https://cms.muelheim-ruhr.de/rathaus/buergeramt/alles-rund-um-fahrzeug-zulassungen"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag: 7.30 bis 13.00 Uhr und 14.00 bis 16.00 Uhr",
+        "Dienstag: 7.30 bis 13.00 Uhr und 14.00 bis 16.00 Uhr",
+        "Mittwoch: 7.30 bis 13.00 Uhr",
+        "Donnerstag: 8.00 bis 13.00 Uhr und 14.00 bis 18.00 Uhr",
+        "Freitag: 7.30 bis 12.00 Uhr"
+      ],
+      "hinweis": "Öffnungszeiten für Melde-, Kfz-, Ausweis- und Passangelegenheiten nur nach vorheriger Terminvereinbarung.",
+      "quelle": "https://cms.muelheim-ruhr.de/rathaus/buergeramt"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassung der kreisfreien Stadt Mülheim an der Ruhr (über das Bürgeramt) für Halter mit Wohnsitz bzw. Sitz in Mülheim an der Ruhr.",
+      "quelle": "https://cms.muelheim-ruhr.de/rathaus/buergeramt/alles-rund-um-fahrzeug-zulassungen"
+    },
+    "kuerzel": [
+      {
+        "code": "MH",
+        "bedeutung": "Mülheim (an der Ruhr)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termine sind 8 bis 10 Wochen im Voraus buchbar; zusätzlich gibt es morgens freigeschaltete tagesaktuelle Termine (Buchung ggf. vor 8.00 Uhr empfohlen) sowie kurzfristige Kfz-Termine, die montagnachmittags für den Mittwoch der laufenden Woche freigegeben werden.",
+        "quelle": "https://cms.muelheim-ruhr.de/rathaus/buergeramt/online-terminvereinbarung-im-buergeramt"
+      },
+      {
+        "text": "An den Kassenautomaten des Bürgeramtes wird bar oder kontaktlos mit Karte bzw. kompatiblem Mobilgerät bezahlt.",
+        "quelle": "https://cms.muelheim-ruhr.de/rathaus/buergeramt"
+      },
+      {
+        "text": "Für Zulassungen im Online-Verfahren (i-Kfz) werden geringere Gebühren erhoben als vor Ort.",
+        "quelle": "https://cms.muelheim-ruhr.de/rathaus/buergeramt/alles-rund-um-fahrzeug-zulassungen"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

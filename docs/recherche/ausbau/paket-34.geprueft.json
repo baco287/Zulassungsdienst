@@ -1,0 +1,71 @@
+[
+  {
+    "slug": "kreis-stormarn",
+    "stadt": "Kreis Stormarn",
+    "bundesland": "Schleswig-Holstein",
+    "behoerde": "Kreis Stormarn – Fachdienst Straßenverkehrsangelegenheiten, Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.kreis-stormarn.de/kreis/fachbereiche/besondere-ordnungsangelegenheiten/strassenverkehrsangelegenheiten/kfz-zulassung.html",
+    "traeger": "Kreis Stormarn",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Kreis Stormarn (Gebäude G)",
+        "strasse": "Rögen 36-38",
+        "plz": "23843",
+        "ort": "Bad Oldesloe",
+        "quelle": "https://www.kreis-stormarn.de/service/wo-sie-uns-finden/gebaeude-g.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-stormarn.de/kreis/fachbereiche/besondere-ordnungsangelegenheiten/strassenverkehrsangelegenheiten/kfz-zulassung.html",
+      "quelle": "https://www.kreis-stormarn.de/kreis/fachbereiche/besondere-ordnungsangelegenheiten/strassenverkehrsangelegenheiten/kfz-zulassung.html"
+    },
+    "terminUrl": {
+      "url": "https://cqm.cleverq.de/public/sites/43/appointments/index.html?lang=de",
+      "quelle": "https://www.kreis-stormarn.de/kreis/fachbereiche/besondere-ordnungsangelegenheiten/strassenverkehrsangelegenheiten/kfz-zulassung.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100012.OE.9489375&leistungId=99036020001000&p=010620",
+      "quelle": "https://www.kreis-stormarn.de/kreis/fachbereiche/besondere-ordnungsangelegenheiten/strassenverkehrsangelegenheiten/kfz-zulassung.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 7:30–12:00",
+        "Di 7:30–12:00",
+        "Mi 7:30–12:00",
+        "Do 8:00–17:00",
+        "Fr 7:30–12:00"
+      ],
+      "hinweis": null,
+      "quelle": "https://www.kreis-stormarn.de/kreis/fachbereiche/besondere-ordnungsangelegenheiten/strassenverkehrsangelegenheiten/kfz-zulassung.html"
+    },
+    "zustaendigkeit": {
+      "text": "Die Kfz-Zulassungsbehörde des Kreises Stormarn in Bad Oldesloe ist für die Fahrzeughalterinnen und -halter im Kreis Stormarn zuständig (laut Kreis: „Hier können die Stormarner Autofahrerinnen und Autofahrer ihre Fahrzeuge an-, ab- und ummelden“). Das Unterscheidungszeichen OD gilt ausschließlich für den Kreis Stormarn; eine Stadt-Zulassungsbehörde mit eigenem Kürzel gibt es im Kreis nicht.",
+      "quelle": "https://www.kreis-stormarn.de/kreis/fachbereiche/besondere-ordnungsangelegenheiten/strassenverkehrsangelegenheiten/kfz-zulassung.html"
+    },
+    "kuerzel": [
+      {
+        "code": "OD",
+        "bedeutung": "Bad Oldesloe (aus „OlDesloe“)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Eine Außerbetriebsetzung (Abmeldung) ist grundsätzlich auch bei der Stadt Ahrensburg, der Gemeinde Ammersbek, der Stadt Bad Oldesloe, der Stadt Bargteheide, der Gemeinde Barsbüttel, der Stadt Glinde, der Stadt Reinbek und dem Amt Siek möglich – vorher bei der jeweiligen Verwaltung erfragen, ob der Service gerade angeboten wird.",
+        "quelle": "https://www.kreis-stormarn.de/service/lvw/leistungen/index.html?bereich=0&lid=23"
+      },
+      {
+        "text": "Pro Termin sind maximal drei Vorgänge (verschiedene Fahrzeuge) möglich. Der online reservierte Termin muss per E-Mail bestätigt werden; das Ticket (Ausdruck oder Handy) ist an der Info am Eingang vorzuzeigen.",
+        "quelle": "https://www.kreis-stormarn.de/kreis/fachbereiche/besondere-ordnungsangelegenheiten/strassenverkehrsangelegenheiten/kfz-zulassung.html"
+      },
+      {
+        "text": "Bezahlt wird mit allen gängigen Karten direkt am Schalter; Barzahlung ist aus Sicherheitsgründen nur im Ausnahmefall möglich.",
+        "quelle": "https://www.kreis-stormarn.de/kreis/fachbereiche/besondere-ordnungsangelegenheiten/strassenverkehrsangelegenheiten/index.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten.hinweis"
+    ]
+  }
+]

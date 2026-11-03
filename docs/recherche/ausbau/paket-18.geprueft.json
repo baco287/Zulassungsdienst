@@ -1,0 +1,985 @@
+[
+  {
+    "slug": "landkreis-rostock",
+    "stadt": "Landkreis Rostock",
+    "bundesland": "Mecklenburg-Vorpommern",
+    "behoerde": "Landkreis Rostock, Amt für Straßenbau und Verkehr – Sachgebiet Straßenverkehr, Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.landkreis-rostock.de/de/kfzzulassung.html",
+    "traeger": "Landkreis Rostock",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde, Standort Güstrow",
+        "strasse": "Parumer Weg 33",
+        "plz": "18273",
+        "ort": "Güstrow",
+        "quelle": "https://www.landkreis-rostock.de/de/kfzzulassung.html"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde, Standort Bad Doberan",
+        "strasse": "Am Waldrand 3",
+        "plz": "18209",
+        "ort": "Bad Doberan",
+        "quelle": "https://www.landkreis-rostock.de/de/kfzzulassung.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-rostock.de/de/kfzzulassung.html",
+      "quelle": "https://www.landkreis-rostock.de/de/kfzzulassung.html"
+    },
+    "terminUrl": {
+      "url": "https://landkreis-rostock.konsentas.de/modules/ota_public/form/1/?signup_new=1",
+      "quelle": "https://www.landkreis-rostock.de/de/kfzzulassung.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/mecklenburgvorpommern/lkrrostock",
+      "quelle": "https://www.landkreis-rostock.de/de/zustaendigkeit-bau-undverkehrsamt/leistung/147/kraftfahrzeug:_erstzulassung_oder_neuzulassung_beantragen.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:30–12:00 Uhr",
+        "Di 08:30–12:00 und 13:30–18:00 Uhr",
+        "Mi geschlossen",
+        "Do 08:30–12:00 und 13:30–16:00 Uhr",
+        "Fr 08:30–12:00 Uhr"
+      ],
+      "hinweis": "Kfz-Zulassung und Fahrerlaubnisbehörde ausschließlich mit Termin.",
+      "quelle": "https://www.landkreis-rostock.de/de/kfzzulassung.html"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Rostock für Fahrzeughalter mit Hauptwohnung im Landkreis Rostock (bei Firmen: Sitz bzw. beteiligte Niederlassung). In Mecklenburg-Vorpommern sind Zulassungsbehörden die Landräte sowie die (Ober-)Bürgermeister der kreisfreien und der großen kreisangehörigen Städte – die Hanse- und Universitätsstadt Rostock (Kennzeichen HRO) gehört nicht zum Landkreis und fällt nicht in diese Zuständigkeit.",
+      "quelle": "https://www.landkreis-rostock.de/de/zustaendigkeit-bau-undverkehrsamt/leistung/147/kraftfahrzeug:_erstzulassung_oder_neuzulassung_beantragen.html"
+    },
+    "kuerzel": [
+      {
+        "code": "LRO",
+        "bedeutung": "Landkreis Rostock",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BÜZ",
+        "bedeutung": "Bützow (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "DBR",
+        "bedeutung": "Bad Doberan (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GÜ",
+        "bedeutung": "Güstrow (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ROS",
+        "bedeutung": "Rostock (Altkennzeichen des Landkreises, wieder erhältlich; nicht HRO der Hansestadt)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "TET",
+        "bedeutung": "Teterow (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Zwei Zulassungsstandorte mit eigenen Kfz-Rufnummern: Güstrow +49 3843 755-65997, Bad Doberan +49 3843 755-65994 (zentraler Service +49 3843 755-65999).",
+        "quelle": "https://www.landkreis-rostock.de/de/kfzzulassung.html"
+      },
+      {
+        "text": "Internetbasierte Außerbetriebsetzung über das Bürgerservice-Portal: 5,70 € zzgl. 0,50 € für die Registrierung im ZFZR; eine Kennzeichenreservierung kostet zusätzlich 2,60 €.",
+        "quelle": "https://www.landkreis-rostock.de/de/zustaendigkeit-bau-undverkehrsamt/leistung/180/ausserbetriebsetzung_online.html"
+      },
+      {
+        "text": "Nach Entfernen der Abdeckung der Stempelplakette darf das Fahrzeug nicht mehr im öffentlichen Straßenverkehr gefahren werden – auch dann nicht, wenn die Online-Außerbetriebsetzung scheitert.",
+        "quelle": "https://www.landkreis-rostock.de/de/zustaendigkeit-bau-undverkehrsamt/leistung/180/ausserbetriebsetzung_online.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-ludwigslust-parchim",
+    "stadt": "Landkreis Ludwigslust-Parchim",
+    "bundesland": "Mecklenburg-Vorpommern",
+    "behoerde": "Landkreis Ludwigslust-Parchim, Fachdienst Bürgerservice (Fachdienst 33) – Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.kreis-lup.de/Verwaltung/Dienstleistungen/B%C3%BCrgerservice/",
+    "traeger": "Landkreis Ludwigslust-Parchim",
+    "standorte": [
+      {
+        "bezeichnung": "Gemeinsame Kfz-Zulassungs- und Führerscheinstelle mit der Landeshauptstadt Schwerin (Post-Logistikzentrum)",
+        "strasse": "Heinrich-Hertz-Ring 2",
+        "plz": "19061",
+        "ort": "Schwerin",
+        "quelle": "https://www.kreis-lup.de/Verwaltung/%C3%9Cber-uns/Fachdienste-und-Stabstellen/B%C3%BCrgerservice/KfZ-Zulassungsbeh%C3%B6rde/"
+      },
+      {
+        "bezeichnung": "Fachdienst Bürgerservice, Standort Parchim (Bürgerbüro Parchim mit Kfz-Zulassung)",
+        "strasse": "Putlitzer Straße 25",
+        "plz": "19370",
+        "ort": "Parchim",
+        "quelle": "https://www.kreis-lup.de/Verwaltung/Dienstleistungen/B%C3%BCrgerservice/"
+      },
+      {
+        "bezeichnung": "Fachdienst Bürgerservice, Standort Ludwigslust (Bürgerbüro Ludwigslust mit Kfz-Zulassung)",
+        "strasse": "Garnisonsstraße 1",
+        "plz": "19288",
+        "ort": "Ludwigslust",
+        "quelle": "https://www.kreis-lup.de/Verwaltung/Dienstleistungen/B%C3%BCrgerservice/"
+      },
+      {
+        "bezeichnung": "Kooperatives Bürgerbüro Boizenburg (Bürgerhaus)",
+        "strasse": "Kirchplatz 6",
+        "plz": "19258",
+        "ort": "Boizenburg/Elbe",
+        "quelle": "https://www.boizenburg.de/portal/seiten/kooperatives-buergerbuero-900000058-28851.html"
+      },
+      {
+        "bezeichnung": "Kooperatives Bürgerbüro mit Zulassung Dömitz-Malliß",
+        "strasse": "Slüterplatz 2",
+        "plz": "19303",
+        "ort": "Dömitz",
+        "quelle": "https://www.amtdoemitz-malliss.de/amt-gemeinden/verwaltung/kooperatives-buergerbuero/"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-lup.de/Verwaltung/%C3%9Cber-uns/Fachdienste-und-Stabstellen/B%C3%BCrgerservice/KfZ-Zulassungsbeh%C3%B6rde/",
+      "quelle": "https://www.kreis-lup.de/Verwaltung/%C3%9Cber-uns/Fachdienste-und-Stabstellen/B%C3%BCrgerservice/KfZ-Zulassungsbeh%C3%B6rde/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/kreis-lup/",
+      "quelle": "https://www.kreis-lup.de/Verwaltung/%C3%9Cber-uns/Fachdienste-und-Stabstellen/B%C3%BCrgerservice/KfZ-Zulassungsbeh%C3%B6rde/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100027.OE.106469238&leistungId=99036020001000&p=130760",
+      "quelle": "https://www.kreis-lup.de/Verwaltung/%C3%9Cber-uns/Fachdienste-und-Stabstellen/B%C3%BCrgerservice/KfZ-Zulassungsbeh%C3%B6rde/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–13:00 Uhr",
+        "Di 08:00–13:00 und 14:00–18:00 Uhr",
+        "Mi 08:00–13:00 Uhr",
+        "Do 08:00–13:00 und 14:00–18:00 Uhr",
+        "Fr 08:00–13:00 Uhr"
+      ],
+      "hinweis": "Zeiten der gemeinsamen Kfz-Zulassungs- und Führerscheinstelle in Schwerin (Heinrich-Hertz-Ring 2); alle Besucherinnen und Besucher benötigen einen Online-Termin. Zeiten der Bürgerbüros im Kreisgebiet sind auf der Kreisseite nicht angegeben.",
+      "quelle": "https://www.schwerin.de/politik-verwaltung/stadtverwaltung/verwaltungsstruktur/kfz-und-fuehrerscheinstelle/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Ludwigslust-Parchim für Halter mit Wohnsitz im Kreisgebiet. Die Landeshauptstadt Schwerin (Kennzeichen SN) ist ein eigener Zulassungsbezirk; Landkreis und Landeshauptstadt betreiben aber eine gemeinsame Kfz-Zulassungs- und Führerscheinstelle am Heinrich-Hertz-Ring in Schwerin-Wüstmark.",
+      "quelle": "https://www.schwerin.de/politik-verwaltung/stadtverwaltung/verwaltungsstruktur/kfz-und-fuehrerscheinstelle/"
+    },
+    "kuerzel": [
+      {
+        "code": "LUP",
+        "bedeutung": "Ludwigslust-Parchim",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "HGN",
+        "bedeutung": "Hagenow (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "LBZ",
+        "bedeutung": "Lübz (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "LWL",
+        "bedeutung": "Ludwigslust (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "PCH",
+        "bedeutung": "Parchim (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "STB",
+        "bedeutung": "Sternberg (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Kfz-Zulassung auch in Bürgerbüros im Kreisgebiet: Boizenburg, Dömitz, Hagenow, Lübz, Ludwigslust, Parchim und Sternberg; für Schwerin, Ludwigslust, Hagenow und Parchim ist ein Online-Termin zwingend.",
+        "quelle": "https://www.kreis-lup.de/Verwaltung/Dienstleistungen/B%C3%BCrgerservice-vor-Ort/"
+      },
+      {
+        "text": "Getrennte i-Kfz-Zugänge: Die Kreisseite verlinkt für Halter aus dem Landkreis und aus der Landeshauptstadt Schwerin jeweils eigene Online-Dienste für Zulassung und Abmeldung.",
+        "quelle": "https://www.kreis-lup.de/Verwaltung/%C3%9Cber-uns/Fachdienste-und-Stabstellen/B%C3%BCrgerservice/KfZ-Zulassungsbeh%C3%B6rde/"
+      },
+      {
+        "text": "Bei Verlust von Kennzeichen oder Zulassungsbescheinigungen kann die eidesstattliche Versicherung im Fachdienst 33 gegen 30,70 € Gebühr abgegeben werden (alternativ beim Notar).",
+        "quelle": "https://www.kreis-lup.de/Verwaltung/%C3%9Cber-uns/Fachdienste-und-Stabstellen/B%C3%BCrgerservice/KfZ-Zulassungsbeh%C3%B6rde/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "standorte (Hagenow, Lübz, Sternberg ohne belegte Adresse)"
+    ]
+  },
+  {
+    "slug": "landkreis-mecklenburgische-seenplatte",
+    "stadt": "Landkreis Mecklenburgische Seenplatte",
+    "bundesland": "Mecklenburg-Vorpommern",
+    "behoerde": "Landkreis Mecklenburgische Seenplatte – Bürgerservicezentren/Zulassungsstellen",
+    "behoerdeQuelle": "https://www.lk-mecklenburgische-seenplatte.de/B%C3%BCrgerinfo/Fach%C3%A4mter/%C3%96ffnungszeiten/",
+    "traeger": "Landkreis Mecklenburgische Seenplatte",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgerservicezentrum Neubrandenburg (Rathaus, Raum 0.47/0.48)",
+        "strasse": "Friedrich-Engels-Ring 53",
+        "plz": "17033",
+        "ort": "Neubrandenburg",
+        "quelle": "https://www.lk-mecklenburgische-seenplatte.de/B%C3%BCrgerinfo/B%C3%BCrgerservicezentren/Kfz-An-und-Abmeldung-online/"
+      },
+      {
+        "bezeichnung": "Bürgerservicezentrum Regionalstandort Demmin (Haus D, Zi. 050)",
+        "strasse": "Adolf-Pompe-Straße 23",
+        "plz": "17109",
+        "ort": "Demmin",
+        "quelle": "https://www.lk-mecklenburgische-seenplatte.de/B%C3%BCrgerinfo/Fach%C3%A4mter/Anschriften/"
+      },
+      {
+        "bezeichnung": "Bürgerservicezentrum Regionalstandort Neustrelitz (Raum 0.25/4.12)",
+        "strasse": "Woldegker Chaussee 35",
+        "plz": "17235",
+        "ort": "Neustrelitz",
+        "quelle": "https://www.lk-mecklenburgische-seenplatte.de/B%C3%BCrgerinfo/Fach%C3%A4mter/Anschriften/"
+      },
+      {
+        "bezeichnung": "Bürgerservicezentrum Regionalstandort Waren (Müritz) (Raum E.16/17)",
+        "strasse": "Zum Amtsbrink 2",
+        "plz": "17192",
+        "ort": "Waren (Müritz)",
+        "quelle": "https://www.lk-mecklenburgische-seenplatte.de/B%C3%BCrgerinfo/Fach%C3%A4mter/Anschriften/"
+      }
+    ],
+    "website": {
+      "url": "https://www.lk-mecklenburgische-seenplatte.de/B%C3%BCrgerinfo/B%C3%BCrgerservicezentren/Kfz-An-und-Abmeldung-online/",
+      "quelle": "https://www.lk-mecklenburgische-seenplatte.de/B%C3%BCrgerinfo/B%C3%BCrgerservicezentren/Kfz-An-und-Abmeldung-online/"
+    },
+    "terminUrl": {
+      "url": "https://lkmse.meinenterminvereinbaren.de/",
+      "quelle": "https://www.lk-mecklenburgische-seenplatte.de/B%C3%BCrgerinfo/B%C3%BCrgerservicezentren/Termin-telefonisch-online-/"
+    },
+    "ikfzUrl": {
+      "url": "https://ikfz.lk-seenplatte.de",
+      "quelle": "https://www.lk-mecklenburgische-seenplatte.de/B%C3%BCrgerinfo/B%C3%BCrgerservicezentren/Termin-telefonisch-online-/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–12:00 und 13:00–16:00 Uhr (nur nach Terminvergabe)",
+        "Di 08:00–12:00 und 13:00–17:30 Uhr",
+        "Mi 08:00–12:00 Uhr (nur nach Terminvergabe)",
+        "Do 08:00–12:00 und 13:00–16:00 Uhr (nur nach Terminvergabe)",
+        "Fr 08:00–12:00 Uhr (nur nach Terminvergabe)"
+      ],
+      "hinweis": "Gilt für alle Standorte der Bürgerservicezentren/Zulassungsstellen.",
+      "quelle": "https://www.lk-mecklenburgische-seenplatte.de/B%C3%BCrgerinfo/Fach%C3%A4mter/%C3%96ffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsbehörde des Landkreises Mecklenburgische Seenplatte für Halter mit Wohnsitz im Landkreis – ausgenommen die Stadt Neubrandenburg: Einwohnerinnen und Einwohner Neubrandenburgs (Kennzeichen NB) buchen über die Stadt Neubrandenburg, die eine eigene Kfz-Zulassung hat.",
+      "quelle": "https://www.lk-mecklenburgische-seenplatte.de/B%C3%BCrgerinfo/B%C3%BCrgerservicezentren/Termin-telefonisch-online-/"
+    },
+    "kuerzel": [
+      {
+        "code": "MSE",
+        "bedeutung": "Mecklenburgische Seenplatte (ohne die Stadt Neubrandenburg)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "AT",
+        "bedeutung": "Altentreptow (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "DM",
+        "bedeutung": "Demmin (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MC",
+        "bedeutung": "Malchin (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MST",
+        "bedeutung": "Mecklenburg-Strelitz (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MÜR",
+        "bedeutung": "Müritz (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "NZ",
+        "bedeutung": "Neustrelitz (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "RM",
+        "bedeutung": "Röbel/Müritz (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WRN",
+        "bedeutung": "Waren (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Wer in der Gemeinde Feldberger Seenlandschaft, den Ämtern Malchin am Kumerower See, Penzliner Land, Röbel-Müritz, Stargarder Land, Stavenhagen, Woldegk, der Stadt Dargun oder im Amtsbereich Friedland wohnt, kann Adressänderungen (Umzug innerhalb des Landkreises) und Abmeldungen kreiszugelassener Fahrzeuge im Einwohnermeldeamt vor Ort erledigen.",
+        "quelle": "https://www.lk-mecklenburgische-seenplatte.de/B%C3%BCrgerinfo/B%C3%BCrgerservicezentren/Kfz-An-und-Abmeldung-online/"
+      },
+      {
+        "text": "Die internetbasierte Zulassung (i-Kfz) steht derzeit nur natürlichen Personen offen, nicht juristischen Personen.",
+        "quelle": "https://www.lk-mecklenburgische-seenplatte.de/B%C3%BCrgerinfo/B%C3%BCrgerservicezentren/Termin-telefonisch-online-/"
+      },
+      {
+        "text": "Kfz-Termine sind an vier Regionalstandorten buchbar: Demmin, Neustrelitz, Neubrandenburg und Waren (Müritz).",
+        "quelle": "https://www.lk-mecklenburgische-seenplatte.de/B%C3%BCrgerinfo/B%C3%BCrgerservicezentren/Kfz-An-und-Abmeldung-online/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-nordwestmecklenburg",
+    "stadt": "Landkreis Nordwestmecklenburg",
+    "bundesland": "Mecklenburg-Vorpommern",
+    "behoerde": "Landkreis Nordwestmecklenburg, Fachgebiet Zulassungswesen (Kfz-Zulassung)",
+    "behoerdeQuelle": "https://www.nordwestmecklenburg.de/de/kfz-zulassung.html",
+    "traeger": "Landkreis Nordwestmecklenburg",
+    "standorte": [
+      {
+        "bezeichnung": "Verwaltungsstandort Grevesmühlen",
+        "strasse": "Langer Steinschlag 4",
+        "plz": "23936",
+        "ort": "Grevesmühlen",
+        "quelle": "https://www.nordwestmecklenburg.de/de/kfz-zulassung.html"
+      },
+      {
+        "bezeichnung": "Verwaltungsstandort Wismar",
+        "strasse": "Am kleinen Stadtfeld 6",
+        "plz": "23970",
+        "ort": "Wismar",
+        "quelle": "https://www.nordwestmecklenburg.de/de/kfz-zulassung.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.nordwestmecklenburg.de/de/kfz-zulassung.html",
+      "quelle": "https://www.nordwestmecklenburg.de/de/kfz-zulassung.html"
+    },
+    "terminUrl": {
+      "url": "https://termin.nordwestmecklenburg.de/",
+      "quelle": "https://www.nordwestmecklenburg.de/de/kfz-zulassung.html"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=nordwestmecklenburg_kreis",
+      "quelle": "https://www.nordwestmecklenburg.de/de/kfz-zulassung.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 09:00–12:00 Uhr",
+        "Di 09:00–12:00 und 13:00–16:00 Uhr",
+        "Mi 09:00–12:00 Uhr (nur Kfz-Zulassung)",
+        "Do 09:00–12:00 und 13:00–18:00 Uhr",
+        "Fr 08:00–11:30 Uhr"
+      ],
+      "hinweis": null,
+      "quelle": "https://www.nordwestmecklenburg.de/de/kfz-zulassung.html"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsbehörde des Landkreises Nordwestmecklenburg für Halter mit Hauptwohnung (bei Firmen: Sitz/Niederlassung) im Landkreis. Die Hansestadt Wismar ist als große kreisangehörige Stadt selbst Kfz-Zulassungsbehörde (Kennzeichen HWI); für Einwohner der Hansestadt ist daher die städtische Zulassungsstelle zuständig, nicht der Kreisstandort Am kleinen Stadtfeld.",
+      "quelle": "https://www.nordwestmecklenburg.de/de/kfz-zulassung-detail/leistung/88/kraftfahrzeug%3A_erstzulassung_oder_neuzulassung_beantragen.html"
+    },
+    "kuerzel": [
+      {
+        "code": "NWM",
+        "bedeutung": "Nordwestmecklenburg (ohne die Hansestadt Wismar)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GDB",
+        "bedeutung": "Gadebusch (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GVM",
+        "bedeutung": "Grevesmühlen (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WIS",
+        "bedeutung": "Wismar (Altkennzeichen des früheren Landkreises, wieder erhältlich; nicht HWI der Hansestadt)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Kfz-Zulassung an zwei Verwaltungsstandorten: Grevesmühlen (Langer Steinschlag 4) und Wismar (Am kleinen Stadtfeld 6).",
+        "quelle": "https://www.nordwestmecklenburg.de/de/kfz-zulassung.html"
+      },
+      {
+        "text": "Mittwochs ist von 09:00 bis 12:00 Uhr nur die Kfz-Zulassung geöffnet.",
+        "quelle": "https://www.nordwestmecklenburg.de/de/kfz-zulassung.html"
+      },
+      {
+        "text": "Parkplatz an der Malzfabrik in Grevesmühlen (laut Kreisseite 198 Plätze, nicht gebührenpflichtig).",
+        "quelle": "https://www.nordwestmecklenburg.de/de/kfz-zulassung.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten.hinweis"
+    ]
+  },
+  {
+    "slug": "landkreis-vorpommern-greifswald",
+    "stadt": "Landkreis Vorpommern-Greifswald",
+    "bundesland": "Mecklenburg-Vorpommern",
+    "behoerde": "Landkreis Vorpommern-Greifswald, Straßenverkehrsamt (Amt 36) – Kfz-Zulassungsstellen",
+    "behoerdeQuelle": "https://www.kreis-vg.de/Landkreis/Zulassung-Online/",
+    "traeger": "Landkreis Vorpommern-Greifswald",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle, Standort Anklam",
+        "strasse": "Friedländer Landstraße 21 d",
+        "plz": "17389",
+        "ort": "Anklam",
+        "quelle": "https://www.kreis-vg.de/Landkreis/Zulassung-Online/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle, Standort Pasewalk",
+        "strasse": "An der Kürassierkaserne 9",
+        "plz": "17309",
+        "ort": "Pasewalk",
+        "quelle": "https://www.kreis-vg.de/Landkreis/Zulassung-Online/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle, Standort Greifswald",
+        "strasse": "Feldstraße 85 a",
+        "plz": "17489",
+        "ort": "Greifswald",
+        "quelle": "https://www.kreis-vg.de/Landkreis/Zulassung-Online/"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-vg.de/Landkreis/Zulassung-Online/",
+      "quelle": "https://www.kreis-vg.de/Landkreis/Zulassung-Online/"
+    },
+    "terminUrl": {
+      "url": "https://kreis-vg.meinenterminvereinbaren.de/",
+      "quelle": "https://www.kreis-vg.de/Landkreis/Zulassung-Online/"
+    },
+    "ikfzUrl": {
+      "url": "https://ikfz.kreis-vg.de/",
+      "quelle": "https://www.kreis-vg.de/Landkreis/Zulassung-Online/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–12:00 Uhr",
+        "Di 08:00–12:00 und 13:00–17:30 Uhr",
+        "Mi 09:00–11:00 Uhr",
+        "Do 08:00–12:00 und 13:00–16:00 Uhr",
+        "Fr 08:00–12:00 Uhr"
+      ],
+      "hinweis": null,
+      "quelle": "https://www.kreis-vg.de/Landkreis/Zulassung-Online/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstellen des Landkreises Vorpommern-Greifswald für Halter mit Hauptwohnung (bei Firmen: Sitz/Niederlassung) im Landkreis. Die Universitäts- und Hansestadt Greifswald ist große kreisangehörige Stadt mit eigener Kfz-Zulassungsbehörde (Markt 15, Kennzeichen HGW); die Kreis-Zulassungsstelle in der Feldstraße 85 a ist für Einwohner der Stadt Greifswald nicht zuständig.",
+      "quelle": "https://www.greifswald.de/de/verwaltung-politik/verwaltungsleistungen_basis/Kraftfahrzeug-Erstzulassung-oder-Neuzulassung-beantragen/"
+    },
+    "kuerzel": [
+      {
+        "code": "VG",
+        "bedeutung": "Vorpommern-Greifswald",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ANK",
+        "bedeutung": "Anklam (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GW",
+        "bedeutung": "Greifswald (Altkennzeichen des früheren Landkreises, wieder erhältlich; nicht HGW der Stadt)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "PW",
+        "bedeutung": "Pasewalk (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SBG",
+        "bedeutung": "Strasburg (Uckermark) (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "UEM",
+        "bedeutung": "Ueckermünde (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WLG",
+        "bedeutung": "Wolgast (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Drei Kfz-Zulassungsstellen im Kreisgebiet: Anklam, Pasewalk und Greifswald.",
+        "quelle": "https://www.kreis-vg.de/Landkreis/Zulassung-Online/"
+      },
+      {
+        "text": "Nach einer Außerbetriebsetzung in der Zulassungsstelle darf man mit den entstempelten Kennzeichen bis zum Ende desselben Tages zum Wohnort zurückfahren, wenn die Kfz-Haftpflichtversicherung die Rückfahrt abdeckt; Versicherung und Hauptzollamt informiert die Zulassungsstelle.",
+        "quelle": "https://www.kreis-vg.de/Landkreis/Zulassung-Online/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten.hinweis"
+    ]
+  },
+  {
+    "slug": "landkreis-vorpommern-ruegen",
+    "stadt": "Landkreis Vorpommern-Rügen",
+    "bundesland": "Mecklenburg-Vorpommern",
+    "behoerde": "Landkreis Vorpommern-Rügen, Fachdienst Bürgerservice – Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.lk-vr.de/Kreisverwaltung/B%C3%BCrgerservice/Zulassungsbeh%C3%B6rde/",
+    "traeger": "Landkreis Vorpommern-Rügen",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgerservice Standort Stralsund (Haus 2, Eingang I)",
+        "strasse": "Carl-Heydemann-Ring 67",
+        "plz": "18437",
+        "ort": "Stralsund",
+        "quelle": "https://www.lk-vr.de/Kreisverwaltung/B%C3%BCrgerservice/Zulassungsbeh%C3%B6rde/"
+      },
+      {
+        "bezeichnung": "Bürgerservice Standort Grimmen (Haus 3)",
+        "strasse": "Bahnhofstraße 12/13",
+        "plz": "18507",
+        "ort": "Grimmen",
+        "quelle": "https://www.lk-vr.de/Kreisverwaltung/B%C3%BCrgerservice/Zulassungsbeh%C3%B6rde/"
+      },
+      {
+        "bezeichnung": "Bürgerservice Standort Bergen auf Rügen",
+        "strasse": "Störtebekerstraße 30",
+        "plz": "18528",
+        "ort": "Bergen auf Rügen",
+        "quelle": "https://www.lk-vr.de/Kreisverwaltung/B%C3%BCrgerservice/Zulassungsbeh%C3%B6rde/"
+      },
+      {
+        "bezeichnung": "Bürgerservice Standort Ribnitz-Damgarten",
+        "strasse": "Scheunenweg 10",
+        "plz": "18311",
+        "ort": "Ribnitz-Damgarten",
+        "quelle": "https://www.lk-vr.de/Kreisverwaltung/B%C3%BCrgerservice/Zulassungsbeh%C3%B6rde/"
+      }
+    ],
+    "website": {
+      "url": "https://www.lk-vr.de/Kreisverwaltung/B%C3%BCrgerservice/Zulassungsbeh%C3%B6rde/",
+      "quelle": "https://www.lk-vr.de/Kreisverwaltung/B%C3%BCrgerservice/Zulassungsbeh%C3%B6rde/"
+    },
+    "terminUrl": {
+      "url": "https://lk-vr.flexappoint.de/",
+      "quelle": "https://www.lk-vr.de/Kreisverwaltung/B%C3%BCrgerservice/Zulassungsbeh%C3%B6rde/"
+    },
+    "ikfzUrl": null,
+    "oeffnungszeiten": {
+      "zeilen": [],
+      "hinweis": "Für Anliegen in der Zulassungsbehörde ist eine vorherige Terminvereinbarung erforderlich – online oder telefonisch über die Behördennummer 115 (Mo–Fr 08:00–18:00 Uhr).",
+      "quelle": "https://www.lk-vr.de/Kreisverwaltung/B%C3%BCrgerservice/Zulassungsbeh%C3%B6rde/"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsbehörde des Landkreises Vorpommern-Rügen für Halter mit Hauptwohnung (bei Firmen: Sitz/Niederlassung) im Landkreis. Die Hansestadt Stralsund ist große kreisangehörige Stadt mit eigener Kfz-Zulassungsbehörde (Ordnungsamt, Schillstraße 5–7, Kennzeichen HST); der Kreis-Standort am Carl-Heydemann-Ring in Stralsund ist für Einwohner der Hansestadt nicht zuständig.",
+      "quelle": "https://service.stralsund.de/dienstleistungen/-/egov-bis-detail/dienstleistung/2449/show"
+    },
+    "kuerzel": [
+      {
+        "code": "VR",
+        "bedeutung": "Vorpommern-Rügen (ohne die Hansestadt Stralsund)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GMN",
+        "bedeutung": "Grimmen (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "NVP",
+        "bedeutung": "Nordvorpommern (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "RDG",
+        "bedeutung": "Ribnitz-Damgarten (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "RÜG",
+        "bedeutung": "Rügen (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Der Online-Zulassungsdienst (i-Kfz) ist laut Kreisseite aus technischen Gründen bis auf Weiteres nicht möglich.",
+        "quelle": "https://www.lk-vr.de/Kreisverwaltung/B%C3%BCrgerservice/Zulassungsbeh%C3%B6rde/"
+      },
+      {
+        "text": "Das Online-Terminsystem gilt für alle Bürgerservice-Standorte (Stralsund, Grimmen, Bergen auf Rügen, Ribnitz-Damgarten) und alle Anliegen rund um die Kfz-Zulassung.",
+        "quelle": "https://www.lk-vr.de/Quicknavigation/Ihr-Besuch-bei-uns/"
+      },
+      {
+        "text": "Online-Wunschkennzeichenreservierung und Online-Bankbriefauskunft werden weiterhin angeboten.",
+        "quelle": "https://www.lk-vr.de/Kreisverwaltung/B%C3%BCrgerservice/Zulassungsbeh%C3%B6rde/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten.zeilen",
+      "ikfzUrl"
+    ]
+  },
+  {
+    "slug": "schwerin",
+    "stadt": "Schwerin",
+    "bundesland": "Mecklenburg-Vorpommern",
+    "behoerde": "Gemeinsame KfZ-Zulassungs- und Führerscheinstelle der Landeshauptstadt Schwerin und des Landkreises Ludwigslust-Parchim",
+    "behoerdeQuelle": "https://www.schwerin.de/politik-verwaltung/stadtverwaltung/verwaltungsstruktur/kfz-und-fuehrerscheinstelle/",
+    "traeger": "Landeshauptstadt Schwerin (gemeinsame Stelle mit dem Landkreis Ludwigslust-Parchim)",
+    "standorte": [
+      {
+        "bezeichnung": "KfZ-Zulassungs- und Führerscheinstelle, Post-Logistikzentrum (Schwerin-Wüstmark)",
+        "strasse": "Heinrich-Hertz-Ring 2",
+        "plz": "19061",
+        "ort": "Schwerin",
+        "quelle": "https://www.schwerin.de/politik-verwaltung/stadtverwaltung/verwaltungsstruktur/kfz-und-fuehrerscheinstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://www.schwerin.de/politik-verwaltung/stadtverwaltung/verwaltungsstruktur/kfz-und-fuehrerscheinstelle/",
+      "quelle": "https://www.schwerin.de/politik-verwaltung/stadtverwaltung/verwaltungsstruktur/kfz-und-fuehrerscheinstelle/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/kreis-lup/",
+      "quelle": "https://www.schwerin.de/politik-verwaltung/stadtverwaltung/verwaltungsstruktur/kfz-und-fuehrerscheinstelle/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100027.OE.106469234&leistungId=99036020001000&p=130040",
+      "quelle": "https://www.schwerin.de/politik-verwaltung/stadtverwaltung/verwaltungsstruktur/kfz-und-fuehrerscheinstelle/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–13:00 Uhr",
+        "Di 08:00–13:00 und 14:00–18:00 Uhr",
+        "Mi 08:00–13:00 Uhr",
+        "Do 08:00–13:00 und 14:00–18:00 Uhr",
+        "Fr 08:00–13:00 Uhr"
+      ],
+      "hinweis": "Alle Besucherinnen und Besucher der Kfz-Zulassungs- und Führerscheinstelle benötigen einen Online-Termin.",
+      "quelle": "https://www.schwerin.de/politik-verwaltung/stadtverwaltung/verwaltungsstruktur/kfz-und-fuehrerscheinstelle/"
+    },
+    "zustaendigkeit": {
+      "text": "Landeshauptstadt Schwerin (kreisfrei, Kennzeichen SN): Halter mit Hauptwohnung in Schwerin. Die Kfz-Zulassung erfolgt in der gemeinsamen KfZ-Zulassungs- und Führerscheinstelle von Landeshauptstadt und Landkreis Ludwigslust-Parchim am Heinrich-Hertz-Ring 2.",
+      "quelle": "https://www.schwerin.de/politik-verwaltung/stadtverwaltung/verwaltungsstruktur/kfz-und-fuehrerscheinstelle/"
+    },
+    "kuerzel": [
+      {
+        "code": "SN",
+        "bedeutung": "Schwerin",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Zulassungsstelle wird gemeinsam mit dem Landkreis Ludwigslust-Parchim betrieben; telefonisch erreichbar über die Behördennummer 115 (+49 3871 115).",
+        "quelle": "https://www.schwerin.de/politik-verwaltung/stadtverwaltung/verwaltungsstruktur/kfz-und-fuehrerscheinstelle/"
+      },
+      {
+        "text": "Schwerinerinnen und Schweriner können auch die kooperativen Bürgerbüros des Landkreises Ludwigslust-Parchim in Anspruch nehmen (ausgenommen Meldewesen o. ä.).",
+        "quelle": "https://www.schwerin.de/politik-verwaltung/stadtverwaltung/verwaltungsstruktur/kfz-und-fuehrerscheinstelle/"
+      },
+      {
+        "text": "Online-Dienste: Fahrzeug zulassen und abmelden über das Behörden-Serviceportal, Wunschkennzeichen über das Serviceportal der Landeshauptstadt.",
+        "quelle": "https://www.schwerin.de/politik-verwaltung/stadtverwaltung/verwaltungsstruktur/kfz-und-fuehrerscheinstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "greifswald",
+    "stadt": "Greifswald",
+    "bundesland": "Mecklenburg-Vorpommern",
+    "behoerde": "Universitäts- und Hansestadt Greifswald, Der Oberbürgermeister – Amt für Bürgerservice und Brandschutz, 32.2.1 Kfz-Zulassungsstelle und Bewohnerparkausweis",
+    "behoerdeQuelle": "https://www.greifswald.de/de/verwaltung-politik/verwaltungsleistungen_basis/Kraftfahrzeug-Erstzulassung-oder-Neuzulassung-beantragen/",
+    "traeger": "Universitäts- und Hansestadt Greifswald",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle und Bewohnerparkausweis (Raum AE 01)",
+        "strasse": "Markt 15",
+        "plz": "17489",
+        "ort": "Greifswald",
+        "quelle": "https://www.greifswald.de/de/verwaltung-politik/verwaltungsleistungen_basis/Kraftfahrzeug-Erstzulassung-oder-Neuzulassung-beantragen/"
+      }
+    ],
+    "website": {
+      "url": "https://www.greifswald.de/de/verwaltung-politik/verwaltungsleistungen/online-dienste/fahrzeug-parken-verkehr/index.html",
+      "quelle": "https://www.greifswald.de/de/verwaltung-politik/verwaltungsleistungen/online-dienste/fahrzeug-parken-verkehr/index.html"
+    },
+    "terminUrl": {
+      "url": "https://tevis-online.mvnet.de/greifswald/",
+      "quelle": "https://www.greifswald.de/de/verwaltung-politik/verwaltungsleistungen_basis/Kraftfahrzeug-Erstzulassung-oder-Neuzulassung-beantragen/"
+    },
+    "ikfzUrl": {
+      "url": "https://ikfz.greifswald.de/",
+      "quelle": "https://www.greifswald.de/de/verwaltung-politik/verwaltungsleistungen/online-dienste/fahrzeug-parken-verkehr/index.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mit Termin: Mo–Do 08:00–12:00 und 14:00–16:00 Uhr (Di bis 18:00 Uhr)",
+        "Mit Termin: Fr 08:00–12:00 Uhr",
+        "Ohne Termin: Di 09:00–12:00 und 14:00–17:00 Uhr",
+        "Ohne Termin: Do 09:00–12:00 und 14:00–16:00 Uhr"
+      ],
+      "hinweis": "Außerhalb der Sprechzeiten ohne Termin nur mit vorheriger Terminvereinbarung (online oder telefonisch unter +49 3834 8536-4120).",
+      "quelle": "https://www.greifswald.de/de/verwaltung-politik/verwaltungsleistungen_basis/Kraftfahrzeug-Erstzulassung-oder-Neuzulassung-beantragen/"
+    },
+    "zustaendigkeit": {
+      "text": "Große kreisangehörige Stadt Greifswald mit eigener Kfz-Zulassungsbehörde für Halter mit Hauptwohnung (bei Firmen: Sitz/Niederlassung) in Greifswald. Für das übrige Gebiet des Landkreises Vorpommern-Greifswald (Kennzeichen VG u. a.) ist der Landkreis zuständig – auch dessen Zulassungsstelle in der Feldstraße 85 a in Greifswald.",
+      "quelle": "https://www.greifswald.de/de/verwaltung-politik/verwaltungsleistungen_basis/Kraftfahrzeug-Erstzulassung-oder-Neuzulassung-beantragen/"
+    },
+    "kuerzel": [
+      {
+        "code": "HGW",
+        "bedeutung": "Hansestadt Greifswald",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Dienstags und donnerstags gibt es feste Sprechzeiten ohne Termin.",
+        "quelle": "https://www.greifswald.de/de/verwaltung-politik/verwaltungsleistungen_basis/Kraftfahrzeug-Erstzulassung-oder-Neuzulassung-beantragen/"
+      },
+      {
+        "text": "Telefonische Terminvereinbarung unter +49 3834 8536-4120.",
+        "quelle": "https://www.greifswald.de/de/verwaltung-politik/verwaltungsleistungen_basis/Kraftfahrzeug-Erstzulassung-oder-Neuzulassung-beantragen/"
+      },
+      {
+        "text": "Über das i-Kfz-Portal der Stadt lassen sich u. a. Außerbetriebsetzung, Erst-/Neuzulassung, Wiederzulassung bei Halterwechsel und Wunschkennzeichen-Reservierungen online beantragen.",
+        "quelle": "https://www.greifswald.de/de/verwaltung-politik/verwaltungsleistungen/online-dienste/fahrzeug-parken-verkehr/index.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "neubrandenburg",
+    "stadt": "Neubrandenburg",
+    "bundesland": "Mecklenburg-Vorpommern",
+    "behoerde": "Stadt Neubrandenburg, KfZ-Zulassung",
+    "behoerdeQuelle": "https://www.neubrandenburg.de/Politik-Verwaltung/KfZ-Zulassung/",
+    "traeger": "Stadt Neubrandenburg (Vier-Tore-Stadt)",
+    "standorte": [
+      {
+        "bezeichnung": "KfZ-Zulassung (Rathaus)",
+        "strasse": "Friedrich-Engels-Ring 53",
+        "plz": "17033",
+        "ort": "Neubrandenburg",
+        "quelle": "https://www.neubrandenburg.de/Politik-Verwaltung/KfZ-Zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.neubrandenburg.de/Politik-Verwaltung/KfZ-Zulassung/",
+      "quelle": "https://www.neubrandenburg.de/Politik-Verwaltung/KfZ-Zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://neubrandenburg.meinenterminvereinbaren.de/",
+      "quelle": "https://www.neubrandenburg.de/Politik-Verwaltung/KfZ-Zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://ikfz.neubrandenburg.de/",
+      "quelle": "https://www.neubrandenburg.de/Politik-Verwaltung/KfZ-Zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 8:00–16:00 Uhr",
+        "Di 8:00–18:00 Uhr",
+        "Mi geschlossen",
+        "Do 8:00–16:00 Uhr",
+        "Fr 8:00–12:00 Uhr"
+      ],
+      "hinweis": "Sprechzeiten finden ausschließlich nach vorheriger Terminvereinbarung statt.",
+      "quelle": "https://www.neubrandenburg.de/Politik-Verwaltung/KfZ-Zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Die KfZ-Zulassung der Stadt Neubrandenburg ist zuständig für Einwohnerinnen und Einwohner sowie Unternehmen mit Sitz in Neubrandenburg. Für das übrige Gebiet des Landkreises Mecklenburgische Seenplatte (Kennzeichen MSE u. a.) ist der Landkreis zuständig.",
+      "quelle": "https://www.neubrandenburg.de/Politik-Verwaltung/KfZ-Zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "NB",
+        "bedeutung": "Neubrandenburg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termine können bis zu 30 Tage im Voraus oder am jeweiligen Sprechtag ab 8:00 Uhr vereinbart werden.",
+        "quelle": "https://www.neubrandenburg.de/Politik-Verwaltung/KfZ-Zulassung/"
+      },
+      {
+        "text": "Einwohner Neubrandenburgs müssen ihre Termine über die Stadt buchen, nicht über das Bürgerservicezentrum des Landkreises.",
+        "quelle": "https://www.lk-mecklenburgische-seenplatte.de/B%C3%BCrgerinfo/B%C3%BCrgerservicezentren/Neubrandenburg/Sprechzeiten/"
+      },
+      {
+        "text": "Zulassung, Wiederzulassung, Umschreibung, Anschriftenänderung und Außerbetriebsetzung sind auch online über das i-Kfz-Portal der Stadt möglich.",
+        "quelle": "https://www.neubrandenburg.de/Politik-Verwaltung/KfZ-Zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "stralsund",
+    "stadt": "Stralsund",
+    "bundesland": "Mecklenburg-Vorpommern",
+    "behoerde": "Hansestadt Stralsund, Ordnungsamt – Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.stralsund.de/buerger/leben_in_stralsund/verkehr/Kraftfahrzeuge/Fahrzeugzulassungen/",
+    "traeger": "Hansestadt Stralsund",
+    "standorte": [
+      {
+        "bezeichnung": "Ordnungsamt, Kfz-Zulassung",
+        "strasse": "Schillstraße 5–7",
+        "plz": "18439",
+        "ort": "Stralsund",
+        "quelle": "https://www.stralsund.de/buerger/leben_in_stralsund/verkehr/Kraftfahrzeuge/Fahrzeugzulassungen/"
+      }
+    ],
+    "website": {
+      "url": "https://www.stralsund.de/buerger/leben_in_stralsund/verkehr/Kraftfahrzeuge/Fahrzeugzulassungen/",
+      "quelle": "https://www.stralsund.de/buerger/leben_in_stralsund/verkehr/Kraftfahrzeuge/Fahrzeugzulassungen/"
+    },
+    "terminUrl": {
+      "url": "https://stralsund.flexappoint.de/#/",
+      "quelle": "https://www.stralsund.de/buerger/leben_in_stralsund/verkehr/Kraftfahrzeuge/Fahrzeugzulassungen/"
+    },
+    "ikfzUrl": {
+      "url": "https://stva.stralsund.de/",
+      "quelle": "https://service.stralsund.de/dienstleistungen/-/egov-bis-detail/dienstleistung/2449/show"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 8–12 Uhr",
+        "Di 8–12 und 13–18 Uhr",
+        "Mi Termine nur nach vorheriger Vereinbarung",
+        "Do 8–12 und 13–16 Uhr",
+        "Fr 8–12 Uhr"
+      ],
+      "hinweis": "Für alle Dienstleistungen der Kfz-Zulassung kann online ein Termin gebucht werden; mittwochs nur nach vorheriger Vereinbarung.",
+      "quelle": "https://www.stralsund.de/buerger/leben_in_stralsund/verkehr/Kraftfahrzeuge/Fahrzeugzulassungen/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde der Hansestadt Stralsund (große kreisangehörige Stadt) für Halter mit Hauptwohnung (bei Firmen: Sitz/Niederlassung) in Stralsund. Wohnorte im übrigen Landkreis Vorpommern-Rügen gehören zur Zulassungsbehörde des Landkreises (u. a. Bürgerservice-Standort Carl-Heydemann-Ring 67 in Stralsund).",
+      "quelle": "https://service.stralsund.de/dienstleistungen/-/egov-bis-detail/dienstleistung/2449/show"
+    },
+    "kuerzel": [
+      {
+        "code": "HST",
+        "bedeutung": "Hansestadt Stralsund",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Vor Ort gibt es eine elektronische Aufrufanlage; die Wartezeit hängt vom Besucheraufkommen ab.",
+        "quelle": "https://www.stralsund.de/buerger/leben_in_stralsund/verkehr/Kraftfahrzeuge/Fahrzeugzulassungen/"
+      },
+      {
+        "text": "Gebühren können mit EC-, Kredit- und Debitkarte (ausgenommen American Express) oder bar an Kassenautomaten bezahlt werden.",
+        "quelle": "https://www.stralsund.de/buerger/leben_in_stralsund/verkehr/Kraftfahrzeuge/Fahrzeugzulassungen/"
+      },
+      {
+        "text": "Online-Terminbuchung rund um die Uhr an sieben Tagen in der Woche.",
+        "quelle": "https://www.stralsund.de/buerger/leben_in_stralsund/verkehr/Kraftfahrzeuge/Fahrzeugzulassungen/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "wismar",
+    "stadt": "Wismar",
+    "bundesland": "Mecklenburg-Vorpommern",
+    "behoerde": "Hansestadt Wismar, Der Bürgermeister – Sachgebiet Zulassungs- und Führerscheinstelle",
+    "behoerdeQuelle": "https://www.wismar.de/B%C3%BCrgerservice/Adressen-Kontakte/Sachgebiet-Zulassungs-und-F%C3%BChrerscheinstelle.php?ModID=9&FID=125.1166.1",
+    "traeger": "Hansestadt Wismar",
+    "standorte": [
+      {
+        "bezeichnung": "Sachgebiet Zulassungs- und Führerscheinstelle",
+        "strasse": "Scheuerstraße 2",
+        "plz": "23966",
+        "ort": "Wismar",
+        "quelle": "https://www.wismar.de/B%C3%BCrgerservice/Adressen-Kontakte/Sachgebiet-Zulassungs-und-F%C3%BChrerscheinstelle.php?ModID=9&FID=125.1166.1"
+      }
+    ],
+    "website": {
+      "url": "https://www.wismar.de/Politik-Stadtverwaltung/Stadtverwaltung/Verkehrsangelegenheiten/",
+      "quelle": "https://www.wismar.de/Politik-Stadtverwaltung/Stadtverwaltung/Verkehrsangelegenheiten/"
+    },
+    "terminUrl": {
+      "url": "https://tevis-online.mvnet.de/wismar/",
+      "quelle": "https://www.wismar.de/B%C3%BCrgerservice/Adressen-Kontakte/Sachgebiet-Zulassungs-und-F%C3%BChrerscheinstelle.php?ModID=9&FID=125.1166.1"
+    },
+    "ikfzUrl": {
+      "url": "https://stva.wismar.de/",
+      "quelle": "https://www.wismar.de/Politik-Stadtverwaltung/Stadtverwaltung/Verkehrsangelegenheiten/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:30–12:00 Uhr",
+        "Di 08:30–12:00 und 14:00–15:30 Uhr",
+        "Mi geschlossen",
+        "Do 08:30–12:00 und 14:00–17:30 Uhr",
+        "Fr 08:30–12:00 Uhr"
+      ],
+      "hinweis": null,
+      "quelle": "https://www.wismar.de/Politik-Stadtverwaltung/Stadtverwaltung/Verkehrsangelegenheiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungs- und Führerscheinstelle der Hansestadt Wismar (große kreisangehörige Stadt) für Halter mit Hauptwohnung (bei Firmen: Sitz/Niederlassung) in Wismar. Wohnorte im übrigen Landkreis Nordwestmecklenburg gehören zur Zulassungsbehörde des Landkreises (Kennzeichen NWM, GDB, GVM, WIS), die ebenfalls einen Standort in Wismar hat.",
+      "quelle": "https://www.wismar.de/B%C3%BCrgerservice/Dienstleistungen-nach-Kategorien/Au%C3%9Ferbetriebsetzung-f%C3%BCr-ein-zulassungsfreies-Fahrzeug-beantragen.php?ModID=10&FID=4176.82.1&k_sub=1&kat=125.189&kuo=1&ort=125.2&sfwort=1"
+    },
+    "kuerzel": [
+      {
+        "code": "HWI",
+        "bedeutung": "Hansestadt Wismar",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Anfragen sollen möglichst per E-Mail an zulassung@wismar.de gestellt werden; eingehende E-Mails werden zeitnah beantwortet.",
+        "quelle": "https://www.wismar.de/Politik-Stadtverwaltung/Stadtverwaltung/Verkehrsangelegenheiten/"
+      },
+      {
+        "text": "Gebäude mit Aufzug, Zugang barrierefrei.",
+        "quelle": "https://www.wismar.de/B%C3%BCrgerservice/Adressen-Kontakte/Sachgebiet-Zulassungs-und-F%C3%BChrerscheinstelle.php?ModID=9&FID=125.1166.1"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten.hinweis"
+    ]
+  }
+]

@@ -1,0 +1,798 @@
+[
+  {
+    "slug": "amberg",
+    "stadt": "Amberg",
+    "bundesland": "Bayern",
+    "behoerde": "Stadt Amberg – Straßenverkehrsamt, Zulassungsbehörde (Zulassungsstelle)",
+    "behoerdeQuelle": "https://amberg.de/rathaus/lebenslagen/fahrzeuganmeldung-und-abmeldung/standard-titel",
+    "traeger": "Stadt Amberg (kreisfreie Stadt)",
+    "standorte": [
+      {
+        "bezeichnung": "Straßenverkehrsamt mit Zulassungsstelle",
+        "strasse": "Pfalzgrafenring 3",
+        "plz": "92224",
+        "ort": "Amberg",
+        "quelle": "https://amberg.de/rathaus/lebenslagen/fahrzeuganmeldung-und-abmeldung/standard-titel"
+      }
+    ],
+    "website": {
+      "url": "https://amberg.de/rathaus/aemter-referate/zulassungsbehoerde",
+      "quelle": "https://amberg.de/rathaus/aemter-referate/zulassungsbehoerde"
+    },
+    "terminUrl": {
+      "url": "https://termine.amberg.de/",
+      "quelle": "https://amberg.de/rathaus/aemter-referate/zulassungsbehoerde"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/amberg/bsp_ikfz_antragstellung/#/",
+      "quelle": "https://amberg.de/rathaus/aemter-referate/zulassungsbehoerde"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–12:30 und 13:30–16:00 Uhr",
+        "Di 08:00–12:30 und 13:30–16:00 Uhr",
+        "Mi 08:00–12:30 und 13:30–16:00 Uhr",
+        "Do 13:30–17:00 Uhr",
+        "Fr 08:00–12:00 Uhr"
+      ],
+      "hinweis": "Allgemeine Öffnungszeiten des Gebäudes Pfalzgrafenring 3 laut BayernPortal. Die Zulassungsstelle ist nur mit vereinbartem Termin persönlich zu erreichen (Termine online unter termine.amberg.de oder telefonisch unter 09621 10-1300)",
+      "quelle": "https://www.bayernportal.de/dokumente/behoerde/72775985386/adressen"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsbehörde der kreisfreien Stadt Amberg. Zulassung und Umschreibung nur für Halter, die mit Hauptwohnsitz in der Stadt Amberg gemeldet sind. Wer im umliegenden Landkreis Amberg-Sulzbach wohnt (eigenes Kennzeichen AS), gehört nicht zum Zulassungsbezirk der Stadt.",
+      "quelle": "https://amberg.de/rathaus/aemter-referate/zulassungsbehoerde"
+    },
+    "kuerzel": [
+      {
+        "code": "AM",
+        "bedeutung": "Amberg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Wunschkennzeichen können online reserviert werden. Die Reservierung gilt 90 Tage. Die Buchstabenkombinationen SA, SS, HJ, KZ und NS werden nicht vergeben, für Wechselkennzeichen gibt es keine Reservierung. Gebühr: 10,20 € bei der Zulassung zuzüglich 2,60 € für die Vorabreservierung.",
+        "quelle": "https://amberg.de/rathaus/aemter-referate/zulassungsbehoerde"
+      },
+      {
+        "text": "Die Stadt Amberg fördert die ersatzlose Abschaffung eines Verbrenner-Pkw: wahlweise 20 % des Nettokaufpreises für ein Pedelec, Fahrrad oder einen E-Roller (höchstens 500 €) oder 365 € Zuschuss zu einem Bus-/Bahn-Jahresabo. Bedingung: drei Jahre lang kein neues Auto im Stadtgebiet.",
+        "quelle": "https://amberg.de/rathaus/aemter-referate/zulassungsbehoerde"
+      },
+      {
+        "text": "Zulassungen sind nur mit gültiger HU (TÜV) möglich. Wer eine Bayern-ID hat, kann Zulassungsvorgänge auch online über das BayernPortal erledigen.",
+        "quelle": "https://amberg.de/rathaus/aemter-referate/zulassungsbehoerde"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "ansbach",
+    "stadt": "Ansbach",
+    "bundesland": "Bayern",
+    "behoerde": "Stadt Ansbach – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.ansbach.de/B%C3%BCrger/Rathaus-Service/B%C3%BCrgerservice-Online-Dienste/Kfz-Zulassung/",
+    "traeger": "Stadt Ansbach (kreisfreie Stadt)",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle im Verwaltungsgebäude Nürnberger Straße 32",
+        "strasse": "Nürnberger Straße 32",
+        "plz": "91522",
+        "ort": "Ansbach",
+        "quelle": "https://www.ansbach.de/B%C3%BCrger/Rathaus-Service/B%C3%BCrgerservice-Online-Dienste/Kfz-Zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.ansbach.de/B%C3%BCrger/Rathaus-Service/B%C3%BCrgerservice-Online-Dienste/Kfz-Zulassung/",
+      "quelle": "https://www.ansbach.de/B%C3%BCrger/Rathaus-Service/B%C3%BCrgerservice-Online-Dienste/Kfz-Zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://tempus-termine.com/termine/index.php?anlagennr=91&anwendung=2&anlagentoken=Gq6bWpH",
+      "quelle": "https://www.ansbach.de/B%C3%BCrger/Rathaus-Service/B%C3%BCrgerservice-Online-Dienste/Kfz-Zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100042.OE.305001&leistungId=99036020001000&p=095610&i=z",
+      "quelle": "https://www.ansbach.de/B%C3%BCrger/Rathaus-Service/B%C3%BCrgerservice-Online-Dienste/Kfz-Zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 8–13 und 14–16 Uhr",
+        "Di 8–13 Uhr",
+        "Mi 8–13 Uhr",
+        "Do 8–12 und 14–18 Uhr",
+        "Fr 8–13 Uhr"
+      ],
+      "hinweis": "Bitte vor Ort am Wartemarkenautomat einen Termin lösen oder im Vorfeld online vereinbaren",
+      "quelle": "https://www.ansbach.de/B%C3%BCrger/Rathaus-Service/B%C3%BCrgerservice-Online-Dienste/Kfz-Zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle der kreisfreien Stadt Ansbach für Halter mit Hauptwohnsitz im Stadtgebiet. Achtung: Der Landkreis Ansbach nutzt dasselbe Kennzeichen AN, hat aber eine eigene Kfz-Zulassung beim Landratsamt Ansbach. Wer im Landkreis wohnt, ist dort zuständig, nicht bei der Stadt.",
+      "quelle": "https://www.bayernportal.de/dokumente/leistung/407310182499"
+    },
+    "kuerzel": [
+      {
+        "code": "AN",
+        "bedeutung": "Ansbach (Stadt und Landkreis Ansbach)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Online-Dienste der Stadt: Wunschkennzeichen-Reservierung, Online-Abmeldung (Außerbetriebsetzung) sowie Online-Zulassung und -Ummeldung.",
+        "quelle": "https://www.ansbach.de/B%C3%BCrger/Rathaus-Service/B%C3%BCrgerservice-Online-Dienste/Kfz-Zulassung/"
+      },
+      {
+        "text": "Gebrauchtwagenzulassung kostet in der Regel 26,80 bis 64,70 € zuzüglich Kennzeichen. Liegt der Fahrzeugbrief bei der Bank, kommen 10,20 € für die Rücksendung an die Bank hinzu.",
+        "quelle": "https://www.ansbach.de/B%C3%BCrger/Rathaus-Service/B%C3%BCrgerservice-Online-Dienste/Kfz-Zulassung/Zulassung-von-Gebrauchtwagen/"
+      },
+      {
+        "text": "Ummeldung nach Zuzug kostet in der Regel 27,40 bis 32,10 € zuzüglich Kennzeichen. Das bisherige Kennzeichen kann nur bei zugelassenen Fahrzeugen und gleichem Halter behalten werden.",
+        "quelle": "https://www.ansbach.de/B%C3%BCrger/Rathaus-Service/B%C3%BCrgerservice-Online-Dienste/Kfz-Zulassung/Ummeldung-bei-Umzug/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "aschaffenburg",
+    "stadt": "Aschaffenburg",
+    "bundesland": "Bayern",
+    "behoerde": "Stadt Aschaffenburg – Bürgeramt, Sachgebiet Bürgerbüro (KFZ-Zulassungsstelle)",
+    "behoerdeQuelle": "https://www.aschaffenburg.de/B%C3%BCrgerservice/Terminvereinbarung/",
+    "traeger": "Stadt Aschaffenburg (kreisfreie Stadt)",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgerbüro im Rathaus",
+        "strasse": "Dalbergstraße 15",
+        "plz": "63739",
+        "ort": "Aschaffenburg",
+        "quelle": "https://www.aschaffenburg.de/B%C3%BCrgerservice/Terminvereinbarung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.aschaffenburg.de/Leben-in-Aschaffenburg/KFZ-Stra%C3%9Fe-und-Verkehr/KFZ-F%C3%BChrerschein/KFZ-Zulassung-Wunschkennzeichen/",
+      "quelle": "https://www.aschaffenburg.de/Leben-in-Aschaffenburg/KFZ-Stra%C3%9Fe-und-Verkehr/KFZ-F%C3%BChrerschein/KFZ-Zulassung-Wunschkennzeichen/"
+    },
+    "terminUrl": {
+      "url": "https://abgis.aschaffenburg.de/websites/onlinetermin/",
+      "quelle": "https://www.aschaffenburg.de/Leben-in-Aschaffenburg/KFZ-Stra%C3%9Fe-und-Verkehr/KFZ-F%C3%BChrerschein/KFZ-Zulassung-Wunschkennzeichen/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.aschaffenburg.de/Onlinedienste/Zulassungsbeh%C3%B6rde/",
+      "quelle": "https://www.aschaffenburg.de/Leben-in-Aschaffenburg/KFZ-Stra%C3%9Fe-und-Verkehr/KFZ-F%C3%BChrerschein/KFZ-Zulassung-Wunschkennzeichen/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 7:30–13:00 Uhr",
+        "Di 7:30–17:30 Uhr",
+        "Mi 7:30–13:00 Uhr",
+        "Do 7:30–17:30 Uhr",
+        "Fr 7:30–13:00 Uhr"
+      ],
+      "hinweis": "Persönliche Vorsprache in der Zulassungsstelle nur mit Termin beim Bürgerbüro",
+      "quelle": "https://www.aschaffenburg.de/Leben-in-Aschaffenburg/KFZ-Stra%C3%9Fe-und-Verkehr/KFZ-F%C3%BChrerschein/KFZ-Zulassung-Wunschkennzeichen/"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsbezirk der kreisfreien Stadt Aschaffenburg, also Halter mit Hauptwohnsitz im Stadtgebiet. Achtung: Der Landkreis Aschaffenburg nutzt dasselbe Kennzeichen AB, hat aber eine eigene Zulassungsbehörde beim Landratsamt Aschaffenburg. Wer im Landkreis wohnt, ist dort zuständig.",
+      "quelle": "https://www.bayernportal.de/dokumente/leistung/407310182499"
+    },
+    "kuerzel": [
+      {
+        "code": "AB",
+        "bedeutung": "Aschaffenburg (Stadt und Landkreis Aschaffenburg)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Online ist es deutlich günstiger: Eine Außerbetriebsetzung kostet online 3,30 €, im Bürgerbüro 17,40 €.",
+        "quelle": "https://www.aschaffenburg.de/Leben-in-Aschaffenburg/KFZ-Stra%C3%9Fe-und-Verkehr/KFZ-F%C3%BChrerschein/KFZ-Zulassung-Wunschkennzeichen/"
+      },
+      {
+        "text": "Im Erdgeschoss des Rathauses stehen zwei Terminals zur Terminbuchung beim Bürgerbüro. Am Terminal im Eingangsbereich lassen sich Termine auch außerhalb der Öffnungszeiten buchen.",
+        "quelle": "https://www.aschaffenburg.de/B%C3%BCrgerservice/Terminvereinbarung/"
+      },
+      {
+        "text": "Fahrzeuge aus dem Nicht-EU-Ausland und Sonderfahrzeuge (z. B. Wohnmobile) werden oft nicht sofort zugelassen: Die Unterlagen werden abgegeben, und das Bürgerbüro ruft an, sobald alles abholbereit ist.",
+        "quelle": "https://www.aschaffenburg.de/Leben-in-Aschaffenburg/KFZ-Stra%C3%9Fe-und-Verkehr/KFZ-F%C3%BChrerschein/KFZ-Zulassung-Wunschkennzeichen/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "bamberg",
+    "stadt": "Bamberg",
+    "bundesland": "Bayern",
+    "behoerde": "Stadt Bamberg – Straßenverkehrsamt, Zulassungsstelle",
+    "behoerdeQuelle": "https://www.stadt.bamberg.de/B%C3%BCrgerservice/%C3%84mter/Stra%C3%9Fenverkehrsamt/Zulassungsstelle/",
+    "traeger": "Stadt Bamberg (kreisfreie Stadt)",
+    "standorte": [
+      {
+        "bezeichnung": "Straßenverkehrsamt – Zulassungsstelle",
+        "strasse": "Moosstraße 65",
+        "plz": "96050",
+        "ort": "Bamberg",
+        "quelle": "https://www.stadt.bamberg.de/B%C3%BCrgerservice/%C3%84mter/Stra%C3%9Fenverkehrsamt/Zulassungsstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://www.stadt.bamberg.de/B%C3%BCrgerservice/%C3%84mter/Stra%C3%9Fenverkehrsamt/Zulassungsstelle/",
+      "quelle": "https://www.stadt.bamberg.de/B%C3%BCrgerservice/%C3%84mter/Stra%C3%9Fenverkehrsamt/Zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://www.bayernportal.de/dokumente/onlineverfahren/3255263646150?plz=96047&behoerde=23109316387&gemeinde=935300886699",
+      "quelle": "https://www.stadt.bamberg.de/B%C3%BCrgerservice/%C3%84mter/Stra%C3%9Fenverkehrsamt/Zulassungsstelle/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerserviceportal.de/bayern/bamberg/bsp_kfz_ausserbetriebsetzung_kba",
+      "quelle": "https://www.stadt.bamberg.de/B%C3%BCrgerservice/%C3%84mter/Stra%C3%9Fenverkehrsamt/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 7:40–12:00 und 13:00–15:00 Uhr",
+        "Di 7:40–12:00 und 13:00–15:00 Uhr",
+        "Mi 7:40–12:00 und 13:00–15:00 Uhr",
+        "Do 7:40–12:00 Uhr",
+        "Fr 7:40–12:00 Uhr"
+      ],
+      "hinweis": "Es ist eine vorherige Terminvereinbarung notwendig (Online-Terminvereinbarung für persönliche Vorsprachen zwingend)",
+      "quelle": "https://www.stadt.bamberg.de/B%C3%BCrgerservice/%C3%84mter/Stra%C3%9Fenverkehrsamt/Zulassungsstelle/"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsstelle der kreisfreien Stadt Bamberg für Bewohnerinnen und Bewohner der Stadt Bamberg. Achtung: Der Landkreis Bamberg nutzt dasselbe Kennzeichen BA, hat aber eine eigene Zulassungsstelle beim Landratsamt Bamberg. Wer im Landkreis wohnt, ist dort zuständig.",
+      "quelle": "https://www.stadt.bamberg.de/B%C3%BCrgerservice/%C3%84mter/Stra%C3%9Fenverkehrsamt/Zulassungsstelle/"
+    },
+    "kuerzel": [
+      {
+        "code": "BA",
+        "bedeutung": "Bamberg (Stadt und Landkreis Bamberg)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Stadt bittet darum, Anträge möglichst per E-Mail an zulassungsstelle@stadt.bamberg.de, per Post (Stadt Bamberg, Straßenverkehrsamt, Moosstraße 65, 96050 Bamberg) oder online über das Bürgerservice-Portal einzureichen.",
+        "quelle": "https://www.stadt.bamberg.de/B%C3%BCrgerservice/%C3%84mter/Stra%C3%9Fenverkehrsamt/"
+      },
+      {
+        "text": "Nur die Verkehrsbehörde ist in die Luitpoldstraße 51 umgezogen. Zulassungsstelle und Führerscheinstelle sind weiterhin in der Moosstraße 65.",
+        "quelle": "https://www.stadt.bamberg.de/B%C3%BCrgerservice/%C3%84mter/Stra%C3%9Fenverkehrsamt/"
+      },
+      {
+        "text": "Telefonisch ist die Zulassungsstelle Mo–Mi 08:00–15:00 Uhr sowie Do und Fr 08:00–12:00 Uhr erreichbar (0951 87-2220).",
+        "quelle": "https://www.stadt.bamberg.de/B%C3%BCrgerservice/%C3%84mter/Stra%C3%9Fenverkehrsamt/Zulassungsstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "bayreuth",
+    "stadt": "Bayreuth",
+    "bundesland": "Bayern",
+    "behoerde": "Stadt Bayreuth – Kfz-Zulassungsbehörde (Straßenverkehrsamt)",
+    "behoerdeQuelle": "https://www.bayreuth.de/rathaus-buergerservice/stadtverwaltung/referate-aemter/aemter-a-z/zulassungsstelle/",
+    "traeger": "Stadt Bayreuth (kreisfreie Stadt)",
+    "standorte": [
+      {
+        "bezeichnung": "Rathaus II",
+        "strasse": "Dr.-Franz-Straße 4",
+        "plz": "95445",
+        "ort": "Bayreuth",
+        "quelle": "https://www.bayreuth.de/rathaus-buergerservice/stadtverwaltung/referate-aemter/aemter-a-z/zulassungsstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://www.bayreuth.de/rathaus-buergerservice/stadtverwaltung/referate-aemter/aemter-a-z/zulassungsstelle/",
+      "quelle": "https://www.bayreuth.de/rathaus-buergerservice/stadtverwaltung/referate-aemter/aemter-a-z/zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://termine3.crossing.de/758031830/Appointment/Index/1",
+      "quelle": "https://www.bayreuth.de/rathaus-buergerservice/stadtverwaltung/referate-aemter/aemter-a-z/zulassungsstelle/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerserviceportal.de/bayern/bayreuth/bsp_ikfz_antragstellung",
+      "quelle": "https://www.bayreuth.de/rathaus-buergerservice/stadtverwaltung/referate-aemter/aemter-a-z/zulassungsstelle/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 8–12 und 13:30–15 Uhr",
+        "Di 8–12 Uhr",
+        "Mi 8–12 und 14–18 Uhr",
+        "Do 8–12 und 13:30–15 Uhr",
+        "Fr 8–12 Uhr"
+      ],
+      "hinweis": "Eine Vorsprache ist nur nach vorheriger Terminvereinbarung möglich, auch am Mittwochnachmittag. Annahmeschluss 30 Minuten vor Ende der Öffnungszeit",
+      "quelle": "https://www.bayreuth.de/rathaus-buergerservice/stadtverwaltung/referate-aemter/aemter-a-z/zulassungsstelle/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde der kreisfreien Stadt Bayreuth für Halter mit Hauptwohnsitz im Stadtgebiet. Achtung: Der Landkreis Bayreuth nutzt dasselbe Kennzeichen BT, hat aber eine eigene Kfz-Zulassung beim Landratsamt Bayreuth. Wer im Landkreis wohnt, ist dort zuständig.",
+      "quelle": "https://www.bayernportal.de/dokumente/leistung/407310182499"
+    },
+    "kuerzel": [
+      {
+        "code": "BT",
+        "bedeutung": "Bayreuth (Stadt und Landkreis Bayreuth)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Wer online keinen Termin buchen kann, kann ausnahmsweise auch ohne Termin vorsprechen. Dann ist mit längeren Wartezeiten zu rechnen, weil Personen mit Termin zuerst bedient werden. Sind alle Kapazitäten erschöpft, ist eine Vorsprache ohne Termin nicht möglich.",
+        "quelle": "https://www.bayreuth.de/rathaus-buergerservice/stadtverwaltung/referate-aemter/aemter-a-z/zulassungsstelle/"
+      },
+      {
+        "text": "Zulassungen, Außerbetriebsetzungen und Umschreibungen können auch vollständig online über die Online-Zulassungsbehörde veranlasst werden.",
+        "quelle": "https://www.bayreuth.de/rathaus-buergerservice/stadtverwaltung/referate-aemter/aemter-a-z/zulassungsstelle/"
+      },
+      {
+        "text": "Wunschkennzeichen lassen sich online über das Bürgerservice-Portal reservieren.",
+        "quelle": "https://www.bayreuth.de/rathaus-buergerservice/stadtverwaltung/referate-aemter/aemter-a-z/zulassungsstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "erlangen",
+    "stadt": "Erlangen",
+    "bundesland": "Bayern",
+    "behoerde": "Stadt Erlangen – Bürgeramt, Zulassungsstelle (Kfz-Zulassung)",
+    "behoerdeQuelle": "https://erlangen.de/themenseite/service/terminvergabe",
+    "traeger": "Stadt Erlangen (kreisfreie Stadt)",
+    "standorte": [
+      {
+        "bezeichnung": "Rathaus, Bürgerservice im Erdgeschoss",
+        "strasse": "Rathausplatz 1",
+        "plz": "91052",
+        "ort": "Erlangen",
+        "quelle": "https://erlangen.de/amt/305020"
+      }
+    ],
+    "website": {
+      "url": "https://erlangen.de/amt/305020",
+      "quelle": "https://erlangen.de/amt/305020"
+    },
+    "terminUrl": {
+      "url": "https://erlangen.flexappoint.de/#/wizard/leistungen/4",
+      "quelle": "https://erlangen.de/amt/305020"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100042.OE.305020&leistungId=99036020001000&p=095620",
+      "quelle": "https://erlangen.de/service/174"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–18:00 Uhr",
+        "Di 08:00–18:00 Uhr",
+        "Mi 08:00–12:00 Uhr",
+        "Do 08:00–18:00 Uhr",
+        "Fr 08:00–12:00 Uhr"
+      ],
+      "hinweis": "Online-Terminvereinbarung möglich (Vorsprache ohne Termin siehe Besonderheiten)",
+      "quelle": "https://erlangen.de/amt/305020"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassung der kreisfreien Stadt Erlangen für Halter mit Hauptwohnsitz (bei Firmen: Betriebssitz) in der Stadt Erlangen. Der umliegende Landkreis Erlangen-Höchstadt hat ein eigenes Kennzeichen (ERH) und gehört nicht zum Zulassungsbezirk der Stadt.",
+      "quelle": "https://erlangen.de/service/29665"
+    },
+    "kuerzel": [
+      {
+        "code": "ER",
+        "bedeutung": "Erlangen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Für die Kfz-Zulassung im Bürgerservice im Erdgeschoss des Rathauses braucht man keinen Termin. Die aktuelle Wartezeit ist online abrufbar. Bei hohem Andrang kann die Ausgabe von Wartemarken schon bis zu 120 Minuten vor Schließung enden.",
+        "quelle": "https://erlangen.de/themenseite/service/terminvergabe"
+      },
+      {
+        "text": "Fahrzeuge lassen sich online zulassen oder ummelden. Auch die Auskunft, ob ein Fahrzeugbrief (Bankbrief) bei der Zulassungsstelle eingegangen ist, gibt es online.",
+        "quelle": "https://erlangen.de/service/174"
+      },
+      {
+        "text": "Telefonisch erreichbar Mo, Di und Do 08:00–13:00 Uhr sowie Mi und Fr 08:00–12:00 Uhr (09131 86-1616, kfz-zulassung@stadt.erlangen.de).",
+        "quelle": "https://erlangen.de/amt/305020"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "fuerth",
+    "stadt": "Fürth",
+    "bundesland": "Bayern",
+    "behoerde": "Stadt Fürth – Straßenverkehrsamt, Zulassungsbehörde (KFZ)",
+    "behoerdeQuelle": "https://www.fuerth.de/service-fuerther-rathaus/aemter-von-a-bis-z/detail/zulassungsbehoerde-kfz-298094/",
+    "traeger": "Stadt Fürth (kreisfreie Stadt)",
+    "standorte": [
+      {
+        "bezeichnung": "Ämtergebäude Süd, Erdgeschoss",
+        "strasse": "Schwabacher Straße 170",
+        "plz": "90763",
+        "ort": "Fürth",
+        "quelle": "https://www.fuerth.de/service-fuerther-rathaus/aemter-von-a-bis-z/detail/zulassungsbehoerde-kfz-298094/"
+      }
+    ],
+    "website": {
+      "url": "https://www.fuerth.de/service-fuerther-rathaus/aemter-von-a-bis-z/detail/zulassungsbehoerde-kfz-298094/",
+      "quelle": "https://www.fuerth.de/service-fuerther-rathaus/aemter-von-a-bis-z/detail/zulassungsbehoerde-kfz-298094/"
+    },
+    "terminUrl": {
+      "url": "https://fuerth.konsentas.de/form/12/?signup_new=1",
+      "quelle": "https://www.fuerth.de/service-fuerther-rathaus/aemter-von-a-bis-z/detail/zulassungsbehoerde-kfz-298094/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.fuerth.de/service-fuerther-rathaus/dienstleistungen/online-erledigen/onlline-zulassungsbehoerde/#/",
+      "quelle": "https://www.fuerth.de/service-fuerther-rathaus/dienstleistungen/detail/kraftfahrzeug-beantragung-der-neuzulassung-174/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 7:30–12:00 und 13:00–16:00 Uhr",
+        "Di 7:30–12:00 Uhr",
+        "Mi 7:30–12:00 Uhr",
+        "Do 7:30–12:00 und 13:00–15:00 Uhr",
+        "Fr 7:30–12:00 Uhr"
+      ],
+      "hinweis": "Regulär ohne Termin mit Wartemarke möglich (letzte Wartemarke spätestens 15 Minuten vor Ende der Öffnungszeit). Wegen Umbau vom 2. November 2026 bis voraussichtlich 4. Januar 2027 nur mit vorheriger Terminvereinbarung, keine Wartemarken",
+      "quelle": "https://www.fuerth.de/service-fuerther-rathaus/aemter-von-a-bis-z/detail/zulassungsbehoerde-kfz-298094/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde der kreisfreien Stadt Fürth für Halter mit Hauptwohnsitz im Stadtgebiet. Achtung: Der Landkreis Fürth nutzt dasselbe Kennzeichen FÜ, hat aber eine eigene Kfz-Zulassung beim Landratsamt Fürth in Zirndorf. Wer im Landkreis wohnt, ist dort zuständig.",
+      "quelle": "https://www.bayernportal.de/dokumente/leistung/407310182499"
+    },
+    "kuerzel": [
+      {
+        "code": "FÜ",
+        "bedeutung": "Fürth (Stadt und Landkreis Fürth)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Umbau 2026: Vom 2. November 2026 bis voraussichtlich 4. Januar 2027 ist die Zulassungsbehörde nur mit Termin erreichbar, ohne Termin ist keine Bearbeitung möglich. Vom 28. bis 30. Dezember 2026 ist sie geschlossen. Sie bleibt während des Umbaus im Erdgeschoss des Ämtergebäudes Süd.",
+        "quelle": "https://www.fuerth.de/service-fuerther-rathaus/aktuelles/detail/besuch-der-zulassungsbehoerde-nur-mit-terminvereinbarung/"
+      },
+      {
+        "text": "Im Regelbetrieb gibt es täglich online buchbare Termine. Ohne Termin zieht man eine Wartemarke. Bei starkem Andrang kann der Automat früher abgeschaltet werden.",
+        "quelle": "https://www.fuerth.de/service-fuerther-rathaus/aemter-von-a-bis-z/detail/zulassungsbehoerde-kfz-298094/"
+      },
+      {
+        "text": "Barrierefreier Zugang über einen Aufzug im Hof (Zugang über die Flößaustraße), Behindertenparkplätze am Aufzug und an der Ecke Flößau-/Schwabacher Straße.",
+        "quelle": "https://www.fuerth.de/service-fuerther-rathaus/aemter-von-a-bis-z/detail/zulassungsbehoerde-kfz-298094/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "hof",
+    "stadt": "Hof",
+    "bundesland": "Bayern",
+    "behoerde": "Stadt Hof – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.hof.de/dienstleistungen/kraftfahrzeug-beantragung-der-neuzulassung",
+    "traeger": "Stadt Hof (kreisfreie Stadt)",
+    "standorte": [
+      {
+        "bezeichnung": "Zentrum für Sicherheit und Verkehr",
+        "strasse": "Rauschenbachstraße 4",
+        "plz": "95028",
+        "ort": "Hof",
+        "quelle": "https://www.hof.de/news/zulassungs-und-fuehrerscheinstelle-ziehen-um"
+      }
+    ],
+    "website": {
+      "url": "https://www.hof.de/rathaus-service/buergerservice/fahrzeug-und-fuehrerschein/zulassung",
+      "quelle": "https://www.hof.de/rathaus-service/buergerservice/fahrzeug-und-fuehrerschein/zulassung"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/hof/select2?md=7",
+      "quelle": "https://www.hof.de/rathaus-service/buergerservice/fahrzeug-und-fuehrerschein/zulassung"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/hof/bsp_ikfz_antragstellung/",
+      "quelle": "https://www.hof.de/dienstleistungen/kraftfahrzeug-beantragung-der-neuzulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 7:30–12:00 und 13:30–16:00 Uhr",
+        "Di 7:30–12:00 und 13:30–16:00 Uhr",
+        "Mi 8:00–13:00 Uhr",
+        "Do 7:30–12:00 und 13:30–18:00 Uhr",
+        "Fr 7:30–12:00 Uhr"
+      ],
+      "hinweis": "Montag und Mittwoch auch ohne Termin (Annahmeschluss eine Stunde vor Ende der Öffnungszeiten). Dienstag, Donnerstag und Freitag ausschließlich mit Termin",
+      "quelle": "https://www.hof.de/news/zulassungs-und-fuehrerscheinstelle-ziehen-um"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle der kreisfreien Stadt Hof für Halter mit Hauptwohnsitz im Stadtgebiet. Achtung: Der Landkreis Hof nutzt dasselbe Kennzeichen HO, hat aber eine eigene Zulassungsstelle beim Landratsamt Hof. Wer im Landkreis wohnt, ist dort zuständig.",
+      "quelle": "https://www.bayernportal.de/dokumente/leistung/407310182499"
+    },
+    "kuerzel": [
+      {
+        "code": "HO",
+        "bedeutung": "Hof (Stadt und Landkreis Hof)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Neuer Standort seit August 2026: Die Zulassungsstelle ist von der Erlhofer Straße 75 (beim TÜV SÜD) in das neue Zentrum für Sicherheit und Verkehr in der Rauschenbachstraße 4 umgezogen. Dort ist sie mit der Führerscheinstelle wieder unter einem Dach.",
+        "quelle": "https://www.hof.de/news/zulassungs-und-fuehrerscheinstelle-ziehen-um"
+      },
+      {
+        "text": "Montags und mittwochs kann es ohne Termin zu Wartezeiten kommen. Mit online gebuchtem Termin geht es schneller.",
+        "quelle": "https://www.hof.de/rathaus-service/buergerservice/fahrzeug-und-fuehrerschein/zulassung"
+      },
+      {
+        "text": "Über die Online-Zulassungsbehörde lassen sich alle gängigen Zulassungen und Abmeldungen beantragen, zum Teil mit sofortiger Wirkung.",
+        "quelle": "https://www.hof.de/dienstleistungen/kraftfahrzeug-beantragung-der-neuzulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "ingolstadt",
+    "stadt": "Ingolstadt",
+    "bundesland": "Bayern",
+    "behoerde": "Stadt Ingolstadt – Straßenverkehrsamt, Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.ingolstadt.de/Kfz-Zulassung",
+    "traeger": "Stadt Ingolstadt (kreisfreie Stadt)",
+    "standorte": [
+      {
+        "bezeichnung": "Straßenverkehrsamt – Zulassungsbehörde",
+        "strasse": "Wiechertstraße 1",
+        "plz": "85055",
+        "ort": "Ingolstadt",
+        "quelle": "https://www.ingolstadt.de/Kfz-Zulassung"
+      }
+    ],
+    "website": {
+      "url": "https://www.ingolstadt.de/Kfz-Zulassung",
+      "quelle": "https://www.ingolstadt.de/Kfz-Zulassung"
+    },
+    "terminUrl": {
+      "url": "https://www.ingolstadt.de/tevisweb/select2?md=6",
+      "quelle": "https://www.ingolstadt.de/Rathaus/Verkehr/Stra%C3%9Fenverkehrsamt/Stra%C3%9Fenverkehrsamt-Termin/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/ingolstadt/bsp_ikfz_antragstellung/",
+      "quelle": "https://www.ingolstadt.de/Service/B%C3%BCrgerservice/Online-Dienste2/Auto-Mobilit%C3%A4t-Verkehr/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30–12:30 Uhr",
+        "Di 07:30–12:30 und 14:00–16:00 Uhr",
+        "Mi 07:30–12:30 Uhr",
+        "Do 07:30–12:30 und 15:00–17:00 Uhr",
+        "Fr 07:30–12:30 Uhr"
+      ],
+      "hinweis": "Vorsprachen nach Terminvereinbarung. Reine Außerbetriebsetzungen (Abmeldungen) sind auch ohne Termin möglich",
+      "quelle": "https://www.ingolstadt.de/Kfz-Zulassung"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsbehörde der kreisfreien Stadt Ingolstadt für Halter mit Hauptwohnsitz (bei Firmen: Betriebssitz) im Stadtgebiet. Das Kennzeichen IN vergibt nur die Stadt. Wer in einem der umliegenden Landkreise wohnt, ist bei dessen Zulassungsbehörde zuständig.",
+      "quelle": "https://www.bayernportal.de/dokumente/leistung/407310182499"
+    },
+    "kuerzel": [
+      {
+        "code": "IN",
+        "bedeutung": "Ingolstadt",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Reine Außerbetriebsetzungen (Abmeldungen) gehen ohne Termin direkt am Informationsschalter im Erdgeschoss des Straßenverkehrsamtes.",
+        "quelle": "https://www.ingolstadt.de/Kfz-Zulassung"
+      },
+      {
+        "text": "Kurzfristige Termine lassen sich auch vor Ort buchen. Es gibt aber nur wenige Puffertermine, eine Erledigung am selben Tag ist bei Spontanbesuchen nicht garantiert und je nach Anliegen kann ein Folgetermin nötig sein.",
+        "quelle": "https://www.ingolstadt.de/Kfz-Zulassung"
+      },
+      {
+        "text": "Bei der Online-Terminreservierung muss der Bestätigungslink aus der ersten E-Mail innerhalb einer Stunde angeklickt werden. Reserviert ist der Termin erst mit der zweiten E-Mail (mit 5-stelliger Terminnummer).",
+        "quelle": "https://www.ingolstadt.de/Rathaus/Verkehr/Stra%C3%9Fenverkehrsamt/Stra%C3%9Fenverkehrsamt-Termin/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kaufbeuren",
+    "stadt": "Kaufbeuren",
+    "bundesland": "Bayern",
+    "behoerde": "Stadt Kaufbeuren – Zulassungsstelle",
+    "behoerdeQuelle": "https://www.kaufbeuren.de/desktopdefault.aspx/tabid-2240/2753_read-19565/",
+    "traeger": "Stadt Kaufbeuren (kreisfreie Stadt)",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle",
+        "strasse": "Am Graben 3",
+        "plz": "87600",
+        "ort": "Kaufbeuren",
+        "quelle": "https://www.kaufbeuren.de/desktopdefault.aspx/tabid-2240/2753_read-19565/"
+      }
+    ],
+    "website": {
+      "url": "https://www.kaufbeuren.de/desktopdefault.aspx/tabid-2240/2753_read-19565/",
+      "quelle": "https://www.kaufbeuren.de/desktopdefault.aspx/tabid-2240/2753_read-19565/"
+    },
+    "terminUrl": {
+      "url": "https://stadt-kaufbeuren.saas.smartcjm.com/m/kaufbeuren/extern/calendar/?uid=ce76fb56-6f18-41fa-9d29-74112fd4df31",
+      "quelle": "https://www.kaufbeuren.de/desktopdefault.aspx/tabid-2240/2753_read-19565/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/kaufbeuren/bsp_ikfz_antragstellung/#/",
+      "quelle": "https://www.kaufbeuren.de/desktopdefault.aspx/tabid-2240/2753_read-19565/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08–12 und 13–16 Uhr",
+        "Di 08–12 Uhr",
+        "Mi 08–12 Uhr",
+        "Do 08–12 und 13–16 Uhr",
+        "Fr 08–12 Uhr"
+      ],
+      "hinweis": "Weitere Zeiten nur nach Terminvereinbarung",
+      "quelle": "https://www.kaufbeuren.de/nav/buergerservice/oeffnungszeiten.aspx"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsstelle der kreisfreien Stadt Kaufbeuren (einschließlich Neugablonz) für Halter mit Hauptwohnsitz bzw. Firmensitz in der Stadt. Das umliegende Ostallgäu hat ein eigenes Kennzeichen (OAL) und gehört nicht zum Zulassungsbezirk der Stadt.",
+      "quelle": "https://www.bayernportal.de/dokumente/leistung/407310182499"
+    },
+    "kuerzel": [
+      {
+        "code": "KF",
+        "bedeutung": "Kaufbeuren",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Fahrzeugpapiere müssen im Original vorgelegt werden. Kopien und die i-Kfz-App reichen nicht aus.",
+        "quelle": "https://www.kaufbeuren.de/desktopdefault.aspx/tabid-2240/2753_read-19565/"
+      },
+      {
+        "text": "Kurzzeitkennzeichen können am Hauptwohnsitz bzw. Firmensitz oder bei der Zulassungsstelle am aktuellen Standort des Fahrzeugs beantragt werden. Ohne gültige HU oder bei Fahrzeugen aus dem Ausland vorher telefonisch mit der Zulassungsstelle sprechen.",
+        "quelle": "https://www.kaufbeuren.de/desktopdefault.aspx/tabid-1852/2761_read-19576/"
+      },
+      {
+        "text": "Online-Angebote der Stadt: Online-Zulassungsbehörde, Bankbriefauskunft und Wunschkennzeichen-Reservierung.",
+        "quelle": "https://www.kaufbeuren.de/desktopdefault.aspx/tabid-2240/2753_read-19565/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kempten",
+    "stadt": "Kempten (Allgäu)",
+    "bundesland": "Bayern",
+    "behoerde": "Stadt Kempten (Allgäu) – Amt für BürgerService, Zulassungsstelle (BürgerService Zulassung)",
+    "behoerdeQuelle": "https://www.kempten.de/zulassung-fahrerlaubnis-2352.html",
+    "traeger": "Stadt Kempten (Allgäu) (kreisfreie Stadt)",
+    "standorte": [
+      {
+        "bezeichnung": "Gemeinsamer BürgerService Zulassung von Stadt Kempten (Allgäu) und Landratsamt Oberallgäu",
+        "strasse": "Bahnhofstraße 80",
+        "plz": "87435",
+        "ort": "Kempten (Allgäu)",
+        "quelle": "https://www.kempten.de/buergerservice-zulassung-41053.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.kempten.de/zulassung-kempten-2360.html",
+      "quelle": "https://www.kempten.de/zulassung-kempten-2360.html"
+    },
+    "terminUrl": {
+      "url": "https://reservation.frontdesksuite.com/kempten/kfz-fahrerlaubnis",
+      "quelle": "https://www.kempten.de/terminvereinbarung-kempten-11035.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/kempten/bsp_ikfz_antragstellung#/",
+      "quelle": "https://www.kempten.de/zulassung-kempten-2360.html"
+    },
+    "oeffnungszeiten": null,
+    "zustaendigkeit": {
+      "text": "Zulassungsstelle der kreisfreien Stadt Kempten (Allgäu) für Halter mit Hauptwohnsitz bzw. Firmensitz in der Stadt. Im selben Gebäude (gemeinsamer BürgerService Zulassung) bedient das Landratsamt Oberallgäu die Einwohner der Oberallgäuer Gemeinden Altusried, Betzigau, Buchenberg, Dietmannsried, Durach, Haldenwang, Lauben, Oy-Mittelberg, Sulzberg, Waltenhofen, Weitnau, Wiggensbach und Wildpoldsried. Der Landkreis Oberallgäu hat ein eigenes Kennzeichen (OA).",
+      "quelle": "https://www.kempten.de/buergerservice-zulassung-41053.html"
+    },
+    "kuerzel": [
+      {
+        "code": "KE",
+        "bedeutung": "Kempten (Allgäu)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Vorsprache nur mit Termin. Termine können online gebucht werden.",
+        "quelle": "https://www.kempten.de/zulassung-fahrerlaubnis-2352.html"
+      },
+      {
+        "text": "Online-Dienste: Wunschkennzeichen reservieren, Fahrzeug abmelden, Namen und Adresse ändern, Wiederzulassung, Neuzulassung und Anmeldung eines Fahrzeugs.",
+        "quelle": "https://www.kempten.de/zulassung-kempten-2360.html"
+      },
+      {
+        "text": "Die Neuzulassung eines fabrikneuen Fahrzeugs kostet ca. 30,60 bis 72,90 €.",
+        "quelle": "https://www.kempten.de/neuzulassung-kempten-3193.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten"
+    ]
+  },
+  {
+    "slug": "landshut",
+    "stadt": "Landshut",
+    "bundesland": "Bayern",
+    "behoerde": "Stadt Landshut – Straßenverkehrsamt, Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://landshut.de/leben/strassenverkehrsamt/zulassungsbehoerde",
+    "traeger": "Stadt Landshut (kreisfreie Stadt)",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsbehörde der Stadt Landshut",
+        "strasse": "Alte Regensburger Str. 11",
+        "plz": "84030",
+        "ort": "Landshut",
+        "quelle": "https://landshut.de/leben/strassenverkehrsamt/zulassungsbehoerde"
+      }
+    ],
+    "website": {
+      "url": "https://landshut.de/leben/strassenverkehrsamt/zulassungsbehoerde",
+      "quelle": "https://landshut.de/leben/strassenverkehrsamt/zulassungsbehoerde"
+    },
+    "terminUrl": {
+      "url": "https://tnv.landshut.de/tnv/",
+      "quelle": "https://landshut.de/leben/strassenverkehrsamt/zulassungsbehoerde"
+    },
+    "ikfzUrl": {
+      "url": "https://landshut.de/leben/strassenverkehrsamt/zulassungsbehoerde/online-service-i-kfz",
+      "quelle": "https://landshut.de/leben/strassenverkehrsamt/zulassungsbehoerde"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30–12:00 und 13:30–15:30 Uhr",
+        "Di 07:30–12:00 Uhr",
+        "Mi 07:30–12:00 Uhr",
+        "Do 07:30–12:00 und 13:30–17:00 Uhr",
+        "Fr 07:30–12:00 Uhr"
+      ],
+      "hinweis": "Ohne Termin möglich, Online-Terminvereinbarung optional. Letzte Ausgabe von Wartenummern 30 Minuten vor Ende der Öffnungszeiten",
+      "quelle": "https://landshut.de/leben/strassenverkehrsamt/zulassungsbehoerde"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle der kreisfreien Stadt Landshut, nur für Einwohnerinnen und Einwohner der Stadt Landshut, nicht für Landkreisbewohner. Achtung: Der Landkreis Landshut nutzt dasselbe Kennzeichen LA, hat aber eine eigene Kfz-Zulassung beim Landratsamt Landshut.",
+      "quelle": "https://landshut.de/leben/strassenverkehrsamt/zulassungsbehoerde"
+    },
+    "kuerzel": [
+      {
+        "code": "LA",
+        "bedeutung": "Landshut (Stadt und Landkreis Landshut)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Wer online einen Termin bucht, muss keine Wartemarke ziehen und nicht im Wartebereich warten. Ohne Termin geht es aber weiterhin zu den Öffnungszeiten.",
+        "quelle": "https://landshut.de/leben/strassenverkehrsamt/zulassungsbehoerde"
+      },
+      {
+        "text": "Über die kostenlose Online-Auskunft Fahrzeugbriefe lässt sich prüfen, ob der Fahrzeugbrief eines finanzierten oder geleasten Fahrzeugs schon bei der Zulassungsbehörde vorliegt.",
+        "quelle": "https://landshut.de/leben/strassenverkehrsamt/zulassungsbehoerde"
+      },
+      {
+        "text": "Anfahrt mit dem Stadtbus Linie 612 (Haltestelle Regensburger Brücke).",
+        "quelle": "https://landshut.de/leben/strassenverkehrsamt/zulassungsbehoerde"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

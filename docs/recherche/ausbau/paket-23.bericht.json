@@ -1,0 +1,24 @@
+[
+  {
+    "slug": "kreis-borken",
+    "notes": [
+      "standort Zulassungsstelle Ahaus (im ehemaligen Kreishaus): „Bahnhofstraße 93“/48683 nicht auf der Quellseite gefunden → verworfen",
+      "standort Zulassungsstelle Bocholt (Gigaset-Gebäude): „Kaiser-Wilhelm-Straße 52-58“/46395 nicht auf der Quellseite gefunden → verworfen"
+    ]
+  },
+  {
+    "slug": "kreis-hoexter",
+    "notes": [
+      "standort Kfz-Zulassungsstelle in Höxter: unvollständig → verworfen",
+      "standort Kfz-Zulassungsstelle in Warburg: unvollständig → verworfen"
+    ]
+  },
+  {
+    "slug": "kreis-lippe",
+    "notes": [
+      "standort Zulassungsstelle Detmold (Kreishaus): „Felix-Fechenbach-Straße 5“/32756 nicht auf der Quellseite gefunden → verworfen",
+      "standort Zulassungsstelle Bad Salzuflen: „Louis-Uekermann-Weg 2“/32107 nicht auf der Quellseite gefunden → verworfen",
+      "standort Zulassungsstelle Barntrup: „Alverdisser Straße 28“/32683 nicht auf der Quellseite gefunden → verworfen"
+    ]
+  }
+]

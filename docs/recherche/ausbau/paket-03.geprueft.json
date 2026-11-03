@@ -1,0 +1,1004 @@
+[
+  {
+    "slug": "neckar-odenwald-kreis",
+    "stadt": "Neckar-Odenwald-Kreis",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Neckar-Odenwald-Kreis – Kfz-Zulassungsstellen Mosbach und Buchen (Fachbereich 2, Verkehr und Ordnungswidrigkeiten)",
+    "behoerdeQuelle": "https://www.neckar-odenwald-kreis.de/Landratsamt/Verwaltung/Fachbereich+2+-+Umwelt_+Landentwicklung+und+Ordnungswesen/Verkehr+und+Ordnungswidrigkeiten/KFZ-Zulassung.html",
+    "traeger": "Neckar-Odenwald-Kreis",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Mosbach",
+        "strasse": "Anton-Gmeinder-Straße 29",
+        "plz": "74821",
+        "ort": "Mosbach",
+        "quelle": "https://www.neckar-odenwald-kreis.de/Landratsamt/Verwaltung/Fachbereich+2+-+Umwelt_+Landentwicklung+und+Ordnungswesen/Verkehr+und+Ordnungswidrigkeiten/KFZ-Zulassung.html"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Buchen",
+        "strasse": "Henry-Dunant-Straße 6",
+        "plz": "74722",
+        "ort": "Buchen",
+        "quelle": "https://www.neckar-odenwald-kreis.de/Landratsamt/Verwaltung/Fachbereich+2+-+Umwelt_+Landentwicklung+und+Ordnungswesen/Verkehr+und+Ordnungswidrigkeiten/KFZ-Zulassung.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.neckar-odenwald-kreis.de/Landratsamt/Verwaltung/Fachbereich+2+-+Umwelt_+Landentwicklung+und+Ordnungswesen/Verkehr+und+Ordnungswidrigkeiten/KFZ-Zulassung.html",
+      "quelle": "https://www.neckar-odenwald-kreis.de/"
+    },
+    "terminUrl": {
+      "url": "https://book.timify.com/?accountId=60e598db14e49911ac3b24a1&hideCloseButton=true&showServices=60f7c365f0b86d11758cfc62,60e6e6ed68fd7a1167e2372c",
+      "quelle": "https://www.neckar-odenwald-kreis.de/Landratsamt/Verwaltung/Fachbereich+2+-+Umwelt_+Landentwicklung+und+Ordnungswesen/Verkehr+und+Ordnungswidrigkeiten/KFZ-Zulassung.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6016984&leistungId=99036020001000&p=082250",
+      "quelle": "https://www.neckar-odenwald-kreis.de/Service/Online-Dienste/Online-KFZ-Zulassung.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mosbach: Mo und Mi 7:45–12:30 Uhr, Di 7:45–16:00 Uhr, Do 7:45–17:30 Uhr, Fr 7:45–12:00 Uhr",
+        "Buchen: Mo 7:45–17:30 Uhr, Di und Do 7:45–12:30 Uhr, Mi 7:45–16:00 Uhr, Fr 7:45–12:00 Uhr"
+      ],
+      "hinweis": "Termin online buchbar; ohne Termin Wartemarke vor Ort möglich, dann mit Wartezeiten rechnen",
+      "quelle": "https://www.neckar-odenwald-kreis.de/Landratsamt/Verwaltung/Fachbereich+2+-+Umwelt_+Landentwicklung+und+Ordnungswesen/Verkehr+und+Ordnungswidrigkeiten/KFZ-Zulassung.html"
+    },
+    "zustaendigkeit": {
+      "text": "Landratsamt Neckar-Odenwald-Kreis für den gesamten Landkreis; beide Zulassungsstellen (Mosbach und Buchen) sind für den gesamten Landkreis zuständig.",
+      "quelle": "https://www.neckar-odenwald-kreis.de/Landratsamt/Verwaltung/Fachbereich+2+-+Umwelt_+Landentwicklung+und+Ordnungswesen/Verkehr+und+Ordnungswidrigkeiten/KFZ-Zulassung.html"
+    },
+    "kuerzel": [
+      {
+        "code": "MOS",
+        "bedeutung": "Mosbach",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BCH",
+        "bedeutung": "Buchen (Odenwald)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Beide Zulassungsstellen (Mosbach und Buchen) sind für den gesamten Landkreis zuständig.",
+        "quelle": "https://www.neckar-odenwald-kreis.de/Landratsamt/Verwaltung/Fachbereich+2+-+Umwelt_+Landentwicklung+und+Ordnungswesen/Verkehr+und+Ordnungswidrigkeiten/KFZ-Zulassung.html"
+      },
+      {
+        "text": "Die Zulassungsstelle Buchen (Henry-Dunant-Straße) ist vom 11.11. bis 11.12.2026 wegen Umbau geschlossen; Ausweichmöglichkeit ist Mosbach mit erweiterten Zeiten (Mo und Do 7:45–17:30, Di und Mi 7:45–16:00, Fr 7:45–12:00 Uhr), eingeschränkt auch im Verwaltungsgebäude Eberstadter Straße 52 in Buchen (v. a. für Autohäuser, Kunden mit Termin).",
+        "quelle": "https://www.neckar-odenwald-kreis.de/Landratsamt/Verwaltung/Fachbereich+2+-+Umwelt_+Landentwicklung+und+Ordnungswesen/Verkehr+und+Ordnungswidrigkeiten/KFZ-Zulassung.html"
+      },
+      {
+        "text": "Ein Führerscheinumtausch ist bei den Zulassungsstellen nicht möglich; dafür ist die Führerscheinstelle in Mosbach (Anton-Gmeinder-Straße 29) zuständig.",
+        "quelle": "https://www.neckar-odenwald-kreis.de/Landratsamt/Verwaltung/Fachbereich+2+-+Umwelt_+Landentwicklung+und+Ordnungswesen/Verkehr+und+Ordnungswidrigkeiten/KFZ-Zulassung.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "ortenaukreis",
+    "stadt": "Ortenaukreis",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Ortenaukreis – Kfz-Bürgerbüro / Zulassungsbehörde (Amt für Straßenverkehr & ÖPNV, Dezernat 2)",
+    "behoerdeQuelle": "https://www.ortenaukreis.de/Unsere-%C3%84mter/Dezernat-2-Infrastrukturen-Baurecht-Migration/Stra%C3%9Fenverkehr-%C3%96PNV/",
+    "traeger": "Ortenaukreis",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Bürgerbüro / Zulassung Offenburg",
+        "strasse": "Badstraße 20",
+        "plz": "77652",
+        "ort": "Offenburg",
+        "quelle": "https://www.ortenaukreis.de/Dienstleistungen/Adressen/Kfz-Zulassung-Offenburg.php?ModID=9&FID=2390.53.1&object=tx%7C3406.1.1&redir=1"
+      },
+      {
+        "bezeichnung": "Kfz-Bürgerbüro / Zulassung Lahr",
+        "strasse": "Raiffeisenstraße 9",
+        "plz": "77933",
+        "ort": "Lahr",
+        "quelle": "https://www.ortenaukreis.de/Dienstleistungen/Adressen/Kfz-Zulassung-Lahr.php?ModID=9&FID=2390.518.1&object=tx%2C3406.1.1&redir=1"
+      },
+      {
+        "bezeichnung": "Kfz-Bürgerbüro / Zulassung Kehl",
+        "strasse": "Hafenstraße 1a",
+        "plz": "77694",
+        "ort": "Kehl",
+        "quelle": "https://www.ortenaukreis.de/Dienstleistungen/Adressen/Kfz-Zulassung-Kehl.php?ModID=9&FID=2390.512.1"
+      },
+      {
+        "bezeichnung": "Kfz-Bürgerbüro / Zulassung Achern",
+        "strasse": "Illenauer Allee 57",
+        "plz": "77855",
+        "ort": "Achern",
+        "quelle": "https://www.ortenaukreis.de/Dienstleistungen/Adressen/Kfz-Zulassung-Achern.php?ModID=9&FID=2390.511.1&KatID=1.100&La=1&TypSel=1.100&object=tx%7C3406.1.1&redir=1"
+      },
+      {
+        "bezeichnung": "Kfz-Bürgerbüro / Zulassung Wolfach",
+        "strasse": "Hauptstraße 40",
+        "plz": "77709",
+        "ort": "Wolfach",
+        "quelle": "https://www.ortenaukreis.de/Dienstleistungen/Adressen/Kfz-Zulassung-Wolfach.php?ModID=9&FID=2390.747.1&KatID=1.100&La=1&TypSel=1.100&object=tx%7C3406.1.1&redir=1"
+      }
+    ],
+    "website": {
+      "url": "https://www.ortenaukreis.de/Dienstleistungen/Verkehr/KFZ-Zulassung/",
+      "quelle": "https://www.ortenaukreis.de/"
+    },
+    "terminUrl": {
+      "url": "https://termine.lraog.de/select2?md=1",
+      "quelle": "https://www.ortenaukreis.de/Dienstleistungen/Kraftfahrzeug-Ummeldung-nach-Umzug-beantragen.php?ModID=10&FID=3406.248.1&kuo=1&ort=2390.1"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6029059&leistungId=99036020001000&p=083170",
+      "quelle": "https://www.ortenaukreis.de/Dienstleistungen/Kraftfahrzeug-Ummeldung-nach-Umzug-beantragen.php?ModID=10&FID=3406.248.1&kuo=1&ort=2390.1"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Offenburg: Mo–Fr 08:00–12:00 Uhr, Di 13:00–16:00 Uhr, Do 13:00–18:00 Uhr",
+        "Lahr: Mo–Fr 8:00–12:00 Uhr, Mo–Di 13:00–16:00 Uhr, Do 13:00–18:00 Uhr",
+        "Kehl: Mo–Fr 8:00–12:00 Uhr, Mo–Mi 13:00–16:00 Uhr, Do 13:00–18:00 Uhr",
+        "Achern: Mo–Mi 8:00–12:00 u. 13:00–16:00 Uhr, Do 8:00–12:00 u. 14:00–18:00 Uhr, Fr 8:00–12:00 Uhr"
+      ],
+      "hinweis": "Servicezeiten; Besuch nur nach vorheriger Terminvereinbarung",
+      "quelle": "https://www.ortenaukreis.de/output/download.php?fid=3406.294.1.PDF"
+    },
+    "zustaendigkeit": {
+      "text": "Landratsamt Ortenaukreis (Zulassungsbehörde) für den gesamten Ortenaukreis mit fünf Kfz-Bürgerbüros in Offenburg, Lahr, Kehl, Achern und Wolfach; das Terminportal verweist bei fehlenden Terminen ausdrücklich auf die jeweils anderen Standorte.",
+      "quelle": "https://www.ortenaukreis.de/Dienstleistungen/Kraftfahrzeug-Ummeldung-nach-Umzug-beantragen.php?ModID=10&FID=3406.248.1&kuo=1&ort=2390.1"
+    },
+    "kuerzel": [
+      {
+        "code": "OG",
+        "bedeutung": "Offenburg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BH",
+        "bedeutung": "Bühl (auch im Landkreis Rastatt vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "KEL",
+        "bedeutung": "Kehl",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "LR",
+        "bedeutung": "Lahr",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WOL",
+        "bedeutung": "Wolfach (auch im Landkreis Freudenstadt vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Keine Barzahlung mehr möglich; akzeptiert werden EC-/Girokarte und Kreditkarte (Visa, Mastercard).",
+        "quelle": "https://termine.lraog.de/select2?md=1"
+      },
+      {
+        "text": "Die Zulassungsstelle Wolfach bietet seit März 2026 nur noch montags (8–12 und 13–17 Uhr) und mittwochs (8–12 und 13–16 Uhr) persönlichen Service an; freitags geschlossen.",
+        "quelle": "https://www.ortenaukreis.de/Newsroom/Pressemitteilungen/Zulassungsstelle-Wolfach-Pers%C3%B6nlicher-Service-k%C3%BCnftig-montags-und-mittwochs.php?FID=3406.21765.1"
+      },
+      {
+        "text": "Ist am gewünschten Standort kein passender Termin frei, empfiehlt das Terminportal, bei den anderen Standorten (Offenburg, Lahr, Kehl, Achern, Wolfach) nachzusehen.",
+        "quelle": "https://termine.lraog.de/select2?md=1"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten"
+    ]
+  },
+  {
+    "slug": "ostalbkreis",
+    "stadt": "Ostalbkreis",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Ostalbkreis – Zulassungsbehörde (Geschäftsbereich Straßenverkehr)",
+    "behoerdeQuelle": "https://www.ostalbkreis.de/zulassung",
+    "traeger": "Ostalbkreis",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsbehörde Aalen",
+        "strasse": "Stuttgarter Straße 41",
+        "plz": "73430",
+        "ort": "Aalen",
+        "quelle": "https://www.ostalbkreis.de/zulassung"
+      },
+      {
+        "bezeichnung": "Dienststelle Schwäbisch Gmünd (Außenstelle Hardt)",
+        "strasse": "Europaplatz 2",
+        "plz": "73525",
+        "ort": "Schwäbisch Gmünd",
+        "quelle": "https://www.ostalbkreis.de/zulassung"
+      },
+      {
+        "bezeichnung": "Dienststelle Ellwangen",
+        "strasse": "Sebastiansgraben 34",
+        "plz": "73479",
+        "ort": "Ellwangen",
+        "quelle": "https://www.ostalbkreis.de/zulassung"
+      },
+      {
+        "bezeichnung": "Dienststelle Bopfingen",
+        "strasse": "Nördlinger Straße 7",
+        "plz": "73441",
+        "ort": "Bopfingen",
+        "quelle": "https://www.ostalbkreis.de/zulassung"
+      }
+    ],
+    "website": {
+      "url": "https://www.ostalbkreis.de/zulassung",
+      "quelle": "https://www.ostalbkreis.de/start"
+    },
+    "terminUrl": {
+      "url": "https://thor.ostalbkreis.de/m/zulassungsbehoerde/extern/calendar/?uid=dc22cab8-3e9d-4be9-b972-7cad6567d6ac",
+      "quelle": "https://www.ostalbkreis.de/online-terminreservierung-zulassungsbehoerden"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6033531&leistungId=99036020001000&p=081360",
+      "quelle": "https://www.ostalbkreis.de/online-zulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Aalen und Schwäbisch Gmünd: Mo–Mi 07:30–14:00 Uhr, Do 07:30–17:30 Uhr, Fr 07:30–11:30 Uhr",
+        "Ellwangen: Mo 07:30–14:00 Uhr, Mi 07:30–14:00 Uhr, Do 14:30–17:30 Uhr, Fr 07:30–11:30 Uhr",
+        "Bopfingen: Di 07:30–14:00 Uhr, Do 07:30–12:00 Uhr"
+      ],
+      "hinweis": "Eine vorherige Terminvereinbarung ist empfehlenswert",
+      "quelle": "https://www.ostalbkreis.de/zulassung"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsbehörde des Landratsamts Ostalbkreis für den Ostalbkreis (auch für Aalen und Schwäbisch Gmünd) mit Dienststellen in Aalen, Schwäbisch Gmünd, Ellwangen und Bopfingen.",
+      "quelle": "https://www.ostalbkreis.de/zulassung"
+    },
+    "kuerzel": [
+      {
+        "code": "AA",
+        "bedeutung": "Aalen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GD",
+        "bedeutung": "Schwäbisch Gmünd",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Online-Termine sind höchstens 14 Tage im Voraus buchbar; pro Online-Termin werden nur ein bis zwei Vorgänge bearbeitet. Termine auch telefonisch (Aalen 07361 503-1435, Schwäbisch Gmünd 07171 32-4300).",
+        "quelle": "https://www.ostalbkreis.de/online-terminreservierung-zulassungsbehoerden"
+      },
+      {
+        "text": "Ein Kennzeichenwechsel auf Wunsch bzw. auf das GD-Kennzeichen ist möglich.",
+        "quelle": "https://www.ostalbkreis.de/kennzeichen-wechsel-auf-wunsch-bzw-auf-gd-kennzeichen"
+      },
+      {
+        "text": "Die Dienststelle Bopfingen ist nur dienstags und donnerstags geöffnet.",
+        "quelle": "https://www.ostalbkreis.de/zulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-rastatt",
+    "stadt": "Landkreis Rastatt",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Rastatt – Straßenverkehrsamt, Kfz-Zulassungsbehörden Rastatt, Bühl und Gaggenau",
+    "behoerdeQuelle": "https://www.landkreis-rastatt.de/-/behoerdenwegweiser/strassenverkehrsamt/oe6012577",
+    "traeger": "Landkreis Rastatt",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsbehörde Rastatt",
+        "strasse": "Untere Wiesen 6",
+        "plz": "76437",
+        "ort": "Rastatt",
+        "quelle": "https://www.landkreis-rastatt.de/-/behoerdenwegweiser/zulassungsbehoerde-rastatt/oe6014598"
+      },
+      {
+        "bezeichnung": "Zulassungsbehörde Bühl",
+        "strasse": "Im Hasengarten 1",
+        "plz": "77815",
+        "ort": "Bühl",
+        "quelle": "https://www.landkreis-rastatt.de/-/behoerdenwegweiser/zulassungsbehoerde-buehl/oe6007376"
+      },
+      {
+        "bezeichnung": "Zulassungsbehörde Gaggenau (bis voraussichtlich 15.01.2027 geschlossen)",
+        "strasse": "Hauptstraße 71",
+        "plz": "76571",
+        "ort": "Gaggenau",
+        "quelle": "https://www.landkreis-rastatt.de/-/behoerdenwegweiser/zulassungsbehoerde-gaggenau/oe6014671"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-rastatt.de/landratsamt/aemteruebersicht/strassenverkehrsamt/auto-fuehrerschein-und-co",
+      "quelle": "https://www.landkreis-rastatt.de/startseite"
+    },
+    "terminUrl": {
+      "url": "https://lra-rastatt.saas.smartcjm.com/m/Zulassung/extern/calendar/?uid=bd225ed7-f5c7-420b-b3df-1e2415fbb4fd",
+      "quelle": "https://www.landkreis-rastatt.de/landratsamt/aemteruebersicht/strassenverkehrsamt/auto-fuehrerschein-und-co"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6014598&leistungId=99036020001000&p=082160",
+      "quelle": "https://www.landkreis-rastatt.de/landratsamt/aemteruebersicht/strassenverkehrsamt/auto-fuehrerschein-und-co/kfz-zulassung-internetbasierte-zulassungsvorgaenge+kfz"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Rastatt: Mo 07:30–16:00 Uhr, Di 07:30–16:00 Uhr, Mi 07:30–12:30 Uhr, Do 07:30–16:00 Uhr, Fr 07:30–12:30 Uhr",
+        "Bühl: Mo 07:30–16:00 Uhr, Di 07:30–13:00 Uhr, Mi 07:30–16:00 Uhr, Fr 07:30–12:30 Uhr",
+        "Gaggenau (derzeit geschlossen): Mo 08:00–16:00 Uhr, Do 08:00–18:00 Uhr (Annahmeschluss donnerstags 17:30 Uhr)"
+      ],
+      "hinweis": "Termine nach Vereinbarung; Online-Termine nur vier Wochen im Voraus buchbar",
+      "quelle": "https://www.landkreis-rastatt.de/-/behoerdenwegweiser/zulassungsbehoerde-rastatt/oe6014598"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörden des Landratsamts Rastatt (Straßenverkehrsamt) für den Landkreis Rastatt mit Standorten in Rastatt, Bühl und Gaggenau.",
+      "quelle": "https://www.landkreis-rastatt.de/landratsamt/aemteruebersicht/strassenverkehrsamt/auto-fuehrerschein-und-co"
+    },
+    "kuerzel": [
+      {
+        "code": "RA",
+        "bedeutung": "Rastatt",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BH",
+        "bedeutung": "Bühl (auch im Ortenaukreis vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Kfz-Zulassungsbehörde Gaggenau bleibt aus personellen Gründen bis voraussichtlich 15. Januar 2027 geschlossen; Kurzzeit- und Ausfuhrkennzeichen gibt es in Gaggenau seit 1. April 2026 nicht mehr.",
+        "quelle": "https://www.landkreis-rastatt.de/landratsamt/aemteruebersicht/strassenverkehrsamt/auto-fuehrerschein-und-co"
+      },
+      {
+        "text": "Termine für die Kfz-Zulassungsstellen können nur vier Wochen im Voraus online vereinbart werden; je Standort (Rastatt, Bühl, Gaggenau) gibt es einen eigenen Buchungskalender.",
+        "quelle": "https://www.landkreis-rastatt.de/landratsamt/aemteruebersicht/strassenverkehrsamt/auto-fuehrerschein-und-co"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-ravensburg",
+    "stadt": "Landkreis Ravensburg",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Ravensburg – Bürgerbüro (Kfz-Zulassung)",
+    "behoerdeQuelle": "https://www.rv.de/landkreis/verwaltung/aemter/buergerbuero",
+    "traeger": "Landkreis Ravensburg",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgerbüro Ravensburg, Kreishaus I",
+        "strasse": "Friedenstraße 6",
+        "plz": "88212",
+        "ort": "Ravensburg",
+        "quelle": "https://www.rv.de/landkreis/verwaltung/standorte"
+      },
+      {
+        "bezeichnung": "Bürgerbüro Kreishaus Bad Waldsee",
+        "strasse": "Robert-Koch-Straße 52",
+        "plz": "88339",
+        "ort": "Bad Waldsee",
+        "quelle": "https://www.rv.de/landkreis/verwaltung/standorte"
+      },
+      {
+        "bezeichnung": "Bürgerbüro Kreishaus Leutkirch (Gebäude A)",
+        "strasse": "Ottmannshofer Straße 44",
+        "plz": "88299",
+        "ort": "Leutkirch im Allgäu",
+        "quelle": "https://www.rv.de/landkreis/verwaltung/standorte"
+      },
+      {
+        "bezeichnung": "Bürgerbüro Kreishaus Wangen",
+        "strasse": "Liebigstraße 1",
+        "plz": "88239",
+        "ort": "Wangen im Allgäu",
+        "quelle": "https://www.rv.de/landkreis/verwaltung/standorte"
+      }
+    ],
+    "website": {
+      "url": "https://www.rv.de/ihr+anliegen/fahrzeugzulassung",
+      "quelle": "https://www.rv.de/startseite"
+    },
+    "terminUrl": {
+      "url": "https://lk-ravensburg.saas.smartcjm.com/m/lra-ravensburg/extern/calendar/?uid=dd389870-2ef7-49da-9fe8-5eacc55976cd",
+      "quelle": "https://www.rv.de/ihr+anliegen/fahrzeugzulassung"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6000634&leistungId=99036020001000&p=084360",
+      "quelle": "https://www.rv.de/ihr+anliegen/fahrzeugzulassung/online+kfz-zulassung+_i-kfz_"
+    },
+    "oeffnungszeiten": null,
+    "zustaendigkeit": {
+      "text": "Bürgerbüro des Landratsamts Ravensburg für den Landkreis Ravensburg; Kfz-Zulassung an den vier Standorten Ravensburg, Bad Waldsee, Leutkirch im Allgäu und Wangen im Allgäu.",
+      "quelle": "https://www.rv.de/landkreis/verwaltung/aemter/buergerbuero"
+    },
+    "kuerzel": [
+      {
+        "code": "RV",
+        "bedeutung": "Ravensburg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SLG",
+        "bedeutung": "Saulgau (heute Bad Saulgau; auch im Landkreis Sigmaringen vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ÜB",
+        "bedeutung": "Überlingen (auch im Bodenseekreis und im Landkreis Sigmaringen vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WG",
+        "bedeutung": "Wangen im Allgäu",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Für die Kfz-Zulassung an allen vier Standorten muss vorher ein Termin vereinbart werden.",
+        "quelle": "https://www.rv.de/ihr+anliegen/fahrzeugzulassung/zulassung+_mit+eigenem+text_"
+      },
+      {
+        "text": "Das Bürgerbüro Leutkirch im Allgäu hat seit 27. Oktober 2026 einen neuen Standort: Ottmannshofer Straße 44 (vorher Wangener Straße 70).",
+        "quelle": "https://www.rv.de/ihr+anliegen/fahrzeugzulassung"
+      },
+      {
+        "text": "Leasingbriefe werden in der Regel an den angegebenen Standort geschickt; wer an einem anderen Standort zulassen möchte, soll sich vorab mit dem Bürgerbüro in Verbindung setzen.",
+        "quelle": "https://www.rv.de/ihr+anliegen/fahrzeugzulassung/online+kfz-zulassung+_i-kfz_"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten"
+    ]
+  },
+  {
+    "slug": "rems-murr-kreis",
+    "stadt": "Rems-Murr-Kreis",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Rems-Murr-Kreis – Amt für Zulassung und Fahrerlaubnis, Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.rems-murr-kreis.de/3515656",
+    "traeger": "Rems-Murr-Kreis",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Waiblingen",
+        "strasse": "Alter Postplatz 10",
+        "plz": "71332",
+        "ort": "Waiblingen",
+        "quelle": "https://www.rems-murr-kreis.de/3515656"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Backnang",
+        "strasse": "Erbstetter Straße 58",
+        "plz": "71522",
+        "ort": "Backnang",
+        "quelle": "https://www.rems-murr-kreis.de/3515656"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Schorndorf",
+        "strasse": "Karlstraße 3",
+        "plz": "73614",
+        "ort": "Schorndorf",
+        "quelle": "https://www.rems-murr-kreis.de/3515656"
+      }
+    ],
+    "website": {
+      "url": "https://www.rems-murr-kreis.de/3515656",
+      "quelle": "https://www.rems-murr-kreis.de/themen-und-anliegen/kfz-und-mobilitaet"
+    },
+    "terminUrl": {
+      "url": "https://rems-murr-kreis.saas.smartcjm.com/m/remsmurrkreis/extern/calendar/?uid=36e4968f-112b-41ea-af5a-05385f6e296f",
+      "quelle": "https://www.rems-murr-kreis.de/3515656"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6033701&leistungId=99036020001000&p=081190",
+      "quelle": "https://www.rems-murr-kreis.de/aemter-und-dezernate/mobilitaet-umwelt-und-buergerservice/amt-fuer-zulassung-und-fahrerlaubnis/kraftfahrzeug---ummeldung-beantragen"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Waiblingen: Mo 06:30–12:00 Uhr, Di 08:00–12:00 Uhr, Mi 08:00–12:00 Uhr, Do 08:00–18:00 Uhr, Fr 06:30–12:00 Uhr",
+        "Backnang und Schorndorf: Mo–Do 07:00–15:00 Uhr, Fr 07:00–12:00 Uhr"
+      ],
+      "hinweis": "Online-Termin empfohlen; ohne Termin ebenfalls möglich, dann kann es zu Wartezeiten kommen",
+      "quelle": "https://www.rems-murr-kreis.de/3515656"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landratsamts Rems-Murr-Kreis für den Rems-Murr-Kreis mit Standorten in Waiblingen, Backnang und Schorndorf.",
+      "quelle": "https://www.rems-murr-kreis.de/3515656"
+    },
+    "kuerzel": [
+      {
+        "code": "WN",
+        "bedeutung": "Waiblingen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BK",
+        "bedeutung": "Backnang (auch im Landkreis Schwäbisch Hall vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Besuch auch ohne Termin möglich; mit vorab gebuchtem Online-Termin kommt man schneller dran.",
+        "quelle": "https://www.rems-murr-kreis.de/3515656"
+      },
+      {
+        "text": "In Waiblingen öffnet die Kfz-Zulassung montags und freitags bereits um 6:30 Uhr, donnerstags bis 18:00 Uhr.",
+        "quelle": "https://www.rems-murr-kreis.de/3515656"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-reutlingen",
+    "stadt": "Landkreis Reutlingen",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Reutlingen – Bürger-Service-Center (BSC), Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.kreis-reutlingen.de/Landratsamt/Organisationseinheiten/Buerger-Service-Center/Informationen-rund-um-die-Kfz-Zulassung",
+    "traeger": "Landkreis Reutlingen",
+    "standorte": [
+      {
+        "bezeichnung": "BSC – Kfz-Zulassung Reutlingen (Landratsamt Karlstraße 99)",
+        "strasse": "Karlstraße 99",
+        "plz": "72766",
+        "ort": "Reutlingen",
+        "quelle": "https://www.kreis-reutlingen.de/team/BSC-Kfz-Zulassung-Reutlingen-team13872"
+      },
+      {
+        "bezeichnung": "BSC – Außenstelle Münsingen",
+        "strasse": "Schloßhof 1",
+        "plz": "72525",
+        "ort": "Münsingen",
+        "quelle": "https://www.kreis-reutlingen.de/team/BSC-Aussenstelle-Muensingen-team13874"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-reutlingen.de/Landratsamt/Organisationseinheiten/Buerger-Service-Center/Informationen-rund-um-die-Kfz-Zulassung",
+      "quelle": "https://www.kreis-reutlingen.de/Terminvereinbarung-Kfz-Zulassung"
+    },
+    "terminUrl": {
+      "url": "https://www.kreis-reutlingen.de/Terminvereinbarung-Kfz-Zulassung",
+      "quelle": "https://www.kreis-reutlingen.de/Landratsamt/Organisationseinheiten/Buerger-Service-Center/Informationen-rund-um-die-Kfz-Zulassung"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6017013&leistungId=99036020001000&p=084150",
+      "quelle": "https://www.kreis-reutlingen.de/Landratsamt/Organisationseinheiten/Buerger-Service-Center/Informationen-rund-um-die-Kfz-Zulassung/Internetbasierte-Fahrzeugzulassung-und-Abmeldung-i-Kfz"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Reutlingen: Mo 07:30–16:30 Uhr, Di 07:30–16:30 Uhr, Mi 10:00–14:00 Uhr, Do 07:30–17:00 Uhr, Fr 07:30–13:00 Uhr",
+        "Münsingen: Mo–Mi 08:00–11:30 Uhr, Do 08:00–11:30 Uhr und 13:30–17:00 Uhr, Fr 08:00–12:45 Uhr"
+      ],
+      "hinweis": "Besuchszeiten nur mit vorheriger Terminvereinbarung; in Reutlingen seit 23.09.2026 vorübergehend mittwochs auch Termine vor 10:00 Uhr",
+      "quelle": "https://www.kreis-reutlingen.de/team/BSC-Kfz-Zulassung-Reutlingen-team13872"
+    },
+    "zustaendigkeit": {
+      "text": "Bürger-Service-Center des Landratsamts Reutlingen für den Landkreis Reutlingen; Kfz-Dienstleistungen an beiden Standorten, freie Wahl zwischen Reutlingen und Münsingen.",
+      "quelle": "https://www.kreis-reutlingen.de/Landratsamt/Organisationseinheiten/Buerger-Service-Center/Informationen-rund-um-die-Kfz-Zulassung"
+    },
+    "kuerzel": [
+      {
+        "code": "RT",
+        "bedeutung": "Reutlingen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Sie haben die freie Auswahl, ob Sie nach Reutlingen oder in die Außenstelle Münsingen kommen.",
+        "quelle": "https://www.kreis-reutlingen.de/Landratsamt/Organisationseinheiten/Buerger-Service-Center/Informationen-rund-um-die-Kfz-Zulassung"
+      },
+      {
+        "text": "Seit 10.09.2026 sind Kfz-Zulassung und Fahrerlaubnis im neuen Bürger-Service-Center gebündelt; alle Termine in Reutlingen finden im neuen Landratsamt in der Karlstraße 99 statt.",
+        "quelle": "https://www.kreis-reutlingen.de/Terminvereinbarung-Kfz-Zulassung"
+      },
+      {
+        "text": "Tipp des Landratsamts: Kurzfristig frei werdende Termine gibt es oft frühmorgens, in Reutlingen von 7:15 bis 7:30 Uhr und in Münsingen von 7:45 bis 8:00 Uhr.",
+        "quelle": "https://www.kreis-reutlingen.de/Terminvereinbarung-Kfz-Zulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "rhein-neckar-kreis",
+    "stadt": "Rhein-Neckar-Kreis",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Rhein-Neckar-Kreis – Straßenverkehrsamt, Kfz-Zulassungsbehörden Sinsheim, Weinheim und Wiesloch",
+    "behoerdeQuelle": "https://www.service-rnk.de/-/behoerdenwegweiser/strassenverkehrsamt/oe6007651",
+    "traeger": "Rhein-Neckar-Kreis",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Sinsheim",
+        "strasse": "Muthstraße 4",
+        "plz": "74889",
+        "ort": "Sinsheim",
+        "quelle": "https://www.rhein-neckar-kreis.de/landratsamt/kfz-und-fuehrerschein/zulassung"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Weinheim",
+        "strasse": "Röntgenstraße 2",
+        "plz": "69469",
+        "ort": "Weinheim",
+        "quelle": "https://www.rhein-neckar-kreis.de/landratsamt/kfz-und-fuehrerschein/zulassung"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Wiesloch",
+        "strasse": "Adelsförsterpfad 7",
+        "plz": "69168",
+        "ort": "Wiesloch",
+        "quelle": "https://www.rhein-neckar-kreis.de/landratsamt/kfz-und-fuehrerschein/zulassung"
+      }
+    ],
+    "website": {
+      "url": "https://www.rhein-neckar-kreis.de/landratsamt/kfz-und-fuehrerschein/zulassung",
+      "quelle": "https://www.rhein-neckar-kreis.de/landratsamt/kfz-und-fuehrerschein"
+    },
+    "terminUrl": {
+      "url": "https://rnk.konsentas.de/form/1/?signup_new=1",
+      "quelle": "https://www.rhein-neckar-kreis.de/landratsamt/kfz-und-fuehrerschein/zulassung"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6008107&leistungId=99036020001000&p=082260",
+      "quelle": "https://www.rhein-neckar-kreis.de/landratsamt/kfz-und-fuehrerschein/zulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Sinsheim, Weinheim und Wiesloch: Mo 07:30–12:00 Uhr, Di 07:30–12:00 Uhr, Mi 07:30–17:00 Uhr, Do 07:30–12:00 Uhr, Fr 07:30–12:00 Uhr"
+      ],
+      "hinweis": "Terminvereinbarung erforderlich",
+      "quelle": "https://www.service-rnk.de/-/behoerdenwegweiser/kfz-zulassungsbehoerde-sinsheim/oe6008074"
+    },
+    "zustaendigkeit": {
+      "text": "Landratsamt Rhein-Neckar-Kreis für die Einwohnerinnen und Einwohner des Rhein-Neckar-Kreises; freie Wahl zwischen den drei Zulassungsbehörden in Sinsheim, Weinheim und Wiesloch. Nicht zuständig für die Stadt Heidelberg (Stadtkreis, ebenfalls Kennzeichen HD): Deren Einwohner wenden sich an die eigene KFZ-Zulassungsstelle der Stadt Heidelberg.",
+      "quelle": "https://www.rhein-neckar-kreis.de/landratsamt/kfz-und-fuehrerschein"
+    },
+    "kuerzel": [
+      {
+        "code": "HD",
+        "bedeutung": "Heidelberg (gemeinsames Kennzeichen von Stadt Heidelberg und Rhein-Neckar-Kreis)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SNH",
+        "bedeutung": "Sinsheim (Altkennzeichen des früheren Landkreises Sinsheim, seit 01.10.2026 wieder erhältlich)",
+        "quelle": "https://www.rhein-neckar-kreis.de/landratsamt/kfz-und-fuehrerschein/zulassung/snh-kennzeichen"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Seit 1. Oktober 2026 wird das Altkennzeichen SNH wieder ausgegeben – unabhängig vom Wohnort in Weinheim, Sinsheim und Wiesloch sowie online; bei der Terminbuchung den Reiter „Umkennzeichnung auf SNH“ wählen.",
+        "quelle": "https://www.rhein-neckar-kreis.de/landratsamt/kfz-und-fuehrerschein/zulassung/snh-kennzeichen"
+      },
+      {
+        "text": "Im Zulassungsbereich ist frei wählbar, welche der drei Behörden (Sinsheim, Weinheim, Wiesloch) man aufsucht; Besuch nur nach vorheriger Terminvereinbarung.",
+        "quelle": "https://www.rhein-neckar-kreis.de/landratsamt/kfz-und-fuehrerschein"
+      },
+      {
+        "text": "Nicht online möglich sind u. a. technische Änderungen, Namensänderungen, Importfahrzeuge, Kurzzeit-, Ausfuhr-, Oldtimer- und rote Kennzeichen, Umkennzeichnungen sowie Ersatzdokumente; die Feinstaubplakette gibt es nicht über i-Kfz.",
+        "quelle": "https://www.rhein-neckar-kreis.de/landratsamt/kfz-und-fuehrerschein/zulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-rottweil",
+    "stadt": "Landkreis Rottweil",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Rottweil – KFZ-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.landkreis-rottweil.de/auto",
+    "traeger": "Landkreis Rottweil",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Rottweil – KFZ-Zulassungsstelle",
+        "strasse": "Stadionstraße 34",
+        "plz": "78628",
+        "ort": "Rottweil",
+        "quelle": "https://www.landkreis-rottweil.de/de/service-verwaltung/Verwaltungssitz?view=publish&item=officeLocation&id=1155"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-rottweil.de/auto",
+      "quelle": "https://www.landkreis-rottweil.de/auto"
+    },
+    "terminUrl": {
+      "url": "https://www.etermin.net/lra-rottweil-kfz",
+      "quelle": "https://www.landkreis-rottweil.de/auto"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6017015&leistungId=99036020001000&p=083250",
+      "quelle": "https://www.landkreis-rottweil.de/auto"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–14:00 Uhr",
+        "Di 08:00–14:00 Uhr",
+        "Mi 08:00–14:00 Uhr",
+        "Do 08:00–12:00 Uhr und 14:00–18:00 Uhr (Annahmeschluss 17:45 Uhr)",
+        "Fr 07:00–12:00 Uhr",
+        "Sa 09:00–12:00 Uhr (eingeschränkte Dienstleistungen)"
+      ],
+      "hinweis": "Kein Termin erforderlich; ein Termin kann optional über die Terminvergabe vereinbart werden",
+      "quelle": "https://www.landkreis-rottweil.de/auto"
+    },
+    "zustaendigkeit": {
+      "text": "KFZ-Zulassungsbehörde des Landratsamts Rottweil; die Leistungen stehen wegen Kapazitätsgrenzen ausschließlich Einwohnern des Landkreises Rottweil zur Verfügung.",
+      "quelle": "https://www.landkreis-rottweil.de/auto"
+    },
+    "kuerzel": [
+      {
+        "code": "RW",
+        "bedeutung": "Rottweil",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Samstags von 9 bis 12 Uhr geöffnet (eingeschränkte Dienstleistungen); Ein- und Ausfuhren von Fahrzeugen sind samstags nicht möglich.",
+        "quelle": "https://www.landkreis-rottweil.de/auto"
+      },
+      {
+        "text": "Kein Termin erforderlich; wer möchte, kann trotzdem online einen Termin buchen.",
+        "quelle": "https://www.landkreis-rottweil.de/auto"
+      },
+      {
+        "text": "Leistungen der Zulassungsbehörde stehen ausschließlich Einwohnern des Landkreises Rottweil zur Verfügung.",
+        "quelle": "https://www.landkreis-rottweil.de/auto"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-schwaebisch-hall",
+    "stadt": "Landkreis Schwäbisch Hall",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Schwäbisch Hall – Kfz-Zulassungsstellen Schwäbisch Hall und Crailsheim",
+    "behoerdeQuelle": "https://www.lrasha.de/verkehr-ordnung/fuehrerschein-zulassung",
+    "traeger": "Landkreis Schwäbisch Hall",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Schwäbisch Hall",
+        "strasse": "Karl-Kurz-Straße 44",
+        "plz": "74523",
+        "ort": "Schwäbisch Hall",
+        "quelle": "https://www.lrasha.de/verkehr-ordnung/fuehrerschein-zulassung"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Crailsheim (Außenstelle)",
+        "strasse": "In den Kistenwiesen 2",
+        "plz": "74564",
+        "ort": "Crailsheim",
+        "quelle": "https://www.lrasha.de/verkehr-ordnung/fuehrerschein-zulassung"
+      }
+    ],
+    "website": {
+      "url": "https://www.lrasha.de/verkehr-ordnung/fuehrerschein-zulassung",
+      "quelle": "https://www.lrasha.de/startseite"
+    },
+    "terminUrl": {
+      "url": "https://serviceportal.lrasha.de/online-dienste/online-terminvergabe/zulassungsstelle",
+      "quelle": "https://www.lrasha.de/verkehr-ordnung/fuehrerschein-zulassung"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6017016&leistungId=99036020001000&p=081270",
+      "quelle": "https://serviceportal.lrasha.de/leistungsuebersicht/verkehr-ordnung/internetbasierte-zulassung-und-ausserbetriebsetzung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Schwäbisch Hall: Mo 07:30–16:00 Uhr, Di und Mi 07:30–13:00 Uhr, Do 07:30–17:00 Uhr, Fr 07:30–12:00 Uhr",
+        "Crailsheim: Mo 07:30–16:00 Uhr, Di und Do 07:30–13:00 Uhr, Mi 07:30–17:00 Uhr, Fr 07:30–12:00 Uhr"
+      ],
+      "hinweis": "Besuch nur mit vorheriger (Online-)Terminvereinbarung",
+      "quelle": "https://www.lrasha.de/verkehr-ordnung/fuehrerschein-zulassung"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstellen des Landratsamts Schwäbisch Hall für den Landkreis Schwäbisch Hall mit Standorten in Schwäbisch Hall und Crailsheim.",
+      "quelle": "https://www.lrasha.de/verkehr-ordnung/fuehrerschein-zulassung"
+    },
+    "kuerzel": [
+      {
+        "code": "SHA",
+        "bedeutung": "Schwäbisch Hall",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BK",
+        "bedeutung": "Backnang (auch im Rems-Murr-Kreis vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "CR",
+        "bedeutung": "Crailsheim",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Für den Besuch der Zulassungsstelle ist ein Termin notwendig; kurzfristig frei werdende Termine schaltet die Zulassungsstelle morgens zwischen 7:00 und 7:30 Uhr frei.",
+        "quelle": "https://www.lrasha.de/verkehr-ordnung/fuehrerschein-zulassung"
+      },
+      {
+        "text": "Feinstaubplaketten gibt es in den Zulassungsstellen Schwäbisch Hall und Crailsheim für 5,00 € am Schalter; Fahrzeugschein mitbringen.",
+        "quelle": "https://www.lrasha.de/verkehr-ordnung/fuehrerschein-zulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "schwarzwald-baar-kreis",
+    "stadt": "Schwarzwald-Baar-Kreis",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Schwarzwald-Baar-Kreis – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.lrasbk.de/Direkt-zu/Kfz-Zulassung/",
+    "traeger": "Schwarzwald-Baar-Kreis",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Villingen-Schwenningen",
+        "strasse": "Am Hoptbühl 2",
+        "plz": "78048",
+        "ort": "Villingen-Schwenningen",
+        "quelle": "https://www.lrasbk.de/Direkt-zu/Kfz-Zulassung/"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Donaueschingen (Außenstelle)",
+        "strasse": "Humboldtstraße 11",
+        "plz": "78166",
+        "ort": "Donaueschingen",
+        "quelle": "https://www.lrasbk.de/Direkt-zu/Kfz-Zulassung/index.php?object=tx,2961.1&ModID=9&FID=2961.46.1&NavID=2961.1537&La=1"
+      }
+    ],
+    "website": {
+      "url": "https://www.lrasbk.de/Direkt-zu/Kfz-Zulassung/",
+      "quelle": "https://www.lrasbk.de/"
+    },
+    "terminUrl": {
+      "url": "https://lrasbk.flexappoint.de/",
+      "quelle": "https://www.lrasbk.de/Direkt-zu/Kfz-Zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6017017&leistungId=99036020001000&p=083260",
+      "quelle": "https://www.lrasbk.de/index.php?La=1&object=tx,2961.25683.1&kuo=2&sub=0&NavID=2961.1537&La=1"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Mi 8.00–14.00 Uhr",
+        "Do 8.00–13.00 Uhr und 14.00–17.30 Uhr",
+        "Fr 8.00–11.30 Uhr"
+      ],
+      "hinweis": "Vorsprache nur nach vorheriger Online-Terminvereinbarung",
+      "quelle": "https://www.lrasbk.de/Direkt-zu/Kfz-Zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Landratsamt Schwarzwald-Baar-Kreis für den Schwarzwald-Baar-Kreis; An-, Um- und Abmeldungen in VS-Villingen und in der Außenstelle Donaueschingen.",
+      "quelle": "https://www.lrasbk.de/Direkt-zu/Kfz-Zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "VS",
+        "bedeutung": "Villingen-Schwenningen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "DS",
+        "bedeutung": "Donaueschingen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termine für Zulassungs- und Führerscheinstelle können nur online gebucht werden.",
+        "quelle": "https://www.lrasbk.de/Direkt-zu/Kfz-Zulassung/"
+      },
+      {
+        "text": "Erledigt eine dritte Person die Zulassung, werden Vollmacht und Ausweiskopie des Halters verlangt; das SEPA-Lastschriftmandat muss in jedem Fall der Fahrzeughalter selbst unterschreiben.",
+        "quelle": "https://www.lrasbk.de/Direkt-zu/Kfz-Zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-sigmaringen",
+    "stadt": "Landkreis Sigmaringen",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Sigmaringen – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-sigmaringen.de/de/KFZ-Zulassung",
+    "traeger": "Landkreis Sigmaringen",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassung Sigmaringen (Landratsamt, Zimmer 1100)",
+        "strasse": "Leopoldstraße 4",
+        "plz": "72488",
+        "ort": "Sigmaringen",
+        "quelle": "https://www.landkreis-sigmaringen.de/de/Landratsamt/Kreisverwaltung/Ansprechpartner-A-Z/Team?view=publish&item=staffGroup&id=1031"
+      },
+      {
+        "bezeichnung": "KFZ-Zulassung Außenstelle Bad Saulgau",
+        "strasse": "Kaiserstraße 58",
+        "plz": "88348",
+        "ort": "Bad Saulgau",
+        "quelle": "https://www.landkreis-sigmaringen.de/de/Landratsamt/Kreisverwaltung/Ansprechpartner-A-Z/Team?view=publish&item=staffGroup&id=1026"
+      },
+      {
+        "bezeichnung": "KFZ-Zulassung Außenstelle Pfullendorf",
+        "strasse": "Hauptstraße 26",
+        "plz": "88630",
+        "ort": "Pfullendorf",
+        "quelle": "https://www.landkreis-sigmaringen.de/de/Landratsamt/Kreisverwaltung/Ansprechpartner-A-Z/Team?view=publish&item=staffGroup&id=1027"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-sigmaringen.de/de/KFZ-Zulassung",
+      "quelle": "https://www.landkreis-sigmaringen.de/willkommen"
+    },
+    "terminUrl": {
+      "url": "https://www.landkreis-sigmaringen.de/de/Online-Terminreservierung-KFZ-Zulassungsstelle",
+      "quelle": "https://www.landkreis-sigmaringen.de/de/KFZ-Zulassung"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6017018&leistungId=99036020001000&p=084370",
+      "quelle": "https://www.landkreis-sigmaringen.de/de/KFZ-Zulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Sigmaringen: Mo–Mi 07:30–12:30 Uhr, Do 07:30–12:30 Uhr und 14:00–18:00 Uhr, Fr 07:30–12:30 Uhr",
+        "Bad Saulgau: Mo–Mi 07:30–11:30 Uhr, Do 07:30–11:30 Uhr und 14:00–16:30 Uhr, Fr 07:00–11:30 Uhr",
+        "Pfullendorf: Mo–Mi 08:00–16:00 Uhr, Do 08:00–18:00 Uhr, Fr 08:00–16:00 Uhr, Sa 09:00–12:00 Uhr"
+      ],
+      "hinweis": "Vorherige Terminvereinbarung an allen drei Standorten notwendig; samstags nur mit Termin",
+      "quelle": "https://www.landkreis-sigmaringen.de/de/Landratsamt/Kreisverwaltung/Ansprechpartner-A-Z/Team?view=publish&item=staffGroup&id=1031"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle des Landratsamts Sigmaringen für den Landkreis Sigmaringen mit Standorten in Sigmaringen sowie den Außenstellen Bad Saulgau und Pfullendorf.",
+      "quelle": "https://www.landkreis-sigmaringen.de/de/KFZ-Zulassung"
+    },
+    "kuerzel": [
+      {
+        "code": "SIG",
+        "bedeutung": "Sigmaringen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SLG",
+        "bedeutung": "Saulgau (heute Bad Saulgau; auch im Landkreis Ravensburg vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "STO",
+        "bedeutung": "Stockach (auch im Landkreis Konstanz vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ÜB",
+        "bedeutung": "Überlingen (auch im Bodenseekreis und im Landkreis Ravensburg vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Es werden nur die gebuchten Anliegen bearbeitet und nur, wenn alle Unterlagen vollständig vorliegen; stornierte Termine werden sofort wieder freigegeben.",
+        "quelle": "https://www.landkreis-sigmaringen.de/de/KFZ-Zulassung"
+      },
+      {
+        "text": "Samstags ist die Zulassungsstelle nur mit Termin geöffnet (auch für Autohäuser und Zulassungsdienstleister); Vorgänge mit Beteiligung anderer Behörden sind samstags nicht möglich.",
+        "quelle": "https://www.landkreis-sigmaringen.de/de/KFZ-Zulassung"
+      },
+      {
+        "text": "Autohäuser und Händler können Zulassungsvorgänge unter der Woche in Sigmaringen, Bad Saulgau und Pfullendorf ohne Termin abgeben und werden nach Bearbeitung angerufen.",
+        "quelle": "https://www.landkreis-sigmaringen.de/de/KFZ-Zulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

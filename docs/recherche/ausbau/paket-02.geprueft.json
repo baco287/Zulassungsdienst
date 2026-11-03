@@ -1,0 +1,936 @@
+[
+  {
+    "slug": "enzkreis",
+    "stadt": "Enzkreis",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Enzkreis – Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.enzkreis.de/Enzkreis-digital/Kfz-Zulassung/",
+    "traeger": "Landkreis Enzkreis",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Pforzheim (Hauptstelle)",
+        "strasse": "Güterstraße 30",
+        "plz": "75177",
+        "ort": "Pforzheim",
+        "quelle": "https://www.enzkreis.de/Unsere-Leistungen/Standorte-Sprechzeiten/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Mühlacker (Außenstelle)",
+        "strasse": "Vetterstraße 21",
+        "plz": "75417",
+        "ort": "Mühlacker",
+        "quelle": "https://www.enzkreis.de/Unsere-Leistungen/Standorte-Sprechzeiten/"
+      }
+    ],
+    "website": {
+      "url": "https://www.enzkreis.de/Enzkreis-digital/Kfz-Zulassung/",
+      "quelle": "https://www.enzkreis.de/Enzkreis-digital/Kfz-Zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termine.enzkreis.de/m/Enzkreis-ZUL/extern/calendar/?uid=69f80059-8a62-4875-bef8-f0b1103cc06b",
+      "quelle": "https://www.enzkreis.de/Enzkreis-digital/Kfz-Zulassung/KFZ-Online-Dienste/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6023655&leistungId=99036020001000&p=082360",
+      "quelle": "https://www.enzkreis.de/Enzkreis-digital/Kfz-Zulassung/KFZ-Online-Dienste/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 8:00–12:30 Uhr",
+        "Di 8:00–12:30 Uhr und 13:30–18:00 Uhr",
+        "Mi 8:00–12:30 Uhr",
+        "Do 8:00–14:00 Uhr",
+        "Fr 8:00–12:00 Uhr"
+      ],
+      "hinweis": "Gilt für Pforzheim und Mühlacker. Vorsprache mit oder ohne Termin; Online-Terminvereinbarung empfohlen, ohne Termin Wartemarke vor Ort ziehen. Bei hohem Kundenaufkommen kann es zu einem vorzeitigen Annahmeschluss kommen.",
+      "quelle": "https://www.enzkreis.de/Unsere-Leistungen/Standorte-Sprechzeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig ist die Zulassungsbehörde des Hauptwohnsitzes, Betriebssitzes oder der Niederlassung; für einen Landkreis ist das das Landratsamt, für einen Stadtkreis die Stadtverwaltung. Das Landratsamt Enzkreis (Zulassungsstellen Pforzheim, Güterstraße 30, und Mühlacker) ist damit für Halter im Enzkreis zuständig. Die Stadt Pforzheim (Stadtkreis, ebenfalls Kennzeichen PF) hat eine eigene Kfz-Zulassungsbehörde (Am Mühlkanal 8, 75172 Pforzheim).",
+      "quelle": "https://www.enzkreis.de/Unsere-Leistungen/Dienstleistungen/Kraftfahrzeug-Ummeldung-nach-Umzug-beantragen.php?ModID=10&FID=2032.262.1&call=suche&kuo=1"
+    },
+    "kuerzel": [
+      {
+        "code": "PF",
+        "bedeutung": "Pforzheim (gilt für die Stadt Pforzheim und den Enzkreis)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Ohne Termin zieht man am Terminal ein Warteticket; über den QR-Code auf dem Ticket lässt sich die Warteposition live verfolgen.",
+        "quelle": "https://www.enzkreis.de/Enzkreis-digital/Kfz-Zulassung/"
+      },
+      {
+        "text": "Einfuhren aus dem Ausland und Ausfuhren ins Ausland werden bei Vorsprache nur bis 1 Stunde vor Ende der Öffnungszeiten noch am gleichen Tag bearbeitet.",
+        "quelle": "https://www.enzkreis.de/Enzkreis-digital/Kfz-Zulassung/"
+      },
+      {
+        "text": "Die Stadt Pforzheim betreibt eine eigene Kfz-Zulassungsbehörde (Am Mühlkanal 8, 75172 Pforzheim); dort sind Vorsprachen grundsätzlich nur nach vorheriger Terminvereinbarung möglich.",
+        "quelle": "https://www.pforzheim.de/buerger/buergerservice/pf0/service-bw/organisationseinheiten/show/6002517-kraftfahrzeug-zulassungsbehoerde.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-esslingen",
+    "stadt": "Landkreis Esslingen",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Esslingen – Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.landkreis-esslingen.de/start/service/zulassung.html",
+    "traeger": "Landkreis Esslingen",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassung Esslingen (Hauptsitz)",
+        "strasse": "Pulverwiesen 11",
+        "plz": "73728",
+        "ort": "Esslingen am Neckar",
+        "quelle": "https://www.landkreis-esslingen.de/start/service/zulassung.html"
+      },
+      {
+        "bezeichnung": "Außenstelle Nürtingen",
+        "strasse": "Europastraße 40",
+        "plz": "72622",
+        "ort": "Nürtingen",
+        "quelle": "https://www.landkreis-esslingen.de/start/service/zulassung.html"
+      },
+      {
+        "bezeichnung": "Außenstelle Filderstadt",
+        "strasse": "Gottlieb-Daimler-Straße 2",
+        "plz": "70794",
+        "ort": "Filderstadt-Bernhausen",
+        "quelle": "https://www.landkreis-esslingen.de/start/service/zulassung.html"
+      },
+      {
+        "bezeichnung": "Außenstelle Kirchheim",
+        "strasse": "Osianderstraße 6",
+        "plz": "73230",
+        "ort": "Kirchheim unter Teck",
+        "quelle": "https://www.landkreis-esslingen.de/start/service/zulassung.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-esslingen.de/start/service/zulassung.html",
+      "quelle": "https://www.landkreis-esslingen.de/start/service/zulassung.html"
+    },
+    "terminUrl": {
+      "url": "https://termine.lra-es.de/m/strassenverkehrsamt/extern/calendar/?uid=396fc9d8-b0e0-4138-8ab3-82bad96cdb3e",
+      "quelle": "https://www.landkreis-esslingen.de/start/service/Online_Termin_Zulassung.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6016976&leistungId=99036020001000&p=081160",
+      "quelle": "https://www.landkreis-esslingen.de/start/service/internetbasierte+zulassung.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Mi 7:30–15:00 Uhr durchgehend",
+        "Do 7:30–18:00 Uhr durchgehend",
+        "Fr 7:30–12:00 Uhr"
+      ],
+      "hinweis": "Termine vor Ort nur noch per Online-Terminierung (persönlicher Kontakt nur nach vorheriger Terminvereinbarung).",
+      "quelle": "https://www.landkreis-esslingen.de/,(anker69988)/start/service/servicezeiten.html"
+    },
+    "zustaendigkeit": {
+      "text": "Das Landratsamt Esslingen erledigt An-, Um- und Abmeldungen für den Landkreis Esslingen (Kennzeichen ES und NT). Fahrzeuge sind bei der Behörde zuzulassen, in deren Zulassungsbezirk sich die Hauptwohnung befindet; eine Zulassung auf einen Nebenwohnsitz ist nicht möglich.",
+      "quelle": "https://www.landkreis-esslingen.de/start/service/zulassung.html"
+    },
+    "kuerzel": [
+      {
+        "code": "ES",
+        "bedeutung": "Esslingen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "NT",
+        "bedeutung": "Nürtingen (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termine können bis zu vier Wochen im Voraus gebucht werden; es werden auch kurz- und mittelfristige Termine eingestellt.",
+        "quelle": "https://www.landkreis-esslingen.de/start/service/zulassung.html"
+      },
+      {
+        "text": "Pünktlich erscheinen und mit der Terminnummer am Terminal einchecken – bei Unpünktlichkeit verfällt der Termin.",
+        "quelle": "https://www.landkreis-esslingen.de/start/service/zulassung.html"
+      },
+      {
+        "text": "Nach einer i-Kfz-Zulassung genügt bis zum Empfang der Zulassungsbescheinigung, längstens zehn Tage nach Abruf des Zulassungsbescheids, das Mitführen des Bescheids.",
+        "quelle": "https://www.landkreis-esslingen.de/start/service/internetbasierte+zulassung.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-freudenstadt",
+    "stadt": "Landkreis Freudenstadt",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Freudenstadt – Amt für Ordnung und Verkehr, Sachgebiet Kfz-Zulassungen",
+    "behoerdeQuelle": "https://www.kreis-fds.de/-/behoerdenwegweiser/sachgebiet-kfz-zulassungen/oe6046963",
+    "traeger": "Landkreis Freudenstadt",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Freudenstadt",
+        "strasse": "Herrenfelder Straße 14",
+        "plz": "72250",
+        "ort": "Freudenstadt",
+        "quelle": "https://www.kreis-fds.de/-/behoerdenwegweiser/kfz-zulassungstelle-freudenstadt/oe6004765"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Horb",
+        "strasse": "Ihlinger Straße 79",
+        "plz": "72160",
+        "ort": "Horb a. N.",
+        "quelle": "https://www.kreis-fds.de/-/behoerdenwegweiser/kfz-zulassungsstelle-horb/oe6006573"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-fds.de/unser-service/kfz-zulassung-u-wunschkennzeichen",
+      "quelle": "https://www.kreis-fds.de/unser-service/kfz-zulassung-u-wunschkennzeichen"
+    },
+    "terminUrl": {
+      "url": "https://kreis-fds.flexappoint.de/",
+      "quelle": "https://www.kreis-fds.de/unser-service/kfz-zulassung-u-wunschkennzeichen"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6046963&leistungId=99036020001000&p=082370",
+      "quelle": "https://www.kreis-fds.de/unser-service/kfz-zulassung-u-wunschkennzeichen"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–12:00 Uhr und 14:00–15:30 Uhr",
+        "Di 08:00–15:30 Uhr",
+        "Mi 08:00–12:30 Uhr",
+        "Do 08:00–12:00 Uhr und 14:00–17:30 Uhr",
+        "Fr 08:00–12:30 Uhr"
+      ],
+      "hinweis": "Öffnungszeiten der Zulassungsstellen (gleich in Freudenstadt und Horb). Online-Terminvergabe wird angeboten.",
+      "quelle": "https://www.kreis-fds.de/unser-service/standorte-und-oeffnungszeiten"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig ist die Zulassungsbehörde, in deren Bezirk Hauptwohnsitz, Betriebssitz oder Niederlassung liegen; für einen Landkreis ist das das Landratsamt. Für den Landkreis Freudenstadt ist das Landratsamt Freudenstadt mit den Zulassungsstellen Freudenstadt und Horb a. N. zuständig.",
+      "quelle": "https://www.kreis-fds.de/unser-service/kfz-zulassung-u-wunschkennzeichen"
+    },
+    "kuerzel": [
+      {
+        "code": "FDS",
+        "bedeutung": "Freudenstadt",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "HCH",
+        "bedeutung": "Hechingen (Altkennzeichen; wird auch im Zollernalbkreis vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "HOR",
+        "bedeutung": "Horb (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WOL",
+        "bedeutung": "Wolfach (Altkennzeichen; wird auch im Ortenaukreis vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Das Wunschkennzeichen eines abgemeldeten Fahrzeugs kann gegen Gebühr für maximal ein Jahr reserviert werden; die Reservierung verfällt, wenn ein abgemeldetes Fahrzeug umzieht.",
+        "quelle": "https://www.kreis-fds.de/unser-service/kfz-zulassung-u-wunschkennzeichen"
+      },
+      {
+        "text": "Online-Auskunft über Fahrzeugbriefe von Kredit- oder Leasinggebern (Leasingbriefauskunft) verfügbar.",
+        "quelle": "https://www.kreis-fds.de/unser-service/kfz-zulassung-u-wunschkennzeichen"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-goeppingen",
+    "stadt": "Landkreis Göppingen",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Göppingen – Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.landkreis-goeppingen.de/landratsamt/aemter/kfz-zulassung",
+    "traeger": "Landkreis Göppingen",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Göppingen",
+        "strasse": "Lorcher Straße 6",
+        "plz": "73033",
+        "ort": "Göppingen",
+        "quelle": "https://www.landkreis-goeppingen.de/landratsamt/aemter/kfz-zulassung"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Geislingen (Außenstelle, in der MAG)",
+        "strasse": "Schillerstraße 2",
+        "plz": "73312",
+        "ort": "Geislingen",
+        "quelle": "https://www.landkreis-goeppingen.de/landratsamt/aemter/kfz-zulassung"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-goeppingen.de/landratsamt/aemter/kfz-zulassung",
+      "quelle": "https://www.landkreis-goeppingen.de/landratsamt/aemter/kfz-zulassung"
+    },
+    "terminUrl": {
+      "url": "https://termin.landkreis-goeppingen.de/select2?md=1",
+      "quelle": "https://www.landkreis-goeppingen.de/landratsamt/aemter/kfz-zulassung/online-terminreservierung-kfz-zulassung"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6000829&leistungId=99036020001000&p=081170",
+      "quelle": "https://www.landkreis-goeppingen.de/landratsamt/aemter/kfz-zulassung/online-zulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08.00–15.30 Uhr",
+        "Di 07.30–12.00 Uhr und 13.30–15.30 Uhr",
+        "Mi 07.30–12.00 Uhr",
+        "Do 08.00–12.00 Uhr und 13.30–17.30 Uhr",
+        "Fr 07.30–12.00 Uhr"
+      ],
+      "hinweis": "Donnerstags von 11.00–12.00 Uhr und von 16.30–17.30 Uhr ist keine Ticketausgabe (Aufrufnummern) möglich. Online-Termin wird empfohlen.",
+      "quelle": "https://www.landkreis-goeppingen.de/landratsamt/aemter/kfz-zulassung"
+    },
+    "zustaendigkeit": {
+      "text": "Die Kfz-Zulassungsbehörde des Landratsamts Göppingen mit den Zulassungsstellen Göppingen und Geislingen bearbeitet Zulassungen, Um- und Abmeldungen für den Landkreis Göppingen.",
+      "quelle": "https://www.landkreis-goeppingen.de/landratsamt/aemter/kfz-zulassung"
+    },
+    "kuerzel": [
+      {
+        "code": "GP",
+        "bedeutung": "Göppingen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Ein Termin kann für maximal drei Vorgänge genutzt werden; ein weiterer Termin auf denselben Kunden ist erst nach Abwicklung des vorherigen möglich.",
+        "quelle": "https://www.landkreis-goeppingen.de/landratsamt/aemter/kfz-zulassung/online-terminreservierung-kfz-zulassung"
+      },
+      {
+        "text": "Termine nur online – per Telefon oder E-Mail ist keine Terminvereinbarung möglich; der Termin muss über den Aktivierungslink innerhalb von 12 Stunden bestätigt werden.",
+        "quelle": "https://www.landkreis-goeppingen.de/landratsamt/aemter/kfz-zulassung/online-terminreservierung-kfz-zulassung"
+      },
+      {
+        "text": "Die aktuellen Wartezeiten in Göppingen und Geislingen werden online angezeigt; an Brückentagen, rund um Feiertage und am Monatsende ist mit längeren Wartezeiten zu rechnen.",
+        "quelle": "https://www.landkreis-goeppingen.de/landratsamt/aemter/kfz-zulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-heidenheim",
+    "stadt": "Landkreis Heidenheim",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Heidenheim – Fachbereich Straßenverkehr, Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.landkreis-heidenheim.de/service/organigramm/fachbereich+strassenverkehr",
+    "traeger": "Landkreis Heidenheim",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde",
+        "strasse": "Felsenstraße 36",
+        "plz": "89518",
+        "ort": "Heidenheim",
+        "quelle": "https://www.landkreis-heidenheim.de/service/organigramm/fachbereich+strassenverkehr"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-heidenheim.de/service/organigramm/fachbereich+strassenverkehr",
+      "quelle": "https://www.landkreis-heidenheim.de/service/organigramm/fachbereich+strassenverkehr"
+    },
+    "terminUrl": {
+      "url": "https://cqm9.cleverq.de/public/appointments/KFZ-Zulassung_Landkreis_Heidenheim/index.html?lang=de",
+      "quelle": "https://www.landkreis-heidenheim.de/service/organigramm/fachbereich+strassenverkehr"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6024705&leistungId=99036020001000&p=081350",
+      "quelle": "https://www.landkreis-heidenheim.de/17329103"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30–13:00 Uhr (Ausgabe bis 13:30 Uhr) und 14:00–15:30 Uhr (Ausgabe bis 16:00 Uhr)",
+        "Di 07:30–13:00 Uhr (Ausgabe bis 13:30 Uhr) – nur nach Terminvereinbarung",
+        "Mi 07:30–13:00 Uhr (Ausgabe bis 13:30 Uhr)",
+        "Do 07:30–13:00 Uhr (Ausgabe bis 13:30 Uhr) und 14:00–17:00 Uhr (Ausgabe bis 17:30 Uhr) – nur nach Terminvereinbarung",
+        "Fr 07:30–13:00 Uhr (Ausgabe bis 13:30 Uhr) – nur nach Terminvereinbarung"
+      ],
+      "hinweis": "Dienstag, Donnerstag und Freitag nur nach Terminvereinbarung.",
+      "quelle": "https://www.landkreis-heidenheim.de/service/organigramm/fachbereich+strassenverkehr"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig ist die Zulassungsbehörde des Hauptwohnsitzes, Betriebssitzes bzw. der Niederlassung oder des Fahrzeugstandorts; für einen Landkreis ist das das Landratsamt. Für den Landkreis Heidenheim ist die Kfz-Zulassungsbehörde des Landratsamts Heidenheim zuständig.",
+      "quelle": "https://www.landkreis-heidenheim.de/17329114"
+    },
+    "kuerzel": [
+      {
+        "code": "HDH",
+        "bedeutung": "Heidenheim",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Abmeldung über das i-Kfz-Portal kostet 2,10 EUR Verwaltungsgebühr, vor Ort 15,90 EUR (zzgl. 0,90 EUR Dokumentenklebesiegel und KBA-Gebühr).",
+        "quelle": "https://www.landkreis-heidenheim.de/17329114"
+      },
+      {
+        "text": "Infoflyer zur Kfz-Zulassung, zu Kurzzeit- und Ausfuhrkennzeichen sowie zu Wechselkennzeichen stehen als PDF zum Download bereit.",
+        "quelle": "https://www.landkreis-heidenheim.de/service/organigramm/fachbereich+strassenverkehr"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-heilbronn",
+    "stadt": "Landkreis Heilbronn",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Heilbronn – Zulassungsstelle",
+    "behoerdeQuelle": "https://service.landkreis-heilbronn.de/kontakt",
+    "traeger": "Landkreis Heilbronn",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Heilbronn (Zulassungsstelle)",
+        "strasse": "Lerchenstraße 40",
+        "plz": "74072",
+        "ort": "Heilbronn",
+        "quelle": "https://service.landkreis-heilbronn.de/kontakt"
+      }
+    ],
+    "website": {
+      "url": "https://service.landkreis-heilbronn.de/ihr-anliegen/zulassung",
+      "quelle": "https://service.landkreis-heilbronn.de/ihr-anliegen/zulassung"
+    },
+    "terminUrl": {
+      "url": "https://lra-heilbronn.saas.smartcjm.com/m/zulassung/extern/calendar/?uid=58205ca0-5fb8-4595-aa38-7e2b79d96de5",
+      "quelle": "https://service.landkreis-heilbronn.de/terminbuchung"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6016979&leistungId=99036020001000&p=081250",
+      "quelle": "https://service.landkreis-heilbronn.de/ihr-anliegen/zulassung/zulassung-eines-gebrauchtwagens-umschreibung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Telefonisch: Mo–Do 07:30–15:30 Uhr",
+        "Telefonisch: Fr 07:30–12:00 Uhr"
+      ],
+      "hinweis": "Für einen Besuch benötigen Sie einen Termin. Angegeben sind die telefonischen Servicezeiten der Zulassung (Tel. 07131 994-559).",
+      "quelle": "https://service.landkreis-heilbronn.de/kontakt"
+    },
+    "zustaendigkeit": {
+      "text": "Das Landratsamt Heilbronn ist Zulassungsstelle für Einwohner des Landkreises Heilbronn. Für Einwohner der Stadt Heilbronn (Stadtkreis, ebenfalls Kennzeichen HN) ist die Kfz-Zulassungsbehörde der Stadt Heilbronn (Bürgeramt, Lerchenstraße 40, 74072 Heilbronn, Tel. 07131 56-3636) zuständig.",
+      "quelle": "https://www.heilbronn.de/rathaus/buergerservice-a-z/inhalt/kfz-zulassungsstelle.html"
+    },
+    "kuerzel": [
+      {
+        "code": "HN",
+        "bedeutung": "Heilbronn (gilt für die Stadt Heilbronn und den Landkreis Heilbronn)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Einwurfzulassung: Ist kein passender Termin frei, können die Unterlagen während der Servicezeiten an der Information abgegeben werden; die Bearbeitung erfolgt im Anschluss an den Kundenverkehr ohne garantierten Fertigstellungszeitpunkt.",
+        "quelle": "https://service.landkreis-heilbronn.de/ihr-anliegen/zulassung/zulassung-eines-gebrauchtwagens-umschreibung"
+      },
+      {
+        "text": "Neue Termine werden Montag bis Freitag täglich freigeschaltet, in der Regel zwischen 7:00 und 7:30 Uhr.",
+        "quelle": "https://service.landkreis-heilbronn.de/ihr-anliegen/zulassung/zulassung-eines-gebrauchtwagens-umschreibung"
+      },
+      {
+        "text": "Bezahlung vor Ort per Kartenzahlung (kein AMEX), online per Kreditkarte oder PayPal.",
+        "quelle": "https://service.landkreis-heilbronn.de/ihr-anliegen/zulassung/zulassung-eines-gebrauchtwagens-umschreibung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "hohenlohekreis",
+    "stadt": "Hohenlohekreis",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Hohenlohekreis – Amt für Mobilität und Verkehr, Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.hohenlohekreis.de/das-landratsamt/aemteruebersicht/dezernat-fuer-umwelt-ordnung-und-gesundheit/kfz-zulassung",
+    "traeger": "Landkreis Hohenlohekreis",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Landratsamt Hohenlohekreis",
+        "strasse": "Allee 17",
+        "plz": "74653",
+        "ort": "Künzelsau",
+        "quelle": "https://www.hohenlohekreis.de/das-landratsamt/aemteruebersicht/dezernat-fuer-umwelt-ordnung-und-gesundheit/kfz-zulassung"
+      }
+    ],
+    "website": {
+      "url": "https://www.hohenlohekreis.de/das-landratsamt/aemteruebersicht/dezernat-fuer-umwelt-ordnung-und-gesundheit/kfz-zulassung",
+      "quelle": "https://www.hohenlohekreis.de/das-landratsamt/aemteruebersicht/dezernat-fuer-umwelt-ordnung-und-gesundheit/kfz-zulassung"
+    },
+    "terminUrl": {
+      "url": "https://lra-hohenlohekreis.saas.smartcjm.com/m/SVA/extern/calendar/?uid=fc7d15af-bab3-4919-b24e-e346968cca1e",
+      "quelle": "https://www.hohenlohekreis.de/das-landratsamt/aemteruebersicht/dezernat-fuer-umwelt-ordnung-und-gesundheit/kfz-zulassung"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6048087&leistungId=99036020001000&p=081260",
+      "quelle": "https://www.hohenlohekreis.de/das-landratsamt/aemteruebersicht/dezernat-fuer-umwelt-ordnung-und-gesundheit/kfz-zulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Mi 07.30–15.30 Uhr",
+        "Do 07.30–12.30 Uhr und 14.00–17.30 Uhr",
+        "Fr 07.30–12.00 Uhr"
+      ],
+      "hinweis": "Annahmeschluss ist 30 Minuten vor Schalterende. Online-Terminvereinbarung möglich.",
+      "quelle": "https://www.hohenlohekreis.de/das-landratsamt/aemteruebersicht/dezernat-fuer-umwelt-ordnung-und-gesundheit/kfz-zulassung"
+    },
+    "zustaendigkeit": {
+      "text": "Die Zulassungsstelle des Landratsamts Hohenlohekreis in Künzelsau ist für den Hohenlohekreis zuständig. Kurzzeitkennzeichen gibt es nur bei Hauptwohnsitz bzw. nachweislichem Fahrzeugstandort im Hohenlohekreis, Ausfuhrkennzeichen nur bei Wohnsitz im Hohenlohekreis.",
+      "quelle": "https://www.hohenlohekreis.de/das-landratsamt/aemteruebersicht/dezernat-fuer-umwelt-ordnung-und-gesundheit/kfz-zulassung"
+    },
+    "kuerzel": [
+      {
+        "code": "KÜN",
+        "bedeutung": "Künzelsau",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ÖHR",
+        "bedeutung": "Öhringen (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die aktuellen Wartezeiten in der Zulassungsstelle können online abgerufen werden.",
+        "quelle": "https://www.hohenlohekreis.de/das-landratsamt/aemteruebersicht/dezernat-fuer-umwelt-ordnung-und-gesundheit/kfz-zulassung"
+      },
+      {
+        "text": "Seit Januar 2025 kann die Auskunft zur Zulassungsbescheinigung Teil II (Leasingbriefauskunft) online beantragt werden.",
+        "quelle": "https://www.hohenlohekreis.de/das-landratsamt/aemteruebersicht/dezernat-fuer-umwelt-ordnung-und-gesundheit/kfz-zulassung"
+      },
+      {
+        "text": "Bei Ausfuhrkennzeichen ohne deutsche oder europäische Bankverbindung (IBAN/BIC) muss die Kfz-Steuer vorab beim Zollamt Neu-Kupfer eingezahlt werden.",
+        "quelle": "https://www.hohenlohekreis.de/das-landratsamt/aemteruebersicht/dezernat-fuer-umwelt-ordnung-und-gesundheit/kfz-zulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-karlsruhe",
+    "stadt": "Landkreis Karlsruhe",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Karlsruhe – Kfz-Zulassungsstellen",
+    "behoerdeQuelle": "https://www.landkreis-karlsruhe.de/Service-Verwaltung/Verwaltung/Unser-Team/Kfz-Zulassungsstelle-Karlsruhe.php?ModID=9&FID=3051.3888.1",
+    "traeger": "Landkreis Karlsruhe",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Karlsruhe",
+        "strasse": "Kriegsstraße 100",
+        "plz": "76133",
+        "ort": "Karlsruhe",
+        "quelle": "https://www.landkreis-karlsruhe.de/Service-Verwaltung/Verwaltung/Unser-Team/Kfz-Zulassungsstelle-Karlsruhe.php?ModID=9&FID=3051.3888.1"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Bruchsal",
+        "strasse": "Am Alten Güterbahnhof 9",
+        "plz": "76646",
+        "ort": "Bruchsal",
+        "quelle": "https://www.landkreis-karlsruhe.de/Service-Verwaltung/Verwaltung/Unser-Team/Kfz-Zulassungsstelle-Bruchsal.php?ModID=9&FID=3051.3889.1"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Ettlingen",
+        "strasse": "Am Lindscharren 4–6",
+        "plz": "76275",
+        "ort": "Ettlingen",
+        "quelle": "https://www.landkreis-karlsruhe.de/Service-Verwaltung/Verwaltung/Unser-Team/Kfz-Zulassungsstelle-Ettlingen.php?ModID=9&FID=3051.3887.1"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Bretten",
+        "strasse": "Hermann-Beuttenmüller-Straße 6",
+        "plz": "75015",
+        "ort": "Bretten",
+        "quelle": "https://www.landkreis-karlsruhe.de/Service-Verwaltung/Verwaltung/Unser-Team/Kfz-Zulassungsstelle-Bretten.php?ModID=9&FID=3051.3890.1"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-karlsruhe.de/Service-Verwaltung/Das-Landratsamt-von-A-bis-Z/Stra%C3%9Fen-Verkehr/",
+      "quelle": "https://www.landkreis-karlsruhe.de/Service-Verwaltung/Das-Landratsamt-von-A-bis-Z/Stra%C3%9Fen-Verkehr/"
+    },
+    "terminUrl": {
+      "url": "https://termine.landkreis-karlsruhe.de/m/Zulassung/extern/calendar/?uid=81ebbc74-3681-4900-84e7-457ade4662ec",
+      "quelle": "https://www.landkreis-karlsruhe.de/Service-Verwaltung/Das-Landratsamt-von-A-bis-Z/Terminreservierung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6016981&leistungId=99036020001000&p=082150",
+      "quelle": "https://www.landkreis-karlsruhe.de/Service-Verwaltung/Das-Landratsamt-von-A-bis-Z/Stra%C3%9Fen-Verkehr/"
+    },
+    "oeffnungszeiten": null,
+    "zustaendigkeit": {
+      "text": "Zuständig ist die Zulassungsbehörde des Hauptwohnsitzes, Betriebssitzes bzw. der Niederlassung; für einen Landkreis ist das das Landratsamt, für einen Stadtkreis die Stadtverwaltung. Das Landratsamt Karlsruhe (Zulassungsstellen Karlsruhe, Bruchsal, Ettlingen, Bretten) ist für Halter im Landkreis Karlsruhe zuständig. Die Stadt Karlsruhe (Stadtkreis, ebenfalls Kennzeichen KA) hat eine eigene Zulassungsstelle (Servicezentrum Auto und Verkehr, Steinhäuserstraße 22, 76135 Karlsruhe).",
+      "quelle": "https://www.landkreis-karlsruhe.de/Service-Verwaltung/Service/Dienstleistungskatalog/Anmeldung-eines-Neuwagens-Neuzulassung-eines-Fahrzeugs-beantragen.php?ModID=10&FID=3051.1303.1&k_sub=1&text=Erstzulassung"
+    },
+    "kuerzel": [
+      {
+        "code": "KA",
+        "bedeutung": "Karlsruhe (gilt für die Stadt Karlsruhe und den Landkreis Karlsruhe)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BR",
+        "bedeutung": "Bruchsal (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Kundenanliegen werden nach Terminvereinbarung bearbeitet – telefonisch oder online über das Terminreservierungssystem.",
+        "quelle": "https://www.landkreis-karlsruhe.de/Service-Verwaltung/Verwaltung/Unser-Team/Kfz-Zulassungsstelle-Karlsruhe.php?ModID=9&FID=3051.3888.1"
+      },
+      {
+        "text": "Die Stadt Karlsruhe betreibt eine eigene Zulassungsstelle (Servicezentrum Auto und Verkehr, Steinhäuserstraße 22, 76135 Karlsruhe) mit Terminvergabe und einem Expressbereich für bestimmte Anliegen ohne Termin.",
+        "quelle": "https://web1.karlsruhe.de/service/Buergerdienste/organisation.php?id=6028453"
+      },
+      {
+        "text": "Das Landratsamt ist an Feiertagen sowie am 24. und 31. Dezember geschlossen.",
+        "quelle": "https://www.landkreis-karlsruhe.de/Service-Verwaltung/Verwaltung/%C3%96ffnungszeiten/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten"
+    ]
+  },
+  {
+    "slug": "landkreis-konstanz",
+    "stadt": "Landkreis Konstanz",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Konstanz – Straßenverkehr und Schifffahrt, Zulassungsstelle",
+    "behoerdeQuelle": "https://www.lrakn.de/service-und-verwaltung/lebenslagen+von+a-z/kfz-wesen",
+    "traeger": "Landkreis Konstanz",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Konstanz",
+        "strasse": "Max-Stromeyer-Str. 47",
+        "plz": "78467",
+        "ort": "Konstanz",
+        "quelle": "https://www.lrakn.de/service-und-verwaltung/lebenslagen+von+a-z/kfz-wesen"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Singen",
+        "strasse": "Laubwaldstr. 4",
+        "plz": "78224",
+        "ort": "Singen",
+        "quelle": "https://www.lrakn.de/service-und-verwaltung/adressen+und+lageplan"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Stockach",
+        "strasse": "Adenauer Str. 4",
+        "plz": "78333",
+        "ort": "Stockach",
+        "quelle": "https://www.lrakn.de/service-und-verwaltung/adressen+und+lageplan"
+      }
+    ],
+    "website": {
+      "url": "https://www.lrakn.de/service-und-verwaltung/lebenslagen+von+a-z/kfz-wesen",
+      "quelle": "https://www.lrakn.de/service-und-verwaltung/lebenslagen+von+a-z/kfz-wesen"
+    },
+    "terminUrl": {
+      "url": "https://smart-cjm.lrakn.de/m/termin-zulassung/extern/calendar/?uid=03f27e22-32fd-4ab8-ae9b-d6d9ac024dc4",
+      "quelle": "https://www.lrakn.de/service-und-verwaltung/lebenslagen+von+a-z/kfz-wesen"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6008733&leistungId=99036020001000&p=083350",
+      "quelle": "https://www.lrakn.de/service-und-verwaltung/lebenslagen+von+a-z/kfz-wesen"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Konstanz: Mo 8–12 Uhr und 14–16 Uhr, Di 8–14 Uhr, Mi 8–12:30 Uhr und 14–17:30 Uhr, Do 8–12 Uhr, Fr 8–12 Uhr",
+        "Singen: Mo 7:30–15 Uhr, Di 7:30–12:30 Uhr und 13:30–17 Uhr, Mi 7:30–15 Uhr, Do 7:30–15 Uhr, Fr 7:30–12:30 Uhr",
+        "Stockach: Mo–Fr 8–12 Uhr"
+      ],
+      "hinweis": "Für Ihren Besuch ist eine Online-Terminbuchung bei der Zulassungsstelle erforderlich.",
+      "quelle": "https://www.lrakn.de/service-und-verwaltung/lebenslagen+von+a-z/kfz-wesen"
+    },
+    "zustaendigkeit": {
+      "text": "Das Landratsamt Konstanz ist mit den Zulassungsstellen Konstanz, Singen und Stockach für den Landkreis Konstanz zuständig, einschließlich der Gemeinde Büsingen am Hochrhein (Kennzeichen BÜS); Zulassungen für Büsingen werden nur in Singen bearbeitet.",
+      "quelle": "https://www.lrakn.de/service-und-verwaltung/lebenslagen+von+a-z/kfz-wesen"
+    },
+    "kuerzel": [
+      {
+        "code": "KN",
+        "bedeutung": "Konstanz (Landkreis Konstanz ohne Büsingen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "STO",
+        "bedeutung": "Stockach (Altkennzeichen; wird auch im Landkreis Sigmaringen vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BÜS",
+        "bedeutung": "Büsingen (Büsingen am Hochrhein, deutsche Exklave in der Schweiz)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Zulassungen für Büsingen können nur in der Zulassungsstelle Singen bearbeitet werden.",
+        "quelle": "https://www.lrakn.de/service-und-verwaltung/lebenslagen+von+a-z/kfz-wesen"
+      },
+      {
+        "text": "Das Altkennzeichen STO wird seit 01.04.2021 ausgegeben; der Landkreis Konstanz kann nur bestimmte STO-Kombinationen vergeben, weitere entfallen auf die Landkreise Sigmaringen, Tuttlingen und den Zollernalbkreis.",
+        "quelle": "https://www.lrakn.de/service-und-verwaltung/aemter/strassenverkehr+und+schifffahrt/altkennzeichen+sto"
+      },
+      {
+        "text": "Diebstahl oder Verlust von Kennzeichen kann online gemeldet werden.",
+        "quelle": "https://www.lrakn.de/service-und-verwaltung/lebenslagen+von+a-z/kfz-wesen"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-loerrach",
+    "stadt": "Landkreis Lörrach",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Lörrach – Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Fachbereiche/Verkehr/Kfz-Zulassung/Kfz-Zulassung-Loerrach",
+    "traeger": "Landkreis Lörrach",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Lörrach",
+        "strasse": "Brombacher Straße 93",
+        "plz": "79539",
+        "ort": "Lörrach",
+        "quelle": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Fachbereiche/Verkehr/Kfz-Zulassung/Kfz-Zulassung-Loerrach"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle, Außenstelle Schopfheim",
+        "strasse": "Hebelstraße 18",
+        "plz": "79650",
+        "ort": "Schopfheim",
+        "quelle": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Fachbereiche/Verkehr/Kfz-Zulassung/Kfz-Zulassung-Schopfheim"
+      }
+    ],
+    "website": {
+      "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Fachbereiche/Verkehr/Kfz-Zulassung/Kfz-Zulassung-Loerrach",
+      "quelle": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Fachbereiche/Verkehr/Kfz-Zulassung/Kfz-Zulassung-Loerrach"
+    },
+    "terminUrl": {
+      "url": "https://qwebbook.loerrach-landkreis.de/qmaticwebbooking/#/preselect/branch/539a4bbb39259e2bef4c2edce30e15a839380f906ca7064bdf846c36f2c97a0c/",
+      "quelle": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Fachbereiche/Verkehr/Kfz-Zulassung/Kfz-Zulassung-Loerrach"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6001422&leistungId=99036020001000&p=083360",
+      "quelle": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Kfz-Zulassung/iKFZ"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Lörrach: Mo 08:00–12:30 Uhr, Di 08:00–12:30 Uhr, Mi 08:00–12:30 Uhr und 14:00–17:00 Uhr, Do 08:00–12:30 Uhr und 13:30–17:30 Uhr, Fr 08:00–12:30 Uhr",
+        "Schopfheim: Mo 08:00–12:30 Uhr und 14:00–17:00 Uhr, Di 08:00–12:30 Uhr, Mi 08:00–12:30 Uhr, Do 08:00–12:30 Uhr und 13:30–17:30 Uhr, Fr 08:00–12:30 Uhr"
+      ],
+      "hinweis": "Sie können auch ohne Termin vorbeikommen, empfohlen wird jedoch eine Online-Terminbuchung. Annahmestopp ist jeweils 30 Minuten vor Schließung.",
+      "quelle": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Fachbereiche/Verkehr/Kfz-Zulassung/Kfz-Zulassung-Loerrach"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsbehörde für den Landkreis Lörrach ist das Landratsamt Lörrach mit der Kfz-Zulassungsstelle Lörrach und der Außenstelle Schopfheim; die Außenstelle Rheinfelden ist derzeit geschlossen.",
+      "quelle": "https://www.loerrach-landkreis.de/Dienstleistung?view=publish&item=service&id=1454"
+    },
+    "kuerzel": [
+      {
+        "code": "LÖ",
+        "bedeutung": "Lörrach",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Außenstelle der Kfz-Zulassung in Rheinfelden (Karl-Fürstenberg-Straße 17) bleibt mindestens bis Ende 2027 geschlossen.",
+        "quelle": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Fachbereiche/Verkehr/Kfz-Zulassung/Kfz-Zulassung-Rheinfelden"
+      },
+      {
+        "text": "Für i-Kfz sollen ausschließlich die offiziellen Links der Zulassungsbehörde genutzt werden, da es Betrugsseiten gibt; für Zulassungsprozesse ist der Personalausweis mit aktivierter eID-Funktion nötig.",
+        "quelle": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Kfz-Zulassung/iKFZ"
+      },
+      {
+        "text": "Für Lörrach und Schopfheim gibt es getrennte Online-Terminbuchungen.",
+        "quelle": "https://www.loerrach-landkreis.de/Dienstleistung?view=publish&item=service&id=1454"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-ludwigsburg",
+    "stadt": "Landkreis Ludwigsburg",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Ludwigsburg – Kfz-Zulassungsbehörde (Geschäftsteil Kfz-Zulassung und Fahrerlaubnis)",
+    "behoerdeQuelle": "https://www.landkreis-ludwigsburg.de/verkehr-sicherheit-ordnung/auto-kfz/kfz-zulassungsbehoerde/",
+    "traeger": "Landkreis Ludwigsburg",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Ludwigsburg (vorübergehender Standort seit 27.07.2026)",
+        "strasse": "Königsallee 59/1",
+        "plz": "71638",
+        "ort": "Ludwigsburg",
+        "quelle": "https://www.landkreis-ludwigsburg.de/verkehr-sicherheit-ordnung/auto-kfz/kfz-zulassungsbehoerde/"
+      },
+      {
+        "bezeichnung": "Außenstelle Besigheim",
+        "strasse": "Kronenstraße 1",
+        "plz": "74354",
+        "ort": "Besigheim",
+        "quelle": "https://www.landkreis-ludwigsburg.de/verkehr-sicherheit-ordnung/auto-kfz/kfz-zulassungsbehoerde/kontakte/"
+      },
+      {
+        "bezeichnung": "Außenstelle Gerlingen",
+        "strasse": "Schillerstraße 63",
+        "plz": "70839",
+        "ort": "Gerlingen",
+        "quelle": "https://www.landkreis-ludwigsburg.de/verkehr-sicherheit-ordnung/auto-kfz/kfz-zulassungsbehoerde/kontakte/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-ludwigsburg.de/verkehr-sicherheit-ordnung/auto-kfz/kfz-zulassungsbehoerde/",
+      "quelle": "https://www.landkreis-ludwigsburg.de/verkehr-sicherheit-ordnung/auto-kfz/kfz-zulassungsbehoerde/"
+    },
+    "terminUrl": {
+      "url": "https://termine.crossing.de/319833962/Appointment/Index/1",
+      "quelle": "https://www.landkreis-ludwigsburg.de/verkehr-sicherheit-ordnung/auto-kfz/kfz-zulassungsbehoerde/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6014202&leistungId=99036020001000&p=081180",
+      "quelle": "https://www.landkreis-ludwigsburg.de/verkehr-sicherheit-ordnung/kfz-zulassung-fahrerlaubnis-gueterkraftverkehr/kfz-zulassung/internet-dienste/online-zulassung-abmeldung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Telefonisch (Ludwigsburg): Mo 07:30–15:00 Uhr, Di, Mi und Fr 07:30–12:00 Uhr, Do 08:30–12:00 Uhr und 13:30–18:00 Uhr",
+        "Telefonisch (Außenstellen Besigheim und Gerlingen): Mo 07:30–12:00 Uhr und 13:30–15:00 Uhr, Di, Mi und Fr 07:30–12:00 Uhr, Do 08:30–12:00 Uhr und 13:30–18:00 Uhr"
+      ],
+      "hinweis": "Persönliche Vorsprache bei der Kfz-Zulassung nur nach vorheriger Online-Terminvergabe. Veröffentlicht sind nur telefonische Sprechzeiten.",
+      "quelle": "https://www.landkreis-ludwigsburg.de/verkehr-sicherheit-ordnung/auto-kfz/kfz-zulassungsbehoerde/kontakte/"
+    },
+    "zustaendigkeit": {
+      "text": "Die Zulassungsbehörde im Landkreis Ludwigsburg (Landratsamt Ludwigsburg) ist für Halter mit Hauptwohnsitz im Landkreis Ludwigsburg zuständig (Kennzeichen LB und VAI).",
+      "quelle": "https://www.landkreis-ludwigsburg.de/verkehr-sicherheit-ordnung/auto-kfz/kfz-zulassungsbehoerde/"
+    },
+    "kuerzel": [
+      {
+        "code": "LB",
+        "bedeutung": "Ludwigsburg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "VAI",
+        "bedeutung": "Vaihingen (Altkennzeichen; Vaihingen an der Enz)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Wegen Modernisierungsarbeiten ist die Kfz-Zulassungsstelle seit 27. Juli 2026 vorübergehend in der Königsallee 59/1; die Postanschrift bleibt Hindenburgstraße 40, Parken weiterhin in den Parkhäusern am Kreishaus.",
+        "quelle": "https://www.landkreis-ludwigsburg.de/verkehr-sicherheit-ordnung/auto-kfz/kfz-zulassungsbehoerde/"
+      },
+      {
+        "text": "Das Online-Terminportal ist zwei Wochen im Voraus freigeschaltet; bei Unpünktlichkeit oder fehlenden Unterlagen verfällt der Termin.",
+        "quelle": "https://www.landkreis-ludwigsburg.de/verkehr-sicherheit-ordnung/auto-kfz/kfz-zulassungsbehoerde/"
+      },
+      {
+        "text": "Die Außenstelle Vaihingen ist bis Jahresende 2026 geschlossen.",
+        "quelle": "https://www.landkreis-ludwigsburg.de/verkehr-sicherheit-ordnung/auto-kfz/kfz-zulassungsbehoerde/kontakte/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "main-tauber-kreis",
+    "stadt": "Main-Tauber-Kreis",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Main-Tauber-Kreis – Verkehrsamt, Sachgebiet Zulassungswesen",
+    "behoerdeQuelle": "https://www.main-tauber-kreis.de/Service/Sachgebiet-Zulassungswesen.php?object=tx,4267.1191.1",
+    "traeger": "Landkreis Main-Tauber-Kreis",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Tauberbischofsheim",
+        "strasse": "Gartenstraße 2a",
+        "plz": "97941",
+        "ort": "Tauberbischofsheim",
+        "quelle": "https://www.main-tauber-kreis.de/Service/Kfz-Zulassungsstelle-Tauberbischofsheim.php?object=tx,4267.1431.1"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Bad Mergentheim",
+        "strasse": "Wachbacher Straße 52",
+        "plz": "97980",
+        "ort": "Bad Mergentheim",
+        "quelle": "https://www.main-tauber-kreis.de/Service/Kfz-Zulassungsstelle-Bad-Mergentheim.php?object=tx,4267.1430.1"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Wertheim",
+        "strasse": "Roter Sand 2",
+        "plz": "97877",
+        "ort": "Wertheim",
+        "quelle": "https://www.main-tauber-kreis.de/Service/Kfz-Zulassungsstelle-Wertheim.php?object=tx,4267.1547.1"
+      }
+    ],
+    "website": {
+      "url": "https://www.main-tauber-kreis.de/Service/Sachgebiet-Zulassungswesen.php?object=tx,4267.1191.1",
+      "quelle": "https://www.main-tauber-kreis.de/Service/Sachgebiet-Zulassungswesen.php?object=tx,4267.1191.1"
+    },
+    "terminUrl": {
+      "url": "https://www.terminland.de/Main-Tauber-Kreis-Verkehrsamt/",
+      "quelle": "https://www.main-tauber-kreis.de/Landratsamt/Service/Terminvereinbarung/"
+    },
+    "ikfzUrl": null,
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–12:30 Uhr",
+        "Di 08:00–12:30 Uhr",
+        "Mi 08:00–12:30 Uhr",
+        "Do 08:00–18:00 Uhr",
+        "Fr 08:00–12:30 Uhr"
+      ],
+      "hinweis": "Persönliche Vorsprachen nur nach vorheriger Terminvereinbarung (online oder telefonisch unter 09341/82-4001).",
+      "quelle": "https://www.main-tauber-kreis.de/Service/Sachgebiet-Zulassungswesen.php?object=tx,4267.1191.1"
+    },
+    "zustaendigkeit": {
+      "text": "Das Landratsamt Main-Tauber-Kreis bietet dezentral drei Zulassungsstellen in Tauberbischofsheim, Bad Mergentheim und Wertheim für den Main-Tauber-Kreis an.",
+      "quelle": "https://www.main-tauber-kreis.de/Service/Sachgebiet-Zulassungswesen.php?object=tx,4267.1191.1"
+    },
+    "kuerzel": [
+      {
+        "code": "TBB",
+        "bedeutung": "Tauberbischofsheim",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MGH",
+        "bedeutung": "Mergentheim (Altkennzeichen; Bad Mergentheim)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Sind in der nächstgelegenen Zulassungsstelle keine Termine frei, kann ein Termin an einem anderen Standort gebucht werden; durch Stornierungen werden immer wieder kurzfristig Termine frei.",
+        "quelle": "https://www.main-tauber-kreis.de/Das-Landratsamt/%C3%84mter-und-Dezernate/Dezernat-3-Kreisentwicklung-Bildung-und-Mobilit%C3%A4t/Verkehrsamt/"
+      },
+      {
+        "text": "Termine für Verkehrsamt/Zulassungsstelle auch telefonisch unter 09341/82-4001.",
+        "quelle": "https://www.main-tauber-kreis.de/Das-Landratsamt/%C3%84mter-und-Dezernate/Dezernat-3-Kreisentwicklung-Bildung-und-Mobilit%C3%A4t/Verkehrsamt/"
+      },
+      {
+        "text": "Bei i-Kfz müssen Zulassungsbescheid und vorläufiger Zulassungsnachweis innerhalb von 30 Minuten heruntergeladen oder per E-Mail verschickt werden, sonst ist keine sofortige Inbetriebsetzung möglich.",
+        "quelle": "https://www.main-tauber-kreis.de/Ihr-Anliegen/B%C3%BCrgerservice/Anmeldung-eines-Neuwagens-Neuzulassung-eines-Fahrzeugs-beantragen.php?ModID=10&FID=2894.963.1&kuo=2"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "ikfzUrl"
+    ]
+  }
+]

@@ -1,0 +1,989 @@
+[
+  {
+    "slug": "heidelberg",
+    "stadt": "Heidelberg",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Stadt Heidelberg, Amt für Bürgerdienste und Zuwanderung – KFZ-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.heidelberg.de/hd/-/Behoerdenwegweiser/kfz-zulassungen/oe6015203",
+    "traeger": "Stadt Heidelberg (Stadtkreis)",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassungsstelle (ADAC-Gebäude)",
+        "strasse": "Pleikartsförster Str. 116",
+        "plz": "69124",
+        "ort": "Heidelberg",
+        "quelle": "https://www.heidelberg.de/hd/-/Behoerdenwegweiser/kfz-zulassungen/oe6015203"
+      },
+      {
+        "bezeichnung": "Bürgeramt Altstadt (Fahrzeugzulassung möglich, nur mit Termin)",
+        "strasse": "Marktplatz 10",
+        "plz": "69117",
+        "ort": "Heidelberg",
+        "quelle": "https://www.heidelberg.de/-/Behoerdenwegweiser/buergeramt-altstadt-stadt-heidelberg/oe6017210"
+      },
+      {
+        "bezeichnung": "Bürgeramt Boxberg/Emmertsgrund (Fahrzeugzulassung möglich, nur mit Termin)",
+        "strasse": "Emmertsgrundpassage 17",
+        "plz": "69126",
+        "ort": "Heidelberg",
+        "quelle": "https://www.heidelberg.de/-/Behoerdenwegweiser/buergeramt-boxbergemmertsgrund-stadt-heidelberg/oe6017426"
+      },
+      {
+        "bezeichnung": "Bürgeramt Handschuhsheim (Fahrzeugzulassung möglich, nur mit Termin)",
+        "strasse": "Dossenheimer Landstr. 13",
+        "plz": "69121",
+        "ort": "Heidelberg",
+        "quelle": "https://www.heidelberg.de/-/Behoerdenwegweiser/buergeramt-handschuhsheim-stadt-heidelberg/oe6017442"
+      },
+      {
+        "bezeichnung": "Bürgeramt Kirchheim (Fahrzeugzulassung möglich, nur mit Termin)",
+        "strasse": "Schwetzinger Str. 20",
+        "plz": "69124",
+        "ort": "Heidelberg",
+        "quelle": "https://www.heidelberg.de/-/Behoerdenwegweiser/buergeramt-kirchheim-stadt-heidelberg/oe6002848"
+      },
+      {
+        "bezeichnung": "Bürgeramt Mitte – Bahnstadt, Bergheim, Südstadt, Weststadt (Fahrzeugzulassung möglich, nur mit Termin)",
+        "strasse": "Bergheimer Str. 69",
+        "plz": "69115",
+        "ort": "Heidelberg",
+        "quelle": "https://www.heidelberg.de/-/Behoerdenwegweiser/buergeramt-mitte-bahnstadt-bergheim-suedstadt-weststadt-stadt-heidelberg/oe6012684"
+      },
+      {
+        "bezeichnung": "Bürgeramt Neuenheim (Fahrzeugzulassung möglich, nur mit Termin)",
+        "strasse": "Rahmengasse 21",
+        "plz": "69120",
+        "ort": "Heidelberg",
+        "quelle": "https://www.heidelberg.de/-/Behoerdenwegweiser/buergeramt-neuenheim-stadt-heidelberg/oe6012696"
+      },
+      {
+        "bezeichnung": "Bürgeramt Pfaffengrund (Fahrzeugzulassung möglich, nur mit Termin)",
+        "strasse": "Am Markt 21",
+        "plz": "69123",
+        "ort": "Heidelberg",
+        "quelle": "https://www.heidelberg.de/-/Behoerdenwegweiser/buergeramt-pfaffengrund-stadt-heidelberg/oe6012797"
+      },
+      {
+        "bezeichnung": "Bürgeramt Rohrbach (Fahrzeugzulassung möglich, nur mit Termin)",
+        "strasse": "Seckenheimer Gässchen 1",
+        "plz": "69126",
+        "ort": "Heidelberg",
+        "quelle": "https://www.heidelberg.de/-/Behoerdenwegweiser/buergeramt-rohrbach-stadt-heidelberg/oe6012805"
+      },
+      {
+        "bezeichnung": "Bürgeramt Wieblingen (Fahrzeugzulassung möglich, nur mit Termin)",
+        "strasse": "Mannheimer Str. 259",
+        "plz": "69123",
+        "ort": "Heidelberg",
+        "quelle": "https://www.heidelberg.de/-/Behoerdenwegweiser/buergeramt-wieblingen-stadt-heidelberg/oe6012808"
+      },
+      {
+        "bezeichnung": "Bürgeramt Ziegelhausen/Schlierbach (Fahrzeugzulassung möglich, nur mit Termin)",
+        "strasse": "Kleingemünder Str. 18",
+        "plz": "69118",
+        "ort": "Heidelberg",
+        "quelle": "https://www.heidelberg.de/-/Behoerdenwegweiser/buergeramt-ziegelhausenschlierbach-stadt-heidelberg/oe6009133"
+      }
+    ],
+    "website": {
+      "url": "https://www.heidelberg.de/hd/-/Behoerdenwegweiser/kfz-zulassungen/oe6015203",
+      "quelle": "https://www.heidelberg.de/hd/-/Behoerdenwegweiser/kfz-zulassungen/oe6015203"
+    },
+    "terminUrl": {
+      "url": "https://tevis-online.heidelberg.de/",
+      "quelle": "https://www.heidelberg.de/hd/-/Behoerdenwegweiser/kfz-zulassungen/oe6015203"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6015203&leistungId=99036020001000&p=082210",
+      "quelle": "https://www.heidelberg.de/hd/-/Behoerdenwegweiser/kfz-zulassungen/oe6015203"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [],
+      "hinweis": "Bitte vereinbaren Sie einen Termin unter termin.heidelberg.de oder telefonisch unter 5813333. Aus organisatorischen Gründen bevorzugen wir Kartenzahlung.",
+      "quelle": "https://www.heidelberg.de/hd/-/Behoerdenwegweiser/kfz-zulassungen/oe6015203"
+    },
+    "zustaendigkeit": {
+      "text": "Die Stadt Heidelberg ist als Stadtkreis Zulassungsbehörde für Fahrzeughalter mit Hauptwohnsitz, Betriebssitz bzw. Niederlassung in der Stadt Heidelberg (Zulassungsbehörde ist für einen Stadtkreis die Stadtverwaltung, für einen Landkreis das Landratsamt). Der Rhein-Neckar-Kreis führt ebenfalls das Kennzeichen HD, hat aber eigene Zulassungsbehörden des Landratsamts in Sinsheim, Weinheim und Wiesloch.",
+      "quelle": "https://www.heidelberg.de/-/Verfahrensbeschreibung/anmeldung-eines-neuwagens-neuzulassung-eines-fahrzeugs-beantragen/vbid6029013"
+    },
+    "kuerzel": [
+      {
+        "code": "HD",
+        "bedeutung": "Heidelberg (wird auch vom Rhein-Neckar-Kreis vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Fahrzeuge können laut Stadt nicht nur in der Kfz-Zulassungsstelle, sondern auch in den Heidelberger Bürgerämtern („kleine Rathäuser“) zugelassen werden; persönliche Vorsprache dort nur nach vorheriger Terminvereinbarung.",
+        "quelle": "https://www.heidelberg.de/HD/Rathaus/Buergeraemter.html"
+      },
+      {
+        "text": "Bei der Online-Terminvereinbarung im Kfz-Recht können maximal 3 Anliegen gewählt werden; bei mehr Anliegen direkt an die Kfz-Zulassungsstelle wenden (kfz-zulassungen@heidelberg.de).",
+        "quelle": "https://www.heidelberg.de/hd/-/Behoerdenwegweiser/kfz-zulassungen/oe6015203"
+      },
+      {
+        "text": "Aus organisatorischen Gründen wird Kartenzahlung bevorzugt.",
+        "quelle": "https://www.heidelberg.de/hd/-/Behoerdenwegweiser/kfz-zulassungen/oe6015203"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten.zeilen"
+    ]
+  },
+  {
+    "slug": "heilbronn",
+    "stadt": "Heilbronn",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Stadt Heilbronn, Bürgeramt – Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.heilbronn.de/rathaus/buergerservice-a-z/inhalt/kfz-zulassungsstelle.html",
+    "traeger": "Stadt Heilbronn (Stadtkreis)",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde der Stadt Heilbronn",
+        "strasse": "Lerchenstraße 40",
+        "plz": "74072",
+        "ort": "Heilbronn",
+        "quelle": "https://www.heilbronn.de/rathaus/buergerservice-a-z/inhalt/kfz-zulassungsstelle.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.heilbronn.de/rathaus/buergerservice-a-z/inhalt/kfz-zulassungsstelle.html",
+      "quelle": "https://www.heilbronn.de/rathaus/buergerservice-a-z/inhalt/kfz-zulassungsstelle.html"
+    },
+    "terminUrl": {
+      "url": "https://stadt-heilbronn.saas.smartcjm.com/m/KFZ-Zulassung/extern/calendar/?uid=e4bca3ac-2fe5-4ac5-86c5-85b05af38d2a&lang=de",
+      "quelle": "https://www.heilbronn.de/rathaus/buergerservice-a-z/inhalt/kfz-zulassungsstelle.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6040545&leistungId=99036020001000&p=081210",
+      "quelle": "https://www.heilbronn.de/rathaus/buergerservice-a-z/inhalt/online-dienste-der-kfz-zulassungsstelle-der-stadt-heilbronn.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [],
+      "hinweis": "Die städtische Zulassungsstelle kann nur mit einem im Voraus vereinbarten Termin besucht werden (Online-Terminvereinbarung oder Tel. 07131 56-3636).",
+      "quelle": "https://www.heilbronn.de/rathaus/buergerservice-a-z/inhalt/kfz-zulassungsstelle.html"
+    },
+    "zustaendigkeit": {
+      "text": "Die Kfz-Zulassungsstelle der Stadt Heilbronn ist für Einwohnerinnen und Einwohner der Stadt Heilbronn zuständig. Wer im Landkreis Heilbronn wohnt (ebenfalls Kennzeichen HN), wendet sich an das Landratsamt Heilbronn.",
+      "quelle": "https://www.heilbronn.de/rathaus/buergerservice-a-z/inhalt/kfz-zulassungsstelle.html"
+    },
+    "kuerzel": [
+      {
+        "code": "HN",
+        "bedeutung": "Heilbronn (wird auch vom Landkreis Heilbronn vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Kurzfristig frei werdende Termine schaltet die Zulassungsstelle morgens zwischen 7 und 7:30 Uhr frei.",
+        "quelle": "https://www.heilbronn.de/rathaus/buergerservice-a-z/inhalt/kfz-zulassungsstelle.html"
+      },
+      {
+        "text": "Die Nutzung der i-Kfz-/Online-Dienste ist laut Stadt deutlich kostengünstiger als dieselbe Leistung mit Termin vor Ort.",
+        "quelle": "https://www.heilbronn.de/rathaus/buergerservice-a-z/inhalt/kfz-zulassungsstelle.html"
+      },
+      {
+        "text": "Dokumente möglichst in Papierform mitbringen oder vorab per E-Mail (mit Termindatum und Terminnummer) an kfz-zulassung@heilbronn.de senden; pro Ausdruck eines digitalen Dokuments durch die Zulassungsstelle werden 1,00 € berechnet.",
+        "quelle": "https://www.heilbronn.de/rathaus/buergerservice-a-z/inhalt/kfz-zulassungsstelle.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten.zeilen"
+    ]
+  },
+  {
+    "slug": "pforzheim",
+    "stadt": "Pforzheim",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Kraftfahrzeug-Zulassungsbehörde der Stadt Pforzheim",
+    "behoerdeQuelle": "https://www.pforzheim.de/buerger/buergerservice/pf0/service-bw/organisationseinheiten/show/6002517-kraftfahrzeug-zulassungsbehoerde.html",
+    "traeger": "Stadt Pforzheim (Stadtkreis)",
+    "standorte": [
+      {
+        "bezeichnung": "Kraftfahrzeug-Zulassungsbehörde (Kfz-Zulassungsstelle Am Mühlkanal)",
+        "strasse": "Am Mühlkanal 8",
+        "plz": "75172",
+        "ort": "Pforzheim",
+        "quelle": "https://www.pforzheim.de/buerger/buergerservice/pf0/service-bw/organisationseinheiten/show/6002517-kraftfahrzeug-zulassungsbehoerde.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.pforzheim.de/buerger/buergerservice/pf0/service-bw/organisationseinheiten/show/6002517-kraftfahrzeug-zulassungsbehoerde.html",
+      "quelle": "https://www.pforzheim.de/buerger/buergerservice/pf0/service-bw/organisationseinheiten/show/6002517-kraftfahrzeug-zulassungsbehoerde.html"
+    },
+    "terminUrl": {
+      "url": "https://pforzheim.termine-reservieren.online/",
+      "quelle": "https://www.pforzheim.de/buerger/buergerservice/pf0/service-bw/organisationseinheiten/show/6002517-kraftfahrzeug-zulassungsbehoerde.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6002517&leistungId=99036020001000&p=082310",
+      "quelle": "https://www.pforzheim.de/buerger/buergerservice/pf0/service-bw/organisationseinheiten/show/6002517-kraftfahrzeug-zulassungsbehoerde.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30–11:30",
+        "Di 07:30–11:30",
+        "Mi 07:30–11:30",
+        "Do 07:30–11:30, 13:30–17:30",
+        "Fr 07:30–11:30"
+      ],
+      "hinweis": "Vorsprachen sind grundsätzlich nur nach vorheriger Terminvereinbarung (Online-Buchungssystem) möglich.",
+      "quelle": "https://www.pforzheim.de/buerger/buergerservice/pf0/service-bw/organisationseinheiten/show/6002517-kraftfahrzeug-zulassungsbehoerde.html"
+    },
+    "zustaendigkeit": {
+      "text": "Die Stadt Pforzheim ist als Stadtkreis Zulassungsbehörde für Fahrzeughalter mit Hauptwohnsitz, Betriebssitz bzw. Niederlassung in der Stadt Pforzheim (für einen Stadtkreis die Stadtverwaltung, für einen Landkreis das Landratsamt). Für Einwohner des Enzkreises (ebenfalls Kennzeichen PF) ist die Kfz-Zulassungsstelle des Landratsamts Enzkreis in Pforzheim, Güterstraße 30, zuständig.",
+      "quelle": "https://www.pforzheim.de/buerger/buergerservice/info/service-bw/leistungen/show/6019857-anmeldung-eines-neuwagens-neuzulassung-eines-fahrzeugs-beantragen.html"
+    },
+    "kuerzel": [
+      {
+        "code": "PF",
+        "bedeutung": "Pforzheim (wird auch vom Enzkreis vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Verfügbare Online-Termine werden vier Wochen im Voraus jeweils am Wochenbeginn freigeschaltet; durch Absagen werden auch im Laufe der Woche kurzfristig Termine frei.",
+        "quelle": "https://www.pforzheim.de/buerger/buergerservice/pf0/service-bw/organisationseinheiten/show/6002517-kraftfahrzeug-zulassungsbehoerde.html"
+      },
+      {
+        "text": "Neufahrzeug ohne Zulassungsbescheinigung Teil II, Importfahrzeug oder Ausfuhrkennzeichen: Das Fahrzeug muss zum Termin vorgeführt werden (Identifizierung nach § 14 Abs. 8 FZV); eine FIN-Prüfung durch Sachverständige wird nicht anerkannt.",
+        "quelle": "https://www.pforzheim.de/buerger/buergerservice/pf0/service-bw/organisationseinheiten/show/6002517-kraftfahrzeug-zulassungsbehoerde.html"
+      },
+      {
+        "text": "Die Bestätigungs-E-Mail der Terminbuchung ist an der Eingangskontrolle bereitzuhalten (auch auf dem Handy möglich).",
+        "quelle": "https://www.pforzheim.de/buerger/buergerservice/pf0/service-bw/organisationseinheiten/show/6002517-kraftfahrzeug-zulassungsbehoerde.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "ulm",
+    "stadt": "Ulm",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Kfz-Zulassungsstelle / Gemeinsame Zulassung des Alb-Donau-Kreises und der Stadt Ulm (Stadt Ulm, Bürgerdienste)",
+    "behoerdeQuelle": "https://www.ulm.de/global/datenpool/organisationseinheiten/stadt-ulm/b%C3%BCrgerdienste/kfz-zulassungsstelle,-f%C3%BChrerscheinwesen,-standesamt,-rentenstelle/kfz-zulassungsstelle-gemeinsame-zulassung-des-alb-donau-kreises-und-der-stadt-ulm",
+    "traeger": "Stadt Ulm (Stadtkreis), gemeinsame Zulassungsstelle mit dem Landratsamt Alb-Donau-Kreis",
+    "standorte": [
+      {
+        "bezeichnung": "Gemeinsame Kfz-Zulassung der Stadt Ulm und des Alb-Donau-Kreises (Hauptstelle)",
+        "strasse": "Schillerstraße 30",
+        "plz": "89077",
+        "ort": "Ulm",
+        "quelle": "https://www.zulassung-ulm.de/ihr-besuch-bei-uns/kontakt-oeffnungszeiten"
+      },
+      {
+        "bezeichnung": "Dienstleistungszentrum Eselsberg (nur für Wohnsitz im Stadtkreis Ulm)",
+        "strasse": "Stifterweg 94",
+        "plz": "89075",
+        "ort": "Ulm",
+        "quelle": "https://www.zulassung-ulm.de/ihr-besuch-bei-uns/kontakt-oeffnungszeiten"
+      },
+      {
+        "bezeichnung": "Dienstleistungszentrum Söflingen (nur für Wohnsitz im Stadtkreis Ulm)",
+        "strasse": "Klosterhof 14",
+        "plz": "89077",
+        "ort": "Ulm",
+        "quelle": "https://www.zulassung-ulm.de/ihr-besuch-bei-uns/kontakt-oeffnungszeiten"
+      },
+      {
+        "bezeichnung": "Dienstleistungszentrum Wiblingen (nur für Wohnsitz im Stadtkreis Ulm)",
+        "strasse": "Buchauer Straße 12",
+        "plz": "89079",
+        "ort": "Ulm-Wiblingen",
+        "quelle": "https://www.zulassung-ulm.de/ihr-besuch-bei-uns/kontakt-oeffnungszeiten"
+      },
+      {
+        "bezeichnung": "Dienstleistungszentrum Böfingen (nur für Wohnsitz im Stadtkreis Ulm)",
+        "strasse": "Haslacher Weg 93",
+        "plz": "89075",
+        "ort": "Ulm",
+        "quelle": "https://www.zulassung-ulm.de/ihr-besuch-bei-uns/kontakt-oeffnungszeiten"
+      },
+      {
+        "bezeichnung": "Ortsverwaltung Gögglingen/Donaustetten (nur für Wohnsitz im Stadtkreis Ulm, Termin vorab)",
+        "strasse": "Riedlenstraße 16",
+        "plz": "89079",
+        "ort": "Ulm",
+        "quelle": "https://www.zulassung-ulm.de/ihr-besuch-bei-uns/kontakt-oeffnungszeiten"
+      },
+      {
+        "bezeichnung": "Ortsverwaltung Einsingen (nur für Wohnsitz im Stadtkreis Ulm)",
+        "strasse": "Katharinenstraße 1",
+        "plz": "89079",
+        "ort": "Ulm",
+        "quelle": "https://www.zulassung-ulm.de/ihr-besuch-bei-uns/kontakt-oeffnungszeiten"
+      }
+    ],
+    "website": {
+      "url": "https://www.zulassung-ulm.de",
+      "quelle": "https://www.ulm.de/global/datenpool/organisationseinheiten/stadt-ulm/b%C3%BCrgerdienste/kfz-zulassungsstelle,-f%C3%BChrerscheinwesen,-standesamt,-rentenstelle/kfz-zulassungsstelle-gemeinsame-zulassung-des-alb-donau-kreises-und-der-stadt-ulm"
+    },
+    "terminUrl": {
+      "url": "https://lra-alb-donau-kreis.saas.smartcjm.com/m/abh-fs/extern/calendar/?uid=b7fba065-5e7d-405f-90bb-bc7c6dabf79e",
+      "quelle": "https://www.zulassung-ulm.de/ihr-besuch-bei-uns/kontakt-oeffnungszeiten"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6010006&leistungId=99036020001000&p=084210",
+      "quelle": "https://www.zulassung-ulm.de/zulassung/onlineportal-i-kfz"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Besuchszeit Schillerstraße 30 (ohne Termin): Mo 08:00–12:30 und 14:00–16:00 Uhr",
+        "Di 08:00–12:30 Uhr",
+        "Mi 08:00–12:30 Uhr",
+        "Do 14:00–17:30 Uhr",
+        "Fr 08:00–12:30 Uhr",
+        "Servicezeit (nur mit vorheriger Terminvereinbarung): Di 14:00–16:00 Uhr, Do 08:00–12:30 Uhr"
+      ],
+      "hinweis": "Wir sind wieder ohne Termin für Sie erreichbar. Kommen Sie einfach zu den folgenden Öffnungszeiten in die Schillerstraße 30. Termine je nach Kapazität in den Servicezeiten. Dienstleistungszentren und Ortsverwaltungen haben eigene Zeiten.",
+      "quelle": "https://www.ulm.de/global/datenpool/organisationseinheiten/stadt-ulm/b%C3%BCrgerdienste/kfz-zulassungsstelle,-f%C3%BChrerscheinwesen,-standesamt,-rentenstelle/kfz-zulassungsstelle-gemeinsame-zulassung-des-alb-donau-kreises-und-der-stadt-ulm"
+    },
+    "zustaendigkeit": {
+      "text": "Gemeinsame Zulassungsstelle für Kundinnen und Kunden der Stadt Ulm und des Alb-Donau-Kreises (beide Kennzeichen UL). Für Kundinnen und Kunden mit Hauptwohnsitz im Stadtkreis Ulm stehen zusätzlich die Dienstleistungszentren im Stadtgebiet und die Ortsverwaltungen in Donaustetten und Einsingen zur Verfügung; die Außenstellen Ehingen und Langenau sind nur für Einwohner des Alb-Donau-Kreises.",
+      "quelle": "https://www.zulassung-ulm.de/ihr-besuch-bei-uns/kontakt-oeffnungszeiten"
+    },
+    "kuerzel": [
+      {
+        "code": "UL",
+        "bedeutung": "Ulm (wird auch vom Alb-Donau-Kreis vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "An der Hauptstelle Schillerstraße 30 ist ein Besuch zu den Besuchszeiten ohne Termin möglich (es kann zu längeren Wartezeiten kommen); Termine gibt es nur in den Servicezeiten.",
+        "quelle": "https://www.zulassung-ulm.de/startseite"
+      },
+      {
+        "text": "Online-Zulassung (i-Kfz) und Wunschkennzeichen laufen über getrennte Portale für die Stadt Ulm und den Alb-Donau-Kreis; Kunden aus dem Stadtgebiet wählen den Link „Stadt Ulm“.",
+        "quelle": "https://www.zulassung-ulm.de/zulassung/onlineportal-i-kfz"
+      },
+      {
+        "text": "SEPA-Mandat und Vollmachten müssen handschriftlich unterschrieben sein; elektronische Unterschriften sind im analogen Verfahren nicht gültig.",
+        "quelle": "https://www.zulassung-ulm.de/startseite"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "baden-baden",
+    "stadt": "Baden-Baden",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Stadt Baden-Baden, Abteilung Straßenverkehr – KFZ-Zulassung",
+    "behoerdeQuelle": "https://www.baden-baden.de/site/Baden-Baden-Stadtbibliothek/node/-/3784170/kfz-zulassung/oe6061253",
+    "traeger": "Stadt Baden-Baden (Stadtkreis)",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassung",
+        "strasse": "Briegelackerstraße 21",
+        "plz": "76532",
+        "ort": "Baden-Baden",
+        "quelle": "https://www.baden-baden.de/site/Baden-Baden-Stadtbibliothek/node/-/3784170/kfz-zulassung/oe6061253"
+      }
+    ],
+    "website": {
+      "url": "https://www.baden-baden.de/site/Baden-Baden-Stadtbibliothek/node/-/3784170/kfz-zulassung/oe6061253",
+      "quelle": "https://www.baden-baden.de/site/Baden-Baden-Stadtbibliothek/node/-/3784170/kfz-zulassung/oe6061253"
+    },
+    "terminUrl": {
+      "url": "https://termin-online-buchen.de/live/booking?cfid=000372000457",
+      "quelle": "https://www.baden-baden.de/site/Baden-Baden-Stadtbibliothek/node/-/3784186/anmeldung-eines-neuwagens-neuzulassung-eines-fahrzeugs-beantragen/vbid6029363"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6061253&leistungId=99036020001000&p=082110",
+      "quelle": "https://www.baden-baden.de/site/Baden-Baden-Stadtbibliothek/node/-/3784186/anmeldung-eines-neuwagens-neuzulassung-eines-fahrzeugs-beantragen/vbid6029363"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Ohne Terminvereinbarung: Di 08:00–12:00 Uhr, Do 14:00–17:30 Uhr (Annahmeschluss jeweils 30 Minuten vor Schließung)",
+        "Nur nach Terminvereinbarung: Mo 08:00–12:00 und 13:00–16:00 Uhr",
+        "Di 13:00–16:00 Uhr",
+        "Mi 08:00–12:00 und 13:00–16:00 Uhr",
+        "Do 08:00–12:00 Uhr",
+        "Fr 08:00–13:00 Uhr"
+      ],
+      "hinweis": "Außerhalb der Zeiten ohne Terminvereinbarung nur nach Terminvereinbarung.",
+      "quelle": "https://www.baden-baden.de/site/Baden-Baden-Stadtbibliothek/node/-/3784170/kfz-zulassung/oe6061253"
+    },
+    "zustaendigkeit": {
+      "text": "Die Stadt Baden-Baden ist als Stadtkreis Zulassungsbehörde für Fahrzeughalter mit Hauptwohnsitz, Betriebssitz bzw. Niederlassung in Baden-Baden (Zulassungsbehörde ist für einen Stadtkreis die Stadtverwaltung, für einen Landkreis das Landratsamt).",
+      "quelle": "https://www.baden-baden.de/site/Baden-Baden-Stadtbibliothek/node/-/3784186/anmeldung-eines-neuwagens-neuzulassung-eines-fahrzeugs-beantragen/vbid6029363"
+    },
+    "kuerzel": [
+      {
+        "code": "BAD",
+        "bedeutung": "Baden-Baden",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Vorsprache ohne Termin nur dienstags 08:00–12:00 Uhr und donnerstags 14:00–17:30 Uhr; Annahmeschluss jeweils 30 Minuten vor Schließung.",
+        "quelle": "https://www.baden-baden.de/site/Baden-Baden-Stadtbibliothek/node/-/3784170/kfz-zulassung/oe6061253"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "alb-donau-kreis",
+    "stadt": "Alb-Donau-Kreis",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Alb-Donau-Kreis – Gemeinsame KFZ-Zulassung des Alb-Donau-Kreises und der Stadt Ulm",
+    "behoerdeQuelle": "https://www.service-bw.de/zufi/organisationseinheiten/6011593",
+    "traeger": "Landkreis Alb-Donau-Kreis (Landratsamt), gemeinsame Zulassungsstelle mit der Stadt Ulm",
+    "standorte": [
+      {
+        "bezeichnung": "Gemeinsame Kfz-Zulassung der Stadt Ulm und des Alb-Donau-Kreises (Hauptstelle)",
+        "strasse": "Schillerstraße 30",
+        "plz": "89077",
+        "ort": "Ulm",
+        "quelle": "https://www.zulassung-ulm.de/ihr-besuch-bei-uns/kontakt-oeffnungszeiten"
+      },
+      {
+        "bezeichnung": "Außenstelle der Kfz-Zulassung in Ehingen (nur für Wohnsitz im Alb-Donau-Kreis)",
+        "strasse": "Hauptstraße 41",
+        "plz": "89584",
+        "ort": "Ehingen (Donau)",
+        "quelle": "https://www.zulassung-ulm.de/ihr-besuch-bei-uns/kontakt-oeffnungszeiten"
+      },
+      {
+        "bezeichnung": "Außenstelle der Kfz-Zulassung in Langenau (nur für Wohnsitz im Alb-Donau-Kreis)",
+        "strasse": "Kuftenstraße 19",
+        "plz": "89129",
+        "ort": "Langenau",
+        "quelle": "https://www.zulassung-ulm.de/ihr-besuch-bei-uns/kontakt-oeffnungszeiten"
+      }
+    ],
+    "website": {
+      "url": "https://www.zulassung-ulm.de",
+      "quelle": "https://www.service-bw.de/zufi/organisationseinheiten/6011593"
+    },
+    "terminUrl": {
+      "url": "https://lra-alb-donau-kreis.saas.smartcjm.com/m/abh-fs/extern/calendar/?uid=b7fba065-5e7d-405f-90bb-bc7c6dabf79e",
+      "quelle": "https://www.zulassung-ulm.de/ihr-besuch-bei-uns/kontakt-oeffnungszeiten"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6011593&leistungId=99036020001000&p=084250",
+      "quelle": "https://www.zulassung-ulm.de/zulassung/onlineportal-i-kfz"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Ulm, Schillerstraße 30: Mo 08:00–12:30 und 14:00–16:00 Uhr, Di/Mi/Fr 08:00–12:30 Uhr, Do 14:00–17:30 Uhr; nur mit vorheriger Terminvereinbarung: Di 14:00–16:00 Uhr, Do 08:00–12:30 Uhr",
+        "Ehingen, Hauptstraße 41: Mo/Di/Mi/Fr 08:00–12:30 Uhr, Do 14:00–17:30 Uhr; nur mit vorheriger Terminvereinbarung: Do 08:00–12:30 Uhr",
+        "Langenau, Kuftenstraße 19: Mo/Di/Mi/Fr 08:00–12:00 Uhr, Do 14:00–17:00 Uhr; nur mit vorheriger Terminvereinbarung: Mo 14:00–16:00 Uhr, Do 08:00–12:00 Uhr"
+      ],
+      "hinweis": "Laut Zulassungsstelle ist ein Besuch zu den Öffnungszeiten auch ohne Termin möglich (es kann zu längeren Wartezeiten kommen); in den gesondert genannten Zeiten nur mit vorheriger Terminvereinbarung.",
+      "quelle": "https://www.zulassung-ulm.de/ihr-besuch-bei-uns/kontakt-oeffnungszeiten"
+    },
+    "zustaendigkeit": {
+      "text": "Gemeinsame Zulassungsstelle für Kundinnen und Kunden des Alb-Donau-Kreises und der Stadt Ulm (beide Kennzeichen UL) in der Schillerstraße 30 in Ulm. Kundinnen und Kunden mit Hauptwohnsitz im Alb-Donau-Kreis können sich zudem an die Zulassungsstellen in Ehingen (Donau) und Langenau wenden; die Dienstleistungszentren und Ortsverwaltungen im Ulmer Stadtgebiet sind nur für Einwohner des Stadtkreises Ulm.",
+      "quelle": "https://www.zulassung-ulm.de/ihr-besuch-bei-uns/kontakt-oeffnungszeiten"
+    },
+    "kuerzel": [
+      {
+        "code": "UL",
+        "bedeutung": "Ulm (gemeinsam mit der Stadt Ulm)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Außenstellen in Ehingen (Donau) und Langenau stehen nur Kundinnen und Kunden mit Hauptwohnsitz im Alb-Donau-Kreis offen.",
+        "quelle": "https://www.zulassung-ulm.de/ihr-besuch-bei-uns/kontakt-oeffnungszeiten"
+      },
+      {
+        "text": "Für Kunden aus dem Alb-Donau-Kreis gibt es ein eigenes i-Kfz-Onlineportal und eine eigene Wunschkennzeichen-Reservierung (getrennt von der Stadt Ulm).",
+        "quelle": "https://www.zulassung-ulm.de/zulassung/onlineportal-i-kfz"
+      },
+      {
+        "text": "SEPA-Mandat und Vollmachten müssen handschriftlich unterschrieben sein; elektronische Unterschriften sind im analogen Verfahren nicht gültig.",
+        "quelle": "https://www.zulassung-ulm.de/startseite"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-biberach",
+    "stadt": "Landkreis Biberach",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Biberach, Amt für Bürgerdienste – Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.biberach.de/de/Service-Verwaltung/Das-Landratsamt/Unsere-aemter/Verkehrsamt/Sachgebiete/Sachgebiet?view=publish&item=level1&id=1047",
+    "traeger": "Landkreis Biberach (Landratsamt Biberach)",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Biberach (Hauptstelle)",
+        "strasse": "Rollinstraße 15",
+        "plz": "88400",
+        "ort": "Biberach",
+        "quelle": "https://www.biberach.de/de/Service-Verwaltung/Das-Landratsamt/Organigramm/Verwaltungssitz?view=publish&item=officeLocation&id=1034"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Laupheim (Außenstelle)",
+        "strasse": "Lange Straße 17",
+        "plz": "88471",
+        "ort": "Laupheim",
+        "quelle": "https://www.biberach.de/de/Service-Verwaltung/Das-Landratsamt/Organigramm/Verwaltungssitz?view=publish&item=officeLocation&id=1008"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Ochsenhausen (Außenstelle)",
+        "strasse": "Marktplatz 30",
+        "plz": "88416",
+        "ort": "Ochsenhausen",
+        "quelle": "https://www.biberach.de/de/Service-Verwaltung/Das-Landratsamt/Organigramm/Verwaltungssitz?view=publish&item=officeLocation&id=1007"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Riedlingen (Außenstelle, nicht barrierefrei)",
+        "strasse": "Krankenhausweg 3",
+        "plz": "88499",
+        "ort": "Riedlingen",
+        "quelle": "https://www.biberach.de/de/Service-Verwaltung/Das-Landratsamt/Organigramm/Verwaltungssitz?view=publish&item=officeLocation&id=1035"
+      }
+    ],
+    "website": {
+      "url": "https://www.biberach.de/de/Service-Verwaltung/Das-Landratsamt/Unsere-aemter/Verkehrsamt/Sachgebiete/Sachgebiet?view=publish&item=level1&id=1047",
+      "quelle": "https://www.biberach.de/de/Service-Verwaltung/Das-Landratsamt/Unsere-aemter/Verkehrsamt/Sachgebiete/Sachgebiet?view=publish&item=level1&id=1047"
+    },
+    "terminUrl": {
+      "url": "https://lk-biberach.saas.smartcjm.com/m/zulassung/extern/calendar/?uid=249fbc52-49e4-4d33-9002-881b273134dc",
+      "quelle": "https://www.biberach.de/de/Service-Verwaltung/Das-Landratsamt/Unsere-aemter/Verkehrsamt/Sachgebiete/Sachgebiet?view=publish&item=level1&id=1047"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6059361&leistungId=99036020001000&p=084260",
+      "quelle": "https://www.biberach.de/de/Service-Verwaltung/Das-Landratsamt/Unsere-aemter/Verkehrsamt/Sachgebiete/Sachgebiet?view=publish&item=level1&id=1047"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Biberach, Rollinstraße 15: Mo 07:30–15:30 Uhr, Di 07:30–12:00 Uhr, Mi 07:30–17:00 Uhr, Do 07:30–14:00 Uhr, Fr 07:30–12:00 Uhr",
+        "Laupheim: Mo 08:00–13:00 Uhr, Di 08:00–12:00 Uhr, Mi 08:00–12:00 und 14:00–17:00 Uhr, Do 08:00–12:00 Uhr, Fr 08:00–12:00 Uhr",
+        "Ochsenhausen: Mo 08:00–13:00 Uhr, Di 08:00–12:00 Uhr, Mi 08:00–12:00 und 14:00–17:00 Uhr, Do 08:00–12:00 Uhr, Fr 08:00–12:00 Uhr",
+        "Riedlingen: Mo 08:00–14:00 Uhr, Di–Fr 08:00–12:00 Uhr"
+      ],
+      "hinweis": "Termine über die Online-Terminreservierung des Landratsamts (für Personen ohne Internetzugang telefonisch); für Außerbetriebsetzungen (Abmeldungen) und Adressänderungen ist kein Termin nötig, sofern nicht mehrere Fahrzeuge betroffen sind.",
+      "quelle": "https://www.biberach.de/de/Service-Verwaltung/Das-Landratsamt/Organigramm/Verwaltungssitz?view=publish&item=officeLocation&id=1034"
+    },
+    "zustaendigkeit": {
+      "text": "Das Landratsamt Biberach ist Zulassungsbehörde für Fahrzeughalter mit Hauptwohnsitz, Betriebssitz bzw. Niederlassung im Landkreis Biberach (Zulassungsbehörde ist für einen Landkreis das Landratsamt); Zulassungen sind an der Hauptstelle Biberach und den Außenstellen Laupheim, Ochsenhausen und Riedlingen möglich.",
+      "quelle": "https://www.service-bw.de/zufi/leistungen/6029013"
+    },
+    "kuerzel": [
+      {
+        "code": "BC",
+        "bedeutung": "Biberach",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Für Außerbetriebsetzungen (Abmeldungen) und Adressänderungen wird kein Termin benötigt, sofern dies nicht mehrere Fahrzeuge betrifft.",
+        "quelle": "https://www.biberach.de/de/Service-Verwaltung/Das-Landratsamt/Unsere-aemter/Verkehrsamt/Sachgebiete/Sachgebiet?view=publish&item=level1&id=1047"
+      },
+      {
+        "text": "Anmeldung zum Termin mit der per E-Mail mitgeteilten Termin-Nummer ca. 5 Minuten vorher am Check-In-Terminal; Aufruf erfolgt über den Bildschirm im Wartebereich.",
+        "quelle": "https://www.biberach.de/de/Service-Verwaltung/Das-Landratsamt/Unsere-aemter/Verkehrsamt/Sachgebiete/Sachgebiet?view=publish&item=level1&id=1047"
+      },
+      {
+        "text": "Die Zulassungsstelle in Riedlingen ist nicht barrierefrei.",
+        "quelle": "https://www.biberach.de/de/Service-Verwaltung/Das-Landratsamt/Organigramm/Verwaltungssitz?view=publish&item=officeLocation&id=1035"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-boeblingen",
+    "stadt": "Landkreis Böblingen",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Böblingen, Straßenverkehr – Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.lrabb.de/landratsamt/Dezernate+_+Aemter/Verkehr+und+Ordnung/zulassung",
+    "traeger": "Landkreis Böblingen (Landratsamt Böblingen)",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Böblingen (Hauptstandort)",
+        "strasse": "Parkstraße 16",
+        "plz": "71034",
+        "ort": "Böblingen",
+        "quelle": "https://www.lrabb.de/landratsamt/Dezernate+_+Aemter/Verkehr+und+Ordnung/zulassung"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Herrenberg (Außenstelle)",
+        "strasse": "Berliner Str. 1",
+        "plz": "71083",
+        "ort": "Herrenberg",
+        "quelle": "https://www.lrabb.de/landratsamt/Dezernate+_+Aemter/Verkehr+und+Ordnung/zulassung"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Leonberg (Außenstelle)",
+        "strasse": "Rutesheimer Str. 50/8",
+        "plz": "71229",
+        "ort": "Leonberg",
+        "quelle": "https://www.lrabb.de/landratsamt/Dezernate+_+Aemter/Verkehr+und+Ordnung/zulassung"
+      }
+    ],
+    "website": {
+      "url": "https://www.lrabb.de/landratsamt/Dezernate+_+Aemter/Verkehr+und+Ordnung/zulassung",
+      "quelle": "https://www.lrabb.de/landratsamt/Dezernate+_+Aemter/Verkehr+und+Ordnung/zulassung"
+    },
+    "terminUrl": {
+      "url": "https://lra-boeblingen.saas.smartcjm.com/m/strassenverkehrsamt/extern/calendar/?uid=71cbaa2f-5adf-4c75-ad5a-242b6fed5057",
+      "quelle": "https://www.lrabb.de/landratsamt/Dezernate+_+Aemter/Verkehr+und+Ordnung/zulassung"
+    },
+    "ikfzUrl": {
+      "url": "http://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6016971&leistungId=99036020001000&p=081150",
+      "quelle": "https://www.lrabb.de/landratsamt/Dezernate+_+Aemter/Verkehr+und+Ordnung/zulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Böblingen, Parkstraße 16: Mo–Fr 07:00–12:00 Uhr, Di und Do 13:00–18:00 Uhr",
+        "Herrenberg, Berliner Str. 1: Mi und Do 07:00–12:00 Uhr, Do 13:00–18:00 Uhr",
+        "Leonberg, Rutesheimer Str. 50/8: Mo, Di, Fr 07:00–12:00 Uhr, Di 13:00–18:00 Uhr"
+      ],
+      "hinweis": "Die Zulassungsstellen sind nur mit vorheriger Terminvereinbarung geöffnet; Vorsprache nur mit aktueller Terminvereinbarung und Bestätigung möglich.",
+      "quelle": "https://www.lrabb.de/landratsamt/Dezernate+_+Aemter/Verkehr+und+Ordnung/zulassung"
+    },
+    "zustaendigkeit": {
+      "text": "Das Landratsamt Böblingen ist Zulassungsbehörde für Fahrzeughalter mit Hauptwohnsitz, Betriebssitz bzw. Niederlassung im Landkreis Böblingen (Zulassungsbehörde ist für einen Landkreis das Landratsamt); Standorte in Böblingen, Herrenberg und Leonberg.",
+      "quelle": "https://www.service-bw.de/zufi/leistungen/6029013"
+    },
+    "kuerzel": [
+      {
+        "code": "BB",
+        "bedeutung": "Böblingen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "LEO",
+        "bedeutung": "Leonberg (Altkennzeichen, Ausgabe seit 25.02.2013)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termine sind derzeit maximal 14 Tage im Voraus buchbar; täglich werden neue Termine freigeschaltet.",
+        "quelle": "https://www.lrabb.de/landratsamt/Dezernate+_+Aemter/Verkehr+und+Ordnung/zulassung"
+      },
+      {
+        "text": "In den Zulassungsstellen Herrenberg und Leonberg ist ab 01.12.2025 nur noch bargeldlose Zahlung möglich.",
+        "quelle": "https://www.lrabb.de/landratsamt/Dezernate+_+Aemter/Verkehr+und+Ordnung/zulassung"
+      },
+      {
+        "text": "Die Gebühren für i-Kfz-Online-Vorgänge sind laut Landratsamt im Vergleich zur persönlichen Anmeldung bis zu 50 % günstiger.",
+        "quelle": "https://www.lrabb.de/landratsamt/Dezernate+_+Aemter/Verkehr+und+Ordnung/zulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "bodenseekreis",
+    "stadt": "Bodenseekreis",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Bodenseekreis – Kfz-Zulassung (Zulassungsbehörde Friedrichshafen mit Außenstellen Tettnang und Überlingen)",
+    "behoerdeQuelle": "https://www.bodenseekreis.de/verkehr-wirtschaft/kfz-zulassung/",
+    "traeger": "Bodenseekreis (Landratsamt Bodenseekreis)",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsbehörde Friedrichshafen (Hauptgebäude Kfz-Zulassung, Erdgeschoss)",
+        "strasse": "Glärnischstraße 1-3",
+        "plz": "88045",
+        "ort": "Friedrichshafen",
+        "quelle": "https://www.bodenseekreis.de/verkehr-wirtschaft/kfz-zulassung/"
+      },
+      {
+        "bezeichnung": "Zulassungsbehörde Tettnang (Außenstelle, altes Forstamt, nicht barrierefrei)",
+        "strasse": "Schützenstraße 5",
+        "plz": "88069",
+        "ort": "Tettnang",
+        "quelle": "https://www.bodenseekreis.de/verkehr-wirtschaft/kfz-zulassung/"
+      },
+      {
+        "bezeichnung": "Zulassungsbehörde Überlingen (Außenstelle)",
+        "strasse": "Rengoldshauser Straße 11",
+        "plz": "88662",
+        "ort": "Überlingen",
+        "quelle": "https://www.bodenseekreis.de/verkehr-wirtschaft/kfz-zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.bodenseekreis.de/verkehr-wirtschaft/kfz-zulassung/",
+      "quelle": "https://www.bodenseekreis.de/verkehr-wirtschaft/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://onlinetermine.bodenseekreis.de/m/glaernischstrasse/extern/calendar/?uid=2113f380-ef3c-4855-b04a-32a18cd02530",
+      "quelle": "https://www.bodenseekreis.de/verkehr-wirtschaft/kfz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6016972&leistungId=99036020001000&p=084350",
+      "quelle": "https://www.bodenseekreis.de/verkehr-wirtschaft/kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Friedrichshafen: Mo und Do 07:30–17:00 Uhr, Di, Mi und Fr 07:30–13:00 Uhr",
+        "Tettnang: Mo–Fr 07:30–12:00 Uhr",
+        "Überlingen: Mo–Fr 07:30–12:00 Uhr, Di zusätzlich 14:00–17:00 Uhr"
+      ],
+      "hinweis": "Für den Besuch der Kfz-Zulassungsstellen in Friedrichshafen, Überlingen und Tettnang ist eine Terminvereinbarung zwingend erforderlich; Vorsprache nur mit aktueller Terminvereinbarung und -bestätigung möglich.",
+      "quelle": "https://www.bodenseekreis.de/verkehr-wirtschaft/kfz-zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Das Landratsamt Bodenseekreis ist Zulassungsbehörde für Fahrzeughalter mit Hauptwohnsitz, Betriebssitz bzw. Niederlassung im Bodenseekreis (Zulassungsbehörde ist für einen Landkreis das Landratsamt); Zulassungsstellen in Friedrichshafen, Tettnang und Überlingen.",
+      "quelle": "https://www.service-bw.de/zufi/leistungen/6029013"
+    },
+    "kuerzel": [
+      {
+        "code": "FN",
+        "bedeutung": "Friedrichshafen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "TT",
+        "bedeutung": "Tettnang (Altkennzeichen, Ausgabe seit 03.02.2020)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ÜB",
+        "bedeutung": "Überlingen (Altkennzeichen, Ausgabe seit 03.02.2020; wird auch in den Landkreisen Ravensburg und Sigmaringen vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "In den Außenstellen Tettnang und Überlingen ist keine Barzahlung möglich – bitte EC- oder Kreditkarte nutzen.",
+        "quelle": "https://www.bodenseekreis.de/verkehr-wirtschaft/kfz-zulassung/"
+      },
+      {
+        "text": "Die Außenstelle Tettnang (altes Forstamt) ist nicht barrierefrei.",
+        "quelle": "https://www.bodenseekreis.de/verkehr-wirtschaft/kfz-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-breisgau-hochschwarzwald",
+    "stadt": "Landkreis Breisgau-Hochschwarzwald",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Breisgau-Hochschwarzwald – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.service-bw.de/zufi/organisationseinheiten/6017344",
+    "traeger": "Landkreis Breisgau-Hochschwarzwald (Landratsamt)",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Landratsamt Breisgau-Hochschwarzwald (Freiburg)",
+        "strasse": "Stadtstraße 2",
+        "plz": "79104",
+        "ort": "Freiburg im Breisgau",
+        "quelle": "https://www.breisgau-hochschwarzwald.de/Start/Wirtschaft+_+Mobilitaet/Standorte.html"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Müllheim",
+        "strasse": "Bismarckstraße 3",
+        "plz": "79379",
+        "ort": "Müllheim",
+        "quelle": "https://www.breisgau-hochschwarzwald.de/Start/Wirtschaft+_+Mobilitaet/Standorte.html"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Titisee-Neustadt",
+        "strasse": "Goethestraße 7",
+        "plz": "79822",
+        "ort": "Titisee-Neustadt",
+        "quelle": "https://www.breisgau-hochschwarzwald.de/Start/Wirtschaft+_+Mobilitaet/Standorte.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.breisgau-hochschwarzwald.de/Start/Wirtschaft+_+Mobilitaet/Kfz_Zulassungsstelle.html",
+      "quelle": "https://www.breisgau-hochschwarzwald.de/Start/Wirtschaft+_+Mobilitaet/Kfz_Zulassungsstelle.html"
+    },
+    "terminUrl": {
+      "url": "https://qwebbook.lkbh.net/qmaticwebbooking/#/preselect/servicegroups/zl",
+      "quelle": "https://www.breisgau-hochschwarzwald.de/Start/Wirtschaft+_+Mobilitaet/Terminreservierung.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6017344&leistungId=99036020001000&p=083150",
+      "quelle": "https://www.breisgau-hochschwarzwald.de/Start/Wirtschaft+_+Mobilitaet/online-neuzulassung.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Freiburg (Terminzeiten): Mo, Di, Do 07:00–12:00 und 13:00–16:00 Uhr, Mi 07:00–12:00 und 13:30–18:00 Uhr, Fr 07:00–12:00 Uhr; Kassenzeiten für Barzahlung: Mo–Fr 07:30–12:15 Uhr, Mi zusätzlich 13:45–18:00 Uhr",
+        "Müllheim (Terminzeiten): Mo, Di, Do 07:00–12:00 und 13:00–16:00 Uhr, Mi 07:00–12:00 und 13:30–18:00 Uhr, Fr 07:00–12:00 Uhr",
+        "Titisee-Neustadt (Terminzeiten): Mo, Di, Do 07:30–12:00 und 13:00–16:00 Uhr, Mi 07:30–12:00 und 13:30–18:00 Uhr, Fr 07:30–12:00 Uhr"
+      ],
+      "hinweis": "Termine sind immer erforderlich und können nur online reserviert werden.",
+      "quelle": "https://www.breisgau-hochschwarzwald.de/Start/Wirtschaft+_+Mobilitaet/Standorte.html"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig für alle Zulassungs-, Um- und Abmeldeverfahren für die 50 Gemeinden des Landkreises Breisgau-Hochschwarzwald. Wer in der Stadt Freiburg oder einem Teilort der Stadt Freiburg wohnt (ebenfalls Kennzeichen FR), ist nicht beim Landkreis, sondern beim Bürgerservice der Stadt Freiburg im Rathaus im Stühlinger, Fehrenbachallee 12, zuständig.",
+      "quelle": "https://www.breisgau-hochschwarzwald.de/Start/Wirtschaft+_+Mobilitaet/Standorte.html"
+    },
+    "kuerzel": [
+      {
+        "code": "FR",
+        "bedeutung": "Freiburg (wird auch von der Stadt Freiburg im Breisgau vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MÜL",
+        "bedeutung": "Müllheim (Altkennzeichen, Ausgabe seit 02.10.2023)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "NEU",
+        "bedeutung": "Neustadt (Titisee-Neustadt; Altkennzeichen, Ausgabe seit 02.10.2023)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Für nicht angetretene Termine wird eine Gebühr von 12,80 € je angefangene Viertelstunde erhoben; Termine können bis 90 Minuten vorher über den Link in der Benachrichtigungs-E-Mail storniert werden.",
+        "quelle": "https://www.breisgau-hochschwarzwald.de/Start/Wirtschaft+_+Mobilitaet/Terminreservierung.html"
+      },
+      {
+        "text": "In Müllheim und Titisee-Neustadt ist nur bargeldlose Zahlung möglich (Debitkarte, Kreditkarte, Mobiltelefon); in Freiburg Barzahlung nur zu den Kassenzeiten.",
+        "quelle": "https://www.breisgau-hochschwarzwald.de/Start/Wirtschaft+_+Mobilitaet/Standorte.html"
+      },
+      {
+        "text": "Termine werden regelmäßig für die nächsten 60 Tage freigeschaltet; bei frei gewordenen Kapazitäten kommen im Laufe des Tages weitere hinzu.",
+        "quelle": "https://www.breisgau-hochschwarzwald.de/Start/Wirtschaft+_+Mobilitaet/Terminreservierung.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-calw",
+    "stadt": "Landkreis Calw",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Calw – Zulassungsstelle (Amt Ordnung, Recht und Fahrzeugwesen)",
+    "behoerdeQuelle": "https://www.kreis-calw.de/Service-Verwaltung/Service/Dienstleistungen/Kraftfahrzeug-Ummeldung-nach-Umzug-beantragen.php?ModID=10&FID=2442.125.1&call=0&ort=0&sfwort=0",
+    "traeger": "Landkreis Calw (Landratsamt Calw)",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Calw",
+        "strasse": "Vogteistr. 42-46",
+        "plz": "75365",
+        "ort": "Calw",
+        "quelle": "https://www.kreis-calw.de/Service-Verwaltung/Verwaltung/Dezernate-und-Abteilungen/Dezernat-5-Infrastruktur-und-Ordnung/Ordnung-und-Verkehr/F%C3%BChrerscheinstelle/%C3%96ffnungszeiten-Kfz-und-F%C3%BChrerscheinstelle"
+      },
+      {
+        "bezeichnung": "Außenstelle Nagold",
+        "strasse": "Freudenstädter Straße 30",
+        "plz": "72202",
+        "ort": "Nagold",
+        "quelle": "https://www.kreis-calw.de/Service-Verwaltung/Verwaltung/Dezernate-und-Abteilungen/Dezernat-5-Infrastruktur-und-Ordnung/Ordnung-und-Verkehr/F%C3%BChrerscheinstelle/%C3%96ffnungszeiten-Kfz-und-F%C3%BChrerscheinstelle"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-calw.de/KFZ-Zulassungsstelle",
+      "quelle": "https://www.kreis-calw.de/KFZ-Zulassungsstelle"
+    },
+    "terminUrl": {
+      "url": "https://lra-calw.saas.smartcjm.com/m/sva/extern/calendar/?uid=3ecc8c03-9a74-43ca-9628-0008cd1c0b54",
+      "quelle": "https://www.kreis-calw.de/Service-Verwaltung/Service/Terminvereinbarungen/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6032459&leistungId=99036020001000&p=082350",
+      "quelle": "https://www.kreis-calw.de/KFZ-Zulassungsstelle"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Calw: Mo 8:00–13:00 und 14:00–16:00 Uhr, Di 7:30–12:00 Uhr, Mi 7:30–12:00 Uhr, Do 8:00–12:00 und 13:30–18:00 Uhr, Fr 7:30–12:00 Uhr",
+        "Nagold: Mo 8:00–13:00 Uhr, Di 7:30–12:00 Uhr, Mi 7:30–12:00 Uhr, Do 8:00–12:00 und 13:30–18:00 Uhr, Fr 7:30–12:00 Uhr"
+      ],
+      "hinweis": null,
+      "quelle": "https://www.kreis-calw.de/Service-Verwaltung/Verwaltung/Dezernate-und-Abteilungen/Dezernat-5-Infrastruktur-und-Ordnung/Ordnung-und-Verkehr/F%C3%BChrerscheinstelle/%C3%96ffnungszeiten-Kfz-und-F%C3%BChrerscheinstelle"
+    },
+    "zustaendigkeit": {
+      "text": "Das Landratsamt Calw ist Zulassungsbehörde für Fahrzeughalter mit Hauptwohnsitz, Betriebssitz oder Niederlassung im Landkreis Calw (Zulassungsbehörde ist für einen Landkreis das Landratsamt); Zulassung vor Ort in Calw oder in der Außenstelle Nagold.",
+      "quelle": "https://www.kreis-calw.de/Service-Verwaltung/Service/Dienstleistungen/Kraftfahrzeug-Ummeldung-nach-Umzug-beantragen.php?ModID=10&FID=2442.125.1&call=0&ort=0&sfwort=0"
+    },
+    "kuerzel": [
+      {
+        "code": "CW",
+        "bedeutung": "Calw",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Erledigt eine dritte Person die Zulassung, werden Vollmacht und Kopie des Personalausweises des Fahrzeughalters verlangt; das SEPA-Lastschriftmandat muss in jedem Fall vom Kontoinhaber selbst unterschrieben werden.",
+        "quelle": "https://www.kreis-calw.de/KFZ-Zulassungsstelle"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten.hinweis"
+    ]
+  },
+  {
+    "slug": "landkreis-emmendingen",
+    "stadt": "Landkreis Emmendingen",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Emmendingen, Straßenverkehrsamt – Fachbereich Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-emmendingen.de/sicherheit-ordnung/strassenverkehrsamt-kfz-zulassung/kfz-zulassungsstelle",
+    "traeger": "Landkreis Emmendingen (Landratsamt Emmendingen)",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle, Haus am Festplatz",
+        "strasse": "Schwarzwaldstraße 4",
+        "plz": "79312",
+        "ort": "Emmendingen",
+        "quelle": "https://www.landkreis-emmendingen.de/verwaltung-service/formulare/kfz-zulassungsstelle"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-emmendingen.de/sicherheit-ordnung/strassenverkehrsamt-kfz-zulassung/kfz-zulassungsstelle",
+      "quelle": "https://www.landkreis-emmendingen.de/sicherheit-ordnung/strassenverkehrsamt-kfz-zulassung/kfz-zulassungsstelle"
+    },
+    "terminUrl": {
+      "url": "https://lwa-emmendingen.saas.smartcjm.com/m/svaemmendingen/extern/calendar/?uid=22a41bb1-9b43-4440-8a4a-4aa90f9e2ed4&wsid=4b960ec4-11e7-4883-a18b-3a8978be1025&lang=de&set_lang_ui=de",
+      "quelle": "https://www.landkreis-emmendingen.de/sicherheit-ordnung/strassenverkehrsamt-kfz-zulassung/kfz-zulassungsstelle"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6004146&leistungId=99036020001000&p=083160",
+      "quelle": "https://www.landkreis-emmendingen.de/verwaltung-service/online-dienste/fahrzeug-ab-/-anmelden"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo, Di, Mi 07:30–12:00 Uhr",
+        "Do 07:30–12:00 Uhr und 14:00–18:00 Uhr",
+        "Fr 07:30–12:00 Uhr"
+      ],
+      "hinweis": "Ein Besuch des Fachbereichs KFZ-Zulassungsstelle ist nur mit einem im Voraus vereinbarten bzw. gebuchten Termin möglich.",
+      "quelle": "https://www.landkreis-emmendingen.de/sicherheit-ordnung/strassenverkehrsamt-kfz-zulassung/kfz-zulassungsstelle"
+    },
+    "zustaendigkeit": {
+      "text": "Das Landratsamt Emmendingen ist Zulassungsbehörde für Fahrzeughalter mit Hauptwohnsitz, Betriebssitz bzw. Niederlassung im Landkreis Emmendingen (Zulassungsbehörde ist für einen Landkreis das Landratsamt).",
+      "quelle": "https://www.service-bw.de/zufi/leistungen/6029013"
+    },
+    "kuerzel": [
+      {
+        "code": "EM",
+        "bedeutung": "Emmendingen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Das Servicetelefon 07641 451 9547 ist nur eingeschränkt erreichbar: Mo–Fr 07:30–12:00 Uhr und Mo–Do 14:00–15:30 Uhr.",
+        "quelle": "https://www.landkreis-emmendingen.de/sicherheit-ordnung/strassenverkehrsamt-kfz-zulassung/kfz-zulassungsstelle"
+      },
+      {
+        "text": "Bei Verlust eines Kennzeichenschildes muss das zweite Kennzeichen zur Entstempelung vorgelegt werden, da ein anderes Kennzeichen zugeteilt werden muss.",
+        "quelle": "https://www.landkreis-emmendingen.de/verwaltung-service/formulare/kfz-zulassungsstelle"
+      },
+      {
+        "text": "Bei abweichendem Kontoinhaber ist auf dem SEPA-Lastschriftmandat die Unterschrift von Kontoinhaber und Halter erforderlich.",
+        "quelle": "https://www.service-bw.de/zufi/organisationseinheiten/6004146"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

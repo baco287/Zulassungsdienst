@@ -1,0 +1,964 @@
+[
+  {
+    "slug": "landkreis-regen",
+    "stadt": "Landkreis Regen",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Regen – Zulassungsbehörde Regen",
+    "behoerdeQuelle": "https://www.bayernportal.de/dokumente/behoerde/031511468951/adressen",
+    "traeger": "Landkreis Regen",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Regen (Landratsamt Regen)",
+        "strasse": "Poschetsrieder Str. 16",
+        "plz": "94209",
+        "ort": "Regen",
+        "quelle": "https://www.bayernportal.de/dokumente/behoerde/031511468951/adressen"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Viechtach",
+        "strasse": "Mönchshofstr. 31",
+        "plz": "94234",
+        "ort": "Viechtach",
+        "quelle": "https://www.landkreis-regen.de/strasse-und-verkehr/kfz-zulassungsstelle/zulassungsstelle-viechtach/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-regen.de/strasse-und-verkehr/kfz-zulassungsstelle/",
+      "quelle": "https://www.landkreis-regen.de/strasse-und-verkehr/kfz-zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://termin.landkreis-regen.de/m/sva/extern/calendar/?uid=cbb08341-da87-49cc-9f6f-699c33509993",
+      "quelle": "https://www.landkreis-regen.de/online-behoerde/online-terminvergabe/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.landkreis-regen.de/wp-content/uploads/ikfz-service.html",
+      "quelle": "https://www.landkreis-regen.de/strasse-und-verkehr/kfz-zulassungsstelle/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Regen: Montag bis Freitag 07.30 – 12.00 Uhr",
+        "Regen zusätzlich: Dienstag 13.30 – 16.00 Uhr und Donnerstag 13.30 – 17.00 Uhr",
+        "Viechtach: Montag – Freitag 07.30 – 12.30 Uhr"
+      ],
+      "hinweis": "Annahmeschluss in Regen jeweils 30 Minuten vor Ende, in Viechtach um 12.00 Uhr; vorherige Terminvereinbarung (online) wird empfohlen",
+      "quelle": "https://www.landkreis-regen.de/strasse-und-verkehr/kfz-zulassungsstelle/oeffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Regen mit zwei Zulassungsstellen: Regen (Landratsamt) und Viechtach. Regen ist Kreisstadt – es gibt keine kreisfreie Stadt mit gleichem Kennzeichen.",
+      "quelle": "https://www.landkreis-regen.de/strasse-und-verkehr/kfz-zulassungsstelle/oeffnungszeiten/"
+    },
+    "kuerzel": [
+      {
+        "code": "REG",
+        "bedeutung": "Regen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "VIT",
+        "bedeutung": "Viechtach",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Halter mit Hauptwohn- oder Betriebssitz im Landkreis Regen können diverse Zulassungsvorgänge (u. a. Neu- und Gebrauchtzulassung, Umschreibung, Außerbetriebsetzung) laut Landratsamt Rottal-Inn auch bei der Zulassungsbehörde Rottal-Inn in Pfarrkirchen erledigen; das Fahrzeug erhält trotzdem ein Kennzeichen des Landkreises Regen.",
+        "quelle": "https://www.rottal-inn.de/buergerservice-formulare/strasse-verkehr/kfz-zulassungsstelle/"
+      },
+      {
+        "text": "Online-Auskunft, ob der Fahrzeugbrief (Zulassungsbescheinigung Teil II) bereits bei der Zulassungsstelle vorliegt.",
+        "quelle": "https://www.landkreis-regen.de/strasse-und-verkehr/kfz-zulassungsstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-rottal-inn",
+    "stadt": "Landkreis Rottal-Inn",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Rottal-Inn – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.rottal-inn.de/buergerservice-formulare/strasse-verkehr/kfz-zulassungsstelle/",
+    "traeger": "Landkreis Rottal-Inn",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Pfarrkirchen",
+        "strasse": "Industriestr. 18",
+        "plz": "84347",
+        "ort": "Pfarrkirchen",
+        "quelle": "https://www.rottal-inn.de/buergerservice-formulare/strasse-verkehr/kfz-zulassungsstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://www.rottal-inn.de/buergerservice-formulare/strasse-verkehr/kfz-zulassungsstelle/",
+      "quelle": "https://www.rottal-inn.de/buergerservice-formulare/strasse-verkehr/kfz-zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://zulassung-termine.rottal-inn.de/m/Zulassung/extern/calendar/?uid=3c1620bf-b887-4291-9604-6dd6677e1d68",
+      "quelle": "https://www.rottal-inn.de/buergerservice-formulare/strasse-verkehr/kfz-zulassungsstelle/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrrottalinn/bsp_ikfz_antragstellung/",
+      "quelle": "https://www.rottal-inn.de/buergerservice-formulare/strasse-verkehr/kfz-zulassungsstelle/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag bis Freitag: 08:00–12:00 Uhr",
+        "Montag und Donnerstag: 13:30–16:00 Uhr"
+      ],
+      "hinweis": "Um Wartezeiten zu vermeiden, wird eine vorherige Terminvereinbarung empfohlen; Termine können auch außerhalb der angegebenen Öffnungszeiten vereinbart werden",
+      "quelle": "https://www.rottal-inn.de/buergerservice-formulare/strasse-verkehr/kfz-zulassungsstelle/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Rottal-Inn (Hauptwohn- bzw. Betriebssitz im Landkreis). Zusätzlich können Halter aus den Kooperations-Zulassungsbezirken in Niederbayern bestimmte Vorgänge hier erledigen (siehe Besonderheiten); deren eigene Zuständigkeit bleibt bestehen.",
+      "quelle": "https://www.rottal-inn.de/buergerservice-formulare/strasse-verkehr/kfz-zulassungsstelle/"
+    },
+    "kuerzel": [
+      {
+        "code": "PAN",
+        "bedeutung": "Pfarrkirchen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "EG",
+        "bedeutung": "Eggenfelden",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GRI",
+        "bedeutung": "Griesbach (Bad Griesbach im Rottal)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "VIB",
+        "bedeutung": "Vilsbiburg (auch in den Landkreisen Landshut und Mühldorf a. Inn vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Kooperation in Niederbayern: Halter aus den Landkreisen Deggendorf, Dingolfing-Landau, Freyung-Grafenau, Kelheim, Landshut, Straubing-Bogen, Regen und Passau sowie den Städten Passau und Straubing können Zulassungen, Umschreibungen, Außerbetriebsetzungen, Wiederzulassungen sowie Änderungen von Kennzeichenart und Halter-/Fahrzeugdaten auch in Pfarrkirchen erledigen; sie erhalten immer ein Kennzeichen ihrer eigentlich zuständigen Behörde (nicht bei Ausnahmegenehmigungen oder Gebührenrückständen).",
+        "quelle": "https://www.rottal-inn.de/buergerservice-formulare/strasse-verkehr/kfz-zulassungsstelle/"
+      },
+      {
+        "text": "Online-Zulassung (i-Kfz) steht auch juristischen Personen offen.",
+        "quelle": "https://www.rottal-inn.de/buergerservice-formulare/strasse-verkehr/kfz-zulassungsstelle/"
+      },
+      {
+        "text": "Termine können auch außerhalb der angegebenen Öffnungszeiten vereinbart werden.",
+        "quelle": "https://www.rottal-inn.de/buergerservice-formulare/strasse-verkehr/kfz-zulassungsstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-straubing-bogen",
+    "stadt": "Landkreis Straubing-Bogen",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Straubing-Bogen – Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.landkreis-straubing-bogen.de/buergerservice/zulassungsbehoerde/",
+    "traeger": "Landkreis Straubing-Bogen",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle im Landratsamt Straubing-Bogen",
+        "strasse": "Leutnerstraße 15",
+        "plz": "94315",
+        "ort": "Straubing",
+        "quelle": "https://www.landkreis-straubing-bogen.de/buergerservice/zulassungsbehoerde/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-straubing-bogen.de/buergerservice/zulassungsbehoerde/",
+      "quelle": "https://www.landkreis-straubing-bogen.de/buergerservice/zulassungsbehoerde/"
+    },
+    "terminUrl": {
+      "url": "https://www.terminland.de/Straubing-Bogen/",
+      "quelle": "https://www.landkreis-straubing-bogen.de/buergerservice/zulassungsbehoerde/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.landkreis-straubing-bogen.de/buergerservice/zulassungsbehoerde/i-kfz-online-zulassung/",
+      "quelle": "https://www.landkreis-straubing-bogen.de/buergerservice/zulassungsbehoerde/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag bis Freitag 7:45 bis 11:30 Uhr",
+        "Montag 13:00 bis 15:30 Uhr",
+        "Dienstag 13:00 – 15:30 Uhr, nur KFZ-Zulassung mit Termin",
+        "Donnerstag 13:00 bis 16:30 Uhr"
+      ],
+      "hinweis": "Vorsprache auch ohne Termin zu den Öffnungszeiten möglich (Dienstagnachmittag nur mit Termin); Termine nur online, telefonische Terminvereinbarung nicht möglich",
+      "quelle": "https://www.landkreis-straubing-bogen.de/buergerservice/zulassungsbehoerde/"
+    },
+    "zustaendigkeit": {
+      "text": "Nur für Kunden mit Wohnsitz bzw. Firmensitz im Landkreis Straubing-Bogen (die erweiterte Zuständigkeit ist ausgesetzt). Die kreisfreie Stadt Straubing führt ebenfalls das Kennzeichen SR, ist aber ein eigener Zulassungsbezirk und gehört nicht dazu – auch wenn das Landratsamt in Straubing sitzt.",
+      "quelle": "https://www.landkreis-straubing-bogen.de/buergerservice/zulassungsbehoerde/"
+    },
+    "kuerzel": [
+      {
+        "code": "SR",
+        "bedeutung": "Straubing (auch von der kreisfreien Stadt Straubing vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BOG",
+        "bedeutung": "Bogen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MAL",
+        "bedeutung": "Mallersdorf (Mallersdorf-Pfaffenberg; auch im Landkreis Landshut vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Wunschkennzeichen sind derzeit vorab online zu reservieren.",
+        "quelle": "https://www.landkreis-straubing-bogen.de/buergerservice/zulassungsbehoerde/"
+      },
+      {
+        "text": "Mit Termin am Einlass anmelden: QR-Code aus der Terminbestätigung an der Stele im Eingangsbereich scannen; telefonische Terminvereinbarung ist nicht möglich.",
+        "quelle": "https://www.landkreis-straubing-bogen.de/buergerservice/zulassungsbehoerde/"
+      },
+      {
+        "text": "Während der Bauphase ist kein direkter Zugang zur Zulassungsstelle möglich – Haupteingang und Wartebereich in der Aula nutzen.",
+        "quelle": "https://www.landkreis-straubing-bogen.de/buergerservice/zulassungsbehoerde/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-amberg-sulzbach",
+    "stadt": "Landkreis Amberg-Sulzbach",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Amberg-Sulzbach – Zulassungswesen",
+    "behoerdeQuelle": "https://www.kreis-as.de/Sicherheit-Verkehr/Mobilit%C3%A4t/KfZ-Zulassung/",
+    "traeger": "Landkreis Amberg-Sulzbach",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungswesen (Außenstelle Beethovenstraße)",
+        "strasse": "Beethovenstraße 7",
+        "plz": "92224",
+        "ort": "Amberg",
+        "quelle": "https://www.kreis-as.de/Sicherheit-Verkehr/Mobilit%C3%A4t/KfZ-Zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-as.de/Sicherheit-Verkehr/Mobilit%C3%A4t/KfZ-Zulassung/",
+      "quelle": "https://www.kreis-as.de/Sicherheit-Verkehr/Mobilit%C3%A4t/KfZ-Zulassung/"
+    },
+    "terminUrl": null,
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrambergsulzbach/bsp_ikfz_antragstellung/",
+      "quelle": "https://www.kreis-as.de/Sicherheit-Verkehr/Mobilit%C3%A4t/KfZ-Zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag, Dienstag, Donnerstag 08:00 bis 16:00 Uhr",
+        "Mittwoch, Freitag 08:00 bis 12:00 Uhr"
+      ],
+      "hinweis": "Keine Terminvereinbarung mehr möglich – Zutritt ist während der regulären Öffnungszeiten möglich",
+      "quelle": "https://www.kreis-as.de/Sicherheit-Verkehr/Mobilit%C3%A4t/KfZ-Zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Amberg-Sulzbach; Zulassungen sind nur noch auf den Hauptwohnsitz möglich.",
+      "quelle": "https://www.kreis-as.de/Sicherheit-Verkehr/Mobilit%C3%A4t/KfZ-Zulassung/Allgemeine-Informationen/"
+    },
+    "kuerzel": [
+      {
+        "code": "AS",
+        "bedeutung": "Amberg, Sulzbach",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BUL",
+        "bedeutung": "Burglengenfeld (auch im Landkreis Schwandorf vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ESB",
+        "bedeutung": "Eschenbach (in der Oberpfalz; auch in anderen Landkreisen vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "NAB",
+        "bedeutung": "Nabburg (auch im Landkreis Schwandorf vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SUL",
+        "bedeutung": "Sulzbach-Rosenberg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Aktuelle Wartezeiten in der Zulassungsstelle sind online abrufbar (https://www.amberg-sulzbach.de/zulassung/aras.php).",
+        "quelle": "https://www.kreis-as.de/Sicherheit-Verkehr/Mobilit%C3%A4t/KfZ-Zulassung/"
+      },
+      {
+        "text": "Ohne gültige Hauptuntersuchung im Original wird keine Zulassung vorgenommen; bei SP-pflichtigen Fahrzeugen muss auch die gültige Sicherheitsprüfung im Original vorliegen.",
+        "quelle": "https://www.kreis-as.de/Sicherheit-Verkehr/Mobilit%C3%A4t/KfZ-Zulassung/"
+      },
+      {
+        "text": "Der Führerschein wird als Ausweis nicht anerkannt; stimmt der tatsächliche Wohnort nicht mit dem Ausweis überein, ist eine Meldebescheinigung vorzulegen.",
+        "quelle": "https://www.kreis-as.de/Sicherheit-Verkehr/Mobilit%C3%A4t/KfZ-Zulassung/Allgemeine-Informationen/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-cham",
+    "stadt": "Landkreis Cham",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Cham – Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-cham.de/service-beratung/kfz-zulassung/",
+    "traeger": "Landkreis Cham",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassung / Führerscheinwesen Cham (Landratsamt)",
+        "strasse": "Rachelstraße 6",
+        "plz": "93413",
+        "ort": "Cham",
+        "quelle": "https://www.landkreis-cham.de/service-beratung/buergerservice/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassung / Führerscheinwesen Bad Kötzting",
+        "strasse": "Herrenstraße 5",
+        "plz": "93444",
+        "ort": "Bad Kötzting",
+        "quelle": "https://www.landkreis-cham.de/service-beratung/buergerservice/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassung / Führerscheinwesen Roding",
+        "strasse": "Landgerichtstraße 13",
+        "plz": "93426",
+        "ort": "Roding",
+        "quelle": "https://www.landkreis-cham.de/service-beratung/buergerservice/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassung / Führerscheinwesen Waldmünchen",
+        "strasse": "Gartenstraße 25",
+        "plz": "93449",
+        "ort": "Waldmünchen",
+        "quelle": "https://www.landkreis-cham.de/service-beratung/buergerservice/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-cham.de/service-beratung/kfz-zulassung/",
+      "quelle": "https://www.landkreis-cham.de/service-beratung/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://www.terminland.eu/lra.landkreis-cham/",
+      "quelle": "https://www.landkreis-cham.de/service-beratung/buergerservice/"
+    },
+    "ikfzUrl": {
+      "url": "https://forms.landkreis-cham.de/formcycle/form/provide/10067/",
+      "quelle": "https://www.landkreis-cham.de/service-beratung/kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag bis Freitag: 07:30 - 12:00 Uhr",
+        "Dienstag: 13:30 - 15:30 Uhr",
+        "Donnerstag: 13:30 - 15:30 Uhr"
+      ],
+      "hinweis": "Gilt für alle vier Zulassungsstellen (Cham, Bad Kötzting, Roding, Waldmünchen); bitte möglichst online einen Termin vereinbaren, Vorsprache ohne Termin mit Wartezeit möglich; Annahmeschluss ohne Termin 11:30 bzw. 15:00 Uhr",
+      "quelle": "https://www.landkreis-cham.de/service-beratung/buergerservice/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Cham mit Zulassungsstellen in Cham, Bad Kötzting, Roding und Waldmünchen.",
+      "quelle": "https://www.landkreis-cham.de/service-beratung/kfz-zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "CHA",
+        "bedeutung": "Cham",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "KÖZ",
+        "bedeutung": "Kötzting (Bad Kötzting)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ROD",
+        "bedeutung": "Roding (auch im Landkreis Schwandorf vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WÜM",
+        "bedeutung": "Waldmünchen (mit Buchstabendreher)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Wartezeiten vorab über die Warteschlangeninfo des Landratsamts einsehen.",
+        "quelle": "https://www.landkreis-cham.de/service-beratung/kfz-zulassung/"
+      },
+      {
+        "text": "In Cham auch mit Termin am Terminal im Haupteingang anmelden und eine Wartemarke lösen.",
+        "quelle": "https://www.landkreis-cham.de/service-beratung/kfz-zulassung/"
+      },
+      {
+        "text": "Online-Auskunft, ob der Fahrzeugbrief (Zulassungsbescheinigung Teil II) bereits in der Behörde vorliegt.",
+        "quelle": "https://www.landkreis-cham.de/service-beratung/kfz-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-neumarkt-in-der-oberpfalz",
+    "stadt": "Landkreis Neumarkt in der Oberpfalz",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Neumarkt i.d.OPf. – Kfz-Zulassungsstelle (Zulassungsbehörde Neumarkt i.d.OPf.)",
+    "behoerdeQuelle": "https://www.landkreis-neumarkt.de/landkreis-neumarkt/landratsamt/verkehrswesen/kfz-zulassungsstelle/",
+    "traeger": "Landkreis Neumarkt i.d.OPf.",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsbehörde Neumarkt i.d.OPf.",
+        "strasse": "Nürnberger Straße 1",
+        "plz": "92318",
+        "ort": "Neumarkt i.d.OPf.",
+        "quelle": "https://www.landkreis-neumarkt.de/landkreis-neumarkt/landratsamt/verkehrswesen/kfz-zulassungsstelle/"
+      },
+      {
+        "bezeichnung": "Zulassungsbehörde Parsberg",
+        "strasse": "Alte Seer Straße 2",
+        "plz": "92331",
+        "ort": "Parsberg",
+        "quelle": "https://www.landkreis-neumarkt.de/landkreis-neumarkt/landratsamt/verkehrswesen/kfz-zulassungsstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-neumarkt.de/landkreis-neumarkt/landratsamt/verkehrswesen/kfz-zulassungsstelle/",
+      "quelle": "https://www.landkreis-neumarkt.de/landkreis-neumarkt/landratsamt/verkehrswesen/kfz-zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://termine.landkreis-neumarkt.de/m/Verkehrswesen/extern/calendar/?uid=cbe12c67-8e3c-49fe-abb9-8cc3ebe2ac9d",
+      "quelle": "https://www.landkreis-neumarkt.de/landkreis-neumarkt/landratsamt/verkehrswesen/kfz-zulassungsstelle/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrneumarkt",
+      "quelle": "https://www.landkreis-neumarkt.de/landkreis-neumarkt/landratsamt/verkehrswesen/kfz-zulassungsstelle/hinweise-buergerserviceportal/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Neumarkt: Montag 08:00 - 16:00 Uhr",
+        "Neumarkt: Dienstag 08:00 - 16:00 Uhr",
+        "Neumarkt: Mittwoch 08:00 - 12:00 Uhr",
+        "Neumarkt: Donnerstag 08:00 - 18:00 Uhr",
+        "Neumarkt: Freitag 08:00 - 12:00 Uhr",
+        "Parsberg (Terminvereinbarung!): Montag - Freitag 08:00 - 12:00 Uhr, Mittwoch 08:00 - 17:00 Uhr"
+      ],
+      "hinweis": "Neumarkt: Tickets ohne Terminbuchung nur bis 45 Minuten vor Ende der Öffnungszeiten; Terminbuchung dringend empfohlen. Parsberg: nur mit Terminvereinbarung",
+      "quelle": "https://www.landkreis-neumarkt.de/landkreis-neumarkt/landratsamt/verkehrswesen/kfz-zulassungsstelle/"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsstelle des Landkreises Neumarkt i.d.OPf. mit Hauptstelle in Neumarkt und Zulassungsbehörde Parsberg.",
+      "quelle": "https://www.landkreis-neumarkt.de/landkreis-neumarkt/landratsamt/verkehrswesen/kfz-zulassungsstelle/hinweise-buergerserviceportal/"
+    },
+    "kuerzel": [
+      {
+        "code": "NM",
+        "bedeutung": "Neumarkt",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "PAR",
+        "bedeutung": "Parsberg (auch im Landkreis Kelheim vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Tickets ohne Terminbuchung werden nur bis 45 Minuten vor dem Ende der Öffnungszeiten ausgegeben.",
+        "quelle": "https://www.landkreis-neumarkt.de/landkreis-neumarkt/landratsamt/verkehrswesen/kfz-zulassungsstelle/"
+      },
+      {
+        "text": "Online-Termine für die Kfz-Zulassung sind bis zu 2 Wochen im Voraus buchbar; alternativ telefonische Terminvereinbarung.",
+        "quelle": "https://www.landkreis-neumarkt.de/landkreis-neumarkt/landratsamt/verkehrswesen/kfz-zulassungsstelle/"
+      },
+      {
+        "text": "Donnerstags ist die Zulassungsstelle in Neumarkt bis 18:00 Uhr geöffnet.",
+        "quelle": "https://www.landkreis-neumarkt.de/landkreis-neumarkt/landratsamt/verkehrswesen/kfz-zulassungsstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-neustadt-an-der-waldnaab",
+    "stadt": "Landkreis Neustadt an der Waldnaab",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Neustadt a.d. Waldnaab – KFZ-Zulassung (Verkehrswesen)",
+    "behoerdeQuelle": "https://www.neustadt.de/landratsamt/abteilungen-und-sachgebiete/verkehrswesen/kfz-zulassung/",
+    "traeger": "Landkreis Neustadt a.d. Waldnaab",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ Zulassungsstelle Neustadt an der Waldnaab",
+        "strasse": "Stadtplatz 36",
+        "plz": "92660",
+        "ort": "Neustadt an der Waldnaab",
+        "quelle": "https://www.neustadt.de/landratsamt/standorte-und-oeffnungszeiten/"
+      },
+      {
+        "bezeichnung": "KFZ Zulassungsstelle Eschenbach",
+        "strasse": "Karlsplatz 29",
+        "plz": "92676",
+        "ort": "Eschenbach in der Oberpfalz",
+        "quelle": "https://www.neustadt.de/landratsamt/abteilungen-und-sachgebiete/verkehrswesen/kfz-zulassung/terminbuchung-zulassung/"
+      },
+      {
+        "bezeichnung": "KFZ Zulassungsstelle Vohenstrauß",
+        "strasse": "Friedrichstraße 25",
+        "plz": "92648",
+        "ort": "Vohenstrauß",
+        "quelle": "https://www.neustadt.de/landratsamt/standorte-und-oeffnungszeiten/"
+      }
+    ],
+    "website": {
+      "url": "https://www.neustadt.de/landratsamt/abteilungen-und-sachgebiete/verkehrswesen/kfz-zulassung/",
+      "quelle": "https://www.neustadt.de/landratsamt/abteilungen-und-sachgebiete/verkehrswesen/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://www.neustadt.de/landratsamt/abteilungen-und-sachgebiete/verkehrswesen/kfz-zulassung/terminbuchung-zulassung/",
+      "quelle": "https://www.neustadt.de/landratsamt/abteilungen-und-sachgebiete/verkehrswesen/kfz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.neustadt.de/landratsamt/abteilungen-und-sachgebiete/verkehrswesen/kfz-zulassung/onlinezulassung/",
+      "quelle": "https://www.neustadt.de/landratsamt/abteilungen-und-sachgebiete/verkehrswesen/kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Neustadt an der Waldnaab: Montag bis Freitag 07:30 - 12:00 Uhr",
+        "Neustadt an der Waldnaab: Dienstag und Donnerstag zusätzlich 13:30 - 16:30 Uhr",
+        "Eschenbach: Montag bis Freitag 08:00 - 12:00 Uhr",
+        "Eschenbach: Dienstag und Donnerstag zusätzlich 13:30 - 16:30 Uhr",
+        "Vohenstrauß: Montag bis Freitag 08:00 - 12:00 Uhr",
+        "Vohenstrauß: Dienstag und Donnerstag zusätzlich 13:30 - 16:30 Uhr"
+      ],
+      "hinweis": "Termine werden ausschließlich online vergeben; ohne Termin nur dringende Fälle (lange Wartezeiten möglich); Annahmeschluss max. 30 Minuten vor Ende der Öffnungszeit",
+      "quelle": "https://www.neustadt.de/landratsamt/standorte-und-oeffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Neustadt a.d. Waldnaab mit drei Zulassungsstellen in Neustadt an der Waldnaab, Eschenbach und Vohenstrauß.",
+      "quelle": "https://www.neustadt.de/landratsamt/abteilungen-und-sachgebiete/verkehrswesen/kfz-zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "NEW",
+        "bedeutung": "Neustadt an der Waldnaab",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ESB",
+        "bedeutung": "Eschenbach (in der Oberpfalz; auch in anderen Landkreisen vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "VOH",
+        "bedeutung": "Vohenstrauß",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termine bei den drei Zulassungsstellen können ausschließlich online gebucht werden – je Standort mit eigenem Buchungslink.",
+        "quelle": "https://www.neustadt.de/landratsamt/abteilungen-und-sachgebiete/verkehrswesen/kfz-zulassung/terminbuchung-zulassung/"
+      },
+      {
+        "text": "Online-Auskunft zum Fahrzeugbrief (Fahrzeugbriefe - Onlineauskunft) auf der Seite der Kfz-Zulassung.",
+        "quelle": "https://www.neustadt.de/landratsamt/abteilungen-und-sachgebiete/verkehrswesen/kfz-zulassung/"
+      },
+      {
+        "text": "Parken in Neustadt: direkt am Stadtplatz (30 Minuten), im Parkhaus Am Schmidrangen (2 Stunden) oder vor der Stadthalle.",
+        "quelle": "https://www.neustadt.de/landratsamt/standorte-und-oeffnungszeiten/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-regensburg",
+    "stadt": "Landkreis Regensburg",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Regensburg – Sachgebiet S 23 Verkehrswesen – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-regensburg.de/B%C3%BCrgerservice/Auto-Verkehr/Kfz-Zulassung/index.php?object=tx,3987.1.1&ModID=9&FID=3988.2211.1&NavID=3987.3993",
+    "traeger": "Landkreis Regensburg",
+    "standorte": [],
+    "website": {
+      "url": "https://www.landkreis-regensburg.de/B%C3%BCrgerservice/Auto-Verkehr/Kfz-Zulassung/",
+      "quelle": "https://www.landkreis-regensburg.de/B%C3%BCrgerservice/Auto-Verkehr/Kfz-Zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://www.landkreis-regensburg.de/B%C3%BCrgerservice/Online-Termin-buchen/KFZ-Zulassung/",
+      "quelle": "https://www.landkreis-regensburg.de/B%C3%BCrgerservice/Auto-Verkehr/Kfz-Zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerserviceportal.de/bayern/lkrregensburg/bsp_ikfz_antragstellung",
+      "quelle": "https://www.landkreis-regensburg.de/B%C3%BCrgerservice/Auto-Verkehr/Kfz-Zulassung/"
+    },
+    "oeffnungszeiten": null,
+    "zustaendigkeit": {
+      "text": "Zuständig, wenn der Hauptwohnsitz, Betriebssitz oder Ort einer beteiligten Niederlassung im Landkreis Regensburg liegt. Die kreisfreie Stadt Regensburg gehört nicht zum Landkreis – obwohl beide das Kennzeichen R vergeben und das Landratsamt im Stadtgebiet sitzt, ist das Landratsamt nicht für Einwohner der Stadt Regensburg zuständig.",
+      "quelle": "https://www.landkreis-regensburg.de/index.php?object=tx,3987.2.1&ModID=10&FID=3987.5843.1"
+    },
+    "kuerzel": [
+      {
+        "code": "R",
+        "bedeutung": "Regensburg (auch von der kreisfreien Stadt Regensburg vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Online-Termine für bis zu 3 Zulassungsvorgänge je Termin; eigener Termintyp für Außerbetriebsetzung und Nachsiegelung von Kennzeichenschildern.",
+        "quelle": "https://www.landkreis-regensburg.de/B%C3%BCrgerservice/Online-Termin-buchen/KFZ-Zulassung/"
+      },
+      {
+        "text": "Vor Ort Aufrufnummer am Automaten im Eingangsbereich ziehen; Gebühren sofort bar oder per EC-Karte am Kassenautomaten bezahlen.",
+        "quelle": "https://www.landkreis-regensburg.de/index.php?object=tx,3987.2.1&ModID=10&FID=3987.5843.1"
+      },
+      {
+        "text": "Aktuelle Wartezeiten der Kfz-Zulassungsstelle (Zulassungen und Außerbetriebsetzungen) werden auf der Seite der Zulassungsstelle angezeigt.",
+        "quelle": "https://www.landkreis-regensburg.de/B%C3%BCrgerservice/Auto-Verkehr/Kfz-Zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "standorte.strasse",
+      "oeffnungszeiten",
+      "standorte"
+    ]
+  },
+  {
+    "slug": "landkreis-schwandorf",
+    "stadt": "Landkreis Schwandorf",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Schwandorf – Kfz-Zulassungsstelle (Sachgebiet 4.3 Verkehrswesen, Straßen- und Wegerecht)",
+    "behoerdeQuelle": "https://www.landkreis-schwandorf.de/B%C3%BCrgerservice/Kfz-Zulassung-F%C3%BChrerschein-/Kfz-Zulassung/",
+    "traeger": "Landkreis Schwandorf",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle im Landratsamt Schwandorf",
+        "strasse": "Wackersdorfer Straße 80",
+        "plz": "92421",
+        "ort": "Schwandorf",
+        "quelle": "https://www.landkreis-schwandorf.de/B%C3%BCrgerservice/Was-erledige-ich-wo-/index.php?object=tx,3300.1&ModID=9&FID=41.457.1&NavID=1913.1"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-schwandorf.de/B%C3%BCrgerservice/Kfz-Zulassung-F%C3%BChrerschein-/Kfz-Zulassung/",
+      "quelle": "https://www.landkreis-schwandorf.de/B%C3%BCrgerservice/Kfz-Zulassung-F%C3%BChrerschein-/Kfz-Zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://www.etermin.net/lra-schwandorf-zul-qtermin",
+      "quelle": "https://www.landkreis-schwandorf.de/B%C3%BCrgerservice/Kfz-Zulassung-F%C3%BChrerschein-/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrschwandorf/bsp_ikfz_antragstellung",
+      "quelle": "https://www.landkreis-schwandorf.de/B%C3%BCrgerservice/Online-Verfahren-und-Formulare/Online-Zulassungsbeh%C3%B6rde/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag 08.00 - 15.30 Uhr",
+        "Dienstag 08.00 - 15.30 Uhr",
+        "Mittwoch 08.00 - 15.30 Uhr",
+        "Donnerstag 08.00 - 15.30 Uhr (in den Monaten März, April und Mai bis 17.30 Uhr)",
+        "Freitag 08.00 - 12.00 Uhr"
+      ],
+      "hinweis": "Online-Terminreservierung möglich; Vorsprache auch ohne Termin (aktuelle Wartezeiten ohne Termin online einsehbar)",
+      "quelle": "https://www.landkreis-schwandorf.de/B%C3%BCrgerservice/Kfz-Zulassung-F%C3%BChrerschein-/Kfz-Zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Schwandorf; eine Zulassungsstelle im Landratsamt in Schwandorf (Sachgebiet 4.3 Verkehrswesen).",
+      "quelle": "https://www.landkreis-schwandorf.de/B%C3%BCrgerservice/Was-erledige-ich-wo-/index.php?object=tx,3300.1&ModID=9&FID=41.457.1&NavID=1913.1"
+    },
+    "kuerzel": [
+      {
+        "code": "SAD",
+        "bedeutung": "Schwandorf",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BUL",
+        "bedeutung": "Burglengenfeld (auch im Landkreis Amberg-Sulzbach vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "NAB",
+        "bedeutung": "Nabburg (auch im Landkreis Amberg-Sulzbach vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "NEN",
+        "bedeutung": "Neunburg (Neunburg vorm Wald)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "OVI",
+        "bedeutung": "Oberviechtach",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ROD",
+        "bedeutung": "Roding (auch im Landkreis Cham vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Aktuelle Wartezeiten (ohne Termin) der Kfz-Zulassung sind online einsehbar (https://kfztermin.landkreis-schwandorf.de/index-wartezeit.html).",
+        "quelle": "https://www.landkreis-schwandorf.de/B%C3%BCrgerservice/Kfz-Zulassung-F%C3%BChrerschein-/"
+      },
+      {
+        "text": "Wunschkennzeichen: Reservierung für 90 Tage, höchstens 2 Kennzeichen pro Person; beim Unterscheidungszeichen BUL ist zusätzlich die Buchstabenkombination LE unzulässig.",
+        "quelle": "https://www.landkreis-schwandorf.de/B%C3%BCrgerservice/Kfz-Zulassung-F%C3%BChrerschein-/Kfz-Zulassung/"
+      },
+      {
+        "text": "Donnerstags in den Monaten März, April und Mai verlängert bis 17.30 Uhr geöffnet.",
+        "quelle": "https://www.landkreis-schwandorf.de/B%C3%BCrgerservice/Kfz-Zulassung-F%C3%BChrerschein-/Kfz-Zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-tirschenreuth",
+    "stadt": "Landkreis Tirschenreuth",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Tirschenreuth – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.kreis-tir.de/landratsamt/zulassungsstelle",
+    "traeger": "Landkreis Tirschenreuth",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Tirschenreuth",
+        "strasse": "Johannisstr. 6",
+        "plz": "95643",
+        "ort": "Tirschenreuth",
+        "quelle": "https://www.kreis-tir.de/fileadmin/user_upload/Abteilungen/Verkehrswesen/Kfz-Zulassungsstelle/Erforderliche_Unterlagen_bei_der_Zulassung_von_Kraftfahrzeugen.pdf"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Kemnath",
+        "strasse": "Stadtplatz 38",
+        "plz": "95478",
+        "ort": "Kemnath",
+        "quelle": "https://www.kreis-tir.de/fileadmin/user_upload/Abteilungen/Verkehrswesen/Kfz-Zulassungsstelle/Erforderliche_Unterlagen_bei_der_Zulassung_von_Kraftfahrzeugen.pdf"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-tir.de/landratsamt/zulassungsstelle",
+      "quelle": "https://www.kreis-tir.de/landratsamt/zulassungsstelle"
+    },
+    "terminUrl": {
+      "url": "https://book.calenso.com/kfzzulassunglratir",
+      "quelle": "https://www.kreis-tir.de/landratsamt/zulassungsstelle"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrtirschenreuth/bsp_ikfz_antragstellung/",
+      "quelle": "https://www.kreis-tir.de/landratsamt/zulassungsstelle"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Tirschenreuth: Mo, Mi, Fr 07:30 – 12:00 Uhr",
+        "Tirschenreuth: Di, Do 07:30 – 16:00 Uhr",
+        "Kemnath: Mo – Fr 08:00 – 12:00 Uhr"
+      ],
+      "hinweis": "nur mit vorheriger (Online-)Terminvereinbarung; Termine grundsätzlich nur 2 Wochen im Voraus buchbar; die allgemeinen Öffnungszeiten des Landratsamts gelten nicht für die Kfz-Zulassung",
+      "quelle": "https://www.kreis-tir.de/fileadmin/user_upload/Abteilungen/Verkehrswesen/Kfz-Zulassungsstelle/Erforderliche_Unterlagen_bei_der_Zulassung_von_Kraftfahrzeugen.pdf"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Tirschenreuth mit den Zulassungsstellen TIR (Tirschenreuth) und KEM (Kemnath).",
+      "quelle": "https://www.kreis-tir.de/landratsamt/zulassungsstelle"
+    },
+    "kuerzel": [
+      {
+        "code": "TIR",
+        "bedeutung": "Tirschenreuth",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "KEM",
+        "bedeutung": "Kemnath (auch im Landkreis Bayreuth vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Für alle Zulassungsangelegenheiten vor Ort ist zwingend ein Termin zu vereinbaren; Termine sind grundsätzlich nur 2 Wochen im Voraus buchbar.",
+        "quelle": "https://www.kreis-tir.de/landratsamt/zulassungsstelle"
+      },
+      {
+        "text": "Die telefonische KFZ-Terminhotline (Tirschenreuth und Kemnath) ist in erster Linie für Personen ohne Online-Zugang gedacht.",
+        "quelle": "https://www.kreis-tir.de/landratsamt/zulassungsstelle"
+      },
+      {
+        "text": "Infoblatt mit allen erforderlichen Unterlagen je Zulassungsvorgang vor der Terminvereinbarung beachten.",
+        "quelle": "https://www.kreis-tir.de/landratsamt/zulassungsstelle"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-bamberg",
+    "stadt": "Landkreis Bamberg",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Bamberg – Fachbereich 32 Straßenverkehr, Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-bamberg.de/Landratsamt/B%C3%BCrgerservice-2025/Umzug-von-au%C3%9Ferhalb-in-den-Landkreis-%C3%84nderung-Fahrzeugpapiere-.php?ModID=10&FID=2892.19.1&call=suche&kuo=1",
+    "traeger": "Landkreis Bamberg",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle im Landratsamt Bamberg",
+        "strasse": "Ludwigstraße 23",
+        "plz": "96052",
+        "ort": "Bamberg",
+        "quelle": "https://www.landkreis-bamberg.de/Landratsamt/B%C3%BCrgerservice-2025/Umzug-von-au%C3%9Ferhalb-in-den-Landkreis-%C3%84nderung-Fahrzeugpapiere-.php?ModID=10&FID=2892.19.1&call=suche&kuo=1"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-bamberg.de/Landratsamt/Verwaltung/Landratsamt-A-Z/Zulassungsstelle/",
+      "quelle": "https://www.landkreis-bamberg.de/Landratsamt/Verwaltung/Landratsamt-A-Z/Zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://www.landkreis-bamberg.de/Landratsamt/B%C3%BCrgerservice-/Zulassung-Onlineterminvereinbarung/",
+      "quelle": "https://www.landkreis-bamberg.de/Landratsamt/Verwaltung/Landratsamt-A-Z/Zulassungsstelle/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrbamberg/bsp_ikfz_antragstellung/",
+      "quelle": "https://www.landkreis-bamberg.de/Landratsamt/Verwaltung/Landratsamt-A-Z/Zulassungsstelle/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30 – 16:00 Uhr",
+        "Di 07:30 – 14:00 Uhr",
+        "Mi 07:30 – 16:00 Uhr",
+        "Do 07:30 – 17:30 Uhr",
+        "Fr 07:30 – 12:00 Uhr"
+      ],
+      "hinweis": "Terminbuchung empfohlen (kürzeste Wartezeiten); ohne Termin eigener Schalter über die Infothek, je nach Besucheraufkommen längere Wartezeiten",
+      "quelle": "https://www.bayernportal.de/dokumente/behoerde/854741811775/adressen"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde für Halter mit Wohnsitz im Landkreis Bamberg. Die kreisfreie Stadt Bamberg gehört nicht zum Landkreis – obwohl beide das Kennzeichen BA vergeben und das Landratsamt im Stadtgebiet (Ludwigstraße) sitzt.",
+      "quelle": "https://www.landkreis-bamberg.de/Landratsamt/B%C3%BCrgerservice-2025/Umzug-von-au%C3%9Ferhalb-in-den-Landkreis-%C3%84nderung-Fahrzeugpapiere-.php?ModID=10&FID=2892.19.1&call=suche&kuo=1"
+    },
+    "kuerzel": [
+      {
+        "code": "BA",
+        "bedeutung": "Bamberg (auch von der kreisfreien Stadt Bamberg vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Service „Heute gebracht – Morgen gemacht“: vollständige Zulassungsunterlagen Mo–Fr 8.00–10.00 Uhr in der Infothek abgeben und frühestens am nächsten Arbeitstag bearbeitet abholen (je nach Auslastung 2 bis 5 Werktage, Benachrichtigung per E-Mail).",
+        "quelle": "https://www.landkreis-bamberg.de/Landratsamt/Verwaltung/Landratsamt-A-Z/Zulassungsstelle/Zulassung-Aktuelles/"
+      },
+      {
+        "text": "Je gebuchtem Online-Termin ist grundsätzlich nur ein Zulassungs- bzw. Ummeldevorgang möglich.",
+        "quelle": "https://www.landkreis-bamberg.de/Landratsamt/B%C3%BCrgerservice-/Zulassung-Onlineterminvereinbarung/"
+      },
+      {
+        "text": "Kfz-Händler und Zulassungsdienste können ohne Termin am Händlerschalter vorsprechen oder Vorgänge dort abgeben und später abholen.",
+        "quelle": "https://www.landkreis-bamberg.de/Landratsamt/Verwaltung/Landratsamt-A-Z/Zulassungsstelle/Zulassung-Aktuelles/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-bayreuth",
+    "stadt": "Landkreis Bayreuth",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Bayreuth – Kraftfahrzeugzulassung",
+    "behoerdeQuelle": "https://www.landkreis-bayreuth.de/buergerservice/verkehr/kraftfahrzeug-zulassung",
+    "traeger": "Landkreis Bayreuth",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Bayreuth, Kraftfahrzeugzulassung",
+        "strasse": "Markgrafenallee 5",
+        "plz": "95448",
+        "ort": "Bayreuth",
+        "quelle": "https://www.landkreis-bayreuth.de/buergerservice/verkehr/kraftfahrzeug-zulassung"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-bayreuth.de/buergerservice/verkehr/kraftfahrzeug-zulassung",
+      "quelle": "https://www.landkreis-bayreuth.de/buergerservice/verkehr/kraftfahrzeug-zulassung"
+    },
+    "terminUrl": {
+      "url": "https://xima.landkreis-bayreuth.de/frontend-server/form/alias/1/TermineKFZ/",
+      "quelle": "https://www.landkreis-bayreuth.de/buergerservice/verkehr/kraftfahrzeug-zulassung"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lrabayreuth/bsp_ikfz_antragstellung/",
+      "quelle": "https://www.landkreis-bayreuth.de/buergerservice/verkehr/kraftfahrzeug-zulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag, Dienstag 07:30 - 14:00 Uhr",
+        "Mittwoch 07:30 - 12:00 Uhr",
+        "Donnerstag 07:30 - 17:00 Uhr",
+        "Freitag 07:30 - 13:00 Uhr"
+      ],
+      "hinweis": "Allgemeine Öffnungszeiten des Landratsamts, auf die die Kfz-Zulassungsseite verweist; für den Besuch ist ein Termin online zu buchen – ohne Termin nur bei freien Kapazitäten und mit längeren Wartezeiten; Annahmeschluss 30 Minuten vor Ende der Öffnungszeiten",
+      "quelle": "https://www.landkreis-bayreuth.de/der-landkreis/landratsamt/oeffnungszeiten"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Bayreuth. Die kreisfreie Stadt Bayreuth (ebenfalls Kennzeichen BT) gehört nicht zum Landkreis; laut Landratsamt können Fahrzeuge für die Stadt Bayreuth und den Landkreis Kulmbach aber grundsätzlich auch hier angemeldet werden.",
+      "quelle": "https://www.landkreis-bayreuth.de/buergerservice/verkehr/kraftfahrzeug-zulassung"
+    },
+    "kuerzel": [
+      {
+        "code": "BT",
+        "bedeutung": "Bayreuth (auch von der kreisfreien Stadt Bayreuth vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "EBS",
+        "bedeutung": "Ebermannstadt (auch in den Landkreisen Forchheim und Kulmbach vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ESB",
+        "bedeutung": "Eschenbach (in der Oberpfalz; auch in anderen Landkreisen vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "KEM",
+        "bedeutung": "Kemnath (auch im Landkreis Tirschenreuth vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MÜB",
+        "bedeutung": "Münchberg (auch im Landkreis Hof vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "PEG",
+        "bedeutung": "Pegnitz (auch in den Landkreisen Forchheim und Nürnberger Land vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Fahrzeuge für die Stadt Bayreuth und den Landkreis Kulmbach können grundsätzlich auch bei der Zulassungsbehörde des Landkreises Bayreuth angemeldet werden.",
+        "quelle": "https://www.landkreis-bayreuth.de/buergerservice/verkehr/kraftfahrzeug-zulassung"
+      },
+      {
+        "text": "Online-Termine sind bis zu 30 Tage im Voraus buchbar; Bürger mit Termin werden zuerst bedient.",
+        "quelle": "https://www.landkreis-bayreuth.de/buergerservice/verkehr/kraftfahrzeug-zulassung"
+      },
+      {
+        "text": "Das Landratsamt bittet, vorrangig die Online-Zulassung zu nutzen (ohne Behördengang, für Fahrzeugdokumente/Siegel auf den Schildern ab dem Jahr 2018).",
+        "quelle": "https://www.landkreis-bayreuth.de/buergerservice/verkehr/kraftfahrzeug-zulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

@@ -1,0 +1,814 @@
+[
+  {
+    "slug": "memmingen",
+    "stadt": "Memmingen",
+    "bundesland": "Bayern",
+    "behoerde": "Stadt Memmingen – KFZ-Zulassungsstelle (Amt 37, Straßenverkehrsamt)",
+    "behoerdeQuelle": "https://www.memmingen.de/digitales-amt/aemterverzeichnis-/-organisationsplan/organisation/37-kfz-zulassungsstelle.html",
+    "traeger": "Stadt Memmingen",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassungsstelle im Alten Rathaus Amendingen",
+        "strasse": "St.-Ulrich-Platz 1",
+        "plz": "87700",
+        "ort": "Memmingen",
+        "quelle": "https://www.memmingen.de/digitales-amt/aemterverzeichnis-/-organisationsplan/organisation/37-kfz-zulassungsstelle.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.memmingen.de/digitales-amt/aemterverzeichnis-/-organisationsplan/organisation/37-kfz-zulassungsstelle.html",
+      "quelle": "https://www.memmingen.de/digitales-amt/aemterverzeichnis-/-organisationsplan/organisation/37-kfz-zulassungsstelle.html"
+    },
+    "terminUrl": {
+      "url": "https://memmingen.termine-reservieren.online/select2?md=1",
+      "quelle": "https://www.memmingen.de/digitales-amt/aemterverzeichnis-/-organisationsplan/organisation/37-kfz-zulassungsstelle.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/memmingen/bsp_ikfz_antragstellung/#/",
+      "quelle": "https://www.memmingen.de/digitales-amt/anliegen-a-z/dienstleistung/show/neuzulassung-eines-fabrikneuen-fahrzeuges.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–12:00 Uhr",
+        "Di 08:00–12:30 und 13:30–16:00 Uhr",
+        "Mi 08:00–12:00 Uhr",
+        "Do 08:00–12:30 und 13:30–17:00 Uhr",
+        "Fr 08:00–11:30 Uhr"
+      ],
+      "hinweis": "Vorherige Online-Terminvereinbarung wird empfohlen",
+      "quelle": "https://www.memmingen.de/digitales-amt/oeffnungszeiten.html"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle der kreisfreien Stadt Memmingen (PLZ 87700). Wer im Landkreis Unterallgäu wohnt (Kennzeichen MN), ist dort nicht richtig: zuständig ist das Landratsamt Unterallgäu, Augsburger Straße 68, 87766 Memmingerberg.",
+      "quelle": "https://www.memmingen.de/digitales-amt/aemterverzeichnis-/-organisationsplan/organisation/37-kfz-zulassungsstelle.html"
+    },
+    "kuerzel": [
+      {
+        "code": "MM",
+        "bedeutung": "Memmingen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Wunschkennzeichen lassen sich online reservieren (Kombinationen MM-A 100 bis MM-Z 9999). Die Reservierung verfällt, wenn das Fahrzeug nicht innerhalb von 30 Tagen zugelassen wird; eine Verlängerung auf insgesamt bis zu 90 Tage ist telefonisch oder persönlich möglich.",
+        "quelle": "https://www.memmingen.de/digitales-amt/anliegen-a-z/dienstleistung/show/wunschkennzeichen.html"
+      },
+      {
+        "text": "Bei Vertretung müssen immer die Ausweise von Halter und Bevollmächtigtem vorgelegt werden; anerkannt werden nur gültige Personalausweise oder Reisepässe.",
+        "quelle": "https://www.memmingen.de/digitales-amt/aemterverzeichnis-/-organisationsplan/organisation/37-kfz-zulassungsstelle.html"
+      },
+      {
+        "text": "Online-Bankbriefauskunft: Man kann online prüfen, ob der Fahrzeugbrief (ZB II) eines finanzierten Fahrzeugs bereits bei der Zulassungsstelle liegt.",
+        "quelle": "https://www.memmingen.de/digitales-amt/anliegen-a-z/dienstleistung/show/neuzulassung-eines-fabrikneuen-fahrzeuges.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "passau",
+    "stadt": "Passau",
+    "bundesland": "Bayern",
+    "behoerde": "Stadt Passau – Zulassungsstelle (Dienststelle Bürgerbüro und Wahlen)",
+    "behoerdeQuelle": "https://www.passau.de/rathaus-buergerservice/dienstleistungen/a-z/zulassungsstelle/",
+    "traeger": "Stadt Passau",
+    "standorte": [
+      {
+        "bezeichnung": "Dienstleistungszentrum Passavia (mit Prägestelle für Kfz-Kennzeichen)",
+        "strasse": "Vornholzstr. 40",
+        "plz": "94036",
+        "ort": "Passau",
+        "quelle": "https://www.passau.de/rathaus-buergerservice/dienstleistungen/a-z/zulassungsstelle/"
+      },
+      {
+        "bezeichnung": "Altes Rathaus (nur vorgeprägte Standard-Kennzeichen)",
+        "strasse": "Rathausplatz 2",
+        "plz": "94032",
+        "ort": "Passau",
+        "quelle": "https://www.passau.de/rathaus-buergerservice/dienstleistungen/a-z/zulassungsstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://www.passau.de/rathaus-buergerservice/dienstleistungen/a-z/zulassungsstelle/",
+      "quelle": "https://www.passau.de/rathaus-buergerservice/dienstleistungen/a-z/zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/passau/select2?md=1",
+      "quelle": "https://www.passau.de/rathaus-buergerservice/dienstleistungen/a-z/zulassungsstelle/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/passau/bsp_ikfz_antragstellung#/",
+      "quelle": "https://www.passau.de/rathaus-buergerservice/dienstleistungen/a-z/zulassungsstelle/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30–16:00 Uhr",
+        "Di 07:30–16:00 Uhr",
+        "Mi 07:30–12:00 Uhr",
+        "Do 07:30–17:00 Uhr",
+        "Fr 07:30–12:00 Uhr"
+      ],
+      "hinweis": "Öffnungszeiten des Bürgerbüros, zu dem die Zulassungsstelle gehört. Termine nach Vereinbarung; ohne Termin nur in begrenztem Umfang und ggf. mit langer Wartezeit, Terminvereinbarung wird dringend empfohlen",
+      "quelle": "https://www.passau.de/rathaus-buergerservice/rathaus-wegweiser/ordnung-sicherheit/buergerbuero-und-wahlen/"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsstelle der kreisfreien Stadt Passau für Halter im Stadtgebiet. Privatpersonen, die außerhalb des Stadtgebiets wohnen (z. B. im Landkreis Passau, ebenfalls Kennzeichen PA), sollen sich an die Zulassungsbehörde ihres Hauptwohnsitzes wenden. Ausnahme: Außerbetriebsetzungen sind bei jeder Zulassungsbehörde möglich.",
+      "quelle": "https://www.passau.de/rathaus-buergerservice/dienstleistungen/a-z/zulassungsstelle/"
+    },
+    "kuerzel": [
+      {
+        "code": "PA",
+        "bedeutung": "Passau (Stadt Passau und Landkreis Passau)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Kennzeichen werden nur im Dienstleistungszentrum Passavia geprägt. Im Alten Rathaus gibt es ausschließlich vorgeprägte Standard-Kennzeichen.",
+        "quelle": "https://www.passau.de/rathaus-buergerservice/dienstleistungen/a-z/zulassungsstelle/"
+      },
+      {
+        "text": "Die Gebühren können bar oder mit EC-Karte bezahlt werden.",
+        "quelle": "https://www.passau.de/rathaus-buergerservice/dienstleistungen/a-z/zulassungsstelle/"
+      },
+      {
+        "text": "Firmen werden im Rahmen der erweiterten Zuständigkeit am Firmenschalter nur nach vorheriger Absprache bedient.",
+        "quelle": "https://www.passau.de/rathaus-buergerservice/dienstleistungen/a-z/zulassungsstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten"
+    ]
+  },
+  {
+    "slug": "regensburg",
+    "stadt": "Regensburg",
+    "bundesland": "Bayern",
+    "behoerde": "Stadt Regensburg – Amt für öffentliche Ordnung und Straßenverkehr, Kfz-Zulassungsstelle (Sachgebiet Kraftfahrzeugzulassungswesen)",
+    "behoerdeQuelle": "https://www.regensburg.de/buergerservice/dienstleistungen/15418/zulassung-eines-neufahrzeugs.html",
+    "traeger": "Stadt Regensburg",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle der Stadt Regensburg",
+        "strasse": "Johann-Hösl-Straße 11",
+        "plz": "93053",
+        "ort": "Regensburg",
+        "quelle": "https://www.regensburg.de/rathaus/aemteruebersicht/rechts-und-regionalreferat/amt-fuer-oeffentliche-ordnung-und-strassenverkehr/kfz-zulassungsstelle"
+      }
+    ],
+    "website": {
+      "url": "https://www.regensburg.de/rathaus/aemteruebersicht/rechts-und-regionalreferat/amt-fuer-oeffentliche-ordnung-und-strassenverkehr/kfz-zulassungsstelle",
+      "quelle": "https://www.regensburg.de/rathaus/aemteruebersicht/rechts-und-regionalreferat/amt-fuer-oeffentliche-ordnung-und-strassenverkehr/kfz-zulassungsstelle"
+    },
+    "terminUrl": {
+      "url": "https://formulare.regensburg.de/frontend-server/form/provide/4702/",
+      "quelle": "https://www.regensburg.de/rathaus/aemteruebersicht/rechts-und-regionalreferat/amt-fuer-oeffentliche-ordnung-und-strassenverkehr/kfz-zulassungsstelle"
+    },
+    "ikfzUrl": {
+      "url": "https://www.regensburg.de/rathaus/aemteruebersicht/rechts-und-regionalreferat/amt-fuer-oeffentliche-ordnung-und-strassenverkehr/online-service-online-zulassungsstelle",
+      "quelle": "https://www.regensburg.de/rathaus/aemteruebersicht/rechts-und-regionalreferat/amt-fuer-oeffentliche-ordnung-und-strassenverkehr/kfz-zulassungsstelle"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30–12:00 Uhr",
+        "Di 07:30–12:00 und 13:30–15:00 Uhr",
+        "Mi 07:30–12:00 und 13:30–15:00 Uhr",
+        "Do 08:00–13:00 und 15:00–17:30 Uhr",
+        "Fr 07:30–12:00 Uhr"
+      ],
+      "hinweis": "Auch ohne Termin geöffnet (Präsenzschalter, zeitweise längere Wartezeiten; bei Überschreiten der Kapazitätsgrenze werden ggf. keine Wartemarken mehr ausgegeben). Online-Termin empfohlen",
+      "quelle": "https://www.regensburg.de/rathaus/aemteruebersicht/rechts-und-regionalreferat/amt-fuer-oeffentliche-ordnung-und-strassenverkehr/kfz-zulassungsstelle"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle der kreisfreien Stadt Regensburg für Halter mit Hauptwohn- oder Firmensitz im Stadtgebiet Regensburg. Der Landkreis Regensburg (ebenfalls Kennzeichen R) hat eine eigene Zulassungsstelle beim Landratsamt (siehe Besonderheiten).",
+      "quelle": "https://www.regensburg.de/buergerservice/dienstleistungen/23017/umschreibung-eines-kraftfahrzeugs-bei-zuzug-uo.html"
+    },
+    "kuerzel": [
+      {
+        "code": "R",
+        "bedeutung": "Regensburg (Stadt Regensburg und Landkreis Regensburg)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Abmeldungen (Außerbetriebsetzungen) sind auch in den Bürgerbüros Stadtmitte, Nord und Burgweinting möglich. Neuzulassungen werden dagegen nur in der Kfz-Zulassungsstelle bearbeitet.",
+        "quelle": "https://www.regensburg.de/buergerservice/dienstleistungen/23015/abmeldung-eines-kraftfahrzeugs.html"
+      },
+      {
+        "text": "Die Gebühren werden bar oder per EC-Karte am Kassenautomaten der Zulassungsstelle bezahlt.",
+        "quelle": "https://www.regensburg.de/buergerservice/dienstleistungen/15418/zulassung-eines-neufahrzeugs.html"
+      },
+      {
+        "text": "Nicht verwechseln: Die Kfz-Zulassungsstelle des Landkreises Regensburg sitzt beim Landratsamt in der Altmühlstraße 3, 93059 Regensburg.",
+        "quelle": "https://www.landkreis-regensburg.de/B%C3%BCrgerservice/Auto-Verkehr/Kfz-Zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "rosenheim",
+    "stadt": "Rosenheim",
+    "bundesland": "Bayern",
+    "behoerde": "Stadt Rosenheim – Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.rosenheim.de/buergerservice/mobilitaet/kfz-zulassung/neuzulassung/",
+    "traeger": "Stadt Rosenheim",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde der Stadt Rosenheim",
+        "strasse": "Westerndorfer Straße 88",
+        "plz": "83024",
+        "ort": "Rosenheim",
+        "quelle": "https://www.rosenheim.de/buergerservice/mobilitaet/kfz-zulassung/neuzulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.rosenheim.de/buergerservice/mobilitaet/kfz-zulassung/",
+      "quelle": "https://www.rosenheim.de/buergerservice/mobilitaet/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://www.etermin.net/stadt-rosenheim-stva-qtermin",
+      "quelle": "https://www.rosenheim.de/buergerservice/mobilitaet/kfz-zulassung/neuzulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.rosenheim.de/onlinezulassung/",
+      "quelle": "https://www.rosenheim.de/buergerservice/mobilitaet/kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Persönliche Vorsprache: nur nach vorheriger Terminvereinbarung",
+        "Telefon/E-Mail: Mo–Do 08:00–12:30 und 14:00–17:00 Uhr",
+        "Telefon/E-Mail: Fr 08:00–12:00 Uhr"
+      ],
+      "hinweis": "nur mit Termin (online oder telefonisch); angegeben ist nur die telefonische Erreichbarkeit",
+      "quelle": "https://www.rosenheim.de/buergerservice/mobilitaet/kfz-zulassung/neuzulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde der kreisfreien Stadt Rosenheim. Der Landkreis Rosenheim (ebenfalls Kennzeichen RO) hat eine eigene Zulassungsbehörde beim Landratsamt Rosenheim. Über die erweiterte Zuständigkeit können Vorgänge auch bei den Partnerbehörden erledigt werden; das Kennzeichen kommt immer von der Behörde des Wohnorts bzw. Betriebssitzes.",
+      "quelle": "https://www.rosenheim.de/buergerservice/mobilitaet/kfz-zulassung/erweiterte-zustaendigkeit/"
+    },
+    "kuerzel": [
+      {
+        "code": "RO",
+        "bedeutung": "Rosenheim (Stadt Rosenheim und Landkreis Rosenheim)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Erweiterte Zuständigkeit seit 06.12.2011: Zulassungsvorgänge (u. a. Neu- und Gebrauchtzulassung, Umschreibung, Außerbetriebsetzung, Wiederinbetriebnahme) sind auch bei den Landratsämtern Altötting, Bad Tölz, Berchtesgadener Land, Fürstenfeldbruck, Garmisch-Partenkirchen, Miesbach, München, Mühldorf a. Inn, Rosenheim, Starnberg und Traunstein möglich.",
+        "quelle": "https://www.rosenheim.de/buergerservice/mobilitaet/kfz-zulassung/erweiterte-zustaendigkeit/"
+      },
+      {
+        "text": "Online-Leistungen (i-Kfz) können nicht stellvertretend für andere Personen erledigt werden. Wer für andere handelt, braucht einen Termin und eine Vollmacht.",
+        "quelle": "https://www.rosenheim.de/buergerservice/mobilitaet/kfz-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "schwabach",
+    "stadt": "Schwabach",
+    "bundesland": "Bayern",
+    "behoerde": "Stadt Schwabach – Einwohner- und Meldeamt, Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.schwabach.de/de/einwohner-und-meldeamt/kfz-zulassungsstelle.html",
+    "traeger": "Stadt Schwabach",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle (2. Stock, Zimmer 2.19)",
+        "strasse": "Nördliche Ringstraße 2a-c",
+        "plz": "91126",
+        "ort": "Schwabach",
+        "quelle": "https://www.schwabach.de/de/zuhause-in-schwabach/neu-in-schwabach/kfz-zulassung.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.schwabach.de/de/zuhause-in-schwabach/neu-in-schwabach/kfz-zulassung.html",
+      "quelle": "https://www.schwabach.de/de/zuhause-in-schwabach/neu-in-schwabach/kfz-zulassung.html"
+    },
+    "terminUrl": {
+      "url": "https://termine.schwabach.de/modules/ota_public/form/1/?signup_new=1",
+      "quelle": "https://www.schwabach.de/de/terminvereinbarung.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/schwabach/bsp_ikfz_antragstellung/#/",
+      "quelle": "https://www.schwabach.de/de/zuhause-in-schwabach/neu-in-schwabach/kfz-zulassung.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–12:00 Uhr",
+        "Di 08:00–18:00 Uhr",
+        "Mi 08:00–12:00 Uhr",
+        "Do 08:00–18:00 Uhr",
+        "Fr 08:00–12:00 Uhr"
+      ],
+      "hinweis": "Eine vorherige Terminvereinbarung ist zurzeit notwendig; derzeit werden auch Termine außerhalb der regulären Öffnungszeiten vergeben",
+      "quelle": "https://www.schwabach.de/de/zuhause-in-schwabach/neu-in-schwabach/kfz-zulassung.html"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle der kreisfreien Stadt Schwabach für Fahrzeughalter in Schwabach, auch bei Zuzug aus einem anderen Zulassungsbezirk (Umschreibung, Kennzeichen kann beibehalten werden).",
+      "quelle": "https://www.schwabach.de/de/einwohner-und-meldeamt/kfz-zulassungsstelle/dienstleistungen-der-kfz-zulassungsstelle/2777-umschreibung.html"
+    },
+    "kuerzel": [
+      {
+        "code": "SC",
+        "bedeutung": "Schwabach",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die örtlichen Schilderläden haben nicht immer dieselben Öffnungszeiten wie die Zulassungsstelle. Besondere Kennzeichen (Wunsch-, Kurzzeit-, Saison- oder rote Kennzeichen) daher vorher reservieren, prägen lassen und zur Zulassung mitbringen.",
+        "quelle": "https://www.schwabach.de/de/zuhause-in-schwabach/neu-in-schwabach/kfz-zulassung.html"
+      },
+      {
+        "text": "Laut Meldung vom 19.06.2026 ist die Melde-, Pass- und Zulassungsstelle telefonisch derzeit nur stark eingeschränkt erreichbar, was auch die Wartezeit auf Termine verlängert. Die Stadt bittet, wenn möglich die Online-Dienste zu nutzen.",
+        "quelle": "https://www.schwabach.de/de/einwohner-und-meldeamt/neues-aus-dem-einwohner-und-meldeamt/13577-personalausfaelle-in-der-melde-pass-und-zulassungsstelle.html"
+      },
+      {
+        "text": "Bei Importfahrzeugen kann die Fahrgestellnummer auch durch Vorfahrt auf dem Sablaiser Platz vor der Zulassungsstelle geprüft werden. Bei US-Importen ist zusätzlich ein CARFAX-Report nötig.",
+        "quelle": "https://www.schwabach.de/de/einwohner-und-meldeamt/kfz-zulassungsstelle/dienstleistungen-der-kfz-zulassungsstelle/2777-umschreibung.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "schweinfurt",
+    "stadt": "Schweinfurt",
+    "bundesland": "Bayern",
+    "behoerde": "Stadt Schweinfurt – KFZ-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.schweinfurt.de/rathaus-politik/aemter-services/kfzfuehrerschein/16084.Informationen-zur-KFZ-Zulassungsstelle.html",
+    "traeger": "Stadt Schweinfurt",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassungsstelle der Stadt Schweinfurt",
+        "strasse": "Sennfelder Bahnhof 2",
+        "plz": "97424",
+        "ort": "Schweinfurt",
+        "quelle": "https://www.schweinfurt.de/rathaus-politik/aemter-services/kfzfuehrerschein/16084.Informationen-zur-KFZ-Zulassungsstelle.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.schweinfurt.de/rathaus-politik/aemter-services/kfzfuehrerschein/16084.Informationen-zur-KFZ-Zulassungsstelle.html",
+      "quelle": "https://www.schweinfurt.de/rathaus-politik/aemter-services/kfzfuehrerschein/16084.Informationen-zur-KFZ-Zulassungsstelle.html"
+    },
+    "terminUrl": null,
+    "ikfzUrl": {
+      "url": "https://www.schweinfurt.de/rathaus-politik/online-services/14449.iKfz-Service.html",
+      "quelle": "https://www.schweinfurt.de/rathaus-politik/aemter-services/kfzfuehrerschein"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Di 08:00–12:00 und 14:00–16:00 Uhr (Annahmeschluss 11:30 und 15:30 Uhr)",
+        "Do 08:00–12:00 und 14:00–17:00 Uhr (Annahmeschluss 11:30 und 16:30 Uhr)",
+        "Mo, Mi, Fr: nur nach vorheriger telefonischer Terminvereinbarung"
+      ],
+      "hinweis": "Di und Do ohne Termin geöffnet; Mo, Mi und Fr nur mit telefonisch vereinbartem Termin. Um Wartezeiten zu vermeiden, empfiehlt die Stadt einen telefonischen Termin an den anderen Wochentagen",
+      "quelle": "https://www.schweinfurt.de/rathaus-politik/aemter-services/kfzfuehrerschein/16084.Informationen-zur-KFZ-Zulassungsstelle.html"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle der kreisfreien Stadt Schweinfurt. Seit 01.04.2012 können auch Bewohner des Landkreises Schweinfurt (ebenfalls Kennzeichen SW) ihre Fahrzeuge hier zulassen.",
+      "quelle": "https://www.schweinfurt.de/rathaus-politik/aemter-services/kfzfuehrerschein/16084.Informationen-zur-KFZ-Zulassungsstelle.html"
+    },
+    "kuerzel": [
+      {
+        "code": "SW",
+        "bedeutung": "Schweinfurt (Stadt Schweinfurt und Landkreis Schweinfurt)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Wunschkennzeichen lassen sich online prüfen und direkt reservieren (Service der Schweinfurter Kfz-Zulassungsstelle).",
+        "quelle": "https://www.schweinfurt.de/rathaus-politik/aemter-services/kfzfuehrerschein"
+      },
+      {
+        "text": "An den offenen Tagen ist Annahmeschluss jeweils 30 Minuten vor Dienstende.",
+        "quelle": "https://www.schweinfurt.de/rathaus-politik/aemter-services/kfzfuehrerschein/16084.Informationen-zur-KFZ-Zulassungsstelle.html"
+      },
+      {
+        "text": "Über den Online-Service lassen sich Fahrzeuge vollautomatisiert zulassen, umschreiben, für einen Tag zulassen und abmelden, privat wie gewerblich.",
+        "quelle": "https://www.schweinfurt.de/rathaus-politik/aemter-services/kfzfuehrerschein"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "terminUrl"
+    ]
+  },
+  {
+    "slug": "straubing",
+    "stadt": "Straubing",
+    "bundesland": "Bayern",
+    "behoerde": "Stadt Straubing – Kfz-Zulassung (Kfz-Zulassungsstelle)",
+    "behoerdeQuelle": "https://www.straubing.de/rathaus-verwaltung/verwaltung/aemter-und-dienststellen/uebersicht/index.html?detID=12521&catID=3505",
+    "traeger": "Stadt Straubing",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle der Stadt Straubing",
+        "strasse": "Am Hagen 59",
+        "plz": "94315",
+        "ort": "Straubing",
+        "quelle": "https://www.straubing.de/rathaus-verwaltung/verwaltung/aemter-und-dienststellen/uebersicht/index.html?detID=12521&catID=3505"
+      }
+    ],
+    "website": {
+      "url": "https://www.straubing.de/rathaus-verwaltung/verwaltung/aemter-und-dienststellen/uebersicht/index.html?detID=12521&catID=3505",
+      "quelle": "https://www.straubing.de/rathaus-verwaltung/verwaltung/aemter-und-dienststellen/uebersicht/index.html?detID=12521&catID=3505"
+    },
+    "terminUrl": {
+      "url": "https://www.terminland.de/stadt_straubing/",
+      "quelle": "https://www.straubing.de/aktuelle-meldungen/5161.Infos-zur-Kfz-Zulassungs--und-Fuehrerscheinstelle.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/straubing/bsp_ikfz_antragstellung/",
+      "quelle": "https://www.straubing.de/rathaus-verwaltung/verwaltung/aemter-und-dienststellen/uebersicht/index.html?detID=12521&catID=3505"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Persönliche Vorsprache: nur nach vorheriger Terminvereinbarung",
+        "Telefonische Sprechzeiten: Mo und Do 08:00–12:00 Uhr"
+      ],
+      "hinweis": "nur mit Termin (seit 01.04.2025). Wer keinen Internetzugang hat, kann in den telefonischen Sprechzeiten einen Termin vereinbaren",
+      "quelle": "https://www.straubing.de/aktuelle-meldungen/5161.Infos-zur-Kfz-Zulassungs--und-Fuehrerscheinstelle.html"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle der kreisfreien Stadt Straubing. Der umliegende Landkreis Straubing-Bogen (Kennzeichen ebenfalls SR, außerdem BOG) hat eine eigene Zulassungsstelle beim Landratsamt Straubing-Bogen, Leutnerstr. 15, 94315 Straubing.",
+      "quelle": "https://www.landkreis-straubing-bogen.de/media/8310/entwurf-flyer-final.pdf"
+    },
+    "kuerzel": [
+      {
+        "code": "SR",
+        "bedeutung": "Straubing (Stadt Straubing und Landkreis Straubing-Bogen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Seit 01.04.2025 sind Vorsprachen und Erledigungen in der Kfz-Zulassungsstelle nur noch mit vorher gebuchtem Termin möglich.",
+        "quelle": "https://www.straubing.de/aktuelle-meldungen/5161.Infos-zur-Kfz-Zulassungs--und-Fuehrerscheinstelle.html"
+      },
+      {
+        "text": "Die Kennzeichenschilder muss man auf eigene Rechnung bei privaten Anbietern besorgen.",
+        "quelle": "https://www.straubing.de/rathaus-verwaltung/verwaltung/aemter-und-dienststellen/uebersicht/index.html?detID=12521&catID=3505"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "zustaendigkeit"
+    ]
+  },
+  {
+    "slug": "weiden",
+    "stadt": "Weiden in der Oberpfalz",
+    "bundesland": "Bayern",
+    "behoerde": "Stadt Weiden i.d.OPf. – Kfz-Zulassungsbehörde (Kfz-Zulassungsstelle)",
+    "behoerdeQuelle": "https://www.weiden.de/stadt/buergerservice/ansprechpartner-a-z/362439",
+    "traeger": "Stadt Weiden in der Oberpfalz",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle im Neuen Rathaus",
+        "strasse": "Dr.-Pfleger-Straße 15",
+        "plz": "92637",
+        "ort": "Weiden i.d.OPf.",
+        "quelle": "https://www.weiden.de/stadt/buergerservice/ansprechpartner-a-z/362439"
+      }
+    ],
+    "website": {
+      "url": "https://www.weiden.de/stadt/buergerservice/online-dienste-/-formulare/mobilitaet/kfz-zulassung",
+      "quelle": "https://www.weiden.de/stadt/buergerservice/online-dienste-/-formulare/mobilitaet/kfz-zulassung"
+    },
+    "terminUrl": {
+      "url": "https://tevis.weiden.de/",
+      "quelle": "https://www.weiden.de/stadt/buergerservice/terminvereinbarung"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100042.OE.40562&leistungId=99036020001000&p=093630",
+      "quelle": "https://www.weiden.de/stadt/buergerservice/online-dienste-/-formulare/mobilitaet/kfz-zulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Terminkunden: Mo–Mi 08:00–13:00 Uhr",
+        "Terminkunden: Do 08:00–12:00 und 14:30–17:30 Uhr",
+        "Terminkunden: Fr 08:00–13:00 Uhr",
+        "Kunden ohne Termin: Mo–Fr 09:00–10:00 Uhr"
+      ],
+      "hinweis": "Termin empfohlen (online, per E-Mail oder telefonisch). Ohne Termin nur Mo–Fr 09:00–10:00 Uhr mit Ticket vom Automaten im Eingangsbereich, längere Wartezeiten möglich",
+      "quelle": "https://www.weiden.de/fileadmin/user_upload/A_Stadt-Rathaus-Buerger/A02_Buergerservice/termin_anmeldung_aufruf/handout_oeffnungszeiten_zulassung.pdf"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde der kreisfreien Stadt Weiden i.d.OPf. (Stadtverwaltung, Neues Rathaus).",
+      "quelle": "https://www.weiden.de/stadt/buergerservice/ansprechpartner-a-z/362439"
+    },
+    "kuerzel": [
+      {
+        "code": "WEN",
+        "bedeutung": "Weiden (Weiden in der Oberpfalz)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Spontanbesucher ohne Termin werden nur Mo–Fr zwischen 09:00 und 10:00 Uhr bedient. Dazu zieht man am Automaten im Eingangsbereich ein Ticket und wartet auf den Aufruf.",
+        "quelle": "https://www.weiden.de/fileadmin/user_upload/A_Stadt-Rathaus-Buerger/A02_Buergerservice/termin_anmeldung_aufruf/handout_oeffnungszeiten_zulassung.pdf"
+      },
+      {
+        "text": "Kennzeichen (Wunsch- oder Zufallskennzeichen) lassen sich online reservieren; dort gibt es auch eine Online-Auskunft zum Bankbrief.",
+        "quelle": "https://www.weiden.de/stadt/buergerservice/online-dienste-/-formulare/mobilitaet/kfz-zulassung"
+      },
+      {
+        "text": "Abmeldungen sind auch online über das Behörden-Serviceportal möglich.",
+        "quelle": "https://www.weiden.de/stadt/buergerservice/online-dienste-/-formulare/mobilitaet/kfz-zulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "wuerzburg",
+    "stadt": "Würzburg",
+    "bundesland": "Bayern",
+    "behoerde": "Stadt Würzburg – Bürgerbüro, Kfz-Zulassung (Zulassungsbehörde der Stadt Würzburg)",
+    "behoerdeQuelle": "https://www.wuerzburg.de/rathaus/buergerbuero/kraftfahrzeug/531133.Kraftfahrzeug.html",
+    "traeger": "Stadt Würzburg",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgerbüro der Stadt Würzburg (Kfz-Zulassung)",
+        "strasse": "Rückermainstraße 2",
+        "plz": "97070",
+        "ort": "Würzburg",
+        "quelle": "https://www.wuerzburg.de/rathaus/buergerbuero/kraftfahrzeug/531133.Kraftfahrzeug.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.wuerzburg.de/rathaus/buergerbuero/kraftfahrzeug/531133.Kraftfahrzeug.html",
+      "quelle": "https://www.wuerzburg.de/rathaus/buergerbuero/kraftfahrzeug/531133.Kraftfahrzeug.html"
+    },
+    "terminUrl": {
+      "url": "https://stadt-wuerzburg.saas.smartcjm.com/m/stadt-wuerzburg/extern/calendar/?uid=636ab139-3b0e-411c-8db4-11a1e91134e8",
+      "quelle": "https://www.wuerzburg.de/rathaus/buergerbuero/terminvereinbarung"
+    },
+    "ikfzUrl": {
+      "url": "https://www.wuerzburg.de/rathaus/buergerbuero/online-zulassungsbehrde",
+      "quelle": "https://www.wuerzburg.de/rathaus/buergerbuero/kraftfahrzeug/531133.Kraftfahrzeug.html"
+    },
+    "oeffnungszeiten": null,
+    "zustaendigkeit": {
+      "text": "Zulassungsbehörde der kreisfreien Stadt Würzburg für Einwohner des Stadtgebiets. Wer im Landkreis Würzburg wohnt (ebenfalls Kennzeichen WÜ), muss sich an das Landratsamt Würzburg wenden. Die Online-Zulassung der Stadt gibt es ebenfalls nur für Einwohner der Stadt Würzburg.",
+      "quelle": "https://www.wuerzburg.de/rathaus/buergerbuero/kraftfahrzeug/531133.Kraftfahrzeug.html"
+    },
+    "kuerzel": [
+      {
+        "code": "WÜ",
+        "bedeutung": "Würzburg (Stadt Würzburg und Landkreis Würzburg)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Ohne Termin ist keine Vorsprache möglich. Termine lassen sich bis zu 90 Tage im Voraus buchen. Zusätzliche, auch tagesaktuelle Termine werden regelmäßig morgens zwischen 07:15 und 07:30 Uhr freigeschaltet.",
+        "quelle": "https://www.wuerzburg.de/rathaus/buergerbuero/terminvereinbarung"
+      },
+      {
+        "text": "Wunschkennzeichen mit nur einem Buchstaben (z. B. WÜ-B 100) oder zwei Buchstaben und zwei Ziffern gibt es in der Stadt nur mit den Buchstaben B, I, G, F, O und Q; die übrigen Buchstaben vergibt der Landkreis Würzburg. Eine Online-Reservierung gilt 90 Tage.",
+        "quelle": "https://www.wuerzburg.de/rathaus/buergerbuero/kraftfahrzeug/531133.Kraftfahrzeug.html"
+      },
+      {
+        "text": "Bei Besuchen in der Zulassungsbehörde muss der Fahrzeugschein im Original auf Papier vorgelegt werden; der digitale Fahrzeugschein reicht hier nicht.",
+        "quelle": "https://www.wuerzburg.de/rathaus/buergerbuero/kraftfahrzeug/531133.Kraftfahrzeug.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten"
+    ]
+  },
+  {
+    "slug": "coburg",
+    "stadt": "Coburg",
+    "bundesland": "Bayern",
+    "behoerde": "Zweckverband Zulassungsstelle Coburg – gemeinsame Zulassungs- und Fahrerlaubnisbehörde von Stadt und Landkreis Coburg",
+    "behoerdeQuelle": "https://www.zulassungsstelle-coburg.de/",
+    "traeger": "Zweckverband Zulassungsstelle Coburg (Stadt Coburg und Landkreis Coburg)",
+    "standorte": [
+      {
+        "bezeichnung": "Zweckverband Zulassungsstelle Coburg (Geschäftsstelle)",
+        "strasse": "Wilhelm-Ruß-Straße 5",
+        "plz": "96450",
+        "ort": "Coburg",
+        "quelle": "https://www.zulassungsstelle-coburg.de/kontakt-impressum/"
+      }
+    ],
+    "website": {
+      "url": "https://www.zulassungsstelle-coburg.de/",
+      "quelle": "https://www.landkreis-coburg.de/buergerservice/zulassungs-und-fahrerlaubnisbehoerde"
+    },
+    "terminUrl": {
+      "url": "https://www.zulassungsstelle-coburg.de/termin/",
+      "quelle": "https://www.zulassungsstelle-coburg.de/2022/09/22/hinweise-zur-terminvergabe/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerserviceportal.de/bayern/zvzcoburg/bsp_ikfz_antragstellung",
+      "quelle": "https://www.zulassungsstelle-coburg.de/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo, Di 07:30–16:00 Uhr",
+        "Mi 07:30–12:00 Uhr",
+        "Do 07:30–17:30 Uhr",
+        "Fr 07:30–12:00 Uhr"
+      ],
+      "hinweis": "Meist nur nach vorheriger Terminvereinbarung. Ohne Termin in der Zulassungsbehörde: Mo 07:30–11:30 Uhr und Do 13:00–17:00 Uhr (Wartenummer an der Information)",
+      "quelle": "https://www.zulassungsstelle-coburg.de/"
+    },
+    "zustaendigkeit": {
+      "text": "Gemeinsame Kfz-Zulassungs- und Fahrerlaubnisbehörde für die kreisfreie Stadt Coburg und den Landkreis Coburg. Stadt und Landkreis teilen sich also eine Behörde und dieselben Kennzeichen (CO, NEC).",
+      "quelle": "https://www.landkreis-coburg.de/buergerservice/zulassungs-und-fahrerlaubnisbehoerde"
+    },
+    "kuerzel": [
+      {
+        "code": "CO",
+        "bedeutung": "Coburg (Stadt und Landkreis Coburg)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "NEC",
+        "bedeutung": "Neustadt bei Coburg (Altkennzeichen, für Stadt und Landkreis Coburg)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Ohne Termin möglich sind u. a. Außerbetriebsetzungen, Neusiegelung von Kennzeichen, Änderung von Halterdaten (Name/Adresse), Kurzzeitkennzeichen, Zuzug mit Kennzeichenbeibehaltung und Wiederzulassung auf denselben Halter. Für alle anderen Leistungen gilt die Online-Terminvergabe.",
+        "quelle": "https://www.zulassungsstelle-coburg.de/2022/09/22/hinweise-zur-terminvergabe/"
+      },
+      {
+        "text": "Pro Kunde und Tag lässt sich nur ein Termin buchen (mehrere Vorgänge möglich), höchstens eine Stunde lang. Neue Termine werden täglich freigeschaltet.",
+        "quelle": "https://www.zulassungsstelle-coburg.de/2022/09/22/hinweise-zur-terminvergabe/"
+      },
+      {
+        "text": "In den terminfreien Zeitfenstern (Mo vormittags, Do nachmittags) haben Terminkunden Vorrang. Wartenummern gibt es nur innerhalb der Zeitfenster.",
+        "quelle": "https://www.zulassungsstelle-coburg.de/2022/10/10/ohne-termin/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-altoetting",
+    "stadt": "Landkreis Altötting",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Altötting – KFZ-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.lra-aoe.de/themen/fahrzeug-verkehr/kfz-zulassungsbehoerde/",
+    "traeger": "Landkreis Altötting",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassungsbehörde im Landratsamt Altötting",
+        "strasse": "Bahnhofstr. 38",
+        "plz": "84503",
+        "ort": "Altötting",
+        "quelle": "https://www.lra-aoe.de/themen/fahrzeug-verkehr/kfz-zulassungsbehoerde/"
+      }
+    ],
+    "website": {
+      "url": "https://www.lra-aoe.de/themen/fahrzeug-verkehr/kfz-zulassungsbehoerde/",
+      "quelle": "https://www.lra-aoe.de/themen/fahrzeug-verkehr/kfz-zulassungsbehoerde/"
+    },
+    "terminUrl": {
+      "url": "https://reservationv5.frontdesksuite.com/altoetting/Verkehrswesentermine",
+      "quelle": "https://www.lra-aoe.de/themen/fahrzeug-verkehr/kfz-zulassungsbehoerde/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.lra-aoe.de/buergerservice/online-dienstleistungen/verkehr-online-zulassungsbehoerde-neuzulassung-umschreibung-wiederzulassung-fahrzeugabmeldung/#/",
+      "quelle": "https://www.lra-aoe.de/themen/fahrzeug-verkehr/kfz-zulassungsbehoerde/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Mi 07:30–12:00 Uhr",
+        "Do 08:00–11:30 und 14:00–17:30 Uhr",
+        "Fr 07:30–11:30 Uhr"
+      ],
+      "hinweis": "Annahmezeiten. Bis 30.11.2026 ohne Termin; ab 01.12.2026 nur noch mit vorher vereinbartem Termin (online ab 02.11.2026 oder am Terminal im Eingangsbereich buchbar). Der Annahmeschluss kann um eine Stunde vorverlegt werden",
+      "quelle": "https://www.lra-aoe.de/themen/fahrzeug-verkehr/kfz-zulassungsbehoerde/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Altötting. Über die erweiterte Zuständigkeit werden hier auch Anmeldungen, Abmeldungen und Änderungen für die Landkreise Berchtesgadener Land, Fürstenfeldbruck, Garmisch-Partenkirchen, Miesbach, Mühldorf a. Inn, München (Land), Rosenheim (Stadt und Land), Starnberg, Traunstein und Bad Tölz-Wolfratshausen bearbeitet.",
+      "quelle": "https://www.lra-aoe.de/themen/fahrzeug-verkehr/kfz-zulassungsbehoerde/"
+    },
+    "kuerzel": [
+      {
+        "code": "AÖ",
+        "bedeutung": "Altötting",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "LF",
+        "bedeutung": "Laufen (Altkennzeichen, wird auch in den Landkreisen Berchtesgadener Land und Traunstein vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Ab 01.12.2026 gilt für persönliche Vorsprachen in der Zulassungs- und Fahrerlaubnisbehörde Terminpflicht. Termine gibt es online (ab 02.11.2026) oder am Terminal im Eingangsbereich.",
+        "quelle": "https://www.lra-aoe.de/themen/fahrzeug-verkehr/kfz-zulassungsbehoerde/"
+      },
+      {
+        "text": "Das Landratsamt bittet, Kennzeichen nicht vorab anfertigen zu lassen, sondern erst nach Vorlage der Zulassungsunterlagen. Einen Anspruch auf ein bestimmtes Kennzeichen gibt es nicht.",
+        "quelle": "https://www.lra-aoe.de/themen/fahrzeug-verkehr/kfz-zulassungsbehoerde/"
+      },
+      {
+        "text": "Kurze Kennzeichen mit weniger als vier Zeichen nach „AÖ“ gibt es nur, wenn ein längeres Schild baulich nicht passt. Sie werden ausschließlich am Tag der Zulassung zugeteilt und lassen sich nicht reservieren.",
+        "quelle": "https://www.lra-aoe.de/buergerservice/onlinereservierung-des-wunschkennzeichens/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-bad-toelz-wolfratshausen",
+    "stadt": "Landkreis Bad Tölz-Wolfratshausen",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Bad Tölz-Wolfratshausen – Sachgebiet 33 Verkehrsangelegenheiten, Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.lra-toelz.de/de/buergerservice-views/abteilungen/BAY:department:51178/kfz-zulassungsbehoerde-bad-toelz/",
+    "traeger": "Landkreis Bad Tölz-Wolfratshausen",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Bad Tölz",
+        "strasse": "Prof.-Max-Lange-Platz 11",
+        "plz": "83646",
+        "ort": "Bad Tölz",
+        "quelle": "https://www.lra-toelz.de/de/buergerservice-views/abteilungen/BAY:department:51178/kfz-zulassungsbehoerde-bad-toelz/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Wolfratshausen (Außenstelle des Landratsamts)",
+        "strasse": "Geltinger Straße 27",
+        "plz": "82515",
+        "ort": "Wolfratshausen",
+        "quelle": "https://www.lra-toelz.de/de/buergerservice-views/abteilungen/BAY:department:51175/kfz-zulassungsbehoerde-wolfratshausen/"
+      }
+    ],
+    "website": {
+      "url": "https://www.lra-toelz.de/de/buergerservice/themen-a-z/kfz-zulassung/",
+      "quelle": "https://www.lra-toelz.de/de/buergerservice/themen-a-z/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://tempus-termine.com/termine/index.php?anlagennr=216&anlagentoken=Uqg72Bk&anwendung=1",
+      "quelle": "https://www.lra-toelz.de/de/buergerservice/themen-a-z/kfz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.lra-toelz.de/de/buergerservice/themen-a-z/kfz-zulassung/online-zulassungsbehoerde/",
+      "quelle": "https://www.lra-toelz.de/de/buergerservice/themen-a-z/kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Bad Tölz: Mo 07:30–12:00 und 13:30–17:30 Uhr",
+        "Bad Tölz: Di, Do 07:30–12:00 und 13:30–15:30 Uhr",
+        "Bad Tölz: Mi 07:30–13:00 Uhr",
+        "Bad Tölz: Fr 07:30–12:00 Uhr",
+        "Wolfratshausen: Mo, Di 07:30–12:00 und 13:30–15:30 Uhr",
+        "Wolfratshausen: Mi 07:30–13:00 Uhr",
+        "Wolfratshausen: Do 07:30–12:00 und 13:30–17:30 Uhr",
+        "Wolfratshausen: Fr 07:30–12:00 Uhr"
+      ],
+      "hinweis": "Grundsätzlich mit Termin (online buchbar, höchstens 14 Tage im Voraus). Ohne Termin werden nur Abmeldungen bearbeitet: Wartemarke am Ticketautomaten ziehen, man wird zwischen den gebuchten Terminen eingeschoben",
+      "quelle": "https://www.lra-toelz.de/de/buergerservice/themen-a-z/kfz-zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Bad Tölz-Wolfratshausen mit zwei Standorten (Bad Tölz und Wolfratshausen). Zuständig bleibt die Zulassungsstelle des Hauptwohnsitzes bzw. Betriebssitzes. Über die erweiterte Zuständigkeit können viele Vorgänge gegenseitig auch für die Landkreise Altötting, Berchtesgadener Land, Fürstenfeldbruck, Garmisch-Partenkirchen, Miesbach, Mühldorf am Inn, München, Rosenheim, Starnberg und Traunstein sowie die Stadt Rosenheim erledigt werden. Das Kennzeichen kommt immer von der Behörde des Hauptwohnsitzes bzw. Betriebssitzes.",
+      "quelle": "https://www.lra-toelz.de/de/buergerservice/themen-a-z/kfz-zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "TÖL",
+        "bedeutung": "Bad Tölz",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WOR",
+        "bedeutung": "Wolfratshausen (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Bezahlt wird an beiden Standorten am Kassenautomaten im Vorraum, bar oder mit Bankkarte. Die Quittung legt man danach unaufgefordert beim Sachbearbeiter vor.",
+        "quelle": "https://www.lra-toelz.de/de/buergerservice/themen-a-z/kfz-zulassung/"
+      },
+      {
+        "text": "Für Zulassungen mit Wunschkennzeichen in der erweiterten Zuständigkeit muss das Kennzeichen bei der Zulassungsbehörde des Hauptwohnsitzes bzw. Betriebssitzes reserviert sein. Bei der Bearbeitung ist die Reservierungs-PIN anzugeben.",
+        "quelle": "https://www.lra-toelz.de/de/buergerservice/themen-a-z/kfz-zulassung/"
+      },
+      {
+        "text": "Das Landratsamt warnt: Reservierungen auf fremden Internetseiten führen nicht automatisch zu einer Reservierung beim Amt; dafür ist nur der eigene Online-Service zuständig. Kennzeichenschilder verkauft das Landratsamt nicht.",
+        "quelle": "https://www.lra-toelz.de/de/buergerservice/themen-a-z/kfz-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

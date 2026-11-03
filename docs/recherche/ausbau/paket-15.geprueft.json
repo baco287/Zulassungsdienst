@@ -1,0 +1,76 @@
+[
+  {
+    "slug": "bremerhaven",
+    "stadt": "Bremerhaven",
+    "bundesland": "Bremen",
+    "behoerde": "Bürger- und Ordnungsamt der Stadt Bremerhaven (Kfz-Zulassung im Bürgerbüro Mitte und im Bürgerbüro Nord)",
+    "behoerdeQuelle": "https://www.bremerhaven.de/de/verwaltung-politik-sicherheit/buergerservice/dienstleistungen/kraftfahrzeug-anmelden.33962.html",
+    "traeger": "Stadt Bremerhaven (Magistrat der Stadt Bremerhaven)",
+    "standorte": [
+      {
+        "bezeichnung": "Bürger- und Ordnungsamt/Bürgerbüro Mitte",
+        "strasse": "Am Alten Hafen 118",
+        "plz": "27568",
+        "ort": "Bremerhaven",
+        "quelle": "https://www.bremerhaven.de/de/verwaltung-politik-sicherheit/buergerservice/adressen-oeffnungszeiten/buerger-und-ordnungsamt-buergerbuero-mitte.35371.html"
+      },
+      {
+        "bezeichnung": "Bürger- und Ordnungsamt/Bürgerbüro Nord (Stadthaus 5, 1. Obergeschoss)",
+        "strasse": "Hinrich-Schmalfeldt-Straße 30",
+        "plz": "27576",
+        "ort": "Bremerhaven",
+        "quelle": "https://www.bremerhaven.de/de/verwaltung-politik-sicherheit/buergerservice/adressen-oeffnungszeiten/buerger-und-ordnungsamt-buergerbuero-nord.35372.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.bremerhaven.de/de/verwaltung-politik-sicherheit/buergerservice/dienstleistungen/kraftfahrzeug-anmelden.33962.html",
+      "quelle": "https://www.bremerhaven.de/de/verwaltung-politik-sicherheit/buergerservice/dienstleistungen/kraftfahrzeug-anmelden.33962.html"
+    },
+    "terminUrl": {
+      "url": "https://www.bremerhaven.de/de/verwaltung-politik-sicherheit/buergerservice/termin-vereinbaren.31880.html",
+      "quelle": "https://www.bremerhaven.de/de/verwaltung-politik-sicherheit/buergerservice/termin-vereinbaren.31880.html"
+    },
+    "ikfzUrl": null,
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Bürgerbüro Mitte: Mo–Do 09:00–17:00 Uhr",
+        "Bürgerbüro Mitte: Fr 08:00–15:00 Uhr",
+        "Bürgerbüro Mitte: Sa 09:00–13:00 Uhr (nur am 1. Samstag im Monat; ist dieser ein Feiertag, stattdessen am 2. Samstag; die übrigen Samstage geschlossen)",
+        "Bürgerbüro Nord: Mo 08:00–12:00 Uhr und 14:00–17:00 Uhr",
+        "Bürgerbüro Nord: Di–Do 08:00–13:00 Uhr",
+        "Bürgerbüro Nord: Fr 08:00–12:00 Uhr"
+      ],
+      "hinweis": "Ein Aufsuchen der Bürgerbüros ist grundsätzlich nur mit Terminvereinbarung möglich (Termin online oder telefonisch). Zeiten Bürgerbüro Nord laut https://www.bremerhaven.de/de/verwaltung-politik-sicherheit/buergerservice/adressen-oeffnungszeiten/buerger-und-ordnungsamt-buergerbuero-nord.35372.html",
+      "quelle": "https://www.bremerhaven.de/de/verwaltung-politik-sicherheit/buergerservice/adressen-oeffnungszeiten/buerger-und-ordnungsamt-buergerbuero-mitte.35371.html"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassung für Halter mit Hauptwohnsitz in der kreisfreien Stadt Bremerhaven. Laut Stadt ist die Zulassung eine Dienstleistung in kommunaler Zuständigkeit: Sie können nur eine Dienststelle an Ihrem Wohnort aufsuchen. Wer in der Stadt Bremen wohnt, für den ist trotz gleichem Kürzel HB nicht Bremerhaven, sondern die Zulassungsstelle am eigenen Wohnort zuständig.",
+      "quelle": "https://www.bremerhaven.de/de/verwaltung-politik-sicherheit/buergerservice/dienstleistungen/kraftfahrzeug-anmelden.33962.html"
+    },
+    "kuerzel": [
+      {
+        "code": "HB",
+        "bedeutung": "Hansestadt Bremen (gilt für das ganze Land Bremen; die Stadt Bremerhaven vergibt Erkennungsnummern aus 1 Buchstaben und 4 Ziffern, also A 1000 bis Z 9999; die Stadt Bremen nutzt dasselbe Kürzel)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_aller_deutschen_Kfz-Kennzeichen_mit_einer_Gebietseinteilung"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Zulassungen mit EG-Typgenehmigung oder Einzelgenehmigung, Ausfuhrkennzeichen, Änderungen der Schadstoffklasse und die Erstausstellung deutscher Kennzeichen nach Umschreibung ausländischer Papiere sind nur im Bürgerbüro Nord möglich. Dort (Stadthaus 5) befindet sich auch der Händlerschalter.",
+        "quelle": "https://www.bremerhaven.de/de/verwaltung-politik-sicherheit/buergerservice/dienstleistungen/kraftfahrzeug-anmelden.33962.html"
+      },
+      {
+        "text": "Zusätzliche Tagestermine werden morgens online veröffentlicht: ab ca. 7:45 Uhr für das Bürgerbüro Nord, ab ca. 8:00 Uhr für das Bürgerbüro Mitte. Über die telefonische Buchung gibt es keine zusätzlichen Termine.",
+        "quelle": "https://www.bremerhaven.de/de/verwaltung-politik-sicherheit/buergerservice/termin-vereinbaren.31880.html"
+      },
+      {
+        "text": "Wunschkennzeichen können online über wunschkennzeichen.bremerhaven.de reserviert werden. Laut Stadt 10,20 Euro Wunschkennzeichen plus 2,60 Euro für die Vorabreservierung, beides wird erst bei der Zulassung berechnet. Die Reservierung verfällt nach 30 Tagen, wenn sie nicht abgerufen oder verlängert wird.",
+        "quelle": "https://www.bremerhaven.de/de/verwaltung-politik-sicherheit/buergerservice/dienstleistungen/wunschkennzeichen-reservieren.36519.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "ikfzUrl"
+    ]
+  }
+]

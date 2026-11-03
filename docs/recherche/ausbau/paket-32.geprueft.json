@@ -1,0 +1,1014 @@
+[
+  {
+    "slug": "altmarkkreis-salzwedel",
+    "stadt": "Altmarkkreis Salzwedel",
+    "bundesland": "Sachsen-Anhalt",
+    "behoerde": "Altmarkkreis Salzwedel – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.altmarkkreis-salzwedel.de/buerger-presseservice/buergerservice/oeffnungszeiten/oeffnungszeiten-der-kfz-zulassungsstelle-nicht-fuehrerscheinstelle.aspx",
+    "traeger": "Altmarkkreis Salzwedel",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle im Hauptgebäude der Kreisverwaltung",
+        "strasse": "Karl-Marx-Str. 32",
+        "plz": "29410",
+        "ort": "Hansestadt Salzwedel",
+        "quelle": "https://www.altmarkkreis-salzwedel.de/buerger-presseservice/buergerservice/oeffnungszeiten/oeffnungszeiten-der-kfz-zulassungsstelle-nicht-fuehrerscheinstelle.aspx"
+      }
+    ],
+    "website": {
+      "url": "https://www.altmarkkreis-salzwedel.de/buerger-presseservice/buergerservice-1/kfz-zulassung.aspx",
+      "quelle": "https://www.altmarkkreis-salzwedel.de/buerger-presseservice/buergerservice-1/kfz-zulassung.aspx"
+    },
+    "terminUrl": {
+      "url": "https://kfz-egov.regioit.de/tnv/?START_OFFICE=kfz-buerger&renderer=responsive",
+      "quelle": "https://www.altmarkkreis-salzwedel.de/buerger-presseservice/buergerservice-1/kfz-zulassung.aspx"
+    },
+    "ikfzUrl": {
+      "url": "https://stvaportal.altmarkkreis-salzwedel.de/",
+      "quelle": "https://www.altmarkkreis-salzwedel.de/buerger-presseservice/buergerservice-1/kfz-zulassung.aspx"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [],
+      "hinweis": "Für die Kfz-Zulassungsstelle sind vorrangig die Online-Termine zu nutzen; eine Terminanfrage ist auch telefonisch (03901 840-0) oder per E-Mail möglich. Feste Schalterzeiten nennt die offizielle Seite nicht.",
+      "quelle": "https://www.altmarkkreis-salzwedel.de/buerger-presseservice/buergerservice/oeffnungszeiten/oeffnungszeiten-der-kfz-zulassungsstelle-nicht-fuehrerscheinstelle.aspx"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle des Altmarkkreises Salzwedel im Hauptgebäude der Kreisverwaltung in der Hansestadt Salzwedel; zuständige Zulassungsbehörde für Fahrzeughalter im Altmarkkreis Salzwedel.",
+      "quelle": "https://www.altmarkkreis-salzwedel.de/buerger-presseservice/buergerservice/oeffnungszeiten/oeffnungszeiten-der-kfz-zulassungsstelle-nicht-fuehrerscheinstelle.aspx"
+    },
+    "kuerzel": [
+      {
+        "code": "SAW",
+        "bedeutung": "Salzwedel",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GA",
+        "bedeutung": "Gardelegen (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "KLZ",
+        "bedeutung": "Klötze (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Online-Termine werden grundsätzlich freitags ab 8:30 Uhr für drei Wochen im Voraus freigeschaltet; frei werdende Termine werden laufend wieder eingestellt. Bei der Buchung alle Vorgänge angeben (z. B. Abmeldung des alten und Anmeldung des neuen Fahrzeugs = 2 Vorgänge).",
+        "quelle": "https://www.altmarkkreis-salzwedel.de/buerger-presseservice/buergerservice-1/kfz-zulassung.aspx"
+      },
+      {
+        "text": "Digitaler Fahrzeugschein: bei einer Zulassung gebührenfrei erhältlich; für bereits zugelassene Fahrzeuge gegen Gebühr nach Terminvereinbarung in der Zulassungsbehörde (alternativ über die eID-Funktion in der i-Kfz-App).",
+        "quelle": "https://www.altmarkkreis-salzwedel.de/buerger-presseservice/buergerservice-1/kfz-zulassung.aspx"
+      },
+      {
+        "text": "Online-Dienste der Zulassungsbehörde: Wunschkennzeichen-Reservierung und Bankbriefauskunft (Prüfung, ob die Zulassungsbescheinigung Teil II von der Bank bereits eingegangen ist).",
+        "quelle": "https://www.altmarkkreis-salzwedel.de/buerger-presseservice/buergerservice-1/kfz-zulassung.aspx"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten"
+    ]
+  },
+  {
+    "slug": "landkreis-anhalt-bitterfeld",
+    "stadt": "Landkreis Anhalt-Bitterfeld",
+    "bundesland": "Sachsen-Anhalt",
+    "behoerde": "Landkreis Anhalt-Bitterfeld – Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.anhalt-bitterfeld.de/de/zulassungsbehoerde.html",
+    "traeger": "Landkreis Anhalt-Bitterfeld",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassung Bereich Köthen",
+        "strasse": "Am Flugplatz 1",
+        "plz": "06366",
+        "ort": "Köthen (Anhalt)",
+        "quelle": "https://www.anhalt-bitterfeld.de/de/zulassungsbehoerde.html"
+      },
+      {
+        "bezeichnung": "Zulassung Bereich Bitterfeld",
+        "strasse": "Röhrenstraße 33",
+        "plz": "06749",
+        "ort": "Bitterfeld-Wolfen (OT Bitterfeld)",
+        "quelle": "https://www.anhalt-bitterfeld.de/de/zulassungsbehoerde.html"
+      },
+      {
+        "bezeichnung": "Zulassung Bereich Zerbst",
+        "strasse": "Fritz-Brandt-Str. 16",
+        "plz": "39261",
+        "ort": "Zerbst/Anhalt",
+        "quelle": "https://www.anhalt-bitterfeld.de/de/zulassungsbehoerde.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.anhalt-bitterfeld.de/de/zulassungsbehoerde.html",
+      "quelle": "https://www.anhalt-bitterfeld.de/de/zulassungsbehoerde.html"
+    },
+    "terminUrl": {
+      "url": "https://anhalt-bitterfeld.flexappoint.de",
+      "quelle": "https://www.anhalt-bitterfeld.de/de/terminreservierung.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100008.OE.402304071&leistungId=99036020001000&p=150820",
+      "quelle": "https://www.anhalt-bitterfeld.de/de/kraftfahrzeug.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Vorsprache in Köthen, Bitterfeld und Zerbst mit vorheriger Terminvereinbarung (Online-Portal)",
+        "Allgemeine Sprechzeiten (auch Terminvereinbarung per Telefon 03496 60-1591 oder E-Mail): Di 09:00–12:00 und 14:00–18:00 Uhr, Do 09:00–12:00 und 14:00–17:00 Uhr, Fr 09:00–12:00 Uhr",
+        "Abgabe für Gewerbetreibende und Institutionen mit mehreren Anliegen: 08:00–10:00 Uhr (außer Mittwoch)"
+      ],
+      "hinweis": "Kfz-Zulassung arbeitet mit vorheriger Terminvereinbarung. Ohne Termin nur in unvorhersehbaren Fällen (z. B. Verlust von Dokumenten, Kennzeichen, Fahrzeugpapieren, Plaketten, Kurzzeitkennzeichen) – mit Wartezeit.",
+      "quelle": "https://www.anhalt-bitterfeld.de/de/terminreservierung.html"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Anhalt-Bitterfeld mit drei Standorten (Köthen, Bitterfeld, Zerbst); bei der Online-Terminbuchung wählt man Anliegen und Standort.",
+      "quelle": "https://www.anhalt-bitterfeld.de/de/terminreservierung.html"
+    },
+    "kuerzel": [
+      {
+        "code": "ABI",
+        "bedeutung": "Anhalt-Bitterfeld",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "AZE",
+        "bedeutung": "Anhalt-Zerbst (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BTF",
+        "bedeutung": "Bitterfeld (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "KÖT",
+        "bedeutung": "Köthen (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ZE",
+        "bedeutung": "Zerbst (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Keine Kfz-Zulassung bei rückständigen Gebühren und Auslagen aus früheren Zulassungsvorgängen; die Behörde verweist dann an die Kämmerei/Hauptkasse des Landkreises.",
+        "quelle": "https://www.anhalt-bitterfeld.de/de/zulassungsbehoerde.html"
+      },
+      {
+        "text": "Wunschkennzeichen lassen sich online für 30 Tage reservieren; eine Verlängerung bis zu 90 Tagen ist telefonisch bei der Zulassungsbehörde möglich.",
+        "quelle": "https://www.anhalt-bitterfeld.de/de/zulassungsbehoerde.html"
+      },
+      {
+        "text": "Beim Unterscheidungszeichen ZE sind zusätzlich Kombinationen aus 2 Buchstaben und 4 Ziffern möglich (z. B. ZE-LT1234).",
+        "quelle": "https://www.anhalt-bitterfeld.de/de/zulassungsbehoerde.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-boerde",
+    "stadt": "Landkreis Börde",
+    "bundesland": "Sachsen-Anhalt",
+    "behoerde": "Landkreis Börde – Straßenverkehrsamt, Sachgebiet Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.landkreis-boerde.de/landkreis/kreisverwaltung/dezernat-4/strassenverkehrsamt/sachgebiet-kfz-zulassung",
+    "traeger": "Landkreis Börde",
+    "standorte": [
+      {
+        "bezeichnung": "Straßenverkehrsamt Haldensleben, Verwaltungsgebäude Bornsche Straße 2",
+        "strasse": "Bornsche Straße 2",
+        "plz": "39340",
+        "ort": "Haldensleben",
+        "quelle": "https://www.landkreis-boerde.de/landkreis/kreisverwaltung/standorte-sprechzeiten"
+      },
+      {
+        "bezeichnung": "Straßenverkehrsamt Oschersleben, Verwaltungsgebäude Triftstraße 9-10",
+        "strasse": "Triftstraße 9-10",
+        "plz": "39387",
+        "ort": "Oschersleben (Bode)",
+        "quelle": "https://www.landkreis-boerde.de/landkreis/kreisverwaltung/standorte-sprechzeiten"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-boerde.de/landkreis/kreisverwaltung/dezernat-4/strassenverkehrsamt/sachgebiet-kfz-zulassung",
+      "quelle": "https://www.landkreis-boerde.de/landkreis/kreisverwaltung/dezernat-4/strassenverkehrsamt/sachgebiet-kfz-zulassung"
+    },
+    "terminUrl": {
+      "url": "https://tempus-termine.com/termine/index.php?anlagennr=44&anlagentoken=Z1EvT8p&anwendung=1&infotext=zulassung",
+      "quelle": "https://www.landkreis-boerde.de/landkreis/kreisverwaltung/dezernat-4/strassenverkehrsamt/sachgebiet-kfz-zulassung"
+    },
+    "ikfzUrl": null,
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo geschlossen",
+        "Di 08:00–12:00 und 13:00–18:00 Uhr",
+        "Mi 08:00–12:00 Uhr",
+        "Do 08:00–12:00 und 13:00–16:00 Uhr",
+        "Fr 08:00–11:30 Uhr"
+      ],
+      "hinweis": "Sprechzeiten für Kfz- und Führerscheinangelegenheiten – nur mit Termin. Fahrzeugzulassung erfolgt nur nach vorheriger Online-Terminreservierung; eine telefonische Terminreservierung ist nicht möglich.",
+      "quelle": "https://www.landkreis-boerde.de/onlineservice/terminreservierung-kfz"
+    },
+    "zustaendigkeit": {
+      "text": "Fahrzeug-Zulassungsbehörde des Landkreises Börde (Straßenverkehrsamt); Zulassungsangelegenheiten werden an den Standorten Haldensleben und Oschersleben (Bode) erledigt, die bei der Online-Reservierung zur Auswahl stehen.",
+      "quelle": "https://www.landkreis-boerde.de/onlineservice/terminreservierung-kfz"
+    },
+    "kuerzel": [
+      {
+        "code": "BK",
+        "bedeutung": "Börde (Kreis) (gleiches Kürzel auch im Rems-Murr-Kreis und Landkreis Schwäbisch Hall für Backnang)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BÖ",
+        "bedeutung": "Börde",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "HDL",
+        "bedeutung": "Haldensleben (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "OC",
+        "bedeutung": "Oschersleben (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "OK",
+        "bedeutung": "Ohrekreis (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WMS",
+        "bedeutung": "Wolmirstedt (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WZL",
+        "bedeutung": "Wanzleben (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Online-Termine bis drei Wochen im Voraus; für den aktuellen Tag werden gegen 7:00 Uhr zusätzliche Kapazitäten freigeschaltet. Pro Termin maximal fünf Anliegen; die Reservierungsbestätigung ausgedruckt oder notiert mitbringen.",
+        "quelle": "https://www.landkreis-boerde.de/onlineservice/terminreservierung-kfz"
+      },
+      {
+        "text": "Mindestens 10 Minuten vor dem Termin erscheinen – wer nicht anwesend ist, verliert den Termin. Der Termin gilt nur für die in der Reservierung benannte Person und nur für die gebuchten Anliegen. Zulassungsdienste und Kfz-Händler mit mehr als fünf Anliegen sind von der Online-Reservierung ausgenommen.",
+        "quelle": "https://www.landkreis-boerde.de/onlineservice/terminreservierung-kfz"
+      },
+      {
+        "text": "Die internetbasierte Fahrzeugzulassung (i-Kfz-Portal, Ausbaustufe 4) steht aus technischen Gründen derzeit nicht zur Verfügung (Wartungsarbeiten bis auf Weiteres); Zulassungen laufen wie bisher mit Termin im Straßenverkehrsamt.",
+        "quelle": "https://www.landkreis-boerde.de/onlineservice/kfz-onlineabmeldung-und-ameldung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "burgenlandkreis",
+    "stadt": "Burgenlandkreis",
+    "bundesland": "Sachsen-Anhalt",
+    "behoerde": "Burgenlandkreis – Straßenverkehrsamt, Sachgebiet Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.burgenlandkreis.de/de/zulassungsangelegenheiten.html",
+    "traeger": "Burgenlandkreis",
+    "standorte": [
+      {
+        "bezeichnung": "Straßenverkehrsamt Naumburg (Landratsamt)",
+        "strasse": "Schönburger Straße 41",
+        "plz": "06618",
+        "ort": "Naumburg (Saale)",
+        "quelle": "https://www.burgenlandkreis.de/de/strassenverkehrsamt.html"
+      },
+      {
+        "bezeichnung": "Straßenverkehrsamt Außenstelle Weißenfels",
+        "strasse": "Am Stadtpark 6",
+        "plz": "06667",
+        "ort": "Weißenfels",
+        "quelle": "https://www.burgenlandkreis.de/de/zulassungsangelegenheiten.html"
+      },
+      {
+        "bezeichnung": "Straßenverkehrsamt Außenstelle Zeitz",
+        "strasse": "Domherrenstraße 1",
+        "plz": "06712",
+        "ort": "Zeitz",
+        "quelle": "https://www.burgenlandkreis.de/de/zulassungsangelegenheiten.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.burgenlandkreis.de/de/zulassungsangelegenheiten.html",
+      "quelle": "https://www.burgenlandkreis.de/de/zulassungsangelegenheiten.html"
+    },
+    "terminUrl": {
+      "url": "https://burgenlandkreis.termine-reservieren.online/select2?md=3",
+      "quelle": "https://www.burgenlandkreis.de/de/zulassungsangelegenheiten.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100008.OE.9405221&leistungId=99036020001000&p=150840",
+      "quelle": "https://www.burgenlandkreis.de/de/zulassungsangelegenheiten.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–11:30 Uhr",
+        "Di 08:00–11:30 und 13:00–17:30 Uhr",
+        "Do 08:00–11:30 und 13:00–15:00 Uhr",
+        "Fr 08:00–11:30 Uhr"
+      ],
+      "hinweis": "Sprechzeiten des Kfz-Zulassungswesens (für Mittwoch ist keine Sprechzeit angegeben). Für Naumburg, Weißenfels und Zeitz kann online ein Termin gebucht werden; die Terminbuchung ist nicht für Autohäuser und gewerbliche Zulassungsunternehmen gedacht.",
+      "quelle": "https://www.burgenlandkreis.de/de/zulassungsangelegenheiten.html"
+    },
+    "zustaendigkeit": {
+      "text": "Sachgebiet Kfz-Zulassung im Straßenverkehrsamt des Burgenlandkreises mit Zulassungsstellen in Naumburg (Saale), Weißenfels und Zeitz; Termine sind für alle drei Standorte online buchbar.",
+      "quelle": "https://www.burgenlandkreis.de/de/zulassungsangelegenheiten.html"
+    },
+    "kuerzel": [
+      {
+        "code": "BLK",
+        "bedeutung": "Burgenlandkreis",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "HHM",
+        "bedeutung": "Hohenmölsen (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "NEB",
+        "bedeutung": "Nebra (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "NMB",
+        "bedeutung": "Naumburg (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WSF",
+        "bedeutung": "Weißenfels (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ZZ",
+        "bedeutung": "Zeitz (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Autohäuser und gewerbliche Zulassungsunternehmen buchen keine Online-Termine: Sie geben an den Öffnungstagen zwischen 9 und 10 Uhr bis zu 10 vollständige Vorgänge ab und holen sie nach Bearbeitung im gleichen Zeitfenster an den nächsten Öffnungstagen wieder ab.",
+        "quelle": "https://www.burgenlandkreis.de/de/zulassungsangelegenheiten.html"
+      },
+      {
+        "text": "Seit dem 15.12.2025 lassen sich Fahrzeuge online (i-Kfz) zulassen, wiederzulassen, ummelden und abmelden sowie Adressänderungen durchführen; auch Wunschkennzeichen sind online reservierbar.",
+        "quelle": "https://www.burgenlandkreis.de/de/zulassungsangelegenheiten.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-harz",
+    "stadt": "Landkreis Harz",
+    "bundesland": "Sachsen-Anhalt",
+    "behoerde": "Landkreis Harz – Kfz-Zulassungsbehörde (KFZ-Zulassungsstelle Wernigerode)",
+    "behoerdeQuelle": "https://www.kreis-hz.de/de/kfzzulassung.html",
+    "traeger": "Landkreis Harz",
+    "standorte": [],
+    "website": {
+      "url": "https://www.kreis-hz.de/de/kfzzulassung.html",
+      "quelle": "https://www.kreis-hz.de/de/kfzzulassung.html"
+    },
+    "terminUrl": {
+      "url": "https://onlineterminvereinbarung.kreis-hz.de/select2?md=7",
+      "quelle": "https://www.kreis-hz.de/de/kfzzulassung.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100008.OE.218306624&leistungId=99036020001000&p=150850",
+      "quelle": "https://www.kreis-hz.de/de/kfzzulassung.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Do 08:00–12:00 und 13:00–16:00 Uhr"
+      ],
+      "hinweis": "Anliegen werden nur nach vorheriger Online-Terminvereinbarung bearbeitet.",
+      "quelle": "https://www.kreis-hz.de/de/kfzzulassung.html"
+    },
+    "zustaendigkeit": {
+      "text": "Zentrale KFZ-Zulassungsstelle des Landkreises Harz im Dornbergsweg 39a in Wernigerode – für Fahrzeughalter im gesamten Landkreis Harz.",
+      "quelle": "https://www.kreis-hz.de/de/kfzzulassung.html"
+    },
+    "kuerzel": [
+      {
+        "code": "HZ",
+        "bedeutung": "Harz",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "HBS",
+        "bedeutung": "Halberstadt (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "QLB",
+        "bedeutung": "Quedlinburg (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WR",
+        "bedeutung": "Wernigerode (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Online-Terminbuchung steht nur Privatpersonen, sozialen Einrichtungen, Vereinen sowie Gewerbetreibenden und Selbstständigen für einzelne (Firmen-)Fahrzeuge offen; Zulassungsdienste aus dem Landkreis Harz wenden sich an den Händlerschalter. Termine aus Massenbuchungen werden gelöscht bzw. nicht bedient.",
+        "quelle": "https://onlineterminvereinbarung.kreis-hz.de/select2?md=7"
+      },
+      {
+        "text": "Hohe Terminnachfrage: Es lohnt sich, mehrmals am Tag nach neu freigegebenen oder abgesagten Terminen zu schauen. Längere Wartezeiten vor allem an Brückentagen, vor und nach Feiertagen sowie um Monats-, Quartals- und Jahreswechsel.",
+        "quelle": "https://www.kreis-hz.de/de/kfzzulassung.html"
+      },
+      {
+        "text": "Online-Dienste über das Behörden-Serviceportal: Kfz-Anmeldung und -Abmeldung, Wunschkennzeichen und Leasingbriefauskunft; Großkunden können die Großkundenschnittstelle (GKS) des KBA nutzen.",
+        "quelle": "https://www.kreis-hz.de/de/kfzzulassung.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "standorte[0].plz",
+      "standorte"
+    ]
+  },
+  {
+    "slug": "landkreis-jerichower-land",
+    "stadt": "Landkreis Jerichower Land",
+    "bundesland": "Sachsen-Anhalt",
+    "behoerde": "Landkreis Jerichower Land – Sachgebiet Straßenverkehr / Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.lkjl.de/de/strassenverkehrsamt.html",
+    "traeger": "Landkreis Jerichower Land",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Burg, Außenstelle Alte Kaserne",
+        "strasse": "In der Alten Kaserne 9",
+        "plz": "39288",
+        "ort": "Burg",
+        "quelle": "https://www.lkjl.de/de/strassenverkehrsamt.html"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassung Außenstelle Genthin, Kreishaus Genthin",
+        "strasse": "Brandenburger Straße 100",
+        "plz": "39307",
+        "ort": "Genthin",
+        "quelle": "https://www.lkjl.de/de/strassenverkehrsamt.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.lkjl.de/de/strassenverkehrsamt.html",
+      "quelle": "https://www.lkjl.de/de/strassenverkehrsamt.html"
+    },
+    "terminUrl": {
+      "url": "https://termine.lkjl.de/select2?md=4",
+      "quelle": "https://www.lkjl.de/de/strassenverkehrsamt.html"
+    },
+    "ikfzUrl": null,
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Burg: Mo 08:30–12:00 Uhr",
+        "Burg: Di 08:30–12:00 und 13:00–16:00 Uhr",
+        "Burg: Do 08:30–12:00 und 13:00–17:00 Uhr",
+        "Burg: Fr 08:30–12:00 Uhr",
+        "Genthin: Mo 08:30–12:00 und 13:00–15:00 Uhr",
+        "Genthin: Mi 08:30–12:00 und 13:00–15:00 Uhr"
+      ],
+      "hinweis": "Besuch der Zulassungsstelle in Burg und Genthin mit vorheriger Terminabsprache – online oder telefonisch unter 03921 949-3604 bzw. -3603.",
+      "quelle": "https://www.lkjl.de/de/strassenverkehrsamt.html"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassung des Landkreises Jerichower Land mit der Zulassungsstelle in Burg (Alte Kaserne 9) und der Außenstelle im Kreishaus Genthin; bei der Online-Terminvergabe wählt man Standort und Zeit.",
+      "quelle": "https://www.lkjl.de/de/strassenverkehrsamt.html"
+    },
+    "kuerzel": [
+      {
+        "code": "JL",
+        "bedeutung": "Jerichower Land",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BRG",
+        "bedeutung": "Burg (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GNT",
+        "bedeutung": "Genthin (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Online-Zulassung und -Abmeldung sind bis auf Weiteres wegen technischer Probleme nicht möglich; auch die Online-Reservierung von Wunschkennzeichen ist aktuell nicht verfügbar – alternativ per E-Mail an fb-ordnung@lkjl.de.",
+        "quelle": "https://www.lkjl.de/de/strassenverkehrsamt.html"
+      },
+      {
+        "text": "Bezahlung: In der Zulassungsstelle Genthin nur noch mit EC-Karte; in Burg ist laut Landkreis weiterhin auch Barzahlung möglich.",
+        "quelle": "https://www.lkjl.de/de/strassenverkehrsamt.html"
+      },
+      {
+        "text": "In Burg werden täglich gegen 8:00 Uhr zusätzliche Terminkontingente freigegeben, wenn die Besetzung es zulässt – damit sind kurzfristige Termine am selben Tag möglich, die aber meist schnell vergeben sind.",
+        "quelle": "https://www.lkjl.de/de/strassenverkehrsamt.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-mansfeld-suedharz",
+    "stadt": "Landkreis Mansfeld-Südharz",
+    "bundesland": "Sachsen-Anhalt",
+    "behoerde": "Landkreis Mansfeld-Südharz – Straßenverkehrsamt, Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.mansfeldsuedharz.de/ikfz",
+    "traeger": "Landkreis Mansfeld-Südharz",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde (Straßenverkehrsamt)",
+        "strasse": "Alte Promenade 27",
+        "plz": "06526",
+        "ort": "Sangerhausen",
+        "quelle": "https://www.mansfeldsuedharz.de/ikfz"
+      }
+    ],
+    "website": {
+      "url": "https://www.mansfeldsuedharz.de/ikfz",
+      "quelle": "https://www.mansfeldsuedharz.de/ikfz"
+    },
+    "terminUrl": {
+      "url": "https://cqm4.cleverq.de/public/sites/44/appointments/index.html?lang=de",
+      "quelle": "https://www.mansfeldsuedharz.de/ikfz"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100008.OE.14067506&leistungId=99036020001000&p=150870",
+      "quelle": "https://www.mansfeldsuedharz.de/ikfz"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Service-Telefon der Zulassungsstelle (Terminvereinbarung): werktags 08:00–09:30 Uhr, +49 3464 535 4240"
+      ],
+      "hinweis": "Termine bei der Zulassungsstelle sollten vorab online, per App (CleverQ) oder am Service-Telefon vereinbart werden; bei der Buchung alle Anliegen angeben. Schalteröffnungszeiten der Zulassungsstelle nennt die Seite nicht – angegeben ist nur die telefonische Erreichbarkeit.",
+      "quelle": "https://www.mansfeldsuedharz.de/ikfz"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Mansfeld-Südharz im Straßenverkehrsamt, Besucheradresse Alte Promenade 27 in Sangerhausen.",
+      "quelle": "https://www.mansfeldsuedharz.de/ikfz"
+    },
+    "kuerzel": [
+      {
+        "code": "MSH",
+        "bedeutung": "Mansfeld-Südharz",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "EIL",
+        "bedeutung": "Eisleben (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "HET",
+        "bedeutung": "Hettstedt (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ML",
+        "bedeutung": "Mansfelder Land (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SGH",
+        "bedeutung": "Sangerhausen (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Online-Zulassung (i-Kfz) ohne Termin rund um die Uhr und zu reduzierten Gebühren; nach Abschluss darf man 14 Tage mit den zugeteilten, ungestempelten Kennzeichen fahren (keine Auslandsfahrten), Dokumente und Plaketten kommen per Post, die Kennzeichenschilder beschafft man selbst.",
+        "quelle": "https://www.mansfeldsuedharz.de/ikfz"
+      },
+      {
+        "text": "Kfz-Handel und Zulassungsdienste buchen keine Termine, sondern nutzen den Abgabe- und Abholservice: Abgabe einmal täglich Mo–Fr 07:00–08:00 Uhr an der Information, Abholung in der Regel am gleichen Tag.",
+        "quelle": "https://www.mansfeldsuedharz.de/ikfz/wichtige-hinweise-der-kfz-zulassungsbehoerde"
+      },
+      {
+        "text": "Jeden zweiten Mittwoch im Monat bleibt die Zulassungsstelle wegen Wartungsarbeiten an den IT-Systemen komplett geschlossen.",
+        "quelle": "https://www.mansfeldsuedharz.de/ikfz/wichtige-hinweise-der-kfz-zulassungsbehoerde"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten"
+    ]
+  },
+  {
+    "slug": "saalekreis",
+    "stadt": "Saalekreis",
+    "bundesland": "Sachsen-Anhalt",
+    "behoerde": "Landkreis Saalekreis – Straßenverkehrsamt, SG Kfz-Zulassung (KFZ-Zulassungsbehörde Saalekreis)",
+    "behoerdeQuelle": "https://www.saalekreis.de/de/behoerdenausgabe/organisationseinheit/28/sg_kfz-zulassung.html",
+    "traeger": "Landkreis Saalekreis",
+    "standorte": [
+      {
+        "bezeichnung": "Straßenverkehrsamt, KFZ-Zulassungsbehörde Saalekreis",
+        "strasse": "Weißenfelser Straße 46 a-c",
+        "plz": "06217",
+        "ort": "Merseburg",
+        "quelle": "https://www.saalekreis.de/de/behoerdenausgabe/organisationseinheit/28/sg_kfz-zulassung.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.saalekreis.de/de/behoerdenausgabe/organisationseinheit/28/sg_kfz-zulassung.html",
+      "quelle": "https://www.saalekreis.de/de/behoerdenausgabe/organisationseinheit/28/sg_kfz-zulassung.html"
+    },
+    "terminUrl": {
+      "url": "https://saalekreis.konsentas.de/modules/ota_public/form/1/",
+      "quelle": "https://www.saalekreis.de/de/onlineterminreservierung.html"
+    },
+    "ikfzUrl": null,
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 09:00–12:00 Uhr (jeden ersten Montag im Monat geschlossen)",
+        "Di 09:00–12:00 und 13:00–18:00 Uhr",
+        "Mi 09:00–12:00 Uhr",
+        "Do 09:00–12:00 und 13:00–15:00 Uhr",
+        "Fr 09:00–12:00 Uhr"
+      ],
+      "hinweis": "Besuch nur mit vorheriger Online-Terminreservierung (für Bürger und Gewerbetreibende, nicht für Autohändler und Zulassungsdienste). Abmeldungen sind auch ohne Termin möglich; die Ticketautomaten schließen spätestens eine Stunde vor Sprechzeitende.",
+      "quelle": "https://www.saalekreis.de/de/behoerdenausgabe/organisationseinheit/28/sg_kfz-zulassung.html"
+    },
+    "zustaendigkeit": {
+      "text": "SG Kfz-Zulassung im Straßenverkehrsamt des Landkreises Saalekreis in Merseburg. Anträge stellt man bei der Zulassungsbehörde, die für den Hauptwohnsitz, Betriebssitz oder die Niederlassung zuständig ist (Landkreis bzw. kreisfreie Stadt).",
+      "quelle": "https://www.saalekreis.de/de/leistungsausgabe/leistung/83/umschreibung_von_gebrauchtfahrzeugen.html"
+    },
+    "kuerzel": [
+      {
+        "code": "SK",
+        "bedeutung": "Saalekreis",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MER",
+        "bedeutung": "Merseburg (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MQ",
+        "bedeutung": "Merseburg-Querfurt (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "QFT",
+        "bedeutung": "Querfurt (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Autohäuser und Zulassungsdienste dürfen nur Mo–Do von 08:00 bis 09:30 Uhr bis zu 7 vollständige Zulassungsvorgänge abgeben; die Bearbeitung dauert bis zu 3 Tage, über die Abholung wird per E-Mail informiert.",
+        "quelle": "https://www.saalekreis.de/de/behoerdenausgabe/organisationseinheit/28/sg_kfz-zulassung.html"
+      },
+      {
+        "text": "Internetbasierte Zulassung ist im Saalekreis nur über die Großkundenschnittstelle (GKS, Registrierung beim KBA) möglich; eine i-Kfz-Zulassung mit sofortigem Losfahren gibt es noch nicht – Papiere und Plaketten kommen per Post.",
+        "quelle": "https://www.saalekreis.de/de/fahrzeugangelegenheiten.html"
+      },
+      {
+        "text": "An jedem ersten Montag im Monat bleibt das Straßenverkehrsamt geschlossen.",
+        "quelle": "https://www.saalekreis.de/de/aktuelles-detail/sprechzeiten-im-strassenverkehrsamt.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "salzlandkreis",
+    "stadt": "Salzlandkreis",
+    "bundesland": "Sachsen-Anhalt",
+    "behoerde": "Salzlandkreis – Fachdienst 32 Ordnung und Straßenverkehr, SG 32.1 Kfz-Zulassungsbehörde/Bürgerbüros",
+    "behoerdeQuelle": "https://www.salzlandkreis.de/buergerservice-views/mitarbeiter/ST:employee:20008/kfz-zulassung-bernburg-saale/",
+    "traeger": "Salzlandkreis",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassung Aschersleben",
+        "strasse": "Ermslebener Straße 77",
+        "plz": "06449",
+        "ort": "Aschersleben",
+        "quelle": "https://www.salzlandkreis.de/buergerservice-views/mitarbeiter/ST:employee:20005/kfz-zulassung-aschersleben/"
+      },
+      {
+        "bezeichnung": "KFZ-Zulassung Bernburg (Saale)",
+        "strasse": "Kalistraße 11",
+        "plz": "06406",
+        "ort": "Bernburg (Saale)",
+        "quelle": "https://www.salzlandkreis.de/buergerservice-views/mitarbeiter/ST:employee:20008/kfz-zulassung-bernburg-saale/"
+      },
+      {
+        "bezeichnung": "KFZ-Zulassung Schönebeck (Elbe)",
+        "strasse": "Geschwister-Scholl-Straße 157",
+        "plz": "39218",
+        "ort": "Schönebeck (Elbe)",
+        "quelle": "https://www.salzlandkreis.de/buergerservice-views/mitarbeiter/ST:employee:20011/kfz-zulassung-schoenebeck-elbe/"
+      }
+    ],
+    "website": {
+      "url": "https://www.salzlandkreis.de/themenbereiche/mobilitaet-verkehr/kfz-zulassungen/",
+      "quelle": "https://www.salzlandkreis.de/themenbereiche/mobilitaet-verkehr/kfz-zulassungen/"
+    },
+    "terminUrl": {
+      "url": "https://termine.salzlandkreis.de/",
+      "quelle": "https://www.salzlandkreis.de/themenbereiche/mobilitaet-verkehr/kfz-zulassungen/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100008.OE.400318039&leistungId=99036020001000&p=150890",
+      "quelle": "https://www.salzlandkreis.de/themenbereiche/mobilitaet-verkehr/kfz-zulassungen/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 10:00–12:30 und 13:30–15:00 Uhr",
+        "Di 10:00–12:30 und 13:30–18:00 Uhr",
+        "Mi geschlossen",
+        "Do 10:00–12:30 und 13:30–16:00 Uhr",
+        "Fr 10:00–12:00 Uhr",
+        "Sa 09:00–12:00 Uhr (nur Bernburg; keine Ausfuhr- und Wechselkennzeichen, keine Genehmigung von Gutachten nach § 13 EG-FGV)"
+      ],
+      "hinweis": "Termine online (für Einwohner des Salzlandkreises) oder telefonisch über die Hotline +49 3471 684-1414 (Mo–Fr 11:00–12:00 Uhr, Di und Do zusätzlich 13:30–14:30 Uhr). Für Autohäuser und Zulassungsdienste gelten gesonderte Sprechzeiten.",
+      "quelle": "https://www.salzlandkreis.de/themenbereiche/mobilitaet-verkehr/kfz-zulassungen/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Salzlandkreises mit den Standorten Aschersleben, Bernburg (Saale) und Schönebeck (Elbe); das Terminprogramm zeigt nach Wahl des Anliegens die Standorte an, an denen es bearbeitet werden kann.",
+      "quelle": "https://www.salzlandkreis.de/themenbereiche/mobilitaet-verkehr/kfz-zulassungen/"
+    },
+    "kuerzel": [
+      {
+        "code": "SLK",
+        "bedeutung": "Salzlandkreis",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ASL",
+        "bedeutung": "Aschersleben (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BBG",
+        "bedeutung": "Bernburg (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SBK",
+        "bedeutung": "Schönebeck (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SFT",
+        "bedeutung": "Staßfurt (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Samstagssprechzeit 09:00–12:00 Uhr – nur in Bernburg; dann keine Bearbeitung von Ausfuhr- und Wechselkennzeichen und keine Genehmigung von Gutachten nach § 13 EG-FGV.",
+        "quelle": "https://www.salzlandkreis.de/themenbereiche/mobilitaet-verkehr/kfz-zulassungen/"
+      },
+      {
+        "text": "Montags, dienstags, donnerstags und freitags werden gegen 07:30 Uhr nicht mehr benötigte oder zurückgegebene Termine wieder für die Onlinebuchung freigegeben.",
+        "quelle": "https://www.salzlandkreis.de/themenbereiche/mobilitaet-verkehr/kfz-zulassungen/"
+      },
+      {
+        "text": "Autohäuser und Zulassungsdienste: Sprechzeiten Mo–Fr 08:30–10:00 Uhr, Abholung in der Regel am folgenden Arbeitstag; seit 15.01.2020 nur mit Kopie des Ausweisdokuments auf dem Vordruck und beigefügtem Bearbeitungsauftrag.",
+        "quelle": "https://www.salzlandkreis.de/themenbereiche/mobilitaet-verkehr/kfz-zulassungen/autohaeuser-und-zulassungsdienste/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-stendal",
+    "stadt": "Landkreis Stendal",
+    "bundesland": "Sachsen-Anhalt",
+    "behoerde": "Landkreis Stendal – Ordnungsamt, Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.landkreis-stendal.de/de/kfz-zulassung.html",
+    "traeger": "Landkreis Stendal",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassung (Ordnungsamt)",
+        "strasse": "Tauentzienstraße 5",
+        "plz": "39576",
+        "ort": "Hansestadt Stendal",
+        "quelle": "https://www.landkreis-stendal.de/de/kfz-zulassung.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-stendal.de/de/kfz-zulassung.html",
+      "quelle": "https://www.landkreis-stendal.de/de/kfz-zulassung.html"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/stendal/",
+      "quelle": "https://www.landkreis-stendal.de/de/kfz-zulassung.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.landkreis-stendal.de/de/internetbasierte-fahrzeugzulassung.html",
+      "quelle": "https://www.landkreis-stendal.de/de/kfz-zulassung.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:30–12:00 und 13:30–16:00 Uhr",
+        "Di 08:30–12:00 und 13:30–17:00 Uhr",
+        "Do 08:30–12:00 und 13:30–17:00 Uhr",
+        "Fr 08:00–11:00 Uhr",
+        "Telefonische Terminvergabe: Mo, Di, Do, Fr 10:00–11:00 Uhr"
+      ],
+      "hinweis": "Bearbeitung von Anliegen erfolgt nur nach Terminvereinbarung (online oder telefonisch). Für Mittwoch sind keine Sprechzeiten angegeben.",
+      "quelle": "https://www.landkreis-stendal.de/de/kfz-zulassung.html"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassung im Ordnungsamt des Landkreises Stendal, Tauentzienstraße 5 in der Hansestadt Stendal – der einzige auf der Kreisseite genannte Zulassungsstandort.",
+      "quelle": "https://www.landkreis-stendal.de/de/kfz-zulassung.html"
+    },
+    "kuerzel": [
+      {
+        "code": "SDL",
+        "bedeutung": "Stendal",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "HV",
+        "bedeutung": "Havelberg (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "OBG",
+        "bedeutung": "Osterburg (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Auf der Kfz-Seite des Landkreises verlinkt: Online-Terminbuchung, Wunschkennzeichen-Reservierung, Abfrage, ob Fahrzeugbrief/Bankbrief vorliegt, sowie Online-Zulassung/Ummeldung und Online-Abmeldung.",
+        "quelle": "https://www.landkreis-stendal.de/de/kfz-zulassung.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-wittenberg",
+    "stadt": "Landkreis Wittenberg",
+    "bundesland": "Sachsen-Anhalt",
+    "behoerde": "Landkreis Wittenberg – KFZ-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.landkreis-wittenberg.de/antraege-stellen/was-erledige-ich-wo/393413576/erstzulassung-eines-fahrzeugs-neuzulassung-beantragen/",
+    "traeger": "Landkreis Wittenberg",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassungsbehörde im Kreishaus",
+        "strasse": "Breitscheidstraße 4",
+        "plz": "06886",
+        "ort": "Lutherstadt Wittenberg",
+        "quelle": "https://www.landkreis-wittenberg.de/antraege-stellen/was-erledige-ich-wo/393413576/erstzulassung-eines-fahrzeugs-neuzulassung-beantragen/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-wittenberg.de/antraege-stellen/kfz-online/",
+      "quelle": "https://www.landkreis-wittenberg.de/antraege-stellen/kfz-online/"
+    },
+    "terminUrl": {
+      "url": "https://www.landkreis-wittenberg.de/antraege-stellen/termin-buchen/",
+      "quelle": "https://www.landkreis-wittenberg.de/antraege-stellen/termin-buchen/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/sachsenanhalt/lkrwittenberg/bsp_ikfz_antragstellung/#/",
+      "quelle": "https://www.landkreis-wittenberg.de/antraege-stellen/kfz-online/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:30–12:00 und 13:00–15:00 Uhr",
+        "Di 08:30–12:00 und 13:00–17:00 Uhr",
+        "Mi 08:30–12:00 Uhr",
+        "Do 08:30–12:00 und 13:00–18:00 Uhr",
+        "Fr 08:30–12:00 Uhr"
+      ],
+      "hinweis": "An allen Sprechtagen ist eine Online-Terminreservierung möglich; bei Vorsprache ohne Termin kann es zu längeren Wartezeiten kommen.",
+      "quelle": "https://www.landkreis-wittenberg.de/kontakt-und-oeffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "KFZ-Zulassungsbehörde des Landkreises Wittenberg im Kreishaus Lutherstadt Wittenberg. Die Bürgerbüros in Jessen und Gräfenhainichen stehen bis auf Weiteres nur für Beratungstermine der Fachdienste Soziales, Jugend und Bildung sowie Gesundheit zur Verfügung – nicht für die Kfz-Zulassung.",
+      "quelle": "https://www.landkreis-wittenberg.de/kontakt-und-oeffnungszeiten/"
+    },
+    "kuerzel": [
+      {
+        "code": "WB",
+        "bedeutung": "Wittenberg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GHC",
+        "bedeutung": "Gräfenhainichen (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "JE",
+        "bedeutung": "Jessen (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Online über i-Kfz möglich: u. a. Abmeldung, Wiederzulassung, Umschreibung und Adressänderung.",
+        "quelle": "https://www.landkreis-wittenberg.de/antraege-stellen/kfz-online/"
+      },
+      {
+        "text": "Wunschkennzeichen können online auf Verfügbarkeit geprüft und reserviert werden; die Reservierung gilt 14 Tage.",
+        "quelle": "https://www.landkreis-wittenberg.de/antraege-stellen/kfz-online/"
+      },
+      {
+        "text": "Eigene Terminkategorie für Händler (max. 5 Vorgänge) neben Zulassung/Umschreibung, Außerbetriebsetzung, Änderung von Halter-/Fahrzeugdaten, Ausfuhr-/Kurzzeitkennzeichen und Verlust von Fahrzeugdokumenten.",
+        "quelle": "https://www.landkreis-wittenberg.de/antraege-stellen/termin-buchen/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "dessau-rosslau",
+    "stadt": "Dessau-Roßlau",
+    "bundesland": "Sachsen-Anhalt",
+    "behoerde": "Stadt Dessau-Roßlau – Amt für öffentliche Sicherheit und Ordnung, Kfz-Zulassungs- und Fahrerlaubnisbehörde",
+    "behoerdeQuelle": "https://verwaltung.dessau-rosslau.de/stadt-buerger/ordnung-und-verkehr.html",
+    "traeger": "Stadt Dessau-Roßlau",
+    "standorte": [
+      {
+        "bezeichnung": "Amt für öffentliche Sicherheit und Ordnung (Kfz-Zulassungs- und Fahrerlaubnisbehörde)",
+        "strasse": "Ferdinand-von-Schill-Straße 8",
+        "plz": "06844",
+        "ort": "Dessau-Roßlau",
+        "quelle": "https://verwaltung.dessau-rosslau.de/stadt-buerger/ordnung-und-verkehr/kfz-zulassung.html"
+      }
+    ],
+    "website": {
+      "url": "https://verwaltung.dessau-rosslau.de/stadt-buerger/ordnung-und-verkehr/kfz-zulassung.html",
+      "quelle": "https://verwaltung.dessau-rosslau.de/stadt-buerger/ordnung-und-verkehr/kfz-zulassung.html"
+    },
+    "terminUrl": {
+      "url": "https://terminvereinbarung.dessau-rosslau.de/tvweb/",
+      "quelle": "https://verwaltung.dessau-rosslau.de/informationen-zur-terminvergabe.html"
+    },
+    "ikfzUrl": null,
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–12:00 und 13:30–15:00 Uhr",
+        "Di 08:00–12:00 und 13:30–17:30 Uhr",
+        "Mi geschlossen",
+        "Do 08:00–12:00 und 13:30–15:30 Uhr",
+        "Fr 08:00–12:00 Uhr"
+      ],
+      "hinweis": "Termine nur online (keine Terminvergabe per Telefon oder E-Mail). Ohne Termin ist eine Vorsprache zu den Sprechzeiten möglich, dann mit längeren Wartezeiten; Zutritt nur zu den regulären Sprechzeiten, das Anmeldeterminal kann bei hohem Andrang vor Sprechzeitende gesperrt werden.",
+      "quelle": "https://verwaltung.dessau-rosslau.de/stadt-buerger/ordnung-und-verkehr.html"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungs- und Fahrerlaubnisbehörde der Stadt Dessau-Roßlau im städtischen Amt für öffentliche Sicherheit und Ordnung – die eigene Zulassungsbehörde der Stadt Dessau-Roßlau (nicht zu verwechseln mit der Kreisverwaltung Anhalt-Bitterfeld in Köthen).",
+      "quelle": "https://verwaltung.dessau-rosslau.de/stadt-buerger/ordnung-und-verkehr/kfz-zulassung.html"
+    },
+    "kuerzel": [
+      {
+        "code": "DE",
+        "bedeutung": "Dessau",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "RSL",
+        "bedeutung": "Roßlau (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Online-Termine mit 14 Tagen Vorlauf: Immer montags werden die Termine für die übernächste Kalenderwoche freigegeben; stornierte Termine werden automatisch wieder buchbar.",
+        "quelle": "https://verwaltung.dessau-rosslau.de/informationen-zur-terminvergabe.html"
+      },
+      {
+        "text": "Online-Termine werden vorrangig bearbeitet – wer ohne Termin kommt, muss mit längeren Wartezeiten rechnen; bei hohem Besucheraufkommen werden schon vor Sprechzeitende keine Wartemarken mehr ausgegeben.",
+        "quelle": "https://verwaltung.dessau-rosslau.de/stadt-buerger/ordnung-und-verkehr.html"
+      },
+      {
+        "text": "Wunschkennzeichen lassen sich online über die Seite der Stadt reservieren.",
+        "quelle": "https://verwaltung.dessau-rosslau.de/stadt-buerger/ordnung-und-verkehr/wunschkennzeichen.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "ikfzUrl"
+    ]
+  }
+]
