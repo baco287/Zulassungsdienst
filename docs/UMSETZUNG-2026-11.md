@@ -1,6 +1,6 @@
 # Wettbewerbs-Upgrade DeutscheZulassung – Umsetzung November 2026
 
-Stand: 03.11.2026 · Branch `feature/wettbewerb-upgrade` · **nicht live**
+Stand: 03.11.2026 · **live** seit 03.11.2026 (main `4434ac5`, Ausbau `399bfd7`)
 
 Hauptkonkurrent: bundeszulassung24.de. Ziel: DeutscheZulassung technisch, inhaltlich
 und bei Google-SEO auf Wettbewerbsniveau bringen. Das Online-Bestellsystem mit
@@ -20,7 +20,11 @@ Zahlung (Phase 4) wurde am 03.11.2026 auf Wunsch der Geschäftsführung zurückg
 | 8 Tracking | Cookielose Analyse (Plausible oder Matomo) vorbereitet, standardmäßig aus. Conversion-Ereignisse für Start, Leistungswahl, Schritte, Abbruch, Absenden, Upload, WhatsApp, Telefon, E-Mail. Google Ads nur nach Einwilligung, vorbereitet und inaktiv. Datenschutzerklärung passt sich automatisch an. Details: `docs/TRACKING.md`. |
 | 9 Stärken | „Ohne eID“ in der Hauptnavigation, Maxx, Rechner und Vorlagen auf der Ratgeber-Übersicht, Städteseiten verlinken auf ihre Zulassungsstelle und Kennzeichen, neue Ratgeber von den passenden Leistungsseiten verlinkt. |
 
-## 2. Neue URLs (96)
+## 2. Neue URLs
+
+Nach dem ersten Deploy 184 Sitemap-URLs (vorher 87), nach dem Zulassungsstellen-Ausbau **1.214**.
+
+### Erster Deploy (96 neue URLs)
 
 - **Landingpages:** `/kfz-zulassung-ohne-eid/`, `/auto-abmelden-ohne-eid/`, `/ikfz-funktioniert-nicht/`, `/ikfz-fehlermeldung/`, `/auto-online-anmelden/`, `/zulassungsdienst-online/`
 - **Ratgeber:** `/ratgeber/fahrzeugpapiere-sicherheitscodes/`, `/ratgeber/halterwechsel-nach-autokauf/`, `/ratgeber/auto-verkauft-abmelden/`, `/ratgeber/wunschkennzeichen-reservieren/`, `/ratgeber/fahrzeugzulassung-unternehmen/`
@@ -29,6 +33,15 @@ Zahlung (Phase 4) wurde am 03.11.2026 auf Wunsch der Geschäftsführung zurückg
 - **Kennzeichen:** `/kennzeichen/` und 42 Kürzel: A, AC, B, BI, BN, BO, BS, C, D, DD, DO, DU, E, EF, FR, GE, H, HAL, HB, HH, HL, HOG, HRO, K, KA, KI, KR, KS, L, M, MA, MD, MG, MON, MS, MZ, N, OB, S, W, WI, WOH (URL in Kleinbuchstaben)
 - **301-Weiterleitungen (keine eigenen Seiten, gleicher Suchintent):** `/auto-online-zulassen-ohne-eid/` und `/kfz-zulassung-ohne-ausweisapp/` → `/kfz-zulassung-ohne-eid/`; `/online-zulassung-funktioniert-nicht/` → `/ikfz-funktioniert-nicht/`; `/kfz-zulassung-kosten/` → `/ratgeber/was-kostet-eine-kfz-zulassung/`
 - **Entfernt:** keine. Alle 87 bisherigen URLs bleiben erhalten.
+
+### Zweiter Deploy: Zulassungsstellen bundesweit
+
+- **404 von 406** Zulassungsbehörden Deutschlands unter `/zulassungsstelle/<slug>/` (Städte: Stadtname, Kreise: `landkreis-…` bzw. `kreis-…`), mit Suche nach Ort oder Kürzel auf `/zulassungsstelle/`.
+- **709 Kennzeichenkürzel** unter `/kennzeichen/<kürzel>/`, inklusive reaktivierter Altkennzeichen.
+- Recherche durch 36 Agenten-Pakete aus offiziellen Quellen, danach automatische Gegenprüfung (`scripts/verify-zulassungsstellen.mjs`): tote Links, inoffizielle Quellen und Adressen, die nicht auf der Quellseite stehen, wurden verworfen. Rohdaten und Prüfberichte: `docs/recherche/ausbau/`.
+- Fehlt eine amtliche Zuständigkeitsangabe der Behörde, gilt die gesetzliche Regel (§ 75 Abs. 2 FZV: Behörde des Wohnorts) mit Quellenlink.
+- **Noch nicht veröffentlicht:** Kreis Paderborn und St. Ingbert (Behördenname bzw. offizielle Website nicht belegt).
+- **Korrigiert:** Die Städteseite Hannover behauptete, die Region sei auch für die Landeshauptstadt zuständig. Stadt und Region sind getrennte Behörden.
 
 Nicht veröffentlicht, weil Pflichtangaben auf der Behördenseite fehlten: Zulassungsstelle Frankfurt
 (Zuständigkeit nicht belegt). Bewusst nicht übernommen: Kürzel WAT für Bochum (nur Wikipedia),
@@ -53,7 +66,7 @@ Nicht geprüft: Ladezeit-Messung (PageSpeed-Kontingent war erschöpft), echte We
 
 ## 4. Offene Freigaben und Klärungen
 
-1. **Preisfreigabe:** In `config/preise.json` `freigabe.freigegeben` auf `true` setzen, erst dann geht der Live-Deploy durch. Vorher Wirtschaftlichkeit prüfen, besonders Wunschkennzeichen (11,69 € unter der amtlichen Gebühr von 12,80 €) und Adressänderung (63,79 € inkl. Gebühr und Versand).
+1. **Preisfreigabe:** erteilt am 03.11.2026 per Anweisung „push und deploy“. Wirtschaftlichkeit trotzdem im Blick behalten, besonders Wunschkennzeichen (11,69 € unter der amtlichen Gebühr von 12,80 €) und Adressänderung (63,79 € inkl. Gebühr und Versand). Für spätere Änderungen gilt: Freigabe in `config/preise.json` neu setzen.
 2. **Kennzeichenschilder:** Die Bilderanleitung sagt, ihr versendet keine Schilder (Kunde geht zum Schildermacher). Preise und Startseite bieten Schilder für 28,79 € mit Versand an. Bitte festlegen, was gilt.
 3. **Steuer und Rechnung:** Die MwSt. im Preisrechner ist auf den Gesamtbetrag gerechnet. Ob amtliche Gebühren als durchlaufender Posten ohne MwSt. auszuweisen sind, sollte die Steuerberatung klären. Die USt-IdNr. ist laut Impressum noch beantragt.
 4. **Rechtliche Prüfung:** Servicebedingungen (Entwurf), Datensicherheit, Datenschutz-Abschnitt für Analyse und Ads vor Aktivierung.
@@ -69,7 +82,7 @@ Nicht geprüft: Ladezeit-Messung (PageSpeed-Kontingent war erschöpft), echte We
 
 1. Google Search Console: Sitemap neu einreichen, Indexierung der neuen Seiten beobachten.
 2. Google-Unternehmensprofil und erste echte Bewertungen – größter Vertrauenshebel gegenüber dem Wettbewerb.
-3. Zulassungsstellen schrittweise auf alle rund 400 Behörden ausbauen (Importskript und Regeln stehen), Frankfurt nachrecherchieren.
+3. Zulassungsstellen pflegen: Kreis Paderborn und St. Ingbert nachrecherchieren, Angaben halbjährlich neu prüfen (`npm run import:zulassungsstellen` nach `verify-zulassungsstellen.mjs`).
 4. Ladezeit messen (PageSpeed) und HTTP/2 bzw. Caching beim Hoster prüfen.
 5. Titel bestehender Ratgeber auf höchstens 60 Zeichen kürzen.
 6. Backlinks aufbauen: Autohäuser, Branchenverzeichnisse, lokale Presse.
