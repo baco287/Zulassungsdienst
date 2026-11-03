@@ -484,8 +484,8 @@
       "quelle": "https://www.braunschweig.de/vv/oe/II/32/32_3/32_32/index.php"
     },
     "zustaendigkeit": {
-      "wert": "Zuständig für Fahrzeughalter in der kreisfreien Stadt Braunschweig. Das Unterscheidungszeichen BS wird ausschließlich von der Stadt Braunschweig vergeben.",
-      "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      "wert": "Zuständig für Fahrzeughalter mit Wohnsitz in Braunschweig – örtlich zuständig ist die Zulassungsbehörde des Wohnorts (§ 75 Abs. 2 FZV).",
+      "quelle": "https://www.gesetze-im-internet.de/fzv_2023/__75.html"
     },
     "kuerzel": [
       {
@@ -1113,6 +1113,74 @@
       {
         "wert": "Online (i-Kfz) möglich: Neuzulassung, Tageszulassung, Umschreibung, Wiederzulassung, Außerbetriebsetzung, Anschriftenänderung sowie Wunsch- und Zufallskennzeichen-Reservierung.",
         "quelle": "https://service.essen.de/detail/-/vr-bis-detail/dienstleistung/2282230/show"
+      }
+    ],
+    "geprueftAm": "2026-11-03"
+  },
+  {
+    "slug": "frankfurt",
+    "stadt": "Frankfurt am Main",
+    "bundesland": "Hessen",
+    "behoerde": {
+      "wert": "Zulassungsbehörde für Kraftfahrzeuge (Ordnungsamt der Stadt Frankfurt am Main)",
+      "quelle": "https://frankfurt.de/service-und-rathaus/verwaltung/aemter-und-institutionen/ordnungsamt/zulassungsbehoerde-fuer-kraftfahrzeuge"
+    },
+    "traeger": "Stadt Frankfurt am Main (Ordnungsamt)",
+    "standorte": [
+      {
+        "bezeichnung": "Ordnungsamt, Servicezentrum „Rund ums Auto“ (Zulassungsangelegenheiten)",
+        "strasse": "Am Römerhof 19",
+        "plz": "60486",
+        "ort": "Frankfurt am Main",
+        "quelle": "https://frankfurt.de/service-und-rathaus/verwaltung/aemter-und-institutionen/ordnungsamt/zulassungsbehoerde-fuer-kraftfahrzeuge"
+      }
+    ],
+    "website": {
+      "wert": "https://frankfurt.de/service-und-rathaus/verwaltung/aemter-und-institutionen/ordnungsamt/zulassungsbehoerde-fuer-kraftfahrzeuge",
+      "quelle": "https://frankfurt.de/service-und-rathaus/verwaltung/aemter-und-institutionen/ordnungsamt/zulassungsbehoerde-fuer-kraftfahrzeuge"
+    },
+    "terminUrl": {
+      "wert": "https://tevis.ekom21.de/fra/select2?md=2",
+      "quelle": "https://frankfurt.de/service-und-rathaus/verwaltung/aemter-und-institutionen/ordnungsamt/zulassungsbehoerde-fuer-kraftfahrzeuge"
+    },
+    "ikfzUrl": {
+      "wert": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100001.OE.9652963&leistungId=99036020001000&p=064120",
+      "quelle": "https://frankfurt.de/service-und-rathaus/verwaltung/aemter-und-institutionen/ordnungsamt/zulassungsbehoerde-fuer-kraftfahrzeuge"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag 08:00 - 15:00",
+        "Dienstag 08:00 - 15:00",
+        "Mittwoch 08:00 - 15:00",
+        "Donnerstag 08:00 - 15:00",
+        "Freitag 08:00 - 12:00"
+      ],
+      "hinweis": "Dies sind die Servicezeiten des Ordnungsamts für die telefonische Erreichbarkeit (keine Schalterzeiten). Eine Vorsprache im Ordnungsamt ist nur mit Termin möglich.",
+      "quelle": "https://frankfurt.de/de-de/service-und-rathaus/verwaltung/aemter-und-institutionen/ordnungsamt/unser-service"
+    },
+    "zustaendigkeit": {
+      "wert": "Zuständig für Fahrzeughalter mit Wohnsitz in Frankfurt am Main – örtlich zuständig ist die Zulassungsbehörde des Wohnorts (§ 75 Abs. 2 FZV).",
+      "quelle": "https://www.gesetze-im-internet.de/fzv_2023/__75.html"
+    },
+    "kuerzel": [
+      {
+        "code": "F",
+        "bedeutung": "Frankfurt",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "wert": "Eine Vorsprache ist nur mit Termin möglich; Termine werden am besten über die Online-Terminverwaltung vereinbart.",
+        "quelle": "https://frankfurt.de/service-und-rathaus/verwaltung/aemter-und-institutionen/ordnungsamt/zulassungsbehoerde-fuer-kraftfahrzeuge"
+      },
+      {
+        "wert": "Wunschkennzeichen können online reserviert werden.",
+        "quelle": "https://frankfurt.de/themen/sicherheit-und-ordnung/vorgaben-und-regeln/fuer-das-auto/zulassungsangelegenheiten"
+      },
+      {
+        "wert": "Nach einer Online-Zulassung (i-Kfz) kann das Fahrzeug mit dem vorläufigen Zulassungsnachweis sofort für 10 Kalendertage innerhalb Deutschlands gefahren werden; der Nachweis muss innerhalb von 30 Minuten heruntergeladen werden.",
+        "quelle": "https://frankfurt.de/themen/sicherheit-und-ordnung/vorgaben-und-regeln/fuer-das-auto/zulassungsangelegenheiten"
       }
     ],
     "geprueftAm": "2026-11-03"
@@ -1814,8 +1882,8 @@
       "quelle": "https://service.krefeld.de/strassenverkehrsangelegenheiten"
     },
     "zustaendigkeit": {
-      "wert": "Zuständig für Fahrzeughalter in der kreisfreien Stadt Krefeld; das Kürzel KR vergibt nur die Stadt Krefeld. Das Altkennzeichen KK (Kempen-Krefeld) wird nicht von der Stadt Krefeld, sondern vom Kreis Viersen vergeben.",
-      "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      "wert": "Zuständig für Fahrzeughalter mit Wohnsitz in Krefeld – örtlich zuständig ist die Zulassungsbehörde des Wohnorts (§ 75 Abs. 2 FZV).",
+      "quelle": "https://www.gesetze-im-internet.de/fzv_2023/__75.html"
     },
     "kuerzel": [
       {
@@ -2586,8 +2654,8 @@
       "quelle": "https://www.oberhausen.de/de/index/rathaus/verwaltung/burgerservice-offentliche-ordnung-personal-und-it/buergerservice/strassenverkehr/zulassung/oeffnungszeiten.php"
     },
     "zustaendigkeit": {
-      "wert": "Zuständig für Fahrzeughalter in der kreisfreien Stadt Oberhausen. Das Unterscheidungszeichen OB wird nur von der Stadt Oberhausen vergeben.",
-      "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      "wert": "Zuständig für Fahrzeughalter mit Wohnsitz in Oberhausen – örtlich zuständig ist die Zulassungsbehörde des Wohnorts (§ 75 Abs. 2 FZV).",
+      "quelle": "https://www.gesetze-im-internet.de/fzv_2023/__75.html"
     },
     "kuerzel": [
       {
@@ -2784,8 +2852,8 @@
       "quelle": "https://www.wiesbaden.de/vv/oe/07/34/Zulassungsbehoerde"
     },
     "zustaendigkeit": {
-      "wert": "Zuständig für Fahrzeughalter in der kreisfreien Landeshauptstadt Wiesbaden. Das Unterscheidungszeichen WI wird nur von der Stadt Wiesbaden vergeben.",
-      "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      "wert": "Zuständig für Fahrzeughalter mit Wohnsitz in Wiesbaden – örtlich zuständig ist die Zulassungsbehörde des Wohnorts (§ 75 Abs. 2 FZV).",
+      "quelle": "https://www.gesetze-im-internet.de/fzv_2023/__75.html"
     },
     "kuerzel": [
       {

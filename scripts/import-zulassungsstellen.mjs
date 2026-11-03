@@ -51,9 +51,28 @@ const OVERRIDES = {
   },
 };
 
+/** Quellen, die für Behördenangaben nicht zulässig sind (nur für Kürzel-Bedeutungen erlaubt). */
+const UNOFFICIAL = /wikipedia\.org|wikimedia\.org/i;
+
+/**
+ * Gesetzliche Zuständigkeit (§ 75 Abs. 2 FZV: Behörde des Wohnorts), wenn die
+ * Recherche keine amtlich belegte Zuständigkeitsangabe liefert.
+ */
+const FZV_75 = "https://www.gesetze-im-internet.de/fzv_2023/__75.html";
+function gesetzlicheZustaendigkeit(stadt) {
+  const kreis = /^(Landkreis|Kreis|Region|Regionalverband|Städteregion|StädteRegion|Rhein-|Main-)/i.test(stadt);
+  return {
+    wert: kreis
+      ? `Zuständig ist die Zulassungsbehörde des Wohnorts (§ 75 Abs. 2 FZV). Diese Behörde ist für Fahrzeughalter im Gebiet ${stadt} zuständig, soweit dort keine Stadt eine eigene Zulassungsbehörde hat.`
+      : `Zuständig für Fahrzeughalter mit Wohnsitz in ${stadt} – örtlich zuständig ist die Zulassungsbehörde des Wohnorts (§ 75 Abs. 2 FZV).`,
+    quelle: FZV_75,
+  };
+}
+
 const isUrl = (u) => typeof u === "string" && /^https?:\/\/\S+$/.test(u);
-const belegt = (wert, quelle) => (wert && isUrl(quelle) ? { wert: String(wert).trim(), quelle } : null);
-const link = (o) => (o && isUrl(o.url) && isUrl(o.quelle) ? { wert: o.url, quelle: o.quelle } : null);
+const official = (u) => isUrl(u) && !UNOFFICIAL.test(u);
+const belegt = (wert, quelle) => (wert && official(quelle) ? { wert: String(wert).trim(), quelle } : null);
+const link = (o) => (o && isUrl(o.url) && official(o.quelle) ? { wert: o.url, quelle: o.quelle } : null);
 
 const existing = existsSync(target) ? JSON.parse(readFileSync(target, "utf8")) : [];
 const bySlug = new Map(existing.map((z) => [z.slug, z]));
@@ -74,7 +93,7 @@ for (const file of process.argv.slice(2)) {
       behoerde: belegt(r.behoerde, r.behoerdeQuelle),
       traeger: r.traeger ?? null,
       standorte: (r.standorte ?? [])
-        .filter((s) => s.strasse && s.plz && s.ort && isUrl(s.quelle))
+        .filter((s) => s.strasse && s.plz && s.ort && official(s.quelle))
         .map((s) => ({ bezeichnung: s.bezeichnung, strasse: s.strasse, plz: String(s.plz), ort: s.ort, quelle: s.quelle })),
       website: link(r.website),
       terminUrl: link(r.terminUrl),
@@ -83,16 +102,21 @@ for (const file of process.argv.slice(2)) {
         r.oeffnungszeiten &&
         Array.isArray(r.oeffnungszeiten.zeilen) &&
         (r.oeffnungszeiten.zeilen.length || r.oeffnungszeiten.hinweis) &&
-        isUrl(r.oeffnungszeiten.quelle)
+        official(r.oeffnungszeiten.quelle)
           ? { zeilen: r.oeffnungszeiten.zeilen, hinweis: r.oeffnungszeiten.hinweis || null, quelle: r.oeffnungszeiten.quelle }
           : null,
-      zustaendigkeit: r.zustaendigkeit ? belegt(r.zustaendigkeit.text, r.zustaendigkeit.quelle) : null,
+      zustaendigkeit:
+        r.zustaendigkeit && r.zustaendigkeit.text && isUrl(r.zustaendigkeit.quelle) && !UNOFFICIAL.test(r.zustaendigkeit.quelle)
+          ? belegt(r.zustaendigkeit.text, r.zustaendigkeit.quelle)
+          : r.stadt
+            ? gesetzlicheZustaendigkeit(r.stadt)
+            : null,
       kuerzel: (r.kuerzel ?? [])
         .filter((k) => k.code && k.bedeutung && isUrl(k.quelle))
         .filter((k) => !(EXCLUDE_KUERZEL[r.slug] ?? []).includes(String(k.code).toUpperCase()))
         .map((k) => ({ code: String(k.code).toUpperCase(), bedeutung: k.bedeutung, quelle: k.quelle })),
       besonderheiten: (r.besonderheiten ?? [])
-        .filter((b) => b.text && isUrl(b.quelle) && !(exclude && exclude.test(b.text)))
+        .filter((b) => b.text && official(b.quelle) && !(exclude && exclude.test(b.text)))
         .map((b) => ({ wert: b.text, quelle: b.quelle })),
       geprueftAm: r.abgerufenAm,
     };
