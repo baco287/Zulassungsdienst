@@ -10,6 +10,8 @@ import { cities, getCity } from "@/lib/staedte";
 import { getService } from "@/lib/services";
 import { getGuide } from "@/lib/ratgeber";
 import { site } from "@/lib/site";
+import { P, PRICES, schemaPrice } from "@/lib/pricing";
+import { getZulassungsstelle, kennzeichenSlug } from "@/lib/zulassungsstellen";
 
 const cityServices = ["neuzulassung", "ummeldung", "halterwechsel", "abmeldung"];
 const cityGuides = ["was-kostet-eine-kfz-zulassung", "auto-anmelden-unterlagen", "kennzeichen-mitnehmen"];
@@ -47,6 +49,7 @@ export default async function CityPage({
   const { stadt } = await params;
   const city = getCity(stadt);
   if (!city) notFound();
+  const stelle = getZulassungsstelle(city.slug);
 
   const services = cityServices.map((s) => getService(s)).filter((s) => s !== undefined);
   const guides = cityGuides.map((g) => getGuide(g)).filter((g) => g !== undefined);
@@ -70,10 +73,10 @@ export default async function CityPage({
     },
     offers: {
       "@type": "Offer",
-      price: "129.00",
+      price: schemaPrice(PRICES.zulassung),
       priceCurrency: "EUR",
       description:
-        "Je Zulassungsvorgang inkl. amtlicher Gebühren und Versand; neue Kennzeichenschilder zzgl. 28,90 € pro Paar",
+        `Je Zulassungsvorgang inkl. amtlicher Gebühren und Versand; neue Kennzeichenschilder zzgl. ${P.kennzeichen} pro Paar`,
     },
   };
 
@@ -233,8 +236,32 @@ export default async function CityPage({
                   </div>
                 ))}
               </dl>
+              {stelle && (
+                <div className="mt-5 rounded-xl border border-ink-200 bg-ink-50 p-4 text-sm">
+                  <p className="font-semibold text-ink-900">Zuständige Behörde vor Ort</p>
+                  <Link
+                    href={`/zulassungsstelle/${stelle.slug}/`}
+                    className="mt-1 inline-flex items-center gap-1 font-semibold text-brand-700 underline underline-offset-2"
+                  >
+                    Zulassungsstelle {stelle.stadt}: Adresse &amp; Zuständigkeit
+                  </Link>
+                  {stelle.kuerzel.length > 0 && (
+                    <p className="mt-2 flex flex-wrap gap-1.5">
+                      {stelle.kuerzel.map((k) => (
+                        <Link
+                          key={k.code}
+                          href={`/kennzeichen/${kennzeichenSlug(k.code)}/`}
+                          className="rounded border-2 border-ink-900 bg-white px-1.5 font-display text-xs font-bold text-ink-900 hover:border-brand-700"
+                        >
+                          {k.code}
+                        </Link>
+                      ))}
+                    </p>
+                  )}
+                </div>
+              )}
               <Link
-                href="/auftrag/"
+                href={`/auftrag/`}
                 className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-brand-700 px-5 py-3.5 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-800"
               >
                 Jetzt beauftragen

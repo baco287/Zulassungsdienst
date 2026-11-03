@@ -1,7 +1,7 @@
-import Link from "next/link";
 import { whatsAppLink } from "@/lib/site";
 import Reveal from "./Reveal";
 import WhatsAppIcon from "./WhatsAppIcon";
+import TrackedLink from "./TrackedLink";
 
 export default function CTASection() {
   return (
@@ -15,21 +15,24 @@ export default function CTASection() {
           wir melden uns innerhalb der Geschäftszeiten meist in wenigen Minuten.
         </p>
         <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-          <Link
-            href="/auftrag"
+          <TrackedLink
+            href="/auftrag/"
+            event="cta_click"
+            props={{ position: "cta_abschnitt" }}
             className="rounded-xl bg-brand-600 px-8 py-4 font-display text-base font-semibold text-white shadow-lg transition-colors duration-200 hover:bg-brand-500"
           >
-            Auftrag starten
-          </Link>
-          <a
+            Jetzt Fahrzeug zulassen
+          </TrackedLink>
+          <TrackedLink
             href={whatsAppLink("Hallo DeutscheZulassung, ich möchte eine Kfz-Zulassung beauftragen.")}
-            target="_blank"
-            rel="noopener noreferrer"
+            event="whatsapp_click"
+            props={{ position: "cta_abschnitt" }}
+            external
             className="flex items-center justify-center gap-2 rounded-xl border border-ink-700 px-8 py-4 font-display text-base font-semibold text-white transition-colors duration-200 hover:border-brand-500 hover:bg-ink-900"
           >
             <WhatsAppIcon className="h-5 w-5" />
             Per WhatsApp
-          </a>
+          </TrackedLink>
         </div>
       </Reveal>
     </section>

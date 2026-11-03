@@ -4,6 +4,8 @@ import { Mail, Phone, ShieldCheck } from "lucide-react";
 import { site, whatsAppLink } from "@/lib/site";
 import { sortedServices } from "@/lib/services";
 import WhatsAppIcon from "./WhatsAppIcon";
+import { analyticsProvider, gadsId } from "@/lib/analytics";
+import { SERVICEBEDINGUNGEN_FREIGEGEBEN } from "@/lib/features";
 
 export default function Footer() {
   const topServices = sortedServices.filter((s) => s.category === "zulassung").slice(0, 6);
@@ -25,10 +27,15 @@ export default function Footer() {
           </p>
           <p className="mt-4 flex items-center gap-2 text-xs text-ink-400">
             <ShieldCheck className="h-4 w-4 text-brand-400" aria-hidden />
-            Verschlüsselte Übertragung · keine Tracking-Cookies
+            {gadsId
+              ? "Verschlüsselte Übertragung · Werbe-Cookies nur mit Einwilligung"
+              : analyticsProvider
+                ? "Verschlüsselte Übertragung · cookielose Webanalyse"
+                : "Verschlüsselte Übertragung · keine Tracking-Cookies"}
           </p>
         </div>
 
+        <div className="space-y-8">
         <nav aria-label="Leistungen">
           <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-white">
             Leistungen
@@ -46,6 +53,20 @@ export default function Footer() {
             ))}
           </ul>
         </nav>
+        <nav aria-label="Häufige Anliegen">
+          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-white">
+            Häufige Anliegen
+          </h2>
+          <ul className="mt-4 space-y-2 text-sm">
+            <li><Link href="/kfz-zulassung-ohne-eid" className="transition-colors duration-200 hover:text-white">Zulassung ohne eID</Link></li>
+            <li><Link href="/auto-abmelden-ohne-eid" className="transition-colors duration-200 hover:text-white">Abmelden ohne eID</Link></li>
+            <li><Link href="/ikfz-funktioniert-nicht" className="transition-colors duration-200 hover:text-white">i-Kfz funktioniert nicht</Link></li>
+            <li><Link href="/ikfz-fehlermeldung" className="transition-colors duration-200 hover:text-white">i-Kfz-Fehlermeldungen</Link></li>
+            <li><Link href="/auto-online-anmelden" className="transition-colors duration-200 hover:text-white">Auto online anmelden</Link></li>
+            <li><Link href="/zulassungsdienst-online" className="transition-colors duration-200 hover:text-white">Zulassungsdienst online</Link></li>
+          </ul>
+        </nav>
+        </div>
 
         <nav aria-label="Unternehmen">
           <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-white">
@@ -59,6 +80,8 @@ export default function Footer() {
             <li><Link href="/maxx" className="transition-colors duration-200 hover:text-white">Schnellstart mit Maxx</Link></li>
             <li><Link href="/gewerbe" className="transition-colors duration-200 hover:text-white">Für Gewerbekunden</Link></li>
             <li><Link href="/kfz-zulassung" className="transition-colors duration-200 hover:text-white">Kfz-Zulassung nach Stadt</Link></li>
+            <li><Link href="/zulassungsstelle" className="transition-colors duration-200 hover:text-white">Zulassungsstellen</Link></li>
+            <li><Link href="/kennzeichen" className="transition-colors duration-200 hover:text-white">Kennzeichenkürzel</Link></li>
             <li><Link href="/preise" className="transition-colors duration-200 hover:text-white">Preise</Link></li>
             <li><Link href="/ratgeber" className="transition-colors duration-200 hover:text-white">Ratgeber</Link></li>
             <li><Link href="/rechner" className="transition-colors duration-200 hover:text-white">Rechner &amp; Tools</Link></li>
@@ -110,11 +133,17 @@ export default function Footer() {
 
       <div className="border-t border-ink-800">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-4 py-6 text-xs text-ink-400 sm:flex-row sm:px-6">
-          <p>© {new Date().getFullYear()} {site.name}. Alle Rechte vorbehalten.</p>
-          <nav aria-label="Rechtliches" className="flex gap-5">
+          <p>
+            © {new Date().getFullYear()} {site.name} · Privater Zulassungsdienst, keine Behörde.
+          </p>
+          <nav aria-label="Rechtliches" className="flex flex-wrap justify-center gap-x-5 gap-y-2">
             <Link href="/impressum" className="transition-colors duration-200 hover:text-white">Impressum</Link>
             <Link href="/datenschutz" className="transition-colors duration-200 hover:text-white">Datenschutz</Link>
             <Link href="/widerruf" className="transition-colors duration-200 hover:text-white">Widerruf</Link>
+            {SERVICEBEDINGUNGEN_FREIGEGEBEN && (
+              <Link href="/servicebedingungen" className="transition-colors duration-200 hover:text-white">Servicebedingungen</Link>
+            )}
+            <Link href="/datensicherheit" className="transition-colors duration-200 hover:text-white">Datensicherheit</Link>
           </nav>
         </div>
       </div>

@@ -127,7 +127,7 @@ export default function HeroFlowAnimation() {
           <div>
             <p className="font-display text-sm font-bold text-ink-900">Behörden-Prüfung</p>
             <p className="text-[10px] leading-tight text-ink-500">
-              Automatische Bearbeitung im i-Kfz-Verfahren
+              Einreichung bei der zuständigen Behörde
             </p>
           </div>
         </div>
@@ -164,7 +164,7 @@ export default function HeroFlowAnimation() {
           <br />
           <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-50 px-2.5 py-1 text-[10px] font-semibold text-brand-700">
             <span className="h-1.5 w-1.5 rounded-full bg-brand-500" />
-            Bereit zum Fahren
+            Papiere unterwegs
           </span>
         </div>
       </motion.div>

@@ -24,7 +24,7 @@ export const anleitungSteps: AnleitungStep[] = [
     text: "Wählen Sie im Online-Auftrag, was erledigt werden soll – Neuzulassung, Umschreibung, Ummeldung oder Abmeldung – und geben Sie Ihre Postleitzahl und Kontaktdaten an. Lieber per Chat? Schreiben Sie uns einfach bei WhatsApp, wir fragen alles Nötige kurz ab.",
     tip: "Kein Kundenkonto, keine Registrierung – der Auftrag ist in zwei Minuten abgeschickt.",
     image: {
-      src: "/images/anleitung-auftrag-handy.jpg",
+      src: "/images/anleitung-auftrag-handy.webp",
       alt: "Hände halten ein Smartphone mit dem geöffneten Online-Auftragsformular",
     },
   },
@@ -40,18 +40,18 @@ export const anleitungSteps: AnleitungStep[] = [
       "Beim Gebrauchtwagen zusätzlich: HU-Nachweis und Kaufvertrag",
     ],
     image: {
-      src: "/images/unterlagen-foto.jpg",
+      src: "/images/unterlagen-foto.webp",
       alt: "Smartphone fotografiert die Zulassungsbescheinigung am Küchentisch",
     },
   },
   {
     title: "Sicherheitscodes freilegen",
     meta: "ca. 2 Minuten · Sie",
-    text: "Für die Online-Zulassung benötigen wir die verdeckten Sicherheitscodes: das Rubbelfeld auf dem Fahrzeugschein (Teil I) und das Sicherheitsfeld im Fahrzeugbrief (Teil II). Bei Umschreibung oder Abmeldung eines zugelassenen Fahrzeugs zusätzlich die Codes unter den Stempelplaketten der Kennzeichen. Einfach vorsichtig freirubbeln bzw. ablösen und gut lesbar fotografieren.",
+    text: "Für die Online-Zulassung benötigen wir die verdeckten Sicherheitscodes: das versiegelte Codefeld auf dem Fahrzeugschein (Teil I) und das Sicherheitsfeld im Fahrzeugbrief (Teil II). Bei Umschreibung oder Abmeldung eines zugelassenen Fahrzeugs zusätzlich die Codes unter den Stempelplaketten der Kennzeichen. Siegel bzw. Plakette vorsichtig abziehen und den Code gut lesbar fotografieren.",
     tip: "Erst freilegen, wenn wir Ihnen das Go geben – ein freigelegter Code entwertet das Dokument. Wir sagen Ihnen genau, welche Felder für Ihren Vorgang nötig sind.",
     image: {
-      src: "/images/sicherheitscode-zb1.jpg",
-      alt: "Freigerubbeltes Sicherheitscode-Feld auf der Zulassungsbescheinigung Teil I",
+      src: "/images/sicherheitscode-zb1.webp",
+      alt: "Freigelegtes Sicherheitscode-Feld auf der Zulassungsbescheinigung Teil I",
     },
   },
   {
@@ -60,7 +60,7 @@ export const anleitungSteps: AnleitungStep[] = [
     text: "Wir prüfen Ihre Unterlagen auf Vollständigkeit und senden Ihnen die verbindliche Festpreis-Bestätigung samt digitaler Vollmacht. Ein Blick, eine Unterschrift auf dem Handy – damit dürfen wir den Vorgang für Sie bei der Behörde durchführen.",
     tip: "Bis hierhin ist alles unverbindlich und kostenlos. Der Auftrag entsteht erst mit Ihrer Bestätigung.",
     image: {
-      src: "/images/anleitung-vollmacht-unterschrift.jpg",
+      src: "/images/anleitung-vollmacht-unterschrift.webp",
       alt: "Finger unterschreibt eine digitale Vollmacht auf dem Smartphone",
     },
   },
@@ -70,7 +70,7 @@ export const anleitungSteps: AnleitungStep[] = [
     text: "Jetzt übernehmen wir: Wir wickeln Ihren Vorgang digital bei der zuständigen Zulassungsbehörde ab. Sobald die Zulassung steht, erhalten Sie von uns Ihre zugeteilte Kennzeichen-Kombination und – bei der Online-Zulassung – den vorläufigen Zulassungsnachweis, mit dem Sie bereits fahren dürfen.",
     tip: "Abmeldungen sind meist noch am selben Werktag erledigt – Sie erhalten die Abmeldebestätigung per E-Mail, und die Anleitung endet für Sie hier.",
     image: {
-      src: "/images/anleitung-zulassung-erledigt.jpg",
+      src: "/images/anleitung-zulassung-erledigt.webp",
       alt: "Laptop mit Bestätigungsanzeige neben Fahrzeugpapieren auf einem Schreibtisch",
     },
   },
@@ -83,7 +83,7 @@ export const anleitungSteps: AnleitungStep[] = [
       "Mitbringen: die zugeteilte Kombination (wir senden sie Ihnen) – manche Prägestellen möchten zusätzlich den Zulassungsnachweis sehen",
     ],
     image: {
-      src: "/images/anleitung-schildermacher.jpg",
+      src: "/images/anleitung-schildermacher.webp",
       alt: "Frisch geprägtes Kennzeichen wird aus der Prägemaschine eines Schildermachers genommen",
     },
   },
@@ -91,9 +91,9 @@ export const anleitungSteps: AnleitungStep[] = [
     title: "Plaketten aufkleben und Papiere ablegen",
     meta: "ca. 5 Minuten · Sie",
     text: "Ihre Stempelplaketten (das Landessiegel für beide Kennzeichen, beim Pkw dazu die HU-Plakette fürs hintere Schild) und die neue Zulassungsbescheinigung Teil I erhalten Sie per Post. Plaketten an der markierten Stelle auf die Kennzeichen kleben, Schilder montieren – fertig. Den Fahrzeugschein ins Auto, den Fahrzeugbrief sicher zu Hause aufbewahren.",
-    tip: "Bis die Plaketten da sind, fahren Sie mit dem vorläufigen Zulassungsnachweis – bis zu 10 Tage im Inland.",
+    tip: "Bis die Plaketten da sind, fahren Sie mit dem vorläufigen Zulassungsnachweis im Inland – wie lange er gilt, steht auf dem Nachweis selbst.",
     image: {
-      src: "/images/anleitung-plakette-aufkleben.jpg",
+      src: "/images/anleitung-plakette-aufkleben.webp",
       alt: "Hände kleben die Stempelplakette auf ein neues Kennzeichen",
     },
   },
@@ -102,7 +102,7 @@ export const anleitungSteps: AnleitungStep[] = [
     meta: "Geschafft",
     text: "Kennzeichen montiert, Plaketten drauf, Fahrzeugschein an Bord: Ihr Auto ist zugelassen – ohne einen einzigen Behördengang. Bei Fragen bleibt Ihre Ansprechperson per WhatsApp erreichbar, auch nach Abschluss.",
     image: {
-      src: "/images/anleitung-losfahren.jpg",
+      src: "/images/anleitung-losfahren.webp",
       alt: "Auto mit neuem Kennzeichen in einer sonnigen Wohnstraße, eine Hand hält den Autoschlüssel",
     },
   },

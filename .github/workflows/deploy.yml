@@ -33,6 +33,9 @@ jobs:
           NEXT_PUBLIC_BASE_PATH: /Zulassungsdienst
           NEXT_PUBLIC_STAGING: "1" 
 
+      - name: Preise im Build prüfen (Staging, ohne Freigabe-Pflicht)
+        run: node scripts/check-preise.mjs --out
+
       - name: Auf gh-pages-Branch veröffentlichen
         uses: peaceiris/actions-gh-pages@v4
         with:
@@ -63,6 +66,14 @@ jobs:
       - name: Build (Root-Pfad für eigene Domain)
         if: env.HAS_FTP != ''
         run: npm run build
+
+      # Bricht ab, wenn Altpreise im Build stehen oder die Preise in
+      # config/preise.json nicht freigegeben sind (freigabe.freigegeben).
+      - name: Preise prüfen und Freigabe verlangen
+        if: env.HAS_FTP != ''
+        run: |
+          set -o pipefail
+          node scripts/check-preise.mjs --out --freigabe 2>&1 | tee /tmp/lftp.log
 
       - name: Secrets auf Vollständigkeit prüfen
         if: env.HAS_FTP != ''
@@ -139,6 +150,7 @@ jobs:
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         run: |
+          [ -f /tmp/lftp.log ] || echo 'Kein lftp.log – Fehler vor dem Deploy (Build oder Preisprüfung), siehe Actions-Log.' > /tmp/lftp.log
           python3 - <<'PYEOF'
           import os
           text = open('/tmp/lftp.log', encoding='utf-8', errors='replace').read()

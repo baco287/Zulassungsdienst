@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Clock4, Mail, MapPin, Phone } from "lucide-react";
 import { site, whatsAppLink } from "@/lib/site";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Kontakt – wir sind für Sie da",
@@ -41,6 +42,9 @@ export default function KontaktPage() {
     <>
       <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-14 sm:py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="mb-5">
+            <Breadcrumbs items={[{ name: "Kontakt" }]} />
+          </div>
           <h1 className="font-display text-4xl font-bold text-ink-900 sm:text-5xl">Kontakt</h1>
           <p className="mt-4 max-w-2xl text-lg text-ink-600">
             Persönliche Beratung statt Warteschleife – wählen Sie Ihren Lieblingskanal.

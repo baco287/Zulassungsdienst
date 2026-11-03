@@ -20,6 +20,7 @@ import { getService } from "@/lib/services";
 import { whatsappSteps } from "@/lib/whatsappFlow";
 import { euro } from "@/lib/pricing";
 import { site, whatsAppLink } from "@/lib/site";
+import { P } from "@/lib/pricing";
 
 export const metadata: Metadata = {
   title: "Kfz-Zulassung per WhatsApp – ohne Formular",
@@ -85,7 +86,7 @@ const faq = [
   {
     question: "Kostet der Service per Chat mehr als das Online-Formular?",
     answer:
-      "Nein. Es gelten dieselben Festpreise: 129 € für Neuzulassung, Ummeldung, Umschreibung oder Wiederzulassung (zzgl. 28,90 € für neue Kennzeichenschilder) und 34,90 € für die Abmeldung – jeweils inklusive amtlicher Gebühren. Der Weg über den Chat kostet keinen Cent extra.",
+      `Nein. Es gelten dieselben Festpreise: ${P.zulassung} für Neuzulassung, Ummeldung, Umschreibung oder Wiederzulassung (zzgl. ${P.kennzeichen} für neue Kennzeichenschilder) und ${P.abmeldung} für die Abmeldung – jeweils inklusive amtlicher Gebühren. Der Weg über den Chat kostet keinen Cent extra.`,
   },
   {
     question: "Welche Vorgänge kann ich per Chat erledigen?",

@@ -3,6 +3,7 @@ import { Lexend, Source_Sans_3 } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MobileCTA from "@/components/MobileCTA";
+import Analytics from "@/components/Analytics";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -35,18 +36,16 @@ export const metadata: Metadata = {
     "Wunschkennzeichen",
   ],
   alternates: { canonical: "./" },
+  // Bewusst ohne url/title/description: Next übernimmt dann Titel und
+  // Beschreibung der jeweiligen Seite, og:url folgt dem Canonical ("./").
   openGraph: {
     type: "website",
     locale: site.locale,
     siteName: site.name,
-    url: site.url,
-    title: `${site.name} – ${site.claim}`,
-    description: site.description,
+    url: "./",
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} – ${site.claim}`,
-    description: site.description,
   },
   robots:
     process.env.NEXT_PUBLIC_STAGING === "1"
@@ -64,7 +63,7 @@ const jsonLd = {
       legalName: site.company.legalName,
       description: site.description,
       url: site.url,
-      logo: `${site.url}/icon.svg`,
+      logo: `${site.url}/logo.png`,
       image: `${site.url}/opengraph-image`,
       email: site.contact.email,
       telephone: site.contact.phone,
@@ -127,6 +126,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <MobileCTA />
+        <Analytics />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

@@ -1,16 +1,17 @@
 import Link from "next/link";
 import { Check } from "lucide-react";
+import { P } from "@/lib/pricing";
 
 /**
  * Drei Paket-Karten im Festpreis-Modell (Komplettpreise inkl. amtlicher
- * Gebühren, Kennzeichen und Versand — Preisniveau marktüblicher
- * Festpreis-Anbieter, Stand Juli 2026). Details: lib/services.ts.
+ * Gebühren und Versand). Beträge kommen aus config/preise.json
+ * (siehe lib/pricing.ts). Details: lib/services.ts.
  */
 const packages = [
   {
     name: "Abmeldung",
     tagline: "Der schnellste Weg zur Stilllegung",
-    price: "34,90 €",
+    price: P.abmeldung,
     priceNote: "Komplettpreis inkl. MwSt. und amtlicher Gebühren",
     features: [
       "Vollständig digital – kein Versand nötig",
@@ -24,16 +25,16 @@ const packages = [
   },
   {
     name: "Zulassung Komplett",
-    tagline: "Neuzulassung · Umschreibung · Wiederzulassung",
-    price: "129,00 €",
-    priceNote: "Inkl. MwSt., Gebühren & Versand – Kennzeichen zzgl. 28,90 €",
+    tagline: "Neuzulassung · Ummeldung · Umschreibung · Wiederzulassung",
+    price: P.zulassung,
+    priceNote: `Inkl. MwSt., Gebühren & Versand – Kennzeichen zzgl. ${P.kennzeichen}`,
     features: [
       "Alle amtlichen Gebühren enthalten",
-      "Kennzeichen geprägt & gesiegelt (zzgl. 28,90 €)",
+      `Kennzeichenschilder auf Wunsch (zzgl. ${P.kennzeichen})`,
       "Versicherter Versand zu Ihnen",
       "Digitale Vollmacht – keine eID nötig",
       "Persönliche Ansprechperson",
-      "Wunschkennzeichen als Zusatz möglich",
+      `Wunschkennzeichen als Zusatz (${P.wunschkennzeichen})`,
     ],
     cta: { label: "Jetzt zulassen", href: "/auftrag/" },
     highlight: true,

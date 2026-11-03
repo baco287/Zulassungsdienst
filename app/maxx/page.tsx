@@ -9,6 +9,7 @@ import WhatsAppIcon from "@/components/WhatsAppIcon";
 import { getService } from "@/lib/services";
 import { euro } from "@/lib/pricing";
 import { site, whatsAppLink } from "@/lib/site";
+import { P } from "@/lib/pricing";
 
 /**
  * Schnelleinstieg „Maxx“.
@@ -73,7 +74,7 @@ const faq = [
   {
     question: "Was kostet das?",
     answer:
-      "129 € für Zulassung, Ummeldung, Umschreibung oder Wiederzulassung – amtliche Gebühren und Versand sind drin. Neue Kennzeichenschilder kosten 28,90 € pro Paar extra. Die Abmeldung kostet 34,90 €. Den Endpreis bekommst du vorher verbindlich bestätigt.",
+      `${P.zulassung} für Zulassung, Ummeldung, Umschreibung oder Wiederzulassung – amtliche Gebühren und Versand sind drin. Neue Kennzeichenschilder kosten ${P.kennzeichen} pro Paar extra. Die Abmeldung kostet ${P.abmeldung}. Den Endpreis bekommst du vorher verbindlich bestätigt.`,
   },
   {
     question: "Wie lange dauert es?",
@@ -186,7 +187,7 @@ export default function MaxxPage() {
       <section className="bg-ink-950 py-5">
         <div className="mx-auto flex max-w-6xl flex-wrap justify-between gap-x-8 gap-y-3 px-4 text-sm font-medium text-ink-300 sm:px-6">
           <span>
-            <b className="text-accent-400">129 €</b> inkl. Gebühren – Schilder zzgl. 28,90 €
+            <b className="text-accent-400">{P.zulassung}</b> inkl. Gebühren – Schilder zzgl. {P.kennzeichen}
           </span>
           <span>
             <b className="text-accent-400">1–3</b> Werktage

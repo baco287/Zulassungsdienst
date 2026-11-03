@@ -1,3 +1,4 @@
+import { P } from "./pricing";
 /**
  * Ablauf der Zulassung per Messenger.
  * Gemeinsame Datenquelle für die Landingpage und das HowTo-JSON-LD.
@@ -36,7 +37,7 @@ export const chatDemo: { from: "kunde" | "team"; text: string; time: string }[] 
   { from: "kunde", text: "📷 3 Fotos gesendet", time: "09:21" },
   {
     from: "team",
-    text: "Perfekt, alles lesbar. Festpreis 34,90 € inkl. Gebühren. Vollmacht zum Bestätigen: [Link]",
+    text: `Perfekt, alles lesbar. Festpreis ${P.abmeldung} inkl. Gebühren. Vollmacht zum Bestätigen: [Link]`,
     time: "09:23",
   },
   { from: "kunde", text: "Bestätigt 👍", time: "09:25" },

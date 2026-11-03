@@ -1,4 +1,5 @@
 import type { QA } from "./serviceContent";
+import { P } from "./pricing";
 
 /**
  * Stadt-Landingpages (/kfz-zulassung/[stadt]).
@@ -34,7 +35,7 @@ export const cities: City[] = [
     name: "Berlin",
     inName: "in Berlin",
     description:
-      "Kfz-Zulassung in Berlin ohne LABO-Termin: Wir übernehmen Neuzulassung, Ummeldung und Abmeldung bei der Berliner Zulassungsbehörde – digital, zum Festpreis von 129 €.",
+      `Kfz-Zulassung in Berlin ohne LABO-Termin: Wir übernehmen Neuzulassung, Ummeldung und Abmeldung bei der Berliner Zulassungsbehörde – digital, zum Festpreis von ${P.zulassung}.`,
     intro: [
       "Wer in Berlin ein Auto anmelden will, kennt das Problem: Termine bei der Zulassungsbehörde des LABO (Landesamt für Bürger- und Ordnungsangelegenheiten) sind oft auf Wochen ausgebucht – und ohne Termin geht am Schalter nichts. Für Berufstätige heißt das: Urlaubstag opfern oder das Fahrzeug steht.",
       "Wir nehmen Ihnen den kompletten Vorgang ab: Sie fotografieren Ihre Unterlagen, erteilen die digitale Vollmacht – wir führen die Zulassung bei der Berliner Behörde durch und senden Ihnen gestempelte B-Kennzeichen und Papiere nach Hause. Ohne Termin, ohne Wartemarke, in der Regel innerhalb von 1–3 Werktagen.",
@@ -43,7 +44,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "B" },
       { label: "Zuständige Behörde", value: "LABO – Kfz-Zulassungsbehörde Berlin" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -59,7 +60,7 @@ export const cities: City[] = [
       {
         question: "Kann ich in Berlin ein Wunschkennzeichen bekommen?",
         answer:
-          "Ja. Wir prüfen die Verfügbarkeit Ihrer B-Wunschkombination, reservieren sie und übernehmen Prägung und Zuteilung – für 34,90 € Aufpreis inklusive amtlicher Gebühren.",
+          `Ja. Wir prüfen die Verfügbarkeit Ihrer B-Wunschkombination, reservieren sie und übernehmen die Zuteilung – für ${P.wunschkennzeichen} Aufpreis inklusive der amtlichen Gebühr. Geprägte Schilder liefern wir auf Wunsch für ${P.kennzeichen} pro Paar mit.`,
       },
       {
         question: "Ich ziehe nach Berlin – muss ich mein Auto ummelden?",
@@ -81,7 +82,7 @@ export const cities: City[] = [
     name: "Hamburg",
     inName: "in Hamburg",
     description:
-      "Kfz-Zulassung in Hamburg ohne LBV-Termin: Neuzulassung, Ummeldung und Abmeldung beim Landesbetrieb Verkehr – komplett digital erledigt, Festpreis 129 €.",
+      `Kfz-Zulassung in Hamburg ohne LBV-Termin: Neuzulassung, Ummeldung und Abmeldung beim Landesbetrieb Verkehr – komplett digital erledigt, Festpreis ${P.zulassung}.`,
     intro: [
       "In Hamburg läuft die Fahrzeugzulassung über den Landesbetrieb Verkehr (LBV) – und dessen Termine sind begehrt: Wer kurzfristig ein Fahrzeug anmelden oder umschreiben will, wartet häufig länger, als der Autokauf gedauert hat. Dazu kommen Anfahrt, Wartezeit und Papierkram.",
       "Mit uns läuft die Zulassung nebenbei: Unterlagen abfotografieren, digitale Vollmacht bestätigen, fertig. Wir führen den Vorgang beim LBV durch, lassen Ihre HH-Kennzeichen prägen und liefern alles versichert an Ihre Adresse – vom Neuwagen in Eppendorf bis zum Gebrauchtwagen in Harburg.",
@@ -90,7 +91,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "HH" },
       { label: "Zuständige Behörde", value: "Landesbetrieb Verkehr (LBV) Hamburg" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -101,7 +102,7 @@ export const cities: City[] = [
       {
         question: "Was kostet die Kfz-Zulassung in Hamburg über DeutscheZulassung?",
         answer:
-          "129 € als Komplettpreis für Neuzulassung, Umschreibung oder Ummeldung – amtliche LBV-Gebühren und Versand inklusive, HH-Kennzeichenschilder zzgl. 28,90 €. Die Abmeldung kostet 34,90 €.",
+          `${P.zulassung} als Komplettpreis für Neuzulassung, Umschreibung oder Ummeldung – amtliche LBV-Gebühren und Versand inklusive, HH-Kennzeichenschilder zzgl. ${P.kennzeichen}. Die Abmeldung kostet ${P.abmeldung}.`,
       },
       {
         question: "Kann ich mein HH-Kennzeichen beim Umzug ins Umland behalten?",
@@ -123,7 +124,7 @@ export const cities: City[] = [
     name: "München",
     inName: "in München",
     description:
-      "Kfz-Zulassung in München ohne KVR-Termin: Neuzulassung, Umschreibung und Abmeldung bei der Münchner Behörde – digital, 129 € zzgl. Kennzeichen.",
+      `Kfz-Zulassung in München ohne KVR-Termin: Neuzulassung, Umschreibung und Abmeldung bei der Münchner Behörde – digital, ${P.zulassung} zzgl. Kennzeichen.`,
     intro: [
       "Die Kfz-Zulassungsstelle des Münchner Kreisverwaltungsreferats (KVR) an der Eichstätter Straße gehört zu den größten Zulassungsbehörden Deutschlands – entsprechend gefragt sind die Termine. Wer schnell ein Fahrzeug zulassen muss, etwa nach einem Neuwagenkauf beim Händler, steht oft vor ausgebuchten Kalendern.",
       "Wir übernehmen das für Sie: digital, ohne Termin, ohne Anfahrt quer durch die Stadt. Sie senden uns Fotos Ihrer Unterlagen, wir führen den Vorgang beim KVR durch – inklusive M-Kennzeichen, auf Wunsch als Wunschkennzeichen – und liefern alles versichert zu Ihnen nach Hause oder ins Autohaus.",
@@ -132,7 +133,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "M" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle im KVR München" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -165,7 +166,7 @@ export const cities: City[] = [
     name: "Köln",
     inName: "in Köln",
     description:
-      "Kfz-Zulassung in Köln ohne Behördengang: Neuzulassung, Ummeldung und Abmeldung beim Kölner Kfz-Zulassungsamt – digital erledigt, Festpreis 129 €.",
+      `Kfz-Zulassung in Köln ohne Behördengang: Neuzulassung, Ummeldung und Abmeldung beim Kölner Kfz-Zulassungsamt – digital erledigt, Festpreis ${P.zulassung}.`,
     intro: [
       "Das Kölner Kfz-Zulassungsamt im Stadtteil Poll bündelt die Zulassungen der Millionenstadt – mit Online-Terminvergabe, die schnell vergriffen ist. Zwischen Rechtsrheinisch und Linksrheinisch kostet der Behördengang schnell einen halben Tag.",
       "Sparen Sie sich den Weg: Wir erledigen Ihre Zulassung digital beim Kölner Amt, prägen Ihre K-Kennzeichen und senden Ihnen alles versichert zu. Auch Umschreibungen nach dem Gebrauchtwagenkauf im Umland – etwa aus dem Rhein-Erft-Kreis oder Leverkusen – schreiben wir direkt auf Ihre Kölner Adresse um.",
@@ -174,7 +175,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "K" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsamt der Stadt Köln" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -185,7 +186,7 @@ export const cities: City[] = [
       {
         question: "Was kostet die Zulassung in Köln?",
         answer:
-          "Über uns 129 € komplett – amtliche Gebühren und versicherter Versand inklusive, K-Kennzeichenschilder zzgl. 28,90 €. Selbst am Schalter zahlen Sie Gebühren plus Schilder; der Aufpreis für den Komplettservice ist überschaubar, die Zeitersparnis erheblich.",
+          `Über uns ${P.zulassung} komplett – amtliche Gebühren und versicherter Versand inklusive, K-Kennzeichenschilder zzgl. ${P.kennzeichen}. Selbst am Schalter zahlen Sie Gebühren plus Schilder; der Aufpreis für den Komplettservice ist überschaubar, die Zeitersparnis erheblich.`,
       },
       {
         question: "Bieten Sie Wunschkennzeichen mit K an?",
@@ -207,16 +208,16 @@ export const cities: City[] = [
     name: "Frankfurt am Main",
     inName: "in Frankfurt am Main",
     description:
-      "Kfz-Zulassung in Frankfurt ohne Behördengang: Zulassung, Ummeldung oder Abmeldung bei der Frankfurter Behörde – digital, 129 € zzgl. Kennzeichen.",
+      `Kfz-Zulassung in Frankfurt ohne Behördengang: Zulassung, Ummeldung oder Abmeldung bei der Frankfurter Behörde – digital, ${P.zulassung} zzgl. Kennzeichen.`,
     intro: [
       "Pendlerstadt Frankfurt: Viele arbeiten hier, wohnen im Umland – oder umgekehrt. Für die Kfz-Zulassungsbehörde der Stadt bleibt da wenig Zeit, zumal Termine rar sind und der Vorgang am Schalter dauert. Gerade nach einem Umzug in die Stadt oder einem Fahrzeugkauf soll es aber schnell gehen.",
-      "Wir erledigen Ihre Zulassung, während Sie arbeiten: digital eingereicht, von uns bei der Frankfurter Behörde durchgeführt – inklusive fertig geprägter F-Kennzeichen (Schilder zzgl. 28,90 €). Auch für Zuzügler aus dem Rhein-Main-Gebiet – ob aus Offenbach, Bad Homburg oder Wiesbaden – wickeln wir die Ummeldung komplett ab.",
+      `Wir erledigen Ihre Zulassung, während Sie arbeiten: digital eingereicht, von uns bei der Frankfurter Behörde durchgeführt – inklusive fertig geprägter F-Kennzeichen (Schilder zzgl. ${P.kennzeichen}). Auch für Zuzügler aus dem Rhein-Main-Gebiet – ob aus Offenbach, Bad Homburg oder Wiesbaden – wickeln wir die Ummeldung komplett ab.`,
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "F" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Frankfurt am Main" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -249,7 +250,7 @@ export const cities: City[] = [
     name: "Stuttgart",
     inName: "in Stuttgart",
     description:
-      "Kfz-Zulassung in Stuttgart ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung bei der Stuttgarter Zulassungsbehörde – digital zum Festpreis von 129 €.",
+      `Kfz-Zulassung in Stuttgart ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung bei der Stuttgarter Zulassungsbehörde – digital zum Festpreis von ${P.zulassung}.`,
     intro: [
       "In der Autostadt Stuttgart werden täglich Fahrzeuge zugelassen, umgeschrieben und stillgelegt – die Zulassungsbehörde der Landeshauptstadt ist entsprechend ausgelastet. Termine wollen erkämpft, Wartezeiten eingeplant sein.",
       "Ob Neuwagen vom Hersteller, Gebrauchter vom Händler an der B14 oder Leasingrückläufer: Wir übernehmen den kompletten Zulassungsvorgang digital, kümmern uns um Ihre S-Kennzeichen und liefern die fertigen Papiere zu Ihnen – nach Stuttgart-Mitte genauso wie nach Vaihingen oder Bad Cannstatt.",
@@ -258,7 +259,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "S" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Landeshauptstadt Stuttgart" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -291,7 +292,7 @@ export const cities: City[] = [
     name: "Düsseldorf",
     inName: "in Düsseldorf",
     description:
-      "Kfz-Zulassung in Düsseldorf ohne Behördengang: Wir erledigen Zulassung, Ummeldung und Abmeldung bei der Düsseldorfer Zulassungsbehörde – digital, Festpreis 129 €.",
+      `Kfz-Zulassung in Düsseldorf ohne Behördengang: Wir erledigen Zulassung, Ummeldung und Abmeldung bei der Düsseldorfer Zulassungsbehörde – digital, Festpreis ${P.zulassung}.`,
     intro: [
       "Die Kfz-Zulassungsbehörde der Landeshauptstadt Düsseldorf arbeitet mit Terminvergabe – und wie überall in NRW-Großstädten sind die Slots schnell weg. Wer beruflich eingespannt ist oder gerade erst zugezogen, verliert mit dem Behördengang schnell einen halben Tag.",
       "Bei uns läuft alles digital: Unterlagen als Foto, Vollmacht per Klick, und wir führen den Vorgang bei der Düsseldorfer Behörde durch. D-Kennzeichen – gern als Wunschkennzeichen – und Papiere kommen versichert zu Ihnen. Auch Leasing- und Firmenfahrzeuge, die in der Landeshauptstadt häufig sind, wickeln wir routiniert ab.",
@@ -300,7 +301,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "D" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Landeshauptstadt Düsseldorf" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -333,7 +334,7 @@ export const cities: City[] = [
     name: "Leipzig",
     inName: "in Leipzig",
     description:
-      "Kfz-Zulassung in Leipzig ohne Behördengang: Neuzulassung, Ummeldung und Abmeldung bei der Leipziger Zulassungsbehörde – digital erledigt, Festpreis 129 €.",
+      `Kfz-Zulassung in Leipzig ohne Behördengang: Neuzulassung, Ummeldung und Abmeldung bei der Leipziger Zulassungsbehörde – digital erledigt, Festpreis ${P.zulassung}.`,
     intro: [
       "Leipzig wächst – und mit jedem Zuzug steigt der Andrang bei der Kfz-Zulassungsbehörde der Stadt. Wer gerade umgezogen ist oder einen Gebrauchtwagen gekauft hat, möchte nicht Wochen auf einen Termin warten.",
       "Wir erledigen Ihre Zulassung digital bei der Leipziger Behörde: L-Kennzeichen, Umschreibung oder Abmeldung – Sie reichen die Unterlagen bequem per Foto ein und erhalten alles fertig zurück. Gerade für Zuzügler aus anderen Bundesländern übernehmen wir die komplette Ummeldung samt Klärung, ob Ihr altes Kennzeichen bleiben kann (Spoiler: ja, wenn Sie möchten).",
@@ -342,18 +343,18 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "L" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Leipzig" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
         question: "Ich bin neu in Leipzig – muss ich mein Kennzeichen wechseln?",
         answer:
-          "Nein. Seit 2015 dürfen Sie Ihr bisheriges Kennzeichen bundesweit mitnehmen – nur die Adresse in den Papieren wird aktualisiert. Wer lieber ein L-Kennzeichen möchte, bekommt es von uns fertig geprägt (Schilder zzgl. 28,90 €).",
+          `Nein. Seit 2015 dürfen Sie Ihr bisheriges Kennzeichen bundesweit mitnehmen – nur die Adresse in den Papieren wird aktualisiert. Wer lieber ein L-Kennzeichen möchte, bekommt es von uns fertig geprägt (Schilder zzgl. ${P.kennzeichen}).`,
       },
       {
         question: "Was kostet die Kfz-Zulassung in Leipzig?",
         answer:
-          "129 € Komplettpreis über uns – amtliche Gebühren und versicherter Versand inklusive, Kennzeichenschilder zzgl. 28,90 €. Die Abmeldung kostet 34,90 € und ist meist taggleich erledigt.",
+          `${P.zulassung} Komplettpreis über uns – amtliche Gebühren und versicherter Versand inklusive, Kennzeichenschilder zzgl. ${P.kennzeichen}. Die Abmeldung kostet ${P.abmeldung} und ist meist taggleich erledigt.`,
       },
       {
         question: "Funktioniert der Service auch im Landkreis Leipzig oder Nordsachsen?",
@@ -375,7 +376,7 @@ export const cities: City[] = [
     name: "Hannover",
     inName: "in Hannover",
     description:
-      "Kfz-Zulassung in Hannover ohne Behördengang: Wir übernehmen Ihre Zulassung bei der Region Hannover – digital, ohne Termin, zum Festpreis von 129 €.",
+      `Kfz-Zulassung in Hannover ohne Behördengang: Wir übernehmen Ihre Zulassung bei der Region Hannover – digital, ohne Termin, zum Festpreis von ${P.zulassung}.`,
     intro: [
       "Besonderheit in Hannover: Zuständig für die Fahrzeugzulassung ist nicht die Stadt, sondern die Region Hannover – sie bedient Landeshauptstadt und Umlandkommunen gemeinsam. Entsprechend groß ist das Einzugsgebiet, entsprechend gefragt sind die Termine.",
       "Für Sie spielt die Behördenstruktur keine Rolle: Wir wickeln Ihren Vorgang bei der zuständigen Stelle der Region ab – ob Sie in der List wohnen, in Laatzen oder in Langenhagen. H-Kennzeichen, Papiere und auf Wunsch Ihr Wunschkennzeichen kommen versichert zu Ihnen nach Hause.",
@@ -384,7 +385,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "H" },
       { label: "Zuständige Behörde", value: "Region Hannover, Fachbereich Verkehr (Zulassungsbehörde)" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -417,7 +418,7 @@ export const cities: City[] = [
     name: "Nürnberg",
     inName: "in Nürnberg",
     description:
-      "Kfz-Zulassung in Nürnberg ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung bei der Nürnberger Zulassungsbehörde – digital zum Festpreis von 129 €.",
+      `Kfz-Zulassung in Nürnberg ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung bei der Nürnberger Zulassungsbehörde – digital zum Festpreis von ${P.zulassung}.`,
     intro: [
       "Die Zulassungsstelle der Stadt Nürnberg bedient eine halbe Million Einwohner – und die Metropolregion drumherum sorgt für zusätzlichen Andrang, wenn Fahrzeuge zwischen Stadt, Fürth und Erlangen den Besitzer wechseln.",
       "Wir machen daraus einen digitalen Vorgang: Sie senden uns Ihre Unterlagen als Foto, wir erledigen Zulassung oder Umschreibung bei der Nürnberger Behörde und liefern N-Kennzeichen samt Papieren versichert zu Ihnen. Auch der Klassiker der Region – Gebrauchtwagenkauf in Fürth, Zulassung in Nürnberg – ist bei uns Routine.",
@@ -426,7 +427,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "N" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Nürnberg" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -437,12 +438,12 @@ export const cities: City[] = [
       {
         question: "Was kostet die Zulassung in Nürnberg über DeutscheZulassung?",
         answer:
-          "129 € komplett – amtliche Gebühren und versicherter Versand inklusive, Kennzeichenschilder zzgl. 28,90 €. Abmeldungen kosten 34,90 € und sind meist am selben Werktag erledigt.",
+          `${P.zulassung} komplett – amtliche Gebühren und versicherter Versand inklusive, Kennzeichenschilder zzgl. ${P.kennzeichen}. Abmeldungen kosten ${P.abmeldung} und sind meist am selben Werktag erledigt.`,
       },
       {
         question: "Bekomme ich ein Wunschkennzeichen mit N?",
         answer:
-          "Ja – Verfügbarkeitsprüfung, Reservierung und Prägung übernehmen wir für 34,90 € Aufpreis inklusive der amtlichen Gebühren.",
+          `Ja – Verfügbarkeitsprüfung, Reservierung und Zuteilung übernehmen wir für ${P.wunschkennzeichen} Aufpreis inklusive der amtlichen Gebühr. Die geprägten Schilder kosten auf Wunsch ${P.kennzeichen} pro Paar.`,
       },
     ],
     keywords: [
@@ -458,7 +459,7 @@ export const cities: City[] = [
     name: "Dortmund",
     inName: "in Dortmund",
     description:
-      "Kfz-Zulassung in Dortmund ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung digital bei der Dortmunder Behörde – Festpreis 129 €.",
+      `Kfz-Zulassung in Dortmund ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung digital bei der Dortmunder Behörde – Festpreis ${P.zulassung}.`,
     intro: [
       "Dortmund ist einer der größten Gebrauchtwagen-Umschlagplätze des Ruhrgebiets: Händlerhöfe entlang der Ausfallstraßen, Privatverkäufe über die Stadtgrenzen hinweg – und nach jedem Kauf steht die Umschreibung an. Die Terminkalender der Kfz-Zulassungsstelle der Stadt Dortmund sind entsprechend gut gefüllt.",
       "Den Weg dorthin können Sie sich sparen: Sie fotografieren Zulassungsbescheinigung, Ausweis und eVB-Nummer, bestätigen die digitale Vollmacht – wir wickeln den Vorgang bei der zuständigen Dortmunder Behörde ab und senden Ihnen gestempelte DO-Kennzeichen samt Papieren versichert zu. Das gekaufte Fahrzeug kann derweil beim Verkäufer stehen bleiben, bis alles fertig ist.",
@@ -467,7 +468,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "DO" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Dortmund" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -483,7 +484,7 @@ export const cities: City[] = [
       {
         question: "Was passiert mit meinem alten Auto, wenn ich es in Zahlung gebe oder verschrotte?",
         answer:
-          "Die Abmeldung übernehmen wir für 34,90 € und erledigen sie meist noch am selben Werktag. Bei Verschrottung reichen wir auf Wunsch den Verwertungsnachweis gleich mit ein.",
+          `Die Abmeldung übernehmen wir für ${P.abmeldung} und erledigen sie meist noch am selben Werktag. Bei Verschrottung reichen wir auf Wunsch den Verwertungsnachweis gleich mit ein.`,
       },
     ],
     keywords: [
@@ -500,7 +501,7 @@ export const cities: City[] = [
     name: "Essen",
     inName: "in Essen",
     description:
-      "Kfz-Zulassung in Essen ohne Behördengang: Wir erledigen Zulassung, Ummeldung und Abmeldung digital bei der Essener Behörde – Festpreis 129 €.",
+      `Kfz-Zulassung in Essen ohne Behördengang: Wir erledigen Zulassung, Ummeldung und Abmeldung digital bei der Essener Behörde – Festpreis ${P.zulassung}.`,
     intro: [
       "Essen hat mit dem einzelnen Buchstaben E eines der kürzesten Kennzeichen Deutschlands – entsprechend beliebt sind knackige Wunschkombinationen wie E-XX 1. Wer eine bestimmte Kombination will, sollte schnell sein, denn kurze Kürzel plus kurze Zahl sind rar. Und für die Zuteilung braucht es ohnehin den Weg über die Kfz-Zulassungsstelle der Stadt Essen.",
       "Genau den nehmen wir Ihnen ab: Sie nennen uns Ihre Wunschkombination (gern mit zwei, drei Alternativen), wir prüfen die Verfügbarkeit, reservieren und wickeln die komplette Zulassung digital bei der Essener Behörde ab. Auch ganz ohne Wunschkennzeichen gilt: Unterlagen fotografieren, Vollmacht bestätigen, E-Schilder und Papiere kommen versichert zu Ihnen – vom Südviertel bis Katernberg.",
@@ -509,7 +510,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "E" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Essen" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -542,7 +543,7 @@ export const cities: City[] = [
     name: "Duisburg",
     inName: "in Duisburg",
     description:
-      "Kfz-Zulassung in Duisburg ohne Behördengang: Zulassung, Umschreibung und Abmeldung digital bei der Duisburger Behörde – Festpreis 129 €.",
+      `Kfz-Zulassung in Duisburg ohne Behördengang: Zulassung, Umschreibung und Abmeldung digital bei der Duisburger Behörde – Festpreis ${P.zulassung}.`,
     intro: [
       "Logistikstandort Duisburg: Rund um den größten Binnenhafen Europas sind Transporter, Anhänger und Firmenfahrzeuge das Rückgrat vieler Betriebe – und jedes davon muss zugelassen werden. Wer tagsüber auf Tour oder im Betrieb gebraucht wird, hat für den Gang zur Kfz-Zulassungsstelle der Stadt Duisburg schlicht keine Zeit.",
       "Deshalb wickeln wir den Vorgang digital ab: Unterlagen als Foto einreichen, digitale Vollmacht bestätigen – wir erledigen Zulassung oder Umschreibung bei der zuständigen Duisburger Behörde und senden DU-Kennzeichen und Papiere versichert an Privatadresse oder Firmensitz. Das gilt für den privaten Pkw genauso wie für den Sprinter des Handwerksbetriebs oder den neuen Anhänger.",
@@ -551,7 +552,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "DU" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Duisburg" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -584,7 +585,7 @@ export const cities: City[] = [
     name: "Bochum",
     inName: "in Bochum",
     description:
-      "Kfz-Zulassung in Bochum ohne Behördengang: Neuzulassung, Ummeldung und Abmeldung digital bei der Bochumer Behörde – Festpreis 129 €.",
+      `Kfz-Zulassung in Bochum ohne Behördengang: Neuzulassung, Ummeldung und Abmeldung digital bei der Bochumer Behörde – Festpreis ${P.zulassung}.`,
     intro: [
       "Mit Ruhr-Universität und Hochschule Bochum ziehen jedes Semester tausende junge Leute in die Stadt – viele mit dem ersten eigenen Auto, oft ein günstiger Gebrauchter von den Eltern oder aus dem Kleinanzeigen-Fund. Dann stellen sich gleich mehrere Fragen auf einmal: umschreiben, ummelden, Kennzeichen behalten?",
       "Wir beantworten sie nicht nur, wir erledigen sie: Sie schicken uns Fotos der Unterlagen, wir wickeln den Vorgang digital bei der Kfz-Zulassungsstelle der Stadt Bochum ab – Umschreibung auf den eigenen Namen, Adressänderung nach dem Umzug ins WG-Zimmer oder die erste Neuzulassung. BO-Kennzeichen und Papiere kommen versichert an Ihre Adresse, ohne dass eine Vorlesung ausfallen muss.",
@@ -593,7 +594,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "BO" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Bochum" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -609,7 +610,7 @@ export const cities: City[] = [
       {
         question: "Was kostet mich das als Studentin oder Student?",
         answer:
-          "Denselben fairen Festpreis wie alle: 129 € inklusive amtlicher Gebühren und Versand, neue Kennzeichenschilder zzgl. 28,90 €. Dafür entfallen Anfahrt, Wartezeit und der halbe Tag, den der Behördengang sonst kostet.",
+          `Denselben fairen Festpreis wie alle: ${P.zulassung} inklusive amtlicher Gebühren und Versand, neue Kennzeichenschilder zzgl. ${P.kennzeichen}. Dafür entfallen Anfahrt, Wartezeit und der halbe Tag, den der Behördengang sonst kostet.`,
       },
     ],
     keywords: [
@@ -626,7 +627,7 @@ export const cities: City[] = [
     name: "Wuppertal",
     inName: "in Wuppertal",
     description:
-      "Kfz-Zulassung in Wuppertal ohne Behördengang: Wir erledigen Zulassung, Ummeldung und Abmeldung digital bei der Wuppertaler Behörde – Festpreis 129 €.",
+      `Kfz-Zulassung in Wuppertal ohne Behördengang: Wir erledigen Zulassung, Ummeldung und Abmeldung digital bei der Wuppertaler Behörde – Festpreis ${P.zulassung}.`,
     intro: [
       "Wuppertal zieht sich lang durchs Tal der Wupper – wer in Vohwinkel wohnt und in Oberbarmen arbeitet, kennt die Wege durch die Stadt. Viele Wuppertaler pendeln zudem täglich nach Düsseldorf, Köln oder ins Ruhrgebiet. Ein Behördentermin mitten am Werktag passt in diesen Alltag schlicht nicht hinein.",
       "Muss er auch nicht: Ihre Zulassung, Umschreibung oder Abmeldung reichen Sie abends vom Sofa aus ein – Unterlagen fotografieren, digitale Vollmacht bestätigen. Wir führen den Vorgang bei der Kfz-Zulassungsstelle der Stadt Wuppertal durch und senden Ihnen die gestempelten W-Kennzeichen samt Papieren versichert nach Hause, egal in welchen Stadtteil.",
@@ -635,7 +636,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "W" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Wuppertal" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -668,7 +669,7 @@ export const cities: City[] = [
     name: "Bielefeld",
     inName: "in Bielefeld",
     description:
-      "Kfz-Zulassung in Bielefeld ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung digital bei der Bielefelder Behörde – Festpreis 129 €.",
+      `Kfz-Zulassung in Bielefeld ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung digital bei der Bielefelder Behörde – Festpreis ${P.zulassung}.`,
     intro: [
       "Bielefeld ist das Zentrum Ostwestfalens – und OWL ist Mittelstandsland: Familienunternehmen, Handwerksbetriebe und Pendler zwischen Gütersloh, Herford und der Stadt sorgen für stetigen Fahrzeugwechsel über Kreisgrenzen hinweg. Wer ein Auto im Nachbarkreis kauft oder von dort zuzieht, hat es mit wechselnden Zuständigkeiten zu tun.",
       "Für Sie bleibt der Ablauf immer gleich: Unterlagen als Foto, digitale Vollmacht – wir wickeln den Vorgang bei der Kfz-Zulassungsstelle der Stadt Bielefeld ab und liefern BI-Kennzeichen und Papiere versichert zu Ihnen. Ob das Fahrzeug vorher ein GT-, HF- oder LIP-Kennzeichen trug, spielt dabei keine Rolle – die Umschreibung auf Ihre Bielefelder Adresse ist Routine.",
@@ -677,7 +678,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "BI" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Bielefeld" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -710,7 +711,7 @@ export const cities: City[] = [
     name: "Bonn",
     inName: "in Bonn",
     description:
-      "Kfz-Zulassung in Bonn ohne Behördengang: Wir übernehmen Zulassung, Ummeldung und Abmeldung digital bei der Bonner Behörde – Festpreis 129 €.",
+      `Kfz-Zulassung in Bonn ohne Behördengang: Wir übernehmen Zulassung, Ummeldung und Abmeldung digital bei der Bonner Behörde – Festpreis ${P.zulassung}.`,
     intro: [
       "Bonn ist Zuzugsstadt: Bundesbehörden, UN-Standort, DAX-Konzerne und die Universität holen ständig neue Menschen an den Rhein – oft für einige Jahre, oft mit Auto. Wer gerade Wohnung, Anmeldung und neuen Job jongliert, hat für die Kfz-Zulassungsstelle der Stadt Bonn wenig übrig.",
       "Die Ummeldung nach dem Zuzug erledigen wir deshalb komplett digital: Fahrzeugpapiere und Ausweis fotografieren, Vollmacht bestätigen – wir aktualisieren die Adresse bei der zuständigen Bonner Behörde und klären auf Wunsch gleich den Wechsel auf ein BN-Kennzeichen. Auch wer die Stadt wieder verlässt oder sein Fahrzeug vor einem Auslandsaufenthalt stilllegen will, ist bei uns richtig: Die Abmeldung ist meist taggleich erledigt.",
@@ -719,7 +720,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "BN" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Bonn" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -752,7 +753,7 @@ export const cities: City[] = [
     name: "Münster",
     inName: "in Münster",
     description:
-      "Kfz-Zulassung in Münster ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung digital bei der Münsteraner Behörde – Festpreis 129 €.",
+      `Kfz-Zulassung in Münster ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung digital bei der Münsteraner Behörde – Festpreis ${P.zulassung}.`,
     intro: [
       "Münster gilt als Fahrradhauptstadt – und trotzdem geht es im Alltag vieler Münsteraner nicht ohne Auto: für den Weg ins Münsterland, den Wochenendbesuch bei der Familie oder den Job außerhalb der Promenade. Nur ist ein Behördentermin bei der Kfz-Zulassungsstelle der Stadt Münster schwerer zu bekommen als ein Parkplatz am Prinzipalmarkt.",
       "Mit uns bleibt das Rad Ihr Verkehrsmittel und die Zulassung trotzdem erledigt: Unterlagen abfotografieren, digitale Vollmacht bestätigen – wir führen den Vorgang bei der zuständigen Behörde in Münster durch. Gerade der Klassiker der Region, der Gebrauchtwagenkauf auf einem Hof im Kreis Steinfurt oder Warendorf, ist bei uns Routine: Wir schreiben das Fahrzeug direkt auf Ihre Münsteraner Adresse um und liefern die MS-Kennzeichen versichert zu Ihnen.",
@@ -761,13 +762,13 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "MS" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Münster" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
         question: "Ich habe ein Auto im Münsterland gekauft – ST- oder WAF-Kennzeichen behalten oder wechseln?",
         answer:
-          "Beides geht: Seit 2019 dürfen Sie das Kennzeichen des Vorbesitzers bundesweit übernehmen, auch über Kreisgrenzen hinweg. Wenn Sie lieber ein MS-Kennzeichen möchten, erledigen wir den Wechsel im selben Vorgang – die neuen Schilder kosten 28,90 € pro Paar, der Versand ist inklusive.",
+          `Beides geht: Seit 2019 dürfen Sie das Kennzeichen des Vorbesitzers bundesweit übernehmen, auch über Kreisgrenzen hinweg. Wenn Sie lieber ein MS-Kennzeichen möchten, erledigen wir den Wechsel im selben Vorgang – die neuen Schilder kosten ${P.kennzeichen} pro Paar, der Versand ist inklusive.`,
       },
       {
         question: "Ich fahre nur im Sommer Auto oder Wohnmobil – gibt es dafür eine Lösung?",
@@ -794,7 +795,7 @@ export const cities: City[] = [
     name: "Mönchengladbach",
     inName: "in Mönchengladbach",
     description:
-      "Kfz-Zulassung in Mönchengladbach ohne Behördengang: Zulassung, Ummeldung und Abmeldung digital bei der Behörde – Festpreis 129 €.",
+      `Kfz-Zulassung in Mönchengladbach ohne Behördengang: Zulassung, Ummeldung und Abmeldung digital bei der Behörde – Festpreis ${P.zulassung}.`,
     intro: [
       "Am Niederrhein ist die Grenze nah: Von Mönchengladbach sind es nur wenige Kilometer in die Niederlande, und so landet mancher Fahrzeugkauf jenseits der Grenze – ob EU-Neuwagen mit attraktivem Rabatt oder Gebrauchter aus Roermond. Solche Fahrzeuge brauchen für die deutsche Zulassung ein paar Unterlagen mehr, etwa die EU-Übereinstimmungsbescheinigung (CoC).",
       "Wir kennen diese Vorgänge und wickeln sie genauso digital ab wie jede normale Zulassung: Sie senden uns Fotos aller Papiere, wir prüfen auf Vollständigkeit und führen den Vorgang bei der Kfz-Zulassungsstelle der Stadt Mönchengladbach durch. Am Ende erhalten Sie MG-Kennzeichen und deutsche Fahrzeugpapiere versichert nach Hause – für den Import genauso wie für den Gebrauchten aus Rheydt oder den Neuwagen vom Gladbacher Händler.",
@@ -803,7 +804,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "MG" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Mönchengladbach" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -819,7 +820,7 @@ export const cities: City[] = [
       {
         question: "Was kostet die Zulassung in Mönchengladbach?",
         answer:
-          "129 € als Komplettpreis inklusive amtlicher Gebühren, MG-Kennzeichen und versichertem Versand. Die Abmeldung kostet 34,90 € und ist meist noch am selben Werktag erledigt.",
+          `${P.zulassung} als Komplettpreis inklusive amtlicher Gebühren und versichertem Versand, MG-Kennzeichenschilder auf Wunsch zzgl. ${P.kennzeichen} pro Paar. Die Abmeldung kostet ${P.abmeldung} und ist meist noch am selben Werktag erledigt.`,
       },
     ],
     keywords: [
@@ -836,7 +837,7 @@ export const cities: City[] = [
     name: "Gelsenkirchen",
     inName: "in Gelsenkirchen",
     description:
-      "Kfz-Zulassung in Gelsenkirchen ohne Behördengang: Zulassung, Umschreibung und Abmeldung digital bei der Behörde – Festpreis 129 €.",
+      `Kfz-Zulassung in Gelsenkirchen ohne Behördengang: Zulassung, Umschreibung und Abmeldung digital bei der Behörde – Festpreis ${P.zulassung}.`,
     intro: [
       "Im Ruhrgebiet verschwimmen die Stadtgrenzen: Wer in Gelsenkirchen wohnt, kauft sein Auto vielleicht in Essen, arbeitet in Herne und zieht irgendwann nach Buer oder Horst um. Früher bedeutete jeder dieser Schritte neue Schilder – heute nicht mehr, denn Kennzeichen dürfen bei Umzug (seit 2015) und sogar beim Halterwechsel (seit 2019) bundesweit mitgenommen werden.",
       "Was bleibt, ist der Papierkram bei der Kfz-Zulassungsstelle der Stadt Gelsenkirchen – und den übernehmen wir: Umschreibung nach dem Kauf in der Nachbarstadt, Adressänderung nach dem Umzug oder klassische Neuzulassung mit GE-Kennzeichen. Sie reichen alles digital als Foto ein, wir wickeln den Vorgang bei der zuständigen Behörde ab und senden Kennzeichen und Papiere versichert zu Ihnen.",
@@ -845,7 +846,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "GE" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Gelsenkirchen" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -861,7 +862,7 @@ export const cities: City[] = [
       {
         question: "Mein altes Auto ist ein wirtschaftlicher Totalschaden – wie werde ich es los?",
         answer:
-          "Erst abmelden, dann verwerten oder verkaufen: Die Außerbetriebsetzung erledigen wir für 34,90 € meist noch am selben Werktag, damit Steuer und Versicherung sofort stoppen. Bei Verschrottung reichen wir den Verwertungsnachweis des zertifizierten Betriebs mit ein.",
+          `Erst abmelden, dann verwerten oder verkaufen: Die Außerbetriebsetzung erledigen wir für ${P.abmeldung} meist noch am selben Werktag, damit Steuer und Versicherung sofort stoppen. Bei Verschrottung reichen wir den Verwertungsnachweis des zertifizierten Betriebs mit ein.`,
       },
     ],
     keywords: [
@@ -877,7 +878,7 @@ export const cities: City[] = [
     name: "Bremen",
     inName: "in Bremen",
     description:
-      "Kfz-Zulassung in Bremen ohne Behördengang: Zulassung, Ummeldung und Abmeldung digital bei der Bremer Behörde erledigt – zum Festpreis von 129 €.",
+      `Kfz-Zulassung in Bremen ohne Behördengang: Zulassung, Ummeldung und Abmeldung digital bei der Bremer Behörde erledigt – zum Festpreis von ${P.zulassung}.`,
     intro: [
       "Bremen ist der kleinste Stadtstaat Deutschlands – mit einer Besonderheit: Das Kürzel HB steht für die Hansestadt und gilt für Bremen wie für Bremerhaven. Wer hier ein Fahrzeug anmelden will, muss sich in die Terminvergabe der städtischen Zulassungsbehörde einreihen – für viele zwischen Job, Familie und Alltag schlicht ein Tag zu viel.",
       "Diesen Tag geben wir Ihnen zurück: Sie fotografieren Ihre Unterlagen, bestätigen die digitale Vollmacht, und wir wickeln den Vorgang bei der zuständigen Bremer Behörde ab. Ihre gestempelten HB-Kennzeichen und Papiere kommen versichert zu Ihnen – ob in die Neustadt, nach Schwachhausen oder in die Überseestadt.",
@@ -886,7 +887,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "HB" },
       { label: "Zuständige Behörde", value: "Bürgeramt / Zulassungsbehörde der Stadt Bremen" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -919,7 +920,7 @@ export const cities: City[] = [
     name: "Dresden",
     inName: "in Dresden",
     description:
-      "Kfz-Zulassung in Dresden ohne Behördengang: Wir übernehmen Neuzulassung, Ummeldung und Abmeldung bei der Dresdner Behörde – digital, Festpreis 129 €.",
+      `Kfz-Zulassung in Dresden ohne Behördengang: Wir übernehmen Neuzulassung, Ummeldung und Abmeldung bei der Dresdner Behörde – digital, Festpreis ${P.zulassung}.`,
     intro: [
       "Dresden zieht an: Die Chipindustrie im Norden der Stadt holt Fachkräfte aus ganz Deutschland ins Elbtal, dazu kommen Studierende und Familien, die ins Umland und zurück pendeln. Jeder Zuzug, jeder Fahrzeugkauf landet am Ende bei der Kfz-Zulassungsbehörde der Landeshauptstadt – und deren Terminkalender ist gut gefüllt.",
       "Statt sich dort einzureihen, reichen Sie Ihre Unterlagen bei uns als Foto ein und bestätigen die digitale Vollmacht. Wir führen Zulassung, Umschreibung oder Abmeldung bei der Dresdner Behörde durch und senden Ihnen DD-Kennzeichen und Papiere versichert nach Hause – gerade für frisch Zugezogene der einfachste Weg, das Thema Auto abzuhaken.",
@@ -928,7 +929,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "DD" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Landeshauptstadt Dresden" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -944,7 +945,7 @@ export const cities: City[] = [
       {
         question: "Bekomme ich ein DD-Wunschkennzeichen über Sie?",
         answer:
-          "Ja – wir prüfen die Verfügbarkeit Ihrer Wunschkombination, reservieren sie und liefern die geprägten Schilder mit. Der Aufpreis beträgt 34,90 € inklusive der amtlichen Gebühren.",
+          `Ja – wir prüfen die Verfügbarkeit Ihrer Wunschkombination, reservieren sie und übernehmen die Zuteilung. Der Aufpreis beträgt ${P.wunschkennzeichen} inklusive der amtlichen Gebühr; geprägte Schilder liefern wir auf Wunsch für ${P.kennzeichen} pro Paar mit.`,
       },
     ],
     keywords: [
@@ -961,7 +962,7 @@ export const cities: City[] = [
     name: "Chemnitz",
     inName: "in Chemnitz",
     description:
-      "Kfz-Zulassung in Chemnitz ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung digital bei der Chemnitzer Behörde – zum Festpreis von 129 €.",
+      `Kfz-Zulassung in Chemnitz ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung digital bei der Chemnitzer Behörde – zum Festpreis von ${P.zulassung}.`,
     intro: [
       "Chemnitz fährt mit einem der kürzesten Kennzeichen Deutschlands: ein einzelnes C. Gehandelt wird in der Region viel – der Gebrauchtwagenmarkt zwischen Stadt, Erzgebirge und Zwickauer Raum ist lebendig, und jede Umschreibung bedeutet normalerweise einen Gang zur Kfz-Zulassungsbehörde der Stadt Chemnitz samt Terminbuchung.",
       "Bei uns wird daraus ein Vorgang vom Sofa aus: Fahrzeugpapiere und Ausweis abfotografieren, digitale Vollmacht bestätigen – wir erledigen die Zulassung bei der Chemnitzer Behörde und schicken Ihnen die gestempelten C-Kennzeichen versichert zu. Auch die Abmeldung eines Altfahrzeugs vor dem Verkauf nehmen wir Ihnen meist noch am selben Werktag ab.",
@@ -970,7 +971,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "C" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Chemnitz" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -981,12 +982,12 @@ export const cities: City[] = [
       {
         question: "Ist ein Wunschkennzeichen mit dem kurzen C-Kürzel möglich?",
         answer:
-          "Ja – das einstellige Kürzel lässt besonders kurze Kombinationen zu, die entsprechend begehrt sind. Wir prüfen die Verfügbarkeit, reservieren Ihre Kombination und liefern die geprägten Schilder für 34,90 € Aufpreis mit.",
+          `Ja – das einstellige Kürzel lässt besonders kurze Kombinationen zu, die entsprechend begehrt sind. Wir prüfen die Verfügbarkeit, reservieren Ihre Kombination und übernehmen die Zuteilung – für ${P.wunschkennzeichen} Aufpreis inklusive der amtlichen Gebühr. Geprägte Schilder liefern wir auf Wunsch für ${P.kennzeichen} pro Paar mit.`,
       },
       {
         question: "Was kostet die Kfz-Zulassung in Chemnitz über Sie?",
         answer:
-          "129 € als Komplettpreis – amtliche Gebühren und versicherter Versand inklusive, Kennzeichenschilder zzgl. 28,90 €. Eine Abmeldung kostet 34,90 € und ist meist taggleich erledigt.",
+          `${P.zulassung} als Komplettpreis – amtliche Gebühren und versicherter Versand inklusive, Kennzeichenschilder zzgl. ${P.kennzeichen}. Eine Abmeldung kostet ${P.abmeldung} und ist meist taggleich erledigt.`,
       },
     ],
     keywords: [
@@ -1003,7 +1004,7 @@ export const cities: City[] = [
     name: "Kiel",
     inName: "in Kiel",
     description:
-      "Kfz-Zulassung in Kiel ohne Behördengang: Auto, Motorrad oder Anhänger digital bei der Kieler Behörde zulassen – zum Festpreis von 129 €.",
+      `Kfz-Zulassung in Kiel ohne Behördengang: Auto, Motorrad oder Anhänger digital bei der Kieler Behörde zulassen – zum Festpreis von ${P.zulassung}.`,
     intro: [
       "In der Fördestadt Kiel hat die Zulassung ihre eigenen Themen: Cabrios und Motorräder, die nur den Ostsee-Sommer sehen, Bootsanhänger für die Segelsaison, dazu jedes Semester neue Studierende, die ihr Auto mit in den Norden bringen. All das läuft über die Kfz-Zulassungsbehörde der Landeshauptstadt Kiel – mit Terminvergabe und Wartezeit.",
       "Wir kürzen den Weg ab: Unterlagen als Foto einreichen, digitale Vollmacht bestätigen, und wir wickeln den Vorgang bei der Kieler Behörde ab. Auf Wunsch richten wir dabei gleich ein Saisonkennzeichen für Ihren Sommerflitzer ein – die KI-Schilder und Papiere kommen versichert zu Ihnen an die Förde.",
@@ -1012,7 +1013,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "KI" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Landeshauptstadt Kiel" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -1045,7 +1046,7 @@ export const cities: City[] = [
     name: "Halle (Saale)",
     inName: "in Halle (Saale)",
     description:
-      "Kfz-Zulassung in Halle (Saale) ohne Behördengang: Wir erledigen Zulassung, Ummeldung und Abmeldung digital bei der Behörde – Festpreis 129 €.",
+      `Kfz-Zulassung in Halle (Saale) ohne Behördengang: Wir erledigen Zulassung, Ummeldung und Abmeldung digital bei der Behörde – Festpreis ${P.zulassung}.`,
     intro: [
       "Halle an der Saale lebt vom kurzen Draht nach Leipzig: Viele wohnen in der günstigeren Saalestadt und arbeiten oder studieren auf der anderen Seite der Landesgrenze – das Auto ist dabei fester Teil des Alltags. Für Zulassung und Ummeldung ist die Kfz-Zulassungsbehörde der Stadt Halle (Saale) zuständig, und deren Termine wollen erst einmal ergattert sein.",
       "Mit uns bleibt der Gang zur Behörde aus: Sie fotografieren Ihre Unterlagen, bestätigen die digitale Vollmacht, und wir führen den Vorgang bei der halleschen Behörde durch. HAL-Kennzeichen und Papiere erreichen Sie per versichertem Versand – ob Sie am Reileck wohnen, in Halle-Neustadt oder auf dem Weinberg-Campus arbeiten.",
@@ -1054,7 +1055,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "HAL" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Halle (Saale)" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -1087,7 +1088,7 @@ export const cities: City[] = [
     name: "Magdeburg",
     inName: "in Magdeburg",
     description:
-      "Kfz-Zulassung in Magdeburg ohne Behördengang: Neuzulassung, Ummeldung und Abmeldung bei der Magdeburger Behörde – digital, Festpreis 129 €.",
+      `Kfz-Zulassung in Magdeburg ohne Behördengang: Neuzulassung, Ummeldung und Abmeldung bei der Magdeburger Behörde – digital, Festpreis ${P.zulassung}.`,
     intro: [
       "Magdeburg liegt am Schnittpunkt von A2 und A14 – die Elbestadt ist Landeshauptstadt und Logistikstandort zugleich. Handwerksbetriebe, Speditionen und Pendler halten die Kfz-Zulassungsbehörde der Landeshauptstadt Magdeburg gut beschäftigt; wer dort kurzfristig einen Termin sucht, braucht Geduld.",
       "Geduld brauchen Sie bei uns nicht: Wir übernehmen Neuzulassung, Umschreibung oder Abmeldung digital bei der Magdeburger Behörde – vom privaten Gebrauchtwagen bis zum Firmentransporter. Sie reichen die Unterlagen per Foto ein, wir kümmern uns um den Rest und senden MD-Kennzeichen samt Papieren versichert an Ihre Adresse.",
@@ -1096,7 +1097,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "MD" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Landeshauptstadt Magdeburg" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -1112,7 +1113,7 @@ export const cities: City[] = [
       {
         question: "Wie schnell geht eine Abmeldung in Magdeburg?",
         answer:
-          "Meist noch am selben Werktag: Sie legen die Sicherheitscodes auf Zulassungsbescheinigung und Kennzeichen frei, fotografieren sie und senden uns die Bilder. Die Abmeldebestätigung kommt anschließend per E-Mail – für 34,90 €.",
+          `Meist noch am selben Werktag: Sie legen die Sicherheitscodes auf Zulassungsbescheinigung und Kennzeichen frei, fotografieren sie und senden uns die Bilder. Die Abmeldebestätigung kommt anschließend per E-Mail – für ${P.abmeldung}.`,
       },
     ],
     keywords: [
@@ -1129,7 +1130,7 @@ export const cities: City[] = [
     name: "Lübeck",
     inName: "in Lübeck",
     description:
-      "Kfz-Zulassung in Lübeck ohne Behördengang: Pkw, Wohnmobil oder Motorrad digital bei der Lübecker Behörde zulassen – zum Festpreis von 129 €.",
+      `Kfz-Zulassung in Lübeck ohne Behördengang: Pkw, Wohnmobil oder Motorrad digital bei der Lübecker Behörde zulassen – zum Festpreis von ${P.zulassung}.`,
     intro: [
       "Das HL auf Lübecker Schildern steht für Hansestadt Lübeck – und zwischen Altstadtinsel und Travemünde wird viel zugelassen, was nach Urlaub aussieht: Wohnmobile, Camper und Motorräder für die Ostseeküste. Dazu kommen die vielen Lübecker, die täglich nach Hamburg pendeln und für einen Behördentermin kaum Spielraum im Kalender haben.",
       "Genau dafür gibt es uns: Sie reichen Ihre Unterlagen als Foto ein und bestätigen die digitale Vollmacht – wir wickeln Zulassung, Ummeldung oder Abmeldung bei der Kfz-Zulassungsbehörde der Hansestadt Lübeck ab. Die fertigen HL-Kennzeichen kommen versichert zu Ihnen, auf Wunsch mit Saisonzeitraum für Ihr Freizeitfahrzeug.",
@@ -1138,7 +1139,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "HL" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Hansestadt Lübeck" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -1171,7 +1172,7 @@ export const cities: City[] = [
     name: "Rostock",
     inName: "in Rostock",
     description:
-      "Kfz-Zulassung in Rostock ohne Behördengang: Wir übernehmen Zulassung, Ummeldung und Abmeldung bei der Rostocker Behörde – digital, Festpreis 129 €.",
+      `Kfz-Zulassung in Rostock ohne Behördengang: Wir übernehmen Zulassung, Ummeldung und Abmeldung bei der Rostocker Behörde – digital, Festpreis ${P.zulassung}.`,
     intro: [
       "Rostock ist die größte Stadt Mecklenburg-Vorpommerns – Universitäts- und Hafenstadt in einem, mit Warnemünde direkt vor der Tür. Kein Wunder, dass hier neben Alltagsautos besonders viele Cabrios, Motorräder und Camper für die Ostseesaison angemeldet werden. Zuständig ist die Kfz-Zulassungsbehörde der Hansestadt Rostock, deren Termine gerade im Frühjahr knapp werden.",
       "Den Frühjahrs-Andrang überlassen Sie einfach uns: Unterlagen abfotografieren, digitale Vollmacht bestätigen – wir führen den Vorgang bei der Rostocker Behörde durch, auf Wunsch mit Saisonkennzeichen für die warmen Monate. Ihre HRO-Schilder und Papiere kommen versichert zu Ihnen, ob in die KTV, nach Reutershagen oder direkt an die Küste.",
@@ -1180,7 +1181,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "HRO" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Hansestadt Rostock" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -1196,7 +1197,7 @@ export const cities: City[] = [
       {
         question: "Ich verkaufe mein Auto in Rostock – sollte ich es vorher abmelden?",
         answer:
-          "Empfehlenswert ist das, denn abgemeldet können auf Sie keine Steuern oder Verstöße des Käufers mehr zulaufen. Wir melden das Fahrzeug meist noch am selben Werktag außer Betrieb – Sie brauchen nur Fotos der freigelegten Sicherheitscodes, der Preis liegt bei 34,90 €.",
+          `Empfehlenswert ist das, denn abgemeldet können auf Sie keine Steuern oder Verstöße des Käufers mehr zulaufen. Wir melden das Fahrzeug meist noch am selben Werktag außer Betrieb – Sie brauchen nur Fotos der freigelegten Sicherheitscodes, der Preis liegt bei ${P.abmeldung}.`,
       },
     ],
     keywords: [
@@ -1213,7 +1214,7 @@ export const cities: City[] = [
     name: "Erfurt",
     inName: "in Erfurt",
     description:
-      "Kfz-Zulassung in Erfurt ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung bei der Erfurter Behörde – digital zum Festpreis von 129 €.",
+      `Kfz-Zulassung in Erfurt ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung bei der Erfurter Behörde – digital zum Festpreis von ${P.zulassung}.`,
     intro: [
       "Erfurt liegt in der Mitte Deutschlands – als Thüringer Landeshauptstadt, ICE-Knoten und Standort eines der großen Güterverkehrszentren des Landes. Diese zentrale Lage bringt Bewegung: Zuzügler, Gewerbetreibende und Pendler aus dem gesamten Thüringer Becken sorgen für vollen Betrieb bei der Kfz-Zulassungsbehörde der Landeshauptstadt Erfurt.",
       "Ihren Vorgang nehmen wir da einfach heraus: Sie senden uns Fotos Ihrer Unterlagen und bestätigen die digitale Vollmacht, wir erledigen Zulassung, Umschreibung oder Abmeldung bei der Erfurter Behörde. EF-Kennzeichen und Papiere kommen versichert an Ihre Adresse – während Sie Ihren Tag ganz normal weiterplanen.",
@@ -1222,7 +1223,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "EF" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Landeshauptstadt Erfurt" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -1238,7 +1239,7 @@ export const cities: City[] = [
       {
         question: "Gibt es Wunschkennzeichen mit EF?",
         answer:
-          "Ja. Nennen Sie uns Ihre Wunschkombination – wir prüfen die Verfügbarkeit, reservieren sie bei der Behörde und liefern die geprägten Schilder mit. Der Aufpreis beträgt 34,90 € inklusive amtlicher Gebühren.",
+          `Ja. Nennen Sie uns Ihre Wunschkombination – wir prüfen die Verfügbarkeit, reservieren sie bei der Behörde und übernehmen die Zuteilung. Der Aufpreis beträgt ${P.wunschkennzeichen} inklusive der amtlichen Gebühr; geprägte Schilder liefern wir auf Wunsch für ${P.kennzeichen} pro Paar mit.`,
       },
     ],
     keywords: [
@@ -1255,7 +1256,7 @@ export const cities: City[] = [
     name: "Braunschweig",
     inName: "in Braunschweig",
     description:
-      "Kfz-Zulassung in Braunschweig ohne Behördengang: Zulassung, Umschreibung und Abmeldung digital bei der Behörde erledigt – zum Festpreis von 129 €.",
+      `Kfz-Zulassung in Braunschweig ohne Behördengang: Zulassung, Umschreibung und Abmeldung digital bei der Behörde erledigt – zum Festpreis von ${P.zulassung}.`,
     intro: [
       "Braunschweig lebt Auto: Die Löwenstadt ist Zentrum einer der wichtigsten Mobilitätsforschungsregionen Europas, und tausende Braunschweiger pendeln täglich zu den Werken nach Wolfsburg. Entsprechend häufig wechseln hier Jahres- und Werkswagen den Halter – und jede dieser Umschreibungen führt normalerweise zur Kfz-Zulassungsbehörde der Stadt Braunschweig.",
       "Wir nehmen Ihnen diesen Weg ab: Kaufvertrag unterschrieben, Unterlagen fotografiert, digitale Vollmacht bestätigt – den Behördenvorgang erledigen wir und senden Ihnen die gestempelten BS-Kennzeichen samt Papieren versichert nach Hause. So ist der neue Wagen startklar, bevor der nächste Arbeitstag beginnt.",
@@ -1264,7 +1265,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "BS" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Braunschweig" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -1280,7 +1281,7 @@ export const cities: City[] = [
       {
         question: "Was kostet die Kfz-Zulassung in Braunschweig über DeutscheZulassung?",
         answer:
-          "129 € als Komplettpreis für Neuzulassung, Umschreibung oder Ummeldung – amtliche Gebühren und Versand inklusive, BS-Kennzeichenschilder zzgl. 28,90 €. Die Abmeldung eines Fahrzeugs kostet 34,90 € und ist meist taggleich erledigt.",
+          `${P.zulassung} als Komplettpreis für Neuzulassung, Umschreibung oder Ummeldung – amtliche Gebühren und Versand inklusive, BS-Kennzeichenschilder zzgl. ${P.kennzeichen}. Die Abmeldung eines Fahrzeugs kostet ${P.abmeldung} und ist meist taggleich erledigt.`,
       },
     ],
     keywords: [
@@ -1296,7 +1297,7 @@ export const cities: City[] = [
     name: "Mannheim",
     inName: "in Mannheim",
     description:
-      "Kfz-Zulassung in Mannheim ohne Behördengang: Neuzulassung, Ummeldung und Abmeldung digital bei der Mannheimer Behörde erledigt – Festpreis 129 €.",
+      `Kfz-Zulassung in Mannheim ohne Behördengang: Neuzulassung, Ummeldung und Abmeldung digital bei der Mannheimer Behörde erledigt – Festpreis ${P.zulassung}.`,
     intro: [
       "Mannheim ist Pendlerdrehscheibe der Rhein-Neckar-Region: Wer morgens über die Rheinbrücke nach Ludwigshafen fährt oder abends aus Heidelberg zurückkommt, hat selten Zeit für einen Vormittag bei der Kfz-Zulassungsbehörde der Stadt Mannheim – zumal in der Stadt, in der Carl Benz einst das Automobil patentieren ließ, täglich reichlich Fahrzeuge den Halter wechseln.",
       "Deshalb erledigen wir das digital: Sie fotografieren Ihre Unterlagen, bestätigen die Vollmacht online, und wir führen Zulassung, Umschreibung oder Abmeldung bei der Mannheimer Behörde durch. Ihre MA-Kennzeichen kommen fertig geprägt und gestempelt per versichertem Versand – in die Quadrate genauso wie nach Neckarau oder Käfertal.",
@@ -1305,7 +1306,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "MA" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Mannheim" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -1321,7 +1322,7 @@ export const cities: City[] = [
       {
         question: "Bekomme ich über Sie ein MA-Wunschkennzeichen?",
         answer:
-          "Ja. Wir prüfen die Verfügbarkeit Ihrer Wunschkombination, reservieren sie und liefern die geprägten Schilder mit – für 34,90 € Aufpreis inklusive amtlicher Gebühren. Nennen Sie am besten zwei bis drei Alternativen, falls die erste Wahl vergeben ist.",
+          `Ja. Wir prüfen die Verfügbarkeit Ihrer Wunschkombination, reservieren sie und übernehmen die Zuteilung – für ${P.wunschkennzeichen} Aufpreis inklusive der amtlichen Gebühr. Geprägte Schilder liefern wir auf Wunsch für ${P.kennzeichen} pro Paar mit. Nennen Sie am besten zwei bis drei Alternativen, falls die erste Wahl vergeben ist.`,
       },
     ],
     keywords: [
@@ -1338,7 +1339,7 @@ export const cities: City[] = [
     name: "Karlsruhe",
     inName: "in Karlsruhe",
     description:
-      "Kfz-Zulassung in Karlsruhe ohne Behördengang: Wir erledigen Zulassung, Umschreibung und Abmeldung digital bei der Karlsruher Behörde – Festpreis 129 €.",
+      `Kfz-Zulassung in Karlsruhe ohne Behördengang: Wir erledigen Zulassung, Umschreibung und Abmeldung digital bei der Karlsruher Behörde – Festpreis ${P.zulassung}.`,
     intro: [
       "In der Technologieregion Karlsruhe wird vieles digital gedacht – die klassische Fahrzeugzulassung bedeutet aber nach wie vor: Termin buchen, hinfahren, warten. Besonderheit der Fächerstadt: Das Kürzel KA tragen Stadt und Landkreis gleichermaßen, entsprechend groß ist das Einzugsgebiet der Zulassungsvorgänge zwischen Durlach, Ettlingen und Bruchsal.",
       "Wir bringen die Zulassung dorthin, wo Karlsruhe ohnehin arbeitet: ins Digitale. Unterlagen als Foto einreichen, Vollmacht online bestätigen – wir führen den Vorgang bei der zuständigen Behörde durch, ob Stadt oder Landkreis, und senden Ihnen KA-Kennzeichen und Papiere versichert nach Hause.",
@@ -1347,7 +1348,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "KA" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Karlsruhe" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -1380,7 +1381,7 @@ export const cities: City[] = [
     name: "Augsburg",
     inName: "in Augsburg",
     description:
-      "Kfz-Zulassung in Augsburg ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung digital bei der Augsburger Behörde – Festpreis 129 €.",
+      `Kfz-Zulassung in Augsburg ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung digital bei der Augsburger Behörde – Festpreis ${P.zulassung}.`,
     intro: [
       "Augsburg fährt mit einem der kürzesten Kennzeichen Deutschlands: dem einzelnen A. Die knappen Kombinationen sind begehrt – und die Termine bei der Kfz-Zulassungsbehörde der Stadt Augsburg ebenso, denn neben der Fuggerstadt selbst sorgt das dicht besiedelte Umland zwischen Lech und Wertach für konstanten Andrang.",
       "Bei uns entfällt der Gang zur Behörde komplett: Sie reichen Ihre Unterlagen als Foto ein und bestätigen die digitale Vollmacht, wir führen den Vorgang bei der Augsburger Behörde durch. Auf Wunsch sichern wir dabei Ihre A-Wunschkombination und liefern die geprägten Schilder gestempelt an Ihre Haustür.",
@@ -1389,7 +1390,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "A" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Augsburg" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -1422,7 +1423,7 @@ export const cities: City[] = [
     name: "Wiesbaden",
     inName: "in Wiesbaden",
     description:
-      "Kfz-Zulassung in Wiesbaden ohne Behördengang: Zulassung, Ummeldung und Abmeldung digital bei der Wiesbadener Behörde erledigt – Festpreis 129 €.",
+      `Kfz-Zulassung in Wiesbaden ohne Behördengang: Zulassung, Ummeldung und Abmeldung digital bei der Wiesbadener Behörde erledigt – Festpreis ${P.zulassung}.`,
     intro: [
       "Wiesbaden und Mainz trennt nur der Rhein – aber verwaltungstechnisch liegt dazwischen eine Landesgrenze. Wer in der hessischen Landeshauptstadt wohnt und drüben in Rheinland-Pfalz arbeitet (oder umgekehrt), jongliert ohnehin genug Termine, da muss der Gang zur Kfz-Zulassungsbehörde der Landeshauptstadt Wiesbaden nicht auch noch sein.",
       "Wir übernehmen den Vorgang vollständig digital: Fotos der Unterlagen hochladen, Vollmacht bestätigen – wir führen Zulassung, Ummeldung oder Abmeldung bei der Wiesbadener Behörde durch und senden Ihre WI-Kennzeichen versichert zu Ihnen. Das funktioniert vom Westend bis Biebrich, und auch der klassische Fall Dienstwagen in der Beamten- und Versicherungsstadt ist bei uns Routine.",
@@ -1431,7 +1432,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "WI" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Landeshauptstadt Wiesbaden" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -1447,7 +1448,7 @@ export const cities: City[] = [
       {
         question: "Wie schnell ist eine Abmeldung in Wiesbaden erledigt?",
         answer:
-          "Meist noch am selben Werktag. Sie legen die Sicherheitscodes auf Fahrzeugschein und Kennzeichen frei, fotografieren sie und senden uns die Bilder – die Abmeldebestätigung erhalten Sie per E-Mail, für 34,90 €.",
+          `Meist noch am selben Werktag. Sie legen die Sicherheitscodes auf Fahrzeugschein und Kennzeichen frei, fotografieren sie und senden uns die Bilder – die Abmeldebestätigung erhalten Sie per E-Mail, für ${P.abmeldung}.`,
       },
     ],
     keywords: [
@@ -1464,7 +1465,7 @@ export const cities: City[] = [
     name: "Aachen",
     inName: "in Aachen",
     description:
-      "Kfz-Zulassung in Aachen ohne Behördengang: Wir erledigen Zulassung, Import-Anmeldung und Abmeldung digital bei der zuständigen Behörde – Festpreis 129 €.",
+      `Kfz-Zulassung in Aachen ohne Behördengang: Wir erledigen Zulassung, Import-Anmeldung und Abmeldung digital bei der zuständigen Behörde – Festpreis ${P.zulassung}.`,
     intro: [
       "Im Dreiländereck ist der Autokauf über die Grenze Alltag: Gebrauchtwagen aus den Niederlanden oder Belgien sind oft günstiger, und von Aachen aus liegen Maastricht und Lüttich näher als Köln. Nur die Zulassung des Importfahrzeugs bleibt ein deutscher Behördenvorgang – zuständig ist die Kfz-Zulassungsbehörde der StädteRegion Aachen, deren Termine begehrt sind.",
       "Genau dabei helfen wir: Sie senden uns die Fahrzeugunterlagen als Foto – beim EU-Import inklusive CoC-Papier – und erteilen die digitale Vollmacht. Wir führen den Vorgang bei der zuständigen Behörde durch und liefern Ihre AC-Kennzeichen gestempelt und versandversichert nach Hause, ob ins Frankenberger Viertel oder nach Brand.",
@@ -1473,7 +1474,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "AC" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der StädteRegion Aachen" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -1506,7 +1507,7 @@ export const cities: City[] = [
     name: "Freiburg im Breisgau",
     inName: "in Freiburg",
     description:
-      "Kfz-Zulassung in Freiburg ohne Behördengang: Zulassung, Saisonkennzeichen und Abmeldung digital bei der Freiburger Behörde erledigt – Festpreis 129 €.",
+      `Kfz-Zulassung in Freiburg ohne Behördengang: Zulassung, Saisonkennzeichen und Abmeldung digital bei der Freiburger Behörde erledigt – Festpreis ${P.zulassung}.`,
     intro: [
       "Freiburg liegt näher an Frankreich und der Schweiz als an Stuttgart – entsprechend oft landen hier Fahrzeuge aus dem Elsass auf dem Hof und Grenzgänger-Fragen auf dem Tisch. Und weil die sonnigste Großstadt Deutschlands ein Herz für Cabrios und Motorräder hat, gehören auch Saisonzulassungen zum Alltag der Kfz-Zulassungsbehörde der Stadt Freiburg im Breisgau.",
       "All das erledigen wir, ohne dass Sie einen Fuß in eine Behörde setzen: Unterlagen abfotografieren, digitale Vollmacht bestätigen – wir führen den Vorgang bei der Freiburger Behörde durch, vom EU-Import mit CoC-Papier bis zum Saisonkennzeichen für die Schwarzwald-Ausfahrt. FR-Kennzeichen und Papiere kommen versichert zu Ihnen, ob nach Herdern oder ins Rieselfeld.",
@@ -1515,7 +1516,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "FR" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Freiburg im Breisgau" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -1548,7 +1549,7 @@ export const cities: City[] = [
     name: "Krefeld",
     inName: "in Krefeld",
     description:
-      "Kfz-Zulassung in Krefeld ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung digital bei der Krefelder Behörde erledigt – Festpreis 129 €.",
+      `Kfz-Zulassung in Krefeld ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung digital bei der Krefelder Behörde erledigt – Festpreis ${P.zulassung}.`,
     intro: [
       "Am Niederrhein wird viel mit Autos gehandelt: Zwischen Krefeld, Mönchengladbach und dem Kreis Viersen wechseln Gebrauchtwagen ständig den Besitzer, und viele Krefelder pendeln täglich nach Düsseldorf oder Duisburg. Für einen Termin bei der Kfz-Zulassungsbehörde der Stadt Krefeld bleibt da wenig Luft – und kurzfristige Slots sind rar.",
       "Wir machen den Behördengang überflüssig: Unterlagen als Foto einreichen, Vollmacht digital erteilen, fertig. Wir führen Umschreibung, Neuzulassung oder Abmeldung bei der Krefelder Behörde durch und senden Ihnen die gestempelten KR-Kennzeichen versichert zu – nach Uerdingen, Fischeln oder mitten in die Seidenstadt.",
@@ -1557,7 +1558,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "KR" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Krefeld" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -1568,12 +1569,12 @@ export const cities: City[] = [
       {
         question: "Mein Auto ist verkauft – wie melde ich es in Krefeld ab?",
         answer:
-          "Am schnellsten über uns: Sicherheitscodes auf Fahrzeugschein und Kennzeichen freilegen, fotografieren, senden – die Abmeldung ist meist noch am selben Werktag erledigt und kostet 34,90 €. Die Bestätigung fürs Kaufvertrags-Protokoll und die Versicherung erhalten Sie per E-Mail.",
+          `Am schnellsten über uns: Sicherheitscodes auf Fahrzeugschein und Kennzeichen freilegen, fotografieren, senden – die Abmeldung ist meist noch am selben Werktag erledigt und kostet ${P.abmeldung}. Die Bestätigung fürs Kaufvertrags-Protokoll und die Versicherung erhalten Sie per E-Mail.`,
       },
       {
         question: "Kann ich ein KR-Wunschkennzeichen bekommen, ohne selbst zur Behörde zu gehen?",
         answer:
-          "Ja. Wir prüfen die Verfügbarkeit Ihrer Wunschkombination, reservieren sie bei der Behörde und liefern die fertig geprägten Schilder mit – für 34,90 € Aufpreis inklusive der amtlichen Gebühren.",
+          `Ja. Wir prüfen die Verfügbarkeit Ihrer Wunschkombination, reservieren sie bei der Behörde und übernehmen die Zuteilung – für ${P.wunschkennzeichen} Aufpreis inklusive der amtlichen Gebühr. Fertig geprägte Schilder liefern wir auf Wunsch für ${P.kennzeichen} pro Paar mit.`,
       },
     ],
     keywords: [
@@ -1590,7 +1591,7 @@ export const cities: City[] = [
     name: "Mainz",
     inName: "in Mainz",
     description:
-      "Kfz-Zulassung in Mainz ohne Behördengang: Wir erledigen Zulassung, Ummeldung und Abmeldung digital bei der Mainzer Behörde – Festpreis 129 €.",
+      `Kfz-Zulassung in Mainz ohne Behördengang: Wir erledigen Zulassung, Ummeldung und Abmeldung digital bei der Mainzer Behörde – Festpreis ${P.zulassung}.`,
     intro: [
       "Als Landeshauptstadt von Rheinland-Pfalz zieht Mainz stetig Zuzügler an – Studierende der Gutenberg-Universität, Beschäftigte von Medien und Verwaltung, Pendler aus dem Rhein-Main-Gebiet. Viele bringen ihr Auto mit und stehen dann vor der Frage, wie sie die Ummeldung bei der Kfz-Zulassungsbehörde der Landeshauptstadt Mainz in ihren Alltag quetschen sollen.",
       "Die Antwort: gar nicht – wir übernehmen das. Sie reichen die Unterlagen als Foto ein und bestätigen die digitale Vollmacht, wir führen den Vorgang bei der Mainzer Behörde durch. MZ-Kennzeichen und aktualisierte Papiere kommen versichert zu Ihnen – in die Neustadt, nach Gonsenheim oder auf Wunsch auf die andere Rheinseite ins Büro.",
@@ -1599,7 +1600,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "MZ" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Landeshauptstadt Mainz" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -1632,7 +1633,7 @@ export const cities: City[] = [
     name: "Kassel",
     inName: "in Kassel",
     description:
-      "Kfz-Zulassung in Kassel ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung digital bei der Kasseler Behörde erledigt – Festpreis 129 €.",
+      `Kfz-Zulassung in Kassel ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung digital bei der Kasseler Behörde erledigt – Festpreis ${P.zulassung}.`,
     intro: [
       "Kassel liegt fast exakt in der Mitte Deutschlands – ideal für den überregionalen Autokauf: Wer online einen Wagen in Hamburg oder München findet, holt ihn über die A7 oft selbst ab. Zurück in Nordhessen wartet dann die Umschreibung bei der Kfz-Zulassungsbehörde der Stadt Kassel, und die kostet mit Terminsuche und Schaltergang schnell mehr Zeit als die Abholfahrt.",
       "Mit uns ist der Papierkram erledigt, bevor der Tank wieder voll ist: Unterlagen fotografieren, digitale Vollmacht bestätigen – wir führen die Umschreibung, Neuzulassung oder Abmeldung bei der Kasseler Behörde durch. Die gestempelten KS-Kennzeichen kommen versichert zu Ihnen, ob nach Wehlheiden, Kirchditmold oder in den Vorderen Westen.",
@@ -1641,7 +1642,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "KS" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Kassel" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -1674,7 +1675,7 @@ export const cities: City[] = [
     name: "Oberhausen",
     inName: "in Oberhausen",
     description:
-      "Kfz-Zulassung in Oberhausen ohne Behördengang: Zulassung, Ummeldung und Abmeldung digital bei der Oberhausener Behörde erledigt – Festpreis 129 €.",
+      `Kfz-Zulassung in Oberhausen ohne Behördengang: Zulassung, Ummeldung und Abmeldung digital bei der Oberhausener Behörde erledigt – Festpreis ${P.zulassung}.`,
     intro: [
       "Im Ruhrgebiet ist die nächste Stadtgrenze nie weit: Von Oberhausen aus liegen Essen, Duisburg, Mülheim und Bottrop praktisch vor der Haustür – und mit jedem Autokauf oder Umzug im Städtenetz wird eine Zulassungsbehörde fällig. Die Termine bei der Kfz-Zulassungsbehörde der Stadt Oberhausen sind dabei genauso umkämpft wie überall im Revier.",
       "Wir kürzen das ab: Statt Wartemarke gibt es bei uns einen digitalen Vorgang – Unterlagen als Foto, Vollmacht per Klick, und wir erledigen Zulassung, Umschreibung oder Abmeldung bei der Oberhausener Behörde. Ihre OB-Kennzeichen kommen fertig gestempelt per versichertem Versand, ob nach Sterkrade, Osterfeld oder in die Innenstadt.",
@@ -1683,7 +1684,7 @@ export const cities: City[] = [
       { label: "Kennzeichen-Kürzel", value: "OB" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Oberhausen" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
-      { label: "Preis", value: "129 € inkl. Gebühren & Versand, zzgl. Kennzeichen 28,90 €" },
+      { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
@@ -1699,7 +1700,7 @@ export const cities: City[] = [
       {
         question: "Was kostet die Kfz-Zulassung in Oberhausen über DeutscheZulassung?",
         answer:
-          "129 € als Komplettpreis – amtliche Gebühren und versicherter Versand sind enthalten, geprägte Kennzeichenschilder kommen mit 28,90 € pro Paar dazu. Die Abmeldung kostet 34,90 € und ist meist noch am selben Werktag erledigt.",
+          `${P.zulassung} als Komplettpreis – amtliche Gebühren und versicherter Versand sind enthalten, geprägte Kennzeichenschilder kommen mit ${P.kennzeichen} pro Paar dazu. Die Abmeldung kostet ${P.abmeldung} und ist meist noch am selben Werktag erledigt.`,
       },
     ],
     keywords: [

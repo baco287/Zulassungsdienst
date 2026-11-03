@@ -1,5 +1,6 @@
 import { createOgImage, ogContentType, ogSize } from "@/lib/og";
 import { cities, getCity } from "@/lib/staedte";
+import { P } from "@/lib/pricing";
 
 export const dynamic = "force-static";
 export const size = ogSize;
@@ -21,6 +22,6 @@ export default async function OgImage({
   return createOgImage({
     kicker: "Digital statt Behördengang",
     title: `Kfz-Zulassung ${city.name}`,
-    subtitle: `Ohne Termin bei der Zulassungsstelle – 129 € inkl. Gebühren und Versand, Kennzeichen zzgl. 28,90 €.`,
+    subtitle: `Ohne Termin bei der Zulassungsstelle – ${P.zulassung} inkl. Gebühren und Versand, Kennzeichen zzgl. ${P.kennzeichen}.`,
   });
 }

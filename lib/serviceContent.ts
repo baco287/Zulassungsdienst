@@ -1,3 +1,4 @@
+import { P, wunschkennzeichenHinweis } from "./pricing";
 /**
  * Vertiefende Inhalte für die Leistungs-Detailseiten (SEO/GEO).
  *
@@ -57,7 +58,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       {
         question: "Was kostet eine Neuzulassung über DeutscheZulassung?",
         answer:
-          "Die Neuzulassung kostet bei uns 129 € – amtliche Gebühren und der versicherte Versand sind bereits enthalten. Die beiden Kennzeichenschilder berechnen wir mit 28,90 € pro Paar zusätzlich. Es kommen keine versteckten Kosten hinzu.",
+          `Die Neuzulassung kostet bei uns ${P.zulassung} – amtliche Gebühren und der versicherte Versand sind bereits enthalten. Die beiden Kennzeichenschilder berechnen wir mit ${P.kennzeichen} pro Paar zusätzlich. Es kommen keine versteckten Kosten hinzu.`,
       },
       {
         question: "Wie lange dauert eine Neuzulassung?",
@@ -76,7 +77,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       },
     ],
     related: ["halterwechsel", "wunschkennzeichen", "gewerbekunden"],
-    guides: ["auto-anmelden-unterlagen", "was-kostet-eine-kfz-zulassung", "evb-nummer"],
+    guides: ["auto-anmelden-unterlagen", "fahrzeugpapiere-sicherheitscodes", "was-kostet-eine-kfz-zulassung", "evb-nummer"],
     keywords: [
       "Neuzulassung online",
       "Auto anmelden ohne Termin",
@@ -105,7 +106,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       {
         question: "Was kostet das Ummelden eines Autos?",
         answer:
-          "Bei DeutscheZulassung kostet die Ummeldung 129 € inklusive amtlicher Gebühren und versichertem Versand. Werden neue Kennzeichen gewünscht, kommen 28,90 € pro Paar für die Schilder dazu – bei Kennzeichenmitnahme entfällt das.",
+          `Bei DeutscheZulassung kostet die Ummeldung ${P.zulassung} inklusive amtlicher Gebühren und versichertem Versand. Werden neue Kennzeichen gewünscht, kommen ${P.kennzeichen} pro Paar für die Schilder dazu – bei Kennzeichenmitnahme entfällt das.`,
       },
       {
         question: "Wie lange habe ich nach dem Umzug Zeit, mein Auto umzumelden?",
@@ -153,7 +154,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       {
         question: "Was kostet es, ein Auto abzumelden?",
         answer:
-          "Bei DeutscheZulassung kostet die Abmeldung 34,90 € inklusive amtlicher Gebühren. Da keine Kennzeichen versendet werden müssen, fallen keine Versandkosten an.",
+          `Bei DeutscheZulassung kostet die Abmeldung ${P.abmeldung} inklusive amtlicher Gebühren. Da keine Kennzeichen versendet werden müssen, fallen keine Versandkosten an.`,
       },
       {
         question: "Was sind die Sicherheitscodes und wo finde ich sie?",
@@ -172,7 +173,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       },
     ],
     related: ["wiederzulassung", "halterwechsel", "ersatz-dokumente"],
-    guides: ["auto-abmelden-so-gehts", "was-kostet-eine-kfz-zulassung"],
+    guides: ["auto-abmelden-so-gehts", "auto-verkauft-abmelden", "fahrzeugpapiere-sicherheitscodes"],
     keywords: [
       "Auto abmelden online",
       "Kfz Außerbetriebsetzung",
@@ -237,7 +238,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       {
         question: "Was kostet die Umschreibung eines Gebrauchtwagens?",
         answer:
-          "Bei DeutscheZulassung kostet der Halterwechsel 129 € – amtliche Gebühren und versicherter Versand inklusive. Werden neue Kennzeichenschilder benötigt, kommen 28,90 € pro Paar dazu; übernehmen Sie das bisherige Kennzeichen, entfällt dieser Posten.",
+          `Bei DeutscheZulassung kostet der Halterwechsel ${P.zulassung} – amtliche Gebühren und versicherter Versand inklusive. Werden neue Kennzeichenschilder benötigt, kommen ${P.kennzeichen} pro Paar dazu; übernehmen Sie das bisherige Kennzeichen, entfällt dieser Posten.`,
       },
       {
         question: "Welche Unterlagen brauche ich für den Halterwechsel?",
@@ -256,7 +257,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       },
     ],
     related: ["neuzulassung", "wunschkennzeichen", "abmeldung"],
-    guides: ["auto-anmelden-unterlagen", "kennzeichen-mitnehmen", "was-kostet-eine-kfz-zulassung"],
+    guides: ["halterwechsel-nach-autokauf", "auto-anmelden-unterlagen", "kennzeichen-mitnehmen"],
     keywords: [
       "Auto umschreiben lassen",
       "Halterwechsel online",
@@ -294,7 +295,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       {
         question: "Was kostet die Adressänderung?",
         answer:
-          "90 € als Komplettpreis inkl. MwSt. – amtliche Gebühren und der Versand der aktualisierten Zulassungsbescheinigung sind enthalten. Damit ist die reine Adressänderung günstiger als eine vollständige Ummeldung (129 €), weil keine neuen Kennzeichen anfallen.",
+          `${P.adressaenderung} als Komplettpreis inkl. MwSt. – amtliche Gebühren und der Versand der aktualisierten Zulassungsbescheinigung sind enthalten. Damit ist die reine Adressänderung günstiger als eine vollständige Ummeldung (${P.zulassung}), weil keine neuen Kennzeichen anfallen.`,
       },
     ],
     related: ["ummeldung", "halterwechsel"],
@@ -380,7 +381,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       {
         question: "Was kostet ein Wunschkennzeichen?",
         answer:
-          "Bei uns 34,90 € als Zusatz zu jeder Zulassung – die amtliche Reservierungs- und Zuteilungsgebühr sowie die Prägung der Schilder sind bereits enthalten.",
+          `Bei uns ${P.wunschkennzeichen} als Zusatz zu jeder Zulassung – Verfügbarkeitsprüfung, Reservierung und Zuteilung inklusive der amtlichen Gebühr. ${wunschkennzeichenHinweis} Geprägte Schilder liefern wir auf Wunsch für ${P.kennzeichen} pro Paar mit.`,
       },
       {
         question: "Wie lange bleibt ein Wunschkennzeichen reserviert?",
@@ -394,7 +395,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       },
     ],
     related: ["neuzulassung", "halterwechsel", "ummeldung"],
-    guides: ["kennzeichen-mitnehmen", "was-kostet-eine-kfz-zulassung"],
+    guides: ["wunschkennzeichen-reservieren", "kennzeichen-mitnehmen", "was-kostet-eine-kfz-zulassung"],
     keywords: ["Wunschkennzeichen reservieren", "Wunschkennzeichen Kosten", "Kennzeichen prägen lassen"],
   },
 
@@ -490,7 +491,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       },
     ],
     related: ["neuzulassung", "abmeldung", "abhol-bringservice"],
-    guides: ["i-kfz-online-zulassung", "was-kostet-eine-kfz-zulassung"],
+    guides: ["fahrzeugzulassung-unternehmen", "i-kfz-online-zulassung", "was-kostet-eine-kfz-zulassung"],
     keywords: [
       "Zulassungsservice Autohaus",
       "Kfz-Zulassung Gewerbe",

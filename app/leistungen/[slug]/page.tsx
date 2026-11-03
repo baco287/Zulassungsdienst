@@ -16,7 +16,7 @@ import SecurityCodeGuide from "@/components/SecurityCodeGuide";
 import { getService, services, categoryLabels } from "@/lib/services";
 import { getServiceContent } from "@/lib/serviceContent";
 import { getGuide } from "@/lib/ratgeber";
-import { euro, euroRange, priceDisclaimer, plateFee } from "@/lib/pricing";
+import { euro, euroRange, leistungsPreis, P, priceDisclaimer, plateFee } from "@/lib/pricing";
 import { site, whatsAppLink } from "@/lib/site";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
 
@@ -272,37 +272,50 @@ export default async function ServiceDetailPage({
           <Reveal delay={0.1}>
             <aside className="lg:sticky lg:top-24 h-fit rounded-2xl border border-ink-200 bg-white p-6 shadow-card">
               <h2 className="font-display text-lg font-bold text-ink-900">
-                {p.inclusive ? "Komplettpreis" : "Preisstruktur"}
+                {service.slug === "wunschkennzeichen" ? "Zusatzleistung" : p.inclusive ? "Komplettpreis" : "Preisstruktur"}
               </h2>
               <dl className="mt-4 space-y-3 text-sm">
                 <div className="flex items-baseline justify-between gap-4">
                   <dt className="text-ink-600">
-                    {p.inclusive ? "Festpreis DeutscheZulassung" : "Servicepreis DeutscheZulassung"}
+                    {service.slug === "wunschkennzeichen"
+                      ? "Zusätzlich zu einer Zulassung"
+                      : p.inclusive
+                        ? "Festpreis DeutscheZulassung"
+                        : "Servicepreis DeutscheZulassung"}
                   </dt>
                   <dd className="text-right font-display text-lg font-bold text-brand-700">
                     {p.serviceFee !== null
-                      ? p.inclusive
-                        ? euro(p.serviceFee)
-                        : `ab ${euro(p.serviceFee)}`
+                      ? service.slug === "wunschkennzeichen"
+                        ? `+ ${euro(p.serviceFee)}`
+                        : p.inclusive
+                          ? euro(p.serviceFee)
+                          : `ab ${euro(p.serviceFee)}`
                       : "auf Anfrage"}
                   </dd>
                 </div>
                 {p.inclusive ? (
                   <ul className="space-y-1.5 rounded-xl bg-brand-50 p-3 text-ink-700">
-                    {["Amtliche Gebühren", "Kennzeichen & Prägung", "Versicherter Versand"]
-                      .filter((item) => !(service.slug === "abmeldung" && item !== "Amtliche Gebühren"))
-                      .map((item) => {
-                        const extra = item === "Kennzeichen & Prägung" && p.platesExtra;
-                        return (
-                          <li key={item} className="flex items-center gap-2">
-                            <CheckCircle2 className="h-4 w-4 shrink-0 text-brand-600" aria-hidden />
-                            {item}{" "}
-                            <span className="ml-auto font-semibold text-brand-700">
-                              {extra ? `zzgl. ${euro(plateFee)}` : "inklusive"}
-                            </span>
-                          </li>
-                        );
-                      })}
+                    {(() => {
+                      // Zeilen aus config/preise.json – nur, was für diese Leistung wirklich gilt.
+                      const cfg = leistungsPreis(service.slug);
+                      const rows: [string, string][] = [];
+                      if (service.slug === "wunschkennzeichen") {
+                        rows.push(["Amtliche Gebühr (Reservierung & Zuteilung)", "inklusive"]);
+                        rows.push(["Kennzeichenschilder", `optional zzgl. ${euro(plateFee)}`]);
+                        rows.push(["Zulassungsvorgang", `zzgl. ${P.zulassung}`]);
+                      } else if (cfg) {
+                        if (cfg.enthaeltAmtlicheGebuehren) rows.push(["Amtliche Gebühren", "inklusive"]);
+                        if (cfg.schilderMoeglich) rows.push(["Kennzeichenschilder", `optional zzgl. ${euro(plateFee)}`]);
+                        rows.push(["Versand der Dokumente", cfg.enthaeltVersand ? "inklusive" : "entfällt (digital)"]);
+                      }
+                      return rows.map(([label, value]) => (
+                        <li key={label} className="flex items-center gap-2">
+                          <CheckCircle2 className="h-4 w-4 shrink-0 text-brand-600" aria-hidden />
+                          {label}{" "}
+                          <span className="ml-auto text-right font-semibold text-brand-700">{value}</span>
+                        </li>
+                      ));
+                    })()}
                   </ul>
                 ) : (
                   <>

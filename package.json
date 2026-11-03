@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "check:preise": "node scripts/check-preise.mjs",
+    "check:build": "node scripts/check-preise.mjs --out",
+    "import:zulassungsstellen": "node scripts/import-zulassungsstellen.mjs"
   },
   "dependencies": {
     "framer-motion": "^12.0.0",

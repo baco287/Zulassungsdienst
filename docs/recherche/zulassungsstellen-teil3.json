@@ -1,0 +1,1004 @@
+[
+  {
+    "slug": "rostock",
+    "stadt": "Rostock",
+    "bundesland": "Mecklenburg-Vorpommern",
+    "behoerde": "Kfz-Zulassungsstelle der Hanse- und Universitätsstadt Rostock (Stadtamt)",
+    "behoerdeQuelle": "https://rathaus.rostock.de/de/service/aemter/stadtamt/kfz_zulassungsstelle/251384",
+    "traeger": "Hanse- und Universitätsstadt Rostock (kreisfreie Stadt), Stadtamt",
+    "standorte": [
+      {
+        "bezeichnung": "Stadtamt, KFZ-Zulassungsstelle",
+        "strasse": "Charles-Darwin-Ring 6",
+        "plz": "18059",
+        "ort": "Rostock",
+        "quelle": "https://rathaus.rostock.de/de/service/aemter/stadtamt/kfz_zulassungsstelle/251384"
+      }
+    ],
+    "website": {
+      "url": "https://rathaus.rostock.de/de/service/aemter/stadtamt/kfz_zulassungsstelle/251384",
+      "quelle": "https://rathaus.rostock.de/de/service/aemter/stadtamt/kfz_zulassungsstelle/251384"
+    },
+    "terminUrl": {
+      "url": "https://rathaus.rostock.de/OnlineTermine/select2?md=8",
+      "quelle": "https://rathaus.rostock.de/de/service/aemter/stadtamt/kfz_zulassungsstelle/251384"
+    },
+    "ikfzUrl": null,
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag 9:00 - 12:00 Uhr",
+        "Dienstag 9:00 - 18:00 Uhr",
+        "Mittwoch geschlossen",
+        "Donnerstag 9:00 - 16:00 Uhr",
+        "Freitag 9:00 - 12:00 Uhr"
+      ],
+      "hinweis": "Sprechzeiten vor Ort. Anliegen können nur nach vorheriger Buchung eines Termins bearbeitet werden. Außerbetriebsetzungen von Fahrzeugen und die Beantragung von Kurzzeitkennzeichen werden auch ohne Termin während der Öffnungszeiten bearbeitet.",
+      "quelle": "https://rathaus.rostock.de/de/service/aemter/stadtamt/kfz_zulassungsstelle/251384"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig für Fahrzeughalter mit Wohnsitz bzw. Sitz in der kreisfreien Hanse- und Universitätsstadt Rostock (Kennzeichen HRO). Der umliegende Landkreis Rostock hat eine eigene Zulassungsbehörde mit Standorten in Güstrow und Bad Doberan und eigenen Unterscheidungszeichen (u. a. LRO; Kürzel laut Wikipedia-Liste der Kfz-Kennzeichen).",
+      "quelle": "https://www.landkreis-rostock.de/de/kfzzulassung.html"
+    },
+    "kuerzel": [
+      {
+        "code": "HRO",
+        "bedeutung": "Hansestadt Rostock (nur Stadt Rostock; der Landkreis Rostock vergibt LRO, BÜZ, DBR, GÜ, ROS und TET)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Das Online-Zulassungsverfahren (i-Kfz) steht laut Stadt derzeit nicht zur Verfügung; betroffen sind alle Vorgänge, u. a. Umschreibungen, Neuzulassungen und Abmeldungen. Diese werden nur in der Zulassungsstelle nach Terminbuchung bearbeitet.",
+        "quelle": "https://rathaus.rostock.de/de/service/aemter/stadtamt/kfz_zulassungsstelle/251384"
+      },
+      {
+        "text": "Neue Termine werden immer montags freigeschaltet.",
+        "quelle": "https://rathaus.rostock.de/de/service/aemter/stadtamt/kfz_zulassungsstelle/251384"
+      },
+      {
+        "text": "Rote Oldtimerkennzeichen (HRO 07 …) nach § 17 FZV können frühestens 30 Jahre nach Erstzulassung des Fahrzeugs beantragt werden; Gebühr 77,90 EUR.",
+        "quelle": "https://rathaus.rostock.de/de/service/aemter/stadtamt/kfz_zulassungsstelle/fahrzeugzulassung_oldtimerkennzeichen_hro_07_nach_17_fahrzeug_zulassungsverordnung/266255"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": ["ikfzUrl"],
+    "anmerkungen": [
+      "ikfzUrl ist null, weil die Stadt das Online-Verfahren derzeit als nicht verfügbar ausweist und keinen Portal-Link nennt.",
+      "Der offizielle Terminlink endet auf der Seite mit einem Leerzeichen (%20); hier ohne dieses Zeichen wiedergegeben."
+    ]
+  },
+  {
+    "slug": "erfurt",
+    "stadt": "Erfurt",
+    "bundesland": "Thüringen",
+    "behoerde": "Zulassungsbehörde der Landeshauptstadt Erfurt (Bürgeramt, Zulassungs- und Fahrerlaubnisbehörde)",
+    "behoerdeQuelle": "https://www.erfurt.de/ef/de/rathaus/sv/aemter/stelle-125.htmc",
+    "traeger": "Landeshauptstadt Erfurt (kreisfreie Stadt), Bürgeramt",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgeramt Erfurt, Zulassungsbehörde",
+        "strasse": "Bürgermeister-Wagner-Straße 1",
+        "plz": "99084",
+        "ort": "Erfurt",
+        "quelle": "https://www.erfurt.de/ef/de/rathaus/sv/aemter/stelle-125.htmc"
+      }
+    ],
+    "website": {
+      "url": "https://www.erfurt.de/ef/de/rathaus/sv/aemter/stelle-125.htmc",
+      "quelle": "https://www.erfurt.de/ef/de/rathaus/sv/aemter/stelle-125.htmc"
+    },
+    "terminUrl": {
+      "url": "https://online-dienste.erfurt.de/intelliform/forms/erfurt/32/terminvereinbarung_bs/index",
+      "quelle": "https://www.erfurt.de/ef/de/rathaus/sv/aemter/stelle-125.htmc"
+    },
+    "ikfzUrl": {
+      "url": "https://ikfz.ikfz-thueringen.de/i4/ikfz4/?LICENSEIDENTIFIER=erfurt_stadt",
+      "quelle": "https://www.erfurt.de/ef/de/rathaus/bservice/leistungen/leistung-2186.htmc"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag 08:30 - 12:30 Uhr",
+        "Dienstag 08:30 - 11:30 Uhr, 12:30 - 18:00 Uhr",
+        "Mittwoch 08:30 - 12:30 Uhr",
+        "Donnerstag 08:30 - 11:30 Uhr, 12:30 - 18:00 Uhr",
+        "Freitag 08:30 - 12:30 Uhr"
+      ],
+      "hinweis": "Der Bereich Kfz-Angelegenheiten arbeitet ausschließlich nach Terminvereinbarung! Zum Termin wird ausschließlich die gebuchte Leistung bearbeitet.",
+      "quelle": "https://www.erfurt.de/ef/de/rathaus/sv/aemter/stelle-125.htmc"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig für Personen mit Hauptwohnsitz in Erfurt und Firmen mit Sitz in Erfurt (kreisfreie Stadt). Das Unterscheidungszeichen EF wird nur von der Stadt Erfurt vergeben.",
+      "quelle": "https://www.erfurt.de/ef/de/rathaus/bservice/leistungen/leistung-2186.htmc"
+    },
+    "kuerzel": [
+      {
+        "code": "EF",
+        "bedeutung": "Erfurt (nur Stadt Erfurt)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termine werden 21 Tage im Voraus vergeben; durch Absagen und zu Arbeitsbeginn freigegebene Tagestermine sind auch kurzfristige Termine möglich.",
+        "quelle": "https://www.erfurt.de/ef/de/rathaus/sv/aemter/stelle-125.htmc"
+      },
+      {
+        "text": "Zulassungsdienste, Autohäuser und Firmen können täglich von 08:00 bis 10:00 Uhr vollständige Vorgänge abgeben und werden per SMS über die Abholbereitschaft informiert.",
+        "quelle": "https://www.erfurt.de/ef/de/rathaus/sv/aemter/stelle-125.htmc"
+      },
+      {
+        "text": "Bei der Online-Zulassung (i-Kfz) liefert die Zulassungsbehörde keine Kennzeichentafeln; diese müssen bei privaten, nach DIN-Norm zertifizierten Kennzeichenprägern gekauft werden.",
+        "quelle": "https://www.erfurt.de/ef/de/rathaus/bservice/leistungen/leistung-2186.htmc"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "braunschweig",
+    "stadt": "Braunschweig",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Zulassungsstelle der Stadt Braunschweig (Straßenverkehrsabteilung)",
+    "behoerdeQuelle": "https://www.braunschweig.de/vv/oe/II/32/32_3/32_32/index.php",
+    "traeger": "Stadt Braunschweig (kreisfreie Stadt)",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Braunschweig",
+        "strasse": "Porschestraße 5",
+        "plz": "38112",
+        "ort": "Braunschweig",
+        "quelle": "https://www.braunschweig.de/vv/oe/II/32/32_3/32_32/index.php"
+      }
+    ],
+    "website": {
+      "url": "https://www.braunschweig.de/vv/oe/II/32/32_3/32_32/index.php",
+      "quelle": "https://www.braunschweig.de/vv/oe/II/32/32_3/32_32/index.php"
+    },
+    "terminUrl": {
+      "url": "https://tevis.itebo.de/braunschweig/select2?md=1",
+      "quelle": "https://www.braunschweig.de/vv/oe/II/32/32_3/32_32/index.php"
+    },
+    "ikfzUrl": {
+      "url": "https://stadt-braunschweig-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=braunschweig_stadt",
+      "quelle": "https://www.braunschweig.de/vv/produkte/II/32/32_3/32_32/Online-Kfz-Zulassung.php"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montags: 08:00 - 12:00 Uhr und 14:00 - 18:00 Uhr",
+        "Dienstags und Mittwochs: 08:00 - 13:00 Uhr",
+        "Donnerstags: 08:00 - 12:00 Uhr und 13:00 – 15:00 Uhr",
+        "Freitags: 08:00 - 12:00 Uhr",
+        "Samstags (Achtung: Es ist nicht an jedem Samstag geöffnet!): 08:00 - 12:00 Uhr"
+      ],
+      "hinweis": "ACHTUNG, nur mit vorheriger Terminreservierung! Termine online oder beim Bürgertelefon 0531/470-1.",
+      "quelle": "https://www.braunschweig.de/vv/oe/II/32/32_3/32_32/index.php"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig für Fahrzeughalter in der kreisfreien Stadt Braunschweig. Das Unterscheidungszeichen BS wird ausschließlich von der Stadt Braunschweig vergeben.",
+      "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+    },
+    "kuerzel": [
+      {
+        "code": "BS",
+        "bedeutung": "Braunschweig (nur Stadt Braunschweig)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Normale Außerbetriebsetzungen werden ohne vorab online reservierten Termin bearbeitet; bei Verlust der Kennzeichen und/oder der Zulassungsbescheinigung Teil I ist für die Außerbetriebsetzung zwingend ein Termin nötig.",
+        "quelle": "https://www.braunschweig.de/vv/oe/II/32/32_3/32_32/index.php"
+      },
+      {
+        "text": "Samstags (08:00 - 12:00 Uhr) ist nur an bestimmten Samstagen geöffnet; die Termine werden unter „Aktuelles“ oder telefonisch unter 0531 470-1 bzw. 0531 470-7500 bekanntgegeben.",
+        "quelle": "https://www.braunschweig.de/vv/oe/II/32/32_3/32_32/index.php"
+      },
+      {
+        "text": "Online (i-Kfz) möglich sind u. a. Anmeldung, Abmeldung, Wiederzulassung, Umschreibung mit oder ohne Halterwechsel, Tageszulassung sowie die Auswahl von Elektro-, Saison- und Oldtimerkennzeichen.",
+        "quelle": "https://www.braunschweig.de/vv/produkte/II/32/32_3/32_32/Online-Kfz-Zulassung.php"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "mannheim",
+    "stadt": "Mannheim",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Stadt Mannheim, Fachbereich Bürgerdienste – Kfz-Zulassung im Bürgerservice",
+    "behoerdeQuelle": "https://www.mannheim.de/de/service-bieten/buergerdienste/fahrzeug-fuehrerschein/kfz-zulassungen",
+    "traeger": "Stadt Mannheim (Stadtkreis), Fachbereich Bürgerdienste",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgerservice Innenstadt",
+        "strasse": "K 7",
+        "plz": "68159",
+        "ort": "Mannheim",
+        "quelle": "https://www.mannheim.de/de/service-bieten/buergerdienste/buergerservice/buergerservice-standorte/buergerservice-innenstadtjungbusch"
+      },
+      {
+        "bezeichnung": "Bürgerservice Waldhof (Bürgerservice-Zentrum Nord)",
+        "strasse": "Alte Frankfurter Str. 1-3",
+        "plz": "68305",
+        "ort": "Mannheim",
+        "quelle": "https://www.mannheim.de/de/service-bieten/buergerdienste/buergerservice/buergerservice-standorte/buergerservice-waldhof"
+      },
+      {
+        "bezeichnung": "Bürgerservice Neuhermsheim",
+        "strasse": "Gerd-Dehof-Platz 1",
+        "plz": "68163",
+        "ort": "Mannheim",
+        "quelle": "https://www.mannheim.de/de/service-bieten/buergerdienste/buergerservice/buergerservice-standorte/buergerservice-neuhermsheim"
+      },
+      {
+        "bezeichnung": "Bürgerservice Neckarstadt",
+        "strasse": "Mittelstraße 40",
+        "plz": "68169",
+        "ort": "Mannheim",
+        "quelle": "https://www.mannheim.de/de/service-bieten/buergerdienste/buergerservice/buergerservice-standorte/buergerservice-neckarstadt"
+      },
+      {
+        "bezeichnung": "Bürgerservice Lindenhof",
+        "strasse": "Glücksteinallee 11",
+        "plz": "68163",
+        "ort": "Mannheim",
+        "quelle": "https://www.mannheim.de/de/service-bieten/buergerdienste/buergerservice/buergerservice-standorte/buergerservice-lindenhof"
+      }
+    ],
+    "website": {
+      "url": "https://www.mannheim.de/de/service-bieten/buergerdienste/fahrzeug-fuehrerschein/kfz-zulassungen",
+      "quelle": "https://www.mannheim.de/de/service-bieten/buergerdienste/fahrzeug-fuehrerschein/kfz-zulassungen"
+    },
+    "terminUrl": {
+      "url": "https://tempus-termine.com/termine/index.php?anlagennr=36",
+      "quelle": "https://www.mannheim.de/de/service-bieten/buergerdienste/fahrzeug-fuehrerschein/kfz-zulassungen/kfz-fahrzeug-ummelden"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6000868&leistungId=99036020001000&p=082220",
+      "quelle": "https://www.mannheim.de/de/service-bieten/buergerdienste/fahrzeug-fuehrerschein/kfz-zulassungen/digitale-fahrzeugzulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Innenstadt: Montag 08:00 - 16:00 Uhr (mit Termin)",
+        "Innenstadt: Dienstag 08:00 - 12:00 Uhr (ohne Termin)",
+        "Innenstadt: Mittwoch 08:00 - 12:00 Uhr (ohne Termin)",
+        "Innenstadt: Donnerstag 08:00 - 18:00 Uhr (mit Termin)",
+        "Innenstadt: Freitag 08:00 - 12:00 Uhr (ohne Termin)",
+        "Waldhof: Montag 08:00 - 16:00 Uhr (mit Termin)",
+        "Waldhof: Dienstag 08:00 - 18:00 Uhr (mit Termin)",
+        "Waldhof: Mittwoch, Donnerstag, Freitag 08:00 - 12:00 Uhr (ohne Termin)",
+        "Neuhermsheim: Montag, Dienstag, Donnerstag, Freitag 08:00 - 12:00 Uhr (ohne Termin)",
+        "Neuhermsheim: Mittwoch 14:00 - 18:00 Uhr (mit Termin)",
+        "Neckarstadt: Montag 08:00 - 16:00 Uhr (mit Termin)",
+        "Neckarstadt: Dienstag 15:00 - 18:00 Uhr (mit Termin)",
+        "Neckarstadt: Mittwoch 08:00 - 12:00 Uhr (ohne Termin)",
+        "Neckarstadt: Donnerstag 08:00 - 16:00 Uhr (mit Termin)",
+        "Neckarstadt: Freitag 08:00 - 12:00 Uhr (ohne Termin)",
+        "Lindenhof: Montag 08:00 - 16:00 Uhr (mit Termin)",
+        "Lindenhof: Dienstag 08:00 - 12:00 Uhr (ohne Termin)",
+        "Lindenhof: Mittwoch 08:00 - 18:00 Uhr (mit Termin)",
+        "Lindenhof: Donnerstag, Freitag 08:00 - 12:00 Uhr (ohne Termin)"
+      ],
+      "hinweis": "Allgemeine Öffnungszeiten der Bürgerservice-Standorte (Tabelle „ohne Termin“ / „mit Termin“). Die Stadt bittet, sich vorab zu informieren, ob am jeweiligen Standort eine Terminreservierung erforderlich ist. Termine auch über die Behördennummer 115.",
+      "quelle": "https://www.mannheim.de/de/service-bieten/buergerdienste/buergerservice/buergerservice-standorte/buergerservice-innenstadtjungbusch",
+      "weitereQuellen": [
+        "https://www.mannheim.de/de/service-bieten/buergerdienste/buergerservice/buergerservice-standorte/buergerservice-waldhof",
+        "https://www.mannheim.de/de/service-bieten/buergerdienste/buergerservice/buergerservice-standorte/buergerservice-neuhermsheim",
+        "https://www.mannheim.de/de/service-bieten/buergerdienste/buergerservice/buergerservice-standorte/buergerservice-neckarstadt",
+        "https://www.mannheim.de/de/service-bieten/buergerdienste/buergerservice/buergerservice-standorte/buergerservice-lindenhof"
+      ]
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig für Privatpersonen mit Hauptwohnsitz in Mannheim sowie für juristische Personen, Handelsunternehmen und Gewerbetreibende mit Hauptsitz oder Niederlassung in Mannheim. Der benachbarte Rhein-Neckar-Kreis hat eine eigene Zulassungsbehörde und vergibt andere Unterscheidungszeichen (u. a. HD; Kürzel laut Wikipedia-Liste der Kfz-Kennzeichen).",
+      "quelle": "https://www.mannheim.de/de/service-bieten/buergerdienste/fahrzeug-fuehrerschein/kfz-zulassungen/kfz-fahrzeug-ummelden"
+    },
+    "kuerzel": [
+      {
+        "code": "MA",
+        "bedeutung": "Mannheim (nur Stadt Mannheim)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Zulassungen mit Oldtimer-, Saison- oder Grünen Kennzeichen sind ausschließlich in den Bürgerservice-Standorten Innenstadt, Waldhof und Lindenhof möglich.",
+        "quelle": "https://www.mannheim.de/de/service-bieten/buergerdienste/fahrzeug-fuehrerschein/kfz-zulassungen/kfz-anmeldung-elektro-oldtimer-saison-oder-gruenen-kennzeichen"
+      },
+      {
+        "text": "Bei Leasingfahrzeugen muss der Leasingfahrzeugbrief von der Bank direkt an den Bürgerservice Neuhermsheim oder Waldhof geschickt werden.",
+        "quelle": "https://www.mannheim.de/de/service-bieten/buergerdienste/fahrzeug-fuehrerschein/kfz-zulassungen/kfz-neuzulassung"
+      },
+      {
+        "text": "Eine Neuzulassung kostet 30,00 Euro, als Online-Antrag über das i-KFZ-Portal 12,80 Euro; eine Beantragung per E-Mail oder Post ist nicht möglich.",
+        "quelle": "https://www.mannheim.de/de/service-bieten/buergerdienste/fahrzeug-fuehrerschein/kfz-zulassungen/kfz-neuzulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": ["standorte", "oeffnungszeiten"],
+    "anmerkungen": [
+      "Mannheim hat keine zentrale Zulassungsstelle; die Kfz-Zulassung läuft laut Stadt über die Bürgerservice-Standorte. Aufgeführt sind nur die fünf Standorte, die auf den Kfz-Seiten der Stadt ausdrücklich genannt werden. Ob weitere Bürgerservice-Standorte Kfz-Zulassungen bearbeiten, ist auf den offiziellen Seiten nicht eindeutig belegt.",
+      "Die Öffnungszeiten sind die allgemeinen Zeiten der jeweiligen Bürgerservice-Standorte, nicht speziell für Kfz-Vorgänge ausgewiesen.",
+      "Zahlungsarten widersprüchlich: Kfz-Leistungsseiten sagen „keine Debit- und Kreditkartenzahlung möglich“, die Standortseiten nennen „EC-Karte mit PIN: ja“. Deshalb nicht in die Besonderheiten übernommen."
+    ]
+  },
+  {
+    "slug": "karlsruhe",
+    "stadt": "Karlsruhe",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Servicezentrum Auto und Verkehr: Zulassungsstelle (Stadt Karlsruhe)",
+    "behoerdeQuelle": "https://web1.karlsruhe.de/service/Buergerdienste/organisation.php?id=6028453",
+    "traeger": "Stadt Karlsruhe (Stadtkreis)",
+    "standorte": [
+      {
+        "bezeichnung": "Servicezentrum Auto und Verkehr: Zulassungsstelle (inkl. Expressbereich)",
+        "strasse": "Steinhäuserstraße 22",
+        "plz": "76135",
+        "ort": "Karlsruhe",
+        "quelle": "https://web1.karlsruhe.de/service/Buergerdienste/organisation.php?id=6028453"
+      }
+    ],
+    "website": {
+      "url": "https://web1.karlsruhe.de/service/Buergerdienste/organisation.php?id=6028453",
+      "quelle": "https://web1.karlsruhe.de/service/Buergerdienste/organisation.php?id=6028453"
+    },
+    "terminUrl": {
+      "url": "https://karlsruhe.konsentas.de/form/1/?signup_new=1",
+      "quelle": "https://web1.karlsruhe.de/service/Buergerdienste/organisation.php?id=6028453"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6028453&leistungId=99036020001000&p=082120",
+      "quelle": "https://web1.karlsruhe.de/service/Buergerdienste/organisation.php?id=6028453"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag 07:30 - 12:30 und 13:30 - 15:30 Uhr",
+        "Dienstag 08:00 - 12:30 Uhr",
+        "Mittwoch 07:30 - 12:30 und 13:30 - 15:30 Uhr",
+        "Donnerstag 07:30 - 12:30 und 14:00 - 17:00 Uhr",
+        "Freitag 07:30 - 12:30 Uhr"
+      ],
+      "hinweis": "Allgemeine Sprechzeiten (Eine persönliche Vorsprache ist nur nach vorheriger Terminvereinbarung möglich.) Bestimmte Anliegen sind ohne Termin im Expressbereich möglich.",
+      "quelle": "https://web1.karlsruhe.de/service/Buergerdienste/organisation.php?id=6028453"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig für Einwohner und Firmen im Stadtkreis Karlsruhe. Für Einwohner des Landkreises Karlsruhe ist das Landratsamt Karlsruhe zuständig, das eine eigene Kfz-Zulassungsstelle Karlsruhe (Kriegsstraße 100, 76133 Karlsruhe) sowie Stellen in Bruchsal, Bretten und Ettlingen betreibt. Stadt und Landkreis vergeben beide das Kürzel KA (laut Wikipedia-Liste der Kfz-Kennzeichen).",
+      "quelle": "https://www.landkreis-karlsruhe.de/Service-Verwaltung/Verwaltung/Unser-Team/Kfz-Zulassungsstelle-Karlsruhe.php?ModID=9&FID=3051.3888.1"
+    },
+    "kuerzel": [
+      {
+        "code": "KA",
+        "bedeutung": "Karlsruhe (wird von Stadt Karlsruhe und Landkreis Karlsruhe vergeben, unterscheidbar an der Buchstaben-Ziffern-Kombination; das Altkennzeichen BR vergibt nur der Landkreis)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Ohne Termin im Expressbereich möglich: Abmeldung/Außerbetriebsetzung, Kauf der Umweltplakette, Anschriftenänderung bei Umzug innerhalb Karlsruhes, Zuzug mit Beibehaltung des bisherigen Kennzeichens, Neusiegelung, digitaler Fahrzeugschein (bis zu drei Fahrzeuge) und Namensänderung.",
+        "quelle": "https://web1.karlsruhe.de/service/Buergerdienste/organisation.php?id=6063459"
+      },
+      {
+        "text": "Bezahlt wird am Kassenautomaten, bar oder mit EC-Karte und PIN.",
+        "quelle": "https://web1.karlsruhe.de/service/Buergerdienste/organisation.php?id=6028453"
+      },
+      {
+        "text": "Zum Jahreswechsel geschlossen: 24.12.2026, 25.12.2026, 28.12.–30.12.2026 (Stadtverwaltung geschlossen), 31.12.2026, 01.01.2027 und 06.01.2027.",
+        "quelle": "https://web1.karlsruhe.de/service/Buergerdienste/organisation.php?id=6028453"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "augsburg",
+    "stadt": "Augsburg",
+    "bundesland": "Bayern",
+    "behoerde": "Bürgeramt der Stadt Augsburg, KFZ-Zulassung (KFZ-Wesen in den Bürgerbüros)",
+    "behoerdeQuelle": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/aemter-behoerden/staedtische-dienststellen/b/buergeramt/buergerbueros/kfz-wesen",
+    "traeger": "Stadt Augsburg (kreisfreie Stadt), Bürgeramt",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgerbüro Stadtmitte",
+        "strasse": "An der Blauen Kappe 18",
+        "plz": "86152",
+        "ort": "Augsburg",
+        "quelle": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/aemter-behoerden/staedtische-dienststellen/b/buergeramt/buergerbueros/einwohnerwesen/buergerbuero-stadtmitte"
+      },
+      {
+        "bezeichnung": "Bürgerbüro Haunstetten",
+        "strasse": "Tattenbachstraße 15",
+        "plz": "86179",
+        "ort": "Augsburg",
+        "quelle": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/aemter-behoerden/staedtische-dienststellen/b/buergeramt/buergerbueros/einwohnerwesen/buergerbuero-haunstetten"
+      },
+      {
+        "bezeichnung": "Bürgerbüro Lechhausen",
+        "strasse": "Neuburger Str. 20",
+        "plz": "86167",
+        "ort": "Augsburg",
+        "quelle": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/aemter-behoerden/staedtische-dienststellen/b/buergeramt/buergerbueros/einwohnerwesen/buergerbuero-lechhausen"
+      },
+      {
+        "bezeichnung": "Bürgerbüro Kriegshaber",
+        "strasse": "Ulmer Str. 72",
+        "plz": "86156",
+        "ort": "Augsburg",
+        "quelle": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/aemter-behoerden/staedtische-dienststellen/b/buergeramt/buergerbueros/einwohnerwesen/buergerbuero-kriegshaber"
+      },
+      {
+        "bezeichnung": "Bürgerbüro Hochzoll",
+        "strasse": "Friedberger Straße 115",
+        "plz": "86163",
+        "ort": "Augsburg",
+        "quelle": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/aemter-behoerden/staedtische-dienststellen/b/buergeramt/buergerbueros/einwohnerwesen/buergerbuero-hochzoll"
+      }
+    ],
+    "website": {
+      "url": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/aemter-behoerden/staedtische-dienststellen/b/buergeramt/buergerbueros/kfz-wesen",
+      "quelle": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/aemter-behoerden/staedtische-dienststellen/b/buergeramt/buergerbueros/kfz-wesen"
+    },
+    "terminUrl": {
+      "url": "https://buergeramt-augsburg.termine-reservieren.online/select2?md=3",
+      "quelle": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/aemter-behoerden/staedtische-dienststellen/b/buergeramt/buergerbueros/kfz-wesen"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/augsburg/bsp_ikfz_antragstellung#/",
+      "quelle": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/dienste-a-z/aemterweise/leistungen-buergeramt-kfz-wesen/ikfz"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [],
+      "hinweis": "Vorsprache nur nach Terminvereinbarung. Zusätzliche Online-Termine werden täglich ab 7:30 Uhr freigeschaltet. Service-Telefon Bürgerbüro (0821 324-9999): Montag bis Freitag 8:00 bis 12:30 Uhr.",
+      "quelle": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/buergerbueros"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig für Einwohner der kreisfreien Stadt Augsburg; Kfz-Zulassung, Außerbetriebsetzung und Umschreibung sind in allen fünf Bürgerbüros möglich. Der Landkreis Augsburg hat eigene Kfz-Zulassungsstellen beim Landratsamt (Gersthofen und Schwabmünchen) und vergibt ebenfalls das Kürzel A (laut Wikipedia-Liste der Kfz-Kennzeichen).",
+      "quelle": "https://www.landkreis-augsburg.de/landrat-landratsamt/landratsamt/sicherheit-und-ordnung-kommunales-und-verbraucherschutz/auto-verkehr/fahrzeugzulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "A",
+        "bedeutung": "Augsburg (wird von Stadt Augsburg und Landkreis Augsburg vergeben, unterscheidbar an der Buchstaben-Ziffern-Kombination)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Abmeldung per Einwurf: Kennzeichenschilder und Zulassungsbescheinigung Teil I können jederzeit in den Briefkasten „KFZ-Außerbetriebsetzungen“ vor dem Bürgerbüro Stadtmitte (An der Blauen Kappe 18) eingeworfen werden, zusammen mit dem Formular „Einwurf Außerbetriebsetzung“.",
+        "quelle": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/dienste-a-z/aemterweise/leistungen-buergeramt-kfz-wesen/kfz-abmeldung"
+      },
+      {
+        "text": "Eine Außerbetriebsetzung (Abmeldung) kann online auch ohne eID beantragt werden.",
+        "quelle": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/dienste-a-z/aemterweise/leistungen-buergeramt-kfz-wesen/ikfz"
+      },
+      {
+        "text": "Die Außerbetriebsetzung kostet 16,80 Euro; das bisherige Kennzeichen kann für eine Wiederzulassung für ein Jahr gegen 2,60 Euro reserviert werden.",
+        "quelle": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/dienste-a-z/aemterweise/leistungen-buergeramt-kfz-wesen/kfz-abmeldung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": ["oeffnungszeiten"],
+    "anmerkungen": [
+      "Die Stadt veröffentlicht für die Bürgerbüros keine Uhrzeiten, nur „Vorsprache nur nach Terminvereinbarung“; zeilen deshalb leer. Die Uhrzeiten auf der Seite „KFZ Feinstaubplakette – Ausnahmegenehmigung“ (Stand 11.09.2024) gelten nur für diese Leistung und wurden nicht übernommen."
+    ]
+  },
+  {
+    "slug": "wiesbaden",
+    "stadt": "Wiesbaden",
+    "bundesland": "Hessen",
+    "behoerde": "Zulassungsbehörde (Stadtamt der Landeshauptstadt Wiesbaden)",
+    "behoerdeQuelle": "https://www.wiesbaden.de/vv/oe/07/34/Zulassungsbehoerde",
+    "traeger": "Landeshauptstadt Wiesbaden (kreisfreie Stadt), Stadtamt",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsbehörde Wiesbaden",
+        "strasse": "Stielstraße 3",
+        "plz": "65201",
+        "ort": "Wiesbaden",
+        "quelle": "https://www.wiesbaden.de/vv/oe/07/34/Zulassungsbehoerde"
+      }
+    ],
+    "website": {
+      "url": "https://www.wiesbaden.de/vv/oe/07/34/Zulassungsbehoerde",
+      "quelle": "https://www.wiesbaden.de/vv/oe/07/34/Zulassungsbehoerde"
+    },
+    "terminUrl": {
+      "url": "https://dtms.wiesbaden.de/DTMSTerminWeb/",
+      "quelle": "https://www.wiesbaden.de/vv/oe/07/34/Zulassungsbehoerde"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=wiesbaden_stadt",
+      "quelle": "https://www.wiesbaden.de/vv/oe/07/34/Zulassungsbehoerde"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Telefonische Erreichbarkeit: Montag, Dienstag, Mittwoch und Donnerstag von 9 Uhr bis 15 Uhr",
+        "Telefonische Erreichbarkeit: Freitag von 9 Uhr bis 13 Uhr"
+      ],
+      "hinweis": "Eine persönliche Vorsprache ist nur mit Termin möglich. Unter „Öffnungszeiten“ nennt die Stadt nur den Online-Terminlink und die telefonische Erreichbarkeit (0611 318342, 0611 313966), keine Vorsprachezeiten.",
+      "quelle": "https://www.wiesbaden.de/vv/oe/07/34/Zulassungsbehoerde"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig für Fahrzeughalter in der kreisfreien Landeshauptstadt Wiesbaden. Das Unterscheidungszeichen WI wird nur von der Stadt Wiesbaden vergeben.",
+      "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+    },
+    "kuerzel": [
+      {
+        "code": "WI",
+        "bedeutung": "Wiesbaden (nur Stadt Wiesbaden)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Sind alle Termine vergeben, rät die Stadt, es an den Folgetagen ab 7 Uhr erneut zu versuchen, da regelmäßig Termine freigeschaltet werden.",
+        "quelle": "https://www.wiesbaden.de/vv/oe/07/34/Zulassungsbehoerde"
+      },
+      {
+        "text": "Nach einer Software-Umstellung zum 14. September 2026 kommt es laut Stadt aktuell zu längeren Bearbeitungszeiten in der Zulassungsbehörde (Stand des Hinweises bei Abruf).",
+        "quelle": "https://www.wiesbaden.de/vv/oe/07/34/Zulassungsbehoerde"
+      },
+      {
+        "text": "Die Zulassungsbehörde stellt auch Bewohnerparkausweise und Parkerleichterungen für schwerbehinderte Menschen aus.",
+        "quelle": "https://www.wiesbaden.de/vv/oe/07/34/Zulassungsbehoerde"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": ["oeffnungszeiten"],
+    "anmerkungen": [
+      "Die Seite verlinkt zwei Online-Wege: unter „Links“ das Portal i-kfz.regioit.de („Online Kfz-Zulassung und Abmeldung“, hier übernommen), im Fließtext Anträge auf behoerden-serviceportal.de (https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100001.OE.406804210&leistungId=99036020001000&p=064140)."
+    ]
+  },
+  {
+    "slug": "aachen",
+    "stadt": "Aachen",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Straßenverkehrsamt der StädteRegion Aachen (A 36), KFZ-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.staedteregion-aachen.de/de/navigation/aemter/strassenverkehrsamt-a-36/kfz-zulassungsstelle",
+    "traeger": "StädteRegion Aachen",
+    "standorte": [
+      {
+        "bezeichnung": "Straßenverkehrsamt (Hauptstandort)",
+        "strasse": "Carlo-Schmid-Straße 4",
+        "plz": "52146",
+        "ort": "Würselen",
+        "quelle": "https://www.staedteregion-aachen.de/de/navigation/aemter/strassenverkehrsamt-a-36/kfz-zulassungsstelle"
+      },
+      {
+        "bezeichnung": "Straßenverkehrsamt – Außenstelle Monschau",
+        "strasse": "Laufenstraße 84",
+        "plz": "52156",
+        "ort": "Monschau",
+        "quelle": "https://www.staedteregion-aachen.de/de/navigation/aemter/strassenverkehrsamt-a-36/aussenstelle-monschau"
+      }
+    ],
+    "website": {
+      "url": "https://www.staedteregion-aachen.de/de/navigation/aemter/strassenverkehrsamt-a-36/kfz-zulassungsstelle",
+      "quelle": "https://www.staedteregion-aachen.de/de/navigation/aemter/strassenverkehrsamt-a-36/kfz-zulassungsstelle"
+    },
+    "terminUrl": {
+      "url": "https://termine.staedteregion-aachen.de/",
+      "quelle": "https://www.staedteregion-aachen.de/de/navigation/aemter/strassenverkehrsamt-a-36/online-terminvereinbarung"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=aachen_staedteregion",
+      "quelle": "https://www.staedteregion-aachen.de/de/navigation/aemter/strassenverkehrsamt-a-36/online-angebote-des-strassenverkehrsamtes"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Würselen: Mo. 07:30 - 15:00 Uhr",
+        "Würselen: Di. 07:30 - 12:30 Uhr",
+        "Würselen: Mi. 07:30 - 12:30 Uhr und 14:00 - 17:00 Uhr",
+        "Würselen: Do. 07:30 - 15:00 Uhr",
+        "Würselen: Fr. 07:30 - 12:30 Uhr",
+        "Würselen: Sa. 07:30 - 11:00 Uhr",
+        "Außenstelle Monschau: Mo. bis Fr. 07:30 - 12:00 Uhr, Samstag geschlossen"
+      ],
+      "hinweis": "Bitte vereinbaren Sie vor Ihrem Besuch einen Termin. Ohne Termin nur Schnellschalter (Abmeldung, Feinstaubplaketten, E-Plaketten): Montag und Donnerstag 07:15 - 15:00 Uhr, Dienstag und Freitag 07:15 - 12:30 Uhr, Mittwoch 07:15 - 12:30 und 13:45 - 17:00 Uhr, Samstag 07:15 - 11:00 Uhr.",
+      "quelle": "https://www.staedteregion-aachen.de/de/navigation/aemter/strassenverkehrsamt-a-36/online-terminvereinbarung"
+    },
+    "zustaendigkeit": {
+      "text": "Die Stadt Aachen hat keine eigene Kfz-Zulassungsstelle. Zuständig ist das Straßenverkehrsamt der StädteRegion Aachen in Würselen: „Örtlich zuständig ist das Amt für das gesamte Städteregions- und Stadtgebiet Aachen.“",
+      "quelle": "https://www.staedteregion-aachen.de/de/navigation/aemter/strassenverkehrsamt-a-36/unser-amt"
+    },
+    "kuerzel": [
+      {
+        "code": "AC",
+        "bedeutung": "Aachen (Aix la Chapelle); vergeben von der StädteRegion Aachen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MON",
+        "bedeutung": "Monschau (reaktiviertes Altkennzeichen; vergeben von der StädteRegion Aachen und vom Kreis Düren)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Für Serviceangebote an Samstagen wird seit dem 01.04.2026 eine zusätzliche Benutzungsgebühr von 8 Euro je Besuch erhoben; Termine Montag bis Freitag bleiben ohne Zusatzgebühr.",
+        "quelle": "https://www.staedteregion-aachen.de/de/navigation/aemter/strassenverkehrsamt-a-36/online-terminvereinbarung"
+      },
+      {
+        "text": "In der Außenstelle Monschau sind alle Zulassungsanliegen mit Termin möglich, ausgenommen Ausfuhren (internationale Zulassungen) und Rote Kennzeichen.",
+        "quelle": "https://www.staedteregion-aachen.de/de/navigation/aemter/strassenverkehrsamt-a-36/aussenstelle-monschau"
+      },
+      {
+        "text": "Online-Abmeldung und -Zulassung (i-Kfz) über das Portal der StädteRegion sind laut StädteRegion „ab sofort nur noch zahlbar mit paypal“.",
+        "quelle": "https://www.staedteregion-aachen.de/de/navigation/aemter/strassenverkehrsamt-a-36/online-angebote-des-strassenverkehrsamtes"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "freiburg",
+    "stadt": "Freiburg im Breisgau",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Stadt Freiburg im Breisgau, Amt für Bürgerservice und Informationsmanagement – Bürgerservice (Kfz-Zulassung)",
+    "behoerdeQuelle": "https://www.freiburg.de/pb/-/205348/freiburg---kfz/oe6031367",
+    "traeger": "Stadt Freiburg im Breisgau (Stadtkreis)",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgerservicezentrum im Rathaus im Stühlinger",
+        "strasse": "Fehrenbachallee 12",
+        "plz": "79106",
+        "ort": "Freiburg",
+        "quelle": "https://www.freiburg.de/pb/1412149.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.freiburg.de/kfz",
+      "quelle": "https://www.freiburg.de/pb/-/205348/freiburg---kfz/oe6031367"
+    },
+    "terminUrl": {
+      "url": "https://freiburg.konsentas.de/modules/ota_public/form/19/?signup_new=1",
+      "quelle": "https://www.freiburg.de/pb/1412149.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6031367&leistungId=99036020001000&p=083110",
+      "quelle": "https://www.freiburg.de/pb/2628471.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag 08:00 Uhr - 13:00 Uhr",
+        "Dienstag 08:00 Uhr - 18:00 Uhr",
+        "Mittwoch 08:00 Uhr - 16:00 Uhr",
+        "Donnerstag 08:00 Uhr - 18:00 Uhr",
+        "Freitag 08:00 Uhr - 12:30 Uhr"
+      ],
+      "hinweis": "Allgemeine Öffnungszeiten des Bürgerservicezentrums – Terminvereinbarung erforderlich. Telefonische Erreichbarkeit Mo–Fr 08:00–18:00 Uhr unter 0761 201-0.",
+      "quelle": "https://www.freiburg.de/pb/1412149.html"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig für Einwohner der Stadt Freiburg einschließlich ihrer Teilorte. Der Landkreis Breisgau-Hochschwarzwald hat eine eigene Kfz-Zulassungsstelle beim Landratsamt und ist laut eigener Angabe nicht für Einwohner der Stadt Freiburg zuständig, obwohl beide das Kürzel FR vergeben (laut Wikipedia-Liste der Kfz-Kennzeichen).",
+      "quelle": "https://www.breisgau-hochschwarzwald.de/Start/Wirtschaft+_+Mobilitaet/Terminreservierung.html"
+    },
+    "kuerzel": [
+      {
+        "code": "FR",
+        "bedeutung": "Freiburg (wird von Stadt Freiburg im Breisgau und Landkreis Breisgau-Hochschwarzwald vergeben, unterscheidbar an der Buchstaben-Ziffern-Kombination)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Online über i-Kfz sind die Gebühren deutlich niedriger als vor Ort, z. B. Neuzulassung 12,80 Euro online statt 30,60 Euro vor Ort, Abmeldung 3,30 Euro online statt 17,40 Euro (zzgl. Zustellgebühren).",
+        "quelle": "https://www.freiburg.de/pb/2628471.html"
+      },
+      {
+        "text": "Erstzulassung eines Gebrauchtfahrzeugs aus dem Ausland, Kurzzeitkennzeichen, Ausfuhrkennzeichen und Namensänderung sind nur vor Ort möglich.",
+        "quelle": "https://www.freiburg.de/pb/2628471.html"
+      },
+      {
+        "text": "Mit einem über i-Kfz zugelassenen Fahrzeug kann direkt am Straßenverkehr teilgenommen werden.",
+        "quelle": "https://www.freiburg.de/pb/2628471.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [],
+    "anmerkungen": [
+      "Die Öffnungszeiten sind die allgemeinen Zeiten des Bürgerservicezentrums, in dem die Kfz-Zulassung sitzt; separate Kfz-Zeiten werden nicht genannt.",
+      "Der Terminlink ist der allgemeine Bürgerservice-Termin der Stadt (Bürgerservicezentrum), nicht ein reiner Kfz-Link."
+    ]
+  },
+  {
+    "slug": "krefeld",
+    "stadt": "Krefeld",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kfz-Zulassungsstelle der Stadt Krefeld (Straßenverkehrsbehörde, Fachbereich 32 – Sicherheit und Ordnung)",
+    "behoerdeQuelle": "https://service.krefeld.de/strassenverkehrsangelegenheiten",
+    "traeger": "Stadt Krefeld (kreisfreie Stadt)",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassungsstelle (Eingang C)",
+        "strasse": "Elbestraße 7",
+        "plz": "47800",
+        "ort": "Krefeld",
+        "quelle": "https://service.krefeld.de/strassenverkehrsangelegenheiten"
+      }
+    ],
+    "website": {
+      "url": "https://service.krefeld.de/strassenverkehrsangelegenheiten",
+      "quelle": "https://service.krefeld.de/strassenverkehrsangelegenheiten"
+    },
+    "terminUrl": {
+      "url": "https://tevis.krzn.de/tevisweb350/select2?md=6",
+      "quelle": "https://service.krefeld.de/strassenverkehrsangelegenheiten"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.krzn.de/static/05114000.html#/",
+      "quelle": "https://service.krefeld.de/kfz-dienstleistungen-online-beantragen"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag bis Freitag 8.00 bis 12.30 Uhr",
+        "Montag 14.00 bis 16.00 Uhr",
+        "Donnerstag 14.00 bis 17.30 Uhr"
+      ],
+      "hinweis": "Für notwendige persönliche Vorsprachen empfehlen wir Ihnen ausdrücklich eine vorherige Terminvereinbarung. Zusätzliche Tagestickets für Laufkunden ohne Termin sind begrenzt und Sie müssen mit erheblichen Wartezeiten rechnen!",
+      "quelle": "https://service.krefeld.de/strassenverkehrsangelegenheiten"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig für Fahrzeughalter in der kreisfreien Stadt Krefeld; das Kürzel KR vergibt nur die Stadt Krefeld. Das Altkennzeichen KK (Kempen-Krefeld) wird nicht von der Stadt Krefeld, sondern vom Kreis Viersen vergeben.",
+      "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+    },
+    "kuerzel": [
+      {
+        "code": "KR",
+        "bedeutung": "Krefeld (nur Stadt Krefeld)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Ohne Termin gibt es nur begrenzte Tagestickets für Laufkunden; die Stadt warnt vor erheblichen Wartezeiten.",
+        "quelle": "https://service.krefeld.de/strassenverkehrsangelegenheiten"
+      },
+      {
+        "text": "Nach erfolgreicher i-Kfz-Zulassung ist sofortiges Losfahren mit vorläufigem Zulassungsnachweis möglich; Zulassungsbescheinigungen und Stempelplaketten werden innerhalb von vierzehn Tagen zugeschickt.",
+        "quelle": "https://service.krefeld.de/kfz-dienstleistungen-online-beantragen"
+      },
+      {
+        "text": "Für i-Kfz muss das Fahrzeug nach dem 01.01.2015 zugelassen worden sein; für eine Umschreibung mit Halterwechsel wird ein Fahrzeugbrief (Teil II) in der Ausfertigung nach dem 01.01.2018 mit Code benötigt.",
+        "quelle": "https://service.krefeld.de/kfz-dienstleistungen-online-beantragen"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "mainz",
+    "stadt": "Mainz",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Kfz-Zulassungsbehörde (Zulassungsstelle) der Landeshauptstadt Mainz",
+    "behoerdeQuelle": "https://www.mainz.de/vv/oe/verkehrsabteilung/kfz-zulassung/kfz-zulassungsbehoerde-Zulassungsstelle",
+    "traeger": "Landeshauptstadt Mainz (kreisfreie Stadt), Verkehrsüberwachungsamt – Verkehrsabteilung",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde (Zulassungsstelle)",
+        "strasse": "Elly-Beinhorn-Straße 16",
+        "plz": "55129",
+        "ort": "Mainz",
+        "quelle": "https://www.mainz.de/vv/oe/verkehrsabteilung/kfz-zulassung/kfz-zulassungsbehoerde-Zulassungsstelle"
+      }
+    ],
+    "website": {
+      "url": "https://www.mainz.de/vv/oe/verkehrsabteilung/kfz-zulassung/kfz-zulassungsbehoerde-Zulassungsstelle",
+      "quelle": "https://www.mainz.de/vv/oe/verkehrsabteilung/kfz-zulassung/kfz-zulassungsbehoerde-Zulassungsstelle"
+    },
+    "terminUrl": {
+      "url": "https://www.mainz.de/vv/online-dienste-citygov/verkehrsueberwachungsamt/kfz-zulassung-und-fahrerlaubnisbehoerde-online-terminvereinbarung",
+      "quelle": "https://www.mainz.de/vv/oe/verkehrsabteilung/kfz-zulassung/kfz-zulassungsbehoerde-Zulassungsstelle"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.329195414&leistungId=99036020001000&p=073150",
+      "quelle": "https://www.mainz.de/vv/produkte/verkehrsueberwachung/erstzulassung-eines-fahrzeugs-neuzulassung-beantragen"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag, Mittwoch und Freitag: 7.30 Uhr bis 12 Uhr",
+        "Dienstag: 7.30 Uhr bis 15 Uhr",
+        "Donnerstag: 7.30 Uhr bis 12 Uhr und 13 Uhr bis 17.30 Uhr",
+        "Samstag, Sonn- und Feiertag geschlossen"
+      ],
+      "hinweis": "Termine können Sie zu den genannten Zeiten nur nach vorheriger Online-Terminvereinbarung wahrnehmen.",
+      "quelle": "https://www.mainz.de/vv/oe/verkehrsabteilung/kfz-zulassung/kfz-zulassungsbehoerde-Zulassungsstelle"
+    },
+    "zustaendigkeit": {
+      "text": "„Sie ist nur für das Stadtgebiet der Landeshauptstadt Mainz zuständig.“ Der Landkreis Mainz-Bingen betreibt eigene Kfz-Zulassungsstellen (Bingen und Oppenheim) und vergibt ebenfalls das Kürzel MZ (laut Wikipedia-Liste der Kfz-Kennzeichen).",
+      "quelle": "https://www.mainz.de/vv/oe/verkehrsabteilung/kfz-zulassung/kfz-zulassungsbehoerde-Zulassungsstelle"
+    },
+    "kuerzel": [
+      {
+        "code": "MZ",
+        "bedeutung": "Mainz (wird von Stadt Mainz und Landkreis Mainz-Bingen vergeben, unterscheidbar an der Buchstaben-Ziffern-Kombination; BIN vergibt nur der Landkreis)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Bei Zulassungen mit Ausfuhrkennzeichen (Exportfahrzeuge) ist der Annahmeschluss immer 30 Minuten vor dem regulären Annahmeschluss.",
+        "quelle": "https://www.mainz.de/vv/oe/verkehrsabteilung/kfz-zulassung/kfz-zulassungsbehoerde-Zulassungsstelle"
+      },
+      {
+        "text": "Der Online-Terminkalender steht nicht für Autohäuser, Zulassungsdienste und Kfz-Handel zur Verfügung; diese können Vorgänge zwischen 8 und 11 Uhr ohne Termin abgeben bzw. abholen.",
+        "quelle": "https://www.mainz.de/vv/oe/verkehrsabteilung/kfz-zulassung/kfz-zulassungsbehoerde-Zulassungsstelle"
+      },
+      {
+        "text": "Nachtbriefkästen gibt es am Stadthaus Große Bleiche (Löwenhofstr. 1, links neben der Schiebetür) und am Stadthaus Kaiserstraße (Kaiserstr. 3-5, rechts neben der Eingangstür).",
+        "quelle": "https://www.mainz.de/vv/oe/verkehrsabteilung/kfz-zulassung/kfz-zulassungsbehoerde-Zulassungsstelle"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [],
+    "anmerkungen": [
+      "Die Angabe zu den Zulassungsstellen des Landkreises Mainz-Bingen (Bingen, Oppenheim) stammt von https://www.mainz-bingen.de/de/Aemter-Abteilungen/wirtschaft-verkehr/Kfz-Zulassung/."
+    ]
+  },
+  {
+    "slug": "kassel",
+    "stadt": "Kassel",
+    "bundesland": "Hessen",
+    "behoerde": "Gemeinsame Zulassungsbehörde für Stadt und Landkreis Kassel (Bürgeramt der Stadt Kassel, Kfz-Zulassung)",
+    "behoerdeQuelle": "https://www.kassel.de/service/oe/Dezernate_-_DEZ/IV_-_Dezernat_IV_-_Buergerangelegenheiten__Soziales__Digitalisierung_und_Tourismus/33_-_Buergeramt/335_-_Kfz-Zulassung/335-Kfz-Zulassung.php",
+    "traeger": "Stadt Kassel (erbringt die Dienstleistungen der gemeinsamen Zulassungsbehörde für Stadt und Landkreis Kassel)",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Kassel",
+        "strasse": "Ölmühlenweg 4",
+        "plz": "34123",
+        "ort": "Kassel",
+        "quelle": "https://www.kassel.de/service/oe/Dezernate_-_DEZ/IV_-_Dezernat_IV_-_Buergerangelegenheiten__Soziales__Digitalisierung_und_Tourismus/33_-_Buergeramt/335_-_Kfz-Zulassung/3351_-_Kfz-Zulassungsstelle_Kassel/3351-Kfz-Zulassungsstelle-Kassel.php"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Wolfhagen",
+        "strasse": "Ritterstraße 1",
+        "plz": "34466",
+        "ort": "Wolfhagen",
+        "quelle": "https://www.kassel.de/service/oe/Dezernate_-_DEZ/IV_-_Dezernat_IV_-_Buergerangelegenheiten__Soziales__Digitalisierung_und_Tourismus/33_-_Buergeramt/335_-_Kfz-Zulassung/3352_-_Kfz-Zulassungsstelle_Wolfhagen/3352-Kfz-Zulassungsstelle-Wolfhagen.php"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Hofgeismar",
+        "strasse": "Garnisonstraße 6",
+        "plz": "34369",
+        "ort": "Hofgeismar",
+        "quelle": "https://www.kassel.de/service/oe/Dezernate_-_DEZ/IV_-_Dezernat_IV_-_Buergerangelegenheiten__Soziales__Digitalisierung_und_Tourismus/33_-_Buergeramt/335_-_Kfz-Zulassung/3353_-_Kfz-Zulassungsstelle_Hofgeismar/3353-Kfz-Zulassungsstelle-Hofgeismar.php"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Baunatal",
+        "strasse": "Harzweg 15",
+        "plz": "34225",
+        "ort": "Baunatal",
+        "quelle": "https://www.kassel.de/service/oe/Dezernate_-_DEZ/IV_-_Dezernat_IV_-_Buergerangelegenheiten__Soziales__Digitalisierung_und_Tourismus/33_-_Buergeramt/335_-_Kfz-Zulassung/3354_-_Kfz-Zulassungsstelle_Baunatal/3354-Kfz-Zulassungsstelle-Baunatal.php"
+      }
+    ],
+    "website": {
+      "url": "https://www.kassel.de/service/oe/Dezernate_-_DEZ/IV_-_Dezernat_IV_-_Buergerangelegenheiten__Soziales__Digitalisierung_und_Tourismus/33_-_Buergeramt/335_-_Kfz-Zulassung/335-Kfz-Zulassung.php",
+      "quelle": "https://www.kassel.de/service/oe/Dezernate_-_DEZ/IV_-_Dezernat_IV_-_Buergerangelegenheiten__Soziales__Digitalisierung_und_Tourismus/33_-_Buergeramt/335_-_Kfz-Zulassung/335-Kfz-Zulassung.php"
+    },
+    "terminUrl": {
+      "url": "https://www.kassel.de/service/media/online-services/terminvereinbarungen/terminvereinbarung-kfz-alle-standorte.php",
+      "quelle": "https://www.kassel.de/service/oe/Dezernate_-_DEZ/IV_-_Dezernat_IV_-_Buergerangelegenheiten__Soziales__Digitalisierung_und_Tourismus/33_-_Buergeramt/335_-_Kfz-Zulassung/3351_-_Kfz-Zulassungsstelle_Kassel/3351-Kfz-Zulassungsstelle-Kassel.php"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100001.OE.394988419&leistungId=99036020001000&p=066110",
+      "quelle": "https://www.kassel.de/service/produkte/kassel/Buergeramt/kfz-zulassung/neufahrzeuge-zulassen.php"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag 8 bis 12.30 Uhr nur mit Terminvereinbarung",
+        "Dienstag 8 bis 12.30 Uhr nur mit Terminvereinbarung",
+        "Mittwoch 9.30 bis 17 Uhr nur mit Terminvereinbarung",
+        "Donnerstag 8 bis 12.30 Uhr nur mit Terminvereinbarung",
+        "Freitag 8 bis 12.30 Uhr nur mit Terminvereinbarung",
+        "Samstag 9 bis 12 Uhr nur mit Terminvereinbarung (KEINE Importzulassungen, Zuteilung von Ausfuhrkennzeichen und dauerroten Kennzeichen möglich)"
+      ],
+      "hinweis": "Zeiten des Standorts Kassel (Ölmühlenweg 4). Wenn Freitag ein Feiertag ist, bleibt die Zulassungsstelle Kassel am darauffolgenden Samstag geschlossen. Wolfhagen, Hofgeismar und Baunatal haben eigene Zeiten (jeweils nur mit Terminvereinbarung, siehe Standortseiten).",
+      "quelle": "https://www.kassel.de/service/oe/Dezernate_-_DEZ/IV_-_Dezernat_IV_-_Buergerangelegenheiten__Soziales__Digitalisierung_und_Tourismus/33_-_Buergeramt/335_-_Kfz-Zulassung/3351_-_Kfz-Zulassungsstelle_Kassel/3351-Kfz-Zulassungsstelle-Kassel.php"
+    },
+    "zustaendigkeit": {
+      "text": "Stadt und Landkreis Kassel haben eine gemeinsame Zulassungsbehörde; ihre Dienstleistungen werden von der Stadt Kassel erbracht. Einwohner der Stadt und des Landkreises Kassel nutzen dieselben Standorte (Kassel, Wolfhagen, Hofgeismar, Baunatal).",
+      "quelle": "https://www.landkreiskassel.de/service/oe/stadt-kassel-kfz-zulassungsstelle/index.php"
+    },
+    "kuerzel": [
+      {
+        "code": "KS",
+        "bedeutung": "Kassel (Stadt Kassel und Landkreis Kassel)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "HOG",
+        "bedeutung": "Hofgeismar (Altkennzeichen, Landkreis Kassel); laut Stadt Kassel per Wunschkennzeichen-Service für Stadt und Landkreis reservierbar",
+        "quelle": "https://www.kassel.de/service/produkte/kassel/Buergeramt/kfz-zulassung/wunschkennzeichen-fuer-fahrzeuge-online-reservieren.php"
+      },
+      {
+        "code": "WOH",
+        "bedeutung": "Wolfhagen (Altkennzeichen, Landkreis Kassel); laut Stadt Kassel per Wunschkennzeichen-Service für Stadt und Landkreis reservierbar",
+        "quelle": "https://www.kassel.de/service/produkte/kassel/Buergeramt/kfz-zulassung/wunschkennzeichen-fuer-fahrzeuge-online-reservieren.php"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termine können maximal 4 Wochen im Voraus vereinbart werden (online oder über die Behördennummer 115); alle Anliegen müssen bei der Buchung angegeben werden, zusätzliche Leistungen ohne Anmeldung werden nicht bearbeitet.",
+        "quelle": "https://www.kassel.de/service/oe/Dezernate_-_DEZ/IV_-_Dezernat_IV_-_Buergerangelegenheiten__Soziales__Digitalisierung_und_Tourismus/33_-_Buergeramt/335_-_Kfz-Zulassung/335-Kfz-Zulassung.php"
+      },
+      {
+        "text": "Der Standort Kassel hat samstags von 9 bis 12 Uhr mit Termin geöffnet; samstags sind keine Importzulassungen möglich.",
+        "quelle": "https://www.kassel.de/service/oe/Dezernate_-_DEZ/IV_-_Dezernat_IV_-_Buergerangelegenheiten__Soziales__Digitalisierung_und_Tourismus/33_-_Buergeramt/335_-_Kfz-Zulassung/3351_-_Kfz-Zulassungsstelle_Kassel/3351-Kfz-Zulassungsstelle-Kassel.php"
+      },
+      {
+        "text": "Wunschkennzeichen mit KS, WOH oder HOG lassen sich online unverbindlich für 90 Tage reservieren; für Hauptwohnsitz Stadt Kassel und Landkreis Kassel gibt es getrennte Reservierungslinks.",
+        "quelle": "https://www.kassel.de/service/produkte/kassel/Buergeramt/kfz-zulassung/wunschkennzeichen-fuer-fahrzeuge-online-reservieren.php"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": ["kuerzel"],
+    "anmerkungen": [
+      "Ob Einwohner der Stadt Kassel (nicht nur des Landkreises) ein Kennzeichen mit HOG oder WOH zugeteilt bekommen können, ist auf den offiziellen Seiten nicht eindeutig belegt; Wikipedia ordnet HOG und WOH nur dem Landkreis Kassel zu.",
+      "Rechtsgrundlage laut Kreisrecht des Landkreises: öffentlich-rechtliche Vereinbarung über die Vereinigung der Kfz-Zulassungsstellen von Stadt und Landkreis Kassel (Inhalt nicht eingesehen)."
+    ]
+  },
+  {
+    "slug": "oberhausen",
+    "stadt": "Oberhausen",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kfz-Zulassungsstelle der Stadt Oberhausen (Führerschein- und Zulassungsstelle)",
+    "behoerdeQuelle": "https://www.oberhausen.de/kfz-zulassung",
+    "traeger": "Stadt Oberhausen (kreisfreie Stadt)",
+    "standorte": [
+      {
+        "bezeichnung": "Führerschein- und Kfz-Zulassungsstelle im Technischen Rathaus (Sterkrade)",
+        "strasse": "Bahnhofstraße 66",
+        "plz": "46145",
+        "ort": "Oberhausen",
+        "quelle": "https://www.oberhausen.de/kfz-zulassung"
+      }
+    ],
+    "website": {
+      "url": "https://www.oberhausen.de/kfz-zulassung",
+      "quelle": "https://www.oberhausen.de/kfz-zulassung"
+    },
+    "terminUrl": {
+      "url": "http://tevis.krzn.de/tevisweb360/",
+      "quelle": "https://www.oberhausen.de/kfz-zulassung"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=oberhausen_stadt",
+      "quelle": "https://www.oberhausen.de/kfz-zulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [],
+      "hinweis": "Kfz-Zulassungsangelegenheiten werden ausschließlich nach vorheriger Terminvereinbarung erledigt.",
+      "quelle": "https://www.oberhausen.de/de/index/rathaus/verwaltung/burgerservice-offentliche-ordnung-personal-und-it/buergerservice/strassenverkehr/zulassung/oeffnungszeiten.php"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig für Fahrzeughalter in der kreisfreien Stadt Oberhausen. Das Unterscheidungszeichen OB wird nur von der Stadt Oberhausen vergeben.",
+      "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+    },
+    "kuerzel": [
+      {
+        "code": "OB",
+        "bedeutung": "Oberhausen (nur Stadt Oberhausen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Führerschein- und Kfz-Zulassungsstelle ist im Februar 2026 vom bisherigen Standort Am Förderturm 28 ins Technische Rathaus, Bahnhofstraße 66 in Sterkrade, umgezogen; seit dem 19. Februar 2026 werden alle Leistungen dort angeboten.",
+        "quelle": "https://www.oberhausen.de/de/index/rathaus/news/2026/01_januar/umzug_der_fuehrerschein_und_kfz_zulassungsstelle_oberhausen.php"
+      },
+      {
+        "text": "Wer im Melderegister eine Auskunftssperre hat, muss bei An- oder Ummeldung zusätzlich zum Ausweis eine Meldebescheinigung vorlegen, die nicht älter als ein Monat ist.",
+        "quelle": "https://www.oberhausen.de/kfz-zulassung"
+      },
+      {
+        "text": "Bei i-Kfz-Zulassungen müssen Zulassungsbescheid und vorläufiger Zulassungsnachweis innerhalb von 30 Minuten heruntergeladen und sichtbar im Fahrzeug angebracht werden; das Fahrzeug darf dann 10 Kalendertage in Deutschland genutzt werden.",
+        "quelle": "https://www.oberhausen.de/kfz-zulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": ["oeffnungszeiten"],
+    "anmerkungen": [
+      "Die Stadt veröffentlicht keine Uhrzeiten mehr, nur den Hinweis auf Terminpflicht; zeilen deshalb leer.",
+      "Der Terminlink ist auf der Stadtseite als http-Link hinterlegt; die Öffnungszeiten-Seite verweist alternativ auf https://serviceportal.oberhausen.de/suche/-/vr-bis-detail/dienstleistung/71751/show."
+    ]
+  }
+]

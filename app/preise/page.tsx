@@ -5,13 +5,15 @@ import CTASection from "@/components/CTASection";
 import Kennzeichen from "@/components/Kennzeichen";
 import Reveal from "@/components/Reveal";
 import { categoryLabels, sortedServices } from "@/lib/services";
-import { euro, euroRange, officialFees, plateCosts, plateFee, priceDisclaimer } from "@/lib/pricing";
+import { euro, euroRange, officialFees, P, plateCosts, plateFee, PRICE_DATE, priceDisclaimer, wunschkennzeichenHinweis } from "@/lib/pricing";
+import PriceCalculator from "@/components/PriceCalculator";
 import type { ServiceCategory } from "@/lib/types";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Preise – transparent und ohne versteckte Kosten",
   description:
-    "Preise inkl. MwSt., Gebühren und Versand: 129 € je Zulassung zzgl. Kennzeichen 28,90 €, Abmeldung 34,90 € – ohne versteckte Kosten.",
+    `Preise inkl. MwSt., Gebühren und Versand: ${P.zulassung} je Zulassung, Abmeldung ${P.abmeldung}, Kennzeichen ${P.kennzeichen} – ohne versteckte Kosten.`,
 };
 
 const order: ServiceCategory[] = ["zulassung", "kennzeichen", "dokumente", "service"];
@@ -21,11 +23,14 @@ export default function PreisePage() {
     <>
       <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-14 sm:py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="mb-5">
+            <Breadcrumbs items={[{ name: "Preise" }]} />
+          </div>
           <h1 className="font-display text-4xl font-bold text-ink-900 sm:text-5xl">Preise</h1>
           <p className="mt-4 max-w-2xl text-lg text-ink-600">
             <strong>Transparent kalkuliert:</strong> Bei unseren Zulassungsleistungen sind
             amtliche Gebühren und versicherter Versand bereits enthalten. Neue
-            Kennzeichenschilder kommen, falls benötigt, mit 28,90 € pro Paar dazu –
+            Kennzeichenschilder kommen, falls benötigt, mit {P.kennzeichen} pro Paar dazu –
             keine versteckten Kosten, keine Überraschungen.
           </p>
         </div>
@@ -33,6 +38,11 @@ export default function PreisePage() {
 
       <section className="py-14">
         <div className="mx-auto max-w-6xl space-y-12 px-4 sm:px-6">
+          <PriceCalculator />
+          <p className="-mt-6 text-sm text-ink-500">
+            Preisstand: {new Date(PRICE_DATE).toLocaleDateString("de-DE")}. Den verbindlichen Endpreis bestätigen wir
+            Ihnen vor Beginn der Bearbeitung.
+          </p>
           {order.map((cat) => {
             const items = sortedServices.filter((s) => s.category === cat);
             if (items.length === 0) return null;
@@ -68,7 +78,11 @@ export default function PreisePage() {
                           <td className="px-5 py-4 text-right">
                             {s.price.serviceFee !== null ? (
                               <span className="font-display font-bold text-ink-900">
-                                {s.price.inclusive ? euro(s.price.serviceFee) : `ab ${euro(s.price.serviceFee)}`}
+                                {s.slug === "wunschkennzeichen"
+                                  ? `+ ${euro(s.price.serviceFee)}`
+                                  : s.price.inclusive
+                                    ? euro(s.price.serviceFee)
+                                    : `ab ${euro(s.price.serviceFee)}`}
                                 {!s.price.verified && (
                                   <span className="ml-1.5 align-middle rounded bg-accent-400/20 px-1.5 py-0.5 text-[10px] font-semibold uppercase text-accent-600">
                                     unverbindlich
@@ -96,7 +110,11 @@ export default function PreisePage() {
                               </span>
                             ) : s.price.inclusive ? (
                               <span className="font-semibold text-brand-700">
-                                {s.slug === "abmeldung" ? "entfällt (digital)" : "inklusive ✓"}
+                                {s.slug === "abmeldung"
+                                  ? "entfällt (digital)"
+                                  : s.slug === "adressaenderung"
+                                    ? "Versand inklusive, keine Schilder nötig"
+                                    : "inklusive ✓"}
                               </span>
                             ) : s.price.plateCostRange ? (
                               euroRange(s.price.plateCostRange)
@@ -131,8 +149,12 @@ export default function PreisePage() {
                     <dd className="font-medium">{euroRange(officialFees.counterRegistration)}</dd>
                   </div>
                   <div className="flex justify-between gap-4">
-                    <dt>Außerbetriebsetzung</dt>
-                    <dd className="font-medium">{euroRange(officialFees.deregistration)}</dd>
+                    <dt>Abmeldung online (i-Kfz)</dt>
+                    <dd className="font-medium">{euroRange(officialFees.deregistrationOnline)}</dd>
+                  </div>
+                  <div className="flex justify-between gap-4">
+                    <dt>Abmeldung am Schalter</dt>
+                    <dd className="font-medium">{euroRange(officialFees.deregistrationCounter)}</dd>
                   </div>
                   <div className="flex justify-between gap-4">
                     <dt>Wunschkennzeichen (amtlich)</dt>
@@ -144,7 +166,8 @@ export default function PreisePage() {
                   </div>
                 </dl>
                 <p className="mt-4 text-xs text-ink-500">
-                  Gebühren nach GebOSt; die genaue Höhe legt die jeweilige Zulassungsbehörde fest.
+                  Orientierungswerte aus veröffentlichten Angaben von Zulassungsbehörden; die genaue Höhe legt die
+                  jeweilige Behörde nach der Gebührenordnung (GebOSt) fest.
                   Wo immer möglich nutzen wir das günstigere Online-Verfahren.
                 </p>
               </div>
@@ -155,6 +178,9 @@ export default function PreisePage() {
                   Hinweis zu unseren Preisen
                 </h2>
                 <p className="mt-3 text-sm leading-relaxed text-ink-700">{priceDisclaimer}</p>
+                <p className="mt-3 text-sm leading-relaxed text-ink-700">
+                  <strong>Wunschkennzeichen:</strong> {wunschkennzeichenHinweis}
+                </p>
                 <p className="mt-3 text-sm leading-relaxed text-ink-700">
                   <strong>Gewerbekunden:</strong> Autohäuser, Händler und Fuhrparks erhalten
                   individuelle Staffelpreise.{" "}

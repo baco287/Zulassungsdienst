@@ -3,6 +3,7 @@ import ProcessTimeline from "@/components/ProcessTimeline";
 import CTASection from "@/components/CTASection";
 import { processSteps } from "@/lib/processSteps";
 import { site } from "@/lib/site";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "So funktioniert’s – Ablauf der Online-Zulassung",
@@ -32,6 +33,9 @@ export default function AblaufPage() {
     <>
       <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-14 sm:py-16">
         <div className="mx-auto max-w-6xl px-4 text-center sm:px-6">
+          <div className="mb-5 flex justify-center">
+            <Breadcrumbs items={[{ name: "So funktioniert’s" }]} />
+          </div>
           <h1 className="font-display text-4xl font-bold text-ink-900 sm:text-5xl">
             So funktioniert’s
           </h1>

@@ -1,0 +1,31 @@
+{
+  "$kommentar": "Zentrale Preiskonfiguration von DeutscheZulassung. Einzige Quelle für alle Preise der Website (Seiten, Preisrechner, Anfrageformular, llms.txt). Nach jeder Änderung: 'stand' aktualisieren, 'freigabe' prüfen, dann bauen und deployen. Beträge brutto in Euro inkl. MwSt.",
+  "stand": "2026-11-03",
+  "freigabe": {
+    "freigegeben": true,
+    "freigegebenVon": "Sezer (Chat-Anweisung „push und deploy“)",
+    "freigegebenAm": "2026-11-03",
+    "hinweis": "Neue Zielpreise vom 03.11.2026. Vor dem Livegang Wirtschaftlichkeit und amtliche Kosten prüfen. Der Produktiv-Deploy bricht ab, solange 'freigegeben' false ist."
+  },
+  "mwstSatz": 0.19,
+  "leistungen": {
+    "neuzulassung": { "preis": 127.89, "enthaeltAmtlicheGebuehren": true, "enthaeltVersand": true, "schilderMoeglich": true, "wunschkennzeichenMoeglich": true },
+    "ummeldung": { "preis": 127.89, "enthaeltAmtlicheGebuehren": true, "enthaeltVersand": true, "schilderMoeglich": true, "wunschkennzeichenMoeglich": true },
+    "halterwechsel": { "preis": 127.89, "enthaeltAmtlicheGebuehren": true, "enthaeltVersand": true, "schilderMoeglich": true, "wunschkennzeichenMoeglich": true },
+    "wiederzulassung": { "preis": 127.89, "enthaeltAmtlicheGebuehren": true, "enthaeltVersand": true, "schilderMoeglich": true, "wunschkennzeichenMoeglich": true },
+    "abmeldung": { "preis": 33.79, "enthaeltAmtlicheGebuehren": true, "enthaeltVersand": false, "schilderMoeglich": false, "wunschkennzeichenMoeglich": false },
+    "adressaenderung": { "preis": 63.79, "enthaeltAmtlicheGebuehren": true, "enthaeltVersand": true, "schilderMoeglich": false, "wunschkennzeichenMoeglich": false }
+  },
+  "zusatzleistungen": {
+    "kennzeichenschilder": { "preis": 28.79, "bezeichnung": "Kennzeichenschilder (1 Paar, geprägt, inkl. Versand)" },
+    "wunschkennzeichen": { "preis": 11.69, "bezeichnung": "Wunschkennzeichen-Service (Prüfung, Reservierung, Zuteilung)", "enthaeltAmtlicheGebuehr": true }
+  },
+  "amtlicheGebuehren": {
+    "$kommentar": "Orientierungswerte aus veröffentlichten Behördenangaben (u. a. Freiburg, Mannheim, Bielefeld, Münster, Wuppertal, Augsburg; geprüft 03.11.2026, siehe lib/data/zulassungsstellen.json). Je nach Behörde und Vorgang unterschiedlich. Nur zur Information, nicht zur Berechnung. Vor der Freigabe gegen die GebOSt prüfen.",
+    "onlineZulassung": [12.8, 23.72],
+    "schalterZulassung": [27.6, 41.6],
+    "ausserbetriebsetzungOnline": [3.3, 3.3],
+    "ausserbetriebsetzungSchalter": [16.8, 17.4],
+    "wunschkennzeichen": [12.8, 12.8]
+  }
+}

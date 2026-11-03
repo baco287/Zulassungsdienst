@@ -129,7 +129,7 @@ export default function GewerbePage() {
             <Reveal>
               <div className="relative overflow-hidden rounded-3xl border border-ink-200 shadow-card">
                 <Image
-                  src="/images/autohaus.jpg"
+                  src="/images/autohaus.webp"
                   alt="Moderner Autohaus-Showroom mit Neuwagen hinter einer Glasfassade"
                   width={1264}
                   height={848}

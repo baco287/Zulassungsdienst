@@ -24,14 +24,14 @@ const hints: HintConfig[] = [
     key: "zb2",
     title: "So sieht der Fahrzeugbrief aus",
     text: "Der Fahrzeugbrief (Zulassungsbescheinigung Teil II) ist das größere der beiden Dokumente – rechts im Bild. Er wird zu Hause aufbewahrt, nicht im Auto. Beim Neuwagen gibt es stattdessen das CoC-Papier des Herstellers (DIN A4, „EG-Übereinstimmungsbescheinigung“).",
-    src: "/images/zb1-zb2-dokumente.jpg",
+    src: "/images/zb1-zb2-dokumente.webp",
     alt: "Zulassungsbescheinigung Teil I und Teil II nebeneinander – der Fahrzeugbrief ist das größere Dokument rechts",
   },
   {
     key: "evb",
     title: "So sieht die eVB-Nummer aus",
     text: "Die eVB ist ein 7-stelliger Code aus Buchstaben und Ziffern (z. B. VB123XY). Ihre Kfz-Versicherung schickt sie per E-Mail oder SMS – meist sofort nach der Anfrage, kostenlos. Noch keine eVB? Kurz bei der Versicherung anfordern, das dauert nur Minuten.",
-    src: "/images/evb-nummer-handy.jpg",
+    src: "/images/evb-nummer-handy.webp",
     alt: "Smartphone zeigt eine Versicherungs-E-Mail mit hervorgehobener eVB-Nummer VB123XY",
   },
 ];

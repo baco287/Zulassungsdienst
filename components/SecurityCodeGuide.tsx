@@ -19,22 +19,22 @@ interface Step {
 
 const steps: Record<"zb1" | "zb2" | "kennzeichen", Step> = {
   zb1: {
-    src: "/images/sicherheitscode-zb1.jpg",
-    alt: "Freigerubbeltes Sicherheitscode-Feld auf der Zulassungsbescheinigung Teil I mit Münze",
+    src: "/images/sicherheitscode-zb1.webp",
+    alt: "Freigelegtes Sicherheitscode-Feld auf der Zulassungsbescheinigung Teil I",
     title: "Fahrzeugschein (ZB Teil I)",
-    text: "Das verdeckte Feld mit einer Münze vorsichtig freirubbeln – darunter erscheint der 7-stellige Sicherheitscode.",
+    text: "Das Siegel über dem Codefeld vorsichtig abziehen – darunter erscheint der Sicherheitscode. Vorhanden auf Fahrzeugscheinen, die ab dem 01.01.2015 ausgestellt wurden.",
   },
   zb2: {
-    src: "/images/sicherheitscode-zb2.jpg",
+    src: "/images/sicherheitscode-zb2.webp",
     alt: "Finger zeigt auf das verdeckte Sicherheitsfeld der Zulassungsbescheinigung Teil II",
     title: "Fahrzeugbrief (ZB Teil II)",
-    text: "Für Zulassung und Halterwechsel: das silberne Sicherheitsfeld im Fahrzeugbrief freilegen.",
+    text: "Für Zulassung und Halterwechsel: das verdeckte Sicherheitsfeld im Fahrzeugbrief freilegen. Vorhanden auf Fahrzeugbriefen, die ab dem 01.01.2018 ausgestellt wurden.",
   },
   kennzeichen: {
-    src: "/images/sicherheitscode-kennzeichen.jpg",
-    alt: "Teilweise abgezogene Stempelplakette auf dem Kennzeichen mit sichtbarem 3-stelligem Code",
+    src: "/images/sicherheitscode-kennzeichen.webp",
+    alt: "Teilweise abgezogene Stempelplakette auf dem Kennzeichen mit sichtbarem Code",
     title: "Kennzeichen-Plaketten",
-    text: "Die Stempelplakette (Landessiegel) auf beiden Kennzeichen vorsichtig ablösen – darunter steht der 3-stellige Plaketten-Code.",
+    text: "Die Stempelplakette (Landessiegel) auf beiden Kennzeichen vorsichtig ablösen – darunter steht der Plaketten-Code.",
   },
 };
 

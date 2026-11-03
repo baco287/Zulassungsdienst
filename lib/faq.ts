@@ -1,4 +1,5 @@
 import type { FaqItem } from "./types";
+import { P } from "./pricing";
 
 export const faqItems: FaqItem[] = [
   {
@@ -16,7 +17,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "Was kostet die Zulassung insgesamt?",
     answer:
-      "Neuzulassung, Umschreibung oder Wiederzulassung kosten bei uns 129 € – amtliche Gebühren und versicherter Versand sind bereits enthalten. Werden neue Kennzeichenschilder benötigt, kommen 28,90 € pro Paar dazu; bei Kennzeichenmitnahme entfällt das. Die Abmeldung kostet 34,90 € inklusive Gebühren. Alle Preise verstehen sich inkl. MwSt. Keine versteckten Kosten; Sonderfälle weisen wir vor Beauftragung transparent aus.",
+      `Neuzulassung, Umschreibung oder Wiederzulassung kosten bei uns ${P.zulassung} – amtliche Gebühren und versicherter Versand sind bereits enthalten. Werden neue Kennzeichenschilder benötigt, kommen ${P.kennzeichen} pro Paar dazu; bei Kennzeichenmitnahme entfällt das. Die Abmeldung kostet ${P.abmeldung} inklusive Gebühren. Alle Preise verstehen sich inkl. MwSt. Keine versteckten Kosten; Sonderfälle weisen wir vor Beauftragung transparent aus.`,
     category: "preise",
   },
   {
@@ -34,7 +35,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "Ummeldung, Umschreibung, Halterwechsel – was ist der Unterschied?",
     answer:
-      "Ummeldung: Sie sind umgezogen und das Fahrzeug bleibt auf Sie zugelassen. Halterwechsel (auch Umschreibung genannt): Das Fahrzeug wechselt den Besitzer, z. B. nach einem Gebrauchtwagenkauf. Adressänderung: Nur die Anschrift in den Papieren wird aktualisiert. Ummeldung und Halterwechsel kosten bei uns 129 € komplett, die reine Adressänderung 90 € – wählen Sie im Zweifel einfach eine Leistung aus, wir prüfen den passenden Vorgang für Sie.",
+      `Ummeldung: Sie sind umgezogen und das Fahrzeug bleibt auf Sie zugelassen. Halterwechsel (auch Umschreibung genannt): Das Fahrzeug wechselt den Besitzer, z. B. nach einem Gebrauchtwagenkauf. Adressänderung: Nur die Anschrift in den Papieren wird aktualisiert. Ummeldung und Halterwechsel kosten bei uns ${P.zulassung} komplett, die reine Adressänderung ${P.adressaenderung} – wählen Sie im Zweifel einfach eine Leistung aus, wir prüfen den passenden Vorgang für Sie.`,
     category: "allgemein",
   },
   {

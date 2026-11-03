@@ -26,6 +26,8 @@ import {
 import type { OrderRequest } from "@/lib/types";
 import DocumentUpload from "./DocumentUpload";
 import WhatsAppIcon from "./WhatsAppIcon";
+import { track } from "@/lib/analytics";
+import Link from "next/link";
 
 /**
  * Auftrags-Assistent.
@@ -115,6 +117,32 @@ export default function AuftragForm() {
   const stepContainerRef = useRef<HTMLDivElement>(null);
   const stepChanged = useRef(false);
   const startedAt = useRef(0);
+  // Analyse: Start, Schritt und Abschluss anonym zählen (lib/analytics.ts).
+  const tracking = useRef({ started: false, submitted: false, abandoned: false, step: 0 });
+
+  function markStarted(slug?: string) {
+    if (!tracking.current.started) {
+      tracking.current.started = true;
+      track("order_start", { service: slug });
+    }
+  }
+
+  useEffect(() => {
+    tracking.current.step = step;
+  }, [step]);
+
+  // Abbruch: Seite wird verlassen, nachdem der Assistent begonnen wurde.
+  useEffect(() => {
+    const onHide = () => {
+      const t = tracking.current;
+      if (document.visibilityState === "hidden" && t.started && !t.submitted && !t.abandoned) {
+        t.abandoned = true;
+        track("order_abandon", { step: t.step + 1 });
+      }
+    };
+    document.addEventListener("visibilitychange", onHide);
+    return () => document.removeEventListener("visibilitychange", onHide);
+  }, []);
 
   // Zeitpunkt des Formularaufrufs – der Endpoint verwirft Einsendungen,
   // die schneller als drei Sekunden zurückkommen (Bot-Erkennung).
@@ -136,6 +164,8 @@ export default function AuftragForm() {
     if (slug && getService(slug)) {
       setValues((v) => ({ ...v, serviceSlug: slug }));
       setStep(1);
+      markStarted(slug);
+      track("service_selected", { service: slug, position: "deeplink" });
     }
   }, []);
 
@@ -146,6 +176,10 @@ export default function AuftragForm() {
   );
 
   function set<K extends keyof OrderRequest>(key: K, value: OrderRequest[K]) {
+    if (key === "serviceSlug" && typeof value === "string") {
+      markStarted(value);
+      track("service_selected", { service: value, position: "formular" });
+    }
     setValues((v) => ({ ...v, [key]: value }));
     setErrors((e) => ({ ...e, [key]: undefined, contact: undefined }));
   }
@@ -156,6 +190,8 @@ export default function AuftragForm() {
     if (Object.keys(e).length === 0) {
       stepChanged.current = true;
       setDirection(1);
+      markStarted(values.serviceSlug);
+      track("order_step", { step: Math.min(step + 2, 4), service: values.serviceSlug });
       setStep((s) => Math.min(s + 1, 3));
     }
   }
@@ -187,6 +223,8 @@ export default function AuftragForm() {
     }
     if (outcome.ok) {
       stepChanged.current = true;
+      tracking.current.submitted = true;
+      track("order_submitted", { service: values.serviceSlug, method: files.length ? "formular_mit_upload" : "formular" });
     }
   }
 
@@ -345,7 +383,9 @@ export default function AuftragForm() {
                       </span>
                       <span className="mt-1 block text-xs text-ink-500">
                         {s.price.serviceFee !== null
-                          ? s.price.platesExtra
+                          ? s.slug === "wunschkennzeichen"
+                            ? `Zusatz zu einer Zulassung: + ${euro(s.price.serviceFee)}`
+                            : s.price.platesExtra
                             ? `${euro(s.price.serviceFee)} zzgl. Kennzeichen ${euro(plateFee)}`
                             : s.price.inclusive
                               ? `${euro(s.price.serviceFee)} inkl. MwSt. – alles inklusive`
@@ -560,7 +600,9 @@ export default function AuftragForm() {
                 <dt className="text-ink-500">Preis</dt>
                 <dd className="text-right font-display font-bold text-brand-700">
                   {service?.price.serviceFee != null
-                    ? service.price.platesExtra
+                    ? service.slug === "wunschkennzeichen"
+                      ? `+ ${euro(service.price.serviceFee)} zusätzlich zur Zulassung (amtliche Gebühr enthalten)`
+                      : service.price.platesExtra
                       ? `${euro(service.price.serviceFee)} inkl. MwSt., zzgl. Kennzeichenschilder ${euro(plateFee)} (Paar), falls benötigt`
                       : `${euro(service.price.serviceFee)} inkl. MwSt.${service.price.inclusive ? " – alles inklusive" : ""}`
                     : "auf Anfrage – Festpreis folgt mit der Bestätigung"}
@@ -599,9 +641,9 @@ export default function AuftragForm() {
             <p className="mt-4 text-xs leading-relaxed text-ink-600">
               Mit unserer Festpreis-Bestätigung erhalten Sie die Rechnung – Sie zahlen
               bequem per Überweisung. Informationen zu Ihrem Widerrufsrecht finden Sie{" "}
-              <a href="/widerruf/" className="font-medium text-brand-700 underline underline-offset-2">
+              <Link href="/widerruf/" className="font-medium text-brand-700 underline underline-offset-2">
                 hier
-              </a>
+              </Link>
               .
             </p>
 
@@ -617,12 +659,12 @@ export default function AuftragForm() {
               <span>
                 Ich willige ein, dass meine Angaben und die übermittelten Unterlagen zur
                 Bearbeitung meiner Anfrage verarbeitet werden. Details in der{" "}
-                <a
+                <Link
                   href="/datenschutz/"
                   className="font-medium text-brand-700 underline underline-offset-2"
                 >
                   Datenschutzerklärung
-                </a>
+                </Link>
                 . Widerruf jederzeit möglich. *
               </span>
             </label>
