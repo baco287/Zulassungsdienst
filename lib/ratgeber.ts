@@ -1,5 +1,5 @@
 import type { QA, ContentSection } from "./serviceContent";
-import { P, wunschkennzeichenHinweis } from "./pricing";
+import { addRanges, euroRange, officialFees, P, plateCosts, wunschkennzeichenHinweis } from "./pricing";
 
 /**
  * Ratgeber-Artikel (SEO/GEO-Content).
@@ -40,7 +40,7 @@ export const guides: Guide[] = [
     description:
       "Amtliche Gebühren, Kennzeichen, Wunschkennzeichen und Zulassungsdienst: Was eine Kfz-Zulassung 2026 wirklich kostet – mit konkreten Beträgen und Spartipps.",
     datePublished: "2026-08-13",
-    dateModified: "2026-08-19",
+    dateModified: "2026-11-03",
     sections: [
       {
         heading: "Die Kosten einer Kfz-Zulassung auf einen Blick",
@@ -50,10 +50,10 @@ export const guides: Guide[] = [
         table: {
           headers: ["Vorgang", "i-Kfz online (selbst)", "Am Schalter (selbst)", "Über DeutscheZulassung"],
           rows: [
-            ["Neuzulassung", "ca. 12,80 – 18,00 € + Kennzeichen", "ca. 26,30 – 30,00 € + Kennzeichen", `${P.zulassung} + Kennzeichen`],
-            ["Umschreibung / Halterwechsel", "ca. 12,80 – 18,00 € + ggf. Kennzeichen", "ca. 26,30 – 30,00 € + ggf. Kennzeichen", `${P.zulassung} + ggf. Kennzeichen`],
-            ["Ummeldung nach Umzug", "ca. 12,80 – 18,00 €", "ca. 26,30 – 30,00 €", `${P.zulassung} komplett`],
-            ["Abmeldung", "ca. 3 – 16 €", "ca. 3 – 16 €", `${P.abmeldung} komplett`],
+            ["Neuzulassung", `${euroRange(officialFees.onlineRegistration)} + Kennzeichen`, `${euroRange(officialFees.counterRegistration)} + Kennzeichen`, `${P.zulassung} + Kennzeichen`],
+            ["Umschreibung / Halterwechsel", `${euroRange(officialFees.onlineRegistration)} + ggf. Kennzeichen`, `${euroRange(officialFees.counterRegistration)} + ggf. Kennzeichen`, `${P.zulassung} + ggf. Kennzeichen`],
+            ["Ummeldung nach Umzug", euroRange(officialFees.onlineRegistration), euroRange(officialFees.counterRegistration), `${P.zulassung} komplett`],
+            ["Abmeldung", euroRange(officialFees.deregistrationOnline), euroRange(officialFees.deregistrationCounter), `${P.abmeldung} komplett`],
             ["Wunschkennzeichen (Zusatz)", "ca. 12,80 € + Schilder", "ca. 12,80 € + Schilder", `${P.wunschkennzeichen} inkl. amtl. Gebühr + ggf. Schilder`],
             ["Kennzeichenschilder (Paar)", "ca. 20 – 35 €", "ca. 20 – 35 €", `${P.kennzeichen}`],
           ],
@@ -70,7 +70,7 @@ export const guides: Guide[] = [
             ["Voraussetzungen", "eID-Ausweis mit PIN, Sicherheitscodes, ePayment", "Termin (oft Wochen Vorlauf)", "keine – Fotos der Unterlagen genügen"],
             ["Zeitaufwand", "30–60 Min., wenn alles klappt", "halber Tag inkl. Anfahrt/Wartezeit", "ca. 10 Min. für die Beauftragung"],
             ["Dauer bis zur Zulassung", "sofort (vorläufiger Nachweis), Plaketten per Post", "am Termin selbst", "1–3 Werktage + Versand"],
-            ["Gesamtkosten (Zulassung)", "ca. 35 – 55 €", "ca. 50 – 70 €", `${P.zulassung} komplett`],
+            ["Gesamtkosten (Zulassung)", euroRange(addRanges(officialFees.onlineRegistration, plateCosts)), euroRange(addRanges(officialFees.counterRegistration, plateCosts)), `${P.zulassung} + ggf. Kennzeichen`],
             ["Scheitert häufig an …", "eID-PIN, alten Papieren, Portal-Fehlern", "Terminmangel", "–"],
           ],
         },
@@ -78,7 +78,7 @@ export const guides: Guide[] = [
       {
         heading: "Selbst zulassen oder Zulassungsdienst beauftragen?",
         paragraphs: [
-          "Wer Zeit hat, einen Termin bekommt und alle Unterlagen beisammen hat, zahlt beim Selbermachen nur Gebühren und Schilder – zusammen meist 40 bis 70 €. Die Realität sieht oft anders aus: Termine sind in vielen Städten Wochen im Voraus ausgebucht, und ein halber Arbeitstag geht schnell verloren.",
+          `Wer Zeit hat, einen Termin bekommt und alle Unterlagen beisammen hat, zahlt beim Selbermachen nur Gebühren und Schilder – zusammen je nach Behörde und Weg ${euroRange([officialFees.onlineRegistration[0] + plateCosts[0], officialFees.counterRegistration[1] + plateCosts[1]])}. Die Realität sieht oft anders aus: Termine sind in vielen Städten Wochen im Voraus ausgebucht, und ein halber Arbeitstag geht schnell verloren.`,
           `Ein Zulassungsdienst übernimmt den kompletten Vorgang gegen einen Servicepreis. Bei DeutscheZulassung kosten Neuzulassung, Umschreibung, Ummeldung und Wiederzulassung je ${P.zulassung} – amtliche Gebühren und versicherter Versand sind darin bereits enthalten. Werden neue Kennzeichenschilder benötigt, kommen ${P.kennzeichen} pro Paar dazu. Die Abmeldung kostet ${P.abmeldung} inklusive Gebühren. Sie wissen also vorher genau, was auf Sie zukommt.`,
         ],
       },
@@ -93,17 +93,17 @@ export const guides: Guide[] = [
       {
         question: "Was kostet es, ein Auto selbst anzumelden?",
         answer:
-          "Beim Selbermachen zahlen Sie die amtliche Gebühr (online ca. 12,80 – 18 €, am Schalter ca. 26,30 – 30 €) plus Kennzeichenschilder (ca. 20 – 35 € pro Paar) – zusammen meist 40 bis 70 €. Dazu kommt Ihr Zeitaufwand für Termin und Behördengang.",
+          `Beim Selbermachen zahlen Sie die amtliche Gebühr (online ${euroRange(officialFees.onlineRegistration)}, am Schalter ${euroRange(officialFees.counterRegistration)}, je nach Behörde) plus Kennzeichenschilder (${euroRange(plateCosts)} pro Paar). Dazu kommt Ihr Zeitaufwand für Termin und Behördengang.`,
       },
       {
         question: "Was kostet ein Zulassungsdienst?",
         answer:
-          `Marktüblich sind Preise um 120 – 130 € pro Zulassungsvorgang zzgl. Kennzeichen. DeutscheZulassung berechnet ${P.zulassung} inkl. Gebühren und Versand, zzgl. ${P.kennzeichen} für neue Kennzeichenschilder; die Abmeldung kostet ${P.abmeldung}.`,
+          `DeutscheZulassung berechnet ${P.zulassung} inkl. Gebühren und Versand, zzgl. ${P.kennzeichen} für neue Kennzeichenschilder; die Abmeldung kostet ${P.abmeldung}.`,
       },
       {
         question: "Ist die Online-Zulassung (i-Kfz) günstiger als der Schalter?",
         answer:
-          "Ja, die amtliche Gebühr für vollständig digitale Vorgänge ist niedriger (ca. 12,80 – 18 € statt ca. 26,30 – 30 €). Voraussetzung ist allerdings ein Personalausweis mit aktivierter Online-Funktion und Fahrzeugdokumente mit Sicherheitscodes.",
+          `Ja, die amtliche Gebühr für vollständig digitale Vorgänge ist niedriger (${euroRange(officialFees.onlineRegistration)} statt ${euroRange(officialFees.counterRegistration)}, je nach Behörde). Voraussetzung ist eine elektronische Identifizierung – der Online-Ausweis mit PIN oder eine BundID mit ELSTER-Zertifikat – und Fahrzeugdokumente mit Sicherheitscodes.`,
       },
       {
         question: "Wer zahlt die Kfz-Steuer und wann?",
@@ -204,7 +204,7 @@ export const guides: Guide[] = [
     description:
       "Nach dem Umzug das Auto ummelden: welche Frist gilt, was es kostet, ob Sie Ihr Kennzeichen behalten können – und wie die Ummeldung ohne Behördengang funktioniert.",
     datePublished: "2026-08-13",
-    dateModified: "2026-08-13",
+    dateModified: "2026-11-03",
     sections: [
       {
         heading: "Muss ich mein Auto nach dem Umzug ummelden?",
@@ -223,7 +223,7 @@ export const guides: Guide[] = [
           "Zulassungsbescheinigung Teil II (Fahrzeugbrief)",
           "Ausweis mit neuer Adresse oder Meldebescheinigung",
           "SEPA-Mandat für die Kfz-Steuer",
-          "Neue eVB-Nummer nur bei Versichererwechsel",
+          "eVB-Nummer: bei Versichererwechsel nötig, manche Behörden verlangen sie auch sonst",
         ],
       },
     ],
@@ -246,7 +246,7 @@ export const guides: Guide[] = [
       {
         question: "Muss ich bei der Ummeldung die Versicherung wechseln?",
         answer:
-          "Nein. Ihre Kfz-Versicherung bleibt bestehen; teilen Sie ihr nur die neue Adresse mit, da sich durch die Regionalklasse der Beitrag ändern kann. Eine neue eVB-Nummer brauchen Sie nur bei einem Versichererwechsel.",
+          "Nein. Ihre Kfz-Versicherung bleibt bestehen; teilen Sie ihr nur die neue Adresse mit, da sich durch die Regionalklasse der Beitrag ändern kann. Eine neue eVB-Nummer brauchen Sie bei einem Versichererwechsel; manche Zulassungsbehörden verlangen sie aber auch ohne Wechsel – fordern Sie sie vorsorglich kostenlos an.",
       },
     ],
     relatedServices: ["ummeldung", "adressaenderung", "wunschkennzeichen"],
@@ -265,7 +265,7 @@ export const guides: Guide[] = [
     description:
       "Auto abmelden Schritt für Schritt: Unterlagen, Sicherheitscodes, Kosten und was mit Steuer und Versicherung passiert – auch ohne Behördengang.",
     datePublished: "2026-08-13",
-    dateModified: "2026-08-13",
+    dateModified: "2026-11-03",
     sections: [
       {
         heading: "Wann wird ein Fahrzeug abgemeldet?",
@@ -297,7 +297,7 @@ export const guides: Guide[] = [
       {
         question: "Was kostet die Abmeldung eines Autos?",
         answer:
-          `Die amtliche Gebühr liegt je nach Behörde bei etwa 3 – 16 €. Über DeutscheZulassung kostet die komplette Abwicklung ${P.abmeldung} inklusive Gebühren – meist noch am selben Werktag erledigt.`,
+          `Die amtliche Gebühr liegt online bei ${euroRange(officialFees.deregistrationOnline)} und am Schalter bei ${euroRange(officialFees.deregistrationCounter)}, je nach Behörde. Über DeutscheZulassung kostet die komplette Abwicklung ${P.abmeldung} inklusive Gebühren – meist noch am selben Werktag erledigt.`,
       },
       {
         question: "Kann ich ein Auto ohne Kennzeichen abmelden?",
@@ -456,7 +456,7 @@ export const guides: Guide[] = [
     description:
       "Seit 2023 gehen alle Zulassungsvorgänge online (i-Kfz Stufe 4). Welche Voraussetzungen gelten, wo das Portal an Grenzen stößt und welche Alternativen es gibt.",
     datePublished: "2026-08-13",
-    dateModified: "2026-08-19",
+    dateModified: "2026-11-03",
     sections: [
       {
         heading: "Was ist i-Kfz?",
@@ -565,7 +565,7 @@ export const guides: Guide[] = [
     description:
       "Alle Termine bei der Zulassungsstelle ausgebucht? Vier Wege führen trotzdem zur Zulassung – von Storno-Slots über i-Kfz bis zum Zulassungsdienst ohne Termin.",
     datePublished: "2026-08-20",
-    dateModified: "2026-08-20",
+    dateModified: "2026-11-03",
     sections: [
       {
         heading: "Warum Termine bei Zulassungsstellen so knapp sind",
@@ -615,7 +615,7 @@ export const guides: Guide[] = [
       {
         question: "Was kostet die Zulassung ohne eigenen Termin über einen Dienst?",
         answer:
-          `Bei DeutscheZulassung ${P.zulassung} inklusive amtlicher Gebühren und Versand, zzgl. ${P.kennzeichen} für neue Kennzeichenschilder – der Vorgang startet sofort, ganz ohne Behördentermin. Die Abmeldung kostet ${P.abmeldung} und ist meist taggleich erledigt.`,
+          `Bei DeutscheZulassung ${P.zulassung} inklusive amtlicher Gebühren und Versand, zzgl. ${P.kennzeichen} für neue Kennzeichenschilder – ganz ohne Behördentermin; die Bearbeitung dauert in der Regel 1–3 Werktage ab vollständigen Unterlagen. Die Abmeldung kostet ${P.abmeldung} und ist meist taggleich erledigt.`,
       },
       {
         question: "Gilt das auch für meine Stadt?",
@@ -640,7 +640,7 @@ export const guides: Guide[] = [
     description:
       "eVB, ZB I/II, CoC, HU, i-Kfz, GebOSt: Das Glossar erklärt alle wichtigen Begriffe rund um die Kfz-Zulassung – kurz, verständlich und aktuell.",
     datePublished: "2026-08-13",
-    dateModified: "2026-08-13",
+    dateModified: "2026-11-03",
     sections: [
       {
         heading: "Zulassungsbescheinigung Teil I (ZB I)",
@@ -1130,7 +1130,7 @@ export const guides: Guide[] = [
       {
         heading: "Wie lang darf ein Kennzeichen sein?",
         paragraphs: [
-          "Unterscheidungszeichen und Erkennungsnummer dürfen zusammen höchstens acht Stellen haben; gezählt werden alle Buchstaben und Ziffern (Anlage 4 FZV). Das schränkt die Auswahl vor allem in Bezirken mit dreistelligem Kürzel ein: Zwei Buchstaben und vier Ziffern ergäben dort neun Stellen und sind deshalb nicht möglich. Die Kennbuchstaben E für Elektrofahrzeuge und H für Oldtimer werden nicht mitgezählt.",
+          "Unterscheidungszeichen und Erkennungsnummer dürfen zusammen höchstens acht Stellen haben; gezählt werden alle Buchstaben und Ziffern (Anlage 4 FZV). Das schränkt die Auswahl vor allem in Bezirken mit dreistelligem Kürzel ein: Zwei Buchstaben und vier Ziffern ergäben dort neun Stellen und sind deshalb nicht möglich. Bei einzeiligen E- und H-Kennzeichen sind höchstens sieben Stellen erlaubt; der Kennbuchstabe E bzw. H zählt dabei nicht mit.",
           "Für Saison-, E- und H-Kennzeichen sowie für bestimmte kleinere Schildformate gelten teils strengere Grenzen. Wenn Sie eines dieser Kennzeichen planen, fragen Sie vor der Reservierung nach, ob Ihre Wunschkombination darauf passt.",
         ],
       },
@@ -1191,7 +1191,7 @@ export const guides: Guide[] = [
       {
         question: "Wie viele Zeichen darf mein Kennzeichen haben?",
         answer:
-          "Höchstens acht Stellen aus Unterscheidungszeichen und Erkennungsnummer zusammen. Die Erkennungsnummer hat ein oder zwei Buchstaben und bis zu vier Ziffern; die Kennbuchstaben E und H zählen nicht mit.",
+          "Höchstens acht Stellen aus Unterscheidungszeichen und Erkennungsnummer zusammen, bei einzeiligen E- und H-Kennzeichen höchstens sieben (der Kennbuchstabe zählt nicht mit). Die Erkennungsnummer hat ein oder zwei Buchstaben und bis zu vier Ziffern. Für zweizeilige, Saison- und kleinere Schilder gelten engere Grenzen (Anlage 4 FZV).",
       },
       {
         question: "Kann ich ein Wunschkennzeichen in einer anderen Stadt reservieren?",

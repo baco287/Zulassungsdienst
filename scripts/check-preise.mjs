@@ -58,7 +58,7 @@ const CURRENT = new RegExp(`(?<![\\d,.])(${currentLiterals.map((s) => s.replace(
 
 const SCAN_DIRS = ["app", "components", "lib", "public"];
 const SCAN_EXT = new Set([".ts", ".tsx", ".js", ".mjs", ".php", ".txt", ".md", ".html"]);
-const SKIP = [/public[\\/]api[\\/]_generated/, /public[\\/]downloads/];
+const SKIP = [/public[\\/]downloads/];
 
 function walk(dir, out = []) {
   if (!existsSync(dir)) return out;

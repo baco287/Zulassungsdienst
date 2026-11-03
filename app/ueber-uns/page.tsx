@@ -5,6 +5,7 @@ import CTASection from "@/components/CTASection";
 import { site } from "@/lib/site";
 import Reveal from "@/components/Reveal";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { SERVICEBEDINGUNGEN_FREIGEGEBEN } from "@/lib/features";
 
 export const metadata: Metadata = {
   title: "Über uns – wer hinter DeutscheZulassung steht",
@@ -136,10 +137,15 @@ export default function UeberUnsPage() {
                   <Link href="/datensicherheit/" className="font-semibold text-brand-700 underline underline-offset-2">
                     Datensicherheit
                   </Link>{" "}
-                  ·{" "}
-                  <Link href="/servicebedingungen/" className="font-semibold text-brand-700 underline underline-offset-2">
-                    Servicebedingungen
-                  </Link>
+                  {SERVICEBEDINGUNGEN_FREIGEGEBEN && (
+                    <>
+                      {" "}
+                      ·{" "}
+                      <Link href="/servicebedingungen/" className="font-semibold text-brand-700 underline underline-offset-2">
+                        Servicebedingungen
+                      </Link>
+                    </>
+                  )}
                 </p>
               </section>
             </div>

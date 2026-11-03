@@ -3,12 +3,15 @@ import Link from "next/link";
 import LegalPage from "@/components/LegalPage";
 import { P, PRICE_DATE } from "@/lib/pricing";
 import { site } from "@/lib/site";
+import { SERVICEBEDINGUNGEN_FREIGEGEBEN } from "@/lib/features";
 
 export const metadata: Metadata = {
   title: "Servicebedingungen – verständlich erklärt",
   description:
     "Was DeutscheZulassung leistet, was wir von Ihnen brauchen, wie Preise und Bezahlung funktionieren und was gilt, wenn die Behörde einen Antrag ablehnt.",
   alternates: { canonical: "/servicebedingungen/" },
+  // Entwurf: erst nach rechtlicher Prüfung indexieren (lib/features.ts).
+  robots: SERVICEBEDINGUNGEN_FREIGEGEBEN ? { index: true, follow: true } : { index: false, follow: true },
 };
 
 /**
@@ -43,7 +46,7 @@ export default function ServicebedingungenPage() {
         </ul>
         <p>
           Auf die Bearbeitungsdauer und Entscheidung der Behörde haben wir keinen Einfluss. Unsere Zeitangaben (in der
-          Regel 1–3 Werktage ab vollständigen Unterlagen, Abmeldungen meist am selben Werktag) sind Erfahrungswerte, keine
+          Regel 1–3 Werktage ab vollständigen Unterlagen und Zahlungseingang, Abmeldungen meist am selben Werktag) sind Erfahrungswerte, keine
           Garantie.
         </p>
       </section>
@@ -88,8 +91,8 @@ export default function ServicebedingungenPage() {
       <section>
         <h2>6. Wenn die Behörde ablehnt</h2>
         <p>
-          Ist ein Vorgang trotz vollständiger Mitwirkung nicht durchführbar, berechnen wir keinen Servicepreis. Bereits
-          verauslagte amtliche Gebühren tragen Sie.
+          Ist ein Vorgang trotz vollständiger Mitwirkung nicht durchführbar, berechnen wir keinen Servicepreis. Einen
+          bereits gezahlten Betrag erstatten wir abzüglich der nachweislich an die Behörde gezahlten amtlichen Gebühren.
         </p>
       </section>
 

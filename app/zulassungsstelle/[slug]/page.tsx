@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       const t = `Zulassungsstelle ${name}: Adresse & Termin`;
       return t.length + 20 <= 62 ? t : { absolute: t };
     })(),
-    description: `Zulassungsstelle ${z.stadt} (${codes}): Anschrift, Zuständigkeit, Terminbuchung und i-Kfz – mit Quellen. Oder Zulassung ohne Termin über uns ab ${P.abmeldung}.`,
+    description: `Zulassungsstelle ${z.stadt} (${codes}): Anschrift, Zuständigkeit, Termin und i-Kfz – mit Quellen. Ohne Termin über uns: Zulassung ${P.zulassung} inkl. Gebühren.`,
     alternates: { canonical: `/zulassungsstelle/${z.slug}/` },
   };
 }
@@ -55,8 +55,8 @@ function buildFaq(z: Zulassungsstelle) {
       question: `Wo ist die Zulassungsstelle ${z.stadt}?`,
       answer:
         z.standorte.length > 1
-          ? `Die ${z.behoerde.wert} hat ${z.standorte.length} Standorte, unter anderem ${first.bezeichnung}, ${first.strasse}, ${first.plz} ${first.ort}. Alle Standorte stehen oben auf dieser Seite.`
-          : `Die ${z.behoerde.wert} befindet sich in der ${first.strasse}, ${first.plz} ${first.ort}.`,
+          ? `Die Zulassungsstelle ${z.stadt} (${z.behoerde.wert}) hat ${z.standorte.length} Standorte, unter anderem ${first.bezeichnung}, ${first.strasse}, ${first.plz} ${first.ort}. Alle Standorte stehen oben auf dieser Seite.`
+          : `Anschrift der Zulassungsstelle ${z.stadt}: ${first.strasse}, ${first.plz} ${first.ort} (${z.behoerde.wert}).`,
     });
   }
   if (z.kuerzel.length) {
@@ -152,9 +152,9 @@ export default async function ZulassungsstellePage({ params }: { params: Promise
             Zulassungsstelle {z.stadt}
           </h1>
           <p className="mt-4 max-w-3xl text-lg leading-relaxed text-ink-600">
-            Für die Kfz-Zulassung in {z.stadt} ist die <strong className="text-ink-800">{z.behoerde.wert}</strong>{" "}
-            zuständig{z.traeger ? ` (${z.traeger})` : ""}. Hier finden Sie Anschrift, Zuständigkeit und Online-Angebote
-            der Behörde – und wie Sie Ihr Fahrzeug ohne eigenen Termin zulassen.
+            Zuständige Behörde: <strong className="text-ink-800">{z.behoerde.wert}</strong>
+            {z.traeger ? ` (${z.traeger})` : ""}. Hier finden Sie Anschrift, Zuständigkeit und Online-Angebote der
+            Zulassungsstelle {z.stadt} – und wie Sie Ihr Fahrzeug ohne eigenen Termin zulassen.
           </p>
           <p className="mt-4 flex items-start gap-2 text-sm text-ink-500">
             <CalendarDays className="mt-0.5 h-4 w-4 shrink-0 text-brand-700" aria-hidden />
@@ -322,7 +322,7 @@ export default async function ZulassungsstellePage({ params }: { params: Promise
             <h2 className="font-display text-2xl font-bold text-ink-900">Online zulassen in {z.stadt}</h2>
             <p className="mt-4 leading-relaxed text-ink-700">
               {z.ikfzUrl
-                ? `Die ${z.behoerde.wert} bietet Online-Vorgänge über das i-Kfz-Verfahren an.`
+                ? `Die Zulassungsstelle ${z.stadt} bietet Online-Vorgänge über das i-Kfz-Verfahren an.`
                 : `Online-Vorgänge laufen bundesweit über das i-Kfz-Verfahren der Zulassungsbehörden.`}{" "}
               Für Zulassungen brauchen Sie eine elektronische Identifizierung – den Online-Ausweis mit PIN und
               NFC-Smartphone oder Kartenleser, alternativ eine BundID mit ELSTER-Zertifikat – sowie Fahrzeugpapiere mit
@@ -345,7 +345,7 @@ export default async function ZulassungsstellePage({ params }: { params: Promise
           <section>
             <h2 className="font-display text-2xl font-bold text-ink-900">Zulassungsvorgänge über {site.name}</h2>
             <p className="mt-3 text-ink-700">
-              Wir übernehmen alle gängigen Vorgänge bei der {z.behoerde.wert} – ohne eigenen Termin, mit persönlicher
+              Wir übernehmen alle gängigen Vorgänge bei der Zulassungsstelle {z.stadt} – ohne eigenen Termin, mit persönlicher
               Prüfung Ihrer Unterlagen.
             </p>
             <div className="mt-6">

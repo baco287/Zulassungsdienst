@@ -58,7 +58,7 @@ export const services: Service[] = [
     checklist: [
       "Zulassungsbescheinigung Teil I (Fahrzeugschein)",
       "Zulassungsbescheinigung Teil II (Fahrzeugbrief)",
-      "eVB-Nummer (bei Versichererwechsel)",
+      "eVB-Nummer (bei Versichererwechsel; manche Behörden verlangen sie auch sonst)",
       "Personalausweis mit neuer Adresse oder Meldebescheinigung",
       "SEPA-Mandat für die Kfz-Steuer",
       "Vollmacht (stellen wir Ihnen digital bereit)",
@@ -218,9 +218,9 @@ export const services: Service[] = [
     category: "kennzeichen",
     audience: "beide",
     teaser:
-      "Ihre Initialen, Ihr Geburtsjahr, Ihr Wunschkürzel – wir reservieren und prägen Ihr Wunschkennzeichen.",
+      "Ihre Initialen, Ihr Geburtsjahr, Ihr Wunschkürzel – wir prüfen, reservieren und lassen Ihr Wunschkennzeichen zuteilen.",
     description:
-      "Wir prüfen die Verfügbarkeit Ihres Wunschkennzeichens, reservieren es bei der Zulassungsstelle und übernehmen Prägung und Zuteilung im Rahmen Ihrer Zulassung.",
+      `Wir prüfen die Verfügbarkeit Ihres Wunschkennzeichens, reservieren es bei der Zulassungsstelle und übernehmen die Zuteilung im Rahmen Ihrer Zulassung. Geprägte Schilder liefern wir auf Wunsch für ${P.kennzeichen} pro Paar mit.`,
     price: {
       serviceFee: PRICES.wunschkennzeichen,
       inclusive: true,

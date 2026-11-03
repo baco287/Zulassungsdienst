@@ -6,6 +6,7 @@ import { cities } from "@/lib/staedte";
 import { landingPages } from "@/lib/landingpages";
 import { kennzeichen, publishedStellen } from "@/lib/zulassungsstellen";
 import { site } from "@/lib/site";
+import { SERVICEBEDINGUNGEN_FREIGEGEBEN } from "@/lib/features";
 
 export const dynamic = "force-static";
 
@@ -39,7 +40,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/kontakt",
     "/ueber-uns",
     "/datensicherheit",
-    "/servicebedingungen",
     "/zulassungsstelle",
     "/kennzeichen",
   ].map((path) => ({
@@ -98,8 +98,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
+  const freigegeben = SERVICEBEDINGUNGEN_FREIGEGEBEN
+    ? [{ url: `${site.url}/servicebedingungen/`, lastModified: contentUpdated, changeFrequency: "yearly" as const, priority: 0.3 }]
+    : [];
+
   return [
     ...staticPages,
+    ...freigegeben,
     ...landing,
     ...servicePages,
     ...gewerbePages,

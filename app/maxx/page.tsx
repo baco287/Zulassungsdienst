@@ -74,7 +74,7 @@ const faq = [
   {
     question: "Was kostet das?",
     answer:
-      `${P.zulassung} für Zulassung, Ummeldung, Umschreibung oder Wiederzulassung – amtliche Gebühren und Versand sind drin. Neue Kennzeichenschilder kosten ${P.kennzeichen} pro Paar extra. Die Abmeldung kostet ${P.abmeldung}. Den Endpreis siehst du vor der Bestellung.`,
+      `${P.zulassung} für Zulassung, Ummeldung, Umschreibung oder Wiederzulassung – amtliche Gebühren und Versand sind drin. Neue Kennzeichenschilder kosten ${P.kennzeichen} pro Paar extra. Die Abmeldung kostet ${P.abmeldung}. Den Endpreis bekommst du vorher verbindlich bestätigt.`,
   },
   {
     question: "Wie lange dauert es?",

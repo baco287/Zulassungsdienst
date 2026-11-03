@@ -8,7 +8,6 @@ import {
   Building2,
   CalendarX2,
   CheckCircle2,
-  CreditCard,
   FileSearch,
   FileWarning,
   KeyRound,
@@ -36,7 +35,6 @@ import { faqItems } from "@/lib/faq";
 import { cities } from "@/lib/staedte";
 import { publishedStellen } from "@/lib/zulassungsstellen";
 import { P } from "@/lib/pricing";
-import { CHECKOUT_ENABLED } from "@/lib/features";
 import { site, whatsAppLink } from "@/lib/site";
 
 const description = `Auto online zulassen ohne eID und ohne Behördentermin: Neuzulassung, Ummeldung und Halterwechsel für ${P.zulassung}, Abmeldung ${P.abmeldung} – inkl. amtlicher Gebühren.`;
@@ -46,6 +44,10 @@ export const metadata: Metadata = {
   description,
   alternates: { canonical: "/" },
   openGraph: {
+    type: "website",
+    locale: site.locale,
+    siteName: site.name,
+    url: "/",
     title: `Kfz-Zulassung online ohne eID | ${site.name}`,
     description,
   },
@@ -81,17 +83,11 @@ const steps = [
     title: "Leistung wählen",
     text: "Vorgang auswählen und Fahrzeug- sowie Halterdaten eingeben. Der Assistent zeigt, welche Unterlagen Sie brauchen.",
   },
-  CHECKOUT_ENABLED
-    ? {
-        icon: CreditCard,
-        title: "Unterlagen hochladen & bezahlen",
-        text: "Handyfotos genügen. Sie sehen den Endpreis vorab und bezahlen sicher über unseren Zahlungsanbieter.",
-      }
-    : {
-        icon: ScanLine,
-        title: "Unterlagen senden",
-        text: "Handyfotos genügen – per Formular oder WhatsApp. Sie erhalten vorab Ihre Festpreis-Bestätigung.",
-      },
+  {
+    icon: ScanLine,
+    title: "Unterlagen senden",
+    text: "Für den Start genügen Handyfotos – per Formular oder WhatsApp. Sie erhalten vorab Ihre Festpreis-Bestätigung.",
+  },
   {
     icon: UserCheck,
     title: "Wir prüfen & beantragen",
@@ -107,8 +103,8 @@ const steps = [
 const trust = [
   {
     icon: BadgeCheck,
-    title: "Festpreis vor der Bestellung",
-    text: "Sie sehen den Endpreis inklusive amtlicher Gebühren, bevor Sie verbindlich beauftragen. Extras wählen Sie selbst.",
+    title: "Festpreis vor dem Start",
+    text: "Nach Ihrer Anfrage erhalten Sie eine verbindliche Festpreis-Bestätigung inklusive amtlicher Gebühren – erst dann legen wir los.",
   },
   {
     icon: UserCheck,
@@ -123,7 +119,7 @@ const trust = [
   {
     icon: ShieldCheck,
     title: "Sorgfältig mit Ihren Daten",
-    text: "Verschlüsselte Übertragung, Verwendung nur für Ihren Auftrag und Löschung nach Abschluss.",
+    text: "Verschlüsselte Übertragung. Ausweiskopien und Vollmachten löschen wir nach Abschluss; Rechnungsdaten bewahren wir nach den gesetzlichen Fristen auf.",
     href: "/datensicherheit/",
     linkLabel: "So schützen wir Ihre Daten",
   },
@@ -258,8 +254,8 @@ export default function HomePage() {
       <section id="leistungen" className="py-14 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHead eyebrow="Leistungen & Festpreise" title="Was möchten Sie erledigen?">
-            Wählen Sie Ihren Vorgang – der Preis enthält die amtlichen Gebühren. Den verbindlichen Endpreis sehen Sie
-            vor der Bestellung.
+            Wählen Sie Ihren Vorgang – der Preis enthält die amtlichen Gebühren. Den verbindlichen Endpreis bestätigen
+            wir Ihnen, bevor wir starten.
           </SectionHead>
           <Reveal delay={0.05} className="mt-10">
             <ServicePriceGrid />
@@ -318,12 +314,12 @@ export default function HomePage() {
       <section id="ablauf" className="py-14 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHead eyebrow="So funktioniert’s" title="In vier Schritten zur Zulassung">
-            Von der Bestellung bis zu den fertigen Papieren – Sie sehen jederzeit, wo Ihr Auftrag steht.
+            Von Ihrer Anfrage bis zu den fertigen Papieren – bei Fragen erreichen Sie uns {site.contact.hours} per
+            WhatsApp, Telefon oder E-Mail.
           </SectionHead>
           <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {steps.map((s, i) => (
-              <Reveal key={s.title} delay={i * 0.06}>
-                <li className="relative text-center">
+              <Reveal as="li" key={s.title} delay={i * 0.06} className="relative text-center">
                   <div className="relative mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-brand-700 text-white shadow-lg shadow-brand-700/25">
                     <s.icon className="h-7 w-7" aria-hidden />
                     <span className="absolute -right-2 -top-2 flex h-7 w-7 items-center justify-center rounded-full border-2 border-white bg-ink-900 font-display text-xs font-bold text-white">
@@ -332,7 +328,6 @@ export default function HomePage() {
                   </div>
                   <h3 className="mt-5 font-display text-lg font-bold text-ink-900">{s.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-ink-600">{s.text}</p>
-                </li>
               </Reveal>
             ))}
           </ol>
@@ -592,7 +587,7 @@ export default function HomePage() {
                 <WhatsAppIcon className="h-6 w-6" color="brand" />
               </span>
               <span className="mt-4 block font-display text-base font-bold text-ink-900">WhatsApp</span>
-              <span className="mt-1 block text-sm text-ink-600">Antwort meist in wenigen Minuten</span>
+              <span className="mt-1 block text-sm text-ink-600">{site.contact.hours}</span>
             </TrackedLink>
             <TrackedLink
               href={`tel:${site.contact.phone.replace(/\s/g, "")}`}

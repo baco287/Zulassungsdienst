@@ -18,8 +18,7 @@
  * Einwilligung im Banner geladen und ist vorbereitet, aber inaktiv:
  *
  *   NEXT_PUBLIC_GADS_ID                 = "AW-XXXXXXXXX"
- *   NEXT_PUBLIC_GADS_LABEL_ORDER        = Conversion-Label "Bestellung"
- *   NEXT_PUBLIC_GADS_LABEL_PAYMENT      = Conversion-Label "Zahlung"
+ *   NEXT_PUBLIC_GADS_LABEL_ORDER        = Conversion-Label "Anfrage gesendet"
  *
  * WICHTIG: Ereignisse tragen niemals personenbezogene Daten. Erlaubt sind nur
  * die Schlüssel in ALLOWED_PROPS mit kurzen, festen Werten.
@@ -35,8 +34,6 @@ export type AnalyticsEvent =
   | "order_step"
   | "order_abandon"
   | "order_submitted"
-  | "payment_started"
-  | "payment_success"
   | "contact_form_submit"
   | "documents_uploaded";
 
@@ -84,7 +81,6 @@ export function hasAdsConsent(): boolean {
 
 const ADS_LABELS: Partial<Record<AnalyticsEvent, string>> = {
   order_submitted: process.env.NEXT_PUBLIC_GADS_LABEL_ORDER ?? "",
-  payment_success: process.env.NEXT_PUBLIC_GADS_LABEL_PAYMENT ?? "",
 };
 
 /** Sendet ein Ereignis an den konfigurierten Anbieter. Ohne Konfiguration: no-op. */

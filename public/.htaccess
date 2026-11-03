@@ -4,6 +4,16 @@
 # ── Eigene Fehlerseite (Next.js exportiert out/404.html) ──────────────
 ErrorDocument 404 /404.html
 
+# ── Zeichensatz für Text-Dateien (z. B. /llms.txt) ────────────────────
+AddDefaultCharset UTF-8
+AddCharset utf-8 .txt
+
+# ── OG-Bilder: Next.js exportiert sie ohne Dateiendung ────────────────
+# Ohne explizite Typangabe liefert Apache sie zusammen mit "nosniff" falsch aus.
+<FilesMatch "^(opengraph-image|twitter-image)$">
+  ForceType image/png
+</FilesMatch>
+
 # ── Kanonische Domain: www → non-www (301) ────────────────────────────
 <IfModule mod_rewrite.c>
   RewriteEngine On

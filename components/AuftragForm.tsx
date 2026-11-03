@@ -383,7 +383,9 @@ export default function AuftragForm() {
                       </span>
                       <span className="mt-1 block text-xs text-ink-500">
                         {s.price.serviceFee !== null
-                          ? s.price.platesExtra
+                          ? s.slug === "wunschkennzeichen"
+                            ? `Zusatz zu einer Zulassung: + ${euro(s.price.serviceFee)}`
+                            : s.price.platesExtra
                             ? `${euro(s.price.serviceFee)} zzgl. Kennzeichen ${euro(plateFee)}`
                             : s.price.inclusive
                               ? `${euro(s.price.serviceFee)} inkl. MwSt. – alles inklusive`
@@ -598,7 +600,9 @@ export default function AuftragForm() {
                 <dt className="text-ink-500">Preis</dt>
                 <dd className="text-right font-display font-bold text-brand-700">
                   {service?.price.serviceFee != null
-                    ? service.price.platesExtra
+                    ? service.slug === "wunschkennzeichen"
+                      ? `+ ${euro(service.price.serviceFee)} zusätzlich zur Zulassung (amtliche Gebühr enthalten)`
+                      : service.price.platesExtra
                       ? `${euro(service.price.serviceFee)} inkl. MwSt., zzgl. Kennzeichenschilder ${euro(plateFee)} (Paar), falls benötigt`
                       : `${euro(service.price.serviceFee)} inkl. MwSt.${service.price.inclusive ? " – alles inklusive" : ""}`
                     : "auf Anfrage – Festpreis folgt mit der Bestätigung"}

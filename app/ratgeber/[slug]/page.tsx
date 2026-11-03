@@ -30,6 +30,9 @@ export async function generateMetadata({
     keywords: guide.keywords,
     openGraph: {
       type: "article",
+      locale: site.locale,
+      siteName: site.name,
+      url: `/ratgeber/${guide.slug}/`,
       title: guide.title,
       description: guide.description,
       publishedTime: guide.datePublished,

@@ -89,6 +89,12 @@ for (const file of htmlFiles) {
   }
   if (h1Count !== 1) errors.push(`${where}: ${h1Count} H1-Überschriften`);
 
+  const ogUrl = html.match(/<meta property="og:url" content="([^"]*)"/)?.[1] ?? "";
+  if (!noindex) {
+    if (!ogUrl) errors.push(`${where}: og:url fehlt`);
+    else if (canonical && ogUrl !== canonical) errors.push(`${where}: og:url ${ogUrl} weicht vom Canonical ${canonical} ab`);
+  }
+
   for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
     try {
       JSON.parse(m[1]);

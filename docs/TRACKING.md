@@ -22,8 +22,7 @@ ist keine Änderung nötig.
 
 ## 2. Google Ads Conversion-Tracking (vorbereitet, inaktiv)
 
-Variablen: `NEXT_PUBLIC_GADS_ID=AW-…`, `NEXT_PUBLIC_GADS_LABEL_ORDER=…`,
-`NEXT_PUBLIC_GADS_LABEL_PAYMENT=…` (Labels aus dem Google-Ads-Konto).
+Variablen: `NEXT_PUBLIC_GADS_ID=AW-…` und `NEXT_PUBLIC_GADS_LABEL_ORDER=…` (Conversion-Label „Anfrage gesendet“ aus dem Google-Ads-Konto).
 
 - Lädt **nur nach Einwilligung** im Banner (`components/Analytics.tsx`).
 - Ablehnen ist gleichwertig zum Zustimmen gestaltet.
@@ -47,7 +46,6 @@ Variablen: `NEXT_PUBLIC_GADS_ID=AW-…`, `NEXT_PUBLIC_GADS_LABEL_ORDER=…`,
 | `order_abandon` | Seite verlassen, nachdem der Assistent begonnen wurde | `step` |
 | `order_submitted` | Anfrage erfolgreich übermittelt | `service`, `method` |
 | `documents_uploaded` | Unterlagen nachgereicht | `method` |
-| `payment_started`, `payment_success` | reserviert für das spätere Bestellsystem | `service`, `value` |
 
 **Datenschutz:** `lib/analytics.ts` lässt nur die Schlüssel `position`,
 `service`, `step`, `value`, `method`, `page` durch und verwirft Werte, die wie

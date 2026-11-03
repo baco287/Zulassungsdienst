@@ -2,19 +2,19 @@
 
 import { useState } from "react";
 import { Calculator, Clock4 } from "lucide-react";
-import { euro, PRICES } from "@/lib/pricing";
+import { euro, officialFees, PRICES } from "@/lib/pricing";
 
 /**
  * Ersparnis-Rechner: Was kostet der eigene Behördengang wirklich?
  *
  * Rechenannahmen (bewusst transparent ausgewiesen):
- *  - Amtliche Gebühr am Schalter: ~28 € (Mittelwert 26,30–30,00 €)
+ *  - Amtliche Gebühr am Schalter: Mittelwert der Spanne aus config/preise.json
  *  - Kennzeichenpaar beim Prägedienst: ~27 € (Mittelwert 20–35 €)
  *  - Fahrtkosten: 0,30 €/km, Hin- und Rückweg
  *  - Eigene Zeit: Stunden × Stundensatz
  */
 
-const OFFICIAL_FEE = 28;
+const OFFICIAL_FEE = Math.round((officialFees.counterRegistration[0] + officialFees.counterRegistration[1]) / 2);
 const PLATES = 27;
 const KM_RATE = 0.3;
 const OUR_PRICE = PRICES.zulassung;
@@ -162,8 +162,8 @@ export default function BehoerdengangRechner() {
       )}
 
       <p className="mt-4 text-xs leading-relaxed text-ink-500">
-        Transparente Annahmen: amtliche Schaltergebühr ca. 28 €, Kennzeichenpaar ca.
-        27 €, Fahrtkosten 0,30 €/km (hin und zurück). Tatsächliche Gebühren variieren
+        Transparente Annahmen: amtliche Schaltergebühr ca. {euro(OFFICIAL_FEE)}, Kennzeichenpaar ca.
+        {euro(PLATES)}, Fahrtkosten 0,30 €/km (hin und zurück). Tatsächliche Gebühren variieren
         je nach Behörde und Vorgang.
       </p>
     </div>

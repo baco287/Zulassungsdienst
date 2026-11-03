@@ -3,7 +3,7 @@ import { cities } from "@/lib/staedte";
 import { guides } from "@/lib/ratgeber";
 import { gewerbeSegments } from "@/lib/gewerbe";
 import { landingPages } from "@/lib/landingpages";
-import { zulassungsstellen } from "@/lib/zulassungsstellen";
+import { publishedStellen } from "@/lib/zulassungsstellen";
 import { P } from "@/lib/pricing";
 import { site } from "@/lib/site";
 
@@ -19,6 +19,9 @@ const u = (path: string) => `${site.url}${path}`;
 function priceLine(slug: string): string {
   const s = sortedServices.find((x) => x.slug === slug);
   if (!s || s.price.serviceFee === null) return "Preis auf Anfrage";
+  if (slug === "wunschkennzeichen") {
+    return `${P.wunschkennzeichen} zusätzlich zu einer Zulassung – Verfügbarkeitsprüfung, Reservierung und Zuteilung, amtliche Gebühr enthalten; Kennzeichenschilder auf Wunsch zzgl. ${P.kennzeichen}`;
+  }
   return s.price.platesExtra
     ? `${s.price.serviceFee.toFixed(2).replace(".", ",")} € inkl. amtlicher Gebühren und Versand, Kennzeichenschilder auf Wunsch zzgl. ${P.kennzeichen}`
     : `${s.price.serviceFee.toFixed(2).replace(".", ",")} € komplett inkl. amtlicher Gebühren`;
@@ -50,7 +53,7 @@ export function GET() {
 
   lines.push("## Zulassungsstellen", "");
   lines.push(`- [Übersicht der Zulassungsstellen](${u("/zulassungsstelle/")}): Anschrift, Zuständigkeit, Kennzeichen und i-Kfz-Hinweise mit Quellenangabe`);
-  for (const z of zulassungsstellen) {
+  for (const z of publishedStellen) {
     lines.push(`- [Zulassungsstelle ${z.stadt}](${u(`/zulassungsstelle/${z.slug}/`)})`);
   }
   lines.push("");
@@ -83,6 +86,7 @@ export function GET() {
     ""
   );
 
+  // Der Header wirkt nur im Dev-Server; live setzt public/.htaccess den Zeichensatz.
   return new Response(lines.join("\n"), {
     headers: { "Content-Type": "text/plain; charset=utf-8" },
   });

@@ -35,7 +35,15 @@ export async function generateMetadata({
     description: page.description,
     keywords: page.keywords,
     alternates: { canonical: `/${page.slug}/` },
-    openGraph: { type: "article", title: page.metaTitle, description: page.description, modifiedTime: page.updated },
+    openGraph: {
+      type: "article",
+      locale: site.locale,
+      siteName: site.name,
+      url: `/${page.slug}/`,
+      title: page.metaTitle,
+      description: page.description,
+      modifiedTime: page.updated,
+    },
   };
 }
 
@@ -224,15 +232,17 @@ export default async function LandingPageView({ params }: { params: Promise<{ la
                     </li>
                   ))}
                 </ul>
-                <p className="mt-4 flex gap-2 text-sm text-ink-600">
-                  <Info className="mt-0.5 h-4 w-4 shrink-0 text-brand-600" aria-hidden />
-                  <span>
-                    Handyfotos genügen.{" "}
-                    <Link href="/vorlagen/checkliste-zulassung/" className="font-semibold text-brand-700 underline">
-                      Checkliste zum Ausdrucken
-                    </Link>
-                  </span>
-                </p>
+                {page.checklist.photoHint && (
+                  <p className="mt-4 flex gap-2 text-sm text-ink-600">
+                    <Info className="mt-0.5 h-4 w-4 shrink-0 text-brand-600" aria-hidden />
+                    <span>
+                      Für den Start genügen Handyfotos.{" "}
+                      <Link href="/vorlagen/checkliste-zulassung/" className="font-semibold text-brand-700 underline">
+                        Checkliste zum Ausdrucken
+                      </Link>
+                    </span>
+                  </p>
+                )}
               </section>
             </Reveal>
           )}

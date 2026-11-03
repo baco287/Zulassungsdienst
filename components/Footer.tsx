@@ -5,6 +5,7 @@ import { site, whatsAppLink } from "@/lib/site";
 import { sortedServices } from "@/lib/services";
 import WhatsAppIcon from "./WhatsAppIcon";
 import { analyticsProvider, gadsId } from "@/lib/analytics";
+import { SERVICEBEDINGUNGEN_FREIGEGEBEN } from "@/lib/features";
 
 export default function Footer() {
   const topServices = sortedServices.filter((s) => s.category === "zulassung").slice(0, 6);
@@ -139,7 +140,9 @@ export default function Footer() {
             <Link href="/impressum" className="transition-colors duration-200 hover:text-white">Impressum</Link>
             <Link href="/datenschutz" className="transition-colors duration-200 hover:text-white">Datenschutz</Link>
             <Link href="/widerruf" className="transition-colors duration-200 hover:text-white">Widerruf</Link>
-            <Link href="/servicebedingungen" className="transition-colors duration-200 hover:text-white">Servicebedingungen</Link>
+            {SERVICEBEDINGUNGEN_FREIGEGEBEN && (
+              <Link href="/servicebedingungen" className="transition-colors duration-200 hover:text-white">Servicebedingungen</Link>
+            )}
             <Link href="/datensicherheit" className="transition-colors duration-200 hover:text-white">Datensicherheit</Link>
           </nav>
         </div>

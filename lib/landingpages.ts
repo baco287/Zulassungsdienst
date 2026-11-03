@@ -38,7 +38,8 @@ export interface LandingPage {
   /** Beschriftung des Haupt-Buttons. */
   ctaLabel: string;
   /** Dokumenten-Checkliste. */
-  checklist?: { title: string; items: string[] };
+  /** photoHint: Hinweis „Für den Start genügen Handyfotos“ anzeigen (nur bei Unterlagen für DeutscheZulassung). */
+  checklist?: { title: string; items: string[]; photoHint?: boolean };
   /** Schritt-für-Schritt-Erklärung. */
   steps?: { title: string; items: LandingStep[] };
   sections: ContentSection[];
@@ -121,7 +122,8 @@ export const landingPages: LandingPage[] = [
     primaryService: "neuzulassung",
     ctaLabel: "Zulassung ohne eID beauftragen",
     checklist: {
-      title: "Diese Unterlagen brauchen wir – ein Handyfoto genügt",
+      photoHint: true,
+      title: "Diese Unterlagen brauchen wir – für den Start genügen Handyfotos",
       items: [
         "Personalausweis oder Reisepass der künftigen Halterin bzw. des künftigen Halters",
         "Zulassungsbescheinigung Teil II (Fahrzeugbrief) oder CoC-Papier",
@@ -256,11 +258,12 @@ export const landingPages: LandingPage[] = [
     primaryService: "abmeldung",
     ctaLabel: "Abmeldung beauftragen",
     checklist: {
+      photoHint: true,
       title: "Das brauchen Sie für die Abmeldung",
       items: [
         "Zulassungsbescheinigung Teil I (Fahrzeugschein) mit freigelegtem Sicherheitscode",
         "Beide Kennzeichen mit freigelegten Sicherheitscodes der Stempelplaketten",
-        "Bei Verschrottung: Verwertungsnachweis des Demontagebetriebs",
+        "Bei Verschrottung: Verwertungsnachweis des Demontagebetriebs; Fahrzeugschein und -brief gehen danach im Original an die Zulassungsbehörde",
         "Falls gewünscht: Hinweis, dass das Kennzeichen reserviert werden soll",
       ],
     },
@@ -311,7 +314,7 @@ export const landingPages: LandingPage[] = [
           rows: [
             ["eID / AusweisApp", "nicht nötig", "nicht nötig"],
             ["Sicherheitscodes", "im Portal eingeben", "Foto der freigelegten Codes senden"],
-            ["Kosten", `amtliche Gebühr, ${euroRange(officialFees.deregistration)}`, `${P.abmeldung} inkl. amtlicher Gebühren`],
+            ["Kosten", `amtliche Gebühr online, ${euroRange(officialFees.deregistrationOnline)}`, `${P.abmeldung} inkl. amtlicher Gebühren`],
             ["Beauftragung", "im Portal Ihrer Zulassungsbehörde", "Online-Formular, WhatsApp oder E-Mail"],
             ["Dauer", "automatisierte Entscheidung, wenn alle Angaben passen", "meist am selben Werktag"],
             ["Wenn etwas hakt", "Zulassungsbehörde kontaktieren", "feste Ansprechperson, Mo–Fr 8–18 Uhr"],
@@ -346,7 +349,7 @@ export const landingPages: LandingPage[] = [
       },
       {
         question: "Was kostet die Abmeldung ohne eID?",
-        answer: `Selbst über i-Kfz zahlen Sie nur die amtliche Gebühr, je nach Behörde ${euroRange(officialFees.deregistration)}. Über DeutscheZulassung kostet die Abmeldung ${P.abmeldung} inklusive amtlicher Gebühren.`,
+        answer: `Selbst über i-Kfz zahlen Sie nur die amtliche Gebühr für die Online-Abmeldung, je nach Behörde ${euroRange(officialFees.deregistrationOnline)}. Über DeutscheZulassung kostet die Abmeldung ${P.abmeldung} inklusive amtlicher Gebühren.`,
       },
       {
         question: "Wie schnell ist das Auto abgemeldet?",
@@ -725,6 +728,7 @@ export const landingPages: LandingPage[] = [
     primaryService: "halterwechsel",
     ctaLabel: "Anmeldung online beauftragen",
     checklist: {
+      photoHint: true,
       title: "Grundunterlagen für fast jede Anmeldung",
       items: [
         "Personalausweis oder Reisepass der künftigen Halterin bzw. des künftigen Halters",
@@ -812,7 +816,7 @@ export const landingPages: LandingPage[] = [
           "Neuzulassung: Fahrzeugbrief oder CoC-Papier; bei Firmen Gewerbeanmeldung oder Handelsregisterauszug",
           "Halterwechsel: Fahrzeugschein und Fahrzeugbrief, Kaufvertrag, Nachweis der gültigen HU",
           "Wiederzulassung: Fahrzeugschein und -brief, Abmeldebescheinigung falls vorhanden, gültige HU",
-          "Ummeldung: Fahrzeugschein und -brief, Ausweis mit neuer Adresse oder Meldebescheinigung; eine neue eVB nur bei Versichererwechsel",
+          "Ummeldung: Fahrzeugschein und -brief, Ausweis mit neuer Adresse oder Meldebescheinigung; eine eVB-Nummer verlangen manche Behörden auch ohne Versichererwechsel – fordern Sie sie vorsorglich an",
           "Adressänderung: Fahrzeugschein und Ausweis mit neuer Adresse oder Meldebescheinigung",
         ],
       },
@@ -891,6 +895,7 @@ export const landingPages: LandingPage[] = [
     primaryService: "neuzulassung",
     ctaLabel: "Zulassungsdienst beauftragen",
     checklist: {
+      photoHint: true,
       title: "Das braucht ein Zulassungsdienst für eine Zulassung",
       items: [
         "Foto von Personalausweis oder Reisepass",
@@ -1003,7 +1008,7 @@ export const landingPages: LandingPage[] = [
       {
         question: "Muss ich meine Originaldokumente verschicken?",
         answer:
-          "Für die Beauftragung genügen Handyfotos der Unterlagen. Braucht die Behörde in Ihrem Fall etwas zusätzlich, meldet sich Ihre Ansprechperson bei Ihnen.",
+          "Für den Start genügen Handyfotos. Originale braucht es nur, wenn die Behörde sie verlangt – etwa wenn Ihr Fahrzeugbrief keinen Sicherheitscode trägt (vor 2018 ausgestellt) oder bei Importfahrzeugen. Das sagen wir Ihnen vorab.",
       },
       {
         question: "Woran erkenne ich, ob ich auf einer Behördenseite bin?",

@@ -28,8 +28,8 @@ const schilderLabels: Record<SchilderOption, string> = {
 };
 
 /**
- * Transparenter Preisrechner: zeigt Positionen, enthaltene MwSt. und den
- * Endpreis – exakt mit derselben Logik, die für Bestellungen gilt.
+ * Transparenter Preisrechner: zeigt Positionen und den Endpreis inkl. MwSt.
+ * Den verbindlichen Endpreis bestätigt das Team vor dem Start.
  */
 export default function PriceCalculator() {
   const [leistung, setLeistung] = useState<string>("neuzulassung");
@@ -125,7 +125,7 @@ export default function PriceCalculator() {
                 </span>
               </div>
               <p className="mt-2 text-xs leading-relaxed text-ink-500">
-                inkl. {centsToEuro(result.vatCents)} MwSt. (19 %)
+                inkl. 19 % MwSt.
                 {cfg?.enthaeltAmtlicheGebuehren ? " · amtliche Gebühren enthalten" : ""}
                 {cfg?.enthaeltVersand ? " · Versand der Dokumente enthalten" : " · digital, kein Versand nötig"}
               </p>

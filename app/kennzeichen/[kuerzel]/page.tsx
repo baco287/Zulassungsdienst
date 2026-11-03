@@ -8,7 +8,7 @@ import FaqAccordion from "@/components/FaqAccordion";
 import TrackedLink from "@/components/TrackedLink";
 import { getKennzeichen, kennzeichen } from "@/lib/zulassungsstellen";
 import { getCity } from "@/lib/staedte";
-import { euro, officialFees, P, wunschkennzeichenHinweis } from "@/lib/pricing";
+import { P, wunschkennzeichenHinweis } from "@/lib/pricing";
 import { site } from "@/lib/site";
 
 export const dynamicParams = false;
@@ -38,15 +38,13 @@ export default async function KennzeichenDetail({ params }: { params: Promise<{ 
   const faq = [
     {
       question: `Wofür steht das Kennzeichen ${k.code}?`,
-      answer: `Das Unterscheidungszeichen ${k.code} steht für ${k.name}. Ausgegeben wird es von ${k.stellen
-        .map((s) => `der ${s.behoerde.wert}`)
+      answer: `Das Unterscheidungszeichen ${k.code} steht für ${k.name}. Zuständig ist ${k.stellen
+        .map((s) => `die Zulassungsstelle ${s.stadt} (${s.behoerde.wert})`)
         .join(" und ")}.`,
     },
     {
       question: `Wie bekomme ich ein ${k.code}-Wunschkennzeichen?`,
-      answer: `Für Reservierung und Zuteilung erhebt die Zulassungsbehörde amtliche Gebühren von insgesamt ${euro(
-        officialFees.customPlate[0]
-      )}. Über uns kostet der Wunschkennzeichen-Service ${P.wunschkennzeichen} zusätzlich zur Zulassung – Verfügbarkeitsprüfung, Reservierung und Zuteilung inklusive.`,
+      answer: `Über uns kostet der Wunschkennzeichen-Service ${P.wunschkennzeichen} zusätzlich zur Zulassung – Verfügbarkeitsprüfung, Reservierung und Zuteilung inklusive. ${wunschkennzeichenHinweis}`,
     },
     {
       question: `Muss ich nach dem Umzug ein ${k.code}-Kennzeichen nehmen?`,

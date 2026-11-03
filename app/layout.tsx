@@ -36,18 +36,16 @@ export const metadata: Metadata = {
     "Wunschkennzeichen",
   ],
   alternates: { canonical: "./" },
+  // Bewusst ohne url/title/description: Next übernimmt dann Titel und
+  // Beschreibung der jeweiligen Seite, og:url folgt dem Canonical ("./").
   openGraph: {
     type: "website",
     locale: site.locale,
     siteName: site.name,
-    url: site.url,
-    title: `${site.name} – ${site.claim}`,
-    description: site.description,
+    url: "./",
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} – ${site.claim}`,
-    description: site.description,
   },
   robots:
     process.env.NEXT_PUBLIC_STAGING === "1"
@@ -117,11 +115,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="de" className={`${lexend.variable} ${sourceSans.variable}`} suppressHydrationWarning>
-      <head>
-        {/* Aktiviert Einblend-Animationen nur, wenn JavaScript läuft. */}
-        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
-      </head>
+    <html lang="de" className={`${lexend.variable} ${sourceSans.variable}`}>
       <body className="flex min-h-screen flex-col">
         <a href="#hauptinhalt" className="skip-link">
           Zum Hauptinhalt springen

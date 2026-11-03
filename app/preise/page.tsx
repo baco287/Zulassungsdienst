@@ -78,7 +78,11 @@ export default function PreisePage() {
                           <td className="px-5 py-4 text-right">
                             {s.price.serviceFee !== null ? (
                               <span className="font-display font-bold text-ink-900">
-                                {s.price.inclusive ? euro(s.price.serviceFee) : `ab ${euro(s.price.serviceFee)}`}
+                                {s.slug === "wunschkennzeichen"
+                                  ? `+ ${euro(s.price.serviceFee)}`
+                                  : s.price.inclusive
+                                    ? euro(s.price.serviceFee)
+                                    : `ab ${euro(s.price.serviceFee)}`}
                                 {!s.price.verified && (
                                   <span className="ml-1.5 align-middle rounded bg-accent-400/20 px-1.5 py-0.5 text-[10px] font-semibold uppercase text-accent-600">
                                     unverbindlich
@@ -106,7 +110,11 @@ export default function PreisePage() {
                               </span>
                             ) : s.price.inclusive ? (
                               <span className="font-semibold text-brand-700">
-                                {s.slug === "abmeldung" ? "entfällt (digital)" : "inklusive ✓"}
+                                {s.slug === "abmeldung"
+                                  ? "entfällt (digital)"
+                                  : s.slug === "adressaenderung"
+                                    ? "Versand inklusive, keine Schilder nötig"
+                                    : "inklusive ✓"}
                               </span>
                             ) : s.price.plateCostRange ? (
                               euroRange(s.price.plateCostRange)
@@ -141,8 +149,12 @@ export default function PreisePage() {
                     <dd className="font-medium">{euroRange(officialFees.counterRegistration)}</dd>
                   </div>
                   <div className="flex justify-between gap-4">
-                    <dt>Außerbetriebsetzung</dt>
-                    <dd className="font-medium">{euroRange(officialFees.deregistration)}</dd>
+                    <dt>Abmeldung online (i-Kfz)</dt>
+                    <dd className="font-medium">{euroRange(officialFees.deregistrationOnline)}</dd>
+                  </div>
+                  <div className="flex justify-between gap-4">
+                    <dt>Abmeldung am Schalter</dt>
+                    <dd className="font-medium">{euroRange(officialFees.deregistrationCounter)}</dd>
                   </div>
                   <div className="flex justify-between gap-4">
                     <dt>Wunschkennzeichen (amtlich)</dt>
@@ -154,7 +166,8 @@ export default function PreisePage() {
                   </div>
                 </dl>
                 <p className="mt-4 text-xs text-ink-500">
-                  Gebühren nach GebOSt; die genaue Höhe legt die jeweilige Zulassungsbehörde fest.
+                  Orientierungswerte aus veröffentlichten Angaben von Zulassungsbehörden; die genaue Höhe legt die
+                  jeweilige Behörde nach der Gebührenordnung (GebOSt) fest.
                   Wo immer möglich nutzen wir das günstigere Online-Verfahren.
                 </p>
               </div>

@@ -37,11 +37,6 @@ export default function ServicePriceGrid({ showExtras = true }: { showExtras?: b
                     </h3>
                     <p className="mt-1 text-sm text-ink-600">{subline[slug]}</p>
                   </div>
-                  {service.popular && (
-                    <span className="shrink-0 rounded-full bg-accent-400/20 px-2.5 py-1 text-xs font-semibold text-accent-600">
-                      Häufig gebucht
-                    </span>
-                  )}
                 </div>
                 <p className="mt-5 font-display text-4xl font-bold tracking-tight text-brand-700">
                   {euro(price.preis)}

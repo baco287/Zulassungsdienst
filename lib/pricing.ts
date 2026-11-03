@@ -2,10 +2,10 @@
  * Preis- und Gebührenlogik.
  *
  * EINZIGE PREISQUELLE ist config/preise.json. Alle Seiten (Startseite,
- * Preisseite, Leistungen, Städte, FAQ, Ratgeber, Rechner, OG-Bilder) und das
- * Bestellformular lesen ihre Beträge über dieses Modul. Das PHP-Backend liest
- * dieselbe Datei (beim Build nach public/api/_generated/ kopiert) und rechnet
- * den verbindlichen Endpreis serverseitig nach.
+ * Preisseite, Leistungen, Städte, FAQ, Ratgeber, Rechner, OG-Bilder), der
+ * Preisrechner und das Anfrageformular lesen ihre Beträge über dieses Modul.
+ * Es gibt derzeit kein Backend, das Preise nachrechnet – den verbindlichen
+ * Endpreis bestätigt das Team vor dem Start.
  *
  * Preis ändern: Betrag in config/preise.json anpassen, `stand` aktualisieren,
  * Freigabe setzen, bauen. Kein weiterer Code muss angefasst werden.
@@ -81,14 +81,26 @@ export const officialFees = {
   onlineRegistration: toRange(preise.amtlicheGebuehren.onlineZulassung),
   /** Vorgang am Schalter (falls online nicht möglich) */
   counterRegistration: toRange(preise.amtlicheGebuehren.schalterZulassung),
-  /** Außerbetriebsetzung */
-  deregistration: toRange(preise.amtlicheGebuehren.ausserbetriebsetzung),
+  /** Außerbetriebsetzung online (i-Kfz) */
+  deregistrationOnline: toRange(preise.amtlicheGebuehren.ausserbetriebsetzungOnline),
+  /** Außerbetriebsetzung am Schalter */
+  deregistrationCounter: toRange(preise.amtlicheGebuehren.ausserbetriebsetzungSchalter),
+  /** Außerbetriebsetzung gesamt (online bis Schalter) */
+  deregistration: [
+    preise.amtlicheGebuehren.ausserbetriebsetzungOnline[0],
+    preise.amtlicheGebuehren.ausserbetriebsetzungSchalter[1],
+  ] as [number, number],
   /** Wunschkennzeichen (Zuteilung + Reservierung) */
   customPlate: toRange(preise.amtlicheGebuehren.wunschkennzeichen),
 };
 
 /** Kennzeichenschilder (Paar), marktübliche Spanne – für Vergleichstabellen. */
 export const plateCosts: [number, number] = [20, 35];
+
+/** Addiert zwei Spannen, z. B. Gebühr + Schilder. */
+export function addRanges(a: [number, number], b: [number, number]): [number, number] {
+  return [Math.round((a[0] + b[0]) * 100) / 100, Math.round((a[1] + b[1]) * 100) / 100];
+}
 
 /** Unser Preis für ein Paar Kennzeichenschilder inkl. Prägung und Versand. */
 export const plateFee = PRICES.kennzeichen;
@@ -104,7 +116,7 @@ export const wunschkennzeichenHinweis =
     : `Die amtliche Gebühr für Reservierung und Zuteilung (${euro(officialFees.customPlate[0])}) ist in unserem Preis von ${P.wunschkennzeichen} enthalten.`;
 
 /** Hinweistext, der neben Preisangaben erscheint. */
-export const priceDisclaimer = `Alle Preise inkl. MwSt. Bei Komplettpreisen sind amtliche Gebühren und versicherter Versand bereits enthalten. Neue Kennzeichenschilder liefern wir auf Wunsch für ${P.kennzeichen} pro Paar mit – bei Kennzeichenmitnahme oder eigenem Schildermacher entfällt das. Sonderfälle (z. B. Sondergrößen, Express, auswärtige Behörden) weisen wir vorab transparent aus. Den verbindlichen Endpreis sehen Sie immer vor der Bestellung.`;
+export const priceDisclaimer = `Alle Preise inkl. MwSt. Bei Komplettpreisen sind amtliche Gebühren und versicherter Versand bereits enthalten. Neue Kennzeichenschilder liefern wir auf Wunsch für ${P.kennzeichen} pro Paar mit – bei Kennzeichenmitnahme oder eigenem Schildermacher entfällt das. Sonderfälle (z. B. Sondergrößen, Express, auswärtige Behörden) weisen wir vorab transparent aus – Sie erhalten immer eine verbindliche Festpreis-Bestätigung, bevor wir starten.`;
 
 /* ─────────────────────────── Bestellpreis ─────────────────────────── */
 
@@ -141,8 +153,10 @@ export const BESTELLBARE_LEISTUNGEN = Object.keys(preise.leistungen) as Zulassun
 const cents = (euroValue: number) => Math.round(euroValue * 100);
 
 /**
- * Berechnet Positionen und Endpreis. Muss exakt der Logik in
- * public/api/lib/pricing.php entsprechen (siehe tests/pricing.test.mjs).
+ * Berechnet Positionen und Endpreis für den Preisrechner. Die enthaltene
+ * MwSt. wird aus dem Gesamtbetrag herausgerechnet; ob amtliche Gebühren als
+ * durchlaufende Posten ohne MwSt. auszuweisen sind, klärt die Steuerberatung
+ * (deshalb zeigt die Oberfläche keinen MwSt.-Betrag an).
  */
 export function calculateOrderPrice(input: OrderPriceInput, labels?: Record<string, string>): OrderPrice | null {
   const leistung = leistungsPreis(input.leistung);
