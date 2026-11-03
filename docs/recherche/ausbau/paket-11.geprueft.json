@@ -1,0 +1,946 @@
+[
+  {
+    "slug": "landkreis-weissenburg-gunzenhausen",
+    "stadt": "Landkreis Weißenburg-Gunzenhausen",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Weißenburg-Gunzenhausen – Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.landkreis-wug.de/mobilitaet-fahrzeug-und-strassenwesen/kfz-zulassung/",
+    "traeger": "Landkreis Weißenburg-Gunzenhausen",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassung Weißenburg (Landratsamt, Gebäude B)",
+        "strasse": "Bahnhofstraße 2 (Gebäude B), Zugang über Friedrich-Ebert-Straße 16",
+        "plz": "91781",
+        "ort": "Weißenburg i. Bay.",
+        "quelle": "https://www.landkreis-wug.de/poi/kfz-zulassung_weissenburg-nur-41729/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassung Gunzenhausen",
+        "strasse": "Sonnenstraße 37b",
+        "plz": "91710",
+        "ort": "Gunzenhausen",
+        "quelle": "https://www.landkreis-wug.de/poi/kfz-zulassung_gunzenhausen-nur-41727/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-wug.de/mobilitaet-fahrzeug-und-strassenwesen/kfz-zulassung/",
+      "quelle": "https://www.landkreis-wug.de/mobilitaet-fahrzeug-und-strassenwesen/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/wug/",
+      "quelle": "https://www.landkreis-wug.de/mobilitaet-fahrzeug-und-strassenwesen/mobilitaet-online-terminvereinbarung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerserviceportal.de/bayern/lkrweissenburggunzenhausen/bsp_ikfz_antragstellung",
+      "quelle": "https://www.landkreis-wug.de/mobilitaet-fahrzeug-und-strassenwesen/kfz-zulassung/allgemeine-hinweise/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag – Freitag ausschließlich nach vorheriger Terminvereinbarung"
+      ],
+      "hinweis": "Nur mit Termin: Die Kfz-Zulassungsstellen Weißenburg und Gunzenhausen sind ausschließlich nach vorheriger Terminvereinbarung für den Publikumsverkehr geöffnet; bitte nicht ohne Termin erscheinen.",
+      "quelle": "https://www.landkreis-wug.de/mobilitaet-fahrzeug-und-strassenwesen/kfz-zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Landratsamt Weißenburg-Gunzenhausen mit den Kfz-Zulassungsstellen Weißenburg i. Bay. und Gunzenhausen für Halter im Landkreis Weißenburg-Gunzenhausen. Zulassungsvorgänge werden in beiden Stellen ausschließlich nach vorheriger Terminvereinbarung bearbeitet.",
+      "quelle": "https://www.landkreis-wug.de/mobilitaet-fahrzeug-und-strassenwesen/kfz-zulassung/allgemeine-hinweise/"
+    },
+    "kuerzel": [
+      {
+        "code": "WUG",
+        "bedeutung": "Weißenburg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GUN",
+        "bedeutung": "Gunzenhausen (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Zwei Zulassungsstellen (Weißenburg i. Bay. und Gunzenhausen), beide nur mit vorheriger Online-Terminvereinbarung.",
+        "quelle": "https://www.landkreis-wug.de/mobilitaet-fahrzeug-und-strassenwesen/kfz-zulassung/"
+      },
+      {
+        "text": "Brückentage, die Tage um Ostern, Pfingsten, Weihnachten und Silvester sowie die Schulferien sind besucherintensiv; die Wartezeit auf einen freien Termin kann sich dann verlängern.",
+        "quelle": "https://www.landkreis-wug.de/mobilitaet-fahrzeug-und-strassenwesen/kfz-zulassung/allgemeine-hinweise/"
+      },
+      {
+        "text": "Nicht benötigte Termine über den Storno-Link in der Bestätigungsmail oder per E-Mail an zulassung@landkreis-wug.de absagen.",
+        "quelle": "https://www.landkreis-wug.de/mobilitaet-fahrzeug-und-strassenwesen/mobilitaet-online-terminvereinbarung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-aschaffenburg",
+    "stadt": "Landkreis Aschaffenburg",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Aschaffenburg – Zulassungs- und Fahrerlaubnisbehörde (Fachbereich 43 – Verkehrswesen), Dienststellen Alzenau und Mainaschaff",
+    "behoerdeQuelle": "https://www.bayernportal.de/dokumente/behoerde/6936762791511/adressen",
+    "traeger": "Landkreis Aschaffenburg",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Aschaffenburg – Dienststelle Alzenau (Kfz-Zulassungswesen)",
+        "strasse": "Emmy-Noether-Straße 3",
+        "plz": "63755",
+        "ort": "Alzenau",
+        "quelle": "https://www.bayernportal.de/dokumente/behoerde/6936762791511/adressen"
+      },
+      {
+        "bezeichnung": "Landratsamt Aschaffenburg – Dienststelle Mainaschaff (Kfz-Zulassungswesen)",
+        "strasse": "Am Glockenturm 6",
+        "plz": "63814",
+        "ort": "Mainaschaff",
+        "quelle": "https://www.bayernportal.de/dokumente/behoerde/6936762791511/adressen"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-aschaffenburg.de/Service/KFZ-Zulassungswesen.php?object=tx%2C3984.34418.1",
+      "quelle": "https://www.landkreis-aschaffenburg.de/Service/KFZ-Zulassungswesen.php?object=tx%2C3984.34418.1"
+    },
+    "terminUrl": {
+      "url": "https://www.landkreis-aschaffenburg.de/Service-und-Verwaltung/B%C3%BCrgerservice/Online-Terminvereinbarung/",
+      "quelle": "https://www.landkreis-aschaffenburg.de/Service/KFZ-Zulassungswesen.php?object=tx%2C3984.34418.1"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkraschaffenburg/bsp_ikfz_antragstellung/#/",
+      "quelle": "https://www.landkreis-aschaffenburg.de/Service/KFZ-Zulassungswesen.php?object=tx%2C3984.34418.1"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Alzenau und Mainaschaff: Montag bis Freitag 7:00 Uhr bis 12:00 Uhr",
+        "Alzenau und Mainaschaff: Donnerstag zusätzlich 14:00 Uhr bis 17:00 Uhr"
+      ],
+      "hinweis": "Nur mit Termin: Für Anliegen im Führerschein- und Kfz-Zulassungswesen ist zwingend eine vorherige Terminvereinbarung erforderlich (getrennte Online-Terminbuchung für Alzenau und Mainaschaff).",
+      "quelle": "https://www.landkreis-aschaffenburg.de/Service/%C3%96ffnungszeiten.php?object=tx%2C3984.35486.1"
+    },
+    "zustaendigkeit": {
+      "text": "Landratsamt Aschaffenburg (Zulassungsstellen Alzenau und Mainaschaff) für Halter im Landkreis Aschaffenburg. Achtung: Die Stadt Aschaffenburg (ebenfalls Kennzeichen AB) hat eine eigene Zulassungsbehörde im Bürgerbüro der Stadt; Einwohner der Stadt Aschaffenburg gehen dorthin, nicht zum Landratsamt.",
+      "quelle": "https://www.aschaffenburg.de/Leben-in-Aschaffenburg/KFZ-Stra%C3%9Fe-und-Verkehr/KFZ-F%C3%BChrerschein/KFZ-Zulassung-Wunschkennzeichen"
+    },
+    "kuerzel": [
+      {
+        "code": "AB",
+        "bedeutung": "Aschaffenburg (auch Stadt Aschaffenburg)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ALZ",
+        "bedeutung": "Alzenau (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Ausweisdokumente sind grundsätzlich im Original vorzulegen.",
+        "quelle": "https://www.landkreis-aschaffenburg.de/Service/KFZ-Zulassungswesen.php?object=tx%2C3984.34418.1"
+      },
+      {
+        "text": "Für eine Adressänderung innerhalb des Landkreises sowie für eine Umschreibung von außerhalb ohne Halterwechsel unter Beibehaltung des Kennzeichens wird die Zulassungsbescheinigung Teil II nicht benötigt.",
+        "quelle": "https://www.landkreis-aschaffenburg.de/Service/KFZ-Zulassungswesen.php?object=tx%2C3984.34418.1"
+      },
+      {
+        "text": "Bei Verlust der Zulassungsbescheinigung Teil II wird diese aufgeboten; eine neue gibt es erst nach Freigabe durch das Kraftfahrt-Bundesamt (etwa vier bis sechs Wochen nach Beantragung).",
+        "quelle": "https://www.landkreis-aschaffenburg.de/Service/KFZ-Zulassungswesen.php?object=tx%2C3984.34418.1"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-bad-kissingen",
+    "stadt": "Landkreis Bad Kissingen",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Bad Kissingen – Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.landkreis-badkissingen.de/buerger--politik/buergerservice/fachbereiche-und-abteilungen/mobilitaet--verkehr/auto--verkehr/kfz-zulassung/",
+    "traeger": "Landkreis Bad Kissingen",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsbehörde Bad Kissingen",
+        "strasse": "Münchner Straße 5",
+        "plz": "97688",
+        "ort": "Bad Kissingen",
+        "quelle": "https://www.landkreis-badkissingen.de/buerger--politik/buergerservice/fachbereiche-und-abteilungen/mobilitaet--verkehr/auto--verkehr/termin_vereinbaren/13656.Termin-vereinbaren.html"
+      },
+      {
+        "bezeichnung": "Zulassungsbehörde Bad Brückenau",
+        "strasse": "Sinnaustraße 14",
+        "plz": "97769",
+        "ort": "Bad Brückenau",
+        "quelle": "https://www.landkreis-badkissingen.de/buerger--politik/buergerservice/fachbereiche-und-abteilungen/mobilitaet--verkehr/auto--verkehr/termin_vereinbaren/13656.Termin-vereinbaren.html"
+      },
+      {
+        "bezeichnung": "Zulassungsbehörde Hammelburg",
+        "strasse": "Friedhofstraße 13",
+        "plz": "97762",
+        "ort": "Hammelburg",
+        "quelle": "https://www.landkreis-badkissingen.de/buerger--politik/buergerservice/fachbereiche-und-abteilungen/mobilitaet--verkehr/auto--verkehr/termin_vereinbaren/13656.Termin-vereinbaren.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-badkissingen.de/buerger--politik/buergerservice/fachbereiche-und-abteilungen/mobilitaet--verkehr/auto--verkehr/kfz-zulassung/",
+      "quelle": "https://www.landkreis-badkissingen.de/buerger--politik/buergerservice/fachbereiche-und-abteilungen/mobilitaet--verkehr/auto--verkehr/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://lrakg.flexappoint.de/#/",
+      "quelle": "https://www.landkreis-badkissingen.de/buerger--politik/buergerservice/fachbereiche-und-abteilungen/mobilitaet--verkehr/auto--verkehr/kfz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrbadkissingen",
+      "quelle": "https://www.landkreis-badkissingen.de/buerger--politik/buergerservice/fachbereiche-und-abteilungen/mobilitaet--verkehr/auto--verkehr/kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Bad Kissingen: Mo bis Fr 8–12 Uhr, Mo u. Di 14–16 Uhr, Do 14–17 Uhr",
+        "Bad Brückenau: Mo u. Mi 8–12 Uhr u. 13.15–16 Uhr, Do 8–12 Uhr",
+        "Hammelburg: Di, Do u. Fr 8–12 Uhr, Di 13.15–16 Uhr, Do 13.15–17 Uhr"
+      ],
+      "hinweis": "Nur mit Termin: Persönliche Vorsprachen in der Zulassungsbehörde sind ausschließlich mit Termin möglich.",
+      "quelle": "https://www.landkreis-badkissingen.de/buerger--politik/buergerservice/fachbereiche-und-abteilungen/mobilitaet--verkehr/auto--verkehr/termin_vereinbaren/13656.Termin-vereinbaren.html"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsbehörde des Landratsamts Bad Kissingen (Standorte Bad Kissingen, Bad Brückenau und Hammelburg) für den Landkreis Bad Kissingen. Örtlich zuständig ist die Zulassungsbehörde des Wohnortes (Hauptwohnung), bei juristischen Personen, Handelsunternehmen oder Behörden die des Sitzes bzw. der Niederlassung oder Dienststelle.",
+      "quelle": "https://www.landkreis-badkissingen.de/buerger--politik/buergerservice/fachbereiche-und-abteilungen/mobilitaet--verkehr/auto--verkehr/kfz-zulassung/oertliche-zustaendigkeit/"
+    },
+    "kuerzel": [
+      {
+        "code": "KG",
+        "bedeutung": "Bad Kissingen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BRK",
+        "bedeutung": "Bad Brückenau (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "HAB",
+        "bedeutung": "Hammelburg (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Bei der Online-Terminbuchung können maximal fünf Anliegen gewählt werden; die Bestätigungsmail enthält die benötigten Unterlagen und die Aufrufnummer.",
+        "quelle": "https://www.landkreis-badkissingen.de/buerger--politik/buergerservice/fachbereiche-und-abteilungen/mobilitaet--verkehr/auto--verkehr/termin_vereinbaren/13656.Termin-vereinbaren.html"
+      },
+      {
+        "text": "Bezahlvorgänge bitte vorrangig bargeldlos mit EC-Karte erledigen.",
+        "quelle": "https://www.landkreis-badkissingen.de/buerger--politik/buergerservice/fachbereiche-und-abteilungen/mobilitaet--verkehr/auto--verkehr/termin_vereinbaren/13656.Termin-vereinbaren.html"
+      },
+      {
+        "text": "Ausnahmsweise ist eine telefonische Terminvereinbarung während der Öffnungszeiten des Landratsamts unter 0971/801-7200 möglich.",
+        "quelle": "https://www.landkreis-badkissingen.de/buerger--politik/buergerservice/fachbereiche-und-abteilungen/mobilitaet--verkehr/auto--verkehr/kfz-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-hassberge",
+    "stadt": "Landkreis Haßberge",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Haßberge – Straßenverkehrsamt, Zulassungswesen",
+    "behoerdeQuelle": "https://www.hassberge.de/dienstleistungen/strassenverkehrsamt/zulassungswesen.html",
+    "traeger": "Landkreis Haßberge",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle – Hauptstelle Haßfurt",
+        "strasse": "Am Ziegelbrunn 36",
+        "plz": "97437",
+        "ort": "Haßfurt",
+        "quelle": "https://www.hassberge.de/dienstleistungen/strassenverkehrsamt/zulassungswesen/kontakte.html"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle – Außenstelle Ebern",
+        "strasse": "Rittergasse 3",
+        "plz": "96106",
+        "ort": "Ebern",
+        "quelle": "https://www.hassberge.de/dienstleistungen/strassenverkehrsamt/zulassungswesen/kontakte.html"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle – Außenstelle Hofheim i. Ufr.",
+        "strasse": "Robert-Koch-Straße 2",
+        "plz": "97461",
+        "ort": "Hofheim i. Ufr.",
+        "quelle": "https://www.hassberge.de/dienstleistungen/strassenverkehrsamt/zulassungswesen/kontakte.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.hassberge.de/dienstleistungen/strassenverkehrsamt/zulassungswesen.html",
+      "quelle": "https://www.hassberge.de/dienstleistungen/strassenverkehrsamt/zulassungswesen.html"
+    },
+    "terminUrl": {
+      "url": "https://terminbuchung.hassberge.de/select2?md=5",
+      "quelle": "https://www.hassberge.de/dienstleistungen/strassenverkehrsamt/zulassungswesen.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.hassberge.de/formulare/ozg-leistungen/ikfz-service.html",
+      "quelle": "https://www.hassberge.de/dienstleistungen/strassenverkehrsamt/zulassungswesen/internetbasierte-zulassung/abmeldung.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Hauptstelle Haßfurt: Mo – Fr 08:30 – 12:30, Mo + Di 14:00 – 16:00, Do 14:00 – 17:00",
+        "Außenstelle Ebern: Mo – Fr 08:30 – 12:00, Mo + Di 14:00 – 16:00, Do 14:00 – 17:00",
+        "Außenstelle Hofheim i. Ufr.: Mo – Fr 08:30 – 12:00"
+      ],
+      "hinweis": "Nur mit Termin: Für den Besuch in der Zulassungsstelle ist eine vorherige Terminreservierung erforderlich (vorrangig online, bei Problemen telefonisch).",
+      "quelle": "https://www.hassberge.de/dienstleistungen/strassenverkehrsamt/zulassungswesen/kontakte.html"
+    },
+    "zustaendigkeit": {
+      "text": "Landratsamt Haßberge für Halter im Landkreis Haßberge. Die Hauptstelle Haßfurt und die Außenstellen Ebern und Hofheim i. Ufr. sind frei wählbar; der Wohnort innerhalb des Landkreises spielt dafür keine Rolle.",
+      "quelle": "https://www.hassberge.de/dienstleistungen/strassenverkehrsamt/zulassungswesen.html"
+    },
+    "kuerzel": [
+      {
+        "code": "HAS",
+        "bedeutung": "Haßfurt",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "EBN",
+        "bedeutung": "Ebern (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GEO",
+        "bedeutung": "Gerolzhofen (Altkennzeichen, wieder erhältlich; wird auch im Landkreis Schweinfurt vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "HOH",
+        "bedeutung": "Hofheim in Unterfranken (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Zulassungsstelle frei wählbar: Hauptstelle Haßfurt oder Außenstellen Ebern und Hofheim i. Ufr., unabhängig vom Wohnort im Landkreis.",
+        "quelle": "https://www.hassberge.de/dienstleistungen/strassenverkehrsamt/zulassungswesen.html"
+      },
+      {
+        "text": "Online-Abfrage, ob der Fahrzeugbrief (Zulassungsbescheinigung Teil II) bereits bei der Zulassungsstelle vorliegt.",
+        "quelle": "https://www.hassberge.de/dienstleistungen/strassenverkehrsamt/zulassungswesen.html"
+      },
+      {
+        "text": "Bei Fragen zur Kfz-Steuer ist das Hauptzollamt Schweinfurt zuständig.",
+        "quelle": "https://www.hassberge.de/dienstleistungen/strassenverkehrsamt/zulassungswesen/kontakte.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-kitzingen",
+    "stadt": "Landkreis Kitzingen",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Kitzingen – Kfz-Zulassungsstelle (Verkehrswesen)",
+    "behoerdeQuelle": "https://www.kitzingen.de/digitales-buergerbuero/fuehrerscheinstelle-kfz-zulassung-strassenverkehrsbehoerde/infos-rund-um-die-kfz-zulassung/",
+    "traeger": "Landkreis Kitzingen",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle im Landratsamt Kitzingen",
+        "strasse": "Kaiserstraße 4",
+        "plz": "97318",
+        "ort": "Kitzingen",
+        "quelle": "https://www.kitzingen.de/digitales-buergerbuero/fuehrerscheinstelle-kfz-zulassung-strassenverkehrsbehoerde/infos-rund-um-die-kfz-zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.kitzingen.de/digitales-buergerbuero/fuehrerscheinstelle-kfz-zulassung-strassenverkehrsbehoerde/infos-rund-um-die-kfz-zulassung/",
+      "quelle": "https://www.kitzingen.de/digitales-buergerbuero/fuehrerscheinstelle-kfz-zulassung-strassenverkehrsbehoerde/infos-rund-um-die-kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termin.kitzingen.de/kfz",
+      "quelle": "https://www.kitzingen.de/digitales-buergerbuero/fuehrerscheinstelle-kfz-zulassung-strassenverkehrsbehoerde/infos-rund-um-die-kfz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrkitzingen/",
+      "quelle": "https://www.kitzingen.de/digitales-buergerbuero/fuehrerscheinstelle-kfz-zulassung-strassenverkehrsbehoerde/infos-rund-um-die-kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag – Freitag 07:30 – 13:00 h",
+        "Montag, Dienstag 14:00 – 15:30 h",
+        "Donnerstag 14:00 – 17:00 h",
+        "Bon-Ausgabe: Montag – Freitag 07:15 – 12:30 h, Montag, Dienstag 13:30 – 15:00 h, Donnerstag 13:30 – 16:30 h"
+      ],
+      "hinweis": "Termin empfohlen, aber nicht Pflicht: Online-Termin möglich; Spontanbesuche mit Bon-Ausgabe bleiben möglich (längere Wartezeiten). Bei starkem Andrang kann bis zu einer Stunde vorher Annahmeschluss sein.",
+      "quelle": "https://www.kitzingen.de/digitales-buergerbuero/fuehrerscheinstelle-kfz-zulassung-strassenverkehrsbehoerde/infos-rund-um-die-kfz-zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle des Landratsamts Kitzingen (Kaiserstraße 4, Kitzingen) für Halter im Landkreis Kitzingen.",
+      "quelle": "https://www.kitzingen.de/digitales-buergerbuero/fuehrerscheinstelle-kfz-zulassung-strassenverkehrsbehoerde/infos-rund-um-die-kfz-zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "KT",
+        "bedeutung": "Kitzingen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Spontanbesuche ohne Termin sind mit Bon aus dem Wartebereich möglich; Kunden mit Online-Termin werden jedoch bevorzugt bedient.",
+        "quelle": "https://www.kitzingen.de/buergerservice/aktuelles/aktuelles-2025/online-terminvereinbarung-kfz-zulassung/"
+      },
+      {
+        "text": "Online-Vorgänge sind günstiger, z. B. Neuzulassung 30,00 Euro am Landratsamt gegenüber 20,05 Euro online.",
+        "quelle": "https://www.kitzingen.de/digitales-buergerbuero/fuehrerscheinstelle-kfz-zulassung-strassenverkehrsbehoerde/infos-rund-um-die-kfz-zulassung/"
+      },
+      {
+        "text": "Die aktuellen Wartezeiten der Kfz-Zulassung sind online einsehbar.",
+        "quelle": "https://www.kitzingen.de/digitales-buergerbuero/fuehrerscheinstelle-kfz-zulassung-strassenverkehrsbehoerde/infos-rund-um-die-kfz-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-main-spessart",
+    "stadt": "Landkreis Main-Spessart",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Main-Spessart – Kraftfahrzeugzulassung (Zulassungsbehörden Karlstadt, Lohr und Marktheidenfeld)",
+    "behoerdeQuelle": "https://www.main-spessart.de/buergerservice/sachgebiete-fachbereiche/index.html?catID=180",
+    "traeger": "Landkreis Main-Spessart",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsbehörde Karlstadt",
+        "strasse": "Marktplatz 8",
+        "plz": "97753",
+        "ort": "Karlstadt",
+        "quelle": "https://www.main-spessart.de/buergerservice/sachgebiete-fachbereiche/index.html?catID=180"
+      },
+      {
+        "bezeichnung": "Zulassungsbehörde Lohr",
+        "strasse": "Schlossplatz 2",
+        "plz": "97816",
+        "ort": "Lohr a.Main",
+        "quelle": "https://www.main-spessart.de/buergerservice/sachgebiete-fachbereiche/index.html?catID=180"
+      },
+      {
+        "bezeichnung": "Zulassungsbehörde Marktheidenfeld",
+        "strasse": "Petzoltstraße 21",
+        "plz": "97828",
+        "ort": "Marktheidenfeld",
+        "quelle": "https://www.main-spessart.de/buergerservice/sachgebiete-fachbereiche/index.html?catID=180"
+      }
+    ],
+    "website": {
+      "url": "https://www.main-spessart.de/buergerservice/sachgebiete-fachbereiche/index.html?catID=180",
+      "quelle": "https://www.main-spessart.de/buergerservice/sachgebiete-fachbereiche/index.html?catID=180"
+    },
+    "terminUrl": {
+      "url": "https://main-spessart.termine-reservieren.online/",
+      "quelle": "https://www.main-spessart.de/buergerservice/onlinedienste/index.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrmainspessart/bsp_ikfz_antragstellung/",
+      "quelle": "https://www.main-spessart.de/buergerservice/onlinedienste/index.html?page_media=1"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Karlstadt, Lohr und Marktheidenfeld: Montag bis Freitag 07:30 – 10:30 Uhr",
+        "Montag und Dienstag 13:00 – 15:00 Uhr",
+        "Donnerstag 13:00 – 16:00 Uhr"
+      ],
+      "hinweis": "Online-Terminbuchung über die Terminvergabe Verkehrswesen möglich, um längere Wartezeiten vor Ort zu vermeiden.",
+      "quelle": "https://www.main-spessart.de/buergerservice/sachgebiete-fachbereiche/index.html?catID=180"
+    },
+    "zustaendigkeit": {
+      "text": "Landratsamt Main-Spessart mit den Zulassungsbehörden Karlstadt, Lohr a.Main und Marktheidenfeld für Halter im Landkreis Main-Spessart.",
+      "quelle": "https://www.main-spessart.de/buergerservice/sachgebiete-fachbereiche/index.html?catID=180"
+    },
+    "kuerzel": [
+      {
+        "code": "MSP",
+        "bedeutung": "Main-Spessart",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Drei Zulassungsstellen (Karlstadt, Lohr a.Main, Marktheidenfeld) mit identischen Öffnungszeiten.",
+        "quelle": "https://www.main-spessart.de/buergerservice/sachgebiete-fachbereiche/index.html?catID=180"
+      },
+      {
+        "text": "Online-Auskunft, ob der Fahrzeugbrief (Zulassungsbescheinigung Teil II) eines finanzierten oder geleasten Fahrzeugs bereits bei der Zulassungsbehörde vorliegt.",
+        "quelle": "https://www.main-spessart.de/buergerservice/onlinedienste/index.html?page_media=1"
+      },
+      {
+        "text": "Wunschkennzeichen können vorab online reserviert werden.",
+        "quelle": "https://www.main-spessart.de/buergerservice/onlinedienste/index.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-miltenberg",
+    "stadt": "Landkreis Miltenberg",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Miltenberg – Kraftfahrzeugzulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-miltenberg.de/themen/kraftfahrzeugzulassung.html",
+    "traeger": "Landkreis Miltenberg",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Miltenberg (Landratsamt)",
+        "strasse": "Brückenstraße 2",
+        "plz": "63897",
+        "ort": "Miltenberg",
+        "quelle": "https://www.landkreis-miltenberg.de/themen/kraftfahrzeugzulassung.html?file=files/Landratsamt/Themen/Kraftfahrzeugzulassungsstelle/Formulare/F_KfzZ_Vollmacht_Zulassung.pdf"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-miltenberg.de/themen/kraftfahrzeugzulassung.html",
+      "quelle": "https://www.landkreis-miltenberg.de/themen/kraftfahrzeugzulassung.html"
+    },
+    "terminUrl": {
+      "url": "https://cqm.cleverq.de/public/appointments/miltenberg_kfz/index.html?lang=de",
+      "quelle": "https://www.landkreis-miltenberg.de/themen/kraftfahrzeugzulassung.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrmiltenberg/bsp_ikfz_antragstellung/",
+      "quelle": "https://www.landkreis-miltenberg.de/themen/kraftfahrzeugzulassung.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag: 8:00 – 12:30 Uhr, 14:00 – 16:00 Uhr",
+        "Dienstag: 8:00 – 12:30 Uhr, 14:00 – 16:00 Uhr",
+        "Mittwoch: 8:00 – 12:30 Uhr",
+        "Donnerstag: 8:00 – 12:30 Uhr, 14:00 – 18:00 Uhr",
+        "Freitag: 8:00 – 12:30 Uhr",
+        "Ohne Termin (Miltenberg und Obernburg): Mo 8:00 – 12:00, Di 8:00 – 12:00, Mi 8:00 – 10:00, Do 8:00 – 12:00, Fr 8:00 – 10:00 Uhr"
+      ],
+      "hinweis": "Online-Termin empfohlen (für sämtliche Vorgänge buchbar). Ohne Termin nur zu den genannten Zeiten, mit Wartezeiten und maximal zwei Zulassungen und zwei Abmeldungen.",
+      "quelle": "https://www.landkreis-miltenberg.de/aktuell/oeffnungszeiten.html"
+    },
+    "zustaendigkeit": {
+      "text": "Landratsamt Miltenberg mit den Zulassungsstellen Miltenberg und Obernburg für Halter im Landkreis Miltenberg; Termine können an beiden Standorten gebucht werden.",
+      "quelle": "https://www.landkreis-miltenberg.de/themen/kraftfahrzeugzulassung.html"
+    },
+    "kuerzel": [
+      {
+        "code": "MIL",
+        "bedeutung": "Miltenberg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "OBB",
+        "bedeutung": "Obernburg am Main (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Getrennte Online-Terminbuchung für Miltenberg und Obernburg; die Schalterkapazitäten werden täglich vormittags aktualisiert.",
+        "quelle": "https://www.landkreis-miltenberg.de/themen/kraftfahrzeugzulassung.html"
+      },
+      {
+        "text": "Ohne Termin sind maximal zwei Zulassungen und zwei Abmeldungen möglich; bei Sonder- und Importfahrzeugen jeweils nur eine Zulassung.",
+        "quelle": "https://www.landkreis-miltenberg.de/themen/kraftfahrzeugzulassung.html"
+      },
+      {
+        "text": "Bei Verlust eines Dokuments oder Kennzeichens muss der Fahrzeughalter persönlich mit Personalausweis eine Verlusterklärung abgeben.",
+        "quelle": "https://www.landkreis-miltenberg.de/themen/kraftfahrzeugzulassung.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "standorte[1].strasse",
+      "standorte[1].plz"
+    ]
+  },
+  {
+    "slug": "landkreis-rhoen-grabfeld",
+    "stadt": "Landkreis Rhön-Grabfeld",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Rhön-Grabfeld – Zulassungsstelle (Sachgebiet 3.3 – Verkehrswesen)",
+    "behoerdeQuelle": "https://www.bayernportal.de/dokumente/behoerde/6463367044406",
+    "traeger": "Landkreis Rhön-Grabfeld",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Bad Neustadt (Außenstelle Siemensstraße, Sachgebiet Verkehrswesen)",
+        "strasse": "Siemensstraße 10",
+        "plz": "97616",
+        "ort": "Bad Neustadt a.d.Saale",
+        "quelle": "https://www.bayernportal.de/dokumente/behoerde/6463367044406"
+      }
+    ],
+    "website": {
+      "url": "https://www.rhoen-grabfeld.de/themen/mobilitaet/zulassung",
+      "quelle": "https://www.rhoen-grabfeld.de/themen/mobilitaet/zulassung"
+    },
+    "terminUrl": null,
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrrhoengrabfeld/bsp_ikfz_antragstellung/",
+      "quelle": "https://www.bayernportal.de/dokumente/leistung/3888675461?plz=97616&behoerde=26220172442&gemeinde=921967646697"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Bad Neustadt (Siemensstraße 10): Mo 08:00 – 12:00 Uhr",
+        "Di 08:00 – 12:00 Uhr und 13:30 – 15:30 Uhr",
+        "Mi 08:00 – 12:00 Uhr",
+        "Do 08:00 – 12:00 Uhr und 13:30 – 15:30 Uhr",
+        "Fr 08:00 – 12:30 Uhr"
+      ],
+      "hinweis": "Gilt für den Standort Bad Neustadt. Wer Wartezeiten vermeiden möchte, kommt laut Landratsamt am besten gleich bei Öffnung.",
+      "quelle": "https://www.bayernportal.de/dokumente/behoerde/6463367044406/adressen"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsstelle des Landratsamts Rhön-Grabfeld mit drei Standorten in Bad Neustadt, Mellrichstadt und Bad Königshofen i. Gr. für Halter im Landkreis Rhön-Grabfeld.",
+      "quelle": "https://www.rhoen-grabfeld.de/themen/mobilitaet/zulassung"
+    },
+    "kuerzel": [
+      {
+        "code": "NES",
+        "bedeutung": "Bad Neustadt an der Saale",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "KÖN",
+        "bedeutung": "Bad Königshofen im Grabfeld (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MET",
+        "bedeutung": "Mellrichstadt (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Vorabprüfung bei komplexen Zulassungen (z. B. Einzelgenehmigung nach § 13 EG-FGV, Bundeswehr-Fahrzeuge, Importe aus China): Unterlagen vorab per E-Mail an kfz@rhoen-grabfeld.de senden, Abholung nach Terminvereinbarung.",
+        "quelle": "https://www.rhoen-grabfeld.de/themen/mobilitaet/zulassung"
+      },
+      {
+        "text": "Online-Zulassung, -Abmeldung, Neuzulassung, Umschreibung und Adressänderung über das Bürgerservice-Portal; die neuen Unterlagen werden per Post zugestellt.",
+        "quelle": "https://www.rhoen-grabfeld.de/themen/mobilitaet/zulassung"
+      },
+      {
+        "text": "Wunschkennzeichen über die Seite des Landkreises reservieren; laut Landratsamt verlangen Drittanbieter eine zusätzliche Gebühr.",
+        "quelle": "https://www.rhoen-grabfeld.de/themen/mobilitaet/zulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "standorte[1].strasse",
+      "standorte[1].plz",
+      "standorte[2].strasse",
+      "standorte[2].plz",
+      "terminUrl",
+      "oeffnungszeiten (Mellrichstadt, Bad Königshofen)"
+    ]
+  },
+  {
+    "slug": "landkreis-schweinfurt",
+    "stadt": "Landkreis Schweinfurt",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Schweinfurt – Zulassungsbehörde (31.3) im Straßenverkehrsamt",
+    "behoerdeQuelle": "https://www.landkreis-schweinfurt.de/landratsamt/sachgebiete-arbeitsbereiche/organisationseinheit/detail/zulassungsbehoerde-313-37",
+    "traeger": "Landkreis Schweinfurt",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle im Landratsamt Schweinfurt",
+        "strasse": "Schrammstraße 1",
+        "plz": "97421",
+        "ort": "Schweinfurt",
+        "quelle": "https://www.landkreis-schweinfurt.de/landratsamt/sachgebiete-arbeitsbereiche/organisationseinheit/detail/zulassungsbehoerde-313-37"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-schweinfurt.de/landratsamt/sachgebiete-arbeitsbereiche/organisationseinheit/detail/zulassungsbehoerde-313-37",
+      "quelle": "https://www.landkreis-schweinfurt.de/landratsamt/sachgebiete-arbeitsbereiche/organisationseinheit/detail/zulassungsbehoerde-313-37"
+    },
+    "terminUrl": {
+      "url": "https://www.landkreis-schweinfurt.de/zulassungstermin",
+      "quelle": "https://www.landkreis-schweinfurt.de/landratsamt/sachgebiete-arbeitsbereiche/organisationseinheit/detail/zulassungsbehoerde-313-37"
+    },
+    "ikfzUrl": {
+      "url": "https://www.landkreis-schweinfurt.de/ozg-leistungen/ikfz-service",
+      "quelle": "https://www.landkreis-schweinfurt.de/landratsamt/serviceleistungen-informationen/details/detail/terminbuchung-fuer-die-zulassungsstelle-1897"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag 7.30 – 13.00 Uhr",
+        "Dienstag 7.30 – 16.00 Uhr",
+        "Mittwoch 7.30 – 13.00 Uhr",
+        "Donnerstag 7.30 – 17.00 Uhr",
+        "Freitag 7.30 – 13.00 Uhr"
+      ],
+      "hinweis": "Nur mit Termin: Für den Besuch der Zulassungsstelle ist eine vorherige Terminreservierung erforderlich (vorrangig online).",
+      "quelle": "https://www.landkreis-schweinfurt.de/landratsamt/sachgebiete-arbeitsbereiche/organisationseinheit/detail/zulassungsbehoerde-313-37"
+    },
+    "zustaendigkeit": {
+      "text": "Landratsamt Schweinfurt (Zulassungsstelle Schrammstraße 1, Schweinfurt) für Halter im Landkreis Schweinfurt. Achtung: Die Stadt Schweinfurt (ebenfalls Kennzeichen SW) hat eine eigene Kfz-Zulassungsstelle; Einwohner der Stadt Schweinfurt sind dort zuständig, nicht beim Landratsamt.",
+      "quelle": "https://www.schweinfurt.de/rathaus-politik/aemter-services/kfzfuehrerschein"
+    },
+    "kuerzel": [
+      {
+        "code": "SW",
+        "bedeutung": "Schweinfurt (auch Stadt Schweinfurt)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GEO",
+        "bedeutung": "Gerolzhofen (Altkennzeichen, wieder erhältlich; wird auch im Landkreis Haßberge vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Zusätzliche Termine werden arbeitstäglich in der Regel um 7.30 Uhr freigeschaltet – ein erneuter Blick ins Buchungssystem lohnt sich.",
+        "quelle": "https://www.landkreis-schweinfurt.de/landratsamt/serviceleistungen-informationen/details/detail/terminbuchung-fuer-die-zulassungsstelle-1897"
+      },
+      {
+        "text": "Bearbeitet werden nur die gebuchten Anliegen; für zusätzliche Anliegen ist ein neuer Termin nötig.",
+        "quelle": "https://www.landkreis-schweinfurt.de/landratsamt/serviceleistungen-informationen/details/detail/terminbuchung-fuer-die-zulassungsstelle-1897"
+      },
+      {
+        "text": "Terminbuchung auch über die App CleverQ; die Hotline 09721/55-255 nur im Ausnahmefall.",
+        "quelle": "https://www.landkreis-schweinfurt.de/landratsamt/serviceleistungen-informationen/details/detail/terminbuchung-fuer-die-zulassungsstelle-1897"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-wuerzburg",
+    "stadt": "Landkreis Würzburg",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Würzburg – Fachbereich 16 Verkehrswesen, Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.landkreis-wuerzburg.de/B%C3%BCrger-Politik-Verwaltung/Landratsamt-Fachbereiche/Kommunales-Sicherheit-Verkehr/Verkehrswesen-I-Zulassungsstelle/",
+    "traeger": "Landkreis Würzburg",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsbehörde Würzburg (Landratsamt, Haus II)",
+        "strasse": "Zeppelinstraße 15",
+        "plz": "97074",
+        "ort": "Würzburg",
+        "quelle": "https://www.landkreis-wuerzburg.de/Auf-einen-Klick/Kontakt-Anfahrt/"
+      },
+      {
+        "bezeichnung": "Zulassungsbehörde Ochsenfurt (Dienststelle Ochsenfurt)",
+        "strasse": "Kellereistraße 8",
+        "plz": "97199",
+        "ort": "Ochsenfurt",
+        "quelle": "https://www.landkreis-wuerzburg.de/Auf-einen-Klick/Kontakt-Anfahrt/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-wuerzburg.de/B%C3%BCrger-Politik-Verwaltung/Landratsamt-Fachbereiche/Kommunales-Sicherheit-Verkehr/Verkehrswesen-I-Zulassungsstelle/Zulassung-/",
+      "quelle": "https://www.landkreis-wuerzburg.de/B%C3%BCrger-Politik-Verwaltung/Landratsamt-Fachbereiche/Kommunales-Sicherheit-Verkehr/Verkehrswesen-I-Zulassungsstelle/Zulassung-/"
+    },
+    "terminUrl": null,
+    "ikfzUrl": {
+      "url": "https://formulare.landkreis-wuerzburg.de/formcycle/form/alias/1/online-zulassungsbehoerde/",
+      "quelle": "https://www.landkreis-wuerzburg.de/B%C3%BCrger-Politik-Verwaltung/Landratsamt-Fachbereiche/Kommunales-Sicherheit-Verkehr/Verkehrswesen-I-Zulassungsstelle/Zulassung-/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Würzburg: montags bis freitags 7:30 – 12:00 Uhr (vorzeitiger Annahmeschluss möglich)",
+        "Würzburg: montags und donnerstags 14:00 – 16:30 Uhr (vorzeitiger Annahmeschluss möglich)",
+        "Würzburg: dienstag- und mittwochnachmittags nach vorheriger telefonischer Vereinbarung",
+        "Ochsenfurt: Montag, Dienstag, Donnerstag und Freitag 7:30 – 12:00 Uhr (vorzeitiger Annahmeschluss möglich)",
+        "Ochsenfurt: montags und donnerstags 14:00 – 16:30 Uhr (vorzeitiger Annahmeschluss möglich)",
+        "Ochsenfurt: mittwochs geschlossen"
+      ],
+      "hinweis": "Ohne Termin: Beide Zulassungsbehörden sind ohne Terminvereinbarung geöffnet; Vergabe von Wartemarken, bei hohem Andrang Annahmeschluss schon vor Ende der Öffnungszeit.",
+      "quelle": "https://www.landkreis-wuerzburg.de/B%C3%BCrger-Politik-Verwaltung/Landratsamt-Fachbereiche/Kommunales-Sicherheit-Verkehr/Verkehrswesen-I-Zulassungsstelle/Zulassung-/"
+    },
+    "zustaendigkeit": {
+      "text": "Landratsamt Würzburg (Zulassungsbehörden Würzburg und Ochsenfurt) für Halter mit Wohnort bzw. Firmensitz im Landkreis Würzburg. Die Stadt Würzburg (ebenfalls Kennzeichen WÜ) hat eine eigene Zulassungsstelle im Bürgerbüro der Stadt. Privatpersonen aus der Stadt Würzburg können aber auch die Zulassungsbehörde am Landratsamt in Würzburg nutzen (nicht Ochsenfurt); Händler und Zulassungsdienste müssen für Stadt-Würzburger Vorgänge weiterhin ins Bürgerbüro der Stadt Würzburg.",
+      "quelle": "https://www.landkreis-wuerzburg.de/B%C3%BCrger-Politik-Verwaltung/Landratsamt-Fachbereiche/Kommunales-Sicherheit-Verkehr/Verkehrswesen-I-Zulassungsstelle/Zulassung-/"
+    },
+    "kuerzel": [
+      {
+        "code": "WÜ",
+        "bedeutung": "Würzburg (auch Stadt Würzburg)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "OCH",
+        "bedeutung": "Ochsenfurt (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "In der Dienststelle Ochsenfurt ist ausschließlich Zahlung per EC-Karte möglich, kein Bargeld.",
+        "quelle": "https://www.landkreis-wuerzburg.de/B%C3%BCrger-Politik-Verwaltung/Landratsamt-Fachbereiche/Kommunales-Sicherheit-Verkehr/Verkehrswesen-I-Zulassungsstelle/Zulassung-/"
+      },
+      {
+        "text": "Händler und Zulassungsdienste können seit 1. Juni 2026 Unterlagen ohne Termin abgeben; ab drei Zulassungsvorgängen ist die Abgabe verpflichtend. Abgabe bis 15 Minuten vor der regulären Öffnungszeit, tagesgleiche Zulassung nicht garantiert.",
+        "quelle": "https://www.landkreis-wuerzburg.de/B%C3%BCrger-Politik-Verwaltung/Landratsamt-Fachbereiche/Kommunales-Sicherheit-Verkehr/Verkehrswesen-I-Zulassungsstelle/Zulassung-/"
+      },
+      {
+        "text": "Online-Auskunft, ob der Fahrzeugbrief (Zulassungsbescheinigung Teil II) eines finanzierten oder geleasten Fahrzeugs bereits vorliegt.",
+        "quelle": "https://www.landkreis-wuerzburg.de/B%C3%BCrger-Politik-Verwaltung/Landratsamt-Fachbereiche/Kommunales-Sicherheit-Verkehr/Verkehrswesen-I-Zulassungsstelle/Zulassung-/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-aichach-friedberg",
+    "stadt": "Landkreis Aichach-Friedberg",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Aichach-Friedberg – Zulassungswesen (Zulassungsstellen Aichach und Friedberg)",
+    "behoerdeQuelle": "https://www.lra-aic-fdb.de/kfz-und-verkehr/",
+    "traeger": "Landkreis Aichach-Friedberg",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Aichach (im Landratsamt, Warteraum vor Zimmer 73)",
+        "strasse": "Münchener Straße 9",
+        "plz": "86551",
+        "ort": "Aichach",
+        "quelle": "https://www.lra-aic-fdb.de/kfz-und-verkehr/"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Friedberg (1. Obergeschoss)",
+        "strasse": "Ludwigstraße 39",
+        "plz": "86316",
+        "ort": "Friedberg",
+        "quelle": "https://www.lra-aic-fdb.de/kfz-und-verkehr/"
+      }
+    ],
+    "website": {
+      "url": "https://www.lra-aic-fdb.de/kfz-und-verkehr/",
+      "quelle": "https://www.lra-aic-fdb.de/kfz-und-verkehr/"
+    },
+    "terminUrl": null,
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkraichachfriedberg/bsp_ikfz_antragstellung/#/",
+      "quelle": "https://www.lra-aic-fdb.de/online-dienste/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag: 07:30 – 12:30 Uhr; 14:00 – 16:00 Uhr",
+        "Dienstag: 07:30 – 12:30 Uhr",
+        "Mittwoch: 07:30 – 12:30 Uhr",
+        "Donnerstag: 07:30 – 12:30 Uhr; 14:00 – 18:00 Uhr",
+        "Freitag: 07:30 – 12:30 Uhr",
+        "Annahmeschluss in den Zulassungsstellen Aichach und Friedberg: vormittags um 12:00 Uhr, Montagnachmittag um 15:30 Uhr, Donnerstagnachmittag um 17:30 Uhr"
+      ],
+      "hinweis": "Ohne Termin: Eine Terminvereinbarung für die Zulassungsstelle ist nicht notwendig. Annahmeschluss beachten.",
+      "quelle": "https://www.lra-aic-fdb.de/offnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Landratsamt Aichach-Friedberg mit den Zulassungsstellen Aichach und Friedberg für Halter im Landkreis Aichach-Friedberg.",
+      "quelle": "https://www.lra-aic-fdb.de/kfz-und-verkehr/"
+    },
+    "kuerzel": [
+      {
+        "code": "AIC",
+        "bedeutung": "Aichach",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "FDB",
+        "bedeutung": "Friedberg (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Keine Terminvereinbarung nötig; Annahmeschluss vormittags 12:00 Uhr, Montagnachmittag 15:30 Uhr, Donnerstagnachmittag 17:30 Uhr.",
+        "quelle": "https://www.lra-aic-fdb.de/offnungszeiten/"
+      },
+      {
+        "text": "Online-Abmeldung ist ohne Anmeldung am BayernPortal (eID) möglich.",
+        "quelle": "https://www.lra-aic-fdb.de/online-dienste/"
+      },
+      {
+        "text": "Online-Abfrage, ob die Zulassungsbescheinigung Teil II eines finanzierten Fahrzeugs eingegangen ist.",
+        "quelle": "https://www.lra-aic-fdb.de/online-dienste/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-augsburg",
+    "stadt": "Landkreis Augsburg",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Augsburg – Kfz-Zulassung (Zulassungsbehörde, Dienststellen Gersthofen und Schwabmünchen)",
+    "behoerdeQuelle": "https://www.landkreis-augsburg.de/landrat-landratsamt/landratsamt/sicherheit-und-ordnung-kommunales-und-verbraucherschutz/auto-verkehr/fahrzeugzulassung/",
+    "traeger": "Landkreis Augsburg",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Gersthofen",
+        "strasse": "Tiefenbacherstraße 8",
+        "plz": "86368",
+        "ort": "Gersthofen",
+        "quelle": "https://www.landkreis-augsburg.de/landrat-landratsamt/landratsamt/sicherheit-und-ordnung-kommunales-und-verbraucherschutz/auto-verkehr/fahrzeugzulassung/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Schwabmünchen",
+        "strasse": "Fuggerstraße 10",
+        "plz": "86830",
+        "ort": "Schwabmünchen",
+        "quelle": "https://www.landkreis-augsburg.de/landrat-landratsamt/landratsamt/sicherheit-und-ordnung-kommunales-und-verbraucherschutz/auto-verkehr/fahrzeugzulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-augsburg.de/landrat-landratsamt/landratsamt/sicherheit-und-ordnung-kommunales-und-verbraucherschutz/auto-verkehr/fahrzeugzulassung/",
+      "quelle": "https://www.landkreis-augsburg.de/landrat-landratsamt/landratsamt/sicherheit-und-ordnung-kommunales-und-verbraucherschutz/auto-verkehr/fahrzeugzulassung/"
+    },
+    "terminUrl": {
+      "url": "https://lra-augsburg.saas.smartcjm.com/m/Servicezentrum-Verkehr/extern/calendar/?uid=99bf15d1-2e9a-4228-80b3-56c94f6d8f63",
+      "quelle": "https://www.landkreis-augsburg.de/landrat-landratsamt/landratsamt/sicherheit-und-ordnung-kommunales-und-verbraucherschutz/auto-verkehr/fahrzeugzulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkraugsburg/",
+      "quelle": "https://www.landkreis-augsburg.de/landrat-landratsamt/landratsamt/sicherheit-und-ordnung-kommunales-und-verbraucherschutz/auto-verkehr/fahrzeugzulassung/online-services-kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Gersthofen und Schwabmünchen: Mo. bis Fr. 07:30 – 12:30",
+        "Mo. und Di. 13:30 – 15:30",
+        "Do. 13:30 – 17:30"
+      ],
+      "hinweis": "Grundsätzlich mit Termin (online oder per E-Mail). Ohne Termin ausschließlich mittwochs 7.30 – 11 Uhr in Gersthofen in dringenden Notfällen, maximal zwei Vorgänge.",
+      "quelle": "https://www.landkreis-augsburg.de/landrat-landratsamt/landratsamt/sicherheit-und-ordnung-kommunales-und-verbraucherschutz/auto-verkehr/fahrzeugzulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Landratsamt Augsburg (Zulassungsstellen Gersthofen und Schwabmünchen) für Halter im Landkreis Augsburg. Achtung: Die Stadt Augsburg (ebenfalls Kennzeichen A) hat eine eigene Kfz-Zulassung im Bürgeramt der Stadt; Einwohner der Stadt Augsburg sind dort zuständig, nicht beim Landratsamt.",
+      "quelle": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/aemter-behoerden/staedtische-dienststellen/b/buergeramt/buergerbueros/kfz-wesen"
+    },
+    "kuerzel": [
+      {
+        "code": "A",
+        "bedeutung": "Augsburg (auch Stadt Augsburg)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SMÜ",
+        "bedeutung": "Schwabmünchen (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WER",
+        "bedeutung": "Wertingen (Altkennzeichen, wieder erhältlich; wird auch im Landkreis Dillingen a.d.Donau vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Nur mittwochs zwischen 7.30 und 11 Uhr sind in Gersthofen Zulassungen in dringenden Notfällen ohne Termin möglich (maximal zwei Vorgänge; Wohnmobile oder Oldtimer gelten in der Regel nicht als Notfall).",
+        "quelle": "https://www.landkreis-augsburg.de/landrat-landratsamt/landratsamt/sicherheit-und-ordnung-kommunales-und-verbraucherschutz/auto-verkehr/fahrzeugzulassung/"
+      },
+      {
+        "text": "Mehr Vorgänge als online buchbar können nach vorheriger Absprache per E-Mail abgegeben werden; Information nach Bearbeitung.",
+        "quelle": "https://www.landkreis-augsburg.de/landrat-landratsamt/landratsamt/sicherheit-und-ordnung-kommunales-und-verbraucherschutz/auto-verkehr/fahrzeugzulassung/"
+      },
+      {
+        "text": "Die aktuellen Wartezeiten sind online einsehbar.",
+        "quelle": "https://www.landkreis-augsburg.de/landrat-landratsamt/landratsamt/sicherheit-und-ordnung-kommunales-und-verbraucherschutz/auto-verkehr/fahrzeugzulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

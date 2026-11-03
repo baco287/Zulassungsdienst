@@ -1,0 +1,708 @@
+[
+  {
+    "slug": "region-hannover",
+    "stadt": "Region Hannover",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Region Hannover – Kraftfahrzeugzulassungsbehörde (Fachbereich Öffentliche Sicherheit, Team Kfz-Zulassungsangelegenheiten); Zulassungen im Service Center der Region Hannover",
+    "behoerdeQuelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/I-Kfz-Zulassungen,-Wiederzulassungen-und-Au%C3%9Ferbetriebsetzungen-online",
+    "traeger": "Region Hannover",
+    "standorte": [
+      {
+        "bezeichnung": "Service Center der Region Hannover",
+        "strasse": "Hildesheimer Straße 20",
+        "plz": "30169",
+        "ort": "Hannover",
+        "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/KFZ-Zulassungsstellen-in-der-Region-Hannover"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Barsinghausen",
+        "strasse": "Deisterplatz 2",
+        "plz": "30890",
+        "ort": "Barsinghausen",
+        "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/KFZ-Zulassungsstellen-in-der-Region-Hannover"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Burgdorf",
+        "strasse": "Spittaplatz 4",
+        "plz": "31303",
+        "ort": "Burgdorf",
+        "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/KFZ-Zulassungsstellen-in-der-Region-Hannover"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Burgwedel",
+        "strasse": "Fuhrberger Straße 4",
+        "plz": "30938",
+        "ort": "Großburgwedel",
+        "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/KFZ-Zulassungsstellen-in-der-Region-Hannover"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Garbsen",
+        "strasse": "Rathausplatz 1",
+        "plz": "30823",
+        "ort": "Garbsen-Mitte",
+        "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/KFZ-Zulassungsstellen-in-der-Region-Hannover"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Gehrden",
+        "strasse": "Kirchstr. 1-3",
+        "plz": "30989",
+        "ort": "Gehrden",
+        "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/KFZ-Zulassungsstellen-in-der-Region-Hannover"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Isernhagen",
+        "strasse": "Bothfelder Straße 29",
+        "plz": "30916",
+        "ort": "Altwarmbüchen",
+        "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/KFZ-Zulassungsstellen-in-der-Region-Hannover"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Laatzen",
+        "strasse": "Marktplatz 13",
+        "plz": "30880",
+        "ort": "Laatzen-Mitte",
+        "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/KFZ-Zulassungsstellen-in-der-Region-Hannover"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Langenhagen",
+        "strasse": "Marktplatz 1",
+        "plz": "30853",
+        "ort": "Langenhagen",
+        "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/KFZ-Zulassungsstellen-in-der-Region-Hannover"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Lehrte",
+        "strasse": "Rathausplatz 1",
+        "plz": "31275",
+        "ort": "Lehrte",
+        "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/KFZ-Zulassungsstellen-in-der-Region-Hannover"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Neustadt a. Rbge.",
+        "strasse": "An der Stadtmauer 1",
+        "plz": "31535",
+        "ort": "Neustadt a. Rbge.",
+        "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/KFZ-Zulassungsstellen-in-der-Region-Hannover"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Seelze",
+        "strasse": "Rathausplatz 1",
+        "plz": "30926",
+        "ort": "Seelze",
+        "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/KFZ-Zulassungsstellen-in-der-Region-Hannover"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Sehnde",
+        "strasse": "Nordstraße 21",
+        "plz": "31319",
+        "ort": "Sehnde",
+        "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/KFZ-Zulassungsstellen-in-der-Region-Hannover"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Springe",
+        "strasse": "Auf dem Burghof 1",
+        "plz": "31832",
+        "ort": "Springe",
+        "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/KFZ-Zulassungsstellen-in-der-Region-Hannover"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Uetze",
+        "strasse": "Marktstraße 9",
+        "plz": "31311",
+        "ort": "Uetze",
+        "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/KFZ-Zulassungsstellen-in-der-Region-Hannover"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Wedemark",
+        "strasse": "Fritz-Sennheiser-Platz 1",
+        "plz": "30900",
+        "ort": "Wedemark",
+        "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/KFZ-Zulassungsstellen-in-der-Region-Hannover"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Wennigsen",
+        "strasse": "Hauptstraße 1 bis 2",
+        "plz": "30974",
+        "ort": "Wennigsen",
+        "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/KFZ-Zulassungsstellen-in-der-Region-Hannover"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Wunstorf",
+        "strasse": "Südstraße 1",
+        "plz": "31515",
+        "ort": "Wunstorf",
+        "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/KFZ-Zulassungsstellen-in-der-Region-Hannover"
+      }
+    ],
+    "website": {
+      "url": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover",
+      "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover"
+    },
+    "terminUrl": {
+      "url": "https://onlinetermine.hannit.de/regionhannover/",
+      "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/Zulassen-von-Kraftfahrzeugen"
+    },
+    "ikfzUrl": {
+      "url": "https://region-hannover-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=hannover_region",
+      "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/I-Kfz-Zulassungen,-Wiederzulassungen-und-Au%C3%9Ferbetriebsetzungen-online"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag 07:30 - 12:00 Uhr, 13:00 - 18:00 Uhr",
+        "Dienstag 07:30 - 12:00 Uhr, 13:00 - 15:30 Uhr",
+        "Mittwoch 07:30 - 12:00 Uhr, 13:00 - 15:30 Uhr",
+        "Donnerstag 07:30 - 12:00 Uhr, 13:00 - 18:00 Uhr",
+        "Freitag 07:30 - 13:00 Uhr",
+        "Samstag geschlossen"
+      ],
+      "hinweis": "Öffnungszeiten des Service Centers der Region Hannover (Hildesheimer Straße 20); Besuch nur mit Termin. Die kommunalen Kfz-Zulassungsstellen haben eigene Zeiten und eigene Terminvergaben.",
+      "quelle": "https://www.hannover.de/Media/02-GIS-Objekte/Kontaktdatenbank/Region-Hannover/Service-Center-der-Region-Hannover"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassung für Bürgerinnen und Bürger der Region Hannover ohne die Landeshauptstadt Hannover (Umland). Für Halter in der Landeshauptstadt Hannover, die ebenfalls das Kennzeichen H führt, ist die eigene Kraftfahrzeugzulassungsbehörde der Landeshauptstadt Hannover zuständig.",
+      "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/Zulassen-von-Kraftfahrzeugen"
+    },
+    "kuerzel": [
+      {
+        "code": "H",
+        "bedeutung": "Hannover (gilt für die Landeshauptstadt und die übrige Region Hannover)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Fahrzeugzulassungen und Änderungen sind außer im Service Center der Region auch in fast allen Städten und Gemeinden der Region Hannover möglich (17 kommunale Kfz-Zulassungsstellen mit jeweils eigener Terminvergabe).",
+        "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/KFZ-Zulassungsstellen-in-der-Region-Hannover"
+      },
+      {
+        "text": "Im Service Center der Region Hannover gibt es neben Zulassungen u. a. auch Kurzzeitkennzeichen (5 Tage gültig), Ausfuhrkennzeichen, Wechselkennzeichen, die Verlängerung roter Händlerkennzeichen und die Aufbietung von Zulassungsbescheinigungen Teil II; Schilderhersteller sind zu Fuß erreichbar.",
+        "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/Zulassen-von-Kraftfahrzeugen"
+      },
+      {
+        "text": "Nach einer Online-Zulassung über i-Kfz ist sofortiges Losfahren ohne Siegel am Kennzeichen 10 Tage lang möglich, wenn der ausgedruckte Zulassungsnachweis von außen sichtbar im Fahrzeug liegt.",
+        "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/I-Kfz-Zulassungen,-Wiederzulassungen-und-Au%C3%9Ferbetriebsetzungen-online"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "delmenhorst",
+    "stadt": "Delmenhorst",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Stadt Delmenhorst – Zulassungsstelle (111), Fachdienst Bürgerservice (11), Fachbereich Bürgerangelegenheiten und öffentliche Sicherheit (10)",
+    "behoerdeQuelle": "https://www.delmenhorst.de/vv/oe/fb10/fd11/111/index.php",
+    "traeger": "Stadt Delmenhorst",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle im City-Center (CCD)",
+        "strasse": "Lange Straße 1a",
+        "plz": "27749",
+        "ort": "Delmenhorst",
+        "quelle": "https://www.delmenhorst.de/vv/oe/fb10/fd11/111/index.php"
+      }
+    ],
+    "website": {
+      "url": "https://www.delmenhorst.de/vv/oe/fb10/fd11/111/index.php",
+      "quelle": "https://www.delmenhorst.de/vv/oe/fb10/fd11/111/index.php"
+    },
+    "terminUrl": {
+      "url": "https://termine.delmenhorst.de/select2?md=2",
+      "quelle": "https://www.delmenhorst.de/vv/produkte/10/kfz-zulassung__neufahrzeuge_8665951.php"
+    },
+    "ikfzUrl": null,
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag bis Freitag: 8 bis 12 Uhr",
+        "Dienstag: 14 bis 16 Uhr",
+        "Donnerstag: 14 bis 17 Uhr"
+      ],
+      "hinweis": "Nur nach vorheriger Terminvereinbarung; spontane Besuche sind derzeit nicht möglich. Termine auch telefonisch unter (04221) 99-2280.",
+      "quelle": "https://www.delmenhorst.de/vv/oe/fb10/fd11/111/index.php"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsstelle der kreisfreien Stadt Delmenhorst. Zulassungen erfolgen nur auf den Wohnort (bei mehreren Wohnungen den Hauptwohnsitz) bzw. den Firmensitz/die Niederlassung des Antragstellers, also für Halter mit Hauptwohnsitz oder Sitz in Delmenhorst.",
+      "quelle": "https://www.delmenhorst.de/vv/produkte/10/kfz-zulassung__neufahrzeuge_8665951.php"
+    },
+    "kuerzel": [
+      {
+        "code": "DEL",
+        "bedeutung": "Delmenhorst",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Telefonisch ist die Zulassungsstelle (04221) 99-2280 montags und mittwochs von 13 bis 15 Uhr erreichbar; Termine können auch telefonisch vereinbart werden.",
+        "quelle": "https://www.delmenhorst.de/vv/oe/fb10/fd11/111/index.php"
+      },
+      {
+        "text": "Bei einem Kennzeichenwunsch ist das Kennzeichen vorab online über das Serviceportal der Stadt zu reservieren; das SEPA-Lastschriftmandat sollte vorab ausgefüllt werden.",
+        "quelle": "https://www.delmenhorst.de/vv/oe/fb10/fd11/111/index.php"
+      },
+      {
+        "text": "Das i-Kfz-Online-Portal der Stadt wird laut städtischer Seite derzeit umgestellt und steht aktuell nicht zur Verfügung.",
+        "quelle": "https://www.delmenhorst.de/vv/produkte/10/144010100000016986.php"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "emden",
+    "stadt": "Emden",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Stadt Emden – Fachdienst 433 Bürgerbüro (KFZ-Angelegenheiten), Fachbereich 400 Öffentliche Sicherheit, Bürgerservice",
+    "behoerdeQuelle": "https://www.emden.de/rathaus/verwaltung/fb-400-oeffentliche-sicherheit-buergerservice/fd-433-buergerbuero",
+    "traeger": "Stadt Emden",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgerbüro der Stadt Emden (KFZ-Angelegenheiten)",
+        "strasse": "Frickensteinplatz 2",
+        "plz": "26721",
+        "ort": "Emden",
+        "quelle": "https://www.emden.de/rathaus/verwaltung/fb-400-oeffentliche-sicherheit-buergerservice/fd-433-buergerbuero-und-standesamt/kfz-angelegenheiten"
+      }
+    ],
+    "website": {
+      "url": "https://www.emden.de/rathaus/verwaltung/fb-400-oeffentliche-sicherheit-buergerservice/fd-433-buergerbuero-und-standesamt/kfz-angelegenheiten",
+      "quelle": "https://www.emden.de/rathaus/verwaltung/fb-400-oeffentliche-sicherheit-buergerservice/fd-433-buergerbuero-und-standesamt/kfz-angelegenheiten"
+    },
+    "terminUrl": {
+      "url": "https://openrathaus.emden.de/dienstleistungen/-/egov-bis-detail/dienstleistung/2265/show",
+      "quelle": "https://www.emden.de/rathaus/verwaltung/fb-400-oeffentliche-sicherheit-buergerservice/fd-433-buergerbuero-und-standesamt/kfz-angelegenheiten"
+    },
+    "ikfzUrl": {
+      "url": "https://openrathaus.emden.de/dienstleistungen/-/egov-bis-detail/dienstleistung/2262/show",
+      "quelle": "https://www.emden.de/rathaus/verwaltung/fb-400-oeffentliche-sicherheit-buergerservice/fd-433-buergerbuero-und-standesamt/kfz-angelegenheiten/kfz-anmeldung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag und Dienstag 8.00 Uhr bis 16.30 Uhr",
+        "Mittwoch 8.00 Uhr bis 12.00 Uhr",
+        "Donnerstag 8.00 Uhr bis 17.00 Uhr",
+        "Freitag 8.00 bis 12.00 Uhr"
+      ],
+      "hinweis": "Öffnungszeiten des Bürgerbüros. Bitte vorher telefonisch (04921 87-0), per E-Mail oder online einen Termin vereinbaren; KFZ-Abmeldung und Kurzzeitkennzeichen auch ohne Termin (ggf. mit Wartezeit).",
+      "quelle": "https://www.emden.de/rathaus/verwaltung/fb-400-oeffentliche-sicherheit-buergerservice/fd-433-buergerbuero-und-standesamt/kfz-angelegenheiten"
+    },
+    "zustaendigkeit": {
+      "text": "Bürgerbüro der kreisfreien Stadt Emden. Fahrzeuge können nur bei der Zulassungsbehörde angemeldet werden, die für den Hauptwohnsitz bzw. Sitz des Halters zuständig ist – hier also für Halter mit Hauptwohnsitz oder Sitz in Emden.",
+      "quelle": "https://www.emden.de/rathaus/verwaltung/fb-400-oeffentliche-sicherheit-buergerservice/fd-433-buergerbuero-und-standesamt/kfz-angelegenheiten/kfz-anmeldung"
+    },
+    "kuerzel": [
+      {
+        "code": "EMD",
+        "bedeutung": "Emden",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Ohne vorherige Terminvereinbarung (ggf. mit Wartezeit) möglich: KFZ-Abmeldung, Kurzzeitkennzeichen sowie Feinstaub- und Umweltplaketten.",
+        "quelle": "https://www.emden.de/rathaus/verwaltung/fb-400-oeffentliche-sicherheit-buergerservice/fd-433-buergerbuero-und-standesamt/kfz-angelegenheiten"
+      },
+      {
+        "text": "Die Gebühren können mit EC-Karte oder Bargeld entrichtet werden; sie werden bei Antragstellung fällig.",
+        "quelle": "https://www.emden.de/rathaus/verwaltung/fb-400-oeffentliche-sicherheit-buergerservice/fd-433-buergerbuero-und-standesamt/kfz-angelegenheiten/kfz-anmeldung"
+      },
+      {
+        "text": "Wunsch- und Seriennummern lassen sich vorab online über die städtische Wunschkennzeichen-Seite reservieren.",
+        "quelle": "https://www.emden.de/rathaus/verwaltung/fb-400-oeffentliche-sicherheit-buergerservice/fd-433-buergerbuero-und-standesamt/kfz-angelegenheiten/kfz-anmeldung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "oldenburg",
+    "stadt": "Oldenburg (Oldb)",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Stadt Oldenburg (Oldb) – Kfz-Zulassung in den Bürgerbüros Nord und Mitte",
+    "behoerdeQuelle": "https://serviceportal.oldenburg.de/buergerservice/dienstleistungen/kfz-zulassung-900001033-0.html?myMedium=1&auswahl=0&vs=1",
+    "traeger": "Stadt Oldenburg (Oldb)",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgerbüro Mitte",
+        "strasse": "Pferdemarkt 14",
+        "plz": "26121",
+        "ort": "Oldenburg",
+        "quelle": "https://serviceportal.oldenburg.de/buergerservice/dienstleistungen/kfz-zulassung-900001033-0.html?myMedium=1&auswahl=0&vs=1"
+      }
+    ],
+    "website": {
+      "url": "https://serviceportal.oldenburg.de/buergerservice/dienstleistungen/kfz-zulassung-900001033-0.html?myMedium=1&auswahl=0&vs=1",
+      "quelle": "https://serviceportal.oldenburg.de/buergerservice/dienstleistungen/kfz-zulassung-900001033-0.html?myMedium=1&auswahl=0&vs=1"
+    },
+    "terminUrl": {
+      "url": "https://terminvereinbarung.oldenburg.de",
+      "quelle": "https://serviceportal.oldenburg.de/online-termine/"
+    },
+    "ikfzUrl": {
+      "url": "https://stadt-oldenburg-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=oldenburg_stadt",
+      "quelle": "https://serviceportal.oldenburg.de/buergerservice/online/angebot/kraftfahrzeug-anmelden-onlineformular-von-einem-externen-dienstleister-900000523-36200.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag bis Mittwoch: 8 bis 15.30 Uhr nur nach Terminvereinbarung",
+        "Donnerstag: 8 bis 18 Uhr nur nach Terminvereinbarung",
+        "Freitag: 8 bis 12 Uhr nur nach Terminvereinbarung",
+        "Öffnungszeiten „Bringen und Abholen“ (Bürgerbüro Nord): Montags und Freitags: 8 bis 12 Uhr, Mittwochs: 12:30 bis 15:30"
+      ],
+      "hinweis": "Zeiten gelten für Bürgerbüro Nord und Bürgerbüro Mitte; Zulassungsvorgänge nur nach vorheriger Terminvereinbarung. „Bringen und Abholen“ (schriftliche Anträge ohne Termin) nur im Bürgerbüro Nord.",
+      "quelle": "https://serviceportal.oldenburg.de/buergerservice/verwaltung/buergerbuero-nord-900000046-36200.html"
+    },
+    "zustaendigkeit": {
+      "text": "Nur für Fahrzeuge aus der Stadt Oldenburg (Oldb) zuständig; für An- und Ummeldungen ist der Wohnort bzw. Firmenstandort in Oldenburg Grundvoraussetzung. Nicht zuständig für den umliegenden Landkreis Oldenburg, der ebenfalls das Kennzeichen OL führt – Halter anderweitig zugelassener Fahrzeuge wenden sich an die dortige Zulassungsstelle.",
+      "quelle": "https://serviceportal.oldenburg.de/buergerservice/dienstleistungen/kfz-zulassung-900001033-0.html?myMedium=1&auswahl=0&vs=1"
+    },
+    "kuerzel": [
+      {
+        "code": "OL",
+        "bedeutung": "Oldenburg (auch für den Landkreis Oldenburg vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "„Bringen & Abholen“: Schriftliche Anträge können im Bürgerbüro Nord ohne Termin zu festen Abgabezeiten eingereicht werden (montags und freitags 8 bis 12 Uhr, mittwochs 12:30 bis 15:30 Uhr).",
+        "quelle": "https://serviceportal.oldenburg.de/buergerservice/verwaltung/buergerbuero-nord-900000046-36200.html"
+      },
+      {
+        "text": "Abmeldungen im Bürgerbüro Nord setzen keinen Wohnort bzw. Firmenstandort in Oldenburg voraus (Vorlage von ZB I und Kennzeichen).",
+        "quelle": "https://serviceportal.oldenburg.de/buergerservice/verwaltung/buergerbuero-nord-900000046-36200.html"
+      },
+      {
+        "text": "Die Gebühren der Bürgerbüros Mitte und Nord können mit EC-Karte oder Bargeld entrichtet werden.",
+        "quelle": "https://serviceportal.oldenburg.de/buergerservice/dienstleistungen/kfz-zulassung-neufahrzeug-900000058-0.html?myMedium=1&auswahl=0&vs=1"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "osnabrueck",
+    "stadt": "Osnabrück",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Stadt Osnabrück – KFZ-Zulassung (32-16) im Bürgeramt (Fachdienst)",
+    "behoerdeQuelle": "https://service.osnabrueck.de/dienstleistungen/-/egov-bis-detail/einrichtung/4958/show",
+    "traeger": "Stadt Osnabrück",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassung im Stadthaus 1",
+        "strasse": "Natruper-Tor-Wall 2",
+        "plz": "49076",
+        "ort": "Osnabrück",
+        "quelle": "https://service.osnabrueck.de/dienstleistungen/-/egov-bis-detail/einrichtung/4958/show"
+      }
+    ],
+    "website": {
+      "url": "https://service.osnabrueck.de/dienstleistungen/-/egov-bis-detail/dienstleistung/5403/show",
+      "quelle": "https://service.osnabrueck.de/dienstleistungen/-/egov-bis-detail/dienstleistung/5403/show"
+    },
+    "terminUrl": {
+      "url": "https://timeacle.com/business/index/id/2582/booking/appointment/row_id/3890",
+      "quelle": "https://service.osnabrueck.de/dienstleistungen/-/egov-bis-detail/einrichtung/4958/show"
+    },
+    "ikfzUrl": {
+      "url": "https://stadt-osnabrueck-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=osnabrueck_stadt",
+      "quelle": "https://service.osnabrueck.de/dienstleistungen/-/egov-bis-detail/einrichtung/4958/show"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag 08:00 bis 12:30, 13:30 bis 16:00",
+        "Dienstag 08:00 bis 12:30, 13:30 bis 16:00",
+        "Mittwoch 08:00 bis 12:00",
+        "Donnerstag 08:00 bis 12:30, 13:30 bis 17:30",
+        "Freitag 08:00 bis 12:00",
+        "Samstag geschlossen"
+      ],
+      "hinweis": "Servicezeiten laut Serviceportal; eine Vorsprache ist nur mit Termin möglich (Online-Terminvergabe).",
+      "quelle": "https://service.osnabrueck.de/dienstleistungen/-/egov-bis-detail/einrichtung/4958/show"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde der kreisfreien Stadt Osnabrück. Stadt und Landkreis Osnabrück führen beide das Kennzeichen OS; laut Landkreis Osnabrück nutzen Bürger aus Stadt und Landkreis die für sie nächstgelegene Zulassungsstelle im Landkreis oder in der Stadt Osnabrück – Zulassungen für die Stadt Osnabrück sind jedoch in Bersenbrück und Quakenbrück nicht möglich.",
+      "quelle": "https://www.landkreis-osnabrueck.de/fachthemen/ordnung-und-verkehr/verkehrsbehoerde-zulassungs-und-fuehrerscheinstelle"
+    },
+    "kuerzel": [
+      {
+        "code": "OS",
+        "bedeutung": "Osnabrück (auch für den Landkreis Osnabrück vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Online-Zulassung über das i-Kfz-Portal ist jederzeit möglich und günstiger als vor Ort (Erstzulassung ab 12,80 Euro online gegenüber ab 30,00 Euro vor Ort).",
+        "quelle": "https://service.osnabrueck.de/dienstleistungen/-/egov-bis-detail/dienstleistung/1950673/show"
+      },
+      {
+        "text": "Bei der Wunschkennzeichen-Reservierung ist darauf zu achten, ob das Fahrzeug im Landkreis Osnabrück oder in der Stadt Osnabrück zugelassen werden soll.",
+        "quelle": "https://www.landkreis-osnabrueck.de/fachthemen/ordnung-und-verkehr/verkehrsbehoerde-zulassungs-und-fuehrerscheinstelle"
+      },
+      {
+        "text": "Die KFZ-Zulassung ist in der Regel telefonisch unter 0541/323-3332 zu den Servicezeiten sowie per E-Mail (kfz-zulassung@osnabrueck.de) erreichbar.",
+        "quelle": "https://service.osnabrueck.de/dienstleistungen/-/egov-bis-detail/einrichtung/4958/show"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "salzgitter",
+    "stadt": "Salzgitter",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Stadt Salzgitter – Zulassungsstelle im Fachgebiet AutoService (AutoServicePark)",
+    "behoerdeQuelle": "https://www.salzgitter.de/leben/auto/",
+    "traeger": "Stadt Salzgitter",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle im AutoServicePark (ASP)",
+        "strasse": "Hans-Birnbaum-Straße 30",
+        "plz": "38226",
+        "ort": "Salzgitter",
+        "quelle": "https://www.salzgitter.de/leben/auto/ZulassungKfz"
+      }
+    ],
+    "website": {
+      "url": "https://www.salzgitter.de/leben/auto/",
+      "quelle": "https://www.salzgitter.de/leben/auto/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/salzgitter/",
+      "quelle": "https://www.salzgitter.de/leben/auto/"
+    },
+    "ikfzUrl": {
+      "url": "https://stadt-salzgitter-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=salzgitter_stadt",
+      "quelle": "https://www.salzgitter.de/leben/auto/"
+    },
+    "oeffnungszeiten": null,
+    "zustaendigkeit": {
+      "text": "Das Fachgebiet AutoService mit der Zulassungsstelle im AutoServicePark ist zuständig für alle städtischen Angelegenheiten rund ums Autofahren, also für Halter in der kreisfreien Stadt Salzgitter.",
+      "quelle": "https://www.salzgitter.de/leben/auto/"
+    },
+    "kuerzel": [
+      {
+        "code": "SZ",
+        "bedeutung": "Salzgitter",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Kfz-Abmeldungen sind laut Stadt generell ohne Termin zu festgelegten Zeiten möglich.",
+        "quelle": "https://www.salzgitter.de/leben/auto/"
+      },
+      {
+        "text": "Termine für eine Zulassung können neben der Online-Terminvergabe auch telefonisch über die Hotline 05341/839-3000 reserviert werden.",
+        "quelle": "https://www.salzgitter.de/leben/auto/"
+      },
+      {
+        "text": "Seit dem 23.09.2025 ist i-Kfz Stufe 4 umgesetzt: Online-Zulassung rund um die Uhr, sofortiges Losfahren und reduzierte Kosten gegenüber der Zulassung vor Ort.",
+        "quelle": "https://www.salzgitter.de/pressemeldungen/2025/start-von-i-kfz-kraftfahrzeuge-jederzeit-und-ueberall-online-zulassen"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten"
+    ]
+  },
+  {
+    "slug": "wilhelmshaven",
+    "stadt": "Wilhelmshaven",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Stadt Wilhelmshaven – KFZ-Zulassung, Fachbereich Bürgerangelegenheiten, Öffentliche Sicherheit und Ordnung",
+    "behoerdeQuelle": "https://www.wilhelmshaven.de/Stadtverwaltung/Dienststellen/32_Oeffentliche_Sicherheit_und_Ordnung/32-00_KFZ-Zulassung/",
+    "traeger": "Stadt Wilhelmshaven",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassung im RATRiUM (ehemals City-Haus), 1. Obergeschoss, Eingang A",
+        "strasse": "Rathausplatz 10",
+        "plz": "26382",
+        "ort": "Wilhelmshaven",
+        "quelle": "https://www.wilhelmshaven.de/Stadtverwaltung/Dienststellen/32_Oeffentliche_Sicherheit_und_Ordnung/32-00_KFZ-Zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.wilhelmshaven.de/Stadtverwaltung/Dienststellen/32_Oeffentliche_Sicherheit_und_Ordnung/32-00_KFZ-Zulassung/",
+      "quelle": "https://www.wilhelmshaven.de/Stadtverwaltung/Dienststellen/32_Oeffentliche_Sicherheit_und_Ordnung/32-00_KFZ-Zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/wilhelmshaven/",
+      "quelle": "https://www.wilhelmshaven.de/Stadtverwaltung/Dienststellen/32_Oeffentliche_Sicherheit_und_Ordnung/32-00_KFZ-Zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://stadt-wilhelmshaven-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=wilhelmshaven_stadt",
+      "quelle": "https://www.wilhelmshaven.de/Stadtverwaltung/Dienststellen/32_Oeffentliche_Sicherheit_und_Ordnung/32-00_KFZ-Zulassung/iKfz-Startseite.php"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag, Mittwoch, Freitag: 8.00 - 12.30 Uhr",
+        "Dienstag: 8.00 - 12.30 und 14.00 - 16.00 Uhr",
+        "Donnerstag: 8.00 - 17.00 (durchgehend)"
+      ],
+      "hinweis": "Alle Dienstleistungen ausschließlich nach vorheriger Terminabsprache (online oder unter Telefon 04421 16-3232); einige Dienstleistungen auch ohne Termin mit kurzer Wartezeit.",
+      "quelle": "https://www.wilhelmshaven.de/Stadtverwaltung/Dienststellen/32_Oeffentliche_Sicherheit_und_Ordnung/32-00_KFZ-Zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "KFZ-Zulassung der kreisfreien Stadt Wilhelmshaven, zuständig für Halter im Stadtgebiet Wilhelmshaven.",
+      "quelle": "https://www.wilhelmshaven.de/Stadtverwaltung/Dienststellen/32_Oeffentliche_Sicherheit_und_Ordnung/32-00_KFZ-Zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "WHV",
+        "bedeutung": "Wilhelmshaven",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Ohne vorherige Terminvereinbarung mit kurzer Wartezeit möglich: Außerbetriebsetzung, Kurzzeitkennzeichen, Neuausstellung der Zulassungsbescheinigung Teil I, Bearbeitung bestehender Mängel- oder Versicherungsanzeigen, Adressänderung nach Umzug und Ausstellung des digitalen Fahrzeugscheins.",
+        "quelle": "https://www.wilhelmshaven.de/Stadtverwaltung/Dienststellen/32_Oeffentliche_Sicherheit_und_Ordnung/32-00_KFZ-Zulassung/"
+      },
+      {
+        "text": "Wunschkennzeichen-Reservierung und Abfrage der Zulassungsbescheinigung Teil II sind online über das Kfz-Portal der Stadt möglich.",
+        "quelle": "https://www.wilhelmshaven.de/Stadtverwaltung/Dienststellen/32_Oeffentliche_Sicherheit_und_Ordnung/32-00_KFZ-Zulassung/"
+      },
+      {
+        "text": "Aufgrund der aktuellen Personalsituation kann es laut Stadt auch bei vereinbarten Terminen vorübergehend zu Wartezeiten kommen.",
+        "quelle": "https://www.wilhelmshaven.de/Stadtverwaltung/Dienststellen/32_Oeffentliche_Sicherheit_und_Ordnung/32-00_KFZ-Zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "wolfsburg",
+    "stadt": "Wolfsburg",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Stadt Wolfsburg – Geschäftsbereich Bürgerdienste, Einwohnermelde- und KFZ-Zulassungsstelle",
+    "behoerdeQuelle": "https://rathausonline.wolfsburg.de/dienstleistungen/-/egov-bis-detail/einrichtung/341/show",
+    "traeger": "Stadt Wolfsburg",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgerdienste / Kfz-Zulassungsstelle im Rathaus B",
+        "strasse": "Porschestraße 49",
+        "plz": "38440",
+        "ort": "Wolfsburg",
+        "quelle": "https://www.wolfsburg.de/kfz"
+      }
+    ],
+    "website": {
+      "url": "https://www.wolfsburg.de/kfz",
+      "quelle": "https://www.wolfsburg.de/kfz"
+    },
+    "terminUrl": {
+      "url": "https://termin.stadt.wolfsburg.de/",
+      "quelle": "https://www.wolfsburg.de/kfz"
+    },
+    "ikfzUrl": {
+      "url": "https://rathausonline.wolfsburg.de/dienstleistungen/-/egov-bis-detail/dienstleistung/864/show",
+      "quelle": "https://www.wolfsburg.de/rathaus/onlineservice-und-digitale-verwaltung/ikfz"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag und Dienstag: 08:30 Uhr - 16:30 Uhr",
+        "Mittwoch und Freitag: 08:30 Uhr - 12:00 Uhr",
+        "Donnerstag: 08:30 Uhr - 17:30 Uhr"
+      ],
+      "hinweis": "Allgemeine Öffnungszeiten der Bürgerdienste. Für die Kfz-Zulassungsstelle muss ein Termin über die Online-Terminvergabe oder das Service-Center (Behördenrufnummer 115) vereinbart werden; zusätzlich begrenzte Wartemarken für terminfreie Vorsprachen.",
+      "quelle": "https://www.wolfsburg.de/rathaus/stadtverwaltung/01-buergerdienste"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle der kreisfreien Stadt Wolfsburg, zuständig für Halter im Stadtgebiet Wolfsburg.",
+      "quelle": "https://www.wolfsburg.de/kfz"
+    },
+    "kuerzel": [
+      {
+        "code": "WOB",
+        "bedeutung": "Wolfsburg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Terminfreie Vorsprache mit Wartemarke im Rathaus B: Ausgabe ab 7:30 Uhr für den laufenden Tag, montags, dienstags und donnerstags zusätzlich ab 12:30 Uhr; die Zahl der Wartemarken ist begrenzt.",
+        "quelle": "https://www.wolfsburg.de/rathaus/stadtverwaltung/01-buergerdienste/wartemarken"
+      },
+      {
+        "text": "Am Schnellschalter (Rathaus B, Zimmer 015, Eingang Hollerplatz) ohne Termin: Feinstaubplaketten, Abgabe von Verkaufsanzeigen, Anschriftenänderung der Zulassungsbescheinigung Teil I und in Einzelfällen Außerbetriebsetzungen.",
+        "quelle": "https://www.wolfsburg.de/rathaus/oeffnungszeiten-stadtverwaltung"
+      },
+      {
+        "text": "Online-Statusabfrage, ob die Zulassungsbescheinigung Teil II (z. B. Leasingbrief) bei der Zulassungsstelle der Stadt Wolfsburg vorliegt.",
+        "quelle": "https://www.wolfsburg.de/rathaus/onlineservice-und-digitale-verwaltung/ikfz"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "goettingen",
+    "stadt": "Göttingen",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Stadt Göttingen – Kfz-Zulassungsstelle (Team Zulassung), Fachdienst Straßenverkehr",
+    "behoerdeQuelle": "https://www.goettingen.de/buergerservice/dienstleistungen/fahrzeug-an-ab-und-ummelden-900000117-0.html?myMedium=1",
+    "traeger": "Stadt Göttingen",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle, Fachdienst Straßenverkehr im Neuen Rathaus",
+        "strasse": "Hiroshimaplatz 1-4",
+        "plz": "37083",
+        "ort": "Göttingen",
+        "quelle": "https://www.goettingen.de/buergerservice/dienstleistungen/fahrzeug-an-ab-und-ummelden-900000117-0.html?myMedium=1"
+      }
+    ],
+    "website": {
+      "url": "https://www.goettingen.de/buergerservice/dienstleistungen/fahrzeug-an-ab-und-ummelden-900000117-0.html?myMedium=1",
+      "quelle": "https://www.goettingen.de/buergerservice/dienstleistungen/fahrzeug-an-ab-und-ummelden-900000117-0.html?myMedium=1"
+    },
+    "terminUrl": {
+      "url": "https://termin.goettingen.de/",
+      "quelle": "https://www.goettingen.de/buergerservice/dienstleistungen/fahrzeug-an-ab-und-ummelden-900000117-0.html?myMedium=1"
+    },
+    "ikfzUrl": {
+      "url": "https://stadt-goettingen-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=goettingen_stadt",
+      "quelle": "https://www.goettingen.de/buergerservice/online/angebot/online-zulassungsverfahren-i-kfz-900000105-25480.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Telefonische Sprechzeiten:",
+        "Mo: 09.00 - 12.00",
+        "Di: 09.00 - 12.00",
+        "Mi: 09.00 - 12.00",
+        "Do: 09.00 - 12.00 und 14.00 - 16.00",
+        "Fr: 09.00 - 12.00"
+      ],
+      "hinweis": "Die Stadt nennt nur telefonische Sprechzeiten. Die Kfz-Zulassungsstelle ist nur eingeschränkt geöffnet, persönliche Vorsprachen nur mit Termin (pro Zulassungsvorgang ein Termin). Ausnahme ohne Termin: Ausfuhr- und Kurzzeitkennzeichen Montag bis Freitag 9.00 bis 11.30 Uhr sowie Donnerstag 14.00 bis 15.30 Uhr.",
+      "quelle": "https://www.goettingen.de/buergerservice/dienstleistungen/fahrzeug-an-ab-und-ummelden-900000117-0.html?myMedium=1"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsstelle der Stadt Göttingen für Halter mit Wohnsitz bzw. Sitz in der Stadt Göttingen. Der umliegende Landkreis Göttingen (ebenfalls GÖ, dazu OHA/HMÜ/DUD) hat eigene Zulassungsstellen; Wunschkennzeichen für Einwohner der Stadt Göttingen können nicht beim Landkreis reserviert werden.",
+      "quelle": "https://www.landkreisgoettingen.de/Themen-Leistungen/Verkehr-Mobilit%C3%A4t/Kraftfahrzeuge/Wunschkennzeichen/"
+    },
+    "kuerzel": [
+      {
+        "code": "GÖ",
+        "bedeutung": "Göttingen (gilt für Stadt und Landkreis Göttingen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Ausfuhr- und Kurzzeitkennzeichen werden ohne Termin zugeteilt: Montag bis Freitag 9.00 bis 11.30 Uhr sowie Donnerstag 14.00 bis 15.30 Uhr.",
+        "quelle": "https://www.goettingen.de/buergerservice/dienstleistungen/fahrzeug-an-ab-und-ummelden-900000117-0.html?myMedium=1"
+      },
+      {
+        "text": "Für jeden Zulassungsvorgang ist jeweils ein eigener Termin zu buchen; bearbeitet wird nur bei vollständigen Unterlagen.",
+        "quelle": "https://www.goettingen.de/buergerservice/dienstleistungen/fahrzeug-an-ab-und-ummelden-900000117-0.html?myMedium=1"
+      },
+      {
+        "text": "Die Stadt warnt davor, Wunschkennzeichen über Online-Portale von Drittanbietern gegen Gebühr zu reservieren; reserviert werden soll nur über das Portal der Stadt oder direkt bei der Zulassungsstelle (Gebühr 12,80 Euro).",
+        "quelle": "https://www.goettingen.de/buergerservice/dienstleistungen/fahrzeug-an-ab-und-ummelden-900000117-0.html?myMedium=1"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

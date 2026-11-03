@@ -1,0 +1,635 @@
+[
+  {
+    "slug": "landkreis-soemmerda",
+    "stadt": "Landkreis Sömmerda",
+    "bundesland": "Thüringen",
+    "behoerde": "Landratsamt Sömmerda – Kfz-Zulassungswesen",
+    "behoerdeQuelle": "https://include-th.zfinder.de/211761101?tsaid_p090b02=219555365&tsaid_p090b01=206897030&tsaid_p090b00=352015&tsaid_p0h0300=352015&tsaid_c=03&tsaid_s=09&tsaid_p020k02=219555365",
+    "traeger": "Landkreis Sömmerda",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Sömmerda, Haus 2 – Kfz-Zulassungsbehörde",
+        "strasse": "Wielandstraße 4",
+        "plz": "99610",
+        "ort": "Sömmerda",
+        "quelle": "https://include-th.zfinder.de/211761101?tsaid_p090b02=219555365&tsaid_p090b01=206897030&tsaid_p090b00=352015&tsaid_p0h0300=352015&tsaid_c=03&tsaid_s=09&tsaid_p020k02=219555365"
+      }
+    ],
+    "website": {
+      "url": "https://include-th.zfinder.de/211761101?tsaid_p090b02=219555365&tsaid_p090b01=206897030&tsaid_p090b00=352015&tsaid_p0h0300=352015&tsaid_c=03&tsaid_s=09&tsaid_p020k02=219555365",
+      "quelle": "https://www.lra-soemmerda.de/?page_id=76"
+    },
+    "terminUrl": {
+      "url": "https://lk-soemmerda.termine-reservieren.online/",
+      "quelle": "https://www.lra-soemmerda.de/?page_id=84"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100038.OE.206897030&leistungId=99036020001000&p=160680",
+      "quelle": "https://www.lra-soemmerda.de/?page_id=76"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–12:00",
+        "Di 08:00–12:00, 14:00–18:00",
+        "Mi geschlossen",
+        "Do 08:00–12:00, 14:00–17:00 (nachmittags nur Straßenverkehrsamt)",
+        "Fr 08:00–12:00"
+      ],
+      "hinweis": "Vorsprache in der Kfz-Zulassungsbehörde ausschließlich nach vorheriger Terminvergabe, außer dienstags (offener Sprechtag ohne Termin)",
+      "quelle": "https://www.lra-soemmerda.de/?page_id=55"
+    },
+    "zustaendigkeit": {
+      "text": "Landkreis Sömmerda (Kfz-Zulassungswesen des Landratsamts Sömmerda, laut Thüringer Zuständigkeitsfinder zuständig für Sömmerda). Es gibt keine kreisfreie Stadt mit demselben Kürzel.",
+      "quelle": "https://include-th.zfinder.de/211761101?tsaid_p020k02=219555365&tsaid_p0h0300=352015&tsaid_c=00&tsaid_s=02"
+    },
+    "kuerzel": [
+      {
+        "code": "SÖM",
+        "bedeutung": "Sömmerda",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Dienstags offener Sprechtag: Die Kfz-Zulassungsbehörde arbeitet dann ohne Termin. Bei hohem Andrang kann es zu längeren Wartezeiten kommen, gegebenenfalls ist nur eine Antragsannahme möglich.",
+        "quelle": "https://www.lra-soemmerda.de/?page_id=55"
+      },
+      {
+        "text": "Online-Termine müssen innerhalb von 2 Stunden über den Link in der Reservierungs-E-Mail bestätigt werden. Am Termintag meldet man sich mit der Terminnummer am Terminal im Foyer der Wielandstraße 4 an.",
+        "quelle": "https://www.lra-soemmerda.de/?page_id=84"
+      },
+      {
+        "text": "Am Verwaltungsgebäude gibt es 60 kostenlose Parkplätze und 3 Behindertenparkplätze. Das Gebäude hat einen Aufzug und ist rollstuhlgerecht.",
+        "quelle": "https://include-th.zfinder.de/211761101?tsaid_p090b02=219555365&tsaid_p090b01=206897030&tsaid_p090b00=352015&tsaid_p0h0300=352015&tsaid_c=03&tsaid_s=09&tsaid_p020k02=219555365"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-sonneberg",
+    "stadt": "Landkreis Sonneberg",
+    "bundesland": "Thüringen",
+    "behoerde": "Landratsamt Sonneberg – Sachbereich Kfz.-Zulassungsbehörde (2.36.2, Sachgebiet Verkehr)",
+    "behoerdeQuelle": "https://www.kreis-sonneberg.de/buergerservice-views/abteilungen/THU:department:8449/2-36-2-sachbereich-kfz-zulassungsbehoerde/",
+    "traeger": "Landkreis Sonneberg",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Sonneberg – Kfz.-Zulassungsbehörde",
+        "strasse": "Bahnhofstraße 66",
+        "plz": "96515",
+        "ort": "Sonneberg",
+        "quelle": "https://www.kreis-sonneberg.de/buergerservice-views/abteilungen/THU:department:8449/2-36-2-sachbereich-kfz-zulassungsbehoerde/"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-sonneberg.de/buergerservice-views/abteilungen/THU:department:8449/2-36-2-sachbereich-kfz-zulassungsbehoerde/",
+      "quelle": "https://www.kreis-sonneberg.de/buergerservice-views/abteilungen/THU:department:9607/2-36-sachgebiet-verkehr/"
+    },
+    "terminUrl": null,
+    "ikfzUrl": {
+      "url": "https://ikfz.ikfz-thueringen.de/i4/ikfz4/?LICENSEIDENTIFIER=sonneberg_kreis",
+      "quelle": "https://www.kreis-sonneberg.de/internetbasierte-fahrzeugzulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–12:00",
+        "Di 08:00–12:00 und 14:00–16:00",
+        "Mi 08:00–12:00",
+        "Do 08:00–12:00 und 14:00–17:30",
+        "Fr 08:00–12:00"
+      ],
+      "hinweis": "Reguläre Öffnungszeiten des Landratsamtes. Bürgeranträge bearbeitet die Kfz-Zulassung vorrangig nach Terminvergabe, Termine nur telefonisch unter 03675/871-424, -429, -471, -472 und -475.",
+      "quelle": "https://www.kreis-sonneberg.de/kontakt/"
+    },
+    "zustaendigkeit": {
+      "text": "Landkreis Sonneberg einschließlich des Raums Neuhaus am Rennweg (Altkennzeichen NH). Es gibt keine kreisfreie Stadt mit demselben Kürzel.",
+      "quelle": "https://www.kreis-sonneberg.de/internetbasierte-fahrzeugzulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "SON",
+        "bedeutung": "Sonneberg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "NH",
+        "bedeutung": "Neuhaus (Neuhaus am Rennweg; Altkennzeichen, seit 2012 wieder ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Für Kfz-Zulassungen gibt es keine Online-Terminbuchung. Termine werden telefonisch vergeben (03675/871-424, -429, -471, -472, -475). Online buchbar sind nur Termine der Fahrerlaubnisbehörde.",
+        "quelle": "https://www.kreis-sonneberg.de/kontakt/"
+      },
+      {
+        "text": "Autohäuser: Zulassungsvorgänge werden Mo–Fr von 8 bis 9 Uhr angenommen, dabei werden auch die Vorgänge vom Vortag ausgegeben. Eine sofortige Bearbeitung ist nicht möglich.",
+        "quelle": "https://www.kreis-sonneberg.de/buergerservice-views/abteilungen/THU:department:8449/2-36-2-sachbereich-kfz-zulassungsbehoerde/"
+      },
+      {
+        "text": "i-Kfz nutzen derzeit nur Privatpersonen, Firmen noch nicht. H-Kennzeichen, E-Kennzeichen und Saisonzulassungen sind online noch nicht möglich.",
+        "quelle": "https://www.kreis-sonneberg.de/internetbasierte-fahrzeugzulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "unstrut-hainich-kreis",
+    "stadt": "Unstrut-Hainich-Kreis",
+    "bundesland": "Thüringen",
+    "behoerde": "Landratsamt Unstrut-Hainich-Kreis – Fachdienst Straßenverkehr, Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.unstrut-hainich-kreis.de/landkreis/landratsamt/fachbereich-ii-oeffentliche-ordnung/fachdienst-strassenverkehr/kfz-zulassung/",
+    "traeger": "Unstrut-Hainich-Kreis",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Unstrut-Hainich-Kreis – Kfz-Zulassung (Gebäude H 004)",
+        "strasse": "Lindenhof 1",
+        "plz": "99974",
+        "ort": "Mühlhausen/Thüringen",
+        "quelle": "https://www.unstrut-hainich-kreis.de/landkreis/landratsamt/fachbereich-ii-oeffentliche-ordnung/fachdienst-strassenverkehr/kfz-zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.unstrut-hainich-kreis.de/landkreis/landratsamt/fachbereich-ii-oeffentliche-ordnung/fachdienst-strassenverkehr/kfz-zulassung/",
+      "quelle": "https://www.unstrut-hainich-kreis.de/landkreis/landratsamt/fachbereich-ii-oeffentliche-ordnung/fachdienst-strassenverkehr/"
+    },
+    "terminUrl": {
+      "url": "https://termine.uh-kreis.de/",
+      "quelle": "https://www.unstrut-hainich-kreis.de/landkreis/landratsamt/fachbereich-ii-oeffentliche-ordnung/fachdienst-strassenverkehr/kfz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://ikfz.ikfz-thueringen.de/i4/ikfz4/?LICENSEIDENTIFIER=unstrut-hainich_kreis",
+      "quelle": "https://www.unstrut-hainich-kreis.de/landkreis/landratsamt/fachbereich-ii-oeffentliche-ordnung/fachdienst-strassenverkehr/kfz-zulassung/"
+    },
+    "oeffnungszeiten": null,
+    "zustaendigkeit": {
+      "text": "Unstrut-Hainich-Kreis (Kfz-Zulassung des Landratsamtes in Mühlhausen/Thüringen). Die Kürzel UH, LSZ und MHL gehören alle zum Unstrut-Hainich-Kreis, es gibt keine kreisfreie Stadt mit gleichem Kürzel.",
+      "quelle": "https://www.unstrut-hainich-kreis.de/landkreis/landratsamt/fachbereich-ii-oeffentliche-ordnung/fachdienst-strassenverkehr/kfz-zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "UH",
+        "bedeutung": "Unstrut-Hainich (Unstrut, Hainich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "LSZ",
+        "bedeutung": "Langensalza (Bad Langensalza; Altkennzeichen, seit 2012 wieder ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MHL",
+        "bedeutung": "Mühlhausen (Mühlhausen/Thüringen; Altkennzeichen, seit 2012 wieder ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Anliegen im Fachdienst Straßenverkehr können nur mit Termin vorgetragen werden. Für Kfz-Zulassung und Fahrerlaubnis wird dazu die Online-Terminvergabe genutzt.",
+        "quelle": "https://www.unstrut-hainich-kreis.de/landkreis/landratsamt/fachbereich-ii-oeffentliche-ordnung/fachdienst-strassenverkehr/"
+      },
+      {
+        "text": "Wunschkennzeichen lassen sich online reservieren: https://ekol.lecos.de/wkz/?LICENSEIDENTIFIER=unstrut-hainich-kreis_kreis",
+        "quelle": "https://www.unstrut-hainich-kreis.de/landkreis/landratsamt/fachbereich-ii-oeffentliche-ordnung/fachdienst-strassenverkehr/kfz-zulassung/"
+      },
+      {
+        "text": "Das SEPA-Lastschriftmandat für die Kfz-Steuer gibt es über „Zoll online – Formulare und Merkblätter“. Ein Merkblatt zur Zulassung eines Kraftfahrzeuges im Freistaat Thüringen steht auf der Kfz-Seite als PDF bereit.",
+        "quelle": "https://www.unstrut-hainich-kreis.de/landkreis/landratsamt/fachbereich-ii-oeffentliche-ordnung/fachdienst-strassenverkehr/kfz-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten"
+    ]
+  },
+  {
+    "slug": "wartburgkreis",
+    "stadt": "Wartburgkreis",
+    "bundesland": "Thüringen",
+    "behoerde": "Landratsamt Wartburgkreis – Straßenverkehrsamt, Sachgebiet Kfz-Zulassung, Straßenverkehrsrecht",
+    "behoerdeQuelle": "https://www.wartburgkreis.de/kontakt-sachgebiet-kfz-zulassung-strassenverkehrsrecht",
+    "traeger": "Wartburgkreis",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassung, Dienststelle Bad Salzungen",
+        "strasse": "Erzberger Allee 14",
+        "plz": "36433",
+        "ort": "Bad Salzungen",
+        "quelle": "https://www.wartburgkreis.de/kontakt-sachgebiet-kfz-zulassung-strassenverkehrsrecht"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassung, Dienststelle Eisenach",
+        "strasse": "Ernst-Thälmann-Straße 74",
+        "plz": "99817",
+        "ort": "Eisenach",
+        "quelle": "https://www.wartburgkreis.de/kontakt-sachgebiet-kfz-zulassung-strassenverkehrsrecht"
+      }
+    ],
+    "website": {
+      "url": "https://www.wartburgkreis.de/leben-im-wartburgkreis/ordnung-sicherheit/kfz-zulassung-strassenverkehrsrecht",
+      "quelle": "https://www.wartburgkreis.de/sitemap"
+    },
+    "terminUrl": {
+      "url": "https://termin.wartburgkreis.de/select2?md=6",
+      "quelle": "https://www.wartburgkreis.de/landratsamt/online-terminvergabe"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/thueringen/lkrwartburgkreis/",
+      "quelle": "https://www.wartburgkreis.de/leben-im-wartburgkreis/ordnung-sicherheit/kfz-zulassung-strassenverkehrsrecht"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Bad Salzungen: Mo 07:30–12:00 & 13:00–15:00",
+        "Bad Salzungen: Di 07:30–12:00 & 13:00–15:00",
+        "Bad Salzungen: Mi 07:30–12:00 & 13:00–15:00",
+        "Bad Salzungen: Do 07:30–12:00 & 13:00–18:00",
+        "Bad Salzungen: Fr 07:30–12:00",
+        "Eisenach: Mo 07:30–12:00",
+        "Eisenach: Di 07:30–12:00 & 13:00–15:00",
+        "Eisenach: Mi 07:30–12:00",
+        "Eisenach: Do 07:30–12:00 & 13:00–18:00",
+        "Eisenach: Fr 07:30–12:00"
+      ],
+      "hinweis": "Termin zwingend erforderlich, ohne Termin wird der Vorgang nicht bearbeitet. Die Sprechzeiten der Kfz-Zulassung weichen von den allgemeinen Sprechzeiten der Kreisverwaltung ab.",
+      "quelle": "https://www.wartburgkreis.de/kontakt-sachgebiet-kfz-zulassung-strassenverkehrsrecht"
+    },
+    "zustaendigkeit": {
+      "text": "Wartburgkreis einschließlich der Stadt Eisenach. Die Kfz-Zulassung des Landratsamtes hat Dienststellen in Bad Salzungen und Eisenach.",
+      "quelle": "https://www.wartburgkreis.de/landratsamt/online-terminvergabe"
+    },
+    "kuerzel": [
+      {
+        "code": "WAK",
+        "bedeutung": "Wartburgkreis",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "EA",
+        "bedeutung": "Eisenach (für den Wartburgkreis seit 01.07.2021 ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SLZ",
+        "bedeutung": "Salzungen (Bad Salzungen; Altkennzeichen, seit 2012 wieder ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Im Landratsamt ist nur noch bargeldlose Zahlung möglich.",
+        "quelle": "https://www.wartburgkreis.de/landratsamt/online-terminvergabe"
+      },
+      {
+        "text": "Bei Verlust des Kfz-Briefes werden neue Papiere erst nach einem Aufgebot ausgestellt (ca. 4 Wochen).",
+        "quelle": "https://www.wartburgkreis.de/leben-im-wartburgkreis/ordnung-sicherheit/kfz-zulassung-strassenverkehrsrecht"
+      },
+      {
+        "text": "Wer sich mit Reisepass ausweist, braucht eine Meldebestätigung, die nicht älter als 4 Wochen ist.",
+        "quelle": "https://www.wartburgkreis.de/leben-im-wartburgkreis/ordnung-sicherheit/kfz-zulassung-strassenverkehrsrecht"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-weimarer-land",
+    "stadt": "Landkreis Weimarer Land",
+    "bundesland": "Thüringen",
+    "behoerde": "Landratsamt Weimarer Land – Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.weimarerland.de/de/kfz-zulassungsbehoerde.html",
+    "traeger": "Landkreis Weimarer Land",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Weimarer Land – Kfz-Zulassungsbehörde",
+        "strasse": "Bahnhofstraße 28",
+        "plz": "99510",
+        "ort": "Apolda",
+        "quelle": "https://www.weimarerland.de/de/kfz-zulassungsbehoerde.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.weimarerland.de/de/kfz-zulassungsbehoerde.html",
+      "quelle": "https://www.weimarerland.de/de/aemterstruktur.html"
+    },
+    "terminUrl": {
+      "url": "https://ekol.lecos.de/tnv/?LICENSEIDENTIFIER=weimarer-land_kreis",
+      "quelle": "https://www.weimarerland.de/de/kfz-zulassungsbehoerde.html"
+    },
+    "ikfzUrl": {
+      "url": "https://ikfz.ikfz-thueringen.de/i4/ikfz4/?LICENSEIDENTIFIER=weimarer-land_kreis",
+      "quelle": "https://www.weimarerland.de/de/kfz-zulassungsbehoerde.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo mit Termin",
+        "Di mit Termin",
+        "Mi mit Termin (Zahlung am Automaten)",
+        "Do 09:00–12:00 | 13:30–18:00",
+        "Fr mit Termin (Zahlung am Automaten)"
+      ],
+      "hinweis": "Allgemeine Öffnungszeiten des Landratsamtes. Die Kfz-Zulassungsbehörde arbeitet an allen Tagen nur mit Termin, auch donnerstags.",
+      "quelle": "https://www.weimarerland.de/"
+    },
+    "zustaendigkeit": {
+      "text": "Landkreis Weimarer Land (AP/APD). Die kreisfreie Stadt Weimar (WE) hat eine eigene Zulassungsbehörde im Bürgerservice der Stadtverwaltung Weimar und gehört nicht zum Zuständigkeitsbereich des Landratsamtes.",
+      "quelle": "https://www.weimarerland.de/de/kfz-zulassungsbehoerde.html"
+    },
+    "kuerzel": [
+      {
+        "code": "AP",
+        "bedeutung": "Apolda",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "APD",
+        "bedeutung": "Apolda (Altkennzeichen, seit 2012 wieder ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Zum gebuchten Termin wird ausschließlich die gebuchte Leistung bearbeitet. Nicht mehr benötigte Termine sollen storniert werden.",
+        "quelle": "https://ekol.lecos.de/tnv/?LICENSEIDENTIFIER=weimarer-land_kreis"
+      },
+      {
+        "text": "Wer sich mit Reisepass ausweist, braucht eine Meldebescheinigung, die nicht älter als 3 Monate ist.",
+        "quelle": "https://www.weimarerland.de/de/kfz-zulassungsbehoerde.html"
+      },
+      {
+        "text": "Wunschkennzeichen lassen sich online reservieren: https://ekol.lecos.de/wkz/?LICENSEIDENTIFIER=weimarer-land_kreis",
+        "quelle": "https://www.weimarerland.de/de/kfz-zulassungsbehoerde.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "gera",
+    "stadt": "Gera",
+    "bundesland": "Thüringen",
+    "behoerde": "Stadtverwaltung Gera – Ordnungsamt, Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.gera.de/verwaltung-buergerservice/stadtverwaltung/dezernate-aemter-abteilungen-referate/dezernat-buergerservice-ordnung-und-umwelt/ordnungsamt/kfz-zulassung-/-fahrerlaubnisbehoerde",
+    "traeger": "Stadt Gera",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungs- und Fahrerlaubnisbehörde",
+        "strasse": "Wiesestraße 125",
+        "plz": "07548",
+        "ort": "Gera",
+        "quelle": "https://www.gera.de/verwaltung-buergerservice/stadtverwaltung/dezernate-aemter-abteilungen-referate/dezernat-buergerservice-ordnung-und-umwelt/ordnungsamt/kfz-zulassung-/-fahrerlaubnisbehoerde"
+      }
+    ],
+    "website": {
+      "url": "https://www.gera.de/verwaltung-buergerservice/stadtverwaltung/dezernate-aemter-abteilungen-referate/dezernat-sicherheit-und-buergerservice/ordnungsamt/kfz-zulassung-/-fahrerlaubnisbehoerde/kfz-zulassungsbehoerde",
+      "quelle": "https://www.gera.de/verwaltung-buergerservice/stadtverwaltung/dezernate-aemter-abteilungen-referate/dezernat-buergerservice-ordnung-und-umwelt/ordnungsamt/kfz-zulassung-/-fahrerlaubnisbehoerde"
+    },
+    "terminUrl": {
+      "url": "https://termin.gera.de/",
+      "quelle": "https://www.gera.de/verwaltung-buergerservice/stadtverwaltung/dezernate-aemter-abteilungen-referate/dezernat-buergerservice-ordnung-und-umwelt/ordnungsamt/kfz-zulassung-/-fahrerlaubnisbehoerde"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=gera_stadt",
+      "quelle": "https://www.gera.de/verwaltung-buergerservice/stadtverwaltung/dezernate-aemter-abteilungen-referate/dezernat-sicherheit-und-buergerservice/ordnungsamt/kfz-zulassung-/-fahrerlaubnisbehoerde/kfz-zulassungsbehoerde"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 09:00–12:00, 14:00–17:00",
+        "Di 09:00–12:00, 14:00–17:00",
+        "Mi geschlossen",
+        "Do 09:00–12:00, 14:00–18:00",
+        "Fr 09:00–12:00"
+      ],
+      "hinweis": "Für persönliche Vorsprachen ist ein Termin nötig, ohne Termin wird nicht bearbeitet. Ausnahme: für ausgewählte Anliegen gibt es vor Ort begrenzt Wartemarken. Schließtag: 07.05.2027.",
+      "quelle": "https://www.gera.de/verwaltung-buergerservice/stadtverwaltung/dezernate-aemter-abteilungen-referate/dezernat-buergerservice-ordnung-und-umwelt/ordnungsamt/kfz-zulassung-/-fahrerlaubnisbehoerde"
+    },
+    "zustaendigkeit": {
+      "text": "Stadt Gera (kreisfreie Stadt, Zulassungsbezirk Gera).",
+      "quelle": "https://www.gera.de/verwaltung-buergerservice/stadtverwaltung/dezernate-aemter-abteilungen-referate/dezernat-buergerservice-ordnung-und-umwelt/ordnungsamt/kfz-zulassung-/-fahrerlaubnisbehoerde"
+    },
+    "kuerzel": [
+      {
+        "code": "G",
+        "bedeutung": "Gera",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Für ausgewählte Anliegen gibt es vor Ort weiterhin begrenzt Wartemarken, z. B. Fahrzeugabmeldung, Kurzzeit- und Ausfuhrkennzeichen, Adress- und Namensänderung, Verlust/Ersatzpapiere, Kennzeichennachprägung und Abholung von Dokumenten.",
+        "quelle": "https://www.gera.de/verwaltung-buergerservice/stadtverwaltung/dezernate-aemter-abteilungen-referate/dezernat-buergerservice-ordnung-und-umwelt/ordnungsamt/kfz-zulassung-/-fahrerlaubnisbehoerde"
+      },
+      {
+        "text": "Zulassungsdienste, Autohändler und Großkunden vereinbaren ihre Termine per E-Mail oder telefonisch statt über das Online-System.",
+        "quelle": "https://www.gera.de/verwaltung-buergerservice/stadtverwaltung/dezernate-aemter-abteilungen-referate/dezernat-buergerservice-ordnung-und-umwelt/ordnungsamt/kfz-zulassung-/-fahrerlaubnisbehoerde"
+      },
+      {
+        "text": "Die Anmeldung am Terminal vor Ort (z. B. per QR-Code) ist frühestens 15 Minuten vor dem Termin möglich. Bei unvollständigen Unterlagen wird der Antrag nicht bearbeitet.",
+        "quelle": "https://www.gera.de/verwaltung-buergerservice/stadtverwaltung/dezernate-aemter-abteilungen-referate/dezernat-buergerservice-ordnung-und-umwelt/ordnungsamt/kfz-zulassung-/-fahrerlaubnisbehoerde"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "jena",
+    "stadt": "Jena",
+    "bundesland": "Thüringen",
+    "behoerde": "Stadtverwaltung Jena – Team Bürgerservice (Zulassungsbehörde)",
+    "behoerdeQuelle": "https://service.jena.de/de/zulassung-von-neufahrzeugen-anmeldung",
+    "traeger": "Stadt Jena",
+    "standorte": [
+      {
+        "bezeichnung": "Team Bürgerservice",
+        "strasse": "Engelplatz 1",
+        "plz": "07743",
+        "ort": "Jena",
+        "quelle": "https://service.jena.de/de/zulassung-von-neufahrzeugen-anmeldung"
+      }
+    ],
+    "website": {
+      "url": "https://service.jena.de/de/zulassung-von-neufahrzeugen-anmeldung",
+      "quelle": "https://startseite.jena.de/de"
+    },
+    "terminUrl": {
+      "url": "https://tevis-bs.jena.de/select2?md=1",
+      "quelle": "https://service.jena.de/de/online-termin"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/thueringen/jena/bsp_ikfz_antragstellung/",
+      "quelle": "https://service.jena.de/de/zulassung-von-neufahrzeugen-anmeldung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:30–13:00",
+        "Di 08:30–18:00",
+        "Mi 09:00–13:00",
+        "Do 08:30–16:00",
+        "Fr 08:30–13:00",
+        "Sa 07.11. und 21.11.2026 09:00–13:00",
+        "Sa 05.12. und 19.12.2026 09:00–13:00"
+      ],
+      "hinweis": "Öffnungszeiten des Bürgerservice. Für eine persönliche Vorsprache muss ein Termin gebucht werden, online oder telefonisch. Nur die Abholung bereits beantragter Dokumente ist ohne Termin möglich.",
+      "quelle": "https://service.jena.de/de/zulassung-von-neufahrzeugen-anmeldung"
+    },
+    "zustaendigkeit": {
+      "text": "Stadt Jena (kreisfreie Stadt).",
+      "quelle": "https://service.jena.de/de/zulassung-von-neufahrzeugen-anmeldung"
+    },
+    "kuerzel": [
+      {
+        "code": "J",
+        "bedeutung": "Jena",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Online ist es deutlich günstiger: Eine Standard-Erstzulassung kostet vor Ort 32,60 €, über i-Kfz 12,80 €. Eine Tageszulassung kostet vor Ort 45,90 €, online 14,90 €.",
+        "quelle": "https://service.jena.de/de/zulassung-von-neufahrzeugen-anmeldung"
+      },
+      {
+        "text": "Zusätzlich ist an ausgewählten Samstagen geöffnet, in der Regel zwei pro Monat von 09:00 bis 13:00 Uhr (z. B. 07.11. und 21.11.2026).",
+        "quelle": "https://service.jena.de/de/zulassung-von-neufahrzeugen-anmeldung"
+      },
+      {
+        "text": "Neufahrzeuge können auch als Tageszulassung angemeldet werden. Das Fahrzeug gilt dann mit Ablauf des Tages als außer Betrieb gesetzt, ohne gesonderte Abmeldung.",
+        "quelle": "https://service.jena.de/de/zulassung-von-neufahrzeugen-anmeldung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "suhl",
+    "stadt": "Suhl",
+    "bundesland": "Thüringen",
+    "behoerde": "Stadtverwaltung Suhl – Ordnungs- und Bürgeramt, Sachgebiet Einwohner-, Zulassungs- und Fahrerlaubniswesen",
+    "behoerdeQuelle": "https://www.suhl.eu/ordnungs-buergeramt",
+    "traeger": "Stadt Suhl",
+    "standorte": [
+      {
+        "bezeichnung": "Ordnungs- und Bürgeramt",
+        "strasse": "Friedrich-König-Straße 42",
+        "plz": "98527",
+        "ort": "Suhl",
+        "quelle": "https://www.suhl.eu/ordnungs-buergeramt"
+      }
+    ],
+    "website": {
+      "url": "https://www.suhl.eu/ordnungs-buergeramt",
+      "quelle": "https://www.suhl.eu/buergerservice"
+    },
+    "terminUrl": {
+      "url": "https://stadtsuhl.flexappoint.de/#/",
+      "quelle": "https://www.suhl.eu/buergerservice"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=suhl_stadt",
+      "quelle": "https://www.suhl.eu/buergerservice"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–13:00",
+        "Di 08:00–17:00",
+        "Do 08:00–18:00",
+        "Fr 08:00–13:00",
+        "Sa 09:00–12:00 (am ersten Samstag im Monat, Einwohnermelde-, Zulassungs- und Fahrerlaubnisbehörde)"
+      ],
+      "hinweis": "Sprechzeiten des Ordnungs- und Bürgeramtes, für Mittwoch sind keine Sprechzeiten angegeben. Termine sind online buchbar, eine Terminpflicht ist nicht ausdrücklich genannt.",
+      "quelle": "https://www.suhl.eu/ordnungs-buergeramt"
+    },
+    "zustaendigkeit": {
+      "text": "Stadt Suhl (kreisfreie Stadt).",
+      "quelle": "https://www.suhl.eu/ordnungs-buergeramt"
+    },
+    "kuerzel": [
+      {
+        "code": "SHL",
+        "bedeutung": "Suhl",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Zulassungsbehörde öffnet zusätzlich am ersten Samstag im Monat von 09:00 bis 12:00 Uhr.",
+        "quelle": "https://www.suhl.eu/ordnungs-buergeramt"
+      },
+      {
+        "text": "Formulare zum Herunterladen stehen auf der Bürgerservice-Seite bereit, u. a. Zulassungsvollmacht, SEPA-Mandat Kfz-Steuer, Antrag auf Außerbetriebsetzung sowie Anträge auf rotes Händler- bzw. Oldtimer-Kennzeichen.",
+        "quelle": "https://www.suhl.eu/buergerservice"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "weimar",
+    "stadt": "Weimar",
+    "bundesland": "Thüringen",
+    "behoerde": "Stadtverwaltung Weimar – Bürgerservice (zentrale Anlaufstelle für Melde-, Kfz- und Fahrerlaubniswesen)",
+    "behoerdeQuelle": "https://stadt.weimar.de/de/buergerservice.html",
+    "traeger": "Stadt Weimar",
+    "standorte": [
+      {
+        "bezeichnung": "Stadtverwaltung Weimar – Bürgerservice (Haus II)",
+        "strasse": "Schwanseestraße 17",
+        "plz": "99423",
+        "ort": "Weimar",
+        "quelle": "https://stadt.weimar.de/de/buergerservice.html"
+      }
+    ],
+    "website": {
+      "url": "https://stadt.weimar.de/de/buergerservice.html",
+      "quelle": "https://stadt.weimar.de/de/stadt.html"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/weimar/",
+      "quelle": "https://stadt.weimar.de/de/buergerservice.html"
+    },
+    "ikfzUrl": {
+      "url": "https://ikfz.ikfz-thueringen.de/i4/ikfz4/?LICENSEIDENTIFIER=weimar_stadt",
+      "quelle": "https://stadt.weimar.de/de/ikfz.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–12:00",
+        "Di 08:00–12:00 | 13:00–18:00",
+        "Mi 08:00–12:00",
+        "Do 08:00–12:00 | 13:00–15:00",
+        "Fr 07:00–12:00",
+        "Sa 08:00–12:00 (jeden ersten Samstag im Monat)"
+      ],
+      "hinweis": "Termin notwendig, Anliegen werden grundsätzlich nur nach vorheriger Terminvereinbarung bearbeitet. Ohne Termin nur in dringenden Fällen: Di 08:00–10:00 und Do 13:00–15:00.",
+      "quelle": "https://stadt.weimar.de/de/zustaendige-stelle/organisationseinheit/347/buergerservice.html"
+    },
+    "zustaendigkeit": {
+      "text": "Nur die Stadt Weimar (kreisfreie Stadt, Kennzeichen WE). Für den umliegenden Landkreis Weimarer Land (AP/APD) ist die Kfz-Zulassungsbehörde des Landratsamtes in Apolda zuständig, nicht die Stadt Weimar.",
+      "quelle": "https://stadt.weimar.de/de/zustaendige-stelle/organisationseinheit/347/buergerservice.html"
+    },
+    "kuerzel": [
+      {
+        "code": "WE",
+        "bedeutung": "Weimar",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Ohne Termin geht es nur in den Sprechzeiten Di 8–10 Uhr und Do 13–15 Uhr. Wartenummern gibt es höchstens 30 Minuten vor Beginn bis 30 Minuten vor Ende, bei hohem Andrang ist früher Annahmeschluss möglich.",
+        "quelle": "https://stadt.weimar.de/de/buergerservice.html"
+      },
+      {
+        "text": "Wunschkennzeichen lassen sich online reservieren: https://igv.osrz-akdb.de/verkehr-igv/servlet/Internetgeschaeftsvorfaelle?AUFRUF=WKZ&MANDANT=16055_wmm",
+        "quelle": "https://stadt.weimar.de/de/ikfz.html"
+      },
+      {
+        "text": "Termine gibt es auch telefonisch über die Bürgerhotline (03643) 762-0: Mo, Mi, Do 07:30–15:30, Di 07:30–18:00, Fr 07:30–12:00.",
+        "quelle": "https://stadt.weimar.de/de/buergerservice.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

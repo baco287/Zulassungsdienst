@@ -1,0 +1,958 @@
+[
+  {
+    "slug": "rheingau-taunus-kreis",
+    "stadt": "Rheingau-Taunus-Kreis",
+    "bundesland": "Hessen",
+    "behoerde": "KFZ-Zulassungsbehörde des Rheingau-Taunus-Kreises",
+    "behoerdeQuelle": "https://www.rheingau-taunus.de/informieren-beantragen/auto-verkehr/zulassungsbehoerde/",
+    "traeger": "Rheingau-Taunus-Kreis (Kreisverwaltung)",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassung Bad Schwalbach (Kreisverwaltung)",
+        "strasse": "Heimbacher Straße 7",
+        "plz": "65307",
+        "ort": "Bad Schwalbach",
+        "quelle": "https://www.rheingau-taunus.de/adressdetail/zulassung/"
+      },
+      {
+        "bezeichnung": "Zulassung Idstein",
+        "strasse": "Black & Decker Straße 28",
+        "plz": "65510",
+        "ort": "Idstein",
+        "quelle": "https://www.rheingau-taunus.de/adressdetail/zulassung-1/"
+      },
+      {
+        "bezeichnung": "Zulassung Rüdesheim a. R.",
+        "strasse": "Geisenheimer Straße 77/79",
+        "plz": "65385",
+        "ort": "Rüdesheim am Rhein",
+        "quelle": "https://www.rheingau-taunus.de/adressdetail/zulassung-2/"
+      }
+    ],
+    "website": {
+      "url": "https://www.rheingau-taunus.de/informieren-beantragen/auto-verkehr/zulassungsbehoerde/",
+      "quelle": "https://www.rheingau-taunus.de/informieren-beantragen/auto-verkehr/zulassungsbehoerde/"
+    },
+    "terminUrl": {
+      "url": "https://tempus-termine.com/termine/index.php?anlagennr=49&anwendung=1",
+      "quelle": "https://www.rheingau-taunus.de/informieren-beantragen/auto-verkehr/zulassungsbehoerde/termine-und-oeffnungzeiten/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100001.OE.8999620&leistungId=99036020001000&p=064390",
+      "quelle": "https://www.rheingau-taunus.de/informieren-beantragen/auto-verkehr/zulassungsbehoerde/kfz-online-portal-1/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Bad Schwalbach: OHNE Termin Mo + Mi 07:30–11:30 Uhr; MIT Termin Di + Do + Fr (Erscheinen nur mit Termin möglich)",
+        "Rüdesheim am Rhein: OHNE Termin Di + Do 07:30–11:30 Uhr; MIT Termin Mo + Mi + Fr (Erscheinen nur mit Termin möglich)",
+        "Idstein: OHNE Termin Mo + Di 07:30–11:30 Uhr; MIT Termin Mi + Do + Fr (Erscheinen nur mit Termin möglich)"
+      ],
+      "hinweis": "Alle drei Standorte nur für Privatkunden; die Zeiten ohne Termin gelten für Zulassungsangelegenheiten. An den übrigen Tagen Erscheinen nur mit Termin (Online-Terminvergabe, neue Termine werden täglich freigeschaltet).",
+      "quelle": "https://www.rheingau-taunus.de/informieren-beantragen/auto-verkehr/zulassungsbehoerde/termine-und-oeffnungzeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Die KFZ-Zulassungsbehörde des Rheingau-Taunus-Kreises ist für die Bürgerinnen und Bürger des gesamten Kreises zuständig (An- und Abmeldungen an den drei Standorten Bad Schwalbach, Idstein und Rüdesheim am Rhein).",
+      "quelle": "https://www.rheingau-taunus.de/informieren-beantragen/auto-verkehr/zulassungsbehoerde/"
+    },
+    "kuerzel": [
+      {
+        "code": "RÜD",
+        "bedeutung": "Rüdesheim am Rhein",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SWA",
+        "bedeutung": "Bad Schwalbach",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Annahmeschluss ist jeweils 30 Minuten vor Ende der regulären Öffnungszeiten.",
+        "quelle": "https://www.rheingau-taunus.de/informieren-beantragen/auto-verkehr/zulassungsbehoerde/"
+      },
+      {
+        "text": "Wunschkennzeichen werden für 90 Tage reserviert; eine Verlängerung ist nur durch erneute Online-Reservierung möglich, nicht per Mail oder Telefon.",
+        "quelle": "https://www.rheingau-taunus.de/informieren-beantragen/auto-verkehr/zulassungsbehoerde/kfz-online-portal-1/"
+      },
+      {
+        "text": "E-Kennzeichen dürfen höchstens 8 Stellen haben: bei RÜD/SWA also maximal 4 Zeichen Erkennungsnummer plus E (z. B. RÜD A 100 E, SWA AA 10 E).",
+        "quelle": "https://www.rheingau-taunus.de/informieren-beantragen/auto-verkehr/zulassungsbehoerde/kfz-online-portal-1/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "wetteraukreis",
+    "stadt": "Wetteraukreis",
+    "bundesland": "Hessen",
+    "behoerde": "Zulassungsstelle des Wetteraukreises",
+    "behoerdeQuelle": "https://wetteraukreis.de/service/auto-verkehr/dienstleistungen-auto-und-verkehr/kfz-zulassung/zulassung-eines-fabrikneuen-fahrzeuges",
+    "traeger": "Wetteraukreis (Kreisausschuss)",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle des Wetteraukreises Friedberg (Gebäude A)",
+        "strasse": "Europaplatz",
+        "plz": "61169",
+        "ort": "Friedberg",
+        "quelle": "https://wetteraukreis.de/service/auto-verkehr/dienstleistungen-auto-und-verkehr/kfz-zulassung/zulassung-eines-fabrikneuen-fahrzeuges"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle des Wetteraukreises Büdingen",
+        "strasse": "Berliner Str. 31",
+        "plz": "63654",
+        "ort": "Büdingen",
+        "quelle": "https://wetteraukreis.de/service/auto-verkehr/dienstleistungen-auto-und-verkehr/kfz-zulassung/zulassung-eines-fabrikneuen-fahrzeuges"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Karben (Bürgerhaus Petterweil, Stadt Karben)",
+        "strasse": "Sauerbornstraße 12-14",
+        "plz": "61184",
+        "ort": "Karben",
+        "quelle": "https://wetteraukreis.de/service/auto-verkehr/dienstleistungen-auto-und-verkehr/kfz-zulassung/zulassung-eines-fabrikneuen-fahrzeuges"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Nidda (Bürger Service, Stadt Nidda)",
+        "strasse": "Wilhelm-Eckhardt-Platz",
+        "plz": "63667",
+        "ort": "Nidda",
+        "quelle": "https://wetteraukreis.de/service/auto-verkehr/dienstleistungen-auto-und-verkehr/kfz-zulassung/zulassung-eines-fabrikneuen-fahrzeuges"
+      }
+    ],
+    "website": {
+      "url": "https://wetteraukreis.de/service/auto-verkehr/kfz-zulassung",
+      "quelle": "https://wetteraukreis.de/service/auto-verkehr/kfz-zulassung"
+    },
+    "terminUrl": {
+      "url": "https://ota-wetterau.de/form/104/",
+      "quelle": "https://wetteraukreis.de/service/auto-verkehr/dienstleistungen-auto-und-verkehr/kfz-zulassung/oeffnungszeiten-der-zulassungsstelle"
+    },
+    "ikfzUrl": {
+      "url": "https://behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100001.OE.9531852&leistungId=99036020001000&p=064400",
+      "quelle": "https://wetteraukreis.de/service/service-online/stichworte-a-z-service-online/auto-verkehr-online-1"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Friedberg und Büdingen: Mo und Di 7.30–12.00 Uhr und 13.00–16.00 Uhr",
+        "Friedberg und Büdingen: Mi 7.30–12.00 Uhr",
+        "Friedberg und Büdingen: Do 7.30–12.00 Uhr und 13.00–18.00 Uhr",
+        "Friedberg und Büdingen: Fr 7.30–12.30 Uhr",
+        "Nidda: Mo und Di 8.00–16.00 Uhr",
+        "Nidda: Mi 8.00–12.00 Uhr",
+        "Nidda: Do 8.00–19.00 Uhr",
+        "Nidda: Fr 8.00–12.00 Uhr"
+      ],
+      "hinweis": "Der Kundenverkehr in Friedberg, Büdingen und Nidda ist nur über eine Online-Terminvereinbarung möglich; Termine für Friedberg und Büdingen sind maximal drei Wochen im Voraus buchbar. Karben und Nidda vergeben Termine über die jeweilige Stadt. Zeiten für Karben wegen widersprüchlicher Angaben nicht übernommen.",
+      "quelle": "https://wetteraukreis.de/service/auto-verkehr/dienstleistungen-auto-und-verkehr/kfz-zulassung/oeffnungszeiten-der-zulassungsstelle"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsstelle des Wetteraukreises mit Hauptstelle in Friedberg (Europaplatz) und Standort Büdingen, zuständig für Fahrzeughalter im Wetteraukreis (Kennzeichen FB und BÜD). Zusätzlich gibt es Zulassungsstellen in Karben (Stadtteil Petterweil) und Nidda, deren Termine über die Städte Karben bzw. Nidda vergeben werden.",
+      "quelle": "https://wetteraukreis.de/service/auto-verkehr/dienstleistungen-auto-und-verkehr/kfz-zulassung/oeffnungszeiten-der-zulassungsstelle"
+    },
+    "kuerzel": [
+      {
+        "code": "FB",
+        "bedeutung": "Friedberg (Hessen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BÜD",
+        "bedeutung": "Büdingen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "In den Zulassungsstellen Friedberg und Büdingen sind nur Zahlungen mit EC-Karte möglich.",
+        "quelle": "https://wetteraukreis.de/service/auto-verkehr/dienstleistungen-auto-und-verkehr/kfz-zulassung/oeffnungszeiten-der-zulassungsstelle"
+      },
+      {
+        "text": "Importfahrzeuge (ausländische Fahrzeugdokumente oder deutscher Fahrzeugbrief ohne Zulassung/Halter) können nur in der Hauptstelle Friedberg oder in Büdingen bearbeitet werden, nicht in Karben.",
+        "quelle": "https://www.karben.de/portal/seiten/kfz-zulassungsstelle-900000151-24930.html"
+      },
+      {
+        "text": "Die Zulassung von Neufahrzeugen aus dem Ausland, Re-Importen und Leichtkrafträdern („125er“) ohne Fahrzeugbrief erfolgt ausschließlich in Friedberg oder Büdingen, nicht in Nidda.",
+        "quelle": "https://www.nidda.de/rathaus/stadtverwaltung/kfz-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-giessen",
+    "stadt": "Landkreis Gießen",
+    "bundesland": "Hessen",
+    "behoerde": "Kfz-Zulassungsstelle des Landkreises Gießen",
+    "behoerdeQuelle": "https://www.lkgi.de/kfz-zulassungen/",
+    "traeger": "Landkreis Gießen",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Hauptstelle Gießen",
+        "strasse": "Bachweg 9",
+        "plz": "35398",
+        "ort": "Gießen",
+        "quelle": "https://www.lkgi.de/kfz-zulassungen/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Außenstelle Grünberg (an der Gallushalle)",
+        "strasse": "Gießener Straße 45",
+        "plz": "35305",
+        "ort": "Grünberg",
+        "quelle": "https://www.lkgi.de/kfz-zulassungen/"
+      }
+    ],
+    "website": {
+      "url": "https://www.lkgi.de/kfz-zulassungen/",
+      "quelle": "https://www.lkgi.de/kfz-zulassungen/"
+    },
+    "terminUrl": {
+      "url": "https://termine.lkgi.de/m/zulassungsstelle/extern/calendar/?uid=9382d38d-d424-4331-bff1-04758595bb98",
+      "quelle": "https://www.lkgi.de/kfz-zulassungen/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100001.OE.8998880&leistungId=99036020001000&p=065310",
+      "quelle": "https://www.lkgi.de/kfz-zulassungen/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Gießen (Bachweg 9) ohne Termin: Do und Fr jeweils 7.30–12.15 Uhr (Wartenummer am Schalter, nur Privatpersonen)"
+      ],
+      "hinweis": "Ansonsten nur mit Termin über den Online-Kalender (Buchung sechs Wochen im Voraus möglich). Ohne Termin nur solange das Tageskontingent reicht. Weitere Öffnungszeiten nennt die Seite nicht.",
+      "quelle": "https://www.lkgi.de/kfz-zulassungen/"
+    },
+    "zustaendigkeit": {
+      "text": "Für alle Städte und Gemeinden im Landkreis Gießen (einschließlich der Stadt Gießen) ist die Zulassungsbehörde des Landkreises zuständig. Hauptstelle in Gießen, Zweigstelle in Grünberg.",
+      "quelle": "https://www.lkgi.de/kfz-zulassungen/"
+    },
+    "kuerzel": [
+      {
+        "code": "GI",
+        "bedeutung": "Gießen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Pro Termin wird eine Angelegenheit bearbeitet; Termine sind sechs Wochen im Voraus buchbar und gelten nur für die jeweils gebuchte Stelle (nicht für die Führerscheinstelle).",
+        "quelle": "https://www.lkgi.de/kfz-zulassungen/"
+      },
+      {
+        "text": "Wunschkennzeichen werden online unverbindlich für 30 Tage reserviert; danach ist das Kennzeichen zwei Tage gesperrt.",
+        "quelle": "https://www.lkgi.de/kfz-zulassungen/"
+      },
+      {
+        "text": "Von Oktober 2026 bis voraussichtlich Dezember 2027 Bauarbeiten in der Lahnstraße in Gießen mit Sperrungen und Umleitungen – bei der Anfahrt zur Zulassungsstelle im Bachweg berücksichtigen.",
+        "quelle": "https://www.lkgi.de/kfz-zulassungen/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "lahn-dill-kreis",
+    "stadt": "Lahn-Dill-Kreis",
+    "bundesland": "Hessen",
+    "behoerde": "Kfz-Zulassungsbehörde des Lahn-Dill-Kreises",
+    "behoerdeQuelle": "https://www.lahn-dill-kreis.de/strasse-verkehr/kfz-zulassung/",
+    "traeger": "Lahn-Dill-Kreis",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsbehörde Wetzlar",
+        "strasse": "Baumeisterweg 3",
+        "plz": "35576",
+        "ort": "Wetzlar",
+        "quelle": "https://www.lahn-dill-kreis.de/strasse-verkehr/kfz-zulassung/"
+      },
+      {
+        "bezeichnung": "Zulassungsbehörde Herborn-Burg",
+        "strasse": "Junostraße 1f",
+        "plz": "35745",
+        "ort": "Herborn",
+        "quelle": "https://www.lahn-dill-kreis.de/strasse-verkehr/kfz-zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.lahn-dill-kreis.de/strasse-verkehr/kfz-zulassung/",
+      "quelle": "https://www.lahn-dill-kreis.de/strasse-verkehr/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termine-kfz.lahn-dill-kreis.de/720183266/appointment/Index/1",
+      "quelle": "https://www.lahn-dill-kreis.de/strasse-verkehr/kfz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100001.OE.9134406&leistungId=99036020001000&p=065320",
+      "quelle": "https://www.lahn-dill-kreis.de/strasse-verkehr/kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Wetzlar: Mo 07:30–12:00 Uhr & 13:30–15:00 Uhr",
+        "Wetzlar: Di 07:30–12:00 Uhr",
+        "Wetzlar: Mi 07:30–12:00 Uhr",
+        "Wetzlar: Do 07:30–12:00 Uhr & 13:30–17:00 Uhr",
+        "Wetzlar: Fr 07:30–12:00 Uhr",
+        "Herborn-Burg: Mo 07:30–12:00 Uhr",
+        "Herborn-Burg: Di 07:30–12:00 Uhr & 13:30–15:00 Uhr",
+        "Herborn-Burg: Mi 07:30–12:00 Uhr",
+        "Herborn-Burg: Do 07:30–12:00 Uhr & 13:30–17:00 Uhr",
+        "Herborn-Burg: Fr 07:30–12:00 Uhr"
+      ],
+      "hinweis": "Für die meisten Anliegen Termin über die Online-Terminvergabe oder die Hotline 06441 407-2529; einige Anliegen (z. B. Abmeldung, Kurzzeitkennzeichen, Adressänderung) ohne Termin. In dringenden Fällen auch ohne Termin, dann mit längeren Wartezeiten.",
+      "quelle": "https://www.lahn-dill-kreis.de/strasse-verkehr/kfz-zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Lahn-Dill-Kreises mit Standorten in Wetzlar und Herborn-Burg, zuständig für Halter mit Wohnsitz oder Firmensitz im Lahn-Dill-Kreis. Bestimmte Vorgänge sind auch als Rathauszulassung bei teilnehmenden Städten und Gemeinden möglich (u. a. Dillenburg, Haiger, Herborn; Stadt Wetzlar nur Anschriftenänderungen).",
+      "quelle": "https://www.lahn-dill-kreis.de/strasse-verkehr/kfz-zulassung/rathauszulassungen/"
+    },
+    "kuerzel": [
+      {
+        "code": "LDK",
+        "bedeutung": "Lahn-Dill-Kreis",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "DIL",
+        "bedeutung": "Dillenburg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WZ",
+        "bedeutung": "Wetzlar",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Seit 01.11.2026 ist an den Standorten Wetzlar und Herborn-Burg nur noch elektronische Zahlung möglich (EC-/Kreditkarte, Smartphone/-watch); bar zahlen kann man nur noch am Standort Karl-Kellner-Ring 51 in Wetzlar.",
+        "quelle": "https://www.lahn-dill-kreis.de/strasse-verkehr/kfz-zulassung/"
+      },
+      {
+        "text": "Ohne Termin möglich: u. a. Außerbetriebsetzung, Kurzzeitkennzeichen, Adress- und Namensänderung, neues Kennzeichen bei Verlust/Diebstahl/Defekt, Feinstaub- und 100-km/h-Plaketten.",
+        "quelle": "https://www.lahn-dill-kreis.de/strasse-verkehr/kfz-zulassung/"
+      },
+      {
+        "text": "Rathauszulassung: Abmeldung, Wiederzulassung, Umschreibung, Adressänderung und Neuzulassung (außer Importfahrzeuge und Quads) auch bei teilnehmenden Städten und Gemeinden des Kreises.",
+        "quelle": "https://www.lahn-dill-kreis.de/strasse-verkehr/kfz-zulassung/rathauszulassungen/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-limburg-weilburg",
+    "stadt": "Landkreis Limburg-Weilburg",
+    "bundesland": "Hessen",
+    "behoerde": "Fachdienst Zulassungswesen des Landkreises Limburg-Weilburg (Amt für Öffentliche Ordnung)",
+    "behoerdeQuelle": "https://www.landkreis-limburg-weilburg.de/politik-verwaltung/bereiche-ansprechpartner/amt-fuer-oeffentliche-ordnung/fachdienst-zulassungswesen",
+    "traeger": "Landkreis Limburg-Weilburg",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Limburg",
+        "strasse": "Westerwaldstraße 111",
+        "plz": "65549",
+        "ort": "Limburg a. d. Lahn",
+        "quelle": "https://buergerservice.landkreis-limburg-weilburg.de/buergerservice-2/abteilungen/HES:department:4287/fachdienst-zulassungswesen/"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Weilburg",
+        "strasse": "Limburger Straße 8-10",
+        "plz": "35781",
+        "ort": "Weilburg",
+        "quelle": "https://buergerservice.landkreis-limburg-weilburg.de/buergerservice-2/abteilungen/HES:department:4287/fachdienst-zulassungswesen/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-limburg-weilburg.de/politik-verwaltung/bereiche-ansprechpartner/amt-fuer-oeffentliche-ordnung/fachdienst-zulassungswesen",
+      "quelle": "https://www.landkreis-limburg-weilburg.de/politik-verwaltung/bereiche-ansprechpartner/amt-fuer-oeffentliche-ordnung/fachdienst-zulassungswesen"
+    },
+    "terminUrl": {
+      "url": "https://tevis.ekom21.de/lim/",
+      "quelle": "https://www.landkreis-limburg-weilburg.de/politik-verwaltung/bereiche-ansprechpartner/amt-fuer-oeffentliche-ordnung/fachdienst-zulassungswesen"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100001.OE.360163112&leistungId=99036020001000&p=065330",
+      "quelle": "https://buergerservice.landkreis-limburg-weilburg.de/buergerservice-online-dienste/unsere-online-dienste/kfz-online/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Kfz-Abmeldungen ohne Termin Standort Limburg: Mo–Fr 7:30–11:30 Uhr",
+        "Kfz-Abmeldungen ohne Termin Standort Weilburg: Mo–Fr 7:30–11:30 Uhr",
+        "Händlerabgaben an beiden Standorten: Mo–Fr 7:30–9:00 Uhr"
+      ],
+      "hinweis": "Sonstige Anliegen über die Online-Terminvereinbarung; allgemeine Öffnungszeiten der Zulassungsstelle nennt die Seite nicht.",
+      "quelle": "https://www.landkreis-limburg-weilburg.de/politik-verwaltung/bereiche-ansprechpartner/amt-fuer-oeffentliche-ordnung/fachdienst-zulassungswesen"
+    },
+    "zustaendigkeit": {
+      "text": "Fachdienst Zulassungswesen des Landkreises Limburg-Weilburg mit Standorten in Limburg und Weilburg; zuständig für Zulassung und Stilllegung von Kraftfahrzeugen und Anhängern im Kreisgebiet.",
+      "quelle": "https://www.landkreis-limburg-weilburg.de/politik-verwaltung/bereiche-ansprechpartner/amt-fuer-oeffentliche-ordnung/fachdienst-zulassungswesen"
+    },
+    "kuerzel": [
+      {
+        "code": "LM",
+        "bedeutung": "Limburg (an der Lahn)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WEL",
+        "bedeutung": "Weilburg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Kfz-Abmeldungen sind an beiden Standorten auch ohne Termin möglich (Mo–Fr 7:30–11:30 Uhr).",
+        "quelle": "https://www.landkreis-limburg-weilburg.de/politik-verwaltung/bereiche-ansprechpartner/amt-fuer-oeffentliche-ordnung/fachdienst-zulassungswesen"
+      },
+      {
+        "text": "Händlerabgaben sind an beiden Standorten montags bis freitags von 7:30 bis 9:00 Uhr möglich.",
+        "quelle": "https://www.landkreis-limburg-weilburg.de/politik-verwaltung/bereiche-ansprechpartner/amt-fuer-oeffentliche-ordnung/fachdienst-zulassungswesen"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-marburg-biedenkopf",
+    "stadt": "Landkreis Marburg-Biedenkopf",
+    "bundesland": "Hessen",
+    "behoerde": "Fachdienst Kfz-Zulassungsstelle und Fahrerlaubnisse des Landkreises Marburg-Biedenkopf",
+    "behoerdeQuelle": "https://www.marburg-biedenkopf.de/dienste_und_leistungen/auto_und_mobilitaet/i-kfz.php",
+    "traeger": "Landkreis Marburg-Biedenkopf (Kreisausschuss)",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Marburg (Landratsamt Marburg-Cappel)",
+        "strasse": "Im Lichtenholz 60",
+        "plz": "35043",
+        "ort": "Marburg",
+        "quelle": "https://www.marburg-biedenkopf.de/dienste_und_leistungen/kreisverwaltung_landkreis/standorte-der-kreisverwaltung_teaserliste.php"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Biedenkopf (Außenstelle der Kreisverwaltung, Erdgeschoss)",
+        "strasse": "Kiesackerstr. 12",
+        "plz": "35216",
+        "ort": "Biedenkopf",
+        "quelle": "https://www.marburg-biedenkopf.de/Pressemitteilungen/2022/05mai/284-2022-Umzug-Biedenkopf.php"
+      }
+    ],
+    "website": {
+      "url": "https://www.marburg-biedenkopf.de/dienste_und_leistungen/auto_und_mobilitaet/_Auto-Mobilitaet.php",
+      "quelle": "https://www.marburg-biedenkopf.de/dienste_und_leistungen/auto_und_mobilitaet/_Auto-Mobilitaet.php"
+    },
+    "terminUrl": {
+      "url": "https://termin.marburg-biedenkopf.de",
+      "quelle": "https://www.marburg-biedenkopf.de/dienste_und_leistungen/auto_und_mobilitaet/i-kfz.php"
+    },
+    "ikfzUrl": null,
+    "oeffnungszeiten": null,
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle des Landkreises Marburg-Biedenkopf mit den Standorten Marburg und Biedenkopf; die Online-Terminvergabe führt beide Standorte getrennt.",
+      "quelle": "https://termin.marburg-biedenkopf.de"
+    },
+    "kuerzel": [
+      {
+        "code": "MR",
+        "bedeutung": "Marburg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BID",
+        "bedeutung": "Biedenkopf",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Am Standort Biedenkopf seit 1. März 2025 nur bargeldlose Zahlung (EC-Karte/Maestro, Visa, Mastercard, V-Pay, UnionPay, Discover, kontaktlos per Smartphone/Smartwatch); in Marburg weiterhin auch Bargeld.",
+        "quelle": "https://www.marburg-biedenkopf.de/Pressemitteilungen/2025/02februar/048-2025-Bargeldlose-Bezahlung.php"
+      },
+      {
+        "text": "Wunschkennzeichen online prüfen und reservieren; dort lässt sich auch prüfen, ob die Zulassungsbescheinigung Teil II (Kfz-Brief) bei der Zulassungsstelle eingegangen ist.",
+        "quelle": "https://www.marburg-biedenkopf.de/dienste_und_leistungen/auto_und_mobilitaet/_Auto-Mobilitaet.php"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "ikfzUrl",
+      "oeffnungszeiten"
+    ]
+  },
+  {
+    "slug": "vogelsbergkreis",
+    "stadt": "Vogelsbergkreis",
+    "bundesland": "Hessen",
+    "behoerde": "Zulassungsbehörde des Vogelsbergkreises",
+    "behoerdeQuelle": "https://www.vogelsbergkreis.de/buerger-service/auto-verkehr-mobilitaet/",
+    "traeger": "Vogelsbergkreis (Der Kreisausschuss)",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsbehörde Lauterbach",
+        "strasse": "Bahnhofstraße 79",
+        "plz": "36341",
+        "ort": "Lauterbach",
+        "quelle": "https://www.vogelsbergkreis.de/buerger-service/auto-verkehr-mobilitaet/rund-um-das-auto/"
+      },
+      {
+        "bezeichnung": "Zulassungsbehörde Alsfeld",
+        "strasse": "Färbergasse 3",
+        "plz": "36304",
+        "ort": "Alsfeld",
+        "quelle": "https://www.vogelsbergkreis.de/buerger-service/auto-verkehr-mobilitaet/rund-um-das-auto/"
+      }
+    ],
+    "website": {
+      "url": "https://www.vogelsbergkreis.de/buerger-service/auto-verkehr-mobilitaet/rund-um-das-auto/",
+      "quelle": "https://www.vogelsbergkreis.de/buerger-service/auto-verkehr-mobilitaet/rund-um-das-auto/"
+    },
+    "terminUrl": {
+      "url": "https://tevis.ekom21.de/vbk/select2?md=2",
+      "quelle": "https://www.vogelsbergkreis.de/buerger-service/auto-verkehr-mobilitaet/rund-um-das-auto/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100001.OE.384992962&leistungId=99036020001000&p=065350",
+      "quelle": "https://www.vogelsbergkreis.de/buerger-service/auto-verkehr-mobilitaet/rund-um-das-auto/"
+    },
+    "oeffnungszeiten": null,
+    "zustaendigkeit": {
+      "text": "Die Zulassungsbehörde des Vogelsbergkreises (Standorte Lauterbach und Alsfeld) ist für Zulassung, Ummeldung und Abmeldung von Fahrzeugen im Vogelsbergkreis zuständig. An- und Abmeldungen sind zusätzlich bei der Gemeinde Freiensteinau, der Gemeinde Mücke, der Stadt Schlitz und der Stadt Schotten möglich.",
+      "quelle": "https://www.vogelsbergkreis.de/buerger-service/auto-verkehr-mobilitaet/rund-um-das-auto/"
+    },
+    "kuerzel": [
+      {
+        "code": "VB",
+        "bedeutung": "Vogelsberg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Zulassungsvorgänge vor Ort nur nach vorheriger Terminvereinbarung (online oder telefonisch: Lauterbach 06641 977-970, Alsfeld 06631 792-720).",
+        "quelle": "https://www.vogelsbergkreis.de/buerger-service/auto-verkehr-mobilitaet/rund-um-das-auto/"
+      },
+      {
+        "text": "Zulassungsgebühren werden vor Ort nur bargeldlos (EC-Karte oder Kreditkarte) abgewickelt.",
+        "quelle": "https://www.vogelsbergkreis.de/buerger-service/auto-verkehr-mobilitaet/rund-um-das-auto/"
+      },
+      {
+        "text": "An- und Abmeldungen auch in Freiensteinau, Mücke, Schlitz und Schotten möglich (Öffnungszeiten dort erfragen).",
+        "quelle": "https://www.vogelsbergkreis.de/buerger-service/auto-verkehr-mobilitaet/rund-um-das-auto/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten"
+    ]
+  },
+  {
+    "slug": "landkreis-fulda",
+    "stadt": "Landkreis Fulda",
+    "bundesland": "Hessen",
+    "behoerde": "Zulassungsbehörde des Landkreises Fulda (Fachdienst Straßenverkehr)",
+    "behoerdeQuelle": "https://www.landkreis-fulda.de/de/footer-navigation/anfahrt/",
+    "traeger": "Landkreis Fulda",
+    "standorte": [
+      {
+        "bezeichnung": "Straßenverkehrsbehörde / Zulassungsbehörde Fulda",
+        "strasse": "Kreuzbergstraße 42b",
+        "plz": "36043",
+        "ort": "Fulda",
+        "quelle": "https://www.landkreis-fulda.de/de/footer-navigation/anfahrt/"
+      },
+      {
+        "bezeichnung": "Außenstelle Hünfeld, Straßenverkehrsbehörde",
+        "strasse": "Am Anger 4",
+        "plz": "36088",
+        "ort": "Hünfeld",
+        "quelle": "https://www.landkreis-fulda.de/de/footer-navigation/anfahrt/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-fulda.de/de/service/strassenverkehr/kfz-zulassung/",
+      "quelle": "https://www.landkreis-fulda.de/de/service/strassenverkehr/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/fulda/",
+      "quelle": "https://www.landkreis-fulda.de/de/service/strassenverkehr/kfz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/hessen/lkrfulda/bsp_ikfz_antragstellung/#/",
+      "quelle": "https://www.landkreis-fulda.de/de/service/strassenverkehr/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Straßenverkehrsbehörde Fulda: Mo–Fr 7–13 Uhr; Sa 9–12 Uhr",
+        "Straßenverkehrsbehörde Hünfeld: nach Terminvereinbarung"
+      ],
+      "hinweis": "Die Kreisverwaltung bittet, vorab einen Termin zu vereinbaren (Online-Terminvereinbarung, Fachdienst Straßenverkehr Fulda bzw. Hünfeld).",
+      "quelle": "https://www.landkreis-fulda.de/de/footer-navigation/oeffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsbehörde des Landkreises Fulda im Fachdienst Straßenverkehr mit Standorten in Fulda (Kreuzbergstraße) und Hünfeld (Außenstelle).",
+      "quelle": "https://www.landkreis-fulda.de/de/footer-navigation/anfahrt/"
+    },
+    "kuerzel": [
+      {
+        "code": "FD",
+        "bedeutung": "Fulda",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Straßenverkehrsbehörde in Fulda ist auch samstags von 9 bis 12 Uhr geöffnet.",
+        "quelle": "https://www.landkreis-fulda.de/de/footer-navigation/oeffnungszeiten/"
+      },
+      {
+        "text": "In der Außenstelle Hünfeld ist die Straßenverkehrsbehörde nur nach Terminvereinbarung erreichbar.",
+        "quelle": "https://www.landkreis-fulda.de/de/footer-navigation/oeffnungszeiten/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-hersfeld-rotenburg",
+    "stadt": "Landkreis Hersfeld-Rotenburg",
+    "bundesland": "Hessen",
+    "behoerde": "Kfz-Zulassungsstelle des Landkreises Hersfeld-Rotenburg",
+    "behoerdeQuelle": "https://www.hef-rof.de/leben-in-hef-rof/kfz-verkehr/zulassungsstelle/",
+    "traeger": "Landkreis Hersfeld-Rotenburg",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Bad Hersfeld",
+        "strasse": "An der Haune 8",
+        "plz": "36251",
+        "ort": "Bad Hersfeld",
+        "quelle": "https://www.hef-rof.de/leben-in-hef-rof/kfz-verkehr/zulassungsstelle/"
+      },
+      {
+        "bezeichnung": "Bürgerservice-Büro Bad Hersfeld (Landratsamt, Gebäude B, Leistungen der Zulassungsstelle)",
+        "strasse": "Friedloser Str. 12",
+        "plz": "36251",
+        "ort": "Bad Hersfeld",
+        "quelle": "https://www.hef-rof.de/landkreis-verwaltung/verwaltung/service-verwaltung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.hef-rof.de/leben-in-hef-rof/kfz-verkehr/zulassungsstelle/",
+      "quelle": "https://www.hef-rof.de/leben-in-hef-rof/kfz-verkehr/zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://reservation.hef-rof.de/Online-Terminvergabe/book-appointment",
+      "quelle": "https://www.hef-rof.de/leben-in-hef-rof/kfz-verkehr/zulassungsstelle/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100001.OE.382669951&leistungId=99036020001000&p=066320",
+      "quelle": "https://www.hef-rof.de/leben-in-hef-rof/kfz-verkehr/zulassungsstelle/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Zulassungsstelle Bad Hersfeld: Mo 08:00–16:00 Uhr",
+        "Zulassungsstelle Bad Hersfeld: Di 08:00–16:00 Uhr",
+        "Zulassungsstelle Bad Hersfeld: Mi 08:00–13:00 Uhr",
+        "Zulassungsstelle Bad Hersfeld: Do 08:00–17:30 Uhr",
+        "Zulassungsstelle Bad Hersfeld: Fr 08:00–13:00 Uhr",
+        "Zulassungsstelle Bad Hersfeld: Sa 09:00–12:00 Uhr (nur mit vorheriger Terminbuchung)",
+        "Bürgerservice-Büro Rotenburg: Mo, Di, Do 08:00–17:30 Uhr; Mi, Fr 08:00–13:00 Uhr; Sa 09:00–12:00 Uhr (nur mit vorheriger Terminbuchung)"
+      ],
+      "hinweis": "Vorab einen Termin zu buchen wird empfohlen; samstags ist ein Termin erforderlich.",
+      "quelle": "https://www.hef-rof.de/leben-in-hef-rof/kfz-verkehr/zulassungsstelle/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle des Landkreises Hersfeld-Rotenburg in Bad Hersfeld für An-, Um- und Abmeldungen im Kreisgebiet; Leistungen der Zulassungsstelle bieten auch die Bürgerservice-Büros in Bad Hersfeld und Rotenburg an.",
+      "quelle": "https://www.hef-rof.de/leben-in-hef-rof/kfz-verkehr/zulassungsstelle/"
+    },
+    "kuerzel": [
+      {
+        "code": "HEF",
+        "bedeutung": "Bad Hersfeld",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ROF",
+        "bedeutung": "Rotenburg an der Fulda",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Samstags von 9 bis 12 Uhr geöffnet (Zulassungsstelle Bad Hersfeld und Bürgerservice-Büro Rotenburg), dann aber nur mit vorheriger Terminbuchung.",
+        "quelle": "https://www.hef-rof.de/leben-in-hef-rof/kfz-verkehr/zulassungsstelle/"
+      },
+      {
+        "text": "Leistungen der Zulassungsstelle auch in den Bürgerservice-Büros Bad Hersfeld und Rotenburg.",
+        "quelle": "https://www.hef-rof.de/leben-in-hef-rof/kfz-verkehr/zulassungsstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "schwalm-eder-kreis",
+    "stadt": "Schwalm-Eder-Kreis",
+    "bundesland": "Hessen",
+    "behoerde": "Kreisausschuss des Schwalm-Eder-Kreises, Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.schwalm-eder-kreis.de/Aemter/30-5-3-KFZ-Zulassungsstelle-Homberg-Efze.html",
+    "traeger": "Schwalm-Eder-Kreis (Kreisausschuss)",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Homberg (Efze) (Kreisausschuss)",
+        "strasse": "Hans-Scholl-Straße 1",
+        "plz": "34576",
+        "ort": "Homberg (Efze)",
+        "quelle": "https://www.schwalm-eder-kreis.de/Aemter/30-5-3-KFZ-Zulassungsstelle-Homberg-Efze.html"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Schwalmstadt-Ziegenhain",
+        "strasse": "Am Nordbahnhof 2",
+        "plz": "34613",
+        "ort": "Schwalmstadt-Ziegenhain",
+        "quelle": "https://www.schwalm-eder-kreis.de/Aemter/30-5-3-KFZ-Zulassungsstelle-Schwalmstadt-Ziegenhain.html"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Fritzlar (Stadt Fritzlar)",
+        "strasse": "Brautäcker 3",
+        "plz": "34560",
+        "ort": "Fritzlar",
+        "quelle": "https://www.fritzlar.de/rathaus-politik/buergerservice/kfz-zulassungsstelle/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle der Stadt Melsungen (Dienstleistungszentrum, Erdgeschoss)",
+        "strasse": "Sandstraße 13",
+        "plz": "34212",
+        "ort": "Melsungen",
+        "quelle": "https://www.melsungen.de/service/zulassungsstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://www.schwalm-eder-kreis.de/Aemter/30-5-3-KFZ-Zulassungsstelle-Homberg-Efze.html",
+      "quelle": "https://www.schwalm-eder-kreis.de/Aemter/30-5-3-KFZ-Zulassungsstelle-Homberg-Efze.html"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/schwalmederkreis/select2?md=1",
+      "quelle": "https://www.schwalm-eder-kreis.de/Buergerservice/Online-Termine-und-Online-Services.htm"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=schwalm-eder_kreis",
+      "quelle": "https://www.schwalm-eder-kreis.de/Buergerservice/Online-Termine-und-Online-Services.htm"
+    },
+    "oeffnungszeiten": null,
+    "zustaendigkeit": {
+      "text": "Im Schwalm-Eder-Kreis gibt es vier Kfz-Zulassungsstellen: die Zulassungsstellen des Kreises in Homberg (Efze) und Schwalmstadt-Ziegenhain sowie die Zulassungsstellen in Fritzlar und Melsungen, für deren Öffnungszeiten der Kreis auf die Internetseiten der Städte verweist.",
+      "quelle": "https://www.schwalm-eder-kreis.de/Buergerservice/Oeffnungszeiten.htm"
+    },
+    "kuerzel": [
+      {
+        "code": "HR",
+        "bedeutung": "Homberg (Efze)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "FZ",
+        "bedeutung": "Fritzlar",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MEG",
+        "bedeutung": "Melsungen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ZIG",
+        "bedeutung": "Ziegenhain (Schwalmstadt)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Zulassungsstelle Fritzlar: Besuch nur mit Termin; Abgabe für Händler und Zulassungsdienste Mo–Fr 08:00–10:00 Uhr oder nach vorheriger Terminbuchung.",
+        "quelle": "https://www.fritzlar.de/rathaus-politik/buergerservice/kfz-zulassungsstelle/"
+      },
+      {
+        "text": "Zulassungsstelle Melsungen: zusätzlich jeden ersten Samstag im Monat 08:00–12:00 Uhr geöffnet (Termine nur telefonisch); ohne Termin nur nachrangig oder gar keine Bedienung.",
+        "quelle": "https://www.melsungen.de/service/zulassungsstelle/"
+      },
+      {
+        "text": "Wunschkennzeichen können online über das Reservierungsportal kfz-egov.regioit.de des Schwalm-Eder-Kreises reserviert werden.",
+        "quelle": "https://www.melsungen.de/service/zulassungsstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten"
+    ]
+  },
+  {
+    "slug": "landkreis-waldeck-frankenberg",
+    "stadt": "Landkreis Waldeck-Frankenberg",
+    "bundesland": "Hessen",
+    "behoerde": "Zulassungsstelle des Landkreises Waldeck-Frankenberg (Fachdienst Verkehr)",
+    "behoerdeQuelle": "https://www.landkreis-waldeck-frankenberg.de/informieren-beantragen/verwaltung-verstehen/fachdienste/verkehr/zulassungsstelle/",
+    "traeger": "Landkreis Waldeck-Frankenberg",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Korbach",
+        "strasse": "Südring 2",
+        "plz": "34497",
+        "ort": "Korbach",
+        "quelle": "https://www.landkreis-waldeck-frankenberg.de/informieren-beantragen/verwaltung-verstehen/fachdienste/verkehr/zulassungsstelle/"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Frankenberg",
+        "strasse": "Jahnstraße 4",
+        "plz": "35066",
+        "ort": "Frankenberg (Eder)",
+        "quelle": "https://www.landkreis-waldeck-frankenberg.de/informieren-beantragen/verwaltung-verstehen/fachdienste/verkehr/zulassungsstelle/"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Bad Arolsen (Bürgerservice und Kfz-Zulassung, Stadt Bad Arolsen)",
+        "strasse": "Große Allee 24",
+        "plz": "34454",
+        "ort": "Bad Arolsen",
+        "quelle": "https://www.bad-arolsen.de/"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Bad Wildungen",
+        "strasse": "St.-Florian-Straße 3b",
+        "plz": "34537",
+        "ort": "Bad Wildungen",
+        "quelle": "https://www.landkreis-waldeck-frankenberg.de/informieren-beantragen/verwaltung-verstehen/fachdienste/verkehr/zulassungsstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-waldeck-frankenberg.de/informieren-beantragen/verwaltung-verstehen/fachdienste/verkehr/zulassungsstelle/",
+      "quelle": "https://www.landkreis-waldeck-frankenberg.de/informieren-beantragen/verwaltung-verstehen/fachdienste/verkehr/zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://tevis.ekom21.de/wafkb/",
+      "quelle": "https://www.landkreis-waldeck-frankenberg.de/informieren-beantragen/verwaltung-verstehen/fachdienste/verkehr/zulassungsstelle/"
+    },
+    "ikfzUrl": null,
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Korbach: Mo 8–12 Uhr und 13–15 Uhr; Di 8–12 Uhr; Mi 8–12 Uhr; Do 8–12 Uhr und 13–15 Uhr; Fr 8–12 Uhr",
+        "Frankenberg: Mo 8–12 Uhr; Di 8–12 Uhr und 13–15 Uhr; Mi 8–12 Uhr und 13–15 Uhr; Do 8–12 Uhr; Fr 8–12 Uhr",
+        "Bad Arolsen: Mo 08:00–17:00 Uhr; Di 08:00–17:00 Uhr; Mi 08:00–12:30 Uhr; Do 08:00–17:00 Uhr; Fr 08:00–12:30 Uhr",
+        "Bad Wildungen: Mo 07:30–12 Uhr; Di 07:30–12 Uhr und 13–15 Uhr; Mi 07:30–12 Uhr; Do 07:30–12 Uhr und 13–15 Uhr; Fr 07:30–12 Uhr und 13–15 Uhr",
+        "Battenberg: Mo 08:30–12:30 Uhr und 13:30–15:30 Uhr; Di 08:30–12:30 Uhr und 13:30–15:30 Uhr; Mi 08:30–12:30 Uhr; Do 08:30–12:30 Uhr und 13:30–17:30 Uhr; Fr 08:30–12:30 Uhr"
+      ],
+      "hinweis": "Ein persönlicher Besuch ist ausschließlich nach vorheriger Terminvereinbarung möglich: Korbach und Frankenberg online oder Tel. 05631 954-1114, Bad Arolsen Tel. 05691 801-260, Bad Wildungen Tel. 05621 961-505, Battenberg Tel. 06452 934430.",
+      "quelle": "https://www.landkreis-waldeck-frankenberg.de/informieren-beantragen/verwaltung-verstehen/fachdienste/verkehr/zulassungsstelle/"
+    },
+    "zustaendigkeit": {
+      "text": "Die An-, Um- und Abmeldung von Kraftfahrzeugen ist in mehreren Zulassungsstellen des Landkreises Waldeck-Frankenberg möglich – an den Standorten Korbach, Frankenberg, Bad Arolsen, Bad Wildungen und Battenberg.",
+      "quelle": "https://www.landkreis-waldeck-frankenberg.de/informieren-beantragen/verwaltung-verstehen/fachdienste/verkehr/zulassungsstelle/"
+    },
+    "kuerzel": [
+      {
+        "code": "KB",
+        "bedeutung": "Korbach",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "FKB",
+        "bedeutung": "Frankenberg (Eder)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WA",
+        "bedeutung": "Waldeck",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Gebühren können vor Ort ausschließlich mit EC-Karte bezahlt werden.",
+        "quelle": "https://www.landkreis-waldeck-frankenberg.de/informieren-beantragen/verwaltung-verstehen/fachdienste/verkehr/zulassungsstelle/"
+      },
+      {
+        "text": "Gebühren für Online-Vorgänge können derzeit ausschließlich mit PayPal bezahlt werden.",
+        "quelle": "https://www.landkreis-waldeck-frankenberg.de/informieren-beantragen/verwaltung-verstehen/fachdienste/verkehr/zulassungsstelle/online-zulassung/"
+      },
+      {
+        "text": "Der Landkreis erteilt Betriebserlaubnis/Einzelgenehmigung bei Fahrzeugänderungen jetzt selbst zusammen mit der Zulassung (bisher Bündelungsbehörde in Fulda).",
+        "quelle": "https://www.landkreis-waldeck-frankenberg.de/informieren-beantragen/verwaltung-verstehen/fachdienste/verkehr/zulassungsstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "ikfzUrl",
+      "standorte[Battenberg].plz"
+    ]
+  },
+  {
+    "slug": "werra-meissner-kreis",
+    "stadt": "Werra-Meißner-Kreis",
+    "bundesland": "Hessen",
+    "behoerde": "Kfz-Zulassungsstellen des Werra-Meißner-Kreises (Fachdienst 3.5 Straßenverkehrsbehörde)",
+    "behoerdeQuelle": "https://www.werra-meissner-kreis.de/fachbereiche-einrichtungen/fb-3-aufsicht-ordnung-und-verkehr/35-strassenverkehrsbehoerde/kfz-zulassung",
+    "traeger": "Werra-Meißner-Kreis",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Eschwege",
+        "strasse": "Bahnhofstraße 15",
+        "plz": "37269",
+        "ort": "Eschwege",
+        "quelle": "https://www.werra-meissner-kreis.de/fachbereiche-einrichtungen/fb-3-aufsicht-ordnung-und-verkehr/35-strassenverkehrsbehoerde/kfz-zulassung"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Witzenhausen",
+        "strasse": "Nordbahnhofsweg 1",
+        "plz": "37213",
+        "ort": "Witzenhausen",
+        "quelle": "https://www.werra-meissner-kreis.de/fachbereiche-einrichtungen/fb-3-aufsicht-ordnung-und-verkehr/35-strassenverkehrsbehoerde/kfz-zulassung"
+      }
+    ],
+    "website": {
+      "url": "https://www.werra-meissner-kreis.de/fachbereiche-einrichtungen/fb-3-aufsicht-ordnung-und-verkehr/35-strassenverkehrsbehoerde/kfz-zulassung",
+      "quelle": "https://www.werra-meissner-kreis.de/fachbereiche-einrichtungen/fb-3-aufsicht-ordnung-und-verkehr/35-strassenverkehrsbehoerde/kfz-zulassung"
+    },
+    "terminUrl": {
+      "url": "https://tempus-termine.com/termine/index.php?anlagennr=27",
+      "quelle": "https://www.werra-meissner-kreis.de/fachbereiche-einrichtungen/fb-3-aufsicht-ordnung-und-verkehr/35-strassenverkehrsbehoerde/kfz-zulassung"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100001.OE.9390318&leistungId=99036020001000&p=066360",
+      "quelle": "https://www.werra-meissner-kreis.de/fachbereiche-einrichtungen/fb-3-aufsicht-ordnung-und-verkehr/35-strassenverkehrsbehoerde/kfz-zulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Eschwege: Mo bis Do 8.30–12.00 Uhr",
+        "Eschwege: Mo 14.00–16.00 Uhr",
+        "Eschwege: Do 14.00–17.00 Uhr",
+        "Eschwege: Fr 8.00–12.00 Uhr",
+        "Witzenhausen: Di und Mi 8.30–12.00 Uhr",
+        "Witzenhausen: Fr 8.00–12.00 Uhr"
+      ],
+      "hinweis": "Für Zulassung und Außerbetriebsetzung sind feste Termine zu vereinbaren (Online-Terminvereinbarung). Ausnahme: mittwochs 08:30–12:00 Uhr in Eschwege ohne Termin (mit Wartezeit, nur bis zur Kapazitätsgrenze).",
+      "quelle": "https://www.werra-meissner-kreis.de/fachbereiche-einrichtungen/fb-3-aufsicht-ordnung-und-verkehr/35-strassenverkehrsbehoerde/kfz-zulassung"
+    },
+    "zustaendigkeit": {
+      "text": "Der Werra-Meißner-Kreis unterhält zwei Zulassungsstellen in Eschwege und Witzenhausen für Fahrzeughalter im Kreisgebiet; eine Adressänderung bei Umzug innerhalb des Kreises ist auch bei jeder Stadt/Gemeinde möglich.",
+      "quelle": "https://www.werra-meissner-kreis.de/fachbereiche-einrichtungen/fb-3-aufsicht-ordnung-und-verkehr/35-strassenverkehrsbehoerde/kfz-zulassung"
+    },
+    "kuerzel": [
+      {
+        "code": "ESW",
+        "bedeutung": "Eschwege",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WIZ",
+        "bedeutung": "Witzenhausen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Jeden Mittwoch von 08:30 bis 12:00 Uhr werden in Eschwege Zulassungsvorgänge ohne vorherige Terminvereinbarung bearbeitet (mit Wartezeit; Annahme endet bei Erreichen der Kapazitätsgrenze).",
+        "quelle": "https://www.werra-meissner-kreis.de/fachbereiche-einrichtungen/fb-3-aufsicht-ordnung-und-verkehr/35-strassenverkehrsbehoerde/kfz-zulassung"
+      },
+      {
+        "text": "Die Adressänderung bei Umzug innerhalb des Kreises ist auch bei jeder Stadt/Gemeinde möglich.",
+        "quelle": "https://www.werra-meissner-kreis.de/fachbereiche-einrichtungen/fb-3-aufsicht-ordnung-und-verkehr/35-strassenverkehrsbehoerde/kfz-zulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

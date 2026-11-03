@@ -1,0 +1,871 @@
+[
+  {
+    "slug": "darmstadt",
+    "stadt": "Darmstadt",
+    "bundesland": "Hessen",
+    "behoerde": "Bürger- und Ordnungsamt, Abt. Zulassungsbehörde",
+    "behoerdeQuelle": "https://digitales-rathaus.darmstadt.de/kategorien/aemter-und-einrichtungen/buerger-und-ordnungsamt-abt-zulassungsbehoerde",
+    "traeger": "Wissenschaftsstadt Darmstadt",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle, Gebäude B (TÜV-Gelände)",
+        "strasse": "Rüdesheimer Straße 119",
+        "plz": "64285",
+        "ort": "Darmstadt",
+        "quelle": "https://digitales-rathaus.darmstadt.de/kategorien/aemter-und-einrichtungen/buerger-und-ordnungsamt-abt-zulassungsbehoerde"
+      }
+    ],
+    "website": {
+      "url": "https://digitales-rathaus.darmstadt.de/kategorien/aemter-und-einrichtungen/buerger-und-ordnungsamt-abt-zulassungsbehoerde",
+      "quelle": "https://digitales-rathaus.darmstadt.de/kategorien/aemter-und-einrichtungen/buerger-und-ordnungsamt-abt-zulassungsbehoerde"
+    },
+    "terminUrl": {
+      "url": "https://tevis.ekom21.de/stdar/select2?md=5",
+      "quelle": "https://digitales-rathaus.darmstadt.de/kategorien/aemter-und-einrichtungen/buerger-und-ordnungsamt-abt-zulassungsbehoerde"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100001.OE.352383138&leistungId=99036020001000&p=064110",
+      "quelle": "https://digitales-rathaus.darmstadt.de/kategorien/aemter-und-einrichtungen/buerger-und-ordnungsamt-abt-zulassungsbehoerde"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:00–13:00 und 13:45–15:30",
+        "Di 07:00–13:00 und 13:45–15:30",
+        "Mi 07:00–13:00 und 13:45–15:30",
+        "Do 07:15–13:00 und 14:00–18:00",
+        "Fr 07:00–12:45"
+      ],
+      "hinweis": "Eine Vorsprache ist ausschließlich mit vorheriger Online-Terminvereinbarung möglich.",
+      "quelle": "https://digitales-rathaus.darmstadt.de/kategorien/aemter-und-einrichtungen/buerger-und-ordnungsamt-abt-zulassungsbehoerde"
+    },
+    "zustaendigkeit": {
+      "text": "Nur für die Stadt Darmstadt (Wissenschaftsstadt). Einwohnerinnen und Einwohner des Landkreises Darmstadt-Dieburg wenden sich trotz gleichem Kürzel DA an die Zulassungsstellen des Landkreises.",
+      "quelle": "https://digitales-rathaus.darmstadt.de/kategorien/aemter-und-einrichtungen/buerger-und-ordnungsamt-abt-zulassungsbehoerde"
+    },
+    "kuerzel": [
+      {
+        "code": "DA",
+        "bedeutung": "Darmstadt (gemeinsames Kürzel von Stadt Darmstadt und Landkreis Darmstadt-Dieburg)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Neben einem 14 Tage im Voraus buchbaren Grundkontingent werden täglich zwischen 06:30 und 07:00 Uhr zusätzliche kurzfristige Termine online freigeschaltet.",
+        "quelle": "https://digitales-rathaus.darmstadt.de/kategorien/aemter-und-einrichtungen/buerger-und-ordnungsamt-abt-zulassungsbehoerde"
+      },
+      {
+        "text": "Seit 01.11.2026 gibt es einen Infoschalter ohne Termin (Di 13:45–15:00, Do 09:30–12:30, Fr 09:30–12:00 Uhr), u. a. für Außerbetriebsetzungen, Reservierung/Verlängerung von Wunschkennzeichen, Feinstaubplaketten und die Vorabprüfung von Zulassungsunterlagen.",
+        "quelle": "https://digitales-rathaus.darmstadt.de/kategorien/dienstleistungen/infoschalter"
+      },
+      {
+        "text": "Motorradkennzeichen können nicht online reserviert werden; die Reservierung erfolgt telefonisch oder per E-Mail bei der Zulassungsbehörde.",
+        "quelle": "https://digitales-rathaus.darmstadt.de/kategorien/aemter-und-einrichtungen/buerger-und-ordnungsamt-abt-zulassungsbehoerde"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "frankfurt",
+    "stadt": "Frankfurt am Main",
+    "bundesland": "Hessen",
+    "behoerde": "Stadt Frankfurt - Ordnungsamt Servicezentrum Rund ums Auto - Zulassungsbehörde für Kraftfahrzeuge",
+    "behoerdeQuelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_9652963",
+    "traeger": "Stadt Frankfurt am Main (Ordnungsamt)",
+    "standorte": [
+      {
+        "bezeichnung": "Servicezentrum Rund ums Auto – Zulassungsbehörde für Kraftfahrzeuge",
+        "strasse": "Am Römerhof 19",
+        "plz": "60486",
+        "ort": "Frankfurt am Main",
+        "quelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_9652963"
+      }
+    ],
+    "website": {
+      "url": "https://frankfurt.de/service-und-rathaus/verwaltung/aemter-und-institutionen/ordnungsamt/zulassungsbehoerde-fuer-kraftfahrzeuge",
+      "quelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_9652963"
+    },
+    "terminUrl": {
+      "url": "https://tevis.ekom21.de/fra/?rs",
+      "quelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_9652963"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100001.OE.9652963&leistungId=99036020001000&p=064120",
+      "quelle": "https://verwaltungsportal.hessen.de/leistung?leistung_id=L100001_400350793&regschl=064120000000"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–17:30",
+        "Di 08:00–13:00",
+        "Mi 08:00–15:00",
+        "Do 08:00–16:00",
+        "Fr 08:00–12:00"
+      ],
+      "hinweis": "Termine müssen zwingend vorab online vereinbart werden; die Vorsprache ist grundsätzlich nur nach vorheriger Terminvereinbarung möglich.",
+      "quelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_9652963"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig für Halterinnen und Halter in der Stadt Frankfurt am Main.",
+      "quelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_9652963"
+    },
+    "kuerzel": [
+      {
+        "code": "F",
+        "bedeutung": "Frankfurt",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Parkplätze vor dem Gebäude (gebührenfrei); mit Bus 34, 46 oder 50 bis Haltestelle „Römerhof“ bzw. Straßenbahn 11/21 bis Mönchhofstraße, dann Bus 34. Gebäude mit Aufzug und rollstuhlgerecht.",
+        "quelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_9652963"
+      },
+      {
+        "text": "Eigene Rufnummern für die Hotline Kfz-Zulassung (069 212-42750) sowie für technische Angelegenheiten und Import-Fahrzeuge (069 212-42367 und 069 212-42361).",
+        "quelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_9652963"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "offenbach",
+    "stadt": "Offenbach am Main",
+    "bundesland": "Hessen",
+    "behoerde": "Stadt Offenbach am Main – Bürgerbüro (Kfz-Zulassung)",
+    "behoerdeQuelle": "https://www.offenbach.de/vv/produkte/tsabus/kfz-zulassung_erstzulassung.php",
+    "traeger": "Stadt Offenbach am Main",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgerbüro im Kaiserpalais",
+        "strasse": "Kaiserstraße 39",
+        "plz": "63065",
+        "ort": "Offenbach am Main",
+        "quelle": "https://www.offenbach.de/vv/oe/verwaltung/buergerbuero/buergerbuero.php"
+      }
+    ],
+    "website": {
+      "url": "https://www.offenbach.de/vv/oe/verwaltung/buergerbuero/buergerbuero.php",
+      "quelle": "https://www.offenbach.de/vv/oe/verwaltung/buergerbuero/buergerbuero.php"
+    },
+    "terminUrl": {
+      "url": "https://www.offenbach.de/buerger_innen/buerger-service/online-dienstleistungen/termine-buergerbuero.php",
+      "quelle": "https://www.offenbach.de/vv/oe/verwaltung/buergerbuero/buergerbuero.php"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100001.OE.366053418&leistungId=99036020001000&p=064130",
+      "quelle": "https://www.offenbach.de/vv/produkte/tsabus/kfz-zulassung_erstzulassung.php"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–13:00",
+        "Di 08:00–13:00",
+        "Mi 08:00–13:00",
+        "Do 13:00–18:00",
+        "Fr 08:00–13:00"
+      ],
+      "hinweis": "Nur nach vorheriger Terminvereinbarung.",
+      "quelle": "https://www.offenbach.de/vv/oe/verwaltung/buergerbuero/buergerbuero.php"
+    },
+    "zustaendigkeit": {
+      "text": "Nur für die Stadt Offenbach am Main. Für die Städte und Gemeinden des Kreises Offenbach (gleiches Kürzel OF) ist die Kfz-Zulassungsbehörde des Kreises Offenbach in Dietzenbach zuständig.",
+      "quelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_413556464"
+    },
+    "kuerzel": [
+      {
+        "code": "OF",
+        "bedeutung": "Offenbach (gemeinsames Kürzel von Stadt Offenbach am Main und Kreis Offenbach)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Jeden Mittwochnachmittag (spätestens bis 18 Uhr) werden mehrere hundert Termine für die Folgewoche freigegeben.",
+        "quelle": "https://www.offenbach.de/vv/oe/verwaltung/buergerbuero/buergerbuero.php"
+      },
+      {
+        "text": "Die Verwaltungsgebühr wird per EC-Karte mit PIN bezahlt.",
+        "quelle": "https://www.offenbach.de/vv/produkte/tsabus/kfz-zulassung_erstzulassung.php"
+      },
+      {
+        "text": "Kfz-Zulassungsportal der Stadt (u. a. Wunschkennzeichen): https://kfzonline.ekom21.de/kfzonline.public/start.html?oe=00.00.06.413000",
+        "quelle": "https://www.offenbach.de/vv/produkte/tsabus/kfz-zulassung_erstzulassung.php"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "hanau",
+    "stadt": "Hanau",
+    "bundesland": "Hessen",
+    "behoerde": "Zulassungsstelle für die Stadt Hanau (Hanau Bürgerservice)",
+    "behoerdeQuelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_433116800",
+    "traeger": "Stadt Hanau",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgerservicestelle Innenstadt im City-Center",
+        "strasse": "Kurt-Blaum-Platz 8",
+        "plz": "63450",
+        "ort": "Hanau",
+        "quelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_433116800"
+      }
+    ],
+    "website": {
+      "url": "https://www.hanau.de/rathaus/online-terminvereinbarung/stadtladen/index.html",
+      "quelle": "https://www.hanau.de/rathaus/online-terminvereinbarung/stadtladen/index.html"
+    },
+    "terminUrl": {
+      "url": "https://tevis.ekom21.de/hau/",
+      "quelle": "https://www.hanau.de/rathaus/online-terminvereinbarung/stadtladen/index.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100001.OE.9883375&leistungId=99036020001000&p=064150",
+      "quelle": "https://www.hanau-digital.de/digital.de/dienstleistung/173379/index.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–13:00",
+        "Di 09:30–18:00",
+        "Mi 08:00–13:00",
+        "Do 08:00–13:00",
+        "Fr 08:00–13:00"
+      ],
+      "hinweis": "Servicezeiten nach vorheriger Terminvereinbarung.",
+      "quelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_433116800"
+    },
+    "zustaendigkeit": {
+      "text": "Nur für Halterinnen und Halter in der Stadt Hanau. Die Zulassungsstelle des Main-Kinzig-Kreises in Hanau (Dörnigheimer Straße 1) ist eine andere Behörde und für die übrigen Kreisgemeinden zuständig.",
+      "quelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_433116800"
+    },
+    "kuerzel": [
+      {
+        "code": "HU",
+        "bedeutung": "Hanau (wird auch im Main-Kinzig-Kreis ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termine für persönliche Vorsprachen können online oder telefonisch vereinbart werden.",
+        "quelle": "https://www.hanau.de/rathaus/online-terminvereinbarung/stadtladen/index.html"
+      },
+      {
+        "text": "Wunschkennzeichen für Fahrzeughalter aus Hanau über den „Fahrzeugservice online“: https://kfzonline.ekom21.de/kfzonline.public/start.html?oe=00.00.06.435100",
+        "quelle": "https://www.hanau.de/rathaus/online-terminvereinbarung/stadtladen/index.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kreis-bergstrasse",
+    "stadt": "Kreis Bergstraße",
+    "bundesland": "Hessen",
+    "behoerde": "Kreisverwaltung Bergstraße - Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_355748588",
+    "traeger": "Kreis Bergstraße",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Heppenheim",
+        "strasse": "Benzstraße 1",
+        "plz": "64646",
+        "ort": "Heppenheim (Bergstraße)",
+        "quelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_355748588"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-bergstrasse.de/unser-buergerservice/verkehr-und-strasse/fahrzeugzulassungen/",
+      "quelle": "https://www.kreis-bergstrasse.de/unser-buergerservice/verkehr-und-strasse/fahrzeugzulassungen/"
+    },
+    "terminUrl": {
+      "url": "https://terminverkehr.kreis-bergstrasse.de/qmaticwebbooking/#/",
+      "quelle": "https://www.kreis-bergstrasse.de/unser-buergerservice/verkehr-und-strasse/fahrzeugzulassungen/"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=bergstrasse_kreis",
+      "quelle": "https://www.kreis-bergstrasse.de/unser-buergerservice/verkehr-und-strasse/fahrzeugzulassungen/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30–12:00",
+        "Di 07:30–15:00",
+        "Mi 07:30–12:00",
+        "Do 09:30–18:00",
+        "Fr 07:30–12:00"
+      ],
+      "hinweis": "Dienstags von 12:00–12:45 Uhr und donnerstags von 12:45–13:45 Uhr erfolgt keine Bearbeitung von Dienstleistungen.",
+      "quelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_355748588"
+    },
+    "zustaendigkeit": {
+      "text": "Kreis Bergstraße (Landkreis). Zusätzlich erledigen die Delegationsgemeinden Bensheim, Biblis, Bürstadt, Einhausen, Fürth, Gorxheimertal, Lampertheim, Lorsch, Neckarsteinach, Rimbach und Viernheim einzelne Vorgänge (Ummeldung innerhalb des Kreises, Außerbetriebsetzung, Wiederzulassung auf denselben Halter, Namens-/Anschriftenänderung), ggf. nur für ihre Einwohner.",
+      "quelle": "https://www.kreis-bergstrasse.de/unser-buergerservice/verkehr-und-strasse/fahrzeugzulassungen/"
+    },
+    "kuerzel": [
+      {
+        "code": "HP",
+        "bedeutung": "Heppenheim",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Vor dem Besuch ist ein Termin zu vereinbaren; ohne Termin möglich sind Abmeldung, Ausgabe von Feinstaub- und 100-km/h-Plaketten sowie Abstempelungen von Kennzeichen nach Unfall oder bei verblassten Plaketten.",
+        "quelle": "https://www.kreis-bergstrasse.de/unser-buergerservice/verkehr-und-strasse/fahrzeugzulassungen/"
+      },
+      {
+        "text": "Online-Termine sind Privatkunden vorbehalten; Termine von Autohäusern, Händlern und Zulassungsdiensten werden gelöscht – für diese gelten feste Abgabe- und Abholzeiten.",
+        "quelle": "https://www.kreis-bergstrasse.de/unser-buergerservice/verkehr-und-strasse/fahrzeugzulassungen/"
+      },
+      {
+        "text": "Bei Kennzeichenverlust/-diebstahl, dringendem Ersatz für ein Unfallfahrzeug oder mehr als zwei Zulassungsvorgängen Terminanfrage per E-Mail an kfz.zulassung@kreis-bergstrasse.de.",
+        "quelle": "https://www.kreis-bergstrasse.de/unser-buergerservice/verkehr-und-strasse/fahrzeugzulassungen/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-darmstadt-dieburg",
+    "stadt": "Landkreis Darmstadt-Dieburg",
+    "bundesland": "Hessen",
+    "behoerde": "Kreisverwaltung Darmstadt-Dieburg - Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_435900261",
+    "traeger": "Landkreis Darmstadt-Dieburg (Kreisausschuss)",
+    "standorte": [
+      {
+        "bezeichnung": "Hauptstelle Dieburg",
+        "strasse": "Albinistraße 23",
+        "plz": "64807",
+        "ort": "Dieburg",
+        "quelle": "https://www.ladadi.de/leben-arbeiten/freizeit-verkehr/fuehrerschein-zulassung-verkehr/fahrzeugzulassung/"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Groß-Umstadt",
+        "strasse": "Saint-Péray-Straße 11",
+        "plz": "64823",
+        "ort": "Groß-Umstadt",
+        "quelle": "https://www.ladadi.de/leben-arbeiten/freizeit-verkehr/fuehrerschein-zulassung-verkehr/fahrzeugzulassung/"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Ober-Ramstadt",
+        "strasse": "Darmstädter Straße 66-68",
+        "plz": "64372",
+        "ort": "Ober-Ramstadt",
+        "quelle": "https://www.ladadi.de/leben-arbeiten/freizeit-verkehr/fuehrerschein-zulassung-verkehr/fahrzeugzulassung/"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Weiterstadt (Loop 5, Parkdeck E, Zugang Mitte)",
+        "strasse": "Gutenbergstraße 5",
+        "plz": "64331",
+        "ort": "Weiterstadt",
+        "quelle": "https://www.ladadi.de/leben-arbeiten/freizeit-verkehr/fuehrerschein-zulassung-verkehr/fahrzeugzulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.ladadi.de/leben-arbeiten/freizeit-verkehr/fuehrerschein-zulassung-verkehr/fahrzeugzulassung/",
+      "quelle": "https://www.ladadi.de/leben-arbeiten/freizeit-verkehr/fuehrerschein-zulassung-verkehr/fahrzeugzulassung/"
+    },
+    "terminUrl": {
+      "url": "https://tevis.ekom21.de/dar/select2?md=5",
+      "quelle": "https://www.ladadi.de/leben-arbeiten/freizeit-verkehr/fuehrerschein-zulassung-verkehr/fahrzeugzulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100001.OE.435900261&leistungId=99036020001000&p=064320",
+      "quelle": "https://www.ladadi.de/leben-arbeiten/freizeit-verkehr/fuehrerschein-zulassung-verkehr/fahrzeugzulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Groß-Umstadt: Mo und Mi 8:00–12:00 und 12:45–14:00; Di und Do 8:00–12:00 und 14:00–17:00; Fr 7:00–12:00",
+        "Ober-Ramstadt: Mo, Di und Do 7:30–12:00 und 13:00–16:00; Mi 7:30–12:00 und 13:00–17:00; Fr 7:30–12:30",
+        "Weiterstadt: Mo und Mi 7:00–12:00 und 13:00–17:00; Di und Do 7:00–12:00 und 13:00–14:30; Fr 7:00–12:00"
+      ],
+      "hinweis": "Vorsprache nur nach vorheriger Terminvereinbarung (Außerbetriebsetzung auch ohne Termin). Für die Hauptstelle Dieburg sind keine Zeiten veröffentlicht. Am 13.11.2026 und 11.12.2026 sind alle Zulassungsstellen geschlossen.",
+      "quelle": "https://www.ladadi.de/leben-arbeiten/freizeit-verkehr/fuehrerschein-zulassung-verkehr/fahrzeugzulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Nur für den Landkreis Darmstadt-Dieburg. Für die Stadt Darmstadt ist trotz gemeinsamen Kürzels DA die Zulassungsbehörde der Wissenschaftsstadt Darmstadt zuständig.",
+      "quelle": "https://digitales-rathaus.darmstadt.de/kategorien/aemter-und-einrichtungen/buerger-und-ordnungsamt-abt-zulassungsbehoerde"
+    },
+    "kuerzel": [
+      {
+        "code": "DA",
+        "bedeutung": "Darmstadt (gemeinsames Kürzel mit der Stadt Darmstadt)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "DI",
+        "bedeutung": "Dieburg (Altkennzeichen, seit 02.01.2013 wieder ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Wahlweise DA oder DI. DA-Kennzeichen mit den Buchstaben B, F, G, I, O oder Q und einer Zahl von 1 bis 999 sowie zwei Buchstaben mit einer Zahl von 100 bis 999 werden nur an Einwohner der Stadt Darmstadt vergeben.",
+        "quelle": "https://www.ladadi.de/leben-arbeiten/freizeit-verkehr/fuehrerschein-zulassung-verkehr/fahrzeugzulassung/"
+      },
+      {
+        "text": "Termine sind 7 Wochen im Voraus buchbar; in der Regel werden morgens um 7 Uhr weitere Kontingente für denselben Tag freigeschaltet.",
+        "quelle": "https://www.ladadi.de/leben-arbeiten/freizeit-verkehr/fuehrerschein-zulassung-verkehr/fahrzeugzulassung/"
+      },
+      {
+        "text": "In den Zulassungsstellen ist keine Barzahlung möglich (EC-Karte, Debit-/Kreditkarte, Google Pay, Apple Pay).",
+        "quelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_351167650"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "standorte[Ober-Ramstadt].plz"
+    ]
+  },
+  {
+    "slug": "kreis-gross-gerau",
+    "stadt": "Kreis Groß-Gerau",
+    "bundesland": "Hessen",
+    "behoerde": "Der Landrat des Kreises Groß-Gerau – Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.kreisgg.de/verkehr/kfz-zulassungsstelle",
+    "traeger": "Kreis Groß-Gerau",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Groß-Gerau",
+        "strasse": "Wilhelm-Seipp-Straße 4",
+        "plz": "64521",
+        "ort": "Groß-Gerau",
+        "quelle": "https://www.kreisgg.de/verkehr/kfz-zulassungsstelle"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Rüsselsheim (Zufahrt Kobaltstraße)",
+        "strasse": "Stahlstraße 15",
+        "plz": "65428",
+        "ort": "Rüsselsheim am Main",
+        "quelle": "https://www.kreisgg.de/verkehr/kfz-zulassungsstelle"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreisgg.de/verkehr/kfz-zulassungsstelle",
+      "quelle": "https://www.kreisgg.de/verkehr/kfz-zulassungsstelle"
+    },
+    "terminUrl": {
+      "url": "https://tevis.ekom21.de/grg/",
+      "quelle": "https://www.kreisgg.de/verkehr/kfz-zulassungsstelle"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100001.OE.9088981&leistungId=99036020001000&p=064330",
+      "quelle": "https://www.kreisgg.de/verkehr/kfz-zulassungsstelle/internetbasierte-zulassungsvorgaenge"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Telefon allg. Auskünfte (06152 989 789): Mo 08:00–12:00",
+        "Di 08:00–12:00",
+        "Mi 14:00–18:00",
+        "Do 08:00–12:00",
+        "Fr 08:00–12:00"
+      ],
+      "hinweis": "Persönliche Vorsprachen nur über Terminvergabe – beide Zulassungsstellen arbeiten ausschließlich mit Terminen. Die genannten Zeiten sind telefonische Erreichbarkeitszeiten.",
+      "quelle": "https://www.kreisgg.de/verkehr/kfz-zulassungsstelle"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Kreises Groß-Gerau für Halter im Kreisgebiet; erreichbar an zwei Standorten (Groß-Gerau und Rüsselsheim am Main).",
+      "quelle": "https://www.kreisgg.de/verkehr/kfz-zulassungsstelle"
+    },
+    "kuerzel": [
+      {
+        "code": "GG",
+        "bedeutung": "Groß-Gerau",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Getrennte Online-Terminbuchung je Standort: Rüsselsheim https://tevis.ekom21.de/grg/select2?md=4, Groß-Gerau https://tevis.ekom21.de/grg/select2?md=3.",
+        "quelle": "https://www.kreisgg.de/verkehr/kfz-zulassungsstelle"
+      },
+      {
+        "text": "Ein QR-Code für den digitalen Fahrzeugschein kostet für juristische Personen oder Personen ohne Online-Ausweis 4,00 € (Termin unter „Sonstiges“).",
+        "quelle": "https://www.kreisgg.de/verkehr/kfz-zulassungsstelle"
+      },
+      {
+        "text": "Zulassung nur ohne Kfz-Steuerrückstände beim Zoll und ohne Kostenrückstände bei der Zulassungsbehörde; diese sind vorher zu begleichen.",
+        "quelle": "https://www.kreisgg.de/verkehr/kfz-zulassungsstelle"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "hochtaunuskreis",
+    "stadt": "Hochtaunuskreis",
+    "bundesland": "Hessen",
+    "behoerde": "KFZ-Zulassungsbehörde des Hochtaunuskreises",
+    "behoerdeQuelle": "https://www.hochtaunuskreis.de/Themenfelder/Verkehr-Mobilit%C3%A4t/Verkehr/KFZ-Zulassungsbeh%C3%B6rde/",
+    "traeger": "Hochtaunuskreis (Der Kreisausschuss)",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassung Bad Homburg",
+        "strasse": "Ludwig-Erhard-Anlage 1-5",
+        "plz": "61352",
+        "ort": "Bad Homburg v. d. Höhe",
+        "quelle": "https://www.hochtaunuskreis.de/Themenfelder/Verkehr-Mobilit%C3%A4t/Verkehr/KFZ-Zulassungsbeh%C3%B6rde/%C3%96ffnungszeiten-und-Kontaktdaten-der-KFZ-Zulassungsbeh%C3%B6rde-/"
+      },
+      {
+        "bezeichnung": "Zulassung Usingen (Außenstelle)",
+        "strasse": "Hattsteiner Allee 33",
+        "plz": "61250",
+        "ort": "Usingen",
+        "quelle": "https://www.hochtaunuskreis.de/Themenfelder/Verkehr-Mobilit%C3%A4t/Verkehr/KFZ-Zulassungsbeh%C3%B6rde/%C3%96ffnungszeiten-und-Kontaktdaten-der-KFZ-Zulassungsbeh%C3%B6rde-/"
+      }
+    ],
+    "website": {
+      "url": "https://www.hochtaunuskreis.de/Themenfelder/Verkehr-Mobilit%C3%A4t/Verkehr/KFZ-Zulassungsbeh%C3%B6rde/",
+      "quelle": "https://www.hochtaunuskreis.de/Themenfelder/Verkehr-Mobilit%C3%A4t/Verkehr/KFZ-Zulassungsbeh%C3%B6rde/"
+    },
+    "terminUrl": {
+      "url": "https://www.terminland.de/hochtaunuskreis/",
+      "quelle": "https://www.hochtaunuskreis.de/Themenfelder/Verkehr-Mobilit%C3%A4t/Verkehr/KFZ-Zulassungsbeh%C3%B6rde/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100001.OE.9709352&leistungId=99036020001000&p=064340",
+      "quelle": "https://www.hochtaunuskreis.de/Themenfelder/Verkehr-Mobilit%C3%A4t/Verkehr/KFZ-Zulassungsbeh%C3%B6rde/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Bad Homburg und Usingen: Mo–Mi 07:30–14:30",
+        "Do 07:30–16:00",
+        "Fr 07:30–11:00"
+      ],
+      "hinweis": "Es gelten die regulären Öffnungszeiten; zusätzlich können für beide Zulassungsstellen Online-Termine gebucht werden.",
+      "quelle": "https://www.hochtaunuskreis.de/Themenfelder/Verkehr-Mobilit%C3%A4t/Verkehr/KFZ-Zulassungsbeh%C3%B6rde/%C3%96ffnungszeiten-und-Kontaktdaten-der-KFZ-Zulassungsbeh%C3%B6rde-/"
+    },
+    "zustaendigkeit": {
+      "text": "Hochtaunuskreis (Landkreis) mit Zulassungsstellen in Bad Homburg v. d. Höhe und Usingen.",
+      "quelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_9709352"
+    },
+    "kuerzel": [
+      {
+        "code": "HG",
+        "bedeutung": "Homburg (Bad Homburg v. d. Höhe)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "USI",
+        "bedeutung": "Usingen (Altkennzeichen, seit 02.01.2013 wieder ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Zulassungsstellen sind regulär für Besucher geöffnet; alternativ kann ein Termin online vereinbart werden.",
+        "quelle": "https://www.hochtaunuskreis.de/Themenfelder/Verkehr-Mobilit%C3%A4t/Verkehr/KFZ-Zulassungsbeh%C3%B6rde/"
+      },
+      {
+        "text": "Bei Elektro- und Hybrid-Elektrofahrzeugen ist immer eine EG-Übereinstimmungsbescheinigung (COC) vorzulegen – bei Neufahrzeugen im Original, bei Gebrauchtfahrzeugen genügt eine Kopie.",
+        "quelle": "https://www.hochtaunuskreis.de/Themenfelder/Verkehr-Mobilit%C3%A4t/Verkehr/KFZ-Zulassungsbeh%C3%B6rde/"
+      },
+      {
+        "text": "Zahlung vor Ort per Girocard oder bar.",
+        "quelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_9709352"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "main-kinzig-kreis",
+    "stadt": "Main-Kinzig-Kreis",
+    "bundesland": "Hessen",
+    "behoerde": "Main-Kinzig-Kreis - Amt für Sicherheit, Ordnung, Migration und Integration - Zulassungsbehörde",
+    "behoerdeQuelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_10090707",
+    "traeger": "Main-Kinzig-Kreis",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Hanau",
+        "strasse": "Dörnigheimer Straße 1",
+        "plz": "63452",
+        "ort": "Hanau",
+        "quelle": "https://www.mkk.de/buergerservice/lebenslagen_1/auto_verkehr_und_oepnv/32_zulassungsstelle/index_zulassungsstelle.html"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Linsengericht",
+        "strasse": "Im Niederfeld",
+        "plz": "63589",
+        "ort": "Linsengericht",
+        "quelle": "https://www.mkk.de/buergerservice/lebenslagen_1/auto_verkehr_und_oepnv/32_zulassungsstelle/index_zulassungsstelle.html"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Schlüchtern",
+        "strasse": "Am Elmacker 2",
+        "plz": "36381",
+        "ort": "Schlüchtern",
+        "quelle": "https://www.mkk.de/buergerservice/lebenslagen_1/auto_verkehr_und_oepnv/32_zulassungsstelle/index_zulassungsstelle.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.mkk.de/buergerservice/lebenslagen_1/auto_verkehr_und_oepnv/32_zulassungsstelle/index_zulassungsstelle.html",
+      "quelle": "https://www.mkk.de/buergerservice/lebenslagen_1/auto_verkehr_und_oepnv/32_zulassungsstelle/index_zulassungsstelle.html"
+    },
+    "terminUrl": {
+      "url": "https://tevis.ekom21.de/mkk/select2?md=5",
+      "quelle": "https://www.mkk.de/buergerservice/lebenslagen_1/auto_verkehr_und_oepnv/32_zulassungsstelle/index_zulassungsstelle.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100001.OE.10090707&leistungId=99036020001000&p=064350",
+      "quelle": "https://www.mkk.de/buergerservice/lebenslagen_1/auto_verkehr_und_oepnv/32_zulassungsstelle/wunschkennzeichen_briefabfrage.html"
+    },
+    "oeffnungszeiten": null,
+    "zustaendigkeit": {
+      "text": "Main-Kinzig-Kreis ohne die Stadt Hanau (28 Städte und Gemeinden). Für Halter aus der Stadt Hanau ist die Zulassungsstelle der Stadt Hanau (Kurt-Blaum-Platz 8) zuständig, nicht die Kreis-Zulassungsstelle in Hanau. Innerhalb des Kreises können Zulassungsvorgänge an allen drei Standorten erledigt werden.",
+      "quelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_10090707"
+    },
+    "kuerzel": [
+      {
+        "code": "MKK",
+        "bedeutung": "Main-Kinzig-Kreis",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GN",
+        "bedeutung": "Gelnhausen (Altkennzeichen, seit 02.01.2013 wieder ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SLÜ",
+        "bedeutung": "Schlüchtern (Altkennzeichen, seit 02.01.2013 wieder ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "HU",
+        "bedeutung": "Hanau (im Kreis seit 15.06.2016 wieder ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "In Hanau und Linsengericht werden einfache Vorgänge (u. a. Außerbetriebsetzung, Kurzzeitkennzeichen, Adressänderung innerhalb des Kreises außer innerhalb der Stadt Hanau) auch ohne Termin bearbeitet; in Schlüchtern alles nur mit Termin.",
+        "quelle": "https://www.mkk.de/buergerservice/lebenslagen_1/auto_verkehr_und_oepnv/32_zulassungsstelle/index_zulassungsstelle.html"
+      },
+      {
+        "text": "Ausschließlich bargeldlose Zahlung (EC-Karte, VISA, Mastercard, Sparkassen-App, Google Pay, Apple Pay).",
+        "quelle": "https://www.mkk.de/buergerservice/lebenslagen_1/auto_verkehr_und_oepnv/32_zulassungsstelle/index_zulassungsstelle.html"
+      },
+      {
+        "text": "Rote Dauerkennzeichen (06er/07er) werden nur in der Zulassungsstelle Linsengericht bearbeitet (Anfragen an Rote-Kennzeichen@mkk.de).",
+        "quelle": "https://www.mkk.de/buergerservice/lebenslagen_1/auto_verkehr_und_oepnv/32_zulassungsstelle/index_zulassungsstelle.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten",
+      "standorte[Linsengericht].strasse"
+    ]
+  },
+  {
+    "slug": "main-taunus-kreis",
+    "stadt": "Main-Taunus-Kreis",
+    "bundesland": "Hessen",
+    "behoerde": "Main-Taunus-Kreis - Straßenverkehrsamt",
+    "behoerdeQuelle": "https://www.mtk.org/leistungen/400350793",
+    "traeger": "Main-Taunus-Kreis (Der Kreisausschuss)",
+    "standorte": [
+      {
+        "bezeichnung": "Straßenverkehrsamt (Kfz-Zulassung)",
+        "strasse": "In den Nassen 2",
+        "plz": "65719",
+        "ort": "Hofheim am Taunus",
+        "quelle": "https://www.mtk.org/oeffnungszeiten"
+      }
+    ],
+    "website": {
+      "url": "https://www.mtk.org/leistungen/kfz-fuehrerschein-i-kfz-und-mobilitaet",
+      "quelle": "https://www.mtk.org/leistungen/kfz-fuehrerschein-i-kfz-und-mobilitaet"
+    },
+    "terminUrl": {
+      "url": "https://tevis.ekom21.de/mtk/",
+      "quelle": "https://www.mtk.org/oeffnungszeiten"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100001.OE.8975361&leistungId=99036020001000&p=064360",
+      "quelle": "https://www.mtk.org/leistungen/400350793"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:00–17:00",
+        "Di 07:00–17:00",
+        "Mi 07:00–17:00",
+        "Do 07:00–14:00",
+        "Fr 07:00–14:00"
+      ],
+      "hinweis": "Für viele Leistungen des Straßenverkehrsamtes wird eine vorherige Terminvereinbarung dringend empfohlen; welche betroffen sind, zeigt die Online-Terminvereinbarung. Telefonische Erreichbarkeit täglich ab 07:30 Uhr.",
+      "quelle": "https://www.mtk.org/oeffnungszeiten"
+    },
+    "zustaendigkeit": {
+      "text": "Main-Taunus-Kreis (Landkreis); einziger Standort in Hofheim am Taunus.",
+      "quelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_8975361"
+    },
+    "kuerzel": [
+      {
+        "code": "MTK",
+        "bedeutung": "Main-Taunus-Kreis",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "odenwaldkreis",
+    "stadt": "Odenwaldkreis",
+    "bundesland": "Hessen",
+    "behoerde": "Kreisverwaltung Odenwaldkreis - Verkehrswesen (Kfz-Zulassungsstelle)",
+    "behoerdeQuelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_379774386",
+    "traeger": "Odenwaldkreis (Kreisausschuss des Odenwaldkreises)",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle, Kreisverwaltung",
+        "strasse": "Michelstädter Straße 12",
+        "plz": "64711",
+        "ort": "Erbach",
+        "quelle": "https://www.odenwaldkreis.de/de/dienstleistungen/verkehr/kfz-zulassungsstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://www.odenwaldkreis.de/de/dienstleistungen/verkehr/kfz-zulassungsstelle/",
+      "quelle": "https://www.odenwaldkreis.de/de/dienstleistungen/verkehr/kfz-zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://www.terminland.de/odenwaldkreis/?m=28931",
+      "quelle": "https://www.odenwaldkreis.de/de/dienstleistungen/verkehr/kfz-zulassungsstelle/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100001.OE.379774386&leistungId=99036020001000&p=064370",
+      "quelle": "https://verwaltungsportal.hessen.de/leistung?leistung_id=L100001_400350793&regschl=064370000000"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–12:00",
+        "Di 08:00–12:00",
+        "Mi 08:00–12:00",
+        "Do 08:00–12:00 und 14:00–17:30",
+        "Fr 08:00–12:00"
+      ],
+      "hinweis": "Für Anliegen ist ein Termin zu vereinbaren (online, telefonisch unter 06062 6014-5600 oder per E-Mail); Abmeldungen, Kurzzeit- und Ausfuhrkennzeichen ohne Termin.",
+      "quelle": "https://www.odenwaldkreis.de/de/dienstleistungen/verkehr/kfz-zulassungsstelle/"
+    },
+    "zustaendigkeit": {
+      "text": "Odenwaldkreis (Landkreis), Zulassungsstelle in Erbach.",
+      "quelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_379774386"
+    },
+    "kuerzel": [
+      {
+        "code": "ERB",
+        "bedeutung": "Erbach",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Abmeldungen, Kurzzeit- und Ausfuhrkennzeichen ohne Termin montags bis freitags 8:00–12:00 Uhr und donnerstags zusätzlich 14:00–17:30 Uhr.",
+        "quelle": "https://www.odenwaldkreis.de/de/dienstleistungen/verkehr/kfz-zulassungsstelle/"
+      },
+      {
+        "text": "Weitere Termine werden nach Möglichkeit morgens ab ca. 7:30 Uhr freigeschaltet.",
+        "quelle": "https://www.odenwaldkreis.de/de/dienstleistungen/verkehr/kfz-zulassungsstelle/"
+      },
+      {
+        "text": "Termine auch telefonisch (06062 6014-5600) oder per E-Mail (zulassungsbehoerde@odenwaldkreis.de) vereinbar.",
+        "quelle": "https://www.odenwaldkreis.de/de/dienstleistungen/verkehr/kfz-zulassungsstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kreis-offenbach",
+    "stadt": "Kreis Offenbach",
+    "bundesland": "Hessen",
+    "behoerde": "Fachdienst Dienstleistungszentrum (DLZ) - Kfz-Zulassungsbehörde Dietzenbach",
+    "behoerdeQuelle": "https://www.kreis-offenbach.de/Service/Dienstleistungen/Kfz-Zulassung/",
+    "traeger": "Kreis Offenbach",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Dietzenbach",
+        "strasse": "Werner-Hilpert-Straße 1",
+        "plz": "63128",
+        "ort": "Dietzenbach",
+        "quelle": "https://www.kreis-offenbach.de/Service/Dienstleistungen/Kfz-Zulassung/"
+      },
+      {
+        "bezeichnung": "Außenstelle Langen",
+        "strasse": "Südliche Ringstraße 80",
+        "plz": "63225",
+        "ort": "Langen (Hessen)",
+        "quelle": "https://www.kreis-offenbach.de/Service/Dienstleistungen/Kfz-Zulassung/"
+      },
+      {
+        "bezeichnung": "Außenstelle Mühlheim",
+        "strasse": "Friedensstraße 20",
+        "plz": "63165",
+        "ort": "Mühlheim am Main",
+        "quelle": "https://www.kreis-offenbach.de/Service/Dienstleistungen/Kfz-Zulassung/"
+      },
+      {
+        "bezeichnung": "Außenstelle Seligenstadt",
+        "strasse": "Frankfurter Straße 100",
+        "plz": "63500",
+        "ort": "Seligenstadt",
+        "quelle": "https://www.kreis-offenbach.de/Service/Dienstleistungen/Kfz-Zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-offenbach.de/Service/Dienstleistungen/Kfz-Zulassung/",
+      "quelle": "https://www.kreis-offenbach.de/Service/Dienstleistungen/Kfz-Zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://tevis.ekom21.de/lkoff/select2?md=4",
+      "quelle": "https://www.kreis-offenbach.de/Service/Dienstleistungen/Kfz-Zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100001.OE.355711126&leistungId=99036020001000&p=064380",
+      "quelle": "https://www.kreis-offenbach.de/Service/Dienstleistungen/Kfz-Zulassung/Online-Neuzulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Dietzenbach (Servicezeiten): Mo 7:30–16:00, Di 7:30–16:00, Mi 13:00–16:00, Do 7:30–16:00, Fr 7:30–13:30",
+        "Dietzenbach, Serviceschalter ohne Termin: Mo 8:00–12:00, Di 8:00–12:00, Mi 13:00–16:00, Do 8:00–12:00, Fr geschlossen",
+        "Außenstelle Langen: Mo 8:00–12:00 und 13:00–16:00, Di 8:00–12:00 und 13:00–17:00, Mi 8:00–12:00 und 13:00–16:00, Do 8:00–12:00 und 13:00–17:00, Fr 8:00–13:00",
+        "Außenstelle Mühlheim: Mo 8:00–12:00, Di 8:00–12:00 und 14:00–18:00, Mi 8:00–12:00, Do 8:00–12:00 und 14:00–18:00, Fr 8:00–12:00",
+        "Außenstelle Seligenstadt: Mo 8:00–12:00, Di 8:00–11:30 und 14:00–17:30, Mi 8:00–11:00, Do 8:00–11:30 und 14:00–17:30, Fr 8:00–12:00"
+      ],
+      "hinweis": "Für viele Dienstleistungen rund um Kraftfahrzeuge müssen Termine vereinbart werden; Terminbuchung je Standort.",
+      "quelle": "https://www.kreis-offenbach.de/Service/Dienstleistungen/Kfz-Zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Kreis Offenbach mit seinen 13 Städten und Gemeinden (Dietzenbach, Dreieich, Egelsbach, Hainburg, Heusenstamm, Langen, Mainhausen, Mühlheim am Main, Neu-Isenburg, Obertshausen, Rodgau, Rödermark, Seligenstadt). Nicht zuständig für die Stadt Offenbach am Main (gleiches Kürzel OF); dort ist das Bürgerbüro der Stadt zuständig.",
+      "quelle": "https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_355711126"
+    },
+    "kuerzel": [
+      {
+        "code": "OF",
+        "bedeutung": "Offenbach (gemeinsames Kürzel von Kreis Offenbach und Stadt Offenbach am Main)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Serviceschalter in Dietzenbach ohne Termin für Außerbetriebsetzungen, Adressänderungen innerhalb des Kreises, Ersatzplaketten, Kurzzeitkennzeichen und Anträge auf Betriebserlaubnis.",
+        "quelle": "https://www.kreis-offenbach.de/Service/Dienstleistungen/Kfz-Zulassung/"
+      },
+      {
+        "text": "Neben Dietzenbach gibt es Außenstellen in Langen, Mühlheim und Seligenstadt mit jeweils eigener Terminbuchung.",
+        "quelle": "https://www.kreis-offenbach.de/Service/Dienstleistungen/Kfz-Zulassung/"
+      },
+      {
+        "text": "Bei der Online-Neuzulassung wird per Visa, MasterCard, GiroPay oder PayPal bezahlt; Zulassungsbescheinigungen und Plaketten kommen binnen 10 Tagen per Post.",
+        "quelle": "https://www.kreis-offenbach.de/Service/Dienstleistungen/Kfz-Zulassung/Online-Neuzulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

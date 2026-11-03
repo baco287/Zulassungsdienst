@@ -1,0 +1,689 @@
+[
+  {
+    "slug": "landkreis-mainz-bingen",
+    "stadt": "Landkreis Mainz-Bingen",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Kreisverwaltung Mainz-Bingen – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.mainz-bingen.de/de/Aemter-Abteilungen/wirtschaft-verkehr/Kfz-Zulassung/",
+    "traeger": "Landkreis Mainz-Bingen",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Bingen",
+        "strasse": "Alfred-Nobel-Straße 2a",
+        "plz": "55411",
+        "ort": "Bingen am Rhein",
+        "quelle": "https://www.mainz-bingen.de/de/Aemter-Abteilungen/wirtschaft-verkehr/Kfz-Zulassung/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Oppenheim",
+        "strasse": "Sant'Ambrogio-Ring 11",
+        "plz": "55276",
+        "ort": "Oppenheim",
+        "quelle": "https://www.mainz-bingen.de/de/Aemter-Abteilungen/wirtschaft-verkehr/Kfz-Zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.mainz-bingen.de/de/Aemter-Abteilungen/wirtschaft-verkehr/Kfz-Zulassung/",
+      "quelle": "https://www.mainz-bingen.de/de/Aemter-Abteilungen/wirtschaft-verkehr/Kfz-Zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/mainz-bingen/select2?md=1",
+      "quelle": "https://www.mainz-bingen.de/de/Aemter-Abteilungen/wirtschaft-verkehr/Kfz-Zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.251353744&leistungId=99036020001000&p=073390",
+      "quelle": "https://www.mainz-bingen.de/de/Aemter-Abteilungen/wirtschaft-verkehr/Kfz-Zulassung/Zulassungen.php"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Bingen: Mo–Mi 07:30–12:00",
+        "Bingen: Do 09:00–13:00 und 14:00–18:30",
+        "Bingen: Fr 07:30–12:00",
+        "Oppenheim: Mo 09:00–13:00 und 14:00–18:30",
+        "Oppenheim: Di–Fr 07:30–12:00"
+      ],
+      "hinweis": "Zugang nur nach vorheriger Terminvereinbarung; spontane Termine vor Ort werden nicht vergeben.",
+      "quelle": "https://www.mainz-bingen.de/de/Aemter-Abteilungen/wirtschaft-verkehr/Kfz-Zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig für den Landkreis Mainz-Bingen (Zulassungsstellen in Bingen und Oppenheim; Sitz der Kreisverwaltung in Ingelheim). Termine werden nur an Bürgerinnen und Bürger mit Wohnsitz im Landkreis Mainz-Bingen vergeben. Die kreisfreie Landeshauptstadt Mainz (ebenfalls Kennzeichen MZ) hat eine eigene Kfz-Zulassungsbehörde und gehört nicht zum Zuständigkeitsgebiet des Kreises.",
+      "quelle": "https://www.mainz-bingen.de/de/Aemter-Abteilungen/wirtschaft-verkehr/Kfz-Zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "MZ",
+        "bedeutung": "Mainz (wird auch von der kreisfreien Stadt Mainz geführt)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BIN",
+        "bedeutung": "Bingen (Bingen am Rhein)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Service-Point in der Zulassungsstelle Bingen: Privatpersonen können Zulassungsvorgänge ohne reguläre Terminvereinbarung abgeben und nach Fertigstellung (nach telefonischer bzw. E-Mail-Absprache) abholen; keine Bearbeitung am selben Tag. Zahlung dort nur bargeldlos per EC-Karte, Barzahlung nicht möglich. Nicht für Firmen, Zulassungsdienste und Gewerbetreibende.",
+        "quelle": "https://www.mainz-bingen.de/de/Aemter-Abteilungen/wirtschaft-verkehr/Kfz-Zulassung/"
+      },
+      {
+        "text": "Online gebuchte Termine müssen innerhalb von 2 Stunden über den Bestätigungslink in der ersten E-Mail bestätigt werden.",
+        "quelle": "https://www.mainz-bingen.de/de/Aemter-Abteilungen/wirtschaft-verkehr/Kfz-Zulassung/"
+      },
+      {
+        "text": "Für Autohäuser, Zulassungsdienste und Kfz-Händler gibt es in der Zulassungsstelle Bingen einen eigenen Online-Terminkalender (Passwort auf Anfrage); in Oppenheim ist dieser Service nicht möglich.",
+        "quelle": "https://www.mainz-bingen.de/de/Aemter-Abteilungen/wirtschaft-verkehr/Kfz-Zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-mayen-koblenz",
+    "stadt": "Landkreis Mayen-Koblenz",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Kreisverwaltung Mayen-Koblenz – Kfz-Zulassungsstellen Koblenz und Mayen (Referat 3.37 Straßenverkehr)",
+    "behoerdeQuelle": "https://www.kvmyk.de/buergerservice-views/abteilungen/RLP:department:348418/kfz-zulassungsstellen-koblenz-und-mayen/",
+    "traeger": "Landkreis Mayen-Koblenz",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle im Kreishaus Koblenz",
+        "strasse": "Bahnhofstraße 9",
+        "plz": "56068",
+        "ort": "Koblenz",
+        "quelle": "https://www.kvmyk.de/buergerservice-views/abteilungen/RLP:department:348418/kfz-zulassungsstellen-koblenz-und-mayen/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Mayen (Außenstelle)",
+        "strasse": "Auf der Eich 40",
+        "plz": "56727",
+        "ort": "Mayen",
+        "quelle": "https://www.kvmyk.de/buergerservice-views/mitarbeiter/RLP:employee:58768/hellen-sascha/"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle der Stadtverwaltung Andernach",
+        "strasse": "Am Stadtgraben 29",
+        "plz": "56626",
+        "ort": "Andernach",
+        "quelle": "https://www.andernach.de/buergerservice-portal/zulassungsstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://www.kvmyk.de/buergerservice-views/abteilungen/RLP:department:348418/kfz-zulassungsstellen-koblenz-und-mayen/",
+      "quelle": "https://www.kvmyk.de/buergerservice-views/abteilungen/RLP:department:348418/kfz-zulassungsstellen-koblenz-und-mayen/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/kvmayen-koblenz/",
+      "quelle": "https://www.kvmyk.de/buergerservice-views/abteilungen/RLP:department:348418/kfz-zulassungsstellen-koblenz-und-mayen/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.316892815&leistungId=99036020001000&p=071370",
+      "quelle": "https://www.kvmyk.de/buergerservice-online/onlineangebote/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Koblenz (Kreishaus) und Mayen: Mo–Fr 07:30–12:30",
+        "Dienstleistungsnachmittag Kreishaus Koblenz: Mi 15:00–17:00 (mit Termin)",
+        "Dienstleistungsnachmittag Mayen: Do 15:00–17:00 (mit Termin)"
+      ],
+      "hinweis": "Montags sowie mittwochs bis freitags nur nach vorheriger Terminvereinbarung; dienstags ist die Abwicklung ohne Termin möglich, die Anzahl der Zulassungsvorgänge an diesem Tag ist jedoch limitiert. Gilt nicht für die Zulassungsstelle Andernach.",
+      "quelle": "https://www.kvmyk.de/buergerservice-views/abteilungen/RLP:department:348418/kfz-zulassungsstellen-koblenz-und-mayen/"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig für den Landkreis Mayen-Koblenz (Zulassungsstellen im Kreishaus Koblenz und in Mayen; zusätzlich Zulassungsstelle der Stadtverwaltung Andernach). Obwohl das Kreishaus in Koblenz steht, ist die kreisfreie Stadt Koblenz (Kennzeichen KO) nicht Teil des Kreisgebiets: Die Stadt Koblenz hat eine eigene Kfz-Zulassung (Ordnungsamt, Ludwig-Erhard-Straße 2, 56073 Koblenz), deren Terminreservierung nur für Kunden aus dem Stadtgebiet Koblenz gilt, nicht für das umliegende Kreisgebiet.",
+      "quelle": "https://www.koblenz.de/buergerservice/abteilungen/RLP:department:267133/kfz-zulassung-ordnungsamt/"
+    },
+    "kuerzel": [
+      {
+        "code": "MYK",
+        "bedeutung": "Mayen-Koblenz (Mayen, Koblenz)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MY",
+        "bedeutung": "Mayen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Dienstags können Anliegen in den Zulassungsstellen Kreishaus Koblenz und Mayen ohne vorherige Terminbuchung erledigt werden; die Anzahl der Vorgänge ist an diesem Tag limitiert.",
+        "quelle": "https://www.kvmyk.de/buergerservice-views/abteilungen/RLP:department:348418/kfz-zulassungsstellen-koblenz-und-mayen/"
+      },
+      {
+        "text": "Zusätzliche Dienstleistungsnachmittage mit Termin: Kreishaus Koblenz mittwochs 15:00–17:00 Uhr, Mayen donnerstags 15:00–17:00 Uhr.",
+        "quelle": "https://www.kvmyk.de/buergerservice-views/abteilungen/RLP:department:348418/kfz-zulassungsstellen-koblenz-und-mayen/"
+      },
+      {
+        "text": "Die Zulassungsstelle Mayen hat eigene Kontaktdaten (Telefon 02651/800-360, E-Mail kfzzulassungmayen@kvmyk.de).",
+        "quelle": "https://www.kvmyk.de/buergerservice-views/abteilungen/RLP:department:348418/kfz-zulassungsstellen-koblenz-und-mayen/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten (Zulassungsstelle Andernach: widersprüchliche Angaben auf andernach.de, nicht übernommen)",
+      "zustaendigkeit (Einzugsgebiet der Zulassungsstelle Andernach nicht angegeben)"
+    ]
+  },
+  {
+    "slug": "landkreis-neuwied",
+    "stadt": "Landkreis Neuwied",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Kreisverwaltung Neuwied – Ref. 34-3 Zulassungsstelle",
+    "behoerdeQuelle": "https://www.kreis-neuwied.de/buergerservice-views/abteilungen/RLP:department:339907/ref-34-3-zulassungsstelle/",
+    "traeger": "Landkreis Neuwied",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle (Hauptstelle)",
+        "strasse": "Rudolf-Diesel-Straße 10",
+        "plz": "56566",
+        "ort": "Neuwied",
+        "quelle": "https://www.kreis-neuwied.de/buergerservice-views/abteilungen/RLP:department:339907/ref-34-3-zulassungsstelle/"
+      },
+      {
+        "bezeichnung": "Außenstelle Dierdorf",
+        "strasse": "Poststraße 5",
+        "plz": "56269",
+        "ort": "Dierdorf",
+        "quelle": "https://www.kreis-neuwied.de/buergerservice-views/abteilungen/RLP:department:340939/aussenstelle-dierdorf/"
+      },
+      {
+        "bezeichnung": "Außenstelle Linz",
+        "strasse": "Asbacher Straße 87",
+        "plz": "53545",
+        "ort": "Linz am Rhein",
+        "quelle": "https://www.kreis-neuwied.de/buergerservice-views/abteilungen/RLP:department:340940/aussenstelle-linz/"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-neuwied.de/buergerservice/kfz/",
+      "quelle": "https://www.kreis-neuwied.de/buergerservice/kfz/"
+    },
+    "terminUrl": {
+      "url": "https://www.kreis-neuwied.de/buergerservice/kfz/terminservice/",
+      "quelle": "https://www.kreis-neuwied.de/buergerservice/kfz/terminservice/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.278132679&leistungId=99036020001000&p=071380",
+      "quelle": "https://www.kreis-neuwied.de/buergerservice/kfz/kfz-onlinedienste/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Außenstelle Asbach: Di, Mi, Do 08:00–11:30",
+        "Außenstelle Dierdorf: Di, Do 08:00–11:30",
+        "Außenstelle Linz: Mo, Mi, Fr 08:00–11:30"
+      ],
+      "hinweis": "Hauptstelle Neuwied: Zulassungen, Um- und Abmeldungen seit 17.08.2026 nur nach vorheriger Online-Terminvereinbarung (für die Hauptstelle sind keine festen Öffnungszeiten veröffentlicht). Auch die Außenstellen arbeiten ausschließlich mit Terminen; Hauptstelle und Außenstellen haben getrennte Terminkalender.",
+      "quelle": "https://www.kreis-neuwied.de/ueber-uns/dienstgebaeude-oeffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Die Kfz-Zulassungsstellen der Kreisverwaltung (Hauptstelle Neuwied, Außenstellen Asbach, Dierdorf, Linz) sind für Einwohnerinnen und Einwohner der Verbandsgemeinden des Landkreises Neuwied zuständig. Einwohnerinnen und Einwohner der Stadt Neuwied und ihrer Stadtteile nutzen die Kfz-Zulassung der Stadt Neuwied (Termine über neuwied.de), obwohl beide das Kennzeichen NR führen.",
+      "quelle": "https://www.kreis-neuwied.de/buergerservice/kfz/terminservice/"
+    },
+    "kuerzel": [
+      {
+        "code": "NR",
+        "bedeutung": "Neuwied (Neuwied am Rhein)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Seit 17. August 2026 sind Zulassungen, Um- und Abmeldungen bis auf Weiteres nur noch nach vorheriger Terminvereinbarung über die Online-Terminplattform möglich; die offenen Zeiten am Dienstag und Donnerstag wurden eingestellt.",
+        "quelle": "https://www.kreis-neuwied.de/aktuelles/presse/kfz-zulassung-ab-mitte-august-nur-mit-terminvereinbarung/"
+      },
+      {
+        "text": "Nach einem Umzug innerhalb des Landkreises (ohne Stadt Neuwied) kann die Anschriftenänderung in der Zulassungsbescheinigung Teil I auch beim Bürgerbüro der eigenen Verbandsgemeinde erledigt werden, sofern das Fahrzeug bereits im Landkreis zugelassen ist.",
+        "quelle": "https://www.kreis-neuwied.de/buergerservice/kfz/terminservice/"
+      },
+      {
+        "text": "Autohändler können ihre Vorgänge weiterhin am entsprechenden Kundenschalter abgeben.",
+        "quelle": "https://www.kreis-neuwied.de/aktuelles/presse/kfz-zulassung-ab-mitte-august-nur-mit-terminvereinbarung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "standorte[Außenstelle Asbach].strasse",
+      "oeffnungszeiten (Hauptstelle Neuwied)"
+    ]
+  },
+  {
+    "slug": "rhein-hunsrueck-kreis",
+    "stadt": "Rhein-Hunsrück-Kreis",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Kreisverwaltung Rhein-Hunsrück-Kreis – KFZ-Zulassungsstelle (31.2 Zulassung)",
+    "behoerdeQuelle": "https://www.kv-rhk.de/service-leistungen/fahrzeuge-verkehr/kfz-zulassung/",
+    "traeger": "Rhein-Hunsrück-Kreis",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassungsstelle Simmern (Kreisverwaltung)",
+        "strasse": "Ludwigstraße 3-5",
+        "plz": "55469",
+        "ort": "Simmern/Hunsrück",
+        "quelle": "https://www.kv-rhk.de/buergerservice-views/abteilungen/RLP:department:374875/31-2-zulassung-simmern/"
+      },
+      {
+        "bezeichnung": "Außenstelle Boppard",
+        "strasse": "Heerstraße 189",
+        "plz": "56154",
+        "ort": "Boppard",
+        "quelle": "https://www.kv-rhk.de/buergerservice-views/abteilungen/RLP:department:374917/31-2-zulassung-boppard/"
+      }
+    ],
+    "website": {
+      "url": "https://www.kv-rhk.de/service-leistungen/fahrzeuge-verkehr/kfz-zulassung/",
+      "quelle": "https://www.kv-rhk.de/service-leistungen/fahrzeuge-verkehr/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/rhein-hunsrueck-kreis/",
+      "quelle": "https://www.kv-rhk.de/service-leistungen/fahrzeuge-verkehr/kfz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.338056739&leistungId=99036020001000&p=071400",
+      "quelle": "https://www.kv-rhk.de/service-leistungen/fahrzeuge-verkehr/kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [],
+      "hinweis": "Zur Vorsprache bei der KFZ-Zulassungsstelle (Simmern und Boppard) benötigen Sie einen Termin; feste Öffnungszeiten für die Zulassungsstellen sind nicht veröffentlicht.",
+      "quelle": "https://www.kv-rhk.de/buergerservice-views/abteilungen/RLP:department:374875/31-2-zulassung-simmern/"
+    },
+    "zustaendigkeit": {
+      "text": "Die KFZ-Zulassungsstelle der Kreisverwaltung Rhein-Hunsrück-Kreis ist für Zulassung, Ummeldung und Abmeldung von Fahrzeugen im Kreisgebiet zuständig; neben der Zulassungsstelle in Simmern steht eine Außenstelle in Boppard zur Verfügung.",
+      "quelle": "https://www.kv-rhk.de/service-leistungen/fahrzeuge-verkehr/kfz-zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "SIM",
+        "bedeutung": "Simmern",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GOA",
+        "bedeutung": "Sankt Goar",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "In der Kfz-Zulassungsstelle Boppard ist seit 1. Mai 2026 keine Barzahlung mehr möglich; bezahlt wird mit EC-Karte oder Kreditkarte (Mastercard, Visa).",
+        "quelle": "https://www.kv-rhk.de/aktuelles/veroeffentlichungen/mitteilungen/umstellung-der-zahlungsmethoden-bei-der-kfz-zulassungsstelle-boppard/"
+      },
+      {
+        "text": "Die Kreisverwaltung weist auf ihre eigenen Online-Zulassungs- und Abmeldedienste hin (kv-rhk.de/kfz); damit lassen sich Wege, Wartezeiten und Gebühren sparen, und das Fahrzeug darf mit dem Nachweis der Online-Zulassung bereits vor Erhalt der Plaketten innerhalb Deutschlands genutzt werden, sofern die gesetzlichen Voraussetzungen erfüllt sind.",
+        "quelle": "https://www.kv-rhk.de/aktuelles/veroeffentlichungen/mitteilungen/online-zulassung-direktes-angebot-der-kreisverwaltung-nutzen-und-gebuehren-sparen/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten.zeilen"
+    ]
+  },
+  {
+    "slug": "rhein-lahn-kreis",
+    "stadt": "Rhein-Lahn-Kreis",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Kreisverwaltung Rhein-Lahn – Kfz-Zulassungsstellen",
+    "behoerdeQuelle": "https://www.rhein-lahn-kreis.de/verwaltung-service/online-antraege-ozg/ozg-kfz/",
+    "traeger": "Rhein-Lahn-Kreis",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Bad Ems (Kreishaus)",
+        "strasse": "Insel Silberau 1",
+        "plz": "56130",
+        "ort": "Bad Ems",
+        "quelle": "https://www.rhein-lahn-kreis.de/verwaltung-service/online-antraege-ozg/ozg-kfz/"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Diez",
+        "strasse": "Wilhelmstraße 42a",
+        "plz": "65582",
+        "ort": "Diez",
+        "quelle": "https://www.rhein-lahn-kreis.de/verwaltung-service/online-antraege-ozg/ozg-kfz/"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Nastätten",
+        "strasse": "Pestalozzistraße 2a",
+        "plz": "56355",
+        "ort": "Nastätten",
+        "quelle": "https://www.rhein-lahn-kreis.de/verwaltung-service/online-antraege-ozg/ozg-kfz/"
+      }
+    ],
+    "website": {
+      "url": "https://www.rhein-lahn-kreis.de/verwaltung-service/online-antraege-ozg/ozg-kfz/",
+      "quelle": "https://www.rhein-lahn-kreis.de/verwaltung-service/online-antraege-ozg/ozg-kfz/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/rhein-lahn-kreis/select2?md=3",
+      "quelle": "https://www.rhein-lahn-kreis.de/verwaltung-service/online-antraege-ozg/ozg-kfz/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.280604325&leistungId=99036020001000&p=071410",
+      "quelle": "https://www.rhein-lahn-kreis.de/verwaltung-service/online-antraege-ozg/ozg-kfz/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Bad Ems: Mo–Fr 08:00–12:00, Do zusätzlich 14:00–18:00",
+        "Diez: Mo–Fr 08:00–12:00, Do zusätzlich 14:00–17:30",
+        "Nastätten: Mo–Fr 08:00–11:00"
+      ],
+      "hinweis": "Für die Dienstleistungen der Kfz-Zulassungsstelle ist eine vorherige Terminvereinbarung zwingend erforderlich (online oder telefonisch).",
+      "quelle": "https://www.rhein-lahn-kreis.de/verwaltung-service/online-antraege-ozg/ozg-kfz/"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig für den Rhein-Lahn-Kreis mit Zulassungsstellen in Bad Ems, Diez und Nastätten – ausgenommen die Stadt Lahnstein: Nach einer Vereinbarung zwischen Stadtverwaltung Lahnstein und Kreisverwaltung lassen Lahnsteiner Bürgerinnen und Bürger ihre Fahrzeuge ausschließlich im Service-Center der Stadtverwaltung Lahnstein (Westallee 5-7) zu; eine Zulassung bei der Kreisverwaltung in Bad Ems ist für sie bis auf Weiteres nicht möglich. Die Online-Terminvereinbarung des Kreises gilt nicht für Lahnsteiner.",
+      "quelle": "https://www.rhein-lahn-kreis.de/verwaltung-service/online-antraege-ozg/ozg-kfz/"
+    },
+    "kuerzel": [
+      {
+        "code": "EMS",
+        "bedeutung": "Bad Ems",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "DIZ",
+        "bedeutung": "Diez",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GOH",
+        "bedeutung": "Sankt Goarshausen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termine sind auch telefonisch buchbar: Bad Ems und Nastätten unter 02603 972-121, Diez unter 02603 972-123.",
+        "quelle": "https://www.rhein-lahn-kreis.de/verwaltung-service/online-antraege-ozg/ozg-kfz/"
+      },
+      {
+        "text": "Online über i-Kfz möglich: Zulassung bzw. Ummeldung, Abmeldung, Wunschkennzeichen-Reservierung und Leasingbriefauskunft.",
+        "quelle": "https://www.rhein-lahn-kreis.de/verwaltung-service/online-antraege-ozg/ozg-kfz/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "rhein-pfalz-kreis",
+    "stadt": "Rhein-Pfalz-Kreis",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Kreisverwaltung Rhein-Pfalz-Kreis – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.rhein-pfalz-kreis.de/verwaltung-region/buergerservice/dienstgebaeude/",
+    "traeger": "Rhein-Pfalz-Kreis",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle in der Außenstelle Schifferstadt",
+        "strasse": "Bahnhofstraße 37",
+        "plz": "67105",
+        "ort": "Schifferstadt",
+        "quelle": "https://www.rhein-pfalz-kreis.de/verwaltung-region/buergerservice/dienstgebaeude/"
+      }
+    ],
+    "website": {
+      "url": "https://www.rhein-pfalz-kreis.de/wirtschaft-verkehr/kfz-zulassung/",
+      "quelle": "https://www.rhein-pfalz-kreis.de/wirtschaft-verkehr/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://rhein-pfalz-kreis.termine-reservieren.online/",
+      "quelle": "https://www.rhein-pfalz-kreis.de/verwaltung-region/buergerservice/online-termin/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.197799633&leistungId=99036020001000&p=073380",
+      "quelle": "https://www.rhein-pfalz-kreis.de/buergerservice/leistungen/RLP:entry:6431974:ANLR-VLR/erstzulassung-eines-fahrzeugs-neuzulassung-beantragen/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30–15:00 (durchgängig)",
+        "Di 07:30–15:00 (durchgängig)",
+        "Mi 07:00–12:00",
+        "Do 07:30–12:00 und 13:00–17:30",
+        "Fr 07:30–13:00"
+      ],
+      "hinweis": "Vorab ist eine Terminvereinbarung nötig (online oder telefonisch).",
+      "quelle": "https://www.rhein-pfalz-kreis.de/wirtschaft-verkehr/kfz-zulassung/zulassungsstellen/"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig für den Rhein-Pfalz-Kreis; die Zulassungsstelle befindet sich in der Außenstelle Schifferstadt. Der Sitz der Kreisverwaltung liegt in Ludwigshafen (Europaplatz 5), die kreisfreie Stadt Ludwigshafen (Kennzeichen LU) hat jedoch eine eigene Kfz-Zulassungsstelle. Seit 2. November 2026 können Bürgerinnen und Bürger des nördlichen Rhein-Pfalz-Kreises zusätzlich die Zulassungsstelle Frankenthal nutzen (zunächst mit Terminvereinbarung); umgekehrt können Frankenthaler die Zulassungsstelle in Schifferstadt nutzen.",
+      "quelle": "https://www.rhein-pfalz-kreis.de/verwaltung-region/aktuelles/nachrichten/wichtiger-baustein-fuer-buergerfreundliche-verwaltung-frankenthal-und-rhein-pfalz-kreis-starten-kooperation-bei-der-kfz-zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "RP",
+        "bedeutung": "Rhein-Pfalz",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Außerbetriebsetzung eines Fahrzeugs erfolgt grundsätzlich ohne Terminvereinbarung.",
+        "quelle": "https://www.rhein-pfalz-kreis.de/wirtschaft-verkehr/kfz-zulassung/"
+      },
+      {
+        "text": "Kooperation mit der Stadt Frankenthal (Pfalz) seit 2. November 2026: Bürger des nördlichen Kreisgebiets können Zulassungsdienstleistungen auch in der Zulassungsstelle Frankenthal erledigen (Termin über frankenthal.de/onlinetermin oder 06233 89 331).",
+        "quelle": "https://www.rhein-pfalz-kreis.de/verwaltung-region/aktuelles/nachrichten/wichtiger-baustein-fuer-buergerfreundliche-verwaltung-frankenthal-und-rhein-pfalz-kreis-starten-kooperation-bei-der-kfz-zulassung/"
+      },
+      {
+        "text": "Seit 3. August gilt für Termine der Kfz-Zulassung ein neuer Online-Kalender; Termine sind nur online oder telefonisch (0621/5909-5900 oder 0621/5909-5780) vereinbar.",
+        "quelle": "https://www.rhein-pfalz-kreis.de/verwaltung-region/buergerservice/online-termin/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-suedwestpfalz",
+    "stadt": "Landkreis Südwestpfalz",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Kreisverwaltung Südwestpfalz – Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.lksuedwestpfalz.de/buergerservice/abteilungen/ordnung-verkehr-brand-und-katastrophenschutz/kfz-zulassung/",
+    "traeger": "Landkreis Südwestpfalz",
+    "standorte": [
+      {
+        "bezeichnung": "Kreisverwaltung Südwestpfalz (Hauptgebäude), Kfz-Zulassungsstelle",
+        "strasse": "Unterer Sommerwaldweg 40-42",
+        "plz": "66953",
+        "ort": "Pirmasens",
+        "quelle": "https://www.lksuedwestpfalz.de/buergerservice/abteilungen/ordnung-verkehr-brand-und-katastrophenschutz/kfz-zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.lksuedwestpfalz.de/buergerservice/abteilungen/ordnung-verkehr-brand-und-katastrophenschutz/kfz-zulassung/",
+      "quelle": "https://www.lksuedwestpfalz.de/buergerservice/abteilungen/ordnung-verkehr-brand-und-katastrophenschutz/kfz-zulassung/"
+    },
+    "terminUrl": null,
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.11313423&leistungId=99036020001000&p=073400",
+      "quelle": "https://www.lksuedwestpfalz.de/buergerservice/abteilungen/ordnung-verkehr-brand-und-katastrophenschutz/kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Di 07:30–15:00",
+        "Mi 07:30–11:30",
+        "Do 07:30–16:30",
+        "Fr 07:30–11:30"
+      ],
+      "hinweis": "Annahmezeiten der Kfz-Zulassungsbehörde. Die Kfz-Zulassungsstelle ist von der allgemeinen Terminregelung der Kreisverwaltung ausgenommen, für sie gelten gesonderte Öffnungszeiten.",
+      "quelle": "https://www.lksuedwestpfalz.de/buergerservice/abteilungen/ordnung-verkehr-brand-und-katastrophenschutz/kfz-zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig für den Landkreis Südwestpfalz (Kreisverwaltung in Pirmasens). Die kreisfreien Städte Pirmasens (PS) und Zweibrücken (ZW) führen dieselben Kennzeichen, gehören aber nicht zum Landkreis: Für sie vergibt die Kfz-Zulassungsstelle der Stadt Pirmasens Termine, und zwar nur, wenn man im Stadtgebiet Pirmasens oder Zweibrücken wohnt bzw. das Fahrzeug in Pirmasens oder Zweibrücken Stadt zugelassen ist.",
+      "quelle": "https://www.pirmasens.de/leben-in-ps/verkehr-parken/strassenverkehr/kfz-zulassungsstelle/"
+    },
+    "kuerzel": [
+      {
+        "code": "PS",
+        "bedeutung": "Pirmasens (auch kreisfreie Stadt Pirmasens)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ZW",
+        "bedeutung": "Zweibrücken (auch kreisfreie Stadt Zweibrücken)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Nach einem Umzug innerhalb des Landkreises sind auch die Verbandsgemeindeverwaltungen befugt, die Adresse im Fahrzeugschein bzw. in der Zulassungsbescheinigung Teil I zu ändern (bei der Meldebehörde).",
+        "quelle": "https://www.lksuedwestpfalz.de/buergerservice/abteilungen/ordnung-verkehr-brand-und-katastrophenschutz/kfz-zulassung/"
+      },
+      {
+        "text": "Bei der Zulassung eines Gebrauchtfahrzeugs aus dem Ausland wird eine vorherige Abstimmung mit der Zulassungsstelle empfohlen (Tel. 06331/809-266).",
+        "quelle": "https://www.lksuedwestpfalz.de/buergerservice/abteilungen/ordnung-verkehr-brand-und-katastrophenschutz/kfz-zulassung/"
+      },
+      {
+        "text": "Kurzzeitkennzeichen (Gültigkeit bis 5 Tage): Wer seinen Hauptwohnsitz nicht im Landkreis hat, muss zusätzlich einen Kaufvertrag über den Erwerb des Fahrzeugs im Landkreis vorlegen.",
+        "quelle": "https://www.lksuedwestpfalz.de/buergerservice/abteilungen/ordnung-verkehr-brand-und-katastrophenschutz/kfz-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "terminUrl"
+    ]
+  },
+  {
+    "slug": "landkreis-vulkaneifel",
+    "stadt": "Landkreis Vulkaneifel",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Kreisverwaltung Vulkaneifel – Sachgebiet Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.vulkaneifel.de/buergerservice-views/abteilungen/RLP:department:354205/sachgebiet-kfz-zulassung/",
+    "traeger": "Landkreis Vulkaneifel",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle in der Kreisverwaltung Vulkaneifel",
+        "strasse": "Mainzer Straße 25",
+        "plz": "54550",
+        "ort": "Daun",
+        "quelle": "https://www.vulkaneifel.de/buergerservice-views/mitarbeiter/RLP:employee:121078/stark-anja/"
+      }
+    ],
+    "website": {
+      "url": "https://www.vulkaneifel.de/buergerservice-views/abteilungen/RLP:department:354205/sachgebiet-kfz-zulassung/",
+      "quelle": "https://www.vulkaneifel.de/buergerservice-views/abteilungen/RLP:department:354205/sachgebiet-kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://www.bernkastel-wittlich.de/ikz-zulassung/",
+      "quelle": "https://www.vulkaneifel.de/aktuelles/pressemitteilungen/2026/september/online-terminvergabe-der-kfz-zulassungsstelle-wieder-moeglich/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.265319299&leistungId=99036020001000&p=072330",
+      "quelle": "https://www.vulkaneifel.de/online-dienste/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Fr 08:00–12:00",
+        "Do zusätzlich 14:00–18:00"
+      ],
+      "hinweis": "Eine vorherige Terminvereinbarung ist erforderlich.",
+      "quelle": "https://www.vulkaneifel.de/buergerservice-views/abteilungen/RLP:department:354205/sachgebiet-kfz-zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig für den Landkreis Vulkaneifel; die Kfz-Zulassungsstelle befindet sich in der Kreisverwaltung in Daun.",
+      "quelle": "https://www.vulkaneifel.de/buergerservice-views/abteilungen/RLP:department:354205/sachgebiet-kfz-zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "DAU",
+        "bedeutung": "Daun",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Terminbuchung und Online-Anträge laufen über das gemeinsame IKZ-Zulassungsportal der Landkreise Bernkastel-Wittlich, Bitburg-Prüm, Cochem-Zell und Vulkaneifel.",
+        "quelle": "https://www.bernkastel-wittlich.de/ikz-zulassung/"
+      },
+      {
+        "text": "Die Kreisverwaltung weist auf den digitalen Fahrzeugschein in der i-Kfz-App hin; dafür ist kein Vor-Ort-Termin in der Zulassungsstelle nötig (Voraussetzung u. a. Online-Ausweisfunktion und Fahrzeug auf den App-Nutzer zugelassen).",
+        "quelle": "https://www.vulkaneifel.de/online-dienste/digitaler-fahrzeugschein/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "westerwaldkreis",
+    "stadt": "Westerwaldkreis",
+    "bundesland": "Rheinland-Pfalz",
+    "behoerde": "Kreisverwaltung des Westerwaldkreises – Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.westerwaldkreis.de/buergerservice-und-themen/sicherheit-ordnung-und-verkehr/kfz-zulassung/",
+    "traeger": "Westerwaldkreis",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Montabaur (Kreisverwaltung)",
+        "strasse": "Peter-Altmeier-Platz 1",
+        "plz": "56410",
+        "ort": "Montabaur",
+        "quelle": "https://www.westerwaldkreis.de/buergerservice-views/mitarbeiter/RLP:employee:146329/best-tanja/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Hachenburg (Verbandsgemeindeverwaltung Hachenburg)",
+        "strasse": "Gartenstraße 11",
+        "plz": "57627",
+        "ort": "Hachenburg",
+        "quelle": "https://www.hachenburg-vg.de/fuer-die-buerger/kfz-zulassung/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Westerburg (Verbandsgemeindeverwaltung Westerburg)",
+        "strasse": "Neumarkt 1",
+        "plz": "56457",
+        "ort": "Westerburg",
+        "quelle": "https://www.vg-westerburg.de/"
+      }
+    ],
+    "website": {
+      "url": "https://www.westerwaldkreis.de/buergerservice-und-themen/sicherheit-ordnung-und-verkehr/kfz-zulassung/",
+      "quelle": "https://www.westerwaldkreis.de/buergerservice-und-themen/sicherheit-ordnung-und-verkehr/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/westerwaldkreis/",
+      "quelle": "https://www.westerwaldkreis.de/buergerservice-views/abteilungen/RLP:department:368770/kfz-zulassungsstelle-montabaur/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100039.OE.277818031&leistungId=99036020001000&p=071430",
+      "quelle": "https://www.westerwaldkreis.de/buergerservice-und-themen/sicherheit-ordnung-und-verkehr/kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montabaur: Mo 07:30–16:30",
+        "Montabaur: Di, Mi, Fr 07:30–12:30",
+        "Montabaur: Do 07:30–17:30",
+        "Westerburg: Mo–Mi 08:00–14:00",
+        "Westerburg: Do 08:00–11:30 und 14:00–17:30",
+        "Westerburg: Fr 08:00–11:30"
+      ],
+      "hinweis": "Zulassungsvorgänge sind nur nach vorheriger Terminvereinbarung möglich. Montabaur: Annahmeschluss jeweils 30 Minuten vor Ende der Öffnungszeit. Zeiten für Hachenburg wegen widersprüchlicher Angaben nicht aufgeführt.",
+      "quelle": "https://www.westerwaldkreis.de/buergerservice-views/abteilungen/RLP:department:368770/kfz-zulassungsstelle-montabaur/"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig für den Westerwaldkreis; Kfz-Zulassungsstellen gibt es in Montabaur (Kreisverwaltung) sowie in Hachenburg und Westerburg (jeweils bei der Verbandsgemeindeverwaltung). Jede Zulassungsstelle hat ein eigenes Online-Buchungsportal.",
+      "quelle": "https://www.westerwaldkreis.de/buergerservice-und-themen/sicherheit-ordnung-und-verkehr/kfz-zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "WW",
+        "bedeutung": "Westerwald",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Zulassungsstelle Westerburg nutzt ein eigenes Online-Buchungsportal (Terminplaner der Verbandsgemeinde Westerburg): https://www.terminplaner-online.de/verbandsgemeinde_westerburg/verbandsgemeinde_westerburg/verbandsgemeindeverwaltung/kfz-zulassung/",
+        "quelle": "https://www.westerwaldkreis.de/buergerservice-views/abteilungen/RLP:department:374665/kfz-zulassungsstelle-westerburg/"
+      },
+      {
+        "text": "Die Zulassungsstelle Hachenburg nutzt ein eigenes Online-Buchungsportal: https://termine-reservieren.de/termine/hachenburg/",
+        "quelle": "https://www.westerwaldkreis.de/buergerservice-views/abteilungen/RLP:department:374659/kfz-zulassungsstelle-hachenburg/"
+      },
+      {
+        "text": "Zulassung/Ummeldung und Abmeldung sind über i-Kfz rund um die Uhr, sieben Tage die Woche online möglich.",
+        "quelle": "https://www.westerwaldkreis.de/buergerservice-und-themen/sicherheit-ordnung-und-verkehr/kfz-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten (Hachenburg)",
+      "standorte[Hachenburg].strasse",
+      "standorte[Westerburg].strasse"
+    ]
+  }
+]

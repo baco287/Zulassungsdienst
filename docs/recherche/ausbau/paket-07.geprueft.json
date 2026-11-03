@@ -1,0 +1,861 @@
+[
+  {
+    "slug": "landkreis-berchtesgadener-land",
+    "stadt": "Landkreis Berchtesgadener Land",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Berchtesgadener Land – Fachbereich 24 – Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.bayernportal.de/dokumente/leistung/3888675461?plz=83435&behoerde=75886841441&gemeinde=466857854669",
+    "traeger": "Landkreis Berchtesgadener Land",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle im Landratsamt Berchtesgadener Land",
+        "strasse": "Salzburger Straße 64",
+        "plz": "83435",
+        "ort": "Bad Reichenhall",
+        "quelle": "https://www.bayernportal.de/dokumente/leistung/3888675461?plz=83435&behoerde=75886841441&gemeinde=466857854669"
+      }
+    ],
+    "website": {
+      "url": "https://www.lra-bgl.de/kfz-zulassung/",
+      "quelle": "https://www.lra-bgl.de/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://lra-berchtesgadener-land.saas.smartcjm.com/m/KFZ-Zulassungsstelle/extern/calendar/?uid=2e676ef7-ab96-4ef4-9f8a-1e7704877e61&lang=de",
+      "quelle": "https://www.lra-bgl.de/kfz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrberchtesgadenerland/bsp_ikfz_antragstellung/#/",
+      "quelle": "https://www.lra-bgl.de/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag bis Mittwoch: 8:00 bis 14:00 Uhr",
+        "Donnerstag: 8:00 bis 16:00 Uhr",
+        "Freitag: 8:00 bis 12:00 Uhr"
+      ],
+      "hinweis": "Allgemeine Öffnungszeiten des Landratsamts; Terminvereinbarung erforderlich – in der Kfz-Zulassungsbehörde werden nur Vorgänge mit Terminvereinbarung bearbeitet",
+      "quelle": "https://www.lra-bgl.de/t/das-landratsamt/anfahrt/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde für den Landkreis Berchtesgadener Land; auch für Fahrzeughalter in der Großen Kreisstadt Bad Reichenhall ist das Landratsamt (Fachbereich 24 – Kfz-Zulassung) zuständig.",
+      "quelle": "https://www.bayernportal.de/dokumente/leistung/3888675461?plz=83435&behoerde=75886841441&gemeinde=466857854669"
+    },
+    "kuerzel": [
+      {
+        "code": "BGL",
+        "bedeutung": "Berchtesgadener Land",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BGD",
+        "bedeutung": "Berchtesgaden",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "LF",
+        "bedeutung": "Laufen (Kürzel wird auch im Landkreis Altötting vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "REI",
+        "bedeutung": "Bad Reichenhall",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Seit 01.07.2020 bearbeitet die Kfz-Zulassungsbehörde nur Vorgänge von Kunden mit Terminvereinbarung; wer keinen Internetzugang hat, kann den Termin telefonisch vereinbaren.",
+        "quelle": "https://www.lra-bgl.de/kfz-zulassung/"
+      },
+      {
+        "text": "Gebuchte Termine werden automatisch ins Aufrufsystem eingespielt – keine zusätzliche Wartenummer nötig; es genügt, ca. 10 Minuten vor dem Termin im Wartebereich zu sein. Kennzeichenhersteller befinden sich ca. 200 m vor dem Landratsamt.",
+        "quelle": "https://www.lra-bgl.de/kfz-zulassung/"
+      },
+      {
+        "text": "Online-Abmeldung oder Ummeldung ohne Halterwechsel ist nur möglich, wenn Fahrzeugdokumente und Kennzeichensiegel nach dem 01.01.2015 zugeteilt wurden; für Neuzulassung, Wiederzulassung oder Halterwechsel online muss die Zulassungsbescheinigung Teil II nach dem 01.01.2018 ausgestellt sein.",
+        "quelle": "https://www.lra-bgl.de/kfz-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-dachau",
+    "stadt": "Landkreis Dachau",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Dachau – Zulassungsbehörde (Kfz-Zulassung)",
+    "behoerdeQuelle": "https://www.landratsamt-dachau.de/Stra%C3%9Fenverkehr-F%C3%BChrerschein-%C3%96ffentliche-Sicherheit/Zulassungsbeh%C3%B6rde/",
+    "traeger": "Landkreis Dachau",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Dachau, Kfz-Zulassung",
+        "strasse": "Rudolf-Diesel-Straße 20",
+        "plz": "85221",
+        "ort": "Dachau",
+        "quelle": "https://www.landratsamt-dachau.de/Stra%C3%9Fenverkehr-F%C3%BChrerschein-%C3%96ffentliche-Sicherheit/Zulassungsbeh%C3%B6rde/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landratsamt-dachau.de/Stra%C3%9Fenverkehr-F%C3%BChrerschein-%C3%96ffentliche-Sicherheit/Zulassungsbeh%C3%B6rde/",
+      "quelle": "https://www.landratsamt-dachau.de/Stra%C3%9Fenverkehr-F%C3%BChrerschein-%C3%96ffentliche-Sicherheit/Zulassungsbeh%C3%B6rde/"
+    },
+    "terminUrl": {
+      "url": "https://termine.landratsamt-dachau.de/tevis/select2?md=1",
+      "quelle": "https://www.landratsamt-dachau.de/Stra%C3%9Fenverkehr-F%C3%BChrerschein-%C3%96ffentliche-Sicherheit/Zulassungsbeh%C3%B6rde/Termin-Reservierung-bei-der-Kfz-Zulassungsstelle/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.landratsamt-dachau.de/Stra%C3%9Fenverkehr-F%C3%BChrerschein-%C3%96ffentliche-Sicherheit/Zulassungsbeh%C3%B6rde/Fahrzeug-Anmeldung/Online-Antrag-iKfz/",
+      "quelle": "https://www.landratsamt-dachau.de/Stra%C3%9Fenverkehr-F%C3%BChrerschein-%C3%96ffentliche-Sicherheit/Zulassungsbeh%C3%B6rde/Fahrzeug-Anmeldung/Neuzulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag: 07:30 - 11:30 Uhr und 13:30 - 15:30 Uhr",
+        "Dienstag: 07:30 - 11:30 Uhr",
+        "Mittwoch: 07:30 - 11:30 Uhr und 13:30 - 15:30 Uhr",
+        "Donnerstag: 07:30 - 11:30 Uhr und 13:30 - 17:00 Uhr",
+        "Freitag: 07:30 - 11:30 Uhr"
+      ],
+      "hinweis": "Online-Terminreservierung möglich; alternativ Warteticket vor Ort (Wartezeit ggf. über 2 Stunden)",
+      "quelle": "https://www.landratsamt-dachau.de/Stra%C3%9Fenverkehr-F%C3%BChrerschein-%C3%96ffentliche-Sicherheit/Zulassungsbeh%C3%B6rde/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde für den Landkreis Dachau; auch für Fahrzeughalter in der Großen Kreisstadt Dachau ist das Landratsamt Dachau zuständig.",
+      "quelle": "https://www.bayernportal.de/dokumente/leistung/3888675461?plz=85221&behoerde=76553503442&gemeinde=359302118673"
+    },
+    "kuerzel": [
+      {
+        "code": "DAH",
+        "bedeutung": "Dachau",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Ohne Termin kann vor Ort ein Warteticket gezogen werden (Wartezeit ggf. über 2 Stunden); pro Ticket werden maximal drei Vorgänge bearbeitet. Bei hohem Andrang wird die Ausgabe von Wartemarken zeitlich begrenzt.",
+        "quelle": "https://www.landratsamt-dachau.de/Stra%C3%9Fenverkehr-F%C3%BChrerschein-%C3%96ffentliche-Sicherheit/Zulassungsbeh%C3%B6rde/"
+      },
+      {
+        "text": "Pro Kunde wird nur ein Termin täglich vergeben (bis zu drei Vorgänge); die Reservierung muss innerhalb von 60 Minuten über den Aktivierungslink in der E-Mail bestätigt werden. Mehrfachbuchungen werden gelöscht.",
+        "quelle": "https://www.landratsamt-dachau.de/Stra%C3%9Fenverkehr-F%C3%BChrerschein-%C3%96ffentliche-Sicherheit/Zulassungsbeh%C3%B6rde/Termin-Reservierung-bei-der-Kfz-Zulassungsstelle/"
+      },
+      {
+        "text": "Autohäuser, Versicherungen und Zulassungsdienste können ihre Vorgänge zu den allgemeinen Öffnungszeiten abgeben oder online einen Termin vereinbaren.",
+        "quelle": "https://www.landratsamt-dachau.de/Stra%C3%9Fenverkehr-F%C3%BChrerschein-%C3%96ffentliche-Sicherheit/Zulassungsbeh%C3%B6rde/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-ebersberg",
+    "stadt": "Landkreis Ebersberg",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Ebersberg – Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.lra-ebe.de/verkehr/kfz-zulassung/",
+    "traeger": "Landkreis Ebersberg",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde (Außenstelle des Landratsamtes)",
+        "strasse": "Kolpingstraße 1",
+        "plz": "85560",
+        "ort": "Ebersberg",
+        "quelle": "https://www.lra-ebe.de/verkehr/kfz-zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.lra-ebe.de/verkehr/kfz-zulassung/",
+      "quelle": "https://www.lra-ebe.de/verkehr/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://online-termin.lra-ebe.de/",
+      "quelle": "https://www.lra-ebe.de/verkehr/kfz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://lra-ebe.de/service/ikfz#/",
+      "quelle": "https://www.lra-ebe.de/verkehr/kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag 7.30 - 12 Uhr",
+        "Dienstag 7.30 - 15 Uhr",
+        "Mittwoch 7.30 - 12 Uhr",
+        "Donnerstag 7.30 - 12 Uhr und 14 - 18 Uhr",
+        "Freitag 7.30 - 12 Uhr"
+      ],
+      "hinweis": "Zulassung nur mit Terminvereinbarung; für die Außerbetriebsetzung (Abmeldung) ist kein Termin erforderlich; Annahmeschluss 15 Min. vor Dienstschluss",
+      "quelle": "https://www.lra-ebe.de/verkehr/kfz-zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Das Landratsamt Ebersberg ist Kfz-Zulassungsbehörde für den Landkreis Ebersberg.",
+      "quelle": "https://www.bayernportal.de/dokumente/behoerdeordner/78443662168"
+    },
+    "kuerzel": [
+      {
+        "code": "EBE",
+        "bedeutung": "Ebersberg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Kfz-Zulassungsbehörde ist eine Außenstelle in der Kolpingstraße 1 und hat abweichende Öffnungszeiten vom Hauptgebäude des Landratsamts (Eichthalstraße 5).",
+        "quelle": "https://www.lra-ebe.de/verkehr/kfz-zulassung/"
+      },
+      {
+        "text": "Für Zulassungen ist ein Termin nötig, für die Außerbetriebsetzung (Abmeldung) eines Fahrzeugs dagegen nicht.",
+        "quelle": "https://www.lra-ebe.de/verkehr/kfz-zulassung/"
+      },
+      {
+        "text": "Über die Online-Auskunft Fahrzeugbriefe lässt sich prüfen, ob die Zulassungsbescheinigung Teil II eines finanzierten oder geleasten Fahrzeugs bereits bei der Zulassungsbehörde vorliegt.",
+        "quelle": "https://www.lra-ebe.de/verkehr/kfz-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-eichstaett",
+    "stadt": "Landkreis Eichstätt",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Eichstätt – FB 523 – KFZ-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.bayernportal.de/dokumente/leistung/3888675461?plz=85101&behoerde=49552642628&gemeinde=973413247672",
+    "traeger": "Landkreis Eichstätt",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsbehörde Eichstätt (Dienstleistungszentrum des Landkreises)",
+        "strasse": "Gundekarstraße 3",
+        "plz": "85072",
+        "ort": "Eichstätt",
+        "quelle": "https://www.landkreis-eichstaett.de/buergerservice/themen/kfz-zulassung-und-fuehrerschein/kfz-zulassungsbehoerde-1"
+      },
+      {
+        "bezeichnung": "Zulassungsbehörde Lenting (Außenstelle Lenting)",
+        "strasse": "Bahnhofstraße 16",
+        "plz": "85101",
+        "ort": "Lenting",
+        "quelle": "https://www.bayernportal.de/dokumente/leistung/3888675461?plz=85101&behoerde=49552642628&gemeinde=973413247672"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-eichstaett.de/buergerservice/themen/kfz-zulassung-und-fuehrerschein/kfz-zulassungsbehoerde-1",
+      "quelle": "https://www.landkreis-eichstaett.de/buergerservice/themen/kfz-zulassung-und-fuehrerschein/kfz-zulassungsbehoerde-1"
+    },
+    "terminUrl": {
+      "url": "https://lra-eichstaett.saas.smartcjm.com/m/lra-eichstaett/extern/calendar/?uid=19fa4464-f9b2-46c5-af3e-db18cff2be4e",
+      "quelle": "https://www.landkreis-eichstaett.de/buergerservice/themen/kfz-zulassung-und-fuehrerschein"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkreichstaett/bsp_ikfz_antragstellung/#/",
+      "quelle": "https://www.landkreis-eichstaett.de/buergerservice/themen/kfz-zulassung-und-fuehrerschein/kfz-zulassungsbehoerde-1"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Eichstätt – vormittags: Montag bis Donnerstag: 07:30 Uhr bis 12:30 Uhr; Freitag: 07:30 Uhr bis 12.00 Uhr",
+        "Eichstätt – nachmittags: Dienstag: 14:00 Uhr bis 16:00 Uhr; Donnerstag: 14:00 Uhr bis 16:30 Uhr",
+        "Lenting – vormittags: Montag bis Donnerstag: 07:30 Uhr bis 12:30 Uhr; Freitag: 07:30 Uhr bis 12:00 Uhr",
+        "Lenting – nachmittags: Montag bis Mittwoch: 14:00 Uhr bis 16:00 Uhr; Donnerstag: 14:00 Uhr bis 16:30 Uhr",
+        "Beilngries: Montag bis Freitag: 07:30 Uhr bis 11:30 Uhr"
+      ],
+      "hinweis": "Servicezeiten nur mit Terminvereinbarung",
+      "quelle": "https://www.landkreis-eichstaett.de/buergerservice/themen/kfz-zulassung-und-fuehrerschein/verkehrswesen-dienststellen-und-servicezeiten"
+    },
+    "zustaendigkeit": {
+      "text": "Das Landratsamt Eichstätt ist Kfz-Zulassungsbehörde für den Landkreis Eichstätt (Dienststellen Eichstätt, Lenting und Beilngries). Die kreisfreie Stadt Ingolstadt hat eine eigene Kfz-Zulassungsbehörde.",
+      "quelle": "https://www.bayernportal.de/dokumente/behoerdeordner/78443662168"
+    },
+    "kuerzel": [
+      {
+        "code": "EI",
+        "bedeutung": "Eichstätt",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Vorsprachen in den Zulassungsbehörden sind nur mit vereinbartem Termin möglich; pro Termin können 1 Zulassung und bis zu 2 Abmeldungen angemeldet werden.",
+        "quelle": "https://www.landkreis-eichstaett.de/buergerservice/themen/kfz-zulassung-und-fuehrerschein/kfz-zulassungsbehoerde-1"
+      },
+      {
+        "text": "Die Zulassung Eichstätt ist in das neu gebaute Dienstleistungszentrum des Landkreises (Gundekarstraße 3) umgezogen; gebuchte Termine finden dort statt.",
+        "quelle": "https://www.landkreis-eichstaett.de/buergerservice/themen/kfz-zulassung-und-fuehrerschein/kfz-zulassungsbehoerde-1"
+      },
+      {
+        "text": "Den QR-Code für den digitalen Fahrzeugschein (i-Kfz-App) stellt die Zulassungsbehörde auf Antrag aus – im Rahmen eines Zulassungsvorgangs kostenfrei, nachträglich für 5,10 € (Termin mit Vorgang „Zulassung“ buchen).",
+        "quelle": "https://www.landkreis-eichstaett.de/buergerservice/themen/kfz-zulassung-und-fuehrerschein/kfz-zulassungsbehoerde-1"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "standorte[2].strasse",
+      "standorte[2].plz"
+    ]
+  },
+  {
+    "slug": "landkreis-erding",
+    "stadt": "Landkreis Erding",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Erding – KFZ-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.landkreis-erding.de/buerger-verwaltung/fahrzeug-verkehr-sicherheit-gewerbe/offizielle-kfz-zulassungsstelle/",
+    "traeger": "Landkreis Erding",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Erding, KFZ-Zulassungsbehörde",
+        "strasse": "Alois-Schießl-Platz 2",
+        "plz": "85435",
+        "ort": "Erding",
+        "quelle": "https://www.landkreis-erding.de/buerger-verwaltung/fahrzeug-verkehr-sicherheit-gewerbe/offizielle-kfz-zulassungsstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-erding.de/buerger-verwaltung/fahrzeug-verkehr-sicherheit-gewerbe/offizielle-kfz-zulassungsstelle/",
+      "quelle": "https://www.landkreis-erding.de/buerger-verwaltung/fahrzeug-verkehr-sicherheit-gewerbe/offizielle-kfz-zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://termine.crossing.de/741046947/Appointment/Index/1",
+      "quelle": "https://www.landkreis-erding.de/buerger-verwaltung/fahrzeug-verkehr-sicherheit-gewerbe/online-terminreservierung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrerding/bsp_ikfz_antragstellung#/",
+      "quelle": "https://www.landkreis-erding.de/buerger-verwaltung/fahrzeug-verkehr-sicherheit-gewerbe/offizielle-kfz-zulassungsstelle/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo. 7.30 - 12.30 Uhr",
+        "Di. 7.30 - 12.30 Uhr und 14 - 17 Uhr",
+        "Mi. 7.30 - 12.30 Uhr",
+        "Do. 7.30 - 12.30 Uhr und 14 - 17 Uhr",
+        "Fr. 7.30 - 12.30 Uhr"
+      ],
+      "hinweis": "Für sämtliche Vorgänge ist ein Termin notwendig (Online-Terminreservierung); es werden keine Wartemarken mehr ausgegeben",
+      "quelle": "https://www.landkreis-erding.de/buerger-verwaltung/fahrzeug-verkehr-sicherheit-gewerbe/offizielle-kfz-zulassungsstelle/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde für den Landkreis Erding; auch für Fahrzeughalter in der Großen Kreisstadt Erding ist das Landratsamt Erding zuständig.",
+      "quelle": "https://www.bayernportal.de/dokumente/leistung/3888675461?plz=85435&behoerde=94664604444&gemeinde=131079860674"
+    },
+    "kuerzel": [
+      {
+        "code": "ED",
+        "bedeutung": "Erding",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Täglich ab circa 7:30 Uhr werden zusätzliche tagesaktuelle Termine in der Online-Terminreservierung freigegeben.",
+        "quelle": "https://www.landkreis-erding.de/buerger-verwaltung/fahrzeug-verkehr-sicherheit-gewerbe/offizielle-kfz-zulassungsstelle/"
+      },
+      {
+        "text": "Hilfe bei der Online-Terminreservierung gibt es telefonisch (08122/58-0 oder Service-Hotline 08122/58-1666) sowie am Informationsschalter vor Ort.",
+        "quelle": "https://www.landkreis-erding.de/buerger-verwaltung/fahrzeug-verkehr-sicherheit-gewerbe/offizielle-kfz-zulassungsstelle/"
+      },
+      {
+        "text": "Der Personalausweis oder Reisepass des Halters ist im Original mit gültiger Anschrift vorzulegen; bei einer Kopie oder einem Ausweis ohne gültige Anschrift zusätzlich eine Meldebestätigung (nicht älter als 6 Monate).",
+        "quelle": "https://www.landkreis-erding.de/buerger-verwaltung/fahrzeug-verkehr-sicherheit-gewerbe/offizielle-kfz-zulassungsstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-freising",
+    "stadt": "Landkreis Freising",
+    "bundesland": "Bayern",
+    "behoerde": "Kfz-Zulassungsbehörde des Landratsamtes Freising",
+    "behoerdeQuelle": "https://www.kreis-freising.de/buergerservice/abteilungen-und-sachgebiete/verkehr/kfz-zulassungsbehoerde.html",
+    "traeger": "Landkreis Freising",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Freising, Kfz-Zulassungsbehörde",
+        "strasse": "Landshuter Str. 31",
+        "plz": "85356",
+        "ort": "Freising",
+        "quelle": "https://www.bayernportal.de/dokumente/leistung/0888766265?plz=85354&behoerde=14775691450&gemeinde=733967562699"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-freising.de/buergerservice/abteilungen-und-sachgebiete/verkehr/kfz-zulassungsbehoerde.html",
+      "quelle": "https://www.kreis-freising.de/buergerservice/abteilungen-und-sachgebiete/verkehr/kfz-zulassungsbehoerde.html"
+    },
+    "terminUrl": {
+      "url": "https://www.etermin.net/zulassungsstelle-freising",
+      "quelle": "https://www.kreis-freising.de/buergerservice/abteilungen-und-sachgebiete/verkehr/kfz-zulassungsbehoerde.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrfreising",
+      "quelle": "https://www.kreis-freising.de/buergerservice/abteilungen-und-sachgebiete/verkehr/kfz-zulassungsbehoerde.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag u. Mittwoch: 7:30 - 14:00 Uhr",
+        "Dienstag u. Donnerstag: 7:30 - 16:30 Uhr",
+        "Freitag: 7:30 - 12:00 Uhr"
+      ],
+      "hinweis": "Vorsprache zu den allgemeinen Öffnungszeiten auch ohne Termin möglich; bei besonders hohem Andrang kann bereits 30 Minuten früher Annahmeschluss sein",
+      "quelle": "https://www.kreis-freising.de/buergerservice/abteilungen-und-sachgebiete/verkehr/kfz-zulassungsbehoerde.html"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde für den Landkreis Freising – mit Ausnahme des Stadtgebiets Moosburg a.d.Isar: Dieses bildet einen eigenen Zulassungsbezirk der Kfz-Zulassungsbehörde der Stadt Moosburg (zuständig für Bürger mit Hauptwohnsitz in Moosburg, Aich und Pfrombach). Bei Umzug innerhalb des Landkreises in das bzw. aus dem Stadtgebiet Moosburg handelt es sich um eine Umschreibung in den jeweils anderen Zulassungsbezirk.",
+      "quelle": "https://www.kreis-freising.de/buergerservice/abteilungen-und-sachgebiete/verkehr/kfz-zulassungsbehoerde.html"
+    },
+    "kuerzel": [
+      {
+        "code": "FS",
+        "bedeutung": "Freising",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Vorsprache ist zu den Öffnungszeiten auch ohne Termin möglich; mit Online-Termin lässt sich Wartezeit sparen (derzeit max. 3 Vorgänge pro Termin).",
+        "quelle": "https://www.kreis-freising.de/buergerservice/abteilungen-und-sachgebiete/verkehr/kfz-zulassungsbehoerde.html"
+      },
+      {
+        "text": "Längere Wartezeiten erfahrungsgemäß zwischen 11 und 13 Uhr (reduzierte Schalterbesetzung über Mittag) sowie vor und nach Feiertagen und am Quartalsende.",
+        "quelle": "https://www.kreis-freising.de/buergerservice/abteilungen-und-sachgebiete/verkehr/kfz-zulassungsbehoerde.html"
+      },
+      {
+        "text": "Fahrzeuge, die mit Ausfuhrkennzeichen ins Ausland gebracht werden, müssen seit 01.06.2021 der Zulassungsbehörde in Freising zur Identifizierung vorgefahren werden.",
+        "quelle": "https://www.kreis-freising.de/buergerservice/abteilungen-und-sachgebiete/verkehr/kfz-zulassungsbehoerde.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-fuerstenfeldbruck",
+    "stadt": "Landkreis Fürstenfeldbruck",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Fürstenfeldbruck, Dienststelle Zulassungs- und Fahrerlaubnisbehörde",
+    "behoerdeQuelle": "https://www.lra-ffb.de/mobilitaet-sicherheit/kfz-zulassung",
+    "traeger": "Landkreis Fürstenfeldbruck",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle (Gewerbegebiet Hasenheide)",
+        "strasse": "Rudolf-Diesel-Ring 1",
+        "plz": "82256",
+        "ort": "Fürstenfeldbruck",
+        "quelle": "https://www.lra-ffb.de/mobilitaet-sicherheit/kfz-zulassung"
+      },
+      {
+        "bezeichnung": "Bürgerservice-Zentrum (BSZ) im Landratsamt – nur ausgewählte Zulassungsvorgänge",
+        "strasse": "Münchner Str. 32",
+        "plz": "82256",
+        "ort": "Fürstenfeldbruck",
+        "quelle": "https://www.lra-ffb.de/amt-service/buergerservice-zentrum"
+      }
+    ],
+    "website": {
+      "url": "https://www.lra-ffb.de/mobilitaet-sicherheit/kfz-zulassung",
+      "quelle": "https://www.lra-ffb.de/mobilitaet-sicherheit/kfz-zulassung"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/lra-ffb/select2?md=2",
+      "quelle": "https://www.lra-ffb.de/amt-service/online-dienste/kfz-terminreservierung"
+    },
+    "ikfzUrl": {
+      "url": "https://www.lra-ffb.de/amt-service/online-dienste/zulassungsbehoerde/online-zulassungsbehoerde",
+      "quelle": "https://www.lra-ffb.de/mobilitaet-sicherheit/kfz-zulassung/online-zulassung-und-abmeldung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag u. Dienstag 08.00 - 16.00 Uhr",
+        "Mittwoch u. Freitag 08:00 - 12:00 Uhr",
+        "Donnerstag 08.00 - 17.00 Uhr"
+      ],
+      "hinweis": "Kfz-Zulassungsstelle Rudolf-Diesel-Ring 1: Besuch nur mit Online-Termin (durchgehend geöffnet)",
+      "quelle": "https://www.lra-ffb.de/mobilitaet-sicherheit/kfz-zulassung"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde für den Landkreis Fürstenfeldbruck; auch für Fahrzeughalter in der Großen Kreisstadt Fürstenfeldbruck ist das Landratsamt (Referat 42-2 Zulassungsbehörde) zuständig.",
+      "quelle": "https://www.bayernportal.de/dokumente/leistung/3888675461?plz=82256&behoerde=46331259447&gemeinde=966969081666"
+    },
+    "kuerzel": [
+      {
+        "code": "FFB",
+        "bedeutung": "Fürstenfeldbruck",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Terminvereinbarung zwingend erforderlich; pro Termin bis zu 3 Zulassungsvorgänge. Für gewerbliche Zulasser wie Händler und Zulassungsdienste stehen die Online-Termine nicht zur Verfügung.",
+        "quelle": "https://www.lra-ffb.de/mobilitaet-sicherheit/kfz-zulassung"
+      },
+      {
+        "text": "Häufige Vorgänge (u. a. Abmeldung, Adress- und Namensänderung, Wiederzulassung auf denselben Halter, Umschreibung mit Kennzeichenmitnahme) bietet auch das Bürgerservice-Zentrum in der Münchner Str. 32 ohne Termin an (Mo–Mi 08.00–17.00, Do 08.00–18.00, Fr 08.00–13.00 Uhr); keine Händler/Zulassungsdienste, keine Papiere von vor dem 01.10.2005, keine Schilderdruckerei vor Ort.",
+        "quelle": "https://www.lra-ffb.de/amt-service/buergerservice-zentrum"
+      },
+      {
+        "text": "Im Rahmen der „Erweiterten Zuständigkeit“ (EWZ) sind viele Zulassungsvorgänge gegenseitig bei der Zulassungsstelle Fürstenfeldbruck und anderen Zulassungsstellen in Oberbayern möglich.",
+        "quelle": "https://www.lra-ffb.de/mobilitaet-sicherheit/kfz-zulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-garmisch-partenkirchen",
+    "stadt": "Landkreis Garmisch-Partenkirchen",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Garmisch-Partenkirchen – Fachbereich Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.lra-gap.de/de/kfz-zulassung.html",
+    "traeger": "Landkreis Garmisch-Partenkirchen",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde (Außenstelle Farchant)",
+        "strasse": "Partenkirchner Straße 52",
+        "plz": "82490",
+        "ort": "Farchant",
+        "quelle": "https://www.lra-gap.de/de/kfz-zulassung.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.lra-gap.de/de/kfz-zulassung.html",
+      "quelle": "https://www.lra-gap.de/de/kfz-zulassung.html"
+    },
+    "terminUrl": {
+      "url": "https://termine-verkehrswesen.lra-gap.de/m/lra-garmisch-partenkirchen/extern/calendar/?uid=ed390368-5cf6-4e52-b02d-253b5963aaea",
+      "quelle": "https://www.lra-gap.de/de/kfz-zulassung.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrgarmischpartenkirchen/bsp_ikfz_antragstellung#/",
+      "quelle": "https://www.lra-gap.de/de/kfz-zulassung.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag bis Donnerstag 7.30 Uhr bis 12.30 Uhr",
+        "Dienstag und Mittwoch 14.00 Uhr bis 16.00 Uhr",
+        "Freitag 7.30 bis 12.00 Uhr"
+      ],
+      "hinweis": "Termin derzeit nicht zwingend notwendig (Wartemarke vor Ort, Live-Ticket oder Online-Termin); Annahmeschluss jeweils 30 Minuten vor Schließung",
+      "quelle": "https://www.lra-gap.de/de/kfz-zulassung.html"
+    },
+    "zustaendigkeit": {
+      "text": "Das Landratsamt Garmisch-Partenkirchen ist Kfz-Zulassungsbehörde für den Landkreis Garmisch-Partenkirchen.",
+      "quelle": "https://www.bayernportal.de/dokumente/behoerdeordner/78443662168"
+    },
+    "kuerzel": [
+      {
+        "code": "GAP",
+        "bedeutung": "Garmisch-Partenkirchen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Kfz-Zulassungsbehörde sitzt nicht im Hauptgebäude in Garmisch-Partenkirchen (Olympiastraße 10), sondern in der Außenstelle Partenkirchner Str. 52 in Farchant; Schilderpräger befinden sich im gleichen Gebäude bzw. gegenüber.",
+        "quelle": "https://www.lra-gap.de/de/kfz-zulassung.html"
+      },
+      {
+        "text": "Per Live-Ticket kann im Umkreis von 35 km um die Außenstelle eine Wartemarke per Smartphone gezogen werden; gebuchte Termine müssen am Termintag aktiviert werden (Check-in frühestens 15 Minuten vorher), sonst verfallen sie.",
+        "quelle": "https://www.lra-gap.de/de/kfz-zulassung.html"
+      },
+      {
+        "text": "Termine sind nur sieben Tage im Voraus buchbar, max. drei Zulassungsvorgänge pro Kunde und Tag; morgens (i. d. R. zwischen 6.30 und 10.00 Uhr) werden ggf. zusätzliche Termine für den aktuellen Tag freigeschaltet.",
+        "quelle": "https://www.lra-gap.de/de/kfz-zulassung.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-landsberg-am-lech",
+    "stadt": "Landkreis Landsberg am Lech",
+    "bundesland": "Bayern",
+    "behoerde": "Zulassungsstelle Landratsamt Landsberg am Lech",
+    "behoerdeQuelle": "https://www.landkreis-landsberg.de/wirtschaft-bauen-verkehr/kfz-zulassungsstelle/",
+    "traeger": "Landkreis Landsberg am Lech",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Landratsamt Landsberg am Lech",
+        "strasse": "Von-Kühlmann-Str. 15",
+        "plz": "86899",
+        "ort": "Landsberg am Lech",
+        "quelle": "https://www.landkreis-landsberg.de/wirtschaft-bauen-verkehr/kfz-zulassungsstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-landsberg.de/wirtschaft-bauen-verkehr/kfz-zulassungsstelle/",
+      "quelle": "https://www.landkreis-landsberg.de/wirtschaft-bauen-verkehr/kfz-zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/landsbergamlech/select2?md=1",
+      "quelle": "https://www.landkreis-landsberg.de/wirtschaft-bauen-verkehr/kfz-zulassungsstelle/?url=%2FWirtschaft%2CBauen%2CVerkehr%2FZulassungsstelle%2FZulassungsstelle-ZulassungundAuskuenfte.aspx%3Fview%3D~%2Fkxp%2Forgdata%2Fdefault%26orgid%3D58c67bbd-481d-4a65-9bec-d7f43b5abbf4&cHash=afcdccd7dff3686750ec855c8eacc11c"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerserviceportal.de/bayern/lkrlandsberglech/bsp_ikfz_antragstellung",
+      "quelle": "https://www.landkreis-landsberg.de/wirtschaft-bauen-verkehr/kfz-zulassungsstelle/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag bis Donnerstag: 07:30 bis 12:30 Uhr",
+        "Dienstag: 14:00 bis 16:00 Uhr",
+        "Donnerstag: 14:00 bis 18:00 Uhr",
+        "Freitag: 07:30 bis 12:00 Uhr"
+      ],
+      "hinweis": "Nur nach Terminvereinbarung",
+      "quelle": "https://www.landkreis-landsberg.de/wirtschaft-bauen-verkehr/kfz-zulassungsstelle/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde für den Landkreis Landsberg am Lech; auch für Fahrzeughalter in der Großen Kreisstadt Landsberg am Lech ist das Landratsamt zuständig.",
+      "quelle": "https://www.bayernportal.de/dokumente/leistung/3888675461?plz=86899&behoerde=18109001455&gemeinde=889301908677"
+    },
+    "kuerzel": [
+      {
+        "code": "LL",
+        "bedeutung": "Landsberg am Lech",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Pro Termin können bis zu fünf Vorgänge gebucht werden, die Bearbeitungszeit darf 60 Minuten nicht überschreiten; bearbeitet werden nur die bei der Buchung angemeldeten Vorgänge.",
+        "quelle": "https://www.landkreis-landsberg.de/wirtschaft-bauen-verkehr/kfz-zulassungsstelle/?url=%2FWirtschaft%2CBauen%2CVerkehr%2FZulassungsstelle%2FZulassungsstelle-ZulassungundAuskuenfte.aspx%3Fview%3D~%2Fkxp%2Forgdata%2Fdefault%26orgid%3D58c67bbd-481d-4a65-9bec-d7f43b5abbf4&cHash=afcdccd7dff3686750ec855c8eacc11c"
+      },
+      {
+        "text": "Für Autohäuser, Gewerbetreibende, Versicherungsbüros und Zulassungsdienste steht ein eigener „Großkundenschalter“ zur Verfügung.",
+        "quelle": "https://www.landkreis-landsberg.de/wirtschaft-bauen-verkehr/kfz-zulassungsstelle/"
+      },
+      {
+        "text": "Das Mitbringen von Tieren ins Landratsamt Landsberg am Lech ist nicht gestattet.",
+        "quelle": "https://www.landkreis-landsberg.de/wirtschaft-bauen-verkehr/kfz-zulassungsstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-miesbach",
+    "stadt": "Landkreis Miesbach",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Miesbach – Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.landkreis-miesbach.de/B%C3%BCrgerservice-Informationen-Karriere/B%C3%BCrgerservice/Kfz-Zulassung/",
+    "traeger": "Landkreis Miesbach",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassung, Landratsamt Miesbach (Haus A)",
+        "strasse": "Riezlerstr. 2",
+        "plz": "83714",
+        "ort": "Miesbach",
+        "quelle": "https://www.landkreis-miesbach.de/B%C3%BCrgerservice-Informationen-Karriere/B%C3%BCrgerservice/Kfz-Zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-miesbach.de/B%C3%BCrgerservice-Informationen-Karriere/B%C3%BCrgerservice/Kfz-Zulassung/",
+      "quelle": "https://www.landkreis-miesbach.de/B%C3%BCrgerservice-Informationen-Karriere/B%C3%BCrgerservice/Kfz-Zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termin.landkreis-miesbach.de/",
+      "quelle": "https://www.landkreis-miesbach.de/B%C3%BCrgerservice-Informationen-Karriere/B%C3%BCrgerservice/Kfz-Zulassung/Terminreservierung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrmiesbach/",
+      "quelle": "https://www.landkreis-miesbach.de/B%C3%BCrgerservice-Informationen-Karriere/B%C3%BCrgerservice/Kfz-Zulassung/Online-Zulassung-iKfz-/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag und Dienstag 07.30 - 16 Uhr",
+        "Mittwoch 07.30 - 12.30 Uhr",
+        "Donnerstag 07.30 - 18 Uhr",
+        "Freitag 07.30 -12.30 Uhr"
+      ],
+      "hinweis": "Allgemeine Öffnungszeiten des Landratsamts; die Kfz-Zulassungsstelle ist ausschließlich nach vorheriger Terminvereinbarung erreichbar",
+      "quelle": "https://www.landkreis-miesbach.de/B%C3%BCrgerservice-Informationen-Karriere/B%C3%BCrgerservice/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde für Halter mit Hauptwohn- bzw. Betriebssitz im Landkreis Miesbach. Im Rahmen der erweiterten Zuständigkeit können Halter aus Altötting, Bad Tölz-Wolfratshausen, Berchtesgadener Land, Garmisch-Partenkirchen, Mühldorf am Inn, dem Landkreis München (nicht Stadt München), Rosenheim (Landkreis und Stadt), Starnberg und Traunstein bestimmte Vorgänge auch in Miesbach erledigen; sie erhalten weiterhin das Kennzeichen ihrer Wohnort-Zulassungsbehörde.",
+      "quelle": "https://www.landkreis-miesbach.de/B%C3%BCrgerservice-Informationen-Karriere/B%C3%BCrgerservice/Kfz-Zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "MB",
+        "bedeutung": "Miesbach",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Kfz-Zulassungsstelle ist ausschließlich nach vorheriger Terminvereinbarung geöffnet; Termine gibt es telefonisch (08025 704 1420), per E-Mail (zulassung@lra-mb.bayern.de) oder online.",
+        "quelle": "https://www.landkreis-miesbach.de/B%C3%BCrgerservice-Informationen-Karriere/B%C3%BCrgerservice/Kfz-Zulassung/"
+      },
+      {
+        "text": "Pro Tag ist nur eine Reservierung möglich, Mehrfachreservierungen werden vom System automatisch gelöscht.",
+        "quelle": "https://www.landkreis-miesbach.de/B%C3%BCrgerservice-Informationen-Karriere/B%C3%BCrgerservice/Kfz-Zulassung/Terminreservierung/"
+      },
+      {
+        "text": "Bei erweiterter Zuständigkeit (Halter aus Nachbarlandkreisen) werden keine roten Dauerkennzeichen und Ausnahmegenehmigungen erteilt; bei Kfz-Steuer- oder Gebührenrückständen wird an die zuständige Zulassungsbehörde verwiesen.",
+        "quelle": "https://www.landkreis-miesbach.de/B%C3%BCrgerservice-Informationen-Karriere/B%C3%BCrgerservice/Kfz-Zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-muehldorf-am-inn",
+    "stadt": "Landkreis Mühldorf am Inn",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Mühldorf a. Inn – Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.lra-mue.de/bauen-verkehr-sicherheit/kfz-zulassungsstelle/oeffnungszeiten-und-ansprechpartner/",
+    "traeger": "Landkreis Mühldorf a. Inn",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsbehörde Mühldorf a. Inn",
+        "strasse": "Nordtangente 10 b",
+        "plz": "84453",
+        "ort": "Mühldorf a. Inn",
+        "quelle": "https://www.lra-mue.de/bauen-verkehr-sicherheit/kfz-zulassungsstelle/oeffnungszeiten-und-ansprechpartner/"
+      },
+      {
+        "bezeichnung": "Zulassungsbehörde, Außenstelle Waldkraiburg",
+        "strasse": "Teplitzer Str. 21",
+        "plz": "84478",
+        "ort": "Waldkraiburg",
+        "quelle": "https://www.lra-mue.de/bauen-verkehr-sicherheit/kfz-zulassungsstelle/oeffnungszeiten-und-ansprechpartner/"
+      }
+    ],
+    "website": {
+      "url": "https://www.lra-mue.de/bauen-verkehr-sicherheit/kfz-zulassungsstelle/",
+      "quelle": "https://www.lra-mue.de/bauen-verkehr-sicherheit/kfz-zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://lra-muehldorf.saas.smartcjm.com/m/sva/extern/calendar/?uid=51427f57-13e3-40fb-9291-107bd8937370",
+      "quelle": "https://www.lra-mue.de/bauen-verkehr-sicherheit/kfz-zulassungsstelle/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.lra-mue.de/bauen-verkehr-sicherheit/kfz-zulassungsstelle/online-zulassungsbehoerde-i-kfz/hier-gelangen-sie#/",
+      "quelle": "https://www.lra-mue.de/bauen-verkehr-sicherheit/kfz-zulassungsstelle/online-zulassungsbehoerde-i-kfz/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mühldorf a. Inn – Montag und Dienstag: 07:30 Uhr bis 12:00 Uhr (Annahmeschluss 11:30 Uhr), 13:00 Uhr bis 16:00 Uhr (Annahmeschluss 15:30 Uhr)",
+        "Mühldorf a. Inn – Mittwoch: 07:30 Uhr bis 13:00 Uhr (Annahmeschluss 12:30 Uhr)",
+        "Mühldorf a. Inn – Donnerstag: 07:30 Uhr bis 12:00 Uhr (Annahmeschluss 11:30 Uhr), 13:00 Uhr bis 17:00 Uhr (Annahmeschluss 16:30 Uhr)",
+        "Mühldorf a. Inn – Freitag: 07:30 Uhr bis 12:30 Uhr (Annahmeschluss 12:00 Uhr)",
+        "Waldkraiburg – Montag: 07:30 Uhr bis 12:00 Uhr (Annahmeschluss 11:30 Uhr), 13:00 Uhr bis 16:00 Uhr (Annahmeschluss 15:30 Uhr)",
+        "Waldkraiburg – Dienstag: 07:30 Uhr bis 12:00 Uhr (Annahmeschluss 11:30 Uhr), 13:00 Uhr bis 17:00 Uhr (Annahmeschluss 16:30 Uhr)",
+        "Waldkraiburg – Mittwoch: 07:30 Uhr bis 13:00 Uhr (Annahmeschluss 12:30 Uhr)",
+        "Waldkraiburg – Donnerstag: 07:30 Uhr bis 12:00 Uhr (Annahmeschluss 11:30 Uhr), 13:00 Uhr bis 16:00 Uhr (Annahmeschluss 15:30 Uhr)",
+        "Waldkraiburg – Freitag: 07:30 Uhr bis 12:30 Uhr (Annahmeschluss 12:00 Uhr)"
+      ],
+      "hinweis": "Nach Annahmeschluss werden keine neuen Anliegen angenommen; Bürger aus dem erweiterten Zuständigkeitsbereich benötigen vorab einen Termin",
+      "quelle": "https://www.lra-mue.de/bauen-verkehr-sicherheit/kfz-zulassungsstelle/oeffnungszeiten-und-ansprechpartner/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde für den Landkreis Mühldorf a. Inn mit Standorten in Mühldorf a. Inn und Waldkraiburg. Bürger aus dem erweiterten Zuständigkeitsbereich (Landkreise Altötting, Traunstein, Miesbach, Bad Tölz-Wolfratshausen, Berchtesgadener Land, Garmisch-Partenkirchen, München, Starnberg, Fürstenfeldbruck, Rosenheim und Stadt Rosenheim) werden nur mit vorab vereinbartem Termin bedient.",
+      "quelle": "https://www.lra-mue.de/bauen-verkehr-sicherheit/kfz-zulassungsstelle/oeffnungszeiten-und-ansprechpartner/"
+    },
+    "kuerzel": [
+      {
+        "code": "MÜ",
+        "bedeutung": "Mühldorf",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "VIB",
+        "bedeutung": "Vilsbiburg (Kürzel wird auch im Landkreis Landshut vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WS",
+        "bedeutung": "Wasserburg am Inn (Kürzel wird auch im Landkreis Rosenheim vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Zwei Zulassungsstellen mit unterschiedlichen langen Nachmittagen: Mühldorf a. Inn donnerstags bis 17:00 Uhr, Waldkraiburg dienstags bis 17:00 Uhr; Annahmeschluss jeweils 30 Minuten vor Ende der Öffnungszeit.",
+        "quelle": "https://www.lra-mue.de/bauen-verkehr-sicherheit/kfz-zulassungsstelle/oeffnungszeiten-und-ansprechpartner/"
+      },
+      {
+        "text": "Händlerschalter für Kfz-Händler, Zulassungsdienste und Versicherungsvertreter (mit Gewerbeanmeldung und Kaufvertrag bzw. Auftrag): Annahme ab 3 vollständigen Vorgängen zu festen Abgabezeiten, Rückgabe i. d. R. am nächsten Arbeitstag.",
+        "quelle": "https://www.lra-mue.de/bauen-verkehr-sicherheit/kfz-zulassungsstelle/oeffnungszeiten-und-ansprechpartner/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-muenchen",
+    "stadt": "Landkreis München",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt München – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-muenchen.de/themen/mobilitaet/kfz-zulassung/",
+    "traeger": "Landkreis München",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle des Landratsamtes München (Außenstelle Grasbrunn-Neukeferloh)",
+        "strasse": "Bretonischer Ring 1",
+        "plz": "85630",
+        "ort": "Grasbrunn-Neukeferloh",
+        "quelle": "https://www.landkreis-muenchen.de/landratsamt/anlaufstellen-standorte/anlaufstelle-kfz-zulassungsstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-muenchen.de/themen/mobilitaet/kfz-zulassung/",
+      "quelle": "https://www.landkreis-muenchen.de/themen/mobilitaet/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://reservation.frontdesksuite.com/lk-muenchen/kfz",
+      "quelle": "https://www.landkreis-muenchen.de/themen/mobilitaet/kfz-zulassung/online-service-bei-der-kfz-zulassungsstelle-antraege-per-post-und-terminvereinbarung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.landkreis-muenchen.de/themen/mobilitaet/kfz-zulassung/online-zulassungsbehoerde/",
+      "quelle": "https://www.landkreis-muenchen.de/themen/mobilitaet/kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag 07:30–12:00 Uhr",
+        "Dienstag 07:30–12:00 Uhr und 13:30–16:00 Uhr",
+        "Mittwoch 07:30–12:00 Uhr",
+        "Donnerstag 07:30–12:00 Uhr und 13:30–16:00 Uhr",
+        "Freitag 07:30–12:00 Uhr",
+        "Samstag und Sonntag geschlossen"
+      ],
+      "hinweis": "Für einige Anliegen ist ein Termin nötig (Online-Terminvereinbarung)",
+      "quelle": "https://www.landkreis-muenchen.de/landratsamt/anlaufstellen-standorte/anlaufstelle-kfz-zulassungsstelle/"
+    },
+    "zustaendigkeit": {
+      "text": "Nur für Bürgerinnen und Bürger des Landkreises München. Wer in der Stadt München gemeldet ist, wendet sich an die Zulassungsbehörde der Landeshauptstadt München.",
+      "quelle": "https://www.landkreis-muenchen.de/themen/mobilitaet/kfz-zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "M",
+        "bedeutung": "München (Kürzel wird auch von der Landeshauptstadt München vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "AIB",
+        "bedeutung": "Bad Aibling (Kürzel wird auch im Landkreis Rosenheim vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MU",
+        "bedeutung": "Münchner Umland",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WOR",
+        "bedeutung": "Wolfratshausen (Kürzel wird auch im Landkreis Bad Tölz-Wolfratshausen vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Persönliche Vorsprache nach vorheriger Online-Terminvereinbarung; Termine sind max. drei Wochen im Voraus buchbar, jeden Arbeitstag werden vormittags neue Termine freigeschaltet. Termine per E-Mail oder Telefon gibt es nicht.",
+        "quelle": "https://www.landkreis-muenchen.de/themen/mobilitaet/kfz-zulassung/online-service-bei-der-kfz-zulassungsstelle-antraege-per-post-und-terminvereinbarung/"
+      },
+      {
+        "text": "Für Außerbetriebsetzungen gibt es einen Schalter ohne Termin: Montag bis Freitag 8:00–11:45 Uhr, Dienstag und Donnerstag zusätzlich 13:30–15:30 Uhr (max. drei Außerbetriebsetzungen pro Antragsteller).",
+        "quelle": "https://www.landkreis-muenchen.de/themen/mobilitaet/kfz-zulassung/online-service-bei-der-kfz-zulassungsstelle-antraege-per-post-und-terminvereinbarung/"
+      },
+      {
+        "text": "Abmeldung sowie Anschriften-, Namens- und Technikänderung können auch per Post beantragt werden; Gebühren werden per Rechnung beglichen, die Dokumente kommen per Übergabeeinschreiben zurück.",
+        "quelle": "https://www.landkreis-muenchen.de/themen/mobilitaet/kfz-zulassung/online-service-bei-der-kfz-zulassungsstelle-antraege-per-post-und-terminvereinbarung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

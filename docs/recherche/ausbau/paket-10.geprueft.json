@@ -1,0 +1,957 @@
+[
+  {
+    "slug": "landkreis-forchheim",
+    "stadt": "Landkreis Forchheim",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Forchheim, Zulassungsstelle (Fachbereich 32)",
+    "behoerdeQuelle": "https://www.lra-fo.de/Aufgabenbereiche/Auto-und-Verkehr/Zulassungsstelle/",
+    "traeger": "Landkreis Forchheim",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Forchheim, Zulassungsstelle (1. Stock)",
+        "strasse": "Am Streckerplatz 1",
+        "plz": "91301",
+        "ort": "Forchheim",
+        "quelle": "https://www.lra-fo.de/Aufgabenbereiche/Auto-und-Verkehr/Zulassungsstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://www.lra-fo.de/Aufgabenbereiche/Auto-und-Verkehr/Zulassungsstelle/",
+      "quelle": "https://www.lra-fo.de/Aufgabenbereiche/Auto-und-Verkehr/Zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://termine.lra-fo.de/modules/ota_public/form/1/",
+      "quelle": "https://www.lra-fo.de/Aufgabenbereiche/Auto-und-Verkehr/Zulassungsstelle/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrforchheim/",
+      "quelle": "https://www.lra-fo.de/Aufgabenbereiche/Auto-und-Verkehr/Zulassungsstelle/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 8:00–12:00 und 13:00–17:00 Uhr",
+        "Di und Mi 8:00–12:00 und 13:00–15:30 Uhr",
+        "Do 8:00–12:00 und 13:00–17:00 Uhr",
+        "Fr 8:00–12:00 Uhr"
+      ],
+      "hinweis": "Für alle Anliegen rund um die Kfz-Zulassung ist ein Termin erforderlich (Ausnahme: einfache Abmeldungen). Annahmeschluss jeweils 15 Minuten vor Ende der Öffnungszeit.",
+      "quelle": "https://www.lra-fo.de/Aufgabenbereiche/Auto-und-Verkehr/Zulassungsstelle/"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsstelle des Landratsamts Forchheim für Fahrzeughalter mit Hauptwohnsitz (bei Firmen oder Vereinen: Betriebs- oder Vereinssitz) im Zulassungsbezirk Landkreis Forchheim.",
+      "quelle": "https://www.lra-fo.de/Aufgabenbereiche/Auto-und-Verkehr/Zulassungsstelle/Kraftfahrzeug-Informationen-zur-Fahrzeugzulassung.php?object=tx,3925.2.1&ModID=10&FID=3688.1265.1&NavID=3925.14&kuo=1&call=suche"
+    },
+    "kuerzel": [
+      {
+        "code": "FO",
+        "bedeutung": "Forchheim",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "EBS",
+        "bedeutung": "Ebermannstadt (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "PEG",
+        "bedeutung": "Pegnitz (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Für alle Kfz-Zulassungsanliegen ist ein Termin erforderlich; einfache Abmeldungen sind auch ohne Termin während der Öffnungszeiten möglich.",
+        "quelle": "https://www.lra-fo.de/Aufgabenbereiche/Auto-und-Verkehr/Zulassungsstelle/"
+      },
+      {
+        "text": "Unterlagen können auch ohne Termin zur Bearbeitung abgegeben werden; Bearbeitung in der Regel innerhalb von zwei bis drei Arbeitstagen, danach telefonische Benachrichtigung und Abholung während der Öffnungszeiten.",
+        "quelle": "https://www.lra-fo.de/Aufgabenbereiche/Auto-und-Verkehr/Zulassungsstelle/"
+      },
+      {
+        "text": "Termine auch telefonisch unter 09191/86-3230 (Montag bis Freitag 8:00–12:00 Uhr).",
+        "quelle": "https://www.lra-fo.de/Aufgabenbereiche/Auto-und-Verkehr/Zulassungsstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-hof",
+    "stadt": "Landkreis Hof",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Hof, Kfz-Zulassungsstelle (Fachbereich 302)",
+    "behoerdeQuelle": "https://www.landkreis-hof.de/buergerservice/zulassungs-fuehrerscheinstelle-online/fuer-sie-zustaendig/",
+    "traeger": "Landkreis Hof",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Hof, Hauptgebäude (Fachbereich 302 Verkehrswesen, Zulassungsstelle)",
+        "strasse": "Schaumbergstraße 14",
+        "plz": "95032",
+        "ort": "Hof",
+        "quelle": "https://www.bayernportal.de/dokumente/behoerde/447848537870/adressen"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-hof.de/kfz-zulassung/",
+      "quelle": "https://www.landkreis-hof.de/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://lrahof.flexappoint.de/#/wizard/leistungen/1",
+      "quelle": "https://www.landkreis-hof.de/kfz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrhof/bsp_ikfz_antragstellung#/",
+      "quelle": "https://www.landkreis-hof.de/kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30–16:00 Uhr (nur mit Termin)",
+        "Di 07:30–14:00 Uhr",
+        "Mi 07:30–14:00 Uhr (nur mit Termin)",
+        "Do 07:30–16:00 Uhr",
+        "Fr 07:30–12:30 Uhr (nur mit Termin)"
+      ],
+      "hinweis": "Montags, mittwochs und freitags ausschließlich nach vorheriger Terminvereinbarung; dienstags und donnerstags Vorsprachen auch ohne Termin möglich.",
+      "quelle": "https://www.landkreis-hof.de/kfz-zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle des Landkreises Hof für Halter mit Wohnsitz bzw. Sitz im Landkreis Hof. Die Stadt Hof (ebenfalls Kennzeichen HO) betreibt eine eigene Zulassungsstelle der Stadtverwaltung; Einwohner der Stadt Hof sind dort zuständig, nicht beim Landratsamt.",
+      "quelle": "https://www.hof.de/en/city-hall-service/citizen-service/vehicle-and-driving-licence/admission-office"
+    },
+    "kuerzel": [
+      {
+        "code": "HO",
+        "bedeutung": "Hof (auch Stadt Hof)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MÜB",
+        "bedeutung": "Münchberg (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "NAI",
+        "bedeutung": "Naila (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "REH",
+        "bedeutung": "Rehau (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SAN",
+        "bedeutung": "Stadtsteinach (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Montags, mittwochs und freitags Bearbeitung ausschließlich nach vorheriger Terminvereinbarung; dienstags und donnerstags auch ohne Termin.",
+        "quelle": "https://www.landkreis-hof.de/kfz-zulassung/"
+      },
+      {
+        "text": "Für Händler und Kunden mit mehr als fünf Vorgängen ist eine Terminvereinbarung am Händler- und Großkundenschalter erforderlich.",
+        "quelle": "https://www.landkreis-hof.de/buergerservice/zulassungs-fuehrerscheinstelle-online/fuer-sie-zustaendig/"
+      },
+      {
+        "text": "Online reservierte Wunschkennzeichen bleiben 30 Tage reserviert; Wunschkennzeichen- (10,20 Euro) und Reservierungsgebühr (2,60 Euro) werden mit den Zulassungsgebühren bezahlt.",
+        "quelle": "https://www.landkreis-hof.de/kfz-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-kronach",
+    "stadt": "Landkreis Kronach",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Kronach, Kfz-Zulassungsbehörde (Kfz-Zulassungsstelle)",
+    "behoerdeQuelle": "https://www.landkreis-kronach.de/aktuelles/oeffnungszeiten-konten/",
+    "traeger": "Landkreis Kronach",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Kronach (Abt. 3 – Bauen und Verkehr, Kfz-Zulassungsstelle)",
+        "strasse": "Güterstraße 18",
+        "plz": "96317",
+        "ort": "Kronach",
+        "quelle": "https://www.bayernportal.de/dokumente/behoerde/7502769402257/adressen"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-kronach.de/buergerservice-landratsamt/kfz-online/",
+      "quelle": "https://www.landkreis-kronach.de/buergerservice-landratsamt/kfz-online/"
+    },
+    "terminUrl": {
+      "url": "https://www.landkreis-kronach.de/buergerservice-landratsamt/behoerdenwegweiser/?terminvereinbarung-online&orga=be27fcdd7169d5c1f02faaeccf790a13",
+      "quelle": "https://www.landkreis-kronach.de/buergerservice-landratsamt/kfz-online/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrkronach/bsp_ikfz_antragstellung",
+      "quelle": "https://www.landkreis-kronach.de/buergerservice-landratsamt/kfz-online/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–12:00 Uhr",
+        "Di 08:00–15:30 Uhr",
+        "Mi 08:00–15:30 Uhr",
+        "Do 08:00–17:30 Uhr",
+        "Fr 08:00–12:00 Uhr"
+      ],
+      "hinweis": "Terminvergabe verpflichtend (Vorgänge nur nach vorheriger Terminvergabe). Annahmeschluss jeweils 30 Minuten vor Ende der Öffnungszeit.",
+      "quelle": "https://www.landkreis-kronach.de/aktuelles/oeffnungszeiten-konten/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landratsamts Kronach für Halter mit Wohnsitz bzw. Sitz im Landkreis Kronach.",
+      "quelle": "https://www.landkreis-kronach.de/aktuelles/oeffnungszeiten-konten/"
+    },
+    "kuerzel": [
+      {
+        "code": "KC",
+        "bedeutung": "Kronach",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SAN",
+        "bedeutung": "Stadtsteinach (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Vorgänge in der Kfz-Zulassungsstelle nur nach vorheriger Terminvergabe über das Online-Reservierungssystem; nur bei technischen Problemen ausnahmsweise telefonisch unter 09261/678-256.",
+        "quelle": "https://www.landkreis-kronach.de/buergerservice-landratsamt/kfz-online/"
+      },
+      {
+        "text": "Termine für Kfz-Händler und Zulassungsdienste unter der Telefonnummer 09261/678-338.",
+        "quelle": "https://www.landkreis-kronach.de/buergerservice-landratsamt/kfz-online/"
+      },
+      {
+        "text": "Online möglich: Neuzulassung, Umschreibung, Wiederzulassung und Adressänderung von Privatpersonen sowie Außerbetriebsetzung über das Bürgerservice-Portal.",
+        "quelle": "https://www.landkreis-kronach.de/buergerservice-landratsamt/kfz-online/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-kulmbach",
+    "stadt": "Landkreis Kulmbach",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Kulmbach, Kfz-Zulassungsstelle (231 Kfz-Zulassungswesen)",
+    "behoerdeQuelle": "https://www.bayernportal.de/dokumente/behoerde/3099545846500/adressen",
+    "traeger": "Landkreis Kulmbach",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Kulmbach, Kfz-Zulassungsstelle",
+        "strasse": "Konrad-Adenauer-Straße 5",
+        "plz": "95326",
+        "ort": "Kulmbach",
+        "quelle": "https://www.landkreis-kulmbach.de/service-verwaltung/fuehrerschein-und-kfz-zulassungsstelle"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-kulmbach.de/service-verwaltung/fuehrerschein-und-kfz-zulassungsstelle",
+      "quelle": "https://www.landkreis-kulmbach.de/service-verwaltung/fuehrerschein-und-kfz-zulassungsstelle"
+    },
+    "terminUrl": {
+      "url": "https://www.terminland.de/landratsamt-kulmbach/?m=41074",
+      "quelle": "https://www.bayernportal.de/dokumente/behoerde/3099545846500/adressen"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrkulmbach/",
+      "quelle": "https://www.landkreis-kulmbach.de/service-verwaltung/fuehrerschein-und-kfz-zulassungsstelle/kfz-zulassung-ueber-das-internet"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30–16:30 Uhr",
+        "Di 07:30–16:30 Uhr",
+        "Mi 07:30–12:30 Uhr",
+        "Do 07:30–17:30 Uhr",
+        "Fr 07:30–12:30 Uhr"
+      ],
+      "hinweis": "Allgemeine Öffnungszeiten des Landratsamts (auch für das Kfz-Zulassungswesen angegeben). Vorsprachen nur nach vorheriger Terminvereinbarung.",
+      "quelle": "https://www.landkreis-kulmbach.de/service-verwaltung/fuehrerschein-und-kfz-zulassungsstelle"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle des Landratsamts Kulmbach für Halter mit Wohnsitz bzw. Sitz im Landkreis Kulmbach.",
+      "quelle": "https://www.landkreis-kulmbach.de/service-verwaltung/fuehrerschein-und-kfz-zulassungsstelle"
+    },
+    "kuerzel": [
+      {
+        "code": "KU",
+        "bedeutung": "Kulmbach",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "EBS",
+        "bedeutung": "Ebermannstadt (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SAN",
+        "bedeutung": "Stadtsteinach (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Zugang zur Kfz-Zulassungsstelle nur nach vorheriger Terminvereinbarung; Termine online buchen, telefonisch nur in Ausnahmefällen unter 09221/707-374.",
+        "quelle": "https://www.landkreis-kulmbach.de/service-verwaltung/fuehrerschein-und-kfz-zulassungsstelle"
+      },
+      {
+        "text": "Kfz-Zulassung online über das Bürgerservice-Portal des Landkreises, dort auch die Terminbuchung für die Kfz-Zulassung.",
+        "quelle": "https://www.landkreis-kulmbach.de/service-verwaltung/fuehrerschein-und-kfz-zulassungsstelle/kfz-zulassung-ueber-das-internet"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-lichtenfels",
+    "stadt": "Landkreis Lichtenfels",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Lichtenfels, Zulassungsstelle",
+    "behoerdeQuelle": "https://www.lkr-lif.de/landratsamt/verkehr/zulassungsstelle/index.html",
+    "traeger": "Landkreis Lichtenfels",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Lichtenfels, Hauptgebäude (Zulassungsstelle)",
+        "strasse": "Kronacher Straße 30",
+        "plz": "96215",
+        "ort": "Lichtenfels",
+        "quelle": "https://www.lkr-lif.de/landratsamt/verkehr/zulassungsstelle/index.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.lkr-lif.de/landratsamt/verkehr/zulassungsstelle/index.html",
+      "quelle": "https://www.lkr-lif.de/landratsamt/verkehr/zulassungsstelle/index.html"
+    },
+    "terminUrl": {
+      "url": "https://www.terminland.de/Lichtenfels/",
+      "quelle": "https://www.lkr-lif.de/landratsamt/online-dienste/fomulare-und-informationen/8252.Terminvereinbarungen-im-Landratsamt---jetzt-online-moeglich.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.lkr-lif.de/landratsamt/online-dienste/wartezeit/7065.Internetbasierte-Fahrzeugzulassung-und--abmeldung-iKfz.html",
+      "quelle": "https://www.lkr-lif.de/landratsamt/online-dienste/index.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Mi 07:45–16:00 Uhr",
+        "Do 07:45–17:00 Uhr",
+        "Fr 07:45–12:00 Uhr"
+      ],
+      "hinweis": "Allgemeine Öffnungszeiten des Landratsamts; Annahmeschluss der Zulassungsstelle jeweils 15 Minuten vor Ende. Termin empfohlen: Termine haben Vorrang und sind bis 18:00 Uhr möglich.",
+      "quelle": "https://www.lkr-lif.de/info/oeffnungszeiten/index.html"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsstelle des Landratsamts Lichtenfels für Halter mit Wohnsitz bzw. Sitz im Landkreis Lichtenfels.",
+      "quelle": "https://www.lkr-lif.de/landratsamt/verkehr/zulassungsstelle/index.html"
+    },
+    "kuerzel": [
+      {
+        "code": "LIF",
+        "bedeutung": "Lichtenfels",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "STE",
+        "bedeutung": "Bad Staffelstein (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Zulassungsunterlagen können während der Öffnungszeiten auch am Empfang zur Bearbeitung abgegeben werden; Bearbeitungszeit ca. zwei Tage.",
+        "quelle": "https://www.lkr-lif.de/info/oeffnungszeiten/index.html"
+      },
+      {
+        "text": "Termine haben Vorrang vor Vorsprachen ohne Termin und sind bis 18:00 Uhr möglich.",
+        "quelle": "https://www.lkr-lif.de/info/oeffnungszeiten/index.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-wunsiedel-im-fichtelgebirge",
+    "stadt": "Landkreis Wunsiedel im Fichtelgebirge",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Wunsiedel i. Fichtelgebirge, KFZ-Zulassungsstelle (FGr 323 – Straßenverkehrszulassungsrecht)",
+    "behoerdeQuelle": "https://www.bayernportal.de/dokumente/behoerde/9577804854420/adressen",
+    "traeger": "Landkreis Wunsiedel i. Fichtelgebirge",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Wunsiedel i. Fichtelgebirge, KFZ-Zulassungsstelle",
+        "strasse": "Jean-Paul-Straße 9",
+        "plz": "95632",
+        "ort": "Wunsiedel",
+        "quelle": "https://www.landkreis-wunsiedel.de/zulassungstelle"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-wunsiedel.de/zulassungstelle",
+      "quelle": "https://www.landkreis-wunsiedel.de/zulassungstelle"
+    },
+    "terminUrl": {
+      "url": "https://www.terminland.de/lrawun/?ha3421848027=3421848076&m=43275",
+      "quelle": "https://www.landkreis-wunsiedel.de/zulassungstelle"
+    },
+    "ikfzUrl": {
+      "url": "https://www.landkreis-wunsiedel.de/zulassungstelle/online-zulassung",
+      "quelle": "https://www.landkreis-wunsiedel.de/zulassungstelle"
+    },
+    "oeffnungszeiten": null,
+    "zustaendigkeit": {
+      "text": "KFZ-Zulassungsstelle des Landratsamts Wunsiedel i. Fichtelgebirge für Halter mit Wohnsitz bzw. Sitz im Landkreis Wunsiedel i. Fichtelgebirge.",
+      "quelle": "https://www.landkreis-wunsiedel.de/zulassungstelle"
+    },
+    "kuerzel": [
+      {
+        "code": "WUN",
+        "bedeutung": "Wunsiedel",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MAK",
+        "bedeutung": "Marktredwitz (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "REH",
+        "bedeutung": "Rehau (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SEL",
+        "bedeutung": "Selb (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Ein Besuch in der KFZ-Zulassungsstelle ist nur nach vorheriger Online-Terminvereinbarung möglich.",
+        "quelle": "https://www.landkreis-wunsiedel.de/zulassungstelle"
+      },
+      {
+        "text": "Mit der Terminbestätigung kommt ein persönlicher QR-Code, der zum gebuchten Zeitpunkt den Direkteingang der Zulassungsstelle öffnet (Lesegerät neben dem Eingang), ohne Umweg über den Haupteingang.",
+        "quelle": "https://www.landkreis-wunsiedel.de/buergerservice/news/2026/mit-qr-code-direkt-zur-zulassungs-und-fuehrerscheinstelle"
+      },
+      {
+        "text": "Das Landratsamt empfiehlt die Online-Zulassung, um Wartezeiten zu sparen und von vergünstigten Gebühren zu profitieren.",
+        "quelle": "https://www.landkreis-wunsiedel.de/zulassungstelle"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten"
+    ]
+  },
+  {
+    "slug": "landkreis-ansbach",
+    "stadt": "Landkreis Ansbach",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Ansbach, Kfz-Zulassungsstelle (Sachgebiet 34 – Verkehrswesen)",
+    "behoerdeQuelle": "https://www.landkreis-ansbach.de/Landratsamt/Dienstleistungen/Au%C3%9Ferbetriebssetzung.php?ModID=10&FID=3797.725.1&call=suche",
+    "traeger": "Landkreis Ansbach",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Ansbach (Hauptstelle)",
+        "strasse": "Crailsheimstraße 1",
+        "plz": "91522",
+        "ort": "Ansbach",
+        "quelle": "https://www.landkreis-ansbach.de/Landratsamt/Dienstleistungen/Au%C3%9Ferbetriebssetzung.php?ModID=10&FID=3797.725.1&call=suche"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle – Außenstelle Dinkelsbühl",
+        "strasse": "Luitpoldstraße 5a",
+        "plz": "91550",
+        "ort": "Dinkelsbühl",
+        "quelle": "https://www.landkreis-ansbach.de/Landratsamt/Dienstleistungen/Au%C3%9Ferbetriebssetzung.php?ModID=10&FID=3797.725.1&call=suche"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle – Außenstelle Feuchtwangen",
+        "strasse": "Jahnstraße 6",
+        "plz": "91555",
+        "ort": "Feuchtwangen",
+        "quelle": "https://www.landkreis-ansbach.de/Landratsamt/Dienstleistungen/Au%C3%9Ferbetriebssetzung.php?ModID=10&FID=3797.725.1&call=suche"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle – Außenstelle Rothenburg ob der Tauber",
+        "strasse": "Bezoldweg 31",
+        "plz": "91541",
+        "ort": "Rothenburg ob der Tauber",
+        "quelle": "https://www.landkreis-ansbach.de/Landratsamt/Dienstleistungen/Au%C3%9Ferbetriebssetzung.php?ModID=10&FID=3797.725.1&call=suche"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-ansbach.de/Themen/Mobilit%C3%A4t-Verkehr/Kfz-Zulassung/",
+      "quelle": "https://www.landkreis-ansbach.de/Themen/Mobilit%C3%A4t-Verkehr/Kfz-Zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://terminreservierung.landkreis-ansbach.de/qmaticwebbooking/#/",
+      "quelle": "https://www.landkreis-ansbach.de/Landratsamt/%C3%96ffnungszeiten/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.landkreis-ansbach.de/Themen/Mobilit%C3%A4t-Verkehr/Kfz-Zulassung/Online-Beh%C3%B6rde/",
+      "quelle": "https://www.landkreis-ansbach.de/Themen/Mobilit%C3%A4t-Verkehr/Kfz-Zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Ansbach: Mo–Fr 08:00–12:00 Uhr (Wartemarken werden am Vormittag nur bis 11:30 Uhr ausgegeben)",
+        "Ansbach: Mo, Di und Do 14:00–15:30 Uhr",
+        "Außenstellen Dinkelsbühl, Feuchtwangen und Rothenburg ob der Tauber: Mo–Fr 08:00–12:00 Uhr"
+      ],
+      "hinweis": "Ansbach: generell keine Terminabsprache nötig, nur Fahrzeughändler und Zulassungsdienste müssen einen Termin buchen. Außenstellen: vorherige telefonische oder Online-Terminvereinbarung erbeten.",
+      "quelle": "https://www.landkreis-ansbach.de/Landratsamt/%C3%96ffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Landratsamt Ansbach (Hauptstelle Ansbach und Außenstellen Dinkelsbühl, Feuchtwangen, Rothenburg ob der Tauber) für Halter mit Wohnsitz bzw. Sitz im Landkreis Ansbach. Die Stadt Ansbach (ebenfalls Kennzeichen AN) ist eine eigene Zulassungsbehörde mit eigener Online-Zulassung; Einwohner der Stadt Ansbach sind dort zuständig, nicht beim Landratsamt.",
+      "quelle": "https://www.bayernportal.de/dokumente/onlineverfahren/7630060544348"
+    },
+    "kuerzel": [
+      {
+        "code": "AN",
+        "bedeutung": "Ansbach (auch Stadt Ansbach)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "DKB",
+        "bedeutung": "Dinkelsbühl (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "FEU",
+        "bedeutung": "Feuchtwangen (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ROT",
+        "bedeutung": "Rothenburg ob der Tauber (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "In den Außenstellen Dinkelsbühl, Feuchtwangen und Rothenburg ob der Tauber ist nur Kartenzahlung möglich (Girocard, Maestro, Mastercard, Visa), keine Barzahlung.",
+        "quelle": "https://www.landkreis-ansbach.de/Landratsamt/%C3%96ffnungszeiten/"
+      },
+      {
+        "text": "In der Hauptstelle Ansbach ist generell keine Terminabsprache nötig; nur Fahrzeughändler und Zulassungsdienste müssen einen Termin buchen.",
+        "quelle": "https://www.landkreis-ansbach.de/Landratsamt/%C3%96ffnungszeiten/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-erlangen-hoechstadt",
+    "stadt": "Landkreis Erlangen-Höchstadt",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Erlangen-Höchstadt, KFZ-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.erlangen-hoechstadt.de/buergerservice/was-erledige-ich-wo/kfz-zulassung/",
+    "traeger": "Landkreis Erlangen-Höchstadt",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassungsstelle ERH, Erlangen",
+        "strasse": "Nägelsbachstraße 1",
+        "plz": "91052",
+        "ort": "Erlangen",
+        "quelle": "https://www.erlangen-hoechstadt.de/buergerservice/was-erledige-ich-wo/kfz-zulassung/"
+      },
+      {
+        "bezeichnung": "KFZ-Zulassungsstelle ERH, Höchstadt a. d. Aisch",
+        "strasse": "Schloßberg 10",
+        "plz": "91315",
+        "ort": "Höchstadt a. d. Aisch",
+        "quelle": "https://www.erlangen-hoechstadt.de/buergerservice/was-erledige-ich-wo/kfz-zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.erlangen-hoechstadt.de/buergerservice/was-erledige-ich-wo/kfz-zulassung/",
+      "quelle": "https://www.erlangen-hoechstadt.de/buergerservice/was-erledige-ich-wo/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://erlangen-hoechstadt.konsentas.de/modules/ota_public/form/4/?signup_new=1",
+      "quelle": "https://www.erlangen-hoechstadt.de/buergerservice/was-erledige-ich-wo/kfz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerserviceportal.de/bayern/lkrerlangenhoechstadt",
+      "quelle": "https://www.erlangen-hoechstadt.de/buergerservice/a-bis-z/zulassungsverfahren-online-i-kfz/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Fr 07:30–12:00 Uhr",
+        "Di 14:00–16:00 Uhr (nur mit vorheriger Terminvereinbarung)",
+        "Do 14:00–17:30 Uhr (nur mit vorheriger Terminvereinbarung)"
+      ],
+      "hinweis": "Gilt für Erlangen und Höchstadt a. d. Aisch; nachmittags nur mit vorheriger Terminvereinbarung. Terminbuchung zwei Wochen im Voraus möglich.",
+      "quelle": "https://www.erlangen-hoechstadt.de/buergerservice/was-erledige-ich-wo/kfz-zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Wohnortprinzip: Bei Hauptwohnsitz (oder Firmensitz) im Landkreis Erlangen-Höchstadt sind die Zulassungsstellen in Erlangen und Höchstadt a. d. Aisch zuständig, beide unabhängig vom Wohnort innerhalb des Landkreises. Zulassungsvorgänge nur für Wohnsitz oder Betriebssitz im Landkreis; trotz Sitz in Erlangen nicht für die Stadt Erlangen (eigenes Kennzeichen ER). Zulassung auf einen Zweitwohnsitz ist nicht möglich.",
+      "quelle": "https://www.erlangen-hoechstadt.de/buergerservice/was-erledige-ich-wo/kfz-zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "ERH",
+        "bedeutung": "Erlangen-Höchstadt",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "HÖS",
+        "bedeutung": "Höchstadt (an der Aisch; Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Zahlung: In Höchstadt a. d. Aisch nur unbar (EC-Karte, VISA, V Pay, Mastercard, Maestro); in Erlangen bar oder mit EC-Karte.",
+        "quelle": "https://www.erlangen-hoechstadt.de/buergerservice/was-erledige-ich-wo/kfz-zulassung/"
+      },
+      {
+        "text": "Online-Terminbuchung ist zwei Wochen im Voraus möglich.",
+        "quelle": "https://www.erlangen-hoechstadt.de/buergerservice/was-erledige-ich-wo/kfz-zulassung/"
+      },
+      {
+        "text": "Telefonische Anfragen auch außerhalb der Öffnungszeiten montags und mittwochs jeweils bis 16:00 Uhr.",
+        "quelle": "https://www.erlangen-hoechstadt.de/buergerservice/was-erledige-ich-wo/kfz-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-fuerth",
+    "stadt": "Landkreis Fürth",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Fürth, Zulassungsstelle (SG 14 Verkehrswesen, 142 Zulassungsstelle)",
+    "behoerdeQuelle": "https://www.bayernportal.de/dokumente/behoerde/302632348740/adressen",
+    "traeger": "Landkreis Fürth",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Fürth, Verkehrswesen (Zulassungsstelle)",
+        "strasse": "Im Pinderpark 2",
+        "plz": "90513",
+        "ort": "Zirndorf",
+        "quelle": "https://www.bayernportal.de/dokumente/behoerde/302632348740/adressen"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-fuerth.de/mein-landratsamt/mobilitaet/kfz-zulassung",
+      "quelle": "https://www.landkreis-fuerth.de/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/lra-fuerth/",
+      "quelle": "https://www.landkreis-fuerth.de/"
+    },
+    "ikfzUrl": null,
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30–11:30 Uhr",
+        "Di 07:30–11:30 und 14:00–16:00 Uhr",
+        "Mi 07:30–13:00 Uhr",
+        "Do 07:30–11:30 und 14:00–17:00 Uhr",
+        "Fr 07:30–11:30 Uhr"
+      ],
+      "hinweis": "Zusätzlich nach Vereinbarung. Das Landratsamt bittet für den persönlichen Besuch immer um Terminvereinbarung.",
+      "quelle": "https://www.bayernportal.de/dokumente/behoerde/302632348740/adressen"
+    },
+    "zustaendigkeit": {
+      "text": "Landratsamt Fürth (Sitz in Zirndorf) für Halter mit Wohnsitz bzw. Sitz im Landkreis Fürth. Die Stadt Fürth (ebenfalls Kennzeichen FÜ) hat eine eigene KFZ-Zulassungsbehörde im Straßenverkehrsamt (Schwabacher Straße 170); Einwohner der Stadt Fürth sind dort zuständig, nicht beim Landratsamt.",
+      "quelle": "https://www.fuerth.de/service-fuerther-rathaus/aemter-von-a-bis-z/detail/zulassungsbehoerde-kfz-298094/"
+    },
+    "kuerzel": [
+      {
+        "code": "FÜ",
+        "bedeutung": "Fürth (auch Stadt Fürth)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Das Landratsamt Fürth und seine Zulassungsstelle befinden sich in Zirndorf (Im Pinderpark 2), nicht in der Stadt Fürth.",
+        "quelle": "https://www.bayernportal.de/dokumente/behoerde/302632348740/adressen"
+      },
+      {
+        "text": "Für den persönlichen Besuch im Landratsamt wird immer um vorherige Terminvereinbarung gebeten.",
+        "quelle": "https://www.landkreis-fuerth.de/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "ikfzUrl"
+    ]
+  },
+  {
+    "slug": "landkreis-nuernberger-land",
+    "stadt": "Landkreis Nürnberger Land",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Nürnberger Land, Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.nuernberger-land.de/serviceleistungen/auto-verkehr/kfz-zulassungsstelle",
+    "traeger": "Landkreis Nürnberger Land",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Lauf (Hauptstelle im Landratsamt)",
+        "strasse": "Waldluststraße 1",
+        "plz": "91207",
+        "ort": "Lauf a. d. Pegnitz",
+        "quelle": "https://www.nuernberger-land.de/serviceleistungen/auto-verkehr/neuzulassung"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Altdorf (Kultur-Rathaus)",
+        "strasse": "Oberer Markt 2",
+        "plz": "90518",
+        "ort": "Altdorf bei Nürnberg",
+        "quelle": "https://www.nuernberger-land.de/serviceleistungen/auto-verkehr/neuzulassung"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Hersbruck (Rathaus)",
+        "strasse": "Unterer Markt 1",
+        "plz": "91217",
+        "ort": "Hersbruck",
+        "quelle": "https://www.nuernberger-land.de/serviceleistungen/auto-verkehr/neuzulassung"
+      }
+    ],
+    "website": {
+      "url": "https://www.nuernberger-land.de/serviceleistungen/auto-verkehr/kfz-zulassungsstelle",
+      "quelle": "https://www.nuernberger-land.de/serviceleistungen/auto-verkehr/kfz-zulassungsstelle"
+    },
+    "terminUrl": {
+      "url": "https://termine.crossing.de/713895361",
+      "quelle": "https://www.nuernberger-land.de/serviceleistungen/auto-verkehr/kfz-zulassungsstelle"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerserviceportal.de/bayern/lkrnuernbergerland/bsp_ikfz_antragstellung",
+      "quelle": "https://www.nuernberger-land.de/serviceleistungen/auto-verkehr/neuzulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Lauf: Mo und Di 7:30–16:00 Uhr",
+        "Lauf: Mi 7:30–12:30 Uhr",
+        "Lauf: Do 7:30–18:00 Uhr",
+        "Lauf: Fr 7:30–12:30 Uhr",
+        "Altdorf: Di, Mi und Fr 8:00–12:00 Uhr",
+        "Hersbruck: Mo, Do und Fr 8:00–12:00 Uhr"
+      ],
+      "hinweis": "Lauf: Annahmeschluss eine halbe Stunde vor Ende der Öffnungszeit. Online-Terminreservierung nur für die Hauptstelle Lauf; bei Vorsprache ohne Termin kann es zu Wartezeiten kommen.",
+      "quelle": "https://www.nuernberger-land.de/serviceleistungen/auto-verkehr/neuzulassung"
+    },
+    "zustaendigkeit": {
+      "text": "Landratsamt Nürnberger Land (Hauptstelle Lauf, Außenstellen Altdorf und Hersbruck) für Halter mit Wohnort bzw. Betriebsstätte im Landkreis Nürnberger Land. Das Kennzeichen N vergibt auch die Stadt Nürnberg, die eine eigene Zulassungsbehörde hat; Einwohner der Stadt Nürnberg sind dort zuständig, nicht beim Landratsamt.",
+      "quelle": "https://www.nuernberg.de/internet/ordnungsamt/kfz_zulassung.html"
+    },
+    "kuerzel": [
+      {
+        "code": "LAU",
+        "bedeutung": "Lauf (an der Pegnitz)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ESB",
+        "bedeutung": "Eschenbach (in der Oberpfalz; Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "HEB",
+        "bedeutung": "Hersbruck (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "N",
+        "bedeutung": "Nürnberg (im Landkreis wieder erhältlich; zugleich Kennzeichen der Stadt Nürnberg)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "PEG",
+        "bedeutung": "Pegnitz (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Online-Terminreservierung ist ausschließlich für die Hauptstelle in Lauf möglich, nicht für die Außenstellen Altdorf und Hersbruck.",
+        "quelle": "https://www.nuernberger-land.de/serviceleistungen/auto-verkehr/neuzulassung"
+      },
+      {
+        "text": "Die Verwahrung finanzierter Fahrzeugbriefe ist nur in der Hauptstelle in Lauf möglich, nicht in den Außenstellen.",
+        "quelle": "https://www.nuernberger-land.de/serviceleistungen/auto-verkehr/neuzulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-neustadt-an-der-aisch-bad-windsheim",
+    "stadt": "Landkreis Neustadt an der Aisch-Bad Windsheim",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Neustadt a.d.Aisch-Bad Windsheim, Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.kreis-nea.de/behoerdenwegweiser-a-z/behoerde/kfz-zulassungsstelle",
+    "traeger": "Landkreis Neustadt a.d.Aisch-Bad Windsheim",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Neustadt a.d.Aisch",
+        "strasse": "Konrad-Adenauer-Straße 1",
+        "plz": "91413",
+        "ort": "Neustadt a.d.Aisch",
+        "quelle": "https://www.kreis-nea.de/behoerdenwegweiser-a-z/behoerde/kfz-zulassung-neustadt-adaisch"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassung – Außenstelle Bad Windsheim",
+        "strasse": "Berliner Straße 16",
+        "plz": "91438",
+        "ort": "Bad Windsheim",
+        "quelle": "https://www.kreis-nea.de/behoerdenwegweiser-a-z/behoerde/kfz-zulassung-aussenstelle-bad-windsheim"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassung – Außenstelle Scheinfeld",
+        "strasse": "Hauptstraße 3",
+        "plz": "91443",
+        "ort": "Scheinfeld",
+        "quelle": "https://www.kreis-nea.de/behoerdenwegweiser-a-z/behoerde/kfz-zulassung-aussenstelle-scheinfeld"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassung – Außenstelle Uffenheim",
+        "strasse": "Rothenburger Straße 34",
+        "plz": "97215",
+        "ort": "Uffenheim",
+        "quelle": "https://www.kreis-nea.de/behoerdenwegweiser-a-z/behoerde/kfz-zulassung-aussenstelle-uffenheim"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-nea.de/behoerdenwegweiser-a-z/behoerde/kfz-zulassungsstelle",
+      "quelle": "https://www.kreis-nea.de/behoerdenwegweiser-a-z/behoerde/kfz-zulassungsstelle"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/lra-neustadt/select2?md=2",
+      "quelle": "https://www.kreis-nea.de/behoerdenwegweiser-a-z/behoerde/kfz-zulassungsstelle"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrneustadtaisch/bsp_ikfz_antragstellung#/",
+      "quelle": "https://www.kreis-nea.de/behoerdenwegweiser-a-z/behoerde/kfz-zulassung-neustadt-adaisch"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Neustadt a.d.Aisch: Mo 08:00–12:00 und 14:00–16:00 Uhr",
+        "Neustadt a.d.Aisch: Di 08:00–12:00 und 14:00–16:00 Uhr",
+        "Neustadt a.d.Aisch: Mi geschlossen",
+        "Neustadt a.d.Aisch: Do 08:00–12:00 und 14:00–17:30 Uhr",
+        "Neustadt a.d.Aisch: Fr 08:00–12:00 Uhr",
+        "Bad Windsheim: Mo 08:00–12:00 und 14:00–16:00 Uhr",
+        "Bad Windsheim: Di geschlossen",
+        "Bad Windsheim: Mi 08:00–12:00 und 14:00–16:00 Uhr",
+        "Bad Windsheim: Do 08:00–12:00 und 14:00–17:30 Uhr",
+        "Bad Windsheim: Fr 08:00–12:00 Uhr",
+        "Scheinfeld: Mi 08:00–12:00 und 14:00–16:00 Uhr",
+        "Uffenheim: Di 08:00–12:00 und 14:00–16:00 Uhr"
+      ],
+      "hinweis": "Online-Termin nicht zwingend erforderlich, Vorsprache auch ohne Termin möglich. An Tagen mit besonders hohem Kundenaufkommen (z. B. Brückentage, nach Schließtagen) kann der Annahmeschluss vor Ende der Öffnungszeit liegen.",
+      "quelle": "https://www.kreis-nea.de/behoerdenwegweiser-a-z/behoerde/kfz-zulassung-neustadt-adaisch"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle des Landratsamts (Hauptstelle Neustadt a.d.Aisch, Außenstellen Bad Windsheim, Scheinfeld und Uffenheim) für Halter mit Wohnsitz bzw. Sitz im Landkreis Neustadt a.d.Aisch-Bad Windsheim.",
+      "quelle": "https://www.kreis-nea.de/behoerdenwegweiser-a-z/behoerde/kfz-zulassungsstelle"
+    },
+    "kuerzel": [
+      {
+        "code": "NEA",
+        "bedeutung": "Neustadt an der Aisch",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SEF",
+        "bedeutung": "Scheinfeld (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "UFF",
+        "bedeutung": "Uffenheim (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Online-Terminreservierung ist nicht zwingend erforderlich; man kann auch ohne Termin vorbeikommen.",
+        "quelle": "https://www.kreis-nea.de/behoerdenwegweiser-a-z/behoerde/kfz-zulassung-neustadt-adaisch"
+      },
+      {
+        "text": "In den Außenstellen Bad Windsheim, Scheinfeld und Uffenheim ist nur bargeldlose Bezahlung möglich.",
+        "quelle": "https://www.kreis-nea.de/behoerdenwegweiser-a-z/behoerde/kfz-zulassung-aussenstelle-bad-windsheim"
+      },
+      {
+        "text": "In Scheinfeld gibt es keinen Schilderladen, was insbesondere die Ausgabe von Fahrzeugkennzeichen dort einschränkt; in Neustadt a.d.Aisch ist der Schilderladen mittwochs geschlossen.",
+        "quelle": "https://www.kreis-nea.de/behoerdenwegweiser-a-z/behoerde/kfz-zulassung-aussenstelle-scheinfeld"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-roth",
+    "stadt": "Landkreis Roth",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Roth, KFZ-Zulassung",
+    "behoerdeQuelle": "https://www.landratsamt-roth.de/themen/mobilitaet/kfz-zulassung",
+    "traeger": "Landkreis Roth",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Roth, KFZ-Zulassung",
+        "strasse": "Weinbergweg 16b",
+        "plz": "91154",
+        "ort": "Roth",
+        "quelle": "https://www.landratsamt-roth.de/themen/mobilitaet/kfz-zulassung"
+      }
+    ],
+    "website": {
+      "url": "https://www.landratsamt-roth.de/themen/mobilitaet/kfz-zulassung",
+      "quelle": "https://www.landratsamt-roth.de/themen/mobilitaet/kfz-zulassung"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/lkr-roth/select2?md=16",
+      "quelle": "https://www.landratsamt-roth.de/themen/mobilitaet/kfz-zulassung"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrroth/bsp_ikfz_antragstellung",
+      "quelle": "https://www.landratsamt-roth.de/themen/mobilitaet/kfz-zulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30–12:00 und 13:00–16:00 Uhr",
+        "Di 07:30–12:00 und 13:00–16:00 Uhr",
+        "Mi 07:30–13:00 Uhr",
+        "Do 07:30–12:00 und 13:00–18:00 Uhr",
+        "Fr 07:30–13:00 Uhr"
+      ],
+      "hinweis": "Nur mit vorheriger Terminvereinbarung. Annahmeschluss 1 Stunde vor Dienstende.",
+      "quelle": "https://www.landratsamt-roth.de/themen/mobilitaet/kfz-zulassung"
+    },
+    "zustaendigkeit": {
+      "text": "KFZ-Zulassung des Landratsamts Roth für Halter mit Wohnsitz bzw. Sitz im Landkreis Roth.",
+      "quelle": "https://www.landratsamt-roth.de/themen/mobilitaet/kfz-zulassung"
+    },
+    "kuerzel": [
+      {
+        "code": "RH",
+        "bedeutung": "Roth",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "HIP",
+        "bedeutung": "Hilpoltstein (Altkennzeichen, wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Zulassung befindet sich (laut Landratsamt seit 8. Januar) im Weinbergweg 16 b.",
+        "quelle": "https://www.landratsamt-roth.de/themen/mobilitaet/kfz-zulassung"
+      },
+      {
+        "text": "In der Zulassungsstelle kann ein QR-Code für den Abruf des digitalen Fahrzeugscheins in der i-Kfz-App des Kraftfahrt-Bundesamts erstellt werden.",
+        "quelle": "https://www.landratsamt-roth.de/themen/mobilitaet/kfz-zulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

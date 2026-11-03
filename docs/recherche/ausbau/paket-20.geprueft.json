@@ -1,0 +1,896 @@
+[
+  {
+    "slug": "landkreis-hameln-pyrmont",
+    "stadt": "Landkreis Hameln-Pyrmont",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Hameln-Pyrmont, Straßenverkehrsamt (21), Team 21.2 Führerschein- und Zulassungsstelle",
+    "behoerdeQuelle": "https://service.hameln-pyrmont.de/buergerservice/verwaltung/landkreis-hameln-pyrmont-21-2-team-fuehrerschein-und-zulassungsstelle-900000016-33800.html",
+    "traeger": "Landkreis Hameln-Pyrmont",
+    "standorte": [
+      {
+        "bezeichnung": "Straßenverkehrsamt, Kfz-Zulassungsstelle",
+        "strasse": "Fluthamelstraße 15",
+        "plz": "31789",
+        "ort": "Hameln",
+        "quelle": "https://service.hameln-pyrmont.de/buergerservice/verwaltung/landkreis-hameln-pyrmont-21-2-team-fuehrerschein-und-zulassungsstelle-900000016-33800.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.hameln-pyrmont.de/index.php?NavID=3767.135",
+      "quelle": "https://www.hameln-pyrmont.de/index.php?NavID=3767.135"
+    },
+    "terminUrl": {
+      "url": "https://cqm.cleverq.de/public/appointments/lk_hameln_pyrmont_kfz/index.html?lang=de",
+      "quelle": "https://service.hameln-pyrmont.de/portal/seiten/strassenverkehrsamt-900000141-33800.html"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-hameln-pyrmont-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=hameln-pyrmont_kreis",
+      "quelle": "https://service.hameln-pyrmont.de/digitale-Zulassungsstelle"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30–12:00 und 13:30–15:00 Uhr",
+        "Di 07:30–13:30 Uhr",
+        "Mi 07:30–12:00 Uhr (Nachmittag auf den offiziellen Seiten widersprüchlich angegeben)",
+        "Do 07:30–12:00 und 13:30–16:30 Uhr",
+        "Fr 07:30–12:00 Uhr"
+      ],
+      "hinweis": "Kfz-Zulassungsvorgänge werden nur nach Terminvereinbarung bearbeitet; Termine bitte ausschließlich online buchen.",
+      "quelle": "https://www.hameln-pyrmont.de/?object=tx,3767.90.1"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsstelle des Landkreises Hameln-Pyrmont (Kennzeichen HM) für das Kreisgebiet: Stadt Hameln, Städte Bad Pyrmont, Hessisch Oldendorf und Bad Münder am Deister, Flecken Aerzen, Salzhemmendorf und Coppenbrügge sowie Gemeinde Emmerthal. Eine eigene Zulassungsstelle der Stadt Hameln wird auf den offiziellen Seiten nicht genannt.",
+      "quelle": "https://www.hameln-pyrmont.de/Landkreis/Der-Landkreis/St%C3%A4dte-Gemeinden/"
+    },
+    "kuerzel": [
+      {
+        "code": "HM",
+        "bedeutung": "Hameln",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Außerbetriebsetzung, Kurzzeitkennzeichen und Anschriftenänderungen innerhalb des Landkreises sind von 09:30 bis 12:00 Uhr am Schnellschalter an der Info auch ohne Termin möglich.",
+        "quelle": "https://www.hameln-pyrmont.de/index.php?NavID=3767.135"
+      },
+      {
+        "text": "Für die Online-Dienste der Zulassungsstelle sind PayPal und Kreditkarte als Zahlungsmethode verfügbar (Giropay wurde zum 31.12.2024 eingestellt).",
+        "quelle": "https://www.hameln-pyrmont.de/index.php?NavID=3767.135"
+      },
+      {
+        "text": "In begründeten Ausnahmefällen ist eine Terminvereinbarung per E-Mail an zulassung@hameln-pyrmont.de möglich.",
+        "quelle": "https://www.hameln-pyrmont.de/index.php?NavID=3767.135"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten"
+    ]
+  },
+  {
+    "slug": "landkreis-harburg",
+    "stadt": "Landkreis Harburg",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Harburg, Fachbereich Ordnung, Abteilung BürgerService/Verkehr – BürgerService/Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.landkreis-harburg.de/verkehr-ordnung/auto-fuehrerschein/",
+    "traeger": "Landkreis Harburg",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassung und Allgemeiner BürgerService Winsen (Gebäude A)",
+        "strasse": "Schloßplatz 6",
+        "plz": "21423",
+        "ort": "Winsen (Luhe)",
+        "quelle": "https://www.landkreis-harburg.de/verkehr-ordnung/auto-fuehrerschein/"
+      },
+      {
+        "bezeichnung": "KFZ-Zulassung und Allgemeiner BürgerService Buchholz i.d.N. (Gebäude U)",
+        "strasse": "Innungsstraße 6",
+        "plz": "21244",
+        "ort": "Buchholz i.d.N.",
+        "quelle": "https://www.landkreis-harburg.de/verkehr-ordnung/auto-fuehrerschein/"
+      },
+      {
+        "bezeichnung": "KFZ-Zulassung und Allgemeiner BürgerService Seevetal-Hittfeld (Gebäude W)",
+        "strasse": "An der Reitbahn 6",
+        "plz": "21218",
+        "ort": "Seevetal",
+        "quelle": "https://www.landkreis-harburg.de/verkehr-ordnung/auto-fuehrerschein/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-harburg.de/verkehr-ordnung/auto-fuehrerschein/services-kfz-zulassung-buergerservice/",
+      "quelle": "https://www.landkreis-harburg.de/verkehr-ordnung/auto-fuehrerschein/"
+    },
+    "terminUrl": {
+      "url": "https://termin.landkreis-harburg.de",
+      "quelle": "https://www.landkreis-harburg.de/verkehr-ordnung/auto-fuehrerschein/"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=harburg_kreis",
+      "quelle": "https://www.landkreis-harburg.de/verkehr-ordnung/auto-fuehrerschein/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Winsen: Mo und Di 07:30–17:00 Uhr",
+        "Winsen: Mi und Fr 07:30–12:00 Uhr",
+        "Winsen: Do 07:30–18:00 Uhr",
+        "Winsen: Sa 08:30–12:00 Uhr",
+        "Buchholz und Seevetal-Hittfeld: Mo und Di 08:00–16:00 Uhr",
+        "Buchholz und Seevetal-Hittfeld: Mi und Fr 08:00–12:00 Uhr",
+        "Buchholz und Seevetal-Hittfeld: Do 08:00–17:00 Uhr"
+      ],
+      "hinweis": "Besuch nur nach Terminvereinbarung (Online-Termin-Tool: https://termin.landkreis-harburg.de).",
+      "quelle": "https://www.landkreis-harburg.de/verkehr-ordnung/auto-fuehrerschein/"
+    },
+    "zustaendigkeit": {
+      "text": "BürgerService/Kfz-Zulassung des Landkreises Harburg (Kennzeichen WL, Kreissitz Winsen (Luhe)) mit den Standorten Winsen, Buchholz und Hittfeld; zuständig, wenn Sie Ihren Wohnsitz im Landkreis Harburg haben.",
+      "quelle": "https://www.landkreis-harburg.de/verkehr-ordnung/auto-fuehrerschein/services-kfz-zulassung-buergerservice/"
+    },
+    "kuerzel": [
+      {
+        "code": "WL",
+        "bedeutung": "Winsen (Luhe)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Samstags hat der Standort Winsen des BürgerService geöffnet (Ausnahme: Osterwochenende sowie Heiligabend/Silvester); die Führerscheinstelle ist samstags geschlossen.",
+        "quelle": "https://www.landkreis-harburg.de/portal/seiten/leistungen-buergerservice-am-samstag-901000066-20100.html"
+      },
+      {
+        "text": "Online-Auskunft für finanzierte oder geleaste Fahrzeuge: Dort lässt sich prüfen, ob der vom Händler oder der Bank versandte Fahrzeugbrief bereits eingegangen ist und an welchem Standort er liegt.",
+        "quelle": "https://www.landkreis-harburg.de/verkehr-ordnung/auto-fuehrerschein/"
+      },
+      {
+        "text": "Online reservierte Wunschkennzeichen bleiben vier Wochen gespeichert; empfohlen wird, das Schild erst nach Zulassung und Freigabe prägen zu lassen.",
+        "quelle": "https://www.landkreis-harburg.de/verkehr-ordnung/auto-fuehrerschein/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-heidekreis",
+    "stadt": "Landkreis Heidekreis",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Heidekreis, Dienstleistungsbüro (Kfz-Zulassung und Führerschein)",
+    "behoerdeQuelle": "https://www.heidekreis.de/verwaltung-politik/dienstleistungsburo.html",
+    "traeger": "Landkreis Heidekreis",
+    "standorte": [
+      {
+        "bezeichnung": "Dienstleistungsbüro Bad Fallingbostel",
+        "strasse": "Vogteistraße 19",
+        "plz": "29683",
+        "ort": "Bad Fallingbostel",
+        "quelle": "https://www.heidekreis.de/verwaltung-politik/dienstleistungsburo.html"
+      },
+      {
+        "bezeichnung": "Dienstleistungsbüro Soltau",
+        "strasse": "Harburger Straße 2",
+        "plz": "29614",
+        "ort": "Soltau",
+        "quelle": "https://www.heidekreis.de/verwaltung-politik/dienstleistungsburo.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.heidekreis.de/umwelt-verkehr/verkehr/kfz-zulassung.html",
+      "quelle": "https://www.heidekreis.de/umwelt-verkehr/verkehr/kfz-zulassung.html"
+    },
+    "terminUrl": {
+      "url": "https://egov3.heidekreis.de/m/lk-heidekreis/extern/calendar/?uid=72d3b41a-28af-45a5-8043-51996cd492de&lang=de",
+      "quelle": "https://www.heidekreis.de/umwelt-verkehr/verkehr/kfz-zulassung.html"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-heidekreis-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=heidekreis_kreis",
+      "quelle": "https://www.heidekreis.de/verwaltung-politik/dienstleistungsburo.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo und Di 07:30–16:00 Uhr",
+        "Mi 07:30–13:00 Uhr",
+        "Do 07:30–18:00 Uhr",
+        "Fr 07:30–12:00 Uhr",
+        "Sa geschlossen"
+      ],
+      "hinweis": "Vormittags (Mo–Fr 7:30–11:30 Uhr) ohne Termin; nachmittags nur mit vorheriger Terminbuchung. Alle Kundinnen und Kunden müssen sich vor Ort am Terminal einchecken.",
+      "quelle": "https://www.heidekreis.de/verwaltung-politik/dienstleistungsburo.html"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassung des Landkreises Heidekreis (Kennzeichen HK) mit den Dienstleistungsbüros in Bad Fallingbostel und Soltau; eingeschränkte Zulassungen zusätzlich in den Bürgerbüros der Städte Schneverdingen und Munster sowie der Samtgemeinde Schwarmstedt.",
+      "quelle": "https://www.heidekreis.de/umwelt-verkehr/verkehr/kfz-zulassung.html"
+    },
+    "kuerzel": [
+      {
+        "code": "HK",
+        "bedeutung": "Heidekreis",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Kfz-Zulassungen sind auch in den Bürgerbüros Schneverdingen, Munster und Schwarmstedt möglich, außer bei Importfahrzeugen, Ausfuhr- und Wechselkennzeichen, roten 06-Kennzeichen, Oldtimer-Kennzeichen (07 und H) und abweichenden Kennzeichengrößen.",
+        "quelle": "https://www.heidekreis.de/umwelt-verkehr/verkehr/kfz-zulassung.html"
+      },
+      {
+        "text": "Keine Zulassung, solange Rückstände an Verwaltungsgebühren aus dem Kfz-Zulassungswesen beim Heidekreis oder Kfz-Steuerrückstände beim Zoll bestehen.",
+        "quelle": "https://www.heidekreis.de/umwelt-verkehr/verkehr/kfz-zulassung.html"
+      },
+      {
+        "text": "Termine werden bis zu zwei Monate im Voraus angeboten; bei sehr hohem Andrang kann das Einchecken ohne Termin schon vor 11:30 Uhr enden.",
+        "quelle": "https://www.heidekreis.de/verwaltung-politik/dienstleistungsburo.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-helmstedt",
+    "stadt": "Landkreis Helmstedt",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Helmstedt, Kfz-Zulassungsstelle (KFZ-Zulassungsangelegenheiten)",
+    "behoerdeQuelle": "https://www.landkreis-helmstedt.de/menschen-leben/fahrzeug-verkehr/kfz-angelegenheiten/",
+    "traeger": "Landkreis Helmstedt",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle, Kreishaus 6",
+        "strasse": "Südstraße 10",
+        "plz": "38350",
+        "ort": "Helmstedt",
+        "quelle": "https://www.landkreis-helmstedt.de/portal/seiten/online-terminvergabe-900000301-34150.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-helmstedt.de/menschen-leben/fahrzeug-verkehr/kfz-angelegenheiten/",
+      "quelle": "https://www.landkreis-helmstedt.de/menschen-leben/fahrzeug-verkehr/kfz-angelegenheiten/"
+    },
+    "terminUrl": {
+      "url": "https://www.landkreis-helmstedt.de/portal/seiten/online-terminvergabe-900000301-34150.html",
+      "quelle": "https://www.landkreis-helmstedt.de/menschen-leben/fahrzeug-verkehr/kfz-angelegenheiten/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.landkreis-helmstedt.de/buergerservice/online/angebot/fahrzeugzulassung-ikfz-privat--900000005-34150.html",
+      "quelle": "https://www.landkreis-helmstedt.de/menschen-leben/fahrzeug-verkehr/internetbasierte-fahrzeugzulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–11:30 Uhr",
+        "Di 08:00–11:30 und 14:00–17:00 Uhr",
+        "Mi 08:00–11:30 Uhr",
+        "Do 08:00–11:30 Uhr",
+        "Fr 08:00–11:30 Uhr"
+      ],
+      "hinweis": "Sämtliche Kfz-Vorgänge nur nach Terminvereinbarung (möglichst online, sonst telefonisch). Kein Zutritt ohne vorherige Terminvereinbarung und ohne Kennzeichenschilder.",
+      "quelle": "https://www.landkreis-helmstedt.de/menschen-leben/fahrzeug-verkehr/kfz-angelegenheiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle des Landkreises Helmstedt (Kennzeichen HE). Zum Kreisgebiet gehören die Städte Helmstedt, Königslutter am Elm und Schöningen, die Gemeinde Lehre sowie die Samtgemeinden Grasleben, Heeseberg, Nord-Elm und Velpke.",
+      "quelle": "https://www.landkreis-helmstedt.de/unser-landkreis/verwaltung/kreis-im-ueberblick/staedte-und-gemeinden-im-landkreis/"
+    },
+    "kuerzel": [
+      {
+        "code": "HE",
+        "bedeutung": "Helmstedt",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Kennzeichenschilder müssen schon vor dem Termin geprägt sein. Dafür vorher ein Kennzeichen reservieren (möglichst online) oder telefonisch unter 05351 121-1000 eines „aus der Reihe“ zuteilen lassen.",
+        "quelle": "https://www.landkreis-helmstedt.de/menschen-leben/fahrzeug-verkehr/kfz-angelegenheiten/"
+      },
+      {
+        "text": "Pro Termin werden höchstens zwei Zulassungsvorgänge bearbeitet; für nicht alltägliche Fahrzeuge (z. B. Wohnmobil, Importe aus Nicht-EU-Ländern) bei der Online-Buchung immer zwei Vorgänge wählen.",
+        "quelle": "https://www.landkreis-helmstedt.de/portal/seiten/online-terminvergabe-900000301-34150.html"
+      },
+      {
+        "text": "Der Zugang zur Zulassungsstelle ist nicht barrierefrei; über eine Außenklingel helfen die Mitarbeitenden weiter.",
+        "quelle": "https://www.landkreis-helmstedt.de/menschen-leben/fahrzeug-verkehr/kfz-angelegenheiten/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-hildesheim",
+    "stadt": "Landkreis Hildesheim",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Hildesheim, Straßenverkehrsamt – Kfz-Zulassungsstellen Hildesheim und Alfeld",
+    "behoerdeQuelle": "https://www.landkreishildesheim.de/Leistungen/Stra%C3%9Fenverkehrsamt/KFZ-Zulassung/",
+    "traeger": "Landkreis Hildesheim",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Hildesheim",
+        "strasse": "Bavenstedter Straße 50",
+        "plz": "31135",
+        "ort": "Hildesheim",
+        "quelle": "https://www.landkreishildesheim.de/Leistungen/Stra%C3%9Fenverkehrsamt/KFZ-Zulassung/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Alfeld",
+        "strasse": "Ständehausstraße 1",
+        "plz": "31061",
+        "ort": "Alfeld (Leine)",
+        "quelle": "https://www.landkreishildesheim.de/Leistungen/Stra%C3%9Fenverkehrsamt/KFZ-Zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreishildesheim.de/Leistungen/Stra%C3%9Fenverkehrsamt/KFZ-Zulassung/",
+      "quelle": "https://www.landkreishildesheim.de/Leistungen/Stra%C3%9Fenverkehrsamt/KFZ-Zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://terminvergabe.landkreishildesheim.de/?START_OFFICEGROUP=Zulassungsstelle",
+      "quelle": "https://www.landkreishildesheim.de/Leistungen/Stra%C3%9Fenverkehrsamt/KFZ-Zulassung/"
+    },
+    "ikfzUrl": null,
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Fr 07:30–12:00 Uhr",
+        "Do zusätzlich 14:00–17:30 Uhr"
+      ],
+      "hinweis": "Gilt für die Zulassungsstellen Hildesheim und Alfeld. Vorsprache ohne Termin während der Öffnungszeiten möglich; ergänzend können Termine online gebucht werden, um längere Wartezeiten zu vermeiden.",
+      "quelle": "https://www.landkreishildesheim.de/Leistungen/Stra%C3%9Fenverkehrsamt/KFZ-Zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Straßenverkehrsamt des Landkreises Hildesheim für Stadt und Landkreis Hildesheim: Neuzulassungen in der Stadt Hildesheim und im Landkreis werden generell beim Straßenverkehrsamt des Landkreises beantragt (Zulassungsstellen in Hildesheim und Alfeld). Die Stadt Hildesheim hat keine eigene Zulassungsstelle.",
+      "quelle": "https://www.stadt-hildesheim.de/buergerservice/dienstleistungen/zulassungsbescheinigung-teil-i-aenderung-900000018-0.html?myMedium=1&auswahl=0"
+    },
+    "kuerzel": [
+      {
+        "code": "HI",
+        "bedeutung": "Hildesheim",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ALF",
+        "bedeutung": "Alfeld (Leine)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Online-Fahrzeugzulassung (i-Kfz) ist laut Landkreis derzeit aus technischen Gründen nicht verfügbar.",
+        "quelle": "https://www.landkreishildesheim.de/Leistungen/Stra%C3%9Fenverkehrsamt/KFZ-Zulassung/"
+      },
+      {
+        "text": "Nach einem Umzug in die Stadt Hildesheim oder innerhalb der Stadt kann die neue Anschrift in der Zulassungsbescheinigung Teil I auch im Stadtbüro der Stadt Hildesheim eingetragen werden.",
+        "quelle": "https://www.stadt-hildesheim.de/buergerservice/dienstleistungen/zulassungsbescheinigung-teil-i-aenderung-900000018-0.html?myMedium=1&auswahl=0"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "ikfzUrl"
+    ]
+  },
+  {
+    "slug": "landkreis-holzminden",
+    "stadt": "Landkreis Holzminden",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Holzminden, Straßenverkehr und Ordnungswidrigkeiten (3.36) – Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.landkreis-holzminden.de/service/haeufig-gesucht/kfz-zulassungsbehoerde/",
+    "traeger": "Landkreis Holzminden",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde (Straßenverkehrsamt)",
+        "strasse": "Rehwiese 35",
+        "plz": "37603",
+        "ort": "Holzminden",
+        "quelle": "https://www.landkreis-holzminden.de/service/haeufig-gesucht/kfz-zulassungsbehoerde/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-holzminden.de/service/haeufig-gesucht/kfz-zulassungsbehoerde/",
+      "quelle": "https://www.landkreis-holzminden.de/service/haeufig-gesucht/kfz-zulassungsbehoerde/"
+    },
+    "terminUrl": {
+      "url": "https://cqm.cleverq.de/public/sites/59/appointments/index.html?lang=de",
+      "quelle": "https://www.landkreis-holzminden.de/service/haeufig-gesucht/kfz-zulassungsbehoerde/"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-holzminden-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=holzminden_kreis",
+      "quelle": "https://www.landkreis-holzminden.de/service/haeufig-gesucht/kfz-zulassungsbehoerde/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Fr 08:00–12:00 Uhr",
+        "Mo und Di 14:00–16:00 Uhr",
+        "Do 14:00–17:00 Uhr"
+      ],
+      "hinweis": "Persönliche Vorsprachen sind ausschließlich nach vorheriger Terminvereinbarung möglich; Termine bitte ausschließlich online buchen (telefonisch nur im Ausnahmefall).",
+      "quelle": "https://www.landkreis-holzminden.de/service/haeufig-gesucht/kfz-zulassungsbehoerde/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Holzminden (Kennzeichen HOL): zuständig für die An-, Um- und Abmeldung von Fahrzeugen, deren Halter im Landkreis Holzminden gemeldet ist.",
+      "quelle": "https://www.landkreis-holzminden.de/service/haeufig-gesucht/kfz-zulassungsbehoerde/"
+    },
+    "kuerzel": [
+      {
+        "code": "HOL",
+        "bedeutung": "Holzminden",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Online-Termine werden mit acht Wochen Vorlauf freigegeben; abgesagte Termine stehen sofort wieder zur Verfügung, oft noch am selben Tag.",
+        "quelle": "https://www.landkreis-holzminden.de/service/haeufig-gesucht/kfz-zulassungsbehoerde/"
+      },
+      {
+        "text": "Frühestens 5 Minuten vor dem Termin erscheinen; der Termin verfällt nach 15 Minuten. Aufruf per Buchungscode am Monitor, eine Anmeldung an der Info ist nicht nötig.",
+        "quelle": "https://www.landkreis-holzminden.de/service/haeufig-gesucht/kfz-zulassungsbehoerde/"
+      },
+      {
+        "text": "Bei Neuzulassung spezieller Fahrzeuge mit mehreren CoC-Papieren (z. B. die meisten Wohnmobile, Nutzfahrzeuge, selbstfahrende Arbeitsmaschinen) ist eine Datenbestätigung, etwa vom TÜV, erforderlich.",
+        "quelle": "https://www.landkreis-holzminden.de/service/haeufig-gesucht/kfz-zulassungsbehoerde/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-leer",
+    "stadt": "Landkreis Leer",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Leer, Straßenverkehrsamt – Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-leer.de/Themen/Ordnung-Verkehr/Stra%C3%9Fenverkehrsamt/Zulassung/",
+    "traeger": "Landkreis Leer",
+    "standorte": [
+      {
+        "bezeichnung": "Straßenverkehrsamt, KFZ-Zulassung",
+        "strasse": "Deichstraße 26",
+        "plz": "26789",
+        "ort": "Leer (Ostfriesland)",
+        "quelle": "https://www.landkreis-leer.de/Themen/Ordnung-Verkehr/Stra%C3%9Fenverkehrsamt/Zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-leer.de/Themen/Ordnung-Verkehr/Stra%C3%9Fenverkehrsamt/Zulassung/",
+      "quelle": "https://www.landkreis-leer.de/Themen/Ordnung-Verkehr/Stra%C3%9Fenverkehrsamt/Zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://tevis.lkleer.de/",
+      "quelle": "https://www.landkreis-leer.de/Themen/Ordnung-Verkehr/Stra%C3%9Fenverkehrsamt/Zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-leer-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=leer_kreis",
+      "quelle": "https://www.landkreis-leer.de/Themen/Ordnung-Verkehr/Stra%C3%9Fenverkehrsamt/Zulassung/Fahrzeuge-online-zulassen.php?object=tx%7c3399.5.1&ModID=7&FID=3399.28673.1&NavID=3399.206"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Fr 07:30–12:30 Uhr",
+        "Mo und Di 13:30–15:30 Uhr",
+        "Do 13:30–17:00 Uhr"
+      ],
+      "hinweis": "Sämtliche Zulassungsvorgänge grundsätzlich nach vorheriger Terminvereinbarung (online oder telefonisch unter 0491 926-1409).",
+      "quelle": "https://www.landkreis-leer.de/Services/Standorte-%C3%96ffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsstelle im Straßenverkehrsamt des Landkreises Leer (Kennzeichen LER) für Zulassungen im Landkreis Leer, einschließlich Umschreibungen von Fahrzeugen, die zuvor in einem anderen Landkreis zugelassen waren.",
+      "quelle": "https://www.landkreis-leer.de/Themen/Ordnung-Verkehr/Stra%C3%9Fenverkehrsamt/Zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "LER",
+        "bedeutung": "Leer",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Blättert ein Kennzeichen ab, kann das gleiche Kennzeichen neu gedruckt werden; mit altem und neuem Schild kommen, die Siegel werden umgesetzt (Online-Termin unter „Neues Niedersachsensiegel“).",
+        "quelle": "https://www.landkreis-leer.de/Themen/Ordnung-Verkehr/Stra%C3%9Fenverkehrsamt/Zulassung/"
+      },
+      {
+        "text": "Ohne gültige Hauptuntersuchung gilt ein Kurzzeitkennzeichen nur im Landkreis Leer.",
+        "quelle": "https://www.landkreis-leer.de/Themen/Ordnung-Verkehr/Stra%C3%9Fenverkehrsamt/Zulassung/"
+      },
+      {
+        "text": "Bei Exportkennzeichen muss das Fahrzeug zum Abgleich der Fahrgestellnummer vor Ort sein.",
+        "quelle": "https://www.landkreis-leer.de/Themen/Ordnung-Verkehr/Stra%C3%9Fenverkehrsamt/Zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-luechow-dannenberg",
+    "stadt": "Landkreis Lüchow-Dannenberg",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Lüchow-Dannenberg, Fachdienst 36 Straßenverkehr – Zulassungsstelle",
+    "behoerdeQuelle": "https://www.luechow-dannenberg.de/menschen-leben/fahrzeug-verkehr/kfz-zulassung/",
+    "traeger": "Landkreis Lüchow-Dannenberg",
+    "standorte": [
+      {
+        "bezeichnung": "Straßenverkehr – Zulassungsstelle (Fachdienst 36)",
+        "strasse": "Tannenbergstraße 2",
+        "plz": "29439",
+        "ort": "Lüchow (Wendland)",
+        "quelle": "https://www.luechow-dannenberg.de/menschen-leben/fahrzeug-verkehr/kfz-zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.luechow-dannenberg.de/menschen-leben/fahrzeug-verkehr/kfz-zulassung/",
+      "quelle": "https://www.luechow-dannenberg.de/menschen-leben/fahrzeug-verkehr/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://tnv.luechow-dannenberg.de/tnv/?renderer=responsive",
+      "quelle": "https://www.luechow-dannenberg.de/menschen-leben/fahrzeug-verkehr/kfz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-luechow-dannenberg-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=luechow-dannenberg_kreis",
+      "quelle": "https://www.luechow-dannenberg.de/menschen-leben/fahrzeug-verkehr/kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Fr 07:00–12:00 Uhr"
+      ],
+      "hinweis": "Termine vergibt die Kfz-Zulassungsstelle ausschließlich online; bitte vor dem Besuch einen Termin vereinbaren.",
+      "quelle": "https://www.luechow-dannenberg.de/menschen-leben/fahrzeug-verkehr/kfz-zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsstelle des Landkreises Lüchow-Dannenberg (Kennzeichen DAN) mit Sitz in Lüchow (Wendland) für An-, Um- und Abmeldungen im Landkreis.",
+      "quelle": "https://www.luechow-dannenberg.de/menschen-leben/fahrzeug-verkehr/kfz-zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "DAN",
+        "bedeutung": "Dannenberg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Freitags gegen 11 Uhr werden die Termine für die folgende Woche freigeschaltet; je nach Personallage kommen montags bis freitags bis 8 Uhr kurzfristige Termine hinzu.",
+        "quelle": "https://www.luechow-dannenberg.de/menschen-leben/fahrzeug-verkehr/kfz-zulassung/"
+      },
+      {
+        "text": "Die Buchungsbestätigung muss zum Termin mitgebracht werden (ausgedruckt oder auf dem Smartphone); bei mehr als fünf Minuten Verspätung kann der Termin verfallen.",
+        "quelle": "https://www.luechow-dannenberg.de/menschen-leben/fahrzeug-verkehr/kfz-zulassung/"
+      },
+      {
+        "text": "Nicht online möglich sind u. a. Technikänderungen, H-Kennzeichen, Kurzzeitkennzeichen, Fahrzeuge aus dem Ausland sowie Zulassungen für Minderjährige oder juristische Personen.",
+        "quelle": "https://www.luechow-dannenberg.de/menschen-leben/fahrzeug-verkehr/kfz-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-lueneburg",
+    "stadt": "Landkreis Lüneburg",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Lüneburg, Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-lueneburg.de/fuer-unsere-buergerinnen-und-buerger/mobil-im-landkreis/autoverkehr.html",
+    "traeger": "Landkreis Lüneburg",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassung Hauptstelle Lüneburg (Erdgeschoss)",
+        "strasse": "Am Springintgut 3",
+        "plz": "21335",
+        "ort": "Lüneburg",
+        "quelle": "https://www.landkreis-lueneburg.de/fuer-unsere-buergerinnen-und-buerger/mobil-im-landkreis/autoverkehr.html"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassung Außenstelle Samtgemeinde Amelinghausen",
+        "strasse": "Lüneburger Straße 50",
+        "plz": "21385",
+        "ort": "Amelinghausen",
+        "quelle": "https://tnv.lklg.net/?START_OFFICE=KFZAM"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassung Außenstelle Stadt Bleckede",
+        "strasse": "Lüneburger Straße 2",
+        "plz": "21354",
+        "ort": "Bleckede",
+        "quelle": "https://tnv.lklg.net/?START_OFFICE=KFZBL"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-lueneburg.de/fuer-unsere-buergerinnen-und-buerger/mobil-im-landkreis/autoverkehr/kfz-zulassung-vor-ort.html",
+      "quelle": "https://www.landkreis-lueneburg.de/fuer-unsere-buergerinnen-und-buerger/mobil-im-landkreis/autoverkehr/kfz-zulassung-vor-ort.html"
+    },
+    "terminUrl": {
+      "url": "https://landkreis-lueneburg.termine-reservieren.online/select2?md=1",
+      "quelle": "https://www.landkreis-lueneburg.de/fuer-unsere-buergerinnen-und-buerger/mobil-im-landkreis/autoverkehr/kfz-zulassung-vor-ort.html"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-lueneburg-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=lueneburg_kreis",
+      "quelle": "https://www.landkreis-lueneburg.de/fuer-unsere-buergerinnen-und-buerger/mobil-im-landkreis/autoverkehr/kfz-zulassung-online.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Lüneburg: Mo, Di, Do, Fr 07:30–12:00 Uhr",
+        "Lüneburg: Di zusätzlich 13:30–17:00 Uhr",
+        "Lüneburg: Mi nur mit Termin",
+        "Bleckede und Amelinghausen: nur mit Termin"
+      ],
+      "hinweis": "Am Standort Lüneburg ist An-, Ab- und Ummelden ohne Termin möglich (Wartemarken), mittwochs nur mit Termin; in Amelinghausen und Bleckede immer nur mit Termin.",
+      "quelle": "https://www.landkreis-lueneburg.de/fuer-unsere-buergerinnen-und-buerger/mobil-im-landkreis/autoverkehr/kfz-zulassung-vor-ort.html"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassung des Landkreises Lüneburg (Kennzeichen LG) für den gesamten Landkreis einschließlich der Hansestadt Lüneburg, mit der Hauptstelle in Lüneburg und Außenstellen in Amelinghausen und Bleckede.",
+      "quelle": "https://www.landkreis-lueneburg.de/fuer-unsere-buergerinnen-und-buerger/mobil-im-landkreis/autoverkehr/kfz-zulassung-vor-ort.html"
+    },
+    "kuerzel": [
+      {
+        "code": "LG",
+        "bedeutung": "Lüneburg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "In Lüneburg werden ohne Termin Wartemarken ausgegeben: Mo, Di, Do und Fr 7:30–12:00 Uhr sowie Di 13:30–17:00 Uhr. Mittwochs werden nur Kundinnen und Kunden mit Termin bedient.",
+        "quelle": "https://www.landkreis-lueneburg.de/fuer-unsere-buergerinnen-und-buerger/mobil-im-landkreis/autoverkehr/kfz-zulassung-vor-ort.html"
+      },
+      {
+        "text": "Bei Verlust des Fahrzeugbriefs (Zulassungsbescheinigung Teil II) muss der Halter den Verlust persönlich erklären; eine Vollmacht ist hier nicht möglich.",
+        "quelle": "https://www.landkreis-lueneburg.de/fuer-unsere-buergerinnen-und-buerger/mobil-im-landkreis/autoverkehr/kfz-zulassung-vor-ort.html"
+      },
+      {
+        "text": "Mit i-Kfz Stufe 4 laufen Online-An-, Um- und Abmeldungen standardmäßig vollautomatisch, ohne Prüfung durch die Zulassungsstelle.",
+        "quelle": "https://www.landkreis-lueneburg.de/fuer-unsere-buergerinnen-und-buerger/mobil-im-landkreis/autoverkehr/kfz-zulassung-online.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-nienburg-weser",
+    "stadt": "Landkreis Nienburg/Weser",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Nienburg/Weser, Fachdienst 173 Straßenverkehr, Team 173.2 Zulassung",
+    "behoerdeQuelle": "https://www.lk-nienburg.de/politik-verwaltung/ordnung-verkehr/strassenverkehr/zulassung/",
+    "traeger": "Landkreis Nienburg/Weser",
+    "standorte": [
+      {
+        "bezeichnung": "Straßenverkehrsamt, Team Zulassung",
+        "strasse": "Kräher Weg 60",
+        "plz": "31582",
+        "ort": "Nienburg/Weser",
+        "quelle": "https://www.lk-nienburg.de/politik-verwaltung/ordnung-verkehr/strassenverkehr/zulassung/"
+      },
+      {
+        "bezeichnung": "Außenstelle Samtgemeinde Grafschaft Hoya",
+        "strasse": "Schloßplatz 2",
+        "plz": "27318",
+        "ort": "Hoya/Weser",
+        "quelle": "https://www.rehburg-loccum.de/rathaus/kfz-zulassung/"
+      },
+      {
+        "bezeichnung": "Außenstelle Stadt Rehburg-Loccum (Stadtverwaltung)",
+        "strasse": "Heidtorstraße 2",
+        "plz": "31547",
+        "ort": "Rehburg-Loccum",
+        "quelle": "https://www.rehburg-loccum.de/rathaus/kfz-zulassung/"
+      },
+      {
+        "bezeichnung": "Außenstelle Samtgemeinde Uchte",
+        "strasse": "Balkenkamp 1",
+        "plz": "31600",
+        "ort": "Uchte",
+        "quelle": "https://www.rehburg-loccum.de/rathaus/kfz-zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.lk-nienburg.de/politik-verwaltung/ordnung-verkehr/strassenverkehr/zulassung/",
+      "quelle": "https://www.lk-nienburg.de/politik-verwaltung/ordnung-verkehr/strassenverkehr/zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termine.lk-ni.de/TeVIS/",
+      "quelle": "https://www.lk-nienburg.de/politik-verwaltung/ordnung-verkehr/strassenverkehr/zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-nienburg-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=nienburg_kreis",
+      "quelle": "https://www.lk-nienburg.de/politik-verwaltung/ordnung-verkehr/strassenverkehr/zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Täglich 07:30–12:30 Uhr",
+        "Di zusätzlich 14:00–18:00 Uhr",
+        "Do zusätzlich 14:00–16:00 Uhr"
+      ],
+      "hinweis": "Für den Besuch der Zulassungsstelle im Kräher Weg ist eine vorherige Terminbuchung notwendig (online oder unter Tel. 05021 967-700).",
+      "quelle": "https://www.lk-nienburg.de/politik-verwaltung/ordnung-verkehr/strassenverkehr/zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Straßenverkehrsamt des Landkreises Nienburg/Weser (Kennzeichen NI) mit der Hauptstelle im Kräher Weg in Nienburg sowie Außenstellen in der Samtgemeinde Grafschaft Hoya, der Stadt Rehburg-Loccum und der Samtgemeinde Uchte.",
+      "quelle": "https://www.lk-nienburg.de/portal/seiten/service-in-den-aussenstellen-394-21500.html?rubrik=5"
+    },
+    "kuerzel": [
+      {
+        "code": "NI",
+        "bedeutung": "Nienburg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "In den Außenstellen (Grafschaft Hoya, Rehburg-Loccum, Uchte) sind u. a. Neu- und Wiederzulassungen, Umschreibungen, Abmeldungen und 5-Tage-Kurzzeitkennzeichen möglich; alle weiteren Dienstleistungen gibt es nur in Nienburg.",
+        "quelle": "https://www.lk-nienburg.de/portal/seiten/service-in-den-aussenstellen-394-21500.html?rubrik=5"
+      },
+      {
+        "text": "Termine für die Zulassungs- und Führerscheinstelle können bis zu 14 Tage im Voraus online gebucht werden.",
+        "quelle": "https://www.lk-nienburg.de/buergerservice/adressen-und-oeffnungszeiten/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-northeim",
+    "stadt": "Landkreis Northeim",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Northeim, Zulassungsstellen Northeim, Einbeck und Uslar",
+    "behoerdeQuelle": "https://www.landkreis-northeim.de/strassenverkehr-und-mobilitaet/strassenverkehr/zulassungsstellen/",
+    "traeger": "Landkreis Northeim",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Northeim",
+        "strasse": "Von-Menzel-Straße 7",
+        "plz": "37154",
+        "ort": "Northeim",
+        "quelle": "https://www.landkreis-northeim.de/buergerservice/verwaltung/zulassungsstelle-northeim-900000964-23900.html"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Einbeck",
+        "strasse": "Hullerser Straße 19",
+        "plz": "37574",
+        "ort": "Einbeck",
+        "quelle": "https://www.landkreis-northeim.de/buergerservice/verwaltung/zulassungsstelle-einbeck-900000963-23900.html"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Uslar",
+        "strasse": "Gerhart-Hauptmann-Straße 10",
+        "plz": "37170",
+        "ort": "Uslar",
+        "quelle": "https://www.landkreis-northeim.de/buergerservice/verwaltung/zulassungsstelle-uslar-900000965-23900.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-northeim.de/strassenverkehr-und-mobilitaet/strassenverkehr/zulassungsstellen/",
+      "quelle": "https://www.landkreis-northeim.de/strassenverkehr-und-mobilitaet/strassenverkehr/zulassungsstellen/"
+    },
+    "terminUrl": null,
+    "ikfzUrl": {
+      "url": "https://landkreis-northeim-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=northeim_kreis",
+      "quelle": "https://www.landkreis-northeim.de/buergerservice/dienstleistungen/i-kfz-internetbasierte-zulassung-900001351-23900.html?myMedium=1&selected_kommune=23900"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Northeim: Mo, Mi und Fr 08:00–11:30 Uhr",
+        "Northeim: Di und Do 08:00–11:30 und 14:00–16:00 Uhr",
+        "Einbeck und Uslar: Mo und Fr 08:00–11:30 Uhr",
+        "Einbeck und Uslar: Di und Do 08:00–11:30 und 14:00–16:00 Uhr",
+        "Einbeck und Uslar: Mi geschlossen"
+      ],
+      "hinweis": null,
+      "quelle": "https://www.landkreis-northeim.de/buergerservice/verwaltung/zulassungsstelle-northeim-900000964-23900.html"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsstellen des Landkreises Northeim (Kennzeichen NOM, EIN und GAN) in Northeim, Einbeck und Uslar; eine eigene Zulassungsstelle in Bad Gandersheim wird auf den Kreisseiten nicht genannt.",
+      "quelle": "https://www.landkreis-northeim.de/strassenverkehr-und-mobilitaet/strassenverkehr/zulassungsstellen/"
+    },
+    "kuerzel": [
+      {
+        "code": "NOM",
+        "bedeutung": "Northeim",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "EIN",
+        "bedeutung": "Einbeck",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GAN",
+        "bedeutung": "Bad Gandersheim",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Der Landkreis betreibt drei Zulassungsstellen (Northeim, Einbeck, Uslar); Einbeck und Uslar sind mittwochs geschlossen.",
+        "quelle": "https://www.landkreis-northeim.de/strassenverkehr-und-mobilitaet/strassenverkehr/zulassungsstellen/"
+      },
+      {
+        "text": "Für die Online-Zulassung (i-Kfz Stufe 4) ist eine Identifikation mit der BundID (Privatpersonen) bzw. Mein Unternehmenskonto (Unternehmen) nötig.",
+        "quelle": "https://www.landkreis-northeim.de/buergerservice/dienstleistungen/i-kfz-internetbasierte-zulassung-900001351-23900.html?myMedium=1&selected_kommune=23900"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "terminUrl",
+      "oeffnungszeiten.hinweis"
+    ]
+  },
+  {
+    "slug": "landkreis-oldenburg",
+    "stadt": "Landkreis Oldenburg",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Landkreis Oldenburg, Straßenverkehrsamt – Kfz-Zulassungsstelle (36 – Zulassungsstelle)",
+    "behoerdeQuelle": "https://www.oldenburg-kreis.de/ordnung-und-verkehr/kfz-zulassungsstelle/",
+    "traeger": "Landkreis Oldenburg",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle im Kreishaus Wildeshausen",
+        "strasse": "Delmenhorster Straße 6",
+        "plz": "27793",
+        "ort": "Wildeshausen",
+        "quelle": "https://www.oldenburg-kreis.de/ordnung-und-verkehr/kfz-zulassungsstelle/"
+      },
+      {
+        "bezeichnung": "Außenstelle im Rathaus Großenkneten",
+        "strasse": "Markt 1",
+        "plz": "26197",
+        "ort": "Großenkneten",
+        "quelle": "https://www.grossenkneten.de/rat-und-verwaltung/buergerservice/kfz-zulassung/"
+      },
+      {
+        "bezeichnung": "Außenstelle im Rathaus Hude",
+        "strasse": "Parkstraße 53",
+        "plz": "27798",
+        "ort": "Hude",
+        "quelle": "https://www.hude.de/rathaus-politik/rathaus/kontakt/"
+      },
+      {
+        "bezeichnung": "Außenstelle im Bürgerbüro des Rathauses Wardenburg",
+        "strasse": "Friedrichstraße 16",
+        "plz": "26203",
+        "ort": "Wardenburg",
+        "quelle": "https://www.wardenburg.de/buergerservice/weitere-themen/kfz-angelegenheiten/"
+      }
+    ],
+    "website": {
+      "url": "https://www.oldenburg-kreis.de/ordnung-und-verkehr/kfz-zulassungsstelle/",
+      "quelle": "https://www.oldenburg-kreis.de/ordnung-und-verkehr/kfz-zulassungsstelle/"
+    },
+    "terminUrl": {
+      "url": "https://www.oldenburg-kreis.de/ordnung-und-verkehr/kfz-zulassungsstelle/online-terminvereinbarung/",
+      "quelle": "https://www.oldenburg-kreis.de/ordnung-und-verkehr/kfz-zulassungsstelle/"
+    },
+    "ikfzUrl": {
+      "url": "https://landkreis-oldenburg-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=oldenburg_kreis",
+      "quelle": "https://www.oldenburg-kreis.de/ordnung-und-verkehr/kfz-zulassungsstelle/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Fr 08:00–12:00 Uhr",
+        "Mo–Mi 13:00–15:00 Uhr",
+        "Do 13:00–18:00 Uhr"
+      ],
+      "hinweis": "Besuche in der Kfz-Zulassungsstelle (Kreishaus Wildeshausen) nur mit vorheriger Terminvereinbarung; die Zeiten gelten als Terminzeiten. Öffnungszeiten der Außenstellen auf den Seiten der jeweiligen Gemeinden.",
+      "quelle": "https://www.oldenburg-kreis.de/portal/seiten/oeffnungszeiten-900000003-21700.html?titel=%C3%96ffnungszeiten"
+    },
+    "zustaendigkeit": {
+      "text": "Wohnortprinzip: Mit Hauptwohnsitz (oder Firmensitz) im Landkreis Oldenburg ist die Zulassungsstelle des Landkreises zuständig (Kreishaus Wildeshausen sowie Außenstellen in Ganderkesee, Großenkneten, Hude und Wardenburg). Auch Fahrzeuge der kreisfreien Stadt Oldenburg tragen das Kennzeichen OL; für Einwohnerinnen und Einwohner der Stadt Oldenburg ist jedoch die Stadt Oldenburg zuständig, nicht der Landkreis.",
+      "quelle": "https://www.oldenburg-kreis.de/ordnung-und-verkehr/kfz-zulassungsstelle/"
+    },
+    "kuerzel": [
+      {
+        "code": "OL",
+        "bedeutung": "Oldenburg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Außenstellen in den Rathäusern bzw. Bürger-Service-Büros von Ganderkesee, Großenkneten, Hude und Wardenburg; Zulassungen sind unabhängig vom Wohnort im Kreisgebiet an allen Standorten möglich. Manche Vorgänge gibt es nur in Wildeshausen (z. B. Wechselkennzeichen, grünes Kennzeichen) bzw. nur in Wildeshausen und Ganderkesee (z. B. Oldtimer, Ausfuhrkennzeichen).",
+        "quelle": "https://www.oldenburg-kreis.de/ordnung-und-verkehr/kfz-zulassungsstelle/"
+      },
+      {
+        "text": "Die Außenstelle Großenkneten hat auch samstags von 10:00 bis 12:00 Uhr geöffnet.",
+        "quelle": "https://www.oldenburg-kreis.de/portal/seiten/oeffnungszeiten-900000003-21700.html?titel=%C3%96ffnungszeiten"
+      },
+      {
+        "text": "Termine für die Außenstellen werden über die Internetseiten der jeweiligen Gemeinden gebucht, in Ausnahmefällen telefonisch.",
+        "quelle": "https://www.oldenburg-kreis.de/ordnung-und-verkehr/kfz-zulassungsstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "standorte"
+    ]
+  }
+]

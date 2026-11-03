@@ -376,14 +376,14 @@ export const cities: City[] = [
     name: "Hannover",
     inName: "in Hannover",
     description:
-      `Kfz-Zulassung in Hannover ohne Behördengang: Wir übernehmen Ihre Zulassung bei der Region Hannover – digital, ohne Termin, zum Festpreis von ${P.zulassung}.`,
+      `Kfz-Zulassung in Hannover ohne Behördengang: Wir übernehmen Ihre Zulassung bei der zuständigen Behörde von Stadt oder Region Hannover – ohne Termin, Festpreis ${P.zulassung}.`,
     intro: [
-      "Besonderheit in Hannover: Zuständig für die Fahrzeugzulassung ist nicht die Stadt, sondern die Region Hannover – sie bedient Landeshauptstadt und Umlandkommunen gemeinsam. Entsprechend groß ist das Einzugsgebiet, entsprechend gefragt sind die Termine.",
-      "Für Sie spielt die Behördenstruktur keine Rolle: Wir wickeln Ihren Vorgang bei der zuständigen Stelle der Region ab – ob Sie in der List wohnen, in Laatzen oder in Langenhagen. H-Kennzeichen, Papiere und auf Wunsch Ihr Wunschkennzeichen kommen versichert zu Ihnen nach Hause.",
+      "Besonderheit in Hannover: Es gibt zwei Zulassungsbehörden. Wer in der Landeshauptstadt wohnt, ist bei der Kraftfahrzeugzulassungsbehörde der Stadt am Schützenplatz richtig; für die übrigen Städte und Gemeinden der Region ist die Region Hannover zuständig. Beide vergeben das Kennzeichen H.",
+      "Für Sie spielt die Behördenstruktur keine Rolle: Wir wickeln Ihren Vorgang bei der für Ihren Wohnort zuständigen Stelle ab – ob Sie in der List wohnen, in Laatzen oder in Langenhagen. Papiere und auf Wunsch Kennzeichenschilder kommen versichert zu Ihnen nach Hause.",
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "H" },
-      { label: "Zuständige Behörde", value: "Region Hannover, Fachbereich Verkehr (Zulassungsbehörde)" },
+      { label: "Zuständige Behörde", value: "Stadt Hannover: Kfz-Zulassungsbehörde der Landeshauptstadt · Umland: Region Hannover" },
       { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
@@ -391,7 +391,7 @@ export const cities: City[] = [
       {
         question: "Ich wohne im Umland von Hannover – bin ich bei Ihnen richtig?",
         answer:
-          "Ja. Die Region Hannover ist für Stadt und Umlandkommunen zuständig – von Barsinghausen bis Burgdorf. Wir wickeln Ihren Vorgang genau dort ab, Ihr Ablauf bleibt derselbe.",
+          "Ja. Für die Umlandkommunen – von Barsinghausen bis Burgdorf – ist die Region Hannover zuständig, für die Landeshauptstadt deren eigene Zulassungsbehörde. Wir wickeln Ihren Vorgang bei der richtigen Stelle ab, Ihr Ablauf bleibt derselbe.",
       },
       {
         question: "Verwechslungsgefahr: H-Kennzeichen und Oldtimer-H – was ist der Unterschied?",
@@ -401,13 +401,13 @@ export const cities: City[] = [
       {
         question: "Wie schnell ist eine Abmeldung in Hannover möglich?",
         answer:
-          "Meist taggleich: Codes freilegen, fotografieren, senden – die Abmeldebestätigung der Region Hannover erhalten Sie per E-Mail.",
+          "Meist taggleich: Codes freilegen, fotografieren, senden – die Abmeldebestätigung der zuständigen Behörde erhalten Sie per E-Mail.",
       },
     ],
     keywords: [
       "Kfz-Zulassung Hannover",
       "Auto anmelden Hannover",
-      "Region Hannover Zulassung ohne Termin",
+      "Zulassungsstelle Hannover ohne Termin",
       "Auto ummelden Hannover",
       "Zulassungsservice Hannover",
     ],

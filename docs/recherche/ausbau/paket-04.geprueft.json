@@ -1,0 +1,296 @@
+[
+  {
+    "slug": "landkreis-tuebingen",
+    "stadt": "Landkreis Tübingen",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Tübingen – Abteilung Verkehr und Straßen, Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.kreis-tuebingen.de/bauen_verkehr/verkehr/kfz",
+    "traeger": "Landkreis Tübingen",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle im Landratsamt Tübingen",
+        "strasse": "Wilhelm-Keil-Straße 50",
+        "plz": "72072",
+        "ort": "Tübingen",
+        "quelle": "https://www.kreis-tuebingen.de/bauen_verkehr/verkehr/kfz"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-tuebingen.de/bauen_verkehr/verkehr/kfz",
+      "quelle": "https://www.kreis-tuebingen.de/bauen_verkehr/verkehr/kfz"
+    },
+    "terminUrl": {
+      "url": "https://termin.kreis-tuebingen.de/m/lra-tuebingen/extern/calendar/?uid=ddb373a4-7188-4488-b7f3-2c23fa5ccf6b",
+      "quelle": "https://www.kreis-tuebingen.de/-/view+behoerdenwegweiser/kfz-zulassungsstelle-landratsamt-tuebingen/oe6029027"
+    },
+    "ikfzUrl": {
+      "url": "https://behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6017019&leistungId=99036020001000&p=084160",
+      "quelle": "https://www.kreis-tuebingen.de/bauen_verkehr/verkehr/kfz"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30–12:00 Uhr und 13:00–15:00 Uhr",
+        "Di 07:30–12:00 Uhr und 13:00–15:00 Uhr",
+        "Mi 07:30–12:00 Uhr und 13:00–15:00 Uhr",
+        "Do 07:30–12:00 Uhr und 13:00–17:00 Uhr (13:00–17:00 Uhr auch ohne Termin)",
+        "Fr 07:30–12:00 Uhr"
+      ],
+      "hinweis": "Für den Besuch ist grundsätzlich eine vorherige Terminreservierung erforderlich (bevorzugt online, auch per E-Mail oder Telefon). Nur donnerstags 13:00–17:00 Uhr ohne Termin; bei sehr hohem Andrang behält sich die Zulassungsstelle vor, die Wartemarkenausgabe früher zu schließen.",
+      "quelle": "https://www.kreis-tuebingen.de/-/view+behoerdenwegweiser/kfz-zulassungsstelle-landratsamt-tuebingen/oe6029027"
+    },
+    "zustaendigkeit": {
+      "text": "Das Landratsamt Tübingen ist Zulassungsbehörde für alle Halter mit Hauptwohnsitz, Betriebssitz oder Niederlassung (bzw. Fahrzeugstandort) im Landkreis Tübingen. Das gilt auch für die Stadt Tübingen: Sie gehört zum Landkreis (kein Stadtkreis) und hat keine eigene Zulassungsstelle – in Baden-Württemberg ist nur in Stadtkreisen die Stadtverwaltung Zulassungsbehörde, sonst das Landratsamt. Das Kürzel TÜ gilt damit für Stadt und Landkreis gemeinsam (15 Städte und Gemeinden, u. a. Tübingen, Rottenburg am Neckar, Mössingen).",
+      "quelle": "https://www.kreis-tuebingen.de/-/view+leistungen/anmeldung-eines-neuwagens-neuzulassung-eines-fahrzeugs-beantragen/vbid6019857"
+    },
+    "kuerzel": [
+      {
+        "code": "TÜ",
+        "bedeutung": "Tübingen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Donnerstagnachmittag ab 13:00 Uhr ohne Termin geöffnet (Anmeldung frühestens ab 12:45 Uhr, Wartemarken bis 17:00 Uhr); laut Landratsamt kommt es dann regelmäßig zu Wartezeiten von bis zu drei Stunden.",
+        "quelle": "https://www.kreis-tuebingen.de/bauen_verkehr/verkehr/kfz/kfz-zulassung+aktuelles"
+      },
+      {
+        "text": "Im Online-Terminsystem werden vormittags täglich kurzfristige Termine freigeschaltet; Terminabsagen werden sofort wieder zur Buchung freigegeben.",
+        "quelle": "https://www.kreis-tuebingen.de/bauen_verkehr/verkehr/kfz"
+      },
+      {
+        "text": "Die Anmeldung beim Einwohnermeldeamt muss zwingend vor dem Besuch der Zulassungsstelle erfolgt sein; vorzulegen ist Personalausweis oder Reisepass mit aktueller Meldebestätigung.",
+        "quelle": "https://www.kreis-tuebingen.de/bauen_verkehr/verkehr/kfz/kfzzulassung-leistungen"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-tuttlingen",
+    "stadt": "Landkreis Tuttlingen",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Tuttlingen – Straßenverkehrsamt, Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.landkreis-tuttlingen.de/Service-und-Verwaltung/%C3%84mter-und-Aufgaben/Stra%C3%9Fenverkehrsamt/",
+    "traeger": "Landkreis Tuttlingen",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassung im Landratsamt Tuttlingen",
+        "strasse": "Bahnhofstraße 100",
+        "plz": "78532",
+        "ort": "Tuttlingen",
+        "quelle": "https://www.landkreis-tuttlingen.de/Service-und-Verwaltung/%C3%84mter-und-Aufgaben/Stra%C3%9Fenverkehrsamt/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-tuttlingen.de/Service-und-Verwaltung/%C3%84mter-und-Aufgaben/Stra%C3%9Fenverkehrsamt/",
+      "quelle": "https://www.landkreis-tuttlingen.de/Service-und-Verwaltung/%C3%84mter-und-Aufgaben/Stra%C3%9Fenverkehrsamt/"
+    },
+    "terminUrl": {
+      "url": "https://www.landkreis-tuttlingen.de/Online-Dienste/Termin-Buchung/",
+      "quelle": "https://www.landkreis-tuttlingen.de/Service-und-Verwaltung/%C3%96ffnungszeiten/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6020936&leistungId=99036020001000&p=083270",
+      "quelle": "https://www.landkreis-tuttlingen.de/Quicknavigation/Start/Fahrzeuge-und-Verkehr.php?object=tx,3878.189.1&NavID=2527.14"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Do 7.30–12.30 Uhr",
+        "Do-Nachmittag 14.00–17.30 Uhr",
+        "Fr 7.30–12.00 Uhr",
+        "Sa 8.30–12.00 Uhr"
+      ],
+      "hinweis": "Nur mit Termin: Für den Besuch der Kfz-Zulassungsstelle ist eine Online-Terminbuchung erforderlich (persönliche Vorsprache seit 3. März 2026 nur noch mit Termin). Samstags nur für Privatkunden.",
+      "quelle": "https://www.landkreis-tuttlingen.de/Service-und-Verwaltung/%C3%96ffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Die Kfz-Zulassungsbehörde des Landratsamts ist für die Registrierung von Kraftfahrzeugen und Anhängern aller Antragsteller mit Hauptwohnsitz im Landkreis Tuttlingen zuständig. Das schließt die Große Kreisstadt Tuttlingen ein, die zum Landkreis gehört (35 kreisangehörige Städte und Gemeinden, u. a. Tuttlingen, Spaichingen, Trossingen); eine eigene städtische Zulassungsstelle gibt es nicht, TUT gilt für Stadt und Landkreis.",
+      "quelle": "https://www.landkreis-tuttlingen.de/Service-und-Verwaltung/%C3%84mter-und-Aufgaben/Stra%C3%9Fenverkehrsamt/"
+    },
+    "kuerzel": [
+      {
+        "code": "TUT",
+        "bedeutung": "Tuttlingen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Samstags 8.30–12.00 Uhr geöffnet, aber nur für Privatkunden – nicht für Autohäuser, Versicherungen oder Zulassungsdienstleister. Samstags u. a. keine eidesstattliche Versicherung bei Verlust der Fahrzeugpapiere, keine Ausnahmegenehmigung nach § 70 StVZO und keine roten Händlerkennzeichen.",
+        "quelle": "https://www.landkreis-tuttlingen.de/Service-und-Verwaltung/%C3%84mter-und-Aufgaben/Stra%C3%9Fenverkehrsamt/"
+      },
+      {
+        "text": "Jede Person bzw. Institution darf pro Tag nur einen Online-Termin reservieren (weitere werden ohne Rücksprache gelöscht); pro Internet-Termin sind höchstens zwei Zulassungsvorgänge möglich.",
+        "quelle": "https://www.landkreis-tuttlingen.de/Service-und-Verwaltung/%C3%84mter-und-Aufgaben/Stra%C3%9Fenverkehrsamt/"
+      },
+      {
+        "text": "Für Händler gibt es eine eigene Online-Terminbuchung („Fahrzeugzulassung Terminbuchung für Händler“).",
+        "quelle": "https://www.landkreis-tuttlingen.de/Online-Dienste/Termin-Buchung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-waldshut",
+    "stadt": "Landkreis Waldshut",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Waldshut – Straßenverkehrsamt, Kfz-Zulassung (Zulassungsstellen Waldshut-Tiengen und Bad Säckingen)",
+    "behoerdeQuelle": "https://www.landkreis-waldshut.de/strassenverkehrsamt/kfz-zulassung/",
+    "traeger": "Landkreis Waldshut",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Waldshut-Tiengen",
+        "strasse": "Alfred-Nobel-Straße 1",
+        "plz": "79761",
+        "ort": "Waldshut-Tiengen",
+        "quelle": "https://www.landkreis-waldshut.de/strassenverkehrsamt/kfz-zulassung/"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Bad Säckingen",
+        "strasse": "Am Buchrain 5",
+        "plz": "79713",
+        "ort": "Bad Säckingen",
+        "quelle": "https://www.landkreis-waldshut.de/strassenverkehrsamt/kfz-zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-waldshut.de/strassenverkehrsamt/kfz-zulassung/",
+      "quelle": "https://www.landkreis-waldshut.de/strassenverkehrsamt/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://www.terminland.de/strassenverkehrsamt-waldshut/",
+      "quelle": "https://www.landkreis-waldshut.de/strassenverkehrsamt/kfz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6051949&leistungId=99036020001000&p=083370",
+      "quelle": "https://www.landkreis-waldshut.de/strassenverkehrsamt/kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30–12:30 Uhr",
+        "Di 08:30–12:30 Uhr und 13:30–18:00 Uhr",
+        "Mi geschlossen",
+        "Do 07:30–15:30 Uhr",
+        "Fr 07:30–12:30 Uhr"
+      ],
+      "hinweis": "Nur mit Termin: In beiden Zulassungsstellen (Waldshut-Tiengen und Bad Säckingen) wird ausschließlich mit vorher online gebuchtem Termin bedient. Die Kreisseite nennt diese Zeiten einheitlich für „KFZ-Zulassungen“, ohne nach Standort zu unterscheiden.",
+      "quelle": "https://www.landkreis-waldshut.de/strassenverkehrsamt/kfz-zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Das Landratsamt Waldshut ist Zulassungsbehörde für alle Halter mit Hauptwohnsitz, Betriebssitz oder Niederlassung (bzw. Fahrzeugstandort) im Landkreis Waldshut mit seinen 32 Städten und Gemeinden – auch für die Städte Waldshut-Tiengen und Bad Säckingen, die keine eigene städtische Zulassungsbehörde haben (in Baden-Württemberg ist nur in Stadtkreisen die Stadtverwaltung zuständig, sonst das Landratsamt). Es gibt zwei Zulassungsstellen, in Waldshut-Tiengen und in Bad Säckingen; eine Aufteilung nach Wohnorten nennt die offizielle Seite nicht.",
+      "quelle": "https://www.landkreis-waldshut.de/strassenverkehrsamt/leistungsdetails/leistung/6019857-anmeldung-eines-neuwagens-neuzulassung-eines-fahrzeugs-beantragen/"
+    },
+    "kuerzel": [
+      {
+        "code": "WT",
+        "bedeutung": "Waldshut (Waldshut-Tiengen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SÄK",
+        "bedeutung": "Säckingen (Bad Säckingen; Altkennzeichen, seit 15.03.2021 wieder ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Zwei Zulassungsstellen im Kreis: Waldshut-Tiengen (Alfred-Nobel-Straße 1) und Bad Säckingen (Am Buchrain 5). Ohne vorherige Online-Terminbuchung ist keine Bedienung am Schalter möglich; die Terminvereinbarung ist kostenlos.",
+        "quelle": "https://www.landkreis-waldshut.de/strassenverkehrsamt/kfz-zulassung/"
+      },
+      {
+        "text": "Autohäuser vereinbaren Termine weiterhin per E-Mail: Autohaus-Termine-wt@landkreis-waldshut.de (Waldshut-Tiengen) bzw. Autohaus-Termine-bs@landkreis-waldshut.de (Bad Säckingen).",
+        "quelle": "https://www.landkreis-waldshut.de/strassenverkehrsamt/kfz-zulassung/"
+      },
+      {
+        "text": "Im Buchungstool werden auch kurzfristig Termine frei; das Landratsamt empfiehlt, regelmäßig nachzusehen.",
+        "quelle": "https://www.landkreis-waldshut.de/news/online-terminbuchung-fuer-kfz-zulassung-jetzt-dauerhaft-in-waldshut-und-bad-saeckingen/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "zollernalbkreis",
+    "stadt": "Zollernalbkreis",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Landratsamt Zollernalbkreis – Kfz-Zulassungsbehörde (Dienststellen Albstadt, Balingen und Hechingen)",
+    "behoerdeQuelle": "https://www.zollernalbkreis.de/21599794",
+    "traeger": "Zollernalbkreis",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Balingen",
+        "strasse": "Richard-Strauß-Straße 5",
+        "plz": "72336",
+        "ort": "Balingen",
+        "quelle": "https://www.zollernalbkreis.de/21599794"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Albstadt",
+        "strasse": "Unter dem Malesfelsen 23",
+        "plz": "72458",
+        "ort": "Albstadt",
+        "quelle": "https://www.zollernalbkreis.de/21599794"
+      }
+    ],
+    "website": {
+      "url": "https://www.zollernalbkreis.de/21599794",
+      "quelle": "https://www.zollernalbkreis.de/21599794"
+    },
+    "terminUrl": {
+      "url": "https://www.zollernalbkreis.de/landratsamt/aemter++und+organisation/terminvergabe",
+      "quelle": "https://www.zollernalbkreis.de/21599794"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6024617&leistungId=99036020001000&p=084170",
+      "quelle": "https://www.zollernalbkreis.de/21599794"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Balingen: Mo und Di 07:30–12:00 Uhr und 13:30–16:00 Uhr",
+        "Balingen: Mi 07:30–14:00 Uhr",
+        "Balingen: Do 07:30–12:00 Uhr und 13:30–17:30 Uhr",
+        "Balingen: Fr 07:30–13:00 Uhr"
+      ],
+      "hinweis": "Zeiten nur für die Dienststelle Balingen veröffentlicht; für Albstadt und Hechingen nennen die offiziellen Seiten keine Öffnungszeiten. Fahrzeugzulassungen grundsätzlich nur nach vorheriger Terminvereinbarung; Außerbetriebsetzungen auch ohne Termin innerhalb der regulären Öffnungszeiten.",
+      "quelle": "https://www.zollernalbkreis.de/21599794"
+    },
+    "zustaendigkeit": {
+      "text": "Die Kfz-Zulassungsbehörde des Landratsamts Zollernalbkreis ist mit ihren drei Dienststellen in Albstadt, Balingen und Hechingen für den gesamten Zollernalbkreis zuständig (25 Städte und Gemeinden, u. a. Albstadt, Balingen, Hechingen, Burladingen, Haigerloch). Ausschlaggebend ist der Wohnsitz bzw. der regelmäßige Standort des Fahrzeugs; eine eigene städtische Zulassungsstelle in Albstadt, Balingen oder Hechingen gibt es nicht – die Dienststellen dort gehören zum Landratsamt.",
+      "quelle": "https://www.zollernalbkreis.de/landratsamt/aemter++und+organisation/allgemeine+informationen"
+    },
+    "kuerzel": [
+      {
+        "code": "BL",
+        "bedeutung": "Balingen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "HCH",
+        "bedeutung": "Hechingen (Altkennzeichen, im Zollernalbkreis seit 25.02.2013 wieder ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Drei Dienststellen (Albstadt, Balingen, Hechingen) mit jeweils eigener Online-Terminbuchung. Fahrzeugzulassungen werden grundsätzlich nur nach vorheriger Terminvereinbarung bearbeitet, Außerbetriebsetzungen auch ohne Termin innerhalb der regulären Öffnungszeiten.",
+        "quelle": "https://www.zollernalbkreis.de/landratsamt/aemter++und+organisation/terminvergabe"
+      },
+      {
+        "text": "Nur in Albstadt und Balingen: Täglich um 07:30 Uhr wird zusätzlich ein begrenztes Kontingent tagesaktueller Vor-Ort-Termine vergeben (Windhundprinzip); in Hechingen gibt es das nicht.",
+        "quelle": "https://www.zollernalbkreis.de/landratsamt/aemter++und+organisation/terminvergabe"
+      },
+      {
+        "text": "Nach Möglichkeit werden jeden Morgen zwischen 07:30 und 08:00 Uhr zusätzliche tagesaktuelle Online-Termine freigeschaltet.",
+        "quelle": "https://www.zollernalbkreis.de/landratsamt/aemter++und+organisation/terminvergabe"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten.Albstadt",
+      "oeffnungszeiten.Hechingen",
+      "standorte.Hechingen.plz"
+    ]
+  }
+]

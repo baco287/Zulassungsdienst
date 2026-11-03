@@ -1,0 +1,1040 @@
+[
+  {
+    "slug": "landkreis-bautzen",
+    "stadt": "Landkreis Bautzen",
+    "bundesland": "Sachsen",
+    "behoerde": "Landratsamt Bautzen – Straßenverkehrsamt, KFZ-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-bautzen.de/landratsamt/organisation/kfz-zulassungsstelle/1024",
+    "traeger": "Landkreis Bautzen",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassungsstelle Bautzen",
+        "strasse": "Rathenauplatz 1",
+        "plz": "02625",
+        "ort": "Bautzen",
+        "quelle": "https://www.landkreis-bautzen.de/landratsamt/organisation/kfz-zulassungsstelle/1024"
+      },
+      {
+        "bezeichnung": "KFZ-Zulassungsstelle Hoyerswerda",
+        "strasse": "Schloßplatz 2",
+        "plz": "02977",
+        "ort": "Hoyerswerda",
+        "quelle": "https://www.landkreis-bautzen.de/landratsamt/dienstleistung/fahrzeugzulassung/138"
+      },
+      {
+        "bezeichnung": "KFZ-Zulassungsstelle Kamenz",
+        "strasse": "Macherstraße 55",
+        "plz": "01917",
+        "ort": "Kamenz",
+        "quelle": "https://www.landkreis-bautzen.de/landratsamt/organisation/kfz-zulassungsstelle/1024"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-bautzen.de/landratsamt/organisation/kfz-zulassungsstelle/1024",
+      "quelle": "https://www.landkreis-bautzen.de/landratsamt/organisation/kfz-zulassungsstelle/1024"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/bautzen/select2?md=2",
+      "quelle": "https://www.landkreis-bautzen.de/landratsamt/organisation/kfz-zulassungsstelle/1024"
+    },
+    "ikfzUrl": {
+      "url": "https://ikfz.ikfz-sachsen.de/i4/ikfz4/?LICENSEIDENTIFIER=bautzen_kreis",
+      "quelle": "https://www.landkreis-bautzen.de/landratsamt/dienstleistung/fahrzeugzulassung/138"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:30–13:00 Uhr",
+        "Di 08:30–12:00 und 13:00–18:00 Uhr",
+        "Mi 08:30–13:00 Uhr",
+        "Do 08:30–12:00 und 13:00–18:00 Uhr",
+        "Fr 08:30–13:00 Uhr"
+      ],
+      "hinweis": "Sprechzeiten gelten laut Seite für die Besucheradressen Bautzen, Hoyerswerda und Kamenz; „Bitte buchen Sie hier einen Termin“ – ein Termin pro Fahrzeug",
+      "quelle": "https://www.landkreis-bautzen.de/landratsamt/organisation/kfz-zulassungsstelle/1024"
+    },
+    "zustaendigkeit": {
+      "text": "KFZ-Zulassungsstelle des Landratsamtes Bautzen (Straßenverkehrsamt) für den Landkreis Bautzen mit Besucheradressen in Bautzen, Hoyerswerda und Kamenz.",
+      "quelle": "https://www.landkreis-bautzen.de/landratsamt/organisation/kfz-zulassungsstelle/1024"
+    },
+    "kuerzel": [
+      {
+        "code": "BZ",
+        "bedeutung": "Bautzen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BIW",
+        "bedeutung": "Bischofswerda",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "HY",
+        "bedeutung": "Hoyerswerda",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "KM",
+        "bedeutung": "Kamenz",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termine werden je Fahrzeug gebucht („Bitte reservieren Sie sich einen Termin pro Fahrzeug“).",
+        "quelle": "https://www.landkreis-bautzen.de/online-service-fuehrerschein-und-kfz-48144.php"
+      },
+      {
+        "text": "Voraussetzung für jede Zulassung: keine Gebühren- oder Steuerrückstände des Halters; das SEPA-Lastschriftmandat für die Kfz-Steuer ist mitzubringen.",
+        "quelle": "https://www.landkreis-bautzen.de/landratsamt/dienstleistung/fahrzeugzulassung/138"
+      },
+      {
+        "text": "Wunschkennzeichen können online über die Kennzeichenreservierung des Landratsamtes reserviert werden.",
+        "quelle": "https://www.landkreis-bautzen.de/online-service-fuehrerschein-und-kfz-48144.php"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "erzgebirgskreis",
+    "stadt": "Erzgebirgskreis",
+    "bundesland": "Sachsen",
+    "behoerde": "Landratsamt Erzgebirgskreis – Referat Straßenverkehr, Sachgebiet Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.erzgebirgskreis.de/landratsamt-service/struktur-aufgaben/aemter-von-a-bis-z/kfz-zulassung",
+    "traeger": "Erzgebirgskreis",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassung Standort Annaberg-Buchholz",
+        "strasse": "Paulus-Jenisius-Straße 24",
+        "plz": "09456",
+        "ort": "Annaberg-Buchholz",
+        "quelle": "https://www.erzgebirgskreis.de/landratsamt-service/struktur-aufgaben/aemter-von-a-bis-z/kfz-zulassung"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassung Außenstelle Stollberg",
+        "strasse": "Uhlmannstraße 1-3",
+        "plz": "09366",
+        "ort": "Stollberg",
+        "quelle": "https://www.erzgebirgskreis.de/landratsamt-service/struktur-aufgaben/aemter-von-a-bis-z/kfz-zulassung"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassung Außenstelle Aue-Bad Schlema",
+        "strasse": "Wettinerstraße 61",
+        "plz": "08280",
+        "ort": "Aue-Bad Schlema",
+        "quelle": "https://www.erzgebirgskreis.de/landratsamt-service/struktur-aufgaben/aemter-von-a-bis-z/kfz-zulassung"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassung Außenstelle Marienberg",
+        "strasse": "Schillerlinde 6",
+        "plz": "09496",
+        "ort": "Marienberg",
+        "quelle": "https://www.erzgebirgskreis.de/landratsamt-service/struktur-aufgaben/aemter-von-a-bis-z/kfz-zulassung"
+      }
+    ],
+    "website": {
+      "url": "https://www.erzgebirgskreis.de/landratsamt-service/struktur-aufgaben/aemter-von-a-bis-z/kfz-zulassung",
+      "quelle": "https://www.erzgebirgskreis.de/landratsamt-service/struktur-aufgaben/aemter-von-a-bis-z/kfz-zulassung"
+    },
+    "terminUrl": {
+      "url": "https://lra-erzgebirgskreis.saas.smartcjm.com/m/kfz-zulassung/extern/calendar/?uid=6341ddc9-da67-44f9-9894-3e672b2e370e",
+      "quelle": "https://www.erzgebirgskreis.de/landratsamt-service/struktur-aufgaben/aemter-von-a-bis-z/kfz-zulassung"
+    },
+    "ikfzUrl": null,
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–12:00 Uhr",
+        "Di 08:00–18:00 Uhr",
+        "Mi geschlossen",
+        "Do 08:00–16:00 Uhr",
+        "Fr 08:00–12:00 Uhr"
+      ],
+      "hinweis": "Annahmeschluss 30 Minuten vor Ende der Öffnungszeiten; Online-Terminreservierung möglich (am Termintag Wartemarke „Termin“ ziehen)",
+      "quelle": "https://www.erzgebirgskreis.de/landratsamt-service/struktur-aufgaben/aemter-von-a-bis-z/kfz-zulassung"
+    },
+    "zustaendigkeit": {
+      "text": "Sachgebiet Kfz-Zulassung des Landratsamtes Erzgebirgskreis mit den Standorten Annaberg-Buchholz, Stollberg, Aue-Bad Schlema und Marienberg; laut Landratsamt ist eine Zulassung im Erzgebirgskreis nur mit melderechtlichem Hauptwohnsitz im Erzgebirgskreis möglich (Hinweis im Abschnitt zu ukrainischen Fahrzeugen).",
+      "quelle": "https://www.erzgebirgskreis.de/landratsamt-service/struktur-aufgaben/aemter-von-a-bis-z/kfz-zulassung"
+    },
+    "kuerzel": [
+      {
+        "code": "ERZ",
+        "bedeutung": "Erzgebirge",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ANA",
+        "bedeutung": "Annaberg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ASZ",
+        "bedeutung": "Aue, Schwarzenberg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "AU",
+        "bedeutung": "Aue",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MAB",
+        "bedeutung": "Marienberg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MEK",
+        "bedeutung": "Mittlerer Erzgebirgskreis",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "STL",
+        "bedeutung": "Stollberg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SZB",
+        "bedeutung": "Schwarzenberg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ZP",
+        "bedeutung": "Zschopau",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Online-Zulassung (i-Kfz) ist laut Landratsamt bis auf Weiteres nicht möglich; Zulassungs- und Abmeldevorgänge vorerst nur direkt an den Schaltern der Zulassungsstellen.",
+        "quelle": "https://www.erzgebirgskreis.de/landratsamt-service/struktur-aufgaben/aemter-von-a-bis-z/kfz-zulassung"
+      },
+      {
+        "text": "Nach Online-Terminreservierung muss am Termintag eine Wartemarke „Termin“ gezogen werden; Annahmeschluss ist 30 Minuten vor Ende der Öffnungszeiten.",
+        "quelle": "https://www.erzgebirgskreis.de/landratsamt-service/struktur-aufgaben/aemter-von-a-bis-z/kfz-zulassung"
+      },
+      {
+        "text": "Zulassungsdienste und Autohändler können Vorgänge an allen Standorten außerhalb des Terminsystems zwischen 08:00 und 10:30 Uhr abgeben (bis zu drei Vorgänge auch über das reguläre Terminsystem).",
+        "quelle": "https://www.erzgebirgskreis.de/landratsamt-service/struktur-aufgaben/aemter-von-a-bis-z/kfz-zulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "standorte.plz"
+    ]
+  },
+  {
+    "slug": "landkreis-goerlitz",
+    "stadt": "Landkreis Görlitz",
+    "bundesland": "Sachsen",
+    "behoerde": "Landratsamt Görlitz – Sachgebiet Kfz-Zulassung (Abteilung Bürgerservice)",
+    "behoerdeQuelle": "https://www.kreis-goerlitz.de/Dienste-online/Kfz-Zulassung-Online-Termin.htm/03-Landratsamt/Aemter/SG-KFZ-Zulassung.html",
+    "traeger": "Landkreis Görlitz",
+    "standorte": [
+      {
+        "bezeichnung": "Landratsamt Görlitz, Außenstelle Niesky (Kfz-Zulassung)",
+        "strasse": "Robert-Koch-Straße 1",
+        "plz": "02906",
+        "ort": "Niesky",
+        "quelle": "https://www.kreis-goerlitz.de/Dienste-online/Kfz-Zulassung-Online-Termin.htm/03-Landratsamt/Aemter/SG-KFZ-Zulassung.html"
+      },
+      {
+        "bezeichnung": "Landratsamt Görlitz, Servicebüro Kfz/Fs",
+        "strasse": "Berliner Straße 37",
+        "plz": "02826",
+        "ort": "Görlitz",
+        "quelle": "https://www.kreis-goerlitz.de/Dienste-online/Kfz-Zulassung-Online-Termin.htm/03-Landratsamt/Aemter/SG-KFZ-Zulassung.html"
+      },
+      {
+        "bezeichnung": "Landratsamt Görlitz, Bürgerbüro Zittau",
+        "strasse": "Neustadt 15",
+        "plz": "02763",
+        "ort": "Zittau",
+        "quelle": "https://www.kreis-goerlitz.de/Dienste-online/Kfz-Zulassung-Online-Termin.htm/03-Landratsamt/Aemter/SG-KFZ-Zulassung.html"
+      },
+      {
+        "bezeichnung": "Landratsamt Görlitz, Bürgerbüro Löbau",
+        "strasse": "Poststraße 20",
+        "plz": "02708",
+        "ort": "Löbau",
+        "quelle": "https://www.kreis-goerlitz.de/Dienste-online/Kfz-Zulassung-Online-Termin.htm/03-Landratsamt/Aemter/SG-Buergerbuero.html"
+      },
+      {
+        "bezeichnung": "Landratsamt Görlitz, Bürgerbüro Weißwasser",
+        "strasse": "Dr.-Altmann-Straße 6",
+        "plz": "02943",
+        "ort": "Weißwasser/O.L.",
+        "quelle": "https://www.kreis-goerlitz.de/Dienste-online/Kfz-Zulassung-Online-Termin.htm/03-Landratsamt/Aemter/SG-Buergerbuero.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-goerlitz.de/Dienste-online/Kfz-Zulassung-Online-Termin.htm/03-Landratsamt/Aemter/SG-KFZ-Zulassung.html",
+      "quelle": "https://www.kreis-goerlitz.de/Dienste-online/Kfz-Zulassung-Online-Termin.htm/03-Landratsamt/Aemter/SG-KFZ-Zulassung.html"
+    },
+    "terminUrl": {
+      "url": "https://termin.kreis-goerlitz.de/m/buergerservice/extern/calendar/?uid=9a11e7de-888a-4d88-a2c5-e85650ad2f97",
+      "quelle": "https://www.kreis-goerlitz.de/Dienste-online/Kfz-Zulassung-Online-Termin.htm/03-Landratsamt/Aemter/SG-KFZ-Zulassung.html"
+    },
+    "ikfzUrl": {
+      "url": "https://ikfz.ikfz-sachsen.de/i4/ikfz4/?LICENSEIDENTIFIER=goerlitz_kreis",
+      "quelle": "https://www.kreis-goerlitz.de/Dienste-online/online-Fahrzeugzulassung.htm"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:30–12:30 Uhr",
+        "Di 08:30–12:30 und 13:30–18:00 Uhr",
+        "Mi 08:30–12:30 Uhr",
+        "Do 08:30–12:30 und 13:30–18:00 Uhr",
+        "Fr 08:30–12:30 Uhr"
+      ],
+      "hinweis": "Öffnungszeiten Bürgerservice; für einen Besuch ist zwingend eine vorherige Terminbuchung erforderlich (online oder Hotline 03581 663-5300)",
+      "quelle": "https://www.kreis-goerlitz.de/Dienste-online/Kfz-Zulassung-Online-Termin.htm/03-Landratsamt/Aemter/SG-KFZ-Zulassung.html"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Görlitz; Kfz-Leistungen werden in der Außenstelle Niesky, im Servicebüro Görlitz und in den Bürgerbüros Zittau, Löbau und Weißwasser angeboten. Das volle Aufgabenspektrum (u. a. technische Änderungen nach § 19 Abs. 2 StVZO, Betriebserlaubnis nach § 21 StVZO, Ausfuhr- und rote Kennzeichen) gibt es im Bürgerbüro Zittau und in der Außenstelle Niesky; Servicebüro Görlitz und Bürgerbüros Löbau/Weißwasser bearbeiten Zulassungen ohne technische Änderungen.",
+      "quelle": "https://www.kreis-goerlitz.de/Dienste-online/Kfz-Zulassung-Online-Termin.htm/03-Landratsamt/Aemter/SG-KFZ-Zulassung.html"
+    },
+    "kuerzel": [
+      {
+        "code": "GR",
+        "bedeutung": "Görlitz",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "LÖB",
+        "bedeutung": "Löbau",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "NOL",
+        "bedeutung": "Niederschlesische Oberlausitz",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "NY",
+        "bedeutung": "Niesky",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WSW",
+        "bedeutung": "Weißwasser",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ZI",
+        "bedeutung": "Zittau",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Für Besuche in der Kfz-Zulassung Niesky, im Servicebüro Görlitz und in den Bürgerbüros Löbau, Zittau und Weißwasser ist zwingend eine vorherige Terminbuchung (online oder Hotline 03581 663-5300) erforderlich.",
+        "quelle": "https://www.kreis-goerlitz.de/Dienste-online/Kfz-Zulassung-Online-Termin.htm/03-Landratsamt/Aemter/SG-KFZ-Zulassung.html"
+      },
+      {
+        "text": "Post an die Zulassungsbehörde ausschließlich an Landratsamt Görlitz, Zulassungsbehörde, PF 30 01 52, 02806 Görlitz – mit Angabe des Ortes (Görlitz, Zittau, Niesky, Löbau oder Weißwasser), an dem das Anliegen bearbeitet werden soll.",
+        "quelle": "https://www.kreis-goerlitz.de/Dienste-online/Kfz-Zulassung-Online-Termin.htm/03-Landratsamt/Aemter/SG-KFZ-Zulassung.html"
+      },
+      {
+        "text": "Im i-Kfz-Portal des Landkreises ist die Bezahlung per Kreditkarte oder PayPal möglich.",
+        "quelle": "https://www.kreis-goerlitz.de/Dienste-online/online-Fahrzeugzulassung.htm"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-leipzig",
+    "stadt": "Landkreis Leipzig",
+    "bundesland": "Sachsen",
+    "behoerde": "Landratsamt Landkreis Leipzig – Straßenverkehrsamt, Sachgebiet Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.landkreisleipzig.de/was-erledige-ich-wo/anliegen/detail/kfz-zulassung-fabrikneues-fahrzeug",
+    "traeger": "Landkreis Leipzig",
+    "standorte": [
+      {
+        "bezeichnung": "SG Kfz-Zulassung Dienststelle Borna (Haus 6, Erdgeschoss)",
+        "strasse": "Stauffenbergstraße 4",
+        "plz": "04552",
+        "ort": "Borna",
+        "quelle": "https://www.landkreisleipzig.de/was-erledige-ich-wo/anliegen/detail/kfz-zulassung-fabrikneues-fahrzeug"
+      },
+      {
+        "bezeichnung": "SG Kfz-Zulassung Außenstelle Grimma (Haus 2, Erdgeschoss)",
+        "strasse": "Karl-Marx-Straße 22",
+        "plz": "04668",
+        "ort": "Grimma",
+        "quelle": "https://www.landkreisleipzig.de/was-erledige-ich-wo/anliegen/detail/kfz-zulassung-fabrikneues-fahrzeug"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreisleipzig.de/themenwelten/auto-und-verkehr/kfz-zulassung",
+      "quelle": "https://www.landkreisleipzig.de/themenwelten/auto-und-verkehr/kfz-zulassung"
+    },
+    "terminUrl": {
+      "url": "https://landkreisleipzig.flexappoint.de/#/",
+      "quelle": "https://www.landkreisleipzig.de/themenwelten/auto-und-verkehr/kfz-zulassung"
+    },
+    "ikfzUrl": {
+      "url": "https://ikfz.ikfz-sachsen.de/i4/ikfz4/?LICENSEIDENTIFIER=leipzig_kreis",
+      "quelle": "https://www.landkreisleipzig.de/was-erledige-ich-wo/anliegen/detail/i-kfz-auto-anmelden-auto-abmelden"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:30–12:00",
+        "Di 08:30–12:00 und 13:30–18:00",
+        "Mi 08:30–12:00",
+        "Do 08:30–12:00 und 13:30–16:00",
+        "Fr 08:30–12:00"
+      ],
+      "hinweis": "nur mit Termin über die Online-Terminvergabe",
+      "quelle": "https://www.landkreisleipzig.de/standorte"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Leipzig mit den Zulassungsstellen Borna und Grimma. Nicht zuständig für die kreisfreie Stadt Leipzig, die ebenfalls das Kennzeichen L vergibt und eine eigene Kfz-Zulassungsbehörde hat.",
+      "quelle": "https://www.landkreisleipzig.de/themenwelten/auto-und-verkehr/kfz-zulassung"
+    },
+    "kuerzel": [
+      {
+        "code": "L",
+        "bedeutung": "Leipzig (wird auch von der kreisfreien Stadt Leipzig vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BNA",
+        "bedeutung": "Borna",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GHA",
+        "bedeutung": "Geithain",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GRM",
+        "bedeutung": "Grimma",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MTL",
+        "bedeutung": "Muldental",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WUR",
+        "bedeutung": "Wurzen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Gleiches Kennzeichen L wie die kreisfreie Stadt Leipzig: Einwohner der Stadt Leipzig sind bei der Kfz-Zulassungsbehörde der Stadt (Ordnungsamt, Technisches Rathaus, Prager Straße 130-136, 04317 Leipzig) zuständig, nicht beim Landkreis.",
+        "quelle": "https://www.leipzig.de/service-portal/themen-und-lebenslagen/kfz-zulassung"
+      },
+      {
+        "text": "Für Autohändler und Zulassungsdienste erfolgt die Annahme und Ausgabe von Vorgängen Mo–Fr 8:30–10:00 Uhr, zusätzlich Di und Do 13:30–15:30 Uhr.",
+        "quelle": "https://www.landkreisleipzig.de/themenwelten/auto-und-verkehr/kfz-zulassung"
+      },
+      {
+        "text": "Im i-Kfz-Verfahren des Landkreises ist die Bezahlung nur mit Kreditkarte möglich; die Abmeldung funktioniert ohne Registrierung.",
+        "quelle": "https://www.landkreisleipzig.de/was-erledige-ich-wo/anliegen/detail/i-kfz-auto-anmelden-auto-abmelden"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-meissen",
+    "stadt": "Landkreis Meißen",
+    "bundesland": "Sachsen",
+    "behoerde": "Landratsamt Meißen – Kreisverkehrsamt, Sachgebiet Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.kreis-meissen.de/Landratsamt/Die-Verwaltung/Dezernat-Verwaltung/Kreisverkehrsamt/Kfz-Zulassung/",
+    "traeger": "Landkreis Meißen",
+    "standorte": [
+      {
+        "bezeichnung": "Sachgebiet Kfz-Zulassung, Hauptstelle Meißen",
+        "strasse": "Brauhausstraße 21",
+        "plz": "01662",
+        "ort": "Meißen",
+        "quelle": "https://www.kreis-meissen.de/Landratsamt/Die-Verwaltung/Dezernat-Verwaltung/Kreisverkehrsamt/Kfz-Zulassung/"
+      },
+      {
+        "bezeichnung": "Sachgebiet Kfz-Zulassung, Außenstelle Riesa",
+        "strasse": "Heinrich-Heine-Straße 1",
+        "plz": "01589",
+        "ort": "Riesa",
+        "quelle": "https://www.kreis-meissen.de/Landratsamt/Die-Verwaltung/Dezernat-Verwaltung/Kreisverkehrsamt/Kfz-Zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-meissen.de/Landratsamt/Die-Verwaltung/Dezernat-Verwaltung/Kreisverkehrsamt/Kfz-Zulassung/",
+      "quelle": "https://www.kreis-meissen.de/Landratsamt/Die-Verwaltung/Dezernat-Verwaltung/Kreisverkehrsamt/Kfz-Zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termin.lra-mei.de/m/verkehrsamt/extern/calendar/?uid=bcd852db-500e-494b-89ab-5cf8f5a1eabc",
+      "quelle": "https://www.kreis-meissen.de/Landratsamt/Die-Verwaltung/Dezernat-Verwaltung/Kreisverkehrsamt/Kfz-Zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://ikfz.ikfz-sachsen.de//i4/ikfz4/?LICENSEIDENTIFIER=meissen_kreis",
+      "quelle": "https://www.kreis-meissen.de/Landratsamt/Die-Verwaltung/Dezernat-Verwaltung/Kreisverkehrsamt/Kfz-Zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Meißen: Mo nur mit Terminbuchung (08:00–12:00 Uhr)",
+        "Meißen: Di nur mit Terminbuchung (08:00–12:00 Uhr | 13:00–18:00 Uhr)",
+        "Meißen: Mi nur mit Terminbuchung (08:00–12:00 Uhr)",
+        "Meißen: Do 08:00–12:00 Uhr | 13:00–16:00 Uhr ohne Termin",
+        "Meißen: Fr nur mit Terminbuchung (08:00–12:00 Uhr)",
+        "Riesa: Di nur mit Terminbuchung (08:00–12:00 Uhr | 13:00–17:00 Uhr)",
+        "Riesa: Mo, Mi, Do, Fr geschlossen"
+      ],
+      "hinweis": "Meißen nur mit Online-Termin, außer donnerstags (ohne Termin; bei erhöhtem Zuspruch individueller Annahmestopp); Riesa nur dienstags mit Termin",
+      "quelle": "https://www.kreis-meissen.de/Landratsamt/Die-Verwaltung/Dezernat-Verwaltung/Kreisverkehrsamt/Kfz-Zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Halter, deren Fahrzeuge im Landkreis Meißen zugelassen sind, wenden sich an die Kfz-Zulassung in Meißen oder Riesa; ist das Fahrzeug nicht im Landkreis Meißen zugelassen, ist die jeweils zuständige Zulassungsbehörde anzusprechen.",
+      "quelle": "https://www.kreis-meissen.de/Landratsamt/Die-Verwaltung/Dezernat-Verwaltung/Kreisverkehrsamt/Kfz-Zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "MEI",
+        "bedeutung": "Meißen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GRH",
+        "bedeutung": "Großenhain",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "RG",
+        "bedeutung": "Riesa, Großenhain",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "RIE",
+        "bedeutung": "Riesa",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Donnerstags ist in Meißen eine Vorsprache ohne Termin möglich (08:00–12:00 und 13:00–16:00 Uhr); die aktuelle Wartezeit lässt sich donnerstags online prüfen.",
+        "quelle": "https://www.kreis-meissen.de/Landratsamt/Die-Verwaltung/Dezernat-Verwaltung/Kreisverkehrsamt/Kfz-Zulassung/"
+      },
+      {
+        "text": "Termine werden für Meißen zwei Wochen und für Riesa eine Woche im Voraus freigeschaltet (Meißen u. a. freitags 12:00 Uhr für die Folgewoche); nach der Buchung meldet man sich mit QR-Code oder Ticketnummer ab 15 Minuten vor dem Termin am Wartemarkendrucker im Atrium an.",
+        "quelle": "https://www.kreis-meissen.de/Landratsamt/Die-Verwaltung/Dezernat-Verwaltung/Kreisverkehrsamt/Kfz-Zulassung/"
+      },
+      {
+        "text": "Online-Reservierung eines Wunschkennzeichens: 2,60 Euro für 90 Tage; die Zuteilung des Wunschkennzeichens kostet 10,20 Euro zusätzlich zur Bearbeitungsgebühr.",
+        "quelle": "https://www.kreis-meissen.de/Landratsamt/Die-Verwaltung/Dezernat-Verwaltung/Kreisverkehrsamt/Kfz-Zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-mittelsachsen",
+    "stadt": "Landkreis Mittelsachsen",
+    "bundesland": "Sachsen",
+    "behoerde": "Landratsamt Mittelsachsen – Abteilung Verkehr und Bauen, Referat Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.landkreis-mittelsachsen.de/das-amt/behoerden/referat-kfz-zulassungsbehoerde.html",
+    "traeger": "Landkreis Mittelsachsen",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Standort Döbeln",
+        "strasse": "Straße des Friedens 9 a",
+        "plz": "04720",
+        "ort": "Döbeln",
+        "quelle": "https://www.landkreis-mittelsachsen.de/das-amt/behoerden/referat-kfz-zulassungsbehoerde.html"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Standort Freiberg (Stadtteil Zug)",
+        "strasse": "Am Rotvorwerk 3",
+        "plz": "09599",
+        "ort": "Freiberg",
+        "quelle": "https://www.landkreis-mittelsachsen.de/das-amt/behoerden/referat-kfz-zulassungsbehoerde.html"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Standort Mittweida",
+        "strasse": "Am Landratsamt 3",
+        "plz": "09648",
+        "ort": "Mittweida",
+        "quelle": "https://www.landkreis-mittelsachsen.de/das-amt/behoerden/referat-kfz-zulassungsbehoerde.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-mittelsachsen.de/das-amt/behoerden/referat-kfz-zulassungsbehoerde.html",
+      "quelle": "https://www.landkreis-mittelsachsen.de/das-amt/behoerden/referat-kfz-zulassungsbehoerde.html"
+    },
+    "terminUrl": {
+      "url": "https://igv.landkreis-mittelsachsen.de/verkehr-igv/servlet/Internetgeschaeftsvorfaelle?AUFRUF=LANDKREIS-MITTELSACHSEN-IGV",
+      "quelle": "https://www.landkreis-mittelsachsen.de/das-amt/behoerden/referat-kfz-zulassungsbehoerde.html"
+    },
+    "ikfzUrl": {
+      "url": "https://ikfz.ikfz-sachsen.de/i4/ikfz4/?LICENSEIDENTIFIER=mittelsachsen_kreis",
+      "quelle": "https://www.landkreis-mittelsachsen.de/das-amt/behoerden/i-kfz.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:30–12 Uhr",
+        "Di 08:30–12, 13–18 Uhr, Vergabe Wartemarken bis 17:30 Uhr",
+        "Mi nach Vereinbarung",
+        "Do 08:30–12, 13–16 Uhr",
+        "Fr 08:30–12 Uhr"
+      ],
+      "hinweis": "gleiche Sprechzeiten in Döbeln, Freiberg und Mittweida; Zutritt ohne Termin möglich, Online-Terminvereinbarung zusätzlich möglich",
+      "quelle": "https://www.landkreis-mittelsachsen.de/das-amt/behoerden/referat-kfz-zulassungsbehoerde.html"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Mittelsachsen; jeder Mittelsachse kann alle Standorte (Döbeln, Freiberg, Mittweida) nutzen.",
+      "quelle": "https://www.landkreis-mittelsachsen.de/das-amt/behoerden/referat-kfz-zulassungsbehoerde.html"
+    },
+    "kuerzel": [
+      {
+        "code": "FG",
+        "bedeutung": "Freiberg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BED",
+        "bedeutung": "Brand-Erbisdorf",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "DL",
+        "bedeutung": "Döbeln",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "FLÖ",
+        "bedeutung": "Flöha",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "HC",
+        "bedeutung": "Hainichen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MW",
+        "bedeutung": "Mittweida",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "RL",
+        "bedeutung": "Rochlitz",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Der Zutritt ist an allen drei Standorten ohne Termin möglich; die aktuellen Wartezeiten werden online als Live-Statistik angezeigt.",
+        "quelle": "https://www.landkreis-mittelsachsen.de/das-amt/behoerden/referat-kfz-zulassungsbehoerde.html"
+      },
+      {
+        "text": "Bei Online-Terminen sind falsch erfasste, zusätzlich mitgebrachte oder nicht erfasste Vorgänge von der Bearbeitung am Onlineschalter ausgeschlossen.",
+        "quelle": "https://www.landkreis-mittelsachsen.de/das-amt/behoerden/referat-kfz-zulassungsbehoerde.html"
+      },
+      {
+        "text": "Im i-Kfz-Verfahren kann mit Visa, MasterCard oder PayPal bezahlt werden; die Abmeldung ist ohne Identifizierung möglich.",
+        "quelle": "https://www.landkreis-mittelsachsen.de/das-amt/behoerden/i-kfz.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-nordsachsen",
+    "stadt": "Landkreis Nordsachsen",
+    "bundesland": "Sachsen",
+    "behoerde": "Landratsamt Nordsachsen – Straßenverkehrsamt, Sachgebiet Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.landkreis-nordsachsen.de/was-erledige-ich-wo/dezernat/sachgebiet-kfz-zulassungsbehoerde",
+    "traeger": "Landkreis Nordsachsen",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Delitzsch (Haus C)",
+        "strasse": "Richard-Wagner-Straße 7b",
+        "plz": "04509",
+        "ort": "Delitzsch",
+        "quelle": "https://www.landkreis-nordsachsen.de/was-erledige-ich-wo/dezernat/sachgebiet-kfz-zulassungsbehoerde"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Torgau",
+        "strasse": "Südring 17",
+        "plz": "04860",
+        "ort": "Torgau",
+        "quelle": "https://www.landkreis-nordsachsen.de/was-erledige-ich-wo/dezernat/sachgebiet-kfz-zulassungsbehoerde"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Oschatz",
+        "strasse": "Friedrich-Naumann-Promenade 9",
+        "plz": "04758",
+        "ort": "Oschatz",
+        "quelle": "https://www.landkreis-nordsachsen.de/was-erledige-ich-wo/dezernat/sachgebiet-kfz-zulassungsbehoerde"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-nordsachsen.de/was-erledige-ich-wo/dezernat/sachgebiet-kfz-zulassungsbehoerde",
+      "quelle": "https://www.landkreis-nordsachsen.de/was-erledige-ich-wo/dezernat/sachgebiet-kfz-zulassungsbehoerde"
+    },
+    "terminUrl": {
+      "url": "https://otv.lra-nos.de/m/nordsachsen-sva/extern/calendar/?uid=d60693b7-8fc8-4075-b5c5-565327460c5c",
+      "quelle": "https://www.landkreis-nordsachsen.de/was-erledige-ich-wo/anliegen/detail/fahrzeug-anmelden-kfz-zulassung"
+    },
+    "ikfzUrl": {
+      "url": "https://ikfz.ikfz-sachsen.de/i4/ikfz4/?LICENSEIDENTIFIER=nordsachsen_kreis",
+      "quelle": "https://www.landkreis-nordsachsen.de/was-erledige-ich-wo/anliegen/detail/fahrzeug-anmelden-kfz-zulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:30–12:00",
+        "Di 08:30–12:00, 13:00–18:00*",
+        "Mi 08:30–12:00",
+        "Do 08:30–12:00, 13:00–16:00*",
+        "Fr 08:30–12:00"
+      ],
+      "hinweis": "* nachmittags nur mit Termin über die Online-Terminvergabe; vormittags auch ohne Termin (längere Wartezeiten möglich)",
+      "quelle": "https://www.landkreis-nordsachsen.de/kontakt"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landratsamtes Nordsachsen; Zulassungsleistungen an den Standorten Delitzsch, Torgau und Oschatz.",
+      "quelle": "https://www.landkreis-nordsachsen.de/was-erledige-ich-wo/anliegen/detail/fahrzeug-anmelden-kfz-zulassung"
+    },
+    "kuerzel": [
+      {
+        "code": "TDO",
+        "bedeutung": "Torgau, Delitzsch, Oschatz",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "DZ",
+        "bedeutung": "Delitzsch",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "EB",
+        "bedeutung": "Eilenburg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "OZ",
+        "bedeutung": "Oschatz",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "TG",
+        "bedeutung": "Torgau",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "TO",
+        "bedeutung": "Torgau, Oschatz",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Vormittags kann die Kfz-Zulassung auch ohne Termin besucht werden (mit möglichen längeren Wartezeiten); ein Online-Termin wird empfohlen.",
+        "quelle": "https://www.landkreis-nordsachsen.de/was-erledige-ich-wo/anliegen/detail/fahrzeug-anmelden-kfz-zulassung"
+      },
+      {
+        "text": "Bei Anliegen mit Einzelfallentscheidung bittet die Behörde, vorab telefonisch oder per E-Mail (kfz-zulassung@lra-nordsachsen.de) Kontakt aufzunehmen, damit die Unterlagen vollständig sind.",
+        "quelle": "https://www.landkreis-nordsachsen.de/was-erledige-ich-wo/anliegen/detail/fahrzeug-anmelden-kfz-zulassung"
+      },
+      {
+        "text": "Service-Hotline des Straßenverkehrsamtes: 03421/758 5100.",
+        "quelle": "https://www.landkreis-nordsachsen.de/was-erledige-ich-wo/anliegen/detail/fahrzeug-anmelden-kfz-zulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-saechsische-schweiz-osterzgebirge",
+    "stadt": "Landkreis Sächsische Schweiz-Osterzgebirge",
+    "bundesland": "Sachsen",
+    "behoerde": "Landratsamt Sächsische Schweiz-Osterzgebirge – Verkehrs- und Ordnungsamt, Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.landratsamt-pirna.de/kfz-zulassung.html",
+    "traeger": "Landkreis Sächsische Schweiz-Osterzgebirge",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassung Hauptstelle Pirna",
+        "strasse": "Schloßhof 2/4",
+        "plz": "01796",
+        "ort": "Pirna",
+        "quelle": "https://www.landratsamt-pirna.de/kfz-zulassung.html"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassung Nebenstelle Freital",
+        "strasse": "Dresdner Straße 107",
+        "plz": "01705",
+        "ort": "Freital",
+        "quelle": "https://www.landratsamt-pirna.de/kfz-zulassung.html"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassung Nebenstelle Dippoldiswalde",
+        "strasse": "Weißeritzstraße 7",
+        "plz": "01744",
+        "ort": "Dippoldiswalde",
+        "quelle": "https://www.landratsamt-pirna.de/kfz-zulassung.html"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassung Nebenstelle Sebnitz (im Rathaus)",
+        "strasse": "Kirchstraße 5",
+        "plz": "01855",
+        "ort": "Sebnitz",
+        "quelle": "https://www.landratsamt-pirna.de/kfz-zulassung.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.landratsamt-pirna.de/kfz-zulassung.html",
+      "quelle": "https://www.landratsamt-pirna.de/kfz-zulassung.html"
+    },
+    "terminUrl": {
+      "url": "https://dienste.landratsamt-pirna.de/m/lra-pirna-sva/extern/calendar/?uid=df4e66d0-0a09-4000-9e75-9b40e9e3e927",
+      "quelle": "https://www.landratsamt-pirna.de/kfz-zulassung.html"
+    },
+    "ikfzUrl": {
+      "url": "https://ikfz.ikfz-sachsen.de/i4/ikfz4/?LICENSEIDENTIFIER=saechsische-schweiz-osterzgebirge_kreis",
+      "quelle": "https://www.landratsamt-pirna.de/kfz-zulassung.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo, Fr: 8:00–12:00 Uhr",
+        "Di, Do: 08:00–12:00 Uhr und 13:00–15:00 Uhr",
+        "Mi: geschlossen",
+        "Di und Do: Vorsprachen ab 15:00 Uhr nur mit Termin",
+        "Außenstelle Sebnitz: Mo, Fr 09:00–12:00 Uhr",
+        "Außenstelle Sebnitz: Di 09:00–12:00, 13:00–18:00 Uhr",
+        "Außenstelle Sebnitz: Do 09:00–12:00, 13:00–17:00 Uhr"
+      ],
+      "hinweis": "Öffnungszeiten mit und ohne Termin; Terminbuchung empfohlen, ohne Termin teils erhebliche Wartezeiten; Di und Do ab 15:00 Uhr nur mit Termin",
+      "quelle": "https://www.landratsamt-pirna.de/kfz-zulassung.html"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde des Landkreises Sächsische Schweiz-Osterzgebirge mit Hauptstelle in Pirna und Nebenstellen in Freital, Dippoldiswalde und Sebnitz.",
+      "quelle": "https://www.landratsamt-pirna.de/kfz-zulassung.html"
+    },
+    "kuerzel": [
+      {
+        "code": "PIR",
+        "bedeutung": "Pirna",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "DW",
+        "bedeutung": "Dippoldiswalde",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "FTL",
+        "bedeutung": "Freital",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SEB",
+        "bedeutung": "Sebnitz",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Kennzeichen mit vierstelliger Zahlengruppe sind möglich; bei PIR, FTL und SEB darf dann nur ein Buchstabe verwendet werden (z. B. PIR N 1234), DW ist davon ausgenommen.",
+        "quelle": "https://www.landratsamt-pirna.de/kfz-zulassung.html"
+      },
+      {
+        "text": "Besuch ohne Termin möglich, aber mit teils erheblichen Wartezeiten; dienstags und donnerstags sind Vorsprachen ab 15:00 Uhr nur mit Termin möglich.",
+        "quelle": "https://www.landratsamt-pirna.de/kfz-zulassung.html"
+      },
+      {
+        "text": "Ausfuhrkennzeichen: Der Antragsteller muss seinen Hauptwohnsitz im Landkreis haben oder einen Empfangsbevollmächtigten mit Hauptwohnsitz im Landkreis benennen; das Fahrzeug ist zur Identifizierung vorzuführen.",
+        "quelle": "https://www.landratsamt-pirna.de/kfz-zulassung.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "vogtlandkreis",
+    "stadt": "Vogtlandkreis",
+    "bundesland": "Sachsen",
+    "behoerde": "Landratsamt Vogtlandkreis – Geschäftsbereich III, Straßenverkehrsamt, Kraftfahrzeugzulassung",
+    "behoerdeQuelle": "https://www.vogtlandkreis.de/Service-und-Verwaltung/Landratsamt/Gesch%C3%A4ftsbereiche-und-%C3%84mter/Gesch%C3%A4ftsbereich-III/Stra%C3%9Fenverkehrsamt/?kuo=1&sub=0",
+    "traeger": "Vogtlandkreis",
+    "standorte": [
+      {
+        "bezeichnung": "Kraftfahrzeugzulassung Plauen",
+        "strasse": "Reichenbacher Straße 34",
+        "plz": "08527",
+        "ort": "Plauen",
+        "quelle": "https://www.vogtlandkreis.de/Service-und-Verwaltung/Landratsamt/%C3%96ffnungszeiten-und-Terminvereinbarung/%C3%96ffnungszeiten-Kraftfahrzeugzulassung-Fahrerlaubnisrecht-Plauen.php?object=tx%7c3434.6&ModID=7&FID=2752.12777.1&NavID=2752.15"
+      }
+    ],
+    "website": {
+      "url": "https://www.vogtlandkreis.de/Service-und-Verwaltung/Themen/Ordnung-Gewerbe-und-Verkehr/Kraftfahrzeug-zulassung/",
+      "quelle": "https://www.vogtlandkreis.de/Service-und-Verwaltung/Themen/Ordnung-Gewerbe-und-Verkehr/Kraftfahrzeug-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://kfz.vogtlandkreis.de/tevisonline",
+      "quelle": "https://www.vogtlandkreis.de/Service-und-Verwaltung/Themen/Ordnung-Gewerbe-und-Verkehr/Kraftfahrzeug-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://ikfz.ikfz-sachsen.de/i4/ikfz4/?LICENSEIDENTIFIER=vogtlandkreis_kreis",
+      "quelle": "https://www.vogtlandkreis.de/Service-und-Verwaltung/Landratsamt/Gesch%C3%A4ftsbereiche-und-%C3%84mter/Gesch%C3%A4ftsbereich-III/Stra%C3%9Fenverkehrsamt/?kuo=1&sub=0"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 9:00–12:00 Uhr (vorrangig nach Terminvereinbarung)",
+        "Di 9:00–12:00 Uhr und 13:00–17:00 Uhr (vorrangig nach Terminvereinbarung)",
+        "Mi 9:00–12:00 Uhr (vorrangig nach Terminvereinbarung)",
+        "Do 9:00–12:00 Uhr und 13:00–18:00 Uhr (vorrangig nach Terminvereinbarung)",
+        "Fr 9:00–12:00 Uhr (vorrangig nach Terminvereinbarung)"
+      ],
+      "hinweis": "Zugang vorrangig nach Terminvereinbarung; in dringenden Fällen auch ohne Termin, dann nur begrenzte Anzahl Tickets und Wartezeit",
+      "quelle": "https://www.vogtlandkreis.de/Service-und-Verwaltung/Landratsamt/%C3%96ffnungszeiten-und-Terminvereinbarung/%C3%96ffnungszeiten-Kraftfahrzeugzulassung-Fahrerlaubnisrecht-Plauen.php?object=tx%7c3434.6&ModID=7&FID=2752.12777.1&NavID=2752.15"
+    },
+    "zustaendigkeit": {
+      "text": "Kraftfahrzeugzulassung des Landratsamtes Vogtlandkreis (Straßenverkehrsamt) für Fahrzeughalter im Vogtlandkreis, z. B. bei Neuzulassung oder Ummeldung nach Zuzug in den Vogtlandkreis; Besucheradresse in Plauen.",
+      "quelle": "https://www.vogtlandkreis.de/Service-und-Verwaltung/Landratsamt/Gesch%C3%A4ftsbereiche-und-%C3%84mter/Gesch%C3%A4ftsbereich-III/Stra%C3%9Fenverkehrsamt/?kuo=1&sub=0"
+    },
+    "kuerzel": [
+      {
+        "code": "V",
+        "bedeutung": "Vogtland",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "AE",
+        "bedeutung": "Auerbach",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "OVL",
+        "bedeutung": "Obervogtland",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "PL",
+        "bedeutung": "Plauen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "RC",
+        "bedeutung": "Reichenbach",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Ohne Termin werden nur in dringenden Fällen Anliegen erledigt; dafür steht nur eine begrenzte Anzahl Tickets zur Verfügung.",
+        "quelle": "https://www.vogtlandkreis.de/Service-und-Verwaltung/Landratsamt/%C3%96ffnungszeiten-und-Terminvereinbarung/%C3%96ffnungszeiten-Kraftfahrzeugzulassung-Fahrerlaubnisrecht-Plauen.php?object=tx%7c3434.6&ModID=7&FID=2752.12777.1&NavID=2752.15"
+      },
+      {
+        "text": "Bei der internetbasierten Zulassung (i-Kfz) ist die Bezahlung aller Vorgänge nur mit Kreditkarte möglich; die Abmeldung geht auch ohne eID-Identifizierung.",
+        "quelle": "https://www.vogtlandkreis.de/Service-und-Verwaltung/Landratsamt/Gesch%C3%A4ftsbereiche-und-%C3%84mter/Gesch%C3%A4ftsbereich-III/Stra%C3%9Fenverkehrsamt/?kuo=1&sub=0"
+      },
+      {
+        "text": "Online-Termine für Kraftfahrzeugzulassung und Führerschein werden über ein gemeinsames Terminportal gebucht.",
+        "quelle": "https://www.vogtlandkreis.de/Service-und-Verwaltung/Themen/Ordnung-Gewerbe-und-Verkehr/Kraftfahrzeug-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-zwickau",
+    "stadt": "Landkreis Zwickau",
+    "bundesland": "Sachsen",
+    "behoerde": "Landratsamt Landkreis Zwickau – Straßenverkehrsamt, Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.landkreis-zwickau.de/oeffnungszeiten-und-kontakt",
+    "traeger": "Landkreis Zwickau",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Glauchau",
+        "strasse": "Scherbergplatz 4",
+        "plz": "08371",
+        "ort": "Glauchau",
+        "quelle": "https://www.landkreis-zwickau.de/oeffnungszeiten-und-kontakt"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Werdau (Zutritt nur über Haupteingang – Haus A)",
+        "strasse": "Königswalder Straße 18",
+        "plz": "08412",
+        "ort": "Werdau",
+        "quelle": "https://www.landkreis-zwickau.de/oeffnungszeiten-und-kontakt"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Zwickau (Haus 1)",
+        "strasse": "Werdauer Straße 62",
+        "plz": "08056",
+        "ort": "Zwickau",
+        "quelle": "https://www.landkreis-zwickau.de/oeffnungszeiten-und-kontakt"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-zwickau.de/kfz-zulassung",
+      "quelle": "https://www.landkreis-zwickau.de/kfz-zulassung"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/lra-zwickau/select2?md=12",
+      "quelle": "https://www.landkreis-zwickau.de/online-terminvergabe-kfz-zulassung-fahrerlaubnis"
+    },
+    "ikfzUrl": {
+      "url": "https://ikfz.ikfz-sachsen.de/i4/ikfz4/?LICENSEIDENTIFIER=zwickau_kreis",
+      "quelle": "https://www.landkreis-zwickau.de/online-zulassung-ikfz"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–12:00 Uhr (am Standort Zwickau ohne Termin mit begrenztem Kontingent 08:00–11:30 Uhr)",
+        "Di 08:00–12:00 und 14:00–18:00 Uhr (Annahmeschluss 17:30 Uhr)",
+        "Mi geschlossen",
+        "Do 08:00–12:00 und 14:00–16:00 Uhr",
+        "Fr 08:00–12:00 Uhr"
+      ],
+      "hinweis": "ausschließlich nach vorheriger Terminreservierung (Ausnahme: montags Zwickau ohne Termin, begrenztes Kontingent)",
+      "quelle": "https://www.landkreis-zwickau.de/oeffnungszeiten-und-kontakt"
+    },
+    "zustaendigkeit": {
+      "text": "Alle drei Dienststellen (Glauchau, Werdau, Zwickau) sind für den ganzen Landkreis Zwickau zuständig; es gibt keine separaten Zuständigkeitsbereiche innerhalb des Landkreises.",
+      "quelle": "https://www.landkreis-zwickau.de/oeffnungszeiten-und-kontakt"
+    },
+    "kuerzel": [
+      {
+        "code": "Z",
+        "bedeutung": "Zwickau",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GC",
+        "bedeutung": "Glauchau",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "HOT",
+        "bedeutung": "Hohenstein-Ernstthal",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WDA",
+        "bedeutung": "Werdau",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Außerbetriebsetzungen und Adressänderungen innerhalb des Landkreises werden ohne Termin ausschließlich in den Bürgerservicestellen bearbeitet, nicht in den Zulassungsstellen.",
+        "quelle": "https://www.landkreis-zwickau.de/online-terminvergabe-kfz-zulassung-fahrerlaubnis"
+      },
+      {
+        "text": "Montags kann am Standort Zwickau von 8:00 bis 11:30 Uhr ohne Termin vorgesprochen werden (begrenztes Kontingent).",
+        "quelle": "https://www.landkreis-zwickau.de/online-terminvergabe-kfz-zulassung-fahrerlaubnis"
+      },
+      {
+        "text": "Die i-Kfz-Gebühr wird direkt bei Abschluss des Vorgangs per Kreditkarte (VISA oder Mastercard) oder PayPal bezahlt.",
+        "quelle": "https://www.landkreis-zwickau.de/online-zulassung-ikfz"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

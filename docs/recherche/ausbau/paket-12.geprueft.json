@@ -1,0 +1,677 @@
+[
+  {
+    "slug": "landkreis-dillingen-an-der-donau",
+    "stadt": "Landkreis Dillingen an der Donau",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Dillingen a.d.Donau – Kfz-Zulassungsstelle (Team 322)",
+    "behoerdeQuelle": "https://www.landkreis-dillingen.de/landkreis-buergerservice/landratsamt/fachbereiche/detail?organisation-1305&lang=de&show=1&compact=0",
+    "traeger": "Landkreis Dillingen a.d.Donau",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Dillingen (Außenstelle Große Allee 25, Gebäude B)",
+        "strasse": "Große Allee 25",
+        "plz": "89407",
+        "ort": "Dillingen a.d.Donau",
+        "quelle": "https://www.landkreis-dillingen.de/landkreis-buergerservice/landratsamt/oeffnungszeiten"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassung Außenstelle Wertingen",
+        "strasse": "Schulstraße 10",
+        "plz": "86637",
+        "ort": "Wertingen",
+        "quelle": "https://www.landkreis-dillingen.de/landkreis-buergerservice/landratsamt/oeffnungszeiten"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-dillingen.de/landkreis-buergerservice/landratsamt/fachbereiche/detail?organisation-1305&lang=de&show=1&compact=0",
+      "quelle": "https://www.landkreis-dillingen.de/landkreis-buergerservice/landratsamt/fachbereiche"
+    },
+    "terminUrl": {
+      "url": "https://termin.landkreis-dillingen.de/m/strassenverkehrsamt/extern/calendar/?uid=9dc7a350-f5dc-4703-8ea2-9d1cc6de91c2",
+      "quelle": "https://www.landkreis-dillingen.de/landkreis-buergerservice/landratsamt/online-terminvereinbarung"
+    },
+    "ikfzUrl": {
+      "url": "https://www.landkreis-dillingen.de/landkreis-buergerservice/landratsamt/formulare/zulassungsbehoerde",
+      "quelle": "https://www.landkreis-dillingen.de/landkreis-buergerservice/landratsamt/formulare"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Dillingen (Große Allee 25): Mo 07:30–12:30 Uhr",
+        "Dillingen: Di 07:30–12:30 Uhr und 14:00–17:30 Uhr",
+        "Dillingen: Mi 07:30–12:30 Uhr",
+        "Dillingen: Do 07:30–12:30 Uhr und 14:00–17:30 Uhr",
+        "Dillingen: Fr 07:30–12:30 Uhr",
+        "Wertingen (Schulstraße 10): Mo 08:00–12:00 Uhr",
+        "Wertingen: Di 08:00–12:00 Uhr",
+        "Wertingen: Mi 08:00–12:00 Uhr",
+        "Wertingen: Do 08:00–12:00 Uhr und 14:00–18:00 Uhr",
+        "Wertingen: Fr 08:00–12:00 Uhr"
+      ],
+      "hinweis": "Termin nicht zwingend erforderlich, wird aber zur Verkürzung der Wartezeit empfohlen (Online-Terminvereinbarung). Die Zulassungsstelle hat abweichende Zeiten zum übrigen Landratsamt.",
+      "quelle": "https://www.landkreis-dillingen.de/landkreis-buergerservice/landratsamt/oeffnungszeiten"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsbehörde für Halter mit Hauptwohnsitz (bei Firmen/Vereinen: Betriebs- bzw. Vereinssitz) im Landkreis Dillingen a.d.Donau, einschließlich der Stadt Dillingen a.d.Donau, die keine eigene Zulassungsbehörde hat (im BayernPortal-Verzeichnis der Kfz-Zulassungsbehörden ist für den Landkreis nur das Landratsamt aufgeführt). Vorsprache in Dillingen oder in der Außenstelle Wertingen.",
+      "quelle": "https://www.landkreis-dillingen.de/landkreis-buergerservice/landratsamt/aufgaben/detail?service-1696&lang=de&show=1"
+    },
+    "kuerzel": [
+      {
+        "code": "DLG",
+        "bedeutung": "Dillingen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WER",
+        "bedeutung": "Wertingen (Altkennzeichen, wird auch im Landkreis Augsburg ausgegeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Ein Termin ist nicht zwingend erforderlich, wird aber im Interesse kurzer Wartezeiten empfohlen; die Online-Terminvereinbarung gilt für Dillingen und Wertingen.",
+        "quelle": "https://www.landkreis-dillingen.de/landkreis-buergerservice/landratsamt/online-terminvereinbarung"
+      },
+      {
+        "text": "Wunschkennzeichen können online reserviert werden; Benutzerleitfäden zur Online-Zulassung (natürliche und juristische Personen) stehen als PDF bereit.",
+        "quelle": "https://www.landkreis-dillingen.de/landkreis-buergerservice/landratsamt/formulare"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-donau-ries",
+    "stadt": "Landkreis Donau-Ries",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Donau-Ries – Zulassungsbehörde (Team 222 KFZ-Zulassungswesen)",
+    "behoerdeQuelle": "https://www.bayernportal.de/dokumente/behoerde/244513127915",
+    "traeger": "Landkreis Donau-Ries",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsbehörde Donauwörth (Landratsamt Donau-Ries)",
+        "strasse": "Pflegstraße 2",
+        "plz": "86609",
+        "ort": "Donauwörth",
+        "quelle": "https://www.bayernportal.de/dokumente/behoerde/244513127915"
+      },
+      {
+        "bezeichnung": "Zulassungsbehörde Nördlingen (Landratsamt Donau-Ries, Dienststelle Nördlingen)",
+        "strasse": "Bürgermeister-Reiger-Straße 5",
+        "plz": "86720",
+        "ort": "Nördlingen",
+        "quelle": "https://www.bayernportal.de/dokumente/behoerde/244513127915"
+      }
+    ],
+    "website": {
+      "url": "https://www.donau-ries.de/rund-ums-auto/zulassungsbehoerde",
+      "quelle": "https://www.donau-ries.de/rund-ums-auto/zulassungsbehoerde"
+    },
+    "terminUrl": {
+      "url": "https://termine.donau-ries.de/m/LRA-Donau-Ries/extern/calendar/?uid=2747c9f3-d423-48e5-b0ea-0255668c1d16",
+      "quelle": "https://www.donau-ries.de/rund-ums-auto/zulassungsbehoerde"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrdonauries/bsp_ikfz_antragstellung/#/",
+      "quelle": "https://www.donau-ries.de/rund-ums-auto/zulassungsbehoerde"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Ohne Termin: Mo–Fr 07:30–12:30 Uhr (Wartemarken bis 11:30 Uhr)",
+        "Mit Termin: Mo, Mi, Fr 07:30–12:30 Uhr",
+        "Mit Termin: Di 07:30–14:00 Uhr",
+        "Mit Termin: Do 07:30–12:30 Uhr und 14:00–17:30 Uhr",
+        "Händlerschalter: Mo–Fr 07:30–10:30 Uhr"
+      ],
+      "hinweis": "Gilt für Donauwörth und Nördlingen. Termin empfohlen; ein Besuch ohne Termin ist nur vormittags möglich und je nach Tagesaufkommen mit erheblicher Wartezeit verbunden.",
+      "quelle": "https://www.donau-ries.de/rund-ums-auto/zulassungsbehoerde"
+    },
+    "zustaendigkeit": {
+      "text": "Wohnortprinzip: Wer seinen Hauptwohnsitz im Landkreis Donau-Ries hat, ist bei den Zulassungsbehörden des Landratsamts in Donauwörth und Nördlingen richtig. Die Städte Donauwörth und Nördlingen haben keine eigene Zulassungsbehörde (im BayernPortal-Verzeichnis ist für den Landkreis nur das Landratsamt aufgeführt).",
+      "quelle": "https://www.donau-ries.de/rund-ums-auto/zulassungsbehoerde"
+    },
+    "kuerzel": [
+      {
+        "code": "DON",
+        "bedeutung": "Donauwörth",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "NÖ",
+        "bedeutung": "Nördlingen (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Getrennte Online-Terminbuchung für Donauwörth und Nördlingen; die durchschnittlichen Wartezeiten beider Standorte sind online einsehbar.",
+        "quelle": "https://www.donau-ries.de/rund-ums-auto/zulassungsbehoerde"
+      },
+      {
+        "text": "Eigener Händlerschalter Mo–Fr 07:30–10:30 Uhr.",
+        "quelle": "https://www.donau-ries.de/rund-ums-auto/zulassungsbehoerde"
+      },
+      {
+        "text": "Für die Online-Zulassung (iKfz) ist eine Registrierung mit BundID oder BayernID nötig; die Online-Außerbetriebsetzung funktioniert ohne Registrierung.",
+        "quelle": "https://www.donau-ries.de/rund-ums-auto/zulassungsbehoerde"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-guenzburg",
+    "stadt": "Landkreis Günzburg",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Günzburg – Zulassungsbehörde (Fachbereich 35 Kfz-Zulassung und Bürgerservice)",
+    "behoerdeQuelle": "https://www.landkreis-guenzburg.de/amt-und-verwaltung/mobilitaet-und-verkehr/zulassungsbehoerde/",
+    "traeger": "Landkreis Günzburg",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Günzburg (Landratsamt, Dienststelle Dillinger Straße 21)",
+        "strasse": "Dillinger Straße 21",
+        "plz": "89312",
+        "ort": "Günzburg",
+        "quelle": "https://www.bayernportal.de/dokumente/behoerde/7790649786515"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Krumbach (Außenstelle, Kreishaus Krumbach)",
+        "strasse": "Robert-Steiger-Straße 5",
+        "plz": "86381",
+        "ort": "Krumbach (Schwaben)",
+        "quelle": "https://www.bayernportal.de/dokumente/behoerde/7807427563515"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-guenzburg.de/amt-und-verwaltung/mobilitaet-und-verkehr/zulassungsbehoerde/",
+      "quelle": "https://www.landkreis-guenzburg.de/amt-und-verwaltung/mobilitaet-und-verkehr/zulassungsbehoerde/"
+    },
+    "terminUrl": {
+      "url": "https://termine.landkreis-guenzburg.de/m/lbb/extern/calendar/?uid=2224a191-d0b2-4432-aeae-ba69b10d03ba",
+      "quelle": "https://www.landkreis-guenzburg.de/amt-und-verwaltung/mobilitaet-und-verkehr/zulassungsbehoerde/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrguenzburg/bsp_ikfz_antragstellung",
+      "quelle": "https://www.landkreis-guenzburg.de/amt-und-verwaltung/mobilitaet-und-verkehr/zulassungsbehoerde/"
+    },
+    "oeffnungszeiten": null,
+    "zustaendigkeit": {
+      "text": "Die Zulassungsbehörde des Landkreises Günzburg befindet sich im Landratsamt Günzburg und in der Außenstelle Krumbach; sie ist für den gesamten Landkreis zuständig, auch für die Stadt Günzburg (im BayernPortal-Verzeichnis der Kfz-Zulassungsbehörden ist für den Landkreis nur das Landratsamt aufgeführt).",
+      "quelle": "https://www.landkreis-guenzburg.de/amt-und-verwaltung/mobilitaet-und-verkehr/zulassungsbehoerde/"
+    },
+    "kuerzel": [
+      {
+        "code": "GZ",
+        "bedeutung": "Günzburg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "KRU",
+        "bedeutung": "Krumbach (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Für die Zulassung ist ein Termin erforderlich – für Privatpersonen ebenso wie für Gewerbetreibende (u. a. Autohäuser und Versicherungen).",
+        "quelle": "https://www.landkreis-guenzburg.de/amt-und-verwaltung/mobilitaet-und-verkehr/zulassungsbehoerde/"
+      },
+      {
+        "text": "Vor Ort meldet man sich mit Terminnummer oder QR-Code aus der Bestätigungs-E-Mail am Terminal an und erhält eine Wartemarke.",
+        "quelle": "https://www.landkreis-guenzburg.de/amt-und-verwaltung/mobilitaet-und-verkehr/zulassungsbehoerde/"
+      },
+      {
+        "text": "Das Ausweisdokument muss im Original vorgelegt werden; das SEPA-Lastschriftmandat für die Kfz-Steuer muss der Halter selbst unterschreiben, ein Bevollmächtigter darf das nicht.",
+        "quelle": "https://www.landkreis-guenzburg.de/amt-und-verwaltung/mobilitaet-und-verkehr/zulassungsbehoerde/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten"
+    ]
+  },
+  {
+    "slug": "landkreis-lindau-bodensee",
+    "stadt": "Landkreis Lindau (Bodensee)",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Lindau (Bodensee) – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-lindau.de/Wir-f%C3%BCr-Sie/Online-Bereich/Online-Dienste-Kfz-Zulassungsstelle/",
+    "traeger": "Landkreis Lindau (Bodensee)",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle (Landratsamt Lindau, Bereich Verkehr)",
+        "strasse": "Heuriedweg 38",
+        "plz": "88131",
+        "ort": "Lindau (Bodensee)",
+        "quelle": "https://www.landkreis-lindau.de/Wir-f%C3%BCr-Sie/Online-Bereich/Online-Dienste-Kfz-Zulassungsstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-lindau.de/Wir-f%C3%BCr-Sie/Online-Bereich/Online-Dienste-Kfz-Zulassungsstelle/",
+      "quelle": "https://www.landkreis-lindau.de/"
+    },
+    "terminUrl": {
+      "url": "https://termin.landkreis-lindau.de/termin/select2?md=4",
+      "quelle": "https://www.landkreis-lindau.de/Wir-f%C3%BCr-Sie/Online-Bereich/Online-Terminreservierung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerserviceportal.de/bayern/lkrlindau/bsp_ikfz_antragstellung",
+      "quelle": "https://www.landkreis-lindau.de/Wir-f%C3%BCr-Sie/Online-Bereich/Online-Dienste-Kfz-Zulassungsstelle/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Telefonisch: Mo–Fr 7.30–12.30 Uhr",
+        "Telefonisch: Mo–Do 14–16.30 Uhr",
+        "Nur Außerbetriebsetzung/Abmeldung ohne Termin: Mo–Do 8–15 Uhr",
+        "Nur Außerbetriebsetzung/Abmeldung ohne Termin: Fr 8–12 Uhr"
+      ],
+      "hinweis": "Allgemeine Öffnungszeiten gibt es nicht; die Zulassungsstelle bittet, sich per E-Mail oder über die Online-Terminvereinbarung zu melden.",
+      "quelle": "https://www.landkreis-lindau.de/Wir-f%C3%BCr-Sie/Online-Bereich/Online-Dienste-Kfz-Zulassungsstelle/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsstelle des Landratsamts für Halter mit Hauptwohnsitz in den Orten Bodolz, Gestratz, Grünenbach, Heimenkirch, Hergatz, Hergensweiler, Lindau (Bodensee), Lindenberg im Allgäu, Maierhöfen, Nonnenhorn, Oberreute, Opfenbach, Röthenbach, Scheidegg, Sigmarszell, Stiefenhofen, Wasserburg (Bodensee), Weiler-Simmerberg und Weißensberg – die Stadt Lindau (Bodensee) hat keine eigene Zulassungsbehörde.",
+      "quelle": "https://www.landkreis-lindau.de/Wir-f%C3%BCr-Sie/Dienstleistungen-und-Formulare/Zulassungsstelle.php?ModID=10&FID=1188.833.1"
+    },
+    "kuerzel": [
+      {
+        "code": "LI",
+        "bedeutung": "Lindau (Bodensee)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Eine Außerbetriebsetzung/Abmeldung ist ohne Termin möglich (Mo–Do 8–15 Uhr, Fr 8–12 Uhr); für andere Anliegen Online-Termin oder E-Mail.",
+        "quelle": "https://www.landkreis-lindau.de/Wir-f%C3%BCr-Sie/Online-Bereich/Online-Dienste-Kfz-Zulassungsstelle/"
+      },
+      {
+        "text": "In Notfällen (z. B. dringender Fahrzeugwechsel nach Unfall oder Defekt) per E-Mail an zulassungsstelle@landkreis-lindau.de melden – die Zulassungsstelle meldet sich kurzfristig.",
+        "quelle": "https://www.landkreis-lindau.de/Wir-f%C3%BCr-Sie/Online-Bereich/Online-Dienste-Kfz-Zulassungsstelle/"
+      },
+      {
+        "text": "Online-Zulassung nur bei der Behörde der Hauptwohnung, nicht am Zweitwohnsitz; online kann nur die Abmeldung für eine andere Person erledigt werden.",
+        "quelle": "https://www.landkreis-lindau.de/Wir-f%C3%BCr-Sie/Online-Bereich/Online-Dienste-Kfz-Zulassungsstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-neu-ulm",
+    "stadt": "Landkreis Neu-Ulm",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Neu-Ulm – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-nu.de/Zulassungsstelle",
+    "traeger": "Landkreis Neu-Ulm",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Neu-Ulm",
+        "strasse": "Kantstraße 8",
+        "plz": "89231",
+        "ort": "Neu-Ulm",
+        "quelle": "https://www.landkreis-nu.de/Zulassungsstelle"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Illertissen",
+        "strasse": "Ulmer Straße 20",
+        "plz": "89257",
+        "ort": "Illertissen",
+        "quelle": "https://www.landkreis-nu.de/Zulassungsstelle"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-nu.de/Zulassungsstelle",
+      "quelle": "https://www.landkreis-nu.de/willkommen/"
+    },
+    "terminUrl": {
+      "url": "https://www.landkreis-nu.de/zulassungsstelle-termine",
+      "quelle": "https://www.landkreis-nu.de/Zulassungsstelle"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrneuulm/bsp_ikfz_antragstellung/#/",
+      "quelle": "https://www.landkreis-nu.de/Zulassungsstelle"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Neu-Ulm: Mo 07:30–12:30 Uhr (Annahmeschluss 12:00 Uhr)",
+        "Neu-Ulm: Di 07:30–12:30 Uhr (Annahmeschluss 12:00 Uhr)",
+        "Neu-Ulm: Mi 07:30–12:30 Uhr (Annahmeschluss 12:00 Uhr)",
+        "Neu-Ulm: Do 07:30–17:30 Uhr (Annahmeschluss 17:00 Uhr)",
+        "Neu-Ulm: Fr 07:30–12:30 Uhr (Annahmeschluss 12:00 Uhr)",
+        "Illertissen: Mo–Fr jeweils 08:00–12:30 Uhr (Annahmeschluss 12:00 Uhr)"
+      ],
+      "hinweis": "Spontanbesuche und Besuche mit Termin sind möglich; ein Termin wird empfohlen. Bei hohem Andrang kann für Spontankunden ein vorgezogener Annahmeschluss gelten.",
+      "quelle": "https://www.landkreis-nu.de/Zulassungsstelle"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsbehörde des Landkreises Neu-Ulm mit Standorten in Neu-Ulm und Illertissen; zuständig auch für die Stadt Neu-Ulm, die keine eigene Zulassungsbehörde hat (im BayernPortal-Verzeichnis der Kfz-Zulassungsbehörden ist für den Landkreis nur das Landratsamt aufgeführt).",
+      "quelle": "https://www.landkreis-nu.de/Zulassungsstelle"
+    },
+    "kuerzel": [
+      {
+        "code": "NU",
+        "bedeutung": "Neu-Ulm",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ILL",
+        "bedeutung": "Illertissen (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die aktuellen Wartezeiten der Standorte Neu-Ulm und Illertissen sind online abrufbar.",
+        "quelle": "https://www.landkreis-nu.de/Zulassungsstelle"
+      },
+      {
+        "text": "Wegen der Einführung eines neuen Fachverfahrens kommt es derzeit immer wieder zu längeren Wartezeiten in beiden Zulassungsstellen (Stand 03.11.2026).",
+        "quelle": "https://www.landkreis-nu.de/Zulassungsstelle"
+      },
+      {
+        "text": "Online-Abmeldung: Liegt die Nummer der ZB I zwischen 319239641 und 319744733, fehlt in der freigelegten TAN eine Ziffer – dann den Datamatrix-Code daneben auslesen und diese Nummer eingeben.",
+        "quelle": "https://www.landkreis-nu.de/Zulassungsstelle"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-oberallgaeu",
+    "stadt": "Landkreis Oberallgäu",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Oberallgäu – BürgerService Zulassung",
+    "behoerdeQuelle": "https://www.oberallgaeu.org/landkreis-politik-kommunales-ehrenamt/servicezeiten-und-standorte-landratsamt",
+    "traeger": "Landkreis Oberallgäu",
+    "standorte": [
+      {
+        "bezeichnung": "Hauptstelle Sonthofen (BürgerService Zulassung & Fahrerlaubnis, Landratsamt)",
+        "strasse": "Oberallgäuer Platz 2",
+        "plz": "87527",
+        "ort": "Sonthofen",
+        "quelle": "https://www.oberallgaeu.org/zulassung"
+      },
+      {
+        "bezeichnung": "Außenstelle Kempten (gemeinsamer BürgerService Zulassung KE/OA)",
+        "strasse": "Bahnhofstraße 80",
+        "plz": "87435",
+        "ort": "Kempten (Allgäu)",
+        "quelle": "https://www.oberallgaeu.org/zulassung"
+      }
+    ],
+    "website": {
+      "url": "https://www.oberallgaeu.org/zulassung",
+      "quelle": "https://www.oberallgaeu.org/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/lraoa/",
+      "quelle": "https://www.oberallgaeu.org/zulassung"
+    },
+    "ikfzUrl": {
+      "url": "https://www.oberallgaeu.org/zulassung/online-zulassung",
+      "quelle": "https://www.oberallgaeu.org/zulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Sonthofen: Mo 08:00–16:00 Uhr",
+        "Sonthofen: Di 08:00–12:30 Uhr",
+        "Sonthofen: Mi 08:00–12:30 Uhr",
+        "Sonthofen: Do 08:00–16:00 Uhr",
+        "Sonthofen: Fr 07:30–12:30 Uhr"
+      ],
+      "hinweis": "Nur mit vorab reserviertem Termin. Die Zeiten gelten für den BürgerService Zulassung & Fahrerlaubnis in Sonthofen; für Kempten (Bahnhofstraße 80) nennt der Landkreis keine Zeiten, dort ist für jeden Besuch ein Termin über kempten.de zu buchen.",
+      "quelle": "https://www.oberallgaeu.org/landkreis-politik-kommunales-ehrenamt/servicezeiten-und-standorte-landratsamt"
+    },
+    "zustaendigkeit": {
+      "text": "Landkreis Oberallgäu (Kennzeichen OA). Hauptstelle Sonthofen für den südlichen Landkreis: Balderschwang, Blaichach, Bolsterlang, Burgberg i. Allg., Fischen i. Allg., Bad Hindelang, Immenstadt i. Allg., Missen-Wilhams, Obermaiselstein, Oberstaufen, Oberstdorf, Ofterschwang, Rettenberg, Sonthofen, Wertach. Außenstelle Kempten für den nördlichen Landkreis: Altusried, Betzigau, Buchenberg, Dietmannsried, Durach, Haldenwang, Lauben, Oy-Mittelberg, Sulzberg, Waltenhofen, Weitnau, Wiggensbach, Wildpoldsried. Die Stadt Kempten (Allgäu, Kennzeichen KE) ist eine eigene Zulassungsbehörde und gehört nicht dazu.",
+      "quelle": "https://www.oberallgaeu.org/zulassung"
+    },
+    "kuerzel": [
+      {
+        "code": "OA",
+        "bedeutung": "Oberallgäu",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "In Kempten (Bahnhofstraße 80) betreiben Landkreis Oberallgäu und Stadt Kempten einen gemeinsamen BürgerService Zulassung; Termine dort über die Terminvereinbarung der Stadt Kempten (https://www.kempten.de/terminvereinbarung-kempten-11035.html).",
+        "quelle": "https://www.oberallgaeu.org/landkreis-politik-kommunales-ehrenamt/servicezeiten-und-standorte-landratsamt"
+      },
+      {
+        "text": "Bei Kfz-Steuerrückständen ist keine Zulassung möglich; die Rückstände müssen zuerst beim Zoll beglichen werden und der Beleg des Hauptzollamts (10 Tage gültig) ist vorzulegen.",
+        "quelle": "https://www.oberallgaeu.org/zulassung"
+      },
+      {
+        "text": "Für die Online-Zulassung (außer Abmeldung) braucht man ein BundID- oder BayernID-Konto; Identifizierung per Elster-Zertifikat oder Online-Ausweis.",
+        "quelle": "https://www.oberallgaeu.org/zulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten"
+    ]
+  },
+  {
+    "slug": "landkreis-ostallgaeu",
+    "stadt": "Landkreis Ostallgäu",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Ostallgäu – Zulassungsstelle (Bürgerservice Marktoberdorf, Zulassungsstelle Füssen)",
+    "behoerdeQuelle": "https://www.ostallgaeu.de/buerger-service/serviceportal/dienstleistung/kraftfahrzeug-beantragung-der-neuzulassung",
+    "traeger": "Landkreis Ostallgäu",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgerservice Marktoberdorf (Zulassungs- und Führerscheinstelle im Landratsamt)",
+        "strasse": "Schwabenstraße 11",
+        "plz": "87616",
+        "ort": "Marktoberdorf",
+        "quelle": "https://www.ostallgaeu.de/kontakt"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Füssen (Dienststelle Füssen des Landratsamts)",
+        "strasse": "Herzogstraße 3",
+        "plz": "87629",
+        "ort": "Füssen",
+        "quelle": "https://www.bayernportal.de/dokumente/behoerde/5692174210103"
+      }
+    ],
+    "website": {
+      "url": "https://www.ostallgaeu.de/buerger-service/fahrzeuge-fuehrerschein",
+      "quelle": "https://www.ostallgaeu.de/"
+    },
+    "terminUrl": {
+      "url": "https://termin.ostallgaeu.de/m/lra-oal/extern/calendar/?uid=259bec4f-6d28-46e3-a008-94818c84fe32",
+      "quelle": "https://www.ostallgaeu.de/buerger-service/terminvereinbarung"
+    },
+    "ikfzUrl": {
+      "url": "https://www.ostallgaeu.de/online-dienste-kfz-und-fuehrerschein/online-zulassungsbehoerde",
+      "quelle": "https://www.ostallgaeu.de/online-dienste-kfz-und-fuehrerschein"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo und Di 7:30–16:00 Uhr",
+        "Mi 7:30–12:30 Uhr",
+        "Do 7:30–17:30 Uhr",
+        "Fr 7:30–12:30 Uhr"
+      ],
+      "hinweis": "Öffnungszeiten Bürgerservice (Zulassungs- und Führerscheinstelle). Für Zulassungen ist ein Termin notwendig; eine Außerbetriebsetzung ist ohne Termin an der Information möglich. Zeiten für die Zulassungsstelle Füssen werden nicht gesondert genannt.",
+      "quelle": "https://www.ostallgaeu.de/buerger-service/fahrzeuge-fuehrerschein"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsbehörde ist das Landratsamt Ostallgäu (Bürgerservice Marktoberdorf und Zulassungsstelle Füssen). Die Stadt Kaufbeuren ist eine eigene Zulassungsbehörde und gehört nicht dazu.",
+      "quelle": "https://www.bayernportal.de/dokumente/behoerdeordner/78443662168"
+    },
+    "kuerzel": [
+      {
+        "code": "OAL",
+        "bedeutung": "Ostallgäu",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "FÜS",
+        "bedeutung": "Füssen (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MOD",
+        "bedeutung": "Marktoberdorf (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Eine Außerbetriebsetzung oder die Abholung eines fertigen Führerscheins ist ohne Termin an der Information möglich.",
+        "quelle": "https://www.ostallgaeu.de/buerger-service/terminvereinbarung"
+      },
+      {
+        "text": "Beim Termin werden nur die bei der Reservierung angegebenen Dienstleistungen bearbeitet; bei zu vielen Vorgängen ist keine Reservierung möglich – dann können die Unterlagen mit Kontaktdaten abgegeben werden.",
+        "quelle": "https://www.ostallgaeu.de/buerger-service/terminvereinbarung"
+      },
+      {
+        "text": "Wer beim Aufruf nicht erscheint, verliert den Termin – pünktlich kommen.",
+        "quelle": "https://www.ostallgaeu.de/buerger-service/terminvereinbarung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "standorte"
+    ]
+  },
+  {
+    "slug": "landkreis-unterallgaeu",
+    "stadt": "Landkreis Unterallgäu",
+    "bundesland": "Bayern",
+    "behoerde": "Landratsamt Unterallgäu – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landratsamt-unterallgaeu.de/buergerservice/auto-und-verkehr/kfz-zulassungen",
+    "traeger": "Landkreis Unterallgäu",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Mindelheim (Haupthaus, Gebäude 1)",
+        "strasse": "Bad Wörishofer Straße 33",
+        "plz": "87719",
+        "ort": "Mindelheim",
+        "quelle": "https://www.landratsamt-unterallgaeu.de/kontakt/anfahrt-und-kontakt"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Memmingerberg (Dienststelle West, Gebäude 5)",
+        "strasse": "Augsburger Straße 68",
+        "plz": "87766",
+        "ort": "Memmingerberg",
+        "quelle": "https://www.landratsamt-unterallgaeu.de/kontakt/anfahrt-und-kontakt"
+      }
+    ],
+    "website": {
+      "url": "https://www.landratsamt-unterallgaeu.de/buergerservice/auto-und-verkehr/kfz-zulassungen",
+      "quelle": "https://www.unterallgaeu.de/"
+    },
+    "terminUrl": {
+      "url": "https://termine-reservieren.de/termine/unterallgaeu/select2?md=1",
+      "quelle": "https://www.landratsamt-unterallgaeu.de/buergerservice/auto-und-verkehr/kfz-zulassungen"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerservice-portal.de/bayern/lkrunterallgaeu/bsp_ikfz_antragstellung/#/",
+      "quelle": "https://www.landratsamt-unterallgaeu.de/buergerservice/auto-und-verkehr/kfz-zulassungen"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 7:30–12:00 Uhr",
+        "Di 7:30–12:00 Uhr / 13:30–16:00 Uhr",
+        "Mi 7:30–12:00 Uhr",
+        "Do 7:30–12:00 Uhr / 13:30–17:00 Uhr",
+        "Fr 7:30–12:00 Uhr"
+      ],
+      "hinweis": "Gilt für Mindelheim und Memmingerberg. Besuch ohne Termin möglich, Online-Termin empfohlen; spätestens 15 Minuten vor Schließung da sein – das letzte Warteticket wird 15 Minuten vor Schließung vergeben.",
+      "quelle": "https://www.landratsamt-unterallgaeu.de/buergerservice/auto-und-verkehr/oeffnungszeiten"
+    },
+    "zustaendigkeit": {
+      "text": "Wohnortprinzip: zuständig für Halter mit Hauptwohnsitz oder Firmensitz im Landkreis Unterallgäu (Zulassungsstellen Mindelheim und Memmingerberg). Die Stadt Memmingen ist eine eigene Zulassungsbehörde und gehört nicht dazu (BayernPortal-Verzeichnis der Kfz-Zulassungsbehörden).",
+      "quelle": "https://www.landratsamt-unterallgaeu.de/buergerservice/auto-und-verkehr/kfz-zulassungen"
+    },
+    "kuerzel": [
+      {
+        "code": "MN",
+        "bedeutung": "Mindelheim",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Außenstelle für den westlichen Landkreis ist umgezogen und befindet sich jetzt in Memmingerberg, Augsburger Straße 68.",
+        "quelle": "https://www.landratsamt-unterallgaeu.de/buergerservice/auto-und-verkehr/kfz-zulassungen"
+      },
+      {
+        "text": "Termine lassen sich auch über die Unterallgäu-App buchen.",
+        "quelle": "https://www.landratsamt-unterallgaeu.de/buergerservice/auto-und-verkehr/oeffnungszeiten"
+      },
+      {
+        "text": "Brückentage, die Tage um Ostern, Pfingsten, Weihnachten und Silvester sowie die Schulferien gehören zu den besucherstarken Tagen; dann ist mit längeren Wartezeiten zu rechnen.",
+        "quelle": "https://www.landratsamt-unterallgaeu.de/buergerservice/auto-und-verkehr/kfz-zulassungen"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "moosburg",
+    "stadt": "Moosburg a.d.Isar",
+    "bundesland": "Bayern",
+    "behoerde": "Kfz-Zulassungsbehörde der Stadt Moosburg a.d. Isar",
+    "behoerdeQuelle": "https://www.moosburg.de/kfz-zulassungsbehoerde",
+    "traeger": "Stadt Moosburg a.d.Isar (Landkreis Freising)",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde der Stadt Moosburg",
+        "strasse": "Sudetenlandstraße 14",
+        "plz": "85368",
+        "ort": "Moosburg a.d.Isar",
+        "quelle": "https://www.moosburg.de/kfz-zulassungsbehoerde"
+      }
+    ],
+    "website": {
+      "url": "https://www.moosburg.de/kfz-zulassungsbehoerde",
+      "quelle": "https://www.moosburg.de/startseite"
+    },
+    "terminUrl": null,
+    "ikfzUrl": {
+      "url": "https://www.buergerserviceportal.de/bayern/moosburgisar/bsp_ikfz_antragstellung",
+      "quelle": "https://www.moosburg.de/kfz-zulassungsbehoerde"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Fr 08:00–12:00 Uhr",
+        "Mi Nachmittag 14:00–15:30 Uhr",
+        "Do Nachmittag 14:00–17:00 Uhr"
+      ],
+      "hinweis": "Geänderte Öffnungszeiten ab dem 17.11.2025. Abweichende Zeiten bzw. Schließtage werden auf der Startseite bekannt gegeben. Eine Online-Terminbuchung wird nicht genannt.",
+      "quelle": "https://www.moosburg.de/kfz-zulassungsbehoerde"
+    },
+    "zustaendigkeit": {
+      "text": "Zulassungsbehörde für die Bürger der Stadt Moosburg a.d.Isar (inkl. Ortsteile Pfrombach und Aich). Sie kann zusätzlich Zulassungen für alle Bürger des Landkreises Freising vornehmen – ausgenommen sind rote Oldtimer- oder Händlerkennzeichen (dafür ist die Zulassungsbehörde des Landratsamts Freising zuständig) sowie Auskünfte über Fahrzeuge, deren Zulassungsstandort nicht in Moosburg liegt. Für den übrigen Landkreis Freising ist außerdem das Landratsamt Freising Zulassungsbehörde.",
+      "quelle": "https://www.moosburg.de/kfz-zulassungsbehoerde"
+    },
+    "kuerzel": [
+      {
+        "code": "FS",
+        "bedeutung": "Freising (Kennzeichen des Landkreises Freising, auch in Moosburg vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Moosburger Zulassungsbehörde kann auch Zulassungen für Bürger aus dem gesamten Landkreis Freising vornehmen (ausgenommen rote Oldtimer-/Händlerkennzeichen und Fahrzeugauskünfte für andere Zulassungsstandorte).",
+        "quelle": "https://www.moosburg.de/kfz-zulassungsbehoerde"
+      },
+      {
+        "text": "Die Erkennungsnummern H, I, M, P oder R + 4 Zahlen (Pkw, Lkw, Busse, Anhänger) sowie I + Buchstabe + 2 Zahlen bzw. I + 3 Zahlen (Motorräder, Quads, Trikes) erhalten nur Halter mit Wohnsitz in Moosburg einschließlich Pfrombach und Aich.",
+        "quelle": "https://www.moosburg.de/kfz-zulassungsbehoerde"
+      },
+      {
+        "text": "Kennzeichen für Motorräder, Quads und Trikes lassen sich nur telefonisch oder per E-Mail reservieren; Halter aus dem übrigen Landkreis Freising reservieren nur über das Landratsamt Freising oder telefonisch.",
+        "quelle": "https://www.moosburg.de/kfz-zulassungsbehoerde"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "terminUrl"
+    ]
+  }
+]

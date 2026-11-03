@@ -1,0 +1,871 @@
+[
+  {
+    "slug": "kreis-borken",
+    "stadt": "Kreis Borken",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kreis Borken, Fachbereich Verkehr – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.kreis-borken.de/de/kreisverwaltung/serviceportal/oeffnungszeiten.php",
+    "traeger": "Kreis Borken",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Borken (Kreishaus)",
+        "strasse": "Burloer Straße 93",
+        "plz": "46325",
+        "ort": "Borken",
+        "quelle": "https://www.kreis-borken.de/de/optigov/einrichtung/9"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-borken.de/de/kreisregion/klima-mobilitaet/verkehr/zulassung.php",
+      "quelle": "https://www.kreis-borken.de/de/kreisregion/klima-mobilitaet/verkehr/zulassung.php"
+    },
+    "terminUrl": {
+      "url": "https://www.kreis-borken.de/de/kreisregion/klima-mobilitaet/verkehr/schnellzugriff/buchen-termine.php",
+      "quelle": "https://www.kreis-borken.de/de/kreisregion/klima-mobilitaet/verkehr/zulassung.php"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.krzn.de/static/05554000.html#/",
+      "quelle": "https://www.kreis-borken.de/de/kreisregion/klima-mobilitaet/verkehr/zulassung.php"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Borken und Ahaus: Mo–Mi 7:30–12:30 und 13:30–15:30 Uhr",
+        "Borken und Ahaus: Do 7:30–12:30 und 13:30–17:00 Uhr",
+        "Borken und Ahaus: Fr 7:30–12:30 Uhr",
+        "Bocholt: Mo–Mi 8:00–12:30 und 13:30–16:00 Uhr",
+        "Bocholt: Do 8:00–12:30 und 13:30–17:00 Uhr",
+        "Bocholt: Fr 8:00–12:30 Uhr"
+      ],
+      "hinweis": "Vor-Ort-Erreichbarkeit nur nach vorheriger Online-Terminvereinbarung",
+      "quelle": "https://www.kreis-borken.de/de/optigov/einrichtung/9"
+    },
+    "zustaendigkeit": {
+      "text": "Kreis Borken mit seinen 17 Städten und Gemeinden (u. a. die Städte Borken, Bocholt, Ahaus, Gronau, Stadtlohn und Vreden). Die Stadt Borken gehört zum Kreis Borken; der Kreis betreibt Zulassungsstellen in Borken, Bocholt und Ahaus.",
+      "quelle": "https://www.kreis-borken.de/de/kreisregion/borken-erleben/staedte-und-gemeinden.php"
+    },
+    "kuerzel": [
+      {
+        "code": "BOR",
+        "bedeutung": "Borken",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "AH",
+        "bedeutung": "Ahaus (Altkennzeichen, seit 2013 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BOH",
+        "bedeutung": "Bocholt (Altkennzeichen, seit 2013 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Keine Barzahlung: Seit dem 01.01.2025 kann an allen drei Standorten (Borken, Bocholt, Ahaus) nur elektronisch gezahlt werden, z. B. mit Girocard oder Kreditkarte, auch kontaktlos.",
+        "quelle": "https://www.kreis-borken.de/de/kreisregion/klima-mobilitaet/verkehr/schnellzugriff/buchen-termine.php"
+      },
+      {
+        "text": "Neue Termine werden nach Möglichkeit tagesaktuell freigeschaltet; stornierte Termine sind sofort wieder buchbar. Pro Buchung sind höchstens 2 Anliegen wählbar.",
+        "quelle": "https://www.kreis-borken.de/de/kreisregion/klima-mobilitaet/verkehr/schnellzugriff/buchen-termine.php"
+      },
+      {
+        "text": "Nicht per i-Kfz möglich sind u. a. Zulassungen mit Leasingbrief, Importfahrzeuge, Ausfuhr- und Kurzzeitkennzeichen sowie der Wechsel zu Saison-, E- oder H-Kennzeichen.",
+        "quelle": "https://www.kreis-borken.de/de/kreisregion/klima-mobilitaet/verkehr/zulassung.php"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kreis-coesfeld",
+    "stadt": "Kreis Coesfeld",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kreis Coesfeld, Abteilung 36 – Straßenverkehr, Fachdienst 36.1 – Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.kreis-coesfeld.de/kreisverwaltung/organisation-abteilungen/36-strassenverkehr",
+    "traeger": "Kreis Coesfeld",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Dülmen (Hauptstelle)",
+        "strasse": "Kreuzweg 25/27",
+        "plz": "48249",
+        "ort": "Dülmen",
+        "quelle": "https://serviceportal.kreis-coesfeld.de/detail/-/vr-bis-detail/einrichtung/57/show"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Lüdinghausen",
+        "strasse": "Steverstraße 15",
+        "plz": "59348",
+        "ort": "Lüdinghausen",
+        "quelle": "https://serviceportal.kreis-coesfeld.de/detail/-/vr-bis-detail/einrichtung/58/show"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-coesfeld.de/kreisverwaltung/organisation-abteilungen/36-strassenverkehr",
+      "quelle": "https://www.kreis-coesfeld.de/kreisverwaltung/organisation-abteilungen/36-strassenverkehr"
+    },
+    "terminUrl": {
+      "url": "https://www.kreis-coesfeld.de/kreisverwaltung/termine-online-buchen/termine-kfz-zulassung",
+      "quelle": "https://www.kreis-coesfeld.de/kreisverwaltung/oeffnungszeiten"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=coesfeld_kreis",
+      "quelle": "https://serviceportal.kreis-coesfeld.de/suche/-/egov-bis-detail/dienstleistung/775/show"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Dülmen: Mo–Mi 7:45–12:00 und 14:00–15:30 Uhr",
+        "Dülmen: Do 7:45–12:00 und 14:00–18:00 Uhr",
+        "Dülmen: Fr 7:45–12:00 Uhr",
+        "Lüdinghausen: Mo–Do 8:30–12:00 und 14:00–16:00 Uhr",
+        "Lüdinghausen: Fr 8:30–12:00 Uhr"
+      ],
+      "hinweis": "Dülmen: vormittags 8:00–11:00 Uhr ohne Termin möglich (max. zwei Vorgänge), nachmittags nur mit Termin. Lüdinghausen: nur nach vorheriger Online-Terminvereinbarung.",
+      "quelle": "https://serviceportal.kreis-coesfeld.de/detail/-/vr-bis-detail/einrichtung/57/show"
+    },
+    "zustaendigkeit": {
+      "text": "Kreis Coesfeld mit seinen kreisangehörigen Städten und Gemeinden (Ascheberg, Billerbeck, Coesfeld, Dülmen, Havixbeck, Lüdinghausen, Nordkirchen, Nottuln, Olfen, Rosendahl, Senden). Die Stadt Coesfeld gehört zum Kreis; die beiden Kfz-Zulassungsstellen des Kreises liegen jedoch in Dülmen und Lüdinghausen (nicht in der Stadt Coesfeld).",
+      "quelle": "https://www.kreis-coesfeld.de/kreisportrait/staedte-gemeinden"
+    },
+    "kuerzel": [
+      {
+        "code": "COE",
+        "bedeutung": "Coesfeld",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "LH",
+        "bedeutung": "Lüdinghausen (Altkennzeichen, seit 2014 wieder erhältlich; auch im Kreis Unna vergeben)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Nur in Dülmen: terminlose Vorsprache vormittags 8:00–11:00 Uhr mit höchstens zwei Vorgängen; bei hohem Andrang längere Wartezeiten.",
+        "quelle": "https://www.kreis-coesfeld.de/kreisverwaltung/termine-online-buchen/termine-kfz-zulassung"
+      },
+      {
+        "text": "Rote Kennzeichen und H-Kennzeichen (Oldtimer) gibt es nur in der Zulassungsstelle Dülmen.",
+        "quelle": "https://www.kreis-coesfeld.de/kreisverwaltung/organisation-abteilungen/36-strassenverkehr"
+      },
+      {
+        "text": "Neben COE werden seit Mai 2014 auch LH-Kennzeichen ausgegeben.",
+        "quelle": "https://www.kreis-coesfeld.de/kreisverwaltung/organisation-abteilungen/36-strassenverkehr"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kreis-dueren",
+    "stadt": "Kreis Düren",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kreis Düren, Straßenverkehrsamt – Zulassungsstelle",
+    "behoerdeQuelle": "https://www.kreis-dueren.de/kreishaus/amt/Strassenverkehrsamt/zulassungsstelle.php",
+    "traeger": "Kreis Düren",
+    "standorte": [
+      {
+        "bezeichnung": "Straßenverkehrsamt Düren",
+        "strasse": "Kölner Landstr. 271",
+        "plz": "52351",
+        "ort": "Düren",
+        "quelle": "https://www.kreis-dueren.de/kreishaus/amt/Strassenverkehrsamt/zulassungsstelle.php"
+      },
+      {
+        "bezeichnung": "Geschäftsstelle des Kreises Düren in Jülich",
+        "strasse": "Düsseldorfer Str. 6",
+        "plz": "52428",
+        "ort": "Jülich",
+        "quelle": "https://www.kreis-dueren.de/presse/betreuungsbehoerde-juelich_2025-12-18.php"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-dueren.de/kreishaus/amt/Strassenverkehrsamt/zulassungsstelle.php",
+      "quelle": "https://www.kreis-dueren.de/kreishaus/amt/Strassenverkehrsamt/index.php"
+    },
+    "terminUrl": {
+      "url": "https://kreis-dueren.saas.smartcjm.com/m/sva/extern/calendar/?uid=191274c1-f71f-46fc-9df5-024890941ca0",
+      "quelle": "https://www.kreis-dueren.de/kreishaus/amt/Strassenverkehrsamt/terminvereinbarung.php"
+    },
+    "ikfzUrl": {
+      "url": "https://sva.kreis-dueren.de",
+      "quelle": "https://www.kreis-dueren.de/kreishaus/amt/Strassenverkehrsamt/online-zulassung.php"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Mi 8:00–15:00 Uhr",
+        "Do 8:00–17:00 Uhr",
+        "Fr 8:00–12:00 Uhr",
+        "Sa 8:00–11:00 Uhr (nur in Düren, eingeschränkter Leistungsumfang)"
+      ],
+      "hinweis": "Nur mit vorheriger Online-Terminvereinbarung (Standorte Düren und Jülich). Ohne Termin nur Abmeldung und Anschriftenänderung innerhalb des Kreises Düren (max. 3 Vorgänge).",
+      "quelle": "https://www.kreis-dueren.de/kreishaus/amt/Strassenverkehrsamt/zulassungsstelle.php"
+    },
+    "zustaendigkeit": {
+      "text": "Kreis Düren mit seinen 15 Städten und Gemeinden (Kreisstadt Düren ist kreisangehörig). Aufgrund einer Kooperation können Bürger des Kreises Düren und der StädteRegion Aachen ihr Fahrzeug sowohl in Düren als auch beim Straßenverkehrsamt Aachen zulassen; ausgenommen sind Zulassungen bei Steuer- oder Gebührenrückständen, rote Dauerkennzeichen und Anhängerverzeichnisse.",
+      "quelle": "https://www.kreis-dueren.de/kreishaus/amt/Strassenverkehrsamt/kooperation-staedteregion-ac.php"
+    },
+    "kuerzel": [
+      {
+        "code": "DN",
+        "bedeutung": "Düren",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "JÜL",
+        "bedeutung": "Jülich (Altkennzeichen, seit 2012 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "MON",
+        "bedeutung": "Monschau (Altkennzeichen; auch StädteRegion Aachen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SLE",
+        "bedeutung": "Schleiden (Altkennzeichen; auch Kreis Euskirchen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Kooperation mit der StädteRegion Aachen: Zulassung in Düren oder in Aachen möglich (Termin jeweils erforderlich).",
+        "quelle": "https://www.kreis-dueren.de/kreishaus/amt/Strassenverkehrsamt/kooperation-staedteregion-ac.php"
+      },
+      {
+        "text": "Samstags 8–11 Uhr nur in Düren mit eingeschränktem Angebot (keine Händler/Zulassungsdienste, keine Ausfuhrkennzeichen, keine Tageszulassungen); seit 01.04.2026 zusätzlich 8,00 Euro Benutzungsgebühr pro Besuch.",
+        "quelle": "https://www.kreis-dueren.de/kreishaus/amt/Strassenverkehrsamt/terminvereinbarung.php"
+      },
+      {
+        "text": "Tagestermine (Spontantermine am selben Tag) werden montags bis freitags ab 8:00 Uhr im Online-Terminportal freigegeben, ein Anliegen je Kunde; telefonisch nicht buchbar.",
+        "quelle": "https://www.kreis-dueren.de/kreishaus/amt/Strassenverkehrsamt/terminvereinbarung.php"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "ennepe-ruhr-kreis",
+    "stadt": "Ennepe-Ruhr-Kreis",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Ennepe-Ruhr-Kreis – Zulassungsstelle",
+    "behoerdeQuelle": "https://www.enkreis.de/sicherheit-verkehr/strassenverkehr/kfz-zulassung/oeffnungszeiten-der-zulassungsstelle",
+    "traeger": "Ennepe-Ruhr-Kreis",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Schwelm",
+        "strasse": "Hattinger Str. 2a",
+        "plz": "58332",
+        "ort": "Schwelm",
+        "quelle": "https://www.enkreis.de/sicherheit-verkehr/strassenverkehr/kfz-zulassung/oeffnungszeiten-der-zulassungsstelle"
+      }
+    ],
+    "website": {
+      "url": "https://www.enkreis.de/sicherheit-verkehr/strassenverkehr/kfz-zulassung",
+      "quelle": "https://www.enkreis.de/sicherheit-verkehr/strassenverkehr/kfz-zulassung"
+    },
+    "terminUrl": {
+      "url": "https://www.terminland.de/Ennepe-Ruhr-Kreis/?m=31789",
+      "quelle": "https://www.enkreis.de/sicherheit-verkehr/strassenverkehr/kfz-zulassung/terminvergabe-online"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=ennepe-ruhr_kreis",
+      "quelle": "https://www.enkreis.de/sicherheit-verkehr/strassenverkehr/kfz-zulassung/online-services-ikfz"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 7:00–12:00 und 13:00–15:00 Uhr",
+        "Di 7:00–12:00 und 13:00–17:00 Uhr",
+        "Mi 7:00–12:00 Uhr",
+        "Do 7:00–12:00 und 13:00–15:00 Uhr",
+        "Fr 7:00–12:00 Uhr"
+      ],
+      "hinweis": "Besuch nur mit Termin (Terminpflicht für An-, Um- und Abmeldungen)",
+      "quelle": "https://www.enkreis.de/sicherheit-verkehr/strassenverkehr/kfz-zulassung/oeffnungszeiten-der-zulassungsstelle"
+    },
+    "zustaendigkeit": {
+      "text": "Ennepe-Ruhr-Kreis mit den Städten Breckerfeld, Ennepetal, Gevelsberg, Hattingen, Herdecke, Schwelm, Sprockhövel, Wetter (Ruhr) und Witten. Auf der Kreisseite ist als Standort der Zulassungsstelle nur Schwelm (Hattinger Str. 2a) genannt.",
+      "quelle": "https://www.enkreis.de/ennepe-ruhr-kreis-staedte/staedte"
+    },
+    "kuerzel": [
+      {
+        "code": "EN",
+        "bedeutung": "Ennepe (Ennepe-Ruhr-Kreis)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WIT",
+        "bedeutung": "Witten (Altkennzeichen, seit 2012 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termine sind frühestens 10 Werktage im Voraus buchbar; täglich werden neue Kontingente freigegeben, auch kurzfristig für denselben oder den nächsten Tag.",
+        "quelle": "https://www.enkreis.de/sicherheit-verkehr/strassenverkehr/kfz-zulassung/terminvergabe-online"
+      },
+      {
+        "text": "Es werden nur die vorab gebuchten Anliegen bearbeitet; bei Verspätung verfällt der Termin ersatzlos.",
+        "quelle": "https://www.enkreis.de/sicherheit-verkehr/strassenverkehr/kfz-zulassung/terminvergabe-online"
+      },
+      {
+        "text": "Bei i-Kfz werden die Fahrzeugdokumente per Standardbrief verschickt; gehen sie verloren, besteht kein Anspruch auf Beibehaltung des Wunschkennzeichens.",
+        "quelle": "https://www.enkreis.de/sicherheit-verkehr/strassenverkehr/kfz-zulassung/online-services-ikfz"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kreis-euskirchen",
+    "stadt": "Kreis Euskirchen",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kreis Euskirchen, Amt 36 – Straßenverkehr, Team 36.1 – Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.kreis-euskirchen.de/serviceportal/einrichtungen/detail/amt-36-strassenverkehr-21/",
+    "traeger": "Kreis Euskirchen",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Euskirchen (Foyer Kreishaus)",
+        "strasse": "Jülicher Ring 32",
+        "plz": "53879",
+        "ort": "Euskirchen",
+        "quelle": "https://www.kreis-euskirchen.de/serviceportal/mitarbeiter/detail/kfz-zulassungsstelle-euskirchen-280/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Schleiden (Rathaus Schleiden, Raum 027/028)",
+        "strasse": "Blankenheimer Strasse 2",
+        "plz": "53937",
+        "ort": "Schleiden",
+        "quelle": "https://www.kreis-euskirchen.de/serviceportal/mitarbeiter/detail/kfz-zulassungsstelle-schleiden-557/"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-euskirchen.de/themen/verkehr-mobilitaet/strassenverkehr/",
+      "quelle": "https://www.kreis-euskirchen.de/themen/verkehr-mobilitaet/strassenverkehr/"
+    },
+    "terminUrl": {
+      "url": "https://smartcx.kdvz-frechen.de/m/kreis-euskirchen-verkehrswesen/extern/calendar/?uid=be82962b-17a2-48e2-9205-ddcb652099dc",
+      "quelle": "https://www.kreis-euskirchen.de/themen/verkehr-mobilitaet/strassenverkehr/"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=euskirchen_kreis",
+      "quelle": "https://www.kreis-euskirchen.de/themen/verkehr-mobilitaet/strassenverkehr/"
+    },
+    "oeffnungszeiten": null,
+    "zustaendigkeit": {
+      "text": "Kreis Euskirchen; Kfz-Zulassung an den Standorten Euskirchen (Kreishaus) und Schleiden (Rathaus).",
+      "quelle": "https://www.kreis-euskirchen.de/serviceportal/einrichtungen/detail/amt-36-strassenverkehr-21/"
+    },
+    "kuerzel": [
+      {
+        "code": "EU",
+        "bedeutung": "Euskirchen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SLE",
+        "bedeutung": "Schleiden (Altkennzeichen, seit 2013 wieder erhältlich; auch Kreis Düren)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Hybrider Mittwoch nur in Euskirchen: 7:45–12:00 Uhr ohne Termin (Ticket ziehen, Wartezeit einplanen), 14:00–17:00 Uhr Termine. An anderen Tagen bitte nicht ohne Termin erscheinen.",
+        "quelle": "https://www.kreis-euskirchen.de/themen/verkehr-mobilitaet/strassenverkehr/"
+      },
+      {
+        "text": "Termine für Euskirchen und Schleiden werden vereinzelt kurzfristig storniert – regelmäßig ins Terminbuchungssystem schauen.",
+        "quelle": "https://www.kreis-euskirchen.de/themen/verkehr-mobilitaet/strassenverkehr/"
+      },
+      {
+        "text": "Online-Zulassung (i-Kfz) ist bei alten Fahrzeugpapieren ohne Sicherheitscode und bei zulassungsfreien Fahrzeugen nicht möglich.",
+        "quelle": "https://www.kreis-euskirchen.de/themen/verkehr-mobilitaet/strassenverkehr/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten"
+    ]
+  },
+  {
+    "slug": "kreis-guetersloh",
+    "stadt": "Kreis Gütersloh",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kreis Gütersloh – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.kreis-guetersloh.de/themen/auto-verkehr-mobilitaet/kfz-und-fuehrerschein/kfz-zulassung/",
+    "traeger": "Kreis Gütersloh",
+    "standorte": [
+      {
+        "bezeichnung": "Kreishaus Gütersloh – Bauteil 7",
+        "strasse": "Herzebrocker Straße 140",
+        "plz": "33334",
+        "ort": "Gütersloh",
+        "quelle": "https://www.kreis-guetersloh.de/themen/auto-verkehr-mobilitaet/kfz-und-fuehrerschein/oeffnungszeiten-und-kontakt/"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-guetersloh.de/themen/auto-verkehr-mobilitaet/kfz-und-fuehrerschein/kfz-zulassung/",
+      "quelle": "https://www.kreis-guetersloh.de/themen/auto-verkehr-mobilitaet/kfz-und-fuehrerschein/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://termine-strassenverkehr.kreis-guetersloh.de/qmaticwebbooking/#/",
+      "quelle": "https://www.kreis-guetersloh.de/themen/auto-verkehr-mobilitaet/kfz-und-fuehrerschein/kfz-zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=guetersloh_kreis",
+      "quelle": "https://www.kreis-guetersloh.de/themen/auto-verkehr-mobilitaet/kfz-und-fuehrerschein/kfz-zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 7:30–12:00 und 13:30–17:30 Uhr",
+        "Di 7:30–12:00 Uhr",
+        "Mi 7:30–12:00 Uhr",
+        "Do 7:30–12:00 und 13:30–17:30 Uhr",
+        "Fr 7:30–12:00 Uhr"
+      ],
+      "hinweis": "Terminvereinbarung empfohlen. Ohne Termin: Wartemarken vormittags 7:30–11:00 Uhr sowie Mo und Do 13:30–16:00 Uhr. Bei Verlust der Zulassungsbescheinigung Teil II und bei Einzelgenehmigungen ist vorher zwingend ein Online-Termin zu buchen.",
+      "quelle": "https://www.kreis-guetersloh.de/themen/auto-verkehr-mobilitaet/kfz-und-fuehrerschein/kfz-zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Kreis Gütersloh mit seinen Städten und Gemeinden, darunter die kreisangehörige Stadt Gütersloh. Die Kfz-Zulassung des Kreises befindet sich im Kreishaus Gütersloh.",
+      "quelle": "https://www.kreis-guetersloh.de/unser-kreis/unsere-region/staedte-gemeinden/"
+    },
+    "kuerzel": [
+      {
+        "code": "GT",
+        "bedeutung": "Gütersloh",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Seit 1. April 2026 nur bargeldlose Zahlung: EC-Karte oder Kreditkarte (ausgenommen American Express).",
+        "quelle": "https://www.kreis-guetersloh.de/themen/auto-verkehr-mobilitaet/kfz-und-fuehrerschein/kfz-zulassung/"
+      },
+      {
+        "text": "Betriebsferien zum Jahreswechsel: letzter Zulassungstag 2026 ist der 23. Dezember, ab 4. Januar 2027 wieder geöffnet.",
+        "quelle": "https://www.kreis-guetersloh.de/themen/auto-verkehr-mobilitaet/kfz-und-fuehrerschein/kfz-zulassung/"
+      },
+      {
+        "text": "QR-Code für den digitalen Fahrzeugschein (iKfz-App) ist in der Zulassungsstelle für 5,10 Euro erhältlich (nur für natürliche Personen mit Online-Ausweisfunktion).",
+        "quelle": "https://www.kreis-guetersloh.de/themen/auto-verkehr-mobilitaet/kfz-und-fuehrerschein/kfz-zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kreis-heinsberg",
+    "stadt": "Kreis Heinsberg",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kreis Heinsberg, Straßenverkehrsamt – Zulassungsangelegenheiten",
+    "behoerdeQuelle": "https://service.kreis-heinsberg.de/detail/-/vr-bis-detail/einrichtung/7796/show",
+    "traeger": "Kreis Heinsberg",
+    "standorte": [
+      {
+        "bezeichnung": "Straßenverkehrsamt – Zulassungsstelle (Kreisverwaltung Heinsberg)",
+        "strasse": "Valkenburger Straße 45",
+        "plz": "52525",
+        "ort": "Heinsberg",
+        "quelle": "https://service.kreis-heinsberg.de/detail/-/vr-bis-detail/dienstleistung/149459/show"
+      }
+    ],
+    "website": {
+      "url": "https://service.kreis-heinsberg.de/detail/-/vr-bis-detail/dienstleistung/149459/show",
+      "quelle": "https://service.kreis-heinsberg.de/detail/-/vr-bis-detail/dienstleistung/149459/show"
+    },
+    "terminUrl": {
+      "url": "https://kreis-heinsberg.saas.smartcjm.com/m/kreis-heinsberg/extern/calendar/?uid=a60f5992-fde1-42dc-a8eb-4fea3ffefefc",
+      "quelle": "https://service.kreis-heinsberg.de/detail/-/vr-bis-detail/dienstleistung/149459/show"
+    },
+    "ikfzUrl": {
+      "url": "https://online-services.krzn.de/static/05370000ikfz.html#/",
+      "quelle": "https://www.kreis-heinsberg.de/startseite/beitrag-lesen/neue-onlinedienste-fuer-die-kfz-zulassungsstelle.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 8:00–12:00 und 13:00–15:30 Uhr",
+        "Di 8:00–12:00 und 13:00–14:30 Uhr",
+        "Mi 8:00–12:00 und 13:00–15:30 Uhr",
+        "Do 8:00–12:00 und 13:00–17:00 Uhr",
+        "Fr 8:00–12:00 Uhr"
+      ],
+      "hinweis": "Für einen Besuch in der Zulassungsstelle wird ein Termin benötigt (online oder telefonisch unter 02452 13-3611).",
+      "quelle": "https://service.kreis-heinsberg.de/detail/-/vr-bis-detail/einrichtung/7796/show"
+    },
+    "zustaendigkeit": {
+      "text": "Kreis Heinsberg: Ein Fahrzeug kann mit allgemeinen Kennzeichen, Oldtimer-, Saison-, E- und Wechselkennzeichen nur zugelassen werden, wenn der Halter seinen Hauptwohnsitz im Gebiet des Kreises Heinsberg hat.",
+      "quelle": "https://service.kreis-heinsberg.de/detail/-/vr-bis-detail/dienstleistung/149459/show"
+    },
+    "kuerzel": [
+      {
+        "code": "HS",
+        "bedeutung": "Heinsberg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "ERK",
+        "bedeutung": "Erkelenz (Altkennzeichen, seit 2013 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GK",
+        "bedeutung": "Geilenkirchen (Altkennzeichen, seit 2013 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Keine Zulassung bei Kfz-Steuer- oder Gebührenrückständen gegenüber dem Kreis Heinsberg.",
+        "quelle": "https://service.kreis-heinsberg.de/detail/-/vr-bis-detail/dienstleistung/149459/show"
+      },
+      {
+        "text": "Seit 3. August 2026 neue Onlinedienste: i-Kfz-Portal und Wunschkennzeichen-Reservierung über online-services.krzn.de.",
+        "quelle": "https://www.kreis-heinsberg.de/startseite/beitrag-lesen/neue-onlinedienste-fuer-die-kfz-zulassungsstelle.html"
+      },
+      {
+        "text": "Den i-Kfz-Vorgang ohne Pausen durchführen – nach 30 Minuten gibt es ein Sitzungs-Timeout.",
+        "quelle": "https://www.kreis-heinsberg.de/startseite/beitrag-lesen/neue-onlinedienste-fuer-die-kfz-zulassungsstelle.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kreis-herford",
+    "stadt": "Kreis Herford",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kreis Herford – Zulassungsstelle (Straßenverkehr)",
+    "behoerdeQuelle": "https://www.kreis-herford.de/KREIS-HERFORD/Kreis-und-Verwaltung/Online-Services/Auto-und-mehr-b-Zulassungsstelle-b-Online-Terminreservierung/",
+    "traeger": "Kreis Herford",
+    "standorte": [
+      {
+        "bezeichnung": "Kreis Herford – Kfz-Zulassung",
+        "strasse": "Elsestraße 225",
+        "plz": "32278",
+        "ort": "Kirchlengern",
+        "quelle": "https://www.kreis-herford.de/UND-BEWEGEN/Auto-fahren-und-mobil-sein/Zulassen-Abmelden-und-Verkaufen-von-Fahrzeugen/Fahrzeug-ummelden-mit-Halterwechsel-/"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-herford.de/UND-BEWEGEN/Auto-fahren-und-mobil-sein/Zulassen-Abmelden-und-Verkaufen-von-Fahrzeugen/",
+      "quelle": "https://www.kreis-herford.de/UND-BEWEGEN/Auto-fahren-und-mobil-sein/Zulassen-Abmelden-und-Verkaufen-von-Fahrzeugen/"
+    },
+    "terminUrl": {
+      "url": "https://www.kreis-herford.de/KREIS-HERFORD/Kreis-und-Verwaltung/Online-Services/Auto-und-mehr-b-Zulassungsstelle-b-Online-Terminreservierung/",
+      "quelle": "https://www.kreis-herford.de/UND-BEWEGEN/Auto-fahren-und-mobil-sein/Zulassen-Abmelden-und-Verkaufen-von-Fahrzeugen/Fahrzeug-ummelden-mit-Halterwechsel-/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.kreis-herford.de/i-KFZ-Stufe%204/",
+      "quelle": "https://www.kreis-herford.de/KREIS-HERFORD/Kreis-und-Verwaltung/Online-Services/Auto-und-mehr-Online-KFZ-Zulassung-Abmeldung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo und Di 7:30–15:30 Uhr",
+        "Mi 7:30–12:00 Uhr",
+        "Do 7:30–18:00 Uhr",
+        "Fr 7:30–12:00 Uhr"
+      ],
+      "hinweis": "Nur mit Online-Termin (Termin für alle Kfz-Zulassungsdienstleistungen außer Abmeldungen und Kurzzeitkennzeichen erforderlich)",
+      "quelle": "https://www.kreis-herford.de/UND-BEWEGEN/Auto-fahren-und-mobil-sein/Zulassen-Abmelden-und-Verkaufen-von-Fahrzeugen/Fahrzeug-ummelden-mit-Halterwechsel-/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde für den Kreis Herford; die Zulassungsstelle des Kreises befindet sich in Kirchlengern (Elsestraße 225), nicht in der Stadt Herford.",
+      "quelle": "https://www.kreis-herford.de/UND-BEWEGEN/Auto-fahren-und-mobil-sein/Zulassen-Abmelden-und-Verkaufen-von-Fahrzeugen/Fahrzeug-ummelden-mit-Halterwechsel-/"
+    },
+    "kuerzel": [
+      {
+        "code": "HF",
+        "bedeutung": "Herford",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termin nötig für alle Zulassungsanliegen außer Abmeldungen und Kurzzeitkennzeichen.",
+        "quelle": "https://www.kreis-herford.de/UND-BEWEGEN/Auto-fahren-und-mobil-sein/Zulassen-Abmelden-und-Verkaufen-von-Fahrzeugen/"
+      },
+      {
+        "text": "Die Zulassungsstelle liegt in Kirchlengern und nicht am Kreishaus-Sitz in Herford (Amtshausstraße 3).",
+        "quelle": "https://www.kreis-herford.de/KREIS-HERFORD/Kreis-und-Verwaltung/Online-Services/Auto-und-mehr-Online-KFZ-Zulassung-Abmeldung/"
+      },
+      {
+        "text": "Donnerstags ist die Zulassung bis 18:00 Uhr geöffnet.",
+        "quelle": "https://www.kreis-herford.de/UND-BEWEGEN/Auto-fahren-und-mobil-sein/Zulassen-Abmelden-und-Verkaufen-von-Fahrzeugen/Fahrzeug-ummelden-mit-Halterwechsel-/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "hochsauerlandkreis",
+    "stadt": "Hochsauerlandkreis",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Hochsauerlandkreis, Straßenverkehrsamt (FD 33) – Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.hochsauerlandkreis.de/dienstleistungen-a-z/kfz-zulassung-umschreibung-eines-fahrzeugs",
+    "traeger": "Hochsauerlandkreis",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ Zulassung Arnsberg",
+        "strasse": "Eichholzstraße 9",
+        "plz": "59821",
+        "ort": "Arnsberg",
+        "quelle": "https://www.hochsauerlandkreis.de/dienstleistungen-a-z/kfz-zulassung-umschreibung-eines-fahrzeugs"
+      },
+      {
+        "bezeichnung": "KFZ Zulassung Brilon",
+        "strasse": "Am Rothaarsteig 1",
+        "plz": "59929",
+        "ort": "Brilon",
+        "quelle": "https://www.hochsauerlandkreis.de/dienstleistungen-a-z/kfz-zulassung-umschreibung-eines-fahrzeugs"
+      },
+      {
+        "bezeichnung": "KFZ Zulassung Meschede",
+        "strasse": "Steinstraße 27",
+        "plz": "59872",
+        "ort": "Meschede",
+        "quelle": "https://www.hochsauerlandkreis.de/dienstleistungen-a-z/kfz-zulassung-umschreibung-eines-fahrzeugs"
+      }
+    ],
+    "website": {
+      "url": "https://www.hochsauerlandkreis.de/hochsauerlandkreis/buergerservice/auto/verkehr/zulassung",
+      "quelle": "https://www.hochsauerlandkreis.de/hochsauerlandkreis/buergerservice/auto/verkehr/zulassung"
+    },
+    "terminUrl": {
+      "url": "https://termine-strassenverkehrsamt.hochsauerlandkreis.de/",
+      "quelle": "https://www.hochsauerlandkreis.de/hochsauerlandkreis/buergerservice/auto/verkehr/zulassung"
+    },
+    "ikfzUrl": {
+      "url": "https://serviceportal.hochsauerlandkreis.de/embedded-services/call/300#/",
+      "quelle": "https://www.hochsauerlandkreis.de/hochsauerlandkreis/buergerservice/auto/verkehr/zulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo–Fr 7:30–12:00 Uhr",
+        "Sa 8:30–11:30 Uhr (nur Zulassungsstelle Meschede)"
+      ],
+      "hinweis": "Privatkunden nur mit vorheriger Online-Terminvereinbarung; Außerbetriebsetzung, Neusiegelung, Änderung von Halterdaten und Kurzzeitkennzeichen auch ohne Termin (Wartemarke am Anmeldeterminal). Dienstags zusätzlich nachmittags geöffnet – die Uhrzeiten dafür sind auf den offiziellen Seiten widersprüchlich.",
+      "quelle": "https://www.hochsauerlandkreis.de/hochsauerlandkreis/buergerservice/auto/verkehr/zulassung"
+    },
+    "zustaendigkeit": {
+      "text": "Hochsauerlandkreis mit zehn Städten und zwei Gemeinden (Arnsberg, Brilon, Hallenberg, Marsberg, Medebach, Meschede, Olsberg, Schmallenberg, Sundern, Winterberg, Bestwig, Eslohe); Kfz-Zulassungsstellen in Arnsberg, Brilon und Meschede.",
+      "quelle": "https://www.hochsauerlandkreis.de/hochsauerlandkreis/tourismus-freizeit-und-kultur/region-staedte-gemeinden/staedte-gemeinden"
+    },
+    "kuerzel": [
+      {
+        "code": "HSK",
+        "bedeutung": "Hochsauerlandkreis",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Samstags (8:30–11:30 Uhr) ist nur die Zulassungsstelle Meschede geöffnet; Arnsberg und Brilon bleiben geschlossen.",
+        "quelle": "https://www.hochsauerlandkreis.de/hochsauerlandkreis/buergerservice/auto/verkehr/zulassung"
+      },
+      {
+        "text": "Ohne Termin möglich: Außerbetriebsetzung, Neusiegelung beschädigter Kennzeichen, Namens-/Adressänderung ohne Halterwechsel und Kurzzeitkennzeichen.",
+        "quelle": "https://www.hochsauerlandkreis.de/hochsauerlandkreis/buergerservice/auto/verkehr/zulassung"
+      },
+      {
+        "text": "Abgabezeiten für Fahrzeughändler, Zulassungsdienste und Gewerbetreibende: Mo–Fr 7:30–10:00 Uhr.",
+        "quelle": "https://www.hochsauerlandkreis.de/hochsauerlandkreis/buergerservice/auto/verkehr/zulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kreis-hoexter",
+    "stadt": "Kreis Höxter",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kreis Höxter – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.kreis-hoexter.de/buergerservice/oeffnungszeiten",
+    "traeger": "Kreis Höxter",
+    "standorte": [],
+    "website": {
+      "url": "https://www.kreis-hoexter.de/buergerservice?ansicht=einrichtung&eintrag=3",
+      "quelle": "https://www.kreis-hoexter.de/"
+    },
+    "terminUrl": {
+      "url": "https://www.kreis-hoexter.de/buergerservice?ansicht=dienstleistung&eintrag=197",
+      "quelle": "https://www.kreis-hoexter.de/aktuelles/pressemitteilungen/14501.Zulassungsstelle-Warburg-vom-3.-bis-7.-August-voruebergehend-geschlossen.html"
+    },
+    "ikfzUrl": null,
+    "oeffnungszeiten": null,
+    "zustaendigkeit": {
+      "text": "Kreis Höxter; Kfz-Zulassungsstellen in Höxter und Warburg (beide mit Terminvereinbarung).",
+      "quelle": "https://www.kreis-hoexter.de/buergerservice/oeffnungszeiten"
+    },
+    "kuerzel": [
+      {
+        "code": "HX",
+        "bedeutung": "Höxter",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WAR",
+        "bedeutung": "Warburg (Altkennzeichen, seit 2019 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Beide Zulassungsstellen (Höxter und Warburg) arbeiten mit Terminvereinbarung; der Kreis empfiehlt, vorab online einen Termin zu buchen, um Wartezeiten zu vermeiden.",
+        "quelle": "https://www.kreis-hoexter.de/aktuelles/pressemitteilungen/14501.Zulassungsstelle-Warburg-vom-3.-bis-7.-August-voruebergehend-geschlossen.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "standorte.strasse",
+      "standorte.plz",
+      "oeffnungszeiten",
+      "ikfzUrl",
+      "standorte"
+    ]
+  },
+  {
+    "slug": "kreis-kleve",
+    "stadt": "Kreis Kleve",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kreis Kleve, Abteilung Straßenverkehr – Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.kreis-kleve.de/aufgaben/auto-mobilitaet-strassenverkehr",
+    "traeger": "Kreis Kleve",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Kleve (Hauptsitz Kreisverwaltung)",
+        "strasse": "Nassauerallee 15-23",
+        "plz": "47533",
+        "ort": "Kleve",
+        "quelle": "https://www.kreis-kleve.de/kreis-kleve/kontakt"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Geldern (Nebenstelle)",
+        "strasse": "Boeckelter Weg 2",
+        "plz": "47608",
+        "ort": "Geldern",
+        "quelle": "https://www.kreis-kleve.de/kreis-kleve/kontakt"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-kleve.de/aufgaben/auto-mobilitaet-strassenverkehr/kfz-zulassung",
+      "quelle": "https://www.kreis-kleve.de/aufgaben/auto-mobilitaet-strassenverkehr/kfz-zulassung"
+    },
+    "terminUrl": {
+      "url": "https://tevis.krzn.de/tevisweb500/",
+      "quelle": "https://www.kreis-kleve.de/aufgaben/auto-mobilitaet-strassenverkehr/kfz-zulassung/kfz-zulassung-termin-buchen"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.krzn.de/static/05154000.html#/",
+      "quelle": "https://www.kreis-kleve.de/aufgaben/auto-mobilitaet-strassenverkehr/kfz-zulassung/i-kfz"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Kleve: Mo–Fr 8:00–18:00 Uhr",
+        "Kleve: Sa 8:00–11:00 Uhr",
+        "Geldern: Mo–Fr 8:00–18:00 Uhr"
+      ],
+      "hinweis": "Grundsätzlich mit Terminvergabe; zusätzlich Mo–Fr 8:00–16:00 Uhr begrenztes Ticket-Kontingent (max. 2 Anliegen je Ticket), Tickets für Abmeldungen Mo–Fr durchgehend",
+      "quelle": "https://www.kreis-kleve.de/aufgaben/auto-mobilitaet-strassenverkehr/kfz-zulassung"
+    },
+    "zustaendigkeit": {
+      "text": "Kreis Kleve; Kfz-Zulassung am Hauptsitz in Kleve und in der Nebenstelle Geldern.",
+      "quelle": "https://www.kreis-kleve.de/aufgaben/auto-mobilitaet-strassenverkehr"
+    },
+    "kuerzel": [
+      {
+        "code": "KLE",
+        "bedeutung": "Kleve",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GEL",
+        "bedeutung": "Geldern (Altkennzeichen, seit 2014 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Ohne Termin: Mo–Fr 8:00–16:00 Uhr begrenztes Ticket-Kontingent (max. 2 Anliegen je Ticket); Tickets für Abmeldungen gibt es Mo–Fr durchgehend, mit längeren Wartezeiten.",
+        "quelle": "https://www.kreis-kleve.de/aufgaben/auto-mobilitaet-strassenverkehr/kfz-zulassung"
+      },
+      {
+        "text": "Samstags (8:00–11:00 Uhr) ist nur die Zulassungsstelle Kleve geöffnet.",
+        "quelle": "https://www.kreis-kleve.de/kreis-kleve/kreisverwaltung/oeffnungszeiten"
+      },
+      {
+        "text": "Händler und Zulassungsdienste können Vorgänge Mo–Fr bis 12 Uhr als „Händlertasche“ abgeben (max. 20 Vorgänge).",
+        "quelle": "https://www.kreis-kleve.de/aufgaben/auto-mobilitaet-strassenverkehr/kfz-zulassung/haendlerservice"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kreis-lippe",
+    "stadt": "Kreis Lippe",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kreis Lippe, Straßenverkehrsamt – Zulassungsstellen",
+    "behoerdeQuelle": "https://www.kreis-lippe.de/kreis-lippe/optigov/einrichtungen.php",
+    "traeger": "Kreis Lippe",
+    "standorte": [],
+    "website": {
+      "url": "https://www.kreis-lippe.de/kreis-lippe/optigov?ansicht=einrichtung&eintrag=24",
+      "quelle": "https://www.kreis-lippe.de/kreis-lippe/optigov/einrichtungen.php"
+    },
+    "terminUrl": {
+      "url": "https://termine.kreislippe.de/m/kreis-lippe/extern/calendar/?uid=54ffe7d0-4c9b-4e84-abe5-0ca713843713",
+      "quelle": "https://www.kreis-lippe.de/kreis-lippe/verwaltung-und-service/online-termine.php"
+    },
+    "ikfzUrl": {
+      "url": "https://www.kreis-lippe.de/ikfz",
+      "quelle": "https://www.kreis-lippe.de/kreis-lippe/optigov?ansicht=einrichtung&eintrag=24"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 7:30–12:30 Uhr",
+        "Di 7:30–12:30 und 13:30–16:00 Uhr",
+        "Mi 7:30–12:30 und 13:30–15:00 Uhr",
+        "Do 7:30–12:30 und 13:30–17:00 Uhr",
+        "Fr 7:30–12:30 Uhr"
+      ],
+      "hinweis": "Persönliche Vorsprache in den Zulassungsstellen (Detmold, Bad Salzuflen, Barntrup) nur mit vorher online gebuchtem Termin",
+      "quelle": "https://www.kreis-lippe.de/kreis-lippe/optigov?ansicht=einrichtung&eintrag=24"
+    },
+    "zustaendigkeit": {
+      "text": "Kreis Lippe; Zulassungsstellen in Detmold (Kreishaus), Bad Salzuflen und Barntrup.",
+      "quelle": "https://www.kreis-lippe.de/kreis-lippe/optigov/einrichtungen.php"
+    },
+    "kuerzel": [
+      {
+        "code": "LIP",
+        "bedeutung": "Lippe",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "DT",
+        "bedeutung": "Detmold (Altkennzeichen, seit April 2026 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "LE",
+        "bedeutung": "Lemgo (Altkennzeichen, seit April 2026 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Abmeldung eines einzelnen Fahrzeugs ohne anschließende Wiederzulassung auch ohne Termin: Mo–Fr 9:00–12:00 Uhr sowie Di–Do 14:00–15:00 Uhr (mit Wartezeit).",
+        "quelle": "https://www.kreis-lippe.de/kreis-lippe/optigov?ansicht=dienstleistung&eintrag=2"
+      },
+      {
+        "text": "Alle drei Zulassungsstellen (Detmold, Bad Salzuflen, Barntrup) haben dieselben Terminzeiten; die Online-Zulassung (i-Kfz) ist rund um die Uhr erreichbar.",
+        "quelle": "https://www.kreis-lippe.de/kreis-lippe/optigov?ansicht=einrichtung&eintrag=24"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "standorte"
+    ]
+  }
+]

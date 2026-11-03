@@ -29,12 +29,14 @@ export default function StellenSuche({ stellen }: { stellen: StellenEintrag[] })
   const query = norm(q.trim());
 
   const groups = useMemo(() => {
+    // Kurze Eingaben (bis 3 Zeichen) sind meist Kennzeichenkürzel: nur exakte
+    // Kürzel und Wortanfänge. Längere Eingaben durchsuchen Name und Behörde.
+    const words = (s: string) => norm(s).split(/[^a-z0-9]+/);
     const filtered = query
-      ? stellen.filter(
-          (z) =>
-            norm(z.stadt).includes(query) ||
-            norm(z.behoerde).includes(query) ||
-            z.kuerzel.some((k) => norm(k) === query || (query.length >= 2 && norm(k).startsWith(query)))
+      ? stellen.filter((z) =>
+          query.length <= 3
+            ? z.kuerzel.some((k) => norm(k) === query) || words(z.stadt).some((w) => w.startsWith(query))
+            : norm(z.stadt).includes(query) || norm(z.behoerde).includes(query)
         )
       : stellen;
     const map = new Map<string, StellenEintrag[]>();

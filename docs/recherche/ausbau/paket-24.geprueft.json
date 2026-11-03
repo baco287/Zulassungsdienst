@@ -1,0 +1,912 @@
+[
+  {
+    "slug": "maerkischer-kreis",
+    "stadt": "Märkischer Kreis",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Märkischer Kreis – Bürgerbüros Iserlohn (FD 33) und Lüdenscheid (FD 35), Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.maerkischer-kreis.de/service/dienstleistungen-a-z/dienstleistung/show/kfz-wechsel-des-fahrzeughalters-bei-einem-gebrauchtfahrzeug-innerhalb-deutschlands",
+    "traeger": "Märkischer Kreis",
+    "standorte": [
+      {
+        "bezeichnung": "Bürgerbüro Iserlohn (Dienststelle Iserlohn)",
+        "strasse": "Griesenbraucker Straße 6",
+        "plz": "58640",
+        "ort": "Iserlohn",
+        "quelle": "https://www.maerkischer-kreis.de/auto-verkehr/kfz-angelegenheiten"
+      },
+      {
+        "bezeichnung": "Bürgerbüro Lüdenscheid (Kreishaus I)",
+        "strasse": "Heedfelder Str. 45",
+        "plz": "58509",
+        "ort": "Lüdenscheid",
+        "quelle": "https://www.maerkischer-kreis.de/auto-verkehr/kfz-angelegenheiten"
+      }
+    ],
+    "website": {
+      "url": "https://www.maerkischer-kreis.de/auto-verkehr/kfz-angelegenheiten",
+      "quelle": "https://www.maerkischer-kreis.de/auto-verkehr/kfz-angelegenheiten"
+    },
+    "terminUrl": {
+      "url": "https://terminvergabe.maerkischer-kreis.de/",
+      "quelle": "https://www.maerkischer-kreis.de/oeffnungszeiten-1"
+    },
+    "ikfzUrl": {
+      "url": "https://portal.maerkischer-kreis.de/embedded-services/call/159",
+      "quelle": "https://www.maerkischer-kreis.de/service/dienstleistungen-a-z/dienstleistung/show/kfz-wechsel-des-fahrzeughalters-bei-einem-gebrauchtfahrzeug-innerhalb-deutschlands"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag–Donnerstag: 08.00 - 16.00 Uhr",
+        "Freitag: 08.00 - 13.00 Uhr"
+      ],
+      "hinweis": "Gilt für die Bürgerbüros Iserlohn und Lüdenscheid: Besuch nur mit Terminvereinbarung möglich (laut Bürgerbüro-Seite: „nur mit Terminvereinbarung“). Trotz Termin kann es zu Wartezeiten kommen.",
+      "quelle": "https://www.maerkischer-kreis.de/oeffnungszeiten-1"
+    },
+    "zustaendigkeit": {
+      "text": "Märkischer Kreis (Kennzeichen MK) mit seinen 15 Städten und Gemeinden: Altena, Balve, Halver, Hemer, Herscheid, Iserlohn, Kierspe, Lüdenscheid, Meinerzhagen, Menden, Nachrodt-Wiblingwerde, Neuenrade, Plettenberg, Schalksmühle und Werdohl. Die Kfz-Zulassung erledigen die Bürgerbüros des Kreises in Iserlohn und Lüdenscheid.",
+      "quelle": "https://www.maerkischer-kreis.de/der-kreis/infos-ueber-den-maerkischen-kreis"
+    },
+    "kuerzel": [
+      {
+        "code": "MK",
+        "bedeutung": "Märkischer Kreis",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termine sind online mehrere Wochen im Voraus buchbar; zusätzliche Reservetermine werden – soweit verfügbar – montags bis freitags um 7:30 Uhr für den jeweiligen Tag freigegeben.",
+        "quelle": "https://www.maerkischer-kreis.de/service/dienstleistungen-a-z/detailseite/dienstleistung/show/buergerbueros-des-maerkischen-kreises"
+      },
+      {
+        "text": "Der Terminservice steht Händlern und Zulassungsdiensten nicht zur Verfügung; sie geben Anträge vor Ort als „Händlertasche“ ab, die Bearbeitung kann mehrere Tage dauern.",
+        "quelle": "https://www.maerkischer-kreis.de/service/dienstleistungen-a-z/detailseite/dienstleistung/show/buergerbueros-des-maerkischen-kreises"
+      },
+      {
+        "text": "Die Abmeldung ist auch für auswärts zugelassene Fahrzeuge möglich; sie kostet vor Ort 17,40 Euro, online 3,30 Euro.",
+        "quelle": "https://www.maerkischer-kreis.de/service/dienstleistungen-a-z/dienstleistung/show/kfz-abmeldung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kreis-mettmann",
+    "stadt": "Kreis Mettmann",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kreis Mettmann, Die Landrätin – Straßenverkehrsamt, Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.kreis-mettmann.de/Quickmenu/Zahlungen-im-Stra%C3%9Fenverkehrsamt.php?object=tx,3718.12253.1",
+    "traeger": "Kreis Mettmann",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Mettmann (Straßenverkehrsamt, Verwaltungsgebäude 1)",
+        "strasse": "Düsseldorfer Straße 26",
+        "plz": "40822",
+        "ort": "Mettmann",
+        "quelle": "https://www.kreis-mettmann.de/Quickmenu/N%C3%BCtzliche-Hinweise-des-Stra%C3%9Fenverkehrsamtes.php?object=tx,2023.675.1"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Langenfeld (Nebenstelle)",
+        "strasse": "Konrad-Adenauer-Platz 1",
+        "plz": "40764",
+        "ort": "Langenfeld",
+        "quelle": "https://www.kreis-mettmann.de/Quickmenu/N%C3%BCtzliche-Hinweise-des-Stra%C3%9Fenverkehrsamtes.php?object=tx,2023.675.1"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-mettmann.de/Alle-Themen/Kfz-Mobilit%C3%A4t/",
+      "quelle": "https://www.kreis-mettmann.de/Alle-Themen/Kfz-Mobilit%C3%A4t/"
+    },
+    "terminUrl": {
+      "url": "https://tevis.krzn.de/tevisweb700/",
+      "quelle": "https://www.kreis-mettmann.de/Quickmenu/N%C3%BCtzliche-Hinweise-des-Stra%C3%9Fenverkehrsamtes.php?object=tx,2023.675.1"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.krzn.de/static/05158000.html#/",
+      "quelle": "https://www.kreis-mettmann.de/Alle-Themen/Kfz-Mobilit%C3%A4t/index.php?object=tx%7c3718.2&ModID=10&FID=2023.436.1"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07.30 - 12.00 Uhr und 13.30 - 15.00 Uhr",
+        "Di 10.00 - 12.00 Uhr und 13.30 - 15.00 Uhr",
+        "Mi 07.30 - 12.00 Uhr und 13.30 - 15.00 Uhr",
+        "Do 07.30 - 12.00 Uhr und 13.30 - 17.00 Uhr",
+        "Fr 07.30 - 12.00 Uhr"
+      ],
+      "hinweis": "Zeiten für „Kunden mit Termin“. Für einen Besuch des Straßenverkehrsamtes oder seiner Nebenstelle in Langenfeld wird ein Besuchstermin benötigt (online oder telefonisch unter 02104 99-0). Kurzanliegen sind ohne Termin an den Informationsschaltern möglich.",
+      "quelle": "https://www.kreis-mettmann.de/Quickmenu/%C3%96ffnungszeiten-Kraftfahrzeugzulassungsstelle.php?object=tx,2023.171.1"
+    },
+    "zustaendigkeit": {
+      "text": "Kreis Mettmann (Kennzeichen ME) mit den zehn Städten Erkrath, Haan, Heiligenhaus, Hilden, Langenfeld, Mettmann, Monheim am Rhein, Ratingen, Velbert und Wülfrath.",
+      "quelle": "https://www.kreis-mettmann.de/Kreis-Politik/Kreis-St%C3%A4dte/"
+    },
+    "kuerzel": [
+      {
+        "code": "ME",
+        "bedeutung": "Mettmann",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Kurzanliegen ohne Termin für Bürgerinnen und Bürger aus dem Kreis Mettmann: Außerbetriebsetzung, Kurzzeitkennzeichen, Ersatz verlorener/gestohlener Kennzeichen und Ersatz eines verlorenen/gestohlenen Fahrzeugscheins.",
+        "quelle": "https://www.kreis-mettmann.de/Quickmenu/%C3%96ffnungszeiten-Kraftfahrzeugzulassungsstelle.php?object=tx,2023.171.1"
+      },
+      {
+        "text": "Die Terminbuchung steht Autohäusern und Zulassungsdiensten nicht zur Verfügung.",
+        "quelle": "https://www.kreis-mettmann.de/Quickmenu/N%C3%BCtzliche-Hinweise-des-Stra%C3%9Fenverkehrsamtes.php?object=tx,2023.675.1"
+      },
+      {
+        "text": "Vor Ort kann mit EC-Karte, Kreditkarte oder bar gezahlt werden; für die Barzahlung am Kassenautomaten wird eine Servicegebühr von 2,00 Euro erhoben.",
+        "quelle": "https://www.kreis-mettmann.de/Quickmenu/Zahlungen-im-Stra%C3%9Fenverkehrsamt.php?object=tx,3718.12253.1"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kreis-minden-luebbecke",
+    "stadt": "Kreis Minden-Lübbecke",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kreis Minden-Lübbecke – Straßenverkehrsamt, Zulassungsstelle",
+    "behoerdeQuelle": "https://www.minden-luebbecke.de/unsere-aemter/strassenverkehrsamt/zulassungstelle/",
+    "traeger": "Kreis Minden-Lübbecke",
+    "standorte": [
+      {
+        "bezeichnung": "Zweigstelle Minden – Straßenverkehrsamt Minden",
+        "strasse": "Portastraße 21",
+        "plz": "32423",
+        "ort": "Minden",
+        "quelle": "https://www.minden-luebbecke.de/unsere-aemter/strassenverkehrsamt/zulassungstelle/"
+      },
+      {
+        "bezeichnung": "Zweigstelle Lübbecke – Zulassungsstelle Lübbecke (nur Zulassungsangelegenheiten)",
+        "strasse": "Westerbachstraße 31",
+        "plz": "32312",
+        "ort": "Lübbecke",
+        "quelle": "https://www.minden-luebbecke.de/unsere-aemter/strassenverkehrsamt/zulassungstelle/"
+      }
+    ],
+    "website": {
+      "url": "https://www.minden-luebbecke.de/unsere-aemter/strassenverkehrsamt/zulassungstelle/",
+      "quelle": "https://www.minden-luebbecke.de/unsere-aemter/strassenverkehrsamt/zulassungstelle/"
+    },
+    "terminUrl": {
+      "url": "https://terminvergabe.minden-luebbecke.de/m/minden-luebbecke/extern/calendar/?uid=2418825c-ae6d-4836-b84f-a139d83a469e",
+      "quelle": "https://www.minden-luebbecke.de/unsere-aemter/strassenverkehrsamt/zulassungstelle/terminbuchung/"
+    },
+    "ikfzUrl": {
+      "url": "https://onlinedienste-owl.de/Kreis-Minden-Luebbecke/Kfz-Online-Dienste/#/",
+      "quelle": "https://www.minden-luebbecke.de/unsere-aemter/strassenverkehrsamt/zulassungstelle/online-zulassung-abmeldung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "montags bis freitags von 8.00 Uhr bis 12.00 Uhr",
+        "nachmittags am Montag und Dienstag zusätzlich zwischen 14.00 Uhr und 15.30 Uhr",
+        "donnerstags von 14.00 Uhr bis 17.00 Uhr"
+      ],
+      "hinweis": "Einheitliche Öffnungszeiten für das Straßenverkehrsamt Minden und die Zweigstelle Lübbecke. Termin über das Terminportal möglich, aber laut Zulassungsseite nicht zwingend erforderlich; ohne Termin ist mit längerer Wartezeit zu rechnen.",
+      "quelle": "https://www.minden-luebbecke.de/oeffnungszeiten-der-kreisverwaltung/"
+    },
+    "zustaendigkeit": {
+      "text": "Kreis Minden-Lübbecke (Kennzeichen MI und LK) mit elf Städten und Gemeinden: Bad Oeynhausen, Espelkamp, Hille, Hüllhorst, Lübbecke, Minden, Petershagen, Porta Westfalica, Preußisch Oldendorf, Rahden und Stemwede. Zulassungen sind in Minden und in der Zweigstelle Lübbecke möglich.",
+      "quelle": "https://www.minden-luebbecke.de/service/staedte-und-gemeinden/"
+    },
+    "kuerzel": [
+      {
+        "code": "MI",
+        "bedeutung": "Minden",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "LK",
+        "bedeutung": "Lübbecke (Altkennzeichen, laut Wikipedia seit 10.05.2025 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Eine Terminvereinbarung ist nicht zwingend erforderlich; ohne Termin beträgt die Wartezeit im Tagesdurchschnitt etwa 25 Minuten. Die Vorlaufzeit im Terminportal liegt derzeit bei etwa einer Woche.",
+        "quelle": "https://www.minden-luebbecke.de/unsere-aemter/strassenverkehrsamt/zulassungstelle/terminbuchung/"
+      },
+      {
+        "text": "In der Zulassungsstelle Lübbecke können pro Termin höchstens 3 Zulassungsangelegenheiten bearbeitet werden; dort werden ausschließlich Zulassungsangelegenheiten erledigt.",
+        "quelle": "https://www.minden-luebbecke.de/unsere-aemter/strassenverkehrsamt/zulassungstelle/terminbuchung/"
+      },
+      {
+        "text": "Online-Leistungen der Zulassungsstelle können nur für die eigene Person beantragt werden; eine stellvertretende Antragstellung ist online nicht möglich.",
+        "quelle": "https://www.minden-luebbecke.de/unsere-aemter/strassenverkehrsamt/zulassungstelle/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "oberbergischer-kreis",
+    "stadt": "Oberbergischer Kreis",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Oberbergischer Kreis, Der Landrat – Straßenverkehrsamt, Kfz-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.obk.de/obk/themen/mobilitaet/anliegen-kfz/index.shtml.de",
+    "traeger": "Oberbergischer Kreis",
+    "standorte": [
+      {
+        "bezeichnung": "Hauptstelle Straßenverkehrsamt, Zulassungsstelle",
+        "strasse": "Kölner Straße 235",
+        "plz": "51645",
+        "ort": "Gummersbach-Niederseßmar",
+        "quelle": "https://www.obk.de/obk/themen/mobilitaet/anliegen-kfz/index.shtml.de"
+      },
+      {
+        "bezeichnung": "Nebenstelle Hückeswagen",
+        "strasse": "Alte Ladestraße 1",
+        "plz": "42499",
+        "ort": "Hückeswagen",
+        "quelle": "https://www.obk.de/obk/kreis/verwaltung/servicezeiten/index.shtml.de"
+      },
+      {
+        "bezeichnung": "Nebenstelle Waldbröl (Gebäude Kreissparkasse)",
+        "strasse": "Kaiserstraße 69-77",
+        "plz": "51545",
+        "ort": "Waldbröl",
+        "quelle": "https://www.obk.de/obk/kreis/verwaltung/servicezeiten/index.shtml.de"
+      }
+    ],
+    "website": {
+      "url": "https://www.obk.de/obk/themen/mobilitaet/anliegen-kfz/index.shtml.de",
+      "quelle": "https://www.obk.de/obk/themen/mobilitaet/anliegen-kfz/index.shtml.de"
+    },
+    "terminUrl": {
+      "url": "https://termine.obk.de/",
+      "quelle": "https://www.obk.de/obk/themen/mobilitaet/anliegen-kfz/index.shtml.de"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=oberbergischer_kreis",
+      "quelle": "https://www.obk.de/obk/aktuelles/online-dienste/index.shtml.de"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Hauptstelle Gummersbach: Montag 07:15 - 12:15 und 13:00 - 15:00 Uhr",
+        "Hauptstelle Gummersbach: Dienstag 07:15 - 12:15 Uhr",
+        "Hauptstelle Gummersbach: Mittwoch 07:15 - 12:15 Uhr",
+        "Hauptstelle Gummersbach: Donnerstag 07:15 - 12:15 und 14:00 - 17:30 Uhr",
+        "Hauptstelle Gummersbach: Freitag 07:15 - 12:00 Uhr",
+        "Nebenstellen Hückeswagen und Waldbröl: Montag bis Mittwoch 08:00 - 13:00 Uhr, Donnerstag und Freitag geschlossen"
+      ],
+      "hinweis": "Terminvereinbarung erforderlich; Termine nur online, keine Termine per Telefon und keine Termine am Terminal vor Ort.",
+      "quelle": "https://www.obk.de/obk/kreis/verwaltung/servicezeiten/index.shtml.de"
+    },
+    "zustaendigkeit": {
+      "text": "Oberbergischer Kreis (Kennzeichen GM) mit den Städten Bergneustadt, Gummersbach, Hückeswagen, Radevormwald, Waldbröl, Wiehl und Wipperfürth sowie den Gemeinden Engelskirchen, Lindlar, Marienheide, Morsbach, Nümbrecht und Reichshof.",
+      "quelle": "https://www.obk.de/obk/kreis/heimat/staedte-gemeinden/index.shtml.de"
+    },
+    "kuerzel": [
+      {
+        "code": "GM",
+        "bedeutung": "Gummersbach",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Wer keinen passenden Termin findet: Werktags werden morgens ab ca. 07:30 Uhr zusätzliche Termine freigeschaltet.",
+        "quelle": "https://www.obk.de/obk/themen/mobilitaet/sva/index.shtml.de"
+      },
+      {
+        "text": "In den Nebenstellen Hückeswagen und Waldbröl ist nur Kartenzahlung möglich; dort gibt es keine Termine für Kfz-Händler und Zulassungsdienste und keine Postzustellung.",
+        "quelle": "https://www.obk.de/obk/kreis/verwaltung/servicezeiten/index.shtml.de"
+      },
+      {
+        "text": "Die Zulassungsstelle ist telefonisch nur dienstags von 13:00 bis 15:00 Uhr und mittwochs von 08:30 bis 11:30 Uhr erreichbar; für Fragen gibt es ein Online-Kontaktformular.",
+        "quelle": "https://www.obk.de/obk/themen/mobilitaet/anliegen-kfz/index.shtml.de"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kreis-olpe",
+    "stadt": "Kreis Olpe",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kreis Olpe – Kfz-Zulassungsstellen (Olpe und Lennestadt)",
+    "behoerdeQuelle": "https://kreis-olpe.de/Themen/Auto-Verkehr/Kfz-Zulassung/",
+    "traeger": "Kreis Olpe",
+    "standorte": [
+      {
+        "bezeichnung": "Führerscheinstelle & Zulassungsstelle Olpe (Kreisverwaltung)",
+        "strasse": "Westfälische Straße 75",
+        "plz": "57462",
+        "ort": "Olpe",
+        "quelle": "https://kreis-olpe.de/Themen/Auto-Verkehr/Kfz-Zulassung/"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Lennestadt (Außenstelle Rathaus Lennestadt)",
+        "strasse": "Thomas-Morus-Platz 1",
+        "plz": "57368",
+        "ort": "Lennestadt",
+        "quelle": "https://kreis-olpe.de/B%C3%BCrgerservice/Standorte-%C3%96ffnungszeiten-Kontakt/"
+      }
+    ],
+    "website": {
+      "url": "https://kreis-olpe.de/Themen/Auto-Verkehr/Kfz-Zulassung/",
+      "quelle": "https://kreis-olpe.de/Themen/Auto-Verkehr/Kfz-Zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://reservationv5.frontdesksuite.com/olpe/strassenverkehr",
+      "quelle": "https://kreis-olpe.de/Themen/Auto-Verkehr/Kfz-Zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://portal.kreis-olpe.de/embedded-services/call/48#/",
+      "quelle": "https://kreis-olpe.de/Themen/Auto-Verkehr/Kfz-Zulassung/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Olpe: Montag, Mittwoch und Freitag: 8 - 12 Uhr",
+        "Olpe: Dienstag und Donnerstag: 8 - 12.30 Uhr und 13.30 bis 17 Uhr",
+        "Olpe: Samstag: 9 - 11 Uhr",
+        "Lennestadt: Montag, Dienstag, Mittwoch und Freitag: 8 – 12 Uhr",
+        "Lennestadt: Donnerstag: 8 – 12.30 Uhr und 13.30 – 17 Uhr"
+      ],
+      "hinweis": "Bitte unbedingt einen Termin vereinbaren (Online-Terminvereinbarung); vor Ort sind keine Termine buchbar. Es werden nur Anträge mit vollständigen Unterlagen bearbeitet.",
+      "quelle": "https://kreis-olpe.de/B%C3%BCrgerservice/Standorte-%C3%96ffnungszeiten-Kontakt/%C3%96ffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Kreis Olpe (Kennzeichen OE) mit den Städten Attendorn, Drolshagen, Lennestadt und Olpe sowie den Gemeinden Finnentrop, Kirchhundem und Wenden.",
+      "quelle": "https://kreis-olpe.de/Kreis-Olpe-erleben/St%C3%A4dte-und-Gemeinden/"
+    },
+    "kuerzel": [
+      {
+        "code": "OE",
+        "bedeutung": "Olpe",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Zulassungsstelle Olpe hat auch samstags von 9 bis 11 Uhr geöffnet.",
+        "quelle": "https://kreis-olpe.de/B%C3%BCrgerservice/Standorte-%C3%96ffnungszeiten-Kontakt/%C3%96ffnungszeiten/"
+      },
+      {
+        "text": "Neue Termine werden montags und donnerstags um 8 Uhr freigegeben.",
+        "quelle": "https://kreis-olpe.de/B%C3%BCrgerservice/Standorte-%C3%96ffnungszeiten-Kontakt/%C3%96ffnungszeiten/"
+      },
+      {
+        "text": "Wunschkennzeichen können ausschließlich über den Online-Service reserviert werden (laut Kreisseite derzeit wegen technischer Schwierigkeiten beim Anbieter zusammen mit der Online-Zulassung nicht verfügbar).",
+        "quelle": "https://kreis-olpe.de/Themen/Auto-Verkehr/Kfz-Zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "standorte"
+    ]
+  },
+  {
+    "slug": "kreis-paderborn",
+    "stadt": "Kreis Paderborn",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": null,
+    "behoerdeQuelle": null,
+    "traeger": "Kreis Paderborn",
+    "standorte": [],
+    "website": null,
+    "terminUrl": null,
+    "ikfzUrl": null,
+    "oeffnungszeiten": null,
+    "zustaendigkeit": null,
+    "kuerzel": [
+      {
+        "code": "PB",
+        "bedeutung": "Paderborn",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BÜR",
+        "bedeutung": "Büren (Altkennzeichen, laut Wikipedia seit 24.11.2014 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "behoerde",
+      "behoerdeQuelle",
+      "standorte",
+      "website",
+      "terminUrl",
+      "ikfzUrl",
+      "oeffnungszeiten",
+      "zustaendigkeit",
+      "besonderheiten"
+    ]
+  },
+  {
+    "slug": "kreis-recklinghausen",
+    "stadt": "Kreis Recklinghausen",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kreis Recklinghausen – Straßenverkehrsamt, Zulassungsbehörde (Zulassungsstelle)",
+    "behoerdeQuelle": "https://www.kreis-re.de/Inhalte/Buergerservice/Auto_und_Verkehr/Strassenverkehrsamt/_Oeffnungszeiten.asp?seite=angebot&id=17142",
+    "traeger": "Kreis Recklinghausen",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle, Straßenverkehrsamt Haus I",
+        "strasse": "Stettiner Str. 10",
+        "plz": "45770",
+        "ort": "Marl",
+        "quelle": "https://www.kreis-re.de/Inhalte/Buergerservice/Auto_und_Verkehr/Strassenverkehrsamt/_Oeffnungszeiten.asp?seite=angebot&id=17142"
+      }
+    ],
+    "website": {
+      "url": "https://www.kreis-re.de/Inhalte/Buergerservice/Auto_und_Verkehr/Strassenverkehrsamt/index.asp",
+      "quelle": "https://www.kreis-re.de/Inhalte/Buergerservice/Auto_und_Verkehr/Strassenverkehrsamt/index.asp"
+    },
+    "terminUrl": {
+      "url": "https://terminvergabe.kreis-re.de/m/zulassung/extern/calendar/?uid=2dceea2a-91a4-49c7-8c4b-48ba42b167a8",
+      "quelle": "https://www.kreis-re.de/Inhalte/Buergerservice/Auto_und_Verkehr/Strassenverkehrsamt/_Zuklassungsstelle.asp?seite=angebot&id=18195"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.krzn.de/static/05562000.html#/",
+      "quelle": "https://www.kreis-re.de/Inhalte/Buergerservice/Auto_und_Verkehr/Strassenverkehrsamt/Digitale_Dienste/index.asp"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "montags 7:15 Uhr - 18:00 Uhr",
+        "dienstags 7:15 Uhr - 15:00 Uhr",
+        "mittwochs 7:15 Uhr - 13:00 Uhr",
+        "donnerstags 7:15 Uhr - 15:00 Uhr",
+        "freitags 7:15 Uhr - 12:00 Uhr"
+      ],
+      "hinweis": "Zugang derzeit nur mit vorheriger Terminvereinbarung (online oder telefonisch unter 02361/53-7777); Ausnahme: Schnellschalter für einzelne Dienstleistungen ohne Termin.",
+      "quelle": "https://www.kreis-re.de/Inhalte/Buergerservice/Auto_und_Verkehr/Strassenverkehrsamt/_Oeffnungszeiten.asp?seite=angebot&id=17142"
+    },
+    "zustaendigkeit": {
+      "text": "Kreis Recklinghausen (Kennzeichen RE, CAS und GLA) mit den zehn Städten Castrop-Rauxel, Datteln, Dorsten, Gladbeck, Haltern am See, Herten, Marl, Oer-Erkenschwick, Recklinghausen und Waltrop. Die Zulassungsstelle des Kreises befindet sich im Straßenverkehrsamt in Marl.",
+      "quelle": "https://www.kreis-re.de/Inhalte/Buergerservice/Unser_Kreis/index.asp"
+    },
+    "kuerzel": [
+      {
+        "code": "RE",
+        "bedeutung": "Recklinghausen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "CAS",
+        "bedeutung": "Castrop-Rauxel (Altkennzeichen, laut Wikipedia seit 13.11.2012 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GLA",
+        "bedeutung": "Gladbeck (Altkennzeichen, laut Wikipedia seit 13.11.2012 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Schnellschalter ohne Termin für Privatkunden aus dem Kreisgebiet: Außerbetriebsetzung, Neusiegelung eines beschädigten Kennzeichens, Anschriftenänderung nach Umzug innerhalb des Kreises, Namensänderung sowie Reservierung/Verlängerung von Wunschkennzeichen.",
+        "quelle": "https://www.kreis-re.de/Inhalte/Buergerservice/Auto_und_Verkehr/Strassenverkehrsamt/_Oeffnungszeiten.asp?seite=angebot&id=17142"
+      },
+      {
+        "text": "Online-Termine sind höchstens 14 Tage im Voraus buchbar, mit bis zu vier Anliegen pro Termin; zusätzliche tagesaktuelle Termine werden bei Verfügbarkeit ab 07:30 Uhr freigegeben.",
+        "quelle": "https://www.kreis-re.de/Inhalte/Buergerservice/Auto_und_Verkehr/Strassenverkehrsamt/_Zuklassungsstelle.asp?seite=angebot&id=18195"
+      },
+      {
+        "text": "Terminbuchungen durch Kfz-Händler und Zulassungsdienste sind untersagt; deren Zulassungsunterlagen werden nur morgens bis spätestens 08:30 Uhr angenommen.",
+        "quelle": "https://www.kreis-re.de/Inhalte/Buergerservice/Auto_und_Verkehr/Strassenverkehrsamt/_Zuklassungsstelle.asp?seite=angebot&id=18195"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "rhein-erft-kreis",
+    "stadt": "Rhein-Erft-Kreis",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Rhein-Erft-Kreis, Der Landrat – Straßenverkehrsamt (36), Kraftfahrzeugzulassungen (36/3)",
+    "behoerdeQuelle": "https://www.rhein-erft-kreis.de/vv/oe/rhein-erft-kreis/dezernat-v/strassenverkehrsamt/kraftfahrzeugzulassungen/index.php",
+    "traeger": "Rhein-Erft-Kreis",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsstelle Bergheim (36/31)",
+        "strasse": "Willy-Brandt-Platz 1",
+        "plz": "50126",
+        "ort": "Bergheim",
+        "quelle": "https://www.rhein-erft-kreis.de/vv/oe/rhein-erft-kreis/dezernat-v/strassenverkehrsamt/kraftfahrzeugzulassungen/106240100000001600.php"
+      },
+      {
+        "bezeichnung": "Zulassungsstelle Hürth (36/32), Außenstelle",
+        "strasse": "Hürth Park B 100 (Ärztehaus)",
+        "plz": "50354",
+        "ort": "Hürth",
+        "quelle": "https://www.rhein-erft-kreis.de/vv/oe/rhein-erft-kreis/dezernat-v/strassenverkehrsamt/kraftfahrzeugzulassungen/106240100000001711.php"
+      }
+    ],
+    "website": {
+      "url": "https://www.rhein-erft-kreis.de/infrastruktur/mobilitaet/strassenverkehr/zulassung.php",
+      "quelle": "https://www.rhein-erft-kreis.de/infrastruktur/mobilitaet/strassenverkehr/zulassung.php"
+    },
+    "terminUrl": {
+      "url": "https://smartcx.rhein-erft-kreis.de/m/strassenverkehrsamt/extern/calendar/?uid=e227d54b-28be-4106-8408-b8552dfb1411",
+      "quelle": "https://www.rhein-erft-kreis.de/aktuelles/externe-seiten/terminreservierung.php"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=rhein-erft_kreis",
+      "quelle": "https://www.rhein-erft-kreis.de/aktuelles/meldungen/2023-Fahrzeugzulassung-digital-per-Knopfdruck.php"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag, Mittwoch 07.30 Uhr bis 13.00 Uhr",
+        "Dienstag 7.30 Uhr bis 13.00 Uhr und 14.00 Uhr bis 16.00 Uhr",
+        "Donnerstag 09.00 Uhr bis 13.00 Uhr und 14.00 Uhr bis 18.00 Uhr",
+        "Freitag 07.30 Uhr bis 12.30 Uhr",
+        "Samstag 08.00 Uhr bis 11:00 Uhr (nur Zulassungsstelle Bergheim)"
+      ],
+      "hinweis": "Zeiten der Zulassungsstelle Bergheim; die Zulassungsstelle Hürth hat laut ihrer Seite dieselben Zeiten ohne Samstag. Laut Zulassungsseite des Kreises sind Vorsprachen nur nach vorheriger Terminreservierung möglich, immer nur eine Person pro Vorgang; bei Verspätung verfällt der Termin.",
+      "quelle": "https://www.rhein-erft-kreis.de/vv/oe/rhein-erft-kreis/dezernat-v/strassenverkehrsamt/kraftfahrzeugzulassungen/106240100000001600.php"
+    },
+    "zustaendigkeit": {
+      "text": "Rhein-Erft-Kreis (Kennzeichen BM) mit den zehn Städten Bedburg, Bergheim, Brühl, Elsdorf, Erftstadt, Frechen, Hürth, Kerpen, Pulheim und Wesseling.",
+      "quelle": "https://www.rhein-erft-kreis.de/leben/rhein-erft-kreis.php"
+    },
+    "kuerzel": [
+      {
+        "code": "BM",
+        "bedeutung": "Bergheim",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Zulassungsstelle Bergheim ist auch samstags geöffnet (08.00 bis 11.00 Uhr).",
+        "quelle": "https://www.rhein-erft-kreis.de/vv/oe/rhein-erft-kreis/dezernat-v/strassenverkehrsamt/kraftfahrzeugzulassungen/index.php"
+      },
+      {
+        "text": "Die Kooperation mit der Stadt Köln ist ausgesetzt: Kölner Zulassungen werden nicht bearbeitet.",
+        "quelle": "https://www.rhein-erft-kreis.de/infrastruktur/mobilitaet/strassenverkehr/zulassung.php"
+      },
+      {
+        "text": "Die Außenstelle Hürth bearbeitet nur Zulassungsangelegenheiten und hat keine Poststelle; Post und finanzierte Fahrzeugbriefe gehen ausschließlich an die Zulassungsstelle Bergheim (Willy-Brandt-Platz 1, 50126 Bergheim).",
+        "quelle": "https://www.rhein-erft-kreis.de/infrastruktur/mobilitaet/strassenverkehr/zulassung.php"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "rhein-kreis-neuss",
+    "stadt": "Rhein-Kreis Neuss",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Rhein-Kreis Neuss – Straßenverkehrsamt, Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.rhein-kreis-neuss.de/de/verwaltung-politik/aemterliste/strassenverkehrsamt/abteilungen-dienststellen/zulassungsbehoerde/",
+    "traeger": "Rhein-Kreis Neuss",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsbehörde Neuss",
+        "strasse": "Oberstraße 91",
+        "plz": "41460",
+        "ort": "Neuss",
+        "quelle": "https://www.rhein-kreis-neuss.de/de/verwaltung-politik/aemterliste/strassenverkehrsamt/abteilungen-dienststellen/zulassungsbehoerde/"
+      },
+      {
+        "bezeichnung": "Straßenverkehrsamt Grevenbroich",
+        "strasse": "Lindenstraße 10",
+        "plz": "41515",
+        "ort": "Grevenbroich",
+        "quelle": "https://www.rhein-kreis-neuss.de/de/verwaltung-politik/aemterliste/strassenverkehrsamt/abteilungen-dienststellen/svagrevenbroich/"
+      },
+      {
+        "bezeichnung": "Straßenverkehrsamt Dormagen (Horrem)",
+        "strasse": "Kieler Straße 26",
+        "plz": "41540",
+        "ort": "Dormagen",
+        "quelle": "https://www.rhein-kreis-neuss.de/de/verwaltung-politik/aemterliste/strassenverkehrsamt/abteilungen-dienststellen/svadormagen/"
+      },
+      {
+        "bezeichnung": "Straßenverkehrsamt Meerbusch (Büderich), Außenstelle nur für Privatkunden mit Termin",
+        "strasse": "Dr.-Franz-Schütz-Platz 1",
+        "plz": "40667",
+        "ort": "Meerbusch",
+        "quelle": "https://www.rhein-kreis-neuss.de/de/verwaltung-politik/aemterliste/strassenverkehrsamt/abteilungen-dienststellen/svameerbusch/"
+      }
+    ],
+    "website": {
+      "url": "https://www.rhein-kreis-neuss.de/de/verwaltung-politik/aemterliste/strassenverkehrsamt/abteilungen-dienststellen/zulassungsbehoerde/",
+      "quelle": "https://www.rhein-kreis-neuss.de/de/verwaltung-politik/aemterliste/strassenverkehrsamt/abteilungen-dienststellen/zulassungsbehoerde/"
+    },
+    "terminUrl": {
+      "url": "https://termine.rhein-kreis-neuss.de/m/rhein-kreis-neuss/extern/calendar/?uid=c9ad0501-0e20-4aa2-bd10-52dedb8dcb3d&lang=de",
+      "quelle": "https://www.rhein-kreis-neuss.de/de/verwaltung-politik/aemterliste/strassenverkehrsamt/abteilungen-dienststellen/zulassungsbehoerde/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.rhein-kreis-neuss.de/de/verwaltung-politik/aemterliste/strassenverkehrsamt/dienstleistungen/internetbasierte-fahrzeugzulassung-i-kfz/anwendung-i-kfz/",
+      "quelle": "https://www.rhein-kreis-neuss.de/de/verwaltung-politik/aemterliste/strassenverkehrsamt/dienstleistungen/internetbasierte-fahrzeugzulassung-i-kfz/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Neuss: montags bis donnerstags 08:00 bis 15:30 Uhr, freitags 08:00 bis 12:00 Uhr",
+        "Grevenbroich: montags bis donnerstags 08:00 bis 15:30 Uhr, freitags 08:00 bis 12:00 Uhr",
+        "Dormagen: montags bis donnerstags 08:00 bis 12:00 Uhr und 13:30 bis 15:30 Uhr, freitags 08:00 bis 12:00 Uhr",
+        "Meerbusch: Montag 08:00 bis 12:00 Uhr und 13:00 bis 15:30 Uhr, Mittwoch 08:00 bis 12:00 Uhr, Freitag 08:00 bis 12:00 Uhr"
+      ],
+      "hinweis": "Besuche im Straßenverkehrsamt sind nur noch mit einem persönlichen Termin möglich. Die Außenstelle Meerbusch steht ausschließlich Privatkunden mit Termin zur Verfügung.",
+      "quelle": "https://www.rhein-kreis-neuss.de/de/verwaltung-politik/buergerinformationen/oeffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Rhein-Kreis Neuss (Kennzeichen NE und GV) mit den Städten Dormagen, Grevenbroich, Jüchen, Kaarst, Korschenbroich, Meerbusch und Neuss sowie der Gemeinde Rommerskirchen. Auch die Stadt Neuss gehört als große kreisangehörige Stadt zum Kreis.",
+      "quelle": "https://www.rhein-kreis-neuss.de/de/verwaltung-politik/kreisportrait/kommunen/"
+    },
+    "kuerzel": [
+      {
+        "code": "NE",
+        "bedeutung": "Neuss",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GV",
+        "bedeutung": "Grevenbroich (Altkennzeichen, laut Wikipedia seit 19.08.2015 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Sofern die Personalsituation es zulässt, werden jeden Vormittag zwischen 8 und 8:30 Uhr tagesaktuell weitere Termine eingestellt.",
+        "quelle": "https://www.rhein-kreis-neuss.de/de/verwaltung-politik/aemterliste/strassenverkehrsamt/terminvergabe/"
+      },
+      {
+        "text": "Bei der Online-Außerbetriebsetzung (i-Kfz) verzichtet der Rhein-Kreis Neuss auf die Authentifizierung per eID; Neuzulassungen mit Mehrstufentypgenehmigung sind online nicht möglich.",
+        "quelle": "https://www.rhein-kreis-neuss.de/de/verwaltung-politik/aemterliste/strassenverkehrsamt/dienstleistungen/internetbasierte-fahrzeugzulassung-i-kfz/"
+      },
+      {
+        "text": "Die kostenlose App „Mein StVA“ zeigt die aktuellen Wartezeiten in den vier Dienststellen, bietet einen Online-Unterlagenprüfer und eine Wartenummer-Alarmfunktion.",
+        "quelle": "https://www.rhein-kreis-neuss.de/de/verwaltung-politik/aemterliste/strassenverkehrsamt/abteilungen-dienststellen/zulassungsbehoerde/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "rhein-sieg-kreis",
+    "stadt": "Rhein-Sieg-Kreis",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Rhein-Sieg-Kreis, Der Landrat – Straßenverkehrsamt, Fahrzeugzulassung",
+    "behoerdeQuelle": "https://www.rhein-sieg-kreis.de/vv/produkte/Amt_36/Zulassung_KFZ.php",
+    "traeger": "Rhein-Sieg-Kreis",
+    "standorte": [
+      {
+        "bezeichnung": "Straßenverkehrsamt – Fahrzeugzulassung/Fahrerlaubnisse rechtsrheinisch",
+        "strasse": "Kaiser-Wilhelm-Platz 1",
+        "plz": "53721",
+        "ort": "Siegburg",
+        "quelle": "https://www.rhein-sieg-kreis.de/vv/oe/dezernat_5/strassenverkehrsamt/Fahrzeugzulassung_Fahrerlaubnisse_rechtsrheinisch.php"
+      },
+      {
+        "bezeichnung": "Zulassungs-/Führerscheinstelle linksrheinisch",
+        "strasse": "Kalkofenstraße 2",
+        "plz": "53340",
+        "ort": "Meckenheim",
+        "quelle": "https://www.rhein-sieg-kreis.de/vv/oe/dezernat_5/strassenverkehrsamt/Fahrzeugzulassung_Fahrerlaubnisse_linksrheinisch.php"
+      }
+    ],
+    "website": {
+      "url": "https://www.rhein-sieg-kreis.de/vv/produkte/Amt_36/Zulassung_KFZ.php",
+      "quelle": "https://www.rhein-sieg-kreis.de/vv/produkte/Amt_36/Zulassung_KFZ.php"
+    },
+    "terminUrl": {
+      "url": "https://reservation.frontdesksuite.com/rsk/kfz-fahrerlaubnisse",
+      "quelle": "https://www.rhein-sieg-kreis.de/mobilitaet-umwelt/verkehr/termine-sva-vorschaltseite.php"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=rhein-sieg_kreis",
+      "quelle": "https://www.rhein-sieg-kreis.de/vv/produkte/Amt_36/Zulassung_KFZ.php"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag 07:30 Uhr – 18:00 Uhr",
+        "Dienstag – Freitag 07:30 Uhr – 12:00 Uhr"
+      ],
+      "hinweis": "Gilt für Siegburg und Meckenheim. Ein Besuch des Straßenverkehrsamtes ist nur nach Terminvereinbarung möglich (online, telefonisch unter 02241 13-3939 oder per E-Mail).",
+      "quelle": "https://www.rhein-sieg-kreis.de/vv/produkte/Amt_36/Zulassung_KFZ.php"
+    },
+    "zustaendigkeit": {
+      "text": "Rhein-Sieg-Kreis (Kennzeichen SU) mit 19 Städten und Gemeinden auf beiden Seiten des Rheins rund um die Bundesstadt Bonn; Bonn selbst gehört nicht zum Kreis. Zulassungsstellen in Siegburg (rechtsrheinisch) und Meckenheim (linksrheinisch).",
+      "quelle": "https://www.rhein-sieg-kreis.de/verwaltung-politik/kreis/index.php"
+    },
+    "kuerzel": [
+      {
+        "code": "SU",
+        "bedeutung": "Siegburg",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termine können grundsätzlich nur 14 Tage im Voraus gebucht werden; tagesaktuell werden regelmäßig zusätzliche Kontingente freigegeben, die meisten morgens gegen 7:00 Uhr. Termine für Führerschein- und Zulassungsstelle müssen separat gebucht werden.",
+        "quelle": "https://www.rhein-sieg-kreis.de/mobilitaet-umwelt/verkehr/termine-sva-vorschaltseite.php"
+      },
+      {
+        "text": "Das Terminbuchungssystem ist seit dem 01.07.2024 nicht mehr für den Kfz-Handel und Zulassungsdienste zugelassen; festgestellte Buchungen werden storniert.",
+        "quelle": "https://www.rhein-sieg-kreis.de/mobilitaet-umwelt/verkehr/termine-sva-vorschaltseite.php"
+      },
+      {
+        "text": "Für i-Kfz ist bei natürlichen Personen eine Anmeldung mit der BundID nötig; die Gebühren werden online über ePayBL per Kreditkarte bezahlt.",
+        "quelle": "https://www.rhein-sieg-kreis.de/mobilitaet-umwelt/verkehr/i-kfz-autozulassungen_40190.php"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "rheinisch-bergischer-kreis",
+    "stadt": "Rheinisch-Bergischer Kreis",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Rheinisch-Bergischer Kreis – Straßenverkehrsbehörde, Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.rbk-direkt.de/dienststelle/1006/zulassungsbehoerde",
+    "traeger": "Rheinisch-Bergischer Kreis",
+    "standorte": [
+      {
+        "bezeichnung": "Hauptstelle Kreishaus Heidkamp, Block D, Erdgeschoss",
+        "strasse": "Am Rübezahlwald 7",
+        "plz": "51469",
+        "ort": "Bergisch Gladbach",
+        "quelle": "https://www.rbk-direkt.de/dienststelle/1006/zulassungsbehoerde"
+      },
+      {
+        "bezeichnung": "Nebenstelle Wermelskirchen",
+        "strasse": "Viktoriastraße 5",
+        "plz": "42929",
+        "ort": "Wermelskirchen",
+        "quelle": "https://www.rbk-direkt.de/dienststelle/1006/zulassungsbehoerde"
+      },
+      {
+        "bezeichnung": "Servicebüro Burscheid (eingeschränktes Angebot, z. T. nur für Einwohner)",
+        "strasse": "Höhestraße 7",
+        "plz": "51399",
+        "ort": "Burscheid",
+        "quelle": "https://www.rbk-direkt.de/dienststelle/1006/zulassungsbehoerde"
+      },
+      {
+        "bezeichnung": "Servicebüro Leichlingen (eingeschränktes Angebot, z. T. nur für Einwohner)",
+        "strasse": "Am Büscherhof 1",
+        "plz": "42799",
+        "ort": "Leichlingen",
+        "quelle": "https://www.rbk-direkt.de/dienststelle/1006/zulassungsbehoerde"
+      },
+      {
+        "bezeichnung": "Servicebüro Overath – Bürgerhauspassage (eingeschränktes Angebot, z. T. nur für Einwohner)",
+        "strasse": "Hauptstraße 30",
+        "plz": "51491",
+        "ort": "Overath",
+        "quelle": "https://www.rbk-direkt.de/dienststelle/1006/zulassungsbehoerde"
+      },
+      {
+        "bezeichnung": "Servicebüro Rösrath (eingeschränktes Angebot, z. T. nur für Einwohner)",
+        "strasse": "Hauptstraße 229",
+        "plz": "51503",
+        "ort": "Rösrath",
+        "quelle": "https://www.rbk-direkt.de/dienststelle/1006/zulassungsbehoerde"
+      }
+    ],
+    "website": {
+      "url": "https://www.rbk-direkt.de/dienststelle/1006/zulassungsbehoerde",
+      "quelle": "https://www.rbk-direkt.de/dienststelle/1006/zulassungsbehoerde"
+    },
+    "terminUrl": {
+      "url": "https://rbk3.rbkdv.de/TermineRBK/",
+      "quelle": "https://www.rbk-direkt.de/dienststelle/1006/zulassungsbehoerde"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=rheinisch-bergischer_kreis",
+      "quelle": "https://www.rbk-direkt.de/dienstleistung/361/fahrzeug-ummelden-innerhalb-des-rheinisch-bergischen-kreises-noch-zugelassen"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Bergisch Gladbach: Montag bis Freitag 07:30 Uhr - 12:00 Uhr",
+        "Bergisch Gladbach: Montag und Donnerstag 13:00 Uhr - 16:00 Uhr",
+        "Bergisch Gladbach: Dienstag 13:00 Uhr - 18:00 Uhr",
+        "Wermelskirchen: Montag bis Freitag 07:30 Uhr - 12:00 Uhr"
+      ],
+      "hinweis": "Die Straßenverkehrsbehörde ist nur über Termine erreichbar (Online-Terminvereinbarung für Bergisch Gladbach und Wermelskirchen). Die Servicebüros haben abweichende Zeiten nach den Öffnungszeiten des jeweiligen Rathauses.",
+      "quelle": "https://www.rbk-direkt.de/dienststelle/1006/zulassungsbehoerde"
+    },
+    "zustaendigkeit": {
+      "text": "Rheinisch-Bergischer Kreis (Kennzeichen GL) mit den Städten Bergisch Gladbach, Burscheid, Leichlingen, Overath, Rösrath und Wermelskirchen sowie den Gemeinden Kürten und Odenthal.",
+      "quelle": "https://www.rbk-direkt.de/kreisportraet"
+    },
+    "kuerzel": [
+      {
+        "code": "GL",
+        "bedeutung": "Bergisch Gladbach",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "In den Servicebüros Burscheid, Leichlingen, Overath und Rösrath können – zum Teil nur für Bewohner des jeweiligen Ortes – Autos an- und umgemeldet werden.",
+        "quelle": "https://www.rbk-direkt.de/dienstleistung/4248/terminvereinbarung---zulassungstrassenverkehr"
+      },
+      {
+        "text": "Bewohner der Gemeinden Kürten und Odenthal erledigen ihre Anliegen in der Hauptstelle Bergisch Gladbach oder in der Nebenstelle Wermelskirchen.",
+        "quelle": "https://www.rbk-direkt.de/dienstleistung/4248/terminvereinbarung---zulassungstrassenverkehr"
+      },
+      {
+        "text": "Gebühren können bar oder mit EC-, Visa- oder Mastercard bezahlt werden.",
+        "quelle": "https://www.rbk-direkt.de/dienstleistung/361/fahrzeug-ummelden-innerhalb-des-rheinisch-bergischen-kreises-noch-zugelassen"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kreis-siegen-wittgenstein",
+    "stadt": "Kreis Siegen-Wittgenstein",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kreis Siegen-Wittgenstein – Kfz-Zulassungs- und Führerscheinstelle (Kfz-Zulassungen und Fahrerlaubnisse)",
+    "behoerdeQuelle": "https://www.siegen-wittgenstein.de/Kreisverwaltung/Verwaltung-A-Z/Ansprechpartner/Kfz-Zulassungen-und-Fahrerlaubnisse.php?ModID=9&FID=2171.4.1",
+    "traeger": "Kreis Siegen-Wittgenstein",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungs- und Führerscheinstelle Siegen",
+        "strasse": "St.-Johann-Straße 23",
+        "plz": "57074",
+        "ort": "Siegen",
+        "quelle": "https://www.siegen-wittgenstein.de/Kreisverwaltung/Verwaltung-A-Z/Dienstleistungen/Kfz-Abmeldung-Au%C3%9Ferbetriebsetzung.php?ModID=10&FID=2171.865.1"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungs- und Führerscheinstelle Bad Berleburg",
+        "strasse": "Am Breitenbach 1",
+        "plz": "57319",
+        "ort": "Bad Berleburg",
+        "quelle": "https://www.siegen-wittgenstein.de/Kreisverwaltung/Verwaltung-A-Z/Dienstleistungen/Kfz-Abmeldung-Au%C3%9Ferbetriebsetzung.php?ModID=10&FID=2171.865.1"
+      }
+    ],
+    "website": {
+      "url": "https://www.siegen-wittgenstein.de/Kreisverwaltung/Verwaltung-A-Z/Ansprechpartner/Kfz-Zulassungen-und-Fahrerlaubnisse.php?ModID=9&FID=2171.4.1",
+      "quelle": "https://www.siegen-wittgenstein.de/Kreisverwaltung/Verwaltung-A-Z/Ansprechpartner/Kfz-Zulassungen-und-Fahrerlaubnisse.php?ModID=9&FID=2171.4.1"
+    },
+    "terminUrl": {
+      "url": "https://siegen-wittgenstein.flexappoint.de/#/",
+      "quelle": "https://www.siegen-wittgenstein.de/Kreisverwaltung/Kontakt/Terminvereinbarung/"
+    },
+    "ikfzUrl": {
+      "url": "https://portal.siegen-wittgenstein.de/embedded-services/call/135#/",
+      "quelle": "https://www.siegen-wittgenstein.de/Kreisverwaltung/Verwaltung-A-Z/Dienstleistungen/Kfz-Abmeldung-Au%C3%9Ferbetriebsetzung.php?ModID=10&FID=2171.865.1"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Siegen: Montag - Freitag: 7:30 - 15:00 Uhr",
+        "Bad Berleburg: Montag - Freitag: 7:30 - 13:00 Uhr"
+      ],
+      "hinweis": "Laut Seite Terminvereinbarung ist während der Öffnungszeiten ein Besuch auch ohne Termin mit Wartemarke möglich; Online-Termine sind derzeit nur für den Standort Siegen buchbar (bis zu eine Woche im Voraus).",
+      "quelle": "https://www.siegen-wittgenstein.de/Kreisverwaltung/Kontakt/%C3%96ffnungszeiten/"
+    },
+    "zustaendigkeit": {
+      "text": "Kreis Siegen-Wittgenstein (Kennzeichen SI und BLB) mit den elf Städten und Gemeinden Bad Berleburg, Bad Laasphe, Burbach, Erndtebrück, Freudenberg, Hilchenbach, Kreuztal, Netphen, Neunkirchen, Siegen und Wilnsdorf.",
+      "quelle": "https://www.siegen-wittgenstein.de/Region/Die-Region/St%C3%A4dte-und-Gemeinden/"
+    },
+    "kuerzel": [
+      {
+        "code": "SI",
+        "bedeutung": "Siegen",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BLB",
+        "bedeutung": "Bad Berleburg (Altkennzeichen, laut Wikipedia seit 13.11.2012 wieder erhältlich)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Am Standort Siegen ist seit dem 3. Juli 2023 nur Kartenzahlung möglich; bar zahlen kann man an der Service-Stelle des Kreishauses (Koblenzer Straße 73). In Bad Berleburg sind Bar- und Kartenzahlung möglich.",
+        "quelle": "https://www.siegen-wittgenstein.de/Kreisverwaltung/Verwaltung-A-Z/Dienstleistungen/Kfz-Abmeldung-Au%C3%9Ferbetriebsetzung.php?ModID=10&FID=2171.865.1"
+      },
+      {
+        "text": "Ohne Termin kann man während der Öffnungszeiten eine Wartemarke ziehen; die Online-Terminbuchung gilt nur für Siegen, kurzfristig werden regelmäßig Termine freigegeben.",
+        "quelle": "https://www.siegen-wittgenstein.de/Kreisverwaltung/Kontakt/Terminvereinbarung/"
+      },
+      {
+        "text": "Bei der Abmeldung kann das Kennzeichen für die Wiederzulassung desselben Fahrzeugs ein Jahr reserviert werden; für ein anderes Fahrzeug ist eine gebührenpflichtige Reservierung für drei Monate möglich (Kennzeichen mit SI oder BLB).",
+        "quelle": "https://www.siegen-wittgenstein.de/Kreisverwaltung/Verwaltung-A-Z/Dienstleistungen/Kfz-Abmeldung-Au%C3%9Ferbetriebsetzung.php?ModID=10&FID=2171.865.1"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

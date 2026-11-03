@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "landkreis-miltenberg",
+    "notes": [
+      "standort Zulassungsstelle Miltenberg (Landratsamt): nicht prüfbar (200)",
+      "standort Zulassungsstelle Obernburg: unvollständig → verworfen"
+    ]
+  },
+  {
+    "slug": "landkreis-rhoen-grabfeld",
+    "notes": [
+      "standort Zulassungsstelle Mellrichstadt: unvollständig → verworfen",
+      "standort Zulassungsstelle Bad Königshofen i. Gr.: unvollständig → verworfen"
+    ]
+  }
+]

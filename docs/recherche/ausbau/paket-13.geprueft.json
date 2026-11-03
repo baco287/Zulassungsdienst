@@ -1,0 +1,934 @@
+[
+  {
+    "slug": "landkreis-barnim",
+    "stadt": "Landkreis Barnim",
+    "bundesland": "Brandenburg",
+    "behoerde": "Landkreis Barnim – Zulassungs- und Fahrerlaubnisbehörde",
+    "behoerdeQuelle": "https://www.barnim.de/kfz",
+    "traeger": "Landkreis Barnim",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungs- und Fahrerlaubnisbehörde, Standort Eberswalde (Paul-Wunderlich-Haus, Haus E)",
+        "strasse": "Am Markt 1 / Pfeilstraße",
+        "plz": "16225",
+        "ort": "Eberswalde",
+        "quelle": "https://www.barnim.de/kfz"
+      },
+      {
+        "bezeichnung": "Zulassungs- und Fahrerlaubnisbehörde, Standort Bernau bei Berlin",
+        "strasse": "Jahnstraße 45",
+        "plz": "16321",
+        "ort": "Bernau bei Berlin",
+        "quelle": "https://www.barnim.de/kfz"
+      }
+    ],
+    "website": {
+      "url": "https://www.barnim.de/kfz",
+      "quelle": "https://www.barnim.de/kfz"
+    },
+    "terminUrl": null,
+    "ikfzUrl": {
+      "url": "https://www.ikfz-brandenburg.de/i4/ikfz4/?LICENSEIDENTIFIER=barnim_kreis",
+      "quelle": "https://ikfz.brandenburg.de/ikfz/de/kfz-zulassungsbehoerden/bar-barnim/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Di 9:00–18:00",
+        "Do 8:00–15:00",
+        "Fr 8:00–12:00",
+        "Sa 8:00–12:00"
+      ],
+      "hinweis": "Zeiten laut Kreisseite für den Standort Eberswalde; für den Standort Bernau bei Berlin nennt die Kreisseite keine eigenen Zeiten",
+      "quelle": "https://www.barnim.de/kfz"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde für den Landkreis Barnim mit allen kreisangehörigen Städten und Gemeinden, u. a. Eberswalde und Bernau bei Berlin. Örtlich zuständig ist bei natürlichen Personen die Zulassungsbehörde am Hauptwohnsitz des Halters.",
+      "quelle": "https://ikfz.brandenburg.de/ikfz/de/"
+    },
+    "kuerzel": [
+      {
+        "code": "BAR",
+        "bedeutung": "Barnim",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BER",
+        "bedeutung": "Bernau (Bernau bei Berlin; Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "EW",
+        "bedeutung": "Eberswalde (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Samstags geöffnet: Standort Eberswalde Samstag 8:00–12:00 Uhr.",
+        "quelle": "https://www.barnim.de/kfz"
+      },
+      {
+        "text": "Eine Zulassung erfolgt nur auf Halter ohne Kfz-Steuerrückstände beim Hauptzollamt und ohne offene Gebühren beim Landkreis Barnim.",
+        "quelle": "https://www.barnim.de/kfz"
+      },
+      {
+        "text": "Bei der internetbasierten Zulassung (i-Kfz) wird über die Bezahlplattform ePayBL des Landes per Kreditkarte (Visa, Mastercard) bezahlt.",
+        "quelle": "https://ikfz.brandenburg.de/ikfz/de/kfz-zulassungsbehoerden/bar-barnim/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "terminUrl"
+    ]
+  },
+  {
+    "slug": "landkreis-dahme-spreewald",
+    "stadt": "Landkreis Dahme-Spreewald",
+    "bundesland": "Brandenburg",
+    "behoerde": "Landkreis Dahme-Spreewald – Straßenverkehrsamt, Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.dahme-spreewald.de/de/verwaltung/verwaltungsstruktur/dezernat2/strassenverkehrsamt/zulassungsbehoerde/",
+    "traeger": "Landkreis Dahme-Spreewald",
+    "standorte": [
+      {
+        "bezeichnung": "Zulassungsbehörde Königs Wusterhausen",
+        "strasse": "Fontaneplatz 10",
+        "plz": "15711",
+        "ort": "Königs Wusterhausen",
+        "quelle": "https://www.dahme-spreewald.de/de/verwaltung/verwaltungsstruktur/dezernat2/strassenverkehrsamt/zulassungsbehoerde/"
+      },
+      {
+        "bezeichnung": "Zulassungsbehörde Lübben",
+        "strasse": "Weinbergstraße 30",
+        "plz": "15907",
+        "ort": "Lübben (Spreewald)",
+        "quelle": "https://www.dahme-spreewald.de/de/verwaltung/verwaltungsstruktur/dezernat2/strassenverkehrsamt/zulassungsbehoerde/"
+      }
+    ],
+    "website": {
+      "url": "https://www.dahme-spreewald.de/de/verwaltung/verwaltungsstruktur/dezernat2/strassenverkehrsamt/zulassungsbehoerde/",
+      "quelle": "https://www.dahme-spreewald.de/de/verwaltung/verwaltungsstruktur/dezernat2/strassenverkehrsamt/zulassungsbehoerde/"
+    },
+    "terminUrl": {
+      "url": "https://termine.dahme-spreewald.de/select2?md=4",
+      "quelle": "https://www.dahme-spreewald.de/de/verwaltung/verwaltungsstruktur/dezernat2/strassenverkehrsamt/zulassungsbehoerde/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.ikfz-brandenburg.de/i4/ikfz4/?LICENSEIDENTIFIER=dahme-spreewald_kreis",
+      "quelle": "https://www.dahme-spreewald.de/de/verwaltung/verwaltungsstruktur/dezernat2/strassenverkehrsamt/zulassungsbehoerde/i-kfz-online/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–12:00 und 13:00–15:00 (nur mit Online-Termin)",
+        "Di 09:00–12:00 und 13:00–18:00",
+        "Mi geschlossen",
+        "Do 08:00–12:00 und 13:00–16:00",
+        "Fr 08:00–12:00 (nur mit Online-Termin)"
+      ],
+      "hinweis": "Mo und Fr nur mit Online-Termin, Di und Do ohne Termin; gilt an beiden Standorten. Der Wartemarkenspender wird 30 Minuten vor Ende der regulären Öffnungszeit ausgeschaltet.",
+      "quelle": "https://www.dahme-spreewald.de/de/verwaltung/verwaltungsstruktur/dezernat2/strassenverkehrsamt/zulassungsbehoerde/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde für den Landkreis Dahme-Spreewald mit allen kreisangehörigen Städten und Gemeinden, u. a. Königs Wusterhausen und Lübben (Spreewald). Örtlich zuständig ist bei natürlichen Personen die Zulassungsbehörde am Hauptwohnsitz des Halters.",
+      "quelle": "https://ikfz.brandenburg.de/ikfz/de/"
+    },
+    "kuerzel": [
+      {
+        "code": "LDS",
+        "bedeutung": "Landkreis Dahme-Spreewald",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "KW",
+        "bedeutung": "Königs Wusterhausen (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "LC",
+        "bedeutung": "Luckau (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "LN",
+        "bedeutung": "Lübben (Lübben (Spreewald); Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Termintage seit 13.06.2025: Montag und Freitag werden Zulassungsvorgänge ausschließlich mit Termin bearbeitet, Dienstag und Donnerstag ohne Termin.",
+        "quelle": "https://www.dahme-spreewald.de/de/verwaltung/verwaltungsstruktur/dezernat2/strassenverkehrsamt/zulassungsbehoerde/"
+      },
+      {
+        "text": "Gebühren im Straßenverkehrsamt nur per Kartenzahlung (fast alle Debit- und Kreditkarten); Barzahlung nur in Ausnahmefällen, z. B. bei Diebstahl der Bankkarten.",
+        "quelle": "https://www.dahme-spreewald.de/de/verwaltung/verwaltungsstruktur/dezernat2/strassenverkehrsamt/zulassungsbehoerde/"
+      },
+      {
+        "text": "Die Zulassungsbehörde teilt auch Kennzeichen für Spreewaldkähne zu (Personenkähne über 8 Personen oder gewerblich genutzt sowie jeder motorisierte Spreewaldkahn).",
+        "quelle": "https://www.dahme-spreewald.de/de/verwaltung/verwaltungsstruktur/dezernat2/strassenverkehrsamt/zulassungsbehoerde/spreewaldkaehne/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-elbe-elster",
+    "stadt": "Landkreis Elbe-Elster",
+    "bundesland": "Brandenburg",
+    "behoerde": "Landkreis Elbe-Elster – Straßenverkehrsamt, Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://ikfz.brandenburg.de/ikfz/de/kfz-zulassungsbehoerden/ee-elbe-elster/",
+    "traeger": "Landkreis Elbe-Elster",
+    "standorte": [
+      {
+        "bezeichnung": "Straßenverkehrsamt (Kfz-Zulassung)",
+        "strasse": "Riesaer Straße 17",
+        "plz": "04924",
+        "ort": "Bad Liebenwerda",
+        "quelle": "https://www.lkee.de/Service-Verwaltung/Kreisverwaltung/Stra%C3%9Fenverkehrsamt/"
+      },
+      {
+        "bezeichnung": "Straßenverkehrsamt, Außenstelle Kfz-Zulassung",
+        "strasse": "Kirchhainer Straße 38a",
+        "plz": "03238",
+        "ort": "Finsterwalde",
+        "quelle": "https://www.lkee.de/Service-Verwaltung/Kreisverwaltung/Stra%C3%9Fenverkehrsamt/"
+      }
+    ],
+    "website": {
+      "url": "https://www.lkee.de/Service-Verwaltung/Kreisverwaltung/Stra%C3%9Fenverkehrsamt/",
+      "quelle": "https://www.lkee.de/Service-Verwaltung/Kreisverwaltung/Stra%C3%9Fenverkehrsamt/"
+    },
+    "terminUrl": null,
+    "ikfzUrl": {
+      "url": "https://www.ikfz-brandenburg.de/i4/ikfz4/?LICENSEIDENTIFIER=elbe-elster_kreis",
+      "quelle": "https://ikfz.brandenburg.de/ikfz/de/kfz-zulassungsbehoerden/ee-elbe-elster/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–12:00",
+        "Di 08:00–12:00 und 13:00–18:00",
+        "Mi geschlossen",
+        "Do 08:00–12:00 und 13:00–16:00",
+        "Fr 08:00–12:00"
+      ],
+      "hinweis": "Der Wartemarkenspender wird 30 Minuten vor Ende der Öffnungszeit ausgeschaltet.",
+      "quelle": "https://www.lkee.de/Service-Verwaltung/Kreisverwaltung/Stra%C3%9Fenverkehrsamt/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde für den Landkreis Elbe-Elster mit allen kreisangehörigen Städten und Gemeinden, u. a. Bad Liebenwerda und Finsterwalde. Örtlich zuständig ist bei natürlichen Personen die Zulassungsbehörde am Hauptwohnsitz des Halters.",
+      "quelle": "https://ikfz.brandenburg.de/ikfz/de/"
+    },
+    "kuerzel": [
+      {
+        "code": "EE",
+        "bedeutung": "Elbe-Elster",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "FI",
+        "bedeutung": "Finsterwalde (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "LIB",
+        "bedeutung": "Liebenwerda (Bad Liebenwerda; Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Für Saison-, E- oder H-Kennzeichen ist maximal eine 6-stellige Kombination aus Buchstaben und Ziffern möglich (z. B. EE-XY10 oder LIB-A10).",
+        "quelle": "https://www.lkee.de/Service-Verwaltung/Kreisverwaltung/Stra%C3%9Fenverkehrsamt/"
+      },
+      {
+        "text": "Im Straßenverkehrsamt in Bad Liebenwerda kann nur noch bargeldlos bezahlt werden.",
+        "quelle": "https://www.lkee.de/Service-Verwaltung/Kreisverwaltung/Stra%C3%9Fenverkehrsamt/"
+      },
+      {
+        "text": "Zulassungsvorgänge mit erheblichem Bearbeitungsaufwand (z. B. Gutachten oder Einzelgenehmigungen) können zurückgestellt und außerhalb der Öffnungszeiten bearbeitet werden.",
+        "quelle": "https://www.lkee.de/Service-Verwaltung/Kreisverwaltung/Stra%C3%9Fenverkehrsamt/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "terminUrl"
+    ]
+  },
+  {
+    "slug": "landkreis-havelland",
+    "stadt": "Landkreis Havelland",
+    "bundesland": "Brandenburg",
+    "behoerde": "Landkreis Havelland – Ordnungs- und Verkehrsamt, Kfz-Zulassungsbehörde",
+    "behoerdeQuelle": "https://ikfz.brandenburg.de/ikfz/de/kfz-zulassungsbehoerden/hvl-havelland/",
+    "traeger": "Landkreis Havelland",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Rathenow",
+        "strasse": "Geschwister-Scholl-Straße 7",
+        "plz": "14712",
+        "ort": "Rathenow",
+        "quelle": "https://www.havelland.de/wirtschaft-verkehr/verkehr/kfz-zulassungsbehoerde/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Nauen",
+        "strasse": "Goethestraße 59/60",
+        "plz": "14641",
+        "ort": "Nauen",
+        "quelle": "https://www.havelland.de/wirtschaft-verkehr/verkehr/kfz-zulassungsbehoerde/"
+      }
+    ],
+    "website": {
+      "url": "https://www.havelland.de/wirtschaft-verkehr/verkehr/kfz-zulassungsbehoerde/",
+      "quelle": "https://www.havelland.de/wirtschaft-verkehr/verkehr/kfz-zulassungsbehoerde/"
+    },
+    "terminUrl": {
+      "url": "https://termine.hvlnet.de/m/sv/extern/calendar/?uid=db8717ae-8cc2-4e60-bd96-107bcbc3a096",
+      "quelle": "https://www.havelland.de/wirtschaft-verkehr/verkehr/kfz-zulassungsbehoerde/online-dienste/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.ikfz-brandenburg.de/i4/ikfz4/?LICENSEIDENTIFIER=havelland_kreis",
+      "quelle": "https://www.havelland.de/wirtschaft-verkehr/verkehr/kfz-zulassungsbehoerde/online-dienste/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 08:00–12:30",
+        "Di 08:30–12:00 und 14:00–18:00",
+        "Mi 08:00–12:00 (in Nauen nur mit Terminvereinbarung)",
+        "Do 08:00–12:00 und 13:30–17:00",
+        "Fr 07:30–12:00 (nur mit Terminvereinbarung)"
+      ],
+      "hinweis": "Freitag nur mit Termin, Mittwoch in Nauen nur mit Termin. Die Ausgabe von Wartemarken endet 45 Minuten vor Schließung.",
+      "quelle": "https://www.havelland.de/wirtschaft-verkehr/verkehr/kfz-zulassungsbehoerde/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde für den Landkreis Havelland mit allen kreisangehörigen Städten und Gemeinden, u. a. Falkensee, Nauen und Rathenow. Nicht zuständig für die kreisfreie Stadt Brandenburg an der Havel (Kennzeichen BRB), die eine eigene Zulassungsbehörde hat. Örtlich zuständig ist bei natürlichen Personen die Zulassungsbehörde am Hauptwohnsitz des Halters.",
+      "quelle": "https://ikfz.brandenburg.de/ikfz/de/"
+    },
+    "kuerzel": [
+      {
+        "code": "HVL",
+        "bedeutung": "Havelland",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "NAU",
+        "bedeutung": "Nauen (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "RN",
+        "bedeutung": "Rathenow (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Bei der Reservierung von Wunschkennzeichen darf die Kombination auch bei Kennzeichen mit Zusatz (H, E, Saison) insgesamt nicht mehr als 8 Stellen betragen.",
+        "quelle": "https://www.havelland.de/wirtschaft-verkehr/verkehr/kfz-zulassungsbehoerde/online-dienste/"
+      },
+      {
+        "text": "Personen und Firmen mit Wohnsitz bzw. Firmensitz im Ausland benötigen für Kurzzeit- und Ausfuhrkennzeichen einen Empfangsbevollmächtigten mit Wohnort im Landkreis Havelland.",
+        "quelle": "https://www.havelland.de/wirtschaft-verkehr/verkehr/kfz-zulassungsbehoerde/"
+      },
+      {
+        "text": "Zulassungsdienste und Händler können Mo–Do von 7:30 bis 8:30 Uhr bis zu 8 Vorgänge am Betriebsschalter abgeben; mit Wartemarke während der Sprechzeiten höchstens 3 Vorgänge.",
+        "quelle": "https://www.havelland.de/wirtschaft-verkehr/verkehr/kfz-zulassungsbehoerde/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-maerkisch-oderland",
+    "stadt": "Landkreis Märkisch-Oderland",
+    "bundesland": "Brandenburg",
+    "behoerde": "Landkreis Märkisch-Oderland – Fahrzeugzulassungsbehörde (Straßenverkehrsamt)",
+    "behoerdeQuelle": "https://www.maerkisch-oderland.de/leben-im-landkreis/infrastruktur-sicherheit/verkehr/fahrzeugzulassung",
+    "traeger": "Landkreis Märkisch-Oderland",
+    "standorte": [
+      {
+        "bezeichnung": "Fahrzeugzulassungsbehörde",
+        "strasse": "Am Biotop 12",
+        "plz": "15344",
+        "ort": "Strausberg",
+        "quelle": "https://www.maerkisch-oderland.de/leben-im-landkreis/infrastruktur-sicherheit/verkehr/fahrzeugzulassung"
+      }
+    ],
+    "website": {
+      "url": "https://www.maerkisch-oderland.de/leben-im-landkreis/infrastruktur-sicherheit/verkehr/fahrzeugzulassung",
+      "quelle": "https://www.maerkisch-oderland.de/leben-im-landkreis/infrastruktur-sicherheit/verkehr/fahrzeugzulassung"
+    },
+    "terminUrl": {
+      "url": "https://cqm3.cleverq.de/public/appointments/lk_kfz_maerkisch_oderland/index.html?lang=de",
+      "quelle": "https://www.maerkisch-oderland.de/leben-im-landkreis/infrastruktur-sicherheit/verkehr/fahrzeugzulassung"
+    },
+    "ikfzUrl": {
+      "url": "https://www.ikfz-brandenburg.de/i4/ikfz4/?LICENSEIDENTIFIER=maerkisch-oderland_kreis",
+      "quelle": "https://ikfz.brandenburg.de/ikfz/de/kfz-zulassungsbehoerden/mol-maerkisch-oderland/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 8:00–12:00",
+        "Di 9:00–18:00",
+        "Mi geschlossen",
+        "Do 8:00–15:00",
+        "Fr 8:00–12:00"
+      ],
+      "hinweis": "nur mit Termin",
+      "quelle": "https://www.maerkisch-oderland.de/leben-im-landkreis/infrastruktur-sicherheit/verkehr/fahrzeugzulassung"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde für den Landkreis Märkisch-Oderland mit allen kreisangehörigen Städten und Gemeinden, u. a. Strausberg und Seelow. Örtlich zuständig ist bei natürlichen Personen die Zulassungsbehörde am Hauptwohnsitz des Halters.",
+      "quelle": "https://ikfz.brandenburg.de/ikfz/de/"
+    },
+    "kuerzel": [
+      {
+        "code": "MOL",
+        "bedeutung": "Märkisch-Oderland",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "FRW",
+        "bedeutung": "Freienwalde (Bad Freienwalde (Oder); Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SEE",
+        "bedeutung": "Seelow (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SRB",
+        "bedeutung": "Strausberg (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Terminpflicht für alle Anliegen; man soll mindestens 5 Minuten vor dem Termin erscheinen, verspätete Vorsprachen werden nicht bearbeitet.",
+        "quelle": "https://www.maerkisch-oderland.de/leben-im-landkreis/infrastruktur-sicherheit/verkehr/fahrzeugzulassung"
+      },
+      {
+        "text": "Keine Barzahlung: bezahlt wird mit EC- oder Kreditkarte.",
+        "quelle": "https://www.maerkisch-oderland.de/leben-im-landkreis/infrastruktur-sicherheit/verkehr/fahrzeugzulassung"
+      },
+      {
+        "text": "Bei 3D- oder Carbon-Kennzeichen ist zwingend die Zertifizierung des Herstellers der Platinen vorzulegen.",
+        "quelle": "https://www.maerkisch-oderland.de/leben-im-landkreis/infrastruktur-sicherheit/verkehr/fahrzeugzulassung"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-oberhavel",
+    "stadt": "Landkreis Oberhavel",
+    "bundesland": "Brandenburg",
+    "behoerde": "Landkreis Oberhavel – Fachdienst Verkehr, Kraftfahrzeug-Zulassung",
+    "behoerdeQuelle": "https://ikfz.brandenburg.de/ikfz/de/kfz-zulassungsbehoerden/ohv-oberhavel/",
+    "traeger": "Landkreis Oberhavel",
+    "standorte": [
+      {
+        "bezeichnung": "Kraftfahrzeug-Zulassung",
+        "strasse": "Adolf-Dechert-Straße 1",
+        "plz": "16515",
+        "ort": "Oranienburg",
+        "quelle": "https://www.oberhavel.de/B%C3%BCrgerservice/Auto-und-Verkehr-/Kraftfahrzeug-Zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.oberhavel.de/B%C3%BCrgerservice/Auto-und-Verkehr-/Kraftfahrzeug-Zulassung/",
+      "quelle": "https://www.oberhavel.de/B%C3%BCrgerservice/Auto-und-Verkehr-/Kraftfahrzeug-Zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://terminreservierung.oberhavel.de/m/lk-oberhavel-fd-verkehr/extern/calendar/?uid=bcd774c5-271e-4f91-af0b-0941289a21b0",
+      "quelle": "https://www.oberhavel.de/B%C3%BCrgerservice/Auto-und-Verkehr-/Kraftfahrzeug-Zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.ikfz-brandenburg.de/i4/ikfz4/?LICENSEIDENTIFIER=oberhavel_kreis",
+      "quelle": "https://ikfz.brandenburg.de/ikfz/de/kfz-zulassungsbehoerden/ohv-oberhavel/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30–12:00 und 13:00–15:00",
+        "Di 09:00–12:00 und 13:00–18:00",
+        "Mi 07:30–12:30",
+        "Do 09:00–12:00 und 13:00–18:00",
+        "Fr 07:30–12:30"
+      ],
+      "hinweis": "nur mit Termin: Für alle Dienstleistungen der Zulassungsbehörde ist ein gültiger Online-Termin erforderlich",
+      "quelle": "https://www.oberhavel.de/B%C3%BCrgerservice/Auto-und-Verkehr-/Kraftfahrzeug-Zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde für den Landkreis Oberhavel mit allen kreisangehörigen Städten und Gemeinden, u. a. Oranienburg. Örtlich zuständig ist bei natürlichen Personen die Zulassungsbehörde am Hauptwohnsitz des Halters.",
+      "quelle": "https://ikfz.brandenburg.de/ikfz/de/"
+    },
+    "kuerzel": [
+      {
+        "code": "OHV",
+        "bedeutung": "Oberhavel",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Ohne vorherige Online-Terminbuchung erfolgt keine Bearbeitung; abgesagte Termine werden sofort wieder freigeschaltet.",
+        "quelle": "https://www.oberhavel.de/B%C3%BCrgerservice/Auto-und-Verkehr-/Kraftfahrzeug-Zulassung/"
+      },
+      {
+        "text": "Gebühren vorzugsweise bargeldlos per Giro- oder Kreditkarte; Barzahlung ist Mo, Mi und Fr von 07:30–09:00 Uhr sowie Do von 16:00–18:00 Uhr nicht möglich.",
+        "quelle": "https://www.oberhavel.de/B%C3%BCrgerservice/Auto-und-Verkehr-/Kraftfahrzeug-Zulassung/"
+      },
+      {
+        "text": "Zulassungsdienste, Autohändler und gewerbliche Antragsteller mit mehr als einem Vorgang sind von der Terminvergabe ausgeschlossen; Abgabe am Händlerschalter Mo, Mi, Fr 7:30–9:30 Uhr und Di, Do 9:00–11:00 Uhr.",
+        "quelle": "https://www.oberhavel.de/B%C3%BCrgerservice/Auto-und-Verkehr-/Kraftfahrzeug-Zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-oberspreewald-lausitz",
+    "stadt": "Landkreis Oberspreewald-Lausitz",
+    "bundesland": "Brandenburg",
+    "behoerde": "Landkreis Oberspreewald-Lausitz – Amt für Straßenverkehr und Ordnung, SG Fahrzeugzulassungs- und Fahrerlaubnisbehörde",
+    "behoerdeQuelle": "https://www.osl-online.de/texte/seite.php?id=97615",
+    "traeger": "Landkreis Oberspreewald-Lausitz",
+    "standorte": [
+      {
+        "bezeichnung": "Fahrzeugzulassungsbehörde",
+        "strasse": "Cottbuser Straße 26",
+        "plz": "03205",
+        "ort": "Calau",
+        "quelle": "https://www.osl-online.de/texte/seite.php?id=97615"
+      }
+    ],
+    "website": {
+      "url": "https://www.osl-online.de/texte/seite.php?id=97615",
+      "quelle": "https://www.osl-online.de/texte/seite.php?id=97615"
+    },
+    "terminUrl": {
+      "url": "https://kfz.osl-online.de/tnv/",
+      "quelle": "https://www.osl-online.de/texte/seite.php?id=97615"
+    },
+    "ikfzUrl": {
+      "url": "https://www.ikfz-brandenburg.de/i4/ikfz4/?LICENSEIDENTIFIER=oberspreewald-lausitz_kreis",
+      "quelle": "https://www.osl-online.de/texte/seite.php?id=97615"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 8:30–12:00",
+        "Di 8:30–12:00 und 13:00–17:30",
+        "Do 8:30–12:00 und 13:00–16:00",
+        "Fr 8:30–12:00"
+      ],
+      "hinweis": "Persönliche Vorsprache nur nach vorheriger Online-Terminbuchung; Abmeldung und Kurzzeitkennzeichen ohne Termin. Stand 03.11.2026 wegen IT-Sicherheitsvorfall aktuell keine Sprechtage und keine Antragsbearbeitung.",
+      "quelle": "https://www.osl-online.de/texte/seite.php?id=97615"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde für den Landkreis Oberspreewald-Lausitz mit allen kreisangehörigen Städten und Gemeinden, u. a. Senftenberg und Calau. Örtlich zuständig ist bei natürlichen Personen die Zulassungsbehörde am Hauptwohnsitz des Halters.",
+      "quelle": "https://ikfz.brandenburg.de/ikfz/de/"
+    },
+    "kuerzel": [
+      {
+        "code": "OSL",
+        "bedeutung": "Oberspreewald-Lausitz",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "CA",
+        "bedeutung": "Calau (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SFB",
+        "bedeutung": "Senftenberg (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Interkommunale Zusammenarbeit: Bürger aus Cottbus, Oberspreewald-Lausitz und Spree-Neiße können Anträge zur Fahrzeugzulassung seit 2022 bei allen drei Behörden einreichen (vor Ort in Calau, Cottbus oder Forst).",
+        "quelle": "https://www.osl-online.de/texte/seite.php?id=97615"
+      },
+      {
+        "text": "Vor Ort nur Zahlung per Bankkarte (EC-Karte, Girokarte).",
+        "quelle": "https://www.osl-online.de/texte/seite.php?id=97615"
+      },
+      {
+        "text": "Anträge können auch ohne Termin über Einwurfboxen (Calau, Kreishaus Calau, Bürgerbüro Senftenberg) oder per Post eingereicht werden; die Gebühr wird dann per Bescheid erhoben.",
+        "quelle": "https://www.osl-online.de/texte/seite.php?id=97615"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-oder-spree",
+    "stadt": "Landkreis Oder-Spree",
+    "bundesland": "Brandenburg",
+    "behoerde": "Landkreis Oder-Spree – Kraftfahrzeug-Zulassungsstelle",
+    "behoerdeQuelle": "https://www.landkreis-oder-spree.de/Wirtschaft-Ordnung/Verkehr/Kraftfahrzeug-Zulassung/",
+    "traeger": "Landkreis Oder-Spree",
+    "standorte": [
+      {
+        "bezeichnung": "Kraftfahrzeug-Zulassungsstelle",
+        "strasse": "Hegelstraße 23a",
+        "plz": "15517",
+        "ort": "Fürstenwalde/Spree",
+        "quelle": "https://www.landkreis-oder-spree.de/Wirtschaft-Ordnung/Verkehr/Kraftfahrzeug-Zulassung/"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-oder-spree.de/Wirtschaft-Ordnung/Verkehr/Kraftfahrzeug-Zulassung/",
+      "quelle": "https://www.landkreis-oder-spree.de/Wirtschaft-Ordnung/Verkehr/Kraftfahrzeug-Zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://web.landkreis-oder-spree.de/m/strassenverkehr/extern/calendar/?uid=64babf00-f20a-48ef-88de-1bb19a307d03",
+      "quelle": "https://www.landkreis-oder-spree.de/Wirtschaft-Ordnung/Verkehr/Kraftfahrzeug-Zulassung/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.ikfz-brandenburg.de/i4/ikfz4/?LICENSEIDENTIFIER=oder-spree_kreis",
+      "quelle": "https://ikfz.brandenburg.de/ikfz/de/kfz-zulassungsbehoerden/los-oder-spree/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 9:00–12:00",
+        "Di 9:00–12:00 und 13:00–18:00",
+        "Mi 8:00–12:00",
+        "Do 8:00–12:00 und 13:00–16:00",
+        "Fr 8:00–12:00"
+      ],
+      "hinweis": "Persönliche Vorsprache nur nach vorheriger Terminvereinbarung; ohne Termin u. a. bei Kennzeichendiebstahl sowie für Kurzzeit- und Ausfuhrkennzeichen",
+      "quelle": "https://www.landkreis-oder-spree.de/Wirtschaft-Ordnung/Verkehr/Kraftfahrzeug-Zulassung/"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde für den Landkreis Oder-Spree mit allen kreisangehörigen Städten und Gemeinden, u. a. Fürstenwalde/Spree und Beeskow; nicht zuständig für die kreisfreie Stadt Frankfurt (Oder) (Kennzeichen FF), die eine eigene Zulassungsbehörde hat. Bei natürlichen Personen ist allein die Behörde des Hauptwohnsitzes zuständig, juristische Personen können auch am Ort der Niederlassung zulassen.",
+      "quelle": "https://www.landkreis-oder-spree.de/Wirtschaft-Ordnung/Verkehr/Kraftfahrzeug-Zulassung/"
+    },
+    "kuerzel": [
+      {
+        "code": "LOS",
+        "bedeutung": "Landkreis Oder-Spree",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BSK",
+        "bedeutung": "Beeskow (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "EH",
+        "bedeutung": "Eisenhüttenstadt (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "FW",
+        "bedeutung": "Fürstenwalde (Fürstenwalde/Spree; Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Ohne Termin vorsprechen kann man u. a. bei Diebstahl eines Kennzeichens, für Kurzzeit- und Ausfuhrkennzeichen sowie bei behördlichen Aufforderungen (Meldung beim Wachpersonal am Eingang).",
+        "quelle": "https://www.landkreis-oder-spree.de/Wirtschaft-Ordnung/Verkehr/Kraftfahrzeug-Zulassung/"
+      },
+      {
+        "text": "Händler, Zulassungsdienste und Autohäuser geben Vorgänge ohne Termin ab; seit 30.09.2026 täglich 8:30–12:00 Uhr, dazu ein Express-Vorgang pro Tag zur sofortigen Bearbeitung.",
+        "quelle": "https://www.landkreis-oder-spree.de/Wirtschaft-Ordnung/Verkehr/Kraftfahrzeug-Zulassung/"
+      },
+      {
+        "text": "Auch Bootskennzeichen werden in der Kraftfahrzeug-Zulassungsbehörde vergeben; persönliches Erscheinen nach Terminvereinbarung ist erforderlich, postalische Anträge werden nicht bearbeitet.",
+        "quelle": "https://www.landkreis-oder-spree.de/Wirtschaft-Ordnung/Verkehr/Kraftfahrzeug-Zulassung/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-ostprignitz-ruppin",
+    "stadt": "Landkreis Ostprignitz-Ruppin",
+    "bundesland": "Brandenburg",
+    "behoerde": "Landkreis Ostprignitz-Ruppin – Amt für öffentliche Sicherheit und Verkehr, Team Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.ostprignitz-ruppin.de/Verwaltung/Dezernate/Dezernat-Bauen-Ordnung-und-Umwelt/Amt-f%C3%BCr-%C3%B6ffentliche-Sicherheit-und-Verkehr/Sachgebiet-Kraftfahrzeuge-und-Fahrerlaubnisse/Zulassungsbeh%C3%B6rde/",
+    "traeger": "Landkreis Ostprignitz-Ruppin",
+    "standorte": [
+      {
+        "bezeichnung": "Amt für öffentliche Sicherheit und Verkehr, Team Zulassungsbehörde",
+        "strasse": "Heinrich-Rau-Straße 27–30",
+        "plz": "16816",
+        "ort": "Neuruppin",
+        "quelle": "https://www.ostprignitz-ruppin.de/Verwaltung/Dezernate/Dezernat-Bauen-Ordnung-und-Umwelt/Amt-f%C3%BCr-%C3%B6ffentliche-Sicherheit-und-Verkehr/Sachgebiet-Kraftfahrzeuge-und-Fahrerlaubnisse/Zulassungsbeh%C3%B6rde/"
+      }
+    ],
+    "website": {
+      "url": "https://www.ostprignitz-ruppin.de/Verwaltung/Dezernate/Dezernat-Bauen-Ordnung-und-Umwelt/Amt-f%C3%BCr-%C3%B6ffentliche-Sicherheit-und-Verkehr/Sachgebiet-Kraftfahrzeuge-und-Fahrerlaubnisse/Zulassungsbeh%C3%B6rde/",
+      "quelle": "https://www.ostprignitz-ruppin.de/Verwaltung/Dezernate/Dezernat-Bauen-Ordnung-und-Umwelt/Amt-f%C3%BCr-%C3%B6ffentliche-Sicherheit-und-Verkehr/Sachgebiet-Kraftfahrzeuge-und-Fahrerlaubnisse/Zulassungsbeh%C3%B6rde/"
+    },
+    "terminUrl": {
+      "url": "https://kfz.opr.de/terminvergabe/?START_OFFICE=KFZ",
+      "quelle": "https://www.ostprignitz-ruppin.de/Verwaltung/Dezernate/Dezernat-Bauen-Ordnung-und-Umwelt/Amt-f%C3%BCr-%C3%B6ffentliche-Sicherheit-und-Verkehr/Sachgebiet-Kraftfahrzeuge-und-Fahrerlaubnisse/Zulassungsbeh%C3%B6rde/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.ikfz-brandenburg.de/i4/ikfz4/?LICENSEIDENTIFIER=ostprignitz-ruppin_kreis",
+      "quelle": "https://ikfz.brandenburg.de/ikfz/de/kfz-zulassungsbehoerden/opr-ostprignitz-ruppin/"
+    },
+    "oeffnungszeiten": null,
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde für den Landkreis Ostprignitz-Ruppin mit allen kreisangehörigen Städten und Gemeinden, u. a. Neuruppin, Kyritz und Wittstock/Dosse. Örtlich zuständig ist bei natürlichen Personen die Zulassungsbehörde am Hauptwohnsitz des Halters.",
+      "quelle": "https://ikfz.brandenburg.de/ikfz/de/"
+    },
+    "kuerzel": [
+      {
+        "code": "OPR",
+        "bedeutung": "Ostprignitz-Ruppin",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "KY",
+        "bedeutung": "Kyritz (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "NP",
+        "bedeutung": "Neuruppin (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "WK",
+        "bedeutung": "Wittstock (Wittstock/Dosse; Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Die Zulassungsstelle ist nur mit Termin erreichbar; feste Sprechzeiten für die Zulassungsstelle nennt die Kreisseite nicht.",
+        "quelle": "https://www.ostprignitz-ruppin.de/Verwaltung/Standorte-und-Sprechzeiten/"
+      },
+      {
+        "text": "Auch für die Abmeldung eines Fahrzeugs wird ein Termin benötigt.",
+        "quelle": "https://www.ostprignitz-ruppin.de/Verwaltung/Dienstleistungen/Abmeldung-eines-Fahrzeuges.php?ModID=10&FID=3039.226.1&call=1"
+      },
+      {
+        "text": "Das Team Zulassungsbehörde teilt auch Kleinfahrzeugkennzeichen für Boote zu.",
+        "quelle": "https://www.ostprignitz-ruppin.de/Verwaltung/Dezernate/Dezernat-Bauen-Ordnung-und-Umwelt/Amt-f%C3%BCr-%C3%B6ffentliche-Sicherheit-und-Verkehr/Sachgebiet-Kraftfahrzeuge-und-Fahrerlaubnisse/Zulassungsbeh%C3%B6rde/"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten"
+    ]
+  },
+  {
+    "slug": "landkreis-potsdam-mittelmark",
+    "stadt": "Landkreis Potsdam-Mittelmark",
+    "bundesland": "Brandenburg",
+    "behoerde": "Landkreis Potsdam-Mittelmark – Fachdienst KfZ-Zulassung",
+    "behoerdeQuelle": "https://www.potsdam-mittelmark.de/de/ihr-buergerservice/leistungen-a-z/mobilitaet-reisen/zulassung-fuer-neue-oder-gebrauchte-fahrzeuge-beantragen",
+    "traeger": "Landkreis Potsdam-Mittelmark",
+    "standorte": [
+      {
+        "bezeichnung": "Fachdienst KfZ-Zulassung",
+        "strasse": "Am Gutshof 1-7",
+        "plz": "14542",
+        "ort": "Werder (Havel)",
+        "quelle": "https://www.potsdam-mittelmark.de/de/ihr-buergerservice/leistungen-a-z/mobilitaet-reisen/zulassung-fuer-neue-oder-gebrauchte-fahrzeuge-beantragen"
+      }
+    ],
+    "website": {
+      "url": "https://www.potsdam-mittelmark.de/de/ihr-buergerservice/leistungen-a-z/mobilitaet-reisen/zulassung-fuer-neue-oder-gebrauchte-fahrzeuge-beantragen",
+      "quelle": "https://www.potsdam-mittelmark.de/de/ihr-buergerservice/leistungen-a-z/mobilitaet-reisen/zulassung-fuer-neue-oder-gebrauchte-fahrzeuge-beantragen"
+    },
+    "terminUrl": {
+      "url": "https://termine.potsdam-mittelmark.de/termine/",
+      "quelle": "https://www.potsdam-mittelmark.de/de/ihr-buergerservice/leistungen-a-z/mobilitaet-reisen/zulassung-fuer-neue-oder-gebrauchte-fahrzeuge-beantragen"
+    },
+    "ikfzUrl": {
+      "url": "https://www.ikfz-brandenburg.de/i4/ikfz4/?LICENSEIDENTIFIER=potsdam-mittelmark_kreis",
+      "quelle": "https://ikfz.brandenburg.de/ikfz/de/kfz-zulassungsbehoerden/pm-potsdam-mittelmark/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 07:30–15:00",
+        "Di 09:00–18:00",
+        "Mi 07:30–12:00",
+        "Do 07:30–16:00",
+        "Fr 07:30–12:00"
+      ],
+      "hinweis": "nur mit Termin: ohne vorherige Online-Terminvereinbarung ist eine Vorsprache zu den Öffnungszeiten nicht möglich",
+      "quelle": "https://www.potsdam-mittelmark.de/de/ihr-buergerservice/leistungen-a-z/mobilitaet-reisen/zulassung-fuer-neue-oder-gebrauchte-fahrzeuge-beantragen"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde für den Landkreis Potsdam-Mittelmark mit allen kreisangehörigen Städten und Gemeinden, u. a. Werder (Havel). Nicht zuständig für die kreisfreie Landeshauptstadt Potsdam (Kennzeichen P), die eine eigene Zulassungsbehörde hat. Örtlich zuständig ist bei natürlichen Personen die Zulassungsbehörde am Hauptwohnsitz des Halters.",
+      "quelle": "https://ikfz.brandenburg.de/ikfz/de/"
+    },
+    "kuerzel": [
+      {
+        "code": "PM",
+        "bedeutung": "Potsdam-Mittelmark",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "BEL",
+        "bedeutung": "Belzig (Bad Belzig; Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Zugang zur Behörde ausschließlich nach vorheriger Online-Terminvereinbarung.",
+        "quelle": "https://www.potsdam-mittelmark.de/de/ihr-buergerservice/leistungen-a-z/mobilitaet-reisen/zulassung-fuer-neue-oder-gebrauchte-fahrzeuge-beantragen"
+      },
+      {
+        "text": "Bei der Abmeldung können auslaufende Kennzeichen (BEL, BRB, JB, LUK und P) sowie Kennzeichen aus anderen Zulassungsbereichen nicht reserviert werden.",
+        "quelle": "https://www.potsdam-mittelmark.de/de/ihr-buergerservice/leistungen-a-z/mobilitaet-reisen/ausserbetriebsetzung-eines-fahrzeuges"
+      },
+      {
+        "text": "Für Film- und Werbeaufnahmen können reale PM-Kennzeichen auf Antrag als Spielkennzeichen reserviert und gesperrt werden (12,80 EUR je Kennzeichenreservierung).",
+        "quelle": "https://www.potsdam-mittelmark.de/de/ihr-buergerservice/leistungen-a-z/mobilitaet-reisen/kfz-spielkennzeichen-dreharbeiten"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-prignitz",
+    "stadt": "Landkreis Prignitz",
+    "bundesland": "Brandenburg",
+    "behoerde": "Landkreis Prignitz – Kfz-Zulassungsstelle (Sachbereich Ordnung, Verkehr, Bußgeldstelle)",
+    "behoerdeQuelle": "https://www.landkreis-prignitz.de/de/wBuergerservice/stellen/Sb-Strassenverkehr-Kfz-Zulassungsstelle.php",
+    "traeger": "Landkreis Prignitz",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle (Haus 6b, Erdgeschoss)",
+        "strasse": "Berliner Str. 49",
+        "plz": "19348",
+        "ort": "Perleberg",
+        "quelle": "https://www.landkreis-prignitz.de/de/wBuergerservice/stellen/Sb-Strassenverkehr-Kfz-Zulassungsstelle.php"
+      }
+    ],
+    "website": {
+      "url": "https://www.landkreis-prignitz.de/de/wBuergerservice/stellen/Sb-Strassenverkehr-Kfz-Zulassungsstelle.php",
+      "quelle": "https://www.landkreis-prignitz.de/de/wBuergerservice/stellen/Sb-Strassenverkehr-Kfz-Zulassungsstelle.php"
+    },
+    "terminUrl": {
+      "url": "https://cqm.cleverq.de/public/sites/40/appointments/index.html",
+      "quelle": "https://www.landkreis-prignitz.de/de/wBuergerservice/stellen/Sb-Strassenverkehr-Kfz-Zulassungsstelle.php"
+    },
+    "ikfzUrl": {
+      "url": "https://www.ikfz-brandenburg.de/i4/ikfz4/?LICENSEIDENTIFIER=prignitz_kreis",
+      "quelle": "https://ikfz.brandenburg.de/ikfz/de/kfz-zulassungsbehoerden/pr-prignitz/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo 8:00–11:30",
+        "Di 8:00–17:30",
+        "Mi telefonisch erreichbar",
+        "Do 8:00–14:30",
+        "Fr 8:00–11:30"
+      ],
+      "hinweis": "Vorsprache mit Terminbuchung (Terminvorausbuchung über das Online-Portal)",
+      "quelle": "https://www.landkreis-prignitz.de/de/landkreis-verwaltung/Landkreis/Sprechzeiten/sprechzeiten_gb_1.php"
+    },
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde für den Landkreis Prignitz mit allen kreisangehörigen Städten und Gemeinden, u. a. Perleberg. Örtlich zuständig ist bei natürlichen Personen die Zulassungsbehörde am Hauptwohnsitz des Halters.",
+      "quelle": "https://ikfz.brandenburg.de/ikfz/de/"
+    },
+    "kuerzel": [
+      {
+        "code": "PR",
+        "bedeutung": "Prignitz",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Wer innerhalb des Landkreises Prignitz umzieht, kann die Adressänderung in den Fahrzeugpapieren auch in den Ämtern und Gemeinden des Landkreises vornehmen lassen.",
+        "quelle": "https://www.landkreis-prignitz.de/de/wBuergerservice/stellen/Sb-Strassenverkehr-Kfz-Zulassungsstelle.php"
+      },
+      {
+        "text": "Keine Vorabzuteilung verkleinerter Kennzeichen: Das Fahrzeug muss nach vorheriger Terminvereinbarung bei der Zulassungsbehörde vorgeführt werden.",
+        "quelle": "https://www.landkreis-prignitz.de/de/landkreis-verwaltung/Geschaeftsbereiche-Aufgaben/ordnung_verkehr/verkleinerte_kennzeichen.php"
+      },
+      {
+        "text": "Am Mittwoch ist die Kfz-Zulassung nur telefonisch erreichbar.",
+        "quelle": "https://www.landkreis-prignitz.de/de/landkreis-verwaltung/Landkreis/Sprechzeiten/sprechzeiten_gb_1.php"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "landkreis-spree-neisse",
+    "stadt": "Landkreis Spree-Neiße",
+    "bundesland": "Brandenburg",
+    "behoerde": "Landkreis Spree-Neiße/Wokrejs Sprjewja-Nysa – Fachbereich Ordnung, Sicherheit, Verkehr, SG Führerscheinangelegenheiten und Kfz-Zulassung",
+    "behoerdeQuelle": "https://www.lkspn.de/buergerservice/dezernate-fachbereiche/95-sachgebiet-sg-fuhrerscheinangelegenheiten-und-kfz-zulassung.html",
+    "traeger": "Landkreis Spree-Neiße",
+    "standorte": [
+      {
+        "bezeichnung": "Kreishaus, SG Führerscheinangelegenheiten und Kfz-Zulassung",
+        "strasse": "Heinrich-Heine-Straße 1",
+        "plz": "03149",
+        "ort": "Forst (Lausitz)",
+        "quelle": "https://www.lkspn.de/buergerservice/dezernate-fachbereiche/95-sachgebiet-sg-fuhrerscheinangelegenheiten-und-kfz-zulassung.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.lkspn.de/buergerservice/dienstleistungen/50-kfz-zulassung.html",
+      "quelle": "https://www.lkspn.de/buergerservice/dienstleistungen/50-kfz-zulassung.html"
+    },
+    "terminUrl": {
+      "url": "https://termine.lkspn.de/m/LKSPN/extern/calendar/?uid=c355f64c-b38f-44fc-8de9-3a95467ec1ff",
+      "quelle": "https://www.lkspn.de/termin-vergabe.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.ikfz-brandenburg.de/i4/ikfz4/?LICENSEIDENTIFIER=spree-neisse_kreis",
+      "quelle": "https://ikfz.brandenburg.de/ikfz/de/kfz-zulassungsbehoerden/spn-spree-neisse/"
+    },
+    "oeffnungszeiten": null,
+    "zustaendigkeit": {
+      "text": "Kfz-Zulassungsbehörde für den Landkreis Spree-Neiße mit allen kreisangehörigen Städten und Gemeinden, u. a. Forst (Lausitz), Guben und Spremberg. Nicht zuständig für die kreisfreie Stadt Cottbus/Chóśebuz (Kennzeichen CB), die eine eigene Zulassungsbehörde hat. Örtlich zuständig ist bei natürlichen Personen die Zulassungsbehörde am Hauptwohnsitz des Halters.",
+      "quelle": "https://ikfz.brandenburg.de/ikfz/de/"
+    },
+    "kuerzel": [
+      {
+        "code": "SPN",
+        "bedeutung": "Spree-Neiße",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "FOR",
+        "bedeutung": "Forst (Forst (Lausitz); Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "GUB",
+        "bedeutung": "Guben (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      },
+      {
+        "code": "SPB",
+        "bedeutung": "Spremberg (Altkennzeichen)",
+        "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"
+      }
+    ],
+    "besonderheiten": [
+      {
+        "text": "Bearbeitung in der Kfz-Zulassung nur mit Termin – auch zu den allgemeinen Sprechzeiten der Kreisverwaltung (Di 08:00–12:00 und 13:00–18:00, Do 08:00–12:00 und 13:00–16:00).",
+        "quelle": "https://www.lkspn.de/buergerservice/sprechzeiten.html"
+      },
+      {
+        "text": "Interkommunale Zusammenarbeit: Bürger aus Spree-Neiße, Cottbus und Oberspreewald-Lausitz können Anträge zur Fahrzeugzulassung seit 2022 bei allen drei Behörden einreichen.",
+        "quelle": "https://www.osl-online.de/texte/seite.php?id=97615"
+      },
+      {
+        "text": "Kurzzeitkennzeichen werden nur an EU-Einwohner ausgegeben.",
+        "quelle": "https://www.lkspn.de/buergerservice/dienstleistungen/50-kfz-zulassung.html"
+      }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": [
+      "oeffnungszeiten"
+    ]
+  }
+]
