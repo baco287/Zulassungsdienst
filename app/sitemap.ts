@@ -3,6 +3,8 @@ import { services } from "@/lib/services";
 import { guides } from "@/lib/ratgeber";
 import { gewerbeSegments } from "@/lib/gewerbe";
 import { cities } from "@/lib/staedte";
+import { landingPages } from "@/lib/landingpages";
+import { kennzeichen, publishedStellen } from "@/lib/zulassungsstellen";
 import { site } from "@/lib/site";
 
 export const dynamic = "force-static";
@@ -36,6 +38,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/ratgeber",
     "/kontakt",
     "/ueber-uns",
+    "/datensicherheit",
+    "/servicebedingungen",
+    "/zulassungsstelle",
+    "/kennzeichen",
   ].map((path) => ({
     url: `${site.url}${path}/`,
     lastModified: contentUpdated,
@@ -71,5 +77,35 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...servicePages, ...gewerbePages, ...cityPages, ...guidePages];
+  const landing = landingPages.map((p) => ({
+    url: `${site.url}/${p.slug}/`,
+    lastModified: new Date(p.updated),
+    changeFrequency: "monthly" as const,
+    priority: 0.9,
+  }));
+
+  const stellen = publishedStellen.map((z) => ({
+    url: `${site.url}/zulassungsstelle/${z.slug}/`,
+    lastModified: new Date(z.geprueftAm),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  const kuerzel = kennzeichen.map((k) => ({
+    url: `${site.url}/kennzeichen/${k.slug}/`,
+    lastModified: new Date(k.stellen[0].geprueftAm),
+    changeFrequency: "yearly" as const,
+    priority: 0.5,
+  }));
+
+  return [
+    ...staticPages,
+    ...landing,
+    ...servicePages,
+    ...gewerbePages,
+    ...cityPages,
+    ...guidePages,
+    ...stellen,
+    ...kuerzel,
+  ];
 }

@@ -7,16 +7,24 @@ import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { site, whatsAppLink } from "@/lib/site";
 import WhatsAppIcon from "./WhatsAppIcon";
+import { track } from "@/lib/analytics";
 
 const nav = [
   { href: "/leistungen", label: "Leistungen" },
   { href: "/preise", label: "Preise" },
-  { href: "/gewerbe", label: "Gewerbe" },
+  { href: "/kfz-zulassung-ohne-eid", label: "Ohne eID" },
   { href: "/ablauf", label: "Ablauf" },
   { href: "/ratgeber", label: "Ratgeber" },
-  { href: "/faq", label: "FAQ" },
+  { href: "/gewerbe", label: "Gewerbe" },
   { href: "/ueber-uns", label: "Über uns" },
   { href: "/kontakt", label: "Kontakt" },
+];
+
+/** Zusätzliche Links nur im mobilen Menü. */
+const mobileExtra = [
+  { href: "/faq", label: "Häufige Fragen" },
+  { href: "/kfz-zulassung", label: "Kfz-Zulassung nach Stadt" },
+  { href: "/zulassung-per-whatsapp", label: "Zulassung per WhatsApp" },
 ];
 
 export default function Header() {
@@ -37,14 +45,14 @@ export default function Header() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-1 lg:flex" aria-label="Hauptnavigation">
+        <nav className="hidden items-center gap-0.5 lg:flex xl:gap-1" aria-label="Hauptnavigation">
           {nav.map((item) => {
             const active = pathname?.startsWith(item.href);
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors duration-200 ${
+                className={`whitespace-nowrap rounded-lg px-2.5 py-2 text-sm font-medium transition-colors duration-200 xl:px-3 ${
                   active
                     ? "bg-brand-50 text-brand-800"
                     : "text-ink-600 hover:bg-ink-100 hover:text-ink-900"
@@ -62,16 +70,18 @@ export default function Header() {
             href={whatsAppLink("Hallo DeutscheZulassung, ich habe eine Frage zur Kfz-Zulassung.")}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => track("whatsapp_click", { position: "header" })}
             className="flex items-center gap-2 rounded-lg bg-[#25D366] px-3 py-2 text-sm font-semibold text-white shadow-sm transition-colors duration-200 hover:bg-[#1DAA54]"
           >
             <WhatsAppIcon className="h-4 w-4" />
-            WhatsApp
+            <span className="sr-only xl:not-sr-only">WhatsApp</span>
           </a>
           <Link
             href="/auftrag"
-            className="rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors duration-200 hover:bg-brand-800"
+            onClick={() => track("cta_click", { position: "header" })}
+            className="whitespace-nowrap rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors duration-200 hover:bg-brand-800"
           >
-            Jetzt beauftragen
+            Jetzt zulassen
           </Link>
         </div>
 
@@ -93,7 +103,7 @@ export default function Header() {
           aria-label="Mobile Navigation"
           className="border-t border-ink-200 bg-white px-4 pb-4 pt-2 lg:hidden"
         >
-          {nav.map((item) => (
+          {[...nav, ...mobileExtra].map((item) => (
             <Link
               key={item.href}
               href={item.href}

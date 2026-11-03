@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import LegalPage from "@/components/LegalPage";
 import { site } from "@/lib/site";
+import { analyticsProvider, gadsId } from "@/lib/analytics";
+import { ConsentReset } from "@/components/Analytics";
 
 export const metadata: Metadata = {
   title: "Datenschutzerklärung",
@@ -34,10 +36,47 @@ export default function DatenschutzPage() {
         <p>
           Schriftarten werden lokal von unserem Server geladen (Self-Hosting); es
           findet keine Verbindung zu Google Fonts oder anderen externen
-          Schriftdiensten statt. Diese Website verwendet keine Cookies, keine
-          Analyse-Dienste und keine Tracking-Technologien.
+          Schriftdiensten statt.{" "}
+          {analyticsProvider || gadsId
+            ? "Welche Analyse- und Messdienste wir einsetzen, beschreibt der Abschnitt „Webanalyse und Werbemessung“."
+            : "Diese Website verwendet keine Cookies, keine Analyse-Dienste und keine Tracking-Technologien."}
         </p>
       </section>
+      {(analyticsProvider || gadsId) && (
+        <section>
+          <h2>2a. Webanalyse und Werbemessung</h2>
+          {analyticsProvider === "plausible" && (
+            <p>
+              Wir nutzen Plausible Analytics (Plausible Insights OÜ, Tartu, Estland) zur anonymen Reichweitenmessung.
+              Plausible setzt keine Cookies und speichert keine IP-Adressen; erfasst werden aggregierte Angaben wie
+              aufgerufene Seiten, Referrer, Gerätetyp und Land. Zusätzlich zählen wir anonyme Ereignisse wie den Start
+              einer Anfrage oder einen Klick auf WhatsApp – ohne Namen, Kontakt-, Fahrzeug- oder Zahlungsdaten.
+              Rechtsgrundlage ist unser berechtigtes Interesse an einer bedarfsgerechten Gestaltung der Website (Art. 6
+              Abs. 1 lit. f DSGVO).
+            </p>
+          )}
+          {analyticsProvider === "matomo" && (
+            <p>
+              Wir nutzen die Open-Source-Software Matomo, die auf unserem eigenen Server läuft, im cookielosen Modus.
+              IP-Adressen werden vor der Speicherung gekürzt. Erfasst werden aggregierte Seitenaufrufe und anonyme
+              Ereignisse wie der Start einer Anfrage – ohne Namen, Kontakt-, Fahrzeug- oder Zahlungsdaten.
+              Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.
+            </p>
+          )}
+          {gadsId && (
+            <>
+              <p>
+                Nur wenn Sie im Hinweisfenster ausdrücklich einwilligen, laden wir das Conversion-Tracking von Google
+                Ads (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland). Es setzt ein Cookie, um zu
+                erkennen, ob Sie über eine Anzeige zu uns gekommen sind und eine Anfrage gesendet haben. Dabei kann es
+                zu einer Übermittlung in die USA kommen. Rechtsgrundlage ist Ihre Einwilligung (Art. 6 Abs. 1 lit. a
+                DSGVO, § 25 Abs. 1 TDDDG), die Sie jederzeit widerrufen können:
+              </p>
+              <ConsentReset />
+            </>
+          )}
+        </section>
+      )}
       <section>
         <h2>3. Anfrage- und Auftragsdaten</h2>
         <p>

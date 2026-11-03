@@ -1,4 +1,5 @@
 import { createOgImage, ogContentType, ogSize } from "@/lib/og";
+import { P } from "@/lib/pricing";
 
 export const dynamic = "force-static";
 export const size = ogSize;
@@ -9,6 +10,6 @@ export default function OgImage() {
     kicker: "Preise",
     title: "Transparente Preise ohne versteckte Kosten",
     subtitle:
-      "129 € je Zulassung inkl. amtlicher Gebühren und Versand – Kennzeichenschilder zzgl. 28,90 €.",
+      `${P.zulassung} je Zulassung inkl. amtlicher Gebühren und Versand – Kennzeichenschilder zzgl. ${P.kennzeichen}.`,
   });
 }

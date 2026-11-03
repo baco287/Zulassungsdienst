@@ -4,6 +4,7 @@ import CTASection from "@/components/CTASection";
 import Reveal from "@/components/Reveal";
 import { categoryLabels, sortedServices } from "@/lib/services";
 import type { ServiceCategory } from "@/lib/types";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Leistungen – alle Zulassungsdienste im Überblick",
@@ -18,6 +19,9 @@ export default function LeistungenPage() {
     <>
       <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-14 sm:py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="mb-5">
+            <Breadcrumbs items={[{ name: "Leistungen" }]} />
+          </div>
           <h1 className="font-display text-4xl font-bold text-ink-900 sm:text-5xl">Leistungen</h1>
           <p className="mt-4 max-w-2xl text-lg text-ink-600">
             Jede Leistung mit transparenter Preisstruktur und Dokumenten-Checkliste.

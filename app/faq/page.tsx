@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import FaqAccordion from "@/components/FaqAccordion";
 import CTASection from "@/components/CTASection";
 import { faqItems } from "@/lib/faq";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Häufige Fragen (FAQ) zur Online-Kfz-Zulassung",
@@ -24,6 +25,9 @@ export default function FaqPage() {
     <>
       <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-14 sm:py-16">
         <div className="mx-auto max-w-6xl px-4 text-center sm:px-6">
+          <div className="mb-5 flex justify-center">
+            <Breadcrumbs items={[{ name: "Häufige Fragen" }]} />
+          </div>
           <h1 className="font-display text-4xl font-bold text-ink-900 sm:text-5xl">
             Häufige Fragen
           </h1>

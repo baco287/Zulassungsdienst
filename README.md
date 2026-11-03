@@ -80,3 +80,37 @@ Vorbereitet in `lib/integrations/` (typisierte Verträge, Details im dortigen RE
 - SEO: Metadata-API, OpenGraph, Sitemap, robots.txt, LocalBusiness- & FAQ-JSON-LD.
 - Formulare: clientseitige Validierung mit verständlichen deutschen Fehlermeldungen,
   DSGVO-Einwilligung als Pflichtfeld.
+
+## Preise ändern (zentrale Preiskonfiguration)
+
+Alle Preise stehen ausschließlich in `config/preise.json`. Startseite, Preisseite,
+Preisrechner, Leistungen, Städte, Zulassungsstellen, FAQ, Ratgeber, Rechner,
+OG-Bilder und `/llms.txt` lesen ihre Beträge über `lib/pricing.ts` (`P`, `PRICES`).
+
+1. Betrag in `config/preise.json` ändern und `stand` aktualisieren.
+2. `freigabe.freigegeben` auf `true` setzen sowie `freigegebenVon` und `freigegebenAm` ausfüllen.
+3. `npm run check:preise` – findet vergessene, fest eingetragene Beträge.
+4. `npm run build && npm run check:build` – prüft die gebauten Seiten.
+
+Der Produktiv-Deploy (`.github/workflows/deploy.yml`) **bricht ab**, solange
+`freigabe.freigegeben` nicht `true` ist oder Altpreise im Build stehen.
+
+## Qualitätsprüfungen
+
+| Befehl | Prüft |
+|---|---|
+| `npm run check:preise` | Altpreise und fest eingetragene Preise im Quellcode |
+| `npm run check:build` | Preise in den gebauten Seiten (`out/`) |
+| `node scripts/check-site.mjs` | interne Links, Bilder, Titel, Descriptions, H1, Canonical, JSON-LD, Sitemap |
+
+## Zulassungsstellen und Kennzeichen
+
+Daten in `lib/data/zulassungsstellen.json`, nur aus offiziellen Behördenquellen
+mit Quell-URL und Prüfdatum. Rohdaten der Recherche liegen in `docs/recherche/`.
+Neu importieren: `npm run import:zulassungsstellen -- docs/recherche/*.json`.
+Ausnahmen (widersprüchliche oder unbelegte Angaben) stehen im Importskript.
+Kennzeichenseiten entstehen automatisch aus den Kürzeln der veröffentlichten Stellen.
+
+## Webanalyse
+
+Standardmäßig aus. Einschalten und Datenschutzhinweise: `docs/TRACKING.md`.

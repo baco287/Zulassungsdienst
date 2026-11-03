@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, BookOpen } from "lucide-react";
+import { ArrowRight, BookOpen, Calculator, FileText, MessageCircle } from "lucide-react";
 import CTASection from "@/components/CTASection";
 import Reveal from "@/components/Reveal";
 import { sortedGuides } from "@/lib/ratgeber";
+import { landingPages } from "@/lib/landingpages";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Ratgeber – Wissen rund um die Kfz-Zulassung",
@@ -16,6 +18,9 @@ export default function RatgeberPage() {
     <>
       <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-14 sm:py-16">
         <div className="mx-auto max-w-6xl px-4 text-center sm:px-6">
+          <div className="mb-5 flex justify-center">
+            <Breadcrumbs items={[{ name: "Ratgeber" }]} />
+          </div>
           <p className="flex items-center justify-center gap-2 text-sm font-semibold uppercase tracking-wider text-brand-700">
             <BookOpen className="h-4 w-4" aria-hidden />
             Ratgeber
@@ -31,8 +36,35 @@ export default function RatgeberPage() {
         </div>
       </section>
 
+      {landingPages.length > 0 && (
+        <section className="pt-12">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+            <h2 className="font-display text-2xl font-bold text-ink-900">Häufige Anliegen</h2>
+            <ul className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {landingPages.map((p) => (
+                <li key={p.slug}>
+                  <Link
+                    href={`/${p.slug}/`}
+                    className="group flex h-full items-start justify-between gap-3 rounded-xl border border-brand-200 bg-brand-50/60 p-4 transition-colors duration-200 hover:border-brand-400 hover:bg-brand-50"
+                  >
+                    <span>
+                      <span className="block font-display font-semibold text-ink-900 group-hover:text-brand-800">
+                        {p.navTitle}
+                      </span>
+                      <span className="mt-1 block text-sm text-ink-600">{p.description}</span>
+                    </span>
+                    <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-brand-700" aria-hidden />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
       <section className="py-14">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <h2 className="mb-6 font-display text-2xl font-bold text-ink-900">Alle Ratgeber-Artikel</h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {sortedGuides.map((guide, i) => (
               <Reveal key={guide.slug} delay={Math.min((i % 3) * 0.05, 0.3)} className="h-full">
@@ -40,9 +72,9 @@ export default function RatgeberPage() {
                   href={`/ratgeber/${guide.slug}/`}
                   className="group flex h-full flex-col rounded-2xl border border-ink-200 bg-white p-6 shadow-card transition-all duration-200 hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-lg"
                 >
-                  <h2 className="font-display text-lg font-bold text-ink-900 group-hover:text-brand-800">
+                  <h3 className="font-display text-lg font-bold text-ink-900 group-hover:text-brand-800">
                     {guide.title}
-                  </h2>
+                  </h3>
                   <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-600">
                     {guide.description}
                   </p>
@@ -57,6 +89,28 @@ export default function RatgeberPage() {
               </Reveal>
             ))}
           </div>
+
+          <h2 className="mt-14 font-display text-2xl font-bold text-ink-900">Werkzeuge &amp; Vorlagen</h2>
+          <ul className="mt-5 grid gap-4 sm:grid-cols-3">
+            {[
+              { href: "/rechner/", icon: Calculator, title: "Rechner", text: "Kfz-Steuer und die wahren Kosten des Behördengangs berechnen." },
+              { href: "/vorlagen/", icon: FileText, title: "Vorlagen", text: "Vollmacht und Unterlagen-Checkliste kostenlos zum Ausdrucken." },
+              { href: "/maxx/", icon: MessageCircle, title: "Schnellstart mit Maxx", text: "Zulassung in drei Schritten per WhatsApp erledigen." },
+            ].map((t) => (
+              <li key={t.href}>
+                <Link
+                  href={t.href}
+                  className="group flex h-full gap-3 rounded-xl border border-ink-200 bg-white p-5 transition-colors duration-200 hover:border-brand-300 hover:bg-brand-50/50"
+                >
+                  <t.icon className="mt-0.5 h-5 w-5 shrink-0 text-brand-700" aria-hidden />
+                  <span>
+                    <span className="block font-display font-semibold text-ink-900 group-hover:text-brand-800">{t.title}</span>
+                    <span className="mt-1 block text-sm text-ink-600">{t.text}</span>
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Calculator, Clock4 } from "lucide-react";
-import { euro } from "@/lib/pricing";
+import { euro, PRICES } from "@/lib/pricing";
 
 /**
  * Ersparnis-Rechner: Was kostet der eigene Behördengang wirklich?
@@ -17,9 +17,9 @@ import { euro } from "@/lib/pricing";
 const OFFICIAL_FEE = 28;
 const PLATES = 27;
 const KM_RATE = 0.3;
-const OUR_PRICE = 129;
+const OUR_PRICE = PRICES.zulassung;
 /** Kennzeichenschilder (Paar) bei uns – für den fairen Vergleich mit einberechnet. */
-const OUR_PLATES = 28.9;
+const OUR_PLATES = PRICES.kennzeichen;
 
 export default function BehoerdengangRechner() {
   const [hours, setHours] = useState("3");

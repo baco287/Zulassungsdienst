@@ -33,6 +33,9 @@ jobs:
           NEXT_PUBLIC_BASE_PATH: /Zulassungsdienst
           NEXT_PUBLIC_STAGING: "1" 
 
+      - name: Preise im Build prüfen (Staging, ohne Freigabe-Pflicht)
+        run: node scripts/check-preise.mjs --out
+
       - name: Auf gh-pages-Branch veröffentlichen
         uses: peaceiris/actions-gh-pages@v4
         with:
@@ -63,6 +66,12 @@ jobs:
       - name: Build (Root-Pfad für eigene Domain)
         if: env.HAS_FTP != ''
         run: npm run build
+
+      # Bricht ab, wenn Altpreise im Build stehen oder die Preise in
+      # config/preise.json nicht freigegeben sind (freigabe.freigegeben).
+      - name: Preise prüfen und Freigabe verlangen
+        if: env.HAS_FTP != ''
+        run: node scripts/check-preise.mjs --out --freigabe
 
       - name: Secrets auf Vollständigkeit prüfen
         if: env.HAS_FTP != ''

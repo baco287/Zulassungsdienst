@@ -1,4 +1,5 @@
 import type { Service } from "./types";
+import { P, PRICES } from "./pricing";
 
 /**
  * Leistungskatalog von DeutscheZulassung.
@@ -20,11 +21,11 @@ export const services: Service[] = [
     description:
       "Wir übernehmen die vollständige Erstzulassung Ihres Fahrzeugs: Prüfung der Unterlagen, Beantragung bei der zuständigen Zulassungsbehörde, Kennzeichen und Versand aller Dokumente zu Ihnen nach Hause oder in Ihr Autohaus. Sie sparen sich Termin, Wartezeit und Behördengang – und Ihr Fahrzeug ist in der Regel innerhalb weniger Werktage angemeldet.",
     price: {
-      serviceFee: 129.0,
+      serviceFee: PRICES.neuzulassung,
       inclusive: true,
       platesExtra: true,
       verified: true,
-      note: "Inkl. amtlicher Gebühren und Versand. Kennzeichenschilder zzgl. 28,90 € pro Paar.",
+      note: `Inkl. amtlicher Gebühren und Versand. Kennzeichenschilder zzgl. ${P.kennzeichen} pro Paar.`,
     },
     checklist: [
       "Zulassungsbescheinigung Teil II (Fahrzeugbrief) oder CoC-Papier",
@@ -48,11 +49,11 @@ export const services: Service[] = [
     description:
       "Nach einem Umzug muss das Fahrzeug auf die neue Anschrift umgemeldet werden. Wir erledigen die Ummeldung bei der zuständigen Behörde, kümmern uns auf Wunsch um neue Kennzeichen (oder die Mitnahme Ihres bisherigen Kennzeichens) und senden Ihnen die aktualisierten Papiere zu.",
     price: {
-      serviceFee: 129.0,
+      serviceFee: PRICES.ummeldung,
       inclusive: true,
       platesExtra: true,
       verified: true,
-      note: "Inkl. amtlicher Gebühren und Versand. Neue Kennzeichenschilder zzgl. 28,90 € pro Paar – bei Kennzeichenmitnahme entfällt das.",
+      note: `Inkl. amtlicher Gebühren und Versand. Neue Kennzeichenschilder zzgl. ${P.kennzeichen} pro Paar – bei Kennzeichenmitnahme entfällt das.`,
     },
     checklist: [
       "Zulassungsbescheinigung Teil I (Fahrzeugschein)",
@@ -75,7 +76,7 @@ export const services: Service[] = [
     description:
       "Die Abmeldung (Außerbetriebsetzung) ist der schnellste Vorgang: Sie übermitteln uns die Sicherheitscodes von Fahrzeugschein und Kennzeichen – wir melden Ihr Fahrzeug digital bei der Zulassungsbehörde ab und Sie erhalten die Abmeldebestätigung per E-Mail. Ganz ohne Versand, in der Regel taggleich.",
     price: {
-      serviceFee: 34.9,
+      serviceFee: PRICES.abmeldung,
       inclusive: true,
       verified: true,
       note: "Komplettpreis inkl. amtlicher Gebühren – vollständig digital, kein Versand nötig.",
@@ -99,11 +100,11 @@ export const services: Service[] = [
     description:
       "Ein stillgelegtes Fahrzeug soll zurück auf die Straße? Wir prüfen, welche Unterlagen die Behörde für die Wiederzulassung verlangt (u. a. gültige HU), beantragen die Zulassung und organisieren Kennzeichen und Versand.",
     price: {
-      serviceFee: 129.0,
+      serviceFee: PRICES.wiederzulassung,
       inclusive: true,
       platesExtra: true,
       verified: true,
-      note: "Inkl. amtlicher Gebühren und Versand. Kennzeichenschilder zzgl. 28,90 € pro Paar.",
+      note: `Inkl. amtlicher Gebühren und Versand. Kennzeichenschilder zzgl. ${P.kennzeichen} pro Paar.`,
     },
     checklist: [
       "Zulassungsbescheinigung Teil I und II",
@@ -125,13 +126,13 @@ export const services: Service[] = [
     teaser:
       "Gebrauchtwagen gekauft? Wir schreiben das Fahrzeug auf den neuen Halter um – auf Wunsch mit Wunschkennzeichen.",
     description:
-      "Beim Kauf eines Gebrauchtwagens muss das Fahrzeug auf die neue Halterin oder den neuen Halter umgeschrieben werden. Wir übernehmen die komplette Umschreibung samt neuer Kennzeichen (Schilder zzgl. 28,90 €) – so ist das Fahrzeug schnell und rechtssicher auf Sie zugelassen.",
+      `Beim Kauf eines Gebrauchtwagens muss das Fahrzeug auf die neue Halterin oder den neuen Halter umgeschrieben werden. Wir übernehmen die komplette Umschreibung samt neuer Kennzeichen (Schilder zzgl. ${P.kennzeichen}) – so ist das Fahrzeug schnell und rechtssicher auf Sie zugelassen.`,
     price: {
-      serviceFee: 129.0,
+      serviceFee: PRICES.halterwechsel,
       inclusive: true,
       platesExtra: true,
       verified: true,
-      note: "Inkl. amtlicher Gebühren und Versand. Kennzeichenschilder zzgl. 28,90 € pro Paar.",
+      note: `Inkl. amtlicher Gebühren und Versand. Kennzeichenschilder zzgl. ${P.kennzeichen} pro Paar.`,
     },
     checklist: [
       "Zulassungsbescheinigung Teil I und II",
@@ -155,7 +156,7 @@ export const services: Service[] = [
     description:
       "Bei einem Umzug innerhalb desselben Zulassungsbezirks genügt die Änderung der Adresse in der Zulassungsbescheinigung. Wir erledigen das für Sie digital – Sie erhalten die aktualisierten Papiere bequem per Post.",
     price: {
-      serviceFee: 90.0,
+      serviceFee: PRICES.adressaenderung,
       inclusive: true,
       verified: true,
       note: "Komplettpreis inkl. amtlicher Gebühren und Versand der aktualisierten Papiere.",
@@ -221,11 +222,11 @@ export const services: Service[] = [
     description:
       "Wir prüfen die Verfügbarkeit Ihres Wunschkennzeichens, reservieren es bei der Zulassungsstelle und übernehmen Prägung und Zuteilung im Rahmen Ihrer Zulassung.",
     price: {
-      serviceFee: 34.9,
+      serviceFee: PRICES.wunschkennzeichen,
       inclusive: true,
       platesExtra: true,
       verified: true,
-      note: "Zusatz zu jeder Zulassung – inkl. amtlicher Reservierungs- und Zuteilungsgebühr. Die Prägung der Schilder ist mit den 28,90 € des Zulassungsvorgangs abgedeckt.",
+      note: `Zusatz zu jeder Zulassung – Verfügbarkeitsprüfung, Reservierung und Zuteilung. Die amtliche Gebühr ist enthalten; Kennzeichenschilder liefern wir auf Wunsch für ${P.kennzeichen} pro Paar.`,
     },
     checklist: [
       "Ihr Wunschkürzel (2–3 Alternativen empfohlen)",

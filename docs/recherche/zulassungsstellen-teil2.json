@@ -1,0 +1,479 @@
+[
+  {
+    "slug": "wuppertal",
+    "stadt": "Wuppertal",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kfz-Zulassungsstelle der Stadt Wuppertal (405.21, Straßenverkehrsamt)",
+    "behoerdeQuelle": "https://www.wuppertal.de/vv/oe/405.21.php",
+    "traeger": "Stadt Wuppertal – Stadtbetrieb ServiceCenter und Straßenverkehrsamt (405), Straßenverkehrsamt (405.2)",
+    "standorte": [
+      {"bezeichnung": "Kfz-Zulassungsstelle (405.21)", "strasse": "Döppersberg 41", "plz": "42103", "ort": "Wuppertal", "quelle": "https://www.wuppertal.de/vv/oe/405.21.php"}
+    ],
+    "website": {"url": "https://www.wuppertal.de/vv/oe/405.21.php", "quelle": "https://www.wuppertal.de/vv/oe/405.21.php"},
+    "terminUrl": {"url": "https://reservation.frontdesksuite.com/wuppertal/kfz/Home/Index?pageId=9b16a35d-02c3-46d3-86b2-d7eef0f82e38&culture=de&uiCulture=de", "quelle": "https://www.wuppertal.de/vv/produkte/405.2/405.2_Terminvereinbarung.php"},
+    "ikfzUrl": {"url": "https://serviceportal.wuppertal.de/fahren-parken", "quelle": "https://www.wuppertal.de/vv/produkte/405.2/405.21_online_service_der_kfz_zulassungsstelle.php"},
+    "oeffnungszeiten": {
+      "zeilen": [
+        "KFZ Zulassungsstelle",
+        "Mo.-Mi.: 07.00 Uhr - 13.00 Uhr",
+        "Do.: 07.00 Uhr - 13.00 Uhr, 13.45 Uhr - 16.00 Uhr",
+        "Fr.: 07.00 Uhr - 12.00 Uhr",
+        "Schnellschalter der KFZ Zulassungsstelle:",
+        "Mo.-Mi.: 07.00 Uhr - 12.30 Uhr",
+        "Do.: 07.00 Uhr - 12.30 Uhr, 13.45 Uhr - 15.30 Uhr",
+        "Fr.: 07.00 Uhr - 11.30 Uhr"
+      ],
+      "hinweis": null,
+      "quelle": "https://www.wuppertal.de/vv/oe/405.21.php"
+    },
+    "zustaendigkeit": {"text": "Stadt Wuppertal: Erstzulassung bei der Zulassungsstelle des Hauptwohnsitzes, bei Firmen am Firmensitz (Firmensitz muss in Wuppertal sein).", "quelle": "https://www.wuppertal.de/vv/produkte/405.2/405.21_KFZ_Erstzulassung.php"},
+    "kuerzel": [
+      {"code": "W", "bedeutung": "Wuppertal", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"}
+    ],
+    "besonderheiten": [
+      {"text": "Ein persönlicher Besuch ist nur mit Termin möglich. Ohne Termin am Schnellschalter (mit vollständigen Unterlagen) u. a.: Außerbetriebsetzungen, Ersatz-Zulassungsbescheinigung Teil I, Feinstaubplaketten, Adressänderung bei Umzug innerhalb Wuppertals, Namensänderung.", "quelle": "https://www.wuppertal.de/vv/produkte/405.2/405.2_Terminvereinbarung.php"},
+      {"text": "Pro Person bzw. Unternehmen sind maximal zwei Termine buchbar; die Buchung muss auf den Namen der Person laufen, für die das Anliegen bestimmt ist.", "quelle": "https://www.wuppertal.de/vv/produkte/405.2/405.2_Terminvereinbarung.php"},
+      {"text": "Erstzulassung vor Ort: Verwaltungsgebühren 27,60 € – 41,60 €, online ca. 22,00 €; Zahlung vor Ort mit Girocard (PIN) oder Kreditkarte.", "quelle": "https://www.wuppertal.de/vv/produkte/405.2/405.21_KFZ_Erstzulassung.php"}
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "bielefeld",
+    "stadt": "Bielefeld",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kfz-Zulassungsbehörde der Stadt Bielefeld (Ordnungsamt)",
+    "behoerdeQuelle": "https://www.bielefeld.de/kfz-zulassung",
+    "traeger": "Stadt Bielefeld – Ordnungsamt, Geschäftsbereich Fahrerlaubnisbehörde, Kfz-Zulassungen, Verwaltung",
+    "standorte": [
+      {"bezeichnung": "Kfz-Zulassungsbehörde (Amerikahaus)", "strasse": "Paulusstraße 8", "plz": "33602", "ort": "Bielefeld", "quelle": "https://service.bielefeld.de/detail/-/vr-bis-detail/dienstleistung/8381/show"}
+    ],
+    "website": {"url": "https://www.bielefeld.de/kfz-zulassung", "quelle": "https://www.bielefeld.de/kfz-zulassung"},
+    "terminUrl": {"url": "https://tempus-termine.com/termine/index.php?anlagennr=12&anliegenauswahl=ja", "quelle": "https://www.bielefeld.de/kfz-zulassung"},
+    "ikfzUrl": {"url": "https://www.bielefeld.de/node/6439", "quelle": "https://www.bielefeld.de/kfz-zulassung"},
+    "oeffnungszeiten": {
+      "zeilen": [
+        "mo-fr 7.30-12.30 Uhr",
+        "mo zusätzlich 13.30-15.30 Uhr",
+        "do zusätzlich 14.30- 17.30 Uhr"
+      ],
+      "hinweis": "Die Zulassungsbehörde Bielefeld hat die Privatkundenbedienung vollständig auf Terminvereinbarungen umgestellt. Ohne Termin nur: Adress- und Namensänderungen innerhalb Bielefelds, Außerbetriebsetzungen, Kurzzeitkennzeichen, verlorene/gestohlene Kennzeichen oder Fahrzeugscheine, Abholung der neuen Zulassungsbescheinigung Teil II nach Aufbietung.",
+      "quelle": "https://www.bielefeld.de/kfz-zulassung"
+    },
+    "zustaendigkeit": {"text": "Stadt Bielefeld: Hauptwohnsitz der Halterin/des Halters in Bielefeld; juristische Personen und Unternehmen mit Sitz in Bielefeld.", "quelle": "https://service.bielefeld.de/detail/-/vr-bis-detail/dienstleistung/8381/show"},
+    "kuerzel": [
+      {"code": "BI", "bedeutung": "Bielefeld", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"}
+    ],
+    "besonderheiten": [
+      {"text": "Bezahlung vor Ort ausschließlich mit Karte (Girocard, Debitkarte, Kreditkarte). Neuzulassung: 30,60 € persönlich, 23,72 € online (PayPal oder Kreditkarte).", "quelle": "https://service.bielefeld.de/detail/-/vr-bis-detail/dienstleistung/8381/show"},
+      {"text": "Die Kfz-Zulassungsstelle ist ausschließlich über die zentrale Telefonnummer 0521 51-0 der Stadtverwaltung erreichbar; die Stadt warnt vor kostenpflichtigen Fremdnummern im Telefonbuch.", "quelle": "https://www.bielefeld.de/kfz-zulassung"},
+      {"text": "Händler und Zulassungsdienste können Händlertaschen werktags 7.30–8.30 Uhr und Einzelvorgänge 7.30–9.30 Uhr abgeben.", "quelle": "https://www.bielefeld.de/kfz-zulassung"}
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "bonn",
+    "stadt": "Bonn",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "KFZ-Zulassungsstelle der Bundesstadt Bonn (Bürgerdienste, Dienstleistungszentrum)",
+    "behoerdeQuelle": "https://www.bonn.de/kfzanmelden-ummelden-abmelden_32.php",
+    "traeger": "Bundesstadt Bonn – Der Oberbürgermeister, Bürgerdienste",
+    "standorte": [
+      {"bezeichnung": "Dienstleistungszentrum im Stadthaus", "strasse": "Berliner Platz 2", "plz": "53111", "ort": "Bonn", "quelle": "https://www.bonn.de/vv/oe/_/Dez._I/33/33-4/Dienstleistungszentrum.php"}
+    ],
+    "website": {"url": "https://www.bonn.de/vv/oe/_/Dez._I/33/33-4/Dienstleistungszentrum.php", "quelle": "https://www.bonn.de/vv/oe/_/Dez._I/33/33-4/Dienstleistungszentrum.php"},
+    "terminUrl": {"url": "https://termine.bonn.de/m/dlz/extern/calendar/?uid=b91bb67b-15cf-44df-ab0b-96ebe25c1ae3", "quelle": "https://www.bonn.de/vv/produkte/Kfz-Neuzulassung-fabrikneues-Fahrzeug.php"},
+    "ikfzUrl": {"url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=bonn_stadt", "quelle": "https://www.bonn.de/vv/produkte/Kfz-Neuzulassung-fabrikneues-Fahrzeug.php"},
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Dienstleistungszentrum in Bonn sowie die Außenstellen in den Bezirksrathäusern Bad Godesberg, Beuel und Hardtberg",
+        "Montag und Donnerstag 8 bis 18 Uhr",
+        "Dienstag, Mittwoch und Freitag von 7:30 bis 13 Uhr"
+      ],
+      "hinweis": "Sollten Sie nicht das Serviceportal für Ihre Antragsstellung nutzen, so ist für dieses Anliegen ein Termin erforderlich.",
+      "quelle": "https://www.bonn.de/vv/produkte/Kfz-Neuzulassung-fabrikneues-Fahrzeug.php"
+    },
+    "zustaendigkeit": {"text": "Bundesstadt Bonn (Zulassung von Fahrzeugen in Bonn).", "quelle": "https://www.bonn.de/vv/produkte/Kfz-Neuzulassung-fabrikneues-Fahrzeug.php"},
+    "kuerzel": [
+      {"code": "BN", "bedeutung": "Bonn", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"}
+    ],
+    "besonderheiten": [
+      {"text": "Finanzierte oder geleaste Fahrzeuge werden nur in der Zulassungsstelle im Stadthaus bearbeitet; Elektro-, Oldtimer- und Saisonkennzeichen ausschließlich im Dienstleistungszentrum des Stadthauses.", "quelle": "https://www.bonn.de/vv/produkte/Kfz-Neuzulassung-fabrikneues-Fahrzeug.php"},
+      {"text": "In den Außenstellen in den Bezirksrathäusern Beuel, Bad Godesberg und Hardtberg können ausgewählte Kfz-Zulassungsanliegen beantragt werden.", "quelle": "https://www.bonn.de/vv/produkte/Kfz-Neuzulassung-fabrikneues-Fahrzeug.php"},
+      {"text": "Tagesaktuelle Termine werden je nach Personalkapazität morgens zwischen 7:00 und 7:30 Uhr freigeschaltet. Zahlung vor Ort bar, mit EC-Karte, Kreditkarte, ausländischer Debitkarte sowie Apple Pay und Google Pay.", "quelle": "https://www.bonn.de/vv/produkte/Kfz-Neuzulassung-fabrikneues-Fahrzeug.php"}
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": ["standorte"]
+  },
+  {
+    "slug": "muenster",
+    "stadt": "Münster",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kfz-Zulassungsstelle der Stadt Münster (Ordnungsamt; Kfz-Zulassung, Fahrerlaubnisse, Fahrschulen)",
+    "behoerdeQuelle": "https://www.stadt-muenster.de/ordnungsamt/kfz-zulassung",
+    "traeger": "Stadt Münster – Ordnungsamt",
+    "standorte": [
+      {"bezeichnung": "Kfz-Zulassung, Fahrerlaubnisse, Fahrschulen (Gewerbegebiet Kleimannbrücke)", "strasse": "Rudolf-Diesel-Straße 7", "plz": "48157", "ort": "Münster", "quelle": "https://www.stadt-muenster.de/kfz/kfz-zulassung"}
+    ],
+    "website": {"url": "https://www.stadt-muenster.de/kfz/kfz-zulassung", "quelle": "https://www.stadt-muenster.de/kfz/kfz-zulassung"},
+    "terminUrl": {"url": "https://termine.stadt-muenster.de/select2?md=19", "quelle": "https://www.stadt-muenster.de/kfz/terminvereinbarung"},
+    "ikfzUrl": {"url": "https://i-kfz.stadt-muenster.de/", "quelle": "https://www.stadt-muenster.de/kfz/kfz-zulassung"},
+    "oeffnungszeiten": null,
+    "zustaendigkeit": {"text": "Stadt Münster (Kfz-Zulassungsstelle als Teil des städtischen Ordnungsamts).", "quelle": "https://www.stadt-muenster.de/ordnungsamt/kfz-zulassung"},
+    "kuerzel": [
+      {"code": "MS", "bedeutung": "Münster", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"}
+    ],
+    "besonderheiten": [
+      {"text": "Kfz-Zulassungsangelegenheiten vor Ort nur nach Terminvereinbarung. Ohne Termin möglich: Kurzzeitkennzeichen, Kfz-Abmeldungen, Adressänderung innerhalb Münsters, Umkennzeichnung nach Diebstahl, Zuteilung neuer Plaketten.", "quelle": "https://www.stadt-muenster.de/kfz/terminvereinbarung"},
+      {"text": "Neue Online-Termine werden täglich gegen 8 Uhr freigeschaltet.", "quelle": "https://www.stadt-muenster.de/kfz/terminvereinbarung"},
+      {"text": "Online (i-Kfz) ist günstiger: Neuzulassung 18,10 € über i-kfz statt 31,20 € vor Ort; Abmeldung 3,30 € statt 17,40 €.", "quelle": "https://www.stadt-muenster.de/kfz/kfz-zulassung/gebuehren"}
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": ["oeffnungszeiten"]
+  },
+  {
+    "slug": "moenchengladbach",
+    "stadt": "Mönchengladbach",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Zulassungsbehörde der Stadt Mönchengladbach (Ordnungsamt, Straßenverkehrsangelegenheiten – Kfz-Zulassungsangelegenheiten)",
+    "behoerdeQuelle": "https://service.moenchengladbach.de/suche/-/vr-bis-detail/einrichtung/1256/show",
+    "traeger": "Stadt Mönchengladbach – Ordnungsamt",
+    "standorte": [
+      {"bezeichnung": "Verwaltungsgebäude Alsstraße (Kfz-Zulassungsangelegenheiten)", "strasse": "Alsstraße 126", "plz": "41063", "ort": "Mönchengladbach", "quelle": "https://service.moenchengladbach.de/suche/-/vr-bis-detail/einrichtung/1256/show"}
+    ],
+    "website": {"url": "https://service.moenchengladbach.de/suche/-/vr-bis-detail/einrichtung/1256/show", "quelle": "https://service.moenchengladbach.de/suche/-/vr-bis-detail/einrichtung/1256/show"},
+    "terminUrl": {"url": "https://termine.moenchengladbach.de/select2?md=10", "quelle": "https://www.moenchengladbach.de/de/serviceportal/terminbuchungen"},
+    "ikfzUrl": {"url": "https://verkehr-igv.krzn.de/verkehr-igv/servlet/Internetgeschaeftsvorfaelle?AUFRUF=IZU&MANDANT=MOENCHENGLADBACH", "quelle": "https://service.moenchengladbach.de/suche/-/vr-bis-detail/dienstleistung/507157/show"},
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo. 08:00 - 12:30 Uhr und 13:30 - 14:30 Uhr",
+        "Di. 08:00 - 12:30 Uhr und 13:30 - 14:30 Uhr",
+        "Mi. 07:00 - 12:30 Uhr",
+        "Do. 09:00 - 13:30 Uhr und 14:30 - 17:00 Uhr",
+        "Fr. 08:00 - 12:00 Uhr"
+      ],
+      "hinweis": "Ihre persönliche Wartenummer erhalten Sie bei Vereinbarung Ihres Termins. Eine Bearbeitung Ihrer Anliegen ohne Termin ist nur für Anliegen des Sonderschalters möglich.",
+      "quelle": "https://service.moenchengladbach.de/suche/-/vr-bis-detail/einrichtung/1256/show"
+    },
+    "zustaendigkeit": {"text": "Stadt Mönchengladbach (Kfz-Zulassungsangelegenheiten für Halterinnen und Halter in Mönchengladbach).", "quelle": "https://service.moenchengladbach.de/suche/-/vr-bis-detail/einrichtung/1256/show"},
+    "kuerzel": [
+      {"code": "MG", "bedeutung": "Mönchengladbach", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"}
+    ],
+    "besonderheiten": [
+      {"text": "Sonderschalter ohne Termin für schnelle Anliegen (u. a. Außerbetriebsetzung, Adressänderung bei Umzug innerhalb Mönchengladbachs, Feinstaub- und Stempelplaketten): Mo 8.00–12.00, Di 8.00–12.00, Mi 7.00–12.00, Do 9.00–13.00 und 14.30–17.00, Fr 8.00–12.00 Uhr.", "quelle": "https://www.moenchengladbach.de/rathaus/buergerinfo-a-z/allgemeine-verwaltung-buergerservice-ordnung-feuerwehr-dezernat-iii/ordnungsamt-32/strassenverkehrsangelegenheiten/servicebereich"},
+      {"text": "Eine Zulassung ist nur möglich, wenn keine Rückstände (Gebühren oder Auslagen) aus früheren Zulassungsvorgängen bei der Stadtkasse Mönchengladbach offen sind.", "quelle": "https://service.moenchengladbach.de/suche/-/vr-bis-detail/dienstleistung/507157/show"},
+      {"text": "Online-Zulassung (i-Kfz) erfordert Personalausweis mit Online-Ausweisfunktion und BundID-Konto; Bezahlung online per PayPal oder Kreditkarte.", "quelle": "https://service.moenchengladbach.de/suche/-/vr-bis-detail/dienstleistung/507157/show"}
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "gelsenkirchen",
+    "stadt": "Gelsenkirchen",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Fahrzeug-Zulassungsstelle der Stadt Gelsenkirchen (Referat 33 – Bürgerservice, Zulassungsbehörde)",
+    "behoerdeQuelle": "https://www.gelsenkirchen.de/de/infrastruktur/verkehr/rund_ums_auto/fahrzeug-zulassungsstelle.aspx",
+    "traeger": "Stadt Gelsenkirchen – Referat 33 Bürgerservice",
+    "standorte": [
+      {"bezeichnung": "Fahrzeug-Zulassungsstelle", "strasse": "Wildenbruchstraße 10", "plz": "45879", "ort": "Gelsenkirchen", "quelle": "https://www.gelsenkirchen.de/de/infrastruktur/verkehr/rund_ums_auto/fahrzeug-zulassungsstelle.aspx"}
+    ],
+    "website": {"url": "https://www.gelsenkirchen.de/de/infrastruktur/verkehr/rund_ums_auto/fahrzeug-zulassungsstelle.aspx", "quelle": "https://www.gelsenkirchen.de/de/infrastruktur/verkehr/rund_ums_auto/fahrzeug-zulassungsstelle.aspx"},
+    "terminUrl": {"url": "https://tempus-termine.com/termine/index.php?anlagennr=14&anwendung=2", "quelle": "https://www.gelsenkirchen.de/de/_meta/buergerservice/onlinedienste/terminvergabe_fahrzeug-zulassungsstelle.aspx"},
+    "ikfzUrl": {"url": "https://serviceportal.gelsenkirchen.de/zulassung", "quelle": "https://www.gelsenkirchen.de/de/infrastruktur/verkehr/rund_ums_auto/fahrzeug-zulassungsstelle.aspx"},
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag 07:30 - 15:30 Uhr",
+        "Dienstag 07:30 - 15:30 Uhr",
+        "Mittwoch 07:30 - 15:30 Uhr",
+        "Donnerstag 07:30 - 17:00 Uhr",
+        "Freitag 07:30 - 12:00 Uhr",
+        "Samstag geschlossen",
+        "Sonntag geschlossen"
+      ],
+      "hinweis": "Bitte nutzen Sie die online-Terminvereinbarung.",
+      "quelle": "https://www.gelsenkirchen.de/de/infrastruktur/verkehr/rund_ums_auto/fahrzeug-zulassungsstelle.aspx"
+    },
+    "zustaendigkeit": {"text": "Stadt Gelsenkirchen (Kennzeichen, Zulassungen und Außerbetriebsetzungen von Fahrzeugen).", "quelle": "https://www.gelsenkirchen.de/de/infrastruktur/verkehr/rund_ums_auto/fahrzeug-zulassungsstelle.aspx"},
+    "kuerzel": [
+      {"code": "GE", "bedeutung": "Gelsenkirchen", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"}
+    ],
+    "besonderheiten": [
+      {"text": "Für alle Vorsprachen in der Zulassungsstelle ist ein Termin nötig (online oder telefonisch unter 0209 169-9595). Termine werden für eine Woche im Voraus vergeben, zusätzliche Tagestermine täglich ab 7:30 Uhr.", "quelle": "https://www.gelsenkirchen.de/de/_meta/buergerservice/onlinedienste/terminvergabe_fahrzeug-zulassungsstelle.aspx"},
+      {"text": "Seit dem 1.7.2026 ist die Zahlung vollständig bargeldlos: Gebühren nur noch mit EC-, Debit- oder Kreditkarte.", "quelle": "https://www.gelsenkirchen.de/de/infrastruktur/verkehr/rund_ums_auto/fahrzeug-zulassungsstelle.aspx"},
+      {"text": "Termine für Ausfuhrkennzeichen können Montag bis Donnerstag nur bis 11 Uhr und freitags nur bis 9:30 Uhr gebucht werden.", "quelle": "https://www.gelsenkirchen.de/de/infrastruktur/verkehr/rund_ums_auto/fahrzeug-zulassungsstelle.aspx"}
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "bremen",
+    "stadt": "Bremen",
+    "bundesland": "Bremen",
+    "behoerde": "Bürgeramt Bremen – Kfz-Zulassung (BürgerServiceCenter Stresemannstraße und Nord, Zentrale Kfz-Zulassungsbehörde)",
+    "behoerdeQuelle": "https://www.service.bremen.de/die-senatorin-fuer-inneres-und-sport/buergeramt-116324",
+    "traeger": "Freie Hansestadt Bremen – Bürgeramt (Geschäftsbereich der Senatorin für Inneres und Sport)",
+    "standorte": [
+      {"bezeichnung": "BürgerServiceCenter-Stresemannstraße (mit Zentraler Kfz-Zulassungsbehörde)", "strasse": "Stresemannstraße 48", "plz": "28207", "ort": "Bremen", "quelle": "https://www.service.bremen.de/die-senatorin-fuer-inneres-und-sport/buergeramt/buergerservicecenter-stresemannstrasse-9384"},
+      {"bezeichnung": "BürgerServiceCenter-Nord (2. Etage)", "strasse": "Gerhard-Rohlfs-Straße 62", "plz": "28757", "ort": "Bremen", "quelle": "https://www.service.bremen.de/die-senatorin-fuer-inneres-und-sport/buergeramt/buergerservicecenter-nord-123044"}
+    ],
+    "website": {"url": "https://www.service.bremen.de/dienstleistungen/kraftfahrzeug-anmelden-8389", "quelle": "https://www.service.bremen.de/dienstleistungen/kraftfahrzeug-anmelden-8389"},
+    "terminUrl": {"url": "https://www.service.bremen.de/dienstleistungen/kraftfahrzeug-anmelden-8389?template=20_sp_dienstleistungen_termine_d", "quelle": "https://www.service.bremen.de/dienstleistungen/kraftfahrzeug-anmelden-8389"},
+    "ikfzUrl": {"url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=bremen_stadt", "quelle": "https://www.service.bremen.de/dienstleistungen/kraftfahrzeug-anmelden-8389"},
+    "oeffnungszeiten": {
+      "zeilen": [
+        "BürgerServiceCenter-Stresemannstraße",
+        "Mo 08:00 - 17:00 Nach Terminvereinbarung",
+        "Di 07:00 - 15:00 Nach Terminvereinbarung",
+        "Mi 07:00 - 12:00 Nach Terminvereinbarung",
+        "Do 07:00 - 15:00 Nach Terminvereinbarung",
+        "Fr 07:00 - 12:00 Nach Terminvereinbarung",
+        "Kurzanliegen-Schalter (u. a. Kfz-Abmeldungen und Kurzzeitkennzeichen): Montags von 08:00 bis 17:00 Uhr, dienstags bis freitags von 07:00 – 12:00 Uhr."
+      ],
+      "hinweis": "Im BürgerServiceCenter-Stresemannstraße sind Vorsprachen nur nach vorheriger Terminvereinbarung möglich. (Die zusätzliche offene Sprechzeit gilt nur für Reisedokumente und Wohnungsmeldungen.)",
+      "quelle": "https://www.service.bremen.de/die-senatorin-fuer-inneres-und-sport/buergeramt/buergerservicecenter-stresemannstrasse-9384"
+    },
+    "zustaendigkeit": {"text": "Stadtgemeinde Bremen (nicht Bremerhaven): Das Bürgeramt ist für die Stadtgemeinde Bremen die zuständige Behörde u. a. für Kfz-Zulassungsangelegenheiten.", "quelle": "https://www.service.bremen.de/die-senatorin-fuer-inneres-und-sport/buergeramt-116324"},
+    "kuerzel": [
+      {"code": "HB", "bedeutung": "Hansestadt Bremen", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"}
+    ],
+    "besonderheiten": [
+      {"text": "Kfz-Zulassungsanträge von Privatkund:innen nur nach Termin in den BürgerServiceCentern Stresemannstraße und Bremen-Nord; Außerbetriebsetzungen und Kurzzeitkennzeichen ohne Termin.", "quelle": "https://www.service.bremen.de/die-senatorin-fuer-inneres-und-sport/buergeramt-116324"},
+      {"text": "Ausnahmegenehmigungen nach § 70 StVZO, Einzelgenehmigungen nach § 13 EG-FGV, rote Kennzeichen und Verlust/Diebstahl der Zulassungsbescheinigung Teil II bearbeitet die Zentrale Kfz-Zulassungsbehörde (Tel. 0421 361-88668).", "quelle": "https://www.service.bremen.de/die-senatorin-fuer-inneres-und-sport/buergeramt-116324"},
+      {"text": "Wegen einer Baustelle ist das Behördenzentrum Stresemannstraße voraussichtlich bis Sommer 2028 nicht direkt von der Haltestelle Julius-Brecht-Allee (Linie 1) erreichbar; Zugang über die Gartenstadt Vahr, Insterburger Str.", "quelle": "https://www.service.bremen.de/die-senatorin-fuer-inneres-und-sport/buergeramt/buergerservicecenter-stresemannstrasse-9384"}
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "dresden",
+    "stadt": "Dresden",
+    "bundesland": "Sachsen",
+    "behoerde": "Kfz-Zulassungsbehörde der Landeshauptstadt Dresden (Sachgebiet Kfz-Zulassungsbehörde)",
+    "behoerdeQuelle": "https://www.dresden.de/de/rathaus/aemter-und-einrichtungen/oe/dborg/stadt_dresden_6303.php",
+    "traeger": "Landeshauptstadt Dresden – Ordnungsamt, Abt. Sicherheitsangelegenheiten",
+    "standorte": [
+      {"bezeichnung": "Kfz-Zulassungsbehörde", "strasse": "Hauboldstraße 7", "plz": "01239", "ort": "Dresden", "quelle": "https://www.dresden.de/de/rathaus/aemter-und-einrichtungen/oe/dborg/stadt_dresden_6303.php"}
+    ],
+    "website": {"url": "https://www.dresden.de/de/rathaus/aemter-und-einrichtungen/oe/dborg/stadt_dresden_6303.php", "quelle": "https://www.dresden.de/de/rathaus/aemter-und-einrichtungen/oe/dborg/stadt_dresden_6303.php"},
+    "terminUrl": {"url": "https://termine-ordnungsamt.dresden.de/select2?md=1", "quelle": "https://www.dresden.de/de/rathaus/dienstleistungen/terminreservierung-kfz-zulassung.php"},
+    "ikfzUrl": {"url": "https://ikfz.ikfz-sachsen.de/i4/ikfz4/?LICENSEIDENTIFIER=dresden_stadt", "quelle": "https://www.dresden.de/de/rathaus/dienstleistungen/Online-Zulassung-i-kfz.php"},
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag 8 bis 12 Uhr",
+        "Dienstag 8 bis 17 Uhr",
+        "Mittwoch 9 bis 12 Uhr",
+        "Donnerstag 8 bis 17 Uhr",
+        "Freitag 8 bis 12 Uhr"
+      ],
+      "hinweis": "Persönliche Vorsprachen nur nach vorheriger Terminvereinbarung.",
+      "quelle": "https://www.dresden.de/de/rathaus/aemter-und-einrichtungen/oe/dborg/stadt_dresden_6303.php"
+    },
+    "zustaendigkeit": {"text": "Landeshauptstadt Dresden: sämtliche Kfz-Zulassungen, Umschreibungen für Antragsteller innerhalb der Stadt oder mit Wohnsitzwechsel zur Stadt Dresden.", "quelle": "https://www.dresden.de/de/rathaus/aemter-und-einrichtungen/oe/dborg/stadt_dresden_6303.php"},
+    "kuerzel": [
+      {"code": "DD", "bedeutung": "Dresden", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"}
+    ],
+    "besonderheiten": [
+      {"text": "Zutritt zur Kfz-Zulassungsbehörde nur mit Termin; Termine sind bis zu 14 Tage im Voraus buchbar.", "quelle": "https://www.dresden.de/de/rathaus/dienstleistungen/terminreservierung-kfz-zulassung.php"},
+      {"text": "Über Zulassungsdienste eingereichte Vorgänge werden taggleich bearbeitet und wieder ausgehändigt.", "quelle": "https://www.dresden.de/de/rathaus/aemter-und-einrichtungen/oe/dborg/stadt_dresden_6303.php"},
+      {"text": "Über das i-Kfz-Portal können auch Saison-, Oldtimer- und E-Kennzeichen vergeben werden; andere Sonderkennzeichen nicht.", "quelle": "https://www.dresden.de/de/rathaus/dienstleistungen/Online-Zulassung-i-kfz.php"}
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "chemnitz",
+    "stadt": "Chemnitz",
+    "bundesland": "Sachsen",
+    "behoerde": "Kraftfahrzeugzulassungsbehörde der Stadt Chemnitz (Bürgeramt, Abt. Kraftfahrzeugzulassungsbehörde)",
+    "behoerdeQuelle": "https://www.chemnitz.de/de/leben-in-chemnitz/lebenssituationen/auto",
+    "traeger": "Stadt Chemnitz – Bürgeramt",
+    "standorte": [
+      {"bezeichnung": "Kraftfahrzeugzulassungsbehörde (Bürgerhaus am Wall)", "strasse": "Düsseldorfer Platz 1", "plz": "09111", "ort": "Chemnitz", "quelle": "https://www.chemnitz.de/de/leben-in-chemnitz/lebenssituationen/auto"}
+    ],
+    "website": {"url": "https://www.chemnitz.de/de/leben-in-chemnitz/lebenssituationen/auto", "quelle": "https://www.chemnitz.de/de/leben-in-chemnitz/lebenssituationen/auto"},
+    "terminUrl": {"url": "https://www-19.stadt-chemnitz.de/", "quelle": "https://www.chemnitz.de/de/rathaus/aemterservice/sprechzeiten"},
+    "ikfzUrl": {"url": "https://ikfz.ikfz-sachsen.de/i4/ikfz4/?LICENSEIDENTIFIER=chemnitz_stadt", "quelle": "https://www.chemnitz.de/de/rathaus/dienstleistungsportal-und-formulare/dienstleistungen-suche?tx_solr%5Bq%5D=Kraftfahrzeug+online"},
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montags & freitags: 8 bis 12 Uhr",
+        "Dienstags & donnerstags: 8 bis 18 Uhr"
+      ],
+      "hinweis": "Vorsprachen während der folgenden Sprechzeiten sind ohne Termin mit längeren Wartezeiten möglich. Für alle Ämter empfiehlt sich eine vorherige Terminvereinbarung.",
+      "quelle": "https://www.chemnitz.de/de/rathaus/aemterservice/sprechzeiten"
+    },
+    "zustaendigkeit": {"text": "Stadt Chemnitz (Neu- und Wiederzulassung, Außerbetriebsetzung, Umschreibung, Änderungen in den Kfz-Papieren, Sonderkennzeichen).", "quelle": "https://www.chemnitz.de/de/leben-in-chemnitz/lebenssituationen/auto"},
+    "kuerzel": [
+      {"code": "C", "bedeutung": "Chemnitz", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"}
+    ],
+    "besonderheiten": [
+      {"text": "Mittwochs ist die Kfz-Zulassungsbehörde geschlossen.", "quelle": "https://www.chemnitz.de/de/leben-in-chemnitz/lebenssituationen/auto"},
+      {"text": "Termine online oder über die Behördenrufnummer 115 (Mo–Fr 8.00–18.00 Uhr); ohne Termin ist eine Vorsprache während der Sprechzeiten mit längeren Wartezeiten möglich.", "quelle": "https://www.chemnitz.de/de/rathaus/aemterservice/sprechzeiten"},
+      {"text": "Wunschkennzeichen können vor Ort oder online reserviert werden; die Reservierung gilt 6 Monate.", "quelle": "https://www.chemnitz.de/de/leben-in-chemnitz/lebenssituationen/auto"}
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "kiel",
+    "stadt": "Kiel",
+    "bundesland": "Schleswig-Holstein",
+    "behoerde": "Stadtamt, Fahrzeug-Zulassungen der Landeshauptstadt Kiel",
+    "behoerdeQuelle": "https://www.kiel.de/de/politik_verwaltung/service/_organisationseinheit.php?id=268080645",
+    "traeger": "Landeshauptstadt Kiel – Stadtamt",
+    "standorte": [
+      {"bezeichnung": "Stadtamt, Fahrzeug-Zulassungen", "strasse": "Saarbrückenstraße 147", "plz": "24113", "ort": "Kiel", "quelle": "https://www.kiel.de/de/politik_verwaltung/service/_organisationseinheit.php?id=268080645"}
+    ],
+    "website": {"url": "https://www.kiel.de/de/politik_verwaltung/service/_organisationseinheit.php?id=268080645", "quelle": "https://www.kiel.de/de/politik_verwaltung/service/_organisationseinheit.php?id=268080645"},
+    "terminUrl": {"url": "https://www.kiel.de/terminvereinbarung-zulassung", "quelle": "https://www.kiel.de/de/politik_verwaltung/service/_organisationseinheit.php?id=268080645"},
+    "ikfzUrl": {"url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100012.OE.268080645&leistungId=99036020001000&p=010020", "quelle": "https://www.kiel.de/de/politik_verwaltung/service/_organisationseinheit.php?id=268080645"},
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag 7.30 - 16 Uhr",
+        "Dienstag 7.30 - 16 Uhr",
+        "Mittwoch 7.30 - 12 Uhr",
+        "Donnerstag 7.30 - 18 Uhr",
+        "Freitag 7.30 - 12 Uhr"
+      ],
+      "hinweis": "Für alle Anliegen ohne Termin werden Aufrufmarken nur bis 30 Minuten vor Öffnungszeitenende ausgegeben. Eine Terminvereinbarung vor Ort ist nicht möglich.",
+      "quelle": "https://www.kiel.de/de/politik_verwaltung/service/_organisationseinheit.php?id=268080645"
+    },
+    "zustaendigkeit": {"text": "Landeshauptstadt Kiel.", "quelle": "https://www.kiel.de/de/politik_verwaltung/service/_organisationseinheit.php?id=268080645"},
+    "kuerzel": [
+      {"code": "KI", "bedeutung": "Kiel", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"}
+    ],
+    "besonderheiten": [
+      {"text": "Online-Termine: montags um 7.30 Uhr für die gesamte Woche, zusätzlich tagesaktuell um 7.30 Uhr; pro Termin nur eine Fahrzeug-Zulassungsangelegenheit.", "quelle": "https://www.kiel.de/de/politik_verwaltung/service/_organisationseinheit.php?id=268080645"},
+      {"text": "Ohne Termin: Schnellschalter für Abmeldung, Adressänderung innerhalb Kiels, Kennzeichenreservierung und Bewohnerparkausweis; außerdem u. a. Kurzzeit- und Ausfuhrkennzeichen, Kennzeichendiebstahl, Verlust der Zulassungsbescheinigungen.", "quelle": "https://www.kiel.de/de/politik_verwaltung/service/_organisationseinheit.php?id=268080645"},
+      {"text": "Bargeldlos: Gebühren werden am Kassenautomaten ausschließlich mit EC- oder Kreditkarte bezahlt (kein PayPal oder Klarna).", "quelle": "https://www.kiel.de/de/politik_verwaltung/service/_organisationseinheit.php?id=268080645"}
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "halle",
+    "stadt": "Halle (Saale)",
+    "bundesland": "Sachsen-Anhalt",
+    "behoerde": "Team Kfz – Zulassungsbehörde der Stadt Halle (Saale)",
+    "behoerdeQuelle": "https://halle.de/verwaltung-stadtrat/stadtverwaltung/verwaltungsorganisation/oe-information/team-kfz-zulassungsbehoerde/349620430",
+    "traeger": "Stadt Halle (Saale) – Fachbereich Einwohnerwesen, Abteilung Bürgerservice",
+    "standorte": [
+      {"bezeichnung": "Team Kfz – Zulassungsbehörde", "strasse": "Am Stadion 6", "plz": "06122", "ort": "Halle (Saale)", "quelle": "https://halle.de/verwaltung-stadtrat/stadtverwaltung/verwaltungsorganisation/oe-information/team-kfz-zulassungsbehoerde/349620430"}
+    ],
+    "website": {"url": "https://halle.de/verwaltung-stadtrat/stadtverwaltung/verwaltungsorganisation/oe-information/team-kfz-zulassungsbehoerde/349620430", "quelle": "https://halle.de/verwaltung-stadtrat/stadtverwaltung/verwaltungsorganisation/oe-information/team-kfz-zulassungsbehoerde/349620430"},
+    "terminUrl": {"url": "https://halle.de/serviceportal/online-terminvergabe/online-terminvereinbarung-kfz-zulassung", "quelle": "https://halle.de/serviceportal/dienstleistungen/leistung/kfz-zulassung-fabrikneues-fahrzeug-anmelden/393413576"},
+    "ikfzUrl": {"url": "https://ikfz.ikfz-sachsen-anhalt.de/i4/ikfz4/?LICENSEIDENTIFIER=halle_stadt", "quelle": "https://halle.de/serviceportal/dienstleistungen/leistung/kfz-zulassung-fabrikneues-fahrzeug-anmelden/393413576"},
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo: 08:00 - 12:00 Uhr (nur mit Termin)",
+        "Di: 09:00 - 18:00 Uhr (nur mit Termin)",
+        "Mi: 09:00 - 12:00 Uhr (nur mit Termin)",
+        "Do: 08:00 - 15:00 Uhr (nur mit Termin)",
+        "Fr: 09:00 - 12:00 Uhr (nur mit Termin)",
+        "Sa: geschlossen",
+        "So: geschlossen"
+      ],
+      "hinweis": "nur mit Termin",
+      "quelle": "https://halle.de/verwaltung-stadtrat/stadtverwaltung/verwaltungsorganisation/oe-information/team-kfz-zulassungsbehoerde/349620430"
+    },
+    "zustaendigkeit": {"text": "Kreisfreie Stadt Halle (Saale).", "quelle": "https://halle.de/serviceportal/dienstleistungen/leistung/kfz-zulassung-fabrikneues-fahrzeug-anmelden/393413576"},
+    "kuerzel": [
+      {"code": "HAL", "bedeutung": "Halle", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"}
+    ],
+    "besonderheiten": [
+      {"text": "Gebühren können in der Zulassungsbehörde bar oder per EC-Karte gezahlt werden.", "quelle": "https://halle.de/serviceportal/dienstleistungen/leistung/kfz-zulassung-fabrikneues-fahrzeug-anmelden/393413576"},
+      {"text": "Online-Zulassung nur für natürliche Personen mit Online-Ausweisfunktion; für Firmen, Vereine usw. ist die Online-Wiederzulassung momentan nicht möglich. Es dürfen keine Gebührenrückstände bei der Stadt Halle (Saale) bestehen.", "quelle": "https://halle.de/serviceportal/dienstleistungen/leistung/kfz-zulassung-fabrikneues-fahrzeug-anmelden/393413576"},
+      {"text": "Behindertenparkplätze (2) am Vordereingang Am Stadion 5.", "quelle": "https://halle.de/verwaltung-stadtrat/stadtverwaltung/verwaltungsorganisation/oe-information/team-kfz-zulassungsbehoerde/349620430"}
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "magdeburg",
+    "stadt": "Magdeburg",
+    "bundesland": "Sachsen-Anhalt",
+    "behoerde": "Kfz-Zulassungsbehörde der Landeshauptstadt Magdeburg (Privatzulassungen in den BürgerBüros Mitte, West, Nord und Süd)",
+    "behoerdeQuelle": "https://www.magdeburg.de/index.php?ModID=9&FID=37.168.1&object=tx%2C37.6876.1",
+    "traeger": "Landeshauptstadt Magdeburg",
+    "standorte": [
+      {"bezeichnung": "BürgerBüro Mitte", "strasse": "Leiterstraße 2a", "plz": "39104", "ort": "Magdeburg", "quelle": "https://www.magdeburg.de/index.php?FID=37.2233.1&ModID=9&object=tx%2C37.6876.1"},
+      {"bezeichnung": "BürgerBüro West", "strasse": "Bruno-Beye-Ring 50", "plz": "39130", "ort": "Magdeburg", "quelle": "https://www.magdeburg.de/index.php?FID=37.2198.1&ModID=9&object=tx%2C37.6876.1"},
+      {"bezeichnung": "BürgerBüro Nord", "strasse": "Lübecker Straße 32", "plz": "39124", "ort": "Magdeburg", "quelle": "https://www.magdeburg.de/index.php?FID=37.2199.1&ModID=9&object=tx%2C37.6876.1"},
+      {"bezeichnung": "BürgerBüro Süd (im Bördepark)", "strasse": "Salbker Chaussee 67", "plz": "39118", "ort": "Magdeburg", "quelle": "https://magdeburg.de/index.php?FID=37.2770.1&ModID=9&object=tx%2C37.6876.1"},
+      {"bezeichnung": "Kfz-Zulassungsbehörde (nur für gewerbliche Zulassungen und i-Kfz)", "strasse": "Tessenowstraße 15", "plz": "39114", "ort": "Magdeburg", "quelle": "https://www.magdeburg.de/index.php?ModID=9&FID=37.168.1&object=tx%2C37.6876.1"}
+    ],
+    "website": {"url": "https://www.magdeburg.de/index.php?ModID=9&FID=37.168.1&object=tx%2C37.6876.1", "quelle": "https://www.magdeburg.de/index.php?ModID=9&FID=37.168.1&object=tx%2C37.6876.1"},
+    "terminUrl": {"url": "https://www.magdeburg.de/terminreservierung", "quelle": "https://www.magdeburg.de/index.php?FID=37.2233.1&ModID=9&object=tx%2C37.6876.1"},
+    "ikfzUrl": {"url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100008.OE.31720548&leistungId=99036020001000&p=150030", "quelle": "https://www.magdeburg.de/index.php?ModID=9&FID=37.168.1&object=tx%2C37.6876.1"},
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Öffnungszeiten BürgerBüros",
+        "Montag: 08:00 - 13:00 Uhr",
+        "Dienstag: 08:00 - 13:00 Uhr und 14:00 Uhr - 17:30 Uhr",
+        "Mittwoch: 08:00 - 13:00 Uhr",
+        "3. Mi. im Monat geschlossen",
+        "Donnerstag: 08:00 - 13:00 Uhr und 14:00 Uhr - 17:30 Uhr",
+        "Freitag: 08:00 - 12:00 Uhr",
+        "Samstag: 08:00 - 12:00 Uhr (nur BürgerBüro Mitte, ausschließlich Terminkunden, jeden 1. Samstag im Monat geschlossen)"
+      ],
+      "hinweis": "Montag bis Freitag, 8–9 Uhr: Vorsprache ohne Termin möglich, solange Kontingent reicht. Kfz-Vorgänge nur für Privatpersonen.",
+      "quelle": "https://www.magdeburg.de/index.php?FID=37.2233.1&ModID=9&object=tx%2C37.6876.1"
+    },
+    "zustaendigkeit": {"text": "Landeshauptstadt Magdeburg. Privatzulassungen: BürgerBüros Mitte, West, Nord und Süd (nach Termin). Kfz-Zulassungsbehörde Tessenowstraße: gewerbliche Zulassungen (Gewerbetreibende, Autohäuser, Zulassungsdienste), Ausfuhrkennzeichen und alle online beantragten Zulassungen.", "quelle": "https://www.magdeburg.de/index.php?ModID=9&FID=37.168.1&object=tx%2C37.6876.1"},
+    "kuerzel": [
+      {"code": "MD", "bedeutung": "Magdeburg", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"}
+    ],
+    "besonderheiten": [
+      {"text": "Die Wahl des BürgerBüros ist nicht an die Wohnanschrift gebunden; Termine können frei für jeden Standort vereinbart werden (online oder über die Behördennummer 115).", "quelle": "https://www.magdeburg.de/index.php?FID=37.2233.1&ModID=9&object=tx%2C37.6876.1"},
+      {"text": "Samstags nicht möglich: Erstzulassung mit ausländischen Papieren, Wiederzulassung nach Zwangsstilllegung, Kennzeichenmitnahme an ein neues Fahrzeug, Zulassung von Wohnwagen bzw. Wohnmobil.", "quelle": "https://www.magdeburg.de/index.php?FID=37.2233.1&ModID=9&object=tx%2C37.6876.1"},
+      {"text": "Die Kfz-Zulassungsbehörde Tessenowstraße nimmt Anträge Montag bis Freitag bis 11:00 Uhr und dienstags zusätzlich bis 17:00 Uhr an; unvollständige Anträge können erst am Folgetag erneut eingereicht werden.", "quelle": "https://www.magdeburg.de/index.php?ModID=9&FID=37.168.1&object=tx%2C37.6876.1"}
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "luebeck",
+    "stadt": "Lübeck",
+    "bundesland": "Schleswig-Holstein",
+    "behoerde": "Hansestadt Lübeck – Ordnungsamt (Kfz-Zulassung in den Bürgerservicebüros)",
+    "behoerdeQuelle": "https://www.luebeck.de/de/buergerservice/leistungen/leistungen?lid=299036360",
+    "traeger": "Hansestadt Lübeck – Ordnungsamt",
+    "standorte": [
+      {"bezeichnung": "Bürgerservicebüro Innenstadt", "strasse": "Königstraße 55", "plz": "23552", "ort": "Lübeck", "quelle": "https://www.luebeck.de/de/buergerservice/leistungen/leistungen?lid=299036360"},
+      {"bezeichnung": "Bürgerservicebüro St. Lorenz", "strasse": "Kreuzweg 9", "plz": "23558", "ort": "Lübeck", "quelle": "https://www.luebeck.de/de/buergerservice/leistungen/leistungen?lid=299036360"},
+      {"bezeichnung": "Bürgerservicebüro St. Gertrud", "strasse": "Meesenring 7", "plz": "23539", "ort": "Lübeck", "quelle": "https://www.luebeck.de/de/buergerservice/leistungen/leistungen?lid=299036360"},
+      {"bezeichnung": "Bürgerservicebüro Moisling", "strasse": "Moislinger Berg 1", "plz": "23560", "ort": "Lübeck", "quelle": "https://www.luebeck.de/de/buergerservice/leistungen/leistungen?lid=299036360"},
+      {"bezeichnung": "Bürgerservicebüro Kücknitz", "strasse": "Kirchplatz 7b", "plz": "23569", "ort": "Lübeck", "quelle": "https://www.luebeck.de/de/buergerservice/leistungen/leistungen?lid=299036360"},
+      {"bezeichnung": "Bürgerservicebüro Travemünde", "strasse": "Kirchenstraße 3-5", "plz": "23570", "ort": "Lübeck", "quelle": "https://www.luebeck.de/de/buergerservice/leistungen/leistungen?lid=299036360"},
+      {"bezeichnung": "Bürgerservicebüro Hochschulstadtteil (mit Händlerschalter)", "strasse": "Carl-Gauß-Straße 9", "plz": "23562", "ort": "Lübeck", "quelle": "https://www.luebeck.de/de/buergerservice/leistungen/leistungen?lid=299036360"}
+    ],
+    "website": {"url": "https://www.luebeck.de/de/buergerservice/leistungen/leistungen?lid=299036360", "quelle": "https://www.luebeck.de/de/buergerservice/leistungen/leistungen?lid=299036360"},
+    "terminUrl": {"url": "https://hltermin.luebeck.de/termine", "quelle": "https://www.luebeck.de/de/buergerservice/termine-online/termine-online"},
+    "ikfzUrl": {"url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100012.OE.242236200&leistungId=99036020001000&p=010030", "quelle": "https://www.luebeck.de/de/buergerservice/leistungen/leistungen?lid=299036360"},
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Innenstadt: Mo. 8 – 14 Uhr; Di. 8 – 14 Uhr; Mi. 8 – 12 Uhr; Do. 8 – 12 Uhr und 14 – 18 Uhr; Fr. 8 – 12 Uhr",
+        "St. Lorenz: Mo. 8 Uhr – 14 Uhr; Di. 8 – 12 und 14 – 18 Uhr; Mi. 8 – 12 Uhr; Do. 8 – 14 Uhr; Fr. 8 – 12 Uhr",
+        "St. Gertrud: Mo. 8 – 14 Uhr; Di. 8 – 12 Uhr und 14 – 18 Uhr; Mi. 8 – 12 Uhr; Do. 8 – 14 Uhr; Fr. 8 – 12 Uhr",
+        "Moisling: Mo. 8 – 14 Uhr; Di. 8 – 14 Uhr; Mi. 8 – 12 Uhr; Do. 8 – 12 Uhr und 14 – 18 Uhr; Fr. 8 – 12 Uhr",
+        "Kücknitz: Mo. 8 – 12 Uhr und 14 – 18 Uhr; Di. 8 – 14 Uhr; Mi. 8 – 12 Uhr; Do. 8 – 14 Uhr; Fr. 8 – 12 Uhr",
+        "Travemünde: Mo. geschlossen; Di. 16:15 – 18 Uhr; Mi. geschlossen; Do. 16:15 – 18 Uhr; Fr. geschlossen",
+        "Hochschulstadtteil (Öffnungszeiten für Bürger:innen): Mo. 8 bis 12 Uhr und 14 – 18 Uhr; Di. geschlossen; Mi. geschlossen; Do. geschlossen; Freitag 8 – 12 Uhr",
+        "Hochschulstadtteil, Händlerschalter (für Händler, Zulassungsdienste und Privatpersonen mit mindestens 2 Kfz-Zulassungsvorgängen): Mo. 8 – 12 und 14 – 18 Uhr; Di. 7 – 12 Uhr und 12:45 – 14 Uhr; Mi. 7 – 12 Uhr; Do. 7 - 12 Uhr und 12:45 – 14 Uhr; Fr. 7 – 12 Uhr"
+      ],
+      "hinweis": "Hochschulstadtteil: Die Vorsprache ist grundsätzlich nur nach vorheriger Terminvereinbarung möglich.",
+      "quelle": "https://www.luebeck.de/de/buergerservice/leistungen/leistungen?lid=299036360"
+    },
+    "zustaendigkeit": {"text": "Hansestadt Lübeck (kreisfreie Stadt); maßgeblich ist bei natürlichen Personen der Wohnort bzw. die Hauptwohnung, bei Unternehmen der Sitz oder die beteiligte Niederlassung.", "quelle": "https://www.luebeck.de/de/buergerservice/leistungen/leistungen?lid=299036360"},
+    "kuerzel": [
+      {"code": "HL", "bedeutung": "Hansestadt Lübeck", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"}
+    ],
+    "besonderheiten": [
+      {"text": "Termine in den Bürgerservicebüros (auch für Kfz) sind maximal acht Wochen im Voraus buchbar; kurzfristige Termine werden wochentags bis 8:30 Uhr freigeschaltet, montags kommen Termine für die 8. Woche hinzu.", "quelle": "https://www.luebeck.de/de/buergerservice/termine-online/termine-online"},
+      {"text": "Bei finanzierten Fahrzeugen muss der Termin in dem Bürgerservicebüro gebucht werden, in dem die Zulassungsbescheinigung Teil II verwahrt wird; ein Postaustausch zwischen den Büros ist nicht möglich.", "quelle": "https://www.luebeck.de/de/buergerservice/leistungen/leistungen?lid=299036360"},
+      {"text": "In allen Bürgerservicebüros nur EC- oder Kreditkartenzahlung. In Travemünde gibt es keinen Schilderpräger (Schilder mitbringen); im Hochschulstadtteil ist der Schilderpräger montags erst ab 14 Uhr da.", "quelle": "https://www.luebeck.de/de/buergerservice/leistungen/leistungen?lid=299036360"}
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  }
+]

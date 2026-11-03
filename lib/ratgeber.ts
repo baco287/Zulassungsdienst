@@ -1,4 +1,5 @@
 import type { QA, ContentSection } from "./serviceContent";
+import { P, wunschkennzeichenHinweis } from "./pricing";
 
 /**
  * Ratgeber-Artikel (SEO/GEO-Content).
@@ -49,12 +50,12 @@ export const guides: Guide[] = [
         table: {
           headers: ["Vorgang", "i-Kfz online (selbst)", "Am Schalter (selbst)", "Über DeutscheZulassung"],
           rows: [
-            ["Neuzulassung", "ca. 12,80 – 18,00 € + Kennzeichen", "ca. 26,30 – 30,00 € + Kennzeichen", "129 € + Kennzeichen"],
-            ["Umschreibung / Halterwechsel", "ca. 12,80 – 18,00 € + ggf. Kennzeichen", "ca. 26,30 – 30,00 € + ggf. Kennzeichen", "129 € + ggf. Kennzeichen"],
-            ["Ummeldung nach Umzug", "ca. 12,80 – 18,00 €", "ca. 26,30 – 30,00 €", "129 € komplett"],
-            ["Abmeldung", "ca. 3 – 16 €", "ca. 3 – 16 €", "34,90 € komplett"],
-            ["Wunschkennzeichen (Zusatz)", "ca. 12,80 € + Schilder", "ca. 12,80 € + Schilder", "34,90 € inkl. Schilder"],
-            ["Kennzeichenschilder (Paar)", "ca. 20 – 35 €", "ca. 20 – 35 €", "28,90 €"],
+            ["Neuzulassung", "ca. 12,80 – 18,00 € + Kennzeichen", "ca. 26,30 – 30,00 € + Kennzeichen", `${P.zulassung} + Kennzeichen`],
+            ["Umschreibung / Halterwechsel", "ca. 12,80 – 18,00 € + ggf. Kennzeichen", "ca. 26,30 – 30,00 € + ggf. Kennzeichen", `${P.zulassung} + ggf. Kennzeichen`],
+            ["Ummeldung nach Umzug", "ca. 12,80 – 18,00 €", "ca. 26,30 – 30,00 €", `${P.zulassung} komplett`],
+            ["Abmeldung", "ca. 3 – 16 €", "ca. 3 – 16 €", `${P.abmeldung} komplett`],
+            ["Wunschkennzeichen (Zusatz)", "ca. 12,80 € + Schilder", "ca. 12,80 € + Schilder", `${P.wunschkennzeichen} inkl. amtl. Gebühr + ggf. Schilder`],
+            ["Kennzeichenschilder (Paar)", "ca. 20 – 35 €", "ca. 20 – 35 €", `${P.kennzeichen}`],
           ],
         },
       },
@@ -69,7 +70,7 @@ export const guides: Guide[] = [
             ["Voraussetzungen", "eID-Ausweis mit PIN, Sicherheitscodes, ePayment", "Termin (oft Wochen Vorlauf)", "keine – Fotos der Unterlagen genügen"],
             ["Zeitaufwand", "30–60 Min., wenn alles klappt", "halber Tag inkl. Anfahrt/Wartezeit", "ca. 10 Min. für die Beauftragung"],
             ["Dauer bis zur Zulassung", "sofort (vorläufiger Nachweis), Plaketten per Post", "am Termin selbst", "1–3 Werktage + Versand"],
-            ["Gesamtkosten (Zulassung)", "ca. 35 – 55 €", "ca. 50 – 70 €", "129 € komplett"],
+            ["Gesamtkosten (Zulassung)", "ca. 35 – 55 €", "ca. 50 – 70 €", `${P.zulassung} komplett`],
             ["Scheitert häufig an …", "eID-PIN, alten Papieren, Portal-Fehlern", "Terminmangel", "–"],
           ],
         },
@@ -78,7 +79,7 @@ export const guides: Guide[] = [
         heading: "Selbst zulassen oder Zulassungsdienst beauftragen?",
         paragraphs: [
           "Wer Zeit hat, einen Termin bekommt und alle Unterlagen beisammen hat, zahlt beim Selbermachen nur Gebühren und Schilder – zusammen meist 40 bis 70 €. Die Realität sieht oft anders aus: Termine sind in vielen Städten Wochen im Voraus ausgebucht, und ein halber Arbeitstag geht schnell verloren.",
-          "Ein Zulassungsdienst übernimmt den kompletten Vorgang gegen einen Servicepreis. Bei DeutscheZulassung kosten Neuzulassung, Umschreibung, Ummeldung und Wiederzulassung je 129 € – amtliche Gebühren und versicherter Versand sind darin bereits enthalten. Werden neue Kennzeichenschilder benötigt, kommen 28,90 € pro Paar dazu. Die Abmeldung kostet 34,90 € inklusive Gebühren. Sie wissen also vorher genau, was auf Sie zukommt.",
+          `Ein Zulassungsdienst übernimmt den kompletten Vorgang gegen einen Servicepreis. Bei DeutscheZulassung kosten Neuzulassung, Umschreibung, Ummeldung und Wiederzulassung je ${P.zulassung} – amtliche Gebühren und versicherter Versand sind darin bereits enthalten. Werden neue Kennzeichenschilder benötigt, kommen ${P.kennzeichen} pro Paar dazu. Die Abmeldung kostet ${P.abmeldung} inklusive Gebühren. Sie wissen also vorher genau, was auf Sie zukommt.`,
         ],
       },
       {
@@ -97,7 +98,7 @@ export const guides: Guide[] = [
       {
         question: "Was kostet ein Zulassungsdienst?",
         answer:
-          "Marktüblich sind Preise um 120 – 130 € pro Zulassungsvorgang zzgl. Kennzeichen. DeutscheZulassung berechnet 129 € inkl. Gebühren und Versand, zzgl. 28,90 € für neue Kennzeichenschilder; die Abmeldung kostet 34,90 €.",
+          `Marktüblich sind Preise um 120 – 130 € pro Zulassungsvorgang zzgl. Kennzeichen. DeutscheZulassung berechnet ${P.zulassung} inkl. Gebühren und Versand, zzgl. ${P.kennzeichen} für neue Kennzeichenschilder; die Abmeldung kostet ${P.abmeldung}.`,
       },
       {
         question: "Ist die Online-Zulassung (i-Kfz) günstiger als der Schalter?",
@@ -111,7 +112,7 @@ export const guides: Guide[] = [
       },
     ],
     relatedServices: ["neuzulassung", "halterwechsel", "abmeldung"],
-    relatedGuides: ["auto-anmelden-unterlagen", "i-kfz-online-zulassung"],
+    relatedGuides: ["auto-anmelden-unterlagen", "i-kfz-online-zulassung", "wunschkennzeichen-reservieren"],
     keywords: [
       "Kfz-Zulassung Kosten",
       "Auto anmelden Kosten",
@@ -119,9 +120,9 @@ export const guides: Guide[] = [
       "was kostet Auto ummelden",
     ],
     sources: [
-      { label: "Kraftfahrt-Bundesamt: i-Kfz – internetbasierte Fahrzeugzulassung", href: "https://www.kba.de/DE/Themen/ZentraleRegister/iKfz/ikfz_node.html" },
-      { label: "Bundesministerium für Verkehr: Digitale Fahrzeugzulassung", href: "https://bmdv.bund.de/DE/Themen/Mobilitaet/Strassenverkehr/Fahrzeugzulassung/fahrzeugzulassung.html" },
-      { label: "Gebührenordnung für Maßnahmen im Straßenverkehr (GebOSt)", href: "https://www.gesetze-im-internet.de/st_gebo_2011/" },
+      { label: "Kraftfahrt-Bundesamt: i-Kfz – internetbasierte Fahrzeugzulassung", href: "https://www.kba.de/DE/Themen/ZentraleRegister/Digitale_Fahrzeugzulassung/iKfz/ikfz_node.html" },
+      { label: "Bundesministerium für Verkehr: Internetbasierte Fahrzeugzulassung", href: "https://www.bmv.de/SharedDocs/DE/Artikel/StV/Strassenverkehr/internetbasierte-fahrzeugzulassung.html" },
+      { label: "Gebührenordnung für Maßnahmen im Straßenverkehr (GebOSt)", href: "https://www.gesetze-im-internet.de/stgebo_2011/" },
     ],
   },
 
@@ -145,7 +146,7 @@ export const guides: Guide[] = [
           "Zulassungsbescheinigung Teil II (Fahrzeugbrief) – beim Neuwagen ggf. das CoC-Papier",
         ],
         image: {
-          src: "/images/zb1-zb2-dokumente.jpg",
+          src: "/images/zb1-zb2-dokumente.webp",
           alt: "Zulassungsbescheinigung Teil I (Fahrzeugschein) und Teil II (Fahrzeugbrief) nebeneinander auf einem Tisch",
           caption:
             "Gut zu unterscheiden: links der kleine Fahrzeugschein (Teil I, gehört ins Auto), rechts der größere Fahrzeugbrief (Teil II, gehört sicher nach Hause).",
@@ -188,7 +189,7 @@ export const guides: Guide[] = [
       },
     ],
     relatedServices: ["neuzulassung", "halterwechsel", "wiederzulassung"],
-    relatedGuides: ["evb-nummer", "was-kostet-eine-kfz-zulassung"],
+    relatedGuides: ["evb-nummer", "was-kostet-eine-kfz-zulassung", "fahrzeugpapiere-sicherheitscodes", "fahrzeugzulassung-unternehmen"],
     keywords: [
       "Auto anmelden Unterlagen",
       "Kfz anmelden was brauche ich",
@@ -240,7 +241,7 @@ export const guides: Guide[] = [
       {
         question: "Was kostet das Ummelden nach einem Umzug?",
         answer:
-          "Am Schalter zahlen Sie amtliche Gebühren von rund 26 – 30 € plus ggf. neue Kennzeichen. Über DeutscheZulassung kostet die Ummeldung 129 € inklusive Gebühren und Versand (neue Schilder ggf. zzgl. 28,90 €) – ganz ohne Behördentermin.",
+          `Am Schalter zahlen Sie amtliche Gebühren von rund 26 – 30 € plus ggf. neue Kennzeichen. Über DeutscheZulassung kostet die Ummeldung ${P.zulassung} inklusive Gebühren und Versand (neue Schilder ggf. zzgl. ${P.kennzeichen}) – ganz ohne Behördentermin.`,
       },
       {
         question: "Muss ich bei der Ummeldung die Versicherung wechseln?",
@@ -249,7 +250,7 @@ export const guides: Guide[] = [
       },
     ],
     relatedServices: ["ummeldung", "adressaenderung", "wunschkennzeichen"],
-    relatedGuides: ["kennzeichen-mitnehmen", "was-kostet-eine-kfz-zulassung"],
+    relatedGuides: ["kennzeichen-mitnehmen", "was-kostet-eine-kfz-zulassung", "wunschkennzeichen-reservieren"],
     keywords: [
       "Auto ummelden Umzug",
       "Kfz ummelden Frist",
@@ -278,7 +279,7 @@ export const guides: Guide[] = [
           "Für die Abmeldung brauchen Sie weder das Fahrzeug noch einen Termin – nur die Dokumente mit ihren Sicherheitscodes. Seit 2015 tragen Zulassungsbescheinigung Teil I und die Stempelplaketten der Kennzeichen verdeckte Codes, die für die digitale Abmeldung freigelegt werden:",
         ],
         list: [
-          "Sicherheitscode auf der Zulassungsbescheinigung Teil I freirubbeln",
+          "Sicherheitscode auf der Zulassungsbescheinigung Teil I freilegen (Siegel vorsichtig abziehen)",
           "Sicherheitscodes der Stempelplaketten auf beiden Kennzeichen freilegen",
           "Bei Verschrottung: Verwertungsnachweis des zertifizierten Demontagebetriebs bereithalten",
           "Codes und Dokumente fotografieren und an den Zulassungsdienst übermitteln – oder selbst im i-Kfz-Portal abmelden",
@@ -296,7 +297,7 @@ export const guides: Guide[] = [
       {
         question: "Was kostet die Abmeldung eines Autos?",
         answer:
-          "Die amtliche Gebühr liegt je nach Behörde bei etwa 3 – 16 €. Über DeutscheZulassung kostet die komplette Abwicklung 34,90 € inklusive Gebühren – meist noch am selben Werktag erledigt.",
+          `Die amtliche Gebühr liegt je nach Behörde bei etwa 3 – 16 €. Über DeutscheZulassung kostet die komplette Abwicklung ${P.abmeldung} inklusive Gebühren – meist noch am selben Werktag erledigt.`,
       },
       {
         question: "Kann ich ein Auto ohne Kennzeichen abmelden?",
@@ -315,7 +316,7 @@ export const guides: Guide[] = [
       },
     ],
     relatedServices: ["abmeldung", "wiederzulassung"],
-    relatedGuides: ["was-kostet-eine-kfz-zulassung", "i-kfz-online-zulassung"],
+    relatedGuides: ["was-kostet-eine-kfz-zulassung", "i-kfz-online-zulassung", "auto-verkauft-abmelden", "fahrzeugpapiere-sicherheitscodes"],
     keywords: [
       "Auto abmelden",
       "Kfz abmelden online",
@@ -370,7 +371,7 @@ export const guides: Guide[] = [
       },
     ],
     relatedServices: ["neuzulassung", "halterwechsel", "kurzzeitkennzeichen"],
-    relatedGuides: ["evb-nummer-erhalten-was-nun", "auto-anmelden-unterlagen", "was-kostet-eine-kfz-zulassung"],
+    relatedGuides: ["evb-nummer-erhalten-was-nun", "auto-anmelden-unterlagen", "was-kostet-eine-kfz-zulassung", "halterwechsel-nach-autokauf"],
     keywords: ["eVB-Nummer", "elektronische Versicherungsbestätigung", "eVB sofort online", "eVB kostenlos"],
   },
 
@@ -439,7 +440,7 @@ export const guides: Guide[] = [
       },
     ],
     relatedServices: ["neuzulassung", "halterwechsel", "wiederzulassung"],
-    relatedGuides: ["evb-nummer", "auto-anmelden-unterlagen", "i-kfz-online-zulassung"],
+    relatedGuides: ["evb-nummer", "auto-anmelden-unterlagen", "i-kfz-online-zulassung", "halterwechsel-nach-autokauf"],
     keywords: [
       "eVB-Nummer erhalten was nun",
       "eVB einlösen",
@@ -492,7 +493,7 @@ export const guides: Guide[] = [
       {
         question: "Darf ich nach der Online-Zulassung sofort fahren?",
         answer:
-          "Ja. Nach erfolgreichem i-Kfz-Vorgang erhalten Sie einen vorläufigen Zulassungsnachweis zum Ausdrucken und dürfen bis zu 10 Tage im Inland fahren, bis Plaketten und Papiere per Post ankommen. Die ungestempelten Kennzeichen müssen dafür bereits montiert sein.",
+          "Ja. Nach erfolgreichem i-Kfz-Vorgang erhalten Sie einen vorläufigen Zulassungsnachweis zum Ausdrucken und dürfen damit für eine begrenzte Zeit im Inland fahren, bis Plaketten und Papiere per Post ankommen – die Frist steht auf dem Nachweis. Die ungestempelten Kennzeichen müssen dafür bereits montiert sein.",
       },
       {
         question: "Warum funktioniert i-Kfz bei mir nicht?",
@@ -501,10 +502,10 @@ export const guides: Guide[] = [
       },
     ],
     relatedServices: ["neuzulassung", "abmeldung", "gewerbekunden"],
-    relatedGuides: ["auto-anmelden-unterlagen", "was-kostet-eine-kfz-zulassung"],
+    relatedGuides: ["auto-anmelden-unterlagen", "was-kostet-eine-kfz-zulassung", "fahrzeugpapiere-sicherheitscodes"],
     keywords: ["i-Kfz", "Auto online zulassen", "Online-Zulassung Voraussetzungen", "Kfz online anmelden"],
     sources: [
-      { label: "Kraftfahrt-Bundesamt: i-Kfz – internetbasierte Fahrzeugzulassung", href: "https://www.kba.de/DE/Themen/ZentraleRegister/iKfz/ikfz_node.html" },
+      { label: "Kraftfahrt-Bundesamt: i-Kfz – internetbasierte Fahrzeugzulassung", href: "https://www.kba.de/DE/Themen/ZentraleRegister/Digitale_Fahrzeugzulassung/iKfz/ikfz_node.html" },
       { label: "AusweisApp des Bundes (eID-Funktion)", href: "https://www.ausweisapp.bund.de/" },
       { label: "Fahrzeug-Zulassungsverordnung (FZV)", href: "https://www.gesetze-im-internet.de/fzv_2023/" },
     ],
@@ -549,7 +550,7 @@ export const guides: Guide[] = [
       },
     ],
     relatedServices: ["ummeldung", "halterwechsel", "wunschkennzeichen"],
-    relatedGuides: ["auto-ummelden-nach-umzug", "was-kostet-eine-kfz-zulassung"],
+    relatedGuides: ["auto-ummelden-nach-umzug", "was-kostet-eine-kfz-zulassung", "wunschkennzeichen-reservieren", "halterwechsel-nach-autokauf"],
     keywords: [
       "Kennzeichen mitnehmen Umzug",
       "Kennzeichenmitnahme Halterwechsel",
@@ -590,7 +591,7 @@ export const guides: Guide[] = [
         heading: "Option 3: Zulassungsdienst – der Weg, der immer funktioniert",
         paragraphs: [
           "Ein Zulassungsdienst braucht weder Ihren Termin noch Ihre eID: Sie fotografieren die Unterlagen, erteilen eine digitale Vollmacht, und der Dienst führt den Vorgang bei der Behörde durch – über eigene Zugänge, unabhängig von der öffentlichen Terminvergabe. Bei DeutscheZulassung startet Ihr Vorgang sofort nach Auftragseingang; die Zulassung ist in der Regel in 1–3 Werktagen erledigt, Abmeldungen meist noch am selben Werktag.",
-          "Das kostet mit 129 € zzgl. ggf. 28,90 € für Kennzeichen mehr als der Schalter – dafür entfallen Terminsuche, Anfahrt und Wartezeit vollständig. Gerade wenn das neue Auto schon bezahlt vor der Tür steht, ist das oft der Unterschied zwischen „fährt diese Woche“ und „steht noch einen Monat“.",
+          `Das kostet mit ${P.zulassung} zzgl. ggf. ${P.kennzeichen} für Kennzeichen mehr als der Schalter – dafür entfallen Terminsuche, Anfahrt und Wartezeit vollständig. Gerade wenn das neue Auto schon bezahlt vor der Tür steht, ist das oft der Unterschied zwischen „fährt diese Woche“ und „steht noch einen Monat“.`,
         ],
       },
       {
@@ -614,7 +615,7 @@ export const guides: Guide[] = [
       {
         question: "Was kostet die Zulassung ohne eigenen Termin über einen Dienst?",
         answer:
-          "Bei DeutscheZulassung 129 € inklusive amtlicher Gebühren und Versand, zzgl. 28,90 € für neue Kennzeichenschilder – der Vorgang startet sofort, ganz ohne Behördentermin. Die Abmeldung kostet 34,90 € und ist meist taggleich erledigt.",
+          `Bei DeutscheZulassung ${P.zulassung} inklusive amtlicher Gebühren und Versand, zzgl. ${P.kennzeichen} für neue Kennzeichenschilder – der Vorgang startet sofort, ganz ohne Behördentermin. Die Abmeldung kostet ${P.abmeldung} und ist meist taggleich erledigt.`,
       },
       {
         question: "Gilt das auch für meine Stadt?",
@@ -686,7 +687,7 @@ export const guides: Guide[] = [
       {
         heading: "Sicherheitscode",
         paragraphs: [
-          "Verdeckter Code auf ZB I, ZB II und den Stempelplaketten der Kennzeichen. Er wird freigelegt (freigerubbelt), um digitale Vorgänge wie die Online-Abmeldung zu autorisieren. Achtung: Ein freigelegter Code entwertet das jeweilige Dokument.",
+          "Verdeckter Code auf ZB I, ZB II und den Stempelplaketten der Kennzeichen. Er wird freigelegt (Siegel bzw. Plakette abziehen), um digitale Vorgänge wie die Online-Abmeldung zu autorisieren. Achtung: Ein freigelegter Code entwertet das jeweilige Dokument.",
         ],
       },
       {
@@ -715,8 +716,634 @@ export const guides: Guide[] = [
       },
     ],
     relatedServices: ["neuzulassung", "abmeldung", "halterwechsel"],
-    relatedGuides: ["auto-anmelden-unterlagen", "evb-nummer", "i-kfz-online-zulassung"],
+    relatedGuides: ["auto-anmelden-unterlagen", "evb-nummer", "i-kfz-online-zulassung", "fahrzeugpapiere-sicherheitscodes"],
     keywords: ["Kfz-Zulassung Begriffe", "Zulassungsbescheinigung erklärt", "Fahrzeugbrief Fahrzeugschein Unterschied"],
+  },
+
+  {
+    slug: "fahrzeugpapiere-sicherheitscodes",
+    title: "Fahrzeugpapiere und Sicherheitscodes erklärt",
+    description:
+      "Zulassungsbescheinigung Teil I und II und Kennzeichen-Plaketten: wo die Sicherheitscodes sitzen, wann Sie sie brauchen und was bei alten Papieren gilt.",
+    datePublished: "2026-11-03",
+    dateModified: "2026-11-03",
+    sections: [
+      {
+        heading: "Zulassungsbescheinigung Teil I und Teil II: Was ist was?",
+        paragraphs: [
+          "Seit Oktober 2005 heißen die Fahrzeugpapiere in Deutschland Zulassungsbescheinigung Teil I und Teil II. Sie haben Fahrzeugschein und Fahrzeugbrief abgelöst, damit die Dokumente EU-weit einheitlich und schwerer zu fälschen sind. Im Alltag sind die alten Namen geblieben – gemeint sind dieselben Papiere.",
+          "Die Zulassungsbescheinigung Teil I (ZB I) gehört ins Fahrzeug: Wer fährt, muss sie mitführen und bei einer Kontrolle aushändigen. Sie enthält Halterdaten, Kennzeichen und die wichtigsten technischen Angaben. Mit der Zulassungsbescheinigung Teil II (ZB II) weisen Sie dagegen nach, dass Sie über das Fahrzeug verfügen dürfen. Sie wird bei der Zulassung, beim Halterwechsel und beim Verkauf gebraucht und gehört sicher nach Hause – nicht ins Handschuhfach.",
+        ],
+        table: {
+          headers: ["Merkmal", "Teil I (Fahrzeugschein)", "Teil II (Fahrzeugbrief)"],
+          rows: [
+            ["Aufbewahrung", "im Fahrzeug mitführen", "sicher zu Hause"],
+            ["Zweck", "Nachweis der Zulassung bei Kontrollen", "Nachweis der Verfügungsberechtigung"],
+            ["Verdeckter Sicherheitscode", "in der Regel auf Exemplaren ab 2015", "in der Regel auf Exemplaren ab 2018"],
+            ["Gebraucht bei", "Abmeldung, Umschreibung, Ummeldung, Wiederzulassung", "Erstzulassung, Halterwechsel, meist auch Wiederzulassung"],
+          ],
+        },
+        image: {
+          src: "/images/zb1-zb2-dokumente.webp",
+          alt: "Zulassungsbescheinigung Teil I und Teil II nebeneinander auf einem Tisch",
+          caption:
+            "Der kleine Fahrzeugschein (Teil I) fährt mit, der größere Fahrzeugbrief (Teil II) bleibt zu Hause.",
+        },
+      },
+      {
+        heading: "Wo sitzen die Sicherheitscodes auf den Papieren?",
+        paragraphs: [
+          "Für Online-Vorgänge tragen die Dokumente verdeckte Sicherheitscodes. Die Fahrzeug-Zulassungsverordnung nennt drei Arten: den Code auf der ZB I, den Code auf der ZB II und den Code unter der Stempelplakette des Kennzeichens (§ 21 FZV). Mit ihnen belegen Sie im internetbasierten Verfahren, dass Sie die Papiere tatsächlich besitzen beziehungsweise das Kennzeichen entstempelt haben.",
+          "Auf der ZB I steht eine Druckstücknummer, darunter liegt das verdeckte Codefeld. Die Abdeckung trägt den Hinweis „Nur für internetbasierte Zulassungsverfahren freilegen. Dokument nur unbeschädigt gültig.“ Auf der ZB II verdeckt ebenfalls ein Abdeckfeld den Code. Freigelegt wird je nach Ausführung durch vorsichtiges Abziehen oder Freirubbeln – und zwar unumkehrbar: Unter der Abdeckung erscheint der Schriftzug „Dokument nicht mehr gültig“.",
+        ],
+        image: {
+          src: "/images/sicherheitscode-zb1.webp",
+          alt: "Freigelegtes Sicherheitscode-Feld auf einer Zulassungsbescheinigung Teil I, daneben eine Ein-Euro-Münze",
+          caption:
+            "Beispielbild: Unter der silbernen Abdeckung der ZB I kommt der Sicherheitscode zum Vorschein. Nach dem Freilegen gilt das Dokument als entwertet.",
+        },
+      },
+      {
+        heading: "Der Code unter der Kennzeichen-Plakette",
+        paragraphs: [
+          "Auch die Stempelplakette auf dem Kennzeichen trägt einen verdeckten Code. Die Plakette zeigt das Landeswappen sowie die Bezeichnung von Land und Zulassungsbehörde und ist so befestigt, dass sie beim Entfernen zerstört wird. Gebraucht werden die Plakettencodes vor allem bei der Online-Abmeldung und bei einem Kennzeichenwechsel – sie belegen dann die Entstempelung.",
+          "Wichtig: Sobald der Code einer Plakette sichtbar ist, gilt das Kennzeichen als ungestempelt (§ 21 Abs. 3 FZV). Mit dem Fahrzeug darf dann nicht mehr am Straßenverkehr teilgenommen werden. Legen Sie Plakettencodes deshalb erst frei, wenn das Auto auf privatem Grund steht und die Abmeldung wirklich erfolgen soll.",
+        ],
+        image: {
+          src: "/images/sicherheitscode-kennzeichen.webp",
+          alt: "Teilweise abgelöste Stempelplakette auf einem Kfz-Kennzeichen, darunter ein Zahlencode und ein Datamatrix-Code",
+          caption:
+            "Beispielbild: Unter der Stempelplakette liegt der Plakettencode. Jede Plakette hat ihren eigenen Code.",
+        },
+      },
+      {
+        heading: "Wann brauchen Sie welchen Code?",
+        paragraphs: [
+          "Die Codes sind ausschließlich für internetbasierte Verfahren gedacht, also für Vorgänge über das i-Kfz-Portal der Behörden. Am Schalter legen Sie die Originaldokumente und gegebenenfalls die Kennzeichen vor – freilegen müssen Sie dort nichts. Welche Codes ein Online-Vorgang verlangt, hängt vom Anlass ab (siehe Tabelle).",
+          "Nach Abschluss eines Online-Vorgangs sind die genutzten Dokumente entwertet; bei einer Zulassung kommen neue Papiere und Plaketten per Post. Nach einer Online-Abmeldung sollten Sie die entwertete ZB I trotzdem aufheben: Für eine spätere Wiederzulassung wird sie wieder gebraucht.",
+          "Der digitale Fahrzeugschein in der i-Kfz-App ändert daran nichts. Laut Kraftfahrt-Bundesamt ersetzt er im Zulassungsprozess die ZB I aus Papier nicht, weil nur das Papierdokument den Sicherheitscode enthält.",
+        ],
+        table: {
+          headers: ["Vorgang (online)", "Benötigte Codes"],
+          rows: [
+            ["Abmeldung", "ZB I und Plakettencodes der Kennzeichen"],
+            ["Halterwechsel / Umschreibung", "ZB I und ZB II"],
+            ["Kennzeichenwechsel", "zusätzlich Plakettencode des bisherigen Kennzeichens"],
+            ["Wiederzulassung", "ZB I, bei neuem Halter auch ZB II"],
+            ["Erstzulassung", "ZB II"],
+          ],
+        },
+      },
+      {
+        heading: "Alte Papiere ohne Code oder beschädigter Code – was nun?",
+        paragraphs: [
+          "Ältere Fahrzeugscheine und -briefe bleiben gültig, bis am Fahrzeug eine Änderung eingetragen wird, etwa ein Halterwechsel. Einen Sicherheitscode haben sie aber nicht. Fehlt das Codefeld, ist der jeweilige Vorgang über das i-Kfz-Portal nicht möglich; er läuft dann über die Zulassungsbehörde vor Ort oder über einen Zulassungsdienst mit Vollmacht.",
+          "Ein beschädigtes oder versehentlich freigelegtes Codefeld macht das Dokument ungültig. Wenden Sie sich in diesem Fall an Ihre Zulassungsbehörde. Für die ZB II sieht die Verordnung vor, dass bei Beschädigung eine neue Bescheinigung ausgestellt und die alte entwertet wird. Ist an einer Plakette der Code sichtbar geworden, klären Sie mit der Behörde, wie es weitergeht, bevor Sie wieder fahren.",
+          "Damit es gar nicht erst so weit kommt, helfen ein paar einfache Regeln:",
+        ],
+        list: [
+          "Codes erst freilegen, wenn der konkrete Vorgang unmittelbar ansteht",
+          "vorher prüfen, ob das Codefeld vorhanden und unbeschädigt ist",
+          "freigelegte Codes vollständig und gut lesbar fotografieren",
+          "entwertete Papiere aufbewahren, bis der Vorgang abgeschlossen ist",
+        ],
+      },
+      {
+        heading: "Sicherheitscodes und Zulassungsdienst",
+        paragraphs: [
+          `Wenn Sie DeutscheZulassung beauftragen, brauchen Sie keinen Personalausweis mit Online-Funktion. Sie senden Handyfotos Ihrer Unterlagen und erteilen uns eine Vollmacht; wir reichen den Vorgang bei der zuständigen Behörde ein, die über die Zulassung entscheidet. Für die Abmeldung genügen in der Regel Fotos der ZB I und der Plakettencodes. Sie kostet ${P.abmeldung} inklusive amtlicher Gebühren und ist meist am selben Werktag erledigt.`,
+          "Unsicher, ob Ihre Papiere einen Code haben oder ob Sie ihn schon freilegen sollten? Fragen Sie uns vorher – Montag bis Freitag von 8 bis 18 Uhr. Sie beauftragen über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Wo finde ich den Sicherheitscode im Fahrzeugschein?",
+        answer:
+          "Auf der Zulassungsbescheinigung Teil I liegt der Code unter einem verdeckten Feld mit dem Hinweis, es nur für internetbasierte Zulassungsverfahren freizulegen. Fehlt ein solches Feld, wurde Ihr Dokument vermutlich vor 2015 ausgestellt und hat keinen Code.",
+      },
+      {
+        question: "Darf ich den Sicherheitscode schon vorab freilegen?",
+        answer:
+          "Besser nicht. Das Freilegen ist unumkehrbar und entwertet das Dokument beziehungsweise die Plakette. Bei einer Plakette gilt das Kennzeichen danach als ungestempelt, das Auto darf nicht mehr fahren. Legen Sie Codes erst frei, wenn der Vorgang unmittelbar ansteht.",
+      },
+      {
+        question: "Brauche ich die Codes auch bei einem Termin in der Zulassungsstelle?",
+        answer:
+          "Nein. Die Sicherheitscodes sind für Online-Verfahren gedacht. Am Schalter legen Sie die Dokumente und gegebenenfalls die gestempelten Kennzeichen im Original vor.",
+      },
+      {
+        question: "Mein Fahrzeugbrief hat keinen Sicherheitscode – ist er ungültig?",
+        answer:
+          "Nein. Ältere Fahrzeugbriefe und Zulassungsbescheinigungen bleiben gültig, bis eine Änderung eingetragen wird. Ohne Code ist nur der Online-Weg über i-Kfz versperrt; der Vorgang lässt sich bei der Behörde oder über einen Zulassungsdienst erledigen.",
+      },
+      {
+        question: "Ersetzt der digitale Fahrzeugschein die Papiere?",
+        answer:
+          "Im Zulassungsprozess nicht. Nach Angaben des Kraftfahrt-Bundesamts enthält nur die Papierform der ZB I den Sicherheitscode. Für Online-Vorgänge brauchen Sie deshalb weiterhin das Papierdokument.",
+      },
+    ],
+    relatedServices: ["abmeldung", "halterwechsel", "ersatz-dokumente"],
+    relatedGuides: ["auto-abmelden-so-gehts", "i-kfz-online-zulassung", "auto-verkauft-abmelden", "kfz-zulassung-glossar"],
+    keywords: [
+      "Sicherheitscode Fahrzeugschein",
+      "Sicherheitscode Zulassungsbescheinigung Teil II",
+      "Sicherheitscode Kennzeichen Plakette",
+      "Zulassungsbescheinigung Teil I und II",
+      "Fahrzeugpapiere ohne Sicherheitscode",
+    ],
+    sources: [
+      { label: "Bundesministerium für Verkehr: Internetbasierte Fahrzeugzulassung (i-Kfz)", href: "https://www.bmv.de/SharedDocs/DE/Artikel/StV/Strassenverkehr/internetbasierte-fahrzeugzulassung.html" },
+      { label: "Kraftfahrt-Bundesamt: Zulassungsdokumente (Glossar)", href: "https://www.kba.de/SharedDocs/Glossareintraege/DE/Z/Zulassungsdokumente.html" },
+      { label: "Fahrzeug-Zulassungsverordnung (FZV), § 21 Sicherheitscodes", href: "https://www.gesetze-im-internet.de/fzv_2023/__21.html" },
+    ],
+  },
+
+  {
+    slug: "halterwechsel-nach-autokauf",
+    title: "Halterwechsel nach dem Autokauf: Pflichten und Ablauf",
+    description:
+      "Gebrauchtwagen gekauft? Was Käufer und Verkäufer beim Halterwechsel tun müssen, welche Unterlagen nötig sind und wie es mit Kennzeichen, eVB und Steuer läuft.",
+    datePublished: "2026-11-03",
+    dateModified: "2026-11-03",
+    sections: [
+      {
+        heading: "Wer muss nach dem Kauf was tun?",
+        paragraphs: [
+          "Mit dem Kauf eines Gebrauchtwagens wechselt nicht automatisch der Halter im Fahrzeugregister. Dafür muss das Fahrzeug auf Sie umgeschrieben werden. Die Fahrzeug-Zulassungsverordnung verteilt die Pflichten auf beide Seiten (§ 15 Abs. 5 FZV): Der Käufer beantragt die Umschreibung, der Verkäufer meldet den Verkauf – es sei denn, der Käufer hat seine Pflichten bereits erfüllt.",
+        ],
+        table: {
+          headers: ["Wer", "Was ist zu tun?"],
+          rows: [
+            ["Käufer", "bei der Zulassungsbehörde des eigenen Wohnsitzes oder Firmensitzes die Umschreibung beantragen: neue Halterdaten melden, neue ZB I mit Versicherungsnachweis beantragen, ZB II vorlegen, neues Kennzeichen beantragen oder das bisherige weiterführen"],
+            ["Verkäufer", "den Verkauf der Zulassungsbehörde mitteilen – mit Kennzeichen, Name und Anschrift des Käufers sowie dessen Bestätigung, die Zulassungsbescheinigung erhalten zu haben"],
+            ["Beide", "Kaufvertrag schriftlich festhalten, Papiere und Schlüssel vollständig übergeben, den Verkauf der Kfz-Versicherung anzeigen (einer von beiden genügt)"],
+          ],
+        },
+      },
+      {
+        heading: "Gibt es eine feste Frist für die Umschreibung?",
+        paragraphs: [
+          "Eine Frist in Tagen nennt die Verordnung nicht. Käufer und Verkäufer müssen ihren Pflichten „unverzüglich“ nachkommen, also ohne schuldhaftes Zögern. Praktisch heißt das: Kümmern Sie sich direkt nach der Übergabe um die Umschreibung, sobald eVB-Nummer und Unterlagen beisammen sind.",
+          "Wer das verschleppt, riskiert mehr als Ärger mit dem Verkäufer. Bleibt die Umschreibung aus, kann die Zulassungsbehörde selbst tätig werden; am Ende kann die Zulassung erlöschen. Und solange Sie nicht als Halter eingetragen sind, läuft die Kfz-Steuer weiter auf den Verkäufer – ein häufiger Anlass für Rückfragen zwischen den Parteien.",
+        ],
+      },
+      {
+        heading: "Diese Unterlagen brauchen Sie",
+        paragraphs: [
+          "Für die Umschreibung eines noch zugelassenen Gebrauchtwagens verlangen die Zulassungsbehörden typischerweise die folgenden Unterlagen. Ein Kaufvertrag ist nicht überall Pflicht, als Nachweis für beide Seiten aber dringend zu empfehlen. Beachten Sie außerdem: Offene Kfz-Steuer- oder Gebührenrückstände des neuen Halters können eine Umschreibung blockieren.",
+        ],
+        list: [
+          "Zulassungsbescheinigung Teil I und Teil II vom Verkäufer",
+          "Personalausweis, alternativ Reisepass mit Meldebescheinigung",
+          "eVB-Nummer Ihrer Kfz-Versicherung, ausgestellt auf Sie als künftigen Halter",
+          "SEPA-Lastschriftmandat für die Kfz-Steuer",
+          "gültige Hauptuntersuchung – einen Prüfbericht nur, wenn die nächste HU nicht aus der ZB I hervorgeht",
+          "bei Vertretung: Vollmacht mit Ausweis des Vollmachtgebers",
+          "bei Firmen zusätzlich Handelsregisterauszug bzw. Gewerbeanmeldung",
+        ],
+      },
+      {
+        heading: "Kennzeichen übernehmen oder neue Schilder?",
+        paragraphs: [
+          "Seit dem 1. Oktober 2019 können Sie das bisherige Kennzeichen beim Halterwechsel bundesweit übernehmen – auch wenn Sie in einem anderen Zulassungsbezirk wohnen als der Verkäufer. Voraussetzung ist, dass das Auto noch zugelassen ist. Wurde es bereits abgemeldet, erhalten Sie in der Regel ein neues Kennzeichen.",
+          `Die Übernahme spart neue Schilder und deren Montage. Neue Kennzeichen lohnen sich, wenn Sie lieber das Kürzel Ihres Wohnorts fahren, ein Wunschkennzeichen möchten oder die alten Schilder beschädigt sind. Bei DeutscheZulassung legen Sie das bei der Beauftragung fest: Schilder liefern wir auf Wunsch für ${P.kennzeichen} pro Paar mit, alternativ lassen Sie sie beim Schildermacher prägen oder behalten das bisherige Kennzeichen.`,
+        ],
+      },
+      {
+        heading: "Versicherung, eVB und Kfz-Steuer",
+        paragraphs: [
+          "Für die Umschreibung brauchen Sie eine eVB-Nummer, deren Daten zu Ihnen als neuem Halter passen. Eine eVB auf den Namen einer anderen Person funktioniert nur, wenn der Versicherer einen abweichenden Halter ausdrücklich zulässt.",
+          "Rechtlich geht die bestehende Kfz-Versicherung des Verkäufers mit dem Verkauf zunächst auf Sie über (§§ 95, 122 VVG). Sie können diesen Vertrag innerhalb eines Monats nach dem Erwerb kündigen (§ 96 VVG). Der Verkauf ist dem Versicherer unverzüglich anzuzeigen; das kann der Verkäufer oder der Käufer übernehmen (§ 97 VVG). Die Verkaufsmeldung an die Zulassungsbehörde ersetzt diese Anzeige nicht.",
+          "Die Kfz-Steuer des Verkäufers endet laut Zoll mit dem Datum der Umschreibung auf Sie; ab dann sind Sie steuerpflichtig. Eingezogen wird sie vom Hauptzollamt per SEPA-Lastschrift. Die Zulassungsbehörde übermittelt die Daten selbst – einen eigenen Antrag beim Zoll müssen Sie nicht stellen.",
+        ],
+      },
+      {
+        heading: "Typische Fehler beim Halterwechsel",
+        paragraphs: [
+          "Die meisten Verzögerungen entstehen durch Kleinigkeiten, die sich vorab leicht prüfen lassen:",
+        ],
+        list: [
+          "ZB II nicht übergeben – ohne Fahrzeugbrief keine Umschreibung",
+          "eVB auf eine andere Person ausgestellt als den künftigen Halter",
+          "HU abgelaufen oder Fälligkeit nicht aus den Papieren ersichtlich",
+          "Ausweis mit alter Adresse ohne aktuelle Meldebescheinigung",
+          "Sicherheitscodes vorschnell freigelegt, obwohl der Vorgang nicht online läuft",
+          "mit den Kennzeichen des Verkäufers weitergefahren, ohne Versicherung und Haftung schriftlich zu klären",
+        ],
+      },
+      {
+        heading: "Umschreibung ohne Behördentermin",
+        paragraphs: [
+          "Sie können die Umschreibung auch DeutscheZulassung übertragen. Sie beauftragen über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung. Handyfotos der Unterlagen genügen für den Start, eine Vollmacht regelt die Vertretung bei der Behörde, und einen Personalausweis mit Online-Funktion brauchen Sie nicht.",
+          `Der Halterwechsel kostet ${P.zulassung} inklusive amtlicher Gebühren und Versand. In der Regel ist er 1–3 Werktage nach Eingang der vollständigen Unterlagen erledigt, dazu kommt die Versanddauer. Über die Zulassung selbst entscheidet die Behörde.`,
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Wie schnell muss ich ein gekauftes Auto umschreiben?",
+        answer:
+          "Die FZV verlangt, dass Sie die Umschreibung unverzüglich beantragen. Eine feste Tagesfrist nennt sie nicht. Erledigen Sie es direkt nach dem Kauf – auch im Interesse des Verkäufers, für den sonst die Kfz-Steuer weiterläuft.",
+      },
+      {
+        question: "Muss der Verkäufer den Verkauf melden, wenn ich umschreibe?",
+        answer:
+          "Seine Meldepflicht entfällt, wenn der Käufer seine Pflichten bereits erfüllt hat. Da der Verkäufer meist nicht weiß, wann Sie umschreiben, ist eine zeitnahe Verkaufsmeldung für ihn trotzdem sinnvoll.",
+      },
+      {
+        question: "Kann ich das Kennzeichen des Verkäufers behalten?",
+        answer:
+          "Ja, seit Oktober 2019 bundesweit, solange das Fahrzeug noch zugelassen ist. Sie geben bei der Umschreibung an, dass Sie das bisherige Kennzeichen weiterführen möchten.",
+      },
+      {
+        question: "Brauche ich für die Umschreibung einen Kaufvertrag?",
+        answer:
+          "Nicht jede Behörde verlangt ihn. Für beide Seiten ist er trotzdem wichtig: Er dokumentiert Zeitpunkt der Übergabe, Kilometerstand und übergebene Papiere – und hilft, wenn später Fragen zu Bußgeldern oder Steuer auftauchen.",
+      },
+      {
+        question: "Was kostet ein Halterwechsel?",
+        answer:
+          `Die amtlichen Gebühren hängen von Behörde, Verfahren und Kennzeichenwahl ab; neue Schilder kommen gegebenenfalls dazu. Über DeutscheZulassung kostet der Halterwechsel ${P.zulassung} inklusive amtlicher Gebühren und Versand, neue Schilder auf Wunsch zzgl. ${P.kennzeichen}.`,
+      },
+    ],
+    relatedServices: ["halterwechsel", "wunschkennzeichen", "kurzzeitkennzeichen"],
+    relatedGuides: ["auto-verkauft-abmelden", "kennzeichen-mitnehmen", "evb-nummer", "fahrzeugpapiere-sicherheitscodes"],
+    keywords: [
+      "Halterwechsel Auto",
+      "Auto umschreiben nach Kauf",
+      "Gebrauchtwagen ummelden",
+      "Umschreibung Unterlagen",
+      "Halterwechsel Frist",
+    ],
+    sources: [
+      { label: "Fahrzeug-Zulassungsverordnung (FZV), § 15 Mitteilungspflichten bei Änderungen", href: "https://www.gesetze-im-internet.de/fzv_2023/__15.html" },
+      { label: "Zoll: Beginn und Ende der Kfz-Steuerpflicht", href: "https://www.zoll.de/DE/Privatpersonen/Kraftfahrzeugsteuer/Beginn-und-Ende-der-Steuerpflicht/beginn-und-ende-der-steuerpflicht_node.html" },
+      { label: "Service Berlin: Kraftfahrzeug – Umschreibung beantragen", href: "https://service.berlin.de/dienstleistung/329036/" },
+      { label: "Bundesministerium für Verkehr: Überblick über die Kraftfahrzeugkennzeichen", href: "https://www.bmv.de/SharedDocs/DE/Artikel/StV/Strassenverkehr/ueberblick-ueber-die-kraftfahrzeugkennzeichen" },
+    ],
+  },
+
+  {
+    slug: "auto-verkauft-abmelden",
+    title: "Auto verkauft: abmelden oder angemeldet übergeben?",
+    description:
+      "Vor dem Verkauf abmelden oder angemeldet übergeben? Vor- und Nachteile, Pflichten des Verkäufers, Verkaufsmeldung, Kaufvertrag und Kurzzeitkennzeichen.",
+    datePublished: "2026-11-03",
+    dateModified: "2026-11-03",
+    sections: [
+      {
+        heading: "Zwei Wege beim Autoverkauf",
+        paragraphs: [
+          "Wer sein Auto privat verkauft, steht vor einer Grundsatzfrage: Melden Sie es vor der Übergabe ab, oder übergeben Sie es zugelassen und überlassen die Umschreibung dem Käufer? Beides ist erlaubt. Die Wege unterscheiden sich darin, wie lange Sie noch als Halter im Register stehen – und damit, wer für Steuer, Versicherung und mögliche Verkehrsverstöße angesprochen wird.",
+          "Dieser Artikel hilft bei der Entscheidung. Wie die Abmeldung selbst abläuft und welche Unterlagen dafür nötig sind, lesen Sie im Ratgeber „Auto abmelden: So geht es“.",
+        ],
+        table: {
+          headers: ["Kriterium", "Vor dem Verkauf abmelden", "Angemeldet verkaufen"],
+          rows: [
+            ["Kfz-Steuer", "endet mit der Abmeldung", "läuft bis zur Umschreibung durch den Käufer auf Sie weiter"],
+            ["Versicherung", "Beiträge enden mit der Abmeldung", "Vertrag geht auf den Käufer über, die laufende Prämie schulden beide gemeinsam"],
+            ["Fahrten des Käufers", "erst nach neuer Zulassung oder mit Kurzzeitkennzeichen", "sofort möglich – Sie bleiben aber eingetragener Halter"],
+            ["Ihr Aufwand", "Abmeldung vor der Übergabe", "Verkaufsmeldung an die Behörde, Anzeige an die Versicherung"],
+          ],
+        },
+      },
+      {
+        heading: "Variante 1: Vor dem Verkauf abmelden",
+        paragraphs: [
+          "Die Abmeldung vor der Übergabe ist der Weg mit dem klarsten Schnitt. Ab dem Tag der Außerbetriebsetzung zahlen Sie weder Kfz-Steuer noch Versicherungsbeiträge, und mit Ihrem Kennzeichen kann niemand mehr fahren. Eine Verkaufsmeldung an die Behörde entfällt, weil die Meldepflicht für bereits abgemeldete Fahrzeuge nicht gilt.",
+          "Der Nachteil liegt beim Käufer: Ein abgemeldetes Auto darf nicht am öffentlichen Straßenverkehr teilnehmen. Für Probefahrt und Heimweg braucht er ein Kurzzeitkennzeichen, einen Transport auf dem Anhänger oder eine Zulassung auf seinen Namen, bevor er das Auto abholt. Planen Sie das bei Preisverhandlung und Übergabetermin mit ein.",
+          `Übergeben Sie dem Käufer alle Papiere: beide Teile der Zulassungsbescheinigung – auch eine nach der Online-Abmeldung entwertete ZB I, denn sie wird für die spätere Wiederzulassung gebraucht – sowie die Abmeldebestätigung. Die Abmeldung selbst übernimmt DeutscheZulassung für ${P.abmeldung} inklusive amtlicher Gebühren, meist noch am selben Werktag.`,
+        ],
+      },
+      {
+        heading: "Variante 2: Angemeldet verkaufen mit Verkaufsmeldung",
+        paragraphs: [
+          "Übergeben Sie das Auto zugelassen, kann der Käufer sofort losfahren und das Fahrzeug anschließend auf sich umschreiben – auf Wunsch mit Ihrem bisherigen Kennzeichen. Für Sie bedeutet das: Bis zur Umschreibung stehen Sie weiterhin als Halter im Register.",
+          "Die Fahrzeug-Zulassungsverordnung verpflichtet Sie als Verkäufer, den Verkauf unverzüglich der Zulassungsbehörde mitzuteilen, sofern der Käufer nicht bereits umgeschrieben hat (§ 15 Abs. 5 FZV). Die Mitteilung, oft Veräußerungsanzeige genannt, muss enthalten:",
+        ],
+        list: [
+          "das Kennzeichen des Fahrzeugs",
+          "Vor- und Familienname sowie vollständige Anschrift des Käufers",
+          "die Bestätigung des Käufers, dass er die Zulassungsbescheinigung erhalten hat",
+        ],
+      },
+      {
+        heading: "Was die Verkaufsmeldung nicht leistet",
+        paragraphs: [
+          "Die Verkaufsmeldung ist wichtig, regelt aber nicht alles. Die Kfz-Steuer läuft weiter, bis der Käufer das Auto auf sich umgeschrieben hat oder es außer Betrieb gesetzt ist – maßgeblich ist laut Zoll das Datum der Umschreibung. Schreibt der Käufer nicht um, kann die Zulassungsbehörde tätig werden, und am Ende kann die Zulassung erlöschen. Bis dahin vergeht jedoch Zeit.",
+          "Auch Ihre Versicherung erfährt über die Behörde nichts. Den Verkauf müssen Sie oder der Käufer dem Versicherer selbst anzeigen, und zwar unverzüglich (§ 97 VVG). Der Vertrag geht mit dem Verkauf auf den Käufer über; für die Prämie der laufenden Versicherungsperiode haften Sie und der Käufer gemeinsam (§ 95 VVG).",
+          "Viele Zulassungsbehörden stellen für die Verkaufsmeldung ein eigenes Formular bereit; in Berlin etwa geht sie online und ist gebührenfrei. Bewahren Sie eine Kopie der Meldung samt Sendebestätigung auf.",
+        ],
+      },
+      {
+        heading: "Der Kaufvertrag als Absicherung",
+        paragraphs: [
+          "Unabhängig vom gewählten Weg gehört jeder Privatverkauf in einen schriftlichen Kaufvertrag. Beim angemeldeten Verkauf ist er Ihr wichtigster Beleg, wenn später Post zu Parkverstößen, Blitzerfotos oder Steuer eintrifft. Halten Sie mindestens fest:",
+        ],
+        list: [
+          "Datum und Uhrzeit der Übergabe",
+          "Kennzeichen, Fahrzeug-Identifizierungsnummer und Kilometerstand",
+          "Name, Anschrift und Ausweisnummer des Käufers",
+          "übergebene Papiere und Anzahl der Schlüssel",
+          "ob das Fahrzeug abgemeldet oder zugelassen übergeben wird",
+          "bei zugelassener Übergabe die Zusage des Käufers, unverzüglich umzuschreiben",
+        ],
+      },
+      {
+        heading: "Kurzzeitkennzeichen: So kommt der Käufer nach Hause",
+        paragraphs: [
+          "Haben Sie vor dem Verkauf abgemeldet, ist das Kurzzeitkennzeichen für den Käufer die naheliegende Lösung. Es ist für Probe- und Überführungsfahrten gedacht, gilt nur für das Fahrzeug, für das es zugeteilt wurde, und läuft spätestens am Ende des fünften Tages nach der Zuteilung ab (§ 42 FZV). Voraussetzung sind eine Haftpflichtversicherung – in der Praxis eine eigene eVB für Kurzzeitkennzeichen – und grundsätzlich eine gültige Hauptuntersuchung. Ohne HU sind nur eng begrenzte Fahrten erlaubt, etwa zur Prüfstelle.",
+          `Alternativ lässt der Käufer das Auto mit den übergebenen Papieren direkt auf sich zu und holt es mit gestempelten Kennzeichen ab. Auch das kann er über DeutscheZulassung erledigen: Die Wiederzulassung auf den neuen Halter kostet ${P.zulassung} inklusive amtlicher Gebühren und Versand; Kurzzeitkennzeichen organisieren wir auf Anfrage. Sie beauftragen über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung.`,
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Muss ich mein Auto vor dem Verkauf abmelden?",
+        answer:
+          "Nein. Sie dürfen es auch zugelassen übergeben. Dann müssen Sie den Verkauf aber unverzüglich der Zulassungsbehörde melden, und die Kfz-Steuer läuft bis zur Umschreibung durch den Käufer weiter auf Sie.",
+      },
+      {
+        question: "Endet meine Steuerpflicht mit der Verkaufsmeldung?",
+        answer:
+          "Nein. Maßgeblich ist das Datum der Umschreibung auf den Käufer oder die Abmeldung. Die Verkaufsmeldung sorgt vor allem dafür, dass die Behörde den Käufer kennt und tätig werden kann, falls er nicht umschreibt.",
+      },
+      {
+        question: "Was muss in der Veräußerungsanzeige stehen?",
+        answer:
+          "Das Kennzeichen, Vor- und Familienname sowie vollständige Anschrift des Käufers und seine Bestätigung, die Zulassungsbescheinigung erhalten zu haben. Viele Zulassungsbehörden bieten dafür ein eigenes Formular an.",
+      },
+      {
+        question: "Muss ich meiner Versicherung den Verkauf melden?",
+        answer:
+          "Ja. Die Zulassungsbehörde leitet die Verkaufsmeldung nicht an den Versicherer weiter. Zeigen Sie den Verkauf deshalb selbst unverzüglich an – das kann auch der Käufer übernehmen.",
+      },
+      {
+        question: "Was kann ich tun, wenn der Käufer nicht umschreibt?",
+        answer:
+          "Haben Sie den Verkauf gemeldet, kann die Zulassungsbehörde gegenüber dem neuen Eigentümer tätig werden. Halten Sie Kaufvertrag und Meldung bereit und fragen Sie bei der Behörde nach. Mit einer Abmeldung vor der Übergabe vermeiden Sie dieses Risiko von vornherein.",
+      },
+    ],
+    relatedServices: ["abmeldung", "kurzzeitkennzeichen", "wiederzulassung"],
+    relatedGuides: ["auto-abmelden-so-gehts", "halterwechsel-nach-autokauf", "fahrzeugpapiere-sicherheitscodes"],
+    keywords: [
+      "Auto verkauft abmelden",
+      "Auto angemeldet verkaufen",
+      "Veräußerungsanzeige",
+      "Verkaufsmeldung Zulassungsstelle",
+      "Kurzzeitkennzeichen Käufer",
+    ],
+    sources: [
+      { label: "Fahrzeug-Zulassungsverordnung (FZV), § 15 Mitteilungspflichten bei Änderungen", href: "https://www.gesetze-im-internet.de/fzv_2023/__15.html" },
+      { label: "Service Berlin: Verkauf des Kraftfahrzeugs oder Anhängers melden", href: "https://service.berlin.de/dienstleistung/120900/" },
+      { label: "Fahrzeug-Zulassungsverordnung (FZV), § 42 Kurzzeitkennzeichen", href: "https://www.gesetze-im-internet.de/fzv_2023/__42.html" },
+      { label: "Zoll: Beginn und Ende der Kfz-Steuerpflicht", href: "https://www.zoll.de/DE/Privatpersonen/Kraftfahrzeugsteuer/Beginn-und-Ende-der-Steuerpflicht/beginn-und-ende-der-steuerpflicht_node.html" },
+    ],
+  },
+
+  {
+    slug: "wunschkennzeichen-reservieren",
+    title: "Wunschkennzeichen reservieren: Regeln, Kosten, Fristen",
+    description:
+      "So reservieren Sie ein Wunschkennzeichen: erlaubte Kombinationen und Längen, amtliche Gebühr, Dauer der Reservierung und was beim Umzug zu beachten ist.",
+    datePublished: "2026-11-03",
+    dateModified: "2026-11-03",
+    sections: [
+      {
+        heading: "So ist ein Kfz-Kennzeichen aufgebaut",
+        paragraphs: [
+          "Jedes Kennzeichen besteht aus zwei Teilen. Vorn steht das Unterscheidungszeichen mit einem bis drei Buchstaben für den Verwaltungsbezirk, etwa B für Berlin oder HH für Hamburg. Dahinter folgt die Erkennungsnummer, die das einzelne Fahrzeug bezeichnet. Ihr Wunsch bezieht sich auf diese Erkennungsnummer; das Unterscheidungszeichen hängt von Ihrem Zulassungsbezirk ab.",
+          "Die Erkennungsnummer besteht aus einem oder zwei Buchstaben und einer Zahl mit bis zu vier Ziffern. Zulässig sind alle Buchstaben außer den Umlauten Ä, Ö und Ü. Die Verordnung teilt die möglichen Kombinationen in fünf Gruppen ein (Anlage 1 FZV):",
+        ],
+        table: {
+          headers: ["Gruppe", "Bereich"],
+          rows: [
+            ["Ein Buchstabe, bis drei Ziffern", "A 1 bis Z 999"],
+            ["Zwei Buchstaben, bis zwei Ziffern", "AA 1 bis ZZ 99"],
+            ["Zwei Buchstaben, drei Ziffern", "AA 100 bis ZZ 999"],
+            ["Ein Buchstabe, vier Ziffern", "A 1000 bis Z 9999"],
+            ["Zwei Buchstaben, vier Ziffern", "AA 1000 bis ZZ 9999"],
+          ],
+        },
+      },
+      {
+        heading: "Wie lang darf ein Kennzeichen sein?",
+        paragraphs: [
+          "Unterscheidungszeichen und Erkennungsnummer dürfen zusammen höchstens acht Stellen haben; gezählt werden alle Buchstaben und Ziffern (Anlage 4 FZV). Das schränkt die Auswahl vor allem in Bezirken mit dreistelligem Kürzel ein: Zwei Buchstaben und vier Ziffern ergäben dort neun Stellen und sind deshalb nicht möglich. Die Kennbuchstaben E für Elektrofahrzeuge und H für Oldtimer werden nicht mitgezählt.",
+          "Für Saison-, E- und H-Kennzeichen sowie für bestimmte kleinere Schildformate gelten teils strengere Grenzen. Wenn Sie eines dieser Kennzeichen planen, fragen Sie vor der Reservierung nach, ob Ihre Wunschkombination darauf passt.",
+        ],
+      },
+      {
+        heading: "Welche Kombinationen sind ausgeschlossen?",
+        paragraphs: [
+          "Einen Anspruch auf eine ganz bestimmte Kombination gibt es nicht – zugeteilt wird, was frei ist und den Regeln entspricht. Die Fahrzeug-Zulassungsverordnung schließt Kombinationen aus, die gegen die guten Sitten verstoßen (§ 9 FZV). Was das konkret bedeutet, setzen die Zulassungsbehörden in ihrer Vergabepraxis um.",
+          "Die Stadt Köln zum Beispiel vergibt die Buchstabenkombinationen HJ, KZ, NS, SA, SS und ZZ sowie den Einzelbuchstaben Z nicht. Dort sind außerdem bestimmte Nummernbereiche für Taxen und die Stadtverwaltung vorgesehen, und sehr kurze Kennzeichen mit zwei oder drei Zeichen lassen sich nicht vorab reservieren. Andere Behörden können eigene Einschränkungen haben – maßgeblich ist die Auskunft Ihrer Zulassungsstelle.",
+        ],
+      },
+      {
+        heading: "Reservierung: So gehen Sie vor",
+        paragraphs: [
+          "Reserviert wird bei der Zulassungsbehörde, die für Ihren Hauptwohnsitz oder – bei Unternehmen – für Sitz oder Niederlassung zuständig ist. Viele Behörden bieten dafür ein Online-Portal an, in dem Sie die Verfügbarkeit direkt prüfen. Stellen Sie die Reservierung auf die Person oder Firma aus, auf die das Fahrzeug später zugelassen wird; in Hamburg etwa ist eine Reservierung nicht auf andere übertragbar.",
+        ],
+        list: [
+          "Wunschkombination und zwei oder drei Alternativen überlegen",
+          "Verfügbarkeit im Reservierungsportal der zuständigen Behörde prüfen",
+          "Reservierung auf den Namen des künftigen Halters abschließen",
+          "Reservierungsbestätigung aufbewahren – sie wird bei der Zulassung gebraucht",
+          "Zulassung innerhalb der Reservierungsfrist durchführen",
+        ],
+      },
+      {
+        heading: "Amtliche Gebühr und Reservierungsfrist",
+        paragraphs: [
+          "Die amtlichen Gebühren sind bundesweit in der Gebührenordnung für Maßnahmen im Straßenverkehr (GebOSt) festgelegt: 2,60 € für die Reservierung und ein Zuschlag von 10,20 € für die Zuteilung des Wunschkennzeichens – zusammen 12,80 €. Hinzu kommen die übliche Zulassungsgebühr und die Kennzeichenschilder.",
+          "Wie lange eine Reservierung gilt, regelt jede Behörde selbst, und die Spanne ist groß: In Hamburg sind es 14 Tage, in Köln 183 Tage ab der Online-Reservierung. Läuft die Frist ohne Zulassung ab, wird die Kombination wieder frei und kann an andere vergeben werden. Wer sie weiter möchte, muss neu reservieren.",
+          "Reservieren Sie deshalb erst, wenn die Zulassung absehbar ist – etwa sobald eVB-Nummer und Fahrzeugpapiere vorliegen.",
+        ],
+      },
+      {
+        heading: "Wunschkennzeichen bei Umzug und Kennzeichenmitnahme",
+        paragraphs: [
+          "Ein bereits zugeteiltes Wunschkennzeichen dürfen Sie beim Umzug behalten: Seit 2015 müssen Fahrzeuge bei einem Wohnsitzwechsel innerhalb Deutschlands nicht mehr umgekennzeichnet werden. Seit Oktober 2019 gilt das auch beim Halterwechsel – ein Käufer kann Ihr Wunschkennzeichen also übernehmen. Voraussetzung ist jeweils, dass das Fahrzeug zugelassen bleibt.",
+          "Anders sieht es bei Reservierungen aus. Eine Reservierung aus dem alten Zulassungsbezirk können Sie nicht in den neuen mitnehmen, und die Reservierung für ein abgemeldetes Fahrzeug verfällt bei einem Umzug. Möchten Sie nach dem Umzug ein Wunschkennzeichen mit dem neuen Ortskürzel, reservieren Sie es bei der Behörde Ihres neuen Wohnorts und verbinden es mit der Ummeldung.",
+        ],
+      },
+      {
+        heading: "Wunschkennzeichen über DeutscheZulassung",
+        paragraphs: [
+          "Sie können das Wunschkennzeichen als Zusatz zu einer Neuzulassung, Umschreibung, Ummeldung oder Wiederzulassung bei DeutscheZulassung buchen. Wir prüfen die Verfügbarkeit, reservieren die Kombination und kümmern uns im Rahmen der Zulassung um die Zuteilung. Nennen Sie uns dafür am besten zwei oder drei Alternativen.",
+          `${wunschkennzeichenHinweis} Hinzu kommt der Preis der jeweiligen Zulassung; Schilder liefern wir auf Wunsch für ${P.kennzeichen} pro Paar mit. Sie beauftragen über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung.`,
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Was kostet ein Wunschkennzeichen?",
+        answer:
+          `Die amtliche Gebühr beträgt bundesweit 12,80 € (2,60 € Reservierung plus 10,20 € Zuteilung), dazu kommen Zulassungsgebühr und Schilder. Über DeutscheZulassung kostet der Wunschkennzeichen-Service ${P.wunschkennzeichen}, die amtliche Gebühr ist darin enthalten.`,
+      },
+      {
+        question: "Wie lange ist ein reserviertes Wunschkennzeichen gültig?",
+        answer:
+          "Das legt jede Zulassungsbehörde selbst fest. Die Spanne reicht von wenigen Wochen bis zu mehreren Monaten – in Hamburg sind es 14 Tage, in Köln 183 Tage. Prüfen Sie die Frist bei Ihrer Behörde, bevor Sie reservieren.",
+      },
+      {
+        question: "Wie viele Zeichen darf mein Kennzeichen haben?",
+        answer:
+          "Höchstens acht Stellen aus Unterscheidungszeichen und Erkennungsnummer zusammen. Die Erkennungsnummer hat ein oder zwei Buchstaben und bis zu vier Ziffern; die Kennbuchstaben E und H zählen nicht mit.",
+      },
+      {
+        question: "Kann ich ein Wunschkennzeichen in einer anderen Stadt reservieren?",
+        answer:
+          "Nein. Die Reservierung läuft über die Behörde, die für Ihren Wohnsitz bzw. Firmensitz oder Niederlassung zuständig ist. Eine Reservierung aus einem anderen Bezirk lässt sich bei einem Umzug nicht mitnehmen.",
+      },
+      {
+        question: "Darf ich mein Wunschkennzeichen beim Umzug behalten?",
+        answer:
+          "Ja. Seit 2015 ist bei einem Umzug innerhalb Deutschlands keine Umkennzeichnung mehr nötig. Sie melden die neue Adresse, das Kennzeichen bleibt – solange das Fahrzeug zugelassen ist.",
+      },
+    ],
+    relatedServices: ["wunschkennzeichen", "neuzulassung", "ummeldung"],
+    relatedGuides: ["kennzeichen-mitnehmen", "auto-ummelden-nach-umzug", "was-kostet-eine-kfz-zulassung", "halterwechsel-nach-autokauf"],
+    keywords: [
+      "Wunschkennzeichen reservieren",
+      "Wunschkennzeichen Kosten",
+      "Wunschkennzeichen Reservierung Dauer",
+      "Kennzeichen maximale Länge",
+      "Wunschkennzeichen Umzug",
+    ],
+    sources: [
+      { label: "Bundesministerium für Verkehr: Überblick über die Kraftfahrzeugkennzeichen", href: "https://www.bmv.de/SharedDocs/DE/Artikel/StV/Strassenverkehr/ueberblick-ueber-die-kraftfahrzeugkennzeichen" },
+      { label: "Fahrzeug-Zulassungsverordnung (FZV), § 9 Zuteilung von Kennzeichen", href: "https://www.gesetze-im-internet.de/fzv_2023/__9.html" },
+      { label: "Gebührenordnung für Maßnahmen im Straßenverkehr (GebOSt)", href: "https://www.gesetze-im-internet.de/stgebo_2011/" },
+      { label: "Stadt Köln: Wunschkennzeichen", href: "https://www.stadt-koeln.de/service/produkte/00741/index.html" },
+    ],
+  },
+
+  {
+    slug: "fahrzeugzulassung-unternehmen",
+    title: "Fahrzeugzulassung für Unternehmen: Unterlagen & Ablauf",
+    description:
+      "Firmenwagen zulassen: welche Unterlagen Einzelunternehmen und GmbH brauchen, wie die Vollmacht funktioniert und wie Fuhrparks ihre Zulassungen bündeln.",
+    datePublished: "2026-11-03",
+    dateModified: "2026-11-03",
+    sections: [
+      {
+        heading: "Auf wen wird das Fahrzeug zugelassen?",
+        paragraphs: [
+          "Bevor es um Unterlagen geht, steht eine Grundfrage: Wer wird Halter? Die Fahrzeug-Zulassungsverordnung unterscheidet zwischen natürlichen Personen, juristischen Personen und rechtsfähigen Vereinigungen (§ 6 Abs. 1 FZV). Davon hängt ab, welcher Name in der Zulassungsbescheinigung steht und welche Nachweise die Behörde verlangt.",
+          "Örtlich zuständig ist bei Unternehmen die Zulassungsbehörde am Sitz oder am Ort der beteiligten Niederlassung (§ 75 FZV). Bei mehreren Standorten kommt es also darauf an, über welche Niederlassung das Fahrzeug läuft.",
+        ],
+      },
+      {
+        heading: "Einzelunternehmen und GmbH im Vergleich",
+        paragraphs: [
+          "Ein Einzelunternehmen hat keine eigene Rechtspersönlichkeit. Das Fahrzeug wird deshalb auf die Inhaberin oder den Inhaber als Person zugelassen – das gilt auch für eingetragene Kaufleute (e. K.). Je nach Behörde lässt sich der Firmenname als Zusatz eintragen und die Betriebsanschrift verwenden. Eine GmbH oder UG ist dagegen selbst Halterin: In der Zulassungsbescheinigung stehen ihr Name und die Geschäftsanschrift laut Handelsregister.",
+          "Eine Sonderrolle hat die GmbH in Gründung. Solange der Eintrag im Handelsregister fehlt, wird das Fahrzeug auf eine dahinterstehende Person zugelassen. Wer die Zulassung auf die neue Gesellschaft plant, wartet sinnvollerweise den Registereintrag ab.",
+        ],
+        table: {
+          headers: ["Punkt", "Einzelunternehmen", "GmbH / UG"],
+          rows: [
+            ["Halter in der ZB I", "Inhaberin bzw. Inhaber als Person", "die Gesellschaft"],
+            ["Registernachweis", "Gewerbeanmeldung (e. K.: Handelsregisterauszug)", "aktueller Handelsregisterauszug, je nach Behörde zusätzlich Gewerbeanmeldung"],
+            ["Ausweis", "Ausweis der Inhaberin bzw. des Inhabers", "Ausweis einer vertretungsberechtigten Person"],
+            ["Bei Vertretung", "Vollmacht und Ausweis der bevollmächtigten Person", "Vollmacht der Gesellschaft und Ausweis der bevollmächtigten Person"],
+          ],
+        },
+      },
+      {
+        heading: "Die Unterlagen im Detail",
+        paragraphs: [
+          "Zusätzlich zu den Nachweisen der Rechtsform braucht jede Firmenzulassung die üblichen Fahrzeugunterlagen. Die genauen Anforderungen unterscheiden sich von Behörde zu Behörde, etwa beim zulässigen Alter des Registerauszugs oder bei der Frage, ob Kopien genügen. Typisch sind:",
+        ],
+        list: [
+          "Handelsregisterauszug in aktueller Fassung (z. B. GmbH, UG, AG, OHG, KG, e. K.)",
+          "Gewerbeanmeldung bei Einzelunternehmen – Freiberufler ohne Gewerbe weisen ihre Tätigkeit anders nach, etwa per Bestätigung des Finanzamts",
+          "Personalausweis oder Reisepass der vertretungsberechtigten Person, bei Vertretung als Kopie",
+          "Vollmacht, unterschrieben von einer vertretungsberechtigten Person, plus Ausweis der bevollmächtigten Person",
+          "eVB-Nummer passend zu den Halterdaten – bei der GmbH also auf die Gesellschaft",
+          "SEPA-Lastschriftmandat für die Kfz-Steuer",
+          "Zulassungsbescheinigung Teil I und II bzw. CoC-Papier, gegebenenfalls HU-Nachweis",
+        ],
+      },
+      {
+        heading: "Vollmacht: Wer darf für die Firma unterschreiben?",
+        paragraphs: [
+          "Eine GmbH handelt durch ihre Geschäftsführung. Erscheint nicht die Geschäftsführerin oder der Geschäftsführer selbst, braucht die beauftragte Person eine schriftliche Vollmacht der Gesellschaft. Aus dem Handelsregisterauszug geht hervor, wer vertretungsberechtigt ist – deshalb gehören Vollmacht, Ausweiskopie der unterschreibenden Person und Registerauszug zusammen.",
+          "Wer regelmäßig Fahrzeuge zulässt, spart Aufwand mit einer dauerhaften Vollmacht für eine Mitarbeiterin, einen Mitarbeiter oder einen Dienstleister, statt für jeden Vorgang neu zu unterschreiben. Ob und wie lange eine Behörde solche Dauervollmachten akzeptiert, klären Sie am besten vorab.",
+        ],
+      },
+      {
+        heading: "Online zulassen: i-Kfz für Unternehmen",
+        paragraphs: [
+          "Seit September 2023 können auch juristische Personen das Online-Verfahren i-Kfz nutzen. Zur Identifizierung dient statt des Personalausweises ein Unternehmenskonto mit ELSTER-Zertifikat. Ansonsten gelten dieselben Voraussetzungen wie für Privatpersonen, etwa Fahrzeugpapiere mit Sicherheitscodes.",
+          "Für Unternehmen mit sehr vielen Vorgängen gibt es die Großkundenschnittstelle beim Kraftfahrt-Bundesamt. Registrieren können sich juristische Personen des Privatrechts, die regelmäßig mehr als 500 Anträge im Jahr stellen; die technische Anbindung muss in einem Probelauf bestätigt werden (§ 34 FZV). Kleinere Fuhrparks erreichen diese Schwelle in der Regel nicht.",
+        ],
+      },
+      {
+        heading: "Sammelzulassungen und Fuhrpark organisieren",
+        paragraphs: [
+          "Bei mehreren Fahrzeugen lohnt es sich, Vorgänge zu bündeln. Häufig bremsen dabei einzelne fehlende Unterlagen den ganzen Stapel aus – eine vergessene eVB oder ein veralteter Registerauszug genügt. Eine einfache Vorbereitung hilft:",
+        ],
+        list: [
+          "zentrale Liste mit Fahrzeug-Identifizierungsnummer, Kennzeichen und HU-Fälligkeit jedes Fahrzeugs",
+          "für jedes Fahrzeug eine eigene eVB-Nummer anfordern",
+          "Registerauszug und Ausweiskopie der vertretungsberechtigten Person aktuell halten",
+          "Fahrzeugbriefe (ZB II) zentral und sicher verwahren, nicht in den Fahrzeugen",
+          "Sicherheitscodes erst freilegen, wenn der jeweilige Vorgang ansteht",
+        ],
+      },
+      {
+        heading: "Zulassungsservice für Gewerbekunden",
+        paragraphs: [
+          "DeutscheZulassung übernimmt Zulassungen für Unternehmen bundesweit – vom einzelnen Firmenwagen bis zum Fuhrpark. Gewerbekunden erhalten eine Sammelabwicklung, eine feste Ansprechperson und Staffelpreise auf Anfrage. Die Unterlagen senden Sie als Handyfotos über das Online-Formular, per WhatsApp oder per E-Mail; einen Personalausweis mit Online-Funktion brauchen Sie nicht.",
+          `Für einzelne Vorgänge gelten die regulären Festpreise, etwa ${P.zulassung} für eine Neuzulassung oder Umschreibung inklusive amtlicher Gebühren und Versand. In der Regel ist eine Zulassung 1–3 Werktage nach Eingang der vollständigen Unterlagen erledigt, zuzüglich Versand. Sie beauftragen über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung – erreichbar sind wir Montag bis Freitag von 8 bis 18 Uhr.`,
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Kann ich ein Fahrzeug auf mein Einzelunternehmen zulassen?",
+        answer:
+          "Halter wird beim Einzelunternehmen die Inhaberin oder der Inhaber als Person. Je nach Behörde kann der Firmenname als Zusatz eingetragen und die Betriebsanschrift verwendet werden. Nötig sind in der Regel Ausweis und Gewerbeanmeldung.",
+      },
+      {
+        question: "Wie alt darf der Handelsregisterauszug sein?",
+        answer:
+          "Das legt die jeweilige Behörde fest. Verlangt wird ein aktueller Auszug; manche Behörden nennen ein konkretes Höchstalter. Ein frischer Abruf aus dem Handelsregister vermeidet Rückfragen.",
+      },
+      {
+        question: "Wer muss die Vollmacht für eine GmbH unterschreiben?",
+        answer:
+          "Eine vertretungsberechtigte Person, in der Regel die Geschäftsführung. Legen Sie eine Kopie ihres Ausweises bei; die bevollmächtigte Person weist sich mit ihrem eigenen Ausweis aus.",
+      },
+      {
+        question: "Braucht eine GmbH eine Gewerbeanmeldung für die Zulassung?",
+        answer:
+          "Grundlage ist der Handelsregisterauszug. Einige Behörden verlangen zusätzlich die Gewerbeanmeldung – fragen Sie im Zweifel vorher nach oder legen Sie sie gleich bei.",
+      },
+      {
+        question: "Gibt es für Fuhrparks besondere Konditionen?",
+        answer:
+          `Bei DeutscheZulassung erhalten Gewerbekunden Staffelpreise auf Anfrage, dazu Sammelabwicklung und eine feste Ansprechperson. Einzelne Vorgänge kosten den regulären Festpreis, zum Beispiel ${P.zulassung} für eine Zulassung inklusive amtlicher Gebühren und Versand.`,
+      },
+    ],
+    relatedServices: ["gewerbekunden", "neuzulassung", "halterwechsel"],
+    relatedGuides: ["auto-anmelden-unterlagen", "i-kfz-online-zulassung", "fahrzeugpapiere-sicherheitscodes", "evb-nummer"],
+    keywords: [
+      "Firmenwagen zulassen",
+      "Fahrzeugzulassung Unternehmen Unterlagen",
+      "Auto auf GmbH zulassen",
+      "Kfz-Zulassung Einzelunternehmen",
+      "Fuhrpark Zulassung",
+    ],
+    sources: [
+      { label: "Fahrzeug-Zulassungsverordnung (FZV), § 6 Antrag auf Zulassung", href: "https://www.gesetze-im-internet.de/fzv_2023/__6.html" },
+      { label: "Fahrzeug-Zulassungsverordnung (FZV), § 34 Registrierung als Großkunde", href: "https://www.gesetze-im-internet.de/fzv_2023/__34.html" },
+      { label: "Bundesministerium für Verkehr: Internetbasierte Fahrzeugzulassung (i-Kfz)", href: "https://www.bmv.de/SharedDocs/DE/Artikel/StV/Strassenverkehr/internetbasierte-fahrzeugzulassung.html" },
+      { label: "Märkischer Kreis: Merkblatt zu Firmenzulassungen (PDF)", href: "https://www.maerkischer-kreis.de/fileadmin/user_upload/Downloads/FB3/Merkblatt_Firmenzulassungen_A5.pdf" },
+    ],
   },
 ];
 

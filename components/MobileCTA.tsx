@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { whatsAppLink } from "@/lib/site";
 import WhatsAppIcon from "./WhatsAppIcon";
+import { track } from "@/lib/analytics";
 
 /**
  * Feststehende Aktionsleiste am unteren Bildschirmrand (nur Mobil/Tablet).
@@ -33,6 +34,7 @@ export default function MobileCTA() {
             href={whatsAppLink("Hallo DeutscheZulassung, ich habe eine Frage zur Kfz-Zulassung.")}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => track("whatsapp_click", { position: "mobile_leiste" })}
             className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-[#25D366] px-4 py-3 font-display text-sm font-semibold text-white"
           >
             <WhatsAppIcon className="h-5 w-5" />
@@ -40,9 +42,10 @@ export default function MobileCTA() {
           </a>
           <Link
             href="/auftrag"
-            className="flex flex-1 items-center justify-center rounded-xl bg-brand-600 px-4 py-3 font-display text-sm font-semibold text-white"
+            onClick={() => track("cta_click", { position: "mobile_leiste" })}
+            className="flex flex-1 items-center justify-center rounded-xl bg-brand-700 px-4 py-3 font-display text-sm font-semibold text-white"
           >
-            Jetzt beauftragen
+            Jetzt zulassen
           </Link>
         </div>
       </nav>

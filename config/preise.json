@@ -1,0 +1,30 @@
+{
+  "$kommentar": "Zentrale Preiskonfiguration von DeutscheZulassung. Einzige Quelle für Website, Bestellformular und PHP-Backend. Nach jeder Änderung: 'stand' aktualisieren, 'freigabe' prüfen, dann bauen und deployen. Beträge brutto in Euro inkl. MwSt.",
+  "stand": "2026-11-03",
+  "freigabe": {
+    "freigegeben": false,
+    "freigegebenVon": "",
+    "freigegebenAm": "",
+    "hinweis": "Neue Zielpreise vom 03.11.2026. Vor dem Livegang Wirtschaftlichkeit und amtliche Kosten prüfen. Der Produktiv-Deploy bricht ab, solange 'freigegeben' false ist."
+  },
+  "mwstSatz": 0.19,
+  "leistungen": {
+    "neuzulassung": { "preis": 127.89, "enthaeltAmtlicheGebuehren": true, "enthaeltVersand": true, "schilderMoeglich": true, "wunschkennzeichenMoeglich": true },
+    "ummeldung": { "preis": 127.89, "enthaeltAmtlicheGebuehren": true, "enthaeltVersand": true, "schilderMoeglich": true, "wunschkennzeichenMoeglich": true },
+    "halterwechsel": { "preis": 127.89, "enthaeltAmtlicheGebuehren": true, "enthaeltVersand": true, "schilderMoeglich": true, "wunschkennzeichenMoeglich": true },
+    "wiederzulassung": { "preis": 127.89, "enthaeltAmtlicheGebuehren": true, "enthaeltVersand": true, "schilderMoeglich": true, "wunschkennzeichenMoeglich": true },
+    "abmeldung": { "preis": 33.79, "enthaeltAmtlicheGebuehren": true, "enthaeltVersand": false, "schilderMoeglich": false, "wunschkennzeichenMoeglich": false },
+    "adressaenderung": { "preis": 63.79, "enthaeltAmtlicheGebuehren": true, "enthaeltVersand": true, "schilderMoeglich": false, "wunschkennzeichenMoeglich": false }
+  },
+  "zusatzleistungen": {
+    "kennzeichenschilder": { "preis": 28.79, "bezeichnung": "Kennzeichenschilder (1 Paar, geprägt, inkl. Versand)" },
+    "wunschkennzeichen": { "preis": 11.69, "bezeichnung": "Wunschkennzeichen-Service (Prüfung, Reservierung, Zuteilung)", "enthaeltAmtlicheGebuehr": true }
+  },
+  "amtlicheGebuehren": {
+    "$kommentar": "Orientierungswerte nach Gebührenordnung (GebOSt). Je nach Behörde und Vorgang unterschiedlich. Nur zur Information, nicht zur Berechnung.",
+    "onlineZulassung": [12.8, 18.0],
+    "schalterZulassung": [26.3, 30.0],
+    "ausserbetriebsetzung": [3.0, 16.0],
+    "wunschkennzeichen": [12.8, 12.8]
+  }
+}

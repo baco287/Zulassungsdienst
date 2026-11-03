@@ -8,6 +8,8 @@ import { followUpWhatsAppLink, submitOrder, type SubmitResult } from "@/lib/orde
 import type { OrderRequest } from "@/lib/types";
 import DocumentUpload from "./DocumentUpload";
 import WhatsAppIcon from "./WhatsAppIcon";
+import { track } from "@/lib/analytics";
+import Link from "next/link";
 
 /**
  * Nachreichen von Unterlagen zu einem bestehenden Vorgang.
@@ -90,6 +92,7 @@ export default function UnterlagenForm() {
     });
     setSending(false);
     setResult(outcome);
+    if (outcome.ok) track("documents_uploaded", { method: "unterlagen_seite" });
 
     if (!outcome.ok) {
       if (outcome.field) {
@@ -262,9 +265,9 @@ export default function UnterlagenForm() {
         <span>
           Ich willige ein, dass die übermittelten Unterlagen zur Bearbeitung meines
           Vorgangs verarbeitet werden. Details in der{" "}
-          <a href="/datenschutz/" className="font-medium text-brand-700 underline underline-offset-2">
+          <Link href="/datenschutz/" className="font-medium text-brand-700 underline underline-offset-2">
             Datenschutzerklärung
-          </a>
+          </Link>
           . *
         </span>
       </label>

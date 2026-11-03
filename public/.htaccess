@@ -1,11 +1,21 @@
 # DeutscheZulassung – Server-Konfiguration (all-inkl/Apache)
 # Wird beim Build aus public/ mit ins Webroot deployt.
 
+# ── Eigene Fehlerseite (Next.js exportiert out/404.html) ──────────────
+ErrorDocument 404 /404.html
+
 # ── Kanonische Domain: www → non-www (301) ────────────────────────────
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteCond %{HTTP_HOST} ^www\.deutschezulassung\.de$ [NC]
   RewriteRule ^(.*)$ https://deutschezulassung.de/$1 [R=301,L]
+
+  # ── Themen-Weiterleitungen: gleicher Suchintent → eine starke Seite ──
+  # Siehe lib/landingpages.ts. Keine Duplikat-Seiten anlegen, sondern hierher leiten.
+  RewriteRule ^auto-online-zulassen-ohne-eid/?$ /kfz-zulassung-ohne-eid/ [R=301,L]
+  RewriteRule ^kfz-zulassung-ohne-ausweisapp/?$ /kfz-zulassung-ohne-eid/ [R=301,L]
+  RewriteRule ^online-zulassung-funktioniert-nicht/?$ /ikfz-funktioniert-nicht/ [R=301,L]
+  RewriteRule ^kfz-zulassung-kosten/?$ /ratgeber/was-kostet-eine-kfz-zulassung/ [R=301,L]
 </IfModule>
 
 # ── Security-Header ───────────────────────────────────────────────────
@@ -16,6 +26,8 @@
   Header always set X-Frame-Options "DENY"
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
   # CSP: Next.js braucht Inline-Skripte/-Styles; keine externen Quellen im Einsatz.
+  # Wird Webanalyse oder Google Ads aktiviert (lib/analytics.ts), müssen deren
+  # Hosts hier ergänzt werden – siehe docs/TRACKING.md.
   Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://wa.me"
 
   # ── Caching: gehashte Build-Assets dürfen aggressiv gecacht werden ──

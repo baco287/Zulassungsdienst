@@ -3,6 +3,7 @@ import { Lexend, Source_Sans_3 } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MobileCTA from "@/components/MobileCTA";
+import Analytics from "@/components/Analytics";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -64,7 +65,7 @@ const jsonLd = {
       legalName: site.company.legalName,
       description: site.description,
       url: site.url,
-      logo: `${site.url}/icon.svg`,
+      logo: `${site.url}/logo.png`,
       image: `${site.url}/opengraph-image`,
       email: site.contact.email,
       telephone: site.contact.phone,
@@ -116,7 +117,11 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="de" className={`${lexend.variable} ${sourceSans.variable}`}>
+    <html lang="de" className={`${lexend.variable} ${sourceSans.variable}`} suppressHydrationWarning>
+      <head>
+        {/* Aktiviert Einblend-Animationen nur, wenn JavaScript läuft. */}
+        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
+      </head>
       <body className="flex min-h-screen flex-col">
         <a href="#hauptinhalt" className="skip-link">
           Zum Hauptinhalt springen
@@ -127,6 +132,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <MobileCTA />
+        <Analytics />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

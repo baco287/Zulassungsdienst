@@ -1,11 +1,14 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
-import type { ReactNode } from "react";
+import { useEffect, useRef, type ReactNode } from "react";
 
 /**
- * Dezenter Scroll-Reveal. Respektiert prefers-reduced-motion:
- * Nutzer mit reduzierter Bewegung sehen Inhalte sofort und statisch.
+ * Dezenter Scroll-Reveal ohne Animationsbibliothek.
+ *
+ * Inhalte sind im HTML sofort sichtbar. Nur wenn JavaScript läuft (Klasse
+ * `js` am <html>, gesetzt im Layout), werden Elemente unterhalb des sichtbaren
+ * Bereichs kurz ausgeblendet und beim Hineinscrollen eingeblendet.
+ * prefers-reduced-motion schaltet die Animation ab (siehe globals.css).
  */
 export default function Reveal({
   children,
@@ -16,21 +19,35 @@ export default function Reveal({
   delay?: number;
   className?: string;
 }) {
-  const reduced = useReducedMotion();
+  const ref = useRef<HTMLDivElement>(null);
 
-  if (reduced) {
-    return <div className={className}>{children}</div>;
-  }
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    if (typeof IntersectionObserver === "undefined") {
+      el.classList.add("reveal-in");
+      return;
+    }
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.classList.add("reveal-in");
+          io.disconnect();
+        }
+      },
+      { rootMargin: "0px 0px -60px 0px" }
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
 
   return (
-    <motion.div
-      className={className}
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.5, delay, ease: [0.21, 0.65, 0.36, 1] }}
+    <div
+      ref={ref}
+      className={className ? `reveal ${className}` : "reveal"}
+      style={delay ? { transitionDelay: `${delay}s` } : undefined}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }

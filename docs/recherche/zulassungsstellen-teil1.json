@@ -1,0 +1,768 @@
+[
+  {
+    "slug": "berlin",
+    "stadt": "Berlin",
+    "bundesland": "Berlin",
+    "behoerde": "Kfz-Zulassungsbehörde des Landesamts für Bürger- und Ordnungsangelegenheiten (LABO)",
+    "behoerdeQuelle": "https://www.berlin.de/labo/mobilitaet/kfz-zulassung/",
+    "traeger": "Land Berlin (Landesamt für Bürger- und Ordnungsangelegenheiten, LABO)",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Friedrichshain-Kreuzberg",
+        "strasse": "Jüterboger Str. 3",
+        "plz": "10965",
+        "ort": "Berlin",
+        "quelle": "https://service.berlin.de/standort/121364/"
+      },
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde Lichtenberg",
+        "strasse": "Ferdinand-Schultze-Str. 55",
+        "plz": "13055",
+        "ort": "Berlin",
+        "quelle": "https://service.berlin.de/standort/121362/"
+      }
+    ],
+    "website": {
+      "url": "https://www.berlin.de/labo/mobilitaet/kfz-zulassung/",
+      "quelle": "https://www.berlin.de/labo/mobilitaet/kfz-zulassung/"
+    },
+    "terminUrl": {
+      "url": "https://service.berlin.de/terminvereinbarung/",
+      "quelle": "https://www.berlin.de/labo/mobilitaet/kfz-zulassung/dienstleistungen/service.274726.php"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100108.OE.L100108_121364&leistungId=99036020001000&p=110000",
+      "quelle": "https://service.berlin.de/dienstleistung/120882/standort/121362/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Friedrichshain-Kreuzberg: Montag, Dienstag, Mittwoch 07:30-15:00 Uhr (für Terminkunden)",
+        "Friedrichshain-Kreuzberg: Donnerstag 10:00-18:00 Uhr (für Terminkunden)",
+        "Friedrichshain-Kreuzberg: Freitag 07:30-13:30 Uhr (für Terminkunden)",
+        "Lichtenberg: Montag 07:30-15:00 Uhr (für Terminkunden)",
+        "Lichtenberg: Dienstag 10:00-18:00 Uhr (für Terminkunden)",
+        "Lichtenberg: Mittwoch, Donnerstag 07:30-15:00 Uhr (für Terminkunden)",
+        "Lichtenberg: Freitag 07:30-13:30 Uhr (für Terminkunden)"
+      ],
+      "hinweis": "Zeiten gelten laut service.berlin.de jeweils für Terminkunden. Fällt ein Spätsprechtag vor einen gesetzlichen Feiertag in Berlin, gilt die Öffnungszeit wie an einem Montag.",
+      "quelle": "https://service.berlin.de/standort/121364/",
+      "weitereQuellen": ["https://service.berlin.de/standort/121362/"]
+    },
+    "zustaendigkeit": {
+      "text": "Halter mit Hauptwohnsitz in Berlin (ein Zweitwohnsitz reicht nicht aus) sowie Unternehmen und Vereine mit Sitz oder Niederlassung in Berlin. Für die Terminbuchung wird einer der beiden Standorte gewählt.",
+      "quelle": "https://service.berlin.de/dienstleistung/120882/"
+    },
+    "kuerzel": [
+      { "code": "B", "bedeutung": "Berlin", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland" }
+    ],
+    "besonderheiten": [
+      { "text": "Die Kfz-Zulassungsbehörde hat zwei Standorte: Friedrichshain-Kreuzberg (Jüterboger Str. 3) und Lichtenberg (Ferdinand-Schultze-Str. 55).", "quelle": "https://www.berlin.de/labo/mobilitaet/kfz-zulassung/" },
+      { "text": "Pro Termin kann nur eine Dienstleistung erbracht werden; die Terminbuchung ist auf den Namen des Antragstellers bzw. Halters vorzunehmen.", "quelle": "https://www.berlin.de/labo/mobilitaet/kfz-zulassung/dienstleistungen/service.274726.php" },
+      { "text": "Kennzeichen können online reserviert werden (Reservierung 2,60 Euro, Wunschkennzeichen zusätzlich 10,20 Euro); kurze Kombinationen wie B-A 99 und Wechselkennzeichen sind online nicht reservierbar.", "quelle": "https://service.berlin.de/dienstleistung/121484/" }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "hamburg",
+    "stadt": "Hamburg",
+    "bundesland": "Hamburg",
+    "behoerde": "Landesbetrieb Verkehr (LBV) – Fahrzeug-Zulassung",
+    "behoerdeQuelle": "https://www.hamburg.de/verkehr/lbv/fahrzeug/kfz-zulassung-413092",
+    "traeger": "Freie und Hansestadt Hamburg (Landesbetrieb Verkehr)",
+    "standorte": [
+      {
+        "bezeichnung": "LBV Mitte Fahrzeug-Zulassung",
+        "strasse": "Süderstraße 140-142",
+        "plz": "20537",
+        "ort": "Hamburg",
+        "quelle": "https://www.hamburg.de/service/info/111104376/"
+      },
+      {
+        "bezeichnung": "LBV West Fahrzeug-Zulassung",
+        "strasse": "Schnackenburgallee 43",
+        "plz": "22525",
+        "ort": "Hamburg",
+        "quelle": "https://www.hamburg.de/service/info/111104380/"
+      },
+      {
+        "bezeichnung": "LBV Harburg Fahrzeug-Zulassung",
+        "strasse": "Schellerdamm 5-7",
+        "plz": "21079",
+        "ort": "Hamburg",
+        "quelle": "https://www.hamburg.de/service/info/111104378/"
+      }
+    ],
+    "website": {
+      "url": "https://www.hamburg.de/verkehr/lbv/fahrzeug/kfz-zulassung-413092",
+      "quelle": "https://www.hamburg.de/verkehr/lbv/fahrzeug/kfz-zulassung-413092"
+    },
+    "terminUrl": {
+      "url": "https://lbv-termine.de/frontend/index.php",
+      "quelle": "https://www.hamburg.de/verkehr/lbv/fahrzeug/kfz-zulassung-413092"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=S100002.OE.0000035624-0000296974&leistungId=99036020001000&p=020000",
+      "quelle": "https://www.hamburg.de/verkehr/lbv/onlinedienste"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "LBV Mitte: Mo 07:00 - 14:00, Di 07:00 - 18:00, Mi 07:00 - 14:00, Do 07:00 - 18:00, Fr 07:00 - 12:00",
+        "LBV West: Mo 07:00 - 14:00, Di 07:00 - 18:00, Mi 07:00 - 14:00, Do 07:00 - 18:00, Fr 07:00 - 12:00",
+        "LBV Harburg: Mo 07:00 - 18:00, Di 07:00 - 14:00, Mi 07:00 - 18:00, Do 07:00 - 14:00, Fr 07:00 - 12:00",
+        "Sa. und So. geschlossen"
+      ],
+      "hinweis": "Nur Terminvergabe",
+      "quelle": "https://www.hamburg.de/verkehr/lbv/oeffnungszeiten-standorte",
+      "hinweisQuelle": "https://www.hamburg.de/service/info/111104376/",
+      "weitereQuellen": ["https://www.hamburg.de/service/info/111104380/", "https://www.hamburg.de/service/info/111104378/"]
+    },
+    "zustaendigkeit": {
+      "text": "Halter mit Hauptwohnsitz in Hamburg; Unternehmen mit Betriebssitz oder Niederlassung in Hamburg.",
+      "quelle": "https://www.hamburg.de/verkehr/lbv/fahrzeug/kfz-zulassung-413092"
+    },
+    "kuerzel": [
+      { "code": "HH", "bedeutung": "Hansestadt Hamburg", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland" }
+    ],
+    "besonderheiten": [
+      { "text": "Die Neuzulassung wird an drei LBV-Standorten angeboten: Mitte (Süderstraße 140-142), West (Schnackenburgallee 43) und Harburg (Schellerdamm 5-7).", "quelle": "https://www.hamburg.de/service/info/11433089/n0/" },
+      { "text": "An den Zulassungsstandorten gilt „Nur Terminvergabe“; Termine werden online über lbv-termine.de gebucht.", "quelle": "https://www.hamburg.de/service/info/111104376/" },
+      { "text": "Fahrzeug-Zulassung, Abmeldung, Adressänderung und Wunschkennzeichen-Reservierung sind als Online-Dienste des LBV verfügbar.", "quelle": "https://www.hamburg.de/verkehr/lbv/onlinedienste" }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "muenchen",
+    "stadt": "München",
+    "bundesland": "Bayern",
+    "behoerde": "Kfz-Zulassungsstelle der Landeshauptstadt München",
+    "behoerdeQuelle": "https://stadt.muenchen.de/service/info/hauptabteilung-ii-fahrzeugzulassungs-und-fahrerlaubnisbehoerde/1064283/",
+    "traeger": "Landeshauptstadt München (Kreisverwaltungsreferat)",
+    "standorte": [
+      {
+        "bezeichnung": "KfZ Zulassungsstelle",
+        "strasse": "Eichstätter Straße 2",
+        "plz": "80686",
+        "ort": "München",
+        "quelle": "https://stadt.muenchen.de/service/info/hauptabteilung-ii-fahrzeugzulassungs-und-fahrerlaubnisbehoerde/1064283/"
+      }
+    ],
+    "website": {
+      "url": "https://stadt.muenchen.de/service/info/hauptabteilung-ii-fahrzeugzulassungs-und-fahrerlaubnisbehoerde/1064283/",
+      "quelle": "https://stadt.muenchen.de/service/info/hauptabteilung-ii-fahrzeugzulassungs-und-fahrerlaubnisbehoerde/1064283/"
+    },
+    "terminUrl": {
+      "url": "https://stadt.muenchen.de/buergerservice/terminvereinbarung.html#/services/1063425/locations/10308013",
+      "quelle": "https://stadt.muenchen.de/service/info/10423546/"
+    },
+    "ikfzUrl": {
+      "url": "https://www.buergerserviceportal.de/bayern/muenchen/bsp_ikfz_antragstellung",
+      "quelle": "https://stadt.muenchen.de/service/info/10423546/"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [],
+      "hinweis": "Nur nach Terminvereinbarung",
+      "quelle": "https://stadt.muenchen.de/service/info/hauptabteilung-ii-fahrzeugzulassungs-und-fahrerlaubnisbehoerde/1064283/"
+    },
+    "zustaendigkeit": {
+      "text": "Vor-Ort-Zulassung für Halter mit Hauptwohnsitz in der Landeshauptstadt München bzw. Unternehmen mit Sitz oder Niederlassung in München. Der Landkreis München hat eine eigene Kfz-Zulassungsstelle (Landratsamt München, Bretonischer Ring 1, Grasbrunn-Neukeferloh).",
+      "quelle": "https://stadt.muenchen.de/service/info/10423546/",
+      "weitereQuellen": ["https://www.landkreis-muenchen.de/landratsamt/anlaufstellen-standorte/anlaufstelle-kfz-zulassungsstelle/"]
+    },
+    "kuerzel": [
+      { "code": "M", "bedeutung": "München (Stadt München und Landkreis München)", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland" }
+    ],
+    "besonderheiten": [
+      { "text": "Die Kfz-Zulassungsstelle arbeitet nur nach Terminvereinbarung; Termine gibt es online oder telefonisch unter 089 233-96090.", "quelle": "https://stadt.muenchen.de/infos/kfz-zulassung-ls.html" },
+      { "text": "Wunschkennzeichen können online reserviert werden; bei Zuteilung kostet das Wunschkennzeichen 12,80 Euro, die Reservierung ist unverbindlich und nur auf den künftigen Halter möglich.", "quelle": "https://stadt.muenchen.de/service/info/wunschkennzeichen/1064281/n0/" },
+      { "text": "Neufahrzeuge können online mit der Online-Ausweisfunktion (i-Kfz) zugelassen werden.", "quelle": "https://stadt.muenchen.de/service/info/10423546/" }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": ["oeffnungszeiten"]
+  },
+  {
+    "slug": "koeln",
+    "stadt": "Köln",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Kfz-Zulassungsstelle der Stadt Köln",
+    "behoerdeQuelle": "https://www.stadt-koeln.de/service/adressen/00205/index.html",
+    "traeger": "Stadt Köln",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle Köln",
+        "strasse": "Max-Glomsda-Straße 4",
+        "plz": "51105",
+        "ort": "Köln",
+        "quelle": "https://www.stadt-koeln.de/service/adressen/00205/index.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.stadt-koeln.de/service/adressen/00205/index.html",
+      "quelle": "https://www.stadt-koeln.de/service/adressen/00205/index.html"
+    },
+    "terminUrl": {
+      "url": "https://termine.stadt-koeln.de/m/kfz-zulassung/extern/calendar/?uid=67523a04-37af-4131-9495-0a3566e0eb8b&wsid=c04d6253-6b6f-4c85-98d1-a86b2759edfb&lang=de",
+      "quelle": "https://www.stadt-koeln.de/artikel/74718/index.html"
+    },
+    "ikfzUrl": {
+      "url": "https://i-kfz.regioit.de/i4/ikfz4/?LICENSEIDENTIFIER=koeln_stadt",
+      "quelle": "https://www.stadt-koeln.de/service/produkte/20020/index.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag: 7 bis 14 Uhr",
+        "Dienstag: 7 bis 18 Uhr",
+        "Mittwoch: 7 bis 13 Uhr",
+        "Donnerstag: 7 bis 16 Uhr",
+        "Freitag: 7 bis 13 Uhr"
+      ],
+      "hinweis": "Für die Bearbeitung Ihres Anliegens bei der Kfz-Zulassungsstelle benötigen Sie einen Termin.",
+      "quelle": "https://www.stadt-koeln.de/service/adressen/00205/index.html"
+    },
+    "zustaendigkeit": {
+      "text": "Halter mit Wohnsitz in der Stadt Köln; wer nach Köln zuzieht, lässt sein Fahrzeug bei der Kfz-Zulassungsstelle Köln (vor Ort oder online) umschreiben.",
+      "quelle": "https://www.stadt-koeln.de/service/produkte/00737/index.html"
+    },
+    "kuerzel": [
+      { "code": "K", "bedeutung": "Köln", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland" }
+    ],
+    "besonderheiten": [
+      { "text": "Für die Vorsprache ist ein Termin nötig (online oder über das Bürgertelefon 0221 / 221-26635); wer vier oder mehr Anliegen hat, wird im Großkundenbereich bedient, für den keine Online-Terminbuchung möglich ist.", "quelle": "https://www.stadt-koeln.de/service/adressen/00205/index.html" },
+      { "text": "Mit i-Kfz online möglich: Wunschkennzeichen, Abmeldung, Umschreibung (außer ausländische Fahrzeuge), Neuzulassung, Wiederzulassung auf dieselbe Person, Adressänderung und Tageszulassung.", "quelle": "https://www.stadt-koeln.de/service/produkte/20020/index.html" },
+      { "text": "Online reservierte Wunschkennzeichen bleiben 183 Tage reserviert; die Reservierung kostet 2,60 Euro, die Zuteilung zusätzlich 10,20 Euro.", "quelle": "https://www.stadt-koeln.de/service/produkt/wunschkennzeichen" }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "frankfurt",
+    "stadt": "Frankfurt am Main",
+    "bundesland": "Hessen",
+    "behoerde": "Zulassungsbehörde für Kraftfahrzeuge (Ordnungsamt der Stadt Frankfurt am Main)",
+    "behoerdeQuelle": "https://frankfurt.de/service-und-rathaus/verwaltung/aemter-und-institutionen/ordnungsamt/zulassungsbehoerde-fuer-kraftfahrzeuge",
+    "traeger": "Stadt Frankfurt am Main (Ordnungsamt)",
+    "standorte": [
+      {
+        "bezeichnung": "Ordnungsamt, Servicezentrum „Rund ums Auto“ (Zulassungsangelegenheiten)",
+        "strasse": "Am Römerhof 19",
+        "plz": "60486",
+        "ort": "Frankfurt am Main",
+        "quelle": "https://frankfurt.de/service-und-rathaus/verwaltung/aemter-und-institutionen/ordnungsamt/zulassungsbehoerde-fuer-kraftfahrzeuge"
+      }
+    ],
+    "website": {
+      "url": "https://frankfurt.de/service-und-rathaus/verwaltung/aemter-und-institutionen/ordnungsamt/zulassungsbehoerde-fuer-kraftfahrzeuge",
+      "quelle": "https://frankfurt.de/service-und-rathaus/verwaltung/aemter-und-institutionen/ordnungsamt/zulassungsbehoerde-fuer-kraftfahrzeuge"
+    },
+    "terminUrl": {
+      "url": "https://tevis.ekom21.de/fra/select2?md=2",
+      "quelle": "https://frankfurt.de/service-und-rathaus/verwaltung/aemter-und-institutionen/ordnungsamt/zulassungsbehoerde-fuer-kraftfahrzeuge"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100001.OE.9652963&leistungId=99036020001000&p=064120",
+      "quelle": "https://frankfurt.de/service-und-rathaus/verwaltung/aemter-und-institutionen/ordnungsamt/zulassungsbehoerde-fuer-kraftfahrzeuge"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag 08:00 - 15:00",
+        "Dienstag 08:00 - 15:00",
+        "Mittwoch 08:00 - 15:00",
+        "Donnerstag 08:00 - 15:00",
+        "Freitag 08:00 - 12:00"
+      ],
+      "hinweis": "Dies sind die Servicezeiten des Ordnungsamts für die telefonische Erreichbarkeit (keine Schalterzeiten). Eine Vorsprache im Ordnungsamt ist nur mit Termin möglich.",
+      "quelle": "https://frankfurt.de/de-de/service-und-rathaus/verwaltung/aemter-und-institutionen/ordnungsamt/unser-service"
+    },
+    "zustaendigkeit": null,
+    "kuerzel": [
+      { "code": "F", "bedeutung": "Frankfurt", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland" }
+    ],
+    "besonderheiten": [
+      { "text": "Eine Vorsprache ist nur mit Termin möglich; Termine werden am besten über die Online-Terminverwaltung vereinbart.", "quelle": "https://frankfurt.de/service-und-rathaus/verwaltung/aemter-und-institutionen/ordnungsamt/zulassungsbehoerde-fuer-kraftfahrzeuge" },
+      { "text": "Wunschkennzeichen können online reserviert werden.", "quelle": "https://frankfurt.de/themen/sicherheit-und-ordnung/vorgaben-und-regeln/fuer-das-auto/zulassungsangelegenheiten" },
+      { "text": "Nach einer Online-Zulassung (i-Kfz) kann das Fahrzeug mit dem vorläufigen Zulassungsnachweis sofort für 10 Kalendertage innerhalb Deutschlands gefahren werden; der Nachweis muss innerhalb von 30 Minuten heruntergeladen werden.", "quelle": "https://frankfurt.de/themen/sicherheit-und-ordnung/vorgaben-und-regeln/fuer-das-auto/zulassungsangelegenheiten" }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": ["oeffnungszeiten", "zustaendigkeit"]
+  },
+  {
+    "slug": "stuttgart",
+    "stadt": "Stuttgart",
+    "bundesland": "Baden-Württemberg",
+    "behoerde": "Kfz-Zulassungsstelle der Landeshauptstadt Stuttgart",
+    "behoerdeQuelle": "https://www.stuttgart.de/service/oeffnungszeiten/termine-bei-der-kfz-zulassungsstelle",
+    "traeger": "Landeshauptstadt Stuttgart (Amt für öffentliche Ordnung)",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsstelle",
+        "strasse": "Löwentorbogen 11",
+        "plz": "70376",
+        "ort": "Stuttgart",
+        "quelle": "https://www.stuttgart.de/service/oeffnungszeiten/termine-bei-der-kfz-zulassungsstelle"
+      }
+    ],
+    "website": {
+      "url": "https://www.stuttgart.de/service/oeffnungszeiten/termine-bei-der-kfz-zulassungsstelle",
+      "quelle": "https://www.stuttgart.de/service/oeffnungszeiten/termine-bei-der-kfz-zulassungsstelle"
+    },
+    "terminUrl": {
+      "url": "https://stuttgart.konsentas.de/form/5/?signup_new=1",
+      "quelle": "https://www.stuttgart.de/service/oeffnungszeiten/termine-bei-der-kfz-zulassungsstelle"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100022.OE.6043503&leistungId=99036020001000&p=081110",
+      "quelle": "https://www.stuttgart.de/organigramm/leistungen/ikfz-kraftfahrzeug-online-zulassen"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag: 07:15 – 12:00 und 13:00 – 15:00",
+        "Dienstag: 07:15 – 12:00",
+        "Mittwoch: 07:15 – 12:00",
+        "Donnerstag: 07:15 – 12:00 und 13:00 – 17:00",
+        "Freitag: 07:15 – 12:00"
+      ],
+      "hinweis": "Termin online buchbar; ohne Termin ist während der Öffnungszeiten mit einer gewissen Wartezeit zu rechnen.",
+      "quelle": "https://www.stuttgart.de/service/oeffnungszeiten/termine-bei-der-kfz-zulassungsstelle"
+    },
+    "zustaendigkeit": {
+      "text": "Privatpersonen mit Wohnsitz in der Landeshauptstadt Stuttgart; ohne vorherige Wohnsitzanmeldung beim Bürgerbüro ist keine Zulassung möglich.",
+      "quelle": "https://www.stuttgart.de/organigramm/leistungen/kraftfahrzeug-wieder-zulassen"
+    },
+    "kuerzel": [
+      { "code": "S", "bedeutung": "Stuttgart", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland" }
+    ],
+    "besonderheiten": [
+      { "text": "Die Online-Terminvergabe ist ausschließlich Privatkunden vorbehalten; Termine werden für die nächsten vier Wochen angezeigt und können nicht telefonisch oder per E-Mail gebucht werden.", "quelle": "https://www.stuttgart.de/service/oeffnungszeiten/termine-bei-der-kfz-zulassungsstelle" },
+      { "text": "Für gewerbliche Zulassungsanträge (Händler, Zulassungsdienste) stehen täglich separate Händlerschalter ohne Termin zur Verfügung.", "quelle": "https://www.stuttgart.de/service/oeffnungszeiten/termine-bei-der-kfz-zulassungsstelle" },
+      { "text": "Wunschkennzeichen können online reserviert werden und sind dann 180 Tage verbindlich reserviert (Reservierung 2,60 Euro zusätzlich zur Wunschkennzeichengebühr von 10,20 Euro); Wechselkennzeichen sind online nicht reservierbar.", "quelle": "https://www.stuttgart.de/organigramm/leistungen/kraftfahrzeugkennzeichen-wunschkennzeichen-reservieren" }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "duesseldorf",
+    "stadt": "Düsseldorf",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Zulassungsbehörde des Straßenverkehrsamtes Düsseldorf (KFZ-Zulassungsbehörde)",
+    "behoerdeQuelle": "https://www.duesseldorf.de/kfz/zulassung",
+    "traeger": "Landeshauptstadt Düsseldorf (Amt für Einwohnerwesen, Abteilung Straßenverkehrsamt)",
+    "standorte": [
+      {
+        "bezeichnung": "KFZ-Zulassungsbehörde (Amt für Einwohnerwesen, Abteilung Straßenverkehrsamt - 33/3)",
+        "strasse": "Höherweg 101",
+        "plz": "40233",
+        "ort": "Düsseldorf",
+        "quelle": "https://service.duesseldorf.de/suche/-/egov-bis-detail/einrichtung/16190/show"
+      }
+    ],
+    "website": {
+      "url": "https://www.duesseldorf.de/kfz/zulassung",
+      "quelle": "https://www.duesseldorf.de/kfz/zulassung"
+    },
+    "terminUrl": {
+      "url": "https://termine.duesseldorf.de/select2?md=2",
+      "quelle": "https://www.duesseldorf.de/kfz/online-services/terminvereinbarung"
+    },
+    "ikfzUrl": {
+      "url": "https://service.duesseldorf.de/i-kfz#/",
+      "quelle": "https://www.duesseldorf.de/kfz/zulassung/dienste/onlinezulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo, Di 7.30-16.00 Uhr",
+        "Do 7.30-18.00 Uhr",
+        "Mi, Fr 7.30-13.00 Uhr"
+      ],
+      "hinweis": "Servicezeiten nach vorheriger Terminvereinbarung. Achtung: Die Seite duesseldorf.de/kfz nennt abweichende Terminzeiten des Straßenverkehrsamts (Mo, Mi, Fr 7 bis 12.30 Uhr; Di, Do 13 bis 18 Uhr).",
+      "quelle": "https://service.duesseldorf.de/suche/-/egov-bis-detail/einrichtung/16190/show",
+      "weitereQuellen": ["https://www.duesseldorf.de/kfz/online-services/terminvereinbarung"]
+    },
+    "zustaendigkeit": {
+      "text": "Die Zulassung ist nur für in Düsseldorf mit Hauptwohnsitz gemeldete Personen sowie für Handelsunternehmen oder Firmen möglich.",
+      "quelle": "https://service.duesseldorf.de/suche/-/egov-bis-detail/dienstleistung/282/show"
+    },
+    "kuerzel": [
+      { "code": "D", "bedeutung": "Düsseldorf", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland" }
+    ],
+    "besonderheiten": [
+      { "text": "Es werden nur Anliegen bearbeitet, für die ein Termin vorliegt; die Online-Terminbuchung ist nur mit gültiger E-Mail-Adresse möglich.", "quelle": "https://www.duesseldorf.de/kfz/online-services/terminvereinbarung" },
+      { "text": "Terminvereinbarungen für die Zulassungsstelle sind grundsätzlich nur für Privatpersonen möglich; Autohändler und Zulassungsdienste wenden sich an den Händlerschalter.", "quelle": "https://service.duesseldorf.de/suche/-/vr-bis-detail/dienstleistung/16447/show" },
+      { "text": "Reservierte Wunsch- bzw. Serienkennzeichen bleiben 6 Monate reserviert; Gebühr insgesamt 12,80 Euro (2,60 Euro Reservierung + 10,20 Euro Zuteilung); maximal 3 Kennzeichen pro Person.", "quelle": "https://service.duesseldorf.de/suche/-/vr-bis-detail/dienstleistung/5234/show" }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": ["oeffnungszeiten", "ikfzUrl"]
+  },
+  {
+    "slug": "leipzig",
+    "stadt": "Leipzig",
+    "bundesland": "Sachsen",
+    "behoerde": "Kfz-Zulassungsbehörde der Stadt Leipzig",
+    "behoerdeQuelle": "https://www.leipzig.de/service-portal/dienststelle/kfz-zulassungsbehoerde-3231",
+    "traeger": "Stadt Leipzig (Ordnungsamt)",
+    "standorte": [
+      {
+        "bezeichnung": "Kfz-Zulassungsbehörde, Technisches Rathaus, Haus A",
+        "strasse": "Prager Straße 130-136",
+        "plz": "04317",
+        "ort": "Leipzig",
+        "quelle": "https://www.leipzig.de/service-portal/dienststelle/kfz-zulassungsbehoerde-3231"
+      }
+    ],
+    "website": {
+      "url": "https://www.leipzig.de/service-portal/themen-und-lebenslagen/kfz-zulassung",
+      "quelle": "https://www.leipzig.de/service-portal/themen-und-lebenslagen/kfz-zulassung"
+    },
+    "terminUrl": {
+      "url": "https://terminvereinbarung.leipzig.de/m/leipzig-kfz/extern/calendar/?uid=c97bb32a-92b8-41ba-b5c2-f91d0e90019f",
+      "quelle": "https://www.leipzig.de/service-portal/themen-und-lebenslagen/kfz-zulassung"
+    },
+    "ikfzUrl": {
+      "url": "https://ikfz.ikfz-sachsen.de/i4/ikfz4/?LICENSEIDENTIFIER=leipzig_stadt",
+      "quelle": "https://www.leipzig.de/service-portal/themen-und-lebenslagen/kfz-zulassung"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag: 08:00 - 18:00 Uhr",
+        "Dienstag: 08:00 - 18:00 Uhr",
+        "Mittwoch: 08:00 - 12:00 Uhr",
+        "Donnerstag: 08:00 - 16:00 Uhr",
+        "Freitag: 08:00 - 12:00 Uhr"
+      ],
+      "hinweis": "Sprechzeiten nur nach vorheriger Terminvereinbarung",
+      "quelle": "https://www.leipzig.de/service-portal/dienststelle/kfz-zulassungsbehoerde-3231"
+    },
+    "zustaendigkeit": {
+      "text": "Halter mit (Haupt-)Wohnsitz im Zulassungsbezirk Leipzig (Stadt Leipzig). Das Unterscheidungszeichen L wird auch vom Landkreis Leipzig geführt.",
+      "quelle": "https://www.leipzig.de/service-portal/dienstleistung/kfz-kennzeichen-reservieren-5260f66391d15",
+      "weitereQuellen": ["https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"]
+    },
+    "kuerzel": [
+      { "code": "L", "bedeutung": "Leipzig (Stadt Leipzig und Landkreis Leipzig)", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland" }
+    ],
+    "besonderheiten": [
+      { "text": "Persönliche Vorsprache nur mit Termin (Ausnahme: Abmeldung eines Fahrzeuges); Termine online oder über das Bürgertelefon 0341 115, dort auch Notfalltermine z. B. bei Kennzeichendiebstahl.", "quelle": "https://www.leipzig.de/service-portal/themen-und-lebenslagen/kfz-zulassung" },
+      { "text": "Über i-Kfz online beantragbar: Neuzulassung, Umschreibung, Wiederzulassung, Adressänderung und Außerbetriebsetzung; die Gebühren sind im Vergleich zur Vor-Ort-Dienstleistung deutlich abgesenkt.", "quelle": "https://www.leipzig.de/service-portal/themen-und-lebenslagen/kfz-zulassung" },
+      { "text": "Kennzeichen können online reserviert werden (Reservierung drei Monate gültig; Wunschkennzeichen 12,80 Euro); Leipziger Kennzeichen sind laut Stadt ausschließlich über leipzig.de reservierbar.", "quelle": "https://www.leipzig.de/service-portal/dienstleistung/kfz-kennzeichen-reservieren-5260f66391d15" }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "hannover",
+    "stadt": "Hannover",
+    "bundesland": "Niedersachsen",
+    "behoerde": "Kraftfahrzeugzulassungsbehörde der Landeshauptstadt Hannover",
+    "behoerdeQuelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Verwaltungen-Kommunen/Die-Verwaltung-der-Landeshauptstadt-Hannover/Dezernate-und-Fachbereiche-der-LHH/Finanzen,-Ordnung-und-Feuerwehr/Fachbereich-%C3%96ffentliche-Ordnung/Kraftfahrzeug%C2%ADzulassungs%C2%AD%C2%ADbeh%C3%B6rde",
+    "traeger": "Landeshauptstadt Hannover (Fachbereich Öffentliche Ordnung)",
+    "standorte": [
+      {
+        "bezeichnung": "HannoverServiceCenter am Schützenplatz",
+        "strasse": "Am Schützenplatz 1",
+        "plz": "30169",
+        "ort": "Hannover",
+        "quelle": "https://www.hannover.de/Media/02-GIS-Objekte/Organisationsdatenbank/Landeshauptstadt-Hannover/Verwaltung/Fachbereich-%C3%96ffentliche-Ordnung/Kraftfahrzeug%C2%ADzulassungsbeh%C3%B6rde"
+      }
+    ],
+    "website": {
+      "url": "https://www.hannover.de/Leben-in-der-Region-Hannover/Verwaltungen-Kommunen/Die-Verwaltung-der-Landeshauptstadt-Hannover/Dezernate-und-Fachbereiche-der-LHH/Finanzen,-Ordnung-und-Feuerwehr/Fachbereich-%C3%96ffentliche-Ordnung/Kraftfahrzeug%C2%ADzulassungs%C2%AD%C2%ADbeh%C3%B6rde",
+      "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Verwaltungen-Kommunen/Die-Verwaltung-der-Landeshauptstadt-Hannover/Dezernate-und-Fachbereiche-der-LHH/Finanzen,-Ordnung-und-Feuerwehr/Fachbereich-%C3%96ffentliche-Ordnung/Kraftfahrzeug%C2%ADzulassungs%C2%AD%C2%ADbeh%C3%B6rde"
+    },
+    "terminUrl": {
+      "url": "https://termin.hannover-stadt.de/kfz",
+      "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Verwaltungen-Kommunen/Die-Verwaltung-der-Landeshauptstadt-Hannover/Dezernate-und-Fachbereiche-der-LHH/Finanzen,-Ordnung-und-Feuerwehr/Fachbereich-%C3%96ffentliche-Ordnung/Kraftfahrzeug%C2%ADzulassungs%C2%AD%C2%ADbeh%C3%B6rde/Terminreservierung-bei-der-KFZ-Zulassungsbeh%C3%B6rde"
+    },
+    "ikfzUrl": {
+      "url": "https://landeshauptstadt-hannover-ikfz4.govconnect.de/i4/ikfz4/?LICENSEIDENTIFIER=hannover_stadt",
+      "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Verwaltungen-Kommunen/Die-Verwaltung-der-Landeshauptstadt-Hannover/Dezernate-und-Fachbereiche-der-LHH/Finanzen,-Ordnung-und-Feuerwehr/Fachbereich-%C3%96ffentliche-Ordnung/Kraftfahrzeug%C2%ADzulassungs%C2%AD%C2%ADbeh%C3%B6rde/iKFZ-Dienstleistungen-der-Landeshauptstadt-Hannover"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Mo: 07:30 - 15:00 Uhr",
+        "Di: 07:30 - 17:00 Uhr",
+        "Mi: 07:30 - 13:00 Uhr",
+        "Do: 07:30 - 16:00 Uhr",
+        "Fr: 07:30 - 12:30 Uhr"
+      ],
+      "hinweis": "NUR NACH VORHERIGER TERMINVEREINBARUNG",
+      "quelle": "https://www.hannover.de/Media/02-GIS-Objekte/Organisationsdatenbank/Landeshauptstadt-Hannover/Verwaltung/Fachbereich-%C3%96ffentliche-Ordnung/Kraftfahrzeug%C2%ADzulassungsbeh%C3%B6rde"
+    },
+    "zustaendigkeit": {
+      "text": "Die Kraftfahrzeugzulassungsbehörde der Landeshauptstadt Hannover ist für die Zulassung von Kraftfahrzeugen in der Stadt Hannover zuständig. In der übrigen Region Hannover gibt es das Service Center der Region Hannover sowie Kfz-Zulassungsstellen in fast allen Städten und Gemeinden.",
+      "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Verwaltungen-Kommunen/Die-Verwaltung-der-Landeshauptstadt-Hannover/Dezernate-und-Fachbereiche-der-LHH/Finanzen,-Ordnung-und-Feuerwehr/Fachbereich-%C3%96ffentliche-Ordnung/Kraftfahrzeug%C2%ADzulassungs%C2%AD%C2%ADbeh%C3%B6rde",
+      "weitereQuellen": ["https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Kfz-Zulassungen-in-der-Region-Hannover/KFZ-Zulassungsstellen-in-der-Region-Hannover"]
+    },
+    "kuerzel": [
+      { "code": "H", "bedeutung": "Hannover (Region Hannover, Stadt Hannover und übrige Region)", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland" }
+    ],
+    "besonderheiten": [
+      { "text": "Vor einem Besuch ist dringend ein Termin zu vereinbaren; Kund*innen ohne Termin kommen derzeit nicht in das Dienstgebäude.", "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Verwaltungen-Kommunen/Die-Verwaltung-der-Landeshauptstadt-Hannover/Dezernate-und-Fachbereiche-der-LHH/Finanzen,-Ordnung-und-Feuerwehr/Fachbereich-%C3%96ffentliche-Ordnung/Kraftfahrzeug%C2%ADzulassungs%C2%AD%C2%ADbeh%C3%B6rde/Terminreservierung-bei-der-KFZ-Zulassungsbeh%C3%B6rde" },
+      { "text": "Bei einem Termin können bis zu drei Zulassungen bearbeitet werden; alle Anliegen und deren Anzahl sind bei der Buchung anzugeben.", "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Verwaltungen-Kommunen/Die-Verwaltung-der-Landeshauptstadt-Hannover/Dezernate-und-Fachbereiche-der-LHH/Finanzen,-Ordnung-und-Feuerwehr/Fachbereich-%C3%96ffentliche-Ordnung/Kraftfahrzeug%C2%ADzulassungs%C2%AD%C2%ADbeh%C3%B6rde/Terminreservierung-bei-der-KFZ-Zulassungsbeh%C3%B6rde" },
+      { "text": "Wunschkennzeichen können online reserviert werden (wunschkennzeichen.hannover-stadt.de); zur Zulassung sollen die Kennzeichen möglichst bereits mitgebracht werden.", "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Verwaltungen-Kommunen/Die-Verwaltung-der-Landeshauptstadt-Hannover/Dezernate-und-Fachbereiche-der-LHH/Finanzen,-Ordnung-und-Feuerwehr/Fachbereich-%C3%96ffentliche-Ordnung/Kraftfahrzeug%C2%ADzulassungs%C2%AD%C2%ADbeh%C3%B6rde" }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "nuernberg",
+    "stadt": "Nürnberg",
+    "bundesland": "Bayern",
+    "behoerde": "Ordnungsamt der Stadt Nürnberg – Abteilung Kraftfahrzeugzulassung",
+    "behoerdeQuelle": "https://www.nuernberg.de/internet/ordnungsamt/oeffnungszeiten_oa.html",
+    "traeger": "Stadt Nürnberg (Ordnungsamt)",
+    "standorte": [
+      {
+        "bezeichnung": "Ordnungsamt, Abteilung Kraftfahrzeugzulassung",
+        "strasse": "Rathenauplatz 18",
+        "plz": "90489",
+        "ort": "Nürnberg",
+        "quelle": "https://www.nuernberg.de/internet/ordnungsamt/oeffnungszeiten_oa.html"
+      }
+    ],
+    "website": {
+      "url": "https://www.nuernberg.de/internet/ordnungsamt/kfz_zulassung.html",
+      "quelle": "https://www.nuernberg.de/internet/ordnungsamt/kfz_zulassung.html"
+    },
+    "terminUrl": {
+      "url": "https://nuernberg.termine-reservieren.de/select2?md=8",
+      "quelle": "https://www.nuernberg.de/internet/ordnungsamt/oeffnungszeiten_oa.html"
+    },
+    "ikfzUrl": {
+      "url": "https://www.nuernberg.de/internet/stadtportal/behoerdenwegweiser/information/ikfz_zulassung.html",
+      "quelle": "https://www.nuernberg.de/internet/ordnungsamt/dienstleistung/ikfz.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag, Dienstag und Donnerstag: 7.30 bis 15.30 Uhr",
+        "Mittwoch und Freitag: 7.30 bis 12.30 Uhr"
+      ],
+      "hinweis": "Für bestimmte Anliegen ist weiterhin ein persönlicher Termin erforderlich. Auch wenn Sie ein persönliches Gespräch bevorzugen, vereinbaren Sie bitte vor Ihrem Besuch online einen Termin.",
+      "quelle": "https://www.nuernberg.de/internet/ordnungsamt/oeffnungszeiten_oa.html"
+    },
+    "zustaendigkeit": {
+      "text": "Halter in der Stadt Nürnberg: Wer von außerhalb nach Nürnberg zuzieht oder ein Fahrzeug ohne „N“-Kennzeichen kauft, muss es bei der Nürnberger Zulassungsbehörde umschreiben lassen. Das Unterscheidungszeichen N wird auch vom Landkreis Nürnberger Land geführt.",
+      "quelle": "https://www.nuernberg.de/internet/ordnungsamt/kfz_zulassung.html",
+      "weitereQuellen": ["https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland"]
+    },
+    "kuerzel": [
+      { "code": "N", "bedeutung": "Nürnberg (Stadt Nürnberg und Landkreis Nürnberger Land)", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland" }
+    ],
+    "besonderheiten": [
+      { "text": "Besuche sind nur nach vorheriger Terminvereinbarung möglich.", "quelle": "https://www.nuernberg.de/internet/stadtportal/behoerdenwegweiser/dienstleistung/wunschkennzeichen.html" },
+      { "text": "Online beantragte Zulassungsdokumente können am Ausgabeterminal der Kfz-Zulassungsstelle ohne Termin abgeholt werden.", "quelle": "https://www.nuernberg.de/internet/ordnungsamt/kfz_zulassung.html" },
+      { "text": "Bei der Kfz-Zulassung stehen keine Parkplätze zur Verfügung; der ÖPNV hält direkt vor dem Gebäude.", "quelle": "https://www.nuernberg.de/internet/ordnungsamt/oeffnungszeiten_oa.html" }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "dortmund",
+    "stadt": "Dortmund",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Zulassungsbehörde der Stadt Dortmund (Bürgerdienste)",
+    "behoerdeQuelle": "https://www.dortmund.de/services/neues-fahrzeug-oder-neuen-anhaenger-anmelden.html",
+    "traeger": "Stadt Dortmund (Bürgerdienste)",
+    "standorte": [
+      { "bezeichnung": "Bürgerdienste – Dienstleistungszentrum Innenstadt (EWO, KFZ)", "strasse": "Südwall 2-4", "plz": "44137", "ort": "Dortmund", "quelle": "https://www.dortmund.de/services/neues-fahrzeug-oder-neuen-anhaenger-anmelden.html" },
+      { "bezeichnung": "Bezirksverwaltungsstelle Aplerbeck – Bürgerdienste Aplerbeck", "strasse": "Aplerbecker Marktplatz 21", "plz": "44287", "ort": "Dortmund", "quelle": "https://www.dortmund.de/services/neues-fahrzeug-oder-neuen-anhaenger-anmelden.html" },
+      { "bezeichnung": "Bezirksverwaltungsstelle Dortmund-Brackel – Bürgerdienste Brackel", "strasse": "Niedersachsenweg 13 - 15", "plz": "44143", "ort": "Dortmund", "quelle": "https://www.dortmund.de/services/neues-fahrzeug-oder-neuen-anhaenger-anmelden.html" },
+      { "bezeichnung": "Bezirksverwaltungsstelle Eving – Bürgerdienste Eving", "strasse": "August-Wagner-Platz 2-4", "plz": "44339", "ort": "Dortmund", "quelle": "https://www.dortmund.de/services/neues-fahrzeug-oder-neuen-anhaenger-anmelden.html" },
+      { "bezeichnung": "Bezirksverwaltungsstelle Dortmund-Hörde – Bürgerdienste Hörde", "strasse": "Hörder Bahnhofstr. 16", "plz": "44263", "ort": "Dortmund", "quelle": "https://www.dortmund.de/services/neues-fahrzeug-oder-neuen-anhaenger-anmelden.html" },
+      { "bezeichnung": "Bezirksverwaltungsstelle Dortmund-Hombruch – Bürgerdienste Hombruch (barrierefreier Zugang Domänenstr. 1)", "strasse": "Harkortstr. 58", "plz": "44225", "ort": "Dortmund", "quelle": "https://www.dortmund.de/services/neues-fahrzeug-oder-neuen-anhaenger-anmelden.html" },
+      { "bezeichnung": "Bezirksverwaltungsstelle Dortmund-Huckarde – Bürgerdienste Huckarde", "strasse": "Rahmer Str. 15", "plz": "44369", "ort": "Dortmund", "quelle": "https://www.dortmund.de/services/neues-fahrzeug-oder-neuen-anhaenger-anmelden.html" },
+      { "bezeichnung": "Bezirksverwaltungsstelle Dortmund-Lütgendortmund – Bürgerdienste Lütgendortmund", "strasse": "Limbecker Straße 31", "plz": "44388", "ort": "Dortmund", "quelle": "https://www.dortmund.de/services/neues-fahrzeug-oder-neuen-anhaenger-anmelden.html" },
+      { "bezeichnung": "Bezirksverwaltungsstelle Dortmund-Mengede – Bürgerdienste Mengede", "strasse": "Am Amtshaus 1", "plz": "44359", "ort": "Dortmund", "quelle": "https://www.dortmund.de/services/neues-fahrzeug-oder-neuen-anhaenger-anmelden.html" },
+      { "bezeichnung": "Bezirksverwaltungsstelle Scharnhorst – Bürgerdienste Scharnhorst", "strasse": "Gleiwitzstraße 277", "plz": "44328", "ort": "Dortmund", "quelle": "https://www.dortmund.de/services/neues-fahrzeug-oder-neuen-anhaenger-anmelden.html" }
+    ],
+    "website": {
+      "url": "https://www.dortmund.de/services/neues-fahrzeug-oder-neuen-anhaenger-anmelden.html",
+      "quelle": "https://www.dortmund.de/services/neues-fahrzeug-oder-neuen-anhaenger-anmelden.html"
+    },
+    "terminUrl": {
+      "url": "https://dortmund.termine-reservieren.de/",
+      "quelle": "https://www.dortmund.de/services/neues-fahrzeug-oder-neuen-anhaenger-anmelden.html"
+    },
+    "ikfzUrl": {
+      "url": "https://ikfz.dortmund.de/",
+      "quelle": "https://www.dortmund.de/services/neues-fahrzeug-oder-neuen-anhaenger-anmelden.html"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Dienstleistungszentrum Innenstadt: Montag 07:00 Uhr bis 16:00 Uhr, Dienstag 07:00 Uhr bis 16:00 Uhr, Mittwoch 07:00 Uhr bis 12:00 Uhr, Donnerstag 07:00 Uhr bis 18:00 Uhr, Freitag 07:00 Uhr bis 12:00 Uhr",
+        "Bezirksverwaltungsstellen (Aplerbeck, Brackel, Eving, Hörde, Hombruch, Huckarde, Lütgendortmund, Mengede, Scharnhorst): Montag 08:00 Uhr bis 16:00 Uhr, Dienstag 08:00 Uhr bis 16:00 Uhr, Mittwoch 07:00 Uhr bis 12:00 Uhr, Donnerstag 08:00 Uhr bis 18:00 Uhr, Freitag 07:00 Uhr bis 12:00 Uhr",
+        "Samstag und Sonntag geschlossen"
+      ],
+      "hinweis": "Die Bürgerdienste bieten ausschließlich Vorsprachen nach vorhergehender Terminvereinbarung an.",
+      "quelle": "https://www.dortmund.de/services/neues-fahrzeug-oder-neuen-anhaenger-anmelden.html"
+    },
+    "zustaendigkeit": {
+      "text": "Privatpersonen mit alleiniger Wohnung bzw. Hauptwohnung in Dortmund; Firmen mit Betriebssitz in Dortmund bzw. bei Filialen mit selbständiger Zweigniederlassung in Dortmund.",
+      "quelle": "https://www.dortmund.de/services/neues-fahrzeug-oder-neuen-anhaenger-anmelden.html"
+    },
+    "kuerzel": [
+      { "code": "DO", "bedeutung": "Dortmund", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland" }
+    ],
+    "besonderheiten": [
+      { "text": "Eine Neuzulassung ist im Dienstleistungszentrum Innenstadt und in neun Bezirksverwaltungsstellen möglich, jeweils nur mit vorher gebuchtem Termin.", "quelle": "https://www.dortmund.de/services/neues-fahrzeug-oder-neuen-anhaenger-anmelden.html" },
+      { "text": "Kfz-Händler und Zulassungsdienste werden ausschließlich im Händlerbereich Innenstadt (Südwall 2-4, 1. Etage) bedient; Abgabe täglich 7-9 Uhr.", "quelle": "https://www.dortmund.de/services/neues-fahrzeug-oder-neuen-anhaenger-anmelden.html" },
+      { "text": "Eine Wunschkennzeichen-Reservierung gilt 90 Tage und kann nicht verlängert werden; Reservierungen über drei Stück hinaus kann die Stadt löschen.", "quelle": "https://www.dortmund.de/services/wunschkennzeichen-beantragen.html" }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "essen",
+    "stadt": "Essen",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Zulassungsbehörde der Stadt Essen (Kraftfahrzeugzulassungen und Fahrerlaubnisse)",
+    "behoerdeQuelle": "https://service.essen.de/detail/-/vr-bis-detail/einrichtung/10680/show",
+    "traeger": "Stadt Essen (Einwohneramt)",
+    "standorte": [
+      {
+        "bezeichnung": "Kraftfahrzeugzulassungen und Fahrerlaubnisse",
+        "strasse": "Altendorfer Str. 101",
+        "plz": "45143",
+        "ort": "Essen",
+        "quelle": "https://service.essen.de/detail/-/vr-bis-detail/einrichtung/10680/show"
+      }
+    ],
+    "website": {
+      "url": "https://service.essen.de/detail/-/vr-bis-detail/dienstleistung/2282230/show",
+      "quelle": "https://service.essen.de/detail/-/vr-bis-detail/dienstleistung/2282230/show"
+    },
+    "terminUrl": {
+      "url": "https://termine.essen.de/?link=3211",
+      "quelle": "https://service.essen.de/detail/-/vr-bis-detail/dienstleistung/41793/show"
+    },
+    "ikfzUrl": {
+      "url": "https://www.behoerden-serviceportal.de/onlineantraege/onlineantrag?prozessKey=m40191.zl&oeId=L100002.OE.166854559&leistungId=99036020001000&p=051130",
+      "quelle": "https://service.essen.de/detail/-/vr-bis-detail/dienstleistung/41793/show"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montag 08:00 bis 15:00 Uhr",
+        "Dienstag 08:00 bis 15:00 Uhr",
+        "Mittwoch 08:00 bis 15:00 Uhr",
+        "Donnerstag 08:00 bis 18:00 Uhr",
+        "Freitag 08:00 bis 12:00 Uhr"
+      ],
+      "hinweis": "Für eine persönliche Vorsprache in der Zulassungsbehörde Essen benötigen Sie einen Termin oder können für bestimmte Dienstleistungen den Schnellschalter nutzen.",
+      "quelle": "https://service.essen.de/detail/-/vr-bis-detail/einrichtung/10680/show",
+      "hinweisQuelle": "https://service.essen.de/detail/-/vr-bis-detail/dienstleistung/2282230/show"
+    },
+    "zustaendigkeit": {
+      "text": "Halter, die in Essen wohnen, einschließlich Personen, die mit ihrem Bestandsfahrzeug nach Essen zugezogen sind.",
+      "quelle": "https://service.essen.de/detail/-/vr-bis-detail/dienstleistung/41862/show"
+    },
+    "kuerzel": [
+      { "code": "E", "bedeutung": "Essen", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland" }
+    ],
+    "besonderheiten": [
+      { "text": "Schnellschalter im 2. OG ohne vorherige Terminvereinbarung für kurze Anliegen (z. B. kurzfristige Außerbetriebsetzung, Kennzeichenreservierung, Halterdatenänderung, Ersatz-Zulassungsbescheinigung Teil I): Mo-Mi 08:00-14:30 Uhr, Do 08:00-17:30 Uhr, Fr 08:00-11:30 Uhr.", "quelle": "https://service.essen.de/detail/-/vr-bis-detail/dienstleistung/2282230/show" },
+      { "text": "Die Kfz-Zulassungsstelle ist im Januar 2026 vom Globus Center in Essen-Steele an die Altendorfer Straße 101 (Westviertel) umgezogen.", "quelle": "https://www.essen.de/meldungen/pressemeldung_1583439.de.html" },
+      { "text": "Online (i-Kfz) möglich: Neuzulassung, Tageszulassung, Umschreibung, Wiederzulassung, Außerbetriebsetzung, Anschriftenänderung sowie Wunsch- und Zufallskennzeichen-Reservierung.", "quelle": "https://service.essen.de/detail/-/vr-bis-detail/dienstleistung/2282230/show" }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "duisburg",
+    "stadt": "Duisburg",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Straßenverkehrsamt der Stadt Duisburg – Zulassungsbehörde",
+    "behoerdeQuelle": "https://www.duisburg.de/vv/oe/Dezernat-VII/32/2/102010100000003285",
+    "traeger": "Stadt Duisburg (Bürger- und Ordnungsamt)",
+    "standorte": [
+      {
+        "bezeichnung": "Straßenverkehrsamt",
+        "strasse": "Theodor-Heuss-Straße 80",
+        "plz": "47167",
+        "ort": "Duisburg",
+        "quelle": "https://www.duisburg.de/vv/oe/Dezernat-VII/32/2/102010100000003285"
+      }
+    ],
+    "website": {
+      "url": "https://www.duisburg.de/vv/oe/Dezernat-VII/32/2/102010100000003285",
+      "quelle": "https://www.duisburg.de/vv/oe/Dezernat-VII/32/2/102010100000003285"
+    },
+    "terminUrl": {
+      "url": "https://www.etermin.net/stadt-duisburg-zul",
+      "quelle": "https://duisburg.de/vv/produkte/pro_du/dez_vii/32/oeffnungszeiten_strassenverkehrsamt"
+    },
+    "ikfzUrl": {
+      "url": "https://www.duisburg.de/allgemein/fachbereiche/i-kfz.php",
+      "quelle": "https://duisburg.de/vv/produkte/pro_du/dez_vii/32/zulassung_neufahrzeug"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [
+        "Montags bis donnerstags: 7:30 - 13:00 Uhr und 13:30 - 16:00 Uhr",
+        "Freitags: 7:30 - 13:00 Uhr"
+      ],
+      "hinweis": "Öffnungszeiten für Vorsprachen mit Termin; Vorsprachen im Straßenverkehrsamt sind nur mit vorheriger Terminvereinbarung möglich.",
+      "quelle": "https://duisburg.de/vv/produkte/pro_du/dez_vii/32/oeffnungszeiten_strassenverkehrsamt"
+    },
+    "zustaendigkeit": {
+      "text": "Zuständig ist das Straßenverkehrsamt, in dessen Bereich der Wohnort der Privatperson liegt (bzw. bei Firmen der Firmensitz oder die Niederlassung) – für Duisburg also das Straßenverkehrsamt Duisburg.",
+      "quelle": "https://duisburg.de/vv/produkte/pro_du/dez_vii/32/zulassung_neufahrzeug"
+    },
+    "kuerzel": [
+      { "code": "DU", "bedeutung": "Duisburg", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland" }
+    ],
+    "besonderheiten": [
+      { "text": "Termine für sämtliche Dienstleistungen der Zulassungsbehörde können bis zu einer Woche im Voraus online gebucht werden; bereits geprägte Kennzeichenschilder sind mitzubringen.", "quelle": "https://duisburg.de/vv/produkte/pro_du/dez_vii/32/oeffnungszeiten_strassenverkehrsamt" },
+      { "text": "Seit dem 03.08.2026 sind im Straßenverkehrsamt nur noch bargeldlose Zahlungen möglich.", "quelle": "https://duisburg.de/vv/produkte/pro_du/dez_vii/32/oeffnungszeiten_strassenverkehrsamt" },
+      { "text": "Zwei- oder dreistellige Kennzeichenkombinationen (z. B. DU-A1, DU-BB9, DU-C25) können nicht online, sondern nur im Straßenverkehrsamt reserviert werden.", "quelle": "https://duisburg.de/vv/produkte/pro_du/dez_vii/32/oeffnungszeiten_strassenverkehrsamt" }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": []
+  },
+  {
+    "slug": "bochum",
+    "stadt": "Bochum",
+    "bundesland": "Nordrhein-Westfalen",
+    "behoerde": "Büro für Kfz-Angelegenheiten der Stadt Bochum",
+    "behoerdeQuelle": "https://www.bochum.de/Buero-fuer-Kfz-Angelegenheiten",
+    "traeger": "Stadt Bochum",
+    "standorte": [
+      {
+        "bezeichnung": "Büro für Kfz-Angelegenheiten",
+        "strasse": "Bulksmühle 17",
+        "plz": "44777",
+        "ort": "Bochum",
+        "quelle": "https://www.bochum.de/Buero-fuer-Kfz-Angelegenheiten"
+      }
+    ],
+    "website": {
+      "url": "https://www.bochum.de/Buero-fuer-Kfz-Angelegenheiten",
+      "quelle": "https://www.bochum.de/Buero-fuer-Kfz-Angelegenheiten"
+    },
+    "terminUrl": {
+      "url": "https://www.bochum.de/Online-Terminbuchung",
+      "quelle": "https://www.bochum.de/Buero-fuer-Kfz-Angelegenheiten/Dienstleistungen-und-Infos/Umkennzeichnung"
+    },
+    "ikfzUrl": {
+      "url": "https://www.bochum.de/onlinezulassungsbehoerde#/",
+      "quelle": "https://www.bochum.de/Buero-fuer-Kfz-Angelegenheiten"
+    },
+    "oeffnungszeiten": {
+      "zeilen": [],
+      "hinweis": "Eine persönliche Vorsprache im Büro für Kfz-Angelegenheiten ist nur mit Termin möglich. Termine können über die Online-Termin-Funktion oder über die Behördennummer 115 gebucht werden.",
+      "quelle": "https://www.bochum.de/Buero-fuer-Kfz-Angelegenheiten"
+    },
+    "zustaendigkeit": {
+      "text": "Halter mit Wohnsitz bzw. Firmensitz in Bochum.",
+      "quelle": "https://www.bochum.de/Buero-fuer-Kfz-Angelegenheiten/Dienstleistungen-und-Infos/Umkennzeichnung"
+    },
+    "kuerzel": [
+      { "code": "BO", "bedeutung": "Bochum", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland" },
+      { "code": "WAT", "bedeutung": "Wattenscheid (Stadt Bochum)", "quelle": "https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland" }
+    ],
+    "besonderheiten": [
+      { "text": "Eine persönliche Vorsprache ist nur mit Termin möglich; Termine gibt es online oder über die Behördennummer 115.", "quelle": "https://www.bochum.de/Buero-fuer-Kfz-Angelegenheiten" },
+      { "text": "Wunschkennzeichen können online reserviert werden (2,60 Euro, bei Zuteilung zusätzlich 10,20 Euro); eine Reservierung kann frühestens 10 Tage vor Ablauf um weitere 180 Tage verlängert werden.", "quelle": "https://www.bochum.de/Buero-fuer-Kfz-Angelegenheiten/Dienstleistungen-und-Infos/Wunschkennzeichen" },
+      { "text": "Über die Online-Zulassungsbehörde lassen sich alle gängigen Fahrzeug-Zulassungen und -Abmeldungen von zu Hause beantragen.", "quelle": "https://www.bochum.de/Buero-fuer-Kfz-Angelegenheiten" }
+    ],
+    "abgerufenAm": "2026-11-03",
+    "unsicher": ["oeffnungszeiten", "kuerzel"]
+  }
+]

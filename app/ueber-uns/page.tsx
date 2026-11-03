@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { HeartHandshake, Laptop, ShieldCheck, Sparkles } from "lucide-react";
 import CTASection from "@/components/CTASection";
+import { site } from "@/lib/site";
 import Reveal from "@/components/Reveal";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Über uns – wer hinter DeutscheZulassung steht",
   description:
-    "DeutscheZulassung verbindet moderne Software mit persönlichem Service: Lernen Sie unser Team und unsere Mission kennen – Kfz-Zulassung ohne Behördenstress.",
+    "Wer hinter DeutscheZulassung steht, wer Ihre Zulassung bearbeitet und wie wir arbeiten: privater Zulassungsdienst mit persönlicher Betreuung, keine Behörde.",
 };
 
 const values = [
@@ -38,6 +40,9 @@ export default function UeberUnsPage() {
     <>
       <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-14 sm:py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="mb-5">
+            <Breadcrumbs items={[{ name: "Über uns" }]} />
+          </div>
           <h1 className="font-display text-4xl font-bold text-ink-900 sm:text-5xl">
             Über DeutscheZulassung
           </h1>
@@ -80,6 +85,65 @@ export default function UeberUnsPage() {
               </Reveal>
             ))}
           </div>
+
+          <Reveal className="mt-14">
+            <div className="grid gap-6 lg:grid-cols-2">
+              <section className="rounded-2xl border border-ink-200 bg-white p-7 shadow-card">
+                <h2 className="font-display text-2xl font-bold text-ink-900">Wer Ihre Zulassung bearbeitet</h2>
+                <p className="mt-4 leading-relaxed text-ink-700">
+                  Jeder Auftrag wird von einer Person aus unserem Team betreut – von der Prüfung Ihrer Unterlagen bis
+                  zum Versand der Papiere. Sie erreichen Ihre Ansprechperson {site.contact.hours} per WhatsApp,
+                  Telefon oder E-Mail.
+                </p>
+                <ul className="mt-4 space-y-2 text-sm text-ink-700">
+                  <li>· Wir prüfen Ihre Unterlagen, bevor etwas bei der Behörde eingereicht wird.</li>
+                  <li>· Fehlt etwas, melden wir uns – statt den Antrag scheitern zu lassen.</li>
+                  <li>· Wir reichen den Antrag mit Ihrer Vollmacht bei der zuständigen Zulassungsbehörde ein.</li>
+                  <li>· Über die Zulassung selbst entscheidet immer die Behörde.</li>
+                </ul>
+              </section>
+              <section className="rounded-2xl border border-ink-200 bg-ink-50 p-7">
+                <h2 className="font-display text-2xl font-bold text-ink-900">Wer hinter {site.name} steht</h2>
+                <p className="mt-4 leading-relaxed text-ink-700">
+                  {site.company.brandNote} {site.name} ist ein privater Zulassungsdienst – keine Behörde und kein
+                  Angebot einer Behörde.
+                </p>
+                <dl className="mt-4 space-y-2 text-sm text-ink-700">
+                  <div>
+                    <dt className="inline font-semibold text-ink-900">Unternehmen: </dt>
+                    <dd className="inline">{site.company.legalName}</dd>
+                  </div>
+                  <div>
+                    <dt className="inline font-semibold text-ink-900">Sitz: </dt>
+                    <dd className="inline">
+                      {site.company.street}, {site.company.zipCity}
+                    </dd>
+                  </div>
+                  <div>
+                    <dt className="inline font-semibold text-ink-900">Handelsregister: </dt>
+                    <dd className="inline">{site.company.register}</dd>
+                  </div>
+                  <div>
+                    <dt className="inline font-semibold text-ink-900">Verantwortlich: </dt>
+                    <dd className="inline">{site.company.responsible}</dd>
+                  </div>
+                </dl>
+                <p className="mt-4 text-sm">
+                  <Link href="/impressum/" className="font-semibold text-brand-700 underline underline-offset-2">
+                    Impressum
+                  </Link>{" "}
+                  ·{" "}
+                  <Link href="/datensicherheit/" className="font-semibold text-brand-700 underline underline-offset-2">
+                    Datensicherheit
+                  </Link>{" "}
+                  ·{" "}
+                  <Link href="/servicebedingungen/" className="font-semibold text-brand-700 underline underline-offset-2">
+                    Servicebedingungen
+                  </Link>
+                </p>
+              </section>
+            </div>
+          </Reveal>
 
           <Reveal className="mt-12">
             <p className="text-ink-700">
