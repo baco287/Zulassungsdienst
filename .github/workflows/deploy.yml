@@ -100,6 +100,8 @@ jobs:
       # minutenlang keine Styles. Daher: (1) neue Assets zuerst hochladen (ohne
       # Loeschen - alte bleiben fuer noch ausgeliefertes altes HTML verfuegbar),
       # (2) HTML & Rest spiegeln, (3) erst zum Schluss verwaiste Assets loeschen.
+      # --parallel=6: seit dem Zulassungsstellen-Ausbau (>1.300 Seiten) dauerte der
+      # serielle Upload ueber eine Stunde; parallele Verbindungen verkuerzen das deutlich.
       - name: Per FTPS zu all-inkl deployen (lftp)
         if: env.HAS_FTP != ''
         env:
@@ -133,9 +135,9 @@ jobs:
             set net:timeout 60;
             open $FTP_SERVER;
             pwd;
-            mirror -R --verbose=1 ./out/_next/ /deutschezulassung.de/_next/;
-            mirror -R --delete --verbose=1 --exclude ^_next/ ./out/ /deutschezulassung.de/;
-            mirror -R --delete --verbose=1 ./out/_next/ /deutschezulassung.de/_next/;
+            mirror -R --parallel=6 --verbose=1 ./out/_next/ /deutschezulassung.de/_next/;
+            mirror -R --parallel=6 --delete --verbose=1 --exclude ^_next/ ./out/ /deutschezulassung.de/;
+            mirror -R --parallel=6 --delete --verbose=1 ./out/_next/ /deutschezulassung.de/_next/;
             bye
           " 2>&1 | tee -a /tmp/lftp.log
           rm -f ~/.netrc
