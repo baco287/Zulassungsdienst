@@ -1,149 +1,117 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, Phone, ShieldCheck } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { site, whatsAppLink } from "@/lib/site";
 import { sortedServices } from "@/lib/services";
 import WhatsAppIcon from "./WhatsAppIcon";
-import { analyticsProvider, gadsId } from "@/lib/analytics";
 import { SERVICEBEDINGUNGEN_FREIGEGEBEN } from "@/lib/features";
 
+const service = [
+  { href: "/kfz-zulassung-ohne-eid", label: "Ohne eID" },
+  { href: "/ablauf", label: "Ablauf" },
+  { href: "/preise", label: "Preise" },
+  { href: "/datensicherheit", label: "Sicherheit" },
+  { href: "/gewerbe", label: "Für Gewerbe" },
+  { href: "/unterlagen", label: "Unterlagen hochladen" },
+];
+
+const unternehmen = [
+  { href: "/ueber-uns", label: "Über uns" },
+  { href: "/kontakt", label: "Kontakt" },
+  { href: "/faq", label: "FAQ" },
+  { href: "/zulassung-per-whatsapp", label: "Zulassung per WhatsApp" },
+];
+
+/* Wissensbereich bewusst behalten: Ratgeber, Städte und Zulassungsstellen tragen den Großteil der Suchmaschinen-Besucher. */
+const wissen = [
+  { href: "/ratgeber", label: "Ratgeber" },
+  { href: "/anleitung", label: "Anleitung mit Bildern" },
+  { href: "/kfz-zulassung", label: "Kfz-Zulassung nach Stadt" },
+  { href: "/zulassungsstelle", label: "Zulassungsstellen" },
+  { href: "/kennzeichen", label: "Kennzeichenkürzel" },
+  { href: "/rechner", label: "Rechner & Tools" },
+  { href: "/vorlagen", label: "Vorlagen & Downloads" },
+];
+
+function Col({ title, links }: { title: string; links: { href: string; label: string }[] }) {
+  return (
+    <nav aria-label={title}>
+      <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-white">{title}</h2>
+      <ul className="mt-4 space-y-2.5 text-[15px]">
+        {links.map((l) => (
+          <li key={l.href}>
+            <Link href={l.href} className="transition-colors duration-150 hover:text-white">
+              {l.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+}
+
 export default function Footer() {
-  const topServices = sortedServices.filter((s) => s.category === "zulassung").slice(0, 6);
+  const leistungen = sortedServices
+    .filter((s) => s.category === "zulassung")
+    .slice(0, 6)
+    .map((s) => ({ href: `/leistungen/${s.slug}/`, label: s.shortName ?? s.name }));
 
   return (
-    <footer className="border-t border-ink-200 bg-ink-950 text-ink-300">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-4">
+    <footer className="bg-navy text-white/70">
+      <div className="mx-auto grid max-w-[1240px] gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1fr]">
         <div>
           <Image
             src="/logo-hell.png"
             alt={`${site.name} – Kfz-Zulassung online`}
             width={600}
             height={148}
-            className="h-10 w-auto"
+            className="h-12 w-auto"
           />
-          <p className="mt-4 max-w-xs text-sm leading-relaxed">
-            Ihr digitaler Zulassungsdienst: transparent, schnell und persönlich betreut –
-            von der Neuzulassung bis zur Abmeldung.
+          <p className="mt-5 max-w-xs text-[15px] leading-relaxed">
+            Kfz-Zulassung ohne eID und ohne Behördentermin – bundesweit, persönlich geprüft.
           </p>
-          <p className="mt-4 flex items-center gap-2 text-xs text-ink-400">
-            <ShieldCheck className="h-4 w-4 text-brand-400" aria-hidden />
-            {gadsId
-              ? "Verschlüsselte Übertragung · Werbe-Cookies nur mit Einwilligung"
-              : analyticsProvider
-                ? "Verschlüsselte Übertragung · cookielose Webanalyse"
-                : "Verschlüsselte Übertragung · keine Tracking-Cookies"}
+          <p className="mt-4 inline-flex rounded-full border border-white/15 px-3 py-1 text-xs font-semibold text-white/80">
+            Privater Zulassungsdienst, keine Behörde.
           </p>
-        </div>
-
-        <div className="space-y-8">
-        <nav aria-label="Leistungen">
-          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-white">
-            Leistungen
-          </h2>
-          <ul className="mt-4 space-y-2 text-sm">
-            {topServices.map((s) => (
-              <li key={s.slug}>
-                <Link
-                  href={`/leistungen/${s.slug}/`}
-                  className="transition-colors duration-200 hover:text-white"
-                >
-                  {s.shortName ?? s.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <nav aria-label="Häufige Anliegen">
-          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-white">
-            Häufige Anliegen
-          </h2>
-          <ul className="mt-4 space-y-2 text-sm">
-            <li><Link href="/kfz-zulassung-ohne-eid" className="transition-colors duration-200 hover:text-white">Zulassung ohne eID</Link></li>
-            <li><Link href="/auto-abmelden-ohne-eid" className="transition-colors duration-200 hover:text-white">Abmelden ohne eID</Link></li>
-            <li><Link href="/ikfz-funktioniert-nicht" className="transition-colors duration-200 hover:text-white">i-Kfz funktioniert nicht</Link></li>
-            <li><Link href="/ikfz-fehlermeldung" className="transition-colors duration-200 hover:text-white">i-Kfz-Fehlermeldungen</Link></li>
-            <li><Link href="/auto-online-anmelden" className="transition-colors duration-200 hover:text-white">Auto online anmelden</Link></li>
-            <li><Link href="/zulassungsdienst-online" className="transition-colors duration-200 hover:text-white">Zulassungsdienst online</Link></li>
-          </ul>
-        </nav>
-        </div>
-
-        <nav aria-label="Unternehmen">
-          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-white">
-            Unternehmen
-          </h2>
-          <ul className="mt-4 space-y-2 text-sm">
-            <li><Link href="/ueber-uns" className="transition-colors duration-200 hover:text-white">Über uns</Link></li>
-            <li><Link href="/ablauf" className="transition-colors duration-200 hover:text-white">So funktioniert’s</Link></li>
-            <li><Link href="/anleitung" className="transition-colors duration-200 hover:text-white">Schritt-für-Schritt-Anleitung</Link></li>
-            <li><Link href="/zulassung-per-whatsapp" className="transition-colors duration-200 hover:text-white">Zulassung per WhatsApp</Link></li>
-            <li><Link href="/maxx" className="transition-colors duration-200 hover:text-white">Schnellstart mit Maxx</Link></li>
-            <li><Link href="/gewerbe" className="transition-colors duration-200 hover:text-white">Für Gewerbekunden</Link></li>
-            <li><Link href="/kfz-zulassung" className="transition-colors duration-200 hover:text-white">Kfz-Zulassung nach Stadt</Link></li>
-            <li><Link href="/zulassungsstelle" className="transition-colors duration-200 hover:text-white">Zulassungsstellen</Link></li>
-            <li><Link href="/kennzeichen" className="transition-colors duration-200 hover:text-white">Kennzeichenkürzel</Link></li>
-            <li><Link href="/preise" className="transition-colors duration-200 hover:text-white">Preise</Link></li>
-            <li><Link href="/ratgeber" className="transition-colors duration-200 hover:text-white">Ratgeber</Link></li>
-            <li><Link href="/rechner" className="transition-colors duration-200 hover:text-white">Rechner &amp; Tools</Link></li>
-            <li><Link href="/vorlagen" className="transition-colors duration-200 hover:text-white">Vorlagen &amp; Downloads</Link></li>
-            <li><Link href="/faq" className="transition-colors duration-200 hover:text-white">Häufige Fragen</Link></li>
-            <li><Link href="/kontakt" className="transition-colors duration-200 hover:text-white">Kontakt</Link></li>
-            <li><Link href="/unterlagen" className="transition-colors duration-200 hover:text-white">Unterlagen hochladen</Link></li>
-          </ul>
-        </nav>
-
-        <div>
-          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-white">
-            Kontakt
-          </h2>
-          <ul className="mt-4 space-y-3 text-sm">
+          <ul className="mt-6 space-y-2.5 text-[15px]">
             <li>
-              <a
-                href={`mailto:${site.contact.email}`}
-                className="flex items-center gap-2 transition-colors duration-200 hover:text-white"
-              >
-                <Mail className="h-4 w-4 text-brand-400" aria-hidden />
+              <a href={`mailto:${site.contact.email}`} className="flex items-center gap-2 transition-colors duration-150 hover:text-white">
+                <Mail className="h-4 w-4 text-gold" aria-hidden />
                 {site.contact.email}
               </a>
             </li>
             <li>
-              <a
-                href={`tel:${site.contact.phone.replace(/\s/g, "")}`}
-                className="flex items-center gap-2 transition-colors duration-200 hover:text-white"
-              >
-                <Phone className="h-4 w-4 text-brand-400" aria-hidden />
+              <a href={`tel:${site.contact.phone.replace(/\s/g, "")}`} className="flex items-center gap-2 transition-colors duration-150 hover:text-white">
+                <Phone className="h-4 w-4 text-gold" aria-hidden />
                 {site.contact.phoneDisplay}
               </a>
             </li>
             <li>
-              <a
-                href={whatsAppLink()}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 transition-colors duration-200 hover:text-white"
-              >
-                <WhatsAppIcon className="h-4 w-4 text-brand-400" />
+              <a href={whatsAppLink()} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 transition-colors duration-150 hover:text-white">
+                <WhatsAppIcon className="h-4 w-4" color="brand" />
                 WhatsApp-Chat
               </a>
             </li>
-            <li className="text-xs text-ink-400">{site.contact.hours}</li>
+            <li className="text-xs text-white/50">{site.contact.hours}</li>
           </ul>
         </div>
+
+        <Col title="Leistungen" links={leistungen} />
+        <Col title="Service" links={service} />
+        <Col title="Unternehmen" links={unternehmen} />
+        <Col title="Wissen" links={wissen} />
       </div>
 
-      <div className="border-t border-ink-800">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-4 py-6 text-xs text-ink-400 sm:flex-row sm:px-6">
-          <p>
-            © {new Date().getFullYear()} {site.name} · Privater Zulassungsdienst, keine Behörde.
-          </p>
+      <div className="border-t border-white/10">
+        <div className="mx-auto flex max-w-[1240px] flex-col items-center justify-between gap-3 px-4 py-6 text-xs text-white/50 sm:flex-row sm:px-6">
+          <p>© {new Date().getFullYear()} {site.name} · {site.company.legalName}</p>
           <nav aria-label="Rechtliches" className="flex flex-wrap justify-center gap-x-5 gap-y-2">
-            <Link href="/impressum" className="transition-colors duration-200 hover:text-white">Impressum</Link>
-            <Link href="/datenschutz" className="transition-colors duration-200 hover:text-white">Datenschutz</Link>
-            <Link href="/widerruf" className="transition-colors duration-200 hover:text-white">Widerruf</Link>
+            <Link href="/impressum" className="transition-colors duration-150 hover:text-white">Impressum</Link>
+            <Link href="/datenschutz" className="transition-colors duration-150 hover:text-white">Datenschutz</Link>
+            <Link href="/widerruf" className="transition-colors duration-150 hover:text-white">Widerruf</Link>
             {SERVICEBEDINGUNGEN_FREIGEGEBEN && (
-              <Link href="/servicebedingungen" className="transition-colors duration-200 hover:text-white">Servicebedingungen</Link>
+              <Link href="/servicebedingungen" className="transition-colors duration-150 hover:text-white">Servicebedingungen</Link>
             )}
-            <Link href="/datensicherheit" className="transition-colors duration-200 hover:text-white">Datensicherheit</Link>
           </nav>
         </div>
       </div>

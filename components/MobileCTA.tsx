@@ -43,9 +43,9 @@ export default function MobileCTA() {
           <Link
             href="/auftrag"
             onClick={() => track("cta_click", { position: "mobile_leiste" })}
-            className="flex flex-1 items-center justify-center rounded-xl bg-brand-700 px-4 py-3 font-display text-sm font-semibold text-white"
+            className="flex flex-1 items-center justify-center rounded-xl bg-navy px-4 py-3 font-display text-sm font-semibold text-white"
           >
-            Jetzt zulassen
+            Auftrag starten
           </Link>
         </div>
       </nav>

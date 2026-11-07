@@ -35,6 +35,18 @@
   --color-accent-500: #f59e0b;
   --color-accent-600: #d97706;
 
+  /* Startseiten-Tokens (ruhige Navy/Gold-Welt) */
+  --color-navy: #0b1f3a;
+  --color-navy-800: #142c4e;
+  --color-gold: #f4b740;
+  --color-gold-600: #d99a1e;
+  --color-gold-50: #fff8e8;
+  --color-offwhite: #faf8f3;
+  --color-line: #dfe4e9;
+  --color-muted: #526071;
+  --color-wa: #25d366;
+  --color-danger: #ff4d4f;
+
   --font-sans: var(--font-source-sans), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-lexend), ui-sans-serif, system-ui, sans-serif;
 
@@ -101,6 +113,13 @@ h1, h2, h3, h4 {
   animation: blobdrift 16s ease-in-out infinite;
 }
 .blob-delayed { animation-delay: -8s; }
+
+/* Startseite: warmes Off-White mit sehr zurückhaltendem Lichtverlauf */
+.bg-home {
+  background:
+    radial-gradient(48rem 24rem at 50% -8%, rgb(244 183 64 / 0.10), transparent 60%),
+    var(--color-offwhite);
+}
 
 /* Hero-Verlauf: helles Blau → Weiß */
 .bg-hero {

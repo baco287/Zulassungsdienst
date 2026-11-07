@@ -19,8 +19,10 @@ function EuSterne({ className }: { className?: string }) {
       <g fill="#FFCC00">
         {Array.from({ length: 12 }, (_, i) => {
           const winkel = (i * 30 * Math.PI) / 180;
-          const x = 12 + 8 * Math.sin(winkel);
-          const y = 12 - 8 * Math.cos(winkel);
+          // Auf drei Stellen gerundet: Node und Browser rechnen sin/cos minimal
+          // verschieden, ungerundet gäbe das einen Hydration-Mismatch.
+          const x = (12 + 8 * Math.sin(winkel)).toFixed(3);
+          const y = (12 - 8 * Math.cos(winkel)).toFixed(3);
           return (
             <path key={i} d={STAR} transform={`translate(${x} ${y}) scale(0.155)`} />
           );
