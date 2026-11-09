@@ -26,6 +26,7 @@ import {
   UserCheck,
   type LucideIcon,
 } from "lucide-react";
+import { ZEIT } from "@/lib/betrieb";
 
 /* ───────────────────────── Konfigurator ───────────────────────── */
 
@@ -75,7 +76,7 @@ export const vorgaenge: readonly Vorgang[] = [
   {
     slug: "abmeldung",
     label: "Abmeldung",
-    description: "Fahrzeug außer Betrieb setzen – meist noch am selben Werktag.",
+    description: `Fahrzeug außer Betrieb setzen – meist noch ${ZEIT.abmeldung}.`,
     icon: CarFront,
     danger: true,
   },
@@ -91,7 +92,7 @@ export const vorgaenge: readonly Vorgang[] = [
 export const beispielKennzeichen = "AB · CD 123";
 
 /** Zeitangabe in der Zusammenfassung – bewusst auf den Auftrag bezogen, nicht auf die Behörde. */
-export const auftragsDauer = "Auftrag in 10 Minuten erteilt";
+export const auftragsDauer = `Unterlagen in ${ZEIT.auftrag} eingereicht`;
 
 /* ───────────────────────── Prozess & Vertrauen ───────────────────────── */
 
@@ -110,7 +111,7 @@ export const story = {
   eyebrow: "Zulassung ohne Online-Ausweis",
   title: "Keine eID? Kein Problem.",
   intro:
-    "Bei vielen Behördenportalen benötigen Sie einen aktivierten Online-Ausweis, Ihre PIN, ein NFC-fähiges Smartphone und die AusweisApp. Bei DeutscheZulassung übernehmen wir den Zulassungsvorgang mit Ihrer Vollmacht. Für den Start genügen gut lesbare Fotos Ihrer Unterlagen.",
+    "Bei vielen Behördenportalen benötigen Sie einen aktivierten Online-Ausweis, Ihre PIN, ein NFC-fähiges Smartphone und die AusweisApp. Bei DeutscheZulassung übernehmen wir den Zulassungsvorgang mit Ihrer Vollmacht. Für den Start genügen gut lesbare Fotos Ihrer Unterlagen; die Vollmacht signieren Sie anschließend digital nach einer einmaligen Identitätsbestätigung.",
   cta: { label: "Mehr zur Zulassung ohne eID", href: "/kfz-zulassung-ohne-eid/" },
   hinweis:
     "DeutscheZulassung ist ein privater Zulassungsdienst und keine Behörde. Wir reichen Ihren Antrag mit Ihrer Vollmacht bei der zuständigen Zulassungsbehörde ein. Die endgültige Entscheidung trifft die Behörde.",

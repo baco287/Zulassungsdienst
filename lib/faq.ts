@@ -1,17 +1,18 @@
 import type { FaqItem } from "./types";
 import { P } from "./pricing";
+import { ZEIT } from "@/lib/betrieb";
 
 export const faqItems: FaqItem[] = [
   {
     question: "Wie funktioniert die Online-Zulassung über DeutscheZulassung?",
     answer:
-      "Sie wählen Ihre Leistung aus, übermitteln uns Ihre Unterlagen digital (Fotos oder Scans genügen) und erteilen uns eine Vollmacht. Wir prüfen alles, führen den Vorgang bei der zuständigen Zulassungsbehörde durch und senden Ihnen Kennzeichen und Papiere zu – bei Abmeldungen erhalten Sie die Bestätigung meist noch am selben Werktag per E-Mail.",
+      `Sie wählen Ihre Leistung aus, übermitteln uns Ihre Unterlagen digital (Fotos oder Scans genügen) und erteilen uns eine Vollmacht. Wir prüfen alles, führen den Vorgang bei der zuständigen Zulassungsbehörde durch und senden Ihnen Kennzeichen und Papiere zu – bei Abmeldungen erhalten Sie die Bestätigung meist noch ${ZEIT.abmeldung} per E-Mail.`,
     category: "ablauf",
   },
   {
     question: "Brauche ich einen Personalausweis mit Online-Funktion (eID)?",
     answer:
-      "Nein. Da wir den Vorgang mit Ihrer Vollmacht übernehmen, benötigen Sie weder eID noch AusweisApp oder Kartenleser. Eine gut lesbare Kopie Ihres Ausweises genügt.",
+      "Nein, die Online-Ausweisfunktion mit PIN, die AusweisApp oder ein Kartenleser sind bei uns nicht nötig. Damit wir den Antrag für Sie stellen dürfen, schreibt das Gesetz eine qualifiziert elektronisch signierte Vollmacht vor (§ 38 FZV). Dafür bestätigen Sie einmalig digital Ihre Identität mit Ihrem Ausweis und unterschreiben – den Link schicken wir Ihnen. Für eine Abmeldung ist das nicht nötig.",
     category: "dokumente",
   },
   {
@@ -23,7 +24,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "Wie lange dauert eine Zulassung?",
     answer:
-      "Abmeldungen erledigen wir in der Regel taggleich. Neuzulassungen, Ummeldungen und Halterwechsel dauern je nach Behörde meist 1–3 Werktage zuzüglich Versand der Kennzeichen und Papiere.",
+      `Abmeldungen erledigen wir in der Regel ${ZEIT.abmeldung}. Neuzulassungen, Ummeldungen und Halterwechsel dauern je nach Behörde meist ${ZEIT.zulassung} zuzüglich Versand der Kennzeichen und Papiere.`,
     category: "ablauf",
   },
   {

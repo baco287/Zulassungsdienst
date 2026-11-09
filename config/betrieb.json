@@ -1,0 +1,144 @@
+{
+  "$kommentar": "Zentrale Betriebsangaben von DeutscheZulassung: Zeiten, Abwicklung, Regionen. Einzige Quelle für alle Zeit- und Ablaufversprechen der Website (Seiten, FAQ, Stadtseiten, strukturierte Daten, llms.txt). Preise stehen ausschließlich in config/preise.json. Werte mit \"status\": \"offen\" sind NICHT freigegeben und werden auf der Website nicht als Versprechen angezeigt. Nach jeder Änderung: 'stand' aktualisieren, Freigabe setzen, `npm run check:daten` ausführen.",
+  "stand": "2026-11-09",
+  "freigabe": {
+    "freigegeben": false,
+    "freigegebenVon": "",
+    "freigegebenAm": "",
+    "hinweis": "Die Zeitwerte unten sind aus den bisher veröffentlichten Aussagen übernommen (Anleitung, Leistungsseiten, FAQ), aber noch nicht ausdrücklich als Betriebsversprechen bestätigt. Offene Punkte siehe docs/seo/OWNER-DECISIONS.md."
+  },
+  "zeiten": {
+    "$kommentar": "Vier getrennte Phasen: (1) Aufwand des Kunden, (2) Prüfung durch DeutscheZulassung, (3) Bearbeitung inkl. Behördenentscheidung, (4) Versand. Werktage zählen ab vollständigen, lesbaren Unterlagen.",
+    "kunde": {
+      "anfrageMinuten": {
+        "wert": 2,
+        "status": "uebernommen",
+        "quelle": "lib/anleitung.ts Schritt 1, app/auftrag/page.tsx"
+      },
+      "auftragMinuten": {
+        "wert": 10,
+        "status": "uebernommen",
+        "quelle": "Summe lib/anleitung.ts Schritte 1–3 plus Festpreis-Bestätigung (Unterlagen einreichen); ohne Identitätsprüfung und QES"
+      },
+      "identUndSignatur": {
+        "wert": null,
+        "einheit": "Minuten",
+        "status": "offen",
+        "frage": "Wie lange dauern Identitätsprüfung und qualifizierte Signatur der Vollmacht für den Kunden typischerweise (je nach Verfahren)?"
+      }
+    },
+    "pruefungDurchDZ": {
+      "wert": null,
+      "einheit": "Stunden",
+      "status": "offen",
+      "frage": "Wie schnell prüft DeutscheZulassung eingegangene Unterlagen werktags (z. B. am selben Werktag bis 18 Uhr)?"
+    },
+    "bearbeitung": {
+      "neuzulassung": {
+        "werktage": [
+          1,
+          3
+        ],
+        "status": "uebernommen"
+      },
+      "ummeldung": {
+        "werktage": [
+          1,
+          3
+        ],
+        "status": "uebernommen"
+      },
+      "halterwechsel": {
+        "werktage": [
+          1,
+          3
+        ],
+        "status": "uebernommen"
+      },
+      "wiederzulassung": {
+        "werktage": [
+          1,
+          3
+        ],
+        "status": "uebernommen"
+      },
+      "adressaenderung": {
+        "werktage": [
+          1,
+          2
+        ],
+        "status": "uebernommen"
+      },
+      "abmeldung": {
+        "selberWerktag": true,
+        "status": "uebernommen",
+        "einschraenkung": "bei Eingang vollständiger, lesbarer Sicherheitscodes innerhalb der Servicezeiten"
+      },
+      "ersatz-dokumente": {
+        "werktage": [
+          3,
+          10
+        ],
+        "status": "uebernommen",
+        "einschraenkung": "stark behördenabhängig"
+      },
+      "kurzzeitkennzeichen": {
+        "werktage": [
+          1,
+          2
+        ],
+        "status": "uebernommen"
+      }
+    },
+    "versand": {
+      "werktage": null,
+      "dienstleister": null,
+      "status": "offen",
+      "frage": "Mit welchem Dienst und welcher typischen Laufzeit verschickt ihr Papiere und Schilder (z. B. DHL, 1–2 Werktage)?"
+    },
+    "antwortzeit": {
+      "wert": null,
+      "einheit": "Minuten",
+      "status": "offen",
+      "frage": "Wie schnell antwortet ihr werktags auf WhatsApp/Formular? Bisher stand „meist in wenigen Minuten“ auf der Website – das darf nur mit gemessener Datengrundlage stehen."
+    }
+  },
+  "abwicklung": {
+    "identifizierung": {
+      "wert": null,
+      "status": "offen",
+      "frage": "Wie identifiziert sich der Halter im ZULEX-Ablauf konkret (Video-Ident, Foto-Ident, Verimi-App, eID)? Davon hängt ab, ob „ohne eID“ uneingeschränkt stimmt."
+    },
+    "neuzulassungAbwickelbar": {
+      "wert": null,
+      "status": "offen",
+      "frage": "Neuzulassungen sind im ZULEX-BASIS-Tarif nicht enthalten. Tarif hochstufen (PREMIUM) oder Neuzulassung vorerst nur auf Anfrage anbieten?"
+    },
+    "schilder": {
+      "wert": null,
+      "status": "offen",
+      "frage": "Versendet ihr geprägte Schilder (29 €) oder geht der Kunde zum Schildermacher vor Ort (Anleitung/PDF)? Oder beides als Wahl?"
+    },
+    "festeAnsprechperson": {
+      "wert": null,
+      "status": "offen",
+      "frage": "Hat jeder Auftrag eine namentlich feste Ansprechperson? Wer (echte Namen/Rollen für „Über uns“)?"
+    },
+    "servicezeiten": {
+      "wert": "Mo–Fr 8:00–18:00 Uhr",
+      "status": "uebernommen",
+      "quelle": "lib/site.ts"
+    }
+  },
+  "regionen": {
+    "bundesweit": {
+      "wert": true,
+      "status": "uebernommen"
+    },
+    "einschraenkungen": {
+      "status": "offen",
+      "frage": "Gibt es Zulassungsbehörden, bei denen ihr Vorgänge nicht online per Vollmacht/Großkundenschnittstelle einreichen könnt (laut Recherche z. B. Hamburg)? Wie wird dort abgewickelt?",
+      "bekannt": []
+    }
+  }
+}

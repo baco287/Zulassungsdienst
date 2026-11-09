@@ -5,6 +5,7 @@ import { site, whatsAppLink } from "@/lib/site";
 import { sortedServices } from "@/lib/services";
 import WhatsAppIcon from "./WhatsAppIcon";
 import { SERVICEBEDINGUNGEN_FREIGEGEBEN } from "@/lib/features";
+import TrackedLink from "./TrackedLink";
 
 const service = [
   { href: "/kfz-zulassung-ohne-eid", label: "Ohne eID" },
@@ -75,22 +76,22 @@ export default function Footer() {
           </p>
           <ul className="mt-6 space-y-2.5 text-[15px]">
             <li>
-              <a href={`mailto:${site.contact.email}`} className="flex items-center gap-2 transition-colors duration-150 hover:text-white">
+              <TrackedLink href={`mailto:${site.contact.email}`} event="email_click" props={{ position: "footer" }} className="flex items-center gap-2 transition-colors duration-150 hover:text-white">
                 <Mail className="h-4 w-4 text-gold" aria-hidden />
                 {site.contact.email}
-              </a>
+              </TrackedLink>
             </li>
             <li>
-              <a href={`tel:${site.contact.phone.replace(/\s/g, "")}`} className="flex items-center gap-2 transition-colors duration-150 hover:text-white">
+              <TrackedLink href={`tel:${site.contact.phone.replace(/\s/g, "")}`} event="phone_click" props={{ position: "footer" }} className="flex items-center gap-2 transition-colors duration-150 hover:text-white">
                 <Phone className="h-4 w-4 text-gold" aria-hidden />
                 {site.contact.phoneDisplay}
-              </a>
+              </TrackedLink>
             </li>
             <li>
-              <a href={whatsAppLink()} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 transition-colors duration-150 hover:text-white">
+              <TrackedLink href={whatsAppLink()} event="whatsapp_click" props={{ position: "footer" }} external className="flex items-center gap-2 transition-colors duration-150 hover:text-white">
                 <WhatsAppIcon className="h-4 w-4" color="brand" />
                 WhatsApp-Chat
-              </a>
+              </TrackedLink>
             </li>
             <li className="text-xs text-white/50">{site.contact.hours}</li>
           </ul>

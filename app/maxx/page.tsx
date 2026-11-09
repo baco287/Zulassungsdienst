@@ -10,6 +10,7 @@ import { getService } from "@/lib/services";
 import { euro } from "@/lib/pricing";
 import { site, whatsAppLink } from "@/lib/site";
 import { P } from "@/lib/pricing";
+import { ZEIT } from "@/lib/betrieb";
 
 /**
  * Schnelleinstieg „Maxx“.
@@ -79,7 +80,7 @@ const faq = [
   {
     question: "Wie lange dauert es?",
     answer:
-      "Meist 1–3 Werktage, dazu der Versand. Eine Abmeldung ist oft noch am selben Werktag durch.",
+      `Meist ${ZEIT.zulassung}, dazu der Versand. Eine Abmeldung ist oft noch ${ZEIT.abmeldung} durch.`,
   },
   {
     question: "Reichen Handyfotos wirklich?",
@@ -190,7 +191,7 @@ export default function MaxxPage() {
             <b className="text-accent-400">{P.zulassung}</b> inkl. Gebühren – Schilder zzgl. {P.kennzeichen}
           </span>
           <span>
-            <b className="text-accent-400">1–3</b> Werktage
+            <b className="text-accent-400">{ZEIT.zulassung.split(" ")[0]}</b> Werktage
           </span>
           <span>
             <b className="text-accent-400">0</b> Behördengänge

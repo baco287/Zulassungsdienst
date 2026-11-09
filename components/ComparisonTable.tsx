@@ -12,10 +12,10 @@ interface Row {
 
 const rows: Row[] = [
   {
-    label: "Elektronische Identifizierung (bei Zulassungen)",
+    label: "Online-Ausweis (eID-PIN) nötig? (bei Zulassungen)",
     schalter: ["yes", "Nein"],
     ikfz: ["no", "Ja – Online-Ausweis mit PIN und NFC-Smartphone oder Kartenleser, alternativ BundID mit ELSTER-Zertifikat"],
-    wir: ["yes", "Nein – Vollmacht und Ausweisfoto genügen"],
+    wir: ["yes", "Keine eID-PIN nötig – Identität einmalig digital bestätigen, Vollmacht digital signieren"],
   },
   {
     label: "Termin bei der Behörde",

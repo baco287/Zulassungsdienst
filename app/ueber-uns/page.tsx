@@ -67,7 +67,7 @@ export default function UeberUnsPage() {
                 Wartemarke ziehen, Formulare ausfüllen. DeutscheZulassung wurde gegründet, um
                 genau das zu ändern. Wir kombinieren die digitalen Behördenverfahren
                 (i-Kfz) mit einer Software, die Unterlagen prüft, Abläufe automatisiert und
-                Sie jederzeit über den Stand informiert – während echte Menschen die Fälle
+                Sie über den Stand informiert – während echte Menschen die Fälle
                 betreuen, in denen es individuell wird.
               </p>
             </div>

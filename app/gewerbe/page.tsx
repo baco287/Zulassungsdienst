@@ -16,6 +16,8 @@ import GewerbeCTA from "@/components/GewerbeCTA";
 import Reveal from "@/components/Reveal";
 import { gewerbeSegments, gewerbeHubFaq } from "@/lib/gewerbe";
 import { site } from "@/lib/site";
+import { ZEIT } from "@/lib/betrieb";
+import { ORG_ID } from "@/lib/catalog";
 
 export const metadata: Metadata = {
   title: "Zulassungsservice für Autohäuser & Fuhrparks",
@@ -81,7 +83,7 @@ const jsonLd = {
   url: `${site.url}/gewerbe/`,
   areaServed: { "@type": "Country", name: "Deutschland" },
   audience: { "@type": "BusinessAudience", name: "Autohäuser, Autohändler, Fuhrparks, Leasing-Anbieter" },
-  provider: { "@type": "LocalBusiness", name: site.name, url: site.url, telephone: site.contact.phone },
+  provider: { "@id": ORG_ID },
 };
 
 const faqJsonLd = {
@@ -117,7 +119,7 @@ export default function GewerbePage() {
                 {[
                   "Abrechnung pro Vorgang – keine Grundgebühr, keine Vertragsbindung",
                   "Tägliche Abholung Ihrer Unterlagen möglich",
-                  "Abmeldungen meist taggleich, Zulassungen in 1–3 Werktagen",
+                  `Abmeldungen meist ${ZEIT.abmeldung}, Zulassungen in ${ZEIT.zulassungDativ}`,
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-ink-700">
                     <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" aria-hidden />

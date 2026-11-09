@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "So funktioniert’s – Ablauf der Online-Zulassung",
+  title: "Ablauf der Online-Zulassung in 7 Schritten",
   description:
     "Schritt für Schritt zur fertigen Kfz-Zulassung: So läuft Ihr Auftrag bei DeutscheZulassung ab – von der Auswahl bis zur Zustellung von Kennzeichen und Papieren.",
 };

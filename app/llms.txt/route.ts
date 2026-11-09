@@ -6,6 +6,8 @@ import { landingPages } from "@/lib/landingpages";
 import { publishedStellen } from "@/lib/zulassungsstellen";
 import { P } from "@/lib/pricing";
 import { site } from "@/lib/site";
+import { ZEIT } from "@/lib/betrieb";
+import { cityIndexable, stelleIndexable } from "@/lib/indexGate";
 
 /**
  * /llms.txt – Kurzbeschreibung der Website für KI-Assistenten und
@@ -35,7 +37,7 @@ export function GET() {
     ""
   );
   lines.push(
-    "Kundinnen und Kunden beauftragen über das Online-Formular (Unterlagen als Foto hochladen) oder per WhatsApp, erhalten vorab eine verbindliche Festpreis-Bestätigung, erteilen eine Vollmacht und erhalten Papiere per versichertem Versand. Typische Dauer: 1–3 Werktage ab vollständigen Unterlagen, Abmeldungen meist am selben Werktag. Die Entscheidung über jede Zulassung trifft immer die zuständige Zulassungsbehörde.",
+    `Kundinnen und Kunden beauftragen über das Online-Formular (Unterlagen als Foto hochladen) oder per WhatsApp, erhalten vorab eine verbindliche Festpreis-Bestätigung, erteilen eine Vollmacht und erhalten Papiere per versichertem Versand. Typische Dauer: ${ZEIT.zulassung} ab vollständigen Unterlagen, Abmeldungen meist ${ZEIT.abmeldung}. Die Entscheidung über jede Zulassung trifft immer die zuständige Zulassungsbehörde.`,
     ""
   );
 
@@ -53,14 +55,14 @@ export function GET() {
 
   lines.push("## Zulassungsstellen", "");
   lines.push(`- [Übersicht der Zulassungsstellen](${u("/zulassungsstelle/")}): Anschrift, Zuständigkeit, Kennzeichen und i-Kfz-Hinweise mit Quellenangabe`);
-  for (const z of publishedStellen) {
+  for (const z of publishedStellen.filter(stelleIndexable)) {
     lines.push(`- [Zulassungsstelle ${z.stadt}](${u(`/zulassungsstelle/${z.slug}/`)})`);
   }
   lines.push("");
 
   lines.push("## Kfz-Zulassung nach Stadt", "");
   lines.push(`- [Übersicht aller Städte](${u("/kfz-zulassung/")})`);
-  lines.push(cities.map((c) => `[${c.name}](${u(`/kfz-zulassung/${c.slug}/`)})`).join(" · "), "");
+  lines.push(cities.filter(cityIndexable).map((c) => `[${c.name}](${u(`/kfz-zulassung/${c.slug}/`)})`).join(" · "), "");
 
   lines.push("## Gewerbekunden", "");
   lines.push(`- [Zulassungsservice für Gewerbekunden](${u("/gewerbe/")}): Sammelabwicklung, feste Ansprechpartner, Staffelpreise`);

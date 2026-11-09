@@ -53,7 +53,7 @@ export function DocHintToggle({ hint }: { hint: HintConfig }) {
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
         aria-label={open ? "Vorschau schließen" : `${hint.title} – Vorschau anzeigen`}
-        className="ml-1 inline-flex h-5 w-5 shrink-0 cursor-pointer items-center justify-center rounded-full text-brand-600 transition-colors duration-200 hover:bg-brand-100 hover:text-brand-800"
+        className="ml-1 -my-0.5 inline-flex h-6 w-6 shrink-0 cursor-pointer items-center justify-center rounded-full text-brand-600 transition-colors duration-200 hover:bg-brand-100 hover:text-brand-800"
       >
         {open ? <X className="h-4 w-4" aria-hidden /> : <Info className="h-4 w-4" aria-hidden />}
       </button>

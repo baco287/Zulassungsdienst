@@ -6,7 +6,7 @@ export default function AblaufSection() {
     <section id="ablauf" className="bg-white py-16 sm:py-24" aria-labelledby="ablauf-title">
       <div className="mx-auto max-w-[1240px] px-4 sm:px-6">
         <div className="max-w-2xl">
-          <p className="font-display text-xs font-bold uppercase tracking-[0.18em] text-gold-600">So funktioniert es</p>
+          <p className="font-display text-xs font-bold uppercase tracking-[0.18em] text-accent-600">So funktioniert es</p>
           <h2 id="ablauf-title" className="mt-3 font-display text-3xl font-bold text-navy sm:text-[2.6rem] sm:leading-tight">
             In vier Schritten zur Zulassung
           </h2>
@@ -22,7 +22,7 @@ export default function AblaufSection() {
                 <span className="flex h-12 w-12 items-center justify-center rounded-[14px] bg-navy text-white" aria-hidden>
                   <Icon className="h-6 w-6" strokeWidth={1.7} />
                 </span>
-                <span className="font-display text-sm font-bold text-gold-600" aria-hidden>
+                <span className="font-display text-sm font-bold text-accent-600" aria-hidden>
                   {String(i + 1).padStart(2, "0")}
                 </span>
               </div>

@@ -11,6 +11,7 @@ import SecurityCodeGuide from "@/components/SecurityCodeGuide";
 import { getGuide, guides } from "@/lib/ratgeber";
 import { getService } from "@/lib/services";
 import { site } from "@/lib/site";
+import { fitTitle } from "@/lib/seo";
 
 export function generateStaticParams() {
   return guides.map((g) => ({ slug: g.slug }));
@@ -25,7 +26,7 @@ export async function generateMetadata({
   const guide = getGuide(slug);
   if (!guide) return {};
   return {
-    title: guide.title,
+    title: fitTitle(guide.title),
     description: guide.description,
     keywords: guide.keywords,
     openGraph: {

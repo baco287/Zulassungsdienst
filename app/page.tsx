@@ -13,7 +13,7 @@ import { site } from "@/lib/site";
 const description = `Kfz-Zulassung ohne eID, AusweisApp und Behördentermin: Neuzulassung, Ummeldung und Halterwechsel für ${P.zulassung}, Abmeldung ${P.abmeldung} – inkl. amtlicher Gebühren, persönlich geprüft.`;
 
 export const metadata: Metadata = {
-  title: { absolute: `Kfz-Zulassung online ohne eID | ${site.name}` },
+  title: { absolute: `Kfz-Zulassung online ohne Behördentermin | ${site.name}` },
   description,
   alternates: { canonical: "/" },
   openGraph: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: site.locale,
     siteName: site.name,
     url: "/",
-    title: `Kfz-Zulassung online ohne eID | ${site.name}`,
+    title: `Kfz-Zulassung online ohne Behördentermin | ${site.name}`,
     description,
   },
 };
@@ -43,7 +43,7 @@ export default function HomePage() {
             </p>
             <h1 id="hero-title" className="mt-4 font-display text-[2.4rem] font-bold leading-[1.08] text-navy sm:text-5xl lg:text-[3.6rem]">
               Ihre <span className="whitespace-nowrap">Kfz-Zulassung.</span>{" "}
-              <span className="text-gold">Einfach erledigt.</span>
+              <span className="underline decoration-gold decoration-[0.14em] underline-offset-[0.16em]">Einfach erledigt.</span>
             </h1>
             <p className="mt-4 font-display text-lg font-semibold text-navy sm:text-xl">
               Ohne eID, ohne AusweisApp und ohne Behördentermin.

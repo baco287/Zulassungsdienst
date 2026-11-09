@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Check } from "lucide-react";
 import { P } from "@/lib/pricing";
+import { ZEIT } from "@/lib/betrieb";
 
 /**
  * Drei Paket-Karten im Festpreis-Modell (Komplettpreise inkl. amtlicher
@@ -15,7 +16,7 @@ const packages = [
     priceNote: "Komplettpreis inkl. MwSt. und amtlicher Gebühren",
     features: [
       "Vollständig digital – kein Versand nötig",
-      "Meist noch am selben Werktag erledigt",
+      `Meist noch ${ZEIT.abmeldung} erledigt`,
       "Abmeldebestätigung per E-Mail",
       "Keine eID, keine AusweisApp nötig",
       "Support per WhatsApp & E-Mail",

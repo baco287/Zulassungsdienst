@@ -1,5 +1,6 @@
 import type { Service } from "./types";
 import { P, PRICES } from "./pricing";
+import { ZEIT } from "@/lib/betrieb";
 
 /**
  * Leistungskatalog von DeutscheZulassung.
@@ -17,7 +18,7 @@ export const services: Service[] = [
     category: "zulassung",
     audience: "beide",
     teaser:
-      "Fabrikneues oder importiertes Fahrzeug erstmals zulassen – komplett digital, ohne Termin bei der Zulassungsstelle.",
+      "Fabrikneues oder importiertes Fahrzeug erstmals zulassen – ohne eigenen Termin bei der Zulassungsstelle.",
     description:
       "Wir übernehmen die vollständige Erstzulassung Ihres Fahrzeugs: Prüfung der Unterlagen, Beantragung bei der zuständigen Zulassungsbehörde, Kennzeichen und Versand aller Dokumente zu Ihnen nach Hause oder in Ihr Autohaus. Sie sparen sich Termin, Wartezeit und Behördengang – und Ihr Fahrzeug ist in der Regel innerhalb weniger Werktage angemeldet.",
     price: {
@@ -35,7 +36,7 @@ export const services: Service[] = [
       "Bei Firmen: Gewerbeanmeldung bzw. Handelsregisterauszug",
       "Vollmacht (stellen wir Ihnen digital bereit)",
     ],
-    duration: "1–3 Werktage",
+    duration: ZEIT.zulassung,
     order: 1,
     popular: true,
   },
@@ -63,7 +64,7 @@ export const services: Service[] = [
       "SEPA-Mandat für die Kfz-Steuer",
       "Vollmacht (stellen wir Ihnen digital bereit)",
     ],
-    duration: "1–3 Werktage",
+    duration: ZEIT.zulassung,
     order: 2,
   },
   {
@@ -72,9 +73,9 @@ export const services: Service[] = [
     category: "zulassung",
     audience: "beide",
     teaser:
-      "Fahrzeug verkauft, stillgelegt oder verschrottet? Die Außerbetriebsetzung erledigen wir noch am selben Werktag.",
+      `Fahrzeug verkauft, stillgelegt oder verschrottet? Die Außerbetriebsetzung erledigen wir meist noch ${ZEIT.abmeldung}.`,
     description:
-      "Die Abmeldung (Außerbetriebsetzung) ist der schnellste Vorgang: Sie übermitteln uns die Sicherheitscodes von Fahrzeugschein und Kennzeichen – wir melden Ihr Fahrzeug digital bei der Zulassungsbehörde ab und Sie erhalten die Abmeldebestätigung per E-Mail. Ganz ohne Versand, in der Regel taggleich.",
+      `Die Abmeldung (Außerbetriebsetzung) ist der schnellste Vorgang: Sie übermitteln uns die Sicherheitscodes von Fahrzeugschein und Kennzeichen – wir melden Ihr Fahrzeug digital bei der Zulassungsbehörde ab und Sie erhalten die Abmeldebestätigung per E-Mail. Ganz ohne Versand, in der Regel ${ZEIT.abmeldung}.`,
     price: {
       serviceFee: PRICES.abmeldung,
       inclusive: true,
@@ -86,7 +87,7 @@ export const services: Service[] = [
       "Beide Kennzeichen mit freigelegten Sicherheitscodes der Stempelplaketten",
       "Bei Verwertung: Verwertungsnachweis des zertifizierten Demontagebetriebs",
     ],
-    duration: "meist taggleich",
+    duration: `meist ${ZEIT.abmeldung}`,
     order: 3,
     popular: true,
   },
@@ -114,7 +115,7 @@ export const services: Service[] = [
       "SEPA-Mandat für die Kfz-Steuer",
       "Personalausweis oder Reisepass",
     ],
-    duration: "1–3 Werktage",
+    duration: ZEIT.zulassung,
     order: 4,
   },
   {
@@ -142,7 +143,7 @@ export const services: Service[] = [
       "Personalausweis des neuen Halters",
       "SEPA-Mandat für die Kfz-Steuer",
     ],
-    duration: "1–3 Werktage",
+    duration: ZEIT.zulassung,
     order: 5,
     popular: true,
   },
@@ -165,7 +166,7 @@ export const services: Service[] = [
       "Zulassungsbescheinigung Teil I",
       "Personalausweis mit neuer Adresse oder Meldebescheinigung",
     ],
-    duration: "1–2 Werktage",
+    duration: ZEIT.adressaenderung,
     order: 6,
   },
   {
@@ -188,7 +189,7 @@ export const services: Service[] = [
       "Fahrzeugdokumente (ZB I/II oder CoC), falls vorhanden",
       "Nachweis gültige HU (für Fahrten über die Probefahrt hinaus)",
     ],
-    duration: "1–2 Werktage, Express möglich",
+    duration: `${ZEIT.kurzzeitkennzeichen}, Express möglich`,
     order: 7,
   },
   {
@@ -256,7 +257,7 @@ export const services: Service[] = [
       "Eidesstattliche Versicherung zum Verlust (bereiten wir vor)",
       "Bei Diebstahl: polizeiliche Verlustanzeige",
     ],
-    duration: "3–10 Werktage (behördenabhängig)",
+    duration: `${ZEIT.ersatzDokumente} (behördenabhängig)`,
     order: 10,
   },
   {
@@ -298,7 +299,7 @@ export const services: Service[] = [
       "Rahmenvollmacht (stellen wir bereit)",
       "Fahrzeugunterlagen je Vorgang",
     ],
-    duration: "nach Vereinbarung, auch taggleich",
+    duration: "nach Vereinbarung",
     order: 12,
     popular: true,
   },

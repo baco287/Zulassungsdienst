@@ -13,14 +13,15 @@ import { ImageResponse } from "next/og";
 export const ogSize = { width: 1200, height: 630 };
 export const ogContentType = "image/png";
 
+/** Navy/Gold-Palette, identisch mit den Tokens in app/globals.css. */
 const colors = {
-  brand50: "#eff6ff",
-  brand100: "#dbeafe",
-  brand600: "#2563eb",
-  brand700: "#1d4ed8",
-  ink500: "#64748b",
-  ink600: "#475569",
-  ink900: "#0f172a",
+  brand50: "#faf8f3",
+  brand100: "#fff8e8",
+  brand600: "#8a5a00",
+  brand700: "#0b1f3a",
+  ink500: "#526071",
+  ink600: "#526071",
+  ink900: "#0b1f3a",
 };
 
 async function loadFonts() {

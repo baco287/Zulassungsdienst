@@ -1,23 +1,28 @@
 @import "tailwindcss";
 
 /*
- * DeutscheZulassung Designsystem v2
- * — Kräftiges Royal-Blau als Markenfarbe (Vorbild-Optik kfz-go: lebendig, digital)
- * — Tiefes Slate-Navy für Text und dunkle Flächen
- * — Amber nur als Signal-Akzent (sparsam)
+ * DeutscheZulassung Designsystem v3 – Navy/Gold
+ * — Navy (#0b1f3a) als Markenfarbe, Gold (#f4b740) als sparsamer Akzent,
+ *   warmes Off-White für ruhige Flächen, Schwarz-Rot-Gold nur als Linie im Header.
+ * — Die Skalen brand-* und accent-* sind auf Navy bzw. Gold abgebildet, damit
+ *   alle Seiten dieselbe Identität wie die Startseite tragen. Neue Komponenten
+ *   nutzen bevorzugt die semantischen Tokens navy/gold/offwhite/line/muted.
+ * — brand-700 entspricht exakt --color-navy, brand-800 dem Hover-Ton navy-800.
+ * — accent-600/700 sind abgedunkelt, weil Gold als Schrift auf Weiß sonst nicht
+ *   den Mindestkontrast 4,5:1 erreicht (WCAG 2.2 AA).
  * — Lexend (Headings) + Source Sans 3 (Body), geladen via next/font
  */
 @theme {
-  --color-brand-50: #eff6ff;
-  --color-brand-100: #dbeafe;
-  --color-brand-200: #bfdbfe;
-  --color-brand-300: #93c5fd;
-  --color-brand-400: #60a5fa;
-  --color-brand-500: #3b82f6;
-  --color-brand-600: #2563eb;
-  --color-brand-700: #1d4ed8;
-  --color-brand-800: #1e40af;
-  --color-brand-900: #1e3a8a;
+  --color-brand-50: #f2f5f9;
+  --color-brand-100: #e4eaf2;
+  --color-brand-200: #cbd6e4;
+  --color-brand-300: #a3b5cc;
+  --color-brand-400: #6f88a8;
+  --color-brand-500: #3d5c85;
+  --color-brand-600: #1d3a63;
+  --color-brand-700: #0b1f3a;
+  --color-brand-800: #142c4e;
+  --color-brand-900: #071528;
 
   --color-ink-50: #f8fafc;
   --color-ink-100: #f1f5f9;
@@ -31,11 +36,12 @@
   --color-ink-900: #0f172a;
   --color-ink-950: #020617;
 
-  --color-accent-400: #fbbf24;
-  --color-accent-500: #f59e0b;
-  --color-accent-600: #d97706;
+  --color-accent-400: #f4b740;
+  --color-accent-500: #e6a630;
+  --color-accent-600: #8a5a00;
+  --color-accent-700: #6e4800;
 
-  /* Startseiten-Tokens (ruhige Navy/Gold-Welt) */
+  /* Semantische Navy/Gold-Tokens */
   --color-navy: #0b1f3a;
   --color-navy-800: #142c4e;
   --color-gold: #f4b740;
@@ -45,14 +51,14 @@
   --color-line: #dfe4e9;
   --color-muted: #526071;
   --color-wa: #25d366;
-  --color-danger: #ff4d4f;
+  --color-danger: #d92d20;
 
   --font-sans: var(--font-source-sans), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-lexend), ui-sans-serif, system-ui, sans-serif;
 
-  --shadow-card: 0 1px 2px rgb(2 6 23 / 0.06), 0 8px 24px -8px rgb(2 6 23 / 0.12);
-  --shadow-card-hover: 0 2px 4px rgb(2 6 23 / 0.08), 0 16px 40px -12px rgb(37 99 235 / 0.3);
-  --shadow-glow: 0 0 0 4px rgb(37 99 235 / 0.12), 0 12px 32px -8px rgb(37 99 235 / 0.35);
+  --shadow-card: 0 1px 2px rgb(11 31 58 / 0.04), 0 12px 28px -16px rgb(11 31 58 / 0.18);
+  --shadow-card-hover: 0 2px 4px rgb(11 31 58 / 0.06), 0 20px 44px -18px rgb(11 31 58 / 0.28);
+  --shadow-glow: 0 0 0 4px rgb(244 183 64 / 0.22), 0 12px 32px -8px rgb(11 31 58 / 0.3);
 }
 
 html {
@@ -72,11 +78,20 @@ h1, h2, h3, h4 {
   letter-spacing: -0.02em;
 }
 
-/* Sichtbarer Fokus für Tastaturnavigation */
+/* Sichtbarer Fokus für Tastaturnavigation: Navy-Ring mit weißem Innenabstand,
+   damit er auf hellen und dunklen Flächen gleichermaßen erkennbar ist. */
 :focus-visible {
-  outline: 3px solid var(--color-brand-500);
+  outline: 3px solid var(--color-navy);
   outline-offset: 2px;
+  box-shadow: 0 0 0 2px #fff;
   border-radius: 4px;
+}
+.bg-navy :focus-visible,
+.bg-ink-900 :focus-visible,
+.bg-ink-950 :focus-visible,
+footer :focus-visible {
+  outline-color: var(--color-gold);
+  box-shadow: none;
 }
 
 ::selection {
@@ -121,12 +136,12 @@ h1, h2, h3, h4 {
     var(--color-offwhite);
 }
 
-/* Hero-Verlauf: helles Blau → Weiß */
+/* Hero-Verlauf der Unterseiten: Off-White mit zurückhaltendem Gold-Licht */
 .bg-hero {
   background:
-    radial-gradient(60rem 32rem at 85% -10%, rgb(59 130 246 / 0.14), transparent 60%),
-    radial-gradient(40rem 28rem at -10% 110%, rgb(37 99 235 / 0.10), transparent 60%),
-    linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);
+    radial-gradient(56rem 26rem at 85% -12%, rgb(244 183 64 / 0.12), transparent 60%),
+    radial-gradient(40rem 26rem at -10% 110%, rgb(11 31 58 / 0.05), transparent 60%),
+    linear-gradient(180deg, var(--color-offwhite) 0%, #ffffff 100%);
 }
 
 /* Sanft schwebende Karten (Hero-Diagramm) */
@@ -177,9 +192,9 @@ h1, h2, h3, h4 {
 .animate-drive { animation: drivealong 3s ease-in-out infinite; }
 
 @keyframes pulsering {
-  0% { box-shadow: 0 0 0 0 rgb(37 99 235 / 0.35); }
-  70% { box-shadow: 0 0 0 12px rgb(37 99 235 / 0); }
-  100% { box-shadow: 0 0 0 0 rgb(37 99 235 / 0); }
+  0% { box-shadow: 0 0 0 0 rgb(244 183 64 / 0.45); }
+  70% { box-shadow: 0 0 0 12px rgb(244 183 64 / 0); }
+  100% { box-shadow: 0 0 0 0 rgb(244 183 64 / 0); }
 }
 .animate-pulsering { animation: pulsering 2.4s ease-out infinite; }
 

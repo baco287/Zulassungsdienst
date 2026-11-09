@@ -8,6 +8,7 @@ import FaqAccordion from "@/components/FaqAccordion";
 import Reveal from "@/components/Reveal";
 import { site } from "@/lib/site";
 import { P } from "@/lib/pricing";
+import { ZEIT } from "@/lib/betrieb";
 
 export const metadata: Metadata = {
   title: "Behördengang-Rechner: Was kostet er wirklich?",
@@ -35,7 +36,7 @@ const rechnerFaq = [
   {
     question: `Was ist im Komplettpreis von ${P.zulassung} enthalten?`,
     answer:
-      `Die amtlichen Gebühren, unsere komplette Abwicklung und der versicherte Versand der Papiere. Neue Kennzeichenschilder liefern wir auf Wunsch für ${P.kennzeichen} pro Paar mit – der Rechner berücksichtigt sie für einen fairen Vergleich. Ihr Aufwand beschränkt sich auf Fotos der Unterlagen und die digitale Vollmacht – zusammen etwa 10 Minuten.`,
+      `Die amtlichen Gebühren, unsere komplette Abwicklung und der versicherte Versand der Papiere. Neue Kennzeichenschilder liefern wir auf Wunsch für ${P.kennzeichen} pro Paar mit – der Rechner berücksichtigt sie für einen fairen Vergleich. Ihr Aufwand beschränkt sich auf Fotos der Unterlagen (${ZEIT.auftrag}) und die digitale Vollmacht-Signatur.`,
   },
 ];
 

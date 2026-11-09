@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight, Clock4, Info } from "lucide-react";
 import { getService } from "@/lib/services";
 import { euro, leistungsPreis, P, wunschkennzeichenHinweis } from "@/lib/pricing";
+import { ZEIT } from "@/lib/betrieb";
 
 /** Reihenfolge der online bestellbaren Leistungen. */
 const SLUGS = ["neuzulassung", "halterwechsel", "ummeldung", "wiederzulassung", "abmeldung", "adressaenderung"] as const;
@@ -11,7 +12,7 @@ const subline: Record<(typeof SLUGS)[number], string> = {
   halterwechsel: "Gebrauchtwagen auf Sie umschreiben",
   ummeldung: "Umzug in einen anderen Zulassungsbezirk",
   wiederzulassung: "Abgemeldetes Fahrzeug wieder anmelden",
-  abmeldung: "Außerbetriebsetzung, meist taggleich",
+  abmeldung: `Außerbetriebsetzung, meist ${ZEIT.abmeldung}`,
   adressaenderung: "Neue Adresse im selben Zulassungsbezirk",
 };
 
@@ -55,7 +56,7 @@ export default function ServicePriceGrid({ showExtras = true }: { showExtras?: b
                     href={`/auftrag/?leistung=${slug}`}
                     className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-700 px-5 py-3.5 font-display text-base font-semibold text-white transition-colors duration-200 hover:bg-brand-800"
                   >
-                    Jetzt beauftragen
+                    Auftrag starten
                     <ArrowRight className="h-4 w-4" aria-hidden />
                   </Link>
                   <Link

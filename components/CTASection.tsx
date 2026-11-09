@@ -12,7 +12,7 @@ export default function CTASection() {
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-lg text-ink-300">
           Auftrag online starten oder einfach kurz per WhatsApp schreiben –
-          wir melden uns innerhalb der Geschäftszeiten meist in wenigen Minuten.
+          wir melden uns innerhalb unserer Servicezeiten.
         </p>
         <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
           <TrackedLink

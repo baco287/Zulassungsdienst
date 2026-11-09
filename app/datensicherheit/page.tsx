@@ -8,7 +8,7 @@ import { analyticsProvider, gadsId } from "@/lib/analytics";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Datensicherheit: So schützen wir Ihre Unterlagen",
+  title: "Datensicherheit Ihrer Unterlagen",
   description:
     "Wie DeutscheZulassung mit Fahrzeugpapieren und Ausweiskopien umgeht: verschlüsselte Übertragung, kein Dokumentenarchiv auf dem Webserver, Löschung nach Abschluss.",
   alternates: { canonical: "/datensicherheit/" },
@@ -28,7 +28,7 @@ const points = [
   {
     icon: Users,
     title: "Nur für Ihren Auftrag",
-    text: "Ihre Daten nutzen wir ausschließlich, um Ihren Zulassungsauftrag zu bearbeiten. Weitergegeben werden sie nur, soweit nötig: an die zuständige Zulassungsbehörde sowie gegebenenfalls an Versanddienstleister und Kennzeichenhersteller.",
+    text: "Ihre Daten nutzen wir ausschließlich, um Ihren Zulassungsauftrag zu bearbeiten. Weitergegeben werden sie nur, soweit nötig: an den Anbieter unserer Zulassungssoftware, den Signatur- und Identifizierungsdienst für Ihre Vollmacht, das Kraftfahrt-Bundesamt und die zuständige Zulassungsbehörde sowie gegebenenfalls an Versanddienstleister und Kennzeichenhersteller.",
   },
   {
     icon: Trash2,

@@ -21,6 +21,7 @@ import { whatsappSteps } from "@/lib/whatsappFlow";
 import { euro } from "@/lib/pricing";
 import { site, whatsAppLink } from "@/lib/site";
 import { P } from "@/lib/pricing";
+import { ZEIT } from "@/lib/betrieb";
 
 export const metadata: Metadata = {
   title: "Kfz-Zulassung per WhatsApp – ohne Formular",
@@ -53,8 +54,8 @@ const benefits = [
   },
   {
     icon: Clock3,
-    title: "Antwort meist in Minuten",
-    text: "Innerhalb unserer Geschäftszeiten (Mo–Fr 8–18 Uhr) melden wir uns in der Regel binnen weniger Minuten.",
+    title: "Antwort in unseren Servicezeiten",
+    text: `Wir beantworten Nachrichten innerhalb unserer Servicezeiten (${site.contact.hours}). Außerhalb dieser Zeiten melden wir uns am nächsten Werktag.`,
   },
   {
     icon: FileSignature,
@@ -91,7 +92,7 @@ const faq = [
   {
     question: "Welche Vorgänge kann ich per Chat erledigen?",
     answer:
-      "Alle: Abmeldung, Ummeldung, Halterwechsel, Neuzulassung, Wiederzulassung sowie Wunsch-, Saison- und Kurzzeitkennzeichen. Am schnellsten geht die Abmeldung – sie ist vollständig digital und meist noch am selben Werktag erledigt.",
+      `Alle: Abmeldung, Ummeldung, Halterwechsel, Neuzulassung, Wiederzulassung sowie Wunsch-, Saison- und Kurzzeitkennzeichen. Am schnellsten geht die Abmeldung – sie ist vollständig digital und meist noch ${ZEIT.abmeldung} erledigt.`,
   },
   {
     question: "Sind meine Daten und Ausweisfotos im Chat sicher?",
@@ -106,7 +107,7 @@ const faq = [
   {
     question: "Brauche ich einen Personalausweis mit Online-Funktion (eID)?",
     answer:
-      "Nein. Weil wir den Vorgang mit Ihrer Vollmacht übernehmen, benötigen Sie weder eID noch AusweisApp oder Kartenlesegerät. Ein gut lesbares Foto Ihres Ausweises genügt.",
+      "Nein, die Online-Ausweisfunktion mit PIN, die AusweisApp oder ein Kartenleser sind bei uns nicht nötig. Damit wir den Antrag für Sie stellen dürfen, schreibt das Gesetz eine qualifiziert elektronisch signierte Vollmacht vor (§ 38 FZV). Dafür bestätigen Sie einmalig digital Ihre Identität mit Ihrem Ausweis und unterschreiben – den Link schicken wir Ihnen. Für eine Abmeldung ist das nicht nötig.",
   },
 ];
 
@@ -186,7 +187,7 @@ export default function WhatsAppZulassungPage() {
 
               <p className="mt-5 flex items-center gap-2 text-sm text-ink-500">
                 <ShieldCheck className="h-4 w-4 text-brand-700" aria-hidden />
-                Mo–Fr 8:00–18:00 Uhr · Antwort meist in wenigen Minuten
+                {site.contact.hours} · Antwort innerhalb der Servicezeiten
               </p>
             </div>
 
@@ -269,7 +270,7 @@ export default function WhatsAppZulassungPage() {
           </h2>
           <p className="mt-3 max-w-2xl text-lg text-ink-600">
             Alle unsere Leistungen lassen sich per Messenger beauftragen. Am
-            schnellsten geht die Abmeldung – oft noch am selben Werktag.
+            schnellsten geht die Abmeldung – oft noch {ZEIT.abmeldung}.
           </p>
 
           <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

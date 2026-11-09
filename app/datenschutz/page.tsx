@@ -128,10 +128,21 @@ export default function DatenschutzPage() {
       <section>
         <h2>5. Weitergabe an Behörden und Dienstleister</h2>
         <p>
-          Zur Durchführung des Auftrags übermitteln wir erforderliche Daten an die
-          zuständige Zulassungsbehörde sowie ggf. an Versanddienstleister und
-          Kennzeichenhersteller (Art. 6 Abs. 1 lit. b DSGVO). Eine darüber hinausgehende
-          Weitergabe an Dritte erfolgt nicht.
+          Zur Durchführung des Auftrags übermitteln wir erforderliche Daten an
+          (Art. 6 Abs. 1 lit. b DSGVO):
+        </p>
+        <ul>
+          <li>den Anbieter unserer Zulassungssoftware, über die wir Anträge
+            elektronisch einreichen (Auftragsverarbeitung nach Art. 28 DSGVO),</li>
+          <li>den Vertrauensdiensteanbieter, über den Sie Ihre Identität bestätigen
+            und die Vollmacht qualifiziert elektronisch signieren (§ 38 FZV),</li>
+          <li>das Kraftfahrt-Bundesamt, das Anträge über seine
+            Großkundenschnittstelle an die Zulassungsbehörde weiterleitet,</li>
+          <li>die zuständige Zulassungsbehörde sowie</li>
+          <li>gegebenenfalls Versanddienstleister und Kennzeichenhersteller.</li>
+        </ul>
+        <p>
+          Eine Weitergabe zu anderen Zwecken, etwa zu Werbezwecken, erfolgt nicht.
         </p>
       </section>
       <section>

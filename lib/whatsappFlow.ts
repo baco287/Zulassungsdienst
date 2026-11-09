@@ -17,8 +17,8 @@ export const whatsappSteps = [
     text: "Fahrzeugschein, Ausweis, eVB-Nummer: einfach mit dem Handy abfotografieren und in den Chat schicken. Scans oder PDFs gehen ebenso.",
   },
   {
-    title: "Festpreis bestätigen und Vollmacht unterschreiben",
-    text: "Sie erhalten den verbindlichen Festpreis und die digitale Vollmacht. Beides bestätigen Sie direkt im Chat – danach übernehmen wir.",
+    title: "Festpreis bestätigen und Vollmacht signieren",
+    text: "Den verbindlichen Festpreis bestätigen Sie direkt im Chat. Bei Zulassungen schicken wir Ihnen zusätzlich den Link zur digitalen Identitätsprüfung und Vollmacht-Signatur; bei Abmeldungen entfällt die Vollmacht.",
   },
   {
     title: "Fertig – Bestätigung und Papiere kommen zu Ihnen",
@@ -37,10 +37,10 @@ export const chatDemo: { from: "kunde" | "team"; text: string; time: string }[] 
   { from: "kunde", text: "📷 3 Fotos gesendet", time: "09:21" },
   {
     from: "team",
-    text: `Perfekt, alles lesbar. Festpreis ${P.abmeldung} inkl. Gebühren. Vollmacht zum Bestätigen: [Link]`,
+    text: `Perfekt, alles lesbar. Festpreis ${P.abmeldung} inkl. Gebühren – passt das für Sie?`,
     time: "09:23",
   },
-  { from: "kunde", text: "Bestätigt 👍", time: "09:25" },
+  { from: "kunde", text: "Ja, passt 👍", time: "09:25" },
   {
     from: "team",
     text: "Ihr Fahrzeug ist außer Betrieb gesetzt. Die Abmeldebestätigung liegt in Ihrem Postfach ✅",

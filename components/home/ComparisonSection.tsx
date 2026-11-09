@@ -1,6 +1,7 @@
 import { Check, Minus, X } from "lucide-react";
 import { euro, euroRange, officialFees, P, plateFee } from "@/lib/pricing";
 import { vergleichHinweis, vergleichSpalten, type Bewertung, type VergleichsZeile } from "@/lib/homepage";
+import { ZEIT } from "@/lib/betrieb";
 
 /**
  * Ehrlicher Dreier-Vergleich. Die Zeilen entstehen hier, weil Kosten aus
@@ -8,10 +9,10 @@ import { vergleichHinweis, vergleichSpalten, type Bewertung, type VergleichsZeil
  */
 const zeilen: VergleichsZeile[] = [
   {
-    kriterium: "eID erforderlich",
+    kriterium: "eID-PIN erforderlich",
     zulassungsstelle: { wert: "Nein – Ausweis vorzeigen", bewertung: "gut" },
     ikfz: { wert: "Ja – Online-Ausweis mit PIN, NFC-Smartphone oder Kartenleser", bewertung: "schlecht" },
-    wir: { wert: "Nein – Vollmacht und Ausweisfoto genügen", bewertung: "gut" },
+    wir: { wert: "Keine eID-PIN nötig – Identität einmalig digital bestätigen, Vollmacht digital signieren", bewertung: "gut" },
   },
   {
     kriterium: "Behördentermin",
@@ -44,7 +45,7 @@ const zeilen: VergleichsZeile[] = [
     kriterium: "Zeitaufwand",
     zulassungsstelle: { wert: "Termin, Anfahrt, Wartezeit – oft ein halber Tag", bewertung: "schlecht" },
     ikfz: { wert: "30–60 Minuten, wenn Technik und Daten passen", bewertung: "neutral" },
-    wir: { wert: "Etwa 10 Minuten für Fotos und Vollmacht", bewertung: "gut" },
+    wir: { wert: `${ZEIT.auftrag.replace("ca.", "Etwa")} für die Unterlagen, dazu die digitale Vollmacht-Signatur`, bewertung: "gut" },
   },
 ];
 
@@ -70,7 +71,7 @@ export default function ComparisonSection() {
     <section className="bg-offwhite py-16 sm:py-24" aria-labelledby="vergleich-title">
       <div className="mx-auto max-w-[1240px] px-4 sm:px-6">
         <div className="max-w-2xl">
-          <p className="font-display text-xs font-bold uppercase tracking-[0.18em] text-gold-600">Drei Wege zur Zulassung</p>
+          <p className="font-display text-xs font-bold uppercase tracking-[0.18em] text-accent-600">Drei Wege zur Zulassung</p>
           <h2 id="vergleich-title" className="mt-3 font-display text-3xl font-bold text-navy sm:text-[2.6rem] sm:leading-tight">
             Was passt zu Ihnen?
           </h2>

@@ -8,6 +8,10 @@ import { track } from "@/lib/analytics";
 import { getService } from "@/lib/services";
 import { euro, plateFee } from "@/lib/pricing";
 import { auftragsDauer, beispielKennzeichen, vorgaenge, type VorgangSlug } from "@/lib/homepage";
+import { merkeLeistung } from "@/lib/auswahl";
+import { getCatalogEntry, type CatalogEntry } from "@/lib/catalog";
+import { dauerKurz } from "@/lib/betrieb";
+import TrackView from "@/components/TrackView";
 
 /**
  * Zulassungs-Konfigurator im Hero: links die Vorgangsauswahl, rechts die
@@ -20,6 +24,7 @@ export default function Konfigurator() {
   const summaryId = useId();
 
   const vorgang = vorgaenge.find((v) => v.slug === selected) ?? vorgaenge[0];
+  const eintrag = getCatalogEntry(vorgang.slug);
   const service = getService(vorgang.slug);
   const price = service?.price.serviceFee ?? null;
   const platesExtra = Boolean(service?.price.platesExtra);
@@ -27,6 +32,7 @@ export default function Konfigurator() {
   function choose(slug: VorgangSlug) {
     if (slug === selected) return;
     setSelected(slug);
+    merkeLeistung(slug);
     track("service_selected", { service: slug, position: "konfigurator" });
   }
 
@@ -110,35 +116,37 @@ export default function Konfigurator() {
       {/* ── Zusammenfassung ── */}
       <div
         id={summaryId}
-        aria-live="polite"
         className="mt-6 border-t border-line pt-6 lg:mt-0 lg:border-t-0 lg:pl-8 lg:pt-0"
       >
+        <p className="sr-only" aria-live="polite">
+          {vorgang.label}: {price !== null ? euro(price) : "Preis auf Anfrage"}
+        </p>
         <Kennzeichen size="sm">
           <span className="whitespace-nowrap">{beispielKennzeichen}</span>
         </Kennzeichen>
         <h3 className="mt-3 font-display text-2xl font-bold text-navy">{vorgang.label}</h3>
         <p className="mt-1.5 text-[15px] leading-relaxed text-muted">{vorgang.description}</p>
 
-        <div className="mt-5 rounded-[18px] bg-gold-50 p-5">
+        <TrackView event="price_box_view" props={{ position: "konfigurator" }} className="mt-5 rounded-[18px] bg-gold-50 p-5">
           <p className="font-display text-[2.1rem] font-bold leading-none text-navy">
             {price !== null ? euro(price) : "auf Anfrage"}
           </p>
           <p className="mt-2 text-sm text-muted">
-            inkl. amtlicher Gebühren &amp; Versand
+            {eintrag ? enthaltenText(eintrag) : "inkl. 19 % MwSt."}
             {platesExtra && (
               <span className="block">zzgl. Kennzeichenschilder {euro(plateFee)} (falls benötigt)</span>
             )}
           </p>
           <p className="mt-3 flex items-start gap-2 text-sm font-semibold text-navy">
-            <Timer className="mt-0.5 h-4 w-4 shrink-0 text-gold-600" aria-hidden />
+            <Timer className="mt-0.5 h-4 w-4 shrink-0 text-accent-600" aria-hidden />
             <span>
               {auftragsDauer}
-              {service?.duration && (
-                <span className="block font-normal text-muted">Bearbeitung: {service.duration}</span>
+              {dauerKurz(vorgang.slug) && (
+                <span className="block font-normal text-muted">Bearbeitung: {dauerKurz(vorgang.slug)}</span>
               )}
             </span>
           </p>
-        </div>
+        </TrackView>
 
         <TrackedLink
           href={`/auftrag/?leistung=${vorgang.slug}`}
@@ -146,10 +154,18 @@ export default function Konfigurator() {
           props={{ position: "konfigurator", service: vorgang.slug }}
           className="mt-5 flex min-h-[52px] w-full items-center justify-center gap-2.5 rounded-[14px] bg-navy px-6 font-display text-lg font-semibold text-white transition-colors duration-150 hover:bg-navy-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy"
         >
-          Jetzt starten
+          Auftrag starten
           <ArrowRight className="h-5 w-5 text-gold" aria-hidden />
         </TrackedLink>
       </div>
     </div>
   );
+}
+
+/** „inkl. amtlicher Gebühren & Versand · inkl. MwSt.“ – nur was laut Konfiguration enthalten ist. */
+function enthaltenText(e: CatalogEntry): string {
+  const teile: string[] = [];
+  if (e.amtlicheGebuehren.enthalten) teile.push("amtlicher Gebühren");
+  if (e.versand.enthalten) teile.push("Versand");
+  return teile.length ? `inkl. ${teile.join(" & ")} · inkl. 19 % MwSt.` : "inkl. 19 % MwSt.";
 }

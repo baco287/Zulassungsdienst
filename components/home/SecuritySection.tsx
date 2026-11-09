@@ -9,7 +9,7 @@ export default function SecuritySection() {
       <div className="mx-auto max-w-[1240px] px-4 sm:px-6">
         <div className="grid gap-10 rounded-[22px] border border-line bg-white p-7 shadow-[0_1px_2px_rgb(11_31_58/0.04),0_16px_40px_-20px_rgb(11_31_58/0.2)] sm:p-10 lg:grid-cols-[1fr_1.3fr] lg:items-center lg:gap-16">
           <div>
-            <p className="font-display text-xs font-bold uppercase tracking-[0.18em] text-gold-600">Datensicherheit</p>
+            <p className="font-display text-xs font-bold uppercase tracking-[0.18em] text-accent-600">Datensicherheit</p>
             <h2 id="sicherheit-title" className="mt-3 font-display text-3xl font-bold text-navy sm:text-[2.2rem] sm:leading-tight">
               {sicherheit.title}
             </h2>

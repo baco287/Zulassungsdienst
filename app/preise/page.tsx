@@ -11,7 +11,7 @@ import type { ServiceCategory } from "@/lib/types";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Preise – transparent und ohne versteckte Kosten",
+  title: "Preise für die Kfz-Zulassung online",
   description:
     `Preise inkl. MwSt., Gebühren und Versand: ${P.zulassung} je Zulassung, Abmeldung ${P.abmeldung}, Kennzeichen ${P.kennzeichen} – ohne versteckte Kosten.`,
 };
@@ -84,7 +84,7 @@ export default function PreisePage() {
                                     ? euro(s.price.serviceFee)
                                     : `ab ${euro(s.price.serviceFee)}`}
                                 {!s.price.verified && (
-                                  <span className="ml-1.5 align-middle rounded bg-accent-400/20 px-1.5 py-0.5 text-[10px] font-semibold uppercase text-accent-600">
+                                  <span className="ml-1.5 align-middle rounded bg-accent-400/20 px-1.5 py-0.5 text-xs font-semibold uppercase text-accent-700">
                                     unverbindlich
                                   </span>
                                 )}

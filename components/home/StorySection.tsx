@@ -8,7 +8,7 @@ export default function StorySection() {
     <section id="ohne-eid" className="bg-white py-16 sm:py-24" aria-labelledby="story-title">
       <div className="mx-auto grid max-w-[1240px] gap-12 px-4 sm:px-6 lg:grid-cols-[1.05fr_1fr] lg:gap-16">
         <div>
-          <p className="font-display text-xs font-bold uppercase tracking-[0.18em] text-gold-600">{story.eyebrow}</p>
+          <p className="font-display text-xs font-bold uppercase tracking-[0.18em] text-accent-600">{story.eyebrow}</p>
           <h2 id="story-title" className="mt-3 font-display text-3xl font-bold text-navy sm:text-[2.6rem] sm:leading-tight">
             {story.title}
           </h2>

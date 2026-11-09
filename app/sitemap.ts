@@ -7,6 +7,7 @@ import { landingPages } from "@/lib/landingpages";
 import { kennzeichen, publishedStellen } from "@/lib/zulassungsstellen";
 import { site } from "@/lib/site";
 import { SERVICEBEDINGUNGEN_FREIGEGEBEN } from "@/lib/features";
+import { cityIndexable, kennzeichenIndexable, stelleIndexable } from "@/lib/indexGate";
 
 export const dynamic = "force-static";
 
@@ -63,7 +64,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const cityPages = cities.map((c) => ({
+  const cityPages = cities.filter(cityIndexable).map((c) => ({
     url: `${site.url}/kfz-zulassung/${c.slug}/`,
     lastModified: contentUpdated,
     changeFrequency: "monthly" as const,
@@ -84,14 +85,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  const stellen = publishedStellen.map((z) => ({
+  const stellen = publishedStellen.filter(stelleIndexable).map((z) => ({
     url: `${site.url}/zulassungsstelle/${z.slug}/`,
     lastModified: new Date(z.geprueftAm),
     changeFrequency: "monthly" as const,
     priority: 0.6,
   }));
 
-  const kuerzel = kennzeichen.map((k) => ({
+  const kuerzel = kennzeichen.filter(kennzeichenIndexable).map((k) => ({
     url: `${site.url}/kennzeichen/${k.slug}/`,
     lastModified: new Date(k.stellen[0].geprueftAm),
     changeFrequency: "yearly" as const,

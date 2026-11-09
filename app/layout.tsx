@@ -6,6 +6,7 @@ import MobileCTA from "@/components/MobileCTA";
 import Analytics from "@/components/Analytics";
 import { site } from "@/lib/site";
 import "./globals.css";
+import { ORG_ID, WEBSITE_ID } from "@/lib/catalog";
 
 const lexend = Lexend({
   subsets: ["latin"],
@@ -57,14 +58,13 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LocalBusiness",
-      "@id": `${site.url}/#business`,
+      "@type": "Organization",
+      "@id": ORG_ID,
       name: site.name,
       legalName: site.company.legalName,
       description: site.description,
       url: site.url,
       logo: `${site.url}/logo.png`,
-      image: `${site.url}/opengraph-image`,
       email: site.contact.email,
       telephone: site.contact.phone,
       address: {
@@ -74,14 +74,7 @@ const jsonLd = {
         postalCode: "10437",
         addressCountry: "DE",
       },
-      openingHoursSpecification: {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        opens: "08:00",
-        closes: "18:00",
-      },
       areaServed: { "@type": "Country", name: "Deutschland" },
-      priceRange: "€€",
       knowsAbout: [
         "Kfz-Zulassung",
         "Neuzulassung",
@@ -97,16 +90,22 @@ const jsonLd = {
         telephone: site.contact.phone,
         email: site.contact.email,
         availableLanguage: "German",
+        hoursAvailable: {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          opens: "08:00",
+          closes: "18:00",
+        },
       },
     },
     {
       "@type": "WebSite",
-      "@id": `${site.url}/#website`,
+      "@id": WEBSITE_ID,
       url: site.url,
       name: site.name,
       description: site.description,
       inLanguage: "de",
-      publisher: { "@id": `${site.url}/#business` },
+      publisher: { "@id": ORG_ID },
     },
   ],
 };

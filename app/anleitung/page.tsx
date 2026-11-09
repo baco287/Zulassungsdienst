@@ -6,6 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import CTASection from "@/components/CTASection";
 import { anleitungSteps } from "@/lib/anleitung";
 import { site } from "@/lib/site";
+import { ZEIT } from "@/lib/betrieb";
 
 export const metadata: Metadata = {
   title: "Auto online zulassen – Anleitung mit Bildern",
@@ -64,11 +65,11 @@ export default function AnleitungPage() {
               <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-ink-600">
                 <span className="flex items-center gap-1.5">
                   <Clock className="h-4 w-4 text-brand-600" aria-hidden />
-                  Ihr Aufwand: ca. 15 Minuten
+                  Ihr Aufwand online: {ZEIT.auftrag}
                 </span>
                 <span className="flex items-center gap-1.5">
                   <CheckCircle2 className="h-4 w-4 text-brand-600" aria-hidden />
-                  Zulassung in 1–3 Werktagen
+                  Zulassung in {ZEIT.zulassungDativ}
                 </span>
                 <span className="flex items-center gap-1.5">
                   <MapPin className="h-4 w-4 text-brand-600" aria-hidden />
@@ -87,7 +88,7 @@ export default function AnleitungPage() {
                   href="/auftrag/"
                   className="inline-flex items-center gap-2 rounded-xl bg-brand-700 px-5 py-3 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-800"
                 >
-                  Jetzt starten
+                  Auftrag starten
                   <ArrowRight className="h-4 w-4" aria-hidden />
                 </Link>
               </div>

@@ -12,6 +12,10 @@ import { getGuide } from "@/lib/ratgeber";
 import { site } from "@/lib/site";
 import { P, PRICES, schemaPrice } from "@/lib/pricing";
 import { getZulassungsstelle, kennzeichenSlug } from "@/lib/zulassungsstellen";
+import { ZEIT } from "@/lib/betrieb";
+import { ORG_ID } from "@/lib/catalog";
+import { cityIndexable, robotsFor } from "@/lib/indexGate";
+import { fitTitle } from "@/lib/seo";
 
 const cityServices = ["neuzulassung", "ummeldung", "halterwechsel", "abmeldung"];
 const cityGuides = ["was-kostet-eine-kfz-zulassung", "auto-anmelden-unterlagen", "kennzeichen-mitnehmen"];
@@ -29,14 +33,14 @@ export async function generateMetadata({
   const city = getCity(stadt);
   if (!city) return {};
   return {
-    title: `Kfz-Zulassung ${city.name} ohne Termin`,
+    robots: robotsFor(cityIndexable(city)),
+    title: fitTitle(`Kfz-Zulassung ${city.name} ohne Termin`),
     description: city.description,
     keywords: [
       ...city.keywords,
       `Zulassungsstelle ${city.name} Termin`,
       `Auto zulassen ${city.name} Termin`,
       `Kfz-Zulassung ${city.name} Termin`,
-      `Termin Zulassungsstelle ${city.name} ausgebucht`,
     ],
   };
 }
@@ -65,12 +69,7 @@ export default async function CityPage({
     description: city.description,
     url: pageUrl,
     areaServed: { "@type": "City", name: city.name },
-    provider: {
-      "@type": "LocalBusiness",
-      name: site.name,
-      url: site.url,
-      telephone: site.contact.phone,
-    },
+    provider: { "@id": ORG_ID },
     offers: {
       "@type": "Offer",
       price: schemaPrice(PRICES.zulassung),
@@ -127,16 +126,15 @@ export default async function CityPage({
                   Keinen Termin bei der Zulassungsstelle {city.inName} bekommen?
                 </h2>
                 <p className="mt-3 leading-relaxed text-ink-700">
-                  Damit sind Sie nicht allein – Zulassungstermine sind in vielen Städten
-                  Wochen im Voraus ausgebucht. Die gute Nachricht: <strong>Bei uns
-                  brauchen Sie keinen.</strong> Ihr Vorgang startet sofort nach der
-                  Beauftragung, den Behördenteil übernehmen wir.
+                  Die gute Nachricht: <strong>Bei uns brauchen Sie keinen.</strong>{" "}
+                  Ihr Vorgang startet nach Ihrer Beauftragung, den Behördenteil
+                  übernehmen wir.
                 </p>
                 <ul className="mt-4 space-y-2.5">
                   {[
                     "Sofort-Start statt Terminsuche – beauftragen Sie jetzt, wir legen los",
                     "Kein Personalausweis mit Online-Funktion (eID) nötig",
-                    `Zulassung in 1–3 Werktagen, Abmeldung meist taggleich – Kennzeichen kommen per Versand`,
+                    `Zulassung in ${ZEIT.zulassungDativ} ${ZEIT.bezug}, ${ZEIT.versand}; Abmeldung meist ${ZEIT.abmeldung}`,
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-ink-700">
                       <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" aria-hidden />
@@ -264,7 +262,7 @@ export default async function CityPage({
                 href={`/auftrag/`}
                 className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-brand-700 px-5 py-3.5 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-800"
               >
-                Jetzt beauftragen
+                Auftrag starten
                 <ArrowRight className="h-4 w-4" aria-hidden />
               </Link>
               <p className="mt-3 text-xs leading-relaxed text-ink-500">

@@ -3,11 +3,12 @@ import { Clock4, ShieldCheck } from "lucide-react";
 import AuftragForm from "@/components/AuftragForm";
 import { site, whatsAppLink } from "@/lib/site";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
+import { ZEIT } from "@/lib/betrieb";
 
 export const metadata: Metadata = {
   title: "Online-Auftrag – Zulassung jetzt beauftragen",
   description:
-    "Beauftragen Sie Ihre Kfz-Zulassung online: Leistung wählen, Daten eingeben, absenden – DeutscheZulassung übernimmt den Rest. Unverbindliche Anfrage in 2 Minuten.",
+    `Beauftragen Sie Ihre Kfz-Zulassung online: Leistung wählen, Daten eingeben, absenden – DeutscheZulassung übernimmt den Rest. Unverbindliche Anfrage in ${ZEIT.anfrage}.`,
 };
 
 export default function AuftragPage() {
@@ -19,7 +20,7 @@ export default function AuftragPage() {
             Online-Auftrag
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-ink-600">
-            Zwei Minuten, unverbindlich: Wir melden uns mit Ihrer Festpreis-Bestätigung
+            {ZEIT.anfrage.replace("ca. ", "Ca. ")}, unverbindlich: Wir melden uns mit Ihrer Festpreis-Bestätigung
             und der Liste der nächsten Schritte.
           </p>
           <div className="mt-8 rounded-2xl border border-ink-200 bg-white p-6 shadow-card sm:p-8">
@@ -48,7 +49,7 @@ export default function AuftragPage() {
           <div className="rounded-2xl border border-ink-200 bg-white p-6 text-sm text-ink-600 shadow-card">
             <p className="flex items-start gap-2">
               <Clock4 className="mt-0.5 h-4 w-4 shrink-0 text-brand-700" aria-hidden />
-              Antwort {site.contact.hours} meist innerhalb weniger Minuten.
+              Antwort innerhalb unserer Servicezeiten ({site.contact.hours}).
             </p>
             <p className="mt-3 flex items-start gap-2">
               <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-brand-700" aria-hidden />

@@ -8,9 +8,10 @@ import KfzSteuerRechner from "@/components/KfzSteuerRechner";
 import Reveal from "@/components/Reveal";
 import { getGuide } from "@/lib/ratgeber";
 import { site } from "@/lib/site";
+import { ZEIT } from "@/lib/betrieb";
 
 export const metadata: Metadata = {
-  title: "Kfz-Steuer-Rechner 2026 – Steuer für Ihr Auto berechnen",
+  title: "Kfz-Steuer-Rechner 2026",
   description:
     "Kostenlos die Kfz-Steuer berechnen: Hubraum, CO₂-Ausstoß und Erstzulassung eingeben – der Rechner zeigt sofort die Jahressteuer für Benziner, Diesel und E-Autos.",
   keywords: [
@@ -41,7 +42,7 @@ const rechnerFaq = [
   {
     question: "Bekomme ich Steuer zurück, wenn ich mein Auto abmelde?",
     answer:
-      "Ja. Mit der Außerbetriebsetzung endet die Steuerpflicht taggenau; zu viel gezahlte Beträge erstattet das Hauptzollamt automatisch. Die Abmeldung erledigen wir meist noch am selben Werktag.",
+      `Ja. Mit der Außerbetriebsetzung endet die Steuerpflicht taggenau; zu viel gezahlte Beträge erstattet das Hauptzollamt automatisch. Die Abmeldung erledigen wir meist noch ${ZEIT.abmeldung}.`,
   },
 ];
 

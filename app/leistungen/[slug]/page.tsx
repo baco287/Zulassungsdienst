@@ -19,6 +19,10 @@ import { getGuide } from "@/lib/ratgeber";
 import { euro, euroRange, leistungsPreis, P, priceDisclaimer, plateFee } from "@/lib/pricing";
 import { site, whatsAppLink } from "@/lib/site";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
+import { getCatalogEntry, preisBestandteile, serviceJsonLd as serviceJsonLd_ } from "@/lib/catalog";
+import { dauerKurz } from "@/lib/betrieb";
+import TrackedLink from "@/components/TrackedLink";
+import TrackView from "@/components/TrackView";
 
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
@@ -50,6 +54,7 @@ export default async function ServiceDetailPage({
   if (!service) notFound();
 
   const p = service.price;
+  const eintrag = getCatalogEntry(service.slug);
   const content = getServiceContent(slug);
   const relatedServices =
     content?.related.map((s) => getService(s)).filter((s) => s !== undefined) ?? [];
@@ -58,32 +63,7 @@ export default async function ServiceDetailPage({
 
   const pageUrl = `${site.url}/leistungen/${service.slug}/`;
 
-  const serviceJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name: service.name,
-    serviceType: service.name,
-    description: service.teaser,
-    url: pageUrl,
-    areaServed: { "@type": "Country", name: "Deutschland" },
-    provider: {
-      "@type": "LocalBusiness",
-      name: site.name,
-      url: site.url,
-      telephone: site.contact.phone,
-    },
-    ...(p.serviceFee !== null && p.verified
-      ? {
-          offers: {
-            "@type": "Offer",
-            price: p.serviceFee.toFixed(2),
-            priceCurrency: "EUR",
-            url: pageUrl,
-            description: p.note,
-          },
-        }
-      : {}),
-  };
+  const serviceJsonLd = serviceJsonLd_(eintrag!, { url: pageUrl });
 
   const faqJsonLd = content?.faq.length
     ? {
@@ -114,6 +94,26 @@ export default async function ServiceDetailPage({
             {service.name}
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-ink-600">{service.teaser}</p>
+          {eintrag && eintrag.preis !== null && (
+            <div className="mt-7 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
+              <TrackedLink
+                href={eintrag.ctaHref}
+                event="cta_click"
+                props={{ position: "leistung_hero", service: service.slug }}
+                className="inline-flex min-h-[52px] items-center justify-center gap-2 rounded-[14px] bg-navy px-7 font-display text-lg font-semibold text-white transition-colors duration-150 hover:bg-navy-800"
+              >
+                Auftrag starten
+                <ArrowRight className="h-5 w-5 text-gold" aria-hidden />
+              </TrackedLink>
+              <p className="text-sm text-ink-700">
+                <span className="font-display text-xl font-bold text-navy">{eintrag.preisText}</span>{" "}
+                {preisBestandteile(eintrag)}
+                {dauerKurz(service.slug) && (
+                  <span className="block">Bearbeitung: {dauerKurz(service.slug)}</span>
+                )}
+              </p>
+            </div>
+          )}
         </div>
       </section>
 
@@ -271,6 +271,7 @@ export default async function ServiceDetailPage({
           {/* Preis-Box */}
           <Reveal delay={0.1}>
             <aside className="lg:sticky lg:top-24 h-fit rounded-2xl border border-ink-200 bg-white p-6 shadow-card">
+              <TrackView event="price_box_view" props={{ service: service.slug, position: "leistungsseite" }}>
               <h2 className="font-display text-lg font-bold text-ink-900">
                 {service.slug === "wunschkennzeichen" ? "Zusatzleistung" : p.inclusive ? "Komplettpreis" : "Preisstruktur"}
               </h2>
@@ -351,7 +352,7 @@ export default async function ServiceDetailPage({
                   href={`/auftrag/?leistung=${service.slug}`}
                   className="flex w-full items-center justify-center gap-2 rounded-xl bg-brand-700 px-5 py-3.5 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-800"
                 >
-                  Jetzt beauftragen
+                  Auftrag starten
                   <ArrowRight className="h-4 w-4" aria-hidden />
                 </Link>
                 <a
@@ -364,6 +365,7 @@ export default async function ServiceDetailPage({
                   Frage per WhatsApp
                 </a>
               </div>
+              </TrackView>
             </aside>
           </Reveal>
         </div>

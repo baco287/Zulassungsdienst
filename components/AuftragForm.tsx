@@ -89,9 +89,22 @@ function validateStep(step: number, v: OrderRequest): Errors {
   return e;
 }
 
+/** Schritt, in dem ein vom Server gemeldetes Feld steht (für Fehler nach dem Absenden). */
+const FIELD_STEP: Record<string, number> = {
+  service: 0,
+  serviceSlug: 0,
+  zip: 1,
+  city: 1,
+  name: 2,
+  email: 2,
+  phone: 2,
+  contact: 2,
+  consent: 3,
+};
+
 const inputClass = (hasError: boolean) =>
-  `w-full rounded-xl border-2 px-4 py-3 text-base text-ink-900 placeholder:text-ink-400 transition-colors duration-200 focus:border-brand-500 outline-none ${
-    hasError ? "border-red-400 bg-red-50" : "border-ink-200 bg-white"
+  `w-full rounded-xl border-2 px-4 py-3 text-base text-ink-900 placeholder:text-ink-500 transition-colors duration-200 focus:border-brand-700 outline-none ${
+    hasError ? "border-red-600 bg-red-50" : "border-ink-500 bg-white"
   }`;
 
 function FieldError({ id, message }: { id: string; message?: string }) {
@@ -131,17 +144,19 @@ export default function AuftragForm() {
     tracking.current.step = step;
   }, [step]);
 
-  // Abbruch: Seite wird verlassen, nachdem der Assistent begonnen wurde.
+  // Abbruch: Seite wird tatsächlich verlassen (Navigation, Tab schließen),
+  // nachdem der Assistent begonnen wurde. Bewusst nicht "visibilitychange":
+  // Das feuert auch beim Öffnen der Kamera für den Upload und bei App-Wechseln.
   useEffect(() => {
-    const onHide = () => {
+    const onLeave = () => {
       const t = tracking.current;
-      if (document.visibilityState === "hidden" && t.started && !t.submitted && !t.abandoned) {
+      if (t.started && !t.submitted && !t.abandoned) {
         t.abandoned = true;
         track("order_abandon", { step: t.step + 1 });
       }
     };
-    document.addEventListener("visibilitychange", onHide);
-    return () => document.removeEventListener("visibilitychange", onHide);
+    window.addEventListener("pagehide", onLeave);
+    return () => window.removeEventListener("pagehide", onLeave);
   }, []);
 
   // Zeitpunkt des Formularaufrufs – der Endpoint verwirft Einsendungen,
@@ -219,12 +234,19 @@ export default function AuftragForm() {
     setResult(outcome);
 
     if (!outcome.ok && outcome.field) {
-      setErrors({ [outcome.field as keyof Errors]: outcome.error });
+      const feld = outcome.field === "service" ? "serviceSlug" : outcome.field;
+      setErrors({ [feld as keyof Errors]: outcome.error });
+      const zielSchritt = FIELD_STEP[outcome.field];
+      if (zielSchritt !== undefined && zielSchritt !== step) {
+        stepChanged.current = true;
+        setStep(zielSchritt);
+      }
     }
     if (outcome.ok) {
       stepChanged.current = true;
       tracking.current.submitted = true;
       track("order_submitted", { service: values.serviceSlug, method: files.length ? "formular_mit_upload" : "formular" });
+      if (values.audience === "gewerblich") track("b2b_inquiry", { method: "formular", service: values.serviceSlug });
     }
   }
 
@@ -255,9 +277,9 @@ export default function AuftragForm() {
           Ihre Anfrage ist eingegangen
         </h2>
         <p className="mx-auto mt-3 max-w-md text-ink-600">
-          Wir haben Ihre Anfrage erhalten und melden uns mit der verbindlichen
-          Festpreis-Bestätigung – in der Regel noch am selben Werktag
-          ({site.contact.hours}).
+          Wir haben Ihre Anfrage erhalten und melden uns innerhalb unserer
+          Servicezeiten ({site.contact.hours}) mit der verbindlichen
+          Festpreis-Bestätigung. Erst danach starten wir.
         </p>
 
         <p className="mx-auto mt-5 inline-flex flex-col items-center rounded-xl border border-ink-200 bg-ink-50 px-6 py-3">
@@ -417,10 +439,10 @@ export default function AuftragForm() {
                 ).map(([value, label]) => (
                   <label
                     key={value}
-                    className={`flex cursor-pointer items-center justify-center gap-2 rounded-xl border-2 px-4 py-3 text-sm font-semibold transition-colors duration-200 ${
+                    className={`flex cursor-pointer items-center justify-center gap-2 rounded-xl border-2 px-4 py-3 text-sm font-semibold transition-colors duration-200 has-[:focus-visible]:outline has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-navy ${
                       values.audience === value
                         ? "border-brand-600 bg-brand-50 text-brand-800"
-                        : "border-ink-200 bg-white text-ink-600 hover:border-brand-300"
+                        : "border-ink-500 bg-white text-ink-700 hover:border-brand-700"
                     }`}
                   >
                     <input
@@ -542,7 +564,7 @@ export default function AuftragForm() {
                   value={values.email}
                   onChange={(e) => set("email", e.target.value)}
                   aria-invalid={!!errors.email}
-                  aria-describedby={errors.email ? "err-email" : undefined}
+                  aria-describedby={[errors.email && "err-email", errors.contact && "err-contact"].filter(Boolean).join(" ") || undefined}
                   className={inputClass(!!errors.email)}
                   placeholder="max@beispiel.de"
                 />
@@ -559,7 +581,7 @@ export default function AuftragForm() {
                   value={values.phone}
                   onChange={(e) => set("phone", e.target.value)}
                   aria-invalid={!!errors.phone}
-                  aria-describedby={errors.phone ? "err-phone" : undefined}
+                  aria-describedby={[errors.phone && "err-phone", errors.contact && "err-contact"].filter(Boolean).join(" ") || undefined}
                   className={inputClass(!!errors.phone)}
                   placeholder="0151 23456789"
                 />
@@ -751,8 +773,8 @@ export default function AuftragForm() {
               </div>
             )}
 
-            {/* Korrigierbarer Fehler ohne Feldbezug */}
-            {result && !result.ok && !result.fallback && !result.field && (
+            {/* Korrigierbarer Fehler – mit Feldbezug springt das Formular zum Schritt, hier steht trotzdem der Hinweis */}
+            {result && !result.ok && !result.fallback && (
               <p className="mt-4 flex items-start gap-2 text-sm text-red-600" role="alert">
                 <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" aria-hidden />
                 {result.error}

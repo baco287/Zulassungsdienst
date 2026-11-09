@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { Calculator, Clock4 } from "lucide-react";
 import { euro, officialFees, PRICES } from "@/lib/pricing";
+import { ZEIT } from "@/lib/betrieb";
+import { useToolUsed } from "@/lib/useToolUsed";
 
 /**
  * Ersparnis-Rechner: Was kostet der eigene Behördengang wirklich?
@@ -22,6 +24,7 @@ const OUR_PRICE = PRICES.zulassung;
 const OUR_PLATES = PRICES.kennzeichen;
 
 export default function BehoerdengangRechner() {
+  const markUsed = useToolUsed("behoerdengang");
   const [hours, setHours] = useState("3");
   const [rate, setRate] = useState("25");
   const [km, setKm] = useState("10");
@@ -44,7 +47,7 @@ export default function BehoerdengangRechner() {
   const labelClass = "block font-display text-sm font-semibold text-ink-800";
 
   return (
-    <div className="rounded-2xl border border-ink-200 bg-white p-6 shadow-card sm:p-8">
+    <div className="rounded-2xl border border-ink-200 bg-white p-6 shadow-card sm:p-8" onChangeCapture={markUsed} onClickCapture={markUsed}>
       <div className="grid gap-5 sm:grid-cols-3">
         <div>
           <label htmlFor="hours" className={labelClass}>
@@ -140,7 +143,7 @@ export default function BehoerdengangRechner() {
             </p>
             <p className="mt-3 text-sm leading-relaxed text-ink-700">
               {euro(OUR_PRICE)} inkl. Gebühren und Versand + {euro(OUR_PLATES)} für das
-              neue Kennzeichenpaar – Ihr Zeitaufwand: ca. 10 Minuten für Fotos und
+              neue Kennzeichenpaar – Ihr Zeitaufwand: {ZEIT.auftrag} für Fotos und
               digitale Vollmacht.
             </p>
             <p className="mt-3 font-display text-sm font-bold">

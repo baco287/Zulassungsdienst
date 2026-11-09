@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -62,6 +62,25 @@ function IconAction({
 export default function Header() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const menuButton = useRef<HTMLButtonElement>(null);
+
+  // Mobilmenü schließt bei Seitenwechsel (auch Zurück-Navigation) …
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
+  // … und mit Escape; der Fokus kehrt dann auf den Menü-Button zurück.
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setOpen(false);
+        menuButton.current?.focus();
+      }
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [open]);
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md">
@@ -109,7 +128,7 @@ export default function Header() {
             label="Per WhatsApp schreiben"
             onClick={() => track("whatsapp_click", { position: "header" })}
             external
-            className="bg-wa/15 text-wa hover:bg-wa/25"
+            className="bg-wa/15 text-[#0e7a5f] hover:bg-wa/25"
           >
             <WhatsAppIcon className="h-5 w-5" />
           </IconAction>
@@ -121,11 +140,12 @@ export default function Header() {
             Auftrag starten
           </Link>
           <button
+            ref={menuButton}
             type="button"
             onClick={() => setOpen((v) => !v)}
             className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full text-navy hover:bg-offwhite lg:hidden"
             aria-expanded={open}
-            aria-controls="mobile-nav"
+            aria-controls={open ? "mobile-nav" : undefined}
             aria-label={open ? "Menü schließen" : "Menü öffnen"}
           >
             {open ? <X className="h-6 w-6" aria-hidden /> : <Menu className="h-6 w-6" aria-hidden />}

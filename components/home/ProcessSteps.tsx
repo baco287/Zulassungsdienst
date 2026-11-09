@@ -14,7 +14,6 @@ export function ProcessSteps() {
                 className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full font-display text-sm font-bold ${
                   aktiv ? "bg-gold text-navy" : "border-2 border-line bg-white text-navy"
                 }`}
-                aria-current={aktiv ? "step" : undefined}
               >
                 {i + 1}
               </span>

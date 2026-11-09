@@ -1,4 +1,5 @@
 import { P, wunschkennzeichenHinweis } from "./pricing";
+import { ZEIT } from "@/lib/betrieb";
 /**
  * Vertiefende Inhalte für die Leistungs-Detailseiten (SEO/GEO).
  *
@@ -44,7 +45,7 @@ export const serviceContent: Record<string, ServiceContent> = {
         heading: "Neuzulassung online – ohne Termin und Behördengang",
         paragraphs: [
           "Ein fabrikneues Fahrzeug oder ein Import ohne deutsche Papiere muss vor der ersten Fahrt zugelassen werden. Der klassische Weg führt über einen Termin bei der Zulassungsstelle – mit Wartezeiten von teils mehreren Wochen. Als Zulassungsdienst übernehmen wir den kompletten Vorgang für Sie: Sie senden uns Fotos oder Scans Ihrer Unterlagen, wir prüfen alles auf Vollständigkeit, reichen den Antrag bei der zuständigen Behörde ein und lassen Ihre Kennzeichen prägen.",
-          "Am Ende erhalten Sie Zulassungsbescheinigung Teil I, gestempelte Kennzeichen und Ihre restlichen Unterlagen per versichertem Versand – oder auf Wunsch direkt ins Autohaus. Ihr Fahrzeug ist damit in der Regel innerhalb von 1–3 Werktagen angemeldet, ohne dass Sie eine Behörde betreten müssen.",
+          `Am Ende erhalten Sie Zulassungsbescheinigung Teil I, gestempelte Kennzeichen und Ihre restlichen Unterlagen per versichertem Versand – oder auf Wunsch direkt ins Autohaus. Ihr Fahrzeug ist damit in der Regel innerhalb von ${ZEIT.zulassungDativ} angemeldet, ohne dass Sie eine Behörde betreten müssen.`,
         ],
       },
       {
@@ -63,7 +64,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       {
         question: "Wie lange dauert eine Neuzulassung?",
         answer:
-          "In der Regel 1–3 Werktage ab vollständigen Unterlagen, zuzüglich Versand. Bei Eilbedarf sprechen Sie uns an – oft ist eine Express-Abwicklung möglich.",
+          `In der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, zuzüglich Versand. Bei Eilbedarf sprechen Sie uns an – oft ist eine Express-Abwicklung möglich.`,
       },
       {
         question: "Brauche ich für die Neuzulassung einen Termin bei der Zulassungsstelle?",
@@ -137,9 +138,9 @@ export const serviceContent: Record<string, ServiceContent> = {
   abmeldung: {
     sections: [
       {
-        heading: "Auto abmelden – meist noch am selben Werktag",
+        heading: `Auto abmelden – meist noch ${ZEIT.abmeldung}`,
         paragraphs: [
-          "Die Abmeldung (amtlich: Außerbetriebsetzung) ist der schnellste Zulassungsvorgang – und der einzige, der komplett ohne Versand auskommt. Sie legen die verdeckten Sicherheitscodes auf Ihrer Zulassungsbescheinigung Teil I und auf den Stempelplaketten Ihrer Kennzeichen frei, fotografieren beides und senden es uns. Wir setzen das Fahrzeug digital außer Betrieb und Sie erhalten die Abmeldebestätigung per E-Mail – in der Regel noch am selben Werktag.",
+          `Die Abmeldung (amtlich: Außerbetriebsetzung) ist der schnellste Zulassungsvorgang – und der einzige, der komplett ohne Versand auskommt. Sie legen die verdeckten Sicherheitscodes auf Ihrer Zulassungsbescheinigung Teil I und auf den Stempelplaketten Ihrer Kennzeichen frei, fotografieren beides und senden es uns. Wir setzen das Fahrzeug digital außer Betrieb und Sie erhalten die Abmeldebestätigung per E-Mail – in der Regel noch ${ZEIT.abmeldung}.`,
           "Wichtig: Ab der Abmeldung darf das Fahrzeug nicht mehr im öffentlichen Raum bewegt oder abgestellt werden. Steuer und Versicherung enden automatisch – die Behörde informiert Zoll und Versicherer.",
         ],
       },
@@ -223,7 +224,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       {
         heading: "Gebrauchtwagen umschreiben – schnell und rechtssicher",
         paragraphs: [
-          "Nach dem Kauf eines Gebrauchtwagens muss das Fahrzeug auf den neuen Halter umgeschrieben werden – erst dann sind Sie auch amtlich als Halter eingetragen. Bis dahin läuft das Fahrzeug auf den Verkäufer, was für beide Seiten Risiken birgt: Der Verkäufer haftet für Steuer und Verstöße, der Käufer fährt mit fremder Zulassung. Wir erledigen die Umschreibung deshalb bevorzugt taggenau: Unterlagen digital einreichen, Vollmacht erteilen, und in 1–3 Werktagen ist das Fahrzeug auf Sie zugelassen.",
+          `Nach dem Kauf eines Gebrauchtwagens muss das Fahrzeug auf den neuen Halter umgeschrieben werden – erst dann sind Sie auch amtlich als Halter eingetragen. Bis dahin läuft das Fahrzeug auf den Verkäufer, was für beide Seiten Risiken birgt: Der Verkäufer haftet für Steuer und Verstöße, der Käufer fährt mit fremder Zulassung. Wir erledigen die Umschreibung deshalb bevorzugt taggenau: Unterlagen digital einreichen, Vollmacht erteilen, und in ${ZEIT.zulassungDativ} ist das Fahrzeug auf Sie zugelassen.`,
           "Ist das Fahrzeug noch angemeldet, kann das bisherige Kennzeichen bundesweit übernommen werden – auch über Bezirksgrenzen hinweg. Alternativ organisieren wir neue Kennzeichen oder Ihr Wunschkennzeichen gleich mit.",
         ],
       },
@@ -413,7 +414,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       {
         question: "Was tun, wenn der Fahrzeugbrief (ZB II) verloren ist?",
         answer:
-          "Für den Ersatz der Zulassungsbescheinigung Teil II ist eine Versicherung an Eides statt zum Verbleib des Dokuments erforderlich. Wir bereiten die Erklärung vor und beantragen das Ersatzdokument – je nach Behörde dauert das 3–10 Werktage.",
+          `Für den Ersatz der Zulassungsbescheinigung Teil II ist eine Versicherung an Eides statt zum Verbleib des Dokuments erforderlich. Wir bereiten die Erklärung vor und beantragen das Ersatzdokument – je nach Behörde dauert das ${ZEIT.ersatzDokumente}.`,
       },
       {
         question: "Meine Kennzeichen wurden gestohlen – darf ich noch fahren?",

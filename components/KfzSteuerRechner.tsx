@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Calculator, Info } from "lucide-react";
 import { euro } from "@/lib/pricing";
+import { useToolUsed } from "@/lib/useToolUsed";
 
 /**
  * Kfz-Steuer-Rechner für Pkw (§ 9 KraftStG).
@@ -45,6 +46,7 @@ function co2Tax(co2: number, era: Era): number {
 }
 
 export default function KfzSteuerRechner() {
+  const markUsed = useToolUsed("kfz_steuer");
   const [fuel, setFuel] = useState<Fuel>("benzin");
   const [ccm, setCcm] = useState("1498");
   const [co2, setCo2] = useState("120");
@@ -71,7 +73,7 @@ export default function KfzSteuerRechner() {
   const labelClass = "block font-display text-sm font-semibold text-ink-800";
 
   return (
-    <div className="rounded-2xl border border-ink-200 bg-white p-6 shadow-card sm:p-8">
+    <div className="rounded-2xl border border-ink-200 bg-white p-6 shadow-card sm:p-8" onChangeCapture={markUsed} onClickCapture={markUsed}>
       <div className="grid gap-5 sm:grid-cols-2">
         <div className="sm:col-span-2">
           <span className={labelClass}>Antriebsart</span>

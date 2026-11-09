@@ -13,6 +13,7 @@ import {
 } from "@/lib/pricing";
 import { getService } from "@/lib/services";
 import { track } from "@/lib/analytics";
+import { useToolUsed } from "@/lib/useToolUsed";
 
 const labels: Record<string, string> = Object.fromEntries(
   BESTELLBARE_LEISTUNGEN.map((slug) => {
@@ -32,6 +33,7 @@ const schilderLabels: Record<SchilderOption, string> = {
  * Den verbindlichen Endpreis bestätigt das Team vor dem Start.
  */
 export default function PriceCalculator() {
+  const markUsed = useToolUsed("preisrechner");
   const [leistung, setLeistung] = useState<string>("neuzulassung");
   const [schilder, setSchilder] = useState<SchilderOption>("lieferung");
   const [wunsch, setWunsch] = useState(false);
@@ -43,7 +45,7 @@ export default function PriceCalculator() {
   );
 
   return (
-    <div className="rounded-2xl border-2 border-brand-200 bg-white p-6 shadow-card sm:p-8">
+    <div className="rounded-2xl border-2 border-brand-200 bg-white p-6 shadow-card sm:p-8" onChangeCapture={markUsed} onClickCapture={markUsed}>
       <h2 className="flex items-center gap-2 font-display text-2xl font-bold text-ink-900">
         <Calculator className="h-6 w-6 text-brand-700" aria-hidden />
         Endpreis berechnen
