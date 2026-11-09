@@ -12,11 +12,19 @@ import type { NextConfig } from "next";
  */
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
+/**
+ * Next.js startet standardmäßig einen Worker je CPU-Kern. Auf Rechnern mit
+ * vielen Kernen und wenig freiem RAM bricht der Export der OG-Bilder dann mit
+ * „Failed to allocate memory" ab – lokal deshalb z. B. NEXT_BUILD_CPUS=4 setzen.
+ */
+const buildCpus = Number(process.env.NEXT_BUILD_CPUS) || undefined;
+
 const nextConfig: NextConfig = {
   output: "export",
   images: { unoptimized: true },
   trailingSlash: true,
   basePath,
+  ...(buildCpus ? { experimental: { cpus: buildCpus } } : {}),
 };
 
 export default nextConfig;
