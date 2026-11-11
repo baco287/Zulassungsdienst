@@ -9,6 +9,8 @@ import Reveal from "@/components/Reveal";
 import { gewerbeSegments, getSegment } from "@/lib/gewerbe";
 import { getService } from "@/lib/services";
 import { site } from "@/lib/site";
+import { ORG_ID } from "@/lib/catalog";
+import { fitTitle } from "@/lib/seo";
 
 export function generateStaticParams() {
   return gewerbeSegments.map((s) => ({ slug: s.slug }));
@@ -23,7 +25,7 @@ export async function generateMetadata({
   const segment = getSegment(slug);
   if (!segment) return {};
   return {
-    title: segment.title,
+    title: fitTitle(segment.title),
     description: segment.description,
     keywords: segment.keywords,
   };
@@ -54,12 +56,7 @@ export default async function GewerbeSegmentPage({
     url: pageUrl,
     areaServed: { "@type": "Country", name: "Deutschland" },
     audience: { "@type": "BusinessAudience", name: segment.name },
-    provider: {
-      "@type": "LocalBusiness",
-      name: site.name,
-      url: site.url,
-      telephone: site.contact.phone,
-    },
+    provider: { "@id": ORG_ID },
   };
 
   const faqJsonLd = {

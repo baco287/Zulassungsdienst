@@ -12,10 +12,10 @@ interface Row {
 
 const rows: Row[] = [
   {
-    label: "Elektronische Identifizierung (bei Zulassungen)",
+    label: "Online-Ausweis (eID-PIN) nötig? (bei Zulassungen)",
     schalter: ["yes", "Nein"],
     ikfz: ["no", "Ja – Online-Ausweis mit PIN und NFC-Smartphone oder Kartenleser, alternativ BundID mit ELSTER-Zertifikat"],
-    wir: ["yes", "Nein – Vollmacht und Ausweisfoto genügen"],
+    wir: ["yes", "Keine eID-PIN nötig – Identität einmalig digital bestätigen, Vollmacht digital signieren"],
   },
   {
     label: "Termin bei der Behörde",
@@ -75,7 +75,7 @@ export default function ComparisonTable() {
               </th>
               <th scope="col" className="px-4 py-3 font-semibold">Zulassungsstelle</th>
               <th scope="col" className="px-4 py-3 font-semibold">i-Kfz selbst</th>
-              <th scope="col" className="bg-brand-700 px-4 py-3 font-semibold text-white">DeutscheZulassung</th>
+              <th scope="col" className="bg-brand-600 px-4 py-3 font-semibold text-white">DeutscheZulassung</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-ink-100">

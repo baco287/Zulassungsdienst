@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Calculator, Info } from "lucide-react";
 import { euro } from "@/lib/pricing";
+import { useToolUsed } from "@/lib/useToolUsed";
 
 /**
  * Kfz-Steuer-Rechner für Pkw (§ 9 KraftStG).
@@ -45,6 +46,7 @@ function co2Tax(co2: number, era: Era): number {
 }
 
 export default function KfzSteuerRechner() {
+  const markUsed = useToolUsed("kfz_steuer");
   const [fuel, setFuel] = useState<Fuel>("benzin");
   const [ccm, setCcm] = useState("1498");
   const [co2, setCo2] = useState("120");
@@ -67,11 +69,11 @@ export default function KfzSteuerRechner() {
   const total = Math.floor(baseTax + co2Part);
 
   const inputClass =
-    "mt-1.5 w-full rounded-xl border border-ink-300 bg-white px-4 py-3 text-ink-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-200";
+    "field mt-1.5";
   const labelClass = "block font-display text-sm font-semibold text-ink-800";
 
   return (
-    <div className="rounded-2xl border border-ink-200 bg-white p-6 shadow-card sm:p-8">
+    <div className="rounded-2xl border border-ink-200 bg-white p-6 shadow-card sm:p-8" onChangeCapture={markUsed} onClickCapture={markUsed}>
       <div className="grid gap-5 sm:grid-cols-2">
         <div className="sm:col-span-2">
           <span className={labelClass}>Antriebsart</span>
@@ -91,7 +93,7 @@ export default function KfzSteuerRechner() {
                 onClick={() => setFuel(value)}
                 className={`cursor-pointer rounded-xl border px-4 py-2.5 text-sm font-semibold transition-colors duration-200 ${
                   fuel === value
-                    ? "border-brand-700 bg-brand-700 text-white"
+                    ? "border-brand-700 bg-brand-600 text-white"
                     : "border-ink-300 bg-white text-ink-700 hover:border-brand-400 hover:bg-brand-50"
                 }`}
               >

@@ -69,16 +69,16 @@ export default function DocumentUpload({
   return (
     <div>
       {checklist && checklist.length > 0 && (
-        <div className="mb-4 rounded-xl border border-brand-200 bg-brand-50 p-4">
-          <p className="text-sm font-semibold text-ink-900">Diese Unterlagen brauchen wir:</p>
-          <ul className="mt-2 space-y-1 text-sm text-ink-700">
+        <div className="mb-4 rounded-2xl border border-brand-200 bg-brand-50 p-4 sm:p-5">
+          <p className="font-display text-[15px] font-bold text-navy">Diese Unterlagen brauchen wir:</p>
+          <ul className="mt-2.5 space-y-1.5 text-[15px] text-ink-800">
             {checklist.map((item) => {
               const hint = getDocHint(item);
               return (
                 <li key={item}>
                   <span className="flex gap-2">
                     <span
-                      className="mt-[0.45rem] h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500"
+                      className="mt-[0.55rem] h-1.5 w-1.5 shrink-0 rounded-full bg-brand-600"
                       aria-hidden
                     />
                     <span>
@@ -90,7 +90,7 @@ export default function DocumentUpload({
               );
             })}
           </ul>
-          <p className="mt-2.5 text-xs text-ink-500">
+          <p className="mt-3 text-sm text-ink-600">
             Einfach mit dem Handy abfotografieren – Scans oder PDFs gehen genauso.
           </p>
         </div>
@@ -107,23 +107,23 @@ export default function DocumentUpload({
           setDragging(false);
           addFiles(e.dataTransfer.files);
         }}
-        className={`rounded-xl border-2 border-dashed p-6 text-center transition-colors duration-200 ${
-          dragging ? "border-brand-500 bg-brand-50" : "border-ink-300 bg-ink-50"
+        className={`rounded-2xl border-2 border-dashed px-5 py-7 text-center transition-colors duration-200 ${
+          dragging ? "border-brand-600 bg-brand-50" : "border-[#8493a8] bg-ink-50"
         }`}
       >
-        <UploadCloud className="mx-auto h-8 w-8 text-brand-600" aria-hidden />
-        <p className="mt-3 text-sm font-semibold text-ink-900">{label}</p>
-        <p className="mt-1 text-xs text-ink-500">
-          Fotos oder PDF · bis 10 MB je Datei · höchstens {UPLOAD_LIMITS.maxFiles} Dateien
+        <UploadCloud className="mx-auto h-9 w-9 text-brand-700" strokeWidth={1.6} aria-hidden />
+        <p className="mt-3 font-display text-base font-bold text-navy">{label}</p>
+        <p className="mt-1 text-sm text-ink-600">
+          PDF, JPG, PNG oder HEIC · max. 10 MB pro Datei · höchstens {UPLOAD_LIMITS.maxFiles} Dateien
         </p>
         <button
           type="button"
           onClick={() => inputRef.current?.click()}
-          className="mt-4 cursor-pointer rounded-xl bg-brand-600 px-5 py-2.5 font-display text-sm font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
+          className="btn btn-secondary mt-4"
         >
           Dateien auswählen
         </button>
-        <p className="mt-2 hidden text-xs text-ink-400 sm:block">
+        <p className="mt-2 hidden text-sm text-ink-500 sm:block">
           oder Dateien hierher ziehen
         </p>
         <input
@@ -144,7 +144,7 @@ export default function DocumentUpload({
       </div>
 
       {shownError && (
-        <p id={errorId} className="mt-2 flex items-start gap-1.5 text-sm text-red-600" role="alert">
+        <p id={errorId} className="mt-2 flex items-start gap-1.5 text-sm font-medium text-danger" role="alert">
           <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" aria-hidden />
           {shownError}
         </p>
@@ -158,7 +158,7 @@ export default function DocumentUpload({
             return (
               <li
                 key={`${file.name}-${file.size}-${i}`}
-                className="flex items-center gap-3 rounded-xl border border-ink-200 bg-white px-3 py-2.5"
+                className="flex items-center gap-3 rounded-[14px] border border-line bg-white px-3.5 py-2.5"
               >
                 <Icon className="h-5 w-5 shrink-0 text-brand-600" aria-hidden />
                 <span className="min-w-0 flex-1">
@@ -168,7 +168,7 @@ export default function DocumentUpload({
                 <button
                   type="button"
                   onClick={() => removeAt(i)}
-                  className="shrink-0 cursor-pointer rounded-lg p-2 text-ink-500 transition-colors duration-200 hover:bg-red-50 hover:text-red-600"
+                  className="flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-lg text-ink-600 transition-colors duration-200 hover:bg-red-50 hover:text-danger"
                   aria-label={`${file.name} entfernen`}
                 >
                   <Trash2 className="h-4 w-4" aria-hidden />

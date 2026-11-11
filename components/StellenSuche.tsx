@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { MapPin, Search } from "lucide-react";
+import { useToolUsed } from "@/lib/useToolUsed";
 
 export interface StellenEintrag {
   slug: string;
@@ -25,6 +26,7 @@ const norm = (s: string) =>
  * Kennzeichenkürzel. Ohne JavaScript bleibt die vollständige Liste sichtbar.
  */
 export default function StellenSuche({ stellen }: { stellen: StellenEintrag[] }) {
+  const markUsed = useToolUsed("stellensuche");
   const [q, setQ] = useState("");
   const query = norm(q.trim());
 
@@ -53,7 +55,7 @@ export default function StellenSuche({ stellen }: { stellen: StellenEintrag[] })
   const count = groups.reduce((n, [, l]) => n + l.length, 0);
 
   return (
-    <div>
+    <div onChangeCapture={markUsed} onClickCapture={markUsed}>
       <label className="relative block max-w-xl">
         <span className="sr-only">Zulassungsstelle suchen</span>
         <Search className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-ink-400" aria-hidden />
@@ -62,7 +64,7 @@ export default function StellenSuche({ stellen }: { stellen: StellenEintrag[] })
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder="Ort, Landkreis oder Kennzeichen, z. B. „Osnabrück“ oder „OS“"
-          className="w-full rounded-2xl border-2 border-ink-200 bg-white py-3.5 pl-12 pr-4 text-base text-ink-900 shadow-sm focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-600/30"
+          className="field pl-12 shadow-sm"
         />
       </label>
       <p className="mt-3 text-sm text-ink-500" aria-live="polite">

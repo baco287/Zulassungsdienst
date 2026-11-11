@@ -1,4 +1,5 @@
 import type { QA } from "./serviceContent";
+import { ZEIT } from "@/lib/betrieb";
 
 /**
  * Gewerbe-Landingpages: Hub (/gewerbe) und Zielgruppen-Segmente
@@ -93,12 +94,12 @@ export const gewerbeSegments: GewerbeSegment[] = [
       "Umschreibungen, Abmeldungen beim Ankauf und Kurzzeitkennzeichen für Überführungen: der flexible Zulassungsdienst für Gebrauchtwagenhändler – ohne Fixkosten.",
     intro: [
       "Im Gebrauchtwagenhandel fällt Zulassungsarbeit unregelmäßig, aber ständig an: Ankäufe müssen abgemeldet, verkaufte Fahrzeuge auf Käufer umgeschrieben, Überführungen mit Kurzzeitkennzeichen organisiert werden. Für ein eigenes Zulassungspersonal reicht das Volumen oft nicht – für ständige Behördengänge ist es zu viel.",
-      "Genau für diese Schwankungen sind wir gebaut: Sie zahlen pro Vorgang, ohne Grundgebühr und ohne Mindestmenge. Ob zwei Vorgänge pro Woche oder zwanzig – Abmeldungen erledigen wir meist taggleich digital, Umschreibungen in 1–3 Werktagen, deutschlandweit bei jeder Zulassungsbehörde.",
+      `Genau für diese Schwankungen sind wir gebaut: Sie zahlen pro Vorgang, ohne Grundgebühr und ohne Mindestmenge. Ob zwei Vorgänge pro Woche oder zwanzig – Abmeldungen erledigen wir meist ${ZEIT.abmeldung} digital, Umschreibungen in ${ZEIT.zulassungDativ}, deutschlandweit bei jeder Zulassungsbehörde.`,
     ],
     benefits: [
       {
         title: "Ankauf sofort abmelden",
-        text: "Angekaufte Fahrzeuge melden wir digital ab – meist noch am selben Werktag, ohne dass jemand Ihren Hof verlässt.",
+        text: `Angekaufte Fahrzeuge melden wir digital ab – meist noch ${ZEIT.abmeldung}, ohne dass jemand Ihren Hof verlässt.`,
       },
       {
         title: "Umschreibung als Verkaufsargument",
@@ -123,7 +124,7 @@ export const gewerbeSegments: GewerbeSegment[] = [
       {
         question: "Was brauche ich, um ein angekauftes Fahrzeug abmelden zu lassen?",
         answer:
-          "Nur die Zulassungsbescheinigung Teil I und beide Kennzeichen mit freigelegten Sicherheitscodes – als Fotos. Die Abmeldebestätigung erhalten Sie per E-Mail, meist noch am selben Werktag.",
+          `Nur die Zulassungsbescheinigung Teil I und beide Kennzeichen mit freigelegten Sicherheitscodes – als Fotos. Die Abmeldebestätigung erhalten Sie per E-Mail, meist noch ${ZEIT.abmeldung}.`,
       },
       {
         question: "Gibt es eine Mindestmenge oder Vertragsbindung?",
@@ -160,7 +161,7 @@ export const gewerbeSegments: GewerbeSegment[] = [
       },
       {
         title: "Ausflottung inklusive",
-        text: "Rückläufer und stillgelegte Fahrzeuge melden wir digital ab, meist taggleich – mit Bestätigung für Ihre Akten.",
+        text: `Rückläufer und stillgelegte Fahrzeuge melden wir digital ab, meist ${ZEIT.abmeldung} – mit Bestätigung für Ihre Akten.`,
       },
       {
         title: "Saubere Zuordnung",
@@ -201,7 +202,7 @@ export const gewerbeSegments: GewerbeSegment[] = [
       "Zulassungen auf Endkunden, bundesweiter Kennzeichenversand und Rückläufer-Abmeldungen: der skalierbare Zulassungspartner für Leasing- und Auto-Abo-Anbieter.",
     intro: [
       "Leasing- und Abo-Modelle leben von schneller Fahrzeugverfügbarkeit: Zwischen Vertragsabschluss und Übergabe liegen oft nur Tage – und das Fahrzeug muss auf den Endkunden oder die eigene Gesellschaft zugelassen sein, häufig in einem ganz anderen Zulassungsbezirk als dem Firmensitz.",
-      "Wir wickeln Ihre Zulassungen skalierbar ab: auf Endkunden oder auf Ihre Gesellschaft, in jedem Zulassungsbezirk, mit direktem Versand der Kennzeichen an den Auslieferungsort. Bei Vertragsende übernehmen wir die Abmeldung der Rückläufer – digital und meist taggleich.",
+      `Wir wickeln Ihre Zulassungen skalierbar ab: auf Endkunden oder auf Ihre Gesellschaft, in jedem Zulassungsbezirk, mit direktem Versand der Kennzeichen an den Auslieferungsort. Bei Vertragsende übernehmen wir die Abmeldung der Rückläufer – digital und meist ${ZEIT.abmeldung}.`,
     ],
     benefits: [
       {

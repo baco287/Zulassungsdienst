@@ -3,6 +3,7 @@
  * Gemeinsame Datenquelle für die animierte Timeline (components/ProcessTimeline.tsx)
  * und das HowTo-JSON-LD auf /ablauf.
  */
+import { ZEIT } from "@/lib/betrieb";
 export const processSteps = [
   {
     title: "Dienstleistung auswählen",
@@ -14,7 +15,7 @@ export const processSteps = [
   },
   {
     title: "Auftrag digital bestätigen",
-    text: "Sie erhalten unsere Festpreis-Bestätigung samt Vollmacht digital. Eine Unterschrift – und wir legen los.",
+    text: "Sie erhalten unsere Festpreis-Bestätigung. Bei Zulassungen bestätigen Sie einmalig digital Ihre Identität und signieren die Vollmacht qualifiziert elektronisch – den Link schicken wir Ihnen. Danach legen wir los.",
   },
   {
     title: "Wir prüfen Ihre Unterlagen",
@@ -30,6 +31,6 @@ export const processSteps = [
   },
   {
     title: "Fertig – ohne einen einzigen Behördengang",
-    text: "Sie erhalten die Abschlussbestätigung. Bei Abmeldungen ist das oft schon am selben Werktag der Fall.",
+    text: `Sie erhalten die Abschlussbestätigung. Bei Abmeldungen ist das oft schon ${ZEIT.abmeldung} der Fall.`,
   },
 ] as const;

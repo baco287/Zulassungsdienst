@@ -1,5 +1,6 @@
 import type { QA } from "./serviceContent";
 import { P } from "./pricing";
+import { DAUER_UEBERSICHT, ZEIT } from "@/lib/betrieb";
 
 /**
  * Stadt-Landingpages (/kfz-zulassung/[stadt]).
@@ -37,25 +38,25 @@ export const cities: City[] = [
     description:
       `Kfz-Zulassung in Berlin ohne LABO-Termin: Wir übernehmen Neuzulassung, Ummeldung und Abmeldung bei der Berliner Zulassungsbehörde – digital, zum Festpreis von ${P.zulassung}.`,
     intro: [
-      "Wer in Berlin ein Auto anmelden will, kennt das Problem: Termine bei der Zulassungsbehörde des LABO (Landesamt für Bürger- und Ordnungsangelegenheiten) sind oft auf Wochen ausgebucht – und ohne Termin geht am Schalter nichts. Für Berufstätige heißt das: Urlaubstag opfern oder das Fahrzeug steht.",
-      "Wir nehmen Ihnen den kompletten Vorgang ab: Sie fotografieren Ihre Unterlagen, erteilen die digitale Vollmacht – wir führen die Zulassung bei der Berliner Behörde durch und senden Ihnen gestempelte B-Kennzeichen und Papiere nach Hause. Ohne Termin, ohne Wartemarke, in der Regel innerhalb von 1–3 Werktagen.",
+      "Wer in Berlin ein Auto anmelden will, kennt das Problem: Wer den Vorgang selbst bei der Zulassungsbehörde des LABO (Landesamt für Bürger- und Ordnungsangelegenheiten) erledigt, plant Terminbuchung, Anfahrt und Zeit vor Ort ein. Für Berufstätige heißt das: Urlaubstag opfern oder das Fahrzeug steht.",
+      `Wir nehmen Ihnen den kompletten Vorgang ab: Sie fotografieren Ihre Unterlagen, erteilen die digitale Vollmacht – wir führen die Zulassung bei der Berliner Behörde durch und senden Ihnen gestempelte B-Kennzeichen und Papiere nach Hause. Ohne Termin, ohne Wartemarke, in der Regel innerhalb von ${ZEIT.zulassungDativ}.`,
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "B" },
       { label: "Zuständige Behörde", value: "LABO – Kfz-Zulassungsbehörde Berlin" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
         question: "Wie lange dauert die Kfz-Zulassung in Berlin über DeutscheZulassung?",
         answer:
-          "In der Regel 1–3 Werktage ab vollständigen Unterlagen, zuzüglich Versand. Sie brauchen keinen eigenen Termin beim LABO – wir wickeln den Vorgang für Sie ab. Abmeldungen erledigen wir meist noch am selben Werktag.",
+          `In der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, zuzüglich Versand. Sie brauchen keinen eigenen Termin beim LABO – wir wickeln den Vorgang für Sie ab. Abmeldungen erledigen wir meist noch ${ZEIT.abmeldung}.`,
       },
       {
         question: "Brauche ich für die Zulassung in Berlin einen Termin?",
         answer:
-          "Über uns nicht. Die teils wochenlange Terminsuche bei der Berliner Zulassungsbehörde entfällt komplett – Sie reichen alles digital ein, wir übernehmen den Behördenvorgang.",
+          "Über uns nicht. Die Terminsuche bei der Berliner Zulassungsbehörde entfällt für Sie – Sie reichen alles digital ein, wir übernehmen den Behördenvorgang.",
       },
       {
         question: "Kann ich in Berlin ein Wunschkennzeichen bekommen?",
@@ -84,13 +85,13 @@ export const cities: City[] = [
     description:
       `Kfz-Zulassung in Hamburg ohne LBV-Termin: Neuzulassung, Ummeldung und Abmeldung beim Landesbetrieb Verkehr – komplett digital erledigt, Festpreis ${P.zulassung}.`,
     intro: [
-      "In Hamburg läuft die Fahrzeugzulassung über den Landesbetrieb Verkehr (LBV) – und dessen Termine sind begehrt: Wer kurzfristig ein Fahrzeug anmelden oder umschreiben will, wartet häufig länger, als der Autokauf gedauert hat. Dazu kommen Anfahrt, Wartezeit und Papierkram.",
+      "In Hamburg läuft die Fahrzeugzulassung über den Landesbetrieb Verkehr (LBV): Wer kurzfristig ein Fahrzeug anmelden oder umschreiben will, wartet häufig länger, als der Autokauf gedauert hat. Dazu kommen Anfahrt, Zeit vor Ort und Papierkram.",
       "Mit uns läuft die Zulassung nebenbei: Unterlagen abfotografieren, digitale Vollmacht bestätigen, fertig. Wir führen den Vorgang beim LBV durch, lassen Ihre HH-Kennzeichen prägen und liefern alles versichert an Ihre Adresse – vom Neuwagen in Eppendorf bis zum Gebrauchtwagen in Harburg.",
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "HH" },
       { label: "Zuständige Behörde", value: "Landesbetrieb Verkehr (LBV) Hamburg" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -126,13 +127,13 @@ export const cities: City[] = [
     description:
       `Kfz-Zulassung in München ohne KVR-Termin: Neuzulassung, Umschreibung und Abmeldung bei der Münchner Behörde – digital, ${P.zulassung} zzgl. Kennzeichen.`,
     intro: [
-      "Die Kfz-Zulassungsstelle des Münchner Kreisverwaltungsreferats (KVR) an der Eichstätter Straße gehört zu den größten Zulassungsbehörden Deutschlands – entsprechend gefragt sind die Termine. Wer schnell ein Fahrzeug zulassen muss, etwa nach einem Neuwagenkauf beim Händler, steht oft vor ausgebuchten Kalendern.",
+      "Die Kfz-Zulassungsstelle des Münchner Kreisverwaltungsreferats (KVR) an der Eichstätter Straße gehört zu den größten Zulassungsbehörden Deutschlands – entsprechend gefragt sind die Termine. Wer schnell ein Fahrzeug zulassen muss, etwa nach einem Neuwagenkauf beim Händler, muss sich beim eigenen Behördengang zuerst um einen Termin kümmern.",
       "Wir übernehmen das für Sie: digital, ohne Termin, ohne Anfahrt quer durch die Stadt. Sie senden uns Fotos Ihrer Unterlagen, wir führen den Vorgang beim KVR durch – inklusive M-Kennzeichen, auf Wunsch als Wunschkennzeichen – und liefern alles versichert zu Ihnen nach Hause oder ins Autohaus.",
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "M" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle im KVR München" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -144,7 +145,7 @@ export const cities: City[] = [
       {
         question: "Wie schnell bekomme ich mein Auto in München zugelassen?",
         answer:
-          "Über uns in der Regel innerhalb von 1–3 Werktagen ab vollständigen Unterlagen – ohne die Terminsuche beim KVR. Eilige Vorgänge, etwa für eine Neuwagen-Abholung, kennzeichnen Sie einfach als Express.",
+          `Über uns in der Regel innerhalb von ${ZEIT.zulassungDativ} ab vollständigen Unterlagen – ohne die Terminsuche beim KVR. Eilige Vorgänge, etwa für eine Neuwagen-Abholung, kennzeichnen Sie einfach als Express.`,
       },
       {
         question: "Übernehmen Sie auch Zulassungen für Münchner Autohäuser?",
@@ -168,13 +169,13 @@ export const cities: City[] = [
     description:
       `Kfz-Zulassung in Köln ohne Behördengang: Neuzulassung, Ummeldung und Abmeldung beim Kölner Kfz-Zulassungsamt – digital erledigt, Festpreis ${P.zulassung}.`,
     intro: [
-      "Das Kölner Kfz-Zulassungsamt im Stadtteil Poll bündelt die Zulassungen der Millionenstadt – mit Online-Terminvergabe, die schnell vergriffen ist. Zwischen Rechtsrheinisch und Linksrheinisch kostet der Behördengang schnell einen halben Tag.",
+      "Das Kölner Kfz-Zulassungsamt im Stadtteil Poll bündelt die Zulassungen der Millionenstadt – mit Online-Terminvergabe. Zwischen Rechtsrheinisch und Linksrheinisch kostet der Behördengang schnell einen halben Tag.",
       "Sparen Sie sich den Weg: Wir erledigen Ihre Zulassung digital beim Kölner Amt, prägen Ihre K-Kennzeichen und senden Ihnen alles versichert zu. Auch Umschreibungen nach dem Gebrauchtwagenkauf im Umland – etwa aus dem Rhein-Erft-Kreis oder Leverkusen – schreiben wir direkt auf Ihre Kölner Adresse um.",
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "K" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsamt der Stadt Köln" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -191,7 +192,7 @@ export const cities: City[] = [
       {
         question: "Bieten Sie Wunschkennzeichen mit K an?",
         answer:
-          "Ja – wir prüfen die Verfügbarkeit, reservieren Ihre Kombination und liefern die geprägten Schilder mit. Beliebte Kürzel sind schnell weg, nennen Sie uns am besten zwei bis drei Alternativen.",
+          "Ja – wir prüfen die Verfügbarkeit, reservieren Ihre Kombination und liefern die geprägten Schilder mit. Nennen Sie uns am besten zwei bis drei Alternativen, falls Ihre Wunschkombination schon vergeben ist.",
       },
     ],
     keywords: [
@@ -210,13 +211,13 @@ export const cities: City[] = [
     description:
       `Kfz-Zulassung in Frankfurt ohne Behördengang: Zulassung, Ummeldung oder Abmeldung bei der Frankfurter Behörde – digital, ${P.zulassung} zzgl. Kennzeichen.`,
     intro: [
-      "Pendlerstadt Frankfurt: Viele arbeiten hier, wohnen im Umland – oder umgekehrt. Für die Kfz-Zulassungsbehörde der Stadt bleibt da wenig Zeit, zumal Termine rar sind und der Vorgang am Schalter dauert. Gerade nach einem Umzug in die Stadt oder einem Fahrzeugkauf soll es aber schnell gehen.",
+      "Pendlerstadt Frankfurt: Viele arbeiten hier, wohnen im Umland – oder umgekehrt. Für die Kfz-Zulassungsbehörde der Stadt bleibt da wenig Zeit, zumal ein eigener Behördengang Terminbuchung und Zeit vor Ort erfordert. Gerade nach einem Umzug in die Stadt oder einem Fahrzeugkauf soll es aber schnell gehen.",
       `Wir erledigen Ihre Zulassung, während Sie arbeiten: digital eingereicht, von uns bei der Frankfurter Behörde durchgeführt – inklusive fertig geprägter F-Kennzeichen (Schilder zzgl. ${P.kennzeichen}). Auch für Zuzügler aus dem Rhein-Main-Gebiet – ob aus Offenbach, Bad Homburg oder Wiesbaden – wickeln wir die Ummeldung komplett ab.`,
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "F" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Frankfurt am Main" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -252,13 +253,13 @@ export const cities: City[] = [
     description:
       `Kfz-Zulassung in Stuttgart ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung bei der Stuttgarter Zulassungsbehörde – digital zum Festpreis von ${P.zulassung}.`,
     intro: [
-      "In der Autostadt Stuttgart werden täglich Fahrzeuge zugelassen, umgeschrieben und stillgelegt – die Zulassungsbehörde der Landeshauptstadt ist entsprechend ausgelastet. Termine wollen erkämpft, Wartezeiten eingeplant sein.",
+      "In der Autostadt Stuttgart werden täglich Fahrzeuge zugelassen, umgeschrieben und stillgelegt – zuständig ist die Zulassungsbehörde der Landeshauptstadt. Wer selbst hingeht, plant Terminbuchung und Zeit vor Ort ein.",
       "Ob Neuwagen vom Hersteller, Gebrauchter vom Händler an der B14 oder Leasingrückläufer: Wir übernehmen den kompletten Zulassungsvorgang digital, kümmern uns um Ihre S-Kennzeichen und liefern die fertigen Papiere zu Ihnen – nach Stuttgart-Mitte genauso wie nach Vaihingen oder Bad Cannstatt.",
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "S" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Landeshauptstadt Stuttgart" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -270,7 +271,7 @@ export const cities: City[] = [
       {
         question: "Wie schnell geht eine Abmeldung in Stuttgart?",
         answer:
-          "Meist noch am selben Werktag: Sie senden uns Fotos der freigelegten Sicherheitscodes von Fahrzeugschein und Kennzeichen, wir setzen das Fahrzeug digital außer Betrieb und Sie erhalten die Bestätigung per E-Mail.",
+          `Meist noch ${ZEIT.abmeldung}: Sie senden uns Fotos der freigelegten Sicherheitscodes von Fahrzeugschein und Kennzeichen, wir setzen das Fahrzeug digital außer Betrieb und Sie erhalten die Bestätigung per E-Mail.`,
       },
       {
         question: "Gilt der Service auch für die Umlandkreise?",
@@ -294,13 +295,13 @@ export const cities: City[] = [
     description:
       `Kfz-Zulassung in Düsseldorf ohne Behördengang: Wir erledigen Zulassung, Ummeldung und Abmeldung bei der Düsseldorfer Zulassungsbehörde – digital, Festpreis ${P.zulassung}.`,
     intro: [
-      "Die Kfz-Zulassungsbehörde der Landeshauptstadt Düsseldorf arbeitet mit Terminvergabe – und wie überall in NRW-Großstädten sind die Slots schnell weg. Wer beruflich eingespannt ist oder gerade erst zugezogen, verliert mit dem Behördengang schnell einen halben Tag.",
+      "Die Kfz-Zulassungsbehörde der Landeshauptstadt Düsseldorf arbeitet mit Terminvergabe. Wer beruflich eingespannt ist oder gerade erst zugezogen, verliert mit dem Behördengang schnell einen halben Tag.",
       "Bei uns läuft alles digital: Unterlagen als Foto, Vollmacht per Klick, und wir führen den Vorgang bei der Düsseldorfer Behörde durch. D-Kennzeichen – gern als Wunschkennzeichen – und Papiere kommen versichert zu Ihnen. Auch Leasing- und Firmenfahrzeuge, die in der Landeshauptstadt häufig sind, wickeln wir routiniert ab.",
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "D" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Landeshauptstadt Düsseldorf" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -336,13 +337,13 @@ export const cities: City[] = [
     description:
       `Kfz-Zulassung in Leipzig ohne Behördengang: Neuzulassung, Ummeldung und Abmeldung bei der Leipziger Zulassungsbehörde – digital erledigt, Festpreis ${P.zulassung}.`,
     intro: [
-      "Leipzig wächst – und mit jedem Zuzug steigt der Andrang bei der Kfz-Zulassungsbehörde der Stadt. Wer gerade umgezogen ist oder einen Gebrauchtwagen gekauft hat, möchte nicht Wochen auf einen Termin warten.",
+      "Leipzig wächst – und jeder Zuzug mit Auto bedeutet einen Vorgang bei der Kfz-Zulassungsbehörde der Stadt. Wer gerade umgezogen ist oder einen Gebrauchtwagen gekauft hat, möchte sich nicht zusätzlich um einen Behördentermin kümmern.",
       "Wir erledigen Ihre Zulassung digital bei der Leipziger Behörde: L-Kennzeichen, Umschreibung oder Abmeldung – Sie reichen die Unterlagen bequem per Foto ein und erhalten alles fertig zurück. Gerade für Zuzügler aus anderen Bundesländern übernehmen wir die komplette Ummeldung samt Klärung, ob Ihr altes Kennzeichen bleiben kann (Spoiler: ja, wenn Sie möchten).",
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "L" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Leipzig" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -354,7 +355,7 @@ export const cities: City[] = [
       {
         question: "Was kostet die Kfz-Zulassung in Leipzig?",
         answer:
-          `${P.zulassung} Komplettpreis über uns – amtliche Gebühren und versicherter Versand inklusive, Kennzeichenschilder zzgl. ${P.kennzeichen}. Die Abmeldung kostet ${P.abmeldung} und ist meist taggleich erledigt.`,
+          `${P.zulassung} Komplettpreis über uns – amtliche Gebühren und versicherter Versand inklusive, Kennzeichenschilder zzgl. ${P.kennzeichen}. Die Abmeldung kostet ${P.abmeldung} und ist meist ${ZEIT.abmeldung} erledigt.`,
       },
       {
         question: "Funktioniert der Service auch im Landkreis Leipzig oder Nordsachsen?",
@@ -384,7 +385,7 @@ export const cities: City[] = [
     facts: [
       { label: "Kennzeichen-Kürzel", value: "H" },
       { label: "Zuständige Behörde", value: "Stadt Hannover: Kfz-Zulassungsbehörde der Landeshauptstadt · Umland: Region Hannover" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -401,7 +402,7 @@ export const cities: City[] = [
       {
         question: "Wie schnell ist eine Abmeldung in Hannover möglich?",
         answer:
-          "Meist taggleich: Codes freilegen, fotografieren, senden – die Abmeldebestätigung der zuständigen Behörde erhalten Sie per E-Mail.",
+          `Meist ${ZEIT.abmeldung}: Codes freilegen, fotografieren, senden – die Abmeldebestätigung der zuständigen Behörde erhalten Sie per E-Mail.`,
       },
     ],
     keywords: [
@@ -420,13 +421,13 @@ export const cities: City[] = [
     description:
       `Kfz-Zulassung in Nürnberg ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung bei der Nürnberger Zulassungsbehörde – digital zum Festpreis von ${P.zulassung}.`,
     intro: [
-      "Die Zulassungsstelle der Stadt Nürnberg bedient eine halbe Million Einwohner – und die Metropolregion drumherum sorgt für zusätzlichen Andrang, wenn Fahrzeuge zwischen Stadt, Fürth und Erlangen den Besitzer wechseln.",
+      "Die Zulassungsstelle der Stadt Nürnberg bedient eine halbe Million Einwohner – und in der Metropolregion wechseln Fahrzeuge oft zwischen Stadt, Fürth und Erlangen den Besitzer.",
       "Wir machen daraus einen digitalen Vorgang: Sie senden uns Ihre Unterlagen als Foto, wir erledigen Zulassung oder Umschreibung bei der Nürnberger Behörde und liefern N-Kennzeichen samt Papieren versichert zu Ihnen. Auch der Klassiker der Region – Gebrauchtwagenkauf in Fürth, Zulassung in Nürnberg – ist bei uns Routine.",
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "N" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Nürnberg" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -438,7 +439,7 @@ export const cities: City[] = [
       {
         question: "Was kostet die Zulassung in Nürnberg über DeutscheZulassung?",
         answer:
-          `${P.zulassung} komplett – amtliche Gebühren und versicherter Versand inklusive, Kennzeichenschilder zzgl. ${P.kennzeichen}. Abmeldungen kosten ${P.abmeldung} und sind meist am selben Werktag erledigt.`,
+          `${P.zulassung} komplett – amtliche Gebühren und versicherter Versand inklusive, Kennzeichenschilder zzgl. ${P.kennzeichen}. Abmeldungen kosten ${P.abmeldung} und sind meist ${ZEIT.abmeldung} erledigt.`,
       },
       {
         question: "Bekomme ich ein Wunschkennzeichen mit N?",
@@ -461,13 +462,13 @@ export const cities: City[] = [
     description:
       `Kfz-Zulassung in Dortmund ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung digital bei der Dortmunder Behörde – Festpreis ${P.zulassung}.`,
     intro: [
-      "Dortmund ist einer der größten Gebrauchtwagen-Umschlagplätze des Ruhrgebiets: Händlerhöfe entlang der Ausfallstraßen, Privatverkäufe über die Stadtgrenzen hinweg – und nach jedem Kauf steht die Umschreibung an. Die Terminkalender der Kfz-Zulassungsstelle der Stadt Dortmund sind entsprechend gut gefüllt.",
+      "Dortmund ist einer der größten Gebrauchtwagen-Umschlagplätze des Ruhrgebiets: Händlerhöfe entlang der Ausfallstraßen, Privatverkäufe über die Stadtgrenzen hinweg – und nach jedem Kauf steht die Umschreibung an. Wer selbst zur Kfz-Zulassungsstelle der Stadt Dortmund geht, plant dafür entsprechend Zeit ein.",
       "Den Weg dorthin können Sie sich sparen: Sie fotografieren Zulassungsbescheinigung, Ausweis und eVB-Nummer, bestätigen die digitale Vollmacht – wir wickeln den Vorgang bei der zuständigen Dortmunder Behörde ab und senden Ihnen gestempelte DO-Kennzeichen samt Papieren versichert zu. Das gekaufte Fahrzeug kann derweil beim Verkäufer stehen bleiben, bis alles fertig ist.",
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "DO" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Dortmund" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -484,7 +485,7 @@ export const cities: City[] = [
       {
         question: "Was passiert mit meinem alten Auto, wenn ich es in Zahlung gebe oder verschrotte?",
         answer:
-          `Die Abmeldung übernehmen wir für ${P.abmeldung} und erledigen sie meist noch am selben Werktag. Bei Verschrottung reichen wir auf Wunsch den Verwertungsnachweis gleich mit ein.`,
+          `Die Abmeldung übernehmen wir für ${P.abmeldung} und erledigen sie meist noch ${ZEIT.abmeldung}. Bei Verschrottung reichen wir auf Wunsch den Verwertungsnachweis gleich mit ein.`,
       },
     ],
     keywords: [
@@ -503,20 +504,20 @@ export const cities: City[] = [
     description:
       `Kfz-Zulassung in Essen ohne Behördengang: Wir erledigen Zulassung, Ummeldung und Abmeldung digital bei der Essener Behörde – Festpreis ${P.zulassung}.`,
     intro: [
-      "Essen hat mit dem einzelnen Buchstaben E eines der kürzesten Kennzeichen Deutschlands – entsprechend beliebt sind knackige Wunschkombinationen wie E-XX 1. Wer eine bestimmte Kombination will, sollte schnell sein, denn kurze Kürzel plus kurze Zahl sind rar. Und für die Zuteilung braucht es ohnehin den Weg über die Kfz-Zulassungsstelle der Stadt Essen.",
+      "Essen hat mit dem einzelnen Buchstaben E eines der kürzesten Kennzeichen Deutschlands – entsprechend beliebt sind knackige Wunschkombinationen wie E-XX 1. Wer eine bestimmte Kombination will, sollte sie früh reservieren – kurze Kombinationen sind häufig schon vergeben. Und für die Zuteilung braucht es ohnehin den Weg über die Kfz-Zulassungsstelle der Stadt Essen.",
       "Genau den nehmen wir Ihnen ab: Sie nennen uns Ihre Wunschkombination (gern mit zwei, drei Alternativen), wir prüfen die Verfügbarkeit, reservieren und wickeln die komplette Zulassung digital bei der Essener Behörde ab. Auch ganz ohne Wunschkennzeichen gilt: Unterlagen fotografieren, Vollmacht bestätigen, E-Schilder und Papiere kommen versichert zu Ihnen – vom Südviertel bis Katernberg.",
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "E" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Essen" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
         question: "Wie stehen die Chancen auf ein kurzes E-Wunschkennzeichen?",
         answer:
-          "Sehr kurze Kombinationen sind begehrt und oft vergeben – aber wir prüfen die Verfügbarkeit tagesaktuell und reservieren sofort, wenn Ihre Kombination frei ist. Nennen Sie uns am besten mehrere Varianten in Ihrer Wunschreihenfolge.",
+          "Sehr kurze Kombinationen sind häufig schon vergeben – wir prüfen die Verfügbarkeit tagesaktuell und reservieren sofort, wenn Ihre Kombination frei ist. Nennen Sie uns am besten mehrere Varianten in Ihrer Wunschreihenfolge.",
       },
       {
         question: "Verwechseln Behörden das E-Kennzeichen mit dem E für Elektroautos?",
@@ -551,7 +552,7 @@ export const cities: City[] = [
     facts: [
       { label: "Kennzeichen-Kürzel", value: "DU" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Duisburg" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -593,7 +594,7 @@ export const cities: City[] = [
     facts: [
       { label: "Kennzeichen-Kürzel", value: "BO" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Bochum" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -610,7 +611,7 @@ export const cities: City[] = [
       {
         question: "Was kostet mich das als Studentin oder Student?",
         answer:
-          `Denselben fairen Festpreis wie alle: ${P.zulassung} inklusive amtlicher Gebühren und Versand, neue Kennzeichenschilder zzgl. ${P.kennzeichen}. Dafür entfallen Anfahrt, Wartezeit und der halbe Tag, den der Behördengang sonst kostet.`,
+          `Denselben fairen Festpreis wie alle: ${P.zulassung} inklusive amtlicher Gebühren und Versand, neue Kennzeichenschilder zzgl. ${P.kennzeichen}. Dafür entfallen Anfahrt, Zeit vor Ort und der halbe Tag, den der Behördengang sonst kostet.`,
       },
     ],
     keywords: [
@@ -635,7 +636,7 @@ export const cities: City[] = [
     facts: [
       { label: "Kennzeichen-Kürzel", value: "W" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Wuppertal" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -677,7 +678,7 @@ export const cities: City[] = [
     facts: [
       { label: "Kennzeichen-Kürzel", value: "BI" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Bielefeld" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -714,12 +715,12 @@ export const cities: City[] = [
       `Kfz-Zulassung in Bonn ohne Behördengang: Wir übernehmen Zulassung, Ummeldung und Abmeldung digital bei der Bonner Behörde – Festpreis ${P.zulassung}.`,
     intro: [
       "Bonn ist Zuzugsstadt: Bundesbehörden, UN-Standort, DAX-Konzerne und die Universität holen ständig neue Menschen an den Rhein – oft für einige Jahre, oft mit Auto. Wer gerade Wohnung, Anmeldung und neuen Job jongliert, hat für die Kfz-Zulassungsstelle der Stadt Bonn wenig übrig.",
-      "Die Ummeldung nach dem Zuzug erledigen wir deshalb komplett digital: Fahrzeugpapiere und Ausweis fotografieren, Vollmacht bestätigen – wir aktualisieren die Adresse bei der zuständigen Bonner Behörde und klären auf Wunsch gleich den Wechsel auf ein BN-Kennzeichen. Auch wer die Stadt wieder verlässt oder sein Fahrzeug vor einem Auslandsaufenthalt stilllegen will, ist bei uns richtig: Die Abmeldung ist meist taggleich erledigt.",
+      `Die Ummeldung nach dem Zuzug erledigen wir deshalb komplett digital: Fahrzeugpapiere und Ausweis fotografieren, Vollmacht bestätigen – wir aktualisieren die Adresse bei der zuständigen Bonner Behörde und klären auf Wunsch gleich den Wechsel auf ein BN-Kennzeichen. Auch wer die Stadt wieder verlässt oder sein Fahrzeug vor einem Auslandsaufenthalt stilllegen will, ist bei uns richtig: Die Abmeldung ist meist ${ZEIT.abmeldung} erledigt.`,
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "BN" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Bonn" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -736,7 +737,7 @@ export const cities: City[] = [
       {
         question: "Ich gehe für ein Jahr ins Ausland – was mache ich mit meinem Auto in Bonn?",
         answer:
-          "Die einfachste Lösung ist die Außerbetriebsetzung: Wir melden das Fahrzeug meist taggleich ab, Steuer und Versicherungsbeitrag entfallen ab dann. Bis zu sieben Jahre kann es abgemeldet bleiben und danach wieder zugelassen werden – auch das übernehmen wir bei Ihrer Rückkehr.",
+          `Die einfachste Lösung ist die Außerbetriebsetzung: Wir melden das Fahrzeug meist ${ZEIT.abmeldung} ab, Steuer und Versicherungsbeitrag entfallen ab dann. Bis zu sieben Jahre kann es abgemeldet bleiben und danach wieder zugelassen werden – auch das übernehmen wir bei Ihrer Rückkehr.`,
       },
     ],
     keywords: [
@@ -755,13 +756,13 @@ export const cities: City[] = [
     description:
       `Kfz-Zulassung in Münster ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung digital bei der Münsteraner Behörde – Festpreis ${P.zulassung}.`,
     intro: [
-      "Münster gilt als Fahrradhauptstadt – und trotzdem geht es im Alltag vieler Münsteraner nicht ohne Auto: für den Weg ins Münsterland, den Wochenendbesuch bei der Familie oder den Job außerhalb der Promenade. Nur ist ein Behördentermin bei der Kfz-Zulassungsstelle der Stadt Münster schwerer zu bekommen als ein Parkplatz am Prinzipalmarkt.",
+      "Münster gilt als Fahrradhauptstadt – und trotzdem geht es im Alltag vieler Münsteraner nicht ohne Auto: für den Weg ins Münsterland, den Wochenendbesuch bei der Familie oder den Job außerhalb der Promenade. Den eigenen Behördengang zur Kfz-Zulassungsstelle der Stadt Münster können Sie sich dabei sparen.",
       "Mit uns bleibt das Rad Ihr Verkehrsmittel und die Zulassung trotzdem erledigt: Unterlagen abfotografieren, digitale Vollmacht bestätigen – wir führen den Vorgang bei der zuständigen Behörde in Münster durch. Gerade der Klassiker der Region, der Gebrauchtwagenkauf auf einem Hof im Kreis Steinfurt oder Warendorf, ist bei uns Routine: Wir schreiben das Fahrzeug direkt auf Ihre Münsteraner Adresse um und liefern die MS-Kennzeichen versichert zu Ihnen.",
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "MS" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Münster" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -778,7 +779,7 @@ export const cities: City[] = [
       {
         question: "Wie lange dauert die Zulassung in Münster über DeutscheZulassung?",
         answer:
-          "In der Regel 1–3 Werktage ab vollständigen Unterlagen, zuzüglich Versand der Kennzeichen. Eine Terminbuchung bei der Behörde entfällt für Sie vollständig – wir übernehmen den Vorgang mit Ihrer digitalen Vollmacht.",
+          `In der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, zuzüglich Versand der Kennzeichen. Eine Terminbuchung bei der Behörde entfällt für Sie vollständig – wir übernehmen den Vorgang mit Ihrer digitalen Vollmacht.`,
       },
     ],
     keywords: [
@@ -803,7 +804,7 @@ export const cities: City[] = [
     facts: [
       { label: "Kennzeichen-Kürzel", value: "MG" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Mönchengladbach" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -820,7 +821,7 @@ export const cities: City[] = [
       {
         question: "Was kostet die Zulassung in Mönchengladbach?",
         answer:
-          `${P.zulassung} als Komplettpreis inklusive amtlicher Gebühren und versichertem Versand, MG-Kennzeichenschilder auf Wunsch zzgl. ${P.kennzeichen} pro Paar. Die Abmeldung kostet ${P.abmeldung} und ist meist noch am selben Werktag erledigt.`,
+          `${P.zulassung} als Komplettpreis inklusive amtlicher Gebühren und versichertem Versand, MG-Kennzeichenschilder auf Wunsch zzgl. ${P.kennzeichen} pro Paar. Die Abmeldung kostet ${P.abmeldung} und ist meist noch ${ZEIT.abmeldung} erledigt.`,
       },
     ],
     keywords: [
@@ -845,7 +846,7 @@ export const cities: City[] = [
     facts: [
       { label: "Kennzeichen-Kürzel", value: "GE" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsstelle der Stadt Gelsenkirchen" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -862,7 +863,7 @@ export const cities: City[] = [
       {
         question: "Mein altes Auto ist ein wirtschaftlicher Totalschaden – wie werde ich es los?",
         answer:
-          `Erst abmelden, dann verwerten oder verkaufen: Die Außerbetriebsetzung erledigen wir für ${P.abmeldung} meist noch am selben Werktag, damit Steuer und Versicherung sofort stoppen. Bei Verschrottung reichen wir den Verwertungsnachweis des zertifizierten Betriebs mit ein.`,
+          `Erst abmelden, dann verwerten oder verkaufen: Die Außerbetriebsetzung erledigen wir für ${P.abmeldung} meist noch ${ZEIT.abmeldung}, damit Steuer und Versicherung sofort stoppen. Bei Verschrottung reichen wir den Verwertungsnachweis des zertifizierten Betriebs mit ein.`,
       },
     ],
     keywords: [
@@ -880,13 +881,13 @@ export const cities: City[] = [
     description:
       `Kfz-Zulassung in Bremen ohne Behördengang: Zulassung, Ummeldung und Abmeldung digital bei der Bremer Behörde erledigt – zum Festpreis von ${P.zulassung}.`,
     intro: [
-      "Bremen ist der kleinste Stadtstaat Deutschlands – mit einer Besonderheit: Das Kürzel HB steht für die Hansestadt und gilt für Bremen wie für Bremerhaven. Wer hier ein Fahrzeug anmelden will, muss sich in die Terminvergabe der städtischen Zulassungsbehörde einreihen – für viele zwischen Job, Familie und Alltag schlicht ein Tag zu viel.",
+      "Bremen ist der kleinste Stadtstaat Deutschlands – mit einer Besonderheit: Das Kürzel HB steht für die Hansestadt und gilt für Bremen wie für Bremerhaven. Wer hier ein Fahrzeug anmelden will, muss dafür die Terminvergabe der städtischen Zulassungsbehörde nutzen – für viele zwischen Job, Familie und Alltag schlicht ein Termin zu viel.",
       "Diesen Tag geben wir Ihnen zurück: Sie fotografieren Ihre Unterlagen, bestätigen die digitale Vollmacht, und wir wickeln den Vorgang bei der zuständigen Bremer Behörde ab. Ihre gestempelten HB-Kennzeichen und Papiere kommen versichert zu Ihnen – ob in die Neustadt, nach Schwachhausen oder in die Überseestadt.",
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "HB" },
       { label: "Zuständige Behörde", value: "Bürgeramt / Zulassungsbehörde der Stadt Bremen" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -922,20 +923,20 @@ export const cities: City[] = [
     description:
       `Kfz-Zulassung in Dresden ohne Behördengang: Wir übernehmen Neuzulassung, Ummeldung und Abmeldung bei der Dresdner Behörde – digital, Festpreis ${P.zulassung}.`,
     intro: [
-      "Dresden zieht an: Die Chipindustrie im Norden der Stadt holt Fachkräfte aus ganz Deutschland ins Elbtal, dazu kommen Studierende und Familien, die ins Umland und zurück pendeln. Jeder Zuzug, jeder Fahrzeugkauf landet am Ende bei der Kfz-Zulassungsbehörde der Landeshauptstadt – und deren Terminkalender ist gut gefüllt.",
+      "Dresden zieht an: Die Chipindustrie im Norden der Stadt holt Fachkräfte aus ganz Deutschland ins Elbtal, dazu kommen Studierende und Familien, die ins Umland und zurück pendeln. Jeder Zuzug, jeder Fahrzeugkauf landet am Ende bei der Kfz-Zulassungsbehörde der Landeshauptstadt .",
       "Statt sich dort einzureihen, reichen Sie Ihre Unterlagen bei uns als Foto ein und bestätigen die digitale Vollmacht. Wir führen Zulassung, Umschreibung oder Abmeldung bei der Dresdner Behörde durch und senden Ihnen DD-Kennzeichen und Papiere versichert nach Hause – gerade für frisch Zugezogene der einfachste Weg, das Thema Auto abzuhaken.",
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "DD" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Landeshauptstadt Dresden" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
         question: "Ich ziehe beruflich nach Dresden – wie schnell ist mein Auto umgemeldet?",
         answer:
-          "In der Regel innerhalb von 1–3 Werktagen ab vollständigen Unterlagen, zuzüglich Versand. Sie müssen dafür weder einen Termin buchen noch persönlich erscheinen – der Vorgang läuft digital bei der Dresdner Behörde.",
+          `In der Regel innerhalb von ${ZEIT.zulassungDativ} ab vollständigen Unterlagen, zuzüglich Versand. Sie müssen dafür weder einen Termin buchen noch persönlich erscheinen – der Vorgang läuft digital bei der Dresdner Behörde.`,
       },
       {
         question: "Kann ich mein altes Kennzeichen in Dresden weiterfahren?",
@@ -965,12 +966,12 @@ export const cities: City[] = [
       `Kfz-Zulassung in Chemnitz ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung digital bei der Chemnitzer Behörde – zum Festpreis von ${P.zulassung}.`,
     intro: [
       "Chemnitz fährt mit einem der kürzesten Kennzeichen Deutschlands: ein einzelnes C. Gehandelt wird in der Region viel – der Gebrauchtwagenmarkt zwischen Stadt, Erzgebirge und Zwickauer Raum ist lebendig, und jede Umschreibung bedeutet normalerweise einen Gang zur Kfz-Zulassungsbehörde der Stadt Chemnitz samt Terminbuchung.",
-      "Bei uns wird daraus ein Vorgang vom Sofa aus: Fahrzeugpapiere und Ausweis abfotografieren, digitale Vollmacht bestätigen – wir erledigen die Zulassung bei der Chemnitzer Behörde und schicken Ihnen die gestempelten C-Kennzeichen versichert zu. Auch die Abmeldung eines Altfahrzeugs vor dem Verkauf nehmen wir Ihnen meist noch am selben Werktag ab.",
+      `Bei uns wird daraus ein Vorgang vom Sofa aus: Fahrzeugpapiere und Ausweis abfotografieren, digitale Vollmacht bestätigen – wir erledigen die Zulassung bei der Chemnitzer Behörde und schicken Ihnen die gestempelten C-Kennzeichen versichert zu. Auch die Abmeldung eines Altfahrzeugs vor dem Verkauf nehmen wir Ihnen meist noch ${ZEIT.abmeldung} ab.`,
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "C" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Chemnitz" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -982,12 +983,12 @@ export const cities: City[] = [
       {
         question: "Ist ein Wunschkennzeichen mit dem kurzen C-Kürzel möglich?",
         answer:
-          `Ja – das einstellige Kürzel lässt besonders kurze Kombinationen zu, die entsprechend begehrt sind. Wir prüfen die Verfügbarkeit, reservieren Ihre Kombination und übernehmen die Zuteilung – für ${P.wunschkennzeichen} Aufpreis inklusive der amtlichen Gebühr. Geprägte Schilder liefern wir auf Wunsch für ${P.kennzeichen} pro Paar mit.`,
+          `Ja – das einstellige Kürzel lässt besonders kurze Kombinationen zu, die entsprechend häufig schon vergeben sind. Wir prüfen die Verfügbarkeit, reservieren Ihre Kombination und übernehmen die Zuteilung – für ${P.wunschkennzeichen} Aufpreis inklusive der amtlichen Gebühr. Geprägte Schilder liefern wir auf Wunsch für ${P.kennzeichen} pro Paar mit.`,
       },
       {
         question: "Was kostet die Kfz-Zulassung in Chemnitz über Sie?",
         answer:
-          `${P.zulassung} als Komplettpreis – amtliche Gebühren und versicherter Versand inklusive, Kennzeichenschilder zzgl. ${P.kennzeichen}. Eine Abmeldung kostet ${P.abmeldung} und ist meist taggleich erledigt.`,
+          `${P.zulassung} als Komplettpreis – amtliche Gebühren und versicherter Versand inklusive, Kennzeichenschilder zzgl. ${P.kennzeichen}. Eine Abmeldung kostet ${P.abmeldung} und ist meist ${ZEIT.abmeldung} erledigt.`,
       },
     ],
     keywords: [
@@ -1006,13 +1007,13 @@ export const cities: City[] = [
     description:
       `Kfz-Zulassung in Kiel ohne Behördengang: Auto, Motorrad oder Anhänger digital bei der Kieler Behörde zulassen – zum Festpreis von ${P.zulassung}.`,
     intro: [
-      "In der Fördestadt Kiel hat die Zulassung ihre eigenen Themen: Cabrios und Motorräder, die nur den Ostsee-Sommer sehen, Bootsanhänger für die Segelsaison, dazu jedes Semester neue Studierende, die ihr Auto mit in den Norden bringen. All das läuft über die Kfz-Zulassungsbehörde der Landeshauptstadt Kiel – mit Terminvergabe und Wartezeit.",
+      "In der Fördestadt Kiel hat die Zulassung ihre eigenen Themen: Cabrios und Motorräder, die nur den Ostsee-Sommer sehen, Bootsanhänger für die Segelsaison, dazu jedes Semester neue Studierende, die ihr Auto mit in den Norden bringen. All das läuft über die Kfz-Zulassungsbehörde der Landeshauptstadt Kiel – mit Terminvergabe.",
       "Wir kürzen den Weg ab: Unterlagen als Foto einreichen, digitale Vollmacht bestätigen, und wir wickeln den Vorgang bei der Kieler Behörde ab. Auf Wunsch richten wir dabei gleich ein Saisonkennzeichen für Ihren Sommerflitzer ein – die KI-Schilder und Papiere kommen versichert zu Ihnen an die Förde.",
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "KI" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Landeshauptstadt Kiel" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -1054,7 +1055,7 @@ export const cities: City[] = [
     facts: [
       { label: "Kennzeichen-Kürzel", value: "HAL" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Halle (Saale)" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -1071,7 +1072,7 @@ export const cities: City[] = [
       {
         question: "Wie lange dauert die Zulassung in Halle über DeutscheZulassung?",
         answer:
-          "In der Regel 1–3 Werktage ab vollständigen Unterlagen, dazu kommt der Versand der Kennzeichen. Abmeldungen schaffen wir meist noch am selben Werktag – die Bestätigung erhalten Sie per E-Mail.",
+          `In der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, dazu kommt der Versand der Kennzeichen. Abmeldungen schaffen wir meist noch ${ZEIT.abmeldung} – die Bestätigung erhalten Sie per E-Mail.`,
       },
     ],
     keywords: [
@@ -1096,7 +1097,7 @@ export const cities: City[] = [
     facts: [
       { label: "Kennzeichen-Kürzel", value: "MD" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Landeshauptstadt Magdeburg" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -1113,7 +1114,7 @@ export const cities: City[] = [
       {
         question: "Wie schnell geht eine Abmeldung in Magdeburg?",
         answer:
-          `Meist noch am selben Werktag: Sie legen die Sicherheitscodes auf Zulassungsbescheinigung und Kennzeichen frei, fotografieren sie und senden uns die Bilder. Die Abmeldebestätigung kommt anschließend per E-Mail – für ${P.abmeldung}.`,
+          `Meist noch ${ZEIT.abmeldung}: Sie legen die Sicherheitscodes auf Zulassungsbescheinigung und Kennzeichen frei, fotografieren sie und senden uns die Bilder. Die Abmeldebestätigung kommt anschließend per E-Mail – für ${P.abmeldung}.`,
       },
     ],
     keywords: [
@@ -1138,7 +1139,7 @@ export const cities: City[] = [
     facts: [
       { label: "Kennzeichen-Kürzel", value: "HL" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Hansestadt Lübeck" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -1175,19 +1176,19 @@ export const cities: City[] = [
       `Kfz-Zulassung in Rostock ohne Behördengang: Wir übernehmen Zulassung, Ummeldung und Abmeldung bei der Rostocker Behörde – digital, Festpreis ${P.zulassung}.`,
     intro: [
       "Rostock ist die größte Stadt Mecklenburg-Vorpommerns – Universitäts- und Hafenstadt in einem, mit Warnemünde direkt vor der Tür. Kein Wunder, dass hier neben Alltagsautos besonders viele Cabrios, Motorräder und Camper für die Ostseesaison angemeldet werden. Zuständig ist die Kfz-Zulassungsbehörde der Hansestadt Rostock, deren Termine gerade im Frühjahr knapp werden.",
-      "Den Frühjahrs-Andrang überlassen Sie einfach uns: Unterlagen abfotografieren, digitale Vollmacht bestätigen – wir führen den Vorgang bei der Rostocker Behörde durch, auf Wunsch mit Saisonkennzeichen für die warmen Monate. Ihre HRO-Schilder und Papiere kommen versichert zu Ihnen, ob in die KTV, nach Reutershagen oder direkt an die Küste.",
+      "Den Behördengang zum Saisonstart überlassen Sie einfach uns: Unterlagen abfotografieren, digitale Vollmacht bestätigen – wir führen den Vorgang bei der Rostocker Behörde durch, auf Wunsch mit Saisonkennzeichen für die warmen Monate. Ihre HRO-Schilder und Papiere kommen versichert zu Ihnen, ob in die KTV, nach Reutershagen oder direkt an die Küste.",
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "HRO" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Hansestadt Rostock" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
         question: "Wann sollte ich mein Saisonfahrzeug für den Ostsee-Sommer anmelden?",
         answer:
-          "Am besten einige Wochen vor Saisonstart – im Frühjahr sind die Behörden erfahrungsgemäß stark ausgelastet. Über uns dauert die Zulassung mit Saisonkennzeichen (wählbar von 2 bis 11 Monaten) in der Regel 1–3 Werktage, ganz ohne Termin.",
+          `Am besten rechtzeitig vor Saisonstart, damit Papiere und Kennzeichen pünktlich da sind. Über uns dauert die Zulassung mit Saisonkennzeichen (wählbar von 2 bis 11 Monaten) in der Regel ${ZEIT.zulassung}, ganz ohne Termin.`,
       },
       {
         question: "Was ist der Unterschied zwischen HRO und LRO?",
@@ -1197,7 +1198,7 @@ export const cities: City[] = [
       {
         question: "Ich verkaufe mein Auto in Rostock – sollte ich es vorher abmelden?",
         answer:
-          `Empfehlenswert ist das, denn abgemeldet können auf Sie keine Steuern oder Verstöße des Käufers mehr zulaufen. Wir melden das Fahrzeug meist noch am selben Werktag außer Betrieb – Sie brauchen nur Fotos der freigelegten Sicherheitscodes, der Preis liegt bei ${P.abmeldung}.`,
+          `Empfehlenswert ist das, denn abgemeldet können auf Sie keine Steuern oder Verstöße des Käufers mehr zulaufen. Wir melden das Fahrzeug meist noch ${ZEIT.abmeldung} außer Betrieb – Sie brauchen nur Fotos der freigelegten Sicherheitscodes, der Preis liegt bei ${P.abmeldung}.`,
       },
     ],
     keywords: [
@@ -1222,14 +1223,14 @@ export const cities: City[] = [
     facts: [
       { label: "Kennzeichen-Kürzel", value: "EF" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Landeshauptstadt Erfurt" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
       {
         question: "Ich bin neu in Erfurt – welche Fristen gelten für die Ummeldung meines Autos?",
         answer:
-          "Nach dem Umzug muss die neue Adresse unverzüglich in die Fahrzeugpapiere eingetragen werden – konkrete Kulanzfristen nennt das Gesetz nicht, warten sollte man also nicht lange. Wir erledigen die Ummeldung digital bei der Erfurter Behörde; Ihr bisheriges Kennzeichen dürfen Sie dabei behalten.",
+          "Nach dem Umzug muss die neue Adresse unverzüglich in die Fahrzeugpapiere eingetragen werden – konkrete Kulanzfristen nennt das Gesetz nicht, erledigen sollte man es also zeitnah. Wir erledigen die Ummeldung digital bei der Erfurter Behörde; Ihr bisheriges Kennzeichen dürfen Sie dabei behalten.",
       },
       {
         question: "Können Sie Fahrzeuge für Erfurter Logistik- und Handwerksbetriebe zulassen?",
@@ -1264,7 +1265,7 @@ export const cities: City[] = [
     facts: [
       { label: "Kennzeichen-Kürzel", value: "BS" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Braunschweig" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -1281,7 +1282,7 @@ export const cities: City[] = [
       {
         question: "Was kostet die Kfz-Zulassung in Braunschweig über DeutscheZulassung?",
         answer:
-          `${P.zulassung} als Komplettpreis für Neuzulassung, Umschreibung oder Ummeldung – amtliche Gebühren und Versand inklusive, BS-Kennzeichenschilder zzgl. ${P.kennzeichen}. Die Abmeldung eines Fahrzeugs kostet ${P.abmeldung} und ist meist taggleich erledigt.`,
+          `${P.zulassung} als Komplettpreis für Neuzulassung, Umschreibung oder Ummeldung – amtliche Gebühren und Versand inklusive, BS-Kennzeichenschilder zzgl. ${P.kennzeichen}. Die Abmeldung eines Fahrzeugs kostet ${P.abmeldung} und ist meist ${ZEIT.abmeldung} erledigt.`,
       },
     ],
     keywords: [
@@ -1305,7 +1306,7 @@ export const cities: City[] = [
     facts: [
       { label: "Kennzeichen-Kürzel", value: "MA" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Mannheim" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -1341,13 +1342,13 @@ export const cities: City[] = [
     description:
       `Kfz-Zulassung in Karlsruhe ohne Behördengang: Wir erledigen Zulassung, Umschreibung und Abmeldung digital bei der Karlsruher Behörde – Festpreis ${P.zulassung}.`,
     intro: [
-      "In der Technologieregion Karlsruhe wird vieles digital gedacht – die klassische Fahrzeugzulassung bedeutet aber nach wie vor: Termin buchen, hinfahren, warten. Besonderheit der Fächerstadt: Das Kürzel KA tragen Stadt und Landkreis gleichermaßen, entsprechend groß ist das Einzugsgebiet der Zulassungsvorgänge zwischen Durlach, Ettlingen und Bruchsal.",
+      "In der Technologieregion Karlsruhe wird vieles digital gedacht – die klassische Fahrzeugzulassung bedeutet aber nach wie vor: Termin buchen, hinfahren, vor Ort erledigen. Besonderheit der Fächerstadt: Das Kürzel KA tragen Stadt und Landkreis gleichermaßen, entsprechend groß ist das Einzugsgebiet der Zulassungsvorgänge zwischen Durlach, Ettlingen und Bruchsal.",
       "Wir bringen die Zulassung dorthin, wo Karlsruhe ohnehin arbeitet: ins Digitale. Unterlagen als Foto einreichen, Vollmacht online bestätigen – wir führen den Vorgang bei der zuständigen Behörde durch, ob Stadt oder Landkreis, und senden Ihnen KA-Kennzeichen und Papiere versichert nach Hause.",
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "KA" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Karlsruhe" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -1383,13 +1384,13 @@ export const cities: City[] = [
     description:
       `Kfz-Zulassung in Augsburg ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung digital bei der Augsburger Behörde – Festpreis ${P.zulassung}.`,
     intro: [
-      "Augsburg fährt mit einem der kürzesten Kennzeichen Deutschlands: dem einzelnen A. Die knappen Kombinationen sind begehrt – und die Termine bei der Kfz-Zulassungsbehörde der Stadt Augsburg ebenso, denn neben der Fuggerstadt selbst sorgt das dicht besiedelte Umland zwischen Lech und Wertach für konstanten Andrang.",
+      "Augsburg fährt mit einem der kürzesten Kennzeichen Deutschlands: dem einzelnen A. Die knappen Kombinationen sind häufig schon vergeben – reservieren Sie Ihre Wunschkombination deshalb früh.",
       "Bei uns entfällt der Gang zur Behörde komplett: Sie reichen Ihre Unterlagen als Foto ein und bestätigen die digitale Vollmacht, wir führen den Vorgang bei der Augsburger Behörde durch. Auf Wunsch sichern wir dabei Ihre A-Wunschkombination und liefern die geprägten Schilder gestempelt an Ihre Haustür.",
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "A" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Augsburg" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -1431,7 +1432,7 @@ export const cities: City[] = [
     facts: [
       { label: "Kennzeichen-Kürzel", value: "WI" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Landeshauptstadt Wiesbaden" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -1448,7 +1449,7 @@ export const cities: City[] = [
       {
         question: "Wie schnell ist eine Abmeldung in Wiesbaden erledigt?",
         answer:
-          `Meist noch am selben Werktag. Sie legen die Sicherheitscodes auf Fahrzeugschein und Kennzeichen frei, fotografieren sie und senden uns die Bilder – die Abmeldebestätigung erhalten Sie per E-Mail, für ${P.abmeldung}.`,
+          `Meist noch ${ZEIT.abmeldung}. Sie legen die Sicherheitscodes auf Fahrzeugschein und Kennzeichen frei, fotografieren sie und senden uns die Bilder – die Abmeldebestätigung erhalten Sie per E-Mail, für ${P.abmeldung}.`,
       },
     ],
     keywords: [
@@ -1467,13 +1468,13 @@ export const cities: City[] = [
     description:
       `Kfz-Zulassung in Aachen ohne Behördengang: Wir erledigen Zulassung, Import-Anmeldung und Abmeldung digital bei der zuständigen Behörde – Festpreis ${P.zulassung}.`,
     intro: [
-      "Im Dreiländereck ist der Autokauf über die Grenze Alltag: Gebrauchtwagen aus den Niederlanden oder Belgien sind oft günstiger, und von Aachen aus liegen Maastricht und Lüttich näher als Köln. Nur die Zulassung des Importfahrzeugs bleibt ein deutscher Behördenvorgang – zuständig ist die Kfz-Zulassungsbehörde der StädteRegion Aachen, deren Termine begehrt sind.",
+      "Im Dreiländereck ist der Autokauf über die Grenze Alltag: Gebrauchtwagen aus den Niederlanden oder Belgien sind oft günstiger, und von Aachen aus liegen Maastricht und Lüttich näher als Köln. Nur die Zulassung des Importfahrzeugs bleibt ein deutscher Behördenvorgang – zuständig ist die Kfz-Zulassungsbehörde der StädteRegion Aachen.",
       "Genau dabei helfen wir: Sie senden uns die Fahrzeugunterlagen als Foto – beim EU-Import inklusive CoC-Papier – und erteilen die digitale Vollmacht. Wir führen den Vorgang bei der zuständigen Behörde durch und liefern Ihre AC-Kennzeichen gestempelt und versandversichert nach Hause, ob ins Frankenberger Viertel oder nach Brand.",
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "AC" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der StädteRegion Aachen" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -1515,7 +1516,7 @@ export const cities: City[] = [
     facts: [
       { label: "Kennzeichen-Kürzel", value: "FR" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Freiburg im Breisgau" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -1551,13 +1552,13 @@ export const cities: City[] = [
     description:
       `Kfz-Zulassung in Krefeld ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung digital bei der Krefelder Behörde erledigt – Festpreis ${P.zulassung}.`,
     intro: [
-      "Am Niederrhein wird viel mit Autos gehandelt: Zwischen Krefeld, Mönchengladbach und dem Kreis Viersen wechseln Gebrauchtwagen ständig den Besitzer, und viele Krefelder pendeln täglich nach Düsseldorf oder Duisburg. Für einen Termin bei der Kfz-Zulassungsbehörde der Stadt Krefeld bleibt da wenig Luft – und kurzfristige Slots sind rar.",
+      "Am Niederrhein wird viel mit Autos gehandelt: Zwischen Krefeld, Mönchengladbach und dem Kreis Viersen wechseln Gebrauchtwagen ständig den Besitzer, und viele Krefelder pendeln täglich nach Düsseldorf oder Duisburg. Für einen Termin bei der Kfz-Zulassungsbehörde der Stadt Krefeld bleibt da wenig Luft.",
       "Wir machen den Behördengang überflüssig: Unterlagen als Foto einreichen, Vollmacht digital erteilen, fertig. Wir führen Umschreibung, Neuzulassung oder Abmeldung bei der Krefelder Behörde durch und senden Ihnen die gestempelten KR-Kennzeichen versichert zu – nach Uerdingen, Fischeln oder mitten in die Seidenstadt.",
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "KR" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Krefeld" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -1569,7 +1570,7 @@ export const cities: City[] = [
       {
         question: "Mein Auto ist verkauft – wie melde ich es in Krefeld ab?",
         answer:
-          `Am schnellsten über uns: Sicherheitscodes auf Fahrzeugschein und Kennzeichen freilegen, fotografieren, senden – die Abmeldung ist meist noch am selben Werktag erledigt und kostet ${P.abmeldung}. Die Bestätigung fürs Kaufvertrags-Protokoll und die Versicherung erhalten Sie per E-Mail.`,
+          `Am schnellsten über uns: Sicherheitscodes auf Fahrzeugschein und Kennzeichen freilegen, fotografieren, senden – die Abmeldung ist meist noch ${ZEIT.abmeldung} erledigt und kostet ${P.abmeldung}. Die Bestätigung fürs Kaufvertrags-Protokoll und die Versicherung erhalten Sie per E-Mail.`,
       },
       {
         question: "Kann ich ein KR-Wunschkennzeichen bekommen, ohne selbst zur Behörde zu gehen?",
@@ -1599,7 +1600,7 @@ export const cities: City[] = [
     facts: [
       { label: "Kennzeichen-Kürzel", value: "MZ" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Landeshauptstadt Mainz" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -1641,7 +1642,7 @@ export const cities: City[] = [
     facts: [
       { label: "Kennzeichen-Kürzel", value: "KS" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Kassel" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -1683,7 +1684,7 @@ export const cities: City[] = [
     facts: [
       { label: "Kennzeichen-Kürzel", value: "OB" },
       { label: "Zuständige Behörde", value: "Kfz-Zulassungsbehörde der Stadt Oberhausen" },
-      { label: "Typische Dauer über uns", value: "1–3 Werktage, Abmeldung meist taggleich" },
+      { label: "Typische Dauer über uns", value: DAUER_UEBERSICHT },
       { label: "Preis", value: `${P.zulassung} inkl. Gebühren & Versand, zzgl. Kennzeichen ${P.kennzeichen}` },
     ],
     faq: [
@@ -1700,7 +1701,7 @@ export const cities: City[] = [
       {
         question: "Was kostet die Kfz-Zulassung in Oberhausen über DeutscheZulassung?",
         answer:
-          `${P.zulassung} als Komplettpreis – amtliche Gebühren und versicherter Versand sind enthalten, geprägte Kennzeichenschilder kommen mit ${P.kennzeichen} pro Paar dazu. Die Abmeldung kostet ${P.abmeldung} und ist meist noch am selben Werktag erledigt.`,
+          `${P.zulassung} als Komplettpreis – amtliche Gebühren und versicherter Versand sind enthalten, geprägte Kennzeichenschilder kommen mit ${P.kennzeichen} pro Paar dazu. Die Abmeldung kostet ${P.abmeldung} und ist meist noch ${ZEIT.abmeldung} erledigt.`,
       },
     ],
     keywords: [

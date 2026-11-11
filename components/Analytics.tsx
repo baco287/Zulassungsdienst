@@ -1,7 +1,8 @@
 "use client";
 
 import Script from "next/script";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { analyticsProvider, CONSENT_KEY, gadsId } from "@/lib/analytics";
 
@@ -27,6 +28,22 @@ export default function Analytics() {
     }
   }, []);
 
+  // Matomo zählt clientseitige Seitenwechsel nicht selbst. Nur der Pfad wird
+  // gemeldet – Query-Parameter (z. B. Referenznummern) bleiben außen vor.
+  // Automatisches Link-Tracking ist bewusst aus: WhatsApp-Links enthalten
+  // vorbefüllte Nachrichten mit Kontaktdaten.
+  const pathname = usePathname();
+  const firstView = useRef(true);
+  useEffect(() => {
+    if (analyticsProvider !== "matomo") return;
+    if (firstView.current) {
+      firstView.current = false;
+      return;
+    }
+    window._paq?.push(["setCustomUrl", window.location.origin + pathname]);
+    window._paq?.push(["trackPageView"]);
+  }, [pathname]);
+
   const decide = (value: "granted" | "denied") => {
     try {
       window.localStorage.setItem(CONSENT_KEY, value);
@@ -50,8 +67,8 @@ export default function Analytics() {
         <Script id="matomo" strategy="afterInteractive">
           {`var _paq = window._paq = window._paq || [];
 _paq.push(['disableCookies']);
+_paq.push(['setCustomUrl', location.origin + location.pathname]);
 _paq.push(['trackPageView']);
-_paq.push(['enableLinkTracking']);
 (function() {
   var u=${JSON.stringify(matomoUrl)};
   _paq.push(['setTrackerUrl', u+'matomo.php']);

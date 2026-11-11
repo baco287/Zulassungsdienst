@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "So funktioniert’s – Ablauf der Online-Zulassung",
+  title: "Ablauf der Online-Zulassung in 7 Schritten",
   description:
     "Schritt für Schritt zur fertigen Kfz-Zulassung: So läuft Ihr Auftrag bei DeutscheZulassung ab – von der Auswahl bis zur Zustellung von Kennzeichen und Papieren.",
 };
@@ -46,7 +46,8 @@ export default function AblaufPage() {
         </div>
       </section>
 
-      <section className="py-16">
+      {/* overflow-x-clip: Die Karten fahren seitlich ein; ohne Begrenzung entsteht davor ein waagerechter Scrollbalken. */}
+      <section className="overflow-x-clip py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <ProcessTimeline />
         </div>

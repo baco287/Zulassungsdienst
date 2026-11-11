@@ -25,6 +25,8 @@ if (!existsSync(out)) {
 }
 
 const errors = [];
+const noindexPages = new Set();
+const isStaging = process.env.NEXT_PUBLIC_STAGING === "1";
 const warnings = [];
 
 function walk(dir, list = []) {
@@ -72,6 +74,10 @@ for (const file of htmlFiles) {
   const canonical = html.match(/<link rel="canonical" href="([^"]*)"/)?.[1] ?? "";
   const h1Count = (html.match(/<h1[\s>]/g) ?? []).length;
   const noindex = /noindex/.test(robots);
+  if (noindex) {
+    noindexPages.add(urlPath);
+    if (/nofollow/.test(robots) && !isStaging) errors.push(`${where}: noindex ohne follow – interne Links verlieren ihre Wirkung`);
+  }
 
   if (!title) errors.push(`${where}: <title> fehlt`);
   else {
@@ -124,6 +130,7 @@ if (existsSync(sitemapPath)) {
   const urls = [...readFileSync(sitemapPath, "utf8").matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1].replace(SITE, ""));
   const inSitemap = new Set(urls);
   for (const u of urls) if (!resolves(u)) errors.push(`Sitemap-URL ohne Seite: ${u}`);
+  for (const u of urls) if (noindexPages.has(u)) errors.push(`Sitemap-URL mit noindex: ${u}`);
   for (const p of indexable) {
     if (!inSitemap.has(p) && p !== "/" && !p.startsWith("/unterlagen")) warnings.push(`Indexierbar, aber nicht in der Sitemap: ${p}`);
   }

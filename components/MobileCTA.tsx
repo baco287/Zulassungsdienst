@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { whatsAppLink } from "@/lib/site";
 import WhatsAppIcon from "./WhatsAppIcon";
 import { track } from "@/lib/analytics";
+import { gemerkteLeistung } from "@/lib/auswahl";
 
 /**
  * Feststehende Aktionsleiste am unteren Bildschirmrand (nur Mobil/Tablet).
@@ -19,6 +20,13 @@ const hiddenOn = ["/auftrag", "/unterlagen", "/impressum", "/datenschutz", "/wid
 export default function MobileCTA() {
   const pathname = usePathname() ?? "";
   if (hiddenOn.some((p) => pathname.startsWith(p))) return null;
+
+  // Auf Leistungsseiten die Leistung mitgeben, sonst die zuletzt im Konfigurator gewählte.
+  const seitenLeistung = pathname.match(/^\/leistungen\/([^/]+)/)?.[1] ?? null;
+  const zielHref = () => {
+    const slug = seitenLeistung ?? gemerkteLeistung();
+    return slug ? `/auftrag/?leistung=${slug}` : "/auftrag/";
+  };
 
   return (
     <>
@@ -35,15 +43,22 @@ export default function MobileCTA() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => track("whatsapp_click", { position: "mobile_leiste" })}
-            className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-[#25D366] px-4 py-3 font-display text-sm font-semibold text-white"
+            className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-wa px-4 py-3 font-display text-sm font-bold text-navy"
           >
             <WhatsAppIcon className="h-5 w-5" />
             WhatsApp
           </a>
           <Link
-            href="/auftrag"
-            onClick={() => track("cta_click", { position: "mobile_leiste" })}
-            className="flex flex-1 items-center justify-center rounded-xl bg-navy px-4 py-3 font-display text-sm font-semibold text-white"
+            href={seitenLeistung ? `/auftrag/?leistung=${seitenLeistung}` : "/auftrag/"}
+            onClick={(e) => {
+              track("cta_click", { position: "mobile_leiste" });
+              const ziel = zielHref();
+              if (ziel !== e.currentTarget.getAttribute("href")) {
+                e.preventDefault();
+                window.location.assign(ziel);
+              }
+            }}
+            className="flex flex-1 items-center justify-center rounded-xl bg-brand-600 px-4 py-3 font-display text-sm font-bold text-white"
           >
             Auftrag starten
           </Link>

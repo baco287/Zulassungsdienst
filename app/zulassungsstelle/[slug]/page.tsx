@@ -13,6 +13,9 @@ import { getCity } from "@/lib/staedte";
 import { getService } from "@/lib/services";
 import { P } from "@/lib/pricing";
 import { site } from "@/lib/site";
+import { ORG_ID } from "@/lib/catalog";
+import { robotsFor, stelleIndexable } from "@/lib/indexGate";
+import { fitTitle } from "@/lib/seo";
 
 export const dynamicParams = false;
 
@@ -36,12 +39,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     // Kurzer Stadtname (z. B. "Freiburg" statt "Freiburg im Breisgau"), Titel max. ~60 Zeichen.
     title: (() => {
       const name = getCity(z.slug)?.name ?? z.stadt;
-      const t = `Zulassungsstelle ${name}: Adresse & Termin`;
-      if (t.length + 20 <= 62) return t;
-      return t.length <= 62 ? { absolute: t } : { absolute: `Zulassungsstelle ${name}` };
+      // Ohne „Termin“: Die Seite informiert über die Behörde, sie vergibt keine Termine.
+      const lang = `Zulassungsstelle ${name}: Adresse & Zuständigkeit`;
+      const kurz = `Zulassungsstelle ${name}: Adresse`;
+      return fitTitle(lang).absolute.endsWith(site.name) ? fitTitle(lang) : fitTitle(kurz);
     })(),
     description,
     alternates: { canonical: `/zulassungsstelle/${z.slug}/` },
+    robots: robotsFor(stelleIndexable(z)),
   };
 }
 
@@ -127,7 +132,7 @@ export default async function ZulassungsstellePage({ params }: { params: Promise
     url: `${site.url}/zulassungsstelle/${z.slug}/`,
     inLanguage: "de",
     dateModified: z.geprueftAm,
-    publisher: { "@id": `${site.url}/#business` },
+    publisher: { "@id": ORG_ID },
     about: {
       "@type": "GovernmentOffice",
       name: z.behoerde.wert,
@@ -406,9 +411,9 @@ export default async function ZulassungsstellePage({ params }: { params: Promise
               href="/auftrag/"
               event="cta_click"
               props={{ position: "zulassungsstelle", page: z.slug }}
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-700 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-800"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-700"
             >
-              Jetzt beauftragen <ArrowRight className="h-4 w-4" aria-hidden />
+              Auftrag starten <ArrowRight className="h-4 w-4" aria-hidden />
             </TrackedLink>
           </div>
         </div>

@@ -7,6 +7,8 @@
  * einem lokalen Schildermacher prägen (wir empfehlen einen in der Nähe).
  */
 
+import { ZEIT } from "@/lib/betrieb";
+
 export interface AnleitungStep {
   title: string;
   /** Kurze Einordnung: wie lange, wer. */
@@ -55,9 +57,9 @@ export const anleitungSteps: AnleitungStep[] = [
     },
   },
   {
-    title: "Festpreis bestätigen und digital unterschreiben",
-    meta: "ca. 1 Minute · Sie",
-    text: "Wir prüfen Ihre Unterlagen auf Vollständigkeit und senden Ihnen die verbindliche Festpreis-Bestätigung samt digitaler Vollmacht. Ein Blick, eine Unterschrift auf dem Handy – damit dürfen wir den Vorgang für Sie bei der Behörde durchführen.",
+    title: "Festpreis bestätigen, Identität bestätigen, Vollmacht signieren",
+    meta: "einige Minuten · Sie",
+    text: "Wir prüfen Ihre Unterlagen auf Vollständigkeit und senden Ihnen die verbindliche Festpreis-Bestätigung. Für die Vollmacht schreibt das Gesetz eine qualifizierte elektronische Signatur vor (§ 38 FZV): Sie bestätigen einmalig digital Ihre Identität mit Ihrem Ausweis und unterschreiben – den Link dazu schicken wir Ihnen. Damit dürfen wir den Vorgang für Sie bei der Behörde durchführen.",
     tip: "Bis hierhin ist alles unverbindlich und kostenlos. Der Auftrag entsteht erst mit Ihrer Bestätigung.",
     image: {
       src: "/images/anleitung-vollmacht-unterschrift.webp",
@@ -66,9 +68,9 @@ export const anleitungSteps: AnleitungStep[] = [
   },
   {
     title: "Wir führen die Zulassung durch",
-    meta: "1–3 Werktage · DeutscheZulassung",
+    meta: `${ZEIT.zulassung} · DeutscheZulassung`,
     text: "Jetzt übernehmen wir: Wir wickeln Ihren Vorgang digital bei der zuständigen Zulassungsbehörde ab. Sobald die Zulassung steht, erhalten Sie von uns Ihre zugeteilte Kennzeichen-Kombination und – bei der Online-Zulassung – den vorläufigen Zulassungsnachweis, mit dem Sie bereits fahren dürfen.",
-    tip: "Abmeldungen sind meist noch am selben Werktag erledigt – Sie erhalten die Abmeldebestätigung per E-Mail, und die Anleitung endet für Sie hier.",
+    tip: `Abmeldungen sind meist noch ${ZEIT.abmeldung} erledigt – Sie erhalten die Abmeldebestätigung per E-Mail, und die Anleitung endet für Sie hier.`,
     image: {
       src: "/images/anleitung-zulassung-erledigt.webp",
       alt: "Laptop mit Bestätigungsanzeige neben Fahrzeugpapieren auf einem Schreibtisch",

@@ -6,6 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import CTASection from "@/components/CTASection";
 import { anleitungSteps } from "@/lib/anleitung";
 import { site } from "@/lib/site";
+import { ZEIT } from "@/lib/betrieb";
 
 export const metadata: Metadata = {
   title: "Auto online zulassen – Anleitung mit Bildern",
@@ -64,11 +65,11 @@ export default function AnleitungPage() {
               <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-ink-600">
                 <span className="flex items-center gap-1.5">
                   <Clock className="h-4 w-4 text-brand-600" aria-hidden />
-                  Ihr Aufwand: ca. 15 Minuten
+                  Ihr Aufwand online: {ZEIT.auftrag}
                 </span>
                 <span className="flex items-center gap-1.5">
                   <CheckCircle2 className="h-4 w-4 text-brand-600" aria-hidden />
-                  Zulassung in 1–3 Werktagen
+                  Zulassung in {ZEIT.zulassungDativ}
                 </span>
                 <span className="flex items-center gap-1.5">
                   <MapPin className="h-4 w-4 text-brand-600" aria-hidden />
@@ -85,9 +86,9 @@ export default function AnleitungPage() {
                 </a>
                 <Link
                   href="/auftrag/"
-                  className="inline-flex items-center gap-2 rounded-xl bg-brand-700 px-5 py-3 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-800"
+                  className="inline-flex items-center gap-2 rounded-xl bg-brand-600 px-5 py-3 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
                 >
-                  Jetzt starten
+                  Auftrag starten
                   <ArrowRight className="h-4 w-4" aria-hidden />
                 </Link>
               </div>
@@ -119,7 +120,7 @@ export default function AnleitungPage() {
               className="grid scroll-mt-24 gap-6 rounded-3xl border border-ink-200 bg-white p-5 shadow-card sm:p-7 items-center lg:grid-cols-2 print:break-inside-avoid print:grid-cols-2 print:gap-5 print:rounded-xl print:p-4 print:shadow-none"
             >
               <div className={i % 2 === 1 ? "lg:order-2 print:order-none" : ""}>
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand-700 font-display text-base font-bold text-white">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand-600 font-display text-base font-bold text-white">
                   {i + 1}
                 </span>
                 <p className="mt-3 text-xs font-semibold uppercase tracking-wider text-brand-700">

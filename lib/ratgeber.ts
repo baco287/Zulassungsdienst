@@ -1,5 +1,6 @@
 import type { QA, ContentSection } from "./serviceContent";
 import { addRanges, euroRange, officialFees, P, plateCosts, wunschkennzeichenHinweis } from "./pricing";
+import { ZEIT } from "@/lib/betrieb";
 
 /**
  * Ratgeber-Artikel (SEO/GEO-Content).
@@ -69,7 +70,7 @@ export const guides: Guide[] = [
           rows: [
             ["Voraussetzungen", "eID-Ausweis mit PIN, Sicherheitscodes, ePayment", "Termin (oft Wochen Vorlauf)", "keine – Fotos der Unterlagen genügen"],
             ["Zeitaufwand", "30–60 Min., wenn alles klappt", "halber Tag inkl. Anfahrt/Wartezeit", "ca. 10 Min. für die Beauftragung"],
-            ["Dauer bis zur Zulassung", "sofort (vorläufiger Nachweis), Plaketten per Post", "am Termin selbst", "1–3 Werktage + Versand"],
+            ["Dauer bis zur Zulassung", "sofort (vorläufiger Nachweis), Plaketten per Post", "am Termin selbst", `${ZEIT.zulassung} + Versand`],
             ["Gesamtkosten (Zulassung)", euroRange(addRanges(officialFees.onlineRegistration, plateCosts)), euroRange(addRanges(officialFees.counterRegistration, plateCosts)), `${P.zulassung} + ggf. Kennzeichen`],
             ["Scheitert häufig an …", "eID-PIN, alten Papieren, Portal-Fehlern", "Terminmangel", "–"],
           ],
@@ -216,7 +217,7 @@ export const guides: Guide[] = [
       {
         heading: "So läuft die Ummeldung ohne Behördengang",
         paragraphs: [
-          "Statt einen Termin bei der neuen Zulassungsstelle zu jagen, können Sie die Ummeldung komplett digital erledigen lassen: Sie fotografieren Zulassungsbescheinigung Teil I und II sowie Ihren Ausweis mit neuer Adresse (oder die Meldebescheinigung), erteilen eine digitale Vollmacht – und der Zulassungsdienst übernimmt den Rest. Bei DeutscheZulassung dauert das in der Regel 1–3 Werktage; die aktualisierten Papiere und gegebenenfalls neue Kennzeichen kommen per versichertem Versand.",
+          `Statt einen Termin bei der neuen Zulassungsstelle zu jagen, können Sie die Ummeldung komplett digital erledigen lassen: Sie fotografieren Zulassungsbescheinigung Teil I und II sowie Ihren Ausweis mit neuer Adresse (oder die Meldebescheinigung), erteilen eine digitale Vollmacht – und der Zulassungsdienst übernimmt den Rest. Bei DeutscheZulassung dauert das in der Regel ${ZEIT.zulassung}; die aktualisierten Papiere und gegebenenfalls neue Kennzeichen kommen per versichertem Versand.`,
         ],
         list: [
           "Zulassungsbescheinigung Teil I (Fahrzeugschein)",
@@ -283,7 +284,7 @@ export const guides: Guide[] = [
           "Sicherheitscodes der Stempelplaketten auf beiden Kennzeichen freilegen",
           "Bei Verschrottung: Verwertungsnachweis des zertifizierten Demontagebetriebs bereithalten",
           "Codes und Dokumente fotografieren und an den Zulassungsdienst übermitteln – oder selbst im i-Kfz-Portal abmelden",
-          "Abmeldebestätigung erhalten (bei DeutscheZulassung in der Regel noch am selben Werktag per E-Mail)",
+          `Abmeldebestätigung erhalten (bei DeutscheZulassung in der Regel noch ${ZEIT.abmeldung} per E-Mail)`,
         ],
       },
       {
@@ -297,7 +298,7 @@ export const guides: Guide[] = [
       {
         question: "Was kostet die Abmeldung eines Autos?",
         answer:
-          `Die amtliche Gebühr liegt online bei ${euroRange(officialFees.deregistrationOnline)} und am Schalter bei ${euroRange(officialFees.deregistrationCounter)}, je nach Behörde. Über DeutscheZulassung kostet die komplette Abwicklung ${P.abmeldung} inklusive Gebühren – meist noch am selben Werktag erledigt.`,
+          `Die amtliche Gebühr liegt online bei ${euroRange(officialFees.deregistrationOnline)} und am Schalter bei ${euroRange(officialFees.deregistrationCounter)}, je nach Behörde. Über DeutscheZulassung kostet die komplette Abwicklung ${P.abmeldung} inklusive Gebühren – meist noch ${ZEIT.abmeldung} erledigt.`,
       },
       {
         question: "Kann ich ein Auto ohne Kennzeichen abmelden?",
@@ -407,7 +408,7 @@ export const guides: Guide[] = [
         heading: "Schritt 3: Zulassungsweg wählen",
         paragraphs: [
           "Jetzt haben Sie drei Möglichkeiten. Erstens der Schaltertermin bei der Zulassungsstelle: der klassische Weg – mit Terminsuche, Anfahrt und Wartezeit. Zweitens die Online-Zulassung über das i-Kfz-Portal Ihrer Behörde: die günstigste Option, aber nur mit Personalausweis mit aktivierter Online-Funktion, Dokumenten mit Sicherheitscodes und funktionierendem ePayment. Drittens ein Zulassungsdienst: Sie senden Fotos Ihrer Unterlagen samt eVB, erteilen eine digitale Vollmacht – und bekommen gestempelte Kennzeichen und Papiere nach Hause geliefert, ohne Termin und ohne eID.",
-          "Bei DeutscheZulassung geben Sie die eVB-Nummer einfach im Online-Auftrag oder per WhatsApp an – wir übernehmen ab hier den kompletten Behördenvorgang, in der Regel in 1–3 Werktagen.",
+          `Bei DeutscheZulassung geben Sie die eVB-Nummer einfach im Online-Auftrag oder per WhatsApp an – wir übernehmen ab hier den kompletten Behördenvorgang, in der Regel in ${ZEIT.zulassungDativ}.`,
         ],
       },
       {
@@ -426,7 +427,7 @@ export const guides: Guide[] = [
       {
         question: "Wie schnell sollte ich die eVB nach Erhalt einlösen?",
         answer:
-          "Möglichst zeitnah. Die eVB ist je nach Versicherer nur wenige Wochen bis Monate gültig; eine abgelaufene Nummer müssen Sie kostenlos neu anfordern. Über einen Zulassungsdienst ist die Zulassung meist in 1–3 Werktagen erledigt.",
+          `Möglichst zeitnah. Die eVB ist je nach Versicherer nur wenige Wochen bis Monate gültig; eine abgelaufene Nummer müssen Sie kostenlos neu anfordern. Über einen Zulassungsdienst ist die Zulassung meist in ${ZEIT.zulassungDativ} erledigt.`,
       },
       {
         question: "Kann ich dieselbe eVB für ein anderes Fahrzeug verwenden?",
@@ -590,7 +591,7 @@ export const guides: Guide[] = [
       {
         heading: "Option 3: Zulassungsdienst – der Weg, der immer funktioniert",
         paragraphs: [
-          "Ein Zulassungsdienst braucht weder Ihren Termin noch Ihre eID: Sie fotografieren die Unterlagen, erteilen eine digitale Vollmacht, und der Dienst führt den Vorgang bei der Behörde durch – über eigene Zugänge, unabhängig von der öffentlichen Terminvergabe. Bei DeutscheZulassung startet Ihr Vorgang sofort nach Auftragseingang; die Zulassung ist in der Regel in 1–3 Werktagen erledigt, Abmeldungen meist noch am selben Werktag.",
+          `Ein Zulassungsdienst braucht weder Ihren Termin noch Ihre eID: Sie fotografieren die Unterlagen, erteilen eine digitale Vollmacht, und der Dienst führt den Vorgang bei der Behörde durch – über eigene Zugänge, unabhängig von der öffentlichen Terminvergabe. Bei DeutscheZulassung startet Ihr Vorgang sofort nach Auftragseingang; die Zulassung ist in der Regel in ${ZEIT.zulassungDativ} erledigt, Abmeldungen meist noch ${ZEIT.abmeldung}.`,
           `Das kostet mit ${P.zulassung} zzgl. ggf. ${P.kennzeichen} für Kennzeichen mehr als der Schalter – dafür entfallen Terminsuche, Anfahrt und Wartezeit vollständig. Gerade wenn das neue Auto schon bezahlt vor der Tür steht, ist das oft der Unterschied zwischen „fährt diese Woche“ und „steht noch einen Monat“.`,
         ],
       },
@@ -615,7 +616,7 @@ export const guides: Guide[] = [
       {
         question: "Was kostet die Zulassung ohne eigenen Termin über einen Dienst?",
         answer:
-          `Bei DeutscheZulassung ${P.zulassung} inklusive amtlicher Gebühren und Versand, zzgl. ${P.kennzeichen} für neue Kennzeichenschilder – ganz ohne Behördentermin; die Bearbeitung dauert in der Regel 1–3 Werktage ab vollständigen Unterlagen. Die Abmeldung kostet ${P.abmeldung} und ist meist taggleich erledigt.`,
+          `Bei DeutscheZulassung ${P.zulassung} inklusive amtlicher Gebühren und Versand, zzgl. ${P.kennzeichen} für neue Kennzeichenschilder – ganz ohne Behördentermin; die Bearbeitung dauert in der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen. Die Abmeldung kostet ${P.abmeldung} und ist meist ${ZEIT.abmeldung} erledigt.`,
       },
       {
         question: "Gilt das auch für meine Stadt?",
@@ -811,7 +812,7 @@ export const guides: Guide[] = [
       {
         heading: "Sicherheitscodes und Zulassungsdienst",
         paragraphs: [
-          `Wenn Sie DeutscheZulassung beauftragen, brauchen Sie keinen Personalausweis mit Online-Funktion. Sie senden Handyfotos Ihrer Unterlagen und erteilen uns eine Vollmacht; wir reichen den Vorgang bei der zuständigen Behörde ein, die über die Zulassung entscheidet. Für die Abmeldung genügen in der Regel Fotos der ZB I und der Plakettencodes. Sie kostet ${P.abmeldung} inklusive amtlicher Gebühren und ist meist am selben Werktag erledigt.`,
+          `Wenn Sie DeutscheZulassung beauftragen, brauchen Sie keinen Personalausweis mit Online-Funktion. Sie senden Handyfotos Ihrer Unterlagen und erteilen uns eine Vollmacht; wir reichen den Vorgang bei der zuständigen Behörde ein, die über die Zulassung entscheidet. Für die Abmeldung genügen in der Regel Fotos der ZB I und der Plakettencodes. Sie kostet ${P.abmeldung} inklusive amtlicher Gebühren und ist meist ${ZEIT.abmeldung} erledigt.`,
           "Unsicher, ob Ihre Papiere einen Code haben oder ob Sie ihn schon freilegen sollten? Fragen Sie uns vorher – Montag bis Freitag von 8 bis 18 Uhr. Sie beauftragen über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung.",
         ],
       },
@@ -936,7 +937,7 @@ export const guides: Guide[] = [
         heading: "Umschreibung ohne Behördentermin",
         paragraphs: [
           "Sie können die Umschreibung auch DeutscheZulassung übertragen. Sie beauftragen über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung. Handyfotos der Unterlagen genügen für den Start, eine Vollmacht regelt die Vertretung bei der Behörde, und einen Personalausweis mit Online-Funktion brauchen Sie nicht.",
-          `Der Halterwechsel kostet ${P.zulassung} inklusive amtlicher Gebühren und Versand. In der Regel ist er 1–3 Werktage nach Eingang der vollständigen Unterlagen erledigt, dazu kommt die Versanddauer. Über die Zulassung selbst entscheidet die Behörde.`,
+          `Der Halterwechsel kostet ${P.zulassung} inklusive amtlicher Gebühren und Versand. In der Regel ist er ${ZEIT.zulassung} nach Eingang der vollständigen Unterlagen erledigt, dazu kommt die Versanddauer. Über die Zulassung selbst entscheidet die Behörde.`,
         ],
       },
     ],
@@ -1013,7 +1014,7 @@ export const guides: Guide[] = [
         paragraphs: [
           "Die Abmeldung vor der Übergabe ist der Weg mit dem klarsten Schnitt. Ab dem Tag der Außerbetriebsetzung zahlen Sie weder Kfz-Steuer noch Versicherungsbeiträge, und mit Ihrem Kennzeichen kann niemand mehr fahren. Eine Verkaufsmeldung an die Behörde entfällt, weil die Meldepflicht für bereits abgemeldete Fahrzeuge nicht gilt.",
           "Der Nachteil liegt beim Käufer: Ein abgemeldetes Auto darf nicht am öffentlichen Straßenverkehr teilnehmen. Für Probefahrt und Heimweg braucht er ein Kurzzeitkennzeichen, einen Transport auf dem Anhänger oder eine Zulassung auf seinen Namen, bevor er das Auto abholt. Planen Sie das bei Preisverhandlung und Übergabetermin mit ein.",
-          `Übergeben Sie dem Käufer alle Papiere: beide Teile der Zulassungsbescheinigung – auch eine nach der Online-Abmeldung entwertete ZB I, denn sie wird für die spätere Wiederzulassung gebraucht – sowie die Abmeldebestätigung. Die Abmeldung selbst übernimmt DeutscheZulassung für ${P.abmeldung} inklusive amtlicher Gebühren, meist noch am selben Werktag.`,
+          `Übergeben Sie dem Käufer alle Papiere: beide Teile der Zulassungsbescheinigung – auch eine nach der Online-Abmeldung entwertete ZB I, denn sie wird für die spätere Wiederzulassung gebraucht – sowie die Abmeldebestätigung. Die Abmeldung selbst übernimmt DeutscheZulassung für ${P.abmeldung} inklusive amtlicher Gebühren, meist noch ${ZEIT.abmeldung}.`,
         ],
       },
       {
@@ -1298,7 +1299,7 @@ export const guides: Guide[] = [
         heading: "Zulassungsservice für Gewerbekunden",
         paragraphs: [
           "DeutscheZulassung übernimmt Zulassungen für Unternehmen bundesweit – vom einzelnen Firmenwagen bis zum Fuhrpark. Gewerbekunden erhalten eine Sammelabwicklung, eine feste Ansprechperson und Staffelpreise auf Anfrage. Die Unterlagen senden Sie als Handyfotos über das Online-Formular, per WhatsApp oder per E-Mail; einen Personalausweis mit Online-Funktion brauchen Sie nicht.",
-          `Für einzelne Vorgänge gelten die regulären Festpreise, etwa ${P.zulassung} für eine Neuzulassung oder Umschreibung inklusive amtlicher Gebühren und Versand. In der Regel ist eine Zulassung 1–3 Werktage nach Eingang der vollständigen Unterlagen erledigt, zuzüglich Versand. Sie beauftragen über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung – erreichbar sind wir Montag bis Freitag von 8 bis 18 Uhr.`,
+          `Für einzelne Vorgänge gelten die regulären Festpreise, etwa ${P.zulassung} für eine Neuzulassung oder Umschreibung inklusive amtlicher Gebühren und Versand. In der Regel ist eine Zulassung ${ZEIT.zulassung} nach Eingang der vollständigen Unterlagen erledigt, zuzüglich Versand. Sie beauftragen über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung – erreichbar sind wir Montag bis Freitag von 8 bis 18 Uhr.`,
         ],
       },
     ],

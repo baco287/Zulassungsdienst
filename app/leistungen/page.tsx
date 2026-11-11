@@ -7,7 +7,7 @@ import type { ServiceCategory } from "@/lib/types";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Leistungen – alle Zulassungsdienste im Überblick",
+  title: "Alle Zulassungsleistungen im Überblick",
   description:
     "Neuzulassung, Ummeldung, Abmeldung, Wunschkennzeichen und mehr: Alle Kfz-Zulassungsleistungen von DeutscheZulassung im Überblick – für Privat- und Gewerbekunden.",
 };

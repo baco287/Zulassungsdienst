@@ -1,5 +1,6 @@
 import type { ContentSection, QA } from "./serviceContent";
 import { P, euroRange, officialFees } from "./pricing";
+import { ZEIT } from "@/lib/betrieb";
 
 /**
  * Themen-Landingpages auf oberster URL-Ebene (z. B. /kfz-zulassung-ohne-eid/).
@@ -150,7 +151,7 @@ export const landingPages: LandingPage[] = [
         },
         {
           title: "Papiere und Kennzeichen erhalten",
-          text: "In der Regel 1–3 Werktage nach Eingang der vollständigen Unterlagen geht alles in den Versand. Geprägte Kennzeichenschilder liefern wir auf Wunsch mit.",
+          text: `In der Regel ${ZEIT.zulassung} nach Eingang der vollständigen Unterlagen geht alles in den Versand. Geprägte Kennzeichenschilder liefern wir auf Wunsch mit.`,
         },
       ],
     },
@@ -189,7 +190,7 @@ export const landingPages: LandingPage[] = [
         heading: "Wer über Ihre Zulassung entscheidet",
         paragraphs: [
           "DeutscheZulassung ist ein privater Dienstleister und keine Behörde – ein Angebot der Volt Gas UG (haftungsbeschränkt) aus Berlin, bundesweit tätig. Wir bereiten Ihren Antrag vor und reichen ihn ein. Die Entscheidung über die Zulassung trifft immer die zuständige Zulassungsbehörde.",
-          "Deshalb versprechen wir keine Zulassung in Minuten, sondern nennen eine realistische Dauer: in der Regel 1–3 Werktage ab vollständigen Unterlagen, zuzüglich Versand. Erreichbar sind wir Mo–Fr von 8:00 bis 18:00 Uhr per WhatsApp, Telefon und E-Mail.",
+          `Deshalb versprechen wir keine Zulassung in Minuten, sondern nennen eine realistische Dauer: in der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, zuzüglich Versand. Erreichbar sind wir Mo–Fr von 8:00 bis 18:00 Uhr per WhatsApp, Telefon und E-Mail.`,
         ],
       },
     ],
@@ -216,7 +217,7 @@ export const landingPages: LandingPage[] = [
       {
         question: "Wie lange dauert die Zulassung über DeutscheZulassung?",
         answer:
-          "In der Regel 1–3 Werktage ab vollständigen Unterlagen, zuzüglich Versand. Einen festen Zeitpunkt kann niemand garantieren, weil die Behörde über den Antrag entscheidet.",
+          `In der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, zuzüglich Versand. Einen festen Zeitpunkt kann niemand garantieren, weil die Behörde über den Antrag entscheidet.`,
       },
     ],
     relatedServices: ["neuzulassung", "halterwechsel", "wiederzulassung", "ummeldung"],
@@ -284,7 +285,7 @@ export const landingPages: LandingPage[] = [
         },
         {
           title: "Bestätigung erhalten",
-          text: "Wir reichen die Abmeldung bei der zuständigen Zulassungsbehörde ein, meist noch am selben Werktag, und senden Ihnen die Abmeldebestätigung zu.",
+          text: `Wir reichen die Abmeldung bei der zuständigen Zulassungsbehörde ein, meist noch ${ZEIT.abmeldung}, und senden Ihnen die Abmeldebestätigung zu.`,
         },
       ],
     },
@@ -316,7 +317,7 @@ export const landingPages: LandingPage[] = [
             ["Sicherheitscodes", "im Portal eingeben", "Foto der freigelegten Codes senden"],
             ["Kosten", `amtliche Gebühr online, ${euroRange(officialFees.deregistrationOnline)}`, `${P.abmeldung} inkl. amtlicher Gebühren`],
             ["Beauftragung", "im Portal Ihrer Zulassungsbehörde", "Online-Formular, WhatsApp oder E-Mail"],
-            ["Dauer", "automatisierte Entscheidung, wenn alle Angaben passen", "meist am selben Werktag"],
+            ["Dauer", "automatisierte Entscheidung, wenn alle Angaben passen", `meist ${ZEIT.abmeldung}`],
             ["Wenn etwas hakt", "Zulassungsbehörde kontaktieren", "feste Ansprechperson, Mo–Fr 8–18 Uhr"],
           ],
         },
@@ -354,7 +355,7 @@ export const landingPages: LandingPage[] = [
       {
         question: "Wie schnell ist das Auto abgemeldet?",
         answer:
-          "Über DeutscheZulassung meist am selben Werktag, sofern die Codes vollständig und lesbar sind. Im i-Kfz-Portal entscheidet das System automatisiert, wenn alle Angaben passen.",
+          `Über DeutscheZulassung meist ${ZEIT.abmeldung}, sofern die Codes vollständig und lesbar sind. Im i-Kfz-Portal entscheidet das System automatisiert, wenn alle Angaben passen.`,
       },
       {
         question: "Kann ich ein Auto online abmelden, das vor 2015 zuletzt angemeldet wurde?",
@@ -469,7 +470,7 @@ export const landingPages: LandingPage[] = [
         heading: "Wann ein Zulassungsdienst die bessere Lösung ist",
         paragraphs: [
           "Lässt sich die Ursache in wenigen Minuten beheben, lohnt ein zweiter Versuch – i-Kfz bleibt der günstigste Weg. Braucht die Lösung dagegen einen Termin bei der Ausweisbehörde, neue Papiere oder ist Ihr Vorgang online nicht vorgesehen, kann ein Zulassungsdienst den Antrag für Sie stellen.",
-          `Bei DeutscheZulassung beauftragen Sie über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung; eine eID brauchen Sie nicht. Eine Zulassung kostet ${P.zulassung} inklusive amtlicher Gebühren und Versand und dauert in der Regel 1–3 Werktage ab vollständigen Unterlagen, zuzüglich Versand. Offene Steuer- oder Gebührenrückstände klärt allerdings auch ein Dienst nicht für Sie.`,
+          `Bei DeutscheZulassung beauftragen Sie über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung; eine eID brauchen Sie nicht. Eine Zulassung kostet ${P.zulassung} inklusive amtlicher Gebühren und Versand und dauert in der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, zuzüglich Versand. Offene Steuer- oder Gebührenrückstände klärt allerdings auch ein Dienst nicht für Sie.`,
         ],
       },
     ],
@@ -757,7 +758,7 @@ export const landingPages: LandingPage[] = [
         },
         {
           title: "Papiere erhalten",
-          text: "In der Regel 1–3 Werktage ab vollständigen Unterlagen, dazu kommt der Versand.",
+          text: `In der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, dazu kommt der Versand.`,
         },
       ],
     },
@@ -923,7 +924,7 @@ export const landingPages: LandingPage[] = [
         },
         {
           title: "Versand",
-          text: "In der Regel 1–3 Werktage ab vollständigen Unterlagen zuzüglich Versand; Abmeldungen meist am selben Werktag.",
+          text: `In der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen zuzüglich Versand; Abmeldungen meist ${ZEIT.abmeldung}.`,
         },
       ],
     },
@@ -961,7 +962,7 @@ export const landingPages: LandingPage[] = [
               "Dauer",
               "abhängig von der Terminlage",
               "bei Erfolg sofort, Plaketten per Post",
-              "bei DeutscheZulassung meist 1–3 Werktage + Versand",
+              `bei DeutscheZulassung meist ${ZEIT.zulassung} + Versand`,
             ],
             [
               "Kennzeichen",
@@ -991,7 +992,7 @@ export const landingPages: LandingPage[] = [
         paragraphs: [
           "DeutscheZulassung ist ein Angebot der Volt Gas UG (haftungsbeschränkt) mit Sitz in Berlin und bundesweit tätig. Sie beauftragen über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung.",
           `Eine Zulassung kostet ${P.zulassung} inklusive amtlicher Gebühren und Versand, eine Abmeldung ${P.abmeldung} inklusive Gebühren. Kennzeichenschilder für ${P.kennzeichen} pro Paar und den Wunschkennzeichen-Service für ${P.wunschkennzeichen} (amtliche Gebühr enthalten) wählen Sie nur, wenn Sie sie brauchen.`,
-          "Ihre feste Ansprechperson erreichen Sie Mo–Fr von 8:00 bis 18:00 Uhr per WhatsApp, Telefon und E-Mail. Und weil die Entscheidung bei der Behörde liegt, nennen wir eine realistische Dauer statt eines Versprechens: in der Regel 1–3 Werktage ab vollständigen Unterlagen, zuzüglich Versand.",
+          `Ihre feste Ansprechperson erreichen Sie Mo–Fr von 8:00 bis 18:00 Uhr per WhatsApp, Telefon und E-Mail. Und weil die Entscheidung bei der Behörde liegt, nennen wir eine realistische Dauer statt eines Versprechens: in der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, zuzüglich Versand.`,
         ],
       },
     ],
@@ -1018,7 +1019,7 @@ export const landingPages: LandingPage[] = [
       {
         question: "Wie lange dauert es über DeutscheZulassung?",
         answer:
-          "In der Regel 1–3 Werktage ab vollständigen Unterlagen zuzüglich Versand; Abmeldungen meist am selben Werktag.",
+          `In der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen zuzüglich Versand; Abmeldungen meist ${ZEIT.abmeldung}.`,
       },
     ],
     relatedServices: ["neuzulassung", "privatkunden", "gewerbekunden", "abmeldung"],

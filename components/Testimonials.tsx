@@ -19,7 +19,7 @@ export default function Testimonials({ limit = 3 }: { limit?: number }) {
             {Array.from({ length: 5 }, (_, i) => (
               <Star
                 key={i}
-                className={`h-4 w-4 ${i < Math.round(avg.value) ? "fill-accent-400 text-accent-400" : "text-ink-300"}`}
+                className={`h-4 w-4 ${i < Math.round(avg.value) ? "fill-amber-400 text-amber-400" : "text-ink-300"}`}
               />
             ))}
           </span>

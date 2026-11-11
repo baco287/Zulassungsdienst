@@ -4,6 +4,7 @@ import LegalPage from "@/components/LegalPage";
 import { P, PRICE_DATE } from "@/lib/pricing";
 import { site } from "@/lib/site";
 import { SERVICEBEDINGUNGEN_FREIGEGEBEN } from "@/lib/features";
+import { ZEIT } from "@/lib/betrieb";
 
 export const metadata: Metadata = {
   title: "Servicebedingungen – verständlich erklärt",
@@ -46,7 +47,7 @@ export default function ServicebedingungenPage() {
         </ul>
         <p>
           Auf die Bearbeitungsdauer und Entscheidung der Behörde haben wir keinen Einfluss. Unsere Zeitangaben (in der
-          Regel 1–3 Werktage ab vollständigen Unterlagen und Zahlungseingang, Abmeldungen meist am selben Werktag) sind Erfahrungswerte, keine
+          Regel {ZEIT.zulassung} ab vollständigen Unterlagen und Zahlungseingang, Abmeldungen meist {ZEIT.abmeldung}) sind Erfahrungswerte, keine
           Garantie.
         </p>
       </section>

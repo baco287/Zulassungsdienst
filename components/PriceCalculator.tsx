@@ -13,6 +13,7 @@ import {
 } from "@/lib/pricing";
 import { getService } from "@/lib/services";
 import { track } from "@/lib/analytics";
+import { useToolUsed } from "@/lib/useToolUsed";
 
 const labels: Record<string, string> = Object.fromEntries(
   BESTELLBARE_LEISTUNGEN.map((slug) => {
@@ -32,6 +33,7 @@ const schilderLabels: Record<SchilderOption, string> = {
  * Den verbindlichen Endpreis bestätigt das Team vor dem Start.
  */
 export default function PriceCalculator() {
+  const markUsed = useToolUsed("preisrechner");
   const [leistung, setLeistung] = useState<string>("neuzulassung");
   const [schilder, setSchilder] = useState<SchilderOption>("lieferung");
   const [wunsch, setWunsch] = useState(false);
@@ -43,7 +45,7 @@ export default function PriceCalculator() {
   );
 
   return (
-    <div className="rounded-2xl border-2 border-brand-200 bg-white p-6 shadow-card sm:p-8">
+    <div className="rounded-2xl border-2 border-brand-200 bg-white p-6 shadow-card sm:p-8" onChangeCapture={markUsed} onClickCapture={markUsed}>
       <h2 className="flex items-center gap-2 font-display text-2xl font-bold text-ink-900">
         <Calculator className="h-6 w-6 text-brand-700" aria-hidden />
         Endpreis berechnen
@@ -62,7 +64,7 @@ export default function PriceCalculator() {
                 setLeistung(e.target.value);
                 track("service_selected", { service: e.target.value, position: "preisrechner" });
               }}
-              className="mt-1.5 w-full cursor-pointer rounded-xl border border-ink-300 bg-white px-3.5 py-3 text-base text-ink-900 focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-600/30"
+              className="field mt-1.5 cursor-pointer"
             >
               {BESTELLBARE_LEISTUNGEN.map((slug) => (
                 <option key={slug} value={slug}>
@@ -132,7 +134,7 @@ export default function PriceCalculator() {
               <Link
                 href={`/auftrag/?leistung=${leistung}`}
                 onClick={() => track("cta_click", { position: "preisrechner", service: leistung })}
-                className="mt-5 flex items-center justify-center gap-2 rounded-xl bg-brand-700 px-5 py-3.5 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-800"
+                className="mt-5 flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-5 py-3.5 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
               >
                 {labels[leistung]} beauftragen
                 <ArrowRight className="h-4 w-4" aria-hidden />

@@ -10,6 +10,8 @@ import { getKennzeichen, kennzeichen } from "@/lib/zulassungsstellen";
 import { getCity } from "@/lib/staedte";
 import { P, wunschkennzeichenHinweis } from "@/lib/pricing";
 import { site } from "@/lib/site";
+import { kennzeichenIndexable, robotsFor } from "@/lib/indexGate";
+import { fitTitle } from "@/lib/seo";
 
 export const dynamicParams = false;
 
@@ -22,9 +24,10 @@ export async function generateMetadata({ params }: { params: Promise<{ kuerzel: 
   const k = getKennzeichen(kuerzel);
   if (!k) return {};
   return {
-    title: `${k.code}-Kennzeichen: ${k.name}`,
+    title: fitTitle(`${k.code}-Kennzeichen: ${k.name}`),
     description: `Kennzeichen ${k.code} steht für ${k.name}. Zuständige Zulassungsstelle, Anschrift und wie Sie ein ${k.code}-Wunschkennzeichen bekommen – ohne Behördentermin.`,
     alternates: { canonical: `/kennzeichen/${k.slug}/` },
+    robots: robotsFor(kennzeichenIndexable(k)),
   };
 }
 
@@ -157,9 +160,9 @@ export default async function KennzeichenDetail({ params }: { params: Promise<{ 
               href="/auftrag/"
               event="cta_click"
               props={{ position: "kennzeichen", page: k.slug }}
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-700 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-800"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-700"
             >
-              Jetzt beauftragen <ArrowRight className="h-4 w-4" aria-hidden />
+              Auftrag starten <ArrowRight className="h-4 w-4" aria-hidden />
             </TrackedLink>
           </div>
         </div>

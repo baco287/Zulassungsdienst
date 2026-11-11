@@ -35,11 +35,17 @@ export type AnalyticsEvent =
   | "order_abandon"
   | "order_submitted"
   | "contact_form_submit"
-  | "documents_uploaded";
+  | "documents_uploaded"
+  /** Preisbox einer Leistung war mindestens zur Hälfte sichtbar. */
+  | "price_box_view"
+  /** Anfrage eines Gewerbekunden (Formular mit Kundentyp Gewerbe oder B2B-Kontakt). */
+  | "b2b_inquiry"
+  /** Ein Rechner oder Werkzeug wurde benutzt (Ergebnis berechnet, Suche ausgeführt). */
+  | "tool_used";
 
 export type AnalyticsProps = Partial<Record<(typeof ALLOWED_PROPS)[number], string | number>>;
 
-const ALLOWED_PROPS = ["position", "service", "step", "value", "method", "page"] as const;
+const ALLOWED_PROPS = ["position", "service", "step", "value", "method", "page", "tool"] as const;
 
 export const analyticsProvider = (process.env.NEXT_PUBLIC_ANALYTICS_PROVIDER ?? "") as "" | "plausible" | "matomo";
 export const gadsId = process.env.NEXT_PUBLIC_GADS_ID ?? "";

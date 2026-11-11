@@ -94,7 +94,7 @@ export default function ProcessAnimation() {
               </p>
               <div className="mt-3 flex items-center gap-4">
                 <motion.span
-                  className="flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-700 text-white"
+                  className="flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-600 text-white"
                   initial={{ rotate: -8 }}
                   animate={{ rotate: 0 }}
                   transition={{ type: "spring", stiffness: 200, damping: 14 }}
