@@ -158,7 +158,7 @@ export default function MaxxPage() {
                 </a>
                 <Link
                   href="/auftrag"
-                  className="flex items-center justify-center gap-2 rounded-xl bg-brand-700 px-7 py-4 font-display text-base font-semibold text-white shadow-lg transition-colors duration-200 hover:bg-brand-800"
+                  className="flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-7 py-4 font-display text-base font-semibold text-white shadow-lg transition-colors duration-200 hover:bg-brand-700"
                 >
                   Auftrag starten
                   <ArrowRight className="h-4 w-4" aria-hidden />
@@ -216,7 +216,7 @@ export default function MaxxPage() {
             {steps.map((step, i) => (
               <Reveal key={step.title} delay={i * 0.07} className="h-full">
                 <li className="relative flex h-full flex-col items-center rounded-3xl border-2 border-ink-200 bg-white px-6 pb-7 pt-10 text-center">
-                  <span className="absolute -top-5 flex h-10 w-10 items-center justify-center rounded-full border-4 border-white bg-brand-700 font-display text-base font-bold text-white">
+                  <span className="absolute -top-5 flex h-10 w-10 items-center justify-center rounded-full border-4 border-white bg-brand-600 font-display text-base font-bold text-white">
                     {i + 1}
                   </span>
                   <Maxx pose={step.pose} className="h-20 w-auto" />

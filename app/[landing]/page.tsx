@@ -128,7 +128,7 @@ export default async function LandingPageView({ params }: { params: Promise<{ la
                   href={orderHref}
                   event="cta_click"
                   props={{ position: "landing", page: page.slug }}
-                  className="inline-flex items-center justify-center gap-2 rounded-2xl bg-brand-700 px-7 py-4 font-display text-base font-semibold text-white shadow-lg shadow-brand-700/25 transition-colors duration-200 hover:bg-brand-800"
+                  className="inline-flex items-center justify-center gap-2 rounded-2xl bg-brand-600 px-7 py-4 font-display text-base font-semibold text-white shadow-lg shadow-brand-700/25 transition-colors duration-200 hover:bg-brand-700"
                 >
                   {page.ctaLabel}
                   <ArrowRight className="h-5 w-5" aria-hidden />
@@ -169,7 +169,7 @@ export default async function LandingPageView({ params }: { params: Promise<{ la
                   href={orderHref}
                   event="cta_click"
                   props={{ position: "landing_aside", page: page.slug }}
-                  className="mt-5 flex items-center justify-center gap-2 rounded-xl bg-brand-700 px-5 py-3 font-display text-sm font-semibold text-white transition-colors duration-200 hover:bg-brand-800"
+                  className="mt-5 flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-5 py-3 font-display text-sm font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
                 >
                   Auftrag starten
                   <ArrowRight className="h-4 w-4" aria-hidden />
@@ -205,7 +205,7 @@ export default async function LandingPageView({ params }: { params: Promise<{ la
                 <ol className="mt-5 space-y-4">
                   {page.steps.items.map((step, i) => (
                     <li key={step.title} className="flex gap-4">
-                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-700 font-display text-sm font-bold text-white">
+                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-600 font-display text-sm font-bold text-white">
                         {i + 1}
                       </span>
                       <span>
@@ -320,7 +320,7 @@ export default async function LandingPageView({ params }: { params: Promise<{ la
                     <li key={service.slug}>
                       <Link
                         href={`/leistungen/${service.slug}/`}
-                        className="flex items-center gap-2 rounded-xl bg-brand-700 px-4 py-2.5 text-sm font-semibold text-white transition-colors duration-200 hover:bg-brand-800"
+                        className="flex items-center gap-2 rounded-xl bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
                       >
                         {service.shortName ?? service.name}
                         <ArrowRight className="h-3.5 w-3.5" aria-hidden />

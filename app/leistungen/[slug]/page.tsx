@@ -100,10 +100,10 @@ export default async function ServiceDetailPage({
                 href={eintrag.ctaHref}
                 event="cta_click"
                 props={{ position: "leistung_hero", service: service.slug }}
-                className="inline-flex min-h-[52px] items-center justify-center gap-2 rounded-[14px] bg-navy px-7 font-display text-lg font-semibold text-white transition-colors duration-150 hover:bg-navy-800"
+                className="inline-flex min-h-[52px] shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-[14px] bg-brand-600 px-7 font-display text-lg font-bold text-white shadow-[0_10px_22px_-12px_rgb(37_99_235/0.65)] transition-colors duration-150 hover:bg-brand-700"
               >
                 Auftrag starten
-                <ArrowRight className="h-5 w-5 text-gold" aria-hidden />
+                <ArrowRight className="h-5 w-5" aria-hidden />
               </TrackedLink>
               <p className="text-sm text-ink-700">
                 <span className="font-display text-xl font-bold text-navy">{eintrag.preisText}</span>{" "}
@@ -193,7 +193,7 @@ export default async function ServiceDetailPage({
                   <p className="leading-relaxed text-ink-700">{content.ctaLink.text}</p>
                   <Link
                     href={content.ctaLink.href}
-                    className="mt-4 inline-flex items-center gap-2 rounded-xl bg-brand-700 px-5 py-3 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-800"
+                    className="mt-4 inline-flex items-center gap-2 rounded-xl bg-brand-600 px-5 py-3 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
                   >
                     {content.ctaLink.label}
                     <ArrowRight className="h-4 w-4" aria-hidden />
@@ -350,7 +350,7 @@ export default async function ServiceDetailPage({
               <div className="mt-6 space-y-3">
                 <Link
                   href={`/auftrag/?leistung=${service.slug}`}
-                  className="flex w-full items-center justify-center gap-2 rounded-xl bg-brand-700 px-5 py-3.5 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-800"
+                  className="flex w-full items-center justify-center gap-2 rounded-xl bg-brand-600 px-5 py-3.5 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
                 >
                   Auftrag starten
                   <ArrowRight className="h-4 w-4" aria-hidden />

@@ -69,7 +69,7 @@ export default function KfzSteuerRechner() {
   const total = Math.floor(baseTax + co2Part);
 
   const inputClass =
-    "mt-1.5 w-full rounded-xl border border-ink-300 bg-white px-4 py-3 text-ink-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-200";
+    "field mt-1.5";
   const labelClass = "block font-display text-sm font-semibold text-ink-800";
 
   return (
@@ -93,7 +93,7 @@ export default function KfzSteuerRechner() {
                 onClick={() => setFuel(value)}
                 className={`cursor-pointer rounded-xl border px-4 py-2.5 text-sm font-semibold transition-colors duration-200 ${
                   fuel === value
-                    ? "border-brand-700 bg-brand-700 text-white"
+                    ? "border-brand-700 bg-brand-600 text-white"
                     : "border-ink-300 bg-white text-ink-700 hover:border-brand-400 hover:bg-brand-50"
                 }`}
               >

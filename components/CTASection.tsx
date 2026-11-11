@@ -1,40 +1,63 @@
-import { whatsAppLink } from "@/lib/site";
-import Reveal from "./Reveal";
+import { ArrowRight } from "lucide-react";
+import { site, whatsAppLink } from "@/lib/site";
 import WhatsAppIcon from "./WhatsAppIcon";
 import TrackedLink from "./TrackedLink";
 
-export default function CTASection() {
+interface Props {
+  title?: string;
+  text?: string;
+  primaryLabel?: string;
+  primaryHref?: string;
+  secondaryLabel?: string;
+  /** Vorbelegter Text der WhatsApp-Nachricht. */
+  whatsAppText?: string;
+}
+
+/**
+ * Abschluss-CTA am Seitenende – auf der Startseite und allen Unterseiten
+ * derselbe Baustein, nur der Text lässt sich anpassen.
+ */
+export default function CTASection({
+  title = "Bereit für Ihre Zulassung? Wir übernehmen den Rest.",
+  text = "Starten Sie den Auftrag online oder stellen Sie uns Ihre Frage direkt per WhatsApp – wir melden uns innerhalb unserer Servicezeiten.",
+  primaryLabel = "Jetzt Auftrag starten",
+  primaryHref = "/auftrag/",
+  secondaryLabel = "Frage per WhatsApp stellen",
+  whatsAppText = "Hallo DeutscheZulassung, ich habe eine Frage zur Kfz-Zulassung.",
+}: Props) {
   return (
-    <section className="bg-ink-950 py-16 sm:py-20">
-      <Reveal className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-        <h2 className="font-display text-3xl font-bold text-white sm:text-4xl">
-          Bereit? Wir übernehmen den Behördenkram.
+    <section className="bg-white px-4 pb-16 pt-4 sm:px-6 sm:pb-24" aria-labelledby="cta-title">
+      <div className="bg-navy-pattern mx-auto max-w-[77rem] rounded-[24px] px-6 py-12 text-center text-white sm:px-12 sm:py-16">
+        <h2
+          id="cta-title"
+          className="mx-auto max-w-3xl font-display text-[1.75rem] font-extrabold leading-tight sm:text-4xl"
+        >
+          {title}
         </h2>
-        <p className="mx-auto mt-4 max-w-xl text-lg text-ink-300">
-          Auftrag online starten oder einfach kurz per WhatsApp schreiben –
-          wir melden uns innerhalb unserer Servicezeiten.
-        </p>
-        <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+        <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-white/80">{text}</p>
+        <div className="mx-auto mt-8 flex max-w-md flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center">
           <TrackedLink
-            href="/auftrag/"
+            href={primaryHref}
             event="cta_click"
             props={{ position: "cta_abschnitt" }}
-            className="rounded-xl bg-brand-600 px-8 py-4 font-display text-base font-semibold text-white shadow-lg transition-colors duration-200 hover:bg-brand-500"
+            className="btn btn-primary btn-lg"
           >
-            Jetzt Fahrzeug zulassen
+            {primaryLabel}
+            <ArrowRight className="h-5 w-5" aria-hidden />
           </TrackedLink>
           <TrackedLink
-            href={whatsAppLink("Hallo DeutscheZulassung, ich möchte eine Kfz-Zulassung beauftragen.")}
+            href={whatsAppLink(whatsAppText)}
             event="whatsapp_click"
             props={{ position: "cta_abschnitt" }}
             external
-            className="flex items-center justify-center gap-2 rounded-xl border border-ink-700 px-8 py-4 font-display text-base font-semibold text-white transition-colors duration-200 hover:border-brand-500 hover:bg-ink-900"
+            className="btn btn-on-dark btn-lg"
           >
-            <WhatsAppIcon className="h-5 w-5" />
-            Per WhatsApp
+            <WhatsAppIcon className="h-5 w-5" color="brand" />
+            {secondaryLabel}
           </TrackedLink>
         </div>
-      </Reveal>
+        <p className="mt-6 text-sm text-white/65">Servicezeiten: {site.contact.hours}</p>
+      </div>
     </section>
   );
 }

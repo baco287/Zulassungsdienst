@@ -34,7 +34,7 @@ export default function GewerbeCTA({ context }: { context?: string }) {
                 href={`mailto:${site.contact.email}?subject=${subject}&body=${body}`}
                 event="b2b_inquiry"
                 props={{ method: "email", position: "gewerbe_cta" }}
-                className="flex w-full items-center justify-center gap-2 rounded-[14px] bg-gold px-7 py-3.5 font-display font-semibold text-navy transition-colors duration-200 hover:bg-gold-600 sm:w-auto"
+                className="flex w-full items-center justify-center gap-2 rounded-[14px] bg-brand-600 px-7 py-3.5 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-700 sm:w-auto"
               >
                 <Mail className="h-5 w-5" aria-hidden />
                 Angebot per E-Mail anfordern

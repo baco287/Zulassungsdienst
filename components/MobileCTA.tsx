@@ -43,7 +43,7 @@ export default function MobileCTA() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => track("whatsapp_click", { position: "mobile_leiste" })}
-            className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-wa px-4 py-3 font-display text-sm font-semibold text-navy"
+            className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-wa px-4 py-3 font-display text-sm font-bold text-navy"
           >
             <WhatsAppIcon className="h-5 w-5" />
             WhatsApp
@@ -58,7 +58,7 @@ export default function MobileCTA() {
                 window.location.assign(ziel);
               }
             }}
-            className="flex flex-1 items-center justify-center rounded-xl bg-navy px-4 py-3 font-display text-sm font-semibold text-white"
+            className="flex flex-1 items-center justify-center rounded-xl bg-brand-600 px-4 py-3 font-display text-sm font-bold text-white"
           >
             Auftrag starten
           </Link>

@@ -244,7 +244,7 @@ export default function WhatsAppZulassungPage() {
             {whatsappSteps.map((step, i) => (
               <Reveal key={step.title} delay={Math.min(i * 0.05, 0.2)}>
                 <li className="flex gap-5 rounded-2xl border border-ink-200 bg-white p-6 shadow-card">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-700 font-display text-lg font-bold text-white">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-600 font-display text-lg font-bold text-white">
                     {i + 1}
                   </span>
                   <div>

@@ -69,7 +69,7 @@ export default function UnterlagenPage() {
               href={whatsAppLink("Hallo DeutscheZulassung, ich möchte meine Unterlagen schicken.")}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-brand-700 px-4 py-3 font-display text-sm font-semibold text-white transition-colors duration-200 hover:bg-brand-800"
+              className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-brand-600 px-4 py-3 font-display text-sm font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
             >
               WhatsApp öffnen
             </a>

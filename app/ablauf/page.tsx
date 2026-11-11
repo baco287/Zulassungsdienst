@@ -46,7 +46,8 @@ export default function AblaufPage() {
         </div>
       </section>
 
-      <section className="py-16">
+      {/* overflow-x-clip: Die Karten fahren seitlich ein; ohne Begrenzung entsteht davor ein waagerechter Scrollbalken. */}
+      <section className="overflow-x-clip py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <ProcessTimeline />
         </div>

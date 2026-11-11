@@ -104,9 +104,7 @@ export default function UnterlagenForm() {
   }
 
   const inputClass = (hasError: boolean) =>
-    `w-full rounded-xl border-2 px-4 py-3 text-base text-ink-900 placeholder:text-ink-400 transition-colors duration-200 focus:border-brand-500 outline-none ${
-      hasError ? "border-red-400 bg-red-50" : "border-ink-200 bg-white"
-    }`;
+    `field ${hasError ? "border-danger bg-[#fef3f2]" : ""}`;
 
   if (result?.ok) {
     return (

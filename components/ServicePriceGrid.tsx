@@ -54,7 +54,7 @@ export default function ServicePriceGrid({ showExtras = true }: { showExtras?: b
                 <div className="mt-6 flex flex-1 flex-col justify-end gap-2">
                   <Link
                     href={`/auftrag/?leistung=${slug}`}
-                    className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-700 px-5 py-3.5 font-display text-base font-semibold text-white transition-colors duration-200 hover:bg-brand-800"
+                    className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-5 py-3.5 font-display text-base font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
                   >
                     Auftrag starten
                     <ArrowRight className="h-4 w-4" aria-hidden />

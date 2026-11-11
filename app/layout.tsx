@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Lexend, Source_Sans_3 } from "next/font/google";
+import { Inter, Manrope } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MobileCTA from "@/components/MobileCTA";
@@ -8,15 +8,18 @@ import { site } from "@/lib/site";
 import "./globals.css";
 import { ORG_ID, WEBSITE_ID } from "@/lib/catalog";
 
-const lexend = Lexend({
+/* Beide Schriften werden beim Build geladen und vom eigenen Server ausgeliefert
+   (next/font) – es entsteht keine Verbindung zu Google beim Seitenaufruf. */
+const heading = Manrope({
   subsets: ["latin"],
-  variable: "--font-lexend",
+  variable: "--font-heading",
   display: "swap",
+  weight: ["600", "700", "800"],
 });
 
-const sourceSans = Source_Sans_3({
+const body = Inter({
   subsets: ["latin"],
-  variable: "--font-source-sans",
+  variable: "--font-body",
   display: "swap",
 });
 
@@ -114,7 +117,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="de" className={`${lexend.variable} ${sourceSans.variable}`}>
+    <html lang="de" className={`${heading.variable} ${body.variable}`}>
       <body className="flex min-h-screen flex-col">
         <a href="#hauptinhalt" className="skip-link">
           Zum Hauptinhalt springen

@@ -110,7 +110,7 @@ export default async function GuidePage({
           <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-ink-500">
             <span className="flex items-center gap-2">
               <span
-                className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-700 font-display text-xs font-bold text-white"
+                className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-600 font-display text-xs font-bold text-white"
                 aria-hidden
               >
                 {site.company.responsible
@@ -180,7 +180,7 @@ export default async function GuidePage({
                     <li key={service.slug}>
                       <Link
                         href={`/leistungen/${service.slug}/`}
-                        className="flex items-center gap-2 rounded-xl bg-brand-700 px-4 py-2.5 text-sm font-semibold text-white transition-colors duration-200 hover:bg-brand-800"
+                        className="flex items-center gap-2 rounded-xl bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
                       >
                         {service.shortName ?? service.name}
                         <ArrowRight className="h-3.5 w-3.5" aria-hidden />

@@ -59,7 +59,7 @@ export default function KontaktPage() {
               key={c.title}
               className="flex flex-col rounded-2xl border border-ink-200 bg-white p-7 shadow-card"
             >
-              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-700 text-white">
+              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-600 text-white">
                 <c.icon className="h-6 w-6" aria-hidden />
               </span>
               <h2 className="mt-4 font-display text-xl font-bold text-ink-900">{c.title}</h2>
@@ -67,7 +67,7 @@ export default function KontaktPage() {
               <a
                 href={c.href}
                 {...(c.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                className="mt-5 rounded-xl bg-brand-700 px-5 py-3 text-center font-display text-sm font-semibold text-white transition-colors duration-200 hover:bg-brand-800"
+                className="mt-5 rounded-xl bg-brand-600 px-5 py-3 text-center font-display text-sm font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
               >
                 {c.label}
               </a>

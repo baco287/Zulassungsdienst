@@ -64,7 +64,7 @@ export default function StellenSuche({ stellen }: { stellen: StellenEintrag[] })
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder="Ort, Landkreis oder Kennzeichen, z. B. „Osnabrück“ oder „OS“"
-          className="w-full rounded-2xl border-2 border-ink-200 bg-white py-3.5 pl-12 pr-4 text-base text-ink-900 shadow-sm focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-600/30"
+          className="field pl-12 shadow-sm"
         />
       </label>
       <p className="mt-3 text-sm text-ink-500" aria-live="polite">

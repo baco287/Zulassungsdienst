@@ -1,68 +1,92 @@
 @import "tailwindcss";
 
 /*
- * DeutscheZulassung Designsystem v3 – Navy/Gold
- * — Navy (#0b1f3a) als Markenfarbe, Gold (#f4b740) als sparsamer Akzent,
- *   warmes Off-White für ruhige Flächen, Schwarz-Rot-Gold nur als Linie im Header.
- * — Die Skalen brand-* und accent-* sind auf Navy bzw. Gold abgebildet, damit
- *   alle Seiten dieselbe Identität wie die Startseite tragen. Neue Komponenten
- *   nutzen bevorzugt die semantischen Tokens navy/gold/offwhite/line/muted.
- * — brand-700 entspricht exakt --color-navy, brand-800 dem Hover-Ton navy-800.
- * — accent-600/700 sind abgedunkelt, weil Gold als Schrift auf Weiß sonst nicht
- *   den Mindestkontrast 4,5:1 erreicht (WCAG 2.2 AA).
- * — Lexend (Headings) + Source Sans 3 (Body), geladen via next/font
+ * DeutscheZulassung Designsystem v4 – Navy · Action Blue · Türkis
+ *
+ * Rollen
+ *   navy      Marke, Überschriften, dunkle Flächen (Footer, Abschluss-CTA)
+ *   brand-*   Action Blue: Schaltflächen, Links, Auswahlzustände (brand-600 = #2563eb)
+ *   accent-*  Türkis: sparsame Akzente, Häkchen, Fortschritt (accent-500 = #14b8a6)
+ *   canvas    ruhiger Seitenhintergrund, surface = Weiß für Karten
+ *   ink-*     Text- und Linienstufen (ink-900 Text, ink-500 Sekundärtext, ink-200 Rahmen)
+ *
+ * Kontraste (WCAG 2.2 AA, gemessen): Weiß auf brand-600 5,2:1 · brand-700 auf Weiß 6,7:1 ·
+ * ink-500 auf canvas 5,1:1 · accent-600 auf Weiß 5,5:1 · navy auf accent-500 6,6:1.
+ * Türkis (accent-400/500) und brand-500 nie als Fließtext auf hellen Flächen verwenden.
+ *
+ * Wiederverwendbare Bausteine stehen unten als Klassen (.btn, .card, .eyebrow, .field …)
+ * und als React-Komponenten in components/ui/. Neue Seiten bitte daraus bauen statt
+ * Farben und Radien einzeln zu setzen.
+ *
+ * Schriften: Manrope (Überschriften) und Inter (Fließtext), per next/font beim Build
+ * heruntergeladen und vom eigenen Server ausgeliefert – keine Verbindung zu Google.
  */
 @theme {
-  --color-brand-50: #f2f5f9;
-  --color-brand-100: #e4eaf2;
-  --color-brand-200: #cbd6e4;
-  --color-brand-300: #a3b5cc;
-  --color-brand-400: #6f88a8;
-  --color-brand-500: #3d5c85;
-  --color-brand-600: #1d3a63;
-  --color-brand-700: #0b1f3a;
-  --color-brand-800: #142c4e;
-  --color-brand-900: #071528;
+  /* Action Blue */
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-200: #bfdbfe;
+  --color-brand-300: #93c5fd;
+  --color-brand-400: #60a5fa;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+  --color-brand-800: #1e40af;
+  --color-brand-900: #1e3a8a;
 
-  --color-ink-50: #f8fafc;
-  --color-ink-100: #f1f5f9;
+  /* Text und Linien */
+  --color-ink-50: #f4f7fb;
+  --color-ink-100: #eaeff5;
   --color-ink-200: #e2e8f0;
   --color-ink-300: #cbd5e1;
   --color-ink-400: #94a3b8;
-  --color-ink-500: #64748b;
+  --color-ink-500: #5b6b80;
   --color-ink-600: #475569;
   --color-ink-700: #334155;
   --color-ink-800: #1e293b;
-  --color-ink-900: #0f172a;
-  --color-ink-950: #020617;
+  --color-ink-900: #111827;
+  --color-ink-950: #071528;
 
-  --color-accent-400: #f4b740;
-  --color-accent-500: #e6a630;
-  --color-accent-600: #8a5a00;
-  --color-accent-700: #6e4800;
+  /* Türkis-Akzent */
+  --color-accent-50: #f0fdfa;
+  --color-accent-100: #ccfbf1;
+  --color-accent-300: #5eead4;
+  --color-accent-400: #2dd4bf;
+  --color-accent-500: #14b8a6;
+  --color-accent-600: #0f766e;
+  --color-accent-700: #115e59;
 
-  /* Semantische Navy/Gold-Tokens */
+  /* Semantische Tokens */
   --color-navy: #0b1f3a;
   --color-navy-800: #142c4e;
-  --color-gold: #f4b740;
-  --color-gold-600: #d99a1e;
-  --color-gold-50: #fff8e8;
-  --color-offwhite: #faf8f3;
-  --color-line: #dfe4e9;
-  --color-muted: #526071;
+  --color-navy-900: #071528;
+  --color-canvas: #f4f7fb;
+  --color-surface: #ffffff;
+  --color-line: #e2e8f0;
+  --color-muted: #5b6b80;
   --color-wa: #25d366;
+  --color-wa-ink: #0e7a5f;
   --color-danger: #d92d20;
 
-  --font-sans: var(--font-source-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-lexend), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: var(--font-heading), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 
-  --shadow-card: 0 1px 2px rgb(11 31 58 / 0.04), 0 12px 28px -16px rgb(11 31 58 / 0.18);
-  --shadow-card-hover: 0 2px 4px rgb(11 31 58 / 0.06), 0 20px 44px -18px rgb(11 31 58 / 0.28);
-  --shadow-glow: 0 0 0 4px rgb(244 183 64 / 0.22), 0 12px 32px -8px rgb(11 31 58 / 0.3);
+  /* max-w-6xl der Unterseiten = Seitenbreite von .container-page (1280 px) */
+  --container-6xl: 80rem;
+
+  --radius-card: 1.125rem;
+  --radius-control: 0.875rem;
+
+  --shadow-card: 0 1px 2px rgb(11 31 58 / 0.04), 0 8px 24px -12px rgb(11 31 58 / 0.12);
+  --shadow-card-hover: 0 2px 4px rgb(11 31 58 / 0.05), 0 18px 40px -18px rgb(11 31 58 / 0.24);
+  --shadow-elevated: 0 2px 6px rgb(11 31 58 / 0.05), 0 28px 60px -28px rgb(11 31 58 / 0.3);
+  --shadow-glow: 0 0 0 4px rgb(37 99 235 / 0.16), 0 12px 32px -10px rgb(37 99 235 / 0.35);
 }
 
 html {
   scroll-behavior: smooth;
+  /* Sprungziele nicht unter der fixierten Kopfzeile verstecken */
+  scroll-padding-top: 5.5rem;
 }
 
 body {
@@ -75,22 +99,22 @@ body {
 
 h1, h2, h3, h4 {
   font-family: var(--font-display);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.022em;
 }
 
-/* Sichtbarer Fokus für Tastaturnavigation: Navy-Ring mit weißem Innenabstand,
-   damit er auf hellen und dunklen Flächen gleichermaßen erkennbar ist. */
+/* Sichtbarer Fokus für Tastaturnavigation: blauer Ring mit weißem Innenabstand,
+   auf dunklen Flächen türkis. */
 :focus-visible {
-  outline: 3px solid var(--color-navy);
+  outline: 3px solid var(--color-brand-600);
   outline-offset: 2px;
   box-shadow: 0 0 0 2px #fff;
-  border-radius: 4px;
 }
 .bg-navy :focus-visible,
+.bg-navy-pattern :focus-visible,
 .bg-ink-900 :focus-visible,
 .bg-ink-950 :focus-visible,
 footer :focus-visible {
-  outline-color: var(--color-gold);
+  outline-color: var(--color-accent-300);
   box-shadow: none;
 }
 
@@ -105,7 +129,7 @@ footer :focus-visible {
   left: -9999px;
   top: 0;
   z-index: 100;
-  background: var(--color-ink-900);
+  background: var(--color-navy);
   color: #fff;
   padding: 0.75rem 1.25rem;
   border-radius: 0 0 0.5rem 0;
@@ -114,34 +138,161 @@ footer :focus-visible {
   left: 0;
 }
 
-/* Weiche Aurora-Blobs für Hero-/Header-Flächen */
-@keyframes blobdrift {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  33% { transform: translate(28px, -22px) scale(1.08); }
-  66% { transform: translate(-18px, 16px) scale(0.95); }
-}
-.blob {
-  position: absolute;
-  border-radius: 9999px;
-  filter: blur(70px);
-  pointer-events: none;
-  animation: blobdrift 16s ease-in-out infinite;
-}
-.blob-delayed { animation-delay: -8s; }
+/* ── Bausteine ─────────────────────────────────────────────────────────
+   Bewusst als einfache Klassen: funktionieren in Server- und Client-
+   Komponenten gleich. Sie liegen in der Ebene "components", damit
+   Utility-Klassen (hidden, md:flex, px-5 …) sie immer überschreiben können. */
+@layer components {
+  .container-page {
+    width: 100%;
+    max-width: 80rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+  @media (min-width: 640px) {
+    .container-page { padding-inline: 1.5rem; }
+  }
 
-/* Startseite: warmes Off-White mit sehr zurückhaltendem Lichtverlauf */
+  .eyebrow {
+    font-family: var(--font-display);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-brand-700);
+  }
+  .eyebrow-on-dark { color: var(--color-accent-300); }
+
+  .card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+  }
+  .card-interactive {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+  .card-interactive:hover {
+    transform: translateY(-2px);
+    border-color: var(--color-brand-300);
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    min-height: 3rem;
+    padding: 0.75rem 1.375rem;
+    border-radius: var(--radius-control);
+    border: 2px solid transparent;
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease,
+      box-shadow 0.18s ease, transform 0.18s ease;
+  }
+  .btn:active { transform: translateY(1px); }
+  .btn[disabled], .btn[aria-disabled="true"] { cursor: not-allowed; opacity: 0.6; }
+  .btn-lg { min-height: 3.5rem; padding-inline: 1.75rem; font-size: 1.0625rem; }
+  .btn-sm { min-height: 2.75rem; padding: 0.5rem 1rem; font-size: 0.9375rem; }
+  .btn-block { width: 100%; }
+
+  .btn-primary {
+    background: var(--color-brand-600);
+    color: #fff;
+    box-shadow: 0 1px 2px rgb(11 31 58 / 0.08), 0 10px 22px -12px rgb(37 99 235 / 0.65);
+  }
+  .btn-primary:hover { background: var(--color-brand-700); }
+
+  .btn-secondary {
+    background: #fff;
+    color: var(--color-navy);
+    border-color: var(--color-ink-300);
+  }
+  .btn-secondary:hover { border-color: var(--color-navy); background: var(--color-ink-50); }
+
+  .btn-navy { background: var(--color-navy); color: #fff; }
+  .btn-navy:hover { background: var(--color-navy-800); }
+
+  .btn-ghost { background: transparent; color: var(--color-ink-700); }
+  .btn-ghost:hover { background: var(--color-ink-100); color: var(--color-ink-900); }
+
+  /* WhatsApp: Markengrün mit dunkler Schrift – Weiß auf #25d366 wäre zu kontrastarm. */
+  .btn-wa { background: var(--color-wa); color: var(--color-navy); }
+  .btn-wa:hover { background: #1fbe5b; }
+
+  .btn-on-dark {
+    background: transparent;
+    color: #fff;
+    border-color: rgb(255 255 255 / 0.28);
+  }
+  .btn-on-dark:hover { border-color: #fff; background: rgb(255 255 255 / 0.06); }
+
+  /* Formularfelder: 16 px Schrift (kein Zoom auf iOS), mindestens 52 px hoch,
+     Rahmen mit 3:1 Kontrast zur Fläche. */
+  .field {
+    width: 100%;
+    min-height: 3.25rem;
+    padding: 0.8125rem 1rem;
+    border: 1.5px solid #8493a8;
+    border-radius: var(--radius-control);
+    background: #fff;
+    color: var(--color-ink-900);
+    font-size: 1rem;
+    line-height: 1.4;
+    outline: none;
+    transition: border-color 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
+  }
+  .field::placeholder { color: var(--color-ink-500); opacity: 1; }
+  .field:hover { border-color: var(--color-ink-600); }
+  .field:focus-visible,
+  .field:focus {
+    border-color: var(--color-brand-600);
+    box-shadow: 0 0 0 4px rgb(37 99 235 / 0.16);
+    outline: none;
+  }
+  .field[aria-invalid="true"] {
+    border-color: var(--color-danger);
+    background: #fef3f2;
+  }
+  .field[aria-invalid="true"]:focus { box-shadow: 0 0 0 4px rgb(217 45 32 / 0.16); }
+  .field-label {
+    display: block;
+    margin-bottom: 0.375rem;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-ink-900);
+  }
+  .field-hint { margin-top: 0.375rem; font-size: 0.875rem; color: var(--color-ink-500); }
+
+  /* Dunkler Abschnitt mit zwei sehr zurückhaltenden Lichtflecken */
+  .bg-navy-pattern {
+    background-color: var(--color-navy);
+    background-image:
+      radial-gradient(42rem 22rem at 88% -10%, rgb(37 99 235 / 0.34), transparent 62%),
+      radial-gradient(34rem 20rem at -6% 112%, rgb(20 184 166 / 0.2), transparent 60%);
+  }
+}
+
+/* Startseiten-Hero: kühler, heller Verlauf mit zwei sehr zurückhaltenden Lichtflecken */
 .bg-home {
   background:
-    radial-gradient(48rem 24rem at 50% -8%, rgb(244 183 64 / 0.10), transparent 60%),
-    var(--color-offwhite);
+    radial-gradient(52rem 30rem at 92% 8%, rgb(37 99 235 / 0.1), transparent 62%),
+    radial-gradient(40rem 26rem at 30% 38%, rgb(20 184 166 / 0.07), transparent 60%),
+    linear-gradient(180deg, #eef4fc 0%, var(--color-canvas) 100%);
 }
 
-/* Hero-Verlauf der Unterseiten: Off-White mit zurückhaltendem Gold-Licht */
+/* Hero-Verlauf der Unterseiten */
 .bg-hero {
   background:
-    radial-gradient(56rem 26rem at 85% -12%, rgb(244 183 64 / 0.12), transparent 60%),
-    radial-gradient(40rem 26rem at -10% 110%, rgb(11 31 58 / 0.05), transparent 60%),
-    linear-gradient(180deg, var(--color-offwhite) 0%, #ffffff 100%);
+    radial-gradient(56rem 26rem at 85% -12%, rgb(37 99 235 / 0.1), transparent 60%),
+    radial-gradient(40rem 26rem at -10% 110%, rgb(20 184 166 / 0.06), transparent 60%),
+    linear-gradient(180deg, #eef4fc 0%, #ffffff 100%);
 }
 
 /* Sanft schwebende Karten (Hero-Diagramm) */
@@ -192,9 +343,9 @@ footer :focus-visible {
 .animate-drive { animation: drivealong 3s ease-in-out infinite; }
 
 @keyframes pulsering {
-  0% { box-shadow: 0 0 0 0 rgb(244 183 64 / 0.45); }
-  70% { box-shadow: 0 0 0 12px rgb(244 183 64 / 0); }
-  100% { box-shadow: 0 0 0 0 rgb(244 183 64 / 0); }
+  0% { box-shadow: 0 0 0 0 rgb(37 99 235 / 0.4); }
+  70% { box-shadow: 0 0 0 12px rgb(37 99 235 / 0); }
+  100% { box-shadow: 0 0 0 0 rgb(37 99 235 / 0); }
 }
 .animate-pulsering { animation: pulsering 2.4s ease-out infinite; }
 

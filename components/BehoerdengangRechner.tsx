@@ -43,7 +43,7 @@ export default function BehoerdengangRechner() {
   const diff = selfTotal - (OUR_PRICE + OUR_PLATES);
 
   const inputClass =
-    "mt-1.5 w-full rounded-xl border border-ink-300 bg-white px-4 py-3 text-ink-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-200";
+    "field mt-1.5";
   const labelClass = "block font-display text-sm font-semibold text-ink-800";
 
   return (

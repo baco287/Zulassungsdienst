@@ -145,7 +145,7 @@ export default async function CityPage({
                 <div className="mt-5 flex flex-wrap items-center gap-4">
                   <Link
                     href="/auftrag/"
-                    className="inline-flex items-center gap-2 rounded-xl bg-brand-700 px-5 py-3 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-800"
+                    className="inline-flex items-center gap-2 rounded-xl bg-brand-600 px-5 py-3 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
                   >
                     Jetzt ohne Termin starten
                     <ArrowRight className="h-4 w-4" aria-hidden />
@@ -260,7 +260,7 @@ export default async function CityPage({
               )}
               <Link
                 href={`/auftrag/`}
-                className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-brand-700 px-5 py-3.5 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-800"
+                className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-brand-600 px-5 py-3.5 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
               >
                 Auftrag starten
                 <ArrowRight className="h-4 w-4" aria-hidden />

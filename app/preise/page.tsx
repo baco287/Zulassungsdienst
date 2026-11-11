@@ -67,7 +67,7 @@ export default function PreisePage() {
                           <th scope="row" className="px-5 py-4 text-left font-medium text-ink-900">
                             <Link
                               href={`/leistungen/${s.slug}/`}
-                              className="inline-block w-60 rounded-[6px] transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
+                              className="inline-block w-60 rounded-[6px] py-1 transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
                             >
                               {/* Kurzname, wo vorhanden: ein Kennzeichen wirkt nur
                                   als solches, wenn es nicht zum Fließtext ausufert.

@@ -8,7 +8,7 @@ export default function PrintButton({ label = "Vorlage drucken" }: { label?: str
     <button
       type="button"
       onClick={() => window.print()}
-      className="no-print flex cursor-pointer items-center gap-2 rounded-xl bg-brand-700 px-5 py-3 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-800"
+      className="no-print flex cursor-pointer items-center gap-2 rounded-xl bg-brand-600 px-5 py-3 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
     >
       <Printer className="h-4 w-4" aria-hidden />
       {label}

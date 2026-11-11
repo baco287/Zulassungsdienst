@@ -72,7 +72,7 @@ export default function SecurityCodeGuide({
                 className="h-auto w-full"
                 sizes="(min-width: 1024px) 360px, (min-width: 640px) 50vw, 100vw"
               />
-              <span className="absolute left-3 top-3 rounded-full bg-brand-700 px-3 py-1 font-display text-xs font-bold text-white">
+              <span className="absolute left-3 top-3 rounded-full bg-brand-600 px-3 py-1 font-display text-xs font-bold text-white">
                 Schritt {i + 1}
               </span>
             </div>
