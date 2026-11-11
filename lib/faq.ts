@@ -1,6 +1,10 @@
 import type { FaqItem } from "./types";
 import { P } from "./pricing";
 import { ZEIT } from "@/lib/betrieb";
+import { site } from "@/lib/site";
+
+/** Domain ohne Protokoll, z. B. "deutschezulassung.de". */
+const DOMAIN = site.contact.email.split("@")[1];
 
 export const faqItems: FaqItem[] = [
   {
@@ -74,5 +78,87 @@ export const faqItems: FaqItem[] = [
     answer:
       "Ja. Für gewerbliche Kunden mit regelmäßigem Volumen bieten wir Staffelpreise, Sammelabwicklung und feste Ansprechpartner. Fordern Sie einfach ein individuelles Angebot an.",
     category: "preise",
+  },
+  /* ───── Ergänzungen 11/2026: Fragen, die Kunden vor der Beauftragung typischerweise stellen ─────
+     Antworten nur aus belegten Projektangaben (Servicebedingungen, Widerrufsbelehrung,
+     config/betrieb.json). Offene Punkte (Haftung, Stornopauschale) stehen in
+     docs/seo/OWNER-DECISIONS.md und werden hier bewusst nicht beantwortet. */
+  {
+    question: "Welche Unterlagen brauche ich?",
+    answer:
+      "Das hängt vom Vorgang ab. Für eine Zulassung sind es in der Regel die Zulassungsbescheinigung Teil I bzw. Teil II, die eVB-Nummer Ihrer Kfz-Versicherung, ein SEPA-Mandat für die Kfz-Steuer und ein Ausweisdokument. Für eine Abmeldung genügen die Zulassungsbescheinigung Teil I und beide Kennzeichen mit freigelegten Sicherheitscodes. Die genaue Liste sehen Sie im Auftragsassistenten, sobald Sie Ihre Leistung gewählt haben.",
+    category: "dokumente",
+  },
+  {
+    question: "Muss ich einen Termin vereinbaren oder persönlich zur Zulassungsstelle?",
+    answer:
+      "Nein. Sie buchen keinen Termin und müssen nicht persönlich erscheinen. Ihre Unterlagen reichen Sie als Foto oder Scan ein, den Antrag stellen wir mit Ihrer Vollmacht bei der zuständigen Zulassungsbehörde. Sollte Ihr Vorgang ausnahmsweise nicht auf diesem Weg möglich sein, sagen wir Ihnen das, bevor Sie etwas beauftragen.",
+    category: "ablauf",
+  },
+  {
+    question: "Wann beginnt die Bearbeitung meines Auftrags?",
+    answer:
+      "Sobald drei Dinge vorliegen: Ihre Bestätigung des Festpreises, der Zahlungseingang und die vollständigen, lesbaren Unterlagen – samt Vollmacht, wo sie nötig ist. Erst dann reichen wir den Vorgang bei der Behörde ein. Ab diesem Zeitpunkt gelten auch unsere Zeitangaben.",
+    category: "ablauf",
+  },
+  {
+    question: "Ab wann darf ich mit dem Fahrzeug fahren?",
+    answer:
+      "Erst wenn das Fahrzeug zugelassen ist – die eVB-Nummer allein genügt nicht. Nach einer Online-Zulassung erhalten Sie von uns den vorläufigen Zulassungsnachweis. Mit ihm dürfen Sie im Inland bereits fahren, bis Plaketten und Papiere per Post bei Ihnen sind; die Kennzeichenschilder müssen dafür am Fahrzeug montiert sein. Wie lange der Nachweis gilt, steht auf dem Nachweis selbst.",
+    category: "ablauf",
+  },
+  {
+    question: "Kann ich den Auftrag am Smartphone erledigen?",
+    answer:
+      "Ja. Das Auftragsformular funktioniert auf dem Smartphone genauso wie am Computer. Ihre Unterlagen fotografieren Sie direkt mit der Kamera und laden die Bilder hoch – oder Sie schicken sie uns per WhatsApp.",
+    category: "ablauf",
+  },
+  {
+    question: "Was passiert, wenn Unterlagen oder Angaben fehlen?",
+    answer:
+      `Wir prüfen Ihre Unterlagen, bevor wir etwas bei der Behörde einreichen. Fehlt ein Dokument oder ist ein Foto nicht lesbar, melden wir uns bei Ihnen und sagen genau, was wir noch brauchen. Nachreichen können Sie über die Seite „Unterlagen hochladen“ oder per WhatsApp. Unsere Zeitangaben gelten ${ZEIT.bezug}.`,
+    category: "dokumente",
+  },
+  {
+    question: "Kann ich meinen Auftrag stornieren?",
+    answer:
+      "Ihre Anfrage ist kostenlos und unverbindlich – ein Auftrag entsteht erst, wenn Sie unsere Festpreis-Bestätigung annehmen. Danach haben Sie als Verbraucherin oder Verbraucher ein gesetzliches Widerrufsrecht von vierzehn Tagen. Haben wir auf Ihren Wunsch schon vor Ablauf dieser Frist begonnen, zahlen Sie nur den bis dahin erbrachten Teil; ist der Vorgang vollständig erledigt, kann das Widerrufsrecht vorzeitig erlöschen. Einzelheiten und ein Musterformular stehen in unserer Widerrufsbelehrung. Melden Sie sich am besten sofort, wenn sich bei Ihnen etwas ändert.",
+    category: "preise",
+  },
+  {
+    question: "Ich weiß nicht, welchen Vorgang ich brauche – was nun?",
+    answer:
+      "Kein Problem. Beschreiben Sie uns kurz Ihre Situation – etwa „umgezogen“, „Auto gekauft“ oder „Fahrzeug stilllegen“ – per WhatsApp, per E-Mail oder im Nachrichtenfeld des Auftragsformulars. Wir nennen Ihnen den passenden Vorgang und die nötigen Unterlagen, bevor Sie etwas beauftragen.",
+    category: "allgemein",
+  },
+  {
+    question: "Wann sind Sie erreichbar – auch am Wochenende?",
+    answer:
+      `Unsere Servicezeiten sind ${site.contact.hours}. Eine Anfrage können Sie jederzeit absenden, auch abends und am Wochenende – online oder per WhatsApp. Wir bearbeiten sie in unseren Servicezeiten. Die Zulassungsbehörden arbeiten an Werktagen; darauf beziehen sich auch unsere Zeitangaben.`,
+    category: "allgemein",
+  },
+  {
+    question: "Ist DeutscheZulassung eine Behörde?",
+    answer:
+      `Nein. DeutscheZulassung ist ein privater Zulassungsdienst der ${site.company.legalName}. Wir handeln in Ihrem Auftrag und mit Ihrer Vollmacht. Über jede Zulassung, Umschreibung oder Abmeldung entscheidet die zuständige Zulassungsbehörde.`,
+    category: "allgemein",
+  },
+  {
+    question: "Was ist der Unterschied zum i-Kfz-Portal der Zulassungsbehörde?",
+    answer:
+      "Im i-Kfz-Portal stellen Sie den Antrag selbst und zahlen nur die amtlichen Gebühren. Dafür müssen Sie sich elektronisch ausweisen – meist mit Online-Ausweisfunktion, PIN und AusweisApp – und alle Angaben selbst richtig eintragen. Bei uns geben Sie den Vorgang ab: Wir prüfen Ihre Unterlagen, stellen den Antrag mit Ihrer Vollmacht und beantworten Ihre Fragen, zum Festpreis. Wer das Portal sicher bedienen kann, kommt dort günstiger weg. Wer sich Zeit und Fehlversuche sparen möchte, ist bei uns richtig.",
+    category: "allgemein",
+  },
+  {
+    question: "Welche Fahrzeuge können Sie zulassen?",
+    answer:
+      "Pkw, Transporter, Anhänger und Krafträder laufen bei uns über denselben digitalen Ablauf. Bei einer Zulassung auf eine Firma benötigen wir zusätzlich den Handelsregisterauszug oder die Gewerbeanmeldung. Bei Importfahrzeugen oder anderen Besonderheiten fragen Sie am besten vorab kurz an – wir sagen Ihnen, ob und wie der Vorgang möglich ist.",
+    category: "allgemein",
+  },
+  {
+    question: "Woran erkenne ich echte Nachrichten von DeutscheZulassung?",
+    answer:
+      `Unsere Website erreichen Sie ausschließlich unter ${DOMAIN}. E-Mails kommen von Adressen mit der Endung @${DOMAIN}, WhatsApp-Nachrichten von der Nummer ${site.contact.phoneDisplay}. Jede Online-Anfrage erhält eine Referenz, die mit „DZ-“ beginnt. Rechnungen stellt die ${site.company.legalName} aus. Sind Sie unsicher, fragen Sie über die Kontaktdaten auf dieser Website nach, bevor Sie zahlen oder Unterlagen senden.`,
+    category: "allgemein",
   },
 ];

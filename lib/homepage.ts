@@ -245,8 +245,7 @@ export const faq = {
   items: [
     {
       question: "Welche Unterlagen brauche ich?",
-      answer:
-        "Das hängt vom Vorgang ab. Für eine Zulassung sind es in der Regel die Zulassungsbescheinigung Teil I bzw. Teil II, die eVB-Nummer Ihrer Kfz-Versicherung, ein SEPA-Mandat für die Kfz-Steuer und ein Ausweisdokument. Für eine Abmeldung genügen die Zulassungsbescheinigung Teil I und beide Kennzeichen mit freigelegten Sicherheitscodes. Die genaue Liste sehen Sie im Auftragsassistenten, sobald Sie Ihre Leistung gewählt haben.",
+      answer: ausFaq("Welche Unterlagen brauche ich?"),
     },
     {
       question: "Funktioniert die Zulassung ohne eID?",

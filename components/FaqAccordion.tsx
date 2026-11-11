@@ -12,8 +12,15 @@ interface AccordionItem {
  * Barrierefrei bedienbares Akkordeon: echte Schaltflächen mit aria-expanded,
  * Antwortbereich als benannte Region. Es ist immer höchstens ein Eintrag offen.
  */
-export default function FaqAccordion({ items }: { items: AccordionItem[] }) {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+export default function FaqAccordion({
+  items,
+  initialOpen = 0,
+}: {
+  items: AccordionItem[];
+  /** Anfangs aufgeklappter Eintrag; null = alle zu. */
+  initialOpen?: number | null;
+}) {
+  const [openIndex, setOpenIndex] = useState<number | null>(initialOpen);
   const baseId = useId();
 
   return (

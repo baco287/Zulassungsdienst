@@ -65,6 +65,10 @@ Laut offizieller LBV-FAQ schließt **Hamburg** „Vorgänge per Vollmacht“ onl
 | B14 | **Wunschkennzeichen 12 €** liegt unter der amtlichen Gebühr (12,80 €) | Bewusst entscheiden. USt-Behandlung der Gebühren mit der Steuerberatung klären. | `config/preise.json` |
 | B15 | **Wettbewerbervergleich mit Namen** (bundeszulassung24 u. a.) | Nur nach rechtlicher Prüfung (§ 6 UWG). Bis dahin anonymisierter Vergleich „Behörde / i-Kfz selbst / Zulassungsdienst“. | Sprint 3 |
 | B16 | **Analyse einschalten** (Plausible oder Matomo) | Ohne Analyse gibt es keine Conversion-Baseline. Beim Aktivieren die CSP in `public/.htaccess` um den Analyse-Host ergänzen (siehe `docs/TRACKING.md`). | Build-Variablen |
+| B17 | **Haftung:** Wer haftet, wenn ein Antrag wegen eines Fehlers bei uns scheitert oder sich verzögert? | Regelung in die Servicebedingungen aufnehmen und rechtlich prüfen lassen. Wettbewerber beantworten die Frage in ihrer FAQ; bei uns bleibt sie bis zur Entscheidung unbeantwortet. | Servicebedingungen, `lib/faq.ts` |
+| B18 | **Stornoregelung:** Feste Stornokosten nach Auftragsbestätigung oder nur das gesetzliche Widerrufsrecht? | Die FAQ nennt derzeit nur: Anfrage unverbindlich, Widerrufsrecht, anteilige Vergütung bei vorzeitigem Beginn. Eine eigene Pauschale nur nach rechtlicher Prüfung (hängt mit B10 zusammen). | Servicebedingungen, `lib/faq.ts` |
+| B19 | **Fahrzeugarten:** Gilt „Pkw, Transporter, Anhänger und Krafträder“ für alle Vorgänge? Was ist mit Importfahrzeugen, H- und E-Kennzeichen? | Die Aussage stand bisher nur auf der Duisburg-Seite und steht seit 11.11.2026 auch in der FAQ. Bestätigen oder einschränken. | `lib/faq.ts`, `lib/staedte.ts` |
+| B20 | **Erreichbarkeit:** Bleibt es bei den Servicezeiten aus `lib/site.ts`, oder gibt es Support am Wochenende? | Die FAQ sagt: Anfragen jederzeit, Bearbeitung in den Servicezeiten. Wochenend-Support nur bewerben, wenn er besetzt ist. | `lib/site.ts`, `lib/faq.ts` |
 
 ---
 
