@@ -6,9 +6,9 @@ Kundinnen und Kunden beauftragen über das Online-Formular (Unterlagen als Foto 
 
 ## Leistungen und Preise
 
-- [Neuzulassung](https://deutschezulassung.de/leistungen/neuzulassung/): Fabrikneues oder importiertes Fahrzeug erstmals zulassen – komplett digital, ohne Termin bei der Zulassungsstelle. 128,00 € inkl. amtlicher Gebühren und Versand, Kennzeichenschilder auf Wunsch zzgl. 29,00 €
+- [Neuzulassung](https://deutschezulassung.de/leistungen/neuzulassung/): Fabrikneues oder importiertes Fahrzeug erstmals zulassen – ohne eigenen Termin bei der Zulassungsstelle. 128,00 € inkl. amtlicher Gebühren und Versand, Kennzeichenschilder auf Wunsch zzgl. 29,00 €
 - [Ummeldung](https://deutschezulassung.de/leistungen/ummeldung/): Umzug oder neues Kennzeichen? Wir melden Ihr Fahrzeug auf die neue Adresse oder den neuen Zulassungsbezirk um. 128,00 € inkl. amtlicher Gebühren und Versand, Kennzeichenschilder auf Wunsch zzgl. 29,00 €
-- [Abmeldung](https://deutschezulassung.de/leistungen/abmeldung/): Fahrzeug verkauft, stillgelegt oder verschrottet? Die Außerbetriebsetzung erledigen wir noch am selben Werktag. 34,00 € komplett inkl. amtlicher Gebühren
+- [Abmeldung](https://deutschezulassung.de/leistungen/abmeldung/): Fahrzeug verkauft, stillgelegt oder verschrottet? Die Außerbetriebsetzung erledigen wir meist noch am selben Werktag. 34,00 € komplett inkl. amtlicher Gebühren
 - [Wiederzulassung](https://deutschezulassung.de/leistungen/wiederzulassung/): Abgemeldetes Fahrzeug wieder in Betrieb nehmen – wir kümmern uns um neue Kennzeichen und alle Formalitäten. 128,00 € inkl. amtlicher Gebühren und Versand, Kennzeichenschilder auf Wunsch zzgl. 29,00 €
 - [Halterwechsel / Umschreibung](https://deutschezulassung.de/leistungen/halterwechsel/): Gebrauchtwagen gekauft? Wir schreiben das Fahrzeug auf den neuen Halter um – auf Wunsch mit Wunschkennzeichen. 128,00 € inkl. amtlicher Gebühren und Versand, Kennzeichenschilder auf Wunsch zzgl. 29,00 €
 - [Adressänderung](https://deutschezulassung.de/leistungen/adressaenderung/): Nur die Anschrift hat sich geändert? Wir aktualisieren Ihre Fahrzeugpapiere schnell und unkompliziert. 64,00 € komplett inkl. amtlicher Gebühren
@@ -47,7 +47,6 @@ Kundinnen und Kunden beauftragen über das Online-Formular (Unterlagen als Foto 
 - [Zulassungsstelle Bonn](https://deutschezulassung.de/zulassungsstelle/bonn/)
 - [Zulassungsstelle Bottrop](https://deutschezulassung.de/zulassungsstelle/bottrop/)
 - [Zulassungsstelle Brandenburg an der Havel](https://deutschezulassung.de/zulassungsstelle/brandenburg-an-der-havel/)
-- [Zulassungsstelle Braunschweig](https://deutschezulassung.de/zulassungsstelle/braunschweig/)
 - [Zulassungsstelle Bremen](https://deutschezulassung.de/zulassungsstelle/bremen/)
 - [Zulassungsstelle Bremerhaven](https://deutschezulassung.de/zulassungsstelle/bremerhaven/)
 - [Zulassungsstelle Burgenlandkreis](https://deutschezulassung.de/zulassungsstelle/burgenlandkreis/)
@@ -104,7 +103,6 @@ Kundinnen und Kunden beauftragen über das Online-Formular (Unterlagen als Foto 
 - [Zulassungsstelle Kiel](https://deutschezulassung.de/zulassungsstelle/kiel/)
 - [Zulassungsstelle Koblenz](https://deutschezulassung.de/zulassungsstelle/koblenz/)
 - [Zulassungsstelle Köln](https://deutschezulassung.de/zulassungsstelle/koeln/)
-- [Zulassungsstelle Krefeld](https://deutschezulassung.de/zulassungsstelle/krefeld/)
 - [Zulassungsstelle Kreis Bergstraße](https://deutschezulassung.de/zulassungsstelle/kreis-bergstrasse/)
 - [Zulassungsstelle Kreis Borken](https://deutschezulassung.de/zulassungsstelle/kreis-borken/)
 - [Zulassungsstelle Kreis Coesfeld](https://deutschezulassung.de/zulassungsstelle/kreis-coesfeld/)
@@ -116,9 +114,7 @@ Kundinnen und Kunden beauftragen über das Online-Formular (Unterlagen als Foto 
 - [Zulassungsstelle Kreis Heinsberg](https://deutschezulassung.de/zulassungsstelle/kreis-heinsberg/)
 - [Zulassungsstelle Kreis Herford](https://deutschezulassung.de/zulassungsstelle/kreis-herford/)
 - [Zulassungsstelle Kreis Herzogtum Lauenburg](https://deutschezulassung.de/zulassungsstelle/kreis-herzogtum-lauenburg/)
-- [Zulassungsstelle Kreis Höxter](https://deutschezulassung.de/zulassungsstelle/kreis-hoexter/)
 - [Zulassungsstelle Kreis Kleve](https://deutschezulassung.de/zulassungsstelle/kreis-kleve/)
-- [Zulassungsstelle Kreis Lippe](https://deutschezulassung.de/zulassungsstelle/kreis-lippe/)
 - [Zulassungsstelle Kreis Mettmann](https://deutschezulassung.de/zulassungsstelle/kreis-mettmann/)
 - [Zulassungsstelle Kreis Minden-Lübbecke](https://deutschezulassung.de/zulassungsstelle/kreis-minden-luebbecke/)
 - [Zulassungsstelle Kreis Nordfriesland](https://deutschezulassung.de/zulassungsstelle/kreis-nordfriesland/)
@@ -140,12 +136,10 @@ Kundinnen und Kunden beauftragen über das Online-Formular (Unterlagen als Foto 
 - [Zulassungsstelle Kreis Viersen](https://deutschezulassung.de/zulassungsstelle/kreis-viersen/)
 - [Zulassungsstelle Kreis Warendorf](https://deutschezulassung.de/zulassungsstelle/kreis-warendorf/)
 - [Zulassungsstelle Kreis Wesel](https://deutschezulassung.de/zulassungsstelle/kreis-wesel/)
-- [Zulassungsstelle Kyffhäuserkreis](https://deutschezulassung.de/zulassungsstelle/kyffhaeuserkreis/)
 - [Zulassungsstelle Lahn-Dill-Kreis](https://deutschezulassung.de/zulassungsstelle/lahn-dill-kreis/)
 - [Zulassungsstelle Landau in der Pfalz](https://deutschezulassung.de/zulassungsstelle/landau/)
 - [Zulassungsstelle Landkreis Ahrweiler](https://deutschezulassung.de/zulassungsstelle/landkreis-ahrweiler/)
 - [Zulassungsstelle Landkreis Aichach-Friedberg](https://deutschezulassung.de/zulassungsstelle/landkreis-aichach-friedberg/)
-- [Zulassungsstelle Landkreis Altenburger Land](https://deutschezulassung.de/zulassungsstelle/landkreis-altenburger-land/)
 - [Zulassungsstelle Landkreis Altenkirchen (Westerwald)](https://deutschezulassung.de/zulassungsstelle/landkreis-altenkirchen/)
 - [Zulassungsstelle Landkreis Altötting](https://deutschezulassung.de/zulassungsstelle/landkreis-altoetting/)
 - [Zulassungsstelle Landkreis Alzey-Worms](https://deutschezulassung.de/zulassungsstelle/landkreis-alzey-worms/)
@@ -158,7 +152,6 @@ Kundinnen und Kunden beauftragen über das Online-Formular (Unterlagen als Foto 
 - [Zulassungsstelle Landkreis Aurich](https://deutschezulassung.de/zulassungsstelle/landkreis-aurich/)
 - [Zulassungsstelle Landkreis Bad Dürkheim](https://deutschezulassung.de/zulassungsstelle/landkreis-bad-duerkheim/)
 - [Zulassungsstelle Landkreis Bad Kissingen](https://deutschezulassung.de/zulassungsstelle/landkreis-bad-kissingen/)
-- [Zulassungsstelle Landkreis Bad Kreuznach](https://deutschezulassung.de/zulassungsstelle/landkreis-bad-kreuznach/)
 - [Zulassungsstelle Landkreis Bad Tölz-Wolfratshausen](https://deutschezulassung.de/zulassungsstelle/landkreis-bad-toelz-wolfratshausen/)
 - [Zulassungsstelle Landkreis Bamberg](https://deutschezulassung.de/zulassungsstelle/landkreis-bamberg/)
 - [Zulassungsstelle Landkreis Barnim](https://deutschezulassung.de/zulassungsstelle/landkreis-barnim/)
@@ -186,7 +179,6 @@ Kundinnen und Kunden beauftragen über das Online-Formular (Unterlagen als Foto 
 - [Zulassungsstelle Landkreis Dingolfing-Landau](https://deutschezulassung.de/zulassungsstelle/landkreis-dingolfing-landau/)
 - [Zulassungsstelle Landkreis Donau-Ries](https://deutschezulassung.de/zulassungsstelle/landkreis-donau-ries/)
 - [Zulassungsstelle Landkreis Ebersberg](https://deutschezulassung.de/zulassungsstelle/landkreis-ebersberg/)
-- [Zulassungsstelle Landkreis Eichsfeld](https://deutschezulassung.de/zulassungsstelle/landkreis-eichsfeld/)
 - [Zulassungsstelle Landkreis Eichstätt](https://deutschezulassung.de/zulassungsstelle/landkreis-eichstaett/)
 - [Zulassungsstelle Landkreis Elbe-Elster](https://deutschezulassung.de/zulassungsstelle/landkreis-elbe-elster/)
 - [Zulassungsstelle Landkreis Emmendingen](https://deutschezulassung.de/zulassungsstelle/landkreis-emmendingen/)
@@ -216,7 +208,6 @@ Kundinnen und Kunden beauftragen über das Online-Formular (Unterlagen als Foto 
 - [Zulassungsstelle Landkreis Günzburg](https://deutschezulassung.de/zulassungsstelle/landkreis-guenzburg/)
 - [Zulassungsstelle Landkreis Hameln-Pyrmont](https://deutschezulassung.de/zulassungsstelle/landkreis-hameln-pyrmont/)
 - [Zulassungsstelle Landkreis Harburg](https://deutschezulassung.de/zulassungsstelle/landkreis-harburg/)
-- [Zulassungsstelle Landkreis Harz](https://deutschezulassung.de/zulassungsstelle/landkreis-harz/)
 - [Zulassungsstelle Landkreis Haßberge](https://deutschezulassung.de/zulassungsstelle/landkreis-hassberge/)
 - [Zulassungsstelle Landkreis Havelland](https://deutschezulassung.de/zulassungsstelle/landkreis-havelland/)
 - [Zulassungsstelle Landkreis Heidekreis](https://deutschezulassung.de/zulassungsstelle/landkreis-heidekreis/)
@@ -271,7 +262,6 @@ Kundinnen und Kunden beauftragen über das Online-Formular (Unterlagen als Foto 
 - [Zulassungsstelle Landkreis Neustadt an der Waldnaab](https://deutschezulassung.de/zulassungsstelle/landkreis-neustadt-an-der-waldnaab/)
 - [Zulassungsstelle Landkreis Neuwied](https://deutschezulassung.de/zulassungsstelle/landkreis-neuwied/)
 - [Zulassungsstelle Landkreis Nienburg/Weser](https://deutschezulassung.de/zulassungsstelle/landkreis-nienburg-weser/)
-- [Zulassungsstelle Landkreis Nordhausen](https://deutschezulassung.de/zulassungsstelle/landkreis-nordhausen/)
 - [Zulassungsstelle Landkreis Nordsachsen](https://deutschezulassung.de/zulassungsstelle/landkreis-nordsachsen/)
 - [Zulassungsstelle Landkreis Nordwestmecklenburg](https://deutschezulassung.de/zulassungsstelle/landkreis-nordwestmecklenburg/)
 - [Zulassungsstelle Landkreis Northeim](https://deutschezulassung.de/zulassungsstelle/landkreis-northeim/)
@@ -293,7 +283,6 @@ Kundinnen und Kunden beauftragen über das Online-Formular (Unterlagen als Foto 
 - [Zulassungsstelle Landkreis Rastatt](https://deutschezulassung.de/zulassungsstelle/landkreis-rastatt/)
 - [Zulassungsstelle Landkreis Ravensburg](https://deutschezulassung.de/zulassungsstelle/landkreis-ravensburg/)
 - [Zulassungsstelle Landkreis Regen](https://deutschezulassung.de/zulassungsstelle/landkreis-regen/)
-- [Zulassungsstelle Landkreis Regensburg](https://deutschezulassung.de/zulassungsstelle/landkreis-regensburg/)
 - [Zulassungsstelle Landkreis Reutlingen](https://deutschezulassung.de/zulassungsstelle/landkreis-reutlingen/)
 - [Zulassungsstelle Landkreis Rhön-Grabfeld](https://deutschezulassung.de/zulassungsstelle/landkreis-rhoen-grabfeld/)
 - [Zulassungsstelle Landkreis Rosenheim](https://deutschezulassung.de/zulassungsstelle/landkreis-rosenheim/)
@@ -302,7 +291,6 @@ Kundinnen und Kunden beauftragen über das Online-Formular (Unterlagen als Foto 
 - [Zulassungsstelle Landkreis Roth](https://deutschezulassung.de/zulassungsstelle/landkreis-roth/)
 - [Zulassungsstelle Landkreis Rottal-Inn](https://deutschezulassung.de/zulassungsstelle/landkreis-rottal-inn/)
 - [Zulassungsstelle Landkreis Rottweil](https://deutschezulassung.de/zulassungsstelle/landkreis-rottweil/)
-- [Zulassungsstelle Landkreis Saalfeld-Rudolstadt](https://deutschezulassung.de/zulassungsstelle/landkreis-saalfeld-rudolstadt/)
 - [Zulassungsstelle Landkreis Saarlouis](https://deutschezulassung.de/zulassungsstelle/landkreis-saarlouis/)
 - [Zulassungsstelle Landkreis Sächsische Schweiz-Osterzgebirge](https://deutschezulassung.de/zulassungsstelle/landkreis-saechsische-schweiz-osterzgebirge/)
 - [Zulassungsstelle Landkreis Schaumburg](https://deutschezulassung.de/zulassungsstelle/landkreis-schaumburg/)
@@ -353,7 +341,6 @@ Kundinnen und Kunden beauftragen über das Online-Formular (Unterlagen als Foto 
 - [Zulassungsstelle Magdeburg](https://deutschezulassung.de/zulassungsstelle/magdeburg/)
 - [Zulassungsstelle Main-Kinzig-Kreis](https://deutschezulassung.de/zulassungsstelle/main-kinzig-kreis/)
 - [Zulassungsstelle Main-Tauber-Kreis](https://deutschezulassung.de/zulassungsstelle/main-tauber-kreis/)
-- [Zulassungsstelle Main-Taunus-Kreis](https://deutschezulassung.de/zulassungsstelle/main-taunus-kreis/)
 - [Zulassungsstelle Mainz](https://deutschezulassung.de/zulassungsstelle/mainz/)
 - [Zulassungsstelle Mannheim](https://deutschezulassung.de/zulassungsstelle/mannheim/)
 - [Zulassungsstelle Märkischer Kreis](https://deutschezulassung.de/zulassungsstelle/maerkischer-kreis/)
@@ -369,7 +356,6 @@ Kundinnen und Kunden beauftragen über das Online-Formular (Unterlagen als Foto 
 - [Zulassungsstelle Neustadt an der Weinstraße](https://deutschezulassung.de/zulassungsstelle/neustadt-weinstrasse/)
 - [Zulassungsstelle Nürnberg](https://deutschezulassung.de/zulassungsstelle/nuernberg/)
 - [Zulassungsstelle Oberbergischer Kreis](https://deutschezulassung.de/zulassungsstelle/oberbergischer-kreis/)
-- [Zulassungsstelle Oberhausen](https://deutschezulassung.de/zulassungsstelle/oberhausen/)
 - [Zulassungsstelle Odenwaldkreis](https://deutschezulassung.de/zulassungsstelle/odenwaldkreis/)
 - [Zulassungsstelle Offenbach am Main](https://deutschezulassung.de/zulassungsstelle/offenbach/)
 - [Zulassungsstelle Oldenburg (Oldb)](https://deutschezulassung.de/zulassungsstelle/oldenburg/)
@@ -396,7 +382,6 @@ Kundinnen und Kunden beauftragen über das Online-Formular (Unterlagen als Foto 
 - [Zulassungsstelle Rheinisch-Bergischer Kreis](https://deutschezulassung.de/zulassungsstelle/rheinisch-bergischer-kreis/)
 - [Zulassungsstelle Rosenheim](https://deutschezulassung.de/zulassungsstelle/rosenheim/)
 - [Zulassungsstelle Rostock](https://deutschezulassung.de/zulassungsstelle/rostock/)
-- [Zulassungsstelle Saale-Holzland-Kreis](https://deutschezulassung.de/zulassungsstelle/saale-holzland-kreis/)
 - [Zulassungsstelle Saale-Orla-Kreis](https://deutschezulassung.de/zulassungsstelle/saale-orla-kreis/)
 - [Zulassungsstelle Saalekreis](https://deutschezulassung.de/zulassungsstelle/saalekreis/)
 - [Zulassungsstelle Saarpfalz-Kreis](https://deutschezulassung.de/zulassungsstelle/saarpfalz-kreis/)
@@ -425,7 +410,6 @@ Kundinnen und Kunden beauftragen über das Online-Formular (Unterlagen als Foto 
 - [Zulassungsstelle Werra-Meißner-Kreis](https://deutschezulassung.de/zulassungsstelle/werra-meissner-kreis/)
 - [Zulassungsstelle Westerwaldkreis](https://deutschezulassung.de/zulassungsstelle/westerwaldkreis/)
 - [Zulassungsstelle Wetteraukreis](https://deutschezulassung.de/zulassungsstelle/wetteraukreis/)
-- [Zulassungsstelle Wiesbaden](https://deutschezulassung.de/zulassungsstelle/wiesbaden/)
 - [Zulassungsstelle Wilhelmshaven](https://deutschezulassung.de/zulassungsstelle/wilhelmshaven/)
 - [Zulassungsstelle Wismar](https://deutschezulassung.de/zulassungsstelle/wismar/)
 - [Zulassungsstelle Wolfsburg](https://deutschezulassung.de/zulassungsstelle/wolfsburg/)
@@ -438,7 +422,7 @@ Kundinnen und Kunden beauftragen über das Online-Formular (Unterlagen als Foto 
 ## Kfz-Zulassung nach Stadt
 
 - [Übersicht aller Städte](https://deutschezulassung.de/kfz-zulassung/)
-[Berlin](https://deutschezulassung.de/kfz-zulassung/berlin/) · [Hamburg](https://deutschezulassung.de/kfz-zulassung/hamburg/) · [München](https://deutschezulassung.de/kfz-zulassung/muenchen/) · [Köln](https://deutschezulassung.de/kfz-zulassung/koeln/) · [Frankfurt am Main](https://deutschezulassung.de/kfz-zulassung/frankfurt/) · [Stuttgart](https://deutschezulassung.de/kfz-zulassung/stuttgart/) · [Düsseldorf](https://deutschezulassung.de/kfz-zulassung/duesseldorf/) · [Leipzig](https://deutschezulassung.de/kfz-zulassung/leipzig/) · [Hannover](https://deutschezulassung.de/kfz-zulassung/hannover/) · [Nürnberg](https://deutschezulassung.de/kfz-zulassung/nuernberg/) · [Dortmund](https://deutschezulassung.de/kfz-zulassung/dortmund/) · [Essen](https://deutschezulassung.de/kfz-zulassung/essen/) · [Duisburg](https://deutschezulassung.de/kfz-zulassung/duisburg/) · [Bochum](https://deutschezulassung.de/kfz-zulassung/bochum/) · [Wuppertal](https://deutschezulassung.de/kfz-zulassung/wuppertal/) · [Bielefeld](https://deutschezulassung.de/kfz-zulassung/bielefeld/) · [Bonn](https://deutschezulassung.de/kfz-zulassung/bonn/) · [Münster](https://deutschezulassung.de/kfz-zulassung/muenster/) · [Mönchengladbach](https://deutschezulassung.de/kfz-zulassung/moenchengladbach/) · [Gelsenkirchen](https://deutschezulassung.de/kfz-zulassung/gelsenkirchen/) · [Bremen](https://deutschezulassung.de/kfz-zulassung/bremen/) · [Dresden](https://deutschezulassung.de/kfz-zulassung/dresden/) · [Chemnitz](https://deutschezulassung.de/kfz-zulassung/chemnitz/) · [Kiel](https://deutschezulassung.de/kfz-zulassung/kiel/) · [Halle (Saale)](https://deutschezulassung.de/kfz-zulassung/halle/) · [Magdeburg](https://deutschezulassung.de/kfz-zulassung/magdeburg/) · [Lübeck](https://deutschezulassung.de/kfz-zulassung/luebeck/) · [Rostock](https://deutschezulassung.de/kfz-zulassung/rostock/) · [Erfurt](https://deutschezulassung.de/kfz-zulassung/erfurt/) · [Braunschweig](https://deutschezulassung.de/kfz-zulassung/braunschweig/) · [Mannheim](https://deutschezulassung.de/kfz-zulassung/mannheim/) · [Karlsruhe](https://deutschezulassung.de/kfz-zulassung/karlsruhe/) · [Augsburg](https://deutschezulassung.de/kfz-zulassung/augsburg/) · [Wiesbaden](https://deutschezulassung.de/kfz-zulassung/wiesbaden/) · [Aachen](https://deutschezulassung.de/kfz-zulassung/aachen/) · [Freiburg im Breisgau](https://deutschezulassung.de/kfz-zulassung/freiburg/) · [Krefeld](https://deutschezulassung.de/kfz-zulassung/krefeld/) · [Mainz](https://deutschezulassung.de/kfz-zulassung/mainz/) · [Kassel](https://deutschezulassung.de/kfz-zulassung/kassel/) · [Oberhausen](https://deutschezulassung.de/kfz-zulassung/oberhausen/)
+[Berlin](https://deutschezulassung.de/kfz-zulassung/berlin/) · [Hamburg](https://deutschezulassung.de/kfz-zulassung/hamburg/) · [München](https://deutschezulassung.de/kfz-zulassung/muenchen/) · [Köln](https://deutschezulassung.de/kfz-zulassung/koeln/) · [Frankfurt am Main](https://deutschezulassung.de/kfz-zulassung/frankfurt/) · [Stuttgart](https://deutschezulassung.de/kfz-zulassung/stuttgart/) · [Düsseldorf](https://deutschezulassung.de/kfz-zulassung/duesseldorf/) · [Leipzig](https://deutschezulassung.de/kfz-zulassung/leipzig/) · [Hannover](https://deutschezulassung.de/kfz-zulassung/hannover/) · [Nürnberg](https://deutschezulassung.de/kfz-zulassung/nuernberg/) · [Dortmund](https://deutschezulassung.de/kfz-zulassung/dortmund/) · [Essen](https://deutschezulassung.de/kfz-zulassung/essen/) · [Bonn](https://deutschezulassung.de/kfz-zulassung/bonn/) · [Münster](https://deutschezulassung.de/kfz-zulassung/muenster/) · [Bremen](https://deutschezulassung.de/kfz-zulassung/bremen/) · [Dresden](https://deutschezulassung.de/kfz-zulassung/dresden/) · [Mannheim](https://deutschezulassung.de/kfz-zulassung/mannheim/) · [Karlsruhe](https://deutschezulassung.de/kfz-zulassung/karlsruhe/) · [Augsburg](https://deutschezulassung.de/kfz-zulassung/augsburg/)
 
 ## Gewerbekunden
 
