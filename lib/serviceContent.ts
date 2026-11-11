@@ -138,9 +138,9 @@ export const serviceContent: Record<string, ServiceContent> = {
   abmeldung: {
     sections: [
       {
-        heading: `Auto abmelden – meist noch ${ZEIT.abmeldung}`,
+        heading: `Auto abmelden – meist ${ZEIT.abmeldung}`,
         paragraphs: [
-          `Die Abmeldung (amtlich: Außerbetriebsetzung) ist der schnellste Zulassungsvorgang – und der einzige, der komplett ohne Versand auskommt. Sie legen die verdeckten Sicherheitscodes auf Ihrer Zulassungsbescheinigung Teil I und auf den Stempelplaketten Ihrer Kennzeichen frei, fotografieren beides und senden es uns. Wir setzen das Fahrzeug digital außer Betrieb und Sie erhalten die Abmeldebestätigung per E-Mail – in der Regel noch ${ZEIT.abmeldung}.`,
+          `Die Abmeldung (amtlich: Außerbetriebsetzung) ist der schnellste Zulassungsvorgang – und der einzige, der komplett ohne Versand auskommt. Sie legen die verdeckten Sicherheitscodes auf Ihrer Zulassungsbescheinigung Teil I und auf den Stempelplaketten Ihrer Kennzeichen frei, fotografieren beides und senden es uns. Wir setzen das Fahrzeug digital außer Betrieb und Sie erhalten die Abmeldebestätigung per E-Mail – in der Regel ${ZEIT.abmeldung}.`,
           "Wichtig: Ab der Abmeldung darf das Fahrzeug nicht mehr im öffentlichen Raum bewegt oder abgestellt werden. Steuer und Versicherung enden automatisch – die Behörde informiert Zoll und Versicherer.",
         ],
       },

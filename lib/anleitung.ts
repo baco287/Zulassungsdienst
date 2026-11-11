@@ -70,7 +70,7 @@ export const anleitungSteps: AnleitungStep[] = [
     title: "Wir führen die Zulassung durch",
     meta: `${ZEIT.zulassung} · DeutscheZulassung`,
     text: "Jetzt übernehmen wir: Wir wickeln Ihren Vorgang digital bei der zuständigen Zulassungsbehörde ab. Sobald die Zulassung steht, erhalten Sie von uns Ihre zugeteilte Kennzeichen-Kombination und – bei der Online-Zulassung – den vorläufigen Zulassungsnachweis, mit dem Sie bereits fahren dürfen.",
-    tip: `Abmeldungen sind meist noch ${ZEIT.abmeldung} erledigt – Sie erhalten die Abmeldebestätigung per E-Mail, und die Anleitung endet für Sie hier.`,
+    tip: `Abmeldungen sind meist ${ZEIT.abmeldung} erledigt – Sie erhalten die Abmeldebestätigung per E-Mail, und die Anleitung endet für Sie hier.`,
     image: {
       src: "/images/anleitung-zulassung-erledigt.webp",
       alt: "Laptop mit Bestätigungsanzeige neben Fahrzeugpapieren auf einem Schreibtisch",

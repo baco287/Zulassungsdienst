@@ -16,7 +16,7 @@ const packages = [
     priceNote: "Komplettpreis inkl. MwSt. und amtlicher Gebühren",
     features: [
       "Vollständig digital – kein Versand nötig",
-      `Meist noch ${ZEIT.abmeldung} erledigt`,
+      `Meist ${ZEIT.abmeldung} erledigt`,
       "Abmeldebestätigung per E-Mail",
       "Keine eID, keine AusweisApp nötig",
       "Support per WhatsApp & E-Mail",

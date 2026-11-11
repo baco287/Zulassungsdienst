@@ -121,7 +121,7 @@ export const ablauf = {
     {
       icon: MailCheck,
       title: "Bestätigung und Unterlagen erhalten",
-      text: "Papiere und gebuchte Kennzeichen werden versendet. Abmeldebestätigungen erhalten Sie digital.",
+      text: `Papiere und gebuchte Kennzeichenschilder kommen per Post – die Schilder meist in ${ZEIT.kennzeichenDativ}. Abmeldebestätigungen erhalten Sie digital.`,
     },
   ],
   mehr: { label: "Ablauf im Detail", href: "/ablauf/" },
@@ -193,7 +193,7 @@ export const preise = {
     {
       icon: MailCheck,
       title: "Versand",
-      text: "Der Versand der Dokumente ist enthalten, wo Dokumente verschickt werden. Die Abmeldung läuft digital – ohne Versand.",
+      text: `Der Versand der Dokumente ist enthalten, wo Dokumente verschickt werden. Neue Kennzeichenschilder brauchen per Post meist ${ZEIT.kennzeichen}. Die Abmeldung läuft digital – ohne Versand.`,
     },
     {
       icon: ClipboardList,

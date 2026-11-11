@@ -48,7 +48,7 @@ export default function ServicebedingungenPage() {
         <p>
           Auf die Bearbeitungsdauer und Entscheidung der Behörde haben wir keinen Einfluss. Unsere Zeitangaben (in der
           Regel {ZEIT.zulassung} ab vollständigen Unterlagen und Zahlungseingang, Abmeldungen meist {ZEIT.abmeldung}) sind Erfahrungswerte, keine
-          Garantie.
+          Garantie. Neue Kennzeichenschilder kommen per Post, in der Regel in {ZEIT.kennzeichenDativ}.
         </p>
       </section>
 

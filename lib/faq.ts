@@ -1,6 +1,6 @@
 import type { FaqItem } from "./types";
 import { P } from "./pricing";
-import { ZEIT } from "@/lib/betrieb";
+import { KENNZEICHEN_HINWEIS, ZEIT } from "@/lib/betrieb";
 import { site } from "@/lib/site";
 
 /** Domain ohne Protokoll, z. B. "deutschezulassung.de". */
@@ -10,7 +10,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "Wie funktioniert die Online-Zulassung über DeutscheZulassung?",
     answer:
-      `Sie wählen Ihre Leistung aus, übermitteln uns Ihre Unterlagen digital (Fotos oder Scans genügen) und erteilen uns eine Vollmacht. Wir prüfen alles, führen den Vorgang bei der zuständigen Zulassungsbehörde durch und senden Ihnen Kennzeichen und Papiere zu – bei Abmeldungen erhalten Sie die Bestätigung meist noch ${ZEIT.abmeldung} per E-Mail.`,
+      `Sie wählen Ihre Leistung aus, übermitteln uns Ihre Unterlagen digital (Fotos oder Scans genügen) und erteilen uns eine Vollmacht. Wir prüfen alles, führen den Vorgang bei der zuständigen Zulassungsbehörde durch und senden Ihnen Kennzeichen und Papiere zu – bei Abmeldungen erhalten Sie die Bestätigung meist ${ZEIT.abmeldung} per E-Mail.`,
     category: "ablauf",
   },
   {
@@ -28,7 +28,13 @@ export const faqItems: FaqItem[] = [
   {
     question: "Wie lange dauert eine Zulassung?",
     answer:
-      `Abmeldungen erledigen wir in der Regel ${ZEIT.abmeldung}. Neuzulassungen, Ummeldungen und Halterwechsel dauern je nach Behörde meist ${ZEIT.zulassung} zuzüglich Versand der Kennzeichen und Papiere.`,
+      `Die Bearbeitung Ihres Vorgangs dauert meist ${ZEIT.zulassung}, innerhalb unserer Servicezeiten (${site.contact.hours}). Über jeden Antrag entscheidet die zuständige Behörde; in Einzelfällen kann es deshalb länger dauern. Papiere und neue Kennzeichenschilder kommen per Post – die Schilder in der Regel in ${ZEIT.kennzeichenDativ}.`,
+    category: "ablauf",
+  },
+  {
+    question: "Wann kommen meine Kennzeichen?",
+    answer:
+      `${KENNZEICHEN_HINWEIS.text} ${KENNZEICHEN_HINWEIS.eilig} Behalten Sie Ihr bisheriges Kennzeichen, brauchen Sie keine neuen Schilder.`,
     category: "ablauf",
   },
   {
@@ -104,7 +110,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "Ab wann darf ich mit dem Fahrzeug fahren?",
     answer:
-      "Erst wenn das Fahrzeug zugelassen ist – die eVB-Nummer allein genügt nicht. Nach einer Online-Zulassung erhalten Sie von uns den vorläufigen Zulassungsnachweis. Mit ihm dürfen Sie im Inland bereits fahren, bis Plaketten und Papiere per Post bei Ihnen sind; die Kennzeichenschilder müssen dafür am Fahrzeug montiert sein. Wie lange der Nachweis gilt, steht auf dem Nachweis selbst.",
+      `Erst wenn das Fahrzeug zugelassen ist und die Kennzeichenschilder montiert sind – die eVB-Nummer allein genügt nicht. Nach einer Online-Zulassung erhalten Sie von uns den vorläufigen Zulassungsnachweis. Mit ihm dürfen Sie im Inland bereits fahren, bis Plaketten und Papiere per Post bei Ihnen sind; wie lange er gilt, steht auf dem Nachweis selbst. ${KENNZEICHEN_HINWEIS.kurz} ${KENNZEICHEN_HINWEIS.eilig}`,
     category: "ablauf",
   },
   {

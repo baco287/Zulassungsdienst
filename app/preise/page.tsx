@@ -7,6 +7,7 @@ import Reveal from "@/components/Reveal";
 import { categoryLabels, sortedServices } from "@/lib/services";
 import { euro, euroRange, officialFees, P, plateCosts, plateFee, PRICE_DATE, priceDisclaimer, wunschkennzeichenHinweis } from "@/lib/pricing";
 import PriceCalculator from "@/components/PriceCalculator";
+import { ZEIT } from "@/lib/betrieb";
 import type { ServiceCategory } from "@/lib/types";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
@@ -31,7 +32,9 @@ export default function PreisePage() {
             <strong>Transparent kalkuliert:</strong> Bei unseren Zulassungsleistungen sind
             amtliche Gebühren und versicherter Versand bereits enthalten. Neue
             Kennzeichenschilder kommen, falls benötigt, mit {P.kennzeichen} pro Paar dazu –
-            keine versteckten Kosten, keine Überraschungen.
+            keine versteckten Kosten, keine Überraschungen. Die Bearbeitung dauert meist{" "}
+            {ZEIT.zulassung}; neue Kennzeichenschilder kommen per Post, in der Regel in{" "}
+            {ZEIT.kennzeichenDativ}.
           </p>
         </div>
       </section>

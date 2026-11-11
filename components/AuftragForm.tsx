@@ -15,6 +15,7 @@ import {
   Lock,
   Mail,
   Pencil,
+  Truck,
 } from "lucide-react";
 import { sortedServices, getService } from "@/lib/services";
 import {
@@ -25,7 +26,7 @@ import {
   P,
   PRICE_CONFIG,
 } from "@/lib/pricing";
-import { dauerKurz } from "@/lib/betrieb";
+import { dauerKurz, ZEIT } from "@/lib/betrieb";
 import { site, whatsAppLink } from "@/lib/site";
 import {
   buildMessage,
@@ -399,7 +400,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                     </span>
                     <span className="mt-0.5 block text-sm leading-snug text-ink-600">
                       {PRICE_CONFIG.zusatzleistungen.kennzeichenschilder.bezeichnung.replace(/^Kennzeichenschilder \(|\)$/g, "")}.
-                      Nicht nötig, wenn Sie Ihr Kennzeichen behalten oder die Schilder selbst prägen lassen.
+                      Lieferung per Post, meist in {ZEIT.kennzeichenDativ}. Nicht nötig, wenn Sie Ihr Kennzeichen behalten oder die Schilder selbst prägen lassen.
                     </span>
                   </span>
                 </label>
@@ -466,6 +467,12 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
               <li className="flex items-start gap-2">
                 <Clock3 className="mt-0.5 h-4 w-4 shrink-0 text-accent-600" aria-hidden />
                 Bearbeitung: {dauerKurz(values.serviceSlug)}
+              </li>
+            )}
+            {cfg?.schilderMoeglich && extras.schilder && (
+              <li className="flex items-start gap-2">
+                <Truck className="mt-0.5 h-4 w-4 shrink-0 text-accent-600" aria-hidden />
+                Kennzeichenschilder per Post: meist {ZEIT.kennzeichen}
               </li>
             )}
           </ul>

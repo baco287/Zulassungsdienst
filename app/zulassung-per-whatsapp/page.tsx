@@ -92,7 +92,7 @@ const faq = [
   {
     question: "Welche Vorgänge kann ich per Chat erledigen?",
     answer:
-      `Alle: Abmeldung, Ummeldung, Halterwechsel, Neuzulassung, Wiederzulassung sowie Wunsch-, Saison- und Kurzzeitkennzeichen. Am schnellsten geht die Abmeldung – sie ist vollständig digital und meist noch ${ZEIT.abmeldung} erledigt.`,
+      `Alle: Abmeldung, Ummeldung, Halterwechsel, Neuzulassung, Wiederzulassung sowie Wunsch-, Saison- und Kurzzeitkennzeichen. Am schnellsten geht die Abmeldung – sie ist vollständig digital und meist ${ZEIT.abmeldung} erledigt.`,
   },
   {
     question: "Sind meine Daten und Ausweisfotos im Chat sicher?",
@@ -270,7 +270,7 @@ export default function WhatsAppZulassungPage() {
           </h2>
           <p className="mt-3 max-w-2xl text-lg text-ink-600">
             Alle unsere Leistungen lassen sich per Messenger beauftragen. Am
-            schnellsten geht die Abmeldung – oft noch {ZEIT.abmeldung}.
+            schnellsten geht die Abmeldung – oft {ZEIT.abmeldung}.
           </p>
 
           <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

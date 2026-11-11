@@ -80,7 +80,7 @@ const faq = [
   {
     question: "Wie lange dauert es?",
     answer:
-      `Meist ${ZEIT.zulassung}, dazu der Versand. Eine Abmeldung ist oft noch ${ZEIT.abmeldung} durch.`,
+      `Meist ${ZEIT.zulassung}, dazu der Versand. Eine Abmeldung ist oft ${ZEIT.abmeldung} durch.`,
   },
   {
     question: "Reichen Handyfotos wirklich?",
@@ -191,7 +191,7 @@ export default function MaxxPage() {
             <b className="text-accent-400">{P.zulassung}</b> inkl. Gebühren – Schilder zzgl. {P.kennzeichen}
           </span>
           <span>
-            <b className="text-accent-400">{ZEIT.zulassung.split(" ")[0]}</b> Werktage
+            <b className="text-accent-400">{ZEIT.zulassung.split(" ")[0]}</b> {ZEIT.zulassung.split(" ")[1]} Bearbeitung
           </span>
           <span>
             <b className="text-accent-400">0</b> Behördengänge

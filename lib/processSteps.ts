@@ -27,7 +27,7 @@ export const processSteps = [
   },
   {
     title: "Kennzeichen & Dokumente kommen zu Ihnen",
-    text: "Fertige Papiere und geprägte, gesiegelte Kennzeichen werden versichert versendet oder – regional – persönlich vorbeigebracht.",
+    text: `Fertige Papiere und geprägte, gesiegelte Kennzeichen werden versichert versendet oder – regional – persönlich vorbeigebracht. Neue Kennzeichenschilder brauchen per Post meist ${ZEIT.kennzeichen}.`,
   },
   {
     title: "Fertig – ohne einen einzigen Behördengang",

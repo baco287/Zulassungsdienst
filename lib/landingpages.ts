@@ -151,7 +151,7 @@ export const landingPages: LandingPage[] = [
         },
         {
           title: "Papiere und Kennzeichen erhalten",
-          text: `In der Regel ${ZEIT.zulassung} nach Eingang der vollständigen Unterlagen geht alles in den Versand. Geprägte Kennzeichenschilder liefern wir auf Wunsch mit.`,
+          text: `In der Regel ist die Zulassung ${ZEIT.zulassung} nach Eingang der vollständigen Unterlagen erledigt. Geprägte Kennzeichenschilder liefern wir auf Wunsch mit – per Post, meist in ${ZEIT.kennzeichenDativ}.`,
         },
       ],
     },
@@ -190,7 +190,7 @@ export const landingPages: LandingPage[] = [
         heading: "Wer über Ihre Zulassung entscheidet",
         paragraphs: [
           "DeutscheZulassung ist ein privater Dienstleister und keine Behörde – ein Angebot der Volt Gas UG (haftungsbeschränkt) aus Berlin, bundesweit tätig. Wir bereiten Ihren Antrag vor und reichen ihn ein. Die Entscheidung über die Zulassung trifft immer die zuständige Zulassungsbehörde.",
-          `Deshalb versprechen wir keine Zulassung in Minuten, sondern nennen eine realistische Dauer: in der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, zuzüglich Versand. Erreichbar sind wir Mo–Fr von 8:00 bis 18:00 Uhr per WhatsApp, Telefon und E-Mail.`,
+          `Eine Garantie für die Dauer gibt es deshalb nicht. Unser Erfahrungswert: in der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, ${ZEIT.versand}. Erreichbar sind wir Mo–Fr von 8:00 bis 18:00 Uhr per WhatsApp, Telefon und E-Mail.`,
         ],
       },
     ],
@@ -285,7 +285,7 @@ export const landingPages: LandingPage[] = [
         },
         {
           title: "Bestätigung erhalten",
-          text: `Wir reichen die Abmeldung bei der zuständigen Zulassungsbehörde ein, meist noch ${ZEIT.abmeldung}, und senden Ihnen die Abmeldebestätigung zu.`,
+          text: `Wir reichen die Abmeldung bei der zuständigen Zulassungsbehörde ein, meist ${ZEIT.abmeldung}, und senden Ihnen die Abmeldebestätigung zu.`,
         },
       ],
     },
@@ -831,7 +831,7 @@ export const landingPages: LandingPage[] = [
       {
         heading: "Was ein Zulassungsdienst leistet – und was nicht",
         paragraphs: [
-          "DeutscheZulassung ist ein privater Dienstleister, keine Behörde. Wir nehmen Ihre Unterlagen entgegen, fragen nach, wenn etwas fehlt, und reichen den Antrag bei der zuständigen Zulassungsbehörde ein. Die Entscheidung über die Zulassung trifft die Behörde – eine Zulassung „in Minuten“ versprechen wir deshalb nicht.",
+          "DeutscheZulassung ist ein privater Dienstleister, keine Behörde. Wir nehmen Ihre Unterlagen entgegen, fragen nach, wenn etwas fehlt, und reichen den Antrag bei der zuständigen Zulassungsbehörde ein. Die Entscheidung über die Zulassung trifft die Behörde – unsere Zeitangaben sind deshalb Erfahrungswerte und keine Garantie.",
           "Ihre feste Ansprechperson erreichen Sie Mo–Fr von 8:00 bis 18:00 Uhr per WhatsApp, Telefon und E-Mail.",
         ],
       },
@@ -992,7 +992,7 @@ export const landingPages: LandingPage[] = [
         paragraphs: [
           "DeutscheZulassung ist ein Angebot der Volt Gas UG (haftungsbeschränkt) mit Sitz in Berlin und bundesweit tätig. Sie beauftragen über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung.",
           `Eine Zulassung kostet ${P.zulassung} inklusive amtlicher Gebühren und Versand, eine Abmeldung ${P.abmeldung} inklusive Gebühren. Kennzeichenschilder für ${P.kennzeichen} pro Paar und den Wunschkennzeichen-Service für ${P.wunschkennzeichen} (amtliche Gebühr enthalten) wählen Sie nur, wenn Sie sie brauchen.`,
-          `Ihre feste Ansprechperson erreichen Sie Mo–Fr von 8:00 bis 18:00 Uhr per WhatsApp, Telefon und E-Mail. Und weil die Entscheidung bei der Behörde liegt, nennen wir eine realistische Dauer statt eines Versprechens: in der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, zuzüglich Versand.`,
+          `Ihre feste Ansprechperson erreichen Sie Mo–Fr von 8:00 bis 18:00 Uhr per WhatsApp, Telefon und E-Mail. Und weil die Entscheidung bei der Behörde liegt, nennen wir einen Erfahrungswert statt einer Garantie: in der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, ${ZEIT.versand}.`,
         ],
       },
     ],

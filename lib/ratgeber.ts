@@ -70,7 +70,7 @@ export const guides: Guide[] = [
           rows: [
             ["Voraussetzungen", "eID-Ausweis mit PIN, Sicherheitscodes, ePayment", "Termin (oft Wochen Vorlauf)", "keine – Fotos der Unterlagen genügen"],
             ["Zeitaufwand", "30–60 Min., wenn alles klappt", "halber Tag inkl. Anfahrt/Wartezeit", "ca. 10 Min. für die Beauftragung"],
-            ["Dauer bis zur Zulassung", "sofort (vorläufiger Nachweis), Plaketten per Post", "am Termin selbst", `${ZEIT.zulassung} + Versand`],
+            ["Dauer bis zur Zulassung", "sofort (vorläufiger Nachweis), Plaketten per Post", "am Termin selbst", `meist ${ZEIT.zulassung}, Schilder per Post in ${ZEIT.kennzeichenDativ}`],
             ["Gesamtkosten (Zulassung)", euroRange(addRanges(officialFees.onlineRegistration, plateCosts)), euroRange(addRanges(officialFees.counterRegistration, plateCosts)), `${P.zulassung} + ggf. Kennzeichen`],
             ["Scheitert häufig an …", "eID-PIN, alten Papieren, Portal-Fehlern", "Terminmangel", "–"],
           ],
@@ -284,7 +284,7 @@ export const guides: Guide[] = [
           "Sicherheitscodes der Stempelplaketten auf beiden Kennzeichen freilegen",
           "Bei Verschrottung: Verwertungsnachweis des zertifizierten Demontagebetriebs bereithalten",
           "Codes und Dokumente fotografieren und an den Zulassungsdienst übermitteln – oder selbst im i-Kfz-Portal abmelden",
-          `Abmeldebestätigung erhalten (bei DeutscheZulassung in der Regel noch ${ZEIT.abmeldung} per E-Mail)`,
+          `Abmeldebestätigung erhalten (bei DeutscheZulassung in der Regel ${ZEIT.abmeldung} per E-Mail)`,
         ],
       },
       {
@@ -298,7 +298,7 @@ export const guides: Guide[] = [
       {
         question: "Was kostet die Abmeldung eines Autos?",
         answer:
-          `Die amtliche Gebühr liegt online bei ${euroRange(officialFees.deregistrationOnline)} und am Schalter bei ${euroRange(officialFees.deregistrationCounter)}, je nach Behörde. Über DeutscheZulassung kostet die komplette Abwicklung ${P.abmeldung} inklusive Gebühren – meist noch ${ZEIT.abmeldung} erledigt.`,
+          `Die amtliche Gebühr liegt online bei ${euroRange(officialFees.deregistrationOnline)} und am Schalter bei ${euroRange(officialFees.deregistrationCounter)}, je nach Behörde. Über DeutscheZulassung kostet die komplette Abwicklung ${P.abmeldung} inklusive Gebühren – meist ${ZEIT.abmeldung} erledigt.`,
       },
       {
         question: "Kann ich ein Auto ohne Kennzeichen abmelden?",
@@ -591,7 +591,7 @@ export const guides: Guide[] = [
       {
         heading: "Option 3: Zulassungsdienst – der Weg, der immer funktioniert",
         paragraphs: [
-          `Ein Zulassungsdienst braucht weder Ihren Termin noch Ihre eID: Sie fotografieren die Unterlagen, erteilen eine digitale Vollmacht, und der Dienst führt den Vorgang bei der Behörde durch – über eigene Zugänge, unabhängig von der öffentlichen Terminvergabe. Bei DeutscheZulassung startet Ihr Vorgang sofort nach Auftragseingang; die Zulassung ist in der Regel in ${ZEIT.zulassungDativ} erledigt, Abmeldungen meist noch ${ZEIT.abmeldung}.`,
+          `Ein Zulassungsdienst braucht weder Ihren Termin noch Ihre eID: Sie fotografieren die Unterlagen, erteilen eine digitale Vollmacht, und der Dienst führt den Vorgang bei der Behörde durch – über eigene Zugänge, unabhängig von der öffentlichen Terminvergabe. Bei DeutscheZulassung startet Ihr Vorgang sofort nach Auftragseingang; die Zulassung ist in der Regel in ${ZEIT.zulassungDativ} erledigt, Abmeldungen meist ${ZEIT.abmeldung}.`,
           `Das kostet mit ${P.zulassung} zzgl. ggf. ${P.kennzeichen} für Kennzeichen mehr als der Schalter – dafür entfallen Terminsuche, Anfahrt und Wartezeit vollständig. Gerade wenn das neue Auto schon bezahlt vor der Tür steht, ist das oft der Unterschied zwischen „fährt diese Woche“ und „steht noch einen Monat“.`,
         ],
       },
@@ -1014,7 +1014,7 @@ export const guides: Guide[] = [
         paragraphs: [
           "Die Abmeldung vor der Übergabe ist der Weg mit dem klarsten Schnitt. Ab dem Tag der Außerbetriebsetzung zahlen Sie weder Kfz-Steuer noch Versicherungsbeiträge, und mit Ihrem Kennzeichen kann niemand mehr fahren. Eine Verkaufsmeldung an die Behörde entfällt, weil die Meldepflicht für bereits abgemeldete Fahrzeuge nicht gilt.",
           "Der Nachteil liegt beim Käufer: Ein abgemeldetes Auto darf nicht am öffentlichen Straßenverkehr teilnehmen. Für Probefahrt und Heimweg braucht er ein Kurzzeitkennzeichen, einen Transport auf dem Anhänger oder eine Zulassung auf seinen Namen, bevor er das Auto abholt. Planen Sie das bei Preisverhandlung und Übergabetermin mit ein.",
-          `Übergeben Sie dem Käufer alle Papiere: beide Teile der Zulassungsbescheinigung – auch eine nach der Online-Abmeldung entwertete ZB I, denn sie wird für die spätere Wiederzulassung gebraucht – sowie die Abmeldebestätigung. Die Abmeldung selbst übernimmt DeutscheZulassung für ${P.abmeldung} inklusive amtlicher Gebühren, meist noch ${ZEIT.abmeldung}.`,
+          `Übergeben Sie dem Käufer alle Papiere: beide Teile der Zulassungsbescheinigung – auch eine nach der Online-Abmeldung entwertete ZB I, denn sie wird für die spätere Wiederzulassung gebraucht – sowie die Abmeldebestätigung. Die Abmeldung selbst übernimmt DeutscheZulassung für ${P.abmeldung} inklusive amtlicher Gebühren, meist ${ZEIT.abmeldung}.`,
         ],
       },
       {

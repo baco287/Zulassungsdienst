@@ -134,7 +134,7 @@ export default async function CityPage({
                   {[
                     "Sofort-Start statt Terminsuche – beauftragen Sie jetzt, wir legen los",
                     "Kein Personalausweis mit Online-Funktion (eID) nötig",
-                    `Zulassung in ${ZEIT.zulassungDativ} ${ZEIT.bezug}, ${ZEIT.versand}; Abmeldung meist ${ZEIT.abmeldung}`,
+                    `Bearbeitung meist ${ZEIT.zulassung} ${ZEIT.bezug}, ${ZEIT.versand}`,
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-ink-700">
                       <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" aria-hidden />

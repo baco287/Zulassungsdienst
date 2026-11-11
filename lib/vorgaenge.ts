@@ -35,7 +35,7 @@ export const vorgaenge: readonly Vorgang[] = [
   {
     slug: "abmeldung",
     label: "Abmeldung",
-    description: `Fahrzeug außer Betrieb setzen – meist noch ${ZEIT.abmeldung}, ganz ohne Versand.`,
+    description: `Fahrzeug außer Betrieb setzen – meist ${ZEIT.abmeldung}, ganz ohne Versand.`,
   },
   {
     slug: "wiederzulassung",

@@ -42,7 +42,7 @@ const rechnerFaq = [
   {
     question: "Bekomme ich Steuer zurück, wenn ich mein Auto abmelde?",
     answer:
-      `Ja. Mit der Außerbetriebsetzung endet die Steuerpflicht taggenau; zu viel gezahlte Beträge erstattet das Hauptzollamt automatisch. Die Abmeldung erledigen wir meist noch ${ZEIT.abmeldung}.`,
+      `Ja. Mit der Außerbetriebsetzung endet die Steuerpflicht taggenau; zu viel gezahlte Beträge erstattet das Hauptzollamt automatisch. Die Abmeldung erledigen wir meist ${ZEIT.abmeldung}.`,
   },
 ];
 

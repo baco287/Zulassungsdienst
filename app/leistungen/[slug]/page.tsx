@@ -21,6 +21,7 @@ import { site, whatsAppLink } from "@/lib/site";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
 import { getCatalogEntry, preisBestandteile, serviceJsonLd as serviceJsonLd_ } from "@/lib/catalog";
 import { dauerKurz } from "@/lib/betrieb";
+import KennzeichenHinweis from "@/components/KennzeichenHinweis";
 import TrackedLink from "@/components/TrackedLink";
 import TrackView from "@/components/TrackView";
 
@@ -128,6 +129,7 @@ export default async function ServiceDetailPage({
                   <Clock className="h-4 w-4 text-brand-700" aria-hidden />
                   Typische Dauer: <strong>{service.duration}</strong>
                 </p>
+                {eintrag?.kennzeichen.moeglich && <KennzeichenHinweis className="mt-6" />}
               </div>
             </Reveal>
 

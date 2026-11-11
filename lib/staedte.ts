@@ -51,7 +51,7 @@ export const cities: City[] = [
       {
         question: "Wie lange dauert die Kfz-Zulassung in Berlin über DeutscheZulassung?",
         answer:
-          `In der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, zuzüglich Versand. Sie brauchen keinen eigenen Termin beim LABO – wir wickeln den Vorgang für Sie ab. Abmeldungen erledigen wir meist noch ${ZEIT.abmeldung}.`,
+          `In der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, zuzüglich Versand. Sie brauchen keinen eigenen Termin beim LABO – wir wickeln den Vorgang für Sie ab. Abmeldungen erledigen wir meist ${ZEIT.abmeldung}.`,
       },
       {
         question: "Brauche ich für die Zulassung in Berlin einen Termin?",
@@ -271,7 +271,7 @@ export const cities: City[] = [
       {
         question: "Wie schnell geht eine Abmeldung in Stuttgart?",
         answer:
-          `Meist noch ${ZEIT.abmeldung}: Sie senden uns Fotos der freigelegten Sicherheitscodes von Fahrzeugschein und Kennzeichen, wir setzen das Fahrzeug digital außer Betrieb und Sie erhalten die Bestätigung per E-Mail.`,
+          `Meist ${ZEIT.abmeldung}: Sie senden uns Fotos der freigelegten Sicherheitscodes von Fahrzeugschein und Kennzeichen, wir setzen das Fahrzeug digital außer Betrieb und Sie erhalten die Bestätigung per E-Mail.`,
       },
       {
         question: "Gilt der Service auch für die Umlandkreise?",
@@ -485,7 +485,7 @@ export const cities: City[] = [
       {
         question: "Was passiert mit meinem alten Auto, wenn ich es in Zahlung gebe oder verschrotte?",
         answer:
-          `Die Abmeldung übernehmen wir für ${P.abmeldung} und erledigen sie meist noch ${ZEIT.abmeldung}. Bei Verschrottung reichen wir auf Wunsch den Verwertungsnachweis gleich mit ein.`,
+          `Die Abmeldung übernehmen wir für ${P.abmeldung} und erledigen sie meist ${ZEIT.abmeldung}. Bei Verschrottung reichen wir auf Wunsch den Verwertungsnachweis gleich mit ein.`,
       },
     ],
     keywords: [
@@ -821,7 +821,7 @@ export const cities: City[] = [
       {
         question: "Was kostet die Zulassung in Mönchengladbach?",
         answer:
-          `${P.zulassung} als Komplettpreis inklusive amtlicher Gebühren und versichertem Versand, MG-Kennzeichenschilder auf Wunsch zzgl. ${P.kennzeichen} pro Paar. Die Abmeldung kostet ${P.abmeldung} und ist meist noch ${ZEIT.abmeldung} erledigt.`,
+          `${P.zulassung} als Komplettpreis inklusive amtlicher Gebühren und versichertem Versand, MG-Kennzeichenschilder auf Wunsch zzgl. ${P.kennzeichen} pro Paar. Die Abmeldung kostet ${P.abmeldung} und ist meist ${ZEIT.abmeldung} erledigt.`,
       },
     ],
     keywords: [
@@ -863,7 +863,7 @@ export const cities: City[] = [
       {
         question: "Mein altes Auto ist ein wirtschaftlicher Totalschaden – wie werde ich es los?",
         answer:
-          `Erst abmelden, dann verwerten oder verkaufen: Die Außerbetriebsetzung erledigen wir für ${P.abmeldung} meist noch ${ZEIT.abmeldung}, damit Steuer und Versicherung sofort stoppen. Bei Verschrottung reichen wir den Verwertungsnachweis des zertifizierten Betriebs mit ein.`,
+          `Erst abmelden, dann verwerten oder verkaufen: Die Außerbetriebsetzung erledigen wir für ${P.abmeldung} meist ${ZEIT.abmeldung}, damit Steuer und Versicherung sofort stoppen. Bei Verschrottung reichen wir den Verwertungsnachweis des zertifizierten Betriebs mit ein.`,
       },
     ],
     keywords: [
@@ -966,7 +966,7 @@ export const cities: City[] = [
       `Kfz-Zulassung in Chemnitz ohne Behördengang: Neuzulassung, Umschreibung und Abmeldung digital bei der Chemnitzer Behörde – zum Festpreis von ${P.zulassung}.`,
     intro: [
       "Chemnitz fährt mit einem der kürzesten Kennzeichen Deutschlands: ein einzelnes C. Gehandelt wird in der Region viel – der Gebrauchtwagenmarkt zwischen Stadt, Erzgebirge und Zwickauer Raum ist lebendig, und jede Umschreibung bedeutet normalerweise einen Gang zur Kfz-Zulassungsbehörde der Stadt Chemnitz samt Terminbuchung.",
-      `Bei uns wird daraus ein Vorgang vom Sofa aus: Fahrzeugpapiere und Ausweis abfotografieren, digitale Vollmacht bestätigen – wir erledigen die Zulassung bei der Chemnitzer Behörde und schicken Ihnen die gestempelten C-Kennzeichen versichert zu. Auch die Abmeldung eines Altfahrzeugs vor dem Verkauf nehmen wir Ihnen meist noch ${ZEIT.abmeldung} ab.`,
+      `Bei uns wird daraus ein Vorgang vom Sofa aus: Fahrzeugpapiere und Ausweis abfotografieren, digitale Vollmacht bestätigen – wir erledigen die Zulassung bei der Chemnitzer Behörde und schicken Ihnen die gestempelten C-Kennzeichen versichert zu. Auch die Abmeldung eines Altfahrzeugs vor dem Verkauf nehmen wir Ihnen meist ${ZEIT.abmeldung} ab.`,
     ],
     facts: [
       { label: "Kennzeichen-Kürzel", value: "C" },
@@ -1072,7 +1072,7 @@ export const cities: City[] = [
       {
         question: "Wie lange dauert die Zulassung in Halle über DeutscheZulassung?",
         answer:
-          `In der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, dazu kommt der Versand der Kennzeichen. Abmeldungen schaffen wir meist noch ${ZEIT.abmeldung} – die Bestätigung erhalten Sie per E-Mail.`,
+          `In der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, dazu kommt der Versand der Kennzeichen. Abmeldungen schaffen wir meist ${ZEIT.abmeldung} – die Bestätigung erhalten Sie per E-Mail.`,
       },
     ],
     keywords: [
@@ -1114,7 +1114,7 @@ export const cities: City[] = [
       {
         question: "Wie schnell geht eine Abmeldung in Magdeburg?",
         answer:
-          `Meist noch ${ZEIT.abmeldung}: Sie legen die Sicherheitscodes auf Zulassungsbescheinigung und Kennzeichen frei, fotografieren sie und senden uns die Bilder. Die Abmeldebestätigung kommt anschließend per E-Mail – für ${P.abmeldung}.`,
+          `Meist ${ZEIT.abmeldung}: Sie legen die Sicherheitscodes auf Zulassungsbescheinigung und Kennzeichen frei, fotografieren sie und senden uns die Bilder. Die Abmeldebestätigung kommt anschließend per E-Mail – für ${P.abmeldung}.`,
       },
     ],
     keywords: [
@@ -1198,7 +1198,7 @@ export const cities: City[] = [
       {
         question: "Ich verkaufe mein Auto in Rostock – sollte ich es vorher abmelden?",
         answer:
-          `Empfehlenswert ist das, denn abgemeldet können auf Sie keine Steuern oder Verstöße des Käufers mehr zulaufen. Wir melden das Fahrzeug meist noch ${ZEIT.abmeldung} außer Betrieb – Sie brauchen nur Fotos der freigelegten Sicherheitscodes, der Preis liegt bei ${P.abmeldung}.`,
+          `Empfehlenswert ist das, denn abgemeldet können auf Sie keine Steuern oder Verstöße des Käufers mehr zulaufen. Wir melden das Fahrzeug meist ${ZEIT.abmeldung} außer Betrieb – Sie brauchen nur Fotos der freigelegten Sicherheitscodes, der Preis liegt bei ${P.abmeldung}.`,
       },
     ],
     keywords: [
@@ -1449,7 +1449,7 @@ export const cities: City[] = [
       {
         question: "Wie schnell ist eine Abmeldung in Wiesbaden erledigt?",
         answer:
-          `Meist noch ${ZEIT.abmeldung}. Sie legen die Sicherheitscodes auf Fahrzeugschein und Kennzeichen frei, fotografieren sie und senden uns die Bilder – die Abmeldebestätigung erhalten Sie per E-Mail, für ${P.abmeldung}.`,
+          `Meist ${ZEIT.abmeldung}. Sie legen die Sicherheitscodes auf Fahrzeugschein und Kennzeichen frei, fotografieren sie und senden uns die Bilder – die Abmeldebestätigung erhalten Sie per E-Mail, für ${P.abmeldung}.`,
       },
     ],
     keywords: [
@@ -1570,7 +1570,7 @@ export const cities: City[] = [
       {
         question: "Mein Auto ist verkauft – wie melde ich es in Krefeld ab?",
         answer:
-          `Am schnellsten über uns: Sicherheitscodes auf Fahrzeugschein und Kennzeichen freilegen, fotografieren, senden – die Abmeldung ist meist noch ${ZEIT.abmeldung} erledigt und kostet ${P.abmeldung}. Die Bestätigung fürs Kaufvertrags-Protokoll und die Versicherung erhalten Sie per E-Mail.`,
+          `Am schnellsten über uns: Sicherheitscodes auf Fahrzeugschein und Kennzeichen freilegen, fotografieren, senden – die Abmeldung ist meist ${ZEIT.abmeldung} erledigt und kostet ${P.abmeldung}. Die Bestätigung fürs Kaufvertrags-Protokoll und die Versicherung erhalten Sie per E-Mail.`,
       },
       {
         question: "Kann ich ein KR-Wunschkennzeichen bekommen, ohne selbst zur Behörde zu gehen?",
@@ -1701,7 +1701,7 @@ export const cities: City[] = [
       {
         question: "Was kostet die Kfz-Zulassung in Oberhausen über DeutscheZulassung?",
         answer:
-          `${P.zulassung} als Komplettpreis – amtliche Gebühren und versicherter Versand sind enthalten, geprägte Kennzeichenschilder kommen mit ${P.kennzeichen} pro Paar dazu. Die Abmeldung kostet ${P.abmeldung} und ist meist noch ${ZEIT.abmeldung} erledigt.`,
+          `${P.zulassung} als Komplettpreis – amtliche Gebühren und versicherter Versand sind enthalten, geprägte Kennzeichenschilder kommen mit ${P.kennzeichen} pro Paar dazu. Die Abmeldung kostet ${P.abmeldung} und ist meist ${ZEIT.abmeldung} erledigt.`,
       },
     ],
     keywords: [

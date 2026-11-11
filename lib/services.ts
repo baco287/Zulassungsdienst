@@ -20,7 +20,7 @@ export const services: Service[] = [
     teaser:
       "Fabrikneues oder importiertes Fahrzeug erstmals zulassen – ohne eigenen Termin bei der Zulassungsstelle.",
     description:
-      "Wir übernehmen die vollständige Erstzulassung Ihres Fahrzeugs: Prüfung der Unterlagen, Beantragung bei der zuständigen Zulassungsbehörde, Kennzeichen und Versand aller Dokumente zu Ihnen nach Hause oder in Ihr Autohaus. Sie sparen sich Termin, Wartezeit und Behördengang – und Ihr Fahrzeug ist in der Regel innerhalb weniger Werktage angemeldet.",
+      `Wir übernehmen die vollständige Erstzulassung Ihres Fahrzeugs: Prüfung der Unterlagen, Beantragung bei der zuständigen Zulassungsbehörde, Kennzeichen und Versand aller Dokumente zu Ihnen nach Hause oder in Ihr Autohaus. Sie sparen sich Termin, Wartezeit und Behördengang – und die Zulassung selbst ist in der Regel in ${ZEIT.zulassungDativ} erledigt.`,
     price: {
       serviceFee: PRICES.neuzulassung,
       inclusive: true,
@@ -73,7 +73,7 @@ export const services: Service[] = [
     category: "zulassung",
     audience: "beide",
     teaser:
-      `Fahrzeug verkauft, stillgelegt oder verschrottet? Die Außerbetriebsetzung erledigen wir meist noch ${ZEIT.abmeldung}.`,
+      `Fahrzeug verkauft, stillgelegt oder verschrottet? Die Außerbetriebsetzung erledigen wir meist ${ZEIT.abmeldung}.`,
     description:
       `Die Abmeldung (Außerbetriebsetzung) ist der schnellste Vorgang: Sie übermitteln uns die Sicherheitscodes von Fahrzeugschein und Kennzeichen – wir melden Ihr Fahrzeug digital bei der Zulassungsbehörde ab und Sie erhalten die Abmeldebestätigung per E-Mail. Ganz ohne Versand, in der Regel ${ZEIT.abmeldung}.`,
     price: {

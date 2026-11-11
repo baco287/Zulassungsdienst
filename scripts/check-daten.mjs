@@ -6,7 +6,7 @@
  *   node scripts/check-daten.mjs --out    zusätzlich den statischen Export (out/)
  *
  * Fehler (Exit 1):
- *   - fest eingetragene Werktag-Spannen, "taggleich", "am selben Werktag" oder
+ *   - fest eingetragene Werktag- oder Minuten-Spannen, "taggleich", "am selben Werktag" oder
  *     Reaktionszeit-Versprechen ("in wenigen Minuten") in app/, components/, lib/
  *   - Werktag-Spannen im Build, die nicht in config/betrieb.json stehen
  * Hinweise (kein Fehler):
@@ -41,6 +41,8 @@ const erlaubteSpannen = new Set();
 for (const e of Object.values(config.zeiten.bearbeitung)) {
   if (Array.isArray(e.werktage)) erlaubteSpannen.add(`${e.werktage[0]}–${e.werktage[1]}`);
 }
+const kennzeichenVersand = config.zeiten.versand?.kennzeichen?.werktage;
+if (Array.isArray(kennzeichenVersand)) erlaubteSpannen.add(`${kennzeichenVersand[0]}–${kennzeichenVersand[1]}`);
 if (Array.isArray(config.zeiten.versand?.werktage)) {
   erlaubteSpannen.add(`${config.zeiten.versand.werktage[0]}–${config.zeiten.versand.werktage[1]}`);
 }
@@ -55,6 +57,7 @@ const IGNORE = new Set([
 ]);
 const VERBOTEN = [
   { rx: /\b\d+\s?[–-]\s?\d+ Werktag/, was: "Werktag-Spanne" },
+  { rx: /\b\d+\s?[–-]\s?\d+ Minuten/, was: "Minuten-Spanne" },
   { rx: /\btaggleich\b/, was: "„taggleich“" },
   { rx: /\bam selben Werktag\b/, was: "„am selben Werktag“" },
   { rx: /(Antwort|antworten|melden uns|zurückmelden)[^.]{0,40}(wenigen Minuten|in Minuten|binnen weniger Minuten)/i, was: "Reaktionszeit-Versprechen" },

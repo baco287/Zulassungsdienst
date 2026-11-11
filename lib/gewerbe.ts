@@ -99,7 +99,7 @@ export const gewerbeSegments: GewerbeSegment[] = [
     benefits: [
       {
         title: "Ankauf sofort abmelden",
-        text: `Angekaufte Fahrzeuge melden wir digital ab – meist noch ${ZEIT.abmeldung}, ohne dass jemand Ihren Hof verlässt.`,
+        text: `Angekaufte Fahrzeuge melden wir digital ab – meist ${ZEIT.abmeldung}, ohne dass jemand Ihren Hof verlässt.`,
       },
       {
         title: "Umschreibung als Verkaufsargument",
@@ -124,7 +124,7 @@ export const gewerbeSegments: GewerbeSegment[] = [
       {
         question: "Was brauche ich, um ein angekauftes Fahrzeug abmelden zu lassen?",
         answer:
-          `Nur die Zulassungsbescheinigung Teil I und beide Kennzeichen mit freigelegten Sicherheitscodes – als Fotos. Die Abmeldebestätigung erhalten Sie per E-Mail, meist noch ${ZEIT.abmeldung}.`,
+          `Nur die Zulassungsbescheinigung Teil I und beide Kennzeichen mit freigelegten Sicherheitscodes – als Fotos. Die Abmeldebestätigung erhalten Sie per E-Mail, meist ${ZEIT.abmeldung}.`,
       },
       {
         question: "Gibt es eine Mindestmenge oder Vertragsbindung?",

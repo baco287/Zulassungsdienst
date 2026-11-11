@@ -37,7 +37,7 @@ export function GET() {
     ""
   );
   lines.push(
-    `Kundinnen und Kunden beauftragen über das Online-Formular (Unterlagen als Foto hochladen) oder per WhatsApp, erhalten vorab eine verbindliche Festpreis-Bestätigung, erteilen eine Vollmacht und erhalten Papiere per versichertem Versand. Typische Dauer: ${ZEIT.zulassung} ab vollständigen Unterlagen, Abmeldungen meist ${ZEIT.abmeldung}. Die Entscheidung über jede Zulassung trifft immer die zuständige Zulassungsbehörde.`,
+    `Kundinnen und Kunden beauftragen über das Online-Formular (Unterlagen als Foto hochladen) oder per WhatsApp, erhalten vorab eine verbindliche Festpreis-Bestätigung, erteilen eine Vollmacht und erhalten Papiere per versichertem Versand. Typische Dauer: ${ZEIT.zulassung} ab vollständigen Unterlagen, Abmeldungen meist ${ZEIT.abmeldung}. Neue Kennzeichenschilder kommen per Post, in der Regel in ${ZEIT.kennzeichenDativ}. Die Entscheidung über jede Zulassung trifft immer die zuständige Zulassungsbehörde.`,
     ""
   );
 

@@ -1,14 +1,14 @@
 {
   "$kommentar": "Zentrale Betriebsangaben von DeutscheZulassung: Zeiten, Abwicklung, Regionen. Einzige Quelle für alle Zeit- und Ablaufversprechen der Website (Seiten, FAQ, Stadtseiten, strukturierte Daten, llms.txt). Preise stehen ausschließlich in config/preise.json. Werte mit \"status\": \"offen\" sind NICHT freigegeben und werden auf der Website nicht als Versprechen angezeigt. Nach jeder Änderung: 'stand' aktualisieren, Freigabe setzen, `npm run check:daten` ausführen.",
-  "stand": "2026-11-09",
+  "stand": "2026-11-11",
   "freigabe": {
     "freigegeben": false,
     "freigegebenVon": "",
     "freigegebenAm": "",
-    "hinweis": "Die Zeitwerte unten sind aus den bisher veröffentlichten Aussagen übernommen (Anleitung, Leistungsseiten, FAQ), aber noch nicht ausdrücklich als Betriebsversprechen bestätigt. Offene Punkte siehe docs/seo/OWNER-DECISIONS.md."
+    "hinweis": "Bearbeitungsdauer (10–30 Minuten) und Versand neuer Kennzeichenschilder (1–3 Werktage) sind Betreiberangaben vom 11.11.2026 (status \"betreiberangabe\"). Die übrigen Zeitwerte sind aus den bisher veröffentlichten Aussagen übernommen und noch nicht ausdrücklich bestätigt. Offene Punkte siehe docs/seo/OWNER-DECISIONS.md."
   },
   "zeiten": {
-    "$kommentar": "Vier getrennte Phasen: (1) Aufwand des Kunden, (2) Prüfung durch DeutscheZulassung, (3) Bearbeitung inkl. Behördenentscheidung, (4) Versand. Werktage zählen ab vollständigen, lesbaren Unterlagen.",
+    "$kommentar": "Vier getrennte Phasen: (1) Aufwand des Kunden, (2) Prüfung durch DeutscheZulassung, (3) Bearbeitung inkl. Behördenentscheidung, (4) Versand. Alle Angaben zählen ab vollständigen, lesbaren Unterlagen und Zahlungseingang, innerhalb der Servicezeiten. Bearbeitung entweder als \"minuten\" oder als \"werktage\".",
     "kunde": {
       "anfrageMinuten": {
         "wert": 2,
@@ -35,43 +35,52 @@
     },
     "bearbeitung": {
       "neuzulassung": {
-        "werktage": [
-          1,
-          3
+        "minuten": [
+          10,
+          30
         ],
-        "status": "uebernommen"
+        "status": "betreiberangabe",
+        "quelle": "Betreiberangabe vom 11.11.2026: „Bearbeitung dauert 10–30 Minuten“"
       },
       "ummeldung": {
-        "werktage": [
-          1,
-          3
+        "minuten": [
+          10,
+          30
         ],
-        "status": "uebernommen"
+        "status": "betreiberangabe",
+        "quelle": "Betreiberangabe vom 11.11.2026: „Bearbeitung dauert 10–30 Minuten“"
       },
       "halterwechsel": {
-        "werktage": [
-          1,
-          3
+        "minuten": [
+          10,
+          30
         ],
-        "status": "uebernommen"
+        "status": "betreiberangabe",
+        "quelle": "Betreiberangabe vom 11.11.2026: „Bearbeitung dauert 10–30 Minuten“"
       },
       "wiederzulassung": {
-        "werktage": [
-          1,
-          3
+        "minuten": [
+          10,
+          30
         ],
-        "status": "uebernommen"
+        "status": "betreiberangabe",
+        "quelle": "Betreiberangabe vom 11.11.2026: „Bearbeitung dauert 10–30 Minuten“"
       },
       "adressaenderung": {
-        "werktage": [
-          1,
-          2
+        "minuten": [
+          10,
+          30
         ],
-        "status": "uebernommen"
+        "status": "betreiberangabe",
+        "quelle": "Betreiberangabe vom 11.11.2026: „Bearbeitung dauert 10–30 Minuten“"
       },
       "abmeldung": {
-        "selberWerktag": true,
-        "status": "uebernommen",
+        "minuten": [
+          10,
+          30
+        ],
+        "status": "betreiberangabe",
+        "quelle": "Betreiberangabe vom 11.11.2026: „Bearbeitung dauert 10–30 Minuten“",
         "einschraenkung": "bei Eingang vollständiger, lesbarer Sicherheitscodes innerhalb der Servicezeiten"
       },
       "ersatz-dokumente": {
@@ -91,10 +100,19 @@
       }
     },
     "versand": {
+      "kennzeichen": {
+        "werktage": [
+          1,
+          3
+        ],
+        "status": "betreiberangabe",
+        "quelle": "Betreiberangabe vom 11.11.2026: „Kennzeichen können 1–3 Tage dauern“",
+        "hinweis": "Gilt für neue Kennzeichenschilder, die über DeutscheZulassung bestellt werden. Auf der Website als Werktage formuliert."
+      },
       "werktage": null,
       "dienstleister": null,
       "status": "offen",
-      "frage": "Mit welchem Dienst und welcher typischen Laufzeit verschickt ihr Papiere und Schilder (z. B. DHL, 1–2 Werktage)?"
+      "frage": "Mit welchem Dienst verschickt ihr (z. B. DHL)? Gelten die 1–3 Tage für Kennzeichen als Werktage oder Kalendertage, und wie lange brauchen Papiere und Plaketten (kommen sie von der Behörde oder von euch)?"
     },
     "antwortzeit": {
       "wert": null,

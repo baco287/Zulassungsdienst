@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import KennzeichenHinweis from "@/components/KennzeichenHinweis";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { ablauf } from "@/lib/homepage";
 
@@ -49,6 +50,8 @@ export default function ProcessSection() {
             );
           })}
         </ol>
+
+        <KennzeichenHinweis className="mt-12" />
 
         <Link
           href={ablauf.mehr.href}
