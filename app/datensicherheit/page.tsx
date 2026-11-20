@@ -10,7 +10,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Datensicherheit Ihrer Unterlagen",
   description:
-    "Wie DeutscheZulassung mit Fahrzeugpapieren und Ausweiskopien umgeht: verschlüsselte Übertragung, kein Dokumentenarchiv auf dem Webserver, Löschung nach Abschluss.",
+    "Wie KFZ-Zulassungsprofis mit Fahrzeugpapieren und Ausweiskopien umgeht: verschlüsselte Übertragung, kein Dokumentenarchiv auf dem Webserver, Löschung nach Abschluss.",
   alternates: { canonical: "/datensicherheit/" },
 };
 

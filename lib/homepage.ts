@@ -83,7 +83,7 @@ export const vertrauen: { items: TrustItem[]; betreiber: string } = {
     { icon: MessageCircle, title: "Direkter Kontakt", text: "Per WhatsApp, E-Mail und Telefon" },
     { icon: Lock, title: "Sichere Datenübermittlung", text: "Verschlüsselte Übertragung" },
   ],
-  betreiber: `DeutscheZulassung ist ein privater Zulassungsdienst und keine Behörde. Betreiber ist die ${site.company.legalName}, ${site.company.zipCity.split(" ").slice(1).join(" ")}. Über jede Zulassung entscheidet die zuständige Zulassungsbehörde.`,
+  betreiber: `KFZ-Zulassungsprofis ist ein privater Zulassungsdienst und keine Behörde. Betreiber ist die ${site.company.legalName}, ${site.company.zipCity.split(" ").slice(1).join(" ")}. Über jede Zulassung entscheidet die zuständige Zulassungsbehörde.`,
 };
 
 /* ───────────────────────── Leistungen ───────────────────────── */
@@ -133,7 +133,7 @@ export const ohneEid = {
   eyebrow: "Zulassung ohne Online-Ausweis",
   title: "Keine eID? Kein Problem.",
   intro:
-    "Über das Behördenportal i-Kfz können Sie Ihr Fahrzeug selbst online zulassen – dafür brauchen Sie einen aktivierten Online-Ausweis mit PIN, die AusweisApp und ein NFC-fähiges Smartphone oder einen Kartenleser. Bei DeutscheZulassung übernehmen wir den Vorgang mit Ihrer Vollmacht.",
+    "Über das Behördenportal i-Kfz können Sie Ihr Fahrzeug selbst online zulassen – dafür brauchen Sie einen aktivierten Online-Ausweis mit PIN, die AusweisApp und ein NFC-fähiges Smartphone oder einen Kartenleser. Bei KFZ-Zulassungsprofis übernehmen wir den Vorgang mit Ihrer Vollmacht.",
   wege: [
     {
       key: "ikfz",
@@ -150,7 +150,7 @@ export const ohneEid = {
     },
     {
       key: "wir",
-      title: "Mit DeutscheZulassung",
+      title: "Mit KFZ-Zulassungsprofis",
       untertitel: "Zulassungsservice mit Ihrer Vollmacht",
       hervorgehoben: true,
       punkte: [
@@ -162,9 +162,9 @@ export const ohneEid = {
       ],
     },
   ],
-  fair: "Wenn Sie alle Voraussetzungen für i-Kfz erfüllen und den Vorgang selbst durchführen möchten, ist das Behördenportal häufig die günstigste Lösung. DeutscheZulassung ist für Menschen gedacht, die keine eID nutzen können oder den Behördenweg vollständig abgeben möchten.",
+  fair: "Wenn Sie alle Voraussetzungen für i-Kfz erfüllen und den Vorgang selbst durchführen möchten, ist das Behördenportal häufig die günstigste Lösung. KFZ-Zulassungsprofis ist für Menschen gedacht, die keine eID nutzen können oder den Behördenweg vollständig abgeben möchten.",
   hinweis:
-    "DeutscheZulassung ist ein privater Zulassungsdienst und keine Behörde. Wir reichen Ihren Antrag mit Ihrer Vollmacht bei der zuständigen Zulassungsbehörde ein. Die endgültige Entscheidung trifft die Behörde.",
+    "KFZ-Zulassungsprofis ist ein privater Zulassungsdienst und keine Behörde. Wir reichen Ihren Antrag mit Ihrer Vollmacht bei der zuständigen Zulassungsbehörde ein. Die endgültige Entscheidung trifft die Behörde.",
   cta: { label: "Mehr zur Zulassung ohne eID", href: "/kfz-zulassung-ohne-eid/" },
 } as const;
 
@@ -268,8 +268,8 @@ export const faq = {
       answer: `Per WhatsApp, per E-Mail an ${site.contact.email} oder telefonisch unter ${site.contact.phoneDisplay}. Unsere Servicezeiten: ${site.contact.hours}.`,
     },
     {
-      question: "Wer betreibt DeutscheZulassung?",
-      answer: `DeutscheZulassung ist ein Angebot der ${site.company.legalName}, ${site.company.street}, ${site.company.zipCity} (${site.company.register}). Wir sind ein privater Zulassungsdienst und keine Behörde – über jede Zulassung entscheidet die zuständige Zulassungsbehörde.`,
+      question: "Wer betreibt KFZ-Zulassungsprofis?",
+      answer: `KFZ-Zulassungsprofis ist ein Angebot der ${site.company.legalName}, ${site.company.street}, ${site.company.zipCity} (${site.company.register}). Wir sind ein privater Zulassungsdienst und keine Behörde – über jede Zulassung entscheidet die zuständige Zulassungsbehörde.`,
     },
   ],
   mehr: { label: "Alle Fragen und Antworten", href: "/faq/" },

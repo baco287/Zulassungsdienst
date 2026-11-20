@@ -3,7 +3,7 @@ import { P, PRICES } from "./pricing";
 import { ZEIT } from "@/lib/betrieb";
 
 /**
- * Leistungskatalog von DeutscheZulassung.
+ * Leistungskatalog von KFZ-Zulassungsprofis.
  *
  * Neue Leistungen können einfach ergänzt werden: Objekt anhängen,
  * eindeutigen `slug` vergeben – Listen-, Detail-, Preis- und
@@ -269,7 +269,7 @@ export const services: Service[] = [
     teaser:
       "Ein Ansprechpartner, transparente Preise, alles digital – Ihr persönlicher Zulassungsservice.",
     description:
-      "Vom ersten Foto Ihrer Unterlagen bis zur Zustellung der fertigen Papiere: Bei DeutscheZulassung haben Sie eine feste Ansprechperson, die Ihren Auftrag begleitet. Sie reichen alles digital ein – per Formular oder WhatsApp – und wir melden uns, sobald Ihr Fahrzeug zugelassen ist.",
+      "Vom ersten Foto Ihrer Unterlagen bis zur Zustellung der fertigen Papiere: Bei KFZ-Zulassungsprofis haben Sie eine feste Ansprechperson, die Ihren Auftrag begleitet. Sie reichen alles digital ein – per Formular oder WhatsApp – und wir melden uns, sobald Ihr Fahrzeug zugelassen ist.",
     price: {
       serviceFee: null,
       verified: false,

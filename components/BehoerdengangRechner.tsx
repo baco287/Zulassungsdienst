@@ -136,7 +136,7 @@ export default function BehoerdengangRechner() {
           <div className="rounded-xl bg-brand-50 p-5">
             <p className="flex items-center gap-2 font-display text-sm font-semibold text-brand-700">
               <Calculator className="h-4 w-4" aria-hidden />
-              Über DeutscheZulassung
+              Über KFZ-Zulassungsprofis
             </p>
             <p className="mt-1 font-display text-3xl font-bold text-brand-700">
               {euro(OUR_PRICE + OUR_PLATES)}

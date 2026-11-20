@@ -3,7 +3,7 @@
  *
  * Ablauf (WhatsApp bleibt der Hauptkanal, geht aber nie am Posteingang vorbei):
  *   1. Die Anfrage wird an `public/api/auftrag.php` gesendet. Das Skript
- *      stellt sie samt Anhängen an info@deutschezulassung.de zu und vergibt
+ *      stellt sie samt Anhängen an unser Postfach (site.contact.email) zu und vergibt
  *      eine Referenznummer.
  *   2. Danach führen wir die Kundin oder den Kunden in den WhatsApp-Chat –
  *      mit der Referenz in der vorbefüllten Nachricht, damit das Team den
@@ -38,7 +38,7 @@ export type SubmitKind = "auftrag" | "unterlagen";
 
 export interface SubmitResult {
   ok: boolean;
-  /** Referenznummer, z. B. "DZ-20260820-A7F3". Nur bei ok: true. */
+  /** Referenznummer, z. B. "KZP-20261120-A7F3". Nur bei ok: true. */
   reference?: string;
   error?: string;
   /** Feldname, auf den sich der Fehler bezieht (für die Fehleranzeige). */
@@ -51,7 +51,7 @@ export interface SubmitResult {
 export function buildMessage(v: OrderRequest, reference?: string): string {
   const service = getService(v.serviceSlug);
   return [
-    "Neue Auftragsanfrage über deutschezulassung.de",
+    `Neue Auftragsanfrage über ${site.domain}`,
     reference ? `Referenz: ${reference}` : null,
     "",
     `Leistung: ${service?.name ?? v.serviceSlug}`,
@@ -70,7 +70,7 @@ export function buildMessage(v: OrderRequest, reference?: string): string {
 /** Kurznachricht, mit der der Chat nach erfolgreicher Übermittlung startet. */
 export function followUpMessage(reference: string, serviceName?: string): string {
   return [
-    `Hallo DeutscheZulassung, ich habe gerade eine Anfrage über die Website gesendet.`,
+    `Hallo KFZ-Zulassungsprofis, ich habe gerade eine Anfrage über die Website gesendet.`,
     serviceName ? `Leistung: ${serviceName}` : null,
     `Referenz: ${reference}`,
   ]

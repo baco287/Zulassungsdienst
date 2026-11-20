@@ -11,7 +11,7 @@ import { ZEIT } from "@/lib/betrieb";
 export const metadata: Metadata = {
   title: "Auto online zulassen – Anleitung mit Bildern",
   description:
-    "So läuft die Kfz-Zulassung mit DeutscheZulassung: 8 bebilderte Schritte vom Auftrag über Unterlagen und Sicherheitscodes bis zum fertigen Kennzeichen.",
+    "So läuft die Kfz-Zulassung mit KFZ-Zulassungsprofis: 8 bebilderte Schritte vom Auftrag über Unterlagen und Sicherheitscodes bis zum fertigen Kennzeichen.",
   keywords: [
     "Auto online zulassen Anleitung",
     "Kfz-Zulassung Schritt für Schritt",
@@ -25,7 +25,7 @@ const PDF_PATH = "/downloads/anleitung-online-zulassung.pdf";
 const howToJsonLd = {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  name: "Auto online zulassen mit DeutscheZulassung – Schritt für Schritt",
+  name: "Auto online zulassen mit KFZ-Zulassungsprofis – Schritt für Schritt",
   description:
     "Bebilderte Anleitung: vom Online-Auftrag über Unterlagen und Sicherheitscodes bis zu Kennzeichen vom lokalen Schildermacher.",
   inLanguage: "de",

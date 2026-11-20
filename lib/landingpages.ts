@@ -39,7 +39,7 @@ export interface LandingPage {
   /** Beschriftung des Haupt-Buttons. */
   ctaLabel: string;
   /** Dokumenten-Checkliste. */
-  /** photoHint: Hinweis „Für den Start genügen Handyfotos“ anzeigen (nur bei Unterlagen für DeutscheZulassung). */
+  /** photoHint: Hinweis „Für den Start genügen Handyfotos“ anzeigen (nur bei Unterlagen für KFZ-Zulassungsprofis). */
   checklist?: { title: string; items: string[]; photoHint?: boolean };
   /** Schritt-für-Schritt-Erklärung. */
   steps?: { title: string; items: LandingStep[] };
@@ -135,7 +135,7 @@ export const landingPages: LandingPage[] = [
       ],
     },
     steps: {
-      title: "So läuft die Zulassung ohne eID bei DeutscheZulassung",
+      title: "So läuft die Zulassung ohne eID bei KFZ-Zulassungsprofis",
       items: [
         {
           title: "Unterlagen fotografieren",
@@ -147,7 +147,7 @@ export const landingPages: LandingPage[] = [
         },
         {
           title: "Vollmacht erteilen",
-          text: "Mit Ihrer Vollmacht reicht DeutscheZulassung den Antrag bei der zuständigen Zulassungsbehörde ein. Fehlt etwas, fragt Ihre feste Ansprechperson nach.",
+          text: "Mit Ihrer Vollmacht reicht KFZ-Zulassungsprofis den Antrag bei der zuständigen Zulassungsbehörde ein. Fehlt etwas, fragt Ihre feste Ansprechperson nach.",
         },
         {
           title: "Papiere und Kennzeichen erhalten",
@@ -176,20 +176,20 @@ export const landingPages: LandingPage[] = [
         heading: "Wann i-Kfz günstiger ist – und wann sich der Service lohnt",
         paragraphs: [
           `Ehrlich gesagt: Ist Ihr Ausweis freigeschaltet, kennen Sie Ihre PIN und tragen Ihre Papiere die nötigen Sicherheitscodes, ist i-Kfz der günstigste Weg. Sie zahlen nur die amtliche Gebühr für den Onlinevorgang (${euroRange(officialFees.onlineRegistration)}) und die Kennzeichenschilder. Gelingt der Antrag, darf das Fahrzeug nach Angaben des BMV sofort in Betrieb genommen werden.`,
-          `Bei DeutscheZulassung kostet eine Zulassung ${P.zulassung}, amtliche Gebühren und Versand sind enthalten. Geprägte Kennzeichen liefern wir auf Wunsch für ${P.kennzeichen} pro Paar. Das lohnt sich vor allem, wenn eine Voraussetzung fehlt und der Ersatzweg einen Behördentermin oder einen Gang zur Ausweisbehörde bedeuten würde – oder wenn Sie den Vorgang einfach abgeben möchten.`,
+          `Bei KFZ-Zulassungsprofis kostet eine Zulassung ${P.zulassung}, amtliche Gebühren und Versand sind enthalten. Geprägte Kennzeichen liefern wir auf Wunsch für ${P.kennzeichen} pro Paar. Das lohnt sich vor allem, wenn eine Voraussetzung fehlt und der Ersatzweg einen Behördentermin oder einen Gang zur Ausweisbehörde bedeuten würde – oder wenn Sie den Vorgang einfach abgeben möchten.`,
         ],
       },
       {
         heading: "Für welche Vorgänge der Weg ohne eID funktioniert",
         paragraphs: [
-          "Über DeutscheZulassung erledigen Sie Neuzulassung, Halterwechsel, Ummeldung nach Umzug und Wiederzulassung ohne eigene eID. Auch Importfahrzeuge und Firmenfahrzeuge sind möglich; hier klären wir vorab, welche zusätzlichen Nachweise die Behörde verlangt.",
+          "Über KFZ-Zulassungsprofis erledigen Sie Neuzulassung, Halterwechsel, Ummeldung nach Umzug und Wiederzulassung ohne eigene eID. Auch Importfahrzeuge und Firmenfahrzeuge sind möglich; hier klären wir vorab, welche zusätzlichen Nachweise die Behörde verlangt.",
           "Bei der Abmeldung stellt sich die eID-Frage gar nicht: Laut Kraftfahrt-Bundesamt funktioniert die Online-Abmeldung ohne Identifikation, entscheidend sind die Sicherheitscodes von Fahrzeugschein und Kennzeichen. Details dazu finden Sie auf unserer Seite zur Abmeldung ohne eID.",
         ],
       },
       {
         heading: "Wer über Ihre Zulassung entscheidet",
         paragraphs: [
-          "DeutscheZulassung ist ein privater Dienstleister und keine Behörde – ein Angebot der Volt Gas UG (haftungsbeschränkt) aus Berlin, bundesweit tätig. Wir bereiten Ihren Antrag vor und reichen ihn ein. Die Entscheidung über die Zulassung trifft immer die zuständige Zulassungsbehörde.",
+          "KFZ-Zulassungsprofis ist ein privater Dienstleister und keine Behörde – ein Angebot der Volt Gas UG (haftungsbeschränkt) aus Berlin, bundesweit tätig. Wir bereiten Ihren Antrag vor und reichen ihn ein. Die Entscheidung über die Zulassung trifft immer die zuständige Zulassungsbehörde.",
           `Eine Garantie für die Dauer gibt es deshalb nicht. Unser Erfahrungswert: in der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, ${ZEIT.versand}. Erreichbar sind wir Mo–Fr von 8:00 bis 18:00 Uhr per WhatsApp, Telefon und E-Mail.`,
         ],
       },
@@ -203,11 +203,11 @@ export const landingPages: LandingPage[] = [
       {
         question: "Brauche ich ein Smartphone mit NFC?",
         answer:
-          "Für die Beauftragung von DeutscheZulassung nicht. Ein Foto Ihrer Unterlagen genügt; das Online-Formular funktioniert mit jedem Smartphone oder Computer, alternativ schreiben Sie uns per WhatsApp oder E-Mail.",
+          "Für die Beauftragung von KFZ-Zulassungsprofis nicht. Ein Foto Ihrer Unterlagen genügt; das Online-Formular funktioniert mit jedem Smartphone oder Computer, alternativ schreiben Sie uns per WhatsApp oder E-Mail.",
       },
       {
         question: "Was kostet die Zulassung ohne eID?",
-        answer: `Bei DeutscheZulassung ${P.zulassung} inklusive amtlicher Gebühren und Versand. Geprägte Kennzeichenschilder kosten auf Wunsch ${P.kennzeichen} pro Paar. Sie können die Schilder auch selbst beim Schildermacher prägen lassen oder Ihr bisheriges Kennzeichen behalten, wenn der Vorgang das zulässt.`,
+        answer: `Bei KFZ-Zulassungsprofis ${P.zulassung} inklusive amtlicher Gebühren und Versand. Geprägte Kennzeichenschilder kosten auf Wunsch ${P.kennzeichen} pro Paar. Sie können die Schilder auch selbst beim Schildermacher prägen lassen oder Ihr bisheriges Kennzeichen behalten, wenn der Vorgang das zulässt.`,
       },
       {
         question: "Ich habe meine PIN vergessen – was nun?",
@@ -215,7 +215,7 @@ export const landingPages: LandingPage[] = [
           "Eine neue PIN setzt laut AusweisApp-Hilfe Ihre zuständige Ausweisbehörde. Wenn Sie darauf nicht warten möchten, kann ein Zulassungsdienst die Zulassung ohne eID für Sie beantragen.",
       },
       {
-        question: "Wie lange dauert die Zulassung über DeutscheZulassung?",
+        question: "Wie lange dauert die Zulassung über KFZ-Zulassungsprofis?",
         answer:
           `In der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, zuzüglich Versand. Einen festen Zeitpunkt kann niemand garantieren, weil die Behörde über den Antrag entscheidet.`,
       },
@@ -269,7 +269,7 @@ export const landingPages: LandingPage[] = [
       ],
     },
     steps: {
-      title: "So melden Sie über DeutscheZulassung ab",
+      title: "So melden Sie über KFZ-Zulassungsprofis ab",
       items: [
         {
           title: "Fahrzeug abstellen",
@@ -311,7 +311,7 @@ export const landingPages: LandingPage[] = [
           "Unser Service lohnt sich, wenn Sie sich nicht durch das Behördenportal klicken möchten, Fragen zu Verwertungsnachweis oder Kennzeichenreservierung haben oder eine feste Ansprechperson bevorzugen. Der Vergleich im Überblick:",
         ],
         table: {
-          headers: ["", "i-Kfz selbst", "Über DeutscheZulassung"],
+          headers: ["", "i-Kfz selbst", "Über KFZ-Zulassungsprofis"],
           rows: [
             ["eID / AusweisApp", "nicht nötig", "nicht nötig"],
             ["Sicherheitscodes", "im Portal eingeben", "Foto der freigelegten Codes senden"],
@@ -346,16 +346,16 @@ export const landingPages: LandingPage[] = [
       {
         question: "Brauche ich für die Online-Abmeldung einen Personalausweis mit eID?",
         answer:
-          "Nein. Auf die Identifizierung wird verzichtet, wenn die Sicherheitscodes von Fahrzeugschein und Stempelplaketten eingegeben werden (§ 24 Abs. 4 FZV). Auch für die Abmeldung über DeutscheZulassung brauchen Sie keine eID.",
+          "Nein. Auf die Identifizierung wird verzichtet, wenn die Sicherheitscodes von Fahrzeugschein und Stempelplaketten eingegeben werden (§ 24 Abs. 4 FZV). Auch für die Abmeldung über KFZ-Zulassungsprofis brauchen Sie keine eID.",
       },
       {
         question: "Was kostet die Abmeldung ohne eID?",
-        answer: `Selbst über i-Kfz zahlen Sie nur die amtliche Gebühr für die Online-Abmeldung, je nach Behörde ${euroRange(officialFees.deregistrationOnline)}. Über DeutscheZulassung kostet die Abmeldung ${P.abmeldung} inklusive amtlicher Gebühren.`,
+        answer: `Selbst über i-Kfz zahlen Sie nur die amtliche Gebühr für die Online-Abmeldung, je nach Behörde ${euroRange(officialFees.deregistrationOnline)}. Über KFZ-Zulassungsprofis kostet die Abmeldung ${P.abmeldung} inklusive amtlicher Gebühren.`,
       },
       {
         question: "Wie schnell ist das Auto abgemeldet?",
         answer:
-          `Über DeutscheZulassung meist ${ZEIT.abmeldung}, sofern die Codes vollständig und lesbar sind. Im i-Kfz-Portal entscheidet das System automatisiert, wenn alle Angaben passen.`,
+          `Über KFZ-Zulassungsprofis meist ${ZEIT.abmeldung}, sofern die Codes vollständig und lesbar sind. Im i-Kfz-Portal entscheidet das System automatisiert, wenn alle Angaben passen.`,
       },
       {
         question: "Kann ich ein Auto online abmelden, das vor 2015 zuletzt angemeldet wurde?",
@@ -470,7 +470,7 @@ export const landingPages: LandingPage[] = [
         heading: "Wann ein Zulassungsdienst die bessere Lösung ist",
         paragraphs: [
           "Lässt sich die Ursache in wenigen Minuten beheben, lohnt ein zweiter Versuch – i-Kfz bleibt der günstigste Weg. Braucht die Lösung dagegen einen Termin bei der Ausweisbehörde, neue Papiere oder ist Ihr Vorgang online nicht vorgesehen, kann ein Zulassungsdienst den Antrag für Sie stellen.",
-          `Bei DeutscheZulassung beauftragen Sie über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung; eine eID brauchen Sie nicht. Eine Zulassung kostet ${P.zulassung} inklusive amtlicher Gebühren und Versand und dauert in der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, zuzüglich Versand. Offene Steuer- oder Gebührenrückstände klärt allerdings auch ein Dienst nicht für Sie.`,
+          `Bei KFZ-Zulassungsprofis beauftragen Sie über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung; eine eID brauchen Sie nicht. Eine Zulassung kostet ${P.zulassung} inklusive amtlicher Gebühren und Versand und dauert in der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, zuzüglich Versand. Offene Steuer- oder Gebührenrückstände klärt allerdings auch ein Dienst nicht für Sie.`,
         ],
       },
     ],
@@ -497,7 +497,7 @@ export const landingPages: LandingPage[] = [
       },
       {
         question: "Ist i-Kfz günstiger als ein Zulassungsdienst?",
-        answer: `Ja. Selbst zahlen Sie nur die amtliche Gebühr für den Onlinevorgang (${euroRange(officialFees.onlineRegistration)}) und die Kennzeichen. Bei DeutscheZulassung kostet eine Zulassung ${P.zulassung} inklusive Gebühren und Versand – dafür entfallen Ausweis-, Papier- und Portalfragen.`,
+        answer: `Ja. Selbst zahlen Sie nur die amtliche Gebühr für den Onlinevorgang (${euroRange(officialFees.onlineRegistration)}) und die Kennzeichen. Bei KFZ-Zulassungsprofis kostet eine Zulassung ${P.zulassung} inklusive Gebühren und Versand – dafür entfallen Ausweis-, Papier- und Portalfragen.`,
       },
     ],
     relatedServices: ["neuzulassung", "halterwechsel", "gewerbekunden"],
@@ -664,7 +664,7 @@ export const landingPages: LandingPage[] = [
         heading: "Wann ein weiterer Versuch nichts bringt",
         paragraphs: [
           "Wiederholt sich dieselbe Meldung trotz Korrektur oder betrifft sie etwas, das Sie nicht selbst ändern können – beschädigte Codes, zu alte Papiere, eine nicht aktivierte Online-Ausweisfunktion –, sollten Sie den Weg wechseln. Ansprechpartner ist dann die Zulassungsbehörde, oder Sie lassen den Antrag von einem Zulassungsdienst stellen.",
-          `Bei DeutscheZulassung brauchen Sie dafür keine eID: Fotos der Unterlagen genügen. Sie beauftragen über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung; eine Zulassung kostet ${P.zulassung} inklusive amtlicher Gebühren und Versand. Daten, die die Behörde beanstandet – etwa Steuerrückstände –, ändert allerdings auch ein Dienst nicht.`,
+          `Bei KFZ-Zulassungsprofis brauchen Sie dafür keine eID: Fotos der Unterlagen genügen. Sie beauftragen über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung; eine Zulassung kostet ${P.zulassung} inklusive amtlicher Gebühren und Versand. Daten, die die Behörde beanstandet – etwa Steuerrückstände –, ändert allerdings auch ein Dienst nicht.`,
         ],
       },
     ],
@@ -742,7 +742,7 @@ export const landingPages: LandingPage[] = [
       ],
     },
     steps: {
-      title: "So melden Sie Ihr Auto über DeutscheZulassung an",
+      title: "So melden Sie Ihr Auto über KFZ-Zulassungsprofis an",
       items: [
         {
           title: "Vorgang wählen",
@@ -805,7 +805,7 @@ export const landingPages: LandingPage[] = [
         paragraphs: [
           `An der Zulassungsstelle legen Sie die Unterlagen persönlich vor; je nach Behörde brauchen Sie einen Termin. Die amtliche Gebühr liegt bei ${euroRange(officialFees.counterRegistration)}, dazu kommen die Kennzeichenschilder.`,
           `Über i-Kfz melden Sie selbst im Portal Ihrer Behörde an. Mit ${euroRange(officialFees.onlineRegistration)} amtlicher Gebühr ist das der günstigste Weg, und bei Erfolg dürfen Sie sofort losfahren. Sie brauchen aber eine Online-Identifizierung, Papiere mit Sicherheitscodes und laut Kraftfahrt-Bundesamt bereits vorhandene Kennzeichenschilder. Die Plaketten verschickt die Behörde spätestens sechs Kalendertage nach Abruf der Entscheidung (§ 26 Abs. 4 FZV).`,
-          `Über einen Zulassungsdienst geben Sie den Vorgang ab: Sie senden die Unterlagen und eine Vollmacht, der Dienst stellt den Antrag. Bei DeutscheZulassung kostet das ${P.zulassung} inklusive amtlicher Gebühren und Versand.`,
+          `Über einen Zulassungsdienst geben Sie den Vorgang ab: Sie senden die Unterlagen und eine Vollmacht, der Dienst stellt den Antrag. Bei KFZ-Zulassungsprofis kostet das ${P.zulassung} inklusive amtlicher Gebühren und Versand.`,
         ],
       },
       {
@@ -824,14 +824,14 @@ export const landingPages: LandingPage[] = [
       {
         heading: "Kennzeichen: neu, weitergeführt oder selbst geprägt",
         paragraphs: [
-          `Bei einer Anmeldung über DeutscheZulassung haben Sie drei Möglichkeiten: Wir liefern geprägte Kennzeichenschilder für ${P.kennzeichen} pro Paar mit, Sie lassen die Schilder selbst bei einem Schildermacher prägen, oder Sie behalten Ihr bisheriges Kennzeichen, wenn der Vorgang das erlaubt – etwa bei einer Ummeldung nach Umzug.`,
+          `Bei einer Anmeldung über KFZ-Zulassungsprofis haben Sie drei Möglichkeiten: Wir liefern geprägte Kennzeichenschilder für ${P.kennzeichen} pro Paar mit, Sie lassen die Schilder selbst bei einem Schildermacher prägen, oder Sie behalten Ihr bisheriges Kennzeichen, wenn der Vorgang das erlaubt – etwa bei einer Ummeldung nach Umzug.`,
           `Möchten Sie eine bestimmte Buchstaben- und Zahlenkombination, übernehmen wir auf Wunsch den Wunschkennzeichen-Service für ${P.wunschkennzeichen}; die amtliche Gebühr ist darin enthalten.`,
         ],
       },
       {
         heading: "Was ein Zulassungsdienst leistet – und was nicht",
         paragraphs: [
-          "DeutscheZulassung ist ein privater Dienstleister, keine Behörde. Wir nehmen Ihre Unterlagen entgegen, fragen nach, wenn etwas fehlt, und reichen den Antrag bei der zuständigen Zulassungsbehörde ein. Die Entscheidung über die Zulassung trifft die Behörde – unsere Zeitangaben sind deshalb Erfahrungswerte und keine Garantie.",
+          "KFZ-Zulassungsprofis ist ein privater Dienstleister, keine Behörde. Wir nehmen Ihre Unterlagen entgegen, fragen nach, wenn etwas fehlt, und reichen den Antrag bei der zuständigen Zulassungsbehörde ein. Die Entscheidung über die Zulassung trifft die Behörde – unsere Zeitangaben sind deshalb Erfahrungswerte und keine Garantie.",
           "Ihre feste Ansprechperson erreichen Sie Mo–Fr von 8:00 bis 18:00 Uhr per WhatsApp, Telefon und E-Mail.",
         ],
       },
@@ -854,12 +854,12 @@ export const landingPages: LandingPage[] = [
       },
       {
         question: "Was kostet es, ein Auto online anzumelden?",
-        answer: `Selbst über i-Kfz zahlen Sie die amtliche Gebühr von ${euroRange(officialFees.onlineRegistration)} plus Schilder. Über DeutscheZulassung kostet die Anmeldung ${P.zulassung} inklusive amtlicher Gebühren und Versand; geprägte Schilder auf Wunsch zusätzlich ${P.kennzeichen} pro Paar.`,
+        answer: `Selbst über i-Kfz zahlen Sie die amtliche Gebühr von ${euroRange(officialFees.onlineRegistration)} plus Schilder. Über KFZ-Zulassungsprofis kostet die Anmeldung ${P.zulassung} inklusive amtlicher Gebühren und Versand; geprägte Schilder auf Wunsch zusätzlich ${P.kennzeichen} pro Paar.`,
       },
       {
         question: "Brauche ich einen Termin?",
         answer:
-          "Weder für i-Kfz noch für die Beauftragung von DeutscheZulassung. Ob die Zulassungsstelle vor Ort einen Termin verlangt, sehen Sie auf der Website Ihrer Behörde.",
+          "Weder für i-Kfz noch für die Beauftragung von KFZ-Zulassungsprofis. Ob die Zulassungsstelle vor Ort einen Termin verlangt, sehen Sie auf der Website Ihrer Behörde.",
       },
     ],
     relatedServices: ["halterwechsel", "neuzulassung", "wiederzulassung", "ummeldung", "adressaenderung"],
@@ -908,7 +908,7 @@ export const landingPages: LandingPage[] = [
       ],
     },
     steps: {
-      title: "So arbeitet DeutscheZulassung",
+      title: "So arbeitet KFZ-Zulassungsprofis",
       items: [
         {
           title: "Auftrag",
@@ -956,13 +956,13 @@ export const landingPages: LandingPage[] = [
               "Kosten",
               `amtliche Gebühr ${euroRange(officialFees.counterRegistration)} + Kennzeichen`,
               `amtliche Gebühr ${euroRange(officialFees.onlineRegistration)} + Kennzeichen`,
-              `bei DeutscheZulassung ${P.zulassung} inkl. Gebühren und Versand`,
+              `bei KFZ-Zulassungsprofis ${P.zulassung} inkl. Gebühren und Versand`,
             ],
             [
               "Dauer",
               "abhängig von der Terminlage",
               "bei Erfolg sofort, Plaketten per Post",
-              `bei DeutscheZulassung meist ${ZEIT.zulassung} + Versand`,
+              `bei KFZ-Zulassungsprofis meist ${ZEIT.zulassung} + Versand`,
             ],
             [
               "Kennzeichen",
@@ -970,7 +970,7 @@ export const landingPages: LandingPage[] = [
               "selbst prägen lassen",
               `auf Wunsch geliefert (${P.kennzeichen}), selbst prägen oder behalten`,
             ],
-            ["Ansprechpartner", "Behörde", "Behörde", "Dienstleister, bei DeutscheZulassung eine feste Ansprechperson"],
+            ["Ansprechpartner", "Behörde", "Behörde", "Dienstleister, bei KFZ-Zulassungsprofis eine feste Ansprechperson"],
           ],
         },
       },
@@ -988,9 +988,9 @@ export const landingPages: LandingPage[] = [
         ],
       },
       {
-        heading: "So setzt DeutscheZulassung diese Punkte um",
+        heading: "So setzt KFZ-Zulassungsprofis diese Punkte um",
         paragraphs: [
-          "DeutscheZulassung ist ein Angebot der Volt Gas UG (haftungsbeschränkt) mit Sitz in Berlin und bundesweit tätig. Sie beauftragen über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung.",
+          "KFZ-Zulassungsprofis ist ein Angebot der Volt Gas UG (haftungsbeschränkt) mit Sitz in Berlin und bundesweit tätig. Sie beauftragen über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung.",
           `Eine Zulassung kostet ${P.zulassung} inklusive amtlicher Gebühren und Versand, eine Abmeldung ${P.abmeldung} inklusive Gebühren. Kennzeichenschilder für ${P.kennzeichen} pro Paar und den Wunschkennzeichen-Service für ${P.wunschkennzeichen} (amtliche Gebühr enthalten) wählen Sie nur, wenn Sie sie brauchen.`,
           `Ihre feste Ansprechperson erreichen Sie Mo–Fr von 8:00 bis 18:00 Uhr per WhatsApp, Telefon und E-Mail. Und weil die Entscheidung bei der Behörde liegt, nennen wir einen Erfahrungswert statt einer Garantie: in der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, ${ZEIT.versand}.`,
         ],
@@ -1004,7 +1004,7 @@ export const landingPages: LandingPage[] = [
       },
       {
         question: "Ist ein Zulassungsdienst teurer als die Behörde?",
-        answer: `Ja, weil zur amtlichen Gebühr der Servicepreis kommt. Bei DeutscheZulassung ist die amtliche Gebühr im Preis von ${P.zulassung} bereits enthalten, ebenso der Versand.`,
+        answer: `Ja, weil zur amtlichen Gebühr der Servicepreis kommt. Bei KFZ-Zulassungsprofis ist die amtliche Gebühr im Preis von ${P.zulassung} bereits enthalten, ebenso der Versand.`,
       },
       {
         question: "Muss ich meine Originaldokumente verschicken?",
@@ -1017,7 +1017,7 @@ export const landingPages: LandingPage[] = [
           "Am Impressum: Bei einem privaten Dienst steht dort ein Unternehmen, keine Behörde. Das i-Kfz-Portal stellt laut BMV die jeweilige Zulassungsbehörde bereit – Sie finden es über deren Website.",
       },
       {
-        question: "Wie lange dauert es über DeutscheZulassung?",
+        question: "Wie lange dauert es über KFZ-Zulassungsprofis?",
         answer:
           `In der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen zuzüglich Versand; Abmeldungen meist ${ZEIT.abmeldung}.`,
       },

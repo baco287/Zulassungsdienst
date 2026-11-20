@@ -15,10 +15,16 @@ import Link from "next/link";
  * Nachreichen von Unterlagen zu einem bestehenden Vorgang.
  *
  * Aufruf wahlweise direkt oder über einen Link mit Referenz, den das Team
- * im Chat verschickt: /unterlagen/?ref=DZ-20260820-A7F3
- * Die Referenz landet im Betreff der E-Mail an info@deutschezulassung.de,
+ * im Chat verschickt: /unterlagen/?ref=KZP-20261120-A7F3
+ * Die Referenz landet im Betreff der E-Mail an unser Postfach (site.contact.email),
  * sodass die Dateien ohne Rückfrage dem richtigen Vorgang zugeordnet sind.
  */
+
+/** Neue (KZP-…) und frühere (DZ-…) Referenznummern. */
+const REFERENZ = new RegExp(
+  `^(?:${site.referencePrefix}|${site.legacy.referencePrefix})-\\d{8}-[A-Z0-9]{4}$`,
+  "i",
+);
 
 const empty: OrderRequest = {
   serviceSlug: "",
@@ -47,8 +53,9 @@ export default function UnterlagenForm() {
   useEffect(() => {
     startedAt.current = Date.now();
     const ref = new URLSearchParams(window.location.search).get("ref");
-    // Referenzformat aus auftrag.php: DZ-JJJJMMTT-XXXX
-    if (ref && /^DZ-\d{8}-[A-Z0-9]{4}$/i.test(ref)) {
+    // Referenzformat aus auftrag.php: KZP-JJJJMMTT-XXXX. Referenzen aus der Zeit
+    // vor der Umbenennung (DZ-…) bleiben gültig – Kunden haben sie noch im Chat.
+    if (ref && REFERENZ.test(ref)) {
       setReference(ref.toUpperCase());
     }
   }, []);
@@ -163,7 +170,7 @@ export default function UnterlagenForm() {
             value={reference}
             onChange={(e) => setReference(e.target.value.toUpperCase())}
             className={inputClass(false)}
-            placeholder="DZ-20260820-A7F3"
+            placeholder={`${site.referencePrefix}-20261120-A7F3`}
           />
           <p className="mt-1.5 text-xs text-ink-500">
             Steht in unserer Bestätigung. Ohne Referenz ordnen wir die Unterlagen

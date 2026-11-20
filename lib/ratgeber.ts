@@ -49,7 +49,7 @@ export const guides: Guide[] = [
           "Die Gesamtkosten einer Zulassung setzen sich aus drei Bausteinen zusammen: den amtlichen Gebühren der Zulassungsbehörde, den Kennzeichenschildern und – falls Sie den Vorgang nicht selbst erledigen – dem Servicepreis eines Zulassungsdienstes. Je nach Vorgang und Kommune ergeben sich daraus typischerweise folgende Beträge:",
         ],
         table: {
-          headers: ["Vorgang", "i-Kfz online (selbst)", "Am Schalter (selbst)", "Über DeutscheZulassung"],
+          headers: ["Vorgang", "i-Kfz online (selbst)", "Am Schalter (selbst)", "Über KFZ-Zulassungsprofis"],
           rows: [
             ["Neuzulassung", `${euroRange(officialFees.onlineRegistration)} + Kennzeichen`, `${euroRange(officialFees.counterRegistration)} + Kennzeichen`, `${P.zulassung} + Kennzeichen`],
             ["Umschreibung / Halterwechsel", `${euroRange(officialFees.onlineRegistration)} + ggf. Kennzeichen`, `${euroRange(officialFees.counterRegistration)} + ggf. Kennzeichen`, `${P.zulassung} + ggf. Kennzeichen`],
@@ -80,7 +80,7 @@ export const guides: Guide[] = [
         heading: "Selbst zulassen oder Zulassungsdienst beauftragen?",
         paragraphs: [
           `Wer Zeit hat, einen Termin bekommt und alle Unterlagen beisammen hat, zahlt beim Selbermachen nur Gebühren und Schilder – zusammen je nach Behörde und Weg ${euroRange([officialFees.onlineRegistration[0] + plateCosts[0], officialFees.counterRegistration[1] + plateCosts[1]])}. Die Realität sieht oft anders aus: Termine sind in vielen Städten Wochen im Voraus ausgebucht, und ein halber Arbeitstag geht schnell verloren.`,
-          `Ein Zulassungsdienst übernimmt den kompletten Vorgang gegen einen Servicepreis. Bei DeutscheZulassung kosten Neuzulassung, Umschreibung, Ummeldung und Wiederzulassung je ${P.zulassung} – amtliche Gebühren und versicherter Versand sind darin bereits enthalten. Werden neue Kennzeichenschilder benötigt, kommen ${P.kennzeichen} pro Paar dazu. Die Abmeldung kostet ${P.abmeldung} inklusive Gebühren. Sie wissen also vorher genau, was auf Sie zukommt.`,
+          `Ein Zulassungsdienst übernimmt den kompletten Vorgang gegen einen Servicepreis. Bei KFZ-Zulassungsprofis kosten Neuzulassung, Umschreibung, Ummeldung und Wiederzulassung je ${P.zulassung} – amtliche Gebühren und versicherter Versand sind darin bereits enthalten. Werden neue Kennzeichenschilder benötigt, kommen ${P.kennzeichen} pro Paar dazu. Die Abmeldung kostet ${P.abmeldung} inklusive Gebühren. Sie wissen also vorher genau, was auf Sie zukommt.`,
         ],
       },
       {
@@ -99,7 +99,7 @@ export const guides: Guide[] = [
       {
         question: "Was kostet ein Zulassungsdienst?",
         answer:
-          `DeutscheZulassung berechnet ${P.zulassung} inkl. Gebühren und Versand, zzgl. ${P.kennzeichen} für neue Kennzeichenschilder; die Abmeldung kostet ${P.abmeldung}.`,
+          `KFZ-Zulassungsprofis berechnet ${P.zulassung} inkl. Gebühren und Versand, zzgl. ${P.kennzeichen} für neue Kennzeichenschilder; die Abmeldung kostet ${P.abmeldung}.`,
       },
       {
         question: "Ist die Online-Zulassung (i-Kfz) günstiger als der Schalter?",
@@ -157,7 +157,7 @@ export const guides: Guide[] = [
         heading: "Zusätzliche Unterlagen je nach Fall",
         paragraphs: [
           "Je nach Vorgang kommen weitere Dokumente hinzu. Beim Gebrauchtwagenkauf (Umschreibung): Zulassungsbescheinigung Teil I, Kaufvertrag und der Nachweis einer gültigen Hauptuntersuchung (HU). Bei abgemeldeten Fahrzeugen: zusätzlich die Abmeldebescheinigung, falls vorhanden. Bei Firmenfahrzeugen: Gewerbeanmeldung oder Handelsregisterauszug. Bei Importen aus der EU: das CoC-Papier; bei Nicht-EU-Importen ein Vollgutachten nach § 21 StVZO.",
-          "Lassen Sie einen Zulassungsdienst den Vorgang erledigen, kommt lediglich eine Vollmacht hinzu – bei DeutscheZulassung stellen wir sie Ihnen digital vorbereitet zur Verfügung. Für den Start genügen Fotos oder Scans aller Dokumente; Originale sind nur nötig, wenn die Behörde sie ausdrücklich verlangt.",
+          "Lassen Sie einen Zulassungsdienst den Vorgang erledigen, kommt lediglich eine Vollmacht hinzu – bei KFZ-Zulassungsprofis stellen wir sie Ihnen digital vorbereitet zur Verfügung. Für den Start genügen Fotos oder Scans aller Dokumente; Originale sind nur nötig, wenn die Behörde sie ausdrücklich verlangt.",
         ],
       },
       {
@@ -217,7 +217,7 @@ export const guides: Guide[] = [
       {
         heading: "So läuft die Ummeldung ohne Behördengang",
         paragraphs: [
-          `Statt einen Termin bei der neuen Zulassungsstelle zu jagen, können Sie die Ummeldung komplett digital erledigen lassen: Sie fotografieren Zulassungsbescheinigung Teil I und II sowie Ihren Ausweis mit neuer Adresse (oder die Meldebescheinigung), erteilen eine digitale Vollmacht – und der Zulassungsdienst übernimmt den Rest. Bei DeutscheZulassung dauert das in der Regel ${ZEIT.zulassung}; die aktualisierten Papiere und gegebenenfalls neue Kennzeichen kommen per versichertem Versand.`,
+          `Statt einen Termin bei der neuen Zulassungsstelle zu jagen, können Sie die Ummeldung komplett digital erledigen lassen: Sie fotografieren Zulassungsbescheinigung Teil I und II sowie Ihren Ausweis mit neuer Adresse (oder die Meldebescheinigung), erteilen eine digitale Vollmacht – und der Zulassungsdienst übernimmt den Rest. Bei KFZ-Zulassungsprofis dauert das in der Regel ${ZEIT.zulassung}; die aktualisierten Papiere und gegebenenfalls neue Kennzeichen kommen per versichertem Versand.`,
         ],
         list: [
           "Zulassungsbescheinigung Teil I (Fahrzeugschein)",
@@ -242,7 +242,7 @@ export const guides: Guide[] = [
       {
         question: "Was kostet das Ummelden nach einem Umzug?",
         answer:
-          `Am Schalter zahlen Sie amtliche Gebühren von rund 26 – 30 € plus ggf. neue Kennzeichen. Über DeutscheZulassung kostet die Ummeldung ${P.zulassung} inklusive Gebühren und Versand (neue Schilder ggf. zzgl. ${P.kennzeichen}) – ganz ohne Behördentermin.`,
+          `Am Schalter zahlen Sie amtliche Gebühren von rund 26 – 30 € plus ggf. neue Kennzeichen. Über KFZ-Zulassungsprofis kostet die Ummeldung ${P.zulassung} inklusive Gebühren und Versand (neue Schilder ggf. zzgl. ${P.kennzeichen}) – ganz ohne Behördentermin.`,
       },
       {
         question: "Muss ich bei der Ummeldung die Versicherung wechseln?",
@@ -284,7 +284,7 @@ export const guides: Guide[] = [
           "Sicherheitscodes der Stempelplaketten auf beiden Kennzeichen freilegen",
           "Bei Verschrottung: Verwertungsnachweis des zertifizierten Demontagebetriebs bereithalten",
           "Codes und Dokumente fotografieren und an den Zulassungsdienst übermitteln – oder selbst im i-Kfz-Portal abmelden",
-          `Abmeldebestätigung erhalten (bei DeutscheZulassung in der Regel ${ZEIT.abmeldung} per E-Mail)`,
+          `Abmeldebestätigung erhalten (bei KFZ-Zulassungsprofis in der Regel ${ZEIT.abmeldung} per E-Mail)`,
         ],
       },
       {
@@ -298,7 +298,7 @@ export const guides: Guide[] = [
       {
         question: "Was kostet die Abmeldung eines Autos?",
         answer:
-          `Die amtliche Gebühr liegt online bei ${euroRange(officialFees.deregistrationOnline)} und am Schalter bei ${euroRange(officialFees.deregistrationCounter)}, je nach Behörde. Über DeutscheZulassung kostet die komplette Abwicklung ${P.abmeldung} inklusive Gebühren – meist ${ZEIT.abmeldung} erledigt.`,
+          `Die amtliche Gebühr liegt online bei ${euroRange(officialFees.deregistrationOnline)} und am Schalter bei ${euroRange(officialFees.deregistrationCounter)}, je nach Behörde. Über KFZ-Zulassungsprofis kostet die komplette Abwicklung ${P.abmeldung} inklusive Gebühren – meist ${ZEIT.abmeldung} erledigt.`,
       },
       {
         question: "Kann ich ein Auto ohne Kennzeichen abmelden?",
@@ -408,7 +408,7 @@ export const guides: Guide[] = [
         heading: "Schritt 3: Zulassungsweg wählen",
         paragraphs: [
           "Jetzt haben Sie drei Möglichkeiten. Erstens der Schaltertermin bei der Zulassungsstelle: der klassische Weg – mit Terminsuche, Anfahrt und Wartezeit. Zweitens die Online-Zulassung über das i-Kfz-Portal Ihrer Behörde: die günstigste Option, aber nur mit Personalausweis mit aktivierter Online-Funktion, Dokumenten mit Sicherheitscodes und funktionierendem ePayment. Drittens ein Zulassungsdienst: Sie senden Fotos Ihrer Unterlagen samt eVB, erteilen eine digitale Vollmacht – und bekommen gestempelte Kennzeichen und Papiere nach Hause geliefert, ohne Termin und ohne eID.",
-          `Bei DeutscheZulassung geben Sie die eVB-Nummer einfach im Online-Auftrag oder per WhatsApp an – wir übernehmen ab hier den kompletten Behördenvorgang, in der Regel in ${ZEIT.zulassungDativ}.`,
+          `Bei KFZ-Zulassungsprofis geben Sie die eVB-Nummer einfach im Online-Auftrag oder per WhatsApp an – wir übernehmen ab hier den kompletten Behördenvorgang, in der Regel in ${ZEIT.zulassungDativ}.`,
         ],
       },
       {
@@ -542,7 +542,7 @@ export const guides: Guide[] = [
       {
         question: "Kostet die Kennzeichenmitnahme extra?",
         answer:
-          "Die amtliche Gebühr der Ummeldung bzw. Umschreibung fällt ohnehin an; die Mitnahme selbst kostet keine nennenswerte Zusatzgebühr. Sie sparen die Kosten für neue Schilder. Bei DeutscheZulassung gilt derselbe Komplettpreis – mit oder ohne Kennzeichenmitnahme.",
+          "Die amtliche Gebühr der Ummeldung bzw. Umschreibung fällt ohnehin an; die Mitnahme selbst kostet keine nennenswerte Zusatzgebühr. Sie sparen die Kosten für neue Schilder. Bei KFZ-Zulassungsprofis gilt derselbe Komplettpreis – mit oder ohne Kennzeichenmitnahme.",
       },
       {
         question: "Kann ich mein altes Kennzeichen nach einer Abmeldung wiederbekommen?",
@@ -591,7 +591,7 @@ export const guides: Guide[] = [
       {
         heading: "Option 3: Zulassungsdienst – der Weg, der immer funktioniert",
         paragraphs: [
-          `Ein Zulassungsdienst braucht weder Ihren Termin noch Ihre eID: Sie fotografieren die Unterlagen, erteilen eine digitale Vollmacht, und der Dienst führt den Vorgang bei der Behörde durch – über eigene Zugänge, unabhängig von der öffentlichen Terminvergabe. Bei DeutscheZulassung startet Ihr Vorgang sofort nach Auftragseingang; die Zulassung ist in der Regel in ${ZEIT.zulassungDativ} erledigt, Abmeldungen meist ${ZEIT.abmeldung}.`,
+          `Ein Zulassungsdienst braucht weder Ihren Termin noch Ihre eID: Sie fotografieren die Unterlagen, erteilen eine digitale Vollmacht, und der Dienst führt den Vorgang bei der Behörde durch – über eigene Zugänge, unabhängig von der öffentlichen Terminvergabe. Bei KFZ-Zulassungsprofis startet Ihr Vorgang sofort nach Auftragseingang; die Zulassung ist in der Regel in ${ZEIT.zulassungDativ} erledigt, Abmeldungen meist ${ZEIT.abmeldung}.`,
           `Das kostet mit ${P.zulassung} zzgl. ggf. ${P.kennzeichen} für Kennzeichen mehr als der Schalter – dafür entfallen Terminsuche, Anfahrt und Wartezeit vollständig. Gerade wenn das neue Auto schon bezahlt vor der Tür steht, ist das oft der Unterschied zwischen „fährt diese Woche“ und „steht noch einen Monat“.`,
         ],
       },
@@ -616,7 +616,7 @@ export const guides: Guide[] = [
       {
         question: "Was kostet die Zulassung ohne eigenen Termin über einen Dienst?",
         answer:
-          `Bei DeutscheZulassung ${P.zulassung} inklusive amtlicher Gebühren und Versand, zzgl. ${P.kennzeichen} für neue Kennzeichenschilder – ganz ohne Behördentermin; die Bearbeitung dauert in der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen. Die Abmeldung kostet ${P.abmeldung} und ist meist ${ZEIT.abmeldung} erledigt.`,
+          `Bei KFZ-Zulassungsprofis ${P.zulassung} inklusive amtlicher Gebühren und Versand, zzgl. ${P.kennzeichen} für neue Kennzeichenschilder – ganz ohne Behördentermin; die Bearbeitung dauert in der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen. Die Abmeldung kostet ${P.abmeldung} und ist meist ${ZEIT.abmeldung} erledigt.`,
       },
       {
         question: "Gilt das auch für meine Stadt?",
@@ -812,7 +812,7 @@ export const guides: Guide[] = [
       {
         heading: "Sicherheitscodes und Zulassungsdienst",
         paragraphs: [
-          `Wenn Sie DeutscheZulassung beauftragen, brauchen Sie keinen Personalausweis mit Online-Funktion. Sie senden Handyfotos Ihrer Unterlagen und erteilen uns eine Vollmacht; wir reichen den Vorgang bei der zuständigen Behörde ein, die über die Zulassung entscheidet. Für die Abmeldung genügen in der Regel Fotos der ZB I und der Plakettencodes. Sie kostet ${P.abmeldung} inklusive amtlicher Gebühren und ist meist ${ZEIT.abmeldung} erledigt.`,
+          `Wenn Sie KFZ-Zulassungsprofis beauftragen, brauchen Sie keinen Personalausweis mit Online-Funktion. Sie senden Handyfotos Ihrer Unterlagen und erteilen uns eine Vollmacht; wir reichen den Vorgang bei der zuständigen Behörde ein, die über die Zulassung entscheidet. Für die Abmeldung genügen in der Regel Fotos der ZB I und der Plakettencodes. Sie kostet ${P.abmeldung} inklusive amtlicher Gebühren und ist meist ${ZEIT.abmeldung} erledigt.`,
           "Unsicher, ob Ihre Papiere einen Code haben oder ob Sie ihn schon freilegen sollten? Fragen Sie uns vorher – Montag bis Freitag von 8 bis 18 Uhr. Sie beauftragen über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung.",
         ],
       },
@@ -908,7 +908,7 @@ export const guides: Guide[] = [
         heading: "Kennzeichen übernehmen oder neue Schilder?",
         paragraphs: [
           "Seit dem 1. Oktober 2019 können Sie das bisherige Kennzeichen beim Halterwechsel bundesweit übernehmen – auch wenn Sie in einem anderen Zulassungsbezirk wohnen als der Verkäufer. Voraussetzung ist, dass das Auto noch zugelassen ist. Wurde es bereits abgemeldet, erhalten Sie in der Regel ein neues Kennzeichen.",
-          `Die Übernahme spart neue Schilder und deren Montage. Neue Kennzeichen lohnen sich, wenn Sie lieber das Kürzel Ihres Wohnorts fahren, ein Wunschkennzeichen möchten oder die alten Schilder beschädigt sind. Bei DeutscheZulassung legen Sie das bei der Beauftragung fest: Schilder liefern wir auf Wunsch für ${P.kennzeichen} pro Paar mit, alternativ lassen Sie sie beim Schildermacher prägen oder behalten das bisherige Kennzeichen.`,
+          `Die Übernahme spart neue Schilder und deren Montage. Neue Kennzeichen lohnen sich, wenn Sie lieber das Kürzel Ihres Wohnorts fahren, ein Wunschkennzeichen möchten oder die alten Schilder beschädigt sind. Bei KFZ-Zulassungsprofis legen Sie das bei der Beauftragung fest: Schilder liefern wir auf Wunsch für ${P.kennzeichen} pro Paar mit, alternativ lassen Sie sie beim Schildermacher prägen oder behalten das bisherige Kennzeichen.`,
         ],
       },
       {
@@ -936,7 +936,7 @@ export const guides: Guide[] = [
       {
         heading: "Umschreibung ohne Behördentermin",
         paragraphs: [
-          "Sie können die Umschreibung auch DeutscheZulassung übertragen. Sie beauftragen über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung. Handyfotos der Unterlagen genügen für den Start, eine Vollmacht regelt die Vertretung bei der Behörde, und einen Personalausweis mit Online-Funktion brauchen Sie nicht.",
+          "Sie können die Umschreibung auch KFZ-Zulassungsprofis übertragen. Sie beauftragen über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung. Handyfotos der Unterlagen genügen für den Start, eine Vollmacht regelt die Vertretung bei der Behörde, und einen Personalausweis mit Online-Funktion brauchen Sie nicht.",
           `Der Halterwechsel kostet ${P.zulassung} inklusive amtlicher Gebühren und Versand. In der Regel ist er ${ZEIT.zulassung} nach Eingang der vollständigen Unterlagen erledigt, dazu kommt die Versanddauer. Über die Zulassung selbst entscheidet die Behörde.`,
         ],
       },
@@ -965,7 +965,7 @@ export const guides: Guide[] = [
       {
         question: "Was kostet ein Halterwechsel?",
         answer:
-          `Die amtlichen Gebühren hängen von Behörde, Verfahren und Kennzeichenwahl ab; neue Schilder kommen gegebenenfalls dazu. Über DeutscheZulassung kostet der Halterwechsel ${P.zulassung} inklusive amtlicher Gebühren und Versand, neue Schilder auf Wunsch zzgl. ${P.kennzeichen}.`,
+          `Die amtlichen Gebühren hängen von Behörde, Verfahren und Kennzeichenwahl ab; neue Schilder kommen gegebenenfalls dazu. Über KFZ-Zulassungsprofis kostet der Halterwechsel ${P.zulassung} inklusive amtlicher Gebühren und Versand, neue Schilder auf Wunsch zzgl. ${P.kennzeichen}.`,
       },
     ],
     relatedServices: ["halterwechsel", "wunschkennzeichen", "kurzzeitkennzeichen"],
@@ -1014,7 +1014,7 @@ export const guides: Guide[] = [
         paragraphs: [
           "Die Abmeldung vor der Übergabe ist der Weg mit dem klarsten Schnitt. Ab dem Tag der Außerbetriebsetzung zahlen Sie weder Kfz-Steuer noch Versicherungsbeiträge, und mit Ihrem Kennzeichen kann niemand mehr fahren. Eine Verkaufsmeldung an die Behörde entfällt, weil die Meldepflicht für bereits abgemeldete Fahrzeuge nicht gilt.",
           "Der Nachteil liegt beim Käufer: Ein abgemeldetes Auto darf nicht am öffentlichen Straßenverkehr teilnehmen. Für Probefahrt und Heimweg braucht er ein Kurzzeitkennzeichen, einen Transport auf dem Anhänger oder eine Zulassung auf seinen Namen, bevor er das Auto abholt. Planen Sie das bei Preisverhandlung und Übergabetermin mit ein.",
-          `Übergeben Sie dem Käufer alle Papiere: beide Teile der Zulassungsbescheinigung – auch eine nach der Online-Abmeldung entwertete ZB I, denn sie wird für die spätere Wiederzulassung gebraucht – sowie die Abmeldebestätigung. Die Abmeldung selbst übernimmt DeutscheZulassung für ${P.abmeldung} inklusive amtlicher Gebühren, meist ${ZEIT.abmeldung}.`,
+          `Übergeben Sie dem Käufer alle Papiere: beide Teile der Zulassungsbescheinigung – auch eine nach der Online-Abmeldung entwertete ZB I, denn sie wird für die spätere Wiederzulassung gebraucht – sowie die Abmeldebestätigung. Die Abmeldung selbst übernimmt KFZ-Zulassungsprofis für ${P.abmeldung} inklusive amtlicher Gebühren, meist ${ZEIT.abmeldung}.`,
         ],
       },
       {
@@ -1055,7 +1055,7 @@ export const guides: Guide[] = [
         heading: "Kurzzeitkennzeichen: So kommt der Käufer nach Hause",
         paragraphs: [
           "Haben Sie vor dem Verkauf abgemeldet, ist das Kurzzeitkennzeichen für den Käufer die naheliegende Lösung. Es ist für Probe- und Überführungsfahrten gedacht, gilt nur für das Fahrzeug, für das es zugeteilt wurde, und läuft spätestens am Ende des fünften Tages nach der Zuteilung ab (§ 42 FZV). Voraussetzung sind eine Haftpflichtversicherung – in der Praxis eine eigene eVB für Kurzzeitkennzeichen – und grundsätzlich eine gültige Hauptuntersuchung. Ohne HU sind nur eng begrenzte Fahrten erlaubt, etwa zur Prüfstelle.",
-          `Alternativ lässt der Käufer das Auto mit den übergebenen Papieren direkt auf sich zu und holt es mit gestempelten Kennzeichen ab. Auch das kann er über DeutscheZulassung erledigen: Die Wiederzulassung auf den neuen Halter kostet ${P.zulassung} inklusive amtlicher Gebühren und Versand; Kurzzeitkennzeichen organisieren wir auf Anfrage. Sie beauftragen über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung.`,
+          `Alternativ lässt der Käufer das Auto mit den übergebenen Papieren direkt auf sich zu und holt es mit gestempelten Kennzeichen ab. Auch das kann er über KFZ-Zulassungsprofis erledigen: Die Wiederzulassung auf den neuen Halter kostet ${P.zulassung} inklusive amtlicher Gebühren und Versand; Kurzzeitkennzeichen organisieren wir auf Anfrage. Sie beauftragen über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung.`,
         ],
       },
     ],
@@ -1171,9 +1171,9 @@ export const guides: Guide[] = [
         ],
       },
       {
-        heading: "Wunschkennzeichen über DeutscheZulassung",
+        heading: "Wunschkennzeichen über KFZ-Zulassungsprofis",
         paragraphs: [
-          "Sie können das Wunschkennzeichen als Zusatz zu einer Neuzulassung, Umschreibung, Ummeldung oder Wiederzulassung bei DeutscheZulassung buchen. Wir prüfen die Verfügbarkeit, reservieren die Kombination und kümmern uns im Rahmen der Zulassung um die Zuteilung. Nennen Sie uns dafür am besten zwei oder drei Alternativen.",
+          "Sie können das Wunschkennzeichen als Zusatz zu einer Neuzulassung, Umschreibung, Ummeldung oder Wiederzulassung bei KFZ-Zulassungsprofis buchen. Wir prüfen die Verfügbarkeit, reservieren die Kombination und kümmern uns im Rahmen der Zulassung um die Zuteilung. Nennen Sie uns dafür am besten zwei oder drei Alternativen.",
           `${wunschkennzeichenHinweis} Hinzu kommt der Preis der jeweiligen Zulassung; Schilder liefern wir auf Wunsch für ${P.kennzeichen} pro Paar mit. Sie beauftragen über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung.`,
         ],
       },
@@ -1182,7 +1182,7 @@ export const guides: Guide[] = [
       {
         question: "Was kostet ein Wunschkennzeichen?",
         answer:
-          `Die amtliche Gebühr beträgt bundesweit 12,80 € (2,60 € Reservierung plus 10,20 € Zuteilung), dazu kommen Zulassungsgebühr und Schilder. Über DeutscheZulassung kostet der Wunschkennzeichen-Service ${P.wunschkennzeichen}, die amtliche Gebühr ist darin enthalten.`,
+          `Die amtliche Gebühr beträgt bundesweit 12,80 € (2,60 € Reservierung plus 10,20 € Zuteilung), dazu kommen Zulassungsgebühr und Schilder. Über KFZ-Zulassungsprofis kostet der Wunschkennzeichen-Service ${P.wunschkennzeichen}, die amtliche Gebühr ist darin enthalten.`,
       },
       {
         question: "Wie lange ist ein reserviertes Wunschkennzeichen gültig?",
@@ -1298,7 +1298,7 @@ export const guides: Guide[] = [
       {
         heading: "Zulassungsservice für Gewerbekunden",
         paragraphs: [
-          "DeutscheZulassung übernimmt Zulassungen für Unternehmen bundesweit – vom einzelnen Firmenwagen bis zum Fuhrpark. Gewerbekunden erhalten eine Sammelabwicklung, eine feste Ansprechperson und Staffelpreise auf Anfrage. Die Unterlagen senden Sie als Handyfotos über das Online-Formular, per WhatsApp oder per E-Mail; einen Personalausweis mit Online-Funktion brauchen Sie nicht.",
+          "KFZ-Zulassungsprofis übernimmt Zulassungen für Unternehmen bundesweit – vom einzelnen Firmenwagen bis zum Fuhrpark. Gewerbekunden erhalten eine Sammelabwicklung, eine feste Ansprechperson und Staffelpreise auf Anfrage. Die Unterlagen senden Sie als Handyfotos über das Online-Formular, per WhatsApp oder per E-Mail; einen Personalausweis mit Online-Funktion brauchen Sie nicht.",
           `Für einzelne Vorgänge gelten die regulären Festpreise, etwa ${P.zulassung} für eine Neuzulassung oder Umschreibung inklusive amtlicher Gebühren und Versand. In der Regel ist eine Zulassung ${ZEIT.zulassung} nach Eingang der vollständigen Unterlagen erledigt, zuzüglich Versand. Sie beauftragen über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung – erreichbar sind wir Montag bis Freitag von 8 bis 18 Uhr.`,
         ],
       },
@@ -1327,7 +1327,7 @@ export const guides: Guide[] = [
       {
         question: "Gibt es für Fuhrparks besondere Konditionen?",
         answer:
-          `Bei DeutscheZulassung erhalten Gewerbekunden Staffelpreise auf Anfrage, dazu Sammelabwicklung und eine feste Ansprechperson. Einzelne Vorgänge kosten den regulären Festpreis, zum Beispiel ${P.zulassung} für eine Zulassung inklusive amtlicher Gebühren und Versand.`,
+          `Bei KFZ-Zulassungsprofis erhalten Gewerbekunden Staffelpreise auf Anfrage, dazu Sammelabwicklung und eine feste Ansprechperson. Einzelne Vorgänge kosten den regulären Festpreis, zum Beispiel ${P.zulassung} für eine Zulassung inklusive amtlicher Gebühren und Versand.`,
       },
     ],
     relatedServices: ["gewerbekunden", "neuzulassung", "halterwechsel"],

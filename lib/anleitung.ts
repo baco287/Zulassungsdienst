@@ -1,8 +1,8 @@
 /**
- * Bilderanleitung „Auto online zulassen mit DeutscheZulassung“ – Schritt für Schritt.
+ * Bilderanleitung „Auto online zulassen mit KFZ-Zulassungsprofis“ – Schritt für Schritt.
  *
  * Gemeinsame Datenquelle für die Seite /anleitung und die daraus erzeugte PDF
- * (scripts/build-anleitung-pdf.sh). WICHTIG zum Ablauf: DeutscheZulassung prägt
+ * (scripts/build-anleitung-pdf.sh). WICHTIG zum Ablauf: KFZ-Zulassungsprofis prägt
  * und versendet KEINE Kennzeichen – die Schilder lässt der Kunde selbst bei
  * einem lokalen Schildermacher prägen (wir empfehlen einen in der Nähe).
  */
@@ -68,7 +68,7 @@ export const anleitungSteps: AnleitungStep[] = [
   },
   {
     title: "Wir führen die Zulassung durch",
-    meta: `${ZEIT.zulassung} · DeutscheZulassung`,
+    meta: `${ZEIT.zulassung} · KFZ-Zulassungsprofis`,
     text: "Jetzt übernehmen wir: Wir wickeln Ihren Vorgang digital bei der zuständigen Zulassungsbehörde ab. Sobald die Zulassung steht, erhalten Sie von uns Ihre zugeteilte Kennzeichen-Kombination und – bei der Online-Zulassung – den vorläufigen Zulassungsnachweis, mit dem Sie bereits fahren dürfen.",
     tip: `Abmeldungen sind meist ${ZEIT.abmeldung} erledigt – Sie erhalten die Abmeldebestätigung per E-Mail, und die Anleitung endet für Sie hier.`,
     image: {

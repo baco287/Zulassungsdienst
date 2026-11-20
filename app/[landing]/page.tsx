@@ -134,7 +134,7 @@ export default async function LandingPageView({ params }: { params: Promise<{ la
                   <ArrowRight className="h-5 w-5" aria-hidden />
                 </TrackedLink>
                 <TrackedLink
-                  href={whatsAppLink(`Hallo DeutscheZulassung, ich komme von Ihrer Seite „${page.navTitle}“ und habe eine Frage.`)}
+                  href={whatsAppLink(`Hallo KFZ-Zulassungsprofis, ich komme von Ihrer Seite „${page.navTitle}“ und habe eine Frage.`)}
                   event="whatsapp_click"
                   props={{ position: "landing", page: page.slug }}
                   external

@@ -42,9 +42,16 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
 
-  # ── Produktion: all-inkl Webspace (deutschezulassung.de) ────────────────
+  # ── Produktion: all-inkl Webspace (kfz-zulassungsprofis.de) ─────────────
   # Läuft erst, wenn die Secrets FTP_SERVER / FTP_USERNAME / FTP_PASSWORD
   # im Repo hinterlegt sind (Settings → Secrets and variables → Actions).
+  #
+  # Domainumzug: config/migration.json steuert, was hochgeladen wird.
+  #   "vorschau"  neue Website in den Ordner der neuen Domain, mit noindex;
+  #               der Ordner der alten Domain wird nicht angefasst.
+  #   "live"      neue Website indexierbar; zusätzlich kommt die
+  #               Weiterleitungs-.htaccess (deploy/alte-domain/) in den Ordner
+  #               der alten Domain. Dort wird nichts gelöscht.
   deploy-allinkl:
     runs-on: ubuntu-latest
     env:
@@ -63,9 +70,38 @@ jobs:
         if: env.HAS_FTP != ''
         run: npm ci
 
+      # Liest Stufe und Zielordner und bricht bei unplausiblen Werten ab –
+      # ein leerer oder falscher Ordner darf nie zu einem Upload ins Wurzel-
+      # verzeichnis des Webspace führen.
+      - name: Migrationsstufe lesen
+        id: mig
+        if: env.HAS_FTP != ''
+        run: |
+          set -o pipefail
+          node -e '
+            const m = require("./config/migration.json");
+            const ordner = /^\/[a-z0-9-]+(\.[a-z0-9-]+)+$/;
+            if (!["vorschau", "live"].includes(m.stufe)) throw new Error("config/migration.json: stufe muss vorschau oder live sein");
+            for (const k of ["neu", "alt"]) {
+              if (!ordner.test(m[k].ftpOrdner)) throw new Error("config/migration.json: ftpOrdner ungültig bei " + k);
+            }
+            if (m.neu.ftpOrdner === m.alt.ftpOrdner) throw new Error("config/migration.json: neuer und alter Ordner sind identisch");
+            console.log("stufe=" + m.stufe);
+            console.log("neu=" + m.neu.ftpOrdner);
+            console.log("alt=" + m.alt.ftpOrdner);
+          ' | tee -a "$GITHUB_OUTPUT"
+
       - name: Build (Root-Pfad für eigene Domain)
         if: env.HAS_FTP != ''
         run: npm run build
+        env:
+          # Vorschau: Seiten tragen noindex, das Formular funktioniert trotzdem.
+          NEXT_PUBLIC_NOINDEX: ${{ steps.mig.outputs.stufe == 'live' && '0' || '1' }}
+
+      # Weiterleitungen der alten Domain müssen zu den Seiten im Build passen.
+      - name: Weiterleitungsregeln prüfen
+        if: env.HAS_FTP != ''
+        run: node scripts/check-weiterleitungen.mjs --regeln
 
       # Bricht ab, wenn Altpreise im Build stehen oder die Preise in
       # config/preise.json nicht freigegeben sind (freigabe.freigegeben).
@@ -108,8 +144,17 @@ jobs:
           FTP_SERVER: ${{ secrets.FTP_SERVER }}
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          STUFE: ${{ steps.mig.outputs.stufe }}
+          NEU_ORDNER: ${{ steps.mig.outputs.neu }}
+          ALT_ORDNER: ${{ steps.mig.outputs.alt }}
         run: |
           set -o pipefail
+          [ -n "$NEU_ORDNER" ] && [ -n "$ALT_ORDNER" ] || { echo "Zielordner fehlen" | tee /tmp/lftp.log; exit 1; }
+          # Alte Domain: nur im Livegang, nur die Weiterleitungs-.htaccess, ohne --delete.
+          ALT_BEFEHL=""
+          if [ "$STUFE" = "live" ]; then
+            ALT_BEFEHL="mirror -R --verbose=1 ./deploy/alte-domain/ $ALT_ORDNER/;"
+          fi
           sudo apt-get update -qq
           sudo apt-get install -y -qq lftp
           # Diagnose-Proben vor dem eigentlichen Deploy:
@@ -126,6 +171,7 @@ jobs:
             "$FTP_SERVER" "$FTP_USERNAME" "$FTP_PASSWORD" > ~/.netrc
           chmod 600 ~/.netrc
           # Hauptnutzer wurzelt auf "/" – Website liegt im Domain-Ordner.
+          echo "Stufe: $STUFE · Ziel: $NEU_ORDNER · alte Domain: ${ALT_BEFEHL:-unverändert}" | tee -a /tmp/lftp.log
           lftp -d -e "
             set ftp:ssl-force true;
             set ftp:ssl-protect-data true;
@@ -135,9 +181,10 @@ jobs:
             set net:timeout 60;
             open $FTP_SERVER;
             pwd;
-            mirror -R --parallel=6 --verbose=1 ./out/_next/ /deutschezulassung.de/_next/;
-            mirror -R --parallel=6 --delete --verbose=1 --exclude ^_next/ ./out/ /deutschezulassung.de/;
-            mirror -R --parallel=6 --delete --verbose=1 ./out/_next/ /deutschezulassung.de/_next/;
+            mirror -R --parallel=6 --verbose=1 ./out/_next/ $NEU_ORDNER/_next/;
+            mirror -R --parallel=6 --delete --verbose=1 --exclude ^_next/ ./out/ $NEU_ORDNER/;
+            mirror -R --parallel=6 --delete --verbose=1 ./out/_next/ $NEU_ORDNER/_next/;
+            $ALT_BEFEHL
             bye
           " 2>&1 | tee -a /tmp/lftp.log
           rm -f ~/.netrc

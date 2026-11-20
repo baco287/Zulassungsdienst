@@ -47,7 +47,7 @@ import WhatsAppIcon from "./WhatsAppIcon";
  * Auftrags-Assistent.
  *
  * Vier Schritte: Service wählen → Ihre Angaben → Unterlagen → Auftrag abschließen.
- * Beim Absenden geht die Anfrage samt Anhängen an info@deutschezulassung.de
+ * Beim Absenden geht die Anfrage samt Anhängen an unser Postfach (site.contact.email)
  * (siehe lib/order.ts und public/api/auftrag.php – beides unverändert). Danach
  * führen wir in den WhatsApp-Chat weiter, mit einer Referenznummer, die Chat
  * und Posteingang verbindet.

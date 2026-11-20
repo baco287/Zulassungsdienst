@@ -177,7 +177,7 @@ export default function MaxxPage() {
               <Maxx
                 pose="wave"
                 className="h-44 w-auto sm:h-56"
-                label="Maxx, das Maskottchen von DeutscheZulassung, winkt"
+                label="Maxx, das Maskottchen von KFZ-Zulassungsprofis, winkt"
               />
             </div>
           </div>

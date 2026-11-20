@@ -5,7 +5,7 @@ export type ServiceCategory = "zulassung" | "kennzeichen" | "dokumente" | "servi
 export type Audience = "privat" | "gewerblich" | "beide";
 
 export interface PriceInfo {
-  /** Preis von DeutscheZulassung in Euro (brutto). null = noch nicht festgelegt. */
+  /** Preis von KFZ-Zulassungsprofis in Euro (brutto). null = noch nicht festgelegt. */
   serviceFee: number | null;
   /**
    * true = amtliche Gebühren und Versand sind bereits enthalten.

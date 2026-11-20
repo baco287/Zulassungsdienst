@@ -39,7 +39,7 @@ export default function MobileCTA() {
       >
         <div className="mx-auto flex max-w-md gap-2.5">
           <a
-            href={whatsAppLink("Hallo DeutscheZulassung, ich habe eine Frage zur Kfz-Zulassung.")}
+            href={whatsAppLink("Hallo KFZ-Zulassungsprofis, ich habe eine Frage zur Kfz-Zulassung.")}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => track("whatsapp_click", { position: "mobile_leiste" })}

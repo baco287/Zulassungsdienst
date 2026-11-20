@@ -66,7 +66,7 @@ export default function ComparisonTable() {
       <div className="overflow-x-auto rounded-2xl border border-ink-200 bg-white shadow-card">
         <table className="w-full min-w-[640px] border-collapse text-left">
           <caption className="sr-only">
-            Vergleich: Zulassungsstelle, i-Kfz selbst und DeutscheZulassung
+            Vergleich: Zulassungsstelle, i-Kfz selbst und KFZ-Zulassungsprofis
           </caption>
           <thead>
             <tr className="border-b border-ink-200 font-display text-sm text-ink-900">
@@ -75,7 +75,7 @@ export default function ComparisonTable() {
               </th>
               <th scope="col" className="px-4 py-3 font-semibold">Zulassungsstelle</th>
               <th scope="col" className="px-4 py-3 font-semibold">i-Kfz selbst</th>
-              <th scope="col" className="bg-brand-600 px-4 py-3 font-semibold text-white">DeutscheZulassung</th>
+              <th scope="col" className="bg-brand-600 px-4 py-3 font-semibold text-white">KFZ-Zulassungsprofis</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-ink-100">

@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import MobileCTA from "@/components/MobileCTA";
 import Analytics from "@/components/Analytics";
 import { site } from "@/lib/site";
+import { NOINDEX } from "@/lib/features";
 import "./globals.css";
 import { ORG_ID, WEBSITE_ID } from "@/lib/catalog";
 
@@ -51,10 +52,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
   },
-  robots:
-    process.env.NEXT_PUBLIC_STAGING === "1"
-      ? { index: false, follow: false }
-      : { index: true, follow: true },
+  robots: NOINDEX ? { index: false, follow: false } : { index: true, follow: true },
 };
 
 const jsonLd = {

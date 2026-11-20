@@ -147,7 +147,7 @@ export const KENNZEICHEN_HINWEIS = {
 export interface Zeitphasen {
   /** Aufwand des Kunden (online). */
   kunde: string;
-  /** Prüfung durch DeutscheZulassung – null, solange nicht freigegeben. */
+  /** Prüfung durch KFZ-Zulassungsprofis – null, solange nicht freigegeben. */
   pruefung: string | null;
   /** Bearbeitung inkl. Behördenentscheidung, ohne Versand. */
   bearbeitung: string | null;

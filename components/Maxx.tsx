@@ -1,5 +1,5 @@
 /**
- * „Maxx“ – das Maskottchen von DeutscheZulassung.
+ * „Maxx“ – das Maskottchen von KFZ-Zulassungsprofis.
  *
  * Ein freundliches deutsches Kennzeichen mit Gesicht: sofort als Zulassungs-
  * thema erkennbar, funktioniert als winziger Chat-Avatar ebenso wie großflächig.

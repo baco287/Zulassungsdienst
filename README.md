@@ -1,6 +1,6 @@
-# DeutscheZulassung – Website
+# KFZ-Zulassungsprofis – Website
 
-Moderne, responsive Website für den digitalen Kfz-Zulassungsdienst **DeutscheZulassung**
+Moderne, responsive Website für den digitalen Kfz-Zulassungsdienst **KFZ-Zulassungsprofis**
 (Projekt „Zulassungsdienst“). Phase 1: professionelle Web-Präsenz mit Online-Auftrag
 über reale Kanäle (WhatsApp / E-Mail). Phase 2+: Automatisierung (siehe unten).
 

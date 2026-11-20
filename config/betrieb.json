@@ -1,5 +1,5 @@
 {
-  "$kommentar": "Zentrale Betriebsangaben von DeutscheZulassung: Zeiten, Abwicklung, Regionen. Einzige Quelle für alle Zeit- und Ablaufversprechen der Website (Seiten, FAQ, Stadtseiten, strukturierte Daten, llms.txt). Preise stehen ausschließlich in config/preise.json. Werte mit \"status\": \"offen\" sind NICHT freigegeben und werden auf der Website nicht als Versprechen angezeigt. Nach jeder Änderung: 'stand' aktualisieren, Freigabe setzen, `npm run check:daten` ausführen.",
+  "$kommentar": "Zentrale Betriebsangaben von KFZ-Zulassungsprofis: Zeiten, Abwicklung, Regionen. Einzige Quelle für alle Zeit- und Ablaufversprechen der Website (Seiten, FAQ, Stadtseiten, strukturierte Daten, llms.txt). Preise stehen ausschließlich in config/preise.json. Werte mit \"status\": \"offen\" sind NICHT freigegeben und werden auf der Website nicht als Versprechen angezeigt. Nach jeder Änderung: 'stand' aktualisieren, Freigabe setzen, `npm run check:daten` ausführen.",
   "stand": "2026-11-11",
   "freigabe": {
     "freigegeben": false,
@@ -8,7 +8,7 @@
     "hinweis": "Bearbeitungsdauer (10–30 Minuten) und Versand neuer Kennzeichenschilder (1–3 Werktage) sind Betreiberangaben vom 11.11.2026 (status \"betreiberangabe\"). Die übrigen Zeitwerte sind aus den bisher veröffentlichten Aussagen übernommen und noch nicht ausdrücklich bestätigt. Offene Punkte siehe docs/seo/OWNER-DECISIONS.md."
   },
   "zeiten": {
-    "$kommentar": "Vier getrennte Phasen: (1) Aufwand des Kunden, (2) Prüfung durch DeutscheZulassung, (3) Bearbeitung inkl. Behördenentscheidung, (4) Versand. Alle Angaben zählen ab vollständigen, lesbaren Unterlagen und Zahlungseingang, innerhalb der Servicezeiten. Bearbeitung entweder als \"minuten\" oder als \"werktage\".",
+    "$kommentar": "Vier getrennte Phasen: (1) Aufwand des Kunden, (2) Prüfung durch KFZ-Zulassungsprofis, (3) Bearbeitung inkl. Behördenentscheidung, (4) Versand. Alle Angaben zählen ab vollständigen, lesbaren Unterlagen und Zahlungseingang, innerhalb der Servicezeiten. Bearbeitung entweder als \"minuten\" oder als \"werktage\".",
     "kunde": {
       "anfrageMinuten": {
         "wert": 2,
@@ -31,7 +31,7 @@
       "wert": null,
       "einheit": "Stunden",
       "status": "offen",
-      "frage": "Wie schnell prüft DeutscheZulassung eingegangene Unterlagen werktags (z. B. am selben Werktag bis 18 Uhr)?"
+      "frage": "Wie schnell prüft KFZ-Zulassungsprofis eingegangene Unterlagen werktags (z. B. am selben Werktag bis 18 Uhr)?"
     },
     "bearbeitung": {
       "neuzulassung": {
@@ -107,7 +107,7 @@
         ],
         "status": "betreiberangabe",
         "quelle": "Betreiberangabe vom 11.11.2026: „Kennzeichen können 1–3 Tage dauern“",
-        "hinweis": "Gilt für neue Kennzeichenschilder, die über DeutscheZulassung bestellt werden. Auf der Website als Werktage formuliert."
+        "hinweis": "Gilt für neue Kennzeichenschilder, die über KFZ-Zulassungsprofis bestellt werden. Auf der Website als Werktage formuliert."
       },
       "werktage": null,
       "dienstleister": null,

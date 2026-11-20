@@ -116,7 +116,7 @@ const howToJsonLd = {
   "@type": "HowTo",
   name: "Kfz-Zulassung per WhatsApp beauftragen",
   description:
-    "In 5 Schritten per Messenger zur erledigten Kfz-Zulassung: Chat öffnen, Unterlagen abfotografieren, Vollmacht bestätigen – den Behördengang übernimmt DeutscheZulassung.",
+    "In 5 Schritten per Messenger zur erledigten Kfz-Zulassung: Chat öffnen, Unterlagen abfotografieren, Vollmacht bestätigen – den Behördengang übernimmt KFZ-Zulassungsprofis.",
   inLanguage: "de",
   totalTime: "P3D",
   step: whatsappSteps.map((s, i) => ({
@@ -139,7 +139,7 @@ const faqJsonLd = {
 };
 
 const chatCta = whatsAppLink(
-  "Hallo DeutscheZulassung, ich möchte meine Kfz-Zulassung per WhatsApp erledigen.",
+  "Hallo KFZ-Zulassungsprofis, ich möchte meine Kfz-Zulassung per WhatsApp erledigen.",
 );
 
 export default function WhatsAppZulassungPage() {
@@ -194,7 +194,7 @@ export default function WhatsAppZulassungPage() {
             <div className="flex flex-col items-center gap-6">
               <ChatMockup />
               <div className="flex items-center gap-3">
-                <Maxx pose="wave" className="h-16 w-auto" label="Maxx, das Maskottchen von DeutscheZulassung" />
+                <Maxx pose="wave" className="h-16 w-auto" label="Maxx, das Maskottchen von KFZ-Zulassungsprofis" />
                 <p className="max-w-[12rem] text-sm leading-snug text-ink-600">
                   <strong className="font-display text-ink-900">Maxx</strong> begleitet
                   Sie durch den Chat.

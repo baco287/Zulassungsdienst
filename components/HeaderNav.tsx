@@ -40,7 +40,7 @@ const mobileExtra = [
 ];
 
 const telHref = `tel:${site.contact.phone.replace(/\s/g, "")}`;
-const waHref = whatsAppLink("Hallo DeutscheZulassung, ich habe eine Frage zur Kfz-Zulassung.");
+const waHref = whatsAppLink("Hallo KFZ-Zulassungsprofis, ich habe eine Frage zur Kfz-Zulassung.");
 
 const navLink = (active: boolean) =>
   `whitespace-nowrap rounded-lg px-2 py-2 text-[15px] font-semibold transition-colors duration-150 xl:px-3.5 ${

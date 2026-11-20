@@ -25,7 +25,7 @@ export default function ZulassungsstellenPage() {
             gleichem Kürzel wie die Stadt finden Sie beide Behörden getrennt.
           </p>
           <p className="mt-3 max-w-3xl text-sm text-ink-500">
-            DeutscheZulassung ist ein privater Zulassungsdienst und keine Behörde. Ohne eigenen Termin übernehmen wir den
+            KFZ-Zulassungsprofis ist ein privater Zulassungsdienst und keine Behörde. Ohne eigenen Termin übernehmen wir den
             Vorgang mit Ihrer Vollmacht.
           </p>
         </div>

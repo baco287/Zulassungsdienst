@@ -99,7 +99,7 @@ export default function ChatMockup() {
         </span>
         <div className="min-w-0">
           <p className="truncate font-display text-sm font-semibold text-white">
-            DeutscheZulassung
+            KFZ-Zulassungsprofis
           </p>
           <p className="text-[11px] text-emerald-400">
             {typing ? "schreibt …" : "online · antwortet meist sofort"}

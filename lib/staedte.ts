@@ -8,7 +8,7 @@ import { DAUER_UEBERSICHT, ZEIT } from "@/lib/betrieb";
  * Jede Stadt hat EIGENE Inhalte (zuständige Behörde, Kennzeichen-Kürzel,
  * lokale Besonderheiten, eigene FAQ) – keine Textbausteine mit
  * ausgetauschtem Stadtnamen. Wichtig für Ehrlichkeit und Recht:
- * DeutscheZulassung wickelt Vorgänge DIGITAL bei der jeweils zuständigen
+ * KFZ-Zulassungsprofis wickelt Vorgänge DIGITAL bei der jeweils zuständigen
  * Behörde ab – die Seiten behaupten keine physische Präsenz vor Ort.
  */
 
@@ -49,7 +49,7 @@ export const cities: City[] = [
     ],
     faq: [
       {
-        question: "Wie lange dauert die Kfz-Zulassung in Berlin über DeutscheZulassung?",
+        question: "Wie lange dauert die Kfz-Zulassung in Berlin über KFZ-Zulassungsprofis?",
         answer:
           `In der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, zuzüglich Versand. Sie brauchen keinen eigenen Termin beim LABO – wir wickeln den Vorgang für Sie ab. Abmeldungen erledigen wir meist ${ZEIT.abmeldung}.`,
       },
@@ -101,7 +101,7 @@ export const cities: City[] = [
           "Ja – der Vorgang läuft digital beim LBV, unabhängig davon, in welchem Stadtteil Sie wohnen. Kennzeichen und Papiere kommen per versichertem Versand zu Ihnen.",
       },
       {
-        question: "Was kostet die Kfz-Zulassung in Hamburg über DeutscheZulassung?",
+        question: "Was kostet die Kfz-Zulassung in Hamburg über KFZ-Zulassungsprofis?",
         answer:
           `${P.zulassung} als Komplettpreis für Neuzulassung, Umschreibung oder Ummeldung – amtliche LBV-Gebühren und Versand inklusive, HH-Kennzeichenschilder zzgl. ${P.kennzeichen}. Die Abmeldung kostet ${P.abmeldung}.`,
       },
@@ -437,7 +437,7 @@ export const cities: City[] = [
           "Ja. Wir schreiben das Fahrzeug bei der Nürnberger Behörde auf Ihre Adresse um; das bisherige FÜ- oder ER-Kennzeichen kann auf Wunsch sogar bleiben – oder Sie wechseln auf N.",
       },
       {
-        question: "Was kostet die Zulassung in Nürnberg über DeutscheZulassung?",
+        question: "Was kostet die Zulassung in Nürnberg über KFZ-Zulassungsprofis?",
         answer:
           `${P.zulassung} komplett – amtliche Gebühren und versicherter Versand inklusive, Kennzeichenschilder zzgl. ${P.kennzeichen}. Abmeldungen kosten ${P.abmeldung} und sind meist ${ZEIT.abmeldung} erledigt.`,
       },
@@ -777,7 +777,7 @@ export const cities: City[] = [
           "Ja, das Saisonkennzeichen: Sie wählen einen festen Zeitraum von 2 bis 11 Monaten, außerhalb dessen das Fahrzeug ohne An- und Abmelderei ruht – und Sie sparen anteilig Steuer und Versicherung. Wir richten den Saisonzeitraum bei der Zulassung direkt mit ein.",
       },
       {
-        question: "Wie lange dauert die Zulassung in Münster über DeutscheZulassung?",
+        question: "Wie lange dauert die Zulassung in Münster über KFZ-Zulassungsprofis?",
         answer:
           `In der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, zuzüglich Versand der Kennzeichen. Eine Terminbuchung bei der Behörde entfällt für Sie vollständig – wir übernehmen den Vorgang mit Ihrer digitalen Vollmacht.`,
       },
@@ -1070,7 +1070,7 @@ export const cities: City[] = [
           "Das Fahrzeug wird bei der halleschen Behörde auf Sie als neuen Halter umgeschrieben; Sie brauchen dafür beide Zulassungsbescheinigungen, Ihren Ausweis und eine eVB-Nummer. Seit 2019 darf sogar das bisherige Kennzeichen beim Halterwechsel bestehen bleiben.",
       },
       {
-        question: "Wie lange dauert die Zulassung in Halle über DeutscheZulassung?",
+        question: "Wie lange dauert die Zulassung in Halle über KFZ-Zulassungsprofis?",
         answer:
           `In der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, dazu kommt der Versand der Kennzeichen. Abmeldungen schaffen wir meist ${ZEIT.abmeldung} – die Bestätigung erhalten Sie per E-Mail.`,
       },
@@ -1280,7 +1280,7 @@ export const cities: City[] = [
           "Nein. Der gesamte Vorgang läuft digital: Unterlagen als Foto, Vollmacht per Klick – wir führen die Zulassung bei der zuständigen Behörde durch und Sie erhalten Kennzeichen und Papiere per versichertem Versand mit Sendungsverfolgung.",
       },
       {
-        question: "Was kostet die Kfz-Zulassung in Braunschweig über DeutscheZulassung?",
+        question: "Was kostet die Kfz-Zulassung in Braunschweig über KFZ-Zulassungsprofis?",
         answer:
           `${P.zulassung} als Komplettpreis für Neuzulassung, Umschreibung oder Ummeldung – amtliche Gebühren und Versand inklusive, BS-Kennzeichenschilder zzgl. ${P.kennzeichen}. Die Abmeldung eines Fahrzeugs kostet ${P.abmeldung} und ist meist ${ZEIT.abmeldung} erledigt.`,
       },
@@ -1699,7 +1699,7 @@ export const cities: City[] = [
           "Nein. Seit 2015 gilt die Kennzeichenmitnahme bundesweit, also erst recht zwischen Revierstädten – nur die Adresse in den Fahrzeugpapieren muss aktualisiert werden. Diese Ummeldung erledigen wir komplett digital für Sie.",
       },
       {
-        question: "Was kostet die Kfz-Zulassung in Oberhausen über DeutscheZulassung?",
+        question: "Was kostet die Kfz-Zulassung in Oberhausen über KFZ-Zulassungsprofis?",
         answer:
           `${P.zulassung} als Komplettpreis – amtliche Gebühren und versicherter Versand sind enthalten, geprägte Kennzeichenschilder kommen mit ${P.kennzeichen} pro Paar dazu. Die Abmeldung kostet ${P.abmeldung} und ist meist ${ZEIT.abmeldung} erledigt.`,
       },

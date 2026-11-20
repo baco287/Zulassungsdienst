@@ -12,3 +12,10 @@ export const SERVICEBEDINGUNGEN_FREIGEGEBEN = false;
 
 /** Staging-Build (GitHub Pages): kein PHP, keine Indexierung. */
 export const IS_STAGING = process.env.NEXT_PUBLIC_STAGING === "1";
+
+/**
+ * Vorschau auf der neuen Domain vor dem Livegang: vollwertige Website mit
+ * funktionierendem Formular-Endpunkt, aber ohne Indexierung. Der Deploy-Workflow
+ * setzt NEXT_PUBLIC_NOINDEX=1, solange config/migration.json auf "vorschau" steht.
+ */
+export const NOINDEX = IS_STAGING || process.env.NEXT_PUBLIC_NOINDEX === "1";

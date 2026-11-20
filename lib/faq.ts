@@ -1,14 +1,20 @@
 import type { FaqItem } from "./types";
 import { P } from "./pricing";
 import { KENNZEICHEN_HINWEIS, ZEIT } from "@/lib/betrieb";
-import { site } from "@/lib/site";
+import { mailDomain, site } from "@/lib/site";
 
-/** Domain ohne Protokoll, z. B. "deutschezulassung.de". */
-const DOMAIN = site.contact.email.split("@")[1];
+/**
+ * Solange das Postfach noch auf der früheren Domain liegt, nennt die Antwort
+ * beide Adressen ausdrücklich – sonst wirkt eine echte E-Mail wie Phishing.
+ */
+const MAIL_HINWEIS =
+  mailDomain === site.domain
+    ? `E-Mails kommen von Adressen mit der Endung @${mailDomain}`
+    : `E-Mails kommen von Adressen mit der Endung @${mailDomain} – diese Adresse gehört weiterhin zu uns`;
 
 export const faqItems: FaqItem[] = [
   {
-    question: "Wie funktioniert die Online-Zulassung über DeutscheZulassung?",
+    question: "Wie funktioniert die Online-Zulassung über KFZ-Zulassungsprofis?",
     answer:
       `Sie wählen Ihre Leistung aus, übermitteln uns Ihre Unterlagen digital (Fotos oder Scans genügen) und erteilen uns eine Vollmacht. Wir prüfen alles, führen den Vorgang bei der zuständigen Zulassungsbehörde durch und senden Ihnen Kennzeichen und Papiere zu – bei Abmeldungen erhalten Sie die Bestätigung meist ${ZEIT.abmeldung} per E-Mail.`,
     category: "ablauf",
@@ -50,7 +56,7 @@ export const faqItems: FaqItem[] = [
     category: "allgemein",
   },
   {
-    question: "In welchen Regionen ist DeutscheZulassung tätig?",
+    question: "In welchen Regionen ist KFZ-Zulassungsprofis tätig?",
     answer:
       "Digitale Vorgänge wickeln wir deutschlandweit ab. Den persönlichen Abhol- und Bringservice bieten wir regional an – sprechen Sie uns einfach an.",
     category: "allgemein",
@@ -144,9 +150,9 @@ export const faqItems: FaqItem[] = [
     category: "allgemein",
   },
   {
-    question: "Ist DeutscheZulassung eine Behörde?",
+    question: "Ist KFZ-Zulassungsprofis eine Behörde?",
     answer:
-      `Nein. DeutscheZulassung ist ein privater Zulassungsdienst der ${site.company.legalName}. Wir handeln in Ihrem Auftrag und mit Ihrer Vollmacht. Über jede Zulassung, Umschreibung oder Abmeldung entscheidet die zuständige Zulassungsbehörde.`,
+      `Nein. KFZ-Zulassungsprofis ist ein privater Zulassungsdienst der ${site.company.legalName}. Wir handeln in Ihrem Auftrag und mit Ihrer Vollmacht. Über jede Zulassung, Umschreibung oder Abmeldung entscheidet die zuständige Zulassungsbehörde.`,
     category: "allgemein",
   },
   {
@@ -162,9 +168,9 @@ export const faqItems: FaqItem[] = [
     category: "allgemein",
   },
   {
-    question: "Woran erkenne ich echte Nachrichten von DeutscheZulassung?",
+    question: "Woran erkenne ich echte Nachrichten von KFZ-Zulassungsprofis?",
     answer:
-      `Unsere Website erreichen Sie ausschließlich unter ${DOMAIN}. E-Mails kommen von Adressen mit der Endung @${DOMAIN}, WhatsApp-Nachrichten von der Nummer ${site.contact.phoneDisplay}. Jede Online-Anfrage erhält eine Referenz, die mit „DZ-“ beginnt. Rechnungen stellt die ${site.company.legalName} aus. Sind Sie unsicher, fragen Sie über die Kontaktdaten auf dieser Website nach, bevor Sie zahlen oder Unterlagen senden.`,
+      `Unsere Website erreichen Sie ausschließlich unter ${site.domain}. ${MAIL_HINWEIS}, WhatsApp-Nachrichten von der Nummer ${site.contact.phoneDisplay}. Jede Online-Anfrage erhält eine Referenz, die mit „${site.referencePrefix}-“ beginnt. Rechnungen stellt die ${site.company.legalName} aus. Sind Sie unsicher, fragen Sie über die Kontaktdaten auf dieser Website nach, bevor Sie zahlen oder Unterlagen senden.`,
     category: "allgemein",
   },
 ];
