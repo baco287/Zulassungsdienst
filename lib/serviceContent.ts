@@ -57,7 +57,7 @@ export const serviceContent: Record<string, ServiceContent> = {
     ],
     faq: [
       {
-        question: "Was kostet eine Neuzulassung über DeutscheZulassung?",
+        question: "Was kostet eine Neuzulassung über KFZ-Zulassungsprofis?",
         answer:
           `Die Neuzulassung kostet bei uns ${P.zulassung} – amtliche Gebühren und der versicherte Versand sind bereits enthalten. Die beiden Kennzeichenschilder berechnen wir mit ${P.kennzeichen} pro Paar zusätzlich. Es kommen keine versteckten Kosten hinzu.`,
       },
@@ -107,7 +107,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       {
         question: "Was kostet das Ummelden eines Autos?",
         answer:
-          `Bei DeutscheZulassung kostet die Ummeldung ${P.zulassung} inklusive amtlicher Gebühren und versichertem Versand. Werden neue Kennzeichen gewünscht, kommen ${P.kennzeichen} pro Paar für die Schilder dazu – bei Kennzeichenmitnahme entfällt das.`,
+          `Bei KFZ-Zulassungsprofis kostet die Ummeldung ${P.zulassung} inklusive amtlicher Gebühren und versichertem Versand. Werden neue Kennzeichen gewünscht, kommen ${P.kennzeichen} pro Paar für die Schilder dazu – bei Kennzeichenmitnahme entfällt das.`,
       },
       {
         question: "Wie lange habe ich nach dem Umzug Zeit, mein Auto umzumelden?",
@@ -155,7 +155,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       {
         question: "Was kostet es, ein Auto abzumelden?",
         answer:
-          `Bei DeutscheZulassung kostet die Abmeldung ${P.abmeldung} inklusive amtlicher Gebühren. Da keine Kennzeichen versendet werden müssen, fallen keine Versandkosten an.`,
+          `Bei KFZ-Zulassungsprofis kostet die Abmeldung ${P.abmeldung} inklusive amtlicher Gebühren. Da keine Kennzeichen versendet werden müssen, fallen keine Versandkosten an.`,
       },
       {
         question: "Was sind die Sicherheitscodes und wo finde ich sie?",
@@ -239,7 +239,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       {
         question: "Was kostet die Umschreibung eines Gebrauchtwagens?",
         answer:
-          `Bei DeutscheZulassung kostet der Halterwechsel ${P.zulassung} – amtliche Gebühren und versicherter Versand inklusive. Werden neue Kennzeichenschilder benötigt, kommen ${P.kennzeichen} pro Paar dazu; übernehmen Sie das bisherige Kennzeichen, entfällt dieser Posten.`,
+          `Bei KFZ-Zulassungsprofis kostet der Halterwechsel ${P.zulassung} – amtliche Gebühren und versicherter Versand inklusive. Werden neue Kennzeichenschilder benötigt, kommen ${P.kennzeichen} pro Paar dazu; übernehmen Sie das bisherige Kennzeichen, entfällt dieser Posten.`,
       },
       {
         question: "Welche Unterlagen brauche ich für den Halterwechsel?",
@@ -437,7 +437,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       {
         heading: "Ihr persönlicher Zulassungsservice",
         paragraphs: [
-          "Behördengänge kosten Zeit, Nerven und oft einen halben Urlaubstag. Bei DeutscheZulassung reichen Sie alles bequem digital ein – per Formular oder WhatsApp – und haben eine feste Ansprechperson, die Ihren Auftrag von der ersten Prüfung bis zur Zustellung begleitet. Keine Warteschleife, kein Ticketsystem: Sie schreiben einfach der Person, die Ihren Fall kennt.",
+          "Behördengänge kosten Zeit, Nerven und oft einen halben Urlaubstag. Bei KFZ-Zulassungsprofis reichen Sie alles bequem digital ein – per Formular oder WhatsApp – und haben eine feste Ansprechperson, die Ihren Auftrag von der ersten Prüfung bis zur Zustellung begleitet. Keine Warteschleife, kein Ticketsystem: Sie schreiben einfach der Person, die Ihren Fall kennt.",
           "Alle Leistungen gelten deutschlandweit zum transparenten Komplettpreis. Vor Beauftragung erhalten Sie immer eine verbindliche Festpreis-Bestätigung – Überraschungen ausgeschlossen.",
         ],
       },

@@ -33,7 +33,7 @@ export function GET() {
   const lines: string[] = [];
   lines.push(`# ${site.name}`, "");
   lines.push(
-    `> ${site.name} (deutschezulassung.de) ist ein privater, digitaler Kfz-Zulassungsdienst für ganz Deutschland – keine Behörde. Wir übernehmen Neuzulassung, Ummeldung, Umschreibung, Wiederzulassung, Abmeldung und Kennzeichen-Services im Auftrag unserer Kundinnen und Kunden, ohne dass sie einen Behördentermin oder einen Personalausweis mit Online-Funktion (eID) brauchen. ${P.zulassung} je Zulassungsvorgang inkl. amtlicher Gebühren und versichertem Versand, Kennzeichenschilder auf Wunsch zzgl. ${P.kennzeichen} pro Paar, Abmeldung ${P.abmeldung}.`,
+    `> ${site.name} (${site.domain}) ist ein privater, digitaler Kfz-Zulassungsdienst für ganz Deutschland – keine Behörde. Wir übernehmen Neuzulassung, Ummeldung, Umschreibung, Wiederzulassung, Abmeldung und Kennzeichen-Services im Auftrag unserer Kundinnen und Kunden, ohne dass sie einen Behördentermin oder einen Personalausweis mit Online-Funktion (eID) brauchen. ${P.zulassung} je Zulassungsvorgang inkl. amtlicher Gebühren und versichertem Versand, Kennzeichenschilder auf Wunsch zzgl. ${P.kennzeichen} pro Paar, Abmeldung ${P.abmeldung}.`,
     ""
   );
   lines.push(

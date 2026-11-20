@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Preisprüfung für DeutscheZulassung.
+ * Preisprüfung für KFZ-Zulassungsprofis.
  *
  *   node scripts/check-preise.mjs            Quellcode prüfen
  *   node scripts/check-preise.mjs --out      zusätzlich den Build in ./out prüfen
@@ -46,7 +46,7 @@ const wunsch = config.zusatzleistungen?.wunschkennzeichen?.preis;
 const amtlichWunsch = config.amtlicheGebuehren?.wunschkennzeichen?.[0];
 if (wunsch && amtlichWunsch && wunsch < amtlichWunsch) {
   warn.push(
-    `Wunschkennzeichen ${wunsch.toFixed(2)} € liegt unter der amtlichen Gebühr von ${amtlichWunsch.toFixed(2)} € – DeutscheZulassung trägt die Differenz (Hinweis wird auf der Website angezeigt).`
+    `Wunschkennzeichen ${wunsch.toFixed(2)} € liegt unter der amtlichen Gebühr von ${amtlichWunsch.toFixed(2)} € – KFZ-Zulassungsprofis trägt die Differenz (Hinweis wird auf der Website angezeigt).`
   );
 }
 

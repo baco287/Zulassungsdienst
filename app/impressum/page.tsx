@@ -38,7 +38,7 @@ export default function ImpressumPage() {
           <br />
           E-Mail: {site.contact.email}
           <br />
-          Website: www.deutschezulassung.de
+          Website: {site.domain}
         </p>
       </section>
       <section>
@@ -52,11 +52,11 @@ export default function ImpressumPage() {
       <section>
         <h2>Tätigkeitsbereich</h2>
         <p>
-          DeutscheZulassung erbringt Dienstleistungen rund um die Kfz-Zulassung
+          KFZ-Zulassungsprofis erbringt Dienstleistungen rund um die Kfz-Zulassung
           (An-, Um- und Abmeldung von Fahrzeugen sowie damit verbundene
           Serviceleistungen). Die Vorgänge werden im Namen und im Auftrag der
           jeweiligen Kundinnen und Kunden auf Grundlage einer Vollmacht bei den
-          zuständigen Zulassungsbehörden durchgeführt. DeutscheZulassung ist
+          zuständigen Zulassungsbehörden durchgeführt. KFZ-Zulassungsprofis ist
           selbst keine Behörde und nicht mit einer Zulassungsstelle verbunden.
         </p>
       </section>

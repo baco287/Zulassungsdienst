@@ -4,9 +4,9 @@
  * Standard: AUS. Aktiviert wird per Umgebungsvariable beim Build:
  *
  *   NEXT_PUBLIC_ANALYTICS_PROVIDER = "plausible" | "matomo"
- *   NEXT_PUBLIC_PLAUSIBLE_DOMAIN   = "deutschezulassung.de"
+ *   NEXT_PUBLIC_PLAUSIBLE_DOMAIN   = "kfz-zulassungsprofis.de"
  *   NEXT_PUBLIC_PLAUSIBLE_SRC      = "https://plausible.io/js/script.js" (oder selbst gehostet)
- *   NEXT_PUBLIC_MATOMO_URL         = "https://deutschezulassung.de/matomo/" (selbst gehostet)
+ *   NEXT_PUBLIC_MATOMO_URL         = "https://kfz-zulassungsprofis.de/matomo/" (selbst gehostet)
  *   NEXT_PUBLIC_MATOMO_SITE_ID     = "1"
  *
  * Beide Anbieter laufen ohne Cookies (Plausible grundsätzlich, Matomo mit
@@ -49,7 +49,7 @@ const ALLOWED_PROPS = ["position", "service", "step", "value", "method", "page",
 
 export const analyticsProvider = (process.env.NEXT_PUBLIC_ANALYTICS_PROVIDER ?? "") as "" | "plausible" | "matomo";
 export const gadsId = process.env.NEXT_PUBLIC_GADS_ID ?? "";
-export const CONSENT_KEY = "dz-consent-v1";
+export const CONSENT_KEY = "kzp-consent-v1";
 
 declare global {
   interface Window {

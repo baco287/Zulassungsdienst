@@ -9,8 +9,8 @@ Workflow an den Build-Schritt durchreichen).
 
 | Variante | Variablen | Einwilligung nötig? |
 |---|---|---|
-| Plausible (Cloud, EU) | `NEXT_PUBLIC_ANALYTICS_PROVIDER=plausible`, `NEXT_PUBLIC_PLAUSIBLE_DOMAIN=deutschezulassung.de` | nein (keine Cookies) |
-| Matomo selbst gehostet auf all-inkl | `NEXT_PUBLIC_ANALYTICS_PROVIDER=matomo`, `NEXT_PUBLIC_MATOMO_URL=https://deutschezulassung.de/matomo/`, `NEXT_PUBLIC_MATOMO_SITE_ID=1` | nein (Modus `disableCookies`) |
+| Plausible (Cloud, EU) | `NEXT_PUBLIC_ANALYTICS_PROVIDER=plausible`, `NEXT_PUBLIC_PLAUSIBLE_DOMAIN=kfz-zulassungsprofis.de` | nein (keine Cookies) |
+| Matomo selbst gehostet auf all-inkl | `NEXT_PUBLIC_ANALYTICS_PROVIDER=matomo`, `NEXT_PUBLIC_MATOMO_URL=https://kfz-zulassungsprofis.de/matomo/`, `NEXT_PUBLIC_MATOMO_SITE_ID=1` | nein (Modus `disableCookies`) |
 
 Die Datenschutzerklärung zeigt den passenden Abschnitt automatisch an
 (`app/datenschutz/page.tsx`, Abschnitt 2a). Vor dem Einschalten trotzdem

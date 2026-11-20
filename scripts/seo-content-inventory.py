@@ -33,7 +33,7 @@ for r in read_csv(SEO / "landing-page-backlog.csv"):
 sitemap = set()
 sm = OUT / "sitemap.xml"
 if sm.exists():
-    sitemap = {re.sub(r"^https://deutschezulassung\.de", "", u) for u in re.findall(r"<loc>(.*?)</loc>", sm.read_text(encoding="utf-8"))}
+    sitemap = {re.sub(r"^https://kfz-zulassungsprofis\.de", "", u) for u in re.findall(r"<loc>(.*?)</loc>", sm.read_text(encoding="utf-8"))}
 
 landing_slugs = set(re.findall(r'slug: "([a-z0-9-]+)"', (ROOT / "lib" / "landingpages.ts").read_text(encoding="utf-8")))
 

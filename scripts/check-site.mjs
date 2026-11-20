@@ -18,7 +18,7 @@ import { join, relative, sep } from "node:path";
 
 const root = new URL("..", import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1");
 const out = join(root, "out");
-const SITE = "https://deutschezulassung.de";
+const SITE = "https://kfz-zulassungsprofis.de";
 if (!existsSync(out)) {
   console.error("./out fehlt – erst `npm run build` ausführen.");
   process.exit(1);
@@ -26,7 +26,7 @@ if (!existsSync(out)) {
 
 const errors = [];
 const noindexPages = new Set();
-const isStaging = process.env.NEXT_PUBLIC_STAGING === "1";
+const isStaging = process.env.NEXT_PUBLIC_STAGING === "1" || process.env.NEXT_PUBLIC_NOINDEX === "1";
 const warnings = [];
 
 function walk(dir, list = []) {

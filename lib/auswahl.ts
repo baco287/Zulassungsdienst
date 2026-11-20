@@ -4,7 +4,7 @@
  * gesperrt (Privatmodus, Vorschau), führt die Leiste einfach ohne Vorauswahl
  * zum Formular.
  */
-const KEY = "dz:leistung";
+const KEY = "kzp:leistung";
 
 export function merkeLeistung(slug: string): void {
   try {

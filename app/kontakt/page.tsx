@@ -7,7 +7,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Kontakt – wir sind für Sie da",
   description:
-    "Kontaktieren Sie DeutscheZulassung per WhatsApp, E-Mail oder Telefon. Wir beantworten Ihre Fragen zur Kfz-Zulassung schnell und persönlich.",
+    "Kontaktieren Sie KFZ-Zulassungsprofis per WhatsApp, E-Mail oder Telefon. Wir beantworten Ihre Fragen zur Kfz-Zulassung schnell und persönlich.",
 };
 
 const channels = [
@@ -15,7 +15,7 @@ const channels = [
     icon: WhatsAppIcon,
     title: "WhatsApp",
     text: "Der schnellste Weg: Frage stellen, Fotos senden, Antwort erhalten.",
-    href: whatsAppLink("Hallo DeutscheZulassung, ich habe eine Frage."),
+    href: whatsAppLink("Hallo KFZ-Zulassungsprofis, ich habe eine Frage."),
     label: "Chat starten",
     external: true,
   },

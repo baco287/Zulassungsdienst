@@ -9,7 +9,7 @@ import { ZEIT } from "@/lib/betrieb";
 export const metadata: Metadata = {
   title: "Online-Auftrag – Zulassung jetzt beauftragen",
   description:
-    `Beauftragen Sie Ihre Kfz-Zulassung online: Leistung wählen, Daten eingeben, absenden – DeutscheZulassung übernimmt den Rest. Unverbindliche Anfrage in ${ZEIT.anfrage}.`,
+    `Beauftragen Sie Ihre Kfz-Zulassung online: Leistung wählen, Daten eingeben, absenden – KFZ-Zulassungsprofis übernimmt den Rest. Unverbindliche Anfrage in ${ZEIT.anfrage}.`,
 };
 
 export default function AuftragPage() {
@@ -47,7 +47,7 @@ export default function AuftragPage() {
                 Senden Sie uns Ihre Anfrage formlos per WhatsApp – Fotos der Unterlagen genügen.
               </p>
               <TrackedLink
-                href={whatsAppLink("Hallo DeutscheZulassung, ich möchte eine Zulassung beauftragen.")}
+                href={whatsAppLink("Hallo KFZ-Zulassungsprofis, ich möchte eine Zulassung beauftragen.")}
                 event="whatsapp_click"
                 props={{ position: "auftrag_seitenleiste" }}
                 external

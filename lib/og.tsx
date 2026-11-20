@@ -13,16 +13,21 @@ import { ImageResponse } from "next/og";
 export const ogSize = { width: 1200, height: 630 };
 export const ogContentType = "image/png";
 
-/** Navy/Gold-Palette, identisch mit den Tokens in app/globals.css. */
+/** Farben wie in app/globals.css (Navy, Action Blue, Türkis). */
 const colors = {
-  brand50: "#faf8f3",
-  brand100: "#fff8e8",
-  brand600: "#8a5a00",
-  brand700: "#0b1f3a",
-  ink500: "#526071",
-  ink600: "#526071",
-  ink900: "#0b1f3a",
+  navy: "#0b1f3a",
+  navy800: "#142c4e",
+  blue: "#2563eb",
+  teal: "#2dd4bf",
+  text: "#ffffff",
+  muted: "#b6c4d8",
 };
+
+/** Logo (weiß, transparent) aus scripts/build-logo.sh – als Daten-URL eingebettet. */
+async function loadLogo(): Promise<string> {
+  const png = await readFile(join(process.cwd(), "assets", "brand", "logo-negativ.png"));
+  return `data:image/png;base64,${png.toString("base64")}`;
+}
 
 async function loadFonts() {
   const dir = join(process.cwd(), "assets", "fonts");
@@ -53,6 +58,7 @@ function truncate(text: string, max: number): string {
 
 export async function createOgImage({ kicker, title, subtitle }: OgProps) {
   const titleSize = title.length > 70 ? 46 : title.length > 40 ? 54 : 64;
+  const [fonts, logo] = await Promise.all([loadFonts(), loadLogo()]);
 
   return new ImageResponse(
     (
@@ -61,182 +67,65 @@ export async function createOgImage({ kicker, title, subtitle }: OgProps) {
           width: "100%",
           height: "100%",
           display: "flex",
-          flexDirection: "column",
-          padding: "56px 64px",
           fontFamily: "Lexend",
-          background: `linear-gradient(135deg, ${colors.brand50} 0%, #ffffff 42%, ${colors.brand50} 100%)`,
+          background: colors.navy,
           position: "relative",
         }}
       >
-        {/* Dekor: weiche Kreise */}
-        <div
-          style={{
-            position: "absolute",
-            top: -180,
-            right: -140,
-            width: 460,
-            height: 460,
-            borderRadius: 9999,
-            background: colors.brand100,
-            opacity: 0.55,
-            display: "flex",
-          }}
-        />
-        <div
-          style={{
-            position: "absolute",
-            bottom: -220,
-            left: -160,
-            width: 420,
-            height: 420,
-            borderRadius: 9999,
-            background: colors.brand100,
-            opacity: 0.4,
-            display: "flex",
-          }}
-        />
+        {/* Blaues Band links – dasselbe Motiv wie im Logo (Kennzeichen) */}
+        <div style={{ width: 28, height: "100%", background: colors.blue, display: "flex" }} />
 
-        {/* Kopfzeile: Logo + Kennzeichen-Element */}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            width: "100%",
-          }}
-        >
-          <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
-            <div
-              style={{
-                width: 64,
-                height: 64,
-                borderRadius: 18,
-                background: colors.brand700,
-                color: "#ffffff",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                fontSize: 30,
-                fontWeight: 700,
-              }}
-            >
-              DZ
-            </div>
-            <div style={{ display: "flex", fontSize: 34, fontWeight: 700 }}>
-              <span style={{ color: colors.ink900 }}>Deutsche</span>
-              <span style={{ color: colors.brand700 }}>Zulassung</span>
-            </div>
-          </div>
-
-          {/* Stilisiertes Kennzeichen */}
-          <div
-            style={{
-              display: "flex",
-              alignItems: "stretch",
-              borderRadius: 12,
-              border: `3px solid ${colors.ink900}`,
-              background: "#ffffff",
-              overflow: "hidden",
-              height: 56,
-            }}
-          >
-            <div
-              style={{
-                width: 34,
-                background: colors.brand700,
-                color: "#ffffff",
-                display: "flex",
-                alignItems: "flex-end",
-                justifyContent: "center",
-                fontSize: 18,
-                fontWeight: 600,
-                paddingBottom: 6,
-              }}
-            >
-              D
-            </div>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                padding: "0 18px",
-                fontSize: 26,
-                fontWeight: 600,
-                letterSpacing: 4,
-                color: colors.ink900,
-              }}
-            >
-              OHNE · TERMIN
-            </div>
-          </div>
-        </div>
-
-        {/* Inhalt */}
         <div
           style={{
             display: "flex",
             flexDirection: "column",
             flexGrow: 1,
-            justifyContent: "center",
-            maxWidth: 1020,
+            padding: "52px 64px 48px 56px",
+            backgroundImage: `linear-gradient(135deg, ${colors.navy} 0%, ${colors.navy} 55%, ${colors.navy800} 100%)`,
           }}
         >
-          <div
-            style={{
-              fontSize: 26,
-              fontWeight: 600,
-              letterSpacing: 5,
-              textTransform: "uppercase",
-              color: colors.brand600,
-            }}
-          >
-            {kicker}
-          </div>
-          <div
-            style={{
-              marginTop: 18,
-              fontSize: titleSize,
-              fontWeight: 700,
-              lineHeight: 1.15,
-              color: colors.ink900,
-            }}
-          >
-            {truncate(title, 110)}
-          </div>
-          {subtitle && (
+          {/* Kopfzeile: Logo */}
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%" }}>
+            {/* eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text */}
+            <img src={logo} width={480} height={64} />
             <div
               style={{
-                marginTop: 22,
-                fontSize: 30,
-                fontWeight: 400,
-                lineHeight: 1.4,
-                color: colors.ink600,
+                display: "flex",
+                alignItems: "center",
+                height: 48,
+                padding: "0 20px",
+                borderRadius: 12,
+                border: "2px solid rgba(255,255,255,0.28)",
+                color: colors.text,
+                fontSize: 22,
+                fontWeight: 600,
               }}
             >
-              {truncate(subtitle, 130)}
+              Ohne Behördentermin
             </div>
-          )}
-        </div>
-
-        {/* Fußzeile */}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            width: "100%",
-            fontSize: 26,
-          }}
-        >
-          <div style={{ color: colors.ink500, display: "flex" }}>
-            Kfz-Zulassung. Einfach digital.
           </div>
-          <div style={{ color: colors.brand700, fontWeight: 600, display: "flex" }}>
-            deutschezulassung.de
+
+          {/* Inhalt */}
+          <div style={{ display: "flex", flexDirection: "column", flexGrow: 1, justifyContent: "center", maxWidth: 1010 }}>
+            <div style={{ fontSize: 26, fontWeight: 600, color: colors.teal }}>{kicker}</div>
+            <div style={{ marginTop: 16, fontSize: titleSize, fontWeight: 700, lineHeight: 1.15, color: colors.text }}>
+              {truncate(title, 110)}
+            </div>
+            {subtitle && (
+              <div style={{ marginTop: 22, fontSize: 30, fontWeight: 400, lineHeight: 1.4, color: colors.muted }}>
+                {truncate(subtitle, 130)}
+              </div>
+            )}
+          </div>
+
+          {/* Fußzeile */}
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%", fontSize: 24 }}>
+            <div style={{ color: colors.muted, display: "flex" }}>Privater Zulassungsdienst, keine Behörde</div>
+            <div style={{ color: colors.text, fontWeight: 600, display: "flex" }}>kfz-zulassungsprofis.de</div>
           </div>
         </div>
       </div>
     ),
-    { ...ogSize, fonts: await loadFonts() },
+    { ...ogSize, fonts },
   );
 }

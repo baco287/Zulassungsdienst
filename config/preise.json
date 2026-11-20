@@ -1,5 +1,5 @@
 {
-  "$kommentar": "Zentrale Preiskonfiguration von DeutscheZulassung. Einzige Quelle für alle Preise der Website (Seiten, Preisrechner, Anfrageformular, llms.txt). Nach jeder Änderung: 'stand' aktualisieren, 'freigabe' prüfen, dann bauen und deployen. Beträge brutto in Euro inkl. MwSt.",
+  "$kommentar": "Zentrale Preiskonfiguration von KFZ-Zulassungsprofis. Einzige Quelle für alle Preise der Website (Seiten, Preisrechner, Anfrageformular, llms.txt). Nach jeder Änderung: 'stand' aktualisieren, 'freigabe' prüfen, dann bauen und deployen. Beträge brutto in Euro inkl. MwSt.",
   "stand": "2026-11-06",
   "freigabe": {
     "freigegeben": true,

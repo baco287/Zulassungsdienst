@@ -172,7 +172,7 @@ export default async function GuidePage({
                   Lieber erledigen lassen?
                 </h2>
                 <p className="mt-2 text-sm leading-relaxed text-ink-600">
-                  DeutscheZulassung übernimmt den kompletten Behördenvorgang für Sie –
+                  KFZ-Zulassungsprofis übernimmt den kompletten Behördenvorgang für Sie –
                   digital, zum Festpreis und ohne Termin.
                 </p>
                 <ul className="mt-4 flex flex-wrap gap-3">

@@ -1,0 +1,39 @@
+# Frühere Domain deutschezulassung.de – dient nur noch als dauerhafte
+# Weiterleitung (HTTP 301) auf https://kfz-zulassungsprofis.de.
+#
+# Diese Datei wird vom Deploy-Workflow in den Ordner der alten Domain gelegt,
+# sobald config/migration.json auf "stufe": "live" steht – vorher nicht.
+# Die bisherigen Dateien in dem Ordner werden dabei nicht gelöscht; sie werden
+# nur nicht mehr ausgeliefert. Rückweg: diese Datei durch die frühere .htaccess
+# ersetzen (git show main:public/.htaccess), dann ist die alte Website wieder da.
+#
+# Regeln:
+#  - gleiche Pfade, jede Unterseite einzeln (keine Sammelweiterleitung auf die Startseite)
+#  - Query-Parameter bleiben erhalten (Apache hängt sie von selbst an)
+#  - immer direkt auf https:// ohne www – kein zweiter Sprung auf der neuen Domain
+#  - Domain und SSL-Zertifikat der alten Domain müssen dafür dauerhaft bestehen bleiben
+
+RewriteEngine On
+
+# 1) Themen-Weiterleitungen, die schon vorher galten: direkt aufs Endziel.
+RewriteRule ^auto-online-zulassen-ohne-eid/?$ https://kfz-zulassungsprofis.de/kfz-zulassung-ohne-eid/ [R=301,L]
+RewriteRule ^kfz-zulassung-ohne-ausweisapp/?$ https://kfz-zulassungsprofis.de/kfz-zulassung-ohne-eid/ [R=301,L]
+RewriteRule ^online-zulassung-funktioniert-nicht/?$ https://kfz-zulassungsprofis.de/ikfz-funktioniert-nicht/ [R=301,L]
+RewriteRule ^kfz-zulassung-kosten/?$ https://kfz-zulassungsprofis.de/ratgeber/was-kostet-eine-kfz-zulassung/ [R=301,L]
+
+# 2) Formular-Endpunkt: 308 statt 301, damit eine Übermittlung (POST) aus einem
+#    noch geöffneten Formular nicht verloren geht.
+RewriteRule ^(api/.*)$ https://kfz-zulassungsprofis.de/$1 [R=308,L]
+
+# 3) Seitenadressen ohne Schrägstrich am Ende gleich richtig ergänzen – sonst
+#    müsste die neue Domain ein zweites Mal weiterleiten. Vorschaubilder haben
+#    keine Dateiendung und bleiben unverändert.
+RewriteCond %{REQUEST_URI} !/(opengraph-image|twitter-image|apple-icon)$
+RewriteRule ^((?:.*/)?[^/.]+)$ https://kfz-zulassungsprofis.de/$1/ [R=301,L]
+
+# 4) Alles andere pfadgleich.
+RewriteRule ^(.*)$ https://kfz-zulassungsprofis.de/$1 [R=301,L]
+
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>

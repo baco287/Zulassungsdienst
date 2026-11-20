@@ -23,7 +23,7 @@ export default function CTASection({
   primaryLabel = "Jetzt Auftrag starten",
   primaryHref = "/auftrag/",
   secondaryLabel = "Frage per WhatsApp stellen",
-  whatsAppText = "Hallo DeutscheZulassung, ich habe eine Frage zur Kfz-Zulassung.",
+  whatsAppText = "Hallo KFZ-Zulassungsprofis, ich habe eine Frage zur Kfz-Zulassung.",
 }: Props) {
   return (
     <section className="bg-white px-4 pb-16 pt-4 sm:px-6 sm:pb-24" aria-labelledby="cta-title">

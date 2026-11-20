@@ -107,12 +107,12 @@ export const plateFee = PRICES.kennzeichen;
 
 /**
  * Transparenzhinweis zum Wunschkennzeichen: Die amtliche Gebühr ist gesetzlich
- * festgelegt. Liegt unser Paketpreis darunter, trägt DeutscheZulassung die
+ * festgelegt. Liegt unser Paketpreis darunter, trägt KFZ-Zulassungsprofis die
  * Differenz – die Behördengebühr selbst wird dadurch nicht günstiger.
  */
 export const wunschkennzeichenHinweis =
   PRICES.wunschkennzeichen < officialFees.customPlate[0]
-    ? `Die amtliche Gebühr für Reservierung und Zuteilung (${euro(officialFees.customPlate[0])}) ist gesetzlich festgelegt und bleibt unverändert. Sie ist in unserem Preis von ${P.wunschkennzeichen} enthalten – den Differenzbetrag übernimmt DeutscheZulassung.`
+    ? `Die amtliche Gebühr für Reservierung und Zuteilung (${euro(officialFees.customPlate[0])}) ist gesetzlich festgelegt und bleibt unverändert. Sie ist in unserem Preis von ${P.wunschkennzeichen} enthalten – den Differenzbetrag übernimmt KFZ-Zulassungsprofis.`
     : `Die amtliche Gebühr für Reservierung und Zuteilung (${euro(officialFees.customPlate[0])}) ist in unserem Preis von ${P.wunschkennzeichen} enthalten.`;
 
 /** Hinweistext, der neben Preisangaben erscheint. */

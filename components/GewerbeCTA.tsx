@@ -43,7 +43,7 @@ export default function GewerbeCTA({ context }: { context?: string }) {
                 event="b2b_inquiry"
                 props={{ method: "whatsapp", position: "gewerbe_cta" }}
                 href={whatsAppLink(
-                  `Hallo DeutscheZulassung, wir interessieren uns für Gewerbekonditionen${context ? ` (${context})` : ""}.`,
+                  `Hallo KFZ-Zulassungsprofis, wir interessieren uns für Gewerbekonditionen${context ? ` (${context})` : ""}.`,
                 )}
                 external
                 className="flex w-full items-center justify-center gap-2 rounded-[14px] border border-ink-600 px-7 py-3.5 font-display font-semibold text-white transition-colors duration-200 hover:border-brand-400 hover:bg-ink-800 sm:w-auto"

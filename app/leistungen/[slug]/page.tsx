@@ -283,8 +283,8 @@ export default async function ServiceDetailPage({
                     {service.slug === "wunschkennzeichen"
                       ? "Zusätzlich zu einer Zulassung"
                       : p.inclusive
-                        ? "Festpreis DeutscheZulassung"
-                        : "Servicepreis DeutscheZulassung"}
+                        ? "Festpreis KFZ-Zulassungsprofis"
+                        : "Servicepreis KFZ-Zulassungsprofis"}
                   </dt>
                   <dd className="text-right font-display text-lg font-bold text-brand-700">
                     {p.serviceFee !== null
@@ -358,7 +358,7 @@ export default async function ServiceDetailPage({
                   <ArrowRight className="h-4 w-4" aria-hidden />
                 </Link>
                 <a
-                  href={whatsAppLink(`Hallo DeutscheZulassung, ich interessiere mich für: ${service.name}.`)}
+                  href={whatsAppLink(`Hallo KFZ-Zulassungsprofis, ich interessiere mich für: ${service.name}.`)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex w-full items-center justify-center gap-2 rounded-xl border border-ink-300 px-5 py-3.5 font-display font-semibold text-ink-800 transition-colors duration-200 hover:border-brand-400 hover:bg-brand-50"

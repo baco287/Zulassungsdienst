@@ -8,9 +8,10 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { SERVICEBEDINGUNGEN_FREIGEGEBEN } from "@/lib/features";
 
 export const metadata: Metadata = {
-  title: "Über uns – wer hinter DeutscheZulassung steht",
+  // Ohne Markenzusatz: Der Name steht bereits im Titel.
+  title: { absolute: "Über uns – wer hinter KFZ-Zulassungsprofis steht" },
   description:
-    "Wer hinter DeutscheZulassung steht, wer Ihre Zulassung bearbeitet und wie wir arbeiten: privater Zulassungsdienst mit persönlicher Betreuung, keine Behörde.",
+    "Wer hinter KFZ-Zulassungsprofis steht, wer Ihre Zulassung bearbeitet und wie wir arbeiten: privater Zulassungsdienst mit persönlicher Betreuung, keine Behörde.",
 };
 
 const values = [
@@ -45,7 +46,7 @@ export default function UeberUnsPage() {
             <Breadcrumbs items={[{ name: "Über uns" }]} />
           </div>
           <h1 className="font-display text-4xl font-bold text-ink-900 sm:text-5xl">
-            Über DeutscheZulassung
+            Über KFZ-Zulassungsprofis
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-ink-600">
             Wir glauben: Ein Auto anzumelden sollte so einfach sein wie eine Pizza zu
@@ -64,7 +65,7 @@ export default function UeberUnsPage() {
               <p className="mt-4 leading-relaxed text-ink-700">
                 Jedes Jahr werden in Deutschland Millionen Fahrzeuge an-, um- und
                 abgemeldet – und noch immer bedeutet das für die meisten: Termin ergattern,
-                Wartemarke ziehen, Formulare ausfüllen. DeutscheZulassung wurde gegründet, um
+                Wartemarke ziehen, Formulare ausfüllen. KFZ-Zulassungsprofis wurde gegründet, um
                 genau das zu ändern. Wir kombinieren die digitalen Behördenverfahren
                 (i-Kfz) mit einer Software, die Unterlagen prüft, Abläufe automatisiert und
                 Sie über den Stand informiert – während echte Menschen die Fälle

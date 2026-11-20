@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Clock3, Mail, Phone } from "lucide-react";
 import { site, whatsAppLink } from "@/lib/site";
 import { sortedServices } from "@/lib/services";
@@ -8,6 +7,7 @@ import { cityIndexable, PRIORITAETSSTAEDTE } from "@/lib/indexGate";
 import { SERVICEBEDINGUNGEN_FREIGEGEBEN } from "@/lib/features";
 import WhatsAppIcon from "./WhatsAppIcon";
 import TrackedLink from "./TrackedLink";
+import Logo from "./Logo";
 
 type FooterLink = { href: string; label: string };
 
@@ -84,13 +84,7 @@ export default function Footer() {
       <div className="container-page grid gap-x-8 gap-y-10 py-14 sm:grid-cols-2 lg:grid-cols-[1.35fr_1fr_1fr_1fr_1fr] lg:py-16">
         {/* Marke und Kontakt */}
         <div className="sm:col-span-2 lg:col-span-1">
-          <Image
-            src="/logo-hell.png"
-            alt={`${site.name} – Kfz-Zulassung online`}
-            width={600}
-            height={148}
-            className="h-12 w-auto"
-          />
+          <Logo tone="dark" />
           <p className="mt-5 max-w-xs text-[15px] leading-relaxed">
             Kfz-Zulassung ohne eID-PIN und ohne Behördentermin – bundesweit, persönlich geprüft.
           </p>

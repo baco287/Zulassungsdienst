@@ -9,7 +9,7 @@ import { ZEIT } from "@/lib/betrieb";
 export const metadata: Metadata = {
   title: "Servicebedingungen – verständlich erklärt",
   description:
-    "Was DeutscheZulassung leistet, was wir von Ihnen brauchen, wie Preise und Bezahlung funktionieren und was gilt, wenn die Behörde einen Antrag ablehnt.",
+    "Was KFZ-Zulassungsprofis leistet, was wir von Ihnen brauchen, wie Preise und Bezahlung funktionieren und was gilt, wenn die Behörde einen Antrag ablehnt.",
   alternates: { canonical: "/servicebedingungen/" },
   // Entwurf: erst nach rechtlicher Prüfung indexieren (lib/features.ts).
   robots: SERVICEBEDINGUNGEN_FREIGEGEBEN ? { index: true, follow: true } : { index: false, follow: true },

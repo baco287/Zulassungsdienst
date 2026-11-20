@@ -1,0 +1,22 @@
+{
+  "$kommentar": "Steuert den Umzug von deutschezulassung.de auf kfz-zulassungsprofis.de. Der Deploy-Workflow (.github/workflows/deploy.yml) und die Prüfskripte (scripts/migration.mjs, scripts/check-weiterleitungen.mjs) lesen diese Datei. Ablauf und Checklisten: docs/migration/MIGRATION.md.",
+  "stufe": "vorschau",
+  "$stufe": "\"vorschau\" = Die neue Website wird in den Ordner der neuen Domain hochgeladen, aber mit noindex. Die alte Domain bleibt unangetastet und zeigt weiter die bisherige Website. \"live\" = Die neue Website ist indexierbar, und in den Ordner der alten Domain wird die Weiterleitungs-.htaccess aus deploy/alte-domain/ gelegt (301 auf die neue Domain). Auf \"live\" erst nach ausdrücklicher Freigabe stellen.",
+  "neu": {
+    "name": "KFZ-Zulassungsprofis",
+    "domain": "kfz-zulassungsprofis.de",
+    "ftpOrdner": "/kfz-zulassungsprofis.de"
+  },
+  "alt": {
+    "name": "DeutscheZulassung",
+    "domain": "deutschezulassung.de",
+    "ftpOrdner": "/deutschezulassung.de"
+  },
+  "$themenWeiterleitungen": "Alte Themen-URLs ohne eigene Seite. Müssen als Regeln in public/.htaccess UND deploy/alte-domain/.htaccess stehen (beide direkt aufs Endziel, damit keine Kette entsteht). scripts/check-weiterleitungen.mjs prüft das.",
+  "themenWeiterleitungen": {
+    "/auto-online-zulassen-ohne-eid/": "/kfz-zulassung-ohne-eid/",
+    "/kfz-zulassung-ohne-ausweisapp/": "/kfz-zulassung-ohne-eid/",
+    "/online-zulassung-funktioniert-nicht/": "/ikfz-funktioniert-nicht/",
+    "/kfz-zulassung-kosten/": "/ratgeber/was-kostet-eine-kfz-zulassung/"
+  }
+}

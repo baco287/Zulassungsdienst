@@ -7,7 +7,7 @@ import { site, whatsAppLink } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Unterlagen hochladen",
   description:
-    "Reichen Sie Fahrzeugschein, Ausweis und eVB-Nummer bequem online nach: Fotos mit dem Handy aufnehmen und sicher an DeutscheZulassung übertragen.",
+    "Reichen Sie Fahrzeugschein, Ausweis und eVB-Nummer bequem online nach: Fotos mit dem Handy aufnehmen und sicher an KFZ-Zulassungsprofis übertragen.",
   // Kein Suchmaschinen-Eintrag: Die Seite wird per Link im Chat verschickt und
   // hat für Suchende keinen eigenständigen Nutzen.
   robots: { index: false, follow: true },
@@ -66,7 +66,7 @@ export default function UnterlagenPage() {
               Bearbeitung, derselbe Ansprechpartner.
             </p>
             <a
-              href={whatsAppLink("Hallo DeutscheZulassung, ich möchte meine Unterlagen schicken.")}
+              href={whatsAppLink("Hallo KFZ-Zulassungsprofis, ich möchte meine Unterlagen schicken.")}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-brand-600 px-4 py-3 font-display text-sm font-semibold text-white transition-colors duration-200 hover:bg-brand-700"

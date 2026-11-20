@@ -1,4 +1,4 @@
-"""SEO-Crawl von deutschezulassung.de (oder einem lokalen Build).
+"""SEO-Crawl von kfz-zulassungsprofis.de (oder einem lokalen Build).
 
 Liest die Sitemap, ruft jede URL ab und schreibt ein URL-Inventar mit
 Statuscode, Title, Description, H1, Canonical, Robots, JSON-LD-Typen,
@@ -25,8 +25,8 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
-SITE = "https://deutschezulassung.de"
-UA = "DeutscheZulassung-SEO-Audit/1.0"
+SITE = "https://kfz-zulassungsprofis.de"
+UA = "KFZ-Zulassungsprofis-SEO-Audit/1.0"
 PRICE_RE = re.compile(r"(\d{1,3}(?:\.\d{3})*,\d{2})\s?€")
 TIME_RE = re.compile(
     r"(\d+\s?(?:–|-|bis)\s?\d+\s?Werktage?n?|\d+\s?Werktage?n?|taggleich|"
@@ -194,7 +194,7 @@ def main() -> None:
         internal = set()
         for href in p.links:
             u = urlparse(urljoin(f"{SITE}{path}", href))
-            if u.scheme in ("http", "https") and u.netloc in ("", "deutschezulassung.de", "www.deutschezulassung.de"):
+            if u.scheme in ("http", "https") and u.netloc in ("", "kfz-zulassungsprofis.de", "www.kfz-zulassungsprofis.de"):
                 if not re.search(r"\.(pdf|png|jpe?g|webp|svg|txt|xml)$", u.path):
                     internal.add(u.path if u.path.endswith("/") else u.path + "/")
         norm = re.sub(r"\d", "0", text.lower())

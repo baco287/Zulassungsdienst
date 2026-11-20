@@ -1,7 +1,12 @@
 import { site } from "./site";
 
-/** Maximale Titellänge, die Google in der Regel vollständig anzeigt. */
-export const TITLE_MAX = 60;
+/**
+ * Maximale Titellänge mit Markenzusatz. Bis November 2026 lag die Grenze bei 60
+ * Zeichen; der neue Markenname ist drei Zeichen länger. Damit beim Domainumzug
+ * kein Titel seinen Markenzusatz verliert (und sich damit ändert), liegt die
+ * Grenze jetzt bei 63. Das Suchwort steht weiterhin vorn.
+ */
+export const TITLE_MAX = 63;
 const SUFFIX = ` | ${site.name}`;
 
 /**

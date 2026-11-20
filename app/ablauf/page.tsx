@@ -8,7 +8,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Ablauf der Online-Zulassung in 7 Schritten",
   description:
-    "Schritt für Schritt zur fertigen Kfz-Zulassung: So läuft Ihr Auftrag bei DeutscheZulassung ab – von der Auswahl bis zur Zustellung von Kennzeichen und Papieren.",
+    "Schritt für Schritt zur fertigen Kfz-Zulassung: So läuft Ihr Auftrag bei KFZ-Zulassungsprofis ab – von der Auswahl bis zur Zustellung von Kennzeichen und Papieren.",
 };
 
 const howToJsonLd = {
@@ -16,7 +16,7 @@ const howToJsonLd = {
   "@type": "HowTo",
   name: "Kfz-Zulassung online beauftragen – so funktioniert’s",
   description:
-    "In 7 Schritten zur fertigen Kfz-Zulassung ohne Behördengang: Leistung wählen, Unterlagen digital einreichen, Vollmacht erteilen – den Rest übernimmt DeutscheZulassung.",
+    "In 7 Schritten zur fertigen Kfz-Zulassung ohne Behördengang: Leistung wählen, Unterlagen digital einreichen, Vollmacht erteilen – den Rest übernimmt KFZ-Zulassungsprofis.",
   inLanguage: "de",
   totalTime: "P3D",
   step: processSteps.map((s, i) => ({

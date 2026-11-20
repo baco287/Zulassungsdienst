@@ -59,7 +59,7 @@ export const activePaymentMethods: readonly PaymentMethod[] = CHECKOUT_ENABLED
 export const PAYMENT_ENDPOINT = `${basePath}/api/zahlung.php`;
 
 export interface StartPaymentInput {
-  /** Referenz der eingegangenen Anfrage, z. B. "DZ-20261111-A7F3". */
+  /** Referenz der eingegangenen Anfrage, z. B. "KZP-20261120-A7F3". */
   reference: string;
   method: PaymentMethodId;
 }

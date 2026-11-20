@@ -9,7 +9,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Alle Zulassungsleistungen im Überblick",
   description:
-    "Neuzulassung, Ummeldung, Abmeldung, Wunschkennzeichen und mehr: Alle Kfz-Zulassungsleistungen von DeutscheZulassung im Überblick – für Privat- und Gewerbekunden.",
+    "Neuzulassung, Ummeldung, Abmeldung, Wunschkennzeichen und mehr: Alle Kfz-Zulassungsleistungen von KFZ-Zulassungsprofis im Überblick – für Privat- und Gewerbekunden.",
 };
 
 const order: ServiceCategory[] = ["zulassung", "kennzeichen", "dokumente", "service"];
