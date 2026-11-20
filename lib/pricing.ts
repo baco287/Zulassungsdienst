@@ -115,8 +115,39 @@ export const wunschkennzeichenHinweis =
     ? `Die amtliche Gebühr für Reservierung und Zuteilung (${euro(officialFees.customPlate[0])}) ist gesetzlich festgelegt und bleibt unverändert. Sie ist in unserem Preis von ${P.wunschkennzeichen} enthalten – den Differenzbetrag übernimmt KFZ-Zulassungsprofis.`
     : `Die amtliche Gebühr für Reservierung und Zuteilung (${euro(officialFees.customPlate[0])}) ist in unserem Preis von ${P.wunschkennzeichen} enthalten.`;
 
+/**
+ * Befristete Aktion aus config/preise.json (z. B. Gründerrabatt), sonst null.
+ * Die Aktionspreise stehen direkt in `leistungen`; dieser Block liefert nur Name
+ * und Enddatum für den Hinweistext. Bewusst ohne Streichpreis („statt …“): Nach
+ * § 11 PAngV muss der Vergleichspreis der niedrigste der letzten 30 Tage sein
+ * (bis 06.11.2026 galten 127,89 € statt 128 €).
+ */
+interface Aktion {
+  name: string;
+  gueltigBis: string;
+  leistungen: string[];
+  regulaererPreis: number;
+}
+export const AKTION: Aktion | null = (preise as { aktion?: Aktion }).aktion ?? null;
+
+const AKTION_LABELS: Record<string, string> = {
+  neuzulassung: "Neuzulassung",
+  ummeldung: "Ummeldung",
+  halterwechsel: "Halterwechsel",
+  wiederzulassung: "Wiederzulassung",
+};
+
+function aufzaehlung(teile: string[]): string {
+  return teile.length < 2 ? teile.join("") : `${teile.slice(0, -1).join(", ")} und ${teile[teile.length - 1]}`;
+}
+
+/** z. B. "Gründerrabatt: Neuzulassung, Ummeldung, Halterwechsel und Wiederzulassung bis 31.12.2026 für <Preis>." */
+export const aktionsHinweis: string = AKTION
+  ? `${AKTION.name}: ${aufzaehlung(AKTION.leistungen.map((s) => AKTION_LABELS[s] ?? s))} bis ${AKTION.gueltigBis.split("-").reverse().join(".")} für ${P.zulassung}.`
+  : "";
+
 /** Hinweistext, der neben Preisangaben erscheint. */
-export const priceDisclaimer = `Alle Preise inkl. MwSt. Bei Komplettpreisen sind amtliche Gebühren und versicherter Versand bereits enthalten. Neue Kennzeichenschilder liefern wir auf Wunsch für ${P.kennzeichen} pro Paar mit – bei Kennzeichenmitnahme oder eigenem Schildermacher entfällt das. Sonderfälle (z. B. Sondergrößen, Express, auswärtige Behörden) weisen wir vorab transparent aus – Sie erhalten immer eine verbindliche Festpreis-Bestätigung, bevor wir starten.`;
+export const priceDisclaimer = `${aktionsHinweis ? `${aktionsHinweis} ` : ""}Alle Preise inkl. MwSt. Bei Komplettpreisen sind amtliche Gebühren und versicherter Versand bereits enthalten. Neue Kennzeichenschilder liefern wir auf Wunsch für ${P.kennzeichen} pro Paar mit – bei Kennzeichenmitnahme oder eigenem Schildermacher entfällt das. Sonderfälle (z. B. Sondergrößen, Express, auswärtige Behörden) weisen wir vorab transparent aus – Sie erhalten immer eine verbindliche Festpreis-Bestätigung, bevor wir starten.`;
 
 /* ─────────────────────────── Bestellpreis ─────────────────────────── */
 
