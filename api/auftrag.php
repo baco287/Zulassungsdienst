@@ -1,9 +1,9 @@
 <?php
 /**
- * Auftrags- und Unterlagen-Endpoint für DeutscheZulassung.
+ * Auftrags- und Unterlagen-Endpoint für KFZ-Zulassungsprofis.
  *
  * Nimmt Anfragen aus dem Web-Formular entgegen und stellt sie als E-Mail
- * mit Anhängen an info@deutschezulassung.de zu.
+ * mit Anhängen an das Postfach in RECIPIENT zu.
  *
  * DATENSCHUTZ: Hochgeladene Dateien werden NICHT auf dem Webspace gespeichert.
  * Sie gehen direkt in die Anhänge der E-Mail; PHP räumt die Temp-Dateien am
@@ -11,17 +11,27 @@
  * Webserver, das gesichert oder turnusmäßig gelöscht werden müsste.
  *
  * Antwortformat: application/json
- *   Erfolg:  { "ok": true,  "reference": "DZ-20260820-A7F3" }
+ *   Erfolg:  { "ok": true,  "reference": "KZP-20261120-A7F3" }
  *   Fehler:  { "ok": false, "error": "...", "field": "zip" }
  */
 
 declare(strict_types=1);
 
 // -- Konfiguration -----------------------------------------------------------
-const RECIPIENT       = 'info@deutschezulassung.de';
-/** Absender muss auf der eigenen Domain liegen, sonst greifen SPF/DMARC nicht. */
+/**
+ * Empfänger: neues Postfach seit 20.11.2026 (muss zu site.contact.email passen).
+ * Absender: bleibt auf der bisherigen Domain, bis auch no-reply@ unter
+ * kfz-zulassungsprofis.de im KAS angelegt ist. Die alte Domain läuft im selben
+ * all-inkl-Vertrag weiter, SPF und DMARC greifen also unverändert.
+ */
+const RECIPIENT       = 'info@kfz-zulassungsprofis.de';
+/** Absender muss auf einer eigenen Domain liegen, sonst greifen SPF/DMARC nicht. */
 const SENDER          = 'no-reply@deutschezulassung.de';
-const SENDER_NAME     = 'DeutscheZulassung Website';
+const SENDER_NAME     = 'KFZ-Zulassungsprofis Website';
+/** Name der Website in Betreff und Text der Benachrichtigung. */
+const SITE_DOMAIN     = 'kfz-zulassungsprofis.de';
+/** Präfix der Referenznummern; muss zu site.referencePrefix in lib/site.ts passen. */
+const REFERENCE_PREFIX = 'KZP';
 const MAX_FILES       = 12;
 const MAX_FILE_BYTES  = 10485760;   // 10 MB je Datei
 const MAX_TOTAL_BYTES = 26214400;   // 25 MB je Anfrage
@@ -41,6 +51,10 @@ const ALLOWED = [
 
 /** Origins, die den Endpoint per fetch() aufrufen dürfen. */
 const ALLOWED_ORIGINS = [
+    'https://kfz-zulassungsprofis.de',
+    'https://www.kfz-zulassungsprofis.de',
+    // Frühere Domain: leitet nach dem Umzug nur noch weiter. Bleibt erlaubt, damit
+    // ein Formular, das während der Umstellung noch offen war, nicht scheitert.
     'https://deutschezulassung.de',
     'https://www.deutschezulassung.de',
 ];
@@ -197,7 +211,7 @@ function reference(): string
     for ($i = 0; $i < 4; $i++) {
         $code .= $alphabet[random_int(0, strlen($alphabet) - 1)];
     }
-    return 'DZ-' . date('Ymd') . '-' . $code;
+    return REFERENCE_PREFIX . '-' . date('Ymd') . '-' . $code;
 }
 
 function respond(array $payload): void
@@ -220,7 +234,7 @@ function fail(int $status, string $error, string $field = ''): void
 function enforceRateLimit(): void
 {
     $ip   = $_SERVER['REMOTE_ADDR'] ?? 'unbekannt';
-    $path = sys_get_temp_dir() . '/dz-rate-' . hash('sha256', $ip) . '.txt';
+    $path = sys_get_temp_dir() . '/kzp-rate-' . hash('sha256', $ip) . '.txt';
     $now  = time();
 
     $hits = [];
@@ -342,8 +356,8 @@ function buildBody(string $kind, array $f, string $message, array $files, string
 {
     $lines = [];
     $lines[] = $kind === 'unterlagen'
-        ? 'Nachgereichte Unterlagen über deutschezulassung.de'
-        : 'Neue Auftragsanfrage über deutschezulassung.de';
+        ? 'Nachgereichte Unterlagen über ' . SITE_DOMAIN
+        : 'Neue Auftragsanfrage über ' . SITE_DOMAIN;
     $lines[] = str_repeat('=', 52);
     $lines[] = '';
     $lines[] = 'Referenz:     ' . $ref;
@@ -399,13 +413,13 @@ function buildBody(string $kind, array $f, string $message, array $files, string
 /** Stellt die Nachricht als multipart/mixed zu (Text + Anhänge). */
 function sendMail(string $subject, string $body, array $files, string $replyTo, string $replyName): bool
 {
-    $boundary = 'dz' . bin2hex(random_bytes(16));
+    $boundary = 'kzp' . bin2hex(random_bytes(16));
 
     $headers = [
         'From: ' . mimeWord(SENDER_NAME) . ' <' . SENDER . '>',
         'MIME-Version: 1.0',
         'Content-Type: multipart/mixed; boundary="' . $boundary . '"',
-        'X-Mailer: deutschezulassung-form',
+        'X-Mailer: kfz-zulassungsprofis-form',
     ];
     if ($replyTo !== '') {
         $headers[] = 'Reply-To: ' . mimeWord($replyName) . ' <' . $replyTo . '>';

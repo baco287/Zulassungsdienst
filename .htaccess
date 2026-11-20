@@ -1,5 +1,7 @@
-# DeutscheZulassung – Server-Konfiguration (all-inkl/Apache)
-# Wird beim Build aus public/ mit ins Webroot deployt.
+# KFZ-Zulassungsprofis – Server-Konfiguration (all-inkl/Apache)
+# Wird beim Build aus public/ mit ins Webroot der Domain kfz-zulassungsprofis.de deployt.
+# Die frühere Domain deutschezulassung.de hat eine eigene, reine Weiterleitungs-Datei:
+# deploy/alte-domain/.htaccess (siehe docs/migration/MIGRATION.md).
 
 # ── Eigene Fehlerseite (Next.js exportiert out/404.html) ──────────────
 ErrorDocument 404 /404.html
@@ -10,22 +12,31 @@ AddCharset utf-8 .txt
 
 # ── OG-Bilder: Next.js exportiert sie ohne Dateiendung ────────────────
 # Ohne explizite Typangabe liefert Apache sie zusammen mit "nosniff" falsch aus.
-<FilesMatch "^(opengraph-image|twitter-image)$">
+<FilesMatch "^(opengraph-image|twitter-image|apple-icon)$">
   ForceType image/png
 </FilesMatch>
 
-# ── Kanonische Domain: www → non-www (301) ────────────────────────────
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteCond %{HTTP_HOST} ^www\.deutschezulassung\.de$ [NC]
-  RewriteRule ^(.*)$ https://deutschezulassung.de/$1 [R=301,L]
 
   # ── Themen-Weiterleitungen: gleicher Suchintent → eine starke Seite ──
-  # Siehe lib/landingpages.ts. Keine Duplikat-Seiten anlegen, sondern hierher leiten.
-  RewriteRule ^auto-online-zulassen-ohne-eid/?$ /kfz-zulassung-ohne-eid/ [R=301,L]
-  RewriteRule ^kfz-zulassung-ohne-ausweisapp/?$ /kfz-zulassung-ohne-eid/ [R=301,L]
-  RewriteRule ^online-zulassung-funktioniert-nicht/?$ /ikfz-funktioniert-nicht/ [R=301,L]
-  RewriteRule ^kfz-zulassung-kosten/?$ /ratgeber/was-kostet-eine-kfz-zulassung/ [R=301,L]
+  # Siehe lib/landingpages.ts und config/migration.json. Keine Duplikat-Seiten
+  # anlegen, sondern hierher leiten. Ziele bewusst mit vollständiger Adresse:
+  # so entsteht auch von www oder der früheren Domain aus nur ein Sprung.
+  RewriteRule ^auto-online-zulassen-ohne-eid/?$ https://kfz-zulassungsprofis.de/kfz-zulassung-ohne-eid/ [R=301,L]
+  RewriteRule ^kfz-zulassung-ohne-ausweisapp/?$ https://kfz-zulassungsprofis.de/kfz-zulassung-ohne-eid/ [R=301,L]
+  RewriteRule ^online-zulassung-funktioniert-nicht/?$ https://kfz-zulassungsprofis.de/ikfz-funktioniert-nicht/ [R=301,L]
+  RewriteRule ^kfz-zulassung-kosten/?$ https://kfz-zulassungsprofis.de/ratgeber/was-kostet-eine-kfz-zulassung/ [R=301,L]
+
+  # ── Kanonische Domain: www und frühere Domain → kfz-zulassungsprofis.de ──
+  # Die frühere Domain landet nur hier, falls sie im KAS auf denselben Ordner
+  # zeigt; im Normalfall leitet ihre eigene .htaccess schon vorher weiter.
+  # Formular-Endpunkt mit 308, damit eine laufende Übermittlung (POST) erhalten bleibt.
+  RewriteCond %{HTTP_HOST} ^(www\.kfz-zulassungsprofis\.de|(www\.)?deutschezulassung\.de)$ [NC]
+  RewriteRule ^(api/.*)$ https://kfz-zulassungsprofis.de/$1 [R=308,L]
+
+  RewriteCond %{HTTP_HOST} ^(www\.kfz-zulassungsprofis\.de|(www\.)?deutschezulassung\.de)$ [NC]
+  RewriteRule ^(.*)$ https://kfz-zulassungsprofis.de/$1 [R=301,L]
 </IfModule>
 
 # ── Security-Header ───────────────────────────────────────────────────

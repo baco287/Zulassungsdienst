@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap: https://deutschezulassung.de/sitemap.xml
+Sitemap: https://kfz-zulassungsprofis.de/sitemap.xml
