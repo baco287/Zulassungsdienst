@@ -1,6 +1,6 @@
 {
   "$kommentar": "Steuert den Umzug von deutschezulassung.de auf kfz-zulassungsprofis.de. Der Deploy-Workflow (.github/workflows/deploy.yml) und die Prüfskripte (scripts/migration.mjs, scripts/check-weiterleitungen.mjs) lesen diese Datei. Ablauf und Checklisten: docs/migration/MIGRATION.md.",
-  "stufe": "vorschau",
+  "stufe": "live",
   "$stufe": "\"vorschau\" = Die neue Website wird in den Ordner der neuen Domain hochgeladen, aber mit noindex. Die alte Domain bleibt unangetastet und zeigt weiter die bisherige Website. \"live\" = Die neue Website ist indexierbar, und in den Ordner der alten Domain wird die Weiterleitungs-.htaccess aus deploy/alte-domain/ gelegt (301 auf die neue Domain). Auf \"live\" erst nach ausdrücklicher Freigabe stellen.",
   "neu": {
     "name": "KFZ-Zulassungsprofis",
