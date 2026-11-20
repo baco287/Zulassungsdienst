@@ -7,10 +7,10 @@ all-inkl-Webspace zugestellt:
 
 | Baustein | Datei | Zweck |
 |---|---|---|
-| Endpoint | `public/api/auftrag.php` | nimmt Formular + Dateien an, mailt sie an `info@deutschezulassung.de` |
+| Endpoint | `public/api/auftrag.php` | nimmt Formular + Dateien an, mailt sie an das Postfach aus `RECIPIENT` (derzeit `info@deutschezulassung.de`, siehe `docs/migration/MIGRATION.md`) |
 | Client | `lib/order.ts` | Absenden, Referenznummer, Fallback-Kanäle |
 | Auftragsformular | `components/AuftragForm.tsx` | Leistung → Details → Kontakt → Unterlagen |
-| Upload-Seite | `app/unterlagen/page.tsx` | Nachreichen zu einer Referenz (`/unterlagen/?ref=DZ-…`) |
+| Upload-Seite | `app/unterlagen/page.tsx` | Nachreichen zu einer Referenz (`/unterlagen/?ref=KZP-…`, alte `DZ-…`-Nummern bleiben gültig) |
 | Datei-Auswahl | `components/DocumentUpload.tsx` | Fotos/PDF, Checkliste je Leistung |
 
 Die Website bleibt dabei ein statischer Export — `public/api/auftrag.php` wird
@@ -21,8 +21,8 @@ Deploy-Workflow mit hochgeladen. Apache führt es auf all-inkl aus.
 
 1. Kunde füllt das Formular aus, optional mit Unterlagen.
 2. `submitOrder()` sendet alles als `multipart/form-data` an `/api/auftrag.php`.
-3. Das Skript prüft die Eingaben, vergibt eine Referenz (`DZ-JJJJMMTT-XXXX`)
-   und stellt die Anfrage samt Anhängen an `info@deutschezulassung.de` zu.
+3. Das Skript prüft die Eingaben, vergibt eine Referenz (`KZP-JJJJMMTT-XXXX`)
+   und stellt die Anfrage samt Anhängen an das Postfach zu.
 4. Der Kunde sieht die Referenz und einen Button in den WhatsApp-Chat —
    die Nachricht enthält die Referenz, sodass Chat und Posteingang zusammenfinden.
 
@@ -43,7 +43,7 @@ Datenschutzerklärung beschreibt das in Abschnitt 3.
 - Größen: 10 MB je Datei, 25 MB je Anfrage, höchstens 12 Dateien
 - Spam: unsichtbares Honeypot-Feld plus Mindest-Ausfüllzeit von 3 Sekunden
 - Drosselung: 5 Anfragen je IP und 10 Minuten
-- CORS: nur `deutschezulassung.de` und `www.deutschezulassung.de`
+- CORS: `kfz-zulassungsprofis.de` (mit und ohne `www`) sowie die frühere Domain
 
 ### Fallback
 
@@ -56,7 +56,7 @@ kein PHP läuft (`NEXT_PUBLIC_STAGING=1`).
 
 Vor dem ersten Livegang im all-inkl-KAS zu prüfen:
 
-1. **Postfach `no-reply@deutschezulassung.de` anlegen** (oder als Alias auf
+1. **Absender-Postfach anlegen** (derzeit `no-reply@deutschezulassung.de`, später `no-reply@kfz-zulassungsprofis.de`) (oder als Alias auf
    `info@` einrichten). Der Absender muss auf der eigenen Domain liegen, sonst
    greifen SPF/DMARC nicht und die Mails landen im Spam.
 2. **PHP-Version** der Domain auf 8.0 oder neuer stellen — das Skript nutzt

@@ -2,13 +2,13 @@
 
 import { useEffect, useId, useRef, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ArrowRight, ChevronDown, Mail, Menu, Phone, X } from "lucide-react";
 import { site, whatsAppLink } from "@/lib/site";
 import { track } from "@/lib/analytics";
 import { serviceIcon } from "@/lib/serviceIcons";
 import WhatsAppIcon from "./WhatsAppIcon";
+import Logo from "./Logo";
 
 export interface HeaderService {
   slug: string;
@@ -43,7 +43,7 @@ const telHref = `tel:${site.contact.phone.replace(/\s/g, "")}`;
 const waHref = whatsAppLink("Hallo KFZ-Zulassungsprofis, ich habe eine Frage zur Kfz-Zulassung.");
 
 const navLink = (active: boolean) =>
-  `whitespace-nowrap rounded-lg px-2 py-2 text-[15px] font-semibold transition-colors duration-150 xl:px-3.5 ${
+  `whitespace-nowrap rounded-lg px-1 py-2 text-[15px] font-semibold transition-colors duration-150 xl:px-3.5 ${
     active ? "bg-brand-50 text-brand-700" : "text-navy hover:bg-ink-50 hover:text-brand-700"
   }`;
 
@@ -107,14 +107,7 @@ export default function HeaderNav({ services }: { services: HeaderService[] }) {
     <header className="sticky top-0 z-50 bg-white/95 shadow-[0_1px_0_rgb(11_31_58/0.06),0_8px_24px_-18px_rgb(11_31_58/0.35)] backdrop-blur-md">
       <div className="container-page flex h-[4.25rem] items-center justify-between gap-3">
         <Link href="/" aria-label={`${site.name} – Startseite`} className="flex min-h-11 shrink-0 items-center">
-          <Image
-            src="/logo.png"
-            alt={`${site.name} – Kfz-Zulassung online`}
-            width={600}
-            height={200}
-            priority
-            className="-my-3 h-[4.25rem] w-auto max-w-none lg:h-[3.4375rem] xl:h-[4.75rem]"
-          />
+          <Logo />
         </Link>
 
         {/* ── Desktop-Navigation ── */}
@@ -230,13 +223,6 @@ export default function HeaderNav({ services }: { services: HeaderService[] }) {
             {mobileOpen ? <X className="h-6 w-6" aria-hidden /> : <Menu className="h-6 w-6" aria-hidden />}
           </button>
         </div>
-      </div>
-
-      {/* Sehr dünne Linie in Schwarz, Rot und Gold */}
-      <div aria-hidden>
-        <div className="h-px bg-black" />
-        <div className="h-px bg-[#DD0000]" />
-        <div className="h-px bg-[#FFCC00]" />
       </div>
 
       {/* ── Mobiles Menü ── */}

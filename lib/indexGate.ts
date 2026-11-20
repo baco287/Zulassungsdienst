@@ -9,6 +9,7 @@
  * Regelwerk und Herleitung: docs/seo/local-seo-audit.md, Abschnitt 5.
  */
 import type { City } from "./staedte";
+import { NOINDEX } from "./features";
 import { getZulassungsstelle, type KennzeichenEintrag, type Zulassungsstelle } from "./zulassungsstellen";
 
 /**
@@ -98,6 +99,16 @@ export function kennzeichenIndexable(k: KennzeichenEintrag): boolean {
   return isOfficial(k.quelle) && k.stellen.every(stelleIndexable) && mehrwert;
 }
 
-/** Robots-Angabe für generateMetadata. */
+/**
+ * Robots-Angabe für generateMetadata.
+ *
+ * In der Vorschau und auf Staging (NOINDEX) muss die Seite selbst noindex
+ * setzen: Ein `robots: undefined` hier würde die Vorgabe aus dem Layout
+ * aufheben, und die Seite wäre trotz Vorschau indexierbar.
+ */
 export const robotsFor = (indexable: boolean) =>
-  indexable ? undefined : ({ index: false, follow: true } as const);
+  NOINDEX
+    ? ({ index: false, follow: false } as const)
+    : indexable
+      ? undefined
+      : ({ index: false, follow: true } as const);

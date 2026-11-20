@@ -111,6 +111,19 @@ Neu importieren: `npm run import:zulassungsstellen -- docs/recherche/*.json`.
 Ausnahmen (widersprüchliche oder unbelegte Angaben) stehen im Importskript.
 Kennzeichenseiten entstehen automatisch aus den Kürzeln der veröffentlichten Stellen.
 
+## Domainumzug (November 2026)
+
+Früher „DeutscheZulassung“ unter deutschezulassung.de. Ablauf, Weiterleitungen,
+Prüfungen und offene Schritte: `docs/migration/MIGRATION.md`.
+
+| Befehl | Zweck |
+|---|---|
+| `node scripts/migration.mjs vergleich docs/migration/stand-alt.json.gz` | Build mit dem Stand vor dem Umzug vergleichen |
+| `node scripts/check-weiterleitungen.mjs --regeln` | Weiterleitungsregeln prüfen (läuft im Deploy) |
+| `bash scripts/weiterleitungen-lokal-testen.sh` | alle Weiterleitungen gegen einen lokalen Apache testen |
+| `node scripts/check-weiterleitungen.mjs --live` | nach dem Livegang gegen die echten Domains |
+| `bash scripts/build-logo.sh` | Logo-Dateien neu erzeugen |
+
 ## Webanalyse
 
 Standardmäßig aus. Einschalten und Datenschutzhinweise: `docs/TRACKING.md`.

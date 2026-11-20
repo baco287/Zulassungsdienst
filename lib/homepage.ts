@@ -48,7 +48,7 @@ export { vorgaenge, type Vorgang, type VorgangSlug } from "@/lib/vorgaenge";
 export const hero = {
   badge: "Bundesweiter Kfz-Zulassungsservice",
   title: "Auto online anmelden, ummelden oder abmelden.",
-  lead: "Ohne eID, ohne AusweisApp und ohne Behördentermin. Wir übernehmen die Zulassung bundesweit und prüfen Ihre Unterlagen persönlich.",
+  lead: "Mit KFZ-Zulassungsprofis erledigen Sie Ihre Fahrzeugzulassung bequem online. Ohne eID, ohne AusweisApp und ohne persönlichen Behördentermin bei geeigneten Vorgängen.",
   /** Pflichtzusatz zur „ohne eID“-Aussage, immer in Sichtnähe zum Claim. */
   hinweis:
     "Privater Zulassungsdienst, keine Behörde. Für die Vollmacht bestätigen Sie Ihre Identität einmalig digital – ohne eID-PIN.",
