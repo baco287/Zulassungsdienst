@@ -52,9 +52,10 @@ Dass viele lokale Seiten `noindex` tragen, ist die bestehende Regel aus
   Impressum, Fußzeile, FAQ und strukturierte Daten (`legalName`) nennen sie
   unverändert; „KFZ-Zulassungsprofis ist ein Angebot der Volt Gas UG
   (haftungsbeschränkt)“.
-- **E-Mail-Adressen bleiben** `info@deutschezulassung.de` und
-  `no-reply@deutschezulassung.de`, bis die neuen Postfächer eingerichtet sind.
-  Die FAQ „Woran erkenne ich echte Nachrichten“ nennt deshalb beide Domains.
+- **E-Mail:** Kontaktadresse und Empfänger der Formulare ist seit 20.11.2026
+  `info@kfz-zulassungsprofis.de`. Der technische Absender der
+  Formular-Benachrichtigung bleibt `no-reply@deutschezulassung.de`, bis auch
+  dieses Postfach unter der neuen Domain angelegt ist.
 - **Referenznummern** beginnen neu mit `KZP-`. Alte `DZ-`-Nummern bleiben auf
   der Upload-Seite gültig.
 - **Logo und Auftritt:** neue Bildmarke (Kennzeichen mit Häkchen, ohne

@@ -19,12 +19,8 @@ export const site = {
   locale: "de_DE",
 
   contact: {
-    /**
-     * Bleibt auf der bisherigen Domain, bis die Postfächer unter
-     * @kfz-zulassungsprofis.de eingerichtet und getestet sind. Erst dann hier
-     * und in public/api/auftrag.php (RECIPIENT, SENDER) umstellen.
-     */
-    email: "info@deutschezulassung.de",
+    /** Muss zu RECIPIENT in public/api/auftrag.php passen. */
+    email: "info@kfz-zulassungsprofis.de",
     phone: "+49 179 1528205",
     phoneDisplay: "0179 / 152 82 05",
     /** Nummer im wa.me-Format ohne "+". */

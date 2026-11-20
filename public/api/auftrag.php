@@ -19,12 +19,12 @@ declare(strict_types=1);
 
 // -- Konfiguration -----------------------------------------------------------
 /**
- * Postfächer: bleiben auf der bisherigen Domain, bis info@ und no-reply@ unter
- * kfz-zulassungsprofis.de im KAS angelegt und getestet sind. Die alte Domain
- * läuft im selben all-inkl-Vertrag weiter, SPF und DMARC greifen also unverändert.
- * Umstellung: beide Konstanten hier und site.contact.email in lib/site.ts ändern.
+ * Empfänger: neues Postfach seit 20.11.2026 (muss zu site.contact.email passen).
+ * Absender: bleibt auf der bisherigen Domain, bis auch no-reply@ unter
+ * kfz-zulassungsprofis.de im KAS angelegt ist. Die alte Domain läuft im selben
+ * all-inkl-Vertrag weiter, SPF und DMARC greifen also unverändert.
  */
-const RECIPIENT       = 'info@deutschezulassung.de';
+const RECIPIENT       = 'info@kfz-zulassungsprofis.de';
 /** Absender muss auf einer eigenen Domain liegen, sonst greifen SPF/DMARC nicht. */
 const SENDER          = 'no-reply@deutschezulassung.de';
 const SENDER_NAME     = 'KFZ-Zulassungsprofis Website';
