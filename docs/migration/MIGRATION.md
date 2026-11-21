@@ -1,6 +1,6 @@
 # Rebranding und Domainumzug: DeutscheZulassung → KFZ-Zulassungsprofis
 
-Stand: 20.11.2026 · Branch `rebrand/kfz-zulassungsprofis` · **nicht veröffentlicht, nicht gepusht**
+Stand: 20.11.2026 · auf `main` · **live seit 20.11.2026** (Stufe `live`, Commit 891be673)
 
 | | bisher | neu |
 |---|---|---|
@@ -8,8 +8,20 @@ Stand: 20.11.2026 · Branch `rebrand/kfz-zulassungsprofis` · **nicht veröffent
 | Domain | deutschezulassung.de | kfz-zulassungsprofis.de |
 | Betreiber | Volt Gas UG (haftungsbeschränkt) | unverändert |
 
-Die Live-Website unter deutschezulassung.de ist unverändert. Es wurden keine
-DNS-, Hosting-, Google- oder GitHub-Einstellungen angefasst.
+Die neue Website ist unter kfz-zulassungsprofis.de live und indexierbar
+(1.219 Seiten mit 200, 471 indexierbar, Sitemap 471 Adressen). Die alte Domain
+leitet per 301 pfadgleich weiter.
+
+Im KAS zeigt `deutschezulassung.de` seit 20.11.2026, 14:02 Uhr auf den Ordner
+`/deutschezulassung.de/` (nicht auf „Domainweiterleitung“ – die ergänzt keine
+Schrägstriche und kennt weder die Themen-Weiterleitungen noch 308). Damit greift
+`deploy/alte-domain/.htaccess`. `node scripts/check-weiterleitungen.mjs --live`
+über alle Seiten: 1.690 Weiterleitungen geprüft, keine Abweichung.
+
+Testauftrag über das Formular am 20.11.2026: E-Mail in `info@kfz-zulassungsprofis.de`
+angekommen (vom Betreiber bestätigt).
+
+**Offen:** Adressänderung in der Search Console.
 
 ## 1. Ausgangslage
 
@@ -52,9 +64,10 @@ Dass viele lokale Seiten `noindex` tragen, ist die bestehende Regel aus
   Impressum, Fußzeile, FAQ und strukturierte Daten (`legalName`) nennen sie
   unverändert; „KFZ-Zulassungsprofis ist ein Angebot der Volt Gas UG
   (haftungsbeschränkt)“.
-- **E-Mail-Adressen bleiben** `info@deutschezulassung.de` und
-  `no-reply@deutschezulassung.de`, bis die neuen Postfächer eingerichtet sind.
-  Die FAQ „Woran erkenne ich echte Nachrichten“ nennt deshalb beide Domains.
+- **E-Mail:** Kontaktadresse und Empfänger der Formulare ist seit 20.11.2026
+  `info@kfz-zulassungsprofis.de`. Der technische Absender der
+  Formular-Benachrichtigung bleibt `no-reply@deutschezulassung.de`, bis auch
+  dieses Postfach unter der neuen Domain angelegt ist.
 - **Referenznummern** beginnen neu mit `KZP-`. Alte `DZ-`-Nummern bleiben auf
   der Upload-Seite gültig.
 - **Logo und Auftritt:** neue Bildmarke (Kennzeichen mit Häkchen, ohne
@@ -94,10 +107,8 @@ Vollständige Zuordnung alt → neu: `docs/migration/url-mapping.csv` (1.224 Zei
 
 | Stufe | Neue Domain | Alte Domain |
 |---|---|---|
-| `vorschau` (aktuell) | neue Website wird hochgeladen, **noindex**, Formular funktioniert | bleibt unverändert die bisherige Website |
-| `live` | neue Website indexierbar | bekommt die Weiterleitungs-`.htaccess` |
-
-Solange der Branch nicht nach `main` gemergt wird, passiert nichts.
+| `vorschau` | neue Website wird hochgeladen, **noindex**, Formular funktioniert | bleibt unverändert die bisherige Website |
+| `live` (aktuell) | neue Website indexierbar | bekommt die Weiterleitungs-`.htaccess` |
 
 ### Reihenfolge bis zum Livegang
 

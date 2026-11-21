@@ -118,8 +118,8 @@ Datenschutzerklärung, Widerrufsbelehrung, Servicebedingungen (`lib/site.ts` →
 ## Formular-Versand: von `mail()` auf angemeldeten SMTP-Versand (20.11.2026)
 
 **Befund:** Eine echte Testanfrage über das Live-Formular (Referenz `KZP-20261120-35WD`)
-wurde von der Website als „eingegangen“ bestätigt, kam aber nie in `info@deutschezulassung.de`
-an. Normale E-Mails an diese Adresse kommen an. Laut Betreiber ist über das Formular noch nie
+wurde von der Website als „eingegangen“ bestätigt, kam aber nie im damaligen Postfach
+`info@deutschezulassung.de` an. Normale E-Mails an diese Adresse kommen an. Laut Betreiber ist über das Formular noch nie
 eine Anfrage angekommen. PHP `mail()` meldete Erfolg, die Nachricht ging danach verloren.
 
 **Umbau** (`public/api/auftrag.php`): Versand angemeldet per SMTP (STARTTLS, Port 587) über
@@ -133,12 +133,13 @@ GitHub-Secrets mit `scripts/mail-zugang.mjs` nach `out/api/mail-zugang.php`
 
 | Secret | Inhalt |
 |---|---|
-| `SMTP_USER` | Postfach-Adresse, empfohlen ein eigenes Versand-Postfach, z. B. `no-reply@deutschezulassung.de` |
+| `SMTP_USER` | Postfach-Adresse, empfohlen ein eigenes Versand-Postfach, z. B. `no-reply@kfz-zulassungsprofis.de` |
 | `SMTP_PASSWORD` | Passwort dieses Postfachs |
 | `SMTP_HOST`, `SMTP_PORT` | optional (Standard `w0216162.kasserver.com`, `587`) |
 
 Ist `SMTP_USER` eine E-Mail-Adresse, ist sie zugleich Absender (all-inkl nimmt nach der
-Anmeldung nur eigene Adressen an). Empfänger bleibt `RECIPIENT` (`info@deutschezulassung.de`).
+Anmeldung nur eigene Adressen an). Empfänger ist `RECIPIENT` (seit 20.11.2026
+`info@kfz-zulassungsprofis.de`, muss zu `site.contact.email` passen).
 
 **Prüfen nach dem Deploy:**
 - `/api/auftrag.php?check=1` → `"mailZugang": true`
@@ -169,7 +170,6 @@ Unbenutzte Bausteine `HeroFlowAnimation`, `PackageCards`, `Testimonials`,
    Projekt; die Bilder werden beim Build gerendert, Besucher laden keine Schrift).
 4. **Startseite:** Wiederholungen (Preis/Inklusivleistungen, „keine Behörde“) bewusst
    belassen (Entscheidung Betreiber 20.11.2026).
-5. **Kontakt-E-Mail** steht noch auf `info@deutschezulassung.de` (siehe `lib/site.ts`).
-6. **Logo-Dateien auf der Medien-Platte:** Die Markendateien in hoher Auflösung erzeugt
+5. **Logo-Dateien auf der Medien-Platte:** Die Markendateien in hoher Auflösung erzeugt
    `bash scripts/build-logo.sh <Zielordner>`; abzulegen unter
    `/Volumes/Medien/Bilder-Grafiken/Logos/Deutsche-Zulassung/`.
