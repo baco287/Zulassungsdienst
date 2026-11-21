@@ -3,10 +3,9 @@
 import { useEffect, useId, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ArrowRight, ChevronDown, Mail, Menu, Phone, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { site, whatsAppLink } from "@/lib/site";
 import { track } from "@/lib/analytics";
-import { serviceIcon } from "@/lib/serviceIcons";
 import WhatsAppIcon from "./WhatsAppIcon";
 import Logo from "./Logo";
 
@@ -42,9 +41,10 @@ const mobileExtra = [
 const telHref = `tel:${site.contact.phone.replace(/\s/g, "")}`;
 const waHref = whatsAppLink("Hallo KFZ-Zulassungsprofis, ich habe eine Frage zur Kfz-Zulassung.");
 
+/* Navigation als schlichter Text: aktive Seite und Hover bekommen eine Unterstreichung. */
 const navLink = (active: boolean) =>
-  `whitespace-nowrap rounded-lg px-1 py-2 text-[15px] font-semibold transition-colors duration-150 xl:px-3.5 ${
-    active ? "bg-brand-50 text-brand-700" : "text-navy hover:bg-ink-50 hover:text-brand-700"
+  `flex min-h-11 items-center whitespace-nowrap px-1.5 text-[15px] font-medium text-navy decoration-2 underline-offset-[7px] hover:underline xl:px-2.5 xl:text-[15.5px] ${
+    active ? "underline" : ""
   }`;
 
 export default function HeaderNav({ services }: { services: HeaderService[] }) {
@@ -104,14 +104,14 @@ export default function HeaderNav({ services }: { services: HeaderService[] }) {
   const leistungenAktiv = pathname.startsWith("/leistungen");
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 shadow-[0_1px_0_rgb(11_31_58/0.06),0_8px_24px_-18px_rgb(11_31_58/0.35)] backdrop-blur-md">
-      <div className="container-page flex h-[4.25rem] items-center justify-between gap-3">
+    <header className="sticky top-0 z-50 border-b border-line bg-white">
+      <div className="container-page flex h-16 items-center justify-between gap-3 lg:h-[4.75rem] lg:gap-6">
         <Link href="/" aria-label={`${site.name} – Startseite`} className="flex min-h-11 shrink-0 items-center">
           <Logo />
         </Link>
 
         {/* ── Desktop-Navigation ── */}
-        <nav className="hidden items-center gap-0.5 lg:flex" aria-label="Hauptnavigation">
+        <nav className="hidden items-center min-[1180px]:flex xl:gap-1" aria-label="Hauptnavigation">
           <div ref={megaWrap} className="relative">
             <button
               ref={megaButton}
@@ -119,51 +119,37 @@ export default function HeaderNav({ services }: { services: HeaderService[] }) {
               aria-expanded={megaOpen}
               aria-controls={megaId}
               onClick={() => setMegaOpen((v) => !v)}
-              className={`${navLink(leistungenAktiv || megaOpen)} flex cursor-pointer items-center gap-1`}
+              className={`${navLink(leistungenAktiv || megaOpen)} cursor-pointer gap-1`}
             >
               Leistungen
-              <ChevronDown
-                className={`h-4 w-4 transition-transform duration-200 ${megaOpen ? "rotate-180" : ""}`}
-                aria-hidden
-              />
+              <ChevronDown className={`h-4 w-4 ${megaOpen ? "rotate-180" : ""}`} aria-hidden />
             </button>
 
             {/* Immer im HTML (interne Links), geschlossen aber unsichtbar und nicht fokussierbar */}
             <div
               id={megaId}
-              className={`absolute left-0 top-full z-50 w-[40rem] pt-3 transition-all duration-200 ${
-                megaOpen ? "visible translate-y-0 opacity-100" : "invisible -translate-y-1 opacity-0"
-              }`}
+              className={`absolute left-0 top-full z-50 w-[27rem] pt-3 ${megaOpen ? "visible" : "invisible"}`}
             >
-              <div className="rounded-[20px] border border-line bg-white p-3 shadow-[var(--shadow-elevated)]">
-                <ul className="grid grid-cols-2 gap-1">
-                  {services.map((s) => {
-                    const Icon = serviceIcon(s.slug);
-                    return (
-                      <li key={s.slug}>
-                        <Link
-                          href={s.href}
-                          className="group flex items-center gap-3 rounded-[14px] px-3 py-3 transition-colors duration-150 hover:bg-brand-50"
-                        >
-                          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-50 text-brand-700 transition-colors duration-150 group-hover:bg-white" aria-hidden>
-                            <Icon className="h-5 w-5" strokeWidth={1.75} />
-                          </span>
-                          <span className="min-w-0 flex-1">
-                            <span className="block font-display text-[15px] font-bold text-navy">{s.label}</span>
-                            <span className="block text-sm tabular-nums text-ink-600">{s.preis}</span>
-                          </span>
-                        </Link>
-                      </li>
-                    );
-                  })}
+              <div className="rounded-[10px] border-2 border-navy bg-white px-5 pb-3 pt-1">
+                <ul className="liste">
+                  {services.map((s) => (
+                    <li key={s.slug} className="first:border-t-0">
+                      <Link
+                        href={s.href}
+                        className="group flex min-h-12 items-baseline justify-between gap-6 py-3"
+                      >
+                        <span className="font-display text-[1.0625rem] font-semibold text-navy decoration-2 underline-offset-4 group-hover:underline">
+                          {s.label}
+                        </span>
+                        <span className="text-[15px] tabular-nums text-ink-600">{s.preis}</span>
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
-                <ul className="mt-2 flex flex-wrap gap-x-1 gap-y-1 border-t border-line px-1 pt-3">
+                <ul className="flex flex-wrap gap-x-5 pt-2">
                   {mehrLeistungen.map((l) => (
                     <li key={l.href}>
-                      <Link
-                        href={l.href}
-                        className="inline-flex min-h-10 items-center rounded-lg px-2.5 text-sm font-semibold text-brand-700 hover:bg-brand-50"
-                      >
+                      <Link href={l.href} className="link inline-flex min-h-10 items-center text-sm">
                         {l.label}
                       </Link>
                     </li>
@@ -189,33 +175,32 @@ export default function HeaderNav({ services }: { services: HeaderService[] }) {
         </nav>
 
         {/* ── Kontakt und Start ── */}
-        <div className="flex items-center gap-1.5 sm:gap-2.5">
+        <div className="flex items-center gap-1 lg:gap-3 xl:gap-4">
           <a
             href={waHref}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => track("whatsapp_click", { position: "header" })}
             aria-label="Per WhatsApp schreiben"
-            title="Per WhatsApp schreiben"
-            className="flex h-11 w-11 items-center justify-center rounded-xl transition-colors duration-150 hover:bg-ink-50"
+            className="flex h-11 min-w-11 items-center justify-center gap-2 text-[15.5px] font-medium text-navy decoration-2 underline-offset-[7px] hover:underline"
           >
-            <WhatsAppIcon className="h-7 w-7" color="brand" />
+            <WhatsAppIcon className="h-[26px] w-[26px] min-[1180px]:h-[22px] min-[1180px]:w-[22px]" color="brand" />
+            <span aria-hidden className="hidden min-[1360px]:inline">WhatsApp</span>
           </a>
           <Link
             href="/auftrag"
             onClick={() => track("cta_click", { position: "header" })}
             aria-label="Jetzt Zulassung starten"
-            className="btn btn-primary btn-sm hidden whitespace-nowrap md:inline-flex xl:min-h-12 xl:px-5"
+            className="btn btn-primary btn-sm hidden whitespace-nowrap md:inline-flex"
           >
             <span aria-hidden className="xl:hidden">Zulassung starten</span>
             <span aria-hidden className="hidden xl:inline">Jetzt Zulassung starten</span>
-            <ArrowRight className="h-4 w-4 lg:hidden xl:block xl:h-5 xl:w-5" aria-hidden />
           </Link>
           <button
             ref={menuButton}
             type="button"
             onClick={() => setMobileOpen((v) => !v)}
-            className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-xl text-navy hover:bg-ink-50 lg:hidden"
+            className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-lg text-navy hover:bg-canvas min-[1180px]:hidden"
             aria-expanded={mobileOpen}
             aria-controls={mobileOpen ? mobileId : undefined}
             aria-label={mobileOpen ? "Menü schließen" : "Menü öffnen"}
@@ -230,39 +215,33 @@ export default function HeaderNav({ services }: { services: HeaderService[] }) {
         <nav
           id={mobileId}
           aria-label="Mobile Navigation"
-          className="absolute inset-x-0 top-full max-h-[calc(100dvh-4.5rem)] overflow-y-auto overscroll-contain border-t border-line bg-white shadow-[var(--shadow-elevated)] lg:hidden"
+          className="absolute inset-x-0 top-full max-h-[calc(100dvh-4rem)] overflow-y-auto lg:max-h-[calc(100dvh-4.75rem)] overscroll-contain border-b-2 border-t border-b-navy border-t-line bg-white min-[1180px]:hidden"
         >
-          <div className="container-page pb-6 pt-4">
-            <p className="eyebrow px-1">Leistungen</p>
-            <ul className="mt-2 grid grid-cols-1 gap-1 sm:grid-cols-2">
-              {services.map((s) => {
-                const Icon = serviceIcon(s.slug);
-                return (
-                  <li key={s.slug}>
-                    <Link
-                      href={s.href}
-                      onClick={() => setMobileOpen(false)}
-                      className="flex min-h-[3.25rem] items-center gap-3 rounded-[14px] px-2 py-2 hover:bg-ink-50"
-                    >
-                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-50 text-brand-700" aria-hidden>
-                        <Icon className="h-5 w-5" strokeWidth={1.75} />
-                      </span>
-                      <span className="flex-1 font-display text-base font-bold text-navy">{s.label}</span>
-                      <span className="text-sm tabular-nums text-ink-600">{s.preis}</span>
-                    </Link>
-                  </li>
-                );
-              })}
+          <div className="container-page pb-6 pt-2">
+            <h2 className="sr-only">Leistungen</h2>
+            <ul className="liste">
+              {services.map((s) => (
+                <li key={s.slug} className="first:border-t-0">
+                  <Link
+                    href={s.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="flex min-h-[3.25rem] items-baseline justify-between gap-4 py-3.5"
+                  >
+                    <span className="font-display text-[1.0625rem] font-semibold text-navy">{s.label}</span>
+                    <span className="text-[15px] tabular-nums text-ink-600">{s.preis}</span>
+                  </Link>
+                </li>
+              ))}
             </ul>
 
-            <ul className="mt-3 border-t border-line pt-3">
+            <ul className="mt-4 grid grid-cols-2 gap-x-6">
               {[...mehrLeistungen, ...nav, ...mobileExtra].map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
                     onClick={() => setMobileOpen(false)}
                     aria-current={pathname.startsWith(item.href) ? "page" : undefined}
-                    className="flex min-h-12 items-center rounded-xl px-2 text-base font-semibold text-navy hover:bg-ink-50 aria-[current=page]:text-brand-700"
+                    className="flex min-h-11 items-center text-base font-medium text-navy decoration-2 underline-offset-4 aria-[current=page]:underline"
                   >
                     {item.label}
                   </Link>
@@ -276,10 +255,9 @@ export default function HeaderNav({ services }: { services: HeaderService[] }) {
                 setMobileOpen(false);
                 track("cta_click", { position: "mobile_menu" });
               }}
-              className="btn btn-primary btn-lg btn-block mt-4"
+              className="btn btn-primary btn-lg btn-block mt-5"
             >
               Jetzt Zulassung starten
-              <ArrowRight className="h-5 w-5" aria-hidden />
             </Link>
             <div className="mt-3 grid grid-cols-2 gap-3">
               <a
@@ -287,7 +265,6 @@ export default function HeaderNav({ services }: { services: HeaderService[] }) {
                 onClick={() => track("phone_click", { position: "mobile_menu" })}
                 className="btn btn-secondary btn-sm"
               >
-                <Phone className="h-4 w-4" aria-hidden />
                 Anrufen
               </a>
               <a
@@ -295,11 +272,10 @@ export default function HeaderNav({ services }: { services: HeaderService[] }) {
                 onClick={() => track("email_click", { position: "mobile_menu" })}
                 className="btn btn-secondary btn-sm"
               >
-                <Mail className="h-4 w-4" aria-hidden />
                 E-Mail
               </a>
             </div>
-            <p className="mt-4 text-center text-sm text-ink-600">Servicezeiten: {site.contact.hours}</p>
+            <p className="mt-4 text-sm text-ink-600">Servicezeiten: {site.contact.hours}</p>
           </div>
         </nav>
       )}

@@ -16,6 +16,12 @@ AddCharset utf-8 .txt
   ForceType image/png
 </FilesMatch>
 
+# ── Zugangsdaten des Mailversands (api/mail-zugang.php, beim Deploy erzeugt) ──
+# Nur für auftrag.php per include lesbar, nie direkt abrufbar.
+<Files "mail-zugang.php">
+  Require all denied
+</Files>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
 

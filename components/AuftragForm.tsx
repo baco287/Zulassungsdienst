@@ -1,22 +1,9 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useRef, useState, type KeyboardEvent, type ReactNode } from "react";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
-import {
-  AlertCircle,
-  ArrowLeft,
-  ArrowRight,
-  Check,
-  CheckCircle2,
-  Clock3,
-  Copy,
-  Loader2,
-  Lock,
-  Mail,
-  Pencil,
-  Truck,
-} from "lucide-react";
+import { AlertCircle, ChevronDown, Copy, Loader2, Lock, Mail } from "lucide-react";
 import { sortedServices, getService } from "@/lib/services";
 import {
   calculateOrderPrice,
@@ -35,11 +22,11 @@ import {
   submitOrder,
   type SubmitResult,
 } from "@/lib/order";
-import { serviceIcon } from "@/lib/serviceIcons";
 import { istHauptleistung, vorgaenge } from "@/lib/vorgaenge";
 import type { OrderRequest } from "@/lib/types";
 import { track } from "@/lib/analytics";
 import DocumentUpload from "./DocumentUpload";
+import Haken from "./ui/Haken";
 import PaymentMethods from "./checkout/PaymentMethods";
 import WhatsAppIcon from "./WhatsAppIcon";
 
@@ -79,6 +66,35 @@ interface Extras {
 }
 
 const stepLabels = ["Service wählen", "Ihre Angaben", "Unterlagen", "Abschließen"] as const;
+
+/**
+ * Eingaben bleiben im offenen Browser-Tab erhalten (sessionStorage), damit niemand
+ * alles verliert, wenn das Handy beim Wechsel zur Kamera die Seite neu lädt.
+ * Gespeichert wird nur im Browser des Kunden – ohne Dateien und ohne Einwilligung –
+ * und nach erfolgreichem Absenden gelöscht. Schließen des Tabs löscht ebenfalls.
+ */
+const ENTWURF_KEY = "kzp:auftrag:v1";
+interface Entwurf {
+  values: Omit<OrderRequest, "consent">;
+  extras: Extras;
+  step: number;
+}
+function leseEntwurf(): Entwurf | null {
+  try {
+    const raw = sessionStorage.getItem(ENTWURF_KEY);
+    return raw ? (JSON.parse(raw) as Entwurf) : null;
+  } catch {
+    return null;
+  }
+}
+function schreibeEntwurf(e: Entwurf | null) {
+  try {
+    if (e) sessionStorage.setItem(ENTWURF_KEY, JSON.stringify(e));
+    else sessionStorage.removeItem(ENTWURF_KEY);
+  } catch {
+    /* Speicher gesperrt (Privatmodus) – dann eben ohne Zwischenspeichern */
+  }
+}
 const LAST = stepLabels.length - 1;
 
 type ErrorKey = keyof OrderRequest | "contact" | "dateien";
@@ -171,7 +187,7 @@ function FieldError({ id, message }: { id: string; message?: string }) {
 function StepHeading({ title, children }: { title: string; children?: ReactNode }) {
   return (
     <>
-      <h2 tabIndex={-1} className="font-display text-2xl font-extrabold text-navy outline-none">
+      <h2 tabIndex={-1} className="text-2xl font-bold text-navy focus:outline-none focus-visible:outline-none">
         {title}
       </h2>
       {children && <p className="mt-2 text-[15px] leading-relaxed text-ink-600">{children}</p>}
@@ -182,7 +198,8 @@ function StepHeading({ title, children }: { title: string; children?: ReactNode 
 export default function AuftragForm({ children }: { children?: ReactNode }) {
   const reduced = useReducedMotion();
   const [step, setStep] = useState(0);
-  const [direction, setDirection] = useState(1);
+  /** 0 = erster Aufruf (keine Einblendung), 1 = vor, -1 = zurück. */
+  const [direction, setDirection] = useState(0);
   const [values, setValues] = useState<OrderRequest>(initial);
   const [extras, setExtras] = useState<Extras>({ schilder: false, wunschkennzeichen: false });
   const [files, setFiles] = useState<File[]>([]);
@@ -190,6 +207,9 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
   const [sending, setSending] = useState(false);
   const [result, setResult] = useState<SubmitResult | null>(null);
   const [copied, setCopied] = useState(false);
+  const [mehrOffen, setMehrOffen] = useState(false);
+  /** true, sobald ein gespeicherter Entwurf gelesen wurde – vorher nichts überschreiben. */
+  const [geladen, setGeladen] = useState(false);
 
   const stepContainerRef = useRef<HTMLDivElement>(null);
   const stepChanged = useRef(false);
@@ -237,16 +257,37 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
     }
   }, [step, result]);
 
-  // Vorauswahl über ?leistung=slug → direkt zu Schritt 2.
+  // Gespeicherten Entwurf aus diesem Tab übernehmen; Vorauswahl über ?leistung=slug
+  // hat Vorrang und führt direkt zu Schritt 2.
   useEffect(() => {
+    const entwurf = leseEntwurf();
     const slug = new URLSearchParams(window.location.search).get("leistung");
-    if (slug && getService(slug)) {
-      setValues((v) => ({ ...v, serviceSlug: slug }));
+    const deeplink = slug && getService(slug) ? slug : null;
+    if (entwurf) {
+      const gleicheLeistung = !deeplink || deeplink === entwurf.values.serviceSlug;
+      setValues((v) => ({ ...v, ...entwurf.values, serviceSlug: deeplink ?? entwurf.values.serviceSlug }));
+      if (gleicheLeistung) setExtras(entwurf.extras);
+      setStep(deeplink && !gleicheLeistung ? 1 : Math.min(Math.max(entwurf.step, deeplink ? 1 : 0), LAST));
+      if (!istHauptleistung(entwurf.values.serviceSlug) && entwurf.values.serviceSlug) setMehrOffen(true);
+    } else if (deeplink) {
+      setValues((v) => ({ ...v, serviceSlug: deeplink }));
       setStep(1);
-      markStarted(slug);
-      track("service_selected", { service: slug, position: "deeplink" });
     }
+    if (deeplink) {
+      if (!istHauptleistung(deeplink)) setMehrOffen(true);
+      markStarted(deeplink);
+      track("service_selected", { service: deeplink, position: "deeplink" });
+    }
+    setGeladen(true);
   }, []);
+
+  useEffect(() => {
+    if (!geladen || result?.ok) return;
+    const { consent: _consent, ...rest } = values;
+    void _consent;
+    const leer = !rest.serviceSlug && !rest.name && !rest.email && !rest.phone && !rest.zip && !rest.city;
+    schreibeEntwurf(leer ? null : { values: rest, extras, step });
+  }, [geladen, values, extras, step, result?.ok]);
 
   const service = getService(values.serviceSlug);
   const cfg = leistungsPreis(values.serviceSlug);
@@ -317,6 +358,20 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
     goTo(Math.max(step - 1, 0), -1);
   }
 
+  /** Radiogruppe: Pfeiltasten wechseln Auswahl und Fokus, Tab springt aus der Gruppe. */
+  function onRadioKey(e: KeyboardEvent<HTMLDivElement>) {
+    const delta = ({ ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 } as Record<string, number>)[e.key];
+    if (!delta) return;
+    e.preventDefault();
+    const radios = [...e.currentTarget.querySelectorAll<HTMLButtonElement>('[role="radio"]')];
+    if (radios.length === 0) return;
+    const aktuell = radios.findIndex((r) => r === document.activeElement);
+    const ziel = radios[(Math.max(aktuell, 0) + delta + radios.length) % radios.length];
+    const slug = ziel.dataset.slug;
+    if (slug) set("serviceSlug", slug);
+    ziel.focus();
+  }
+
   async function send() {
     const e = validateStep(LAST, values);
     if (Object.keys(e).length > 0) {
@@ -345,6 +400,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
       setErrors({ [feld as ErrorKey]: outcome.error });
     }
     if (outcome.ok) {
+      schreibeEntwurf(null);
       stepChanged.current = true;
       tracking.current.submitted = true;
       track("order_submitted", {
@@ -360,14 +416,17 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
   /**
    * Schrittwechsel: keyed Remount mit Einblend-Animation.
    * (Bewusst ohne AnimatePresence-Exit – zuverlässig in jedem Renderer.)
+   *
+   * Beim ersten Aufruf und bei „Bewegung reduzieren“ steht der Schritt sofort da
+   * (initial: false). Früher bekam die Server-Ausgabe opacity: 0, und bei
+   * reduzierter Bewegung blendete der Browser den ersten Schritt nie ein – das
+   * Formular blieb leer.
    */
-  const slide = reduced
-    ? {}
-    : {
-        initial: { opacity: 0, x: 24 * direction },
-        animate: { opacity: 1, x: 0 },
-        transition: { duration: 0.22, ease: [0.21, 0.65, 0.36, 1] as const },
-      };
+  const slide = {
+    initial: reduced || direction === 0 ? (false as const) : { opacity: 0, x: 24 * direction },
+    animate: { opacity: 1, x: 0 },
+    transition: { duration: 0.22, ease: [0.21, 0.65, 0.36, 1] as const },
+  };
 
   const hauptleistungen = vorgaenge
     .map((v) => ({ v, s: getService(v.slug) }))
@@ -381,21 +440,21 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
   const extrasBlock =
     cfg?.schilderMoeglich || cfg?.wunschkennzeichenMoeglich ? (
           <fieldset className="mt-7">
-            <legend className="font-display text-base font-bold text-navy">
+            <legend className="text-base font-semibold text-navy">
               Optional dazubuchen
             </legend>
             <div className="mt-3 grid gap-3">
               {cfg?.schilderMoeglich && (
-                <label className="flex cursor-pointer items-start gap-3 rounded-2xl border border-line bg-white p-4 transition-colors duration-150 hover:border-brand-300 has-[:checked]:border-brand-600 has-[:checked]:bg-brand-50">
+                <label className="flex cursor-pointer items-start gap-3 rounded-lg border border-ink-300 bg-white p-4 transition-colors duration-150 hover:border-navy has-[:checked]:border-navy has-[:checked]:bg-canvas">
                   <input
                     type="checkbox"
                     checked={extras.schilder}
                     onChange={(e) => setExtras((x) => ({ ...x, schilder: e.target.checked }))}
-                    className="mt-0.5 h-5 w-5 shrink-0 cursor-pointer accent-brand-600"
+                    className="mt-0.5 h-5 w-5 shrink-0 cursor-pointer accent-navy"
                   />
                   <span className="min-w-0 flex-1">
                     <span className="flex flex-wrap items-baseline justify-between gap-x-3">
-                      <span className="font-display text-[15px] font-bold text-navy">Kennzeichenschilder mitbestellen</span>
+                      <span className="text-[15px] font-semibold text-navy">Kennzeichenschilder mitbestellen</span>
                       <span className="text-[15px] font-bold tabular-nums text-navy">+ {P.kennzeichen}</span>
                     </span>
                     <span className="mt-0.5 block text-sm leading-snug text-ink-600">
@@ -406,16 +465,16 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                 </label>
               )}
               {cfg?.wunschkennzeichenMoeglich && (
-                <label className="flex cursor-pointer items-start gap-3 rounded-2xl border border-line bg-white p-4 transition-colors duration-150 hover:border-brand-300 has-[:checked]:border-brand-600 has-[:checked]:bg-brand-50">
+                <label className="flex cursor-pointer items-start gap-3 rounded-lg border border-ink-300 bg-white p-4 transition-colors duration-150 hover:border-navy has-[:checked]:border-navy has-[:checked]:bg-canvas">
                   <input
                     type="checkbox"
                     checked={extras.wunschkennzeichen}
                     onChange={(e) => setExtras((x) => ({ ...x, wunschkennzeichen: e.target.checked }))}
-                    className="mt-0.5 h-5 w-5 shrink-0 cursor-pointer accent-brand-600"
+                    className="mt-0.5 h-5 w-5 shrink-0 cursor-pointer accent-navy"
                   />
                   <span className="min-w-0 flex-1">
                     <span className="flex flex-wrap items-baseline justify-between gap-x-3">
-                      <span className="font-display text-[15px] font-bold text-navy">Wunschkennzeichen-Service</span>
+                      <span className="text-[15px] font-semibold text-navy">Wunschkennzeichen-Service</span>
                       <span className="text-[15px] font-bold tabular-nums text-navy">+ {P.wunschkennzeichen}</span>
                     </span>
                     <span className="mt-0.5 block text-sm leading-snug text-ink-600">
@@ -431,8 +490,8 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
 
   /* ── Preiszusammenfassung (Seitenleiste ab Desktop, im Fluss auf dem Handy) ── */
   const summary = (
-    <section aria-label="Ihre Zusammenfassung" className="rounded-[18px] border border-line bg-white p-5 shadow-[var(--shadow-card)]">
-      <h3 className="font-display text-lg font-extrabold text-navy">Ihre Zusammenfassung</h3>
+    <section aria-label="Ihre Zusammenfassung" className="tafel py-5 pl-[2.75rem] pr-5">
+      <h3 className="text-lg font-bold text-navy">Ihre Zusammenfassung</h3>
 
       {!service ? (
         <p className="mt-3 text-[15px] leading-relaxed text-ink-600">
@@ -450,30 +509,24 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
           </ul>
           <div className="flex items-baseline justify-between gap-4 border-t-2 border-navy pt-3">
             <span className="font-display text-base font-bold text-navy">Gesamtbetrag</span>
-            <span className="font-display text-2xl font-extrabold tabular-nums text-navy">
+            <span className="font-display text-2xl font-bold tabular-nums text-navy">
               {centsToEuro(price.totalCents)}
             </span>
           </div>
-          <ul className="mt-3 space-y-1.5 text-sm text-ink-600">
-            <li className="flex items-start gap-2">
-              <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent-600" strokeWidth={3} aria-hidden />
+          <ul className="mt-3 space-y-1.5 text-[0.9375rem] text-ink-700">
+            <li className="flex items-baseline gap-2.5">
+              <Haken className="h-[0.6875rem] w-[0.9375rem] translate-y-px" />
               inkl. 19 % MwSt.{cfg?.enthaeltAmtlicheGebuehren ? " und amtlicher Gebühren" : ""}
             </li>
-            <li className="flex items-start gap-2">
-              <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent-600" strokeWidth={3} aria-hidden />
+            <li className="flex items-baseline gap-2.5">
+              <Haken className="h-[0.6875rem] w-[0.9375rem] translate-y-px" />
               {cfg?.enthaeltVersand ? "Versand der Dokumente enthalten" : "digital, kein Versand nötig"}
             </li>
             {dauerKurz(values.serviceSlug) && (
-              <li className="flex items-start gap-2">
-                <Clock3 className="mt-0.5 h-4 w-4 shrink-0 text-accent-600" aria-hidden />
-                Bearbeitung: {dauerKurz(values.serviceSlug)}
-              </li>
+              <li className="pl-[1.5625rem]">Bearbeitung: {dauerKurz(values.serviceSlug)}</li>
             )}
             {cfg?.schilderMoeglich && extras.schilder && (
-              <li className="flex items-start gap-2">
-                <Truck className="mt-0.5 h-4 w-4 shrink-0 text-accent-600" aria-hidden />
-                Kennzeichenschilder per Post: meist {ZEIT.kennzeichen}
-              </li>
+              <li className="pl-[1.5625rem]">Kennzeichenschilder per Post: meist {ZEIT.kennzeichen}</li>
             )}
           </ul>
         </div>
@@ -495,9 +548,8 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
         </div>
       )}
 
-      <p className="mt-4 border-t border-line pt-3 text-xs leading-relaxed text-ink-500">
-        Verbindlich wird der Preis mit unserer Festpreis-Bestätigung. Vertragspartner:{" "}
-        {site.company.legalName}, handelnd unter {site.name}.
+      <p className="mt-4 border-t border-line pt-3 text-sm leading-relaxed text-ink-600">
+        Verbindlich wird der Preis mit unserer Festpreis-Bestätigung.
       </p>
     </section>
   );
@@ -508,23 +560,21 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
       <motion.div
         {...(reduced ? {} : { initial: { opacity: 0, y: 12 }, animate: { opacity: 1, y: 0 } })}
         ref={stepContainerRef}
-        className="card mx-auto max-w-2xl p-6 text-center sm:p-10"
+        className="tafel tafel-breit max-w-3xl px-5 py-7 sm:px-9 sm:py-10"
       >
-        <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-accent-100">
-          <CheckCircle2 className="h-9 w-9 text-accent-600" aria-hidden />
-        </span>
-        <h2 tabIndex={-1} className="mt-5 font-display text-2xl font-extrabold text-navy outline-none sm:text-3xl">
+        <Haken className="h-[1.375rem] w-[1.8125rem]" />
+        <h2 tabIndex={-1} className="mt-4 text-2xl font-bold text-navy focus:outline-none focus-visible:outline-none sm:text-3xl">
           Ihre Anfrage ist eingegangen
         </h2>
-        <p className="mx-auto mt-3 max-w-md leading-relaxed text-ink-700">
+        <p className="mt-3 max-w-[38em] leading-relaxed text-ink-700">
           Wir haben Ihre Anfrage erhalten und melden uns innerhalb unserer
           Servicezeiten ({site.contact.hours}) mit der verbindlichen
           Festpreis-Bestätigung. Erst danach starten wir.
         </p>
 
-        <p className="mx-auto mt-6 inline-flex flex-col items-center rounded-2xl border border-line bg-ink-50 px-7 py-3.5">
-          <span className="text-xs font-bold uppercase tracking-wider text-ink-500">Ihre Referenz</span>
-          <span className="font-display text-xl font-extrabold tracking-wide text-navy">{result.reference}</span>
+        <p className="mt-6 inline-flex flex-col rounded-lg border border-line bg-canvas px-5 py-3">
+          <span className="text-sm font-medium text-ink-600">Ihre Referenz</span>
+          <span className="font-display text-xl font-bold tracking-wide text-navy" translate="no">{result.reference}</span>
         </p>
 
         {files.length > 0 ? (
@@ -537,7 +587,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
           </p>
         )}
 
-        <ol className="mx-auto mt-7 max-w-md space-y-3 text-left text-[15px] text-ink-700">
+        <ol className="mt-7 max-w-[38em] space-y-3 text-[15px] text-ink-700">
           {[
             "Wir prüfen Ihre Angaben und senden Ihnen die Festpreis-Bestätigung.",
             cfg && values.serviceSlug !== "abmeldung"
@@ -546,7 +596,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
             "Wir reichen den Antrag bei der zuständigen Behörde ein und halten Sie auf dem Laufenden.",
           ].map((text, i) => (
             <li key={text} className="flex items-start gap-3">
-              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-navy font-display text-xs font-bold text-white" aria-hidden>
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center font-display text-lg font-bold text-brand-600" aria-hidden>
                 {i + 1}
               </span>
               {text}
@@ -558,14 +608,14 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
           href={followUpWhatsAppLink(result.reference, service?.name)}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-wa btn-lg btn-block mt-8"
+          className="btn btn-wa btn-lg mt-8 w-full sm:w-auto"
         >
           <WhatsAppIcon className="h-5 w-5" />
           Im WhatsApp-Chat fortsetzen
         </a>
         <p className="mt-3 text-sm text-ink-600">
           Lieber per E-Mail? Schreiben Sie uns mit Ihrer Referenz an{" "}
-          <a href={`mailto:${site.contact.email}`} className="font-semibold text-brand-700 underline underline-offset-2">
+          <a href={`mailto:${site.contact.email}`} className="link">
             {site.contact.email}
           </a>
           .
@@ -577,57 +627,46 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
   return (
     <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_21.5rem] lg:items-start">
       <div className="card p-5 sm:p-8">
-        {/* Fortschrittsanzeige */}
-        <ol className="mb-8 flex items-start" aria-label="Fortschritt">
+        {/* Fortschrittsanzeige: vier Spalten mit Linie oben, wie der Ablauf auf der Startseite */}
+        <ol className="mb-8 grid grid-cols-4 gap-2 sm:gap-4" aria-label="Fortschritt">
           {stepLabels.map((label, i) => {
             const done = i < step;
             const current = i === step;
-            const dot = (
-              <span
-                className={`relative z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full font-display text-sm font-bold transition-colors duration-200 ${
-                  done
-                    ? "bg-accent-500 text-navy"
-                    : current
-                      ? "bg-brand-600 text-white shadow-[0_0_0_4px_rgb(37_99_235/0.16)]"
-                      : "border-2 border-ink-300 bg-white text-ink-600"
-                }`}
-              >
-                {done ? <Check className="h-4 w-4" strokeWidth={3} aria-hidden /> : i + 1}
-              </span>
+            const inhalt = (
+              <>
+                <span className={`block font-display text-base font-bold tabular-nums ${done || current ? "text-navy" : "text-ink-500"}`} aria-hidden>
+                  {i + 1}
+                </span>
+                <span
+                  className={`mt-0.5 block text-[13px] leading-tight sm:text-sm ${
+                    current ? "font-semibold text-navy" : done ? "font-medium text-navy" : "font-medium text-ink-600"
+                  }`}
+                >
+                  <span className="sr-only">Schritt {i + 1} von {stepLabels.length}: </span>
+                  {label}
+                  {done && <span className="sr-only"> (erledigt)</span>}
+                </span>
+              </>
             );
             return (
               <li
                 key={label}
-                className="relative flex flex-1 flex-col items-center gap-2 text-center"
+                className={`border-t-[3px] pt-2 ${done || current ? "border-brand-600" : "border-ink-200"}`}
                 aria-current={current ? "step" : undefined}
               >
-                {i > 0 && (
-                  <span
-                    className={`absolute right-1/2 top-[1.0625rem] h-0.5 w-full ${done || current ? "bg-accent-500" : "bg-ink-200"}`}
-                    aria-hidden
-                  />
-                )}
                 {done ? (
                   <button
                     type="button"
                     onClick={() => goTo(i, -1)}
                     disabled={sending}
-                    className="relative z-10 cursor-pointer rounded-full"
+                    className="-mx-1 block min-h-11 w-[calc(100%+0.5rem)] cursor-pointer rounded px-1 text-left decoration-2 underline-offset-4 hover:underline"
                     aria-label={`Zurück zu Schritt ${i + 1}: ${label}`}
                   >
-                    {dot}
+                    {inhalt}
                   </button>
                 ) : (
-                  dot
+                  inhalt
                 )}
-                <span
-                  className={`px-1 text-[13px] leading-tight sm:text-sm ${
-                    current ? "font-bold text-brand-700" : "font-medium text-ink-600"
-                  }`}
-                >
-                  <span className="sr-only">Schritt {i + 1} von {stepLabels.length}: </span>
-                  {label}
-                </span>
               </li>
             );
           })}
@@ -644,78 +683,83 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
               <div
                 role="radiogroup"
                 aria-label="Leistung wählen"
+                aria-required="true"
+                aria-invalid={!!errors.serviceSlug}
                 aria-describedby={errors.serviceSlug ? "err-serviceSlug" : undefined}
-                className="mt-5 grid gap-3 min-[30rem]:grid-cols-2"
+                onKeyDown={onRadioKey}
+                className="mt-5"
               >
-                {hauptleistungen.map(({ v, s }) => {
-                  const selected = values.serviceSlug === s.slug;
-                  const Icon = serviceIcon(s.slug);
-                  return (
-                    <button
-                      key={s.slug}
-                      type="button"
-                      role="radio"
-                      aria-checked={selected}
-                      onClick={() => set("serviceSlug", s.slug)}
-                      className={`relative flex min-h-[5.75rem] cursor-pointer items-start gap-3 rounded-2xl border p-4 text-left transition-all duration-150 ${
-                        selected
-                          ? "border-brand-600 bg-brand-50 shadow-[inset_0_0_0_1px_var(--color-brand-600)]"
-                          : "border-line bg-white hover:border-brand-300 hover:shadow-[var(--shadow-card)]"
-                      }`}
-                    >
-                      <Icon
-                        className={`mt-0.5 h-7 w-7 shrink-0 ${selected ? "text-brand-700" : "text-accent-600"}`}
-                        strokeWidth={1.75}
-                        aria-hidden
-                      />
-                      <span className="min-w-0 flex-1">
-                        <span className="block pr-7 font-display text-base font-bold text-navy">{v.label}</span>
-                        <span className="mt-0.5 block text-sm leading-snug text-ink-600">{v.description}</span>
-                        <span className="mt-2 inline-block rounded-full bg-brand-100 px-2.5 py-0.5 text-sm font-bold tabular-nums text-brand-800">
-                          {s.price.serviceFee !== null ? euro(s.price.serviceFee) : "auf Anfrage"}
+                <div className="tafel">
+                  {hauptleistungen.map(({ v, s }, idx) => {
+                    const selected = values.serviceSlug === s.slug;
+                    const fokussierbar = selected || (!values.serviceSlug && idx === 0);
+                    return (
+                      <button
+                        key={s.slug}
+                        type="button"
+                        role="radio"
+                        aria-checked={selected}
+                        data-slug={s.slug}
+                        tabIndex={fokussierbar ? 0 : -1}
+                        onClick={() => set("serviceSlug", s.slug)}
+                        className="auswahl-zeile"
+                      >
+                        <span className="auswahl-punkt" aria-hidden />
+                        <span className="min-w-0 flex-1">
+                          <span className="flex items-baseline justify-between gap-4">
+                            <span className="text-[1.0625rem] font-semibold text-navy">{v.label}</span>
+                            <span className="shrink-0 text-[1.0625rem] font-semibold tabular-nums text-navy">
+                              {s.price.serviceFee !== null ? euro(s.price.serviceFee) : "auf Anfrage"}
+                            </span>
+                          </span>
+                          <span className="mt-0.5 block text-[0.9375rem] leading-snug text-ink-600">{v.description}</span>
                         </span>
-                      </span>
-                      {selected && (
-                        <span
-                          className="absolute right-3 top-3 flex h-6 w-6 items-center justify-center rounded-full bg-brand-600 text-white"
-                          aria-hidden
-                        >
-                          <Check className="h-3.5 w-3.5" strokeWidth={3} />
-                        </span>
-                      )}
-                    </button>
-                  );
-                })}
+                      </button>
+                    );
+                  })}
+                </div>
 
                 {weitereLeistungen.length > 0 && (
-                  <p className="mt-3 text-sm font-semibold text-ink-700 min-[30rem]:col-span-2">Weitere Leistungen</p>
+                  <button
+                    type="button"
+                    onClick={() => setMehrOffen((o) => !o)}
+                    aria-expanded={mehrOffen}
+                    aria-controls="weitere-leistungen"
+                    className="mt-3 inline-flex min-h-11 cursor-pointer items-center gap-1.5 text-[0.9375rem] font-semibold text-navy decoration-2 underline-offset-4 hover:underline"
+                  >
+                    Weitere Leistungen ({weitereLeistungen.length})
+                    <ChevronDown className={`h-4 w-4 ${mehrOffen ? "rotate-180" : ""}`} aria-hidden />
+                  </button>
                 )}
-                {weitereLeistungen.map((s) => {
-                  const selected = values.serviceSlug === s.slug;
-                  const Icon = serviceIcon(s.slug);
-                  return (
-                    <button
-                      key={s.slug}
-                      type="button"
-                      role="radio"
-                      aria-checked={selected}
-                      onClick={() => set("serviceSlug", s.slug)}
-                      className={`flex min-h-[3.25rem] cursor-pointer items-center gap-3 rounded-[14px] border px-4 py-2.5 text-left transition-colors duration-150 ${
-                        selected
-                          ? "border-brand-600 bg-brand-50 shadow-[inset_0_0_0_1px_var(--color-brand-600)]"
-                          : "border-line bg-white hover:border-brand-300"
-                      }`}
-                    >
-                      <Icon className="h-5 w-5 shrink-0 text-ink-600" strokeWidth={1.75} aria-hidden />
-                      <span className="flex-1 font-display text-[15px] font-bold text-navy">{s.shortName ?? s.name}</span>
-                      <span className="shrink-0 text-sm text-ink-600">
-                        {s.price.serviceFee !== null && s.slug === "wunschkennzeichen"
-                          ? `+ ${euro(s.price.serviceFee)}`
-                          : "auf Anfrage"}
-                      </span>
-                    </button>
-                  );
-                })}
+                {mehrOffen && (
+                  <div id="weitere-leistungen" className="mt-1 rounded-lg border border-ink-300">
+                    {weitereLeistungen.map((s) => {
+                      const selected = values.serviceSlug === s.slug;
+                      return (
+                        <button
+                          key={s.slug}
+                          type="button"
+                          role="radio"
+                          aria-checked={selected}
+                          data-slug={s.slug}
+                          tabIndex={selected ? 0 : -1}
+                          onClick={() => set("serviceSlug", s.slug)}
+                          className="auswahl-zeile"
+                        >
+                          <span className="auswahl-punkt" aria-hidden />
+                          <span className="flex min-w-0 flex-1 items-baseline justify-between gap-4">
+                            <span className="text-[0.96875rem] font-semibold text-navy">{s.shortName ?? s.name}</span>
+                            <span className="shrink-0 text-[0.9375rem] text-ink-600">
+                              {s.price.serviceFee !== null && s.slug === "wunschkennzeichen"
+                                ? `+ ${euro(s.price.serviceFee)}`
+                                : "auf Anfrage"}
+                            </span>
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
               </div>
               <FieldError id="err-serviceSlug" message={errors.serviceSlug} />
 
@@ -743,10 +787,10 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                   ).map(([value, label]) => (
                     <label
                       key={value}
-                      className={`flex min-h-[3.25rem] cursor-pointer items-center justify-center rounded-[14px] border px-3 text-center text-[15px] font-bold transition-colors duration-150 has-[:focus-visible]:outline has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-brand-600 ${
+                      className={`flex min-h-[3.25rem] cursor-pointer items-center justify-center rounded-lg border-2 px-3 text-center text-[15px] font-semibold transition-colors duration-150 has-[:focus-visible]:outline has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-brand-600 ${
                         values.audience === value
-                          ? "border-brand-600 bg-brand-50 text-brand-800 shadow-[inset_0_0_0_1px_var(--color-brand-600)]"
-                          : "border-[#8493a8] bg-white text-ink-800 hover:border-ink-600"
+                          ? "border-brand-600 bg-canvas text-navy"
+                          : "border-ink-300 bg-white text-ink-800 hover:border-navy"
                       }`}
                     >
                       <input
@@ -768,7 +812,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                   Vor- und Nachname *
                 </label>
                 <input
-                  id="name"
+                  id="name" name="name"
                   type="text"
                   autoComplete="name"
                   required
@@ -777,7 +821,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                   aria-invalid={!!errors.name}
                   aria-describedby={errors.name ? "err-name" : undefined}
                   className="field"
-                  placeholder="Max Mustermann"
+                  placeholder="z. B. Max Mustermann"
                 />
                 <FieldError id="err-name" message={errors.name} />
               </div>
@@ -793,7 +837,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                       E-Mail-Adresse
                     </label>
                     <input
-                      id="email"
+                      id="email" name="email" spellCheck={false}
                       type="email"
                       inputMode="email"
                       autoComplete="email"
@@ -806,7 +850,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                           .join(" ")
                       }
                       className="field"
-                      placeholder="name@beispiel.de"
+                      placeholder="z. B. name@beispiel.de"
                     />
                     <FieldError id="err-email" message={errors.email} />
                   </div>
@@ -815,7 +859,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                       Telefon / WhatsApp
                     </label>
                     <input
-                      id="phone"
+                      id="phone" name="phone"
                       type="tel"
                       inputMode="tel"
                       autoComplete="tel"
@@ -828,7 +872,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                           .join(" ")
                       }
                       className="field"
-                      placeholder="0151 23456789"
+                      placeholder="z. B. 0151 23456789"
                     />
                     <FieldError id="err-phone" message={errors.phone} />
                   </div>
@@ -842,7 +886,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                     PLZ *
                   </label>
                   <input
-                    id="zip"
+                    id="zip" name="zip"
                     type="text"
                     inputMode="numeric"
                     autoComplete="postal-code"
@@ -853,7 +897,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                     aria-invalid={!!errors.zip}
                     aria-describedby={["hint-ort", errors.zip && "err-zip"].filter(Boolean).join(" ")}
                     className="field"
-                    placeholder="10115"
+                    placeholder="z. B. 10115"
                   />
                 </div>
                 <div>
@@ -861,7 +905,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                     Wohnort *
                   </label>
                   <input
-                    id="city"
+                    id="city" name="city"
                     type="text"
                     autoComplete="address-level2"
                     required
@@ -870,7 +914,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                     aria-invalid={!!errors.city}
                     aria-describedby={["hint-ort", errors.city && "err-city"].filter(Boolean).join(" ")}
                     className="field"
-                    placeholder="Berlin"
+                    placeholder="z. B. Berlin"
                   />
                 </div>
               </div>
@@ -885,7 +929,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                   Fahrzeug <span className="font-normal text-ink-600">(optional)</span>
                 </label>
                 <input
-                  id="vehicle"
+                  id="vehicle" name="vehicle"
                   type="text"
                   value={values.vehicle}
                   onChange={(e) => set("vehicle", e.target.value)}
@@ -900,7 +944,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                   Anmerkungen <span className="font-normal text-ink-600">(optional)</span>
                 </label>
                 <textarea
-                  id="message"
+                  id="message" name="message"
                   rows={3}
                   value={values.message}
                   onChange={(e) => set("message", e.target.value)}
@@ -937,7 +981,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                 <Lock className="mt-0.5 h-4 w-4 shrink-0 text-accent-600" aria-hidden />
                 Ihre Dateien werden verschlüsselt übertragen und nur für die Bearbeitung Ihres Auftrags
                 verwendet.{" "}
-                <Link href="/datensicherheit/" className="font-semibold text-brand-700 underline underline-offset-2">
+                <Link href="/datensicherheit/" className="link">
                   Mehr zur Datensicherheit
                 </Link>
               </p>
@@ -951,7 +995,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                 Bitte prüfen Sie Ihre Angaben. Mit dem Absenden entstehen noch keine Kosten.
               </StepHeading>
 
-              <dl className="mt-6 divide-y divide-line rounded-2xl border border-line">
+              <dl className="liste mt-6">
                 {(
                   [
                     {
@@ -993,19 +1037,18 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                     },
                   ] as const
                 ).map((zeile) => (
-                  <div key={zeile.titel} className="flex items-start justify-between gap-4 px-4 py-3.5 sm:px-5">
+                  <div key={zeile.titel} className="flex items-start justify-between gap-4 py-3.5">
                     <div className="min-w-0">
-                      <dt className="text-xs font-bold uppercase tracking-wider text-ink-500">{zeile.titel}</dt>
+                      <dt className="text-sm font-medium text-ink-600">{zeile.titel}</dt>
                       <dd className="mt-1 break-words text-[15px] font-semibold text-navy">{zeile.inhalt}</dd>
                     </div>
                     <button
                       type="button"
                       onClick={() => goTo(zeile.schritt, -1)}
                       disabled={sending}
-                      className="flex min-h-11 shrink-0 cursor-pointer items-center gap-1.5 rounded-lg px-2 text-sm font-semibold text-brand-700 hover:bg-brand-50"
+                      className="flex min-h-11 shrink-0 cursor-pointer items-center px-1 text-sm font-semibold text-navy underline decoration-ink-300 underline-offset-4 hover:decoration-navy"
                       aria-label={`${zeile.titel} ändern`}
                     >
-                      <Pencil className="h-4 w-4" aria-hidden />
                       Ändern
                     </button>
                   </div>
@@ -1022,23 +1065,25 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
 
               <label
                 htmlFor="consent"
-                className={`mt-5 flex cursor-pointer items-start gap-3 rounded-2xl border p-4 text-[15px] leading-relaxed text-ink-800 ${
-                  errors.consent ? "border-danger bg-[#fef3f2]" : "border-line bg-white"
+                className={`mt-5 flex cursor-pointer items-start gap-3 rounded-lg border p-4 text-[15px] leading-relaxed text-ink-800 ${
+                  errors.consent ? "border-danger bg-danger-50" : "border-ink-300 bg-white"
                 }`}
               >
                 <input
                   id="consent"
                   type="checkbox"
+                  required
+                  aria-required="true"
                   checked={values.consent}
                   onChange={(e) => set("consent", e.target.checked)}
                   aria-invalid={!!errors.consent}
                   aria-describedby={errors.consent ? "err-consent" : undefined}
-                  className="mt-0.5 h-5 w-5 shrink-0 cursor-pointer accent-brand-600"
+                  className="mt-0.5 h-5 w-5 shrink-0 cursor-pointer accent-navy"
                 />
                 <span>
                   Ich willige ein, dass meine Angaben und die übermittelten Unterlagen zur
                   Bearbeitung meiner Anfrage verarbeitet werden. Details in der{" "}
-                  <Link href="/datenschutz/" className="font-semibold text-brand-700 underline underline-offset-2">
+                  <Link href="/datenschutz/" className="link">
                     Datenschutzerklärung
                   </Link>
                   . Widerruf jederzeit möglich. *
@@ -1050,12 +1095,11 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                 {sending ? (
                   <>
                     <Loader2 className="h-5 w-5 animate-spin" aria-hidden />
-                    {files.length > 0 ? "Unterlagen werden übertragen …" : "Wird gesendet …"}
+                    {files.length > 0 ? "Unterlagen werden übertragen…" : "Wird gesendet…"}
                   </>
                 ) : (
                   <>
                     Anfrage kostenlos absenden
-                    <ArrowRight className="h-5 w-5" aria-hidden />
                   </>
                 )}
               </button>
@@ -1067,18 +1111,22 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                   entsteht erst, wenn Sie unsere Festpreis-Bestätigung annehmen – bezahlt wird erst danach.
                 </span>
               </p>
-              <p className="mt-2 text-center text-xs leading-relaxed text-ink-500">
+              <p className="mt-2 text-center text-sm leading-relaxed text-ink-600">
                 Informationen zu Ihrem{" "}
-                <Link href="/widerruf/" className="font-semibold text-brand-700 underline underline-offset-2">
+                <Link href="/widerruf/" className="link">
                   Widerrufsrecht
+                </Link>{" "}
+                und zum Anbieter im{" "}
+                <Link href="/impressum/" className="link">
+                  Impressum
                 </Link>
-                . Vertragspartner: {site.company.legalName}, handelnd unter {site.name}.
+                .
               </p>
 
               {/* Zustellung fehlgeschlagen → Direktkanäle als Rückfallebene */}
               {result && !result.ok && result.fallback && (
-                <div className="mt-6 rounded-2xl border-2 border-amber-300 bg-amber-50 p-4" role="alert">
-                  <p className="flex items-start gap-2 text-[15px] font-semibold text-amber-900">
+                <div className="mt-6 rounded-lg border-2 border-hinweis-300 bg-hinweis-50 p-4" role="alert">
+                  <p className="flex items-start gap-2 text-[15px] font-semibold text-hinweis-900">
                     <AlertCircle className="mt-0.5 h-5 w-5 shrink-0" aria-hidden />
                     {result.error} Senden Sie uns Ihre Anfrage bitte direkt:
                   </p>
@@ -1116,7 +1164,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                       : "Falls sich nichts öffnet: Nachricht kopieren"}
                   </button>
                   {files.length > 0 && (
-                    <p className="mt-3 text-sm text-amber-900">
+                    <p className="mt-3 text-sm text-hinweis-900">
                       Ihre {files.length} {files.length === 1 ? "Datei" : "Dateien"} konnten so nicht
                       übertragen werden – bitte hängen Sie sie im Chat oder in der E-Mail direkt an.
                     </p>
@@ -1135,22 +1183,29 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
           )}
         </motion.div>
 
-        {/* Navigation */}
-        <div className="mt-8 flex items-center justify-between gap-3 border-t border-line pt-5">
-          {step > 0 ? (
-            <button type="button" onClick={back} disabled={sending} className="btn btn-ghost btn-sm">
-              <ArrowLeft className="h-4 w-4" aria-hidden />
+        {/* Navigation – am Handy fest am unteren Rand (mit Gesamtbetrag), damit „Weiter“
+            nach der Auswahl nicht weit unten gesucht werden muss. */}
+        <div className="sticky bottom-0 z-20 -mx-5 mt-8 flex items-center gap-3 border-t border-line bg-white px-5 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 sm:-mx-8 sm:px-8 lg:static lg:mx-0 lg:px-0 lg:pb-0 lg:pt-5">
+          {step > 0 && (
+            <button type="button" onClick={back} disabled={sending} className="btn btn-ghost btn-sm -ml-2 px-2">
               Zurück
             </button>
-          ) : (
-            <span />
           )}
-          {step < LAST && (
-            <button type="button" onClick={next} className="btn btn-primary min-w-[9.5rem]">
-              {step === 2 && files.length === 0 ? "Ohne Upload weiter" : "Weiter"}
-              <ArrowRight className="h-5 w-5" aria-hidden />
-            </button>
-          )}
+          <div className="ml-auto flex items-center gap-4">
+            {price && step < LAST && (
+              <p className="text-right text-sm leading-tight text-ink-600 lg:hidden" aria-hidden>
+                Gesamt
+                <span className="block font-display text-base font-bold tabular-nums text-navy">
+                  {centsToEuro(price.totalCents)}
+                </span>
+              </p>
+            )}
+            {step < LAST && (
+              <button type="button" onClick={next} className="btn btn-primary min-w-[8.5rem]">
+                {step === 2 && files.length === 0 ? "Ohne Upload weiter" : "Weiter"}
+              </button>
+            )}
+          </div>
         </div>
       </div>
 

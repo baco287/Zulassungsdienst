@@ -26,21 +26,21 @@ export default function Breadcrumbs({ items }: { items: Crumb[] }) {
 
   return (
     <nav aria-label="Brotkrumen">
-      <ol className="flex flex-wrap items-center gap-1.5 text-sm text-ink-500">
+      <ol className="flex flex-wrap items-center gap-x-1.5 text-sm text-ink-600">
         <li>
-          <Link href="/" className="transition-colors duration-200 hover:text-brand-700">
+          <Link href="/" className="inline-flex min-h-7 items-center decoration-1 underline-offset-4 hover:text-navy hover:underline">
             Startseite
           </Link>
         </li>
         {items.map((c) => (
           <li key={c.name} className="flex items-center gap-1.5">
-            <ChevronRight className="h-3.5 w-3.5 text-ink-400" aria-hidden />
+            <ChevronRight className="h-3.5 w-3.5 text-ink-500" aria-hidden />
             {c.href ? (
-              <Link href={c.href} className="transition-colors duration-200 hover:text-brand-700">
+              <Link href={c.href} className="inline-flex min-h-7 items-center decoration-1 underline-offset-4 hover:text-navy hover:underline">
                 {c.name}
               </Link>
             ) : (
-              <span aria-current="page" className="font-medium text-ink-700">
+              <span aria-current="page" className="font-medium text-navy">
                 {c.name}
               </span>
             )}

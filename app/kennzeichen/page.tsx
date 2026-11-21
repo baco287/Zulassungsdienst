@@ -22,10 +22,10 @@ export default function KennzeichenPage() {
 
   return (
     <>
-      <section className="bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-12 sm:py-14">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+      <section className="seitenkopf">
+        <div className="container-page *:max-w-5xl">
           <Breadcrumbs items={[{ name: "Kennzeichen" }]} />
-          <h1 className="mt-6 font-display text-3xl font-bold text-ink-900 sm:text-4xl">Kfz-Kennzeichen von A bis Z</h1>
+          <h1 className="mt-6 h-seite text-navy">Kfz-Kennzeichen von A bis Z</h1>
           <p className="mt-4 max-w-3xl text-lg leading-relaxed text-ink-600">
             Das Unterscheidungszeichen vorn auf dem Kennzeichen verrät, welche Zulassungsbehörde es ausgegeben hat. Hier
             finden Sie die Kürzel der Städte, deren Zulassungsstellen wir geprüft haben – mit Bedeutung, zuständiger
@@ -34,7 +34,7 @@ export default function KennzeichenPage() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6">
+      <div className="container-page *:max-w-5xl py-12">
         <dl className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {[...groups.entries()].map(([letter, list]) => (
             <div key={letter}>

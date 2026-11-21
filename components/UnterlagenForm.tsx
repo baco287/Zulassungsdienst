@@ -2,7 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
-import { AlertCircle, CheckCircle2, Loader2, ShieldCheck, UploadCloud } from "lucide-react";
+import Haken from "./ui/Haken";
+import { AlertCircle, Loader2, ShieldCheck, UploadCloud } from "lucide-react";
 import { site } from "@/lib/site";
 import { followUpWhatsAppLink, submitOrder, type SubmitResult } from "@/lib/order";
 import type { OrderRequest } from "@/lib/types";
@@ -111,27 +112,24 @@ export default function UnterlagenForm() {
   }
 
   const inputClass = (hasError: boolean) =>
-    `field ${hasError ? "border-danger bg-[#fef3f2]" : ""}`;
+    `field ${hasError ? "border-danger bg-danger-50" : ""}`;
 
   if (result?.ok) {
     return (
       <motion.div
         {...(reduced ? {} : { initial: { opacity: 0, y: 12 }, animate: { opacity: 1, y: 0 } })}
-        className="text-center"
       >
-        <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100">
-          <CheckCircle2 className="h-9 w-9 text-emerald-600" aria-hidden />
-        </span>
-        <h2 className="mt-5 font-display text-2xl font-bold text-ink-900">
+        <Haken className="h-[1.375rem] w-[1.8125rem]" />
+        <h2 className="mt-4 text-2xl font-bold text-navy">
           Unterlagen angekommen
         </h2>
-        <p className="mx-auto mt-3 max-w-md text-ink-600">
+        <p className="mt-3 max-w-[38em] text-ink-700">
           Wir haben {files.length} {files.length === 1 ? "Datei" : "Dateien"} erhalten und prüfen
           sie auf Vollständigkeit. Sollte etwas fehlen, melden wir uns bei Ihnen.
         </p>
         {result.reference && (
-          <p className="mx-auto mt-5 inline-flex flex-col items-center rounded-xl border border-ink-200 bg-ink-50 px-6 py-3">
-            <span className="text-xs font-semibold uppercase tracking-wide text-ink-500">
+          <p className="mt-5 inline-flex flex-col rounded-lg border border-line bg-canvas px-5 py-3">
+            <span className="text-sm font-semibold text-ink-600">
               Referenz
             </span>
             <span className="font-display text-xl font-bold tracking-wide text-ink-900">
@@ -143,7 +141,7 @@ export default function UnterlagenForm() {
           href={followUpWhatsAppLink(result.reference ?? reference)}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-7 flex w-full items-center justify-center gap-2 rounded-xl bg-brand-600 px-6 py-4 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
+          className="mt-7 flex w-full items-center justify-center gap-2 rounded-control bg-brand-600 px-6 py-4 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
         >
           <WhatsAppIcon className="h-5 w-5" />
           Zurück in den WhatsApp-Chat
@@ -165,7 +163,7 @@ export default function UnterlagenForm() {
             Referenznummer <span className="font-normal text-ink-500">(falls vorhanden)</span>
           </label>
           <input
-            id="ref"
+            id="ref" name="reference" autoComplete="off" spellCheck={false}
             type="text"
             value={reference}
             onChange={(e) => setReference(e.target.value.toUpperCase())}
@@ -185,7 +183,7 @@ export default function UnterlagenForm() {
             Vor- und Nachname *
           </label>
           <input
-            id="u-name"
+            id="u-name" name="name"
             type="text"
             autoComplete="name"
             value={values.name}
@@ -194,7 +192,7 @@ export default function UnterlagenForm() {
             placeholder="Max Mustermann"
           />
           {fieldError.field === "name" && (
-            <p className="mt-1.5 flex items-center gap-1 text-sm text-red-600" role="alert">
+            <p className="mt-1.5 flex items-center gap-1 text-sm text-danger" role="alert">
               <AlertCircle className="h-4 w-4 shrink-0" aria-hidden /> {fieldError.message}
             </p>
           )}
@@ -206,7 +204,7 @@ export default function UnterlagenForm() {
               E-Mail
             </label>
             <input
-              id="u-email"
+              id="u-email" name="email" spellCheck={false}
               type="email"
               autoComplete="email"
               value={values.email}
@@ -220,7 +218,7 @@ export default function UnterlagenForm() {
               Telefon / WhatsApp
             </label>
             <input
-              id="u-phone"
+              id="u-phone" name="phone"
               type="tel"
               autoComplete="tel"
               value={values.phone}
@@ -231,7 +229,7 @@ export default function UnterlagenForm() {
           </div>
         </div>
         {fieldError.field === "contact" && (
-          <p className="flex items-center gap-1 text-sm text-red-600" role="alert">
+          <p className="flex items-center gap-1 text-sm text-danger" role="alert">
             <AlertCircle className="h-4 w-4 shrink-0" aria-hidden /> {fieldError.message}
           </p>
         )}
@@ -241,7 +239,7 @@ export default function UnterlagenForm() {
             Anmerkung <span className="font-normal text-ink-500">(optional)</span>
           </label>
           <textarea
-            id="u-message"
+            id="u-message" name="message"
             rows={2}
             value={values.message}
             onChange={(e) => setValues((v) => ({ ...v, message: e.target.value }))}
@@ -277,7 +275,7 @@ export default function UnterlagenForm() {
         </span>
       </label>
       {fieldError.field === "consent" && (
-        <p className="mt-1.5 flex items-center gap-1 text-sm text-red-600" role="alert">
+        <p className="mt-1.5 flex items-center gap-1 text-sm text-danger" role="alert">
           <AlertCircle className="h-4 w-4 shrink-0" aria-hidden /> {fieldError.message}
         </p>
       )}
@@ -286,7 +284,7 @@ export default function UnterlagenForm() {
         type="button"
         onClick={send}
         disabled={sending}
-        className="mt-6 flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-brand-600 px-6 py-4 font-display text-base font-semibold text-white transition-colors duration-200 hover:bg-brand-700 disabled:cursor-wait disabled:bg-brand-400"
+        className="mt-6 flex w-full cursor-pointer items-center justify-center gap-2 rounded-control bg-brand-600 px-6 py-4 font-display text-base font-semibold text-white transition-colors duration-200 hover:bg-brand-700 disabled:cursor-wait disabled:bg-ink-400"
       >
         {sending ? (
           <>
@@ -301,18 +299,18 @@ export default function UnterlagenForm() {
         )}
       </button>
 
-      <p className="mt-3 flex items-center justify-center gap-2 text-xs text-ink-500">
-        <ShieldCheck className="h-4 w-4 shrink-0 text-brand-600" aria-hidden />
+      <p className="mt-3 flex items-center justify-center gap-2 text-sm text-ink-600">
+        <ShieldCheck className="h-4 w-4 shrink-0 text-ink-600" aria-hidden />
         Verschlüsselte Übertragung · Dateien werden nicht auf dem Webserver gespeichert
       </p>
 
       {error && (
-        <div className="mt-5 rounded-xl border-2 border-amber-300 bg-amber-50 p-4">
-          <p className="flex items-start gap-2 text-sm font-semibold text-amber-900">
+        <div className="mt-5 rounded-lg border-2 border-hinweis-300 bg-hinweis-50 p-4" role="alert">
+          <p className="flex items-start gap-2 text-sm font-semibold text-hinweis-900">
             <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" aria-hidden />
             {error}
           </p>
-          <p className="mt-2 text-sm text-amber-900">
+          <p className="mt-2 text-sm text-hinweis-900">
             Bitte schicken Sie uns die Unterlagen stattdessen direkt per WhatsApp oder an{" "}
             <a
               href={`mailto:${site.contact.email}`}

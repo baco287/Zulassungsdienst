@@ -2,9 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import {
-  ArrowRight,
-  Building2,
-  CheckCircle2,
   Handshake,
   Layers,
   MapPinned,
@@ -18,6 +15,7 @@ import { gewerbeSegments, gewerbeHubFaq } from "@/lib/gewerbe";
 import { site } from "@/lib/site";
 import { ZEIT } from "@/lib/betrieb";
 import { ORG_ID } from "@/lib/catalog";
+import Haken from "@/components/ui/Haken";
 
 export const metadata: Metadata = {
   title: "Zulassungsservice für Autohäuser & Fuhrparks",
@@ -99,15 +97,12 @@ const faqJsonLd = {
 export default function GewerbePage() {
   return (
     <>
-      <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-14 sm:py-16">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <section className="seitenkopf">
+        <div className="container-page">
           <Breadcrumbs items={[{ name: "Gewerbe" }]} />
           <div className="mt-8 grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-wider text-brand-700">
-                Für Gewerbekunden
-              </p>
-              <h1 className="mt-2 font-display text-4xl font-bold leading-tight text-ink-900 sm:text-5xl">
+              <h1 className="h-seite text-navy">
                 Zulassungen im Volumen – ohne eigenen Behördenaufwand
               </h1>
               <p className="mt-5 max-w-xl text-lg leading-relaxed text-ink-600">
@@ -122,14 +117,14 @@ export default function GewerbePage() {
                   `Abmeldungen meist ${ZEIT.abmeldung}, Zulassungen in ${ZEIT.zulassungDativ}`,
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-ink-700">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" aria-hidden />
+                    <Haken className="mt-[0.4375rem] h-[0.75rem] w-[1rem]" />
                     {item}
                   </li>
                 ))}
               </ul>
             </div>
             <Reveal>
-              <div className="relative overflow-hidden rounded-3xl border border-ink-200 shadow-card">
+              <div className="relative overflow-hidden rounded-3xl border border-ink-200">
                 <Image
                   src="/images/autohaus.webp"
                   alt="Moderner Autohaus-Showroom mit Neuwagen hinter einer Glasfassade"
@@ -146,14 +141,11 @@ export default function GewerbePage() {
       </section>
 
       <section className="py-14 sm:py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="container-page">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {usps.map((u, i) => (
               <Reveal key={u.title} delay={i * 0.06}>
-                <div className="h-full rounded-2xl border border-ink-200 bg-white p-6 shadow-card">
-                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-brand-600">
-                    <u.icon className="h-6 w-6" aria-hidden />
-                  </span>
+                <div className="h-full border-t-2 border-navy pt-4 pb-2">
                   <h2 className="mt-4 font-display text-lg font-bold text-ink-900">{u.title}</h2>
                   <p className="mt-2 text-sm leading-relaxed text-ink-600">{u.text}</p>
                 </div>
@@ -164,8 +156,8 @@ export default function GewerbePage() {
       </section>
 
       <section className="bg-ink-50 py-14 sm:py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <Reveal className="text-center">
+        <div className="container-page">
+          <Reveal className="">
             <h2 className="font-display text-3xl font-bold text-ink-900 sm:text-4xl">
               So läuft die Zusammenarbeit
             </h2>
@@ -173,8 +165,8 @@ export default function GewerbePage() {
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
             {steps.map((s, i) => (
               <Reveal key={s.step} delay={i * 0.08}>
-                <div className="h-full rounded-2xl border border-ink-200 bg-white p-6 shadow-card">
-                  <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-600 font-display font-bold text-white">
+                <div className="h-full border-t-2 border-navy pt-4 pb-2">
+                  <span className="flex h-10 w-10 items-center justify-center font-display font-bold text-brand-600">
                     {s.step}
                   </span>
                   <h3 className="mt-4 font-display text-lg font-bold text-ink-900">{s.title}</h3>
@@ -187,12 +179,12 @@ export default function GewerbePage() {
       </section>
 
       <section className="py-14 sm:py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <Reveal className="text-center">
+        <div className="container-page">
+          <Reveal className="">
             <h2 className="font-display text-3xl font-bold text-ink-900 sm:text-4xl">
               Für Ihre Branche
             </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-ink-600">
+            <p className="mt-4 max-w-2xl text-ink-600">
               Jede Branche hat eigene Abläufe – deshalb haben wir den Service je
               Zielgruppe zugeschnitten.
             </p>
@@ -202,21 +194,14 @@ export default function GewerbePage() {
               <Reveal key={seg.slug} delay={i * 0.06} className="h-full">
                 <Link
                   href={`/gewerbe/${seg.slug}/`}
-                  className="group flex h-full flex-col rounded-2xl border border-ink-200 bg-white p-6 shadow-card transition-all duration-200 hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-lg"
+                  className="group flex h-full flex-col border-t-2 border-navy pt-4 pb-2"
                 >
-                  <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-600">
-                    <Building2 className="h-5.5 w-5.5" style={{ height: "1.375rem", width: "1.375rem" }} aria-hidden />
-                  </span>
                   <h3 className="mt-4 font-display text-xl font-bold text-ink-900 group-hover:text-brand-800">
                     {seg.title}
                   </h3>
                   <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-600">{seg.description}</p>
                   <span className="mt-4 flex items-center gap-1.5 text-sm font-semibold text-brand-700">
                     Mehr erfahren
-                    <ArrowRight
-                      className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5"
-                      aria-hidden
-                    />
                   </span>
                 </Link>
               </Reveal>
@@ -226,8 +211,8 @@ export default function GewerbePage() {
       </section>
 
       <section className="bg-ink-50 py-14 sm:py-20">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6">
-          <Reveal className="text-center">
+        <div className="container-page *:max-w-3xl">
+          <Reveal className="">
             <h2 className="font-display text-3xl font-bold text-ink-900 sm:text-4xl">
               Häufige Fragen von Gewerbekunden
             </h2>

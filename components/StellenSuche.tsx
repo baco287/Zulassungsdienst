@@ -64,7 +64,7 @@ export default function StellenSuche({ stellen }: { stellen: StellenEintrag[] })
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder="Ort, Landkreis oder Kennzeichen, z. B. „Osnabrück“ oder „OS“"
-          className="field pl-12 shadow-sm"
+          className="field pl-12"
         />
       </label>
       <p className="mt-3 text-sm text-ink-500" aria-live="polite">
@@ -77,7 +77,7 @@ export default function StellenSuche({ stellen }: { stellen: StellenEintrag[] })
             <a
               key={land}
               href={`#land-${norm(land).replace(/[^a-z0-9]+/g, "-")}`}
-              className="rounded-full border border-ink-200 bg-white px-3 py-1 text-sm text-ink-700 hover:border-brand-400 hover:text-brand-800"
+              className="rounded-md border border-ink-200 bg-white px-3 py-1 text-sm text-ink-700 hover:border-brand-400 hover:text-brand-800"
             >
               {land} <span className="text-ink-400">({list.length})</span>
             </a>
@@ -94,7 +94,7 @@ export default function StellenSuche({ stellen }: { stellen: StellenEintrag[] })
                 <li key={z.slug}>
                   <Link
                     href={`/zulassungsstelle/${z.slug}/`}
-                    className="group flex h-full gap-3 rounded-xl border border-ink-200 bg-white p-4 transition-colors duration-200 hover:border-brand-300 hover:bg-brand-50/50"
+                    className="group flex h-full gap-3 border-t-2 border-navy pt-4 pb-2"
                   >
                     <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-brand-700" aria-hidden />
                     <span>

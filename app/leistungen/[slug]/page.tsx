@@ -2,18 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
-  ArrowRight,
-  BookOpen,
-  CheckCircle2,
   Clock,
-  FileCheck2,
   Info,
-  } from "lucide-react";
+} from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FaqAccordion from "@/components/FaqAccordion";
 import Reveal from "@/components/Reveal";
 import SecurityCodeGuide from "@/components/SecurityCodeGuide";
-import { getService, services, categoryLabels } from "@/lib/services";
+import { getService, services } from "@/lib/services";
 import { getServiceContent } from "@/lib/serviceContent";
 import { getGuide } from "@/lib/ratgeber";
 import { euro, euroRange, leistungsPreis, P, priceDisclaimer, plateFee } from "@/lib/pricing";
@@ -24,6 +20,7 @@ import { dauerKurz } from "@/lib/betrieb";
 import KennzeichenHinweis from "@/components/KennzeichenHinweis";
 import TrackedLink from "@/components/TrackedLink";
 import TrackView from "@/components/TrackView";
+import Haken from "@/components/ui/Haken";
 
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
@@ -80,18 +77,15 @@ export default async function ServiceDetailPage({
 
   return (
     <>
-      <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-14 sm:py-16">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <section className="seitenkopf">
+        <div className="container-page">
           <Breadcrumbs
             items={[
               { name: "Leistungen", href: "/leistungen/" },
               { name: service.shortName ?? service.name },
             ]}
           />
-          <p className="mt-6 text-sm font-semibold uppercase tracking-wider text-brand-700">
-            {categoryLabels[service.category]}
-          </p>
-          <h1 className="mt-2 font-display text-4xl font-bold text-ink-900 sm:text-5xl">
+          <h1 className="mt-6 h-seite text-navy">
             {service.name}
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-ink-600">{service.teaser}</p>
@@ -101,10 +95,9 @@ export default async function ServiceDetailPage({
                 href={eintrag.ctaHref}
                 event="cta_click"
                 props={{ position: "leistung_hero", service: service.slug }}
-                className="inline-flex min-h-[52px] shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-[14px] bg-brand-600 px-7 font-display text-lg font-bold text-white shadow-[0_10px_22px_-12px_rgb(37_99_235/0.65)] transition-colors duration-150 hover:bg-brand-700"
+                className="inline-flex min-h-[52px] shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-control bg-brand-600 px-7 font-display text-lg font-bold text-white transition-colors duration-150 hover:bg-brand-700"
               >
                 Auftrag starten
-                <ArrowRight className="h-5 w-5" aria-hidden />
               </TrackedLink>
               <p className="text-sm text-ink-700">
                 <span className="font-display text-xl font-bold text-navy">{eintrag.preisText}</span>{" "}
@@ -119,14 +112,14 @@ export default async function ServiceDetailPage({
       </section>
 
       <section className="py-14">
-        <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_22rem]">
+        <div className="container-page grid gap-10 lg:grid-cols-[1fr_22rem]">
           <div className="space-y-10">
             <Reveal>
               <div>
                 <h2 className="font-display text-2xl font-bold text-ink-900">So läuft es ab</h2>
                 <p className="mt-4 leading-relaxed text-ink-700">{service.description}</p>
                 <p className="mt-4 flex items-center gap-2 text-sm text-ink-600">
-                  <Clock className="h-4 w-4 text-brand-700" aria-hidden />
+                  <Clock className="h-4 w-4 text-ink-600" aria-hidden />
                   Typische Dauer: <strong>{service.duration}</strong>
                 </p>
                 {eintrag?.kennzeichen.moeglich && <KennzeichenHinweis className="mt-6" />}
@@ -135,20 +128,19 @@ export default async function ServiceDetailPage({
 
             <Reveal>
               <div>
-                <h2 className="flex items-center gap-2 font-display text-2xl font-bold text-ink-900">
-                  <FileCheck2 className="h-6 w-6 text-brand-700" aria-hidden />
+                <h2 className="font-display text-2xl font-bold text-ink-900">
                   Dokumenten-Checkliste
                 </h2>
                 <ul className="mt-5 space-y-3">
                   {service.checklist.map((item) => (
                     <li key={item} className="flex items-start gap-3 text-ink-700">
-                      <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" aria-hidden />
+                      <Haken className="mt-[0.4375rem] h-[0.75rem] w-[1rem]" />
                       {item}
                     </li>
                   ))}
                 </ul>
                 <p className="mt-4 flex items-start gap-2 rounded-xl bg-ink-50 p-4 text-sm text-ink-600">
-                  <Info className="mt-0.5 h-4 w-4 shrink-0 text-brand-700" aria-hidden />
+                  <Info className="mt-0.5 h-4 w-4 shrink-0 text-ink-600" aria-hidden />
                   Fotos oder Scans genügen für den Start. Originale werden nur benötigt,
                   wenn die Behörde sie verlangt – wir sagen Ihnen rechtzeitig Bescheid.
                 </p>
@@ -170,10 +162,7 @@ export default async function ServiceDetailPage({
                     <ul className="mt-4 space-y-2.5">
                       {section.list.map((item) => (
                         <li key={item} className="flex items-start gap-3 text-ink-700">
-                          <CheckCircle2
-                            className="mt-0.5 h-5 w-5 shrink-0 text-brand-600"
-                            aria-hidden
-                          />
+                          <Haken className="mt-[0.4375rem] h-[0.75rem] w-[1rem]" />
                           {item}
                         </li>
                       ))}
@@ -195,10 +184,9 @@ export default async function ServiceDetailPage({
                   <p className="leading-relaxed text-ink-700">{content.ctaLink.text}</p>
                   <Link
                     href={content.ctaLink.href}
-                    className="mt-4 inline-flex items-center gap-2 rounded-xl bg-brand-600 px-5 py-3 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
+                    className="mt-4 inline-flex items-center gap-2 rounded-control bg-brand-600 px-5 py-3 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
                   >
                     {content.ctaLink.label}
-                    <ArrowRight className="h-4 w-4" aria-hidden />
                   </Link>
                 </div>
               </Reveal>
@@ -220,8 +208,7 @@ export default async function ServiceDetailPage({
             {relatedGuides.length > 0 && (
               <Reveal>
                 <div>
-                  <h2 className="flex items-center gap-2 font-display text-2xl font-bold text-ink-900">
-                    <BookOpen className="h-6 w-6 text-brand-700" aria-hidden />
+                  <h2 className="font-display text-2xl font-bold text-ink-900">
                     Passende Ratgeber-Artikel
                   </h2>
                   <ul className="mt-5 grid gap-3 sm:grid-cols-2">
@@ -229,14 +216,13 @@ export default async function ServiceDetailPage({
                       <li key={guide.slug}>
                         <Link
                           href={`/ratgeber/${guide.slug}/`}
-                          className="group flex h-full flex-col rounded-xl border border-ink-200 bg-white p-4 transition-colors duration-200 hover:border-brand-300 hover:bg-brand-50/50"
+                          className="group flex h-full flex-col border-t-2 border-navy pt-4 pb-2"
                         >
                           <span className="font-display font-semibold text-ink-900 group-hover:text-brand-800">
                             {guide.title}
                           </span>
                           <span className="mt-2 flex items-center gap-1 text-sm font-medium text-brand-700">
                             Artikel lesen
-                            <ArrowRight className="h-3.5 w-3.5" aria-hidden />
                           </span>
                         </Link>
                       </li>
@@ -260,7 +246,6 @@ export default async function ServiceDetailPage({
                           className="flex items-center gap-2 rounded-xl border border-ink-200 bg-white px-4 py-2.5 text-sm font-medium text-ink-800 transition-colors duration-200 hover:border-brand-300 hover:bg-brand-50 hover:text-brand-800"
                         >
                           {rel.shortName ?? rel.name}
-                          <ArrowRight className="h-3.5 w-3.5 text-brand-700" aria-hidden />
                         </Link>
                       </li>
                     ))}
@@ -272,7 +257,7 @@ export default async function ServiceDetailPage({
 
           {/* Preis-Box */}
           <Reveal delay={0.1}>
-            <aside className="lg:sticky lg:top-24 h-fit rounded-2xl border border-ink-200 bg-white p-6 shadow-card">
+            <aside className="tafel h-fit py-6 pl-[2.75rem] pr-6 lg:sticky lg:top-24">
               <TrackView event="price_box_view" props={{ service: service.slug, position: "leistungsseite" }}>
               <h2 className="font-display text-lg font-bold text-ink-900">
                 {service.slug === "wunschkennzeichen" ? "Zusatzleistung" : p.inclusive ? "Komplettpreis" : "Preisstruktur"}
@@ -286,7 +271,7 @@ export default async function ServiceDetailPage({
                         ? "Festpreis KFZ-Zulassungsprofis"
                         : "Servicepreis KFZ-Zulassungsprofis"}
                   </dt>
-                  <dd className="text-right font-display text-lg font-bold text-brand-700">
+                  <dd className="text-right font-display text-lg font-bold text-navy">
                     {p.serviceFee !== null
                       ? service.slug === "wunschkennzeichen"
                         ? `+ ${euro(p.serviceFee)}`
@@ -312,10 +297,11 @@ export default async function ServiceDetailPage({
                         rows.push(["Versand der Dokumente", cfg.enthaeltVersand ? "inklusive" : "entfällt (digital)"]);
                       }
                       return rows.map(([label, value]) => (
-                        <li key={label} className="flex items-center gap-2">
-                          <CheckCircle2 className="h-4 w-4 shrink-0 text-brand-600" aria-hidden />
-                          {label}{" "}
-                          <span className="ml-auto text-right font-semibold text-brand-700">{value}</span>
+                        <li key={label} className="grid grid-cols-[auto_1fr_auto] items-baseline gap-x-2">
+                          <Haken className="h-[0.6875rem] w-[0.9375rem] translate-y-px" />
+                          <span>{label}</span>
+                          {/* Lange Werte (z. B. Kennzeichenschilder „optional zzgl. …“) brechen um statt aus dem Kasten zu laufen */}
+                          <span className="max-w-[9.5rem] text-right font-semibold text-navy">{value}</span>
                         </li>
                       ));
                     })()}
@@ -352,10 +338,9 @@ export default async function ServiceDetailPage({
               <div className="mt-6 space-y-3">
                 <Link
                   href={`/auftrag/?leistung=${service.slug}`}
-                  className="flex w-full items-center justify-center gap-2 rounded-xl bg-brand-600 px-5 py-3.5 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
+                  className="flex w-full items-center justify-center gap-2 rounded-control bg-brand-600 px-5 py-3.5 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
                 >
                   Auftrag starten
-                  <ArrowRight className="h-4 w-4" aria-hidden />
                 </Link>
                 <a
                   href={whatsAppLink(`Hallo KFZ-Zulassungsprofis, ich interessiere mich für: ${service.name}.`)}

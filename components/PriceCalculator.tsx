@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Calculator } from "lucide-react";
+
 import {
   BESTELLBARE_LEISTUNGEN,
   calculateOrderPrice,
@@ -45,9 +45,8 @@ export default function PriceCalculator() {
   );
 
   return (
-    <div className="rounded-2xl border-2 border-brand-200 bg-white p-6 shadow-card sm:p-8" onChangeCapture={markUsed} onClickCapture={markUsed}>
-      <h2 className="flex items-center gap-2 font-display text-2xl font-bold text-ink-900">
-        <Calculator className="h-6 w-6 text-brand-700" aria-hidden />
+    <div className="rounded-[0.75rem] border-[2.5px] border-navy bg-white p-5 sm:p-8" onChangeCapture={markUsed} onClickCapture={markUsed}>
+      <h2 className="text-2xl font-bold text-navy">
         Endpreis berechnen
       </h2>
       <p className="mt-2 text-sm text-ink-600">
@@ -79,7 +78,7 @@ export default function PriceCalculator() {
               <legend className="font-display text-sm font-semibold text-ink-900">Kennzeichenschilder</legend>
               <div className="mt-2 space-y-2">
                 {(Object.keys(schilderLabels) as SchilderOption[]).map((opt) => (
-                  <label key={opt} className="flex cursor-pointer items-start gap-3 rounded-xl border border-ink-200 p-3 text-sm text-ink-800 has-[:checked]:border-brand-600 has-[:checked]:bg-brand-50">
+                  <label key={opt} className="flex cursor-pointer items-start gap-3 rounded-lg border border-ink-300 p-3 text-sm text-ink-800 has-[:checked]:border-navy has-[:checked]:bg-canvas">
                     <input
                       type="radio"
                       name="schilder"
@@ -96,7 +95,7 @@ export default function PriceCalculator() {
           )}
 
           {cfg?.wunschkennzeichenMoeglich && (
-            <label className="flex cursor-pointer items-start gap-3 rounded-xl border border-ink-200 p-3 text-sm text-ink-800 has-[:checked]:border-brand-600 has-[:checked]:bg-brand-50">
+            <label className="flex cursor-pointer items-start gap-3 rounded-lg border border-ink-300 p-3 text-sm text-ink-800 has-[:checked]:border-navy has-[:checked]:bg-canvas">
               <input
                 type="checkbox"
                 checked={wunsch}
@@ -108,8 +107,8 @@ export default function PriceCalculator() {
           )}
         </div>
 
-        <div className="rounded-xl bg-ink-50 p-5" aria-live="polite">
-          <p className="font-display text-sm font-semibold uppercase tracking-wider text-ink-500">Ihre Positionen</p>
+        <div className="rounded-lg bg-canvas p-5" aria-live="polite">
+          <p className="font-display text-sm font-semibold text-ink-600">Ihre Positionen</p>
           {result && (
             <>
               <ul className="mt-3 divide-y divide-ink-200 text-sm">
@@ -122,7 +121,7 @@ export default function PriceCalculator() {
               </ul>
               <div className="mt-3 flex items-baseline justify-between border-t-2 border-ink-900 pt-3">
                 <span className="font-display font-bold text-ink-900">Endpreis</span>
-                <span className="font-display text-3xl font-bold text-brand-700 tabular-nums">
+                <span className="font-display text-3xl font-bold text-navy tabular-nums">
                   {centsToEuro(result.totalCents)}
                 </span>
               </div>
@@ -134,10 +133,9 @@ export default function PriceCalculator() {
               <Link
                 href={`/auftrag/?leistung=${leistung}`}
                 onClick={() => track("cta_click", { position: "preisrechner", service: leistung })}
-                className="mt-5 flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-5 py-3.5 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
+                className="mt-5 flex items-center justify-center gap-2 rounded-control bg-brand-600 px-5 py-3.5 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
               >
                 {labels[leistung]} beauftragen
-                <ArrowRight className="h-4 w-4" aria-hidden />
               </Link>
             </>
           )}

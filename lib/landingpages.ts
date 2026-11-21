@@ -189,7 +189,7 @@ export const landingPages: LandingPage[] = [
       {
         heading: "Wer über Ihre Zulassung entscheidet",
         paragraphs: [
-          "KFZ-Zulassungsprofis ist ein privater Dienstleister und keine Behörde – ein Angebot der Volt Gas UG (haftungsbeschränkt) aus Berlin, bundesweit tätig. Wir bereiten Ihren Antrag vor und reichen ihn ein. Die Entscheidung über die Zulassung trifft immer die zuständige Zulassungsbehörde.",
+          "KFZ-Zulassungsprofis ist ein privater Dienstleister und keine Behörde – mit Sitz in Berlin und bundesweit tätig. Wir bereiten Ihren Antrag vor und reichen ihn ein. Die Entscheidung über die Zulassung trifft immer die zuständige Zulassungsbehörde.",
           `Eine Garantie für die Dauer gibt es deshalb nicht. Unser Erfahrungswert: in der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, ${ZEIT.versand}. Erreichbar sind wir Mo–Fr von 8:00 bis 18:00 Uhr per WhatsApp, Telefon und E-Mail.`,
         ],
       },
@@ -990,7 +990,7 @@ export const landingPages: LandingPage[] = [
       {
         heading: "So setzt KFZ-Zulassungsprofis diese Punkte um",
         paragraphs: [
-          "KFZ-Zulassungsprofis ist ein Angebot der Volt Gas UG (haftungsbeschränkt) mit Sitz in Berlin und bundesweit tätig. Sie beauftragen über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung.",
+          "KFZ-Zulassungsprofis ist ein privater Zulassungsdienst mit Sitz in Berlin und bundesweit tätig. Sie beauftragen über das Online-Formular oder per WhatsApp und erhalten vorab eine verbindliche Festpreis-Bestätigung.",
           `Eine Zulassung kostet ${P.zulassung} inklusive amtlicher Gebühren und Versand, eine Abmeldung ${P.abmeldung} inklusive Gebühren. Kennzeichenschilder für ${P.kennzeichen} pro Paar und den Wunschkennzeichen-Service für ${P.wunschkennzeichen} (amtliche Gebühr enthalten) wählen Sie nur, wenn Sie sie brauchen.`,
           `Ihre feste Ansprechperson erreichen Sie Mo–Fr von 8:00 bis 18:00 Uhr per WhatsApp, Telefon und E-Mail. Und weil die Entscheidung bei der Behörde liegt, nennen wir einen Erfahrungswert statt einer Garantie: in der Regel ${ZEIT.zulassung} ab vollständigen Unterlagen, ${ZEIT.versand}.`,
         ],

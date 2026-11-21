@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowRight, CalendarDays, ClipboardCheck, Info, Landmark } from "lucide-react";
+import { CalendarDays, Info, Landmark } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTASection from "@/components/CTASection";
 import ComparisonTable from "@/components/ComparisonTable";
@@ -110,12 +110,12 @@ export default async function LandingPageView({ params }: { params: Promise<{ la
 
   return (
     <>
-      <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-12 sm:py-16">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <section className="seitenkopf">
+        <div className="container-page">
           <Breadcrumbs items={[{ name: page.navTitle }]} />
           <div className="mt-6 grid gap-10 lg:grid-cols-[1fr_20rem]">
             <div>
-              <h1 className="font-display text-3xl font-bold leading-tight text-ink-900 sm:text-[2.6rem]">
+              <h1 className="h-seite text-navy">
                 {page.h1}
               </h1>
               {page.intro.map((p) => (
@@ -128,17 +128,16 @@ export default async function LandingPageView({ params }: { params: Promise<{ la
                   href={orderHref}
                   event="cta_click"
                   props={{ position: "landing", page: page.slug }}
-                  className="inline-flex items-center justify-center gap-2 rounded-2xl bg-brand-600 px-7 py-4 font-display text-base font-semibold text-white shadow-lg shadow-brand-700/25 transition-colors duration-200 hover:bg-brand-700"
+                  className="inline-flex items-center justify-center gap-2 rounded-control bg-brand-600 px-7 py-4 font-display text-base font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
                 >
                   {page.ctaLabel}
-                  <ArrowRight className="h-5 w-5" aria-hidden />
                 </TrackedLink>
                 <TrackedLink
                   href={whatsAppLink(`Hallo KFZ-Zulassungsprofis, ich komme von Ihrer Seite „${page.navTitle}“ und habe eine Frage.`)}
                   event="whatsapp_click"
                   props={{ position: "landing", page: page.slug }}
                   external
-                  className="inline-flex items-center justify-center gap-2 rounded-2xl border-2 border-[#25D366] bg-white px-6 py-4 font-display text-base font-semibold text-ink-900 transition-colors duration-200 hover:bg-[#25D366]/10"
+                  className="btn btn-secondary btn-lg"
                 >
                   <WhatsAppIcon className="h-5 w-5" color="brand" />
                   Frage per WhatsApp
@@ -154,8 +153,8 @@ export default async function LandingPageView({ params }: { params: Promise<{ la
             </div>
 
             {primary && primaryPrice && (
-              <aside className="h-fit rounded-2xl border-2 border-brand-200 bg-white p-6 shadow-card">
-                <p className="font-display text-sm font-semibold uppercase tracking-wider text-brand-700">
+              <aside className="h-fit rounded-2xl border-2 border-brand-200 bg-white p-6">
+                <p className="font-display text-sm font-semibold text-ink-600">
                   {primary.shortName ?? primary.name} über uns
                 </p>
                 <p className="mt-2 font-display text-4xl font-bold text-ink-900">{euro(primaryPrice.preis)}</p>
@@ -169,10 +168,9 @@ export default async function LandingPageView({ params }: { params: Promise<{ la
                   href={orderHref}
                   event="cta_click"
                   props={{ position: "landing_aside", page: page.slug }}
-                  className="mt-5 flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-5 py-3 font-display text-sm font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
+                  className="mt-5 flex items-center justify-center gap-2 rounded-control bg-brand-600 px-5 py-3 font-display text-sm font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
                 >
                   Auftrag starten
-                  <ArrowRight className="h-4 w-4" aria-hidden />
                 </TrackedLink>
                 <Link
                   href="/preise/"
@@ -187,7 +185,7 @@ export default async function LandingPageView({ params }: { params: Promise<{ la
       </section>
 
       <article className="py-12 sm:py-14">
-        <div className="mx-auto max-w-3xl space-y-10 px-4 sm:px-6">
+        <div className="container-page *:max-w-3xl space-y-10">
           <p className="flex gap-3 rounded-2xl border border-ink-200 bg-white p-4 text-sm leading-relaxed text-ink-700">
             <Landmark className="mt-0.5 h-5 w-5 shrink-0 text-brand-700" aria-hidden />
             <span>
@@ -205,7 +203,7 @@ export default async function LandingPageView({ params }: { params: Promise<{ la
                 <ol className="mt-5 space-y-4">
                   {page.steps.items.map((step, i) => (
                     <li key={step.title} className="flex gap-4">
-                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-600 font-display text-sm font-bold text-white">
+                      <span className="flex h-9 w-9 shrink-0 items-center justify-center font-display text-lg font-bold text-brand-600">
                         {i + 1}
                       </span>
                       <span>
@@ -222,8 +220,7 @@ export default async function LandingPageView({ params }: { params: Promise<{ la
           {page.checklist && (
             <Reveal>
               <section className="rounded-2xl border border-brand-200 bg-brand-50/60 p-6">
-                <h2 className="flex items-center gap-2 font-display text-xl font-bold text-ink-900">
-                  <ClipboardCheck className="h-6 w-6 text-brand-700" aria-hidden />
+                <h2 className="font-display text-xl font-bold text-ink-900">
                   {page.checklist.title}
                 </h2>
                 <ul className="mt-4 space-y-2">
@@ -284,7 +281,7 @@ export default async function LandingPageView({ params }: { params: Promise<{ la
                     <li key={l.slug}>
                       <Link
                         href={`/${l.slug}/`}
-                        className="group flex h-full flex-col rounded-xl border border-ink-200 bg-white p-4 transition-colors duration-200 hover:border-brand-300 hover:bg-brand-50/50"
+                        className="group flex h-full flex-col border-t-2 border-navy pt-4 pb-2"
                       >
                         <span className="font-display font-semibold text-ink-900 group-hover:text-brand-800">
                           {l.navTitle}
@@ -297,9 +294,9 @@ export default async function LandingPageView({ params }: { params: Promise<{ la
                     <li key={g.slug}>
                       <Link
                         href={`/ratgeber/${g.slug}/`}
-                        className="group flex h-full flex-col rounded-xl border border-ink-200 bg-white p-4 transition-colors duration-200 hover:border-brand-300 hover:bg-brand-50/50"
+                        className="group flex h-full flex-col border-t-2 border-navy pt-4 pb-2"
                       >
-                        <span className="text-xs font-semibold uppercase tracking-wider text-ink-500">Ratgeber</span>
+                        <span className="text-sm font-semibold text-ink-600">Ratgeber</span>
                         <span className="mt-1 font-display font-semibold text-ink-900 group-hover:text-brand-800">
                           {g.title}
                         </span>
@@ -320,10 +317,9 @@ export default async function LandingPageView({ params }: { params: Promise<{ la
                     <li key={service.slug}>
                       <Link
                         href={`/leistungen/${service.slug}/`}
-                        className="flex items-center gap-2 rounded-xl bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
+                        className="flex items-center gap-2 rounded-control bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
                       >
                         {service.shortName ?? service.name}
-                        <ArrowRight className="h-3.5 w-3.5" aria-hidden />
                       </Link>
                     </li>
                   ))}

@@ -152,7 +152,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "Ist KFZ-Zulassungsprofis eine Behörde?",
     answer:
-      `Nein. KFZ-Zulassungsprofis ist ein privater Zulassungsdienst der ${site.company.legalName}. Wir handeln in Ihrem Auftrag und mit Ihrer Vollmacht. Über jede Zulassung, Umschreibung oder Abmeldung entscheidet die zuständige Zulassungsbehörde.`,
+      `Nein. KFZ-Zulassungsprofis ist ein privater Zulassungsdienst. Wir handeln in Ihrem Auftrag und mit Ihrer Vollmacht. Über jede Zulassung, Umschreibung oder Abmeldung entscheidet die zuständige Zulassungsbehörde.`,
     category: "allgemein",
   },
   {
@@ -170,7 +170,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "Woran erkenne ich echte Nachrichten von KFZ-Zulassungsprofis?",
     answer:
-      `Unsere Website erreichen Sie ausschließlich unter ${site.domain}. ${MAIL_HINWEIS}, WhatsApp-Nachrichten von der Nummer ${site.contact.phoneDisplay}. Jede Online-Anfrage erhält eine Referenz, die mit „${site.referencePrefix}-“ beginnt. Rechnungen stellt die ${site.company.legalName} aus. Sind Sie unsicher, fragen Sie über die Kontaktdaten auf dieser Website nach, bevor Sie zahlen oder Unterlagen senden.`,
+      `Unsere Website erreichen Sie ausschließlich unter ${site.domain}. ${MAIL_HINWEIS}, WhatsApp-Nachrichten von der Nummer ${site.contact.phoneDisplay}. Jede Online-Anfrage erhält eine Referenz, die mit „${site.referencePrefix}-“ beginnt. Rechnungen tragen dieselben Anbieterangaben wie unser Impressum. Sind Sie unsicher, fragen Sie über die Kontaktdaten auf dieser Website nach, bevor Sie zahlen oder Unterlagen senden.`,
     category: "allgemein",
   },
 ];

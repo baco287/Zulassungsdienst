@@ -96,7 +96,7 @@ gtag('config', ${JSON.stringify(gadsId)}, { 'anonymize_ip': true });`}
         <div
           role="dialog"
           aria-labelledby="consent-title"
-          className="fixed inset-x-3 bottom-3 z-[60] mx-auto max-w-xl rounded-2xl border border-ink-200 bg-white p-5 shadow-2xl sm:bottom-5"
+          className="fixed inset-x-3 bottom-3 z-[60] mx-auto max-w-xl rounded-2xl border border-ink-200 bg-white p-5 sm:bottom-5"
         >
           <p id="consent-title" className="font-display text-base font-bold text-ink-900">
             Darf Google Ads messen, ob unsere Anzeigen helfen?

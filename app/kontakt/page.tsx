@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Clock4, Mail, MapPin, Phone } from "lucide-react";
 import { site, whatsAppLink } from "@/lib/site";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -12,7 +11,6 @@ export const metadata: Metadata = {
 
 const channels = [
   {
-    icon: WhatsAppIcon,
     title: "WhatsApp",
     text: "Der schnellste Weg: Frage stellen, Fotos senden, Antwort erhalten.",
     href: whatsAppLink("Hallo KFZ-Zulassungsprofis, ich habe eine Frage."),
@@ -20,7 +18,6 @@ const channels = [
     external: true,
   },
   {
-    icon: Mail,
     title: "E-Mail",
     text: site.contact.email,
     href: `mailto:${site.contact.email}`,
@@ -28,7 +25,6 @@ const channels = [
     external: false,
   },
   {
-    icon: Phone,
     title: "Telefon",
     text: site.contact.phoneDisplay,
     href: `tel:${site.contact.phone.replace(/\s/g, "")}`,
@@ -40,50 +36,52 @@ const channels = [
 export default function KontaktPage() {
   return (
     <>
-      <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-14 sm:py-16">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <section className="seitenkopf">
+        <div className="container-page">
           <div className="mb-5">
             <Breadcrumbs items={[{ name: "Kontakt" }]} />
           </div>
-          <h1 className="font-display text-4xl font-bold text-ink-900 sm:text-5xl">Kontakt</h1>
+          <h1 className="h-seite text-navy">Kontakt</h1>
           <p className="mt-4 max-w-2xl text-lg text-ink-600">
             Persönliche Beratung statt Warteschleife – wählen Sie Ihren Lieblingskanal.
           </p>
         </div>
       </section>
 
-      <section className="py-14">
-        <div className="mx-auto grid max-w-6xl gap-6 px-4 sm:px-6 md:grid-cols-3">
-          {channels.map((c) => (
-            <div
-              key={c.title}
-              className="flex flex-col rounded-2xl border border-ink-200 bg-white p-7 shadow-card"
-            >
-              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-600 text-white">
-                <c.icon className="h-6 w-6" aria-hidden />
-              </span>
-              <h2 className="mt-4 font-display text-xl font-bold text-ink-900">{c.title}</h2>
-              <p className="mt-2 flex-1 text-sm text-ink-600">{c.text}</p>
-              <a
-                href={c.href}
-                {...(c.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                className="mt-5 rounded-xl bg-brand-600 px-5 py-3 text-center font-display text-sm font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
+      <section className="py-10 lg:py-14">
+        <div className="container-page">
+          <ul className="liste max-w-[60rem]">
+            {channels.map((c) => (
+              <li
+                key={c.title}
+                className="grid gap-x-8 gap-y-3 py-5 sm:grid-cols-[minmax(0,10rem)_minmax(0,1fr)_auto] sm:items-center"
               >
-                {c.label}
-              </a>
-            </div>
-          ))}
-        </div>
+                <h2 className="text-[1.3125rem] font-semibold text-navy">{c.title}</h2>
+                <p className="text-[1.03125rem] text-ink-700">{c.text}</p>
+                <a
+                  href={c.href}
+                  {...(c.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                  className="btn btn-secondary btn-sm justify-self-start sm:min-w-[11rem]"
+                >
+                  {c.title === "WhatsApp" && <WhatsAppIcon className="h-[18px] w-[18px]" color="brand" />}
+                  {c.label}
+                </a>
+              </li>
+            ))}
+          </ul>
 
-        <div className="mx-auto mt-8 flex max-w-6xl flex-col gap-4 px-4 sm:flex-row sm:items-center sm:justify-between sm:px-6">
-          <p className="flex items-center gap-2 text-sm text-ink-600">
-            <Clock4 className="h-4 w-4 text-brand-700" aria-hidden />
-            Erreichbarkeit: {site.contact.hours}
-          </p>
-          <p className="flex items-center gap-2 text-sm text-ink-600">
-            <MapPin className="h-4 w-4 text-brand-700" aria-hidden />
-            {site.company.street}, {site.company.zipCity}
-          </p>
+          <dl className="mt-8 grid max-w-[60rem] gap-x-8 gap-y-3 text-[0.96875rem] sm:grid-cols-2">
+            <div>
+              <dt className="font-semibold text-navy">Erreichbarkeit</dt>
+              <dd className="text-ink-600">{site.contact.hours}</dd>
+            </div>
+            <div>
+              <dt className="font-semibold text-navy">Anschrift</dt>
+              <dd className="text-ink-600">
+                {site.company.street}, {site.company.zipCity}
+              </dd>
+            </div>
+          </dl>
         </div>
       </section>
     </>

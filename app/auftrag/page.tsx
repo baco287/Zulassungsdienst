@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Clock3, IdCard, ShieldCheck } from "lucide-react";
+import Haken from "@/components/ui/Haken";
 import AuftragForm from "@/components/AuftragForm";
 import TrackedLink from "@/components/TrackedLink";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
@@ -14,35 +14,29 @@ export const metadata: Metadata = {
 
 export default function AuftragPage() {
   return (
-    <section className="bg-canvas pb-16 pt-8 sm:pb-20 sm:pt-12">
-      <div className="mx-auto max-w-[1120px] px-4 sm:px-6">
-        {/* Der wichtigste Einwand zuerst: Es geht auch ohne Online-Ausweis. */}
-        <div className="flex items-start gap-4 rounded-[18px] bg-accent-100 p-4 sm:items-center sm:p-5">
-          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[14px] bg-white text-accent-600" aria-hidden>
-            <IdCard className="h-6 w-6" strokeWidth={1.75} />
-          </span>
-          <p className="text-[15px] leading-relaxed text-ink-800">
-            <strong className="block font-display text-lg font-extrabold text-navy">Keine eID? Kein Problem.</strong>
-            Wir übernehmen Ihre Zulassung bundesweit – auch ohne Online-Ausweis und ohne AusweisApp.
-            Für die Vollmacht bestätigen Sie Ihre Identität einmalig digital.
-          </p>
-        </div>
-
-        <h1 className="mt-8 font-display text-[2rem] font-extrabold leading-tight text-navy sm:text-[2.5rem]">
+    <section className="bg-canvas pb-16 pt-7 sm:pb-20 sm:pt-11">
+      <div className="container-page">
+        <h1 className="h-seite text-navy">
           Online-Auftrag
         </h1>
         <p className="mt-3 max-w-2xl text-lg leading-relaxed text-ink-700">
           {ZEIT.anfrage.replace("ca. ", "Ca. ")}, unverbindlich: Wir melden uns mit Ihrer Festpreis-Bestätigung
           und der Liste der nächsten Schritte.
         </p>
+        {/* Der wichtigste Einwand zuerst: Es geht auch ohne Online-Ausweis. */}
+        <p className="mt-4 flex max-w-[52rem] items-baseline gap-2.5 text-[0.96875rem] leading-relaxed text-ink-700">
+          <Haken className="h-[0.75rem] w-[1rem] translate-y-px" />
+          <span>
+            <strong className="font-semibold text-navy">Keine eID? Kein Problem.</strong>{" "}
+            Wir übernehmen Ihre Zulassung bundesweit – auch ohne Online-Ausweis und ohne AusweisApp.
+            Für die Vollmacht bestätigen Sie Ihre Identität einmalig digital.
+          </span>
+        </p>
 
         <div className="mt-8">
           <AuftragForm>
-            <div className="card p-5">
-              <h2 className="flex items-center gap-2 font-display text-base font-bold text-navy">
-                <WhatsAppIcon className="h-5 w-5" color="brand" />
-                Lieber direkt chatten?
-              </h2>
+            <div className="border-t-2 border-navy pt-4">
+              <h2 className="text-base font-bold text-navy">Lieber direkt chatten?</h2>
               <p className="mt-2 text-[15px] leading-relaxed text-ink-600">
                 Senden Sie uns Ihre Anfrage formlos per WhatsApp – Fotos der Unterlagen genügen.
               </p>
@@ -53,16 +47,24 @@ export default function AuftragPage() {
                 external
                 className="btn btn-wa btn-sm btn-block mt-4"
               >
+                <WhatsAppIcon className="h-5 w-5" />
                 WhatsApp öffnen
               </TrackedLink>
+              <p className="mt-3 text-[0.9375rem] text-ink-700">
+                Oder anrufen:{" "}
+                <TrackedLink
+                  href={`tel:${site.contact.phone.replace(/\s/g, "")}`}
+                  event="phone_click"
+                  props={{ position: "auftrag_seitenleiste" }}
+                  className="link"
+                >
+                  {site.contact.phoneDisplay}
+                </TrackedLink>
+              </p>
             </div>
-            <ul className="card space-y-3 p-5 text-[15px] leading-relaxed text-ink-700">
-              <li className="flex items-start gap-2.5">
-                <Clock3 className="mt-0.5 h-5 w-5 shrink-0 text-accent-600" aria-hidden />
-                Antwort innerhalb unserer Servicezeiten ({site.contact.hours}).
-              </li>
-              <li className="flex items-start gap-2.5">
-                <ShieldCheck className="mt-0.5 h-5 w-5 shrink-0 text-accent-600" aria-hidden />
+            <ul className="liste text-[15px] leading-relaxed text-ink-700">
+              <li className="py-3">Antwort innerhalb unserer Servicezeiten ({site.contact.hours}).</li>
+              <li className="py-3">
                 Ihre Daten werden verschlüsselt übertragen und ausschließlich zur Auftragsabwicklung verwendet.
               </li>
             </ul>

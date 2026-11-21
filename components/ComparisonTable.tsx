@@ -45,9 +45,9 @@ const rows: Row[] = [
 
 function Cell({ mark, text, highlight }: { mark: Mark; text: string; highlight?: boolean }) {
   const Icon = mark === "yes" ? Check : mark === "no" ? X : Minus;
-  const color = mark === "yes" ? "text-emerald-600" : mark === "no" ? "text-red-600" : "text-ink-400";
+  const color = mark === "yes" ? "text-accent-600" : mark === "no" ? "text-danger" : "text-ink-500";
   return (
-    <td className={`px-4 py-3 align-top text-sm ${highlight ? "bg-brand-50/70 text-ink-900" : "text-ink-700"}`}>
+    <td className={`px-4 py-3 align-top text-sm ${highlight ? "bg-canvas text-navy" : "text-ink-700"}`}>
       <span className="flex gap-2">
         <Icon className={`mt-0.5 h-4 w-4 shrink-0 ${color}`} aria-hidden />
         <span>{text}</span>
@@ -63,7 +63,7 @@ function Cell({ mark, text, highlight }: { mark: Mark; text: string; highlight?:
 export default function ComparisonTable() {
   return (
     <div>
-      <div className="overflow-x-auto rounded-2xl border border-ink-200 bg-white shadow-card">
+      <div className="overflow-x-auto rounded-2xl border border-ink-200 bg-white">
         <table className="w-full min-w-[640px] border-collapse text-left">
           <caption className="sr-only">
             Vergleich: Zulassungsstelle, i-Kfz selbst und KFZ-Zulassungsprofis
@@ -75,7 +75,7 @@ export default function ComparisonTable() {
               </th>
               <th scope="col" className="px-4 py-3 font-semibold">Zulassungsstelle</th>
               <th scope="col" className="px-4 py-3 font-semibold">i-Kfz selbst</th>
-              <th scope="col" className="bg-brand-600 px-4 py-3 font-semibold text-white">KFZ-Zulassungsprofis</th>
+              <th scope="col" className="bg-navy px-4 py-3 font-semibold text-white">KFZ-Zulassungsprofis</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-ink-100">

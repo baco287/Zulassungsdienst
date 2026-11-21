@@ -1,5 +1,5 @@
-import type { Metadata } from "next";
-import { Inter, Manrope } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Archivo, Manrope } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MobileCTA from "@/components/MobileCTA";
@@ -9,20 +9,27 @@ import { NOINDEX } from "@/lib/features";
 import "./globals.css";
 import { ORG_ID, WEBSITE_ID } from "@/lib/catalog";
 
-/* Beide Schriften werden beim Build geladen und vom eigenen Server ausgeliefert
-   (next/font) – es entsteht keine Verbindung zu Google beim Seitenaufruf. */
-const heading = Manrope({
+/* Schriften: Archivo (variable Breite) für Text und Überschriften, Manrope nur für
+   die Wortmarke im Logo. Beide werden beim Build geladen und vom eigenen Server
+   ausgeliefert (next/font) – es entsteht keine Verbindung zu Google beim Seitenaufruf. */
+const archivo = Archivo({
   subsets: ["latin"],
-  variable: "--font-heading",
+  axes: ["wdth"],
+  variable: "--font-archivo",
   display: "swap",
-  weight: ["600", "700", "800"],
 });
 
-const body = Inter({
+const wordmark = Manrope({
   subsets: ["latin"],
-  variable: "--font-body",
+  weight: "800",
+  variable: "--font-wordmark-face",
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
+  colorScheme: "light",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -62,7 +69,6 @@ const jsonLd = {
       "@type": "Organization",
       "@id": ORG_ID,
       name: site.name,
-      legalName: site.company.legalName,
       description: site.description,
       url: site.url,
       logo: `${site.url}/logo.png`,
@@ -115,7 +121,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="de" className={`${heading.variable} ${body.variable}`}>
+    <html lang="de" className={`${archivo.variable} ${wordmark.variable}`}>
       <body className="flex min-h-screen flex-col">
         <a href="#hauptinhalt" className="skip-link">
           Zum Hauptinhalt springen

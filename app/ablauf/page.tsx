@@ -31,24 +31,23 @@ const howToJsonLd = {
 export default function AblaufPage() {
   return (
     <>
-      <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-14 sm:py-16">
-        <div className="mx-auto max-w-6xl px-4 text-center sm:px-6">
-          <div className="mb-5 flex justify-center">
+      <section className="seitenkopf">
+        <div className="container-page">
+          <div className="mb-5">
             <Breadcrumbs items={[{ name: "So funktioniert’s" }]} />
           </div>
-          <h1 className="font-display text-4xl font-bold text-ink-900 sm:text-5xl">
+          <h1 className="h-seite text-navy">
             So funktioniert’s
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-ink-600">
+          <p className="mt-4 max-w-2xl text-lg text-ink-600">
             Vom ersten Klick bis zum Kennzeichen an Ihrer Tür: Ihr Zulassungsauftrag
             im Detail – komplett digital, mit persönlicher Betreuung.
           </p>
         </div>
       </section>
 
-      {/* overflow-x-clip: Die Karten fahren seitlich ein; ohne Begrenzung entsteht davor ein waagerechter Scrollbalken. */}
-      <section className="overflow-x-clip py-16">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <section className="py-12 lg:py-16">
+        <div className="container-page">
           <ProcessTimeline />
         </div>
       </section>

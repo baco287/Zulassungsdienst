@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowRight, MapPin, Sparkles } from "lucide-react";
+import { MapPin } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTASection from "@/components/CTASection";
 import FaqAccordion from "@/components/FaqAccordion";
@@ -67,18 +67,18 @@ export default async function KennzeichenDetail({ params }: { params: Promise<{ 
 
   return (
     <>
-      <section className="bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-12 sm:py-14">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6">
+      <section className="seitenkopf">
+        <div className="container-page *:max-w-4xl">
           <Breadcrumbs items={[{ name: "Kennzeichen", href: "/kennzeichen/" }, { name: k.code }]} />
           <div className="mt-6 flex flex-col gap-6 sm:flex-row sm:items-center">
             <span
-              className="inline-flex h-20 min-w-[9rem] items-center justify-center rounded-lg border-4 border-ink-900 bg-white px-5 font-display text-4xl font-bold tracking-wider text-ink-900 shadow-card"
+              className="inline-flex h-20 min-w-[9rem] items-center justify-center rounded-lg border-4 border-ink-900 bg-white px-5 font-display text-4xl font-bold tracking-wider text-ink-900"
               aria-hidden
             >
               {k.code}
             </span>
             <div>
-              <h1 className="font-display text-3xl font-bold leading-tight text-ink-900 sm:text-4xl">
+              <h1 className="h-seite text-navy">
                 Kennzeichen {k.code}: {k.name}
               </h1>
               <p className="mt-3 text-lg text-ink-600">
@@ -90,13 +90,13 @@ export default async function KennzeichenDetail({ params }: { params: Promise<{ 
         </div>
       </section>
 
-      <div className="mx-auto max-w-4xl space-y-10 px-4 py-12 sm:px-6">
+      <div className="container-page *:max-w-4xl space-y-10 py-12">
         <section className="grid gap-4 sm:grid-cols-2">
           {k.stellen.map((s) => (
             <Link
               key={s.slug}
               href={`/zulassungsstelle/${s.slug}/`}
-              className="group flex gap-3 rounded-2xl border border-ink-200 bg-white p-5 shadow-card transition-colors hover:border-brand-300"
+              className="group flex gap-3 rounded-2xl border border-ink-200 bg-white p-5 transition-colors hover:border-brand-300"
             >
               <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-brand-700" aria-hidden />
               <span>
@@ -110,7 +110,7 @@ export default async function KennzeichenDetail({ params }: { params: Promise<{ 
                 )}
                 {s.zustaendigkeit && <span className="mt-1 block text-sm text-ink-600">{s.zustaendigkeit.wert}</span>}
                 <span className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-brand-700">
-                  Adresse, Termin &amp; i-Kfz <ArrowRight className="h-3.5 w-3.5" aria-hidden />
+                  Adresse, Termin &amp; i-Kfz
                 </span>
               </span>
             </Link>
@@ -118,8 +118,7 @@ export default async function KennzeichenDetail({ params }: { params: Promise<{ 
         </section>
 
         <section className="rounded-2xl border border-brand-200 bg-brand-50/60 p-6">
-          <h2 className="flex items-center gap-2 font-display text-xl font-bold text-ink-900">
-            <Sparkles className="h-5 w-5 text-brand-700" aria-hidden />
+          <h2 className="font-display text-xl font-bold text-ink-900">
             {k.code}-Wunschkennzeichen
           </h2>
           <p className="mt-3 leading-relaxed text-ink-700">
@@ -142,7 +141,7 @@ export default async function KennzeichenDetail({ params }: { params: Promise<{ 
           </div>
         </section>
 
-        <div className="flex flex-col gap-3 rounded-2xl border border-ink-200 bg-white p-6 shadow-card sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-3 rounded-2xl border border-ink-200 bg-white p-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-ink-800">
             <strong className="font-display">Fahrzeug mit {k.code}-Kennzeichen zulassen?</strong> Ohne Termin, zum
             Festpreis.
@@ -160,9 +159,9 @@ export default async function KennzeichenDetail({ params }: { params: Promise<{ 
               href="/auftrag/"
               event="cta_click"
               props={{ position: "kennzeichen", page: k.slug }}
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-700"
+              className="inline-flex items-center justify-center gap-2 rounded-control bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-700"
             >
-              Auftrag starten <ArrowRight className="h-4 w-4" aria-hidden />
+              Auftrag starten
             </TrackedLink>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { CheckCircle2 } from "lucide-react";
 import Reveal from "./Reveal";
 import type { ContentSection } from "@/lib/serviceContent";
+import Haken from "@/components/ui/Haken";
 
 /** Erzeugt stabile Anker-IDs aus Abschnittsüberschriften. */
 export function headingId(heading: string): string {
@@ -19,7 +19,7 @@ export function TableOfContents({ sections }: { sections: ContentSection[] }) {
   if (sections.length < 3) return null;
   return (
     <nav aria-label="Inhaltsverzeichnis" className="rounded-2xl border border-ink-200 bg-ink-50/60 p-5">
-      <p className="font-display text-sm font-bold uppercase tracking-wider text-ink-500">Inhalt</p>
+      <p className="font-display text-sm font-bold text-ink-600">Inhalt</p>
       <ol className="mt-3 space-y-1.5 text-sm">
         {sections.map((section, i) => (
           <li key={section.heading}>
@@ -54,7 +54,7 @@ export default function ContentSections({ sections }: { sections: ContentSection
               <ul className="mt-4 space-y-2.5">
                 {section.list.map((item) => (
                   <li key={item} className="flex items-start gap-3 text-ink-700">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" aria-hidden />
+                    <Haken className="mt-[0.4375rem] h-[0.75rem] w-[1rem]" />
                     {item}
                   </li>
                 ))}
@@ -96,7 +96,7 @@ export default function ContentSections({ sections }: { sections: ContentSection
               </div>
             )}
             {section.image && (
-              <figure className="mt-5 overflow-hidden rounded-2xl border border-ink-200 bg-white shadow-card">
+              <figure className="mt-5 overflow-hidden rounded-2xl border border-ink-200 bg-white">
                 <Image
                   src={section.image.src}
                   alt={section.image.alt}
@@ -122,7 +122,7 @@ export function SourceList({ sources }: { sources?: { label: string; href: strin
   if (!sources || sources.length === 0) return null;
   return (
     <section className="rounded-2xl border border-ink-200 bg-ink-50/60 p-5">
-      <h2 className="font-display text-sm font-bold uppercase tracking-wider text-ink-500">Offizielle Quellen</h2>
+      <h2 className="font-display text-sm font-bold text-ink-600">Offizielle Quellen</h2>
       <ul className="mt-3 space-y-1.5 text-sm">
         {sources.map((source) => (
           <li key={source.href}>

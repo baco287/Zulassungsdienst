@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FaqAccordion from "@/components/FaqAccordion";
 import GewerbeCTA from "@/components/GewerbeCTA";
@@ -11,6 +10,7 @@ import { getService } from "@/lib/services";
 import { site } from "@/lib/site";
 import { ORG_ID } from "@/lib/catalog";
 import { fitTitle } from "@/lib/seo";
+import Haken from "@/components/ui/Haken";
 
 export function generateStaticParams() {
   return gewerbeSegments.map((s) => ({ slug: s.slug }));
@@ -71,22 +71,19 @@ export default async function GewerbeSegmentPage({
 
   return (
     <>
-      <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-14 sm:py-16">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <section className="seitenkopf">
+        <div className="container-page">
           <Breadcrumbs
             items={[{ name: "Gewerbe", href: "/gewerbe/" }, { name: segment.name }]}
           />
-          <p className="mt-6 text-sm font-semibold uppercase tracking-wider text-brand-700">
-            Für Gewerbekunden
-          </p>
-          <h1 className="mt-2 max-w-3xl font-display text-4xl font-bold leading-tight text-ink-900 sm:text-5xl">
+          <h1 className="mt-6 max-w-3xl h-seite text-navy">
             {segment.title}
           </h1>
         </div>
       </section>
 
       <section className="py-14">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="container-page">
           <div className="max-w-3xl space-y-4">
             {segment.intro.map((para) => (
               <Reveal key={para.slice(0, 40)}>
@@ -98,9 +95,9 @@ export default async function GewerbeSegmentPage({
           <div className="mt-12 grid gap-6 sm:grid-cols-2">
             {segment.benefits.map((b, i) => (
               <Reveal key={b.title} delay={i * 0.05}>
-                <div className="h-full rounded-2xl border border-ink-200 bg-white p-6 shadow-card">
+                <div className="h-full border-t-2 border-navy pt-4 pb-2">
                   <h2 className="flex items-start gap-3 font-display text-lg font-bold text-ink-900">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" aria-hidden />
+                    <Haken className="mt-[0.4375rem] h-[0.75rem] w-[1rem]" />
                     {b.title}
                   </h2>
                   <p className="mt-2 pl-8 text-sm leading-relaxed text-ink-600">{b.text}</p>
@@ -123,7 +120,6 @@ export default async function GewerbeSegmentPage({
                         className="flex items-center gap-2 rounded-xl border border-ink-200 bg-white px-4 py-2.5 text-sm font-medium text-ink-800 transition-colors duration-200 hover:border-brand-300 hover:bg-brand-50 hover:text-brand-800"
                       >
                         {service.shortName ?? service.name}
-                        <ArrowRight className="h-3.5 w-3.5 text-brand-700" aria-hidden />
                       </Link>
                     </li>
                   ))}
@@ -135,8 +131,8 @@ export default async function GewerbeSegmentPage({
       </section>
 
       <section className="bg-ink-50 py-14">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6">
-          <Reveal className="text-center">
+        <div className="container-page *:max-w-3xl">
+          <Reveal className="">
             <h2 className="font-display text-3xl font-bold text-ink-900">Häufige Fragen</h2>
           </Reveal>
           <Reveal delay={0.1} className="mt-8">
@@ -148,7 +144,7 @@ export default async function GewerbeSegmentPage({
       <GewerbeCTA context={segment.name} />
 
       <section className="pb-16">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="container-page">
           <h2 className="font-display text-xl font-bold text-ink-900">
             Weitere Branchenlösungen
           </h2>
@@ -160,7 +156,6 @@ export default async function GewerbeSegmentPage({
                   className="flex items-center gap-2 rounded-xl border border-ink-200 bg-white px-4 py-2.5 text-sm font-medium text-ink-800 transition-colors duration-200 hover:border-brand-300 hover:bg-brand-50 hover:text-brand-800"
                 >
                   {seg.name}
-                  <ArrowRight className="h-3.5 w-3.5 text-brand-700" aria-hidden />
                 </Link>
               </li>
             ))}

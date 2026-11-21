@@ -41,7 +41,7 @@ Variablen: `NEXT_PUBLIC_GADS_ID=AW-…` und `NEXT_PUBLIC_GADS_LABEL_ORDER=…` (
 | `whatsapp_click` | Klick auf einen WhatsApp-Button | `position`, `page` |
 | `phone_click`, `email_click` | Klick auf Telefon/E-Mail | `position` |
 | `order_start` | erste Interaktion im Anfrage-Assistenten | `service` |
-| `service_selected` | Leistung gewählt (Formular, Deeplink, Preisrechner) | `service`, `position` |
+| `service_selected` | Leistung gewählt (Formular, Deeplink, Preisrechner, Kennzeichen-Auswahl der Startseite `hero_schild`) | `service`, `position` |
 | `order_step` | nächster Schritt im Assistenten | `step`, `service` |
 | `order_abandon` | Seite verlassen, nachdem der Assistent begonnen wurde | `step` |
 | `order_submitted` | Anfrage erfolgreich übermittelt | `service`, `method` |

@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react";
 import { site, whatsAppLink } from "@/lib/site";
 import WhatsAppIcon from "./WhatsAppIcon";
 import TrackedLink from "./TrackedLink";
@@ -14,8 +13,9 @@ interface Props {
 }
 
 /**
- * Abschluss-CTA am Seitenende – auf der Startseite und allen Unterseiten
- * derselbe Baustein, nur der Text lässt sich anpassen.
+ * Abschluss am Seitenende – auf der Startseite und allen Unterseiten derselbe
+ * Baustein, nur der Text lässt sich anpassen. Steht in der Tafel (Umriss und
+ * blaues Band wie im Logo), weil hier der Auftrag beginnt.
  */
 export default function CTASection({
   title = "Bereit für Ihre Zulassung? Wir übernehmen den Rest.",
@@ -26,37 +26,39 @@ export default function CTASection({
   whatsAppText = "Hallo KFZ-Zulassungsprofis, ich habe eine Frage zur Kfz-Zulassung.",
 }: Props) {
   return (
-    <section className="bg-white px-4 pb-16 pt-4 sm:px-6 sm:pb-24" aria-labelledby="cta-title">
-      <div className="bg-navy-pattern mx-auto max-w-[77rem] rounded-[24px] px-6 py-12 text-center text-white sm:px-12 sm:py-16">
-        <h2
-          id="cta-title"
-          className="mx-auto max-w-3xl font-display text-[1.75rem] font-extrabold leading-tight sm:text-4xl"
-        >
-          {title}
-        </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-white/80">{text}</p>
-        <div className="mx-auto mt-8 flex max-w-md flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center">
-          <TrackedLink
-            href={primaryHref}
-            event="cta_click"
-            props={{ position: "cta_abschnitt" }}
-            className="btn btn-primary btn-lg"
-          >
-            {primaryLabel}
-            <ArrowRight className="h-5 w-5" aria-hidden />
-          </TrackedLink>
-          <TrackedLink
-            href={whatsAppLink(whatsAppText)}
-            event="whatsapp_click"
-            props={{ position: "cta_abschnitt" }}
-            external
-            className="btn btn-on-dark btn-lg"
-          >
-            <WhatsAppIcon className="h-5 w-5" color="brand" />
-            {secondaryLabel}
-          </TrackedLink>
+    <section className="bg-white pb-14 pt-4 sm:pb-20 lg:pb-24" aria-labelledby="cta-title">
+      <div className="container-page">
+        <div className="tafel tafel-breit">
+          <div className="grid gap-x-12 gap-y-7 px-5 py-7 sm:px-9 sm:py-10 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center lg:px-11 lg:py-12">
+            <div>
+              <h2 id="cta-title" className="h-abschnitt max-w-[22em] text-navy">
+                {title}
+              </h2>
+              <p className="mt-3.5 max-w-[40em] text-lg leading-relaxed text-ink-600">{text}</p>
+              <p className="mt-3 text-[0.9375rem] text-ink-600">Servicezeiten: {site.contact.hours}</p>
+            </div>
+            <div className="flex flex-col gap-3 lg:w-[22rem]">
+              <TrackedLink
+                href={primaryHref}
+                event="cta_click"
+                props={{ position: "cta_abschnitt" }}
+                className="btn btn-primary btn-lg"
+              >
+                {primaryLabel}
+              </TrackedLink>
+              <TrackedLink
+                href={whatsAppLink(whatsAppText)}
+                event="whatsapp_click"
+                props={{ position: "cta_abschnitt" }}
+                external
+                className="btn btn-secondary btn-lg"
+              >
+                <WhatsAppIcon className="h-5 w-5" color="brand" />
+                {secondaryLabel}
+              </TrackedLink>
+            </div>
+          </div>
         </div>
-        <p className="mt-6 text-sm text-white/65">Servicezeiten: {site.contact.hours}</p>
       </div>
     </section>
   );

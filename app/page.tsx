@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Hero from "@/components/home/Hero";
 import TrustBar from "@/components/home/TrustBar";
-import ServiceCards from "@/components/home/ServiceCards";
 import ProcessSection from "@/components/home/ProcessSection";
 import EidSection from "@/components/home/EidSection";
 import PricingSection from "@/components/home/PricingSection";
@@ -32,15 +31,15 @@ export const metadata: Metadata = {
  * Startseite. Texte und Reihenfolge stehen in lib/homepage.ts, Preise in
  * config/preise.json, Zeiten in config/betrieb.json.
  *
- * Reihenfolge = Entscheidungsweg: Nutzen und Leistungswahl → Vertrauen →
- * Leistungen → Ablauf → „ohne eID“ → Preise → Datensicherheit → Fragen → Abschluss.
+ * Reihenfolge = Entscheidungsweg: Nutzen und Kennzeichen-Auswahl → Vertrauen →
+ * Ablauf → „ohne eID“ → Preistafel und was im Preis steckt → Datensicherheit →
+ * Fragen → Abschluss.
  */
 export default function HomePage() {
   return (
     <>
       <Hero />
       <TrustBar />
-      <ServiceCards />
       <ProcessSection />
       <EidSection />
       <PricingSection />

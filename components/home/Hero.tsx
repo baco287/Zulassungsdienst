@@ -1,77 +1,104 @@
-import { ArrowRight, Check, CirclePlay, MapPin, ShieldCheck, Zap } from "lucide-react";
 import TrackedLink from "@/components/TrackedLink";
-import IconTile from "@/components/ui/IconTile";
-import ServiceSelector from "@/components/home/ServiceSelector";
-import { hero } from "@/lib/homepage";
+import TrackView from "@/components/TrackView";
+import Haken from "@/components/ui/Haken";
+import SchildAuswahl, { type SchildOption } from "@/components/home/SchildAuswahl";
+import { dauerKurz } from "@/lib/betrieb";
+import { getCatalogEntry } from "@/lib/catalog";
+import { hero, vorgaenge } from "@/lib/homepage";
+import { euro } from "@/lib/pricing";
 
-const faktenIcons = [MapPin, Zap, ShieldCheck] as const;
+/** Glatte Beträge ohne „,00“ anzeigen (z. B. „… €“ statt „…,00 €“) */
+const kurz = (preisText: string) => preisText.replace(/,00(?=\s*€)/, "");
 
-/** Hero der Startseite: links Nutzenversprechen, rechts die Leistungsauswahl. */
+/** „a, b und c“ */
+const aufzaehlung = (teile: string[]) =>
+  teile.length < 2 ? teile.join("") : `${teile.slice(0, -1).join(", ")} und ${teile[teile.length - 1]}`;
+
+const options: SchildOption[] = vorgaenge.flatMap((v) => {
+  const e = getCatalogEntry(v.slug);
+  if (!e) return [];
+  const teile = [
+    e.amtlicheGebuehren.enthalten ? "amtlicher Gebühren" : null,
+    e.versand.enthalten ? "Versand" : null,
+    "19 % MwSt.",
+  ].filter((t): t is string => t !== null);
+  return [
+    {
+      slug: v.slug,
+      label: v.label,
+      preis: kurz(e.preisText),
+      enthalten: `Festpreis inklusive ${aufzaehlung(teile)}`,
+      dauer: dauerKurz(v.slug),
+      zusatz:
+        e.kennzeichen.moeglich && e.kennzeichen.preis !== null
+          ? `Kennzeichenschilder auf Wunsch zzgl. ${euro(e.kennzeichen.preis)} pro Paar.`
+          : null,
+      href: e.ctaHref,
+    },
+  ];
+});
+
+/**
+ * Kopf der Startseite (Designsystem v6 „Das Schild“): links Überschrift, Einleitung,
+ * Schaltflächen und drei Zusagen auf der grauen Fläche, rechts das große Kennzeichen
+ * mit der Leistungsauswahl. Die vollständige Preistafel steht im Preisabschnitt.
+ */
 export default function Hero() {
   return (
-    <section className="bg-home relative overflow-hidden" aria-labelledby="hero-title">
-      <div className="container-page grid items-center gap-10 pb-14 pt-10 sm:pt-14 lg:grid-cols-2 lg:gap-10 lg:pb-20 lg:pt-16 xl:grid-cols-[minmax(0,0.88fr)_minmax(0,1.12fr)] xl:gap-14">
-        <div>
-          <p className="inline-flex items-center gap-2 rounded-full bg-accent-100 px-3.5 py-1.5 text-sm font-semibold text-accent-700">
-            <Check className="h-4 w-4" strokeWidth={3} aria-hidden />
-            {hero.badge}
-          </p>
-
-          <h1
-            id="hero-title"
-            className="mt-5 text-balance font-display text-[2.125rem] font-extrabold leading-[1.1] text-navy sm:text-[2.75rem] sm:leading-[1.08] lg:text-[2.5rem] xl:text-5xl"
-          >
-            {hero.title}
-          </h1>
-
-          <p className="mt-5 max-w-xl text-lg leading-relaxed text-ink-700 sm:text-xl">{hero.lead}</p>
-
-          <ul className="mt-7 grid gap-3.5">
-            {hero.vorteile.map(({ icon, title, text }) => (
-              <li key={title} className="flex items-center gap-3.5">
-                <IconTile icon={icon} tone="teal" size="sm" />
-                <span className="min-w-0 leading-snug">
-                  <span className="font-display text-base font-bold text-navy">{title}</span>{" "}
-                  <span className="text-[15px] text-ink-600">{text}</span>
-                </span>
-              </li>
-            ))}
-          </ul>
-
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <TrackedLink
-              href={hero.primary.href}
-              event="cta_click"
-              props={{ position: "hero" }}
-              className="btn btn-primary btn-lg whitespace-nowrap"
-            >
-              {hero.primary.label}
-              <ArrowRight className="h-5 w-5" aria-hidden />
-            </TrackedLink>
-            <a href={hero.secondary.href} className="btn btn-secondary btn-lg whitespace-nowrap px-5">
-              <CirclePlay className="h-5 w-5" aria-hidden />
-              {hero.secondary.label}
-            </a>
+    <section className="bg-canvas" aria-labelledby="hero-title">
+      {/* Am Handy: Überschrift → Kennzeichen → Schaltflächen und Zusagen. Der linke
+          Block ist dort „contents“; seine zwei Teile ordnen sich per order ins Raster.
+          Ab 1100 px: links der Text als ein Block, rechts das Kennzeichen. */}
+      <div className="container-page grid gap-y-7 pb-9 pt-7 sm:gap-y-9 sm:pb-12 sm:pt-10 min-[1100px]:grid-cols-[minmax(0,5.2fr)_minmax(0,6.8fr)] min-[1100px]:items-center min-[1100px]:gap-x-14 min-[1100px]:pb-[4.5rem] min-[1100px]:pt-16">
+        <div className="contents min-[1100px]:block min-[1100px]:max-w-[40rem]">
+          <div className="max-w-[40rem]">
+            <h1 id="hero-title" className="h-kopf">
+              {hero.title}
+            </h1>
+            <p className="mt-4 max-w-[31em] text-[1.09375rem] leading-normal text-ink-600 sm:mt-5 sm:text-[1.21875rem]">
+              {hero.lead}
+            </p>
           </div>
 
-          <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-ink-600">
-            {hero.fakten.map((text, i) => {
-              const Icon = faktenIcons[i] ?? ShieldCheck;
-              return (
-                <li key={text} className="flex items-center gap-1.5">
-                  <Icon className="h-4 w-4 shrink-0 text-navy" aria-hidden />
-                  {text}
+          <div className="order-3 max-w-[40rem] min-[1100px]:mt-7">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <TrackedLink
+                href={hero.primary.href}
+                event="cta_click"
+                props={{ position: "hero" }}
+                className="btn btn-primary whitespace-nowrap"
+              >
+                {hero.primary.label}
+              </TrackedLink>
+              <a href={hero.secondary.href} className="btn btn-secondary whitespace-nowrap">
+                {hero.secondary.label}
+              </a>
+            </div>
+            <ul className="mt-7 grid gap-2.5 text-[1rem] leading-snug sm:text-[1.03125rem]">
+              {hero.vorteile.map((v) => (
+                <li key={v.title} className="flex items-baseline gap-3">
+                  <Haken className="h-[0.8125rem] w-[1.0625rem] translate-y-px" />
+                  <span>
+                    <strong className="font-semibold">{v.title}</strong>{" "}
+                    {/* „E-Mail“ nicht am Bindestrich umbrechen */}
+                    <span className="text-ink-600">– {v.text.replace("E-Mail", "E\u2011Mail")}</span>
+                  </span>
                 </li>
-              );
-            })}
-          </ul>
-
-          <p className="mt-5 max-w-xl border-l-2 border-accent-500 pl-3 text-sm leading-relaxed text-ink-600">
-            {hero.hinweis}
-          </p>
+              ))}
+            </ul>
+            <p className="mt-6 max-w-[36em] text-[0.875rem] leading-normal text-ink-600">{hero.hinweis}</p>
+          </div>
         </div>
 
-        <ServiceSelector texte={hero.auswahl} />
+        <TrackView
+          event="price_box_view"
+          props={{ position: "hero_schild" }}
+          className="order-2 w-full max-w-[46rem] min-[1100px]:max-w-none"
+        >
+          <section id="leistungen" aria-label={hero.auswahl.title} className="scroll-mt-24">
+            <SchildAuswahl options={options} title="Leistung wählen" alle={hero.auswahl.alle} />
+          </section>
+        </TrackView>
       </div>
     </section>
   );

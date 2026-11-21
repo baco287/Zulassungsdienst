@@ -47,7 +47,7 @@ export default function BehoerdengangRechner() {
   const labelClass = "block font-display text-sm font-semibold text-ink-800";
 
   return (
-    <div className="rounded-2xl border border-ink-200 bg-white p-6 shadow-card sm:p-8" onChangeCapture={markUsed} onClickCapture={markUsed}>
+    <div className="rounded-2xl border border-ink-200 bg-white p-6 sm:p-8" onChangeCapture={markUsed} onClickCapture={markUsed}>
       <div className="grid gap-5 sm:grid-cols-3">
         <div>
           <label htmlFor="hours" className={labelClass}>
@@ -134,11 +134,11 @@ export default function BehoerdengangRechner() {
             </dl>
           </div>
           <div className="rounded-xl bg-brand-50 p-5">
-            <p className="flex items-center gap-2 font-display text-sm font-semibold text-brand-700">
+            <p className="flex items-center gap-2 font-display text-sm font-semibold text-ink-700">
               <Calculator className="h-4 w-4" aria-hidden />
               Über KFZ-Zulassungsprofis
             </p>
-            <p className="mt-1 font-display text-3xl font-bold text-brand-700">
+            <p className="mt-1 font-display text-3xl font-bold text-navy">
               {euro(OUR_PRICE + OUR_PLATES)}
             </p>
             <p className="mt-3 text-sm leading-relaxed text-ink-700">
@@ -148,7 +148,7 @@ export default function BehoerdengangRechner() {
             </p>
             <p className="mt-3 font-display text-sm font-bold">
               {diff >= 0 ? (
-                <span className="text-emerald-700">
+                <span className="text-accent-700">
                   Sie sparen rechnerisch {euro(diff)} – und einen halben Tag.
                 </span>
               ) : (
