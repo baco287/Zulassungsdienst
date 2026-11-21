@@ -98,6 +98,18 @@ jobs:
           # Vorschau: Seiten tragen noindex, das Formular funktioniert trotzdem.
           NEXT_PUBLIC_NOINDEX: ${{ steps.mig.outputs.stufe == 'live' && '0' || '1' }}
 
+      # Zugangsdaten für den Mailversand des Formulars (public/api/auftrag.php).
+      # Nur in diesem Job, nie im GitHub-Pages-Build – sonst wären sie öffentlich.
+      # Fehlen die Secrets, meldet das Formular ehrlich „nicht zugestellt“.
+      - name: Mailzugang für das Formular ablegen
+        if: env.HAS_FTP != ''
+        env:
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+        run: node scripts/mail-zugang.mjs out/api/mail-zugang.php
+
       # Weiterleitungen der alten Domain müssen zu den Seiten im Build passen.
       - name: Weiterleitungsregeln prüfen
         if: env.HAS_FTP != ''
@@ -198,12 +210,13 @@ jobs:
           FTP_SERVER: ${{ secrets.FTP_SERVER }}
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
         run: |
           [ -f /tmp/lftp.log ] || echo 'Kein lftp.log – Fehler vor dem Deploy (Build oder Preisprüfung), siehe Actions-Log.' > /tmp/lftp.log
           python3 - <<'PYEOF'
           import os
           text = open('/tmp/lftp.log', encoding='utf-8', errors='replace').read()
-          for key in ('FTP_PASSWORD', 'FTP_USERNAME', 'FTP_SERVER'):
+          for key in ('FTP_PASSWORD', 'FTP_USERNAME', 'FTP_SERVER', 'SMTP_PASSWORD'):
               val = os.environ.get(key, '')
               if val:
                   text = text.replace(val, f'<{key}>')

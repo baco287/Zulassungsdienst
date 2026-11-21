@@ -5,6 +5,21 @@
  * Nimmt Anfragen aus dem Web-Formular entgegen und stellt sie als E-Mail
  * mit Anhängen an das Postfach in RECIPIENT zu.
  *
+ * VERSAND (seit 20.11.2026): angemeldet per SMTP über den Mailserver von all-inkl,
+ * nicht mehr über PHP mail(). Ein Test hatte gezeigt, dass mail() zwar „true“
+ * meldete, die Nachricht aber nie im Postfach ankam – Kunden sahen „eingegangen“,
+ * die Anfrage ging verloren. Jetzt gilt eine Anfrage nur als zugestellt, wenn der
+ * Mailserver sie nach der Anmeldung mit 250 angenommen hat.
+ *
+ * Die Zugangsdaten stehen NICHT im Repository. Der Deploy schreibt sie aus den
+ * GitHub-Secrets SMTP_USER und SMTP_PASSWORD in api/mail-zugang.php (siehe
+ * scripts/mail-zugang.mjs). Fehlt die Datei, meldet der Endpoint ehrlich einen
+ * Fehler, und das Formular bietet WhatsApp und E-Mail als Ausweg an.
+ *
+ * ZUSTELLPROTOKOLL: je Anfrage eine Zeile (Zeit, Referenz, Art, Anzahl Dateien,
+ * Antwort des Mailservers) außerhalb des Web-Ordners in formular-protokoll/ –
+ * ohne Namen, Kontaktdaten oder Inhalte.
+ *
  * DATENSCHUTZ: Hochgeladene Dateien werden NICHT auf dem Webspace gespeichert.
  * Sie gehen direkt in die Anhänge der E-Mail; PHP räumt die Temp-Dateien am
  * Ende des Requests selbst auf. Damit entsteht kein Dokumentenarchiv auf dem
@@ -25,8 +40,15 @@ declare(strict_types=1);
  * Umstellung: beide Konstanten hier und site.contact.email in lib/site.ts ändern.
  */
 const RECIPIENT       = 'info@deutschezulassung.de';
-/** Absender muss auf einer eigenen Domain liegen, sonst greifen SPF/DMARC nicht. */
+/**
+ * Absender, falls der SMTP-Benutzername keine E-Mail-Adresse ist. Ist er eine,
+ * wird er selbst Absender – all-inkl nimmt nach der Anmeldung nur eigene Adressen an.
+ */
 const SENDER          = 'no-reply@deutschezulassung.de';
+/** Mailserver des all-inkl-Vertrags (MX beider Domains); in mail-zugang.php überschreibbar. */
+const SMTP_HOST       = 'w0216162.kasserver.com';
+const SMTP_PORT       = 587;          // STARTTLS; 465 = TLS von Anfang an
+const SMTP_TIMEOUT    = 20;           // Sekunden je Schritt
 const SENDER_NAME     = 'KFZ-Zulassungsprofis Website';
 /** Name der Website in Betreff und Text der Benachrichtigung. */
 const SITE_DOMAIN     = 'kfz-zulassungsprofis.de';
@@ -83,12 +105,25 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'OPTIONS') {
  * Bewusst ohne Serverpfade, Modulliste oder Konfigurationsdetails.
  */
 if (($_SERVER['REQUEST_METHOD'] ?? '') === 'GET' && isset($_GET['check'])) {
+    // /api/auftrag.php?check=smtp – meldet sich am Mailserver an und wieder ab,
+    // ohne etwas zu senden. Gedrosselt wie das Formular.
+    if ($_GET['check'] === 'smtp') {
+        enforceRateLimit();
+        $zugang = mailZugang();
+        if ($zugang === null) {
+            respond(['ok' => false, 'smtp' => 'Kein Mailzugang hinterlegt (GitHub-Secrets SMTP_USER/SMTP_PASSWORD).']);
+        }
+        $antwort = '';
+        $ok = smtpSitzung($zugang, null, $antwort);
+        respond(['ok' => $ok, 'smtp' => $ok ? 'Anmeldung am Mailserver erfolgreich.' : $antwort]);
+    }
     $post   = toBytes((string) ini_get('post_max_size'));
     $upload = toBytes((string) ini_get('upload_max_filesize'));
     respond([
         'ok'          => true,
         'php'         => PHP_MAJOR_VERSION . '.' . PHP_MINOR_VERSION,
-        'mail'        => function_exists('mail'),
+        'mailZugang'  => mailZugang() !== null,
+        'tls'         => extension_loaded('openssl'),
         'fileinfo'    => class_exists('finfo'),
         'mbstring'    => function_exists('mb_substr'),
         'postMax'     => ini_get('post_max_size'),
@@ -176,13 +211,16 @@ $subject = $kind === 'unterlagen'
     ? 'Unterlagen ' . $ref . ' - ' . $f['name']
     : 'Neue Auftragsanfrage: ' . ($f['service'] !== '' ? $f['service'] . ' ' : '') . $ref . ' - ' . $f['name'];
 
+$antwort = '';
 $sent = sendMail(
     $subject,
     buildBody($kind, $f, $message, $files, $ref),
     $files,
     $hasEmail ? $f['email'] : '',
-    $f['name']
+    $f['name'],
+    $antwort
 );
+protokoll($ref, $kind, count($files), ($sent ? 'zugestellt: ' : 'FEHLER: ') . $antwort);
 
 if (!$sent) {
     fail(500, 'Ihre Anfrage konnte gerade nicht zugestellt werden. Bitte schreiben Sie uns direkt per WhatsApp oder an ' . RECIPIENT . '.');
@@ -410,13 +448,27 @@ function buildBody(string $kind, array $f, string $message, array $files, string
     return implode("\r\n", $lines);
 }
 
-/** Stellt die Nachricht als multipart/mixed zu (Text + Anhänge). */
-function sendMail(string $subject, string $body, array $files, string $replyTo, string $replyName): bool
+/**
+ * Baut die Nachricht als multipart/mixed (Text + Anhänge) und stellt sie
+ * angemeldet per SMTP zu. $antwort enthält die letzte Antwort des Mailservers
+ * bzw. den Fehlergrund – für das Zustellprotokoll, nie für den Kunden.
+ */
+function sendMail(string $subject, string $body, array $files, string $replyTo, string $replyName, string &$antwort): bool
 {
+    $zugang = mailZugang();
+    if ($zugang === null) {
+        $antwort = 'kein Mailzugang hinterlegt';
+        return false;
+    }
+    $absender = $zugang['absender'];
     $boundary = 'kzp' . bin2hex(random_bytes(16));
 
     $headers = [
-        'From: ' . mimeWord(SENDER_NAME) . ' <' . SENDER . '>',
+        'Date: ' . date('r'),
+        'From: ' . mimeWord(SENDER_NAME) . ' <' . $absender . '>',
+        'To: <' . RECIPIENT . '>',
+        'Subject: ' . mimeWord($subject),
+        'Message-ID: <' . bin2hex(random_bytes(12)) . '@' . SITE_DOMAIN . '>',
         'MIME-Version: 1.0',
         'Content-Type: multipart/mixed; boundary="' . $boundary . '"',
         'X-Mailer: kfz-zulassungsprofis-form',
@@ -444,13 +496,152 @@ function sendMail(string $subject, string $body, array $files, string $replyTo, 
     $parts[] = '--' . $boundary . '--';
     $parts[] = '';
 
-    return mail(
-        RECIPIENT,
-        mimeWord($subject),
-        implode("\r\n", $parts),
-        implode("\r\n", $headers),
-        '-f' . SENDER
+    $nachricht = implode("\r\n", $headers) . "\r\n\r\n" . implode("\r\n", $parts);
+
+    return smtpSitzung($zugang, ['von' => $absender, 'an' => RECIPIENT, 'daten' => $nachricht], $antwort);
+}
+
+/**
+ * Zugangsdaten aus api/mail-zugang.php (vom Deploy geschrieben, nicht im Repository).
+ * Rückgabe null, wenn die Datei fehlt oder unvollständig ist.
+ *
+ * @return array{host:string,port:int,user:string,pass:string,absender:string}|null
+ */
+function mailZugang(): ?array
+{
+    static $cache = false;
+    if ($cache !== false) {
+        return $cache;
+    }
+    $pfad = __DIR__ . '/mail-zugang.php';
+    $z = is_file($pfad) ? include $pfad : null;
+    if (!is_array($z) || empty($z['user']) || empty($z['pass'])) {
+        return $cache = null;
+    }
+    $user = (string) $z['user'];
+    return $cache = [
+        'host'     => (string) ($z['host'] ?? SMTP_HOST) ?: SMTP_HOST,
+        'port'     => (int) ($z['port'] ?? SMTP_PORT) ?: SMTP_PORT,
+        'user'     => $user,
+        'pass'     => (string) $z['pass'],
+        'absender' => filter_var($user, FILTER_VALIDATE_EMAIL) !== false ? $user : SENDER,
+    ];
+}
+
+/**
+ * Eine SMTP-Sitzung: verbinden, verschlüsseln, anmelden und – wenn $post
+ * übergeben wird – genau eine Nachricht einliefern. Ohne $post nur Anmeldetest.
+ * true nur, wenn jeder Schritt mit dem erwarteten Code beantwortet wurde.
+ *
+ * @param array{host:string,port:int,user:string,pass:string,absender:string} $z
+ * @param array{von:string,an:string,daten:string}|null $post
+ */
+function smtpSitzung(array $z, ?array $post, string &$antwort): bool
+{
+    $tlsDirekt = $z['port'] === 465;
+    $kontext = stream_context_create(['ssl' => [
+        'peer_name'         => $z['host'],
+        'verify_peer'       => true,
+        'verify_peer_name'  => true,
+        'SNI_enabled'       => true,
+    ]]);
+    $errno = 0;
+    $errstr = '';
+    $s = @stream_socket_client(
+        ($tlsDirekt ? 'ssl://' : 'tcp://') . $z['host'] . ':' . $z['port'],
+        $errno,
+        $errstr,
+        SMTP_TIMEOUT,
+        STREAM_CLIENT_CONNECT,
+        $kontext
     );
+    if ($s === false) {
+        $antwort = 'Verbindung fehlgeschlagen: ' . $errstr;
+        return false;
+    }
+    stream_set_timeout($s, SMTP_TIMEOUT);
+
+    $schritt = static function (?string $befehl, array $erwartet, string $name) use ($s, &$antwort): bool {
+        if ($befehl !== null && fwrite($s, $befehl . "\r\n") === false) {
+            $antwort = $name . ': Schreiben fehlgeschlagen';
+            return false;
+        }
+        $text = '';
+        while (($zeile = fgets($s, 2048)) !== false) {
+            $text .= $zeile;
+            // Mehrzeilige Antworten: „250-…“ geht weiter, „250 …“ ist die letzte Zeile.
+            if (strlen($zeile) < 4 || $zeile[3] !== '-') {
+                break;
+            }
+        }
+        $code = (int) substr($text, 0, 3);
+        $antwort = $name . ': ' . trim(preg_replace('/\s+/', ' ', $text) ?? '');
+        return in_array($code, $erwartet, true);
+    };
+
+    $ok = $schritt(null, [220], 'Begrüßung')
+        && $schritt('EHLO ' . SITE_DOMAIN, [250], 'EHLO');
+    if ($ok && !$tlsDirekt) {
+        $ok = $schritt('STARTTLS', [220], 'STARTTLS');
+        if ($ok && @stream_socket_enable_crypto($s, true, STREAM_CRYPTO_METHOD_TLSv1_2_CLIENT | STREAM_CRYPTO_METHOD_TLSv1_3_CLIENT) !== true) {
+            $ok = false;
+            $antwort = 'TLS-Aufbau fehlgeschlagen (Zertifikat oder Verschlüsselung)';
+        }
+        $ok = $ok && $schritt('EHLO ' . SITE_DOMAIN, [250], 'EHLO nach STARTTLS');
+    }
+    $ok = $ok
+        && $schritt('AUTH LOGIN', [334], 'AUTH')
+        && $schritt(base64_encode($z['user']), [334], 'AUTH Benutzer')
+        && $schritt(base64_encode($z['pass']), [235], 'AUTH Passwort');
+
+    if ($ok && $post !== null) {
+        // Punkt am Zeilenanfang verdoppeln (RFC 5321, „dot-stuffing“), Zeilenenden als CRLF.
+        $daten = preg_replace('/(?<=\r\n)\./', '..', "\r\n" . str_replace(["\r\n", "\n"], ["\n", "\r\n"], $post['daten']));
+        $daten = substr((string) $daten, 2);
+        if (substr($daten, -2) !== "\r\n") {
+            $daten .= "\r\n";
+        }
+        $ok = $schritt('MAIL FROM:<' . $post['von'] . '>', [250], 'MAIL FROM')
+            && $schritt('RCPT TO:<' . $post['an'] . '>', [250, 251], 'RCPT TO')
+            && $schritt('DATA', [354], 'DATA');
+        if ($ok) {
+            foreach (str_split($daten, 65536) as $stueck) {
+                if (fwrite($s, $stueck) === false) {
+                    $ok = false;
+                    $antwort = 'DATA: Schreiben fehlgeschlagen';
+                    break;
+                }
+            }
+            $ok = $ok && $schritt('.', [250], 'Einlieferung');
+        }
+    }
+
+    $letzte = $antwort;
+    $schritt('QUIT', [221], 'QUIT');
+    $antwort = $letzte;
+    fclose($s);
+    return $ok;
+}
+
+/**
+ * Zustellprotokoll: eine Zeile je Anfrage, außerhalb des Web-Ordners
+ * (Kontowurzel/formular-protokoll/), ohne personenbezogene Daten.
+ * Fällt auf das Temp-Verzeichnis zurück, wenn dort nicht geschrieben werden kann.
+ */
+function protokoll(string $ref, string $kind, int $dateien, string $ergebnis): void
+{
+    $zeile = date('c') . "\t" . $ref . "\t" . $kind . "\t" . $dateien . " Datei(en)\t"
+        . mb_substr((string) preg_replace('/[\r\n\t]+/', ' ', $ergebnis), 0, 300) . "\n";
+    $verzeichnisse = [dirname(__DIR__, 2) . '/formular-protokoll', sys_get_temp_dir()];
+    foreach ($verzeichnisse as $dir) {
+        if (!is_dir($dir)) {
+            @mkdir($dir, 0700, true);
+        }
+        if (is_dir($dir) && is_writable($dir)
+            && @file_put_contents($dir . '/zustellung-' . date('Y-m') . '.log', $zeile, FILE_APPEND | LOCK_EX) !== false) {
+            return;
+        }
+    }
 }
 
 /** Rechnet ini-Angaben wie "8M" oder "512K" in Bytes um. */

@@ -10,6 +10,9 @@
 *.pem
 npm-debug.log*
 .env*
+# Zugangsdaten für den Mailversand, vom Deploy erzeugt – nie einchecken
+public/api/mail-zugang.php
+mail-zugang.php
 
 # typescript
 *.tsbuildinfo

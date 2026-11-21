@@ -172,8 +172,18 @@ export async function submitOrder({
     const response = await fetch(ENDPOINT, { method: "POST", body });
     const data = (await response.json()) as SubmitResult;
 
-    if (response.ok && data.ok) {
+    // „Gesendet“ nur bei ausdrücklicher Bestätigung: HTTP 2xx UND ok === true UND eine
+    // Referenznummer. auftrag.php meldet ok erst, nachdem der Mailserver die Nachricht angenommen
+    // hat. HTTP 200 allein (z. B. Fehlerseite des Hosters) zählt nicht.
+    if (response.ok && data.ok === true && typeof data.reference === "string" && data.reference !== "") {
       return { ok: true, reference: data.reference };
+    }
+    if (response.ok) {
+      return {
+        ok: false,
+        fallback: true,
+        error: "Der Server hat den Eingang nicht bestätigt.",
+      };
     }
     // Feldfehler (422/413/415) sind korrigierbar – kein Fallback anbieten,
     // sonst umgeht der Kunde die Prüfung statt die Eingabe zu berichtigen.
