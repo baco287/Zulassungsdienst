@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Clock, FileDown, Lightbulb, MapPin } from "lucide-react";
+import { Clock, FileDown, Lightbulb, MapPin } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTASection from "@/components/CTASection";
 import { anleitungSteps } from "@/lib/anleitung";
 import { site } from "@/lib/site";
 import { ZEIT } from "@/lib/betrieb";
+import Haken from "@/components/ui/Haken";
 
 export const metadata: Metadata = {
   title: "Auto online zulassen – Anleitung mit Bildern",
@@ -44,17 +45,14 @@ export default function AnleitungPage() {
   return (
     <>
       {/* Kopf – im Druck als Titelblock sichtbar */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-14 sm:py-16 print:bg-none print:py-6">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <section className="print:py-6 seitenkopf">
+        <div className="container-page">
           <div className="no-print">
             <Breadcrumbs items={[{ name: "Schritt-für-Schritt-Anleitung" }]} />
           </div>
           <div className="mt-8 grid items-center gap-10 lg:grid-cols-[1fr_20rem] print:mt-0 print:block">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-wider text-brand-700">
-                Bilderanleitung
-              </p>
-              <h1 className="mt-2 font-display text-4xl font-bold leading-tight text-ink-900 sm:text-5xl print:text-3xl">
+              <h1 className="print:text-3xl h-seite text-navy">
                 Auto online zulassen – so geht’s Schritt für Schritt
               </h1>
               <p className="mt-4 max-w-2xl text-lg text-ink-600 print:text-base">
@@ -68,7 +66,7 @@ export default function AnleitungPage() {
                   Ihr Aufwand online: {ZEIT.auftrag}
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <CheckCircle2 className="h-4 w-4 text-brand-600" aria-hidden />
+                  <Haken className="h-[0.6875rem] w-[0.9375rem]" />
                   Zulassung in {ZEIT.zulassungDativ}
                 </span>
                 <span className="flex items-center gap-1.5">
@@ -86,15 +84,14 @@ export default function AnleitungPage() {
                 </a>
                 <Link
                   href="/auftrag/"
-                  className="inline-flex items-center gap-2 rounded-xl bg-brand-600 px-5 py-3 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
+                  className="inline-flex items-center gap-2 rounded-control bg-brand-600 px-5 py-3 font-display font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
                 >
                   Auftrag starten
-                  <ArrowRight className="h-4 w-4" aria-hidden />
                 </Link>
               </div>
             </div>
-            <ol className="rounded-2xl border border-ink-200 bg-white p-5 text-sm shadow-card print:hidden">
-              <li className="mb-2 font-display text-xs font-bold uppercase tracking-wider text-ink-500">
+            <ol className="rounded-2xl border border-ink-200 bg-white p-5 text-sm print:hidden">
+              <li className="mb-2 font-display text-sm font-bold text-ink-600">
                 Die 8 Schritte
               </li>
               {anleitungSteps.map((s, i) => (
@@ -112,18 +109,18 @@ export default function AnleitungPage() {
 
       {/* Schritte */}
       <section className="py-12 print:py-4">
-        <div className="mx-auto max-w-6xl space-y-10 px-4 sm:px-6 print:space-y-6">
+        <div className="container-page space-y-10 print:space-y-6">
           {anleitungSteps.map((step, i) => (
             <article
               key={step.title}
               id={`schritt-${i + 1}`}
-              className="grid scroll-mt-24 gap-6 rounded-3xl border border-ink-200 bg-white p-5 shadow-card sm:p-7 items-center lg:grid-cols-2 print:break-inside-avoid print:grid-cols-2 print:gap-5 print:rounded-xl print:p-4 print:shadow-none"
+              className="grid scroll-mt-24 gap-6 rounded-3xl border border-ink-200 bg-white p-5 sm:p-7 items-center lg:grid-cols-2 print:break-inside-avoid print:grid-cols-2 print:gap-5 print:rounded-xl print:p-4 print:shadow-none"
             >
               <div className={i % 2 === 1 ? "lg:order-2 print:order-none" : ""}>
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand-600 font-display text-base font-bold text-white">
+                <span className="inline-flex h-10 w-10 items-center justify-center font-display text-lg font-bold text-brand-600">
                   {i + 1}
                 </span>
-                <p className="mt-3 text-xs font-semibold uppercase tracking-wider text-brand-700">
+                <p className="mt-3 text-sm font-semibold text-ink-600">
                   {step.meta}
                 </p>
                 <h2 className="mt-1 font-display text-2xl font-bold text-ink-900 print:text-xl">
@@ -134,7 +131,7 @@ export default function AnleitungPage() {
                   <ul className="mt-3 space-y-2">
                     {step.bullets.map((b) => (
                       <li key={b} className="flex items-start gap-2.5 text-sm text-ink-700">
-                        <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-brand-600" aria-hidden />
+                        <Haken className="mt-[0.3125rem] h-[0.6875rem] w-[0.9375rem]" />
                         {b}
                       </li>
                     ))}
@@ -175,7 +172,7 @@ export default function AnleitungPage() {
                 "Ihre Ansprechperson bleibt per WhatsApp erreichbar – vor, während und nach dem Vorgang",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2.5 text-sm text-ink-700">
-                  <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-brand-600" aria-hidden />
+                  <Haken className="mt-[0.3125rem] h-[0.6875rem] w-[0.9375rem]" />
                   {item}
                 </li>
               ))}

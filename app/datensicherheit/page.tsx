@@ -53,10 +53,10 @@ const points = [
 export default function DatensicherheitPage() {
   return (
     <>
-      <section className="bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-12 sm:py-14">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6">
+      <section className="seitenkopf">
+        <div className="container-page *:max-w-4xl">
           <Breadcrumbs items={[{ name: "Datensicherheit" }]} />
-          <h1 className="mt-6 font-display text-3xl font-bold text-ink-900 sm:text-4xl">
+          <h1 className="mt-6 h-seite text-navy">
             So schützen wir Ihre Unterlagen
           </h1>
           <p className="mt-4 max-w-3xl text-lg leading-relaxed text-ink-600">
@@ -71,14 +71,11 @@ export default function DatensicherheitPage() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-4xl space-y-12 px-4 py-12 sm:px-6">
+      <div className="container-page *:max-w-4xl space-y-12 py-12">
         <div className="grid gap-5 sm:grid-cols-2">
           {points.map((p, i) => (
             <Reveal key={p.title} delay={i * 0.04}>
-              <div className="h-full rounded-2xl border border-ink-200 bg-white p-6 shadow-card">
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700">
-                  <p.icon className="h-6 w-6" aria-hidden />
-                </span>
+              <div className="h-full border-t-2 border-navy pt-4 pb-2">
                 <h2 className="mt-4 font-display text-lg font-bold text-ink-900">{p.title}</h2>
                 <p className="mt-2 text-sm leading-relaxed text-ink-600">{p.text}</p>
               </div>
@@ -133,7 +130,11 @@ export default function DatensicherheitPage() {
           <a href={`mailto:${site.contact.email}`} className="font-semibold text-brand-700 underline">
             {site.contact.email}
           </a>
-          . Verantwortlich ist die {site.company.legalName}, {site.company.street}, {site.company.zipCity}.
+          . Wer verantwortlich ist, steht in der{" "}
+          <Link href="/datenschutz/" className="font-semibold text-brand-700 underline">
+            Datenschutzerklärung
+          </Link>
+          .
         </p>
       </div>
 

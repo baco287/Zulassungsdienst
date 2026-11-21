@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowRight, CalendarDays } from "lucide-react";
+import { CalendarDays } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTASection from "@/components/CTASection";
 import ContentSections, { SourceList, TableOfContents } from "@/components/ContentSections";
@@ -98,19 +98,19 @@ export default async function GuidePage({
 
   return (
     <>
-      <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-14 sm:py-16">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6">
+      <section className="seitenkopf">
+        <div className="container-page *:max-w-3xl">
           <Breadcrumbs
             items={[{ name: "Ratgeber", href: "/ratgeber/" }, { name: guide.title }]}
           />
-          <h1 className="mt-6 font-display text-3xl font-bold leading-tight text-ink-900 sm:text-4xl">
+          <h1 className="mt-6 h-seite text-navy">
             {guide.title}
           </h1>
           <p className="mt-4 text-lg text-ink-600">{guide.description}</p>
           <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-ink-500">
             <span className="flex items-center gap-2">
               <span
-                className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-600 font-display text-xs font-bold text-white"
+                className="flex h-8 w-8 items-center justify-center font-display text-lg font-bold text-brand-600"
                 aria-hidden
               >
                 {site.company.responsible
@@ -134,7 +134,7 @@ export default async function GuidePage({
       </section>
 
       <article className="py-14">
-        <div className="mx-auto max-w-3xl space-y-10 px-4 sm:px-6">
+        <div className="container-page *:max-w-3xl space-y-10">
           <TableOfContents sections={guide.sections} />
 
           <ContentSections sections={guide.sections} />
@@ -180,10 +180,9 @@ export default async function GuidePage({
                     <li key={service.slug}>
                       <Link
                         href={`/leistungen/${service.slug}/`}
-                        className="flex items-center gap-2 rounded-xl bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
+                        className="flex items-center gap-2 rounded-control bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
                       >
                         {service.shortName ?? service.name}
-                        <ArrowRight className="h-3.5 w-3.5" aria-hidden />
                       </Link>
                     </li>
                   ))}
@@ -203,14 +202,13 @@ export default async function GuidePage({
                     <li key={rel.slug}>
                       <Link
                         href={`/ratgeber/${rel.slug}/`}
-                        className="group flex h-full flex-col rounded-xl border border-ink-200 bg-white p-4 transition-colors duration-200 hover:border-brand-300 hover:bg-brand-50/50"
+                        className="group flex h-full flex-col border-t-2 border-navy pt-4 pb-2"
                       >
                         <span className="font-display font-semibold text-ink-900 group-hover:text-brand-800">
                           {rel.title}
                         </span>
                         <span className="mt-2 flex items-center gap-1 text-sm font-medium text-brand-700">
                           Artikel lesen
-                          <ArrowRight className="h-3.5 w-3.5" aria-hidden />
                         </span>
                       </Link>
                     </li>

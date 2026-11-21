@@ -32,15 +32,15 @@ const faqJsonLd = {
 export default function FaqPage() {
   return (
     <>
-      <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-14 sm:py-16">
-        <div className="mx-auto max-w-6xl px-4 text-center sm:px-6">
-          <div className="mb-5 flex justify-center">
+      <section className="seitenkopf">
+        <div className="container-page">
+          <div className="mb-5">
             <Breadcrumbs items={[{ name: "Häufige Fragen" }]} />
           </div>
-          <h1 className="font-display text-4xl font-bold text-ink-900 sm:text-5xl">
+          <h1 className="h-seite text-navy">
             Häufige Fragen
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-ink-600">
+          <p className="mt-4 max-w-2xl text-lg text-ink-600">
             Alles Wichtige rund um Ablauf, Kosten und Unterlagen. Ihre Frage ist nicht
             dabei? Schreiben Sie uns einfach.
           </p>
@@ -59,7 +59,7 @@ export default function FaqPage() {
       </section>
 
       <section className="py-14">
-        <div className="mx-auto max-w-3xl space-y-12 px-4 sm:px-6">
+        <div className="container-page *:max-w-3xl space-y-12">
           {gruppen.map((g, i) => (
             <div key={g.id} id={g.id} className="scroll-mt-28">
               <h2 className="mb-5 font-display text-2xl font-bold text-navy">{g.title}</h2>

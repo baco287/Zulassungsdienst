@@ -1,11 +1,9 @@
 import Link from "next/link";
-import { Clock3, Mail, Phone } from "lucide-react";
 import { site, whatsAppLink } from "@/lib/site";
 import { sortedServices } from "@/lib/services";
 import { cities } from "@/lib/staedte";
 import { cityIndexable, PRIORITAETSSTAEDTE } from "@/lib/indexGate";
 import { SERVICEBEDINGUNGEN_FREIGEGEBEN } from "@/lib/features";
-import WhatsAppIcon from "./WhatsAppIcon";
 import TrackedLink from "./TrackedLink";
 import Logo from "./Logo";
 
@@ -46,13 +44,13 @@ const standorte: FooterLink[] = PRIORITAETSSTAEDTE.map((slug) => cities.find((c)
 function Col({ title, links, more }: { title: string; links: FooterLink[]; more?: FooterLink }) {
   return (
     <nav aria-label={title}>
-      <h2 className="font-display text-sm font-bold uppercase tracking-wider text-white">{title}</h2>
-      <ul className="mt-4 space-y-1 text-[15px]">
+      <h2 className="border-t border-white/30 pt-3.5 text-[0.9375rem] font-semibold text-white">{title}</h2>
+      <ul className="mt-2 text-[0.9375rem]">
         {links.map((l) => (
           <li key={l.href}>
             <Link
               href={l.href}
-              className="inline-flex min-h-9 items-center transition-colors duration-150 hover:text-white"
+              className="inline-flex min-h-9 items-center decoration-1 underline-offset-4 hover:text-white hover:underline"
             >
               {l.label}
             </Link>
@@ -62,7 +60,7 @@ function Col({ title, links, more }: { title: string; links: FooterLink[]; more?
           <li>
             <Link
               href={more.href}
-              className="inline-flex min-h-9 items-center font-semibold text-accent-300 transition-colors duration-150 hover:text-white"
+              className="inline-flex min-h-9 items-center font-semibold text-white underline decoration-1 underline-offset-4 hover:decoration-2"
             >
               {more.label}
             </Link>
@@ -80,28 +78,27 @@ export default function Footer() {
     .map((s) => ({ href: `/leistungen/${s.slug}/`, label: s.shortName ?? s.name }));
 
   return (
-    <footer className="bg-navy text-white/75">
-      <div className="container-page grid gap-x-8 gap-y-10 py-14 sm:grid-cols-2 lg:grid-cols-[1.35fr_1fr_1fr_1fr_1fr] lg:py-16">
+    <footer className="bg-navy text-white/80">
+      <div className="container-page grid gap-x-8 gap-y-10 py-12 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1fr] lg:py-16">
         {/* Marke und Kontakt */}
-        <div className="sm:col-span-2 lg:col-span-1">
+        <div className="sm:col-span-2 lg:col-span-1 lg:pr-6">
           <Logo tone="dark" />
-          <p className="mt-5 max-w-xs text-[15px] leading-relaxed">
+          <p className="mt-5 max-w-xs text-[0.9375rem] leading-relaxed">
             Kfz-Zulassung ohne eID-PIN und ohne Behördentermin – bundesweit, persönlich geprüft.
           </p>
-          <p className="mt-4 inline-flex rounded-full border border-white/20 px-3 py-1 text-xs font-semibold text-white/90">
+          <p className="mt-3 max-w-xs text-[0.9375rem] font-semibold leading-relaxed text-white">
             Privater Zulassungsdienst, keine Behörde.
           </p>
 
-          <ul className="mt-6 space-y-1 text-[15px]">
+          <ul className="mt-5 text-[0.9375rem]">
             <li>
               <TrackedLink
                 href={whatsAppLink()}
                 event="whatsapp_click"
                 props={{ position: "footer" }}
                 external
-                className="inline-flex min-h-10 items-center gap-2.5 transition-colors duration-150 hover:text-white"
+                className="inline-flex min-h-10 items-center decoration-1 underline-offset-4 hover:text-white hover:underline"
               >
-                <WhatsAppIcon className="h-[18px] w-[18px]" color="brand" />
                 WhatsApp-Chat
               </TrackedLink>
             </li>
@@ -110,9 +107,8 @@ export default function Footer() {
                 href={`mailto:${site.contact.email}`}
                 event="email_click"
                 props={{ position: "footer" }}
-                className="inline-flex min-h-10 items-center gap-2.5 transition-colors duration-150 hover:text-white"
+                className="inline-flex min-h-10 items-center decoration-1 underline-offset-4 hover:text-white hover:underline"
               >
-                <Mail className="h-[18px] w-[18px] text-accent-300" aria-hidden />
                 {site.contact.email}
               </TrackedLink>
             </li>
@@ -121,16 +117,12 @@ export default function Footer() {
                 href={`tel:${site.contact.phone.replace(/\s/g, "")}`}
                 event="phone_click"
                 props={{ position: "footer" }}
-                className="inline-flex min-h-10 items-center gap-2.5 transition-colors duration-150 hover:text-white"
+                className="inline-flex min-h-10 items-center decoration-1 underline-offset-4 hover:text-white hover:underline"
               >
-                <Phone className="h-[18px] w-[18px] text-accent-300" aria-hidden />
                 {site.contact.phoneDisplay}
               </TrackedLink>
             </li>
-            <li className="flex min-h-10 items-center gap-2.5 text-sm text-white/65">
-              <Clock3 className="h-[18px] w-[18px]" aria-hidden />
-              {site.contact.hours}
-            </li>
+            <li className="flex min-h-10 items-center">{site.contact.hours}</li>
           </ul>
         </div>
 
@@ -144,11 +136,10 @@ export default function Footer() {
       </div>
 
       {/* Betreiber und Rechtliches */}
-      <div className="border-t border-white/10">
-        <div className="container-page flex flex-col gap-4 py-7 text-sm text-white/65 lg:flex-row lg:items-center lg:justify-between">
-          <p className="leading-relaxed">
-            © {new Date().getFullYear()} {site.name} · Ein Angebot der {site.company.legalName},{" "}
-            {site.company.street}, {site.company.zipCity} · {site.company.register}
+      <div className="border-t border-white/25">
+        <div className="container-page flex flex-col gap-4 py-7 text-sm text-white/80 lg:flex-row lg:items-center lg:justify-between">
+          <p className="max-w-[60em] leading-relaxed">
+            © {new Date().getFullYear()} {site.name}
           </p>
           <nav aria-label="Rechtliches" className="flex flex-wrap gap-x-5 gap-y-1">
             {[
@@ -162,7 +153,7 @@ export default function Footer() {
               <Link
                 key={l.href}
                 href={l.href}
-                className="inline-flex min-h-9 items-center text-white/85 transition-colors duration-150 hover:text-white"
+                className="inline-flex min-h-9 items-center text-white underline decoration-1 underline-offset-4 hover:decoration-2"
               >
                 {l.label}
               </Link>

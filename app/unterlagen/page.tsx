@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { Camera, Clock4, Lock } from "lucide-react";
+import { Clock4, Lock } from "lucide-react";
 import UnterlagenForm from "@/components/UnterlagenForm";
-import WhatsAppIcon from "@/components/WhatsAppIcon";
 import { site, whatsAppLink } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -16,24 +15,23 @@ export const metadata: Metadata = {
 export default function UnterlagenPage() {
   return (
     <section className="bg-ink-50 py-14 sm:py-16">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_20rem]">
+      <div className="container-page grid gap-10 lg:grid-cols-[1fr_20rem]">
         <div>
-          <h1 className="font-display text-4xl font-bold text-ink-900 sm:text-5xl">
+          <h1 className="h-seite text-navy">
             Unterlagen hochladen
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-ink-600">
             Fahrzeugschein, Ausweis, eVB-Nummer: einfach mit dem Handy abfotografieren
             und hier hochladen. Scans und PDFs gehen genauso.
           </p>
-          <div className="mt-8 rounded-2xl border border-ink-200 bg-white p-6 shadow-card sm:p-8">
+          <div className="mt-8 rounded-2xl border border-ink-200 bg-white p-6 sm:p-8">
             <UnterlagenForm />
           </div>
         </div>
 
         <aside className="space-y-5 lg:pt-24">
-          <div className="rounded-2xl border border-ink-200 bg-white p-6 shadow-card">
-            <h2 className="flex items-center gap-2 font-display text-base font-bold text-ink-900">
-              <Camera className="h-5 w-5 text-brand-700" aria-hidden />
+          <div className="rounded-2xl border border-ink-200 bg-white p-6">
+            <h2 className="font-display text-base font-bold text-ink-900">
               Gute Fotos, schnellere Bearbeitung
             </h2>
             <ul className="mt-3 space-y-2 text-sm text-ink-600">
@@ -56,9 +54,8 @@ export default function UnterlagenPage() {
             </ul>
           </div>
 
-          <div className="rounded-2xl border border-ink-200 bg-white p-6 shadow-card">
-            <h2 className="flex items-center gap-2 font-display text-base font-bold text-ink-900">
-              <WhatsAppIcon className="h-5 w-5 text-brand-700" />
+          <div className="rounded-2xl border border-ink-200 bg-white p-6">
+            <h2 className="font-display text-base font-bold text-ink-900">
               Lieber per WhatsApp?
             </h2>
             <p className="mt-2 text-sm text-ink-600">
@@ -69,13 +66,13 @@ export default function UnterlagenPage() {
               href={whatsAppLink("Hallo KFZ-Zulassungsprofis, ich möchte meine Unterlagen schicken.")}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-brand-600 px-4 py-3 font-display text-sm font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
+              className="mt-4 flex w-full items-center justify-center gap-2 rounded-control bg-brand-600 px-4 py-3 font-display text-sm font-semibold text-white transition-colors duration-200 hover:bg-brand-700"
             >
               WhatsApp öffnen
             </a>
           </div>
 
-          <div className="rounded-2xl border border-ink-200 bg-white p-6 text-sm text-ink-600 shadow-card">
+          <div className="rounded-2xl border border-ink-200 bg-white p-6 text-sm text-ink-600">
             <p className="flex items-start gap-2">
               <Lock className="mt-0.5 h-4 w-4 shrink-0 text-brand-700" aria-hidden />
               Die Übertragung ist verschlüsselt. Ihre Unterlagen werden nicht auf dem

@@ -13,14 +13,14 @@ import { ImageResponse } from "next/og";
 export const ogSize = { width: 1200, height: 630 };
 export const ogContentType = "image/png";
 
-/** Farben wie in app/globals.css (Navy, Action Blue, Türkis). */
+/** Farben wie im Logo und in app/globals.css (Designsystem v6 „Das Schild“). */
 const colors = {
-  navy: "#0b1f3a",
-  navy800: "#142c4e",
-  blue: "#2563eb",
-  teal: "#2dd4bf",
+  navy: "#04183f",
+  blue: "#0058f8",
+  /** Helleres Logo-Blau für Text auf Navy (accent-400, 5,6 : 1) */
+  blueLight: "#5591fb",
   text: "#ffffff",
-  muted: "#b6c4d8",
+  muted: "#b9c6dc",
 };
 
 /** Logo (weiß, transparent) aus scripts/build-logo.sh – als Daten-URL eingebettet. */
@@ -72,8 +72,23 @@ export async function createOgImage({ kicker, title, subtitle }: OgProps) {
           position: "relative",
         }}
       >
-        {/* Blaues Band links – dasselbe Motiv wie im Logo (Kennzeichen) */}
-        <div style={{ width: 28, height: "100%", background: colors.blue, display: "flex" }} />
+        {/* Blaues Band links mit „D“ – dasselbe Motiv wie im Logo (Kennzeichen) */}
+        <div
+          style={{
+            width: 76,
+            height: "100%",
+            background: colors.blue,
+            display: "flex",
+            justifyContent: "center",
+            paddingTop: 40,
+            color: colors.text,
+            fontSize: 54,
+            fontWeight: 700,
+            lineHeight: 1,
+          }}
+        >
+          D
+        </div>
 
         <div
           style={{
@@ -81,7 +96,6 @@ export async function createOgImage({ kicker, title, subtitle }: OgProps) {
             flexDirection: "column",
             flexGrow: 1,
             padding: "52px 64px 48px 56px",
-            backgroundImage: `linear-gradient(135deg, ${colors.navy} 0%, ${colors.navy} 55%, ${colors.navy800} 100%)`,
           }}
         >
           {/* Kopfzeile: Logo */}
@@ -106,8 +120,8 @@ export async function createOgImage({ kicker, title, subtitle }: OgProps) {
           </div>
 
           {/* Inhalt */}
-          <div style={{ display: "flex", flexDirection: "column", flexGrow: 1, justifyContent: "center", maxWidth: 1010 }}>
-            <div style={{ fontSize: 26, fontWeight: 600, color: colors.teal }}>{kicker}</div>
+          <div style={{ display: "flex", flexDirection: "column", flexGrow: 1, justifyContent: "center", maxWidth: 960 }}>
+            <div style={{ fontSize: 26, fontWeight: 600, color: colors.blueLight }}>{kicker}</div>
             <div style={{ marginTop: 16, fontSize: titleSize, fontWeight: 700, lineHeight: 1.15, color: colors.text }}>
               {truncate(title, 110)}
             </div>

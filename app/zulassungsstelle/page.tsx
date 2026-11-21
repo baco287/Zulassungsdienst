@@ -15,10 +15,10 @@ export const metadata: Metadata = {
 export default function ZulassungsstellenPage() {
   return (
     <>
-      <section className="bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-12 sm:py-14">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+      <section className="seitenkopf">
+        <div className="container-page *:max-w-5xl">
           <Breadcrumbs items={[{ name: "Zulassungsstellen" }]} />
-          <h1 className="mt-6 font-display text-3xl font-bold text-ink-900 sm:text-4xl">Zulassungsstellen in Deutschland</h1>
+          <h1 className="mt-6 h-seite text-navy">Zulassungsstellen in Deutschland</h1>
           <p className="mt-4 max-w-3xl text-lg leading-relaxed text-ink-600">
             Welche Behörde ist für Sie zuständig, wo sitzt sie und wie buchen Sie einen Termin? Für jede Stadt haben wir
             die Angaben auf den offiziellen Behördenseiten geprüft und mit Quelle verlinkt. Für Landkreise mit
@@ -31,7 +31,7 @@ export default function ZulassungsstellenPage() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-5xl space-y-10 px-4 py-12 sm:px-6">
+      <div className="container-page *:max-w-5xl space-y-10 py-12">
         <StellenSuche
           stellen={publishedStellen.map((z) => ({
             slug: z.slug,

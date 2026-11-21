@@ -73,7 +73,7 @@ export default function KfzSteuerRechner() {
   const labelClass = "block font-display text-sm font-semibold text-ink-800";
 
   return (
-    <div className="rounded-2xl border border-ink-200 bg-white p-6 shadow-card sm:p-8" onChangeCapture={markUsed} onClickCapture={markUsed}>
+    <div className="rounded-2xl border border-ink-200 bg-white p-6 sm:p-8" onChangeCapture={markUsed} onClickCapture={markUsed}>
       <div className="grid gap-5 sm:grid-cols-2">
         <div className="sm:col-span-2">
           <span className={labelClass}>Antriebsart</span>
@@ -161,7 +161,7 @@ export default function KfzSteuerRechner() {
       <div className="mt-6 rounded-xl bg-brand-50 p-5">
         {fuel === "elektro" ? (
           <p className="flex items-start gap-2 text-sm leading-relaxed text-ink-700">
-            <Info className="mt-0.5 h-4 w-4 shrink-0 text-brand-700" aria-hidden />
+            <Info className="mt-0.5 h-4 w-4 shrink-0 text-ink-600" aria-hidden />
             Reine Elektrofahrzeuge mit Erstzulassung bis 31.12.2025 sind von der
             Kfz-Steuer befreit – längstens bis Ende 2030. Für spätere
             Erstzulassungen gilt eine ermäßigte, gewichtsbasierte Steuer; den
@@ -171,10 +171,10 @@ export default function KfzSteuerRechner() {
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
               <p className="flex items-center gap-2 font-display text-sm font-semibold text-ink-600">
-                <Calculator className="h-4 w-4 text-brand-700" aria-hidden />
+                <Calculator className="h-4 w-4 text-ink-600" aria-hidden />
                 Kfz-Steuer pro Jahr (ca.)
               </p>
-              <p className="mt-1 font-display text-4xl font-bold text-brand-700">
+              <p className="mt-1 font-display text-4xl font-bold text-navy">
                 {euro(total)}
               </p>
             </div>

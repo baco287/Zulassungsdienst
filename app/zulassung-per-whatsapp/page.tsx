@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
-  ArrowRight,
   Camera,
   Clock3,
   FileSignature,
   MessageCircle,
   ShieldCheck,
-  Smartphone,
   Sofa,
 } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -148,17 +146,13 @@ export default function WhatsAppZulassungPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-14 sm:py-16">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <section className="seitenkopf">
+        <div className="container-page">
           <Breadcrumbs items={[{ name: "Zulassung per WhatsApp" }]} />
 
           <div className="mt-8 grid items-center gap-12 lg:grid-cols-[1fr_auto]">
             <div>
-              <p className="flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-brand-700">
-                <Smartphone className="h-4 w-4" aria-hidden />
-                Für alle, die es besonders bequem mögen
-              </p>
-              <h1 className="mt-3 font-display text-4xl font-bold leading-tight text-ink-900 sm:text-5xl">
+              <h1 className="h-seite text-navy">
                 Kfz-Zulassung per WhatsApp
               </h1>
               <p className="mt-5 max-w-xl text-lg leading-relaxed text-ink-600">
@@ -172,7 +166,7 @@ export default function WhatsAppZulassungPage() {
                   href={chatCta}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2.5 rounded-xl bg-[#25D366] px-7 py-4 font-display text-base font-semibold text-white shadow-lg transition-colors duration-200 hover:bg-[#1DA851]"
+                  className="btn btn-wa btn-lg"
                 >
                   <WhatsAppIcon className="h-5 w-5" />
                   Chat jetzt starten
@@ -207,7 +201,7 @@ export default function WhatsAppZulassungPage() {
 
       {/* Vorteile */}
       <section className="py-16">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="container-page">
           <h2 className="font-display text-3xl font-bold text-ink-900">
             Warum der Chat der bequemste Weg ist
           </h2>
@@ -219,10 +213,7 @@ export default function WhatsAppZulassungPage() {
           <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {benefits.map((b, i) => (
               <Reveal key={b.title} delay={Math.min((i % 3) * 0.05, 0.2)} className="h-full">
-                <li className="flex h-full flex-col rounded-2xl border border-ink-200 bg-white p-6 shadow-card">
-                  <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700">
-                    <b.icon className="h-5 w-5" aria-hidden />
-                  </span>
+                <li className="flex h-full flex-col border-t-2 border-navy pt-4 pb-2">
                   <h3 className="mt-4 font-display text-lg font-bold text-ink-900">
                     {b.title}
                   </h3>
@@ -236,15 +227,15 @@ export default function WhatsAppZulassungPage() {
 
       {/* Ablauf */}
       <section className="bg-ink-50 py-16">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6">
+        <div className="container-page *:max-w-4xl">
           <h2 className="font-display text-3xl font-bold text-ink-900">
             So läuft es ab – in 5 Schritten
           </h2>
           <ol className="mt-10 space-y-4">
             {whatsappSteps.map((step, i) => (
               <Reveal key={step.title} delay={Math.min(i * 0.05, 0.2)}>
-                <li className="flex gap-5 rounded-2xl border border-ink-200 bg-white p-6 shadow-card">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-600 font-display text-lg font-bold text-white">
+                <li className="flex gap-5 rounded-2xl border border-ink-200 bg-white p-6">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center font-display text-lg font-bold text-brand-600">
                     {i + 1}
                   </span>
                   <div>
@@ -264,7 +255,7 @@ export default function WhatsAppZulassungPage() {
 
       {/* Leistungen */}
       <section className="py-16">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="container-page">
           <h2 className="font-display text-3xl font-bold text-ink-900">
             Diese Vorgänge erledigen wir per Chat
           </h2>
@@ -278,7 +269,7 @@ export default function WhatsAppZulassungPage() {
               <li key={service.slug}>
                 <Link
                   href={`/leistungen/${service.slug}/`}
-                  className="group flex h-full items-center justify-between gap-4 rounded-2xl border border-ink-200 bg-white p-5 transition-all duration-200 hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-card"
+                  className="group flex h-full items-center justify-between gap-4 border-t-2 border-navy pt-4 pb-2"
                 >
                   <div>
                     <p className="font-display font-bold text-ink-900 group-hover:text-brand-800">
@@ -290,10 +281,6 @@ export default function WhatsAppZulassungPage() {
                         : "Preis auf Anfrage"}
                     </p>
                   </div>
-                  <ArrowRight
-                    className="h-4 w-4 shrink-0 text-brand-700 transition-transform duration-200 group-hover:translate-x-0.5"
-                    aria-hidden
-                  />
                 </Link>
               </li>
             ))}
@@ -303,7 +290,7 @@ export default function WhatsAppZulassungPage() {
 
       {/* FAQ */}
       <section className="bg-ink-50 py-16">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6">
+        <div className="container-page *:max-w-3xl">
           <h2 className="font-display text-3xl font-bold text-ink-900">
             Häufige Fragen zur Zulassung per Chat
           </h2>
@@ -315,7 +302,7 @@ export default function WhatsAppZulassungPage() {
 
       {/* Abschluss-CTA */}
       <section className="bg-ink-950 py-16 sm:py-20">
-        <Reveal className="mx-auto max-w-3xl px-4 text-center sm:px-6">
+        <Reveal className="container-page *:max-w-3xl">
           <Maxx
             pose="phone"
             className="mx-auto h-24 w-auto"
@@ -324,7 +311,7 @@ export default function WhatsAppZulassungPage() {
           <h2 className="mt-6 font-display text-3xl font-bold text-white sm:text-4xl">
             Ein Satz genügt – Maxx übernimmt den Rest.
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-lg text-ink-300">
+          <p className="mt-4 max-w-xl text-lg text-ink-300">
             Schreiben Sie uns, worum es geht. Wir sagen Ihnen genau, was wir
             brauchen, und kümmern uns um den Behördengang.
           </p>
@@ -333,13 +320,13 @@ export default function WhatsAppZulassungPage() {
               href={chatCta}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2.5 rounded-xl bg-[#25D366] px-8 py-4 font-display text-base font-semibold text-white shadow-lg transition-colors duration-200 hover:bg-[#1DA851]"
+              className="btn btn-wa btn-lg"
             >
               <WhatsAppIcon className="h-5 w-5" />
               Chat starten
             </a>
           </div>
-          <p className="mx-auto mt-10 max-w-xl text-xs leading-relaxed text-ink-500">
+          <p className="mt-10 max-w-xl text-xs leading-relaxed text-ink-500">
             WhatsApp ist eine Marke der Meta Platforms, Inc. {site.name} steht in
             keiner Verbindung zu Meta und nutzt den Messenger ausschließlich als
             Kommunikationsweg.

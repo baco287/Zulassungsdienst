@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import BehoerdengangRechner from "@/components/BehoerdengangRechner";
 import CTASection from "@/components/CTASection";
@@ -65,16 +64,13 @@ const appJsonLd = {
 export default function BehoerdengangRechnerPage() {
   return (
     <>
-      <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-14 sm:py-16">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <section className="seitenkopf">
+        <div className="container-page">
           <Breadcrumbs
             items={[{ name: "Rechner", href: "/rechner/" }, { name: "Behördengang-Rechner" }]}
           />
           <div className="mt-8 max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-wider text-brand-700">
-              Kostenloses Tool
-            </p>
-            <h1 className="mt-2 font-display text-4xl font-bold leading-tight text-ink-900 sm:text-5xl">
+            <h1 className="h-seite text-navy">
               Was kostet der Behördengang wirklich?
             </h1>
             <p className="mt-4 text-lg text-ink-600">
@@ -87,7 +83,7 @@ export default function BehoerdengangRechnerPage() {
       </section>
 
       <section className="py-14">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6">
+        <div className="container-page *:max-w-3xl">
           <Reveal>
             <BehoerdengangRechner />
           </Reveal>
@@ -131,7 +127,6 @@ export default function BehoerdengangRechnerPage() {
                 </span>
                 <span className="mt-2 flex items-center gap-1 text-sm font-medium text-brand-700">
                   Jahressteuer berechnen
-                  <ArrowRight className="h-3.5 w-3.5" aria-hidden />
                 </span>
               </Link>
             </div>

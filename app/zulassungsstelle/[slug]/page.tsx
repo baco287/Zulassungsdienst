@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AlertCircle, ArrowRight, CalendarDays, Clock4, ExternalLink, Globe, Landmark, MapPin } from "lucide-react";
+import { CalendarDays, ExternalLink } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTASection from "@/components/CTASection";
 import FaqAccordion from "@/components/FaqAccordion";
@@ -158,10 +158,10 @@ export default async function ZulassungsstellePage({ params }: { params: Promise
 
   return (
     <>
-      <section className="bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-12 sm:py-14">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6">
+      <section className="seitenkopf">
+        <div className="container-page *:max-w-4xl">
           <Breadcrumbs items={[{ name: "Zulassungsstellen", href: "/zulassungsstelle/" }, { name: z.stadt }]} />
-          <h1 className="mt-6 font-display text-3xl font-bold leading-tight text-ink-900 sm:text-4xl">
+          <h1 className="mt-6 h-seite text-navy">
             Zulassungsstelle {z.stadt}
           </h1>
           <p className="mt-4 max-w-3xl text-lg leading-relaxed text-ink-600">
@@ -169,20 +169,33 @@ export default async function ZulassungsstellePage({ params }: { params: Promise
             {z.traeger ? ` (${z.traeger})` : ""}. Hier finden Sie Anschrift, Zuständigkeit und Online-Angebote der
             Zulassungsstelle {z.stadt} – und wie Sie Ihr Fahrzeug ohne eigenen Termin zulassen.
           </p>
-          <p className="mt-4 flex items-start gap-2 text-sm text-ink-500">
-            <CalendarDays className="mt-0.5 h-4 w-4 shrink-0 text-brand-700" aria-hidden />
+          <p className="mt-4 flex items-start gap-2 text-sm text-ink-600">
+            <CalendarDays className="mt-0.5 h-4 w-4 shrink-0 text-ink-600" aria-hidden />
             <span>
               Angaben geprüft am <time dateTime={z.geprueftAm}>{dateFormat.format(new Date(z.geprueftAm))}</time>{" "}
               anhand der offiziellen Behördenseiten
             </span>
           </p>
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+            <TrackedLink
+              href="/auftrag/"
+              event="cta_click"
+              props={{ position: "zulassungsstelle_kopf", page: z.slug }}
+              className="btn btn-primary"
+            >
+              Auftrag starten
+            </TrackedLink>
+            <a href="#vorgaenge" className="btn btn-secondary">
+              Leistungen und Festpreise
+            </a>
+          </div>
         </div>
       </section>
 
-      <div className="mx-auto max-w-4xl space-y-10 px-4 py-12 sm:px-6">
-        <p className="flex gap-3 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm leading-relaxed text-ink-800">
-          <AlertCircle className="mt-0.5 h-5 w-5 shrink-0 text-amber-600" aria-hidden />
+      <div className="container-page *:max-w-4xl space-y-10 py-12">
+        <p className="rounded-lg border border-line bg-canvas p-4 text-[0.9375rem] leading-relaxed text-ink-700">
           <span>
+            <strong className="font-semibold text-navy">Hinweis: </strong>
             {site.name} ist ein privater Zulassungsdienst und nicht die Zulassungsstelle {z.stadt}. Öffnungszeiten und
             Abläufe der Behörde können sich ändern – bitte prüfen Sie vor einem Besuch die verlinkte Behördenseite.
           </span>
@@ -190,9 +203,8 @@ export default async function ZulassungsstellePage({ params }: { params: Promise
 
         <Reveal>
           <section className="grid gap-6 md:grid-cols-2">
-            <div className="rounded-2xl border border-ink-200 bg-white p-6 shadow-card">
-              <h2 className="flex items-center gap-2 font-display text-lg font-bold text-ink-900">
-                <Landmark className="h-5 w-5 text-brand-700" aria-hidden />
+            <div className="border-t-2 border-navy pt-4">
+              <h2 className="font-display text-lg font-bold text-ink-900">
                 Behörde &amp; Zuständigkeit
               </h2>
               <dl className="mt-4 space-y-3 text-sm">
@@ -230,9 +242,8 @@ export default async function ZulassungsstellePage({ params }: { params: Promise
               </dl>
             </div>
 
-            <div className="rounded-2xl border border-ink-200 bg-white p-6 shadow-card">
-              <h2 className="flex items-center gap-2 font-display text-lg font-bold text-ink-900">
-                <Globe className="h-5 w-5 text-brand-700" aria-hidden />
+            <div className="border-t-2 border-navy pt-4">
+              <h2 className="font-display text-lg font-bold text-ink-900">
                 Offizielle Links
               </h2>
               <ul className="mt-4 space-y-3 text-sm">
@@ -273,8 +284,7 @@ export default async function ZulassungsstellePage({ params }: { params: Promise
               </h2>
               <ul className="mt-4 grid gap-4 sm:grid-cols-2">
                 {z.standorte.map((s) => (
-                  <li key={s.bezeichnung + s.strasse} className="flex gap-3 rounded-xl border border-ink-200 bg-white p-4">
-                    <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-brand-700" aria-hidden />
+                  <li key={s.bezeichnung + s.strasse} className="border-t border-line pt-3">
                     <address className="not-italic text-sm leading-relaxed text-ink-700">
                       <strong className="block text-ink-900">{s.bezeichnung}</strong>
                       {s.strasse}
@@ -290,9 +300,8 @@ export default async function ZulassungsstellePage({ params }: { params: Promise
 
         {z.oeffnungszeiten && (
           <Reveal>
-            <section className="rounded-2xl border border-ink-200 bg-ink-50/60 p-6">
-              <h2 className="flex items-center gap-2 font-display text-xl font-bold text-ink-900">
-                <Clock4 className="h-5 w-5 text-brand-700" aria-hidden />
+            <section className="rounded-lg bg-canvas p-5 sm:p-6">
+              <h2 className="font-display text-xl font-bold text-ink-900">
                 {z.oeffnungszeiten.zeilen.length > 0 ? "Öffnungs- und Servicezeiten laut Behörde" : "Vorsprache laut Behörde"}
               </h2>
               {z.oeffnungszeiten.zeilen.length === 0 && (
@@ -355,7 +364,7 @@ export default async function ZulassungsstellePage({ params }: { params: Promise
         </Reveal>
 
         <Reveal>
-          <section>
+          <section id="vorgaenge" className="scroll-mt-24">
             <h2 className="font-display text-2xl font-bold text-ink-900">Zulassungsvorgänge über {site.name}</h2>
             <p className="mt-3 text-ink-700">
               Wir übernehmen alle gängigen Vorgänge bei der Zulassungsstelle {z.stadt} – ohne eigenen Termin, mit persönlicher
@@ -372,7 +381,7 @@ export default async function ZulassungsstellePage({ params }: { params: Promise
             <h2 className="font-display text-2xl font-bold text-ink-900">Typische Unterlagen</h2>
             <div className="mt-4 grid gap-4 md:grid-cols-3">
               {checklistServices.map((s) => (
-                <div key={s.slug} className="rounded-xl border border-ink-200 bg-white p-4">
+                <div key={s.slug} className="border-t-2 border-navy pt-3">
                   <h3 className="font-display font-bold text-ink-900">{s.shortName ?? s.name}</h3>
                   <ul className="mt-2 list-disc space-y-1 pl-4 text-sm text-ink-700">
                     {s.checklist.slice(0, 5).map((item) => (
@@ -394,7 +403,7 @@ export default async function ZulassungsstellePage({ params }: { params: Promise
           </section>
         </Reveal>
 
-        <div className="flex flex-col gap-3 rounded-2xl border border-brand-200 bg-brand-50/60 p-6 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-3 rounded-lg border border-line bg-canvas p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6">
           <p className="text-ink-800">
             <strong className="font-display">Ohne Termin zulassen?</strong> Wir übernehmen den Behördengang in {z.stadt}.
           </p>
@@ -402,7 +411,7 @@ export default async function ZulassungsstellePage({ params }: { params: Promise
             {city && (
               <Link
                 href={`/kfz-zulassung/${city.slug}/`}
-                className="rounded-xl border-2 border-brand-300 px-4 py-2.5 text-center text-sm font-semibold text-brand-800 hover:bg-white"
+                className="btn btn-secondary btn-sm"
               >
                 Kfz-Zulassung {city.name}
               </Link>
@@ -411,15 +420,15 @@ export default async function ZulassungsstellePage({ params }: { params: Promise
               href="/auftrag/"
               event="cta_click"
               props={{ position: "zulassungsstelle", page: z.slug }}
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-700"
+              className="btn btn-primary btn-sm"
             >
-              Auftrag starten <ArrowRight className="h-4 w-4" aria-hidden />
+              Auftrag starten
             </TrackedLink>
           </div>
         </div>
 
-        <section className="rounded-2xl border border-ink-200 bg-ink-50/60 p-5">
-          <h2 className="font-display text-sm font-bold uppercase tracking-wider text-ink-500">Quellen</h2>
+        <section className="rounded-lg border border-line p-5">
+          <h2 className="font-display text-sm font-bold text-ink-600">Quellen</h2>
           <ul className="mt-3 space-y-1.5 text-sm">
             {sources.map((u) => (
               <li key={u}>

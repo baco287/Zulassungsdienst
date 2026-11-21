@@ -1,7 +1,7 @@
 "use client";
 
 import { useId, useRef, useState } from "react";
-import { AlertCircle, FileText, ImageIcon, Paperclip, Trash2, UploadCloud } from "lucide-react";
+import { AlertCircle, FileText, ImageIcon, Paperclip, Trash2 } from "lucide-react";
 import { UPLOAD_LIMITS, formatBytes, validateFiles } from "@/lib/order";
 import { DocHintToggle, getDocHint } from "./DocHint";
 
@@ -107,12 +107,11 @@ export default function DocumentUpload({
           setDragging(false);
           addFiles(e.dataTransfer.files);
         }}
-        className={`rounded-2xl border-2 border-dashed px-5 py-7 text-center transition-colors duration-200 ${
-          dragging ? "border-brand-600 bg-brand-50" : "border-[#8493a8] bg-ink-50"
+        className={`rounded-lg border-2 px-5 py-6 transition-colors duration-150 ${
+          dragging ? "border-navy bg-white" : "border-ink-300 bg-canvas"
         }`}
       >
-        <UploadCloud className="mx-auto h-9 w-9 text-brand-700" strokeWidth={1.6} aria-hidden />
-        <p className="mt-3 font-display text-base font-bold text-navy">{label}</p>
+        <p className="text-base font-semibold text-navy">{label}</p>
         <p className="mt-1 text-sm text-ink-600">
           PDF, JPG, PNG oder HEIC · max. 10 MB pro Datei · höchstens {UPLOAD_LIMITS.maxFiles} Dateien
         </p>
@@ -123,7 +122,7 @@ export default function DocumentUpload({
         >
           Dateien auswählen
         </button>
-        <p className="mt-2 hidden text-sm text-ink-500 sm:block">
+        <p className="mt-2 hidden text-sm text-ink-600 sm:block">
           oder Dateien hierher ziehen
         </p>
         <input
@@ -139,6 +138,10 @@ export default function DocumentUpload({
             e.target.value = "";
           }}
           aria-describedby={shownError ? errorId : undefined}
+          // Bedient wird über die Schaltfläche „Dateien auswählen“ – das Feld selbst
+          // bleibt aus der Tab-Reihenfolge, sonst gäbe es einen zweiten, unbenannten Stopp.
+          tabIndex={-1}
+          aria-hidden="true"
           className="sr-only"
         />
       </div>
@@ -158,17 +161,17 @@ export default function DocumentUpload({
             return (
               <li
                 key={`${file.name}-${file.size}-${i}`}
-                className="flex items-center gap-3 rounded-[14px] border border-line bg-white px-3.5 py-2.5"
+                className="flex items-center gap-3 rounded-lg border border-line bg-white px-3.5 py-2.5"
               >
-                <Icon className="h-5 w-5 shrink-0 text-brand-600" aria-hidden />
+                <Icon className="h-5 w-5 shrink-0 text-ink-600" aria-hidden />
                 <span className="min-w-0 flex-1">
                   <span className="block truncate text-sm font-medium text-ink-900">{file.name}</span>
-                  <span className="block text-xs text-ink-500">{formatBytes(file.size)}</span>
+                  <span className="block text-sm text-ink-600">{formatBytes(file.size)}</span>
                 </span>
                 <button
                   type="button"
                   onClick={() => removeAt(i)}
-                  className="flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-lg text-ink-600 transition-colors duration-200 hover:bg-red-50 hover:text-danger"
+                  className="flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-lg text-ink-600 transition-colors duration-200 hover:bg-danger-50 hover:text-danger"
                   aria-label={`${file.name} entfernen`}
                 >
                   <Trash2 className="h-4 w-4" aria-hidden />
@@ -176,7 +179,7 @@ export default function DocumentUpload({
               </li>
             );
           })}
-          <li className="flex items-center gap-2 pt-1 text-xs text-ink-500">
+          <li className="flex items-center gap-2 pt-1 text-sm text-ink-600">
             <Paperclip className="h-3.5 w-3.5" aria-hidden />
             {files.length} {files.length === 1 ? "Datei" : "Dateien"} · {formatBytes(totalBytes)} von{" "}
             {formatBytes(UPLOAD_LIMITS.maxTotalBytes)}

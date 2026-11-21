@@ -1,86 +1,121 @@
 @import "tailwindcss";
 
 /*
- * KFZ-Zulassungsprofis Designsystem v4 – Navy · Action Blue · Türkis
+ * KFZ-Zulassungsprofis Designsystem v6 – „Das Schild“ (November 2026)
  *
- * Rollen
- *   navy      Marke, Überschriften, dunkle Flächen (Footer, Abschluss-CTA)
- *   brand-*   Action Blue: Schaltflächen, Links, Auswahlzustände (brand-600 = #2563eb)
- *   accent-*  Türkis: sparsame Akzente, Häkchen, Fortschritt (accent-500 = #14b8a6)
- *   canvas    ruhiger Seitenhintergrund, surface = Weiß für Karten
- *   ink-*     Text- und Linienstufen (ink-900 Text, ink-500 Sekundärtext, ink-200 Rahmen)
+ * Leitidee: Alles kommt aus dem Logo, dem Kennzeichen „D · Z ✓“. Dunkelblauer
+ * Rahmen, kräftig blaues Band, weißes Feld, blauer Haken. Das Erkennungsstück ist
+ * das große Kennzeichen im Kopf der Startseite, das die gewählte Leistung zeigt.
+ * Daneben bleibt alles ruhig: Weiß, ein kühles Hellgrau, Linien statt Karten.
  *
- * Kontraste (WCAG 2.2 AA, gemessen): Weiß auf brand-600 5,2:1 · brand-700 auf Weiß 6,7:1 ·
- * ink-500 auf canvas 5,1:1 · accent-600 auf Weiß 5,5:1 · navy auf accent-500 6,6:1.
- * Türkis (accent-400/500) und brand-500 nie als Fließtext auf hellen Flächen verwenden.
+ * Flächen   Weiß · canvas (#eef1f6) · navy. Mehr Flächenfarben gibt es nicht.
+ * navy      Logo-Dunkelblau: Text, Überschriften, Rahmen, dunkle Abschnitte, Fußzeile
+ * brand-*   Logo-Blau (#0058f8): Hauptschaltflächen, Links, Fokus, Auswahl, Band.
+ *           brand-50/100 sind bewusst neutral (Fläche wie canvas), keine hellblauen Kästen.
+ * accent-*  Der Haken im Logo ist blau: accent-* zeigt deshalb auf das Logo-Blau
+ *           (auf Navy das hellere accent-400). accent-50/100 neutral.
+ * ink-*     Kühle Text- und Linienstufen (ink-600 Sekundärtext, ink-200 Linien)
  *
- * Wiederverwendbare Bausteine stehen unten als Klassen (.btn, .card, .eyebrow, .field …)
- * und als React-Komponenten in components/ui/. Neue Seiten bitte daraus bauen statt
- * Farben und Radien einzeln zu setzen.
+ * Kontraste (WCAG 2.2 AA): Weiß auf navy 18,3:1 · Weiß auf brand-600 5,6:1 ·
+ * brand-600 auf Weiß 5,6:1 · ink-600 auf Weiß 9,0:1 · ink-500 auf canvas 5,4:1 ·
+ * accent-400 auf navy 5,6:1.
  *
- * Schriften: Manrope (Überschriften) und Inter (Fließtext), per next/font beim Build
- * heruntergeladen und vom eigenen Server ausgeliefert – keine Verbindung zu Google.
+ * Ein einziger Schatten (--shadow-buehne) für die Bühne des Kennzeichens, sonst
+ * keine Schatten, keine Verläufe, keine Icon-Kacheln, keine Mini-Labels über
+ * Überschriften, kein Pfeil in Schaltflächen. Bausteine stehen unten als Klassen
+ * (.btn, .schild, .tafel, .liste, .field …) und als React-Komponenten in components/ui/.
+ *
+ * Schrift: Archivo (variable Breite) für alles – Überschriften breiter gesetzt,
+ * die Schrift auf dem Kennzeichen schmal. Manrope bleibt nur für die Wortmarke im
+ * Logo. Beide werden per next/font beim Build geladen und vom eigenen Server ausgeliefert.
  */
 @theme {
-  /* Action Blue */
-  --color-brand-50: #eff6ff;
-  --color-brand-100: #dbeafe;
-  --color-brand-200: #bfdbfe;
-  --color-brand-300: #93c5fd;
-  --color-brand-400: #60a5fa;
-  --color-brand-500: #3b82f6;
-  --color-brand-600: #2563eb;
-  --color-brand-700: #1d4ed8;
-  --color-brand-800: #1e40af;
-  --color-brand-900: #1e3a8a;
+  /* Blau des Logo-Bands */
+  --color-brand-50: #eef1f6;
+  --color-brand-100: #e1e6ee;
+  --color-brand-200: #c9d5ea;
+  --color-brand-300: #94b6fb;
+  --color-brand-400: #5591fb;
+  --color-brand-500: #2a74f9;
+  --color-brand-600: #0058f8;
+  --color-brand-700: #0045c4;
+  --color-brand-800: #003699;
+  --color-brand-900: #04286f;
 
-  /* Text und Linien */
-  --color-ink-50: #f4f7fb;
-  --color-ink-100: #eaeff5;
-  --color-ink-200: #e2e8f0;
-  --color-ink-300: #cbd5e1;
-  --color-ink-400: #94a3b8;
-  --color-ink-500: #5b6b80;
-  --color-ink-600: #475569;
-  --color-ink-700: #334155;
-  --color-ink-800: #1e293b;
-  --color-ink-900: #111827;
-  --color-ink-950: #071528;
+  /* Text und Linien (kühles Grau, passend zum Logo-Dunkelblau) */
+  --color-ink-50: #eef1f6;
+  --color-ink-100: #e3e7ee;
+  --color-ink-200: #d3d9e3;
+  --color-ink-300: #b9c1ce;
+  --color-ink-400: #8590a3;
+  --color-ink-500: #56627a;
+  --color-ink-600: #3d4a5f;
+  --color-ink-700: #2d3a50;
+  --color-ink-800: #1b2840;
+  --color-ink-900: #0b1a36;
+  --color-ink-950: #04183f;
 
-  /* Türkis-Akzent */
-  --color-accent-50: #f0fdfa;
-  --color-accent-100: #ccfbf1;
-  --color-accent-300: #5eead4;
-  --color-accent-400: #2dd4bf;
-  --color-accent-500: #14b8a6;
-  --color-accent-600: #0f766e;
-  --color-accent-700: #115e59;
+  /* Der Haken des Logos (blau) */
+  --color-accent-50: #eef1f6;
+  --color-accent-100: #e1e6ee;
+  --color-accent-300: #94b6fb;
+  --color-accent-400: #5591fb;
+  --color-accent-500: #2a74f9;
+  --color-accent-600: #0058f8;
+  --color-accent-700: #0045c4;
 
-  /* Semantische Tokens */
-  --color-navy: #0b1f3a;
-  --color-navy-800: #142c4e;
-  --color-navy-900: #071528;
-  --color-canvas: #f4f7fb;
+  /* Semantische Tokens (navy, brand-600 und Punkt exakt wie im Logo) */
+  --color-navy: #04183f;
+  --color-navy-800: #0c2a5f;
+  --color-navy-900: #020f2a;
+  --color-punkt: #0b0f1a;
+  --color-canvas: #eef1f6;
   --color-surface: #ffffff;
-  --color-line: #e2e8f0;
-  --color-muted: #5b6b80;
+  --color-line: #d3d9e3;
+  --color-muted: #3d4a5f;
   --color-wa: #25d366;
   --color-wa-ink: #0e7a5f;
-  --color-danger: #d92d20;
+  --color-danger: #c4281c;
+  --color-danger-50: #fdf3f2;
 
-  --font-sans: var(--font-body), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-display: var(--font-heading), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  /* Hinweis (z. B. „Versand fehlgeschlagen“, Entwurfsbanner der Rechtsseiten).
+     Nur für Zustände, die Aufmerksamkeit brauchen – nicht als Schmuckfläche. */
+  --color-hinweis-50: #fbf4e4;
+  --color-hinweis-300: #d9b25e;
+  --color-hinweis-900: #4f3500;
 
-  /* max-w-6xl der Unterseiten = Seitenbreite von .container-page (1280 px) */
+  --font-sans: var(--font-archivo), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: var(--font-archivo), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-wordmark: var(--font-wordmark-face), var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+
+  /* max-w-6xl der Unterseiten = Seitenbreite von .container-page */
   --container-6xl: 80rem;
 
-  --radius-card: 1.125rem;
-  --radius-control: 0.875rem;
+  /* Ecken: wie am Kennzeichen des Logos gut gerundet, nach Größe gestuft. */
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.625rem;
+  --radius-2xl: 0.75rem;
+  --radius-3xl: 1rem;
+  --radius-card: 0.75rem;
+  --radius-control: 0.625rem;
+  --radius-tafel: 1rem;
+  --radius-buehne: 1.375rem;
 
-  --shadow-card: 0 1px 2px rgb(11 31 58 / 0.04), 0 8px 24px -12px rgb(11 31 58 / 0.12);
-  --shadow-card-hover: 0 2px 4px rgb(11 31 58 / 0.05), 0 18px 40px -18px rgb(11 31 58 / 0.24);
-  --shadow-elevated: 0 2px 6px rgb(11 31 58 / 0.05), 0 28px 60px -28px rgb(11 31 58 / 0.3);
-  --shadow-glow: 0 0 0 4px rgb(37 99 235 / 0.16), 0 12px 32px -10px rgb(37 99 235 / 0.35);
+  /* Der einzige Schatten: die Bühne des Kennzeichens hebt sich von der grauen Fläche ab. */
+  --shadow-buehne: 0 1px 0 #d3d9e3, 0 30px 60px -40px rgb(4 24 63 / 0.45);
+
+  /* Sonst keine Schatten: Flächen werden durch Linien getrennt. */
+  --shadow-2xs: 0 0 #0000;
+  --shadow-xs: 0 0 #0000;
+  --shadow-sm: 0 0 #0000;
+  --shadow-md: 0 0 #0000;
+  --shadow-lg: 0 0 #0000;
+  --shadow-xl: 0 0 #0000;
+  --shadow-2xl: 0 0 #0000;
+  --shadow-card: 0 0 #0000;
+  --shadow-card-hover: 0 0 #0000;
+  --shadow-elevated: 0 0 #0000;
+  --shadow-glow: 0 0 #0000;
 }
 
 html {
@@ -89,38 +124,79 @@ html {
   scroll-padding-top: 5.5rem;
 }
 
+html {
+  color-scheme: light;
+  -webkit-tap-highlight-color: rgb(4 24 63 / 0.12);
+}
+
+/* Kein Doppeltipp-Zoom-Verzug auf Bedienelementen */
+a, button, input, label, select, textarea, summary {
+  touch-action: manipulation;
+}
+
+/* Zahlen in Tabellen und Preisen untereinander bündig */
+td, th {
+  font-variant-numeric: tabular-nums;
+}
+
 body {
   font-family: var(--font-sans);
-  color: var(--color-ink-900);
+  color: var(--color-navy);
   background: #ffffff;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
-h1, h2, h3, h4 {
+/* Überschriften: dieselbe Schrift wie der Text, aber breiter gesetzt.
+   Am Handy etwas schmaler und mit Silbentrennung, damit lange deutsche
+   Wörter (Zulassungsbescheinigung …) in die Zeile passen. */
+h1, h2, h3, h4,
+.font-display {
   font-family: var(--font-display);
-  letter-spacing: -0.022em;
+  font-variation-settings: "wdth" 106;
+}
+h1, h2, h3, h4 {
+  text-wrap: balance;
+  letter-spacing: -0.018em;
+  overflow-wrap: break-word;
+  /* Nur wirklich lange Wörter trennen (ab 12 Buchstaben), nie „anmel-den“. */
+  hyphens: auto;
+  hyphenate-limit-chars: 12 5 5;
+  -webkit-hyphenate-limit-before: 5;
+  -webkit-hyphenate-limit-after: 5;
+}
+@media (min-width: 640px) {
+  h1, h2, h3, h4,
+  .font-display {
+    font-variation-settings: "wdth" 112;
+  }
+  h1, h2, h3, h4 {
+    hyphens: manual;
+  }
 }
 
 /* Sichtbarer Fokus für Tastaturnavigation: blauer Ring mit weißem Innenabstand,
-   auf dunklen Flächen türkis. */
-:focus-visible {
-  outline: 3px solid var(--color-brand-600);
-  outline-offset: 2px;
-  box-shadow: 0 0 0 2px #fff;
-}
-.bg-navy :focus-visible,
-.bg-navy-pattern :focus-visible,
-.bg-ink-900 :focus-visible,
-.bg-ink-950 :focus-visible,
-footer :focus-visible {
-  outline-color: var(--color-accent-300);
-  box-shadow: none;
+   auf dunklen Flächen hell. In der Ebene „base“, damit Bausteine (.field) und
+   Utilities (focus-visible:outline-none an Fokus-Überschriften) ihn ersetzen können. */
+@layer base {
+  :focus-visible {
+    outline: 3px solid var(--color-brand-600);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px #fff;
+  }
+  .bg-navy :focus-visible,
+  .bg-navy-pattern :focus-visible,
+  .bg-ink-900 :focus-visible,
+  .bg-ink-950 :focus-visible,
+  footer :focus-visible {
+    outline-color: #ffffff;
+    box-shadow: none;
+  }
 }
 
 ::selection {
-  background: var(--color-brand-200);
-  color: var(--color-ink-900);
+  background: #cddfff;
+  color: var(--color-navy);
 }
 
 /* Skip-Link: erst bei Fokus sichtbar */
@@ -145,93 +221,504 @@ footer :focus-visible {
 @layer components {
   .container-page {
     width: 100%;
-    max-width: 80rem;
+    max-width: 83rem;
     margin-inline: auto;
     padding-inline: 1rem;
   }
   @media (min-width: 640px) {
     .container-page { padding-inline: 1.5rem; }
   }
-
-  .eyebrow {
-    font-family: var(--font-display);
-    font-size: 0.8125rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--color-brand-700);
+  @media (min-width: 1024px) {
+    .container-page { padding-inline: 2rem; }
   }
-  .eyebrow-on-dark { color: var(--color-accent-300); }
+  @media (min-width: 1280px) {
+    .container-page { padding-inline: 3rem; }
+  }
 
+  /* Größte Überschrift (Kopf der Startseite, neben dem Kennzeichen): breit und eng */
+  .h-kopf {
+    font-size: clamp(2.25rem, 4.3vw, 4rem);
+    line-height: 1.04;
+    font-weight: 700;
+    letter-spacing: -0.026em;
+    text-wrap: balance;
+  }
+  /* Seitenkopf der Unterseiten: gleiche Handschrift, eine Stufe kleiner */
+  .h-seite {
+    font-size: clamp(1.875rem, 3.9vw, 3.25rem);
+    line-height: 1.06;
+    font-weight: 700;
+    letter-spacing: -0.024em;
+    text-wrap: balance;
+  }
+  /* Abschnittsüberschrift */
+  .h-abschnitt {
+    font-size: clamp(1.625rem, 2.9vw, 2.5rem);
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -0.022em;
+    text-wrap: balance;
+  }
+  @media (min-width: 640px) {
+    .h-kopf, .h-seite, .h-abschnitt { font-variation-settings: "wdth" 114; }
+  }
+
+  /* Früher ein Mini-Label über jeder Überschrift. Bleibt als schlichte Zeile für die
+     wenigen Stellen, an denen sie etwas sagt (z. B. Kategorie einer Leistung). */
+  .eyebrow {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--color-ink-600);
+  }
+  .eyebrow-on-dark { color: rgb(255 255 255 / 0.8); }
+
+  /* Schlichter Kasten: Linie statt Schatten */
   .card {
     background: var(--color-surface);
     border: 1px solid var(--color-line);
     border-radius: var(--radius-card);
-    box-shadow: var(--shadow-card);
   }
   .card-interactive {
-    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
   }
   .card-interactive:hover {
-    transform: translateY(-2px);
-    border-color: var(--color-brand-300);
-    box-shadow: var(--shadow-card-hover);
+    border-color: var(--color-navy);
   }
+
+  /* Die Tafel: dunkler Rahmen, blaues Band links – gebaut wie das Kennzeichen im Logo.
+     Für das, worauf es ankommt: Preise, Zusammenfassung, Auftrag. Die breite Tafel
+     trägt im Band das „D“ des Logos. */
+  .tafel {
+    position: relative;
+    padding-left: 0.875rem;
+    border: 2.5px solid var(--color-navy);
+    border-radius: var(--radius-2xl);
+    background: #fff;
+    overflow: hidden;
+  }
+  .tafel::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 0.875rem;
+    background: var(--color-brand-600);
+  }
+  @media (min-width: 768px) {
+    .tafel-breit {
+      padding-left: 3.5rem;
+      border-width: 3px;
+      border-radius: var(--radius-tafel);
+    }
+    .tafel-breit::before { width: 3.5rem; }
+    .tafel-breit::after {
+      content: "D";
+      position: absolute;
+      left: 0;
+      top: 1.125rem;
+      width: 3.5rem;
+      text-align: center;
+      color: #fff;
+      font-family: var(--font-display);
+      font-variation-settings: "wdth" 100;
+      font-size: 1.75rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+  }
+
+  /* ── Das Schild: das große Kennzeichen im Kopf der Startseite ──
+     Exakt die Bauweise der Bildmarke (viewBox 808 × 306): Rahmen 20/808,
+     Band 229/808, Punkte r 17,5. Alle Maße in cqw der .schild-huelle, damit
+     Rahmen, Schrift und Haken bei jeder Breite im selben Verhältnis bleiben. */
+  .buehne {
+    background: #fff;
+    border-radius: var(--radius-buehne);
+    box-shadow: var(--shadow-buehne);
+    padding: 1.125rem 1rem 1.125rem;
+  }
+  @media (min-width: 640px) {
+    .buehne { padding: 1.875rem 1.875rem 1.75rem; }
+  }
+  .schild-huelle { container-type: inline-size; }
+  .schild {
+    display: grid;
+    grid-template-columns: 26% 1fr;
+    aspect-ratio: 808 / 306;
+    border: 2.5cqw solid var(--color-navy);
+    border-radius: 6.4cqw;
+    background: #fff;
+    overflow: hidden;
+    user-select: none;
+  }
+  .schild-band {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-brand-600);
+    color: #fff;
+    font-family: var(--font-display);
+    font-variation-settings: "wdth" 100;
+    font-size: 17cqw;
+    font-weight: 800;
+    line-height: 1;
+  }
+  .schild-feld {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4cqw;
+    padding: 0 8cqw;
+    overflow: hidden;
+  }
+  .schild-feld::before,
+  .schild-feld::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 2.2cqw;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: var(--color-punkt);
+    transform: translateY(-50%);
+  }
+  .schild-feld::before { left: 3.4cqw; }
+  .schild-feld::after { right: 3.4cqw; }
+  /* Größe setzt SchildAuswahl je nach Wortlänge (höchstens 7,4 cqw). */
+  .schild-text {
+    font-family: var(--font-display);
+    font-variation-settings: "wdth" 62;
+    font-size: 7.4cqw;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: var(--color-navy);
+  }
+  .schild-haken { flex: none; width: 8.5cqw; height: auto; }
+  /* Wechsel der Leistung: Schrift und Haken kommen kurz von unten (nur nach Klick). */
+  @keyframes schildwechsel {
+    from { opacity: 0; transform: translateY(0.9cqw); }
+    to { opacity: 1; transform: none; }
+  }
+  .schild-wechsel { animation: schildwechsel 0.22s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
+
+  /* Auswahl unter dem Schild: sechs Leistungen mit Preis, blauer Strich = gewählt */
+  .schild-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 1.125rem;
+    border-top: 1px solid var(--color-line);
+  }
+  .schild-tab {
+    display: flex;
+    flex-direction: column;
+    gap: 0.0625rem;
+    min-height: 3.5rem;
+    padding: 0.625rem 0.25rem;
+    border-bottom: 1px solid var(--color-line);
+    background: none;
+    color: var(--color-navy);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1.3;
+    text-align: left;
+    cursor: pointer;
+  }
+  .schild-tab:nth-child(2n) { padding-left: 0.875rem; border-left: 1px solid var(--color-line); }
+  .schild-tab-preis { font-size: 0.875rem; font-weight: 500; color: var(--color-ink-600); font-variant-numeric: tabular-nums; }
+  .schild-tab:hover { color: var(--color-brand-700); }
+  .schild-tab[aria-checked="true"] { box-shadow: inset 0 -3px 0 var(--color-brand-600); }
+  .schild-tab[aria-checked="true"] .schild-tab-preis { color: var(--color-navy); }
+  .schild-tab:focus-visible { outline-offset: -3px; box-shadow: inset 0 -3px 0 var(--color-brand-600); }
+  @media (min-width: 640px) {
+    .schild-tabs { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 1.5rem; }
+    .schild-tab {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.625rem;
+      padding: 0.8125rem 0.25rem 0.75rem;
+      font-size: 1rem;
+    }
+    .schild-tab:nth-child(2n) { padding-left: 0.25rem; border-left: 0; }
+    .schild-tab:nth-child(3n + 2),
+    .schild-tab:nth-child(3n + 3) { padding-left: 1.125rem; border-left: 1px solid var(--color-line); }
+    .schild-tab-preis { font-size: 1rem; }
+  }
+
+  /* Schrittnummer als kleines Kennzeichen „D | 01“ (nur für echte Reihenfolgen) */
+  .schritt-nr {
+    display: inline-flex;
+    align-items: stretch;
+    height: 2.5rem;
+    border: 3px solid var(--color-navy);
+    border-radius: 0.5625rem;
+    overflow: hidden;
+    background: #fff;
+    line-height: 1;
+  }
+  .schritt-nr-d {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.375rem;
+    background: var(--color-brand-600);
+    color: #fff;
+    font-size: 0.8125rem;
+    font-weight: 700;
+  }
+  .schritt-nr-zahl {
+    display: flex;
+    align-items: center;
+    padding: 0 0.75rem;
+    font-family: var(--font-display);
+    font-variation-settings: "wdth" 70;
+    font-size: 1.1875rem;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+    color: var(--color-navy);
+  }
+
+  /* Seitenkopf der Unterseiten: dieselbe hellgraue Fläche wie der Kopf der Startseite,
+     Linie unten, gleiche Abstände überall.
+     Darin: Brotkrümel, h1 (.h-seite), Einleitung, ggf. Schaltflächen und Kästen (weiß). */
+  .seitenkopf {
+    background: var(--color-canvas);
+    border-bottom: 1px solid var(--color-line);
+    padding-block: 1.5rem 2.25rem;
+  }
+  @media (min-width: 1024px) {
+    .seitenkopf { padding-block: 2.25rem 3.25rem; }
+  }
+
+  /* Zeilen der Preistafel (components/ui/Preistafel.tsx, ServicePriceGrid.tsx).
+     Richtet sich nach der Breite der Tafel selbst (Container-Abfrage), nicht nach
+     dem Bildschirm – so passt sie in die volle Seitenbreite wie in eine Inhaltsspalte.
+     Schmal: Name und Preis oben, Text darunter, dann Dauer und Schaltfläche.
+     Ab 40rem Tafelbreite Tabelle, ab 68rem mit eigener Spalte für die Bearbeitungszeit. */
+  .tafel { container-type: inline-size; }
+  .pt-kopf { display: none; }
+  .pt-zeile {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    column-gap: 0.875rem;
+    row-gap: 0.25rem;
+    align-items: baseline;
+    padding: 1rem 0.875rem;
+    border-top: 1px solid var(--color-line);
+  }
+  .pt-zeile:first-child { border-top: 0; }
+  .pt-name {
+    grid-area: 1 / 1;
+    font-size: 1.15625rem;
+    font-weight: 650;
+    line-height: 1.25;
+  }
+  .pt-name a {
+    display: inline-block;
+    padding-block: 0.3125rem;
+    margin-block: -0.3125rem;
+  }
+  .pt-name a:hover { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.2em; }
+  .pt-preis {
+    grid-area: 1 / 2;
+    font-size: 1.15625rem;
+    font-weight: 650;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+    white-space: nowrap;
+  }
+  .pt-text {
+    grid-area: 2 / 1 / 3 / 3;
+    padding-bottom: 0.5rem;
+    font-size: 0.9375rem;
+    line-height: 1.4;
+    color: var(--color-ink-600);
+    text-wrap: pretty;
+  }
+  .pt-dauer {
+    grid-area: 3 / 1;
+    align-self: center;
+    font-size: 0.90625rem;
+    line-height: 1.35;
+    color: var(--color-ink-600);
+  }
+  .pt-start { grid-area: 3 / 2; align-self: center; white-space: nowrap; }
+  .pt-dauer-label { display: inline; }
+  @container (min-width: 40rem) {
+    .pt-kopf,
+    .pt-zeile {
+      grid-template-columns: 10.5rem minmax(0, 1fr) 6.75rem auto;
+      column-gap: 1.5rem;
+      row-gap: 0;
+      align-items: center;
+      padding: 0 1.25rem 0 1.5rem;
+    }
+    .pt-kopf {
+      display: grid;
+      height: 2.875rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--color-ink-600);
+      border-bottom: 1px solid var(--color-line);
+    }
+    .pt-k-dauer { display: none; }
+    .pt-k-preis { text-align: right; }
+    .pt-zeile { min-height: 4.75rem; }
+    .pt-zeile:hover { background: var(--color-canvas); }
+    .pt-name { grid-area: 1 / 1 / 3 / 2; font-size: 1.1875rem; }
+    .pt-text { grid-area: 1 / 2; align-self: end; padding: 0.75rem 0 0; }
+    .pt-dauer { grid-area: 2 / 2; align-self: start; padding-bottom: 0.75rem; }
+    .pt-preis { grid-area: 1 / 3 / 3 / 4; font-size: 1.1875rem; }
+    .pt-start { grid-area: 1 / 4 / 3 / 5; justify-self: end; }
+  }
+  @container (min-width: 68rem) {
+    .pt-kopf,
+    .pt-zeile {
+      grid-template-columns: 12.25rem minmax(0, 1fr) 11.125rem 7rem auto;
+      padding: 0 1.5rem 0 1.75rem;
+    }
+    .pt-k-dauer { display: block; }
+    .pt-zeile { min-height: 4.125rem; }
+    .pt-name { font-size: 1.25rem; }
+    .pt-preis { font-size: 1.25rem; }
+    .pt-name,
+    .pt-preis,
+    .pt-start { grid-area: auto; }
+    .pt-text { grid-area: auto; align-self: center; padding: 0.625rem 0; }
+    .pt-dauer {
+      grid-area: auto;
+      align-self: center;
+      padding: 0;
+      font-size: 0.96875rem;
+      color: var(--color-navy);
+    }
+    .pt-dauer-label {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip-path: inset(50%);
+      white-space: nowrap;
+    }
+  }
+
+  /* Auswahlzeilen im Online-Auftrag (Rolle „radio“), im Stil der Preistafel:
+     Linie zwischen den Zeilen, Auswahl mit Navy-Punkt und heller Fläche. */
+  .auswahl-zeile {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    gap: 0.875rem;
+    padding: 0.875rem 1rem;
+    border-top: 1px solid var(--color-line);
+    background: #fff;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+  }
+  .auswahl-zeile:first-child { border-top: 0; }
+  .auswahl-zeile:hover { background: var(--color-canvas); }
+  .auswahl-zeile[aria-checked="true"] { background: var(--color-canvas); }
+  .auswahl-zeile:focus-visible { outline-offset: -3px; box-shadow: none; }
+  .auswahl-punkt {
+    flex: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: 0.1875rem;
+    border: 2px solid var(--color-ink-400);
+    border-radius: 50%;
+    background: #fff;
+  }
+  .auswahl-zeile:hover .auswahl-punkt { border-color: var(--color-navy); }
+  .auswahl-zeile[aria-checked="true"] .auswahl-punkt {
+    border-color: var(--color-brand-600);
+    box-shadow: inset 0 0 0 3.5px #fff;
+    background: var(--color-brand-600);
+  }
+
+  /* Liste mit Linien: der Ersatz für Kartenreihen */
+  .liste > * {
+    border-top: 1px solid var(--color-line);
+  }
+  .liste > *:last-child {
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  /* Textlink: unterstrichen statt mit Pfeil */
+  .link {
+    font-weight: 600;
+    color: var(--color-navy);
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 0.25em;
+  }
+  .link:hover { color: var(--color-brand-700); }
+  .link-on-dark { color: #fff; }
+  .link-on-dark:hover { color: #fff; text-decoration-thickness: 2.5px; }
 
   .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 0.625rem;
-    min-height: 3rem;
-    padding: 0.75rem 1.375rem;
+    min-height: 3.25rem;
+    padding: 0.75rem 1.625rem;
     border-radius: var(--radius-control);
     border: 2px solid transparent;
     font-family: var(--font-display);
-    font-size: 1rem;
-    font-weight: 700;
+    font-variation-settings: "wdth" 106;
+    font-size: 1.03125rem;
+    font-weight: 650;
     line-height: 1.2;
     text-align: center;
     cursor: pointer;
-    transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease,
-      box-shadow 0.18s ease, transform 0.18s ease;
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
   }
-  .btn:active { transform: translateY(1px); }
   .btn[disabled], .btn[aria-disabled="true"] { cursor: not-allowed; opacity: 0.6; }
   .btn-lg { min-height: 3.5rem; padding-inline: 1.75rem; font-size: 1.0625rem; }
-  .btn-sm { min-height: 2.75rem; padding: 0.5rem 1rem; font-size: 0.9375rem; }
+  .btn-sm { min-height: 2.75rem; padding: 0.5rem 1.125rem; font-size: 0.9375rem; }
   .btn-block { width: 100%; }
 
+  /* Hauptschaltfläche im Logo-Blau; Navy für ruhigere Nebenaktionen auf hellen Flächen. */
   .btn-primary {
     background: var(--color-brand-600);
+    border-color: var(--color-brand-600);
     color: #fff;
-    box-shadow: 0 1px 2px rgb(11 31 58 / 0.08), 0 10px 22px -12px rgb(37 99 235 / 0.65);
   }
-  .btn-primary:hover { background: var(--color-brand-700); }
+  .btn-primary:hover { background: var(--color-brand-700); border-color: var(--color-brand-700); }
+  .btn-navy {
+    background: var(--color-navy);
+    border-color: var(--color-navy);
+    color: #fff;
+  }
+  .btn-navy:hover { background: var(--color-navy-800); border-color: var(--color-navy-800); }
 
   .btn-secondary {
     background: #fff;
     color: var(--color-navy);
-    border-color: var(--color-ink-300);
+    border-color: var(--color-navy);
   }
-  .btn-secondary:hover { border-color: var(--color-navy); background: var(--color-ink-50); }
+  .btn-secondary:hover { background: var(--color-canvas); }
 
-  .btn-navy { background: var(--color-navy); color: #fff; }
-  .btn-navy:hover { background: var(--color-navy-800); }
-
-  .btn-ghost { background: transparent; color: var(--color-ink-700); }
-  .btn-ghost:hover { background: var(--color-ink-100); color: var(--color-ink-900); }
+  .btn-ghost { background: transparent; color: var(--color-navy); }
+  .btn-ghost:hover { background: var(--color-canvas); }
 
   /* WhatsApp: Markengrün mit dunkler Schrift – Weiß auf #25d366 wäre zu kontrastarm. */
-  .btn-wa { background: var(--color-wa); color: var(--color-navy); }
-  .btn-wa:hover { background: #1fbe5b; }
+  .btn-wa { background: var(--color-wa); border-color: var(--color-wa); color: var(--color-navy); }
+  .btn-wa:hover { background: #1fbe5b; border-color: #1fbe5b; }
 
+  /* Auf dunkler Fläche: helle Hauptschaltfläche und heller Umriss */
+  .btn-hell { background: #fff; border-color: #fff; color: var(--color-navy); }
+  .btn-hell:hover { background: var(--color-canvas); border-color: var(--color-canvas); }
   .btn-on-dark {
     background: transparent;
     color: #fff;
-    border-color: rgb(255 255 255 / 0.28);
+    border-color: rgb(255 255 255 / 0.55);
   }
-  .btn-on-dark:hover { border-color: #fff; background: rgb(255 255 255 / 0.06); }
+  .btn-on-dark:hover { border-color: #fff; background: rgb(255 255 255 / 0.08); }
 
   /* Formularfelder: 16 px Schrift (kein Zoom auf iOS), mindestens 52 px hoch,
      Rahmen mit 3:1 Kontrast zur Fläche. */
@@ -239,123 +726,48 @@ footer :focus-visible {
     width: 100%;
     min-height: 3.25rem;
     padding: 0.8125rem 1rem;
-    border: 1.5px solid #8493a8;
+    border: 1.5px solid #7b8494;
     border-radius: var(--radius-control);
     background: #fff;
-    color: var(--color-ink-900);
+    color: var(--color-navy);
     font-size: 1rem;
     line-height: 1.4;
     outline: none;
-    transition: border-color 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
   }
   .field::placeholder { color: var(--color-ink-500); opacity: 1; }
-  .field:hover { border-color: var(--color-ink-600); }
+  .field:hover { border-color: var(--color-navy); }
   .field:focus-visible,
   .field:focus {
     border-color: var(--color-brand-600);
-    box-shadow: 0 0 0 4px rgb(37 99 235 / 0.16);
+    box-shadow: 0 0 0 3px rgb(0 88 248 / 0.25);
     outline: none;
   }
   .field[aria-invalid="true"] {
     border-color: var(--color-danger);
-    background: #fef3f2;
+    background: #fdf3f2;
   }
-  .field[aria-invalid="true"]:focus { box-shadow: 0 0 0 4px rgb(217 45 32 / 0.16); }
+  .field[aria-invalid="true"]:focus { box-shadow: 0 0 0 3px rgb(196 40 28 / 0.22); }
   .field-label {
     display: block;
     margin-bottom: 0.375rem;
     font-size: 0.9375rem;
     font-weight: 600;
-    color: var(--color-ink-900);
+    color: var(--color-navy);
   }
-  .field-hint { margin-top: 0.375rem; font-size: 0.875rem; color: var(--color-ink-500); }
+  .field-hint { margin-top: 0.375rem; font-size: 0.875rem; color: var(--color-ink-600); }
 
-  /* Dunkler Abschnitt mit zwei sehr zurückhaltenden Lichtflecken */
+  /* Dunkler Abschnitt: einfarbig, ohne Lichtflecken */
   .bg-navy-pattern {
     background-color: var(--color-navy);
-    background-image:
-      radial-gradient(42rem 22rem at 88% -10%, rgb(37 99 235 / 0.34), transparent 62%),
-      radial-gradient(34rem 20rem at -6% 112%, rgb(20 184 166 / 0.2), transparent 60%);
   }
 }
 
-/* Startseiten-Hero: kühler, heller Verlauf mit zwei sehr zurückhaltenden Lichtflecken */
-.bg-home {
-  background:
-    radial-gradient(52rem 30rem at 92% 8%, rgb(37 99 235 / 0.1), transparent 62%),
-    radial-gradient(40rem 26rem at 30% 38%, rgb(20 184 166 / 0.07), transparent 60%),
-    linear-gradient(180deg, #eef4fc 0%, var(--color-canvas) 100%);
-}
-
-/* Hero-Verlauf der Unterseiten */
+/* Frühere Verlaufs-Hintergründe: jetzt einfarbig */
+.bg-home,
 .bg-hero {
-  background:
-    radial-gradient(56rem 26rem at 85% -12%, rgb(37 99 235 / 0.1), transparent 60%),
-    radial-gradient(40rem 26rem at -10% 110%, rgb(20 184 166 / 0.06), transparent 60%),
-    linear-gradient(180deg, #eef4fc 0%, #ffffff 100%);
+  background: #ffffff;
 }
-
-/* Sanft schwebende Karten (Hero-Diagramm) */
-@keyframes floaty {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-7px); }
-}
-.animate-floaty { animation: floaty 5s ease-in-out infinite; }
-.animate-floaty-delayed { animation: floaty 5s ease-in-out 2.5s infinite; }
-
-/* Wandernde gestrichelte Verbindungslinien */
-@keyframes dashmove {
-  to { stroke-dashoffset: -20; }
-}
-.animate-dash {
-  stroke-dasharray: 4 6;
-  animation: dashmove 1.2s linear infinite;
-}
-
-/* Drehender Prüf-Indikator */
-@keyframes spinslow {
-  to { transform: rotate(360deg); }
-}
-.animate-spin-slow { animation: spinslow 2.4s linear infinite; }
-
-/* Timeline-Effekte („So funktioniert’s“) */
-@keyframes fillbar {
-  0% { width: 0; }
-  60% { width: 100%; }
-  100% { width: 100%; }
-}
-.animate-fillbar { animation: fillbar 2.8s ease-in-out infinite; }
-
-@keyframes tickloop {
-  0% { opacity: 0.15; transform: scale(0.75); }
-  12% { opacity: 1; transform: scale(1); }
-  85% { opacity: 1; }
-  100% { opacity: 0.15; transform: scale(0.75); }
-}
-.animate-tick { animation: tickloop 3.6s ease-in-out infinite; }
-
-@keyframes drivealong {
-  0% { transform: translateX(0); opacity: 0; }
-  12% { opacity: 1; }
-  88% { opacity: 1; }
-  100% { transform: translateX(8.5rem); opacity: 0; }
-}
-.animate-drive { animation: drivealong 3s ease-in-out infinite; }
-
-@keyframes pulsering {
-  0% { box-shadow: 0 0 0 0 rgb(37 99 235 / 0.4); }
-  70% { box-shadow: 0 0 0 12px rgb(37 99 235 / 0); }
-  100% { box-shadow: 0 0 0 0 rgb(37 99 235 / 0); }
-}
-.animate-pulsering { animation: pulsering 2.4s ease-out infinite; }
-
-@keyframes signdraw {
-  0% { stroke-dashoffset: 60; }
-  45% { stroke-dashoffset: 0; }
-  80% { stroke-dashoffset: 0; }
-  100% { stroke-dashoffset: 60; }
-}
-.animate-sign { stroke-dasharray: 60; animation: signdraw 3.2s ease-in-out infinite; }
 
 /* Chat-Illustration: Nachricht klappt herein, Tipp-Punkte hüpfen */
 @keyframes msgin {
@@ -392,33 +804,5 @@ footer :focus-visible {
   }
   body {
     background: #fff;
-  }
-}
-
-/* ── Scroll-Reveal (components/Reveal.tsx) ─────────────────────────────
-   Standard: sichtbar. Nur vom Client markierte Elemente unterhalb des
-   ersten Bildschirms (reveal-pending) werden beim Hineinscrollen eingeblendet. */
-.reveal {
-  transition:
-    opacity 0.5s cubic-bezier(0.21, 0.65, 0.36, 1),
-    transform 0.5s cubic-bezier(0.21, 0.65, 0.36, 1);
-}
-.reveal-pending {
-  opacity: 0;
-  transform: translateY(24px);
-}
-@media (prefers-reduced-motion: reduce) {
-  .reveal {
-    transition: none;
-  }
-  .reveal-pending {
-    opacity: 1;
-    transform: none;
-  }
-}
-@media print {
-  .reveal-pending {
-    opacity: 1 !important;
-    transform: none !important;
   }
 }

@@ -2,7 +2,8 @@
  * Zentrales Datenobjekt der Startseite.
  *
  * Alle Texte, Reihenfolgen und Zuordnungen der Startseite liegen hier – die
- * Komponenten unter components/home/ rendern nur. Drei Dinge kommen bewusst
+ * Komponenten unter components/home/ rendern nur. Bewusst ohne Icons und ohne
+ * Mini-Labels über den Überschriften (Designsystem v5). Drei Dinge kommen bewusst
  * NICHT von hier, damit es dafür genau eine Quelle gibt:
  *   Preise            → config/preise.json  (über lib/pricing.ts, lib/catalog.ts)
  *   Zeiten            → config/betrieb.json (über lib/betrieb.ts)
@@ -13,25 +14,6 @@
  * Hinweis auf die einmalige digitale Identitätsbestätigung für die Vollmacht.
  */
 
-import {
-  BadgeEuro,
-  ClipboardList,
-  Cookie,
-  FileCheck2,
-  Headset,
-  IdCard,
-  Lock,
-  MailCheck,
-  MapPinned,
-  MessageCircle,
-  SearchCheck,
-  Server,
-  ShieldCheck,
-  Trash2,
-  Upload,
-  UserCheck,
-  type LucideIcon,
-} from "lucide-react";
 import { ZEIT } from "@/lib/betrieb";
 import { faqItems } from "@/lib/faq";
 import { P, PRICE_CONFIG, priceDisclaimer } from "@/lib/pricing";
@@ -45,81 +27,72 @@ export { vorgaenge, type Vorgang, type VorgangSlug } from "@/lib/vorgaenge";
 
 /* ───────────────────────── Hero ───────────────────────── */
 
+const leistungsPreise = Object.values(PRICE_CONFIG.leistungen);
+const alleMitGebuehren = leistungsPreise.every((l) => l.enthaeltAmtlicheGebuehren);
+
 export const hero = {
-  badge: "Bundesweiter Kfz-Zulassungsservice",
   title: "Auto online anmelden, ummelden oder abmelden.",
   lead: "Mit KFZ-Zulassungsprofis erledigen Sie Ihre Fahrzeugzulassung bequem online. Ohne eID, ohne AusweisApp und ohne persönlichen Behördentermin bei geeigneten Vorgängen.",
   /** Pflichtzusatz zur „ohne eID“-Aussage, immer in Sichtnähe zum Claim. */
   hinweis:
     "Privater Zulassungsdienst, keine Behörde. Für die Vollmacht bestätigen Sie Ihre Identität einmalig digital – ohne eID-PIN.",
   vorteile: [
-    { icon: IdCard, title: "Ohne Online-Ausweis", text: "keine eID-PIN, keine AusweisApp" },
-    { icon: BadgeEuro, title: "Festpreise inklusive", text: "Behördengebühren, soweit zutreffend" },
-    { icon: Headset, title: "Persönliche Betreuung", text: "per WhatsApp, E-Mail und Telefon" },
+    { title: "Ohne Online-Ausweis", text: "keine eID-PIN, keine AusweisApp" },
+    { title: "Festpreise inklusive", text: "Behördengebühren, soweit zutreffend" },
+    { title: "Persönliche Betreuung", text: "per WhatsApp, E-Mail und Telefon" },
   ],
   primary: { label: "Jetzt Zulassung starten", href: "/auftrag/" },
   secondary: { label: "So funktioniert’s", href: "#ablauf" },
-  fakten: ["Bundesweit", `Bearbeitung meist ${ZEIT.zulassung}`, "Verschlüsselte Datenübermittlung"],
+  /** Die Preistafel im Kopf: sechs Leistungen mit Festpreis und direktem Einstieg. */
   auswahl: {
     title: "Ihre Zulassung – jetzt online beauftragen",
-    text: "Wählen Sie die gewünschte Leistung und starten Sie direkt.",
     cta: "Jetzt starten",
+    fussnote: `${
+      alleMitGebuehren
+        ? "Alle Festpreise inklusive amtlicher Gebühren und 19 % MwSt."
+        : "Alle Festpreise inklusive 19 % MwSt."
+    } Kennzeichenschilder auf Wunsch zzgl. ${P.kennzeichen} pro Paar.`,
+    alle: { label: "Alle Leistungen ansehen", href: "/leistungen/" },
   },
 } as const;
 
 /* ───────────────────────── Vertrauen ───────────────────────── */
 
 export interface TrustItem {
-  icon: LucideIcon;
   title: string;
   text: string;
 }
 
 export const vertrauen: { items: TrustItem[]; betreiber: string } = {
   items: [
-    { icon: MapPinned, title: "Bundesweite Dienstleistung", text: "Über die jeweils zuständige Zulassungsbehörde" },
-    { icon: ShieldCheck, title: "Persönliche Dokumentenprüfung", text: "Wir prüfen Ihre Unterlagen vor der Einreichung" },
-    { icon: BadgeEuro, title: "Transparente Preise", text: "Festpreis-Bestätigung, bevor wir starten" },
-    { icon: MessageCircle, title: "Direkter Kontakt", text: "Per WhatsApp, E-Mail und Telefon" },
-    { icon: Lock, title: "Sichere Datenübermittlung", text: "Verschlüsselte Übertragung" },
+    { title: "Bundesweite Dienstleistung", text: "Über die jeweils zuständige Zulassungsbehörde" },
+    { title: "Persönliche Dokumentenprüfung", text: "Wir prüfen Ihre Unterlagen vor der Einreichung" },
+    { title: "Transparente Preise", text: "Festpreis-Bestätigung, bevor wir starten" },
+    { title: "Direkter Kontakt", text: "Per WhatsApp, E-Mail und Telefon" },
+    { title: "Sichere Datenübermittlung", text: "Verschlüsselte Übertragung" },
   ],
-  betreiber: `KFZ-Zulassungsprofis ist ein privater Zulassungsdienst und keine Behörde. Betreiber ist die ${site.company.legalName}, ${site.company.zipCity.split(" ").slice(1).join(" ")}. Über jede Zulassung entscheidet die zuständige Zulassungsbehörde.`,
+  betreiber: `KFZ-Zulassungsprofis ist ein privater Zulassungsdienst mit Sitz in ${site.company.zipCity.split(" ").slice(1).join(" ")} und keine Behörde. Über jede Zulassung entscheidet die zuständige Zulassungsbehörde.`,
 };
-
-/* ───────────────────────── Leistungen ───────────────────────── */
-
-export const leistungen = {
-  eyebrow: "Leistungen",
-  title: "Welche Zulassung möchten Sie beauftragen?",
-  lead: "Sechs Vorgänge zum Festpreis – jeweils mit persönlicher Prüfung Ihrer Unterlagen.",
-  cta: "Jetzt beauftragen",
-  alle: { label: "Alle Leistungen ansehen", href: "/leistungen/" },
-} as const;
 
 /* ───────────────────────── Ablauf ───────────────────────── */
 
 export const ablauf = {
-  eyebrow: "So funktioniert’s",
   title: "In vier Schritten zur Zulassung",
   lead: `Den Auftrag erteilen Sie in ${ZEIT.auftrag} – am Handy oder am Computer.`,
   schritte: [
     {
-      icon: ClipboardList,
       title: "Zulassungsart wählen",
       text: "Wählen Sie die passende Leistung. Preis und benötigte Unterlagen sehen Sie sofort.",
     },
     {
-      icon: Upload,
       title: "Angaben und Unterlagen übermitteln",
       text: "Kontaktdaten eintragen und Unterlagen als Foto oder PDF hochladen – oder später per WhatsApp nachreichen.",
     },
     {
-      icon: SearchCheck,
       title: "Wir prüfen und bearbeiten den Auftrag",
       text: "Unser Team prüft alles persönlich und bestätigt Ihnen den Festpreis. Für die Vollmacht bestätigen Sie einmalig digital Ihre Identität; danach reichen wir den Antrag bei der zuständigen Behörde ein.",
     },
     {
-      icon: MailCheck,
       title: "Bestätigung und Unterlagen erhalten",
       text: `Papiere und gebuchte Kennzeichenschilder kommen per Post – die Schilder meist in ${ZEIT.kennzeichenDativ}. Abmeldebestätigungen erhalten Sie digital.`,
     },
@@ -130,7 +103,6 @@ export const ablauf = {
 /* ───────────────────────── Ohne eID ───────────────────────── */
 
 export const ohneEid = {
-  eyebrow: "Zulassung ohne Online-Ausweis",
   title: "Keine eID? Kein Problem.",
   intro:
     "Über das Behördenportal i-Kfz können Sie Ihr Fahrzeug selbst online zulassen – dafür brauchen Sie einen aktivierten Online-Ausweis mit PIN, die AusweisApp und ein NFC-fähiges Smartphone oder einen Kartenleser. Bei KFZ-Zulassungsprofis übernehmen wir den Vorgang mit Ihrer Vollmacht.",
@@ -170,38 +142,29 @@ export const ohneEid = {
 
 /* ───────────────────────── Preise ───────────────────────── */
 
-const leistungsPreise = Object.values(PRICE_CONFIG.leistungen);
-const alleMitGebuehren = leistungsPreise.every((l) => l.enthaeltAmtlicheGebuehren);
-
 export const preise = {
-  eyebrow: "Preise",
   title: "Festpreise ohne Überraschungen",
   lead: "Sie sehen den Preis, bevor Sie etwas eingeben – und erhalten vor dem Start eine verbindliche Festpreis-Bestätigung.",
   hinweise: [
     {
-      icon: FileCheck2,
       title: "Im Preis enthalten",
       text: "Serviceleistung mit persönlicher Prüfung Ihrer Unterlagen, Einreichung bei der zuständigen Behörde und 19 % MwSt.",
     },
     {
-      icon: BadgeEuro,
       title: "Behördengebühren",
       text: alleMitGebuehren
         ? "Die amtlichen Gebühren sind bei allen sechs Leistungen bereits im Festpreis enthalten."
         : "Wo die amtlichen Gebühren im Festpreis enthalten sind, steht es direkt bei der Leistung.",
     },
     {
-      icon: MailCheck,
       title: "Versand",
       text: `Der Versand der Dokumente ist enthalten, wo Dokumente verschickt werden. Neue Kennzeichenschilder brauchen per Post meist ${ZEIT.kennzeichen}. Die Abmeldung läuft digital – ohne Versand.`,
     },
     {
-      icon: ClipboardList,
       title: "Optionale Zusatzleistungen",
       text: `Kennzeichenschilder ${P.kennzeichen} pro Paar und Wunschkennzeichen-Service ${P.wunschkennzeichen} – nur, wenn Sie es wünschen.`,
     },
     {
-      icon: UserCheck,
       title: "Sonderfälle",
       text: "Besonderheiten wie Sondergrößen oder auswärtige Behörden bestätigen wir individuell – immer vor dem Start.",
     },
@@ -213,14 +176,13 @@ export const preise = {
 /* ───────────────────────── Datensicherheit ───────────────────────── */
 
 export const sicherheit = {
-  eyebrow: "Datensicherheit",
   title: "Ihre Unterlagen bleiben geschützt.",
   punkte: [
-    { icon: Lock, text: "Verschlüsselte Übertragung" },
-    { icon: Cookie, text: "Keine Tracking-Cookies" },
-    { icon: UserCheck, text: "Persönliche Prüfung" },
-    { icon: Trash2, text: "Löschung sensibler Kopien nach Abschluss im Rahmen der geltenden Vorgaben" },
-    { icon: Server, text: "Hosting in Deutschland" },
+    { text: "Verschlüsselte Übertragung" },
+    { text: "Keine Tracking-Cookies" },
+    { text: "Persönliche Prüfung" },
+    { text: "Löschung sensibler Kopien nach Abschluss im Rahmen der geltenden Vorgaben" },
+    { text: "Hosting in Deutschland" },
   ],
   cta: { label: "So schützen wir Ihre Daten", href: "/datensicherheit/" },
 } as const;
@@ -240,7 +202,6 @@ const formate = UPLOAD_LIMITS.extensions
   .join(", ");
 
 export const faq = {
-  eyebrow: "Häufige Fragen",
   title: "Kurz beantwortet",
   items: [
     {
@@ -269,7 +230,7 @@ export const faq = {
     },
     {
       question: "Wer betreibt KFZ-Zulassungsprofis?",
-      answer: `KFZ-Zulassungsprofis ist ein Angebot der ${site.company.legalName}, ${site.company.street}, ${site.company.zipCity} (${site.company.register}). Wir sind ein privater Zulassungsdienst und keine Behörde – über jede Zulassung entscheidet die zuständige Zulassungsbehörde.`,
+      answer: `KFZ-Zulassungsprofis ist ein privater Zulassungsdienst mit Sitz in ${site.company.zipCity.split(" ").slice(1).join(" ")} und keine Behörde – über jede Zulassung entscheidet die zuständige Zulassungsbehörde. Die vollständigen Anbieterangaben stehen im Impressum.`,
     },
   ],
   mehr: { label: "Alle Fragen und Antworten", href: "/faq/" },

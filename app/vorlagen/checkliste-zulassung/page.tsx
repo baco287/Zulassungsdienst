@@ -61,12 +61,12 @@ const sections: { title: string; items: string[] }[] = [
 export default function ChecklistePage() {
   return (
     <>
-      <section className="no-print relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-14 sm:py-16">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <section className="no-print seitenkopf">
+        <div className="container-page">
           <Breadcrumbs
             items={[{ name: "Vorlagen", href: "/vorlagen/" }, { name: "Checkliste Zulassung" }]}
           />
-          <h1 className="mt-6 max-w-3xl font-display text-4xl font-bold leading-tight text-ink-900 sm:text-5xl">
+          <h1 className="mt-6 max-w-3xl h-seite text-navy">
             Checkliste: Unterlagen für die Kfz-Zulassung
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-ink-600">
@@ -81,14 +81,14 @@ export default function ChecklistePage() {
       </section>
 
       <section className="py-10 print:py-0">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6">
-          <article className="rounded-2xl border border-ink-200 bg-white p-8 shadow-card print:rounded-none print:border-0 print:p-0 print:shadow-none">
+        <div className="container-page *:max-w-3xl">
+          <article className="rounded-2xl border border-ink-200 bg-white p-8 print:rounded-none print:border-0 print:p-0 print:shadow-none">
             <h2 className="text-center font-display text-2xl font-bold text-ink-900">
               Unterlagen-Checkliste Kfz-Zulassung
             </h2>
             {sections.map((section) => (
               <div key={section.title} className="mt-7">
-                <h3 className="font-display text-sm font-bold uppercase tracking-wider text-ink-500">
+                <h3 className="font-display text-sm font-bold text-ink-600">
                   {section.title}
                 </h3>
                 <ul className="mt-3 space-y-2.5 text-sm text-ink-800">

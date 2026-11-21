@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BadgeEuro, Info } from "lucide-react";
 import CTASection from "@/components/CTASection";
-import Kennzeichen from "@/components/Kennzeichen";
 import Reveal from "@/components/Reveal";
 import { categoryLabels, sortedServices } from "@/lib/services";
 import { euro, euroRange, officialFees, P, plateCosts, plateFee, PRICE_DATE, priceDisclaimer, wunschkennzeichenHinweis } from "@/lib/pricing";
@@ -22,12 +20,12 @@ const order: ServiceCategory[] = ["zulassung", "kennzeichen", "dokumente", "serv
 export default function PreisePage() {
   return (
     <>
-      <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-50/40 to-white py-14 sm:py-16">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <section className="seitenkopf">
+        <div className="container-page">
           <div className="mb-5">
             <Breadcrumbs items={[{ name: "Preise" }]} />
           </div>
-          <h1 className="font-display text-4xl font-bold text-ink-900 sm:text-5xl">Preise</h1>
+          <h1 className="h-seite text-navy">Preise</h1>
           <p className="mt-4 max-w-2xl text-lg text-ink-600">
             <strong>Transparent kalkuliert:</strong> Bei unseren Zulassungsleistungen sind
             amtliche Gebühren und versicherter Versand bereits enthalten. Neue
@@ -40,7 +38,7 @@ export default function PreisePage() {
       </section>
 
       <section className="py-14">
-        <div className="mx-auto max-w-6xl space-y-12 px-4 sm:px-6">
+        <div className="container-page space-y-12">
           <PriceCalculator />
           <p className="-mt-6 text-sm text-ink-500">
             Preisstand: {new Date(PRICE_DATE).toLocaleDateString("de-DE")}. Den verbindlichen Endpreis bestätigen wir
@@ -51,13 +49,14 @@ export default function PreisePage() {
             if (items.length === 0) return null;
             return (
               <Reveal key={cat}>
-                <h2 className="font-display text-2xl font-bold text-ink-900">
+                <h2 className="text-2xl font-bold text-navy">
                   {categoryLabels[cat]}
                 </h2>
-                <div className="mt-5 overflow-x-auto rounded-2xl border border-ink-200 shadow-card">
-                  <table className="w-full min-w-[40rem] border-collapse bg-white text-sm">
+                <div className="tafel tafel-breit mt-5">
+                <div className="overflow-x-auto">
+                  <table className="w-full min-w-[40rem] border-collapse bg-white text-[0.9375rem]">
                     <thead>
-                      <tr className="border-b border-ink-200 bg-ink-50 text-left font-display text-xs uppercase tracking-wider text-ink-600">
+                      <tr className="border-b border-ink-200 bg-ink-50 text-left font-display text-sm text-ink-600">
                         <th scope="col" className="px-5 py-3.5 font-semibold">Leistung</th>
                         <th scope="col" className="px-5 py-3.5 text-right font-semibold">Preis</th>
                         <th scope="col" className="px-5 py-3.5 text-right font-semibold">Amtliche Gebühren</th>
@@ -70,12 +69,9 @@ export default function PreisePage() {
                           <th scope="row" className="px-5 py-4 text-left font-medium text-ink-900">
                             <Link
                               href={`/leistungen/${s.slug}/`}
-                              className="inline-block w-60 rounded-[6px] py-1 transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
+                              className="-my-1.5 inline-block py-1.5 text-base font-semibold text-navy underline decoration-ink-300 decoration-1 underline-offset-4 hover:decoration-navy hover:decoration-2"
                             >
-                              {/* Kurzname, wo vorhanden: ein Kennzeichen wirkt nur
-                                  als solches, wenn es nicht zum Fließtext ausufert.
-                                  uniform + feste Linkbreite: alle Schilder gleich lang. */}
-                              <Kennzeichen uniform>{s.shortName ?? s.name}</Kennzeichen>
+                              {s.shortName ?? s.name}
                             </Link>
                           </th>
                           <td className="px-5 py-4 text-right">
@@ -87,7 +83,7 @@ export default function PreisePage() {
                                     ? euro(s.price.serviceFee)
                                     : `ab ${euro(s.price.serviceFee)}`}
                                 {!s.price.verified && (
-                                  <span className="ml-1.5 align-middle rounded bg-accent-400/20 px-1.5 py-0.5 text-xs font-semibold uppercase text-accent-700">
+                                  <span className="ml-1.5 align-middle rounded bg-accent-400/20 px-1.5 py-0.5 text-sm font-semibold text-accent-700">
                                     unverbindlich
                                   </span>
                                 )}
@@ -98,7 +94,7 @@ export default function PreisePage() {
                           </td>
                           <td className="px-5 py-4 text-right text-ink-700">
                             {s.price.inclusive ? (
-                              <span className="font-semibold text-brand-700">inklusive ✓</span>
+                              <span className="font-semibold text-navy">inklusive</span>
                             ) : s.price.officialFeeRange ? (
                               euroRange(s.price.officialFeeRange)
                             ) : (
@@ -112,12 +108,12 @@ export default function PreisePage() {
                                 <span className="block text-xs text-ink-500">Versand inklusive</span>
                               </span>
                             ) : s.price.inclusive ? (
-                              <span className="font-semibold text-brand-700">
+                              <span className="font-semibold text-navy">
                                 {s.slug === "abmeldung"
                                   ? "entfällt (digital)"
                                   : s.slug === "adressaenderung"
                                     ? "Versand inklusive, keine Schilder nötig"
-                                    : "inklusive ✓"}
+                                    : "inklusive"}
                               </span>
                             ) : s.price.plateCostRange ? (
                               euroRange(s.price.plateCostRange)
@@ -130,6 +126,7 @@ export default function PreisePage() {
                     </tbody>
                   </table>
                 </div>
+                </div>
               </Reveal>
             );
           })}
@@ -137,9 +134,8 @@ export default function PreisePage() {
           {/* Gebühren-Erläuterung */}
           <Reveal>
             <div className="grid gap-6 md:grid-cols-2">
-              <div className="rounded-2xl border border-ink-200 bg-white p-6 shadow-card">
-                <h2 className="flex items-center gap-2 font-display text-lg font-bold text-ink-900">
-                  <BadgeEuro className="h-5 w-5 text-brand-700" aria-hidden />
+              <div className="rounded-2xl border border-ink-200 bg-white p-6">
+                <h2 className="font-display text-lg font-bold text-ink-900">
                   Amtliche Gebühren im Detail
                 </h2>
                 <dl className="mt-4 space-y-2.5 text-sm text-ink-700">
@@ -176,8 +172,7 @@ export default function PreisePage() {
               </div>
 
               <div className="rounded-2xl border border-brand-200 bg-brand-50 p-6">
-                <h2 className="flex items-center gap-2 font-display text-lg font-bold text-ink-900">
-                  <Info className="h-5 w-5 text-brand-700" aria-hidden />
+                <h2 className="font-display text-lg font-bold text-ink-900">
                   Hinweis zu unseren Preisen
                 </h2>
                 <p className="mt-3 text-sm leading-relaxed text-ink-700">{priceDisclaimer}</p>
@@ -188,7 +183,7 @@ export default function PreisePage() {
                   <strong>Gewerbekunden:</strong> Autohäuser, Händler und Fuhrparks erhalten
                   individuelle Staffelpreise.{" "}
                   <Link href="/kontakt" className="font-semibold text-brand-700 underline underline-offset-2">
-                    Angebot anfordern →
+                    Angebot anfordern
                   </Link>
                 </p>
               </div>

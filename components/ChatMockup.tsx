@@ -9,9 +9,9 @@ import { chatDemo } from "@/lib/whatsappFlow";
 /**
  * Illustration eines Chatverlaufs auf der Messenger-Landingpage.
  *
- * Die Nachrichten erscheinen nacheinander (mit Tipp-Indikator vor Antworten
- * des Teams) und der Verlauf wiederholt sich – so wird der Ablauf sichtbar,
- * ohne dass eine Videodatei geladen werden muss.
+ * Die Nachrichten erscheinen einmal nacheinander (mit Tipp-Indikator vor
+ * Antworten des Teams), sobald der Chat ins Bild kommt, und bleiben dann
+ * stehen – so wird der Ablauf sichtbar, ohne Endlosschleife und ohne Video.
  *
  * Bewusst im eigenen Markendesign gehalten (keine Nachbildung der Oberfläche
  * eines fremden Messengers) – es geht um die Veranschaulichung des Ablaufs.
@@ -22,7 +22,6 @@ import { chatDemo } from "@/lib/whatsappFlow";
 /** Wartezeit vor der jeweiligen Nachricht in ms (Tippen + Lesepause). */
 const typingDelay = 1100;
 const readDelay = 900;
-const restartDelay = 4500;
 
 export default function ChatMockup() {
   const reduced = useReducedMotion();
@@ -30,7 +29,9 @@ export default function ChatMockup() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const inView = useInView(containerRef, { once: false, margin: "-80px" });
 
-  const [count, setCount] = useState(reduced ? chatDemo.length : 0);
+  // Immer mit 0 beginnen: Server und Browser rendern so dasselbe (sonst Hydration-Fehler,
+  // weil „Bewegung reduzieren“ erst im Browser bekannt ist).
+  const [count, setCount] = useState(0);
   const [typing, setTyping] = useState(false);
 
   useEffect(() => {
@@ -38,7 +39,7 @@ export default function ChatMockup() {
       setCount(chatDemo.length);
       return;
     }
-    if (!inView) return;
+    if (!inView || count === chatDemo.length) return;
 
     let cancelled = false;
     const timers: ReturnType<typeof setTimeout>[] = [];
@@ -48,13 +49,7 @@ export default function ChatMockup() {
     };
 
     const run = (index: number) => {
-      if (index >= chatDemo.length) {
-        schedule(() => {
-          setCount(0);
-          run(0);
-        }, restartDelay);
-        return;
-      }
+      if (index >= chatDemo.length) return;
 
       const isTeam = chatDemo[index].from === "team";
       if (isTeam) setTyping(true);
@@ -69,7 +64,7 @@ export default function ChatMockup() {
       );
     };
 
-    run(count === chatDemo.length ? 0 : count);
+    run(count);
 
     return () => {
       cancelled = true;
@@ -89,7 +84,7 @@ export default function ChatMockup() {
   return (
     <div
       ref={containerRef}
-      className="mx-auto w-full max-w-sm overflow-hidden rounded-[2rem] border-[6px] border-ink-900 bg-white shadow-2xl"
+      className="mx-auto w-full max-w-sm overflow-hidden rounded-[2rem] border-[6px] border-ink-900 bg-white"
       aria-hidden
     >
       {/* Kopfzeile */}
@@ -131,7 +126,7 @@ export default function ChatMockup() {
                 <p>{msg.text}</p>
                 <p
                   className={`mt-1 flex items-center justify-end gap-1 text-[10px] ${
-                    own ? "text-brand-100" : "text-ink-400"
+                    own ? "text-white/80" : "text-ink-500"
                   }`}
                 >
                   {msg.time}
@@ -144,7 +139,7 @@ export default function ChatMockup() {
 
         {typing && (
           <div className="flex justify-start">
-            <div className="flex items-center gap-1 rounded-2xl rounded-bl-md bg-white px-4 py-3 shadow-sm">
+            <div className="flex items-center gap-1 rounded-2xl rounded-bl-md bg-white px-4 py-3">
               {[0, 1, 2].map((i) => (
                 <span
                   key={i}
