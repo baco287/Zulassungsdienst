@@ -571,7 +571,9 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
       <motion.div
         {...(reduced ? {} : { initial: { opacity: 0, y: 12 }, animate: { opacity: 1, y: 0 } })}
         ref={stepContainerRef}
-        className="tafel tafel-breit max-w-3xl px-5 py-7 sm:px-9 sm:py-10"
+        // Links: Breite des blauen Bands (.tafel 0.875rem, ab md 3.5rem) plus Innenabstand.
+        // Ein einfaches px-* würde den reservierten Platz überschreiben – der Text läge unter dem Band.
+        className="tafel tafel-breit max-w-3xl py-7 pl-[2.125rem] pr-5 sm:py-10 sm:pl-[3.125rem] sm:pr-9 md:pl-[5.75rem]"
       >
         <Haken className="h-[1.375rem] w-[1.8125rem]" />
         <h2 tabIndex={-1} className="mt-4 text-2xl font-bold text-navy focus:outline-none focus-visible:outline-none sm:text-3xl">
