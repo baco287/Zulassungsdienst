@@ -24,6 +24,8 @@
  * die Schlüssel in ALLOWED_PROPS mit kurzen, festen Werten.
  */
 
+import { eigenesEreignis } from "@/lib/eigeneAnalyse";
+
 export type AnalyticsEvent =
   | "cta_click"
   | "whatsapp_click"
@@ -41,11 +43,17 @@ export type AnalyticsEvent =
   /** Anfrage eines Gewerbekunden (Formular mit Kundentyp Gewerbe oder B2B-Kontakt). */
   | "b2b_inquiry"
   /** Ein Rechner oder Werkzeug wurde benutzt (Ergebnis berechnet, Suche ausgeführt). */
-  | "tool_used";
+  | "tool_used"
+  /** Assistent: Pflichtangaben eines Schritts fehlen (Eigenschaften: step, fields). */
+  | "order_step_error"
+  /** Assistent: „Absenden“ geklickt, alle Angaben vollständig. */
+  | "order_submit_attempt"
+  /** Assistent: Absenden gescheitert (reason: server | netz | vorschau | unbestaetigt, fields). */
+  | "order_error";
 
 export type AnalyticsProps = Partial<Record<(typeof ALLOWED_PROPS)[number], string | number>>;
 
-const ALLOWED_PROPS = ["position", "service", "step", "value", "method", "page", "tool"] as const;
+const ALLOWED_PROPS = ["position", "service", "step", "value", "method", "page", "tool", "reason", "fields"] as const;
 
 export const analyticsProvider = (process.env.NEXT_PUBLIC_ANALYTICS_PROVIDER ?? "") as "" | "plausible" | "matomo";
 export const gadsId = process.env.NEXT_PUBLIC_GADS_ID ?? "";
@@ -60,7 +68,14 @@ declare global {
   }
 }
 
-const SUSPICIOUS = /@|\d{6,}|[A-HJ-NPR-Z0-9]{17}/i; // E-Mail, lange Ziffernfolgen (Telefon/IBAN), FIN
+/**
+ * E-Mail, lange Ziffernfolgen (Telefon/IBAN) oder FIN. Als FIN zählt nur eine 17-stellige
+ * Folge mit Ziffer – sonst fiele schon „zulassungsstellen“ (17 Buchstaben ohne I/O/Q) darunter.
+ */
+function suspicious(s: string): boolean {
+  if (/@|\d{6,}/.test(s)) return true;
+  return (s.match(/\b[A-HJ-NPR-Z0-9]{17}\b/gi) ?? []).some((k) => /\d/.test(k));
+}
 
 function sanitize(props?: AnalyticsProps): Record<string, string | number> {
   const out: Record<string, string | number> = {};
@@ -70,8 +85,8 @@ function sanitize(props?: AnalyticsProps): Record<string, string | number> {
     if (v === undefined) continue;
     if (typeof v === "number") out[key] = v;
     else {
-      const s = String(v).slice(0, 40);
-      if (!SUSPICIOUS.test(s)) out[key] = s;
+      const s = String(v).slice(0, key === "fields" ? 120 : 40);
+      if (!suspicious(s)) out[key] = s;
     }
   }
   return out;
@@ -89,10 +104,33 @@ const ADS_LABELS: Partial<Record<AnalyticsEvent, string>> = {
   order_submitted: process.env.NEXT_PUBLIC_GADS_LABEL_ORDER ?? "",
 };
 
-/** Sendet ein Ereignis an den konfigurierten Anbieter. Ohne Konfiguration: no-op. */
+/**
+ * Kontakt-Klicks erfasst die eigene Analyse selbst an jedem WhatsApp-/Telefon-/Mail-Link
+ * (lib/eigeneAnalyse.ts, contact_click) – sonst würden sie doppelt gezählt.
+ */
+const NICHT_IN_EIGENE_ANALYSE = new Set<AnalyticsEvent>(["whatsapp_click", "phone_click", "email_click"]);
+
+/** An eigene Analyse (lib/eigeneAnalyse.ts) und – falls konfiguriert – Plausible/Matomo/Google Ads. */
 export function track(event: AnalyticsEvent, props?: AnalyticsProps): void {
   if (typeof window === "undefined") return;
   const clean = sanitize(props);
+  try {
+    if (!NICHT_IN_EIGENE_ANALYSE.has(event)) {
+      const { service, step, ...rest } = clean;
+      eigenesEreignis(
+        event,
+        {
+          service: typeof service === "string" ? service : undefined,
+          step: event === "order_start" ? 1 : typeof step === "number" ? step : undefined,
+          meta: rest,
+        },
+        // Abbruch feuert beim Verlassen der Seite – nur sendBeacon kommt dann sicher an.
+        event === "order_abandon",
+      );
+    }
+  } catch {
+    // Analyse darf nie die Seite stören.
+  }
   try {
     if (analyticsProvider === "plausible" && window.plausible) {
       window.plausible(event, { props: clean });

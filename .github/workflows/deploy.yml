@@ -110,6 +110,15 @@ jobs:
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
         run: node scripts/mail-zugang.mjs out/api/mail-zugang.php
 
+      # Login für das Analytics-Dashboard (https://kfz-zulassungsprofis.de/analytics/).
+      # Ohne Secrets bleibt das Dashboard gesperrt; die Erfassung der Besuche läuft trotzdem.
+      - name: Zugang zum Analytics-Dashboard ablegen
+        if: env.HAS_FTP != ''
+        env:
+          ANALYTICS_USER: ${{ secrets.ANALYTICS_USER }}
+          ANALYTICS_PASSWORD: ${{ secrets.ANALYTICS_PASSWORD }}
+        run: node scripts/analytics-zugang.mjs out/api/analytics-zugang.php
+
       # Weiterleitungen der alten Domain müssen zu den Seiten im Build passen.
       - name: Weiterleitungsregeln prüfen
         if: env.HAS_FTP != ''

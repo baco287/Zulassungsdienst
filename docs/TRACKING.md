@@ -1,11 +1,72 @@
 # Webanalyse und Conversion-Tracking
 
-Stand: 03.11.2026. Im Auslieferungszustand ist **alles aus**: keine Cookies,
-keine Analyse, kein Banner. Eingeschaltet wird per Umgebungsvariablen beim
-Build (GitHub → Settings → Secrets and variables → Actions → Variables, dann im
-Workflow an den Build-Schritt durchreichen).
+## 0. Eigene Webanalyse (seit 22.11.2026, aktiv)
 
-## 1. Cookielose Reichweitenmessung (empfohlen)
+Dasselbe System wie bei Volt-Gas (Tarifrechner: `js/tracking.js` → `/vg/track` →
+`analytics.html`), nachgebaut für den PHP-Webspace bei all-inkl. Keine externen Dienste,
+keine Cookies, kein Banner.
+
+**Dashboard:** https://kfz-zulassungsprofis.de/analytics/ (Login, siehe unten)
+mit Übersicht, Conversion-Funnel, Auftrags-Assistent, Besucher & Kampagnen,
+Kontakte & Anfragen und Berichten (Zeitraumvergleich, Kundenwege, Seiten,
+Leistungen, Skriptfehler, CSV-/JSON-Export).
+
+| Teil | Datei |
+|---|---|
+| Erfassung im Browser | `lib/eigeneAnalyse.ts` (eingebunden über `components/Analytics.tsx` und `track()` in `lib/analytics.ts`) |
+| Annahme auf dem Server | `public/api/track.php` (Origin-Prüfung, Bot-Filter, 120 Ereignisse/Min. je Anschluss) |
+| Gemeinsame Regeln | `public/api/analytics-lib.php` (Ereignisliste, Funnel-Stufen, Speicher, Login) |
+| Server-Bestätigung | `public/api/auftrag.php` → `order_confirmed_server` / `order_failed_server` nach Antwort des Mailservers |
+| Dashboard | `public/analytics/index.php` + `dashboard.html`, Daten aus `public/analytics/daten.php` |
+| Login beim Deploy | `scripts/analytics-zugang.mjs` (GitHub-Secrets `ANALYTICS_USER`, `ANALYTICS_PASSWORD`) |
+
+**Einrichtung (einmalig):** In GitHub → Settings → Secrets and variables → Actions die
+Secrets `ANALYTICS_USER` und `ANALYTICS_PASSWORD` (mind. 10 Zeichen) anlegen. Beim
+nächsten Deploy schreibt der Workflow daraus `api/analytics-zugang.php`. Ohne Secrets
+werden Besuche trotzdem erfasst, das Dashboard meldet nur „Zugang nicht eingerichtet“.
+Prüfen, ob der Server speichern kann: `https://kfz-zulassungsprofis.de/api/track.php?check`
+→ `{"sqlite":true,"speicher":true}`.
+
+**Speicher:** SQLite-Datei `analytics-daten/analytics.sqlite` in der Kontowurzel des
+Webspace, also neben dem Domain-Ordner wie `formular-protokoll/`. Der Deploy
+(`lftp mirror --delete`) fasst sie nicht an; per URL ist sie nicht erreichbar. Keine
+MySQL-Datenbank im KAS nötig. Ereignisse älter als 760 Tage werden automatisch gelöscht.
+
+**Funnel-Stufen** (eine Session zählt mit ihrer höchsten Stufe):
+1 Website besucht · 2 Preise angesehen (`price_box_view`) · 3 Interesse (`cta_click`,
+`service_selected`, `tool_used`) · 4 Auftragsseite geöffnet · 5 Assistent begonnen ·
+6 letzter Schritt · 7 Absenden geklickt · 8 Auftrag gesendet. Maßgeblich für
+„Aufträge zugestellt“ ist die Server-Bestätigung, nicht das Browser-Ereignis.
+WhatsApp-, Telefon- und Mail-Klicks zählt das Dashboard getrennt als Kontakte.
+
+**Unterschiede zu Volt-Gas (bewusst):**
+- Sitzungskennung nur im Arbeitsspeicher des Tabs, nicht im `sessionStorage`, und kein
+  90-Tage-Herkunftscookie (`vg_attr`). Damit wird nichts auf dem Gerät gespeichert.
+  Folge: Ein Neuladen der Seite beginnt eine neue Sitzung, und die Herkunft gilt nur für
+  den jeweiligen Besuch (kein „First Touch“ über mehrere Tage).
+- Keine IP-Adressen in der Datenbank (Volt-Gas: gesalzener Hash); für die Drosselung nur
+  ein HMAC je Minute, der nach zwei Minuten gelöscht wird.
+- Keine Referenznummern in der Analyse (Volt-Gas speichert die Auftragsnummer).
+- Speicher SQLite statt MariaDB, weil die Website statisch auf all-inkl läuft.
+
+**Schalter:** im Produktions-Build an, in der GitHub-Pages-Vorschau und bei `npm run dev`
+aus. `NEXT_PUBLIC_EIGENE_ANALYSE=0` schaltet ab, `=1` erzwingt (lokale Tests).
+
+**Lokal testen:** `NEXT_PUBLIC_EIGENE_ANALYSE=1 npm run build`, dann
+`KZP_ANALYTICS_DIR=/tmp/kzp-analyse php -S localhost:8080 -t out` und eine Datei
+`out/api/analytics-zugang.php` mit `<?php return ['user' => '…', 'pass' => '…'];` anlegen.
+
+Die Datenschutzerklärung (Abschnitt 2a) beschreibt die Messung automatisch, solange sie
+aktiv ist. Vor dem Livegang trotzdem rechtlich prüfen lassen.
+
+---
+
+Stand der folgenden Abschnitte: 03.11.2026. Plausible, Matomo und Google Ads sind
+weiterhin **aus** und werden per Umgebungsvariablen beim Build eingeschaltet
+(GitHub → Settings → Secrets and variables → Actions → Variables, dann im Workflow an den
+Build-Schritt durchreichen).
+
+## 1. Cookielose Reichweitenmessung (optional, zusätzlich)
 
 | Variante | Variablen | Einwilligung nötig? |
 |---|---|---|

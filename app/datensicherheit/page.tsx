@@ -5,6 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import CTASection from "@/components/CTASection";
 import Reveal from "@/components/Reveal";
 import { analyticsProvider, gadsId } from "@/lib/analytics";
+import { eigeneAnalyseAktiv } from "@/lib/eigeneAnalyse";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -42,11 +43,13 @@ const points = [
   },
   {
     icon: EyeOff,
-    title: analyticsProvider || gadsId ? "Sparsame Webanalyse" : "Keine Tracking-Cookies",
+    title: analyticsProvider || gadsId || eigeneAnalyseAktiv ? "Sparsame Webanalyse" : "Keine Tracking-Cookies",
     text:
       analyticsProvider || gadsId
         ? "Wir messen die Nutzung der Website nur anonym und ohne Cookies. Werbe-Cookies setzen wir ausschließlich nach Ihrer ausdrücklichen Einwilligung. Formular- und Fahrzeugdaten fließen nie in die Webanalyse."
-        : "Die Website setzt keine Tracking-Cookies und bindet keine Analyse- oder Werbedienste ein. Schriftarten laden wir vom eigenen Server.",
+        : eigeneAnalyseAktiv
+          ? "Wir messen die Nutzung der Website nur anonym, ohne Cookies und auf unserem eigenen Server – externe Analyse- oder Werbedienste binden wir nicht ein. Formular- und Fahrzeugdaten fließen nie in die Webanalyse."
+          : "Die Website setzt keine Tracking-Cookies und bindet keine Analyse- oder Werbedienste ein. Schriftarten laden wir vom eigenen Server.",
   },
 ];
 

@@ -346,6 +346,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
   function next() {
     const e = validateStep(step, values);
     if (Object.keys(e).length > 0) {
+      track("order_step_error", { step: step + 1, fields: Object.keys(e).join(","), service: values.serviceSlug });
       showErrors(e);
       return;
     }
@@ -373,8 +374,10 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
   }
 
   async function send() {
+    track("order_submit_attempt", { step: LAST + 1, service: values.serviceSlug });
     const e = validateStep(LAST, values);
     if (Object.keys(e).length > 0) {
+      track("order_error", { step: LAST + 1, reason: "validierung", fields: Object.keys(e).join(",") });
       showErrors(e);
       return;
     }
@@ -390,6 +393,14 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
     setSending(false);
     setResult(outcome);
 
+    if (!outcome.ok) {
+      track("order_error", {
+        step: LAST + 1,
+        reason: outcome.reason ?? "server",
+        fields: outcome.field ?? "",
+        service: values.serviceSlug,
+      });
+    }
     if (!outcome.ok && outcome.field) {
       const feld = outcome.field === "service" ? "serviceSlug" : outcome.field;
       const zielSchritt = FIELD_STEP[outcome.field];

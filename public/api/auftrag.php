@@ -220,6 +220,7 @@ $sent = sendMail(
     $antwort
 );
 protokoll($ref, $kind, count($files), ($sent ? 'zugestellt: ' : 'FEHLER: ') . $antwort);
+analyseEreignis($sent, $kind, $f['audience'], count($files), $antwort);
 
 if (!$sent) {
     fail(500, 'Ihre Anfrage konnte gerade nicht zugestellt werden. Bitte schreiben Sie uns direkt per WhatsApp oder an ' . RECIPIENT . '.');
@@ -640,6 +641,41 @@ function protokoll(string $ref, string $kind, int $dateien, string $ergebnis): v
             && @file_put_contents($dir . '/zustellung-' . date('Y-m') . '.log', $zeile, FILE_APPEND | LOCK_EX) !== false) {
             return;
         }
+    }
+}
+
+/**
+ * Eigene Webanalyse (api/analytics-lib.php): Zustellung als Server-Ereignis zählen – das ist
+ * die maßgebliche Zahl im Dashboard (/analytics/), unabhängig von Werbeblockern im Browser.
+ * Gespeichert werden nur anonyme Angaben: Sitzungskennung aus dem Browser, Leistungskürzel,
+ * Privat/Gewerbe, Anzahl Dateien, bei Fehlern der dreistellige Code des Mailservers.
+ * Keine Referenznummer, keine Namen oder Inhalte. Darf den Versand nie stören.
+ */
+function analyseEreignis(bool $sent, string $kind, string $audience, int $dateien, string $antwort): void
+{
+    $lib = __DIR__ . '/analytics-lib.php';
+    if (!is_file($lib)) {
+        return;
+    }
+    try {
+        require_once $lib;
+        $code = preg_match('/\b([2-5]\d\d)\b/', $antwort, $m) === 1 ? $m[1] : '';
+        kzp_log_event([
+            'event'      => !$sent ? 'order_failed_server'
+                : ($kind === 'unterlagen' ? 'documents_confirmed_server' : 'order_confirmed_server'),
+            'session_id' => (string) ($_POST['analyse_sid'] ?? ''),
+            'service'    => $kind === 'auftrag' ? (string) ($_POST['analyse_service'] ?? '') : '',
+            'path'       => $kind === 'unterlagen' ? '/unterlagen/' : '/auftrag/',
+            'device'     => kzp_device_from_ua((string) ($_SERVER['HTTP_USER_AGENT'] ?? '')),
+            'meta'       => array_filter([
+                'kind'     => $kind,
+                'audience' => stripos($audience, 'gewerbe') !== false ? 'gewerbe' : 'privat',
+                'files'    => $dateien,
+                'code'     => $sent ? '' : $code,
+            ], fn ($v) => $v !== ''),
+        ]);
+    } catch (Throwable $e) {
+        // Analyse ist Nebensache – die Anfrage ist bereits zugestellt bzw. protokolliert.
     }
 }
 

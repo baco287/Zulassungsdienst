@@ -13,6 +13,11 @@ npm-debug.log*
 # Zugangsdaten für den Mailversand, vom Deploy erzeugt – nie einchecken
 public/api/mail-zugang.php
 mail-zugang.php
+# Zugang zum Analytics-Dashboard, vom Deploy erzeugt – nie einchecken
+public/api/analytics-zugang.php
+analytics-zugang.php
+# Analyse-Datenbank bei lokalen Tests
+analytics-daten/
 
 # typescript
 *.tsbuildinfo

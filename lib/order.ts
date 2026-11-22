@@ -14,6 +14,7 @@
  * Der Kunde bleibt so in jedem Fall handlungsfähig.
  */
 
+import { analyseSitzung } from "./eigeneAnalyse";
 import { getService } from "./services";
 import { site, whatsAppLink } from "./site";
 import type { OrderRequest } from "./types";
@@ -45,6 +46,8 @@ export interface SubmitResult {
   field?: string;
   /** true = Zustellung fehlgeschlagen, Fallback-Kanäle anbieten. */
   fallback?: boolean;
+  /** Grund eines Fehlschlags für die Analyse (keine Inhalte). */
+  reason?: "vorschau" | "server" | "unbestaetigt" | "netz";
 }
 
 /** Menschenlesbare Zusammenfassung – für WhatsApp, mailto und die Kopieren-Funktion. */
@@ -147,6 +150,7 @@ export async function submitOrder({
       ok: false,
       fallback: true,
       error: "Der Versand ist in dieser Vorschau-Umgebung nicht aktiv.",
+      reason: "vorschau",
     };
   }
 
@@ -166,6 +170,13 @@ export async function submitOrder({
   body.set("startedAt", String(Math.floor(startedAt / 1000)));
   body.set("website", ""); // Honeypot – bleibt für Menschen leer
   if (reference) body.set("reference", reference);
+  // Eigene Webanalyse: Damit api/auftrag.php die Zustellung derselben (anonymen) Sitzung
+  // zuordnen kann. Leistung als Kürzel, nicht als Klartext. Siehe lib/eigeneAnalyse.ts.
+  const sid = analyseSitzung();
+  if (sid) {
+    body.set("analyse_sid", sid);
+    body.set("analyse_service", values.serviceSlug);
+  }
   for (const file of files) body.append("dateien[]", file, file.name);
 
   try {
@@ -183,6 +194,7 @@ export async function submitOrder({
         ok: false,
         fallback: true,
         error: "Der Server hat den Eingang nicht bestätigt.",
+        reason: "unbestaetigt",
       };
     }
     // Feldfehler (422/413/415) sind korrigierbar – kein Fallback anbieten,
@@ -193,6 +205,7 @@ export async function submitOrder({
       error: data.error ?? "Die Anfrage konnte nicht übermittelt werden.",
       field: data.field,
       fallback: !correctable,
+      reason: "server",
     };
   } catch {
     // Netzfehler, CORS, kein PHP: Kunde darf nicht im Nichts landen.
@@ -200,6 +213,7 @@ export async function submitOrder({
       ok: false,
       fallback: true,
       error: "Die Verbindung zum Server kam nicht zustande.",
+      reason: "netz",
     };
   }
 }

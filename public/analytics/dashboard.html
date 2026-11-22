@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Zulassungsprofis Analytics</title>
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  /* Aufbau und Optik wie das Volt-Gas-Dashboard (Tarifrechner/analytics.html), Akzent in Markenblau. */
+  :root {
+    --bg: #0A1224; --bg-2: #0D1630;
+    --card: #111C36; --card-2: #16233F; --card-hover: #1A2948;
+    --line: rgba(255,255,255,.07); --line-2: rgba(255,255,255,.12);
+    --text: #E6ECF5; --muted: #8A97AE; --dim: #5B6880;
+    --acc: #4C8DFF; --acc-2: #79A9FF; --acc-dim: rgba(76,141,255,.16);
+    --amber: #F5A500; --amber-dim: rgba(245,165,0,.14);
+    --blue: #38BDF8;  --blue-dim: rgba(56,189,248,.15);
+    --violet: #8B5CF6; --violet-dim: rgba(139,92,246,.16);
+    --green: #10B981; --green-dim: rgba(16,185,129,.16);
+    --red: #EF4444;   --red-dim: rgba(239,68,68,.14);
+    --sidebar-w: 236px; --sidebar-c: 68px; --topbar-h: 64px;
+    --radius: 14px; --radius-s: 10px;
+    --font: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  [hidden] { display: none !important; }
+  html { color-scheme: dark; }
+  body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 14px; line-height: 1.45; min-height: 100vh; -webkit-font-smoothing: antialiased; }
+  a { color: var(--acc-2); }
+  button { font-family: inherit; }
+  .num { font-variant-numeric: tabular-nums; }
+
+  /* Sidebar */
+  .sidebar { position: fixed; inset: 0 auto 0 0; width: var(--sidebar-w); background: var(--bg-2); border-right: 1px solid var(--line); display: flex; flex-direction: column; z-index: 40; transition: width .2s ease, transform .2s ease; }
+  .brand { display: flex; align-items: center; gap: 10px; padding: 18px 18px 14px; height: var(--topbar-h); border-bottom: 1px solid var(--line); white-space: nowrap; overflow: hidden; }
+  .brand__mark { width: 30px; height: 30px; flex-shrink: 0; border-radius: 9px; background: var(--acc-dim); display: grid; place-items: center; color: var(--acc); }
+  .brand__name { font-weight: 800; font-size: 15px; letter-spacing: -.01em; line-height: 1.15; }
+  .brand__name small { display: block; color: var(--acc-2); font-size: 10.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+  .nav { padding: 14px 12px; display: flex; flex-direction: column; gap: 4px; flex: 1; overflow-y: auto; }
+  .nav__group { font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--dim); padding: 12px 10px 6px; font-weight: 700; white-space: nowrap; overflow: hidden; }
+  .nav a { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-radius: var(--radius-s); color: var(--muted); text-decoration: none; font-weight: 600; font-size: 13.5px; white-space: nowrap; overflow: hidden; transition: background .15s, color .15s; }
+  .nav a svg { width: 18px; height: 18px; flex-shrink: 0; }
+  .nav a:hover { background: var(--card); color: var(--text); }
+  .nav a.active { background: var(--acc-dim); color: var(--acc-2); box-shadow: inset 3px 0 0 var(--acc); }
+  .sidebar__foot { padding: 12px; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 8px; }
+  .sidebar__site { font-size: 12px; color: var(--muted); text-decoration: none; padding: 0 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .sidebar__site:hover { color: var(--text); }
+  .collapse-btn { width: 100%; display: flex; align-items: center; gap: 10px; padding: 9px 12px; border-radius: var(--radius-s); border: 1px solid var(--line); background: transparent; color: var(--muted); cursor: pointer; font-size: 12.5px; font-weight: 600; white-space: nowrap; overflow: hidden; }
+  .collapse-btn:hover { color: var(--text); border-color: var(--line-2); }
+  body.collapsed .sidebar { width: var(--sidebar-c); }
+  body.collapsed .brand__name, body.collapsed .nav a span, body.collapsed .nav__group, body.collapsed .collapse-btn span, body.collapsed .sidebar__site { display: none; }
+  body.collapsed .nav a { justify-content: center; padding: 10px; }
+  body.collapsed .collapse-btn { justify-content: center; }
+  body.collapsed .collapse-btn svg { transform: rotate(180deg); }
+
+  /* Topbar + Inhalt */
+  .main { margin-left: var(--sidebar-w); min-height: 100vh; transition: margin .2s ease; }
+  body.collapsed .main { margin-left: var(--sidebar-c); }
+  .topbar { position: sticky; top: 0; z-index: 30; height: var(--topbar-h); background: rgba(10,18,36,.85); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); display: flex; align-items: center; gap: 16px; padding: 0 28px; }
+  .topbar__title { display: flex; flex-direction: column; min-width: 0; }
+  .topbar__eyebrow { font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+  .topbar__h1 { font-size: 18px; font-weight: 800; letter-spacing: -.01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .topbar__spacer { flex: 1; }
+  .seg { display: inline-flex; border: 1px solid var(--line-2); border-radius: 10px; overflow: hidden; background: var(--card); flex-shrink: 0; }
+  .seg button { background: transparent; border: 0; color: var(--muted); padding: 8px 14px; font-weight: 700; font-size: 13px; cursor: pointer; }
+  .seg button + button { border-left: 1px solid var(--line); }
+  .seg button.active { background: var(--acc); color: #fff; }
+  .seg button:not(.active):hover { color: var(--text); background: var(--card-hover); }
+  .topbar__meta { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 12px; padding-left: 14px; border-left: 1px solid var(--line); white-space: nowrap; }
+  .topbar__meta strong { color: var(--text); font-weight: 600; }
+  .burger { display: none; width: 38px; height: 38px; border-radius: 10px; border: 1px solid var(--line-2); background: var(--card); color: var(--text); cursor: pointer; place-items: center; flex-shrink: 0; }
+  .content { padding: 24px 28px 48px; max-width: 1560px; }
+  .page { display: none; }
+  .page.active { display: block; }
+  .page-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 18px; flex-wrap: wrap; }
+  .page-head h2 { font-size: 22px; font-weight: 800; letter-spacing: -.015em; }
+  .page-head p { color: var(--muted); font-size: 13px; margin-top: 2px; }
+
+  /* Karten */
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; min-width: 0; }
+  .card__head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+  .card__title { display: flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--text); }
+  .card__title .ic { width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center; flex-shrink: 0; }
+  .card__sub { font-size: 12px; color: var(--muted); font-weight: 500; letter-spacing: 0; text-transform: none; display: block; margin-top: 2px; }
+  .ic--acc { background: var(--acc-dim); color: var(--acc-2); } .ic--amber { background: var(--amber-dim); color: var(--amber); } .ic--blue { background: var(--blue-dim); color: var(--blue); }
+  .ic--violet { background: var(--violet-dim); color: var(--violet); } .ic--green { background: var(--green-dim); color: var(--green); }
+  .ic--red { background: var(--red-dim); color: var(--red); } .ic--grey { background: rgba(255,255,255,.06); color: var(--muted); }
+  .grid { display: grid; gap: 16px; margin-bottom: 16px; }
+  .grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .grid--21 { grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); }
+  .grid--12 { grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); }
+  .stack { display: flex; flex-direction: column; gap: 16px; }
+  .hint { font-size: 12px; color: var(--muted); line-height: 1.5; }
+  .pill { display: inline-flex; align-items: center; gap: 5px; padding: 2px 9px; border-radius: 999px; font-size: 11.5px; font-weight: 700; white-space: nowrap; }
+  .pill--amber { background: var(--amber-dim); color: var(--amber); } .pill--blue { background: var(--blue-dim); color: #7DD3FC; }
+  .pill--violet { background: var(--violet-dim); color: #B8A1FF; } .pill--green { background: var(--green-dim); color: #4ADE9E; }
+  .pill--red { background: var(--red-dim); color: #FF8A8A; } .pill--grey { background: rgba(255,255,255,.07); color: var(--muted); }
+  .note { display: flex; gap: 10px; align-items: flex-start; padding: 12px 14px; border-radius: var(--radius-s); background: rgba(255,255,255,.03); border: 1px solid var(--line); font-size: 12.5px; color: var(--muted); line-height: 1.5; }
+  .note--warn { background: rgba(245,165,0,.06); border-color: rgba(245,165,0,.3); color: #F2D28B; }
+  .note--red { background: var(--red-dim); border-color: rgba(239,68,68,.35); color: #FFB4B4; }
+  .note svg { flex-shrink: 0; margin-top: 1px; }
+  .empty { padding: 28px; text-align: center; color: var(--dim); font-size: 13px; }
+  .loading { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 60px; color: var(--muted); }
+  .spinner { width: 20px; height: 20px; border-radius: 50%; border: 2.5px solid var(--line-2); border-top-color: var(--acc); animation: spin .8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .error-box { background: var(--red-dim); border: 1px solid rgba(239,68,68,.35); border-radius: var(--radius-s); padding: 18px; color: #FFB4B4; text-align: center; }
+  .error-box small { display: block; margin-top: 6px; color: var(--muted); }
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 10px; border: 1px solid var(--line-2); background: var(--card-2); color: var(--text); font-weight: 700; font-size: 13px; cursor: pointer; text-decoration: none; }
+  .btn:hover { background: var(--card-hover); border-color: rgba(255,255,255,.2); }
+  .btn--primary { background: var(--acc); border-color: var(--acc); color: #fff; }
+  .btn--primary:hover { background: var(--acc-2); border-color: var(--acc-2); }
+  .btn--sm { padding: 6px 10px; font-size: 12px; }
+  .input { background: var(--bg); border: 1px solid var(--line-2); color: var(--text); padding: 8px 12px; border-radius: 10px; font: inherit; font-size: 13px; min-width: 0; }
+  .input:focus { outline: none; border-color: var(--acc); }
+  select.input { padding-right: 28px; }
+
+  /* KPI */
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(176px, 1fr)); gap: 14px; margin-bottom: 18px; }
+  .kpi { position: relative; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 18px 14px; display: flex; flex-direction: column; gap: 6px; min-width: 0; overflow: hidden; }
+  .kpi__top { display: flex; align-items: center; gap: 10px; }
+  .kpi__ic { width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; flex-shrink: 0; }
+  .kpi__label { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 700; line-height: 1.25; }
+  .kpi__value { font-size: 28px; font-weight: 800; letter-spacing: -.02em; line-height: 1.1; white-space: nowrap; }
+  .kpi__foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: auto; }
+  .kpi__sub { font-size: 11.5px; color: var(--dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .delta { font-size: 11.5px; font-weight: 700; white-space: nowrap; }
+  .delta--up { color: #4ADE9E; } .delta--down { color: #FF8A8A; } .delta--flat { color: var(--muted); }
+  .spark { height: 30px; width: 100%; display: block; }
+  .kpi--blue .kpi__value { color: #7DD3FC; } .kpi--acc .kpi__value { color: var(--acc-2); } .kpi--amber .kpi__value { color: var(--amber); }
+  .kpi--violet .kpi__value { color: #C4B0FF; } .kpi--green .kpi__value { color: #4ADE9E; } .kpi--red .kpi__value { color: #FF8A8A; } .kpi--white .kpi__value { color: var(--text); }
+
+  /* Diagramm */
+  .chart-wrap { position: relative; height: 300px; }
+  .chart-wrap--sm { height: 220px; }
+  .toggles { display: flex; gap: 6px; flex-wrap: wrap; }
+  .toggle { display: inline-flex; align-items: center; gap: 7px; padding: 5px 11px; border-radius: 999px; border: 1px solid var(--line-2); background: transparent; color: var(--muted); font-size: 12px; font-weight: 700; cursor: pointer; }
+  .toggle i { width: 9px; height: 9px; border-radius: 50%; background: var(--dot); opacity: .35; }
+  .toggle.on { color: var(--text); border-color: var(--dot); }
+  .toggle.on i { opacity: 1; }
+
+  /* Funnel */
+  .funnel { display: flex; flex-direction: column; gap: 6px; }
+  .frow { display: grid; grid-template-columns: 30px minmax(150px, 1.2fr) minmax(120px, 2fr) 80px 64px 92px; align-items: center; gap: 12px; padding: 7px 0; border-bottom: 1px solid var(--line); }
+  .frow:last-child { border-bottom: 0; }
+  .frow__n { width: 26px; height: 26px; border-radius: 8px; display: grid; place-items: center; font-size: 12px; font-weight: 800; }
+  .frow__lab { min-width: 0; }
+  .frow__lab b { display: block; font-size: 13.5px; font-weight: 700; }
+  .frow__lab small { display: block; color: var(--dim); font-size: 11.5px; }
+  .bar { height: 12px; border-radius: 999px; background: rgba(255,255,255,.06); overflow: hidden; }
+  .bar i { display: block; height: 100%; border-radius: 999px; min-width: 3px; transition: width .5s ease; }
+  .frow__cnt { text-align: right; font-weight: 800; font-size: 15px; }
+  .frow__pct { text-align: right; color: var(--muted); font-size: 12px; }
+  .frow__step { text-align: right; font-size: 12px; font-weight: 700; }
+  .frow--compact { grid-template-columns: minmax(140px, 1fr) minmax(90px, 1.3fr) 64px 54px; }
+  .funnel--h { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 10px; }
+  .fcard { background: var(--card-2); border: 1px solid var(--line); border-radius: 12px; padding: 14px 12px; text-align: center; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .fcard__ic { width: 36px; height: 36px; margin: 0 auto 2px; border-radius: 10px; display: grid; place-items: center; }
+  .fcard__lab { font-size: 11.5px; color: var(--muted); font-weight: 600; line-height: 1.25; min-height: 2.5em; }
+  .fcard__val { font-size: 22px; font-weight: 800; }
+  .fcard__pct { font-size: 11.5px; color: var(--dim); }
+  .fcard .bar { height: 6px; margin: 4px 0; }
+  .fcard__drop { font-size: 11px; font-weight: 700; }
+
+  /* Tabellen */
+  .tbl-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .tbl { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .tbl th { color: var(--muted); font-weight: 700; text-align: right; padding: 8px 10px; border-bottom: 1px solid var(--line-2); white-space: nowrap; font-size: 11.5px; letter-spacing: .04em; text-transform: uppercase; }
+  .tbl th:first-child, .tbl td:first-child { text-align: left; }
+  .tbl th.sortable { cursor: pointer; user-select: none; }
+  .tbl th.sortable:hover { color: var(--text); }
+  .tbl th.sorted::after { content: ' ↓'; color: var(--acc-2); }
+  .tbl th.sorted.asc::after { content: ' ↑'; }
+  .tbl td { padding: 9px 10px; text-align: right; border-bottom: 1px solid var(--line); vertical-align: middle; }
+  .tbl tr:last-child td { border-bottom: 0; }
+  .tbl tbody tr:hover td { background: rgba(255,255,255,.025); }
+  .path { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 12px; color: var(--text); max-width: 320px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .mini { display: inline-block; height: 6px; border-radius: 999px; vertical-align: middle; }
+  .list { list-style: none; }
+  .list li { display: grid; grid-template-columns: minmax(0, 1fr) minmax(60px, 120px) 48px; align-items: center; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+  .list li:last-child { border-bottom: 0; }
+  .list .lab { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text); }
+  .list .cnt { text-align: right; font-weight: 700; }
+  .filters { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 14px; }
+  .chip { background: transparent; border: 1px solid var(--line-2); color: var(--muted); padding: 6px 12px; border-radius: 999px; cursor: pointer; font-size: 12px; font-weight: 700; }
+  .chip.active, .chip:hover { background: var(--acc); color: #fff; border-color: var(--acc); }
+
+  /* Erkenntnisse */
+  .insights { display: flex; flex-direction: column; gap: 10px; }
+  .ins { display: grid; grid-template-columns: 30px minmax(0, 1fr) auto; gap: 12px; align-items: start; padding: 13px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--card-2); }
+  .ins__n { width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; font-weight: 800; font-size: 12px; }
+  .ins__t { font-weight: 800; font-size: 13.5px; }
+  .ins__d { color: var(--muted); font-size: 12.5px; margin-top: 2px; line-height: 1.45; }
+  .ins__a { margin-top: 6px; font-size: 12px; color: var(--text); }
+  .ins__a b { color: var(--acc-2); font-weight: 800; letter-spacing: .06em; font-size: 10.5px; text-transform: uppercase; margin-right: 6px; }
+  .ins__m { font-size: 16px; font-weight: 800; white-space: nowrap; text-align: right; }
+  .ins__m small { display: block; font-size: 10.5px; color: var(--dim); font-weight: 600; text-transform: uppercase; letter-spacing: .06em; }
+  .prio--hoch .ins__n { background: var(--red-dim); color: #FF8A8A; } .prio--hoch .ins__m { color: #FF8A8A; }
+  .prio--mittel .ins__n { background: var(--amber-dim); color: var(--amber); } .prio--mittel .ins__m { color: var(--amber); }
+  .prio--niedrig .ins__n { background: var(--blue-dim); color: #7DD3FC; } .prio--niedrig .ins__m { color: #7DD3FC; }
+  .prio--gut .ins__n { background: var(--green-dim); color: #4ADE9E; } .prio--gut .ins__m { color: #4ADE9E; }
+
+  /* Kundenwege */
+  .session-row { cursor: pointer; }
+  .session-row td { text-align: left; white-space: nowrap; }
+  .session-detail td { background: rgba(0,0,0,.25); padding: 14px 18px; text-align: left; }
+  .stage { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 11px; font-weight: 800; color: #0b1120; white-space: nowrap; }
+  .timeline { list-style: none; }
+  .timeline li { display: grid; grid-template-columns: 70px 70px 220px 1fr; gap: 12px; padding: 5px 0; border-bottom: 1px dashed var(--line); font-size: 12px; align-items: baseline; }
+  .timeline li:last-child { border-bottom: 0; }
+  .tl-time, .tl-delta { color: var(--dim); font-family: ui-monospace, Menlo, Consolas, monospace; }
+  .tl-ev { font-weight: 700; }
+  .tl-desc { color: var(--muted); word-break: break-word; white-space: normal; }
+  .tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin-bottom: 16px; overflow-x: auto; }
+  .tabs button { background: transparent; border: 0; border-bottom: 2px solid transparent; color: var(--muted); padding: 10px 14px; font-weight: 700; font-size: 13px; cursor: pointer; white-space: nowrap; margin-bottom: -1px; }
+  .tabs button.active { color: var(--acc-2); border-bottom-color: var(--acc); }
+  .tab-pane { display: none; } .tab-pane.active { display: block; }
+  .kv { display: grid; grid-template-columns: 1fr auto auto auto; gap: 8px 16px; font-size: 13px; }
+  .kv > div { padding: 8px 0; border-bottom: 1px solid var(--line); }
+  .kv > div:nth-child(-n+4) { color: var(--muted); font-size: 11.5px; text-transform: uppercase; letter-spacing: .05em; font-weight: 700; }
+  .kv .r { text-align: right; font-weight: 700; }
+
+  /* Responsiv */
+  @media (max-width: 1200px) { .grid--3 { grid-template-columns: repeat(2, minmax(0, 1fr)); } .grid--21, .grid--12 { grid-template-columns: minmax(0, 1fr); } .funnel--h { grid-auto-flow: row; grid-template-columns: repeat(4, minmax(0, 1fr)); } .topbar__meta { display: none; } }
+  @media (max-width: 980px) {
+    .sidebar { transform: translateX(-100%); width: var(--sidebar-w) !important; }
+    body.nav-open .sidebar { transform: translateX(0); box-shadow: 0 0 0 100vw rgba(0,0,0,.5); }
+    body.collapsed .brand__name, body.collapsed .nav a span, body.collapsed .nav__group, body.collapsed .collapse-btn span, body.collapsed .sidebar__site { display: initial; }
+    body.collapsed .nav a { justify-content: flex-start; padding: 10px 12px; }
+    .main, body.collapsed .main { margin-left: 0; }
+    .burger { display: grid; }
+    .topbar { padding: 0 16px; gap: 10px; }
+    .topbar__meta { display: none; }
+    .content { padding: 16px 16px 40px; }
+    .grid--2, .grid--3, .grid--21, .grid--12 { grid-template-columns: 1fr; }
+    .frow { grid-template-columns: 26px minmax(0, 1fr) 70px 54px; }
+    .frow .bar, .frow__step { display: none; }
+    .frow--compact { grid-template-columns: minmax(0, 1fr) 64px 54px; }
+    .frow--compact .bar { display: none; }
+    .funnel--h { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .timeline li { grid-template-columns: 60px 1fr; }
+    .timeline .tl-delta { display: none; }
+    .kv { grid-template-columns: 1fr auto auto; } .kv .hide-m { display: none; }
+  }
+  @media (max-width: 560px) {
+    .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .kpi { padding: 12px 12px 10px; } .kpi__value { font-size: 22px; }
+    .seg button { padding: 7px 9px; font-size: 12px; }
+    .topbar__title { display: none; }
+    .page-head h2 { font-size: 19px; }
+    .chart-wrap { height: 240px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+</head>
+<body>
+
+<aside class="sidebar" id="sidebar">
+  <div class="brand">
+    <div class="brand__mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="2" y="7" width="20" height="10" rx="2"/><rect x="2" y="7" width="5" height="10" rx="2" fill="currentColor" stroke="none"/><path d="M10 12h8" stroke-linecap="round"/></svg></div>
+    <div class="brand__name">KFZ-Zulassungsprofis<small>Analytics</small></div>
+  </div>
+  <nav class="nav" id="nav">
+    <div class="nav__group">Menü</div>
+    <a href="#/overview" data-page="overview"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span>Übersicht</span></a>
+    <a href="#/funnel" data-page="funnel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18l-7 8v6l-4 2v-8L3 4z"/></svg><span>Conversion-Funnel</span></a>
+    <a href="#/assistent" data-page="assistent"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg><span>Auftrags-Assistent</span></a>
+    <a href="#/traffic" data-page="traffic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg><span>Besucher &amp; Kampagnen</span></a>
+    <a href="#/contacts" data-page="contacts"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span>Kontakte &amp; Anfragen</span></a>
+    <a href="#/reports" data-page="reports"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg><span>Berichte</span></a>
+  </nav>
+  <div class="sidebar__foot">
+    <a class="sidebar__site" href="/" target="_blank" rel="noopener">kfz-zulassungsprofis.de ↗</a>
+    <button class="collapse-btn" id="collapseBtn" type="button" aria-label="Navigation einklappen"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg><span>Einklappen</span></button>
+  </div>
+</aside>
+
+<div class="main">
+  <header class="topbar">
+    <button class="burger" id="burger" type="button" aria-label="Menü"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <div class="topbar__title">
+      <span class="topbar__eyebrow">Analytics Dashboard</span>
+      <span class="topbar__h1" id="pageTitle">Übersicht</span>
+    </div>
+    <div class="topbar__spacer"></div>
+    <div class="seg" id="rangeSeg">
+      <button type="button" data-days="1">Heute</button>
+      <button type="button" data-days="7">7 Tage</button>
+      <button type="button" data-days="30" class="active">30 Tage</button>
+      <button type="button" data-days="90">90 Tage</button>
+    </div>
+    <div class="topbar__meta"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Letzte Aktualisierung <strong id="updatedAt">–</strong></span></div>
+  </header>
+
+  <div class="content" id="content">
+    <div class="loading" id="globalLoading"><div class="spinner"></div> Daten werden geladen …</div>
+    <div id="globalError" hidden></div>
+
+    <section class="page" id="page-overview">
+      <div class="page-head"><div><h2>Übersicht</h2><p>Alle wichtigen Kennzahlen und Entwicklungen auf einen Blick.</p></div></div>
+      <div id="ovNotice"></div>
+      <div class="kpis" id="ovKpis"></div>
+      <div class="grid grid--21">
+        <div class="card">
+          <div class="card__head">
+            <div class="card__title"><span class="ic ic--blue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 19V5M4 19h16M8 15v-4M12 15V8M16 15v-6M20 15v-9"/></svg></span><span>Entwicklung der wichtigsten Kennzahlen<span class="card__sub" id="ovChartSub"></span></span></div>
+            <div class="toggles" id="ovToggles"></div>
+          </div>
+          <div class="chart-wrap"><canvas id="ovChart"></canvas></div>
+        </div>
+        <div class="card">
+          <div class="card__head"><div class="card__title"><span class="ic ic--acc"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18l-7 8v6l-4 2v-8L3 4z"/></svg></span><span>Conversion-Funnel<span class="card__sub">Eindeutige Sessions je Stufe</span></span></div><a class="btn btn--sm" href="#/funnel">Details →</a></div>
+          <div id="ovFunnel"></div>
+        </div>
+      </div>
+      <div class="grid grid--12">
+        <div class="card">
+          <div class="card__head"><div class="card__title"><span class="ic ic--green"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><span>Kontakt &amp; Anfragen<span class="card__sub" id="ovContactSub"></span></span></div><a class="btn btn--sm" href="#/contacts">Details →</a></div>
+          <div id="ovContacts"></div>
+        </div>
+        <div class="card">
+          <div class="card__head"><div class="card__title"><span class="ic ic--red"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg></span><span>Wo verlieren wir Kunden?<span class="card__sub">Regelbasiert aus den echten Kennzahlen – Ursachen sind Hypothesen</span></span></div></div>
+          <div class="insights" id="ovInsights"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__head"><div class="card__title"><span class="ic ic--violet"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></span><span>Herkunft &amp; Kampagnen<span class="card__sub">Top-Quellen nach Sessions – was jede Quelle bis zum Auftrag oder Kontakt bringt</span></span></div><a class="btn btn--sm" href="#/traffic">Alle Quellen ansehen →</a></div>
+        <div id="ovCampaigns"></div>
+      </div>
+    </section>
+
+    <section class="page" id="page-funnel">
+      <div class="page-head"><div><h2>Conversion-Funnel</h2><p>Vom ersten Besuch bis zum zugestellten Auftrag – wo steigen Besucher aus?</p></div></div>
+      <div class="card" style="margin-bottom:16px;"><div id="funnelH"></div></div>
+      <div class="grid grid--21">
+        <div class="card">
+          <div class="card__head"><div class="card__title"><span class="ic ic--acc"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18l-7 8v6l-4 2v-8L3 4z"/></svg></span><span>Schritt für Schritt<span class="card__sub">Eindeutige Sessions, die mindestens diese Stufe erreicht haben · Übergangsrate zur nächsten Stufe</span></span></div></div>
+          <div id="funnelTable"></div>
+        </div>
+        <div class="stack">
+          <div class="card">
+            <div class="card__head"><div class="card__title"><span class="ic ic--red"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg></span><span>Größte Conversion-Probleme</span></div></div>
+            <div class="insights" id="funnelInsights"></div>
+          </div>
+          <div class="card">
+            <div class="card__head"><div class="card__title"><span class="ic ic--grey"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></span><span>Datenqualität<span class="card__sub">Event-Zählung vs. eindeutige Sessions</span></span></div></div>
+            <div id="funnelQuality"></div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__head"><div class="card__title"><span class="ic ic--blue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 19V5M4 19h16M8 15v-4M12 15V8M16 15v-6M20 15v-9"/></svg></span><span>Wo steigen Besucher aus?<span class="card__sub">Höchste erreichte Stufe je Session</span></span></div></div>
+        <div id="dropoffTable"></div>
+      </div>
+    </section>
+
+    <section class="page" id="page-assistent">
+      <div class="page-head"><div><h2>Auftrags-Assistent</h2><p>Von der Auftragsseite bis zur serverseitig bestätigten Zustellung im Postfach.</p></div></div>
+      <div class="kpis" id="asKpis"></div>
+      <div class="grid grid--21">
+        <div class="card">
+          <div class="card__head"><div class="card__title"><span class="ic ic--violet"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg></span><span>Schritte im Assistenten<span class="card__sub">Sessions, die den jeweiligen Schritt erreicht haben · Übergangsrate zum vorherigen Schritt</span></span></div></div>
+          <div id="asSteps"></div>
+          <div id="asStepsNote" style="margin-top:14px;"></div>
+        </div>
+        <div class="card">
+          <div class="card__head"><div class="card__title"><span class="ic ic--red"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg></span><span>Abbruchanalyse</span></div></div>
+          <div class="insights" id="asInsights"></div>
+        </div>
+      </div>
+      <div class="grid grid--3">
+        <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--red"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></span><span>Abbrüche &amp; Fehler<span class="card__sub" id="asErrSub"></span></span></div></div><div id="asErrors"></div></div>
+        <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--grey"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></span><span>Assistent nach Gerät</span></div></div><div id="asDevices"></div></div>
+        <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--green"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.1V12a10 10 0 1 1-5.9-9.1"/><path d="m9 11 3 3L22 4"/></svg></span><span>Aufträge<span class="card__sub">Browser-Meldung · Server-Bestätigung · fehlgeschlagene Zustellung</span></span></div></div><div id="asOrders"></div></div>
+      </div>
+    </section>
+
+    <section class="page" id="page-traffic">
+      <div class="page-head"><div><h2>Besucher &amp; Kampagnen</h2><p>Woher die Besucher kommen und wie gut jede Quelle zu Aufträgen und Kontakten führt.</p></div></div>
+      <div class="kpis" id="trKpis"></div>
+      <div class="card" style="margin-bottom:16px;">
+        <div class="card__head">
+          <div class="card__title"><span class="ic ic--violet"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></span><span>Quellen &amp; Kampagnen<span class="card__sub">Quelle = utm_source, sonst Klick-ID (Google/Meta/TikTok-Anzeige), sonst verweisende Domain · Spalten zählen Sessions, die diese Stufe mindestens erreicht haben</span></span></div>
+          <div class="filters" style="margin:0;">
+            <input class="input" id="campSearch" type="search" placeholder="Suchen …" style="width:170px;">
+            <select class="input" id="campSource"><option value="">Alle Quellen</option></select>
+            <button class="btn btn--sm" id="campExport" type="button">CSV</button>
+          </div>
+        </div>
+        <div id="campTable"></div>
+      </div>
+      <div class="grid grid--3">
+        <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--blue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></span><span>Geräte</span></div></div><div id="trDevices"></div></div>
+        <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--blue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M10 14 21 3M21 14v7H3V3h7"/></svg></span><span>Einstiegsseiten</span></div></div><div id="trEntry"></div></div>
+        <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--amber"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span>Zulassungsstellen-Seiten<span class="card__sub">Meistbesuchte Seiten unter /zulassungsstelle/</span></span></div></div><div id="trStellen"></div></div>
+      </div>
+    </section>
+
+    <section class="page" id="page-contacts">
+      <div class="page-head"><div><h2>Kontakte &amp; Anfragen</h2><p>Kontakt-Klick ≠ zugestellter Auftrag – hier klar getrennt.</p></div></div>
+      <div class="kpis" id="coKpis"></div>
+      <div class="grid grid--21">
+        <div class="card">
+          <div class="card__head"><div class="card__title"><span class="ic ic--green"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 19V5M4 19h16M8 15v-4M12 15V8M16 15v-6M20 15v-9"/></svg></span><span>Entwicklung über Zeit<span class="card__sub">Kontakt-Klicks und zugestellte Aufträge pro Tag</span></span></div></div>
+          <div class="chart-wrap chart-wrap--sm"><canvas id="coChart"></canvas></div>
+        </div>
+        <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--grey"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg></span><span>Begriffe</span></div></div>
+          <div class="stack" style="gap:10px;">
+            <div class="note"><span class="pill pill--green">Kontakt-Klick</span><span>Jemand tippt auf WhatsApp, Telefon oder E-Mail. Ob daraus ein Auftrag wird, sehen wir hier nicht – das zeigt nur WhatsApp bzw. das Postfach.</span></div>
+            <div class="note"><span class="pill pill--violet">Auftrag zugestellt</span><span>Das Formular wurde abgeschickt und der Mailserver hat die Nachricht angenommen (Server-Bestätigung aus api/auftrag.php).</span></div>
+            <div class="note"><span class="pill pill--amber">Unterlagen</span><span>Unterlagen wurden über „Unterlagen hochladen“ nachgereicht und zugestellt.</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid--3">
+        <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--green"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><span>Kontakt-Klicks nach Art</span></div></div><div id="coByType"></div></div>
+        <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--blue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></span><span>Kontakt-Klicks nach Seite</span></div></div><div id="coByPage"></div></div>
+        <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--amber"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><span>Zugestellte Anfragen nach Art</span></div></div><div id="coByKind"></div></div>
+      </div>
+    </section>
+
+    <section class="page" id="page-reports">
+      <div class="page-head"><div><h2>Berichte</h2><p>Zeiträume vergleichen, Detailauswertungen, Kundenwege und Export.</p></div></div>
+      <div class="card" style="margin-bottom:16px;">
+        <div class="card__head">
+          <div class="card__title"><span class="ic ic--acc"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span><span>Zeitraum &amp; Vergleich<span class="card__sub">Aktueller Zeitraum gegenüber dem gleich langen Zeitraum davor</span></span></div>
+          <div class="filters" style="margin:0;">
+            <label class="hint" for="customDays">Eigener Zeitraum (Tage, bis heute)</label>
+            <input class="input" id="customDays" type="number" min="1" max="365" placeholder="z. B. 14" style="width:100px;">
+            <button class="btn btn--sm btn--primary" id="customDaysBtn" type="button">Anwenden</button>
+            <button class="btn btn--sm" id="exportJson" type="button">JSON exportieren</button>
+            <button class="btn btn--sm" id="exportCsv" type="button">Kennzahlen CSV</button>
+          </div>
+        </div>
+        <div id="compareTable"></div>
+      </div>
+      <div class="tabs" id="repTabs">
+        <button type="button" data-tab="sessions" class="active">Kundenwege</button>
+        <button type="button" data-tab="pages">Seiten</button>
+        <button type="button" data-tab="services">Leistungen</button>
+        <button type="button" data-tab="errors">Skriptfehler</button>
+      </div>
+      <div class="tab-pane active" id="tab-sessions">
+        <div class="card">
+          <div class="card__head"><div class="card__title"><span class="ic ic--blue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></span><span>Kundenwege<span class="card__sub">Einzelne Sessions, neueste zuerst · Zeile anklicken für den kompletten Ablauf</span></span></div></div>
+          <div class="filters" id="sessionFilters"></div>
+          <div id="sessionList"></div>
+          <div id="sessionMore" style="margin-top:12px;text-align:center;"></div>
+        </div>
+      </div>
+      <div class="tab-pane" id="tab-pages"><div id="repPages"></div></div>
+      <div class="tab-pane" id="tab-services"><div id="repServices"></div></div>
+      <div class="tab-pane" id="tab-errors"><div id="repErrors"></div></div>
+    </section>
+  </div>
+</div>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════════════════
+   KFZ-Zulassungsprofis Analytics – Aufbau wie das Volt-Gas-Dashboard v2.
+   Datenquelle: daten.php (Login über HTTP-Basic-Auth der Seite, kein Secret im Client).
+   ═══════════════════════════════════════════════════════════════════════════ */
+// Absolut und ohne Zugangsdaten in der Adresse (sonst lehnt fetch() ab, wenn jemand
+// https://name:passwort@…/analytics/ als Lesezeichen nutzt). Der Browser sendet den Login trotzdem mit.
+const API = location.origin + location.pathname.replace(/[^/]*$/, '') + 'daten.php';
+const state = { days: 30, data: null, page: 'overview', charts: {}, sessionFilter: 'alle', sessionOffset: 0,
+                camp: { sort: 'sessions', asc: false, q: '', source: '' }, toggles: { sessions: true, assistent: true, contacts: true, orders: true } };
+
+// Formatierung
+const fmtNum = v => Number(v || 0).toLocaleString('de-DE');
+const pct0 = (a, b) => b > 0 ? Math.round(a / b * 100) : 0;
+const fmtPct1 = v => Number(v || 0).toLocaleString('de-DE', { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + ' %';
+function fmtDur(sec) { sec = Math.max(0, Math.round(Number(sec) || 0)); if (sec < 60) return sec + ' s'; if (sec < 3600) return Math.floor(sec / 60) + ':' + String(sec % 60).padStart(2, '0') + ' min'; return Math.floor(sec / 3600) + ' h ' + Math.floor((sec % 3600) / 60) + ' min'; }
+function fmtMs(ms) { ms = Number(ms) || 0; return ms < 1000 ? ms + ' ms' : (ms / 1000).toLocaleString('de-DE', { maximumFractionDigits: 1 }) + ' s'; }
+const esc = v => String(v == null ? '' : v).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const localDay = x => `${x.getFullYear()}-${String(x.getMonth() + 1).padStart(2, '0')}-${String(x.getDate()).padStart(2, '0')}`;
+const C = { acc: '#4C8DFF', amber: '#F5A500', blue: '#38BDF8', violet: '#8B5CF6', green: '#10B981', red: '#EF4444', grey: '#6B7280' };
+const DEVICE_LABELS = { mobile: 'Smartphone', desktop: 'Desktop', tablet: 'Tablet' };
+const CONTACT_LABELS = { whatsapp: 'WhatsApp', tel: 'Anruf (tel:)', mail: 'E-Mail' };
+const STEP_LABELS = { 1: 'Service wählen', 2: 'Ihre Angaben', 3: 'Unterlagen', 4: 'Abschließen' };
+const FIELD_LABELS = { serviceSlug: 'Leistung', service: 'Leistung', name: 'Name', email: 'E-Mail', phone: 'Telefon', contact: 'Kontaktweg (E-Mail oder Telefon)', zip: 'PLZ', city: 'Ort', vehicle: 'Fahrzeug', message: 'Nachricht', consent: 'Einwilligung', dateien: 'Unterlagen', audience: 'Kundentyp' };
+const REASON_LABELS = { validierung: 'Eingabe unvollständig', server: 'Server hat abgelehnt', netz: 'Keine Verbindung', vorschau: 'Vorschau ohne Versand', unbestaetigt: 'Eingang nicht bestätigt' };
+const serviceLabel = s => s ? s.replace(/-/g, ' ').replace(/^./, c => c.toUpperCase()) : '—';
+
+// Stufen (identisch zu KZP_STAGE_SQL in api/analytics-lib.php)
+const STAGES = [
+  { n: 1, label: 'Website besucht',          sub: 'Einstieg in die Website',                                   color: C.blue },
+  { n: 2, label: 'Preise angesehen',         sub: 'Eine Preisbox war zur Hälfte sichtbar',                     color: C.blue },
+  { n: 3, label: 'Interesse gezeigt',        sub: 'Klick auf „Jetzt zulassen“, Leistung gewählt oder Rechner', color: C.amber },
+  { n: 4, label: 'Auftragsseite geöffnet',   sub: '/auftrag/ aufgerufen',                                      color: C.amber },
+  { n: 5, label: 'Assistent begonnen',       sub: 'Leistung im Assistenten gewählt',                           color: C.violet },
+  { n: 6, label: 'Letzter Schritt erreicht', sub: '„Abschließen“ – Daten prüfen',                              color: C.violet },
+  { n: 7, label: 'Absenden geklickt',        sub: 'Formular wurde abgeschickt',                                color: C.violet },
+  { n: 8, label: 'Auftrag gesendet',         sub: 'Browser oder Server meldet Eingang',                        color: C.green },
+];
+const STAGE_LABELS = { 0: 'Kein Event', 1: 'Nur Seiten angeschaut', 2: 'Preise gesehen', 3: 'Interesse gezeigt', 4: 'Auftragsseite geöffnet', 5: 'Assistent begonnen', 6: 'Letzter Schritt', 7: 'Absenden geklickt', 8: 'Auftrag gesendet' };
+const STAGE_COLORS = { 0: C.grey, 1: C.grey, 2: C.blue, 3: C.blue, 4: C.amber, 5: C.violet, 6: C.violet, 7: C.violet, 8: C.green };
+const EVENT_LABELS = {
+  session_start: 'Sitzung gestartet', page_view: 'Seite geöffnet', page_leave: 'Seite verlassen', js_error: 'Skriptfehler',
+  contact_click: 'Kontakt-Klick', cta_click: 'Klick', price_box_view: 'Preisbox gesehen', tool_used: 'Rechner/Werkzeug benutzt',
+  service_selected: 'Leistung gewählt', b2b_inquiry: 'Gewerbe-Anfrage', order_start: 'Assistent begonnen', order_step: 'Nächster Schritt',
+  order_step_error: 'Eingabe unvollständig', order_abandon: 'Assistent verlassen', order_submit_attempt: 'Absenden geklickt',
+  order_error: 'Absenden fehlgeschlagen', order_submitted: 'Auftrag gesendet (Browser)', documents_uploaded: 'Unterlagen gesendet (Browser)',
+  contact_form_submit: 'Kontaktformular', order_confirmed_server: 'Auftrag zugestellt (Server)', documents_confirmed_server: 'Unterlagen zugestellt (Server)',
+  order_failed_server: 'Zustellung fehlgeschlagen (Server)',
+};
+
+// Abgeleitete Kennzahlen (eine Stelle, damit alle Seiten dieselben Zahlen zeigen)
+function reachedFrom(dropoff) {
+  const dropMap = {}; (dropoff || []).forEach(r => dropMap[parseInt(r.stage)] = parseInt(r.cnt) || 0);
+  const reached = {}; for (let s = 1; s <= 8; s++) { let n = 0; for (let j = s; j <= 8; j++) n += dropMap[j] || 0; reached[s] = n; }
+  return { dropMap, reached };
+}
+function derive(d) {
+  const ev = {}; (d.funnel || []).forEach(r => ev[r.event] = parseInt(r.cnt) || 0);
+  const { dropMap, reached } = reachedFrom(d.dropoff);
+  const contacts = d.contacts || { total: 0, sessions: 0, byType: {}, byPage: {} };
+  const req = d.requests || { total: 0, byKind: {}, failed: 0 };
+  const m = {
+    sessions: d.sessions || 0, pageViews: ev.page_view || 0, ev, reached, dropMap,
+    totalSessionsStaged: Object.values(dropMap).reduce((a, b) => a + b, 0),
+    preise: reached[2], interesse: reached[3], auftragsseite: reached[4], assistent: reached[5], letzter: reached[6], attempt: reached[7], gesendet: reached[8],
+    confirmed: ev.order_confirmed_server || 0, clientOrders: ev.order_submitted || 0, failed: ev.order_failed_server || 0,
+    documents: ev.documents_confirmed_server || 0,
+    contactClicks: contacts.total || 0, contactSessions: contacts.sessions || 0,
+    steps: d.orderSteps || {}, abandon: d.abandonByStep || {}, oe: d.orderErrors || { total: 0, byReason: {}, byField: {}, byStep: {} },
+  };
+  m.inquiries = m.contactSessions + m.confirmed;
+  m.cr = m.sessions > 0 ? m.confirmed / m.sessions * 100 : 0;
+  m.crAuftrag = m.auftragsseite > 0 ? m.confirmed / m.auftragsseite * 100 : 0;
+  if (d.prev) {
+    const p = d.prev, pev = p.funnel || {}, pr = reachedFrom(p.dropoff).reached;
+    m.prev = { sessions: p.sessions || 0, pageViews: pev.page_view || 0, interesse: pr[3], auftragsseite: pr[4], assistent: pr[5], attempt: pr[7],
+               confirmed: pev.order_confirmed_server || 0, failed: pev.order_failed_server || 0, documents: pev.documents_confirmed_server || 0,
+               contactClicks: pev.contact_click || 0, contactSessions: p.contactSessions || 0 };
+    m.prev.inquiries = m.prev.contactSessions + m.prev.confirmed;
+    m.prev.cr = m.prev.sessions > 0 ? m.prev.confirmed / m.prev.sessions * 100 : 0;
+    m.prev.crAuftrag = m.prev.auftragsseite > 0 ? m.prev.confirmed / m.prev.auftragsseite * 100 : 0;
+  }
+  return m;
+}
+
+// Tageswerte: letzte N Tage (Ortszeit) als Labels, Serie je Event
+function dailySeries(d, days) {
+  const by = {}; (d.daily || []).forEach(r => { const k = String(r.day).slice(0, 10); (by[k] = by[k] || {})[r.event] = parseInt(r.cnt) || 0; });
+  const labels = [], keys = [];
+  for (let i = days - 1; i >= 0; i--) { const x = new Date(); x.setDate(x.getDate() - i); keys.push(localDay(x)); labels.push(x.toLocaleDateString('de-DE', { day: 'numeric', month: 'short' })); }
+  const series = evName => keys.map(k => (by[k] || {})[evName] || 0);
+  return { labels, keys, sessions: series('session_start'), assistent: series('order_start'), confirmed: series('order_confirmed_server'),
+           contacts: series('contact_click'), cta: series('cta_click'), failed: series('order_failed_server') };
+}
+
+function deltaHtml(cur, prev, { invert = false, pp = false } = {}) {
+  if (prev == null) return '<span class="delta delta--flat" title="Kein Vergleichszeitraum verfügbar">—</span>';
+  if (pp) { const diff = cur - prev; const cls = diff > 0.05 ? 'up' : diff < -0.05 ? 'down' : 'flat'; return `<span class="delta delta--${cls}" title="Vorperiode: ${prev.toFixed(1).replace('.', ',')} %">${diff > 0 ? '↗ +' : diff < 0 ? '↘ ' : '→ '}${diff.toFixed(1).replace('.', ',')} Pp.</span>`; }
+  if (!prev) return `<span class="delta delta--flat" title="Vorperiode: 0">${cur > 0 ? 'neu' : '—'}</span>`;
+  const r = (cur - prev) / prev * 100;
+  const good = invert ? r < 0 : r > 0;
+  const cls = Math.abs(r) < 0.5 ? 'flat' : good ? 'up' : 'down';
+  return `<span class="delta delta--${cls}" title="Vorperiode: ${fmtNum(prev)}">${r > 0 ? '↗ +' : r < 0 ? '↘ ' : '→ '}${Math.round(r)} %</span>`;
+}
+
+function sparkSvg(values, color) {
+  const n = values.length; if (n < 2) return '';
+  const max = Math.max(...values, 1), w = 100, h = 30;
+  const pts = values.map((v, i) => `${(i / Math.max(n - 1, 1) * w).toFixed(1)},${(h - 2 - v / max * (h - 4)).toFixed(1)}`);
+  return `<svg class="spark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" aria-hidden="true"><polyline fill="none" stroke="${color}" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" points="${pts.join(' ')}"/><circle cx="${pts[n - 1].split(',')[0]}" cy="${pts[n - 1].split(',')[1]}" r="2" fill="${color}"/></svg>`;
+}
+
+const ICONS = {
+  users: '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg>',
+  page: '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8"/></svg>',
+  play: '<svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg>',
+  list: '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>',
+  form: '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg>',
+  check: '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.1V12a10 10 0 1 1-5.9-9.1"/><path d="m9 11 3 3L22 4"/></svg>',
+  pct: '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M19 5 5 19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>',
+  chat: '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>',
+  tag: '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><path d="M7.5 7.5h.01"/></svg>',
+  phone: '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>',
+  wa: '<svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3M12 22c-1.9 0-3.7-.5-5.3-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.9 9.9 0 0 1 2 12C2 6.5 6.4 2.1 11.9 2.1c2.6 0 5.1 1 7 2.9a9.8 9.8 0 0 1 2.9 7c0 5.5-4.5 9.9-9.8 10"/></svg>',
+  mail: '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 6 12 13 2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>',
+  warn: '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>',
+  globe: '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>',
+  upload: '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>',
+  info: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>',
+};
+
+function kpiCard({ label, value, sub, delta, icon, tone, spark, title }) {
+  const ic = { acc: 'ic--acc', blue: 'ic--blue', amber: 'ic--amber', violet: 'ic--violet', green: 'ic--green', white: 'ic--grey', red: 'ic--red' }[tone] || 'ic--grey';
+  const sparkColor = { acc: C.acc, blue: C.blue, amber: C.amber, violet: C.violet, green: C.green, white: '#A0ACC2', red: C.red }[tone] || C.grey;
+  return `<div class="kpi kpi--${tone}" ${title ? `title="${esc(title)}"` : ''}>
+    <div class="kpi__top"><span class="kpi__ic ${ic}">${icon}</span><span class="kpi__label">${label}</span></div>
+    <div class="kpi__value num">${value}</div>
+    ${spark && spark.length ? sparkSvg(spark, sparkColor) : ''}
+    <div class="kpi__foot"><span class="kpi__sub">${sub || ''}</span>${delta || ''}</div>
+  </div>`;
+}
+
+// Erkenntnisse (regelbasiert, nur aus den vorliegenden Zahlen)
+function topEntry(obj) { const e = Object.entries(obj || {}).sort((a, b) => b[1] - a[1]); return e.length ? e[0] : null; }
+function buildInsights(m) {
+  const list = [];
+  const push = (prio, title, desc, action, metric, metricLabel) => list.push({ prio, title, desc, action, metric, metricLabel });
+  if (m.failed > 0) push('hoch', 'Anfragen wurden nicht zugestellt',
+    `${fmtNum(m.failed)} abgeschickte Formulare hat der Mailserver nicht angenommen. Die Kunden sahen einen Hinweis auf WhatsApp/E-Mail – im Postfach ist nichts angekommen.`,
+    'Zustellprotokoll (Kontowurzel/formular-protokoll/) prüfen und den Mailzugang mit /api/auftrag.php?check testen.',
+    fmtNum(m.failed), 'nicht zugestellt');
+  if (m.sessions >= 20) {
+    const rate = pct0(m.interesse, m.sessions);
+    if (rate < 30) push(rate < 10 ? 'hoch' : 'mittel', 'Viele Besucher zeigen kein Interesse',
+      `Nur ${fmtNum(m.interesse)} von ${fmtNum(m.sessions)} Sessions (${rate} %) klicken auf „Jetzt zulassen“, wählen eine Leistung oder nutzen einen Rechner.`,
+      'Einstiegsseiten mit hohem Ausstieg (Berichte → Seiten) prüfen: Preis und „Jetzt zulassen“ ohne Scrollen sichtbar? Quellen mit sehr niedriger Interessen-Quote hinterfragen.',
+      `${rate} %`, 'mit Interesse');
+  }
+  if (m.interesse >= 10) {
+    const rate = pct0(m.interesse - m.auftragsseite, m.interesse);
+    if (rate >= 60) push(rate >= 80 ? 'hoch' : 'mittel', 'Interesse, aber Auftragsseite nicht geöffnet',
+      `${fmtNum(m.interesse)} Sessions zeigen Interesse, ${fmtNum(m.auftragsseite)} öffnen die Auftragsseite (${pct0(m.auftragsseite, m.interesse)} %). ${m.contactSessions ? `${fmtNum(m.contactSessions)} Sessions nehmen stattdessen direkt Kontakt auf.` : ''}`,
+      'Prüfen, ob Kunden lieber per WhatsApp bestellen (Kontakt-Klicks) – dann ist das kein Verlust. Sonst: Weg zur Auftragsseite verkürzen.',
+      `−${rate} %`, 'vor Auftragsseite');
+  }
+  if (m.auftragsseite >= 5) {
+    const rate = pct0(m.auftragsseite - m.assistent, m.auftragsseite);
+    if (rate >= 40) push(rate >= 70 ? 'hoch' : 'mittel', 'Auftragsseite geöffnet, aber nicht begonnen',
+      `${fmtNum(m.auftragsseite)} Sessions öffnen die Auftragsseite, ${fmtNum(m.assistent)} wählen dort eine Leistung (${pct0(m.assistent, m.auftragsseite)} %).`,
+      'Leistung per Direktlink vorauswählen (?leistung=…), Preis, Bearbeitungszeit und Vertrauen direkt über dem Formular zeigen.',
+      `−${rate} %`, 'vor dem Start');
+  }
+  if (m.assistent >= 5) {
+    const rate = pct0(m.assistent - m.attempt, m.assistent);
+    const top = topEntry(m.abandon);
+    if (rate >= 50) push(rate >= 80 ? 'hoch' : 'mittel', 'Im Assistenten abgebrochen',
+      `${fmtNum(m.assistent)} Sessions beginnen den Assistenten, ${fmtNum(m.attempt)} schicken ab (${pct0(m.attempt, m.assistent)} %).${top ? ` Am häufigsten verlassen in Schritt ${top[0]} „${STEP_LABELS[top[0]] || ''}“ (${fmtNum(top[1])}×).` : ''}`,
+      'Seite „Auftrags-Assistent“: Abbruch je Schritt und unvollständige Felder ansehen. Häufige Hürde: Unterlagen zur Hand haben – Nachreichen klar anbieten.',
+      `−${rate} %`, 'im Assistenten');
+  }
+  if (m.attempt >= 3 && m.confirmed < m.attempt) {
+    const rate = pct0(m.attempt - m.confirmed, m.attempt);
+    const top = topEntry(m.oe.byField);
+    if (rate >= 20) push('hoch', 'Abgeschickt, aber nicht zugestellt',
+      `${fmtNum(m.attempt)} Sessions haben auf „Absenden“ geklickt, ${fmtNum(m.confirmed)} Aufträge wurden vom Server bestätigt.${top ? ` Häufigstes Problemfeld: ${FIELD_LABELS[top[0]] || top[0]} (${fmtNum(top[1])}×).` : ''}`,
+      'Fehler auf der Seite „Auftrags-Assistent“ prüfen – das sind konkrete Formularprobleme, keine Vermutung.',
+      `−${rate} %`, 'letzte Hürde');
+  }
+  if (m.contactSessions >= 5) push('gut', 'Viele Kunden melden sich direkt',
+    `${fmtNum(m.contactSessions)} Sessions mit Klick auf WhatsApp, Telefon oder E-Mail, dazu ${fmtNum(m.confirmed)} zugestellte Aufträge.`,
+    'Schnell antworten – bei direkten Kontakten ist die Kaufabsicht am höchsten.',
+    fmtNum(m.contactSessions), 'Kontakte');
+  if (!list.length) push('niedrig', 'Noch zu wenig Daten für Erkenntnisse', 'Sobald genügend Sessions vorliegen, erscheinen hier automatisch die größten Abbruchstellen.', '', '—', '');
+  return list;
+}
+function insightsHtml(list) {
+  const prioLabel = { hoch: 'Hohe Priorität', mittel: 'Mittlere Priorität', niedrig: 'Niedrig', gut: 'Positiv' };
+  return list.map((x, i) => `<div class="ins prio--${x.prio}">
+    <div class="ins__n">${i + 1}</div>
+    <div><div class="ins__t">${esc(x.title)}</div><div class="ins__d">${esc(x.desc)}</div>${x.action ? `<div class="ins__a"><b>Maßnahme</b>${esc(x.action)}</div>` : ''}</div>
+    <div class="ins__m">${esc(x.metric)}<small>${esc(x.metricLabel || prioLabel[x.prio])}</small></div>
+  </div>`).join('');
+}
+
+// Diagramme
+const chartBase = {
+  responsive: true, maintainAspectRatio: false, interaction: { mode: 'index', intersect: false },
+  plugins: { legend: { display: false }, tooltip: { backgroundColor: '#16233F', borderColor: 'rgba(255,255,255,.12)', borderWidth: 1, titleColor: '#E6ECF5', bodyColor: '#C7D0DE', padding: 10 } },
+  scales: {
+    x: { ticks: { color: '#8A97AE', font: { size: 11 }, maxRotation: 0, autoSkip: true, maxTicksLimit: 12 }, grid: { color: 'rgba(255,255,255,.04)' }, border: { color: 'rgba(255,255,255,.08)' } },
+    y: { position: 'left', beginAtZero: true, ticks: { color: '#8A97AE', font: { size: 11 }, precision: 0 }, grid: { color: 'rgba(255,255,255,.05)' }, border: { display: false } },
+    y2: { position: 'right', beginAtZero: true, ticks: { color: '#B8A1FF', font: { size: 11 }, precision: 0 }, grid: { drawOnChartArea: false }, border: { display: false } },
+  },
+};
+const chartOk = () => typeof window.Chart === 'function';
+function killChart(id) { if (state.charts[id]) { state.charts[id].destroy(); delete state.charts[id]; } }
+function noChart(id, msg) { const c = document.getElementById(id); if (c && c.parentElement) c.parentElement.innerHTML = `<div class="empty">${msg}</div>`; }
+
+function renderOverviewChart(ds) {
+  killChart('ov');
+  const defs = [
+    { k: 'sessions',  label: 'Besucher (Sessions)',     color: C.blue,   type: 'bar',  axis: 'y',  data: ds.sessions },
+    { k: 'assistent', label: 'Assistent begonnen',      color: C.violet, type: 'line', axis: 'y2', data: ds.assistent },
+    { k: 'contacts',  label: 'Kontakt-Klicks',          color: C.amber,  type: 'line', axis: 'y2', data: ds.contacts },
+    { k: 'orders',    label: 'Aufträge zugestellt',     color: C.green,  type: 'line', axis: 'y2', data: ds.confirmed },
+  ];
+  const tg = document.getElementById('ovToggles');
+  tg.innerHTML = defs.map(x => `<button type="button" class="toggle ${state.toggles[x.k] ? 'on' : ''}" data-k="${x.k}" style="--dot:${x.color}"><i></i>${x.label}</button>`).join('');
+  tg.querySelectorAll('.toggle').forEach(b => b.addEventListener('click', () => { state.toggles[b.dataset.k] = !state.toggles[b.dataset.k]; renderOverviewChart(ds); }));
+  document.getElementById('ovChartSub').textContent = 'Täglich · Besucher links, Assistent / Kontakte / Aufträge auf der rechten Achse, damit kleine Zahlen sichtbar bleiben';
+  if (!chartOk()) return noChart('ovChart', 'Diagramm-Bibliothek konnte nicht geladen werden (cdn.jsdelivr.net).');
+  state.charts.ov = new Chart(document.getElementById('ovChart'), {
+    data: { labels: ds.labels, datasets: defs.filter(x => state.toggles[x.k]).map(x => x.type === 'bar'
+      ? { type: 'bar', label: x.label, data: x.data, backgroundColor: 'rgba(56,189,248,.5)', hoverBackgroundColor: C.blue, borderRadius: 4, yAxisID: x.axis, order: 2 }
+      : { type: 'line', label: x.label, data: x.data, borderColor: x.color, backgroundColor: x.color, tension: .3, pointRadius: ds.labels.length > 40 ? 0 : 3, pointHoverRadius: 5, borderWidth: 2.2, yAxisID: x.axis, order: 1 }) },
+    options: chartBase,
+  });
+}
+function renderContactsChart(ds) {
+  killChart('co');
+  if (!chartOk()) return noChart('coChart', 'Diagramm-Bibliothek konnte nicht geladen werden.');
+  state.charts.co = new Chart(document.getElementById('coChart'), {
+    type: 'bar',
+    data: { labels: ds.labels, datasets: [
+      { label: 'Kontakt-Klicks', data: ds.contacts, backgroundColor: 'rgba(16,185,129,.7)', borderRadius: 3, stack: 'a' },
+      { label: 'Aufträge zugestellt', data: ds.confirmed, backgroundColor: 'rgba(139,92,246,.8)', borderRadius: 3, stack: 'a' },
+    ] },
+    options: { ...chartBase, plugins: { ...chartBase.plugins, legend: { display: true, position: 'top', align: 'end', labels: { color: '#8A97AE', boxWidth: 10, boxHeight: 10, usePointStyle: true, font: { size: 11 } } } },
+      scales: { x: chartBase.scales.x, y: { ...chartBase.scales.y, stacked: true } } },
+  });
+}
+
+// Funnel-Bausteine
+function funnelRows(m, { compact = false } = {}) {
+  const max = Math.max(m.reached[1], 1);
+  return `<div class="funnel">${STAGES.map((s, i) => {
+    const cnt = m.reached[s.n], prev = i > 0 ? m.reached[STAGES[i - 1].n] : null;
+    const stepRate = prev != null ? (prev > 0 ? Math.round(cnt / prev * 100) : 0) : null;
+    const drop = prev != null ? prev - cnt : 0;
+    const stepHtml = stepRate == null ? '' : `<span style="color:${stepRate >= 60 ? '#4ADE9E' : stepRate >= 30 ? C.amber : '#FF8A8A'}" title="${fmtNum(drop)} Sessions springen hier ab">${stepRate >= 60 ? '↗' : '↘'} ${stepRate} %</span>`;
+    if (compact) return `<div class="frow frow--compact"><div class="frow__lab"><b>${s.label}</b></div><div class="bar"><i style="width:${pct0(cnt, max)}%;background:${s.color}"></i></div><div class="frow__cnt num">${fmtNum(cnt)}</div><div class="frow__pct num">${pct0(cnt, max)} %</div></div>`;
+    return `<div class="frow">
+      <div class="frow__n" style="background:${s.color}22;color:${s.color}">${s.n}</div>
+      <div class="frow__lab"><b>${s.label}</b><small>${s.sub}</small></div>
+      <div class="bar"><i style="width:${pct0(cnt, max)}%;background:${s.color}"></i></div>
+      <div class="frow__cnt num">${fmtNum(cnt)}</div>
+      <div class="frow__pct num" title="Anteil aller Sessions">${pct0(cnt, max)} %</div>
+      <div class="frow__step num">${stepHtml}</div>
+    </div>`;
+  }).join('')}</div>`;
+}
+function funnelHorizontal(m) {
+  const max = Math.max(m.reached[1], 1);
+  return `<div class="funnel--h">${STAGES.map((s, i) => {
+    const cnt = m.reached[s.n], prev = i > 0 ? m.reached[STAGES[i - 1].n] : null;
+    const dropPct = prev ? Math.round((prev - cnt) / prev * 100) : null;
+    return `<div class="fcard">
+      <div class="fcard__ic" style="background:${s.color}22;color:${s.color}">${i === 7 ? ICONS.check : i >= 3 ? ICONS.form : i >= 1 ? ICONS.play : ICONS.globe}</div>
+      <div class="fcard__lab">${s.label}</div>
+      <div class="fcard__val num" style="color:${s.color}">${fmtNum(cnt)}</div>
+      <div class="fcard__pct">${(cnt / max * 100).toLocaleString('de-DE', { maximumFractionDigits: 1 })} % aller Sessions</div>
+      <div class="bar"><i style="width:${Math.max(pct0(cnt, max), 1)}%;background:${s.color}"></i></div>
+      ${dropPct != null ? `<div class="fcard__drop" style="color:${dropPct >= 50 ? '#FF8A8A' : dropPct >= 20 ? C.amber : '#4ADE9E'}">${dropPct} % springen ab <span style="color:var(--dim);font-weight:500">(${fmtNum(prev - cnt)})</span></div>` : '<div class="fcard__drop" style="color:var(--dim)">Start</div>'}
+    </div>`;
+  }).join('')}</div>`;
+}
+function qualityHtml(d, m) {
+  const se = d.stageEvents || {};
+  const rows = STAGES.map(s => ({ label: s.label, ev: parseInt(se['s' + s.n]) || 0, sess: m.reached[s.n] }));
+  const table = `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Stufe</th><th>Events</th><th>Sessions</th></tr></thead><tbody>${rows.map(r => `<tr><td>${r.label}</td><td class="num" style="color:var(--muted)">${fmtNum(r.ev)}</td><td class="num"><b>${fmtNum(r.sess)}</b></td></tr>`).join('')}</tbody></table></div>`;
+  const anomalies = [];
+  for (let i = 1; i < rows.length; i++) if (rows[i].ev > rows[i - 1].ev) anomalies.push(`„${rows[i].label}“ hat mehr Events (${fmtNum(rows[i].ev)}) als „${rows[i - 1].label}“ (${fmtNum(rows[i - 1].ev)})`);
+  const note = anomalies.length
+    ? `<div class="note note--warn" style="margin-top:12px;">${ICONS.info}<span><b>Event-Zählung ist nicht monoton:</b> ${anomalies.join('; ')}. Ein Event kann in einer Session mehrfach vorkommen (z. B. mehrere Preisboxen, mehrere Klicks). Das Dashboard rechnet deshalb überall mit <b>eindeutigen Sessions je Stufe</b> (rechte Spalte) – die sind per Definition absteigend.</span></div>`
+    : `<div class="note" style="margin-top:12px;">${ICONS.info}<span>Events und Sessions sind im Zeitraum konsistent. Das Dashboard rechnet mit eindeutigen Sessions je Stufe.</span></div>`;
+  return table + note;
+}
+function dropoffTable(m) {
+  const total = m.totalSessionsStaged; if (!total) return '<div class="empty">Noch keine Daten</div>';
+  let rows = '';
+  for (let st = 1; st <= 8; st++) {
+    const reached = m.reached[st], ended = m.dropMap[st] || 0, rate = reached ? Math.round(ended / reached * 100) : 0, last = st === 8;
+    rows += `<tr><td>${STAGE_LABELS[st]}</td><td style="text-align:left;min-width:160px;"><div class="bar" style="height:8px;"><i style="width:${Math.max(pct0(reached, total), 1)}%;background:${STAGE_COLORS[st]}"></i></div></td><td class="num">${fmtNum(reached)}</td><td class="num" style="color:${last ? '#4ADE9E' : 'var(--text)'}">${last ? '✓ ' : ''}${fmtNum(ended)}</td><td class="num" style="color:${!last && rate >= 50 ? '#FF8A8A' : 'var(--muted)'}">${last ? '—' : rate + ' %'}</td></tr>`;
+  }
+  return `<p class="hint" style="margin-bottom:10px;">„Erreicht“ = Sessions, die mindestens bis hierhin kamen · „Hier aufgehört“ = Sessions, deren höchste Stufe genau diese war · Abbruchquote = Anteil davon. ${m.dropMap[0] ? `${fmtNum(m.dropMap[0])} Sessions ohne Funnel-Event (nur Kontakt/Fehler/Sonstiges) sind nicht enthalten.` : ''} Kontakt per WhatsApp/Telefon zählt nicht als Funnel-Stufe – siehe „Kontakte &amp; Anfragen“.</p>
+  <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Stufe</th><th style="text-align:left;">Anteil</th><th>Erreicht</th><th>Hier aufgehört</th><th>Abbruchquote</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+}
+
+// Listen / Tabellen
+function barList(obj, color, { labelMap = null, empty = 'Noch keine Daten' } = {}) {
+  const entries = Object.entries(obj || {}).sort((a, b) => b[1] - a[1]);
+  if (!entries.length) return `<div class="empty">${empty}</div>`;
+  const max = Math.max(...entries.map(e => e[1]), 1);
+  return `<ul class="list">${entries.map(([k, v]) => `<li><span class="lab" title="${esc(k)}">${esc(labelMap ? (labelMap[k] || k) : k)}</span><span class="mini" style="width:${Math.max(pct0(v, max), 3)}%;background:${color}"></span><span class="cnt num">${fmtNum(v)}</span></li>`).join('')}</ul>`;
+}
+function devicesHtml(d) {
+  const rows = (d.devices || []).slice().sort((a, b) => b.sessions - a.sessions);
+  const total = rows.reduce((s, r) => s + parseInt(r.sessions), 0) || 1;
+  const col = { mobile: C.amber, desktop: C.blue, tablet: C.violet };
+  if (!rows.length) return '<div class="empty">Noch keine Daten</div>';
+  return `<ul class="list">${rows.map(r => `<li><span class="lab">${DEVICE_LABELS[r.device] || esc(r.device || 'Unbekannt')}</span><span class="mini" style="width:${pct0(r.sessions, total)}%;background:${col[r.device] || C.grey}"></span><span class="cnt num">${pct0(r.sessions, total)} %</span></li>`).join('')}</ul><p class="hint" style="margin-top:8px;">${fmtNum(total)} Sessions mit Geräteangabe</p>`;
+}
+function pathList(rows, color, n = 10) {
+  rows = rows || []; if (!rows.length) return '<div class="empty">Noch keine Daten</div>';
+  const max = Math.max(...rows.map(r => parseInt(r.cnt)), 1);
+  return `<ul class="list">${rows.slice(0, n).map(r => `<li><span class="lab path" title="${esc(r.path)}">${esc(r.path)}</span><span class="mini" style="width:${Math.max(pct0(r.cnt, max), 3)}%;background:${color}"></span><span class="cnt num">${fmtNum(r.cnt)}</span></li>`).join('')}</ul>`;
+}
+
+function campaignRows(d) {
+  return (d.campaigns || []).map(r => {
+    const x = { ...r }; ['sessions', 'interesse', 'auftragsseite', 'assistent', 'zugestellt', 'kontakt'].forEach(k => x[k] = +r[k] || 0);
+    x.cr = x.sessions > 0 ? x.zugestellt / x.sessions * 100 : 0;
+    x.label = r.source + (r.campaign ? ' · ' + r.campaign : '');
+    return x;
+  });
+}
+function campaignTable(rows, { full = true } = {}) {
+  if (!rows.length) return '<div class="empty">Noch keine Daten – die Herkunft wird beim ersten Seitenaufruf jeder Sitzung erfasst.</div>';
+  const cols = [['label', 'Quelle · Kampagne', 'left'], ['medium', 'Medium', 'left'], ['sessions', 'Sessions'], ['interesse', 'Interesse'], ['auftragsseite', 'Auftragsseite'], ['assistent', 'Assistent'], ['zugestellt', 'Zugestellt'], ['kontakt', 'Kontakt'], ['cr', 'CR']];
+  const maxS = Math.max(...rows.map(r => r.sessions), 1);
+  const head = cols.map(([k, l, al]) => `<th class="${full ? 'sortable' : ''} ${state.camp.sort === k && full ? 'sorted' + (state.camp.asc ? ' asc' : '') : ''}" data-k="${k}" ${al ? `style="text-align:${al}"` : ''}>${l}</th>`).join('');
+  const body = rows.map(r => `<tr>
+    <td class="path" style="max-width:260px;" title="${esc(r.label)}">${esc(r.source)}${r.campaign ? ` <span style="color:var(--muted)">· ${esc(r.campaign)}</span>` : ''}</td>
+    <td style="text-align:left;color:var(--muted)">${esc(r.medium || '—')}</td>
+    <td class="num"><div style="display:flex;align-items:center;gap:8px;justify-content:flex-end;"><span class="mini" style="width:${Math.max(pct0(r.sessions, maxS), 2)}px;max-width:70px;background:${C.blue}"></span><b>${fmtNum(r.sessions)}</b></div></td>
+    <td class="num">${fmtNum(r.interesse)} <small style="color:var(--dim)">${r.sessions ? pct0(r.interesse, r.sessions) + ' %' : ''}</small></td>
+    <td class="num">${fmtNum(r.auftragsseite)}</td><td class="num">${fmtNum(r.assistent)}</td>
+    <td class="num" style="color:${r.zugestellt ? '#4ADE9E' : 'var(--dim)'}">${fmtNum(r.zugestellt)}</td>
+    <td class="num" style="color:${r.kontakt ? '#4ADE9E' : 'var(--dim)'}">${fmtNum(r.kontakt)}</td>
+    <td class="num" style="color:${r.cr ? '#4ADE9E' : 'var(--dim)'}">${r.sessions ? r.cr.toLocaleString('de-DE', { maximumFractionDigits: 1 }) + ' %' : '—'}</td>
+  </tr>`).join('');
+  return `<div class="tbl-wrap"><table class="tbl"><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table></div>`;
+}
+function renderCampaignTable() {
+  const d = state.data; let rows = campaignRows(d);
+  const q = state.camp.q.trim().toLowerCase();
+  if (q) rows = rows.filter(r => r.label.toLowerCase().includes(q) || (r.medium || '').toLowerCase().includes(q));
+  if (state.camp.source) rows = rows.filter(r => r.source === state.camp.source);
+  const k = state.camp.sort;
+  rows.sort((a, b) => { const x = a[k], y = b[k]; const c = typeof x === 'number' ? x - y : String(x).localeCompare(String(y), 'de'); return state.camp.asc ? c : -c; });
+  const box = document.getElementById('campTable');
+  box.innerHTML = campaignTable(rows);
+  box.querySelectorAll('th.sortable').forEach(th => th.addEventListener('click', () => { const kk = th.dataset.k; if (state.camp.sort === kk) state.camp.asc = !state.camp.asc; else { state.camp.sort = kk; state.camp.asc = kk === 'label' || kk === 'medium'; } renderCampaignTable(); }));
+  const sel = document.getElementById('campSource'); const sources = [...new Set(campaignRows(d).map(r => r.source))].sort();
+  sel.innerHTML = '<option value="">Alle Quellen</option>' + sources.map(s => `<option value="${esc(s)}">${esc(s)}</option>`).join('');
+  sel.value = sources.includes(state.camp.source) ? state.camp.source : '';
+}
+
+// Export
+function download(name, text, type) {
+  const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], { type })); a.download = name; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+}
+const csvLine = arr => arr.map(v => { v = String(v == null ? '' : v); return /[;"\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; }).join(';');
+const today = () => localDay(new Date());
+function exportKpiCsv() {
+  const m = derive(state.data), p = m.prev || {};
+  const rows = [['Kennzahl', `Letzte ${state.days} Tage`, 'Vorperiode'],
+    ['Besucher (Sessions)', m.sessions, p.sessions], ['Seitenaufrufe', m.pageViews, p.pageViews], ['Interesse gezeigt (Sessions)', m.interesse, p.interesse],
+    ['Auftragsseite geöffnet (Sessions)', m.auftragsseite, p.auftragsseite], ['Assistent begonnen (Sessions)', m.assistent, p.assistent],
+    ['Absenden geklickt (Sessions)', m.attempt, p.attempt], ['Aufträge zugestellt (Server)', m.confirmed, p.confirmed],
+    ['Zustellung fehlgeschlagen (Server)', m.failed, p.failed], ['Unterlagen nachgereicht (Server)', m.documents, p.documents],
+    ['Conversion Auftragsseite → zugestellt (%)', m.crAuftrag.toFixed(2), p.crAuftrag != null ? p.crAuftrag.toFixed(2) : ''],
+    ['Conversion Sessions → zugestellt (%)', m.cr.toFixed(2), p.cr != null ? p.cr.toFixed(2) : ''],
+    ['Kontakt-Klicks', m.contactClicks, p.contactClicks], ['Sessions mit Kontakt-Klick', m.contactSessions, p.contactSessions]];
+  download(`zulassungsprofis-kennzahlen-${state.days}d-${today()}.csv`, '﻿' + rows.map(csvLine).join('\n'), 'text/csv;charset=utf-8');
+}
+function exportCampaignsCsv() {
+  const rows = [['Quelle', 'Kampagne', 'Medium', 'Sessions', 'Interesse', 'Auftragsseite', 'Assistent', 'Zugestellt', 'Kontakt', 'CR %'], ...campaignRows(state.data).map(r => [r.source, r.campaign, r.medium, r.sessions, r.interesse, r.auftragsseite, r.assistent, r.zugestellt, r.kontakt, r.cr.toFixed(2)])];
+  download(`zulassungsprofis-kampagnen-${state.days}d-${today()}.csv`, '﻿' + rows.map(csvLine).join('\n'), 'text/csv;charset=utf-8');
+}
+
+// Seiten rendern
+function renderOverview(d, m, ds) {
+  const p = m.prev;
+  document.getElementById('ovNotice').innerHTML = !m.sessions
+    ? `<div class="note" style="margin-bottom:16px;">${ICONS.info}<span>${d.firstEvent ? `Im gewählten Zeitraum gibt es noch keine Besuche. Erstes erfasstes Ereignis: ${esc(new Date(d.firstEvent).toLocaleString('de-DE'))}.` : 'Noch keine Daten. Die Erfassung beginnt mit dem ersten Besuch nach dem Deploy – ein Aufruf der Website genügt, um die Verbindung zu prüfen.'}</span></div>` : '';
+  document.getElementById('ovKpis').innerHTML = [
+    kpiCard({ label: 'Besucher (Sessions)', value: fmtNum(m.sessions), sub: 'Eindeutige Sitzungen', delta: deltaHtml(m.sessions, p && p.sessions), icon: ICONS.users, tone: 'blue', spark: ds.sessions }),
+    kpiCard({ label: 'Seitenaufrufe', value: fmtNum(m.pageViews), sub: m.sessions ? `${(m.pageViews / m.sessions).toLocaleString('de-DE', { maximumFractionDigits: 1 })} je Session` : `Letzte ${state.days} Tage`, delta: deltaHtml(m.pageViews, p && p.pageViews), icon: ICONS.page, tone: 'blue' }),
+    kpiCard({ label: 'Interesse gezeigt', value: fmtNum(m.interesse), sub: `${pct0(m.interesse, m.sessions)} % der Sessions`, delta: deltaHtml(m.interesse, p && p.interesse), icon: ICONS.play, tone: 'amber', spark: ds.cta }),
+    kpiCard({ label: 'Auftragsseite geöffnet', value: fmtNum(m.auftragsseite), sub: `${pct0(m.auftragsseite, m.sessions)} % der Sessions`, delta: deltaHtml(m.auftragsseite, p && p.auftragsseite), icon: ICONS.form, tone: 'amber' }),
+    kpiCard({ label: 'Assistent begonnen', value: fmtNum(m.assistent), sub: `${pct0(m.assistent, m.auftragsseite)} % der Auftragsseiten-Besuche`, delta: deltaHtml(m.assistent, p && p.assistent), icon: ICONS.list, tone: 'violet', spark: ds.assistent }),
+    kpiCard({ label: 'Aufträge zugestellt', value: fmtNum(m.confirmed), sub: m.failed ? `⚠ ${fmtNum(m.failed)} nicht zugestellt` : 'Vom Mailserver angenommen', delta: deltaHtml(m.confirmed, p && p.confirmed), icon: ICONS.check, tone: m.failed ? 'red' : 'green', spark: ds.confirmed, title: 'Maßgeblich ist die Server-Bestätigung (order_confirmed_server): der Mailserver hat die Anfrage angenommen.' }),
+    kpiCard({ label: 'Conversion', value: fmtPct1(m.crAuftrag), sub: `Auftragsseite → zugestellt · aller Sessions ${fmtPct1(m.cr)}`, delta: deltaHtml(m.crAuftrag, p && p.crAuftrag, { pp: true }), icon: ICONS.pct, tone: 'acc', title: 'Zugestellte Aufträge geteilt durch Sessions, die die Auftragsseite geöffnet haben.' }),
+    kpiCard({ label: 'Kontakte & Aufträge', value: fmtNum(m.inquiries), sub: `${fmtNum(m.contactSessions)} Sessions mit Kontakt-Klick · ${fmtNum(m.confirmed)} Aufträge`, delta: deltaHtml(m.inquiries, p && p.inquiries), icon: ICONS.chat, tone: 'green', spark: ds.contacts.map((v, i) => v + ds.confirmed[i]) }),
+  ].join('');
+  renderOverviewChart(ds);
+  document.getElementById('ovFunnel').innerHTML = funnelRows(m, { compact: true });
+  const c = d.contacts || {};
+  document.getElementById('ovContactSub').textContent = `${fmtNum(c.total || 0)} Kontakt-Klicks in ${fmtNum(c.sessions || 0)} Sessions · ${fmtNum(m.confirmed)} Aufträge zugestellt`;
+  const combined = {}; Object.entries(c.byType || {}).forEach(([k, v]) => combined[CONTACT_LABELS[k] || k] = v);
+  if (m.confirmed) combined['Auftrag über das Formular'] = m.confirmed;
+  if (m.documents) combined['Unterlagen nachgereicht'] = m.documents;
+  document.getElementById('ovContacts').innerHTML = barList(combined, C.green);
+  document.getElementById('ovInsights').innerHTML = insightsHtml(buildInsights(m).slice(0, 4));
+  document.getElementById('ovCampaigns').innerHTML = campaignTable(campaignRows(d).sort((a, b) => b.sessions - a.sessions).slice(0, 6), { full: false });
+}
+
+function renderFunnel(d, m) {
+  document.getElementById('funnelH').innerHTML = funnelHorizontal(m);
+  document.getElementById('funnelTable').innerHTML = funnelRows(m);
+  document.getElementById('funnelInsights').innerHTML = insightsHtml(buildInsights(m).filter(x => x.prio !== 'gut').slice(0, 4));
+  document.getElementById('funnelQuality').innerHTML = qualityHtml(d, m);
+  document.getElementById('dropoffTable').innerHTML = dropoffTable(m);
+}
+
+function renderAssistent(d, m, ds) {
+  const p = m.prev, oe = m.oe;
+  document.getElementById('asKpis').innerHTML = [
+    kpiCard({ label: 'Auftragsseite geöffnet', value: fmtNum(m.auftragsseite), sub: 'Sessions', delta: deltaHtml(m.auftragsseite, p && p.auftragsseite), icon: ICONS.form, tone: 'amber' }),
+    kpiCard({ label: 'Assistent begonnen', value: fmtNum(m.assistent), sub: `${pct0(m.assistent, m.auftragsseite)} % der Auftragsseiten-Besuche`, delta: deltaHtml(m.assistent, p && p.assistent), icon: ICONS.list, tone: 'violet', spark: ds.assistent }),
+    kpiCard({ label: 'Absenden geklickt', value: fmtNum(m.attempt), sub: `${pct0(m.attempt, m.assistent)} % der Starts`, delta: deltaHtml(m.attempt, p && p.attempt), icon: ICONS.play, tone: 'violet' }),
+    kpiCard({ label: 'Aufträge zugestellt', value: fmtNum(m.confirmed), sub: `${pct0(m.confirmed, m.assistent)} % der Starts`, delta: deltaHtml(m.confirmed, p && p.confirmed), icon: ICONS.check, tone: 'green', spark: ds.confirmed }),
+    kpiCard({ label: 'Nicht zugestellt', value: fmtNum(m.failed), sub: 'Mailserver hat abgelehnt', delta: deltaHtml(m.failed, p && p.failed, { invert: true }), icon: ICONS.warn, tone: m.failed ? 'red' : 'white' }),
+    kpiCard({ label: 'Eingabe-Hürden', value: fmtNum(oe.total), sub: 'Unvollständige Felder / Absendefehler', icon: ICONS.warn, tone: oe.total ? 'amber' : 'white' }),
+  ].join('');
+
+  const steps = [{ label: 'Auftragsseite geöffnet', n: m.auftragsseite, color: C.amber, note: 'Sessions mit Aufruf von /auftrag/' }];
+  [1, 2, 3, 4].forEach(s => steps.push({ label: `Schritt ${s} · ${STEP_LABELS[s]}`, n: parseInt(m.steps[s]) || 0, color: C.violet, note: s === 1 ? 'Leistung gewählt (auch per Direktlink)' : '' }));
+  steps.push({ label: 'Absenden geklickt', n: m.attempt, color: C.violet }, { label: 'Auftrag zugestellt (Server)', n: m.confirmed, color: C.green });
+  const max = Math.max(...steps.map(s => s.n), 1);
+  document.getElementById('asSteps').innerHTML = `<div class="funnel">${steps.map((s, i) => {
+    const prev = i > 0 ? steps[i - 1].n : null; const rate = prev != null && prev > 0 ? Math.round(s.n / prev * 100) : null;
+    const odd = prev != null && s.n > prev;
+    return `<div class="frow"><div class="frow__n" style="background:${s.color}22;color:${s.color}">${i + 1}</div><div class="frow__lab"><b>${s.label}</b>${odd ? '<small style="color:#F2D28B">mehr Sessions als im Schritt davor – siehe Hinweis</small>' : s.note ? `<small>${s.note}</small>` : ''}</div><div class="bar"><i style="width:${pct0(s.n, max)}%;background:${s.color}"></i></div><div class="frow__cnt num">${fmtNum(s.n)}</div><div class="frow__pct num">${pct0(s.n, max)} %</div><div class="frow__step num">${rate == null ? '' : `<span style="color:${rate > 100 ? '#F2D28B' : rate >= 60 ? '#4ADE9E' : rate >= 30 ? C.amber : '#FF8A8A'}">${rate} %</span>`}</div></div>`;
+  }).join('')}</div>`;
+  const odd = steps.some((s, i) => i > 0 && s.n > steps[i - 1].n);
+  document.getElementById('asStepsNote').innerHTML = odd
+    ? `<div class="note note--warn">${ICONS.info}<span><b>Nicht streng absteigend:</b> Wer die Auftragsseite neu lädt, setzt seinen gespeicherten Entwurf in einer neuen Session fort, ohne die früheren Schritte erneut zu durchlaufen. Einzelne Stufen können deshalb mehr Sessions haben als die davor.</span></div>`
+    : `<div class="note">${ICONS.info}<span>Schritte zählen Sessions, die mindestens bis zu diesem Schritt gekommen sind. Wer per Direktlink (z. B. von einer Leistungsseite) kommt, beginnt mit vorausgewählter Leistung in Schritt 2.</span></div>`;
+
+  const ins = [];
+  if (m.assistent) {
+    const lost = m.assistent - m.attempt;
+    const top = topEntry(m.abandon);
+    if (lost > 0) ins.push({ prio: pct0(lost, m.assistent) >= 50 ? 'hoch' : 'mittel', title: 'Vor dem Absenden abgebrochen', desc: `${fmtNum(lost)} von ${fmtNum(m.assistent)} begonnenen Assistenten (${pct0(lost, m.assistent)} %) wurden nie abgeschickt.${top ? ` Häufigster Ausstieg: Schritt ${top[0]} „${STEP_LABELS[top[0]] || ''}“.` : ''}`, action: 'Kundenwege → Filter „Im Assistenten abgebrochen“: dort steht je Session der letzte Schritt.', metric: `−${pct0(lost, m.assistent)} %`, metricLabel: 'vor Absenden' });
+    const failed = m.attempt - m.confirmed;
+    if (failed > 0) ins.push({ prio: pct0(failed, m.attempt) >= 30 ? 'hoch' : 'mittel', title: 'Abgeschickt, aber nicht zugestellt', desc: `${fmtNum(failed)} von ${fmtNum(m.attempt)} Absendeversuchen (${pct0(failed, m.attempt)} %) führten zu keiner Server-Bestätigung.`, action: Object.keys(oe.byField || {}).length ? `Häufigste Problemfelder: ${Object.entries(oe.byField).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([k, v]) => `${FIELD_LABELS[k] || k} (${v})`).join(', ')}.` : 'Fehler nach Grund prüfen.', metric: `−${pct0(failed, m.attempt)} %`, metricLabel: 'nach Absenden' });
+  }
+  if (m.failed) ins.push({ prio: 'hoch', title: 'Mailserver hat Anfragen abgelehnt', desc: `${fmtNum(m.failed)} Anfragen kamen nicht im Postfach an. Der Kunde bekam einen Hinweis auf WhatsApp/E-Mail.`, action: 'Zustellprotokoll (formular-protokoll/) und Mailzugang (/api/auftrag.php?check) prüfen.', metric: fmtNum(m.failed), metricLabel: 'verloren' });
+  if (m.clientOrders !== m.confirmed) ins.push({ prio: 'niedrig', title: 'Browser- und Server-Meldung weichen ab', desc: `Browser „Auftrag gesendet“: ${fmtNum(m.clientOrders)} · Server-Bestätigung: ${fmtNum(m.confirmed)}. Maßgeblich ist der Server.`, action: 'Differenz entsteht z. B. durch geschlossene Tabs oder Werbeblocker, die die Analyse blockieren.', metric: fmtNum(Math.abs(m.clientOrders - m.confirmed)), metricLabel: 'Differenz' });
+  if (!ins.length) ins.push({ prio: 'gut', title: 'Keine Auffälligkeiten', desc: 'Im Zeitraum gibt es keine nennenswerten Abbrüche im Assistenten.', action: '', metric: '✓', metricLabel: '' });
+  document.getElementById('asInsights').innerHTML = insightsHtml(ins);
+
+  const ab = {}; Object.entries(m.abandon).forEach(([s, n]) => ab[`Schritt ${s} · ${STEP_LABELS[s] || ''}`] = n);
+  document.getElementById('asErrSub').textContent = `${fmtNum(oe.total)} Eingabe-Hürden in ${state.days} Tagen`;
+  document.getElementById('asErrors').innerHTML = `<p class="hint" style="margin-bottom:6px;">Assistent verlassen in …</p>${barList(ab, C.amber, { empty: 'Keine Abbrüche' })}
+    <p class="hint" style="margin:14px 0 6px;">Unvollständige oder abgelehnte Felder</p>${barList(oe.byField, C.red, { labelMap: FIELD_LABELS, empty: 'Keine Feldfehler' })}
+    <p class="hint" style="margin:14px 0 6px;">Nach Grund</p>${barList(Object.fromEntries(Object.entries(oe.byReason || {}).map(([k, v]) => [k.replace(/^Absenden: (.*)$/, (_, r) => 'Absenden: ' + (REASON_LABELS[r] || r)), v])), C.blue, { empty: '—' })}`;
+
+  const obd = d.orderByDevice || []; const devs = [...new Set(obd.map(r => r.device).filter(Boolean))];
+  const evs = [['order_start', 'Begonnen'], ['order_submit_attempt', 'Absenden geklickt'], ['order_error', 'Absendefehler'], ['order_confirmed_server', 'Zugestellt']];
+  document.getElementById('asDevices').innerHTML = devs.length ? `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Schritt</th>${devs.map(x => `<th>${DEVICE_LABELS[x] || esc(x)}</th>`).join('')}</tr></thead><tbody>${evs.map(([k, l]) => `<tr><td>${l}</td>${devs.map(x => { const r = obd.find(y => y.event === k && y.device === x); return `<td class="num">${r ? fmtNum(r.cnt) : 0}</td>`; }).join('')}</tr>`).join('')}</tbody></table></div><p class="hint" style="margin-top:8px;">Events (nicht Sessions) je Gerät.</p>` : '<div class="empty">Noch keine Daten</div>';
+
+  document.getElementById('asOrders').innerHTML = `<div class="kv">
+    <div>Kennzahl</div><div class="r">Anzahl</div><div class="r hide-m">Ereignis</div><div class="r">Status</div>
+    <div>Browser-Meldung</div><div class="r num">${fmtNum(m.clientOrders)}</div><div class="r hide-m" style="font-weight:500;color:var(--muted)">order_submitted</div><div class="r"><span class="pill pill--grey">Vergleich</span></div>
+    <div>Server-Bestätigung</div><div class="r num">${fmtNum(m.confirmed)}</div><div class="r hide-m" style="font-weight:500;color:var(--muted)">order_confirmed_server</div><div class="r"><span class="pill pill--green">maßgeblich</span></div>
+    <div>Nicht zugestellt</div><div class="r num">${fmtNum(m.failed)}</div><div class="r hide-m" style="font-weight:500;color:var(--muted)">order_failed_server</div><div class="r"><span class="pill ${m.failed ? 'pill--red' : 'pill--green'}">${m.failed ? 'prüfen' : 'keine'}</span></div>
+    <div>Unterlagen nachgereicht</div><div class="r num">${fmtNum(m.documents)}</div><div class="r hide-m" style="font-weight:500;color:var(--muted)">documents_confirmed_server</div><div class="r"><span class="pill pill--grey">separat</span></div>
+  </div>
+  <p class="hint" style="margin-top:12px;">Top-Leistungen nach zugestellten Aufträgen:</p>${servicesMini(d)}`;
+}
+function servicesMini(d) {
+  const rows = (d.services || []).filter(r => +r.zugestellt > 0 || +r.begonnen > 0).slice(0, 6);
+  return rows.length ? `<ul class="list">${rows.map(r => `<li><span class="lab" title="${esc(r.service)}">${esc(serviceLabel(r.service))}</span><span style="color:var(--dim);font-size:12px;text-align:right;">${fmtNum(r.begonnen)} begonnen</span><span class="cnt num">${fmtNum(r.zugestellt)}</span></li>`).join('')}</ul>` : '<div class="empty">Noch keine Aufträge</div>';
+}
+
+function renderTraffic(d, m, ds) {
+  const p = m.prev, rows = campaignRows(d);
+  const isPaid = r => /paid|cpc|ads/i.test(r.medium || '') || /-ads$/.test(r.source);
+  const paid = rows.filter(isPaid).reduce((s, r) => s + r.sessions, 0);
+  const search = rows.filter(r => /google|bing|duckduckgo|ecosia|yahoo|startpage|qwant/i.test(r.source) && !isPaid(r)).reduce((s, r) => s + r.sessions, 0);
+  const social = rows.filter(r => /instagram|facebook|tiktok|meta|linkedin|youtube|^t\.co$|twitter|x\.com/i.test(r.source) && !isPaid(r)).reduce((s, r) => s + r.sessions, 0);
+  const direct = rows.filter(r => r.source === 'direkt').reduce((s, r) => s + r.sessions, 0);
+  document.getElementById('trKpis').innerHTML = [
+    kpiCard({ label: 'Besucher (Sessions)', value: fmtNum(m.sessions), sub: 'Eindeutige Sitzungen', delta: deltaHtml(m.sessions, p && p.sessions), icon: ICONS.users, tone: 'blue', spark: ds.sessions }),
+    kpiCard({ label: 'Direkt / unbekannt', value: fmtNum(direct), sub: `${pct0(direct, m.sessions)} % der Sessions`, icon: ICONS.globe, tone: 'white' }),
+    kpiCard({ label: 'Suchmaschinen', value: fmtNum(search), sub: 'Google, Bing … (organisch)', icon: ICONS.globe, tone: 'blue' }),
+    kpiCard({ label: 'Social', value: fmtNum(social), sub: 'Instagram, Facebook, TikTok …', icon: ICONS.users, tone: 'violet' }),
+    kpiCard({ label: 'Bezahlte Kampagnen', value: fmtNum(paid), sub: 'cpc, paid_social, Klick-IDs', icon: ICONS.tag, tone: 'amber' }),
+    kpiCard({ label: 'Quellen erfasst', value: fmtNum(rows.length), sub: 'Quelle · Kampagne-Kombinationen', icon: ICONS.list, tone: 'white' }),
+  ].join('');
+  renderCampaignTable();
+  document.getElementById('trDevices').innerHTML = devicesHtml(d);
+  document.getElementById('trEntry').innerHTML = pathList(d.entryPages, C.blue);
+  const stellen = (d.topPages || []).filter(r => /^\/zulassungsstelle\//.test(r.path)).map(r => ({ path: r.path.replace(/^\/zulassungsstelle\//, '').replace(/\/$/, ''), cnt: r.views }));
+  document.getElementById('trStellen').innerHTML = stellen.length ? pathList(stellen, C.amber) : '<div class="empty">Noch keine Aufrufe von Zulassungsstellen-Seiten unter den Top-Seiten</div>';
+}
+
+function renderContacts(d, m, ds) {
+  const p = m.prev, c = d.contacts || { byType: {}, byPage: {} }, req = d.requests || { byKind: {} }, bt = c.byType || {};
+  document.getElementById('coKpis').innerHTML = [
+    kpiCard({ label: 'Aufträge zugestellt', value: fmtNum(m.confirmed), sub: 'Formular, vom Mailserver angenommen', delta: deltaHtml(m.confirmed, p && p.confirmed), icon: ICONS.form, tone: 'violet', spark: ds.confirmed }),
+    kpiCard({ label: 'WhatsApp-Klicks', value: fmtNum(bt.whatsapp || 0), sub: 'Klicks auf WhatsApp-Links', icon: ICONS.wa, tone: 'green' }),
+    kpiCard({ label: 'Telefon-Klicks', value: fmtNum(bt.tel || 0), sub: 'Klicks auf Telefonnummern', icon: ICONS.phone, tone: 'green' }),
+    kpiCard({ label: 'E-Mail-Klicks', value: fmtNum(bt.mail || 0), sub: 'Klicks auf Mail-Adressen', icon: ICONS.mail, tone: 'green' }),
+    kpiCard({ label: 'Sessions mit Kontakt', value: fmtNum(m.contactSessions), sub: `${pct0(m.contactSessions, m.sessions)} % aller Sessions`, delta: deltaHtml(m.contactSessions, p && p.contactSessions), icon: ICONS.users, tone: 'green', spark: ds.contacts }),
+    kpiCard({ label: 'Unterlagen nachgereicht', value: fmtNum(m.documents), sub: 'Über „Unterlagen hochladen“', delta: deltaHtml(m.documents, p && p.documents), icon: ICONS.upload, tone: 'amber' }),
+  ].join('');
+  renderContactsChart(ds);
+  document.getElementById('coByType').innerHTML = barList(bt, C.green, { labelMap: CONTACT_LABELS });
+  document.getElementById('coByPage').innerHTML = barList(c.byPage || {}, C.blue);
+  const kinds = { ...(req.byKind || {}) }; Object.entries(req.failedByKind || {}).forEach(([k, v]) => kinds[`⚠ ${k} nicht zugestellt`] = v);
+  document.getElementById('coByKind').innerHTML = barList(kinds, C.amber);
+}
+
+function renderReports(d, m) {
+  const p = m.prev;
+  const row = (label, cur, prev, fmt = fmtNum, opts) => `<tr><td>${label}</td><td class="num"><b>${fmt(cur)}</b></td><td class="num" style="color:var(--muted)">${prev == null ? '—' : fmt(prev)}</td><td class="num">${deltaHtml(cur, prev, opts)}</td></tr>`;
+  document.getElementById('compareTable').innerHTML = p ? `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Kennzahl</th><th>Letzte ${state.days} Tage</th><th>Die ${state.days} Tage davor</th><th>Veränderung</th></tr></thead><tbody>
+    ${row('Besucher (Sessions)', m.sessions, p.sessions)}${row('Seitenaufrufe', m.pageViews, p.pageViews)}${row('Interesse gezeigt', m.interesse, p.interesse)}
+    ${row('Auftragsseite geöffnet', m.auftragsseite, p.auftragsseite)}${row('Assistent begonnen', m.assistent, p.assistent)}${row('Absenden geklickt', m.attempt, p.attempt)}
+    ${row('Aufträge zugestellt', m.confirmed, p.confirmed)}${row('Nicht zugestellt', m.failed, p.failed, fmtNum, { invert: true })}${row('Unterlagen nachgereicht', m.documents, p.documents)}
+    ${row('Conversion (Auftragsseite → zugestellt)', m.crAuftrag, p.crAuftrag, fmtPct1, { pp: true })}
+    ${row('Kontakt-Klicks', m.contactClicks, p.contactClicks)}${row('Sessions mit Kontakt', m.contactSessions, p.contactSessions)}
+  </tbody></table></div>`
+  : `<div class="note">${ICONS.info}<span>Für diesen Zeitraum liegt kein Vergleichszeitraum vor.</span></div>`;
+
+  // Seiten
+  const dwell = d.pageDwell || {};
+  const top = (d.topPages || []).map(r => { const w = dwell[r.path]; return `<tr><td class="path" title="${esc(r.path)}">${esc(r.path)}</td><td class="num">${fmtNum(r.views)}</td><td class="num">${fmtNum(r.sessions)}</td><td class="num">${w ? fmtDur(w.avgDur) : '—'}</td><td class="num">${w ? w.avgScroll + ' %' : '—'}</td><td class="num">${w && w.avgLoad ? fmtMs(w.avgLoad) : '—'}</td></tr>`; }).join('');
+  document.getElementById('repPages').innerHTML = `<div class="grid grid--21"><div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--blue">${ICONS.page}</span><span>Meistbesuchte Seiten<span class="card__sub">ø Dauer &amp; Scrolltiefe aus „Seite verlassen“-Events · Ladezeit nur beim ersten Aufruf einer Sitzung</span></span></div></div>
+    <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Seite</th><th>Aufrufe</th><th>Sessions</th><th>ø Dauer</th><th>ø Scroll</th><th>ø Ladezeit</th></tr></thead><tbody>${top || '<tr><td colspan="6" class="empty">Noch keine Daten</td></tr>'}</tbody></table></div></div>
+    <div class="stack"><div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--blue">${ICONS.globe}</span><span>Einstiegsseiten</span></div></div>${pathList(d.entryPages, C.blue)}</div>
+    <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--amber">${ICONS.globe}</span><span>Ausstiegsseiten</span></div></div>${pathList(d.exitPages, C.amber)}</div></div></div>`;
+
+  // Leistungen
+  const sv = (d.services || []).map(r => `<tr><td title="${esc(r.service)}">${esc(serviceLabel(r.service))}</td><td class="num">${fmtNum(r.preisansichten)}</td><td class="num">${fmtNum(r.klicks)}</td><td class="num">${fmtNum(r.gewaehlt)}</td><td class="num">${fmtNum(r.begonnen)}</td><td class="num">${fmtNum(r.abgesendet)}</td><td class="num" style="color:${+r.zugestellt ? '#4ADE9E' : 'var(--dim)'}"><b>${fmtNum(r.zugestellt)}</b></td><td class="num" style="color:var(--muted)">${+r.begonnen ? pct0(+r.zugestellt, +r.begonnen) + ' %' : '—'}</td></tr>`).join('');
+  document.getElementById('repServices').innerHTML = `<div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--green">${ICONS.check}</span><span>Leistungen<span class="card__sub">Welche Leistungen angesehen, gewählt, begonnen und tatsächlich beauftragt werden</span></span></div></div>
+    <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Leistung</th><th>Preisansichten</th><th>Klicks</th><th>Gewählt</th><th>Begonnen</th><th>Abgesendet</th><th>Zugestellt</th><th>Quote</th></tr></thead><tbody>${sv || '<tr><td colspan="8" class="empty">Noch keine Daten</td></tr>'}</tbody></table></div>
+    <p class="hint" style="margin-top:8px;">Gewählt/Begonnen/Abgesendet = Sessions · Preisansichten/Klicks/Zugestellt = Ereignisse · Quote = zugestellt je begonnener Session.</p></div>`;
+
+  // Skriptfehler
+  const e = d.jsErrors || { total: 0, byMsg: {}, byPath: {} };
+  document.getElementById('repErrors').innerHTML = `<div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--red">${ICONS.warn}</span><span>Skriptfehler im Browser<span class="card__sub">${fmtNum(e.total)} in ${state.days} Tagen · technische Abbruchursachen (inkl. nicht geladener eigener Dateien)</span></span></div></div>
+    ${e.total ? `<div class="grid grid--2" style="margin:0;"><div><p class="hint" style="margin-bottom:6px;">Nach Meldung</p>${barList(e.byMsg, C.red)}</div><div><p class="hint" style="margin-bottom:6px;">Nach Seite</p>${barList(e.byPath, '#F97316')}</div></div>` : '<div class="empty">Keine Skriptfehler im Zeitraum</div>'}</div>`;
+}
+
+// Kundenwege (Sessions + Ablauf)
+const SESSION_FILTER_LABELS = { alle: 'Alle', interesse: 'Interesse gezeigt', auftragsseite: 'Auftragsseite geöffnet', abbruch_assistent: 'Im Assistenten abgebrochen', abbruch_absenden: 'Beim Absenden gescheitert', fehler: 'Mit Fehler', kontakt: 'Kontakt (WhatsApp/Tel./Mail)', zugestellt: 'Auftrag zugestellt' };
+function herkunftLabel(r) {
+  let m = null; if (r.herkunft) { try { m = JSON.parse(r.herkunft); } catch (_) { m = null; } }
+  if (m && typeof m === 'object') { const src = m.utm_source || (m.clid ? m.clid + '-ads' : '') || m.ref; if (src) return src + (m.utm_campaign ? ' · ' + m.utm_campaign : ''); }
+  return r.referrer || 'direkt';
+}
+function renderSessionFilters() {
+  const box = document.getElementById('sessionFilters');
+  box.innerHTML = Object.entries(SESSION_FILTER_LABELS).map(([k, l]) => `<button type="button" class="chip ${k === state.sessionFilter ? 'active' : ''}" data-f="${k}">${l}</button>`).join('');
+  box.querySelectorAll('.chip').forEach(b => b.addEventListener('click', () => loadSessions(b.dataset.f)));
+}
+async function loadSessions(filter, offset = 0) {
+  state.sessionFilter = filter; state.sessionOffset = offset; renderSessionFilters();
+  const box = document.getElementById('sessionList'), more = document.getElementById('sessionMore');
+  if (!offset) box.innerHTML = '<div class="loading"><div class="spinner"></div> Sessions werden geladen …</div>';
+  more.innerHTML = '';
+  try {
+    const r = await fetch(`${API}?sessions=1&days=${state.days}&filter=${encodeURIComponent(filter)}&limit=50&offset=${offset}`, { credentials: 'same-origin' });
+    const d = await r.json(); if (!d.ok) throw new Error(d.error || 'Fehler beim Laden');
+    renderSessions(d.sessions || [], offset > 0);
+    if ((d.sessions || []).length === 50) { more.innerHTML = '<button type="button" class="btn btn--sm">Weitere 50 laden</button>'; more.firstElementChild.addEventListener('click', () => loadSessions(filter, offset + 50)); }
+  } catch (e) { box.innerHTML = `<div class="error-box">${esc(e.message)}</div>`; }
+}
+function renderSessions(rows, append) {
+  const box = document.getElementById('sessionList');
+  if (!rows.length && !append) { box.innerHTML = '<div class="empty">Keine Sessions für diesen Filter im gewählten Zeitraum.</div>'; return; }
+  const body = rows.map(r => {
+    const start = new Date(r.started_at), dur = Math.round((new Date(r.ended_at) - start) / 1000), stage = parseInt(r.stage) || 0;
+    const when = start.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit' }) + ' ' + start.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
+    return `<tr class="session-row" data-sid="${esc(r.session_id)}"><td>${when}</td><td>${fmtDur(dur)}</td><td>${DEVICE_LABELS[r.device] || esc(r.device || '—')}</td><td class="path" style="max-width:200px;" title="${esc(herkunftLabel(r))}">${esc(herkunftLabel(r))}</td><td>${esc(r.service ? serviceLabel(r.service) : '—')}</td><td><span class="stage" style="background:${STAGE_COLORS[stage] || C.grey}">${STAGE_LABELS[stage] || '—'}${parseInt(r.confirmed) > 0 ? ' ✓' : ''}${parseInt(r.errors) > 0 ? ' ⚠' : ''}${parseInt(r.contacts) > 0 ? ' ☎' : ''}</span></td><td class="path" title="${esc(r.pfad || '')}">${esc(r.pfad || '—')}</td><td style="text-align:right;" class="num">${fmtNum(r.pages)} / ${fmtNum(r.events)}</td></tr><tr class="session-detail" hidden><td colspan="8"></td></tr>`;
+  }).join('');
+  if (append) { const tb = box.querySelector('tbody'); if (tb) { tb.insertAdjacentHTML('beforeend', body); bindSessionRows(tb); return; } }
+  box.innerHTML = `<div class="tbl-wrap"><table class="tbl"><thead><tr><th style="text-align:left;">Start</th><th style="text-align:left;">Dauer</th><th style="text-align:left;">Gerät</th><th style="text-align:left;">Herkunft</th><th style="text-align:left;">Leistung</th><th style="text-align:left;">Erreichte Stufe</th><th style="text-align:left;">Klickpfad (Seiten)</th><th>Seiten / Events</th></tr></thead><tbody>${body}</tbody></table></div><p class="hint" style="margin-top:8px;">✓ Auftrag zugestellt · ⚠ Fehler · ☎ Kontakt-Klick</p>`;
+  bindSessionRows(box);
+}
+function bindSessionRows(root) { root.querySelectorAll('.session-row:not([data-bound])').forEach(tr => { tr.dataset.bound = '1'; tr.addEventListener('click', () => toggleSession(tr)); }); }
+async function toggleSession(tr) {
+  const det = tr.nextElementSibling, cell = det.firstElementChild;
+  if (!det.hidden) { det.hidden = true; return; }
+  det.hidden = false; if (cell.dataset.loaded) return;
+  cell.innerHTML = '<div class="loading" style="padding:16px;"><div class="spinner"></div></div>';
+  try { const r = await fetch(`${API}?session=${encodeURIComponent(tr.dataset.sid)}`, { credentials: 'same-origin' }); const d = await r.json(); if (!d.ok) throw new Error(d.error || 'Fehler beim Laden'); cell.innerHTML = renderTimeline(d.events || []); cell.dataset.loaded = '1'; }
+  catch (e) { cell.innerHTML = `<div class="error-box">${esc(e.message)}</div>`; }
+}
+function eventColor(ev) {
+  if (/error|failed/.test(ev)) return C.red;
+  if (ev === 'contact_click' || ev === 'order_submitted' || ev === 'order_confirmed_server' || ev.startsWith('documents_')) return '#4ADE9E';
+  if (ev === 'session_start' || ev === 'page_view' || ev === 'page_leave') return '#A0ACC2';
+  if (ev === 'order_abandon') return '#F97316';
+  if (ev === 'cta_click' || ev === 'price_box_view' || ev === 'service_selected' || ev === 'tool_used') return '#7DD3FC';
+  if (ev.startsWith('order_')) return '#B8A1FF';
+  return C.amber;
+}
+function describeEvent(ev) {
+  let m = null; if (ev.meta) { try { m = JSON.parse(ev.meta); } catch (_) { m = null; } } if (!m || typeof m !== 'object') m = {};
+  const sv = ev.service ? serviceLabel(ev.service) : '';
+  const parts = [];
+  switch (ev.event) {
+    case 'page_view': parts.push(ev.path); break;
+    case 'session_start': parts.push([m.landing ? 'Einstieg ' + m.landing : '', m.utm_source ? 'Quelle ' + m.utm_source + (m.utm_medium ? ' / ' + m.utm_medium : '') : (m.ref ? 'von ' + m.ref : 'direkt'), m.utm_campaign ? 'Kampagne ' + m.utm_campaign : '', m.utm_content ? 'Anzeige ' + m.utm_content : '', m.clid ? 'Klick-ID ' + m.clid : ''].filter(Boolean).join(' · ')); break;
+    case 'contact_click': parts.push((CONTACT_LABELS[m.type] || m.type || '') + (m.id ? ' „' + m.id + '“' : '') + (ev.path ? ' auf ' + ev.path : '')); break;
+    case 'page_leave': parts.push(`${ev.path || ''} · ${fmtDur(m.dur)} auf der Seite${m.scroll != null ? ' · ' + m.scroll + ' % gescrollt' : ''}${m.load ? ' · geladen in ' + fmtMs(m.load) : ''}`); break;
+    case 'cta_click': parts.push(`„${m.position || m.id || ''}“ auf ${ev.path || ''}`, sv); break;
+    case 'price_box_view': parts.push(m.position || '', sv); break;
+    case 'service_selected': parts.push(sv, m.position ? 'über ' + m.position : ''); break;
+    case 'tool_used': parts.push(m.tool || ''); break;
+    case 'order_start': parts.push(sv); break;
+    case 'order_step': parts.push(`Schritt ${ev.step} · ${STEP_LABELS[ev.step] || ''}`, sv); break;
+    case 'order_step_error': parts.push(`Schritt ${ev.step}`, m.fields ? 'Felder: ' + String(m.fields).split(',').map(f => FIELD_LABELS[f] || f).join(', ') : ''); break;
+    case 'order_abandon': parts.push(`in Schritt ${ev.step} · ${STEP_LABELS[ev.step] || ''}`); break;
+    case 'order_submit_attempt': parts.push(sv); break;
+    case 'order_error': parts.push(REASON_LABELS[m.reason] || m.reason || '', m.fields ? 'Feld: ' + String(m.fields).split(',').map(f => FIELD_LABELS[f] || f).join(', ') : ''); break;
+    case 'order_submitted': case 'documents_uploaded': parts.push(sv, m.method || ''); break;
+    case 'order_confirmed_server': parts.push(sv, m.audience === 'gewerbe' ? 'Gewerbe' : 'Privat', +m.files ? m.files + ' Datei(en)' : 'ohne Dateien'); break;
+    case 'documents_confirmed_server': parts.push(+m.files ? m.files + ' Datei(en)' : ''); break;
+    case 'order_failed_server': parts.push(m.kind || '', m.code ? 'Mailserver-Code ' + m.code : ''); break;
+    case 'js_error': parts.push((m.msg || '') + (m.src ? ' @ ' + m.src + (m.line ? ':' + m.line : '') : '') + (ev.path ? ' auf ' + ev.path : '')); break;
+    default: parts.push(Object.entries(m).map(([k, v]) => `${k}: ${v}`).join(' · '), sv);
+  }
+  return parts.filter(Boolean).join(' · ');
+}
+function renderTimeline(events) {
+  if (!events.length) return '<div class="empty">Keine Events</div>';
+  let prev = new Date(events[0].created_at);
+  const items = events.map(ev => { const t = new Date(ev.created_at), dt = Math.round((t - prev) / 1000); prev = t; return `<li><span class="tl-time">${t.toLocaleTimeString('de-DE')}</span><span class="tl-delta">${dt > 0 ? '+' + fmtDur(dt) : ''}</span><span class="tl-ev" style="color:${eventColor(ev.event)}">${esc(EVENT_LABELS[ev.event] || ev.event)}</span><span class="tl-desc">${esc(describeEvent(ev))}</span></li>`; }).join('');
+  const first = new Date(events[0].created_at), last = new Date(events[events.length - 1].created_at);
+  const dev = (events.find(e => e.device) || {}).device;
+  return `<p class="hint" style="margin:0 0 8px;">${events.length} Events · ${first.toLocaleString('de-DE')} bis ${last.toLocaleTimeString('de-DE')} · Gerät: ${esc(DEVICE_LABELS[dev] || dev || '—')}${events[0].referrer ? ' · Herkunft: ' + esc(events[0].referrer) : ''}</p><ul class="timeline">${items}</ul>`;
+}
+
+// Laden & Navigation
+let loadSeq = 0;
+async function load(days) {
+  state.days = days;
+  document.querySelectorAll('#rangeSeg button').forEach(b => b.classList.toggle('active', parseInt(b.dataset.days) === days));
+  const seq = ++loadSeq;
+  const loading = document.getElementById('globalLoading'), err = document.getElementById('globalError');
+  loading.hidden = false; err.hidden = true; document.querySelectorAll('.page').forEach(p => p.style.opacity = '.4');
+  try {
+    const r = await fetch(`${API}?days=${days}&compare=1`, { credentials: 'same-origin' });
+    if (r.status === 401) throw new Error('Login erforderlich – bitte Seite neu laden und anmelden.');
+    const d = await r.json().catch(() => ({ ok: false, error: `Server antwortet mit Status ${r.status}` }));
+    if (!d.ok) throw new Error(d.error || 'Server nicht erreichbar – bitte kurz warten und neu laden.');
+    if (seq !== loadSeq) return;
+    state.data = d;
+    renderAll();
+    document.getElementById('updatedAt').textContent = new Date().toLocaleString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' }) + ' Uhr';
+  } catch (e) {
+    if (seq !== loadSeq) return;
+    err.innerHTML = `<div class="error-box">${esc(e.message || 'Unbekannter Fehler')}<small>Neuer Versuch in 30 Sekunden …</small></div>`;
+    err.hidden = false; setTimeout(() => { if (seq === loadSeq) load(state.days); }, 30000);
+  } finally { if (seq === loadSeq) { loading.hidden = true; document.querySelectorAll('.page').forEach(p => p.style.opacity = ''); } }
+}
+function renderAll() {
+  const d = state.data, m = derive(d), ds = dailySeries(d, state.days);
+  const parts = [['Übersicht', () => renderOverview(d, m, ds)], ['Funnel', () => renderFunnel(d, m)], ['Assistent', () => renderAssistent(d, m, ds)],
+                 ['Besucher', () => renderTraffic(d, m, ds)], ['Kontakte', () => renderContacts(d, m, ds)], ['Berichte', () => renderReports(d, m)]];
+  for (const [name, fn] of parts) { try { fn(); } catch (e) { console.error('[Analytics] ' + name, e); } }
+  if (state.page === 'reports') loadSessions(state.sessionFilter); else document.getElementById('sessionList').innerHTML = '';
+  renderSessionFilters();
+}
+const PAGE_TITLES = { overview: 'Übersicht', funnel: 'Conversion-Funnel', assistent: 'Auftrags-Assistent', traffic: 'Besucher & Kampagnen', contacts: 'Kontakte & Anfragen', reports: 'Berichte' };
+function route() {
+  const page = (location.hash.replace('#/', '') || 'overview').split('?')[0];
+  state.page = PAGE_TITLES[page] ? page : 'overview';
+  document.querySelectorAll('.page').forEach(p => p.classList.toggle('active', p.id === 'page-' + state.page));
+  document.querySelectorAll('#nav a').forEach(a => a.classList.toggle('active', a.dataset.page === state.page));
+  document.getElementById('pageTitle').textContent = PAGE_TITLES[state.page];
+  document.body.classList.remove('nav-open');
+  if (state.data && state.page === 'reports' && !document.getElementById('sessionList').innerHTML) loadSessions(state.sessionFilter);
+  Object.values(state.charts).forEach(ch => { try { ch.resize(); } catch (_) {} });
+  window.scrollTo({ top: 0 });
+}
+window.addEventListener('hashchange', route);
+document.getElementById('rangeSeg').addEventListener('click', e => { const b = e.target.closest('button'); if (b) load(parseInt(b.dataset.days)); });
+document.getElementById('burger').addEventListener('click', () => document.body.classList.toggle('nav-open'));
+document.getElementById('collapseBtn').addEventListener('click', () => { document.body.classList.toggle('collapsed'); try { localStorage.setItem('kzpa_collapsed', document.body.classList.contains('collapsed') ? '1' : '0'); } catch (_) {} setTimeout(() => Object.values(state.charts).forEach(ch => ch.resize()), 220); });
+document.getElementById('campSearch').addEventListener('input', e => { state.camp.q = e.target.value; renderCampaignTable(); });
+document.getElementById('campSource').addEventListener('change', e => { state.camp.source = e.target.value; renderCampaignTable(); });
+document.getElementById('campExport').addEventListener('click', exportCampaignsCsv);
+document.getElementById('exportCsv').addEventListener('click', exportKpiCsv);
+document.getElementById('exportJson').addEventListener('click', () => download(`zulassungsprofis-analytics-${state.days}d-${today()}.json`, JSON.stringify(state.data, null, 2), 'application/json'));
+document.getElementById('customDaysBtn').addEventListener('click', () => { const v = parseInt(document.getElementById('customDays').value); if (v >= 1 && v <= 365) load(v); });
+document.getElementById('customDays').addEventListener('keydown', e => { if (e.key === 'Enter') document.getElementById('customDaysBtn').click(); });
+document.getElementById('repTabs').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; document.querySelectorAll('#repTabs button').forEach(x => x.classList.toggle('active', x === b)); document.querySelectorAll('.tab-pane').forEach(p => p.classList.toggle('active', p.id === 'tab-' + b.dataset.tab)); });
+document.addEventListener('click', e => { if (document.body.classList.contains('nav-open') && !e.target.closest('.sidebar') && !e.target.closest('#burger')) document.body.classList.remove('nav-open'); });
+try { if (localStorage.getItem('kzpa_collapsed') === '1') document.body.classList.add('collapsed'); } catch (_) {}
+route();
+load(30);
+</script>
+</body>
+</html>

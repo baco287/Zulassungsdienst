@@ -3,6 +3,7 @@ import LegalPage from "@/components/LegalPage";
 import { site } from "@/lib/site";
 import { analyticsProvider, gadsId } from "@/lib/analytics";
 import { ConsentReset } from "@/components/Analytics";
+import { eigeneAnalyseAktiv } from "@/lib/eigeneAnalyse";
 
 export const metadata: Metadata = {
   title: "Datenschutzerklärung",
@@ -37,14 +38,39 @@ export default function DatenschutzPage() {
           Schriftarten werden lokal von unserem Server geladen (Self-Hosting); es
           findet keine Verbindung zu Google Fonts oder anderen externen
           Schriftdiensten statt.{" "}
-          {analyticsProvider || gadsId
+          {analyticsProvider || gadsId || eigeneAnalyseAktiv
             ? "Welche Analyse- und Messdienste wir einsetzen, beschreibt der Abschnitt „Webanalyse und Werbemessung“."
             : "Diese Website verwendet keine Cookies, keine Analyse-Dienste und keine Tracking-Technologien."}
         </p>
       </section>
-      {(analyticsProvider || gadsId) && (
+      {(analyticsProvider || gadsId || eigeneAnalyseAktiv) && (
         <section>
           <h2>2a. Webanalyse und Werbemessung</h2>
+          {eigeneAnalyseAktiv && (
+            <>
+              <h3>Eigene Reichweitenmessung</h3>
+              <p>
+                Wir werten die Nutzung dieser Website mit einer eigenen Auswertung aus, die vollständig auf unserem
+                Webserver bei ALL-INKL.COM läuft; es werden keine Daten an Dritte übermittelt. Dabei werden keine
+                Cookies gesetzt und keine Informationen auf Ihrem Gerät gespeichert. Für die Dauer Ihres Besuchs
+                erzeugt die Seite eine zufällige Sitzungskennung, die nur im Arbeitsspeicher des geöffneten
+                Browser-Tabs liegt und beim Schließen oder Neuladen verloren geht. So können wir Seitenaufrufe eines
+                Besuchs zusammenfassen, ohne Sie wiederzuerkennen.
+              </p>
+              <p>
+                Erfasst werden: aufgerufene Seiten (ohne Parameter in der Adresse), Verweildauer, Scrolltiefe und
+                Ladezeit, der Gerätetyp (Smartphone, Tablet oder Computer), die Domain der Website, von der Sie zu uns
+                gekommen sind, Kampagnenangaben in der Adresse (utm-Parameter), technische Fehlermeldungen sowie
+                anonyme Ereignisse wie Klicks auf „Jetzt zulassen“, WhatsApp, Telefon oder E-Mail, die gewählte
+                Leistung und der Fortschritt im Auftrags-Assistenten. Nicht erfasst werden Namen, Kontakt-,
+                Fahrzeug- und Ausweisdaten, Formularinhalte und Referenznummern. Ihre IP-Adresse wird nicht
+                gespeichert; sie wird nur für wenige Minuten als nicht umkehrbarer Prüfwert verwendet, um Missbrauch
+                abzuwehren. Die Daten werden nach spätestens 25 Monaten automatisch gelöscht.
+                Rechtsgrundlage ist unser berechtigtes Interesse an einer bedarfsgerechten und technisch
+                fehlerfreien Website (Art. 6 Abs. 1 lit. f DSGVO).
+              </p>
+            </>
+          )}
           {analyticsProvider === "plausible" && (
             <p>
               Wir nutzen Plausible Analytics (Plausible Insights OÜ, Tartu, Estland) zur anonymen Reichweitenmessung.

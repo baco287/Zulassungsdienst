@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { analyticsProvider, CONSENT_KEY, gadsId } from "@/lib/analytics";
+import { seitenaufruf } from "@/lib/eigeneAnalyse";
 
 const plausibleDomain = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN ?? "";
 const plausibleSrc = process.env.NEXT_PUBLIC_PLAUSIBLE_SRC ?? "https://plausible.io/js/script.js";
@@ -33,6 +34,11 @@ export default function Analytics() {
   // Automatisches Link-Tracking ist bewusst aus: WhatsApp-Links enthalten
   // vorbefüllte Nachrichten mit Kontaktdaten.
   const pathname = usePathname();
+
+  // Eigene Webanalyse (lib/eigeneAnalyse.ts): Seitenaufruf je Pfad; beim Wechsel
+  // meldet die Aufräumfunktion Verweildauer und Scrolltiefe der bisherigen Seite.
+  useEffect(() => seitenaufruf(), [pathname]);
+
   const firstView = useRef(true);
   useEffect(() => {
     if (analyticsProvider !== "matomo") return;

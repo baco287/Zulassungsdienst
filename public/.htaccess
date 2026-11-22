@@ -22,6 +22,12 @@ AddCharset utf-8 .txt
   Require all denied
 </Files>
 
+# ── Eigene Webanalyse: Zugang und Bibliothek nur per include, nie direkt abrufbar ──
+# (Erfassung: api/track.php · Dashboard: analytics/ – siehe docs/TRACKING.md)
+<FilesMatch "^analytics-(zugang|lib)\.php$">
+  Require all denied
+</FilesMatch>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
