@@ -406,7 +406,7 @@ function kza_aufraeumen(): void
 
 /**
  * API-Schlüssel für Claude: api/ki-zugang.php (vom Deploy aus dem GitHub-Secret
- * ANTHROPIC_API_KEY erzeugt, siehe scripts/ki-zugang.mjs). Für lokale Tests genügt die
+ * KENNZEICHEN_ANTHROPIC_API_KEY erzeugt, siehe scripts/ki-zugang.mjs). Für lokale Tests genügt die
  * Umgebungsvariable KZP_KI_KEY. null = nicht eingerichtet.
  */
 function kza_ki_schluessel(): ?string

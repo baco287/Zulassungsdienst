@@ -5,7 +5,9 @@
  * Läuft nur im Produktiv-Deploy (.github/workflows/deploy.yml, Job deploy-allinkl) –
  * nie im GitHub-Pages-Job, damit der Schlüssel nicht öffentlich wird.
  * Quelle ist das GitHub-Secret:
- *   ANTHROPIC_API_KEY   API-Schlüssel der Claude Console (beginnt mit „sk-ant-“)
+ *   KENNZEICHEN_ANTHROPIC_API_KEY   API-Schlüssel der Claude Console (beginnt mit „sk-ant-“)
+ *
+ * Bewusst ein eigener Name: Das allgemeine ANTHROPIC_API_KEY kann ein anderes Projekt nutzen.
  *
  * Empfehlung: in der Claude Console einen eigenen Workspace „Kennzeichenassistent“ mit eigenem
  * Schlüssel und eigenem Ausgabenlimit anlegen. Dann ist der Verbrauch dort getrennt sichtbar,
@@ -19,23 +21,23 @@
  */
 import { writeFileSync, existsSync, mkdirSync } from "node:fs";
 
-const { ANTHROPIC_API_KEY = "" } = process.env;
+const { KENNZEICHEN_ANTHROPIC_API_KEY = "" } = process.env;
 const ziel = process.argv[2] ?? "out/api/ki-zugang.php";
-const key = ANTHROPIC_API_KEY.trim();
+const key = KENNZEICHEN_ANTHROPIC_API_KEY.trim();
 
 if (!key) {
   console.log(
-    "::warning::Kein KI-Zugang hinterlegt (GitHub-Secret ANTHROPIC_API_KEY fehlt). " +
+    "::warning::Kein KI-Zugang hinterlegt (GitHub-Secret KENNZEICHEN_ANTHROPIC_API_KEY fehlt). " +
       "Der Kennzeichenassistent läuft dann ohne KI-Ideen, nur mit dem Generator.",
   );
   process.exit(0);
 }
 if (!/^sk-ant-[A-Za-z0-9_-]{20,}$/.test(key)) {
-  console.log("::warning::ANTHROPIC_API_KEY sieht nicht wie ein Claude-API-Schlüssel aus – der Kennzeichenassistent läuft ohne KI.");
+  console.log("::warning::KENNZEICHEN_ANTHROPIC_API_KEY sieht nicht wie ein Claude-API-Schlüssel aus – der Kennzeichenassistent läuft ohne KI.");
   process.exit(0);
 }
 if (key.startsWith("sk-ant-admin")) {
-  console.error("ANTHROPIC_API_KEY ist ein Admin-Schlüssel. Für die Website bitte einen normalen API-Schlüssel verwenden.");
+  console.error("KENNZEICHEN_ANTHROPIC_API_KEY ist ein Admin-Schlüssel. Für die Website bitte einen normalen API-Schlüssel verwenden.");
   process.exit(1);
 }
 

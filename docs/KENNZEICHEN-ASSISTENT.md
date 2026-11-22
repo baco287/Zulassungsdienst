@@ -161,7 +161,7 @@ mit der Reservierung sicher ist. Wirft der Adapter, bleibt es bei „Prüfung er
    „Kennzeichenassistent“ mit eigenem Schlüssel und **eigenem Ausgabenlimit** (z. B. 10 $ im Monat).
    Dann kann dieser Assistent das gemeinsame Budget der anderen Projekte nie aufbrauchen, und der
    Verbrauch ist dort getrennt sichtbar.
-2. Den Schlüssel als GitHub-Secret **`ANTHROPIC_API_KEY`** im Repository hinterlegen
+2. Den Schlüssel als GitHub-Secret **`KENNZEICHEN_ANTHROPIC_API_KEY`** im Repository hinterlegen
    (Settings → Secrets and variables → Actions). Der Deploy schreibt ihn nach `api/ki-zugang.php`.
 3. Nach dem Deploy prüfen: `https://kfz-zulassungsprofis.de/api/kennzeichen-ki.php?check=1`
    → `{"eingerichtet":true,"aktiv":true,"regeln":true,"speicher":true,"curl":true}`

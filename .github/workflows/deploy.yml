@@ -124,7 +124,9 @@ jobs:
       - name: KI-Zugang für den Kennzeichenassistenten ablegen
         if: env.HAS_FTP != ''
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Eigenes Secret nur für diesen Assistenten (eigener Workspace und Ausgabenlimit in der
+          # Claude Console). ANTHROPIC_API_KEY bleibt für andere Projekte frei.
+          KENNZEICHEN_ANTHROPIC_API_KEY: ${{ secrets.KENNZEICHEN_ANTHROPIC_API_KEY }}
         run: node scripts/ki-zugang.mjs out/api/ki-zugang.php
 
       # Weiterleitungen der alten Domain müssen zu den Seiten im Build passen.

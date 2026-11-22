@@ -159,7 +159,7 @@ function zeichne(d) {
           <button class="btn" data-vorrat="1" type="button"${s.vorrat ? '' : ' disabled'}>Ideenvorrat leeren (${zahl(s.vorrat)})</button>
         </div>
         <div class="note">„KI pausieren“ stoppt auch den Ideenvorrat für „überrasche mich“. Bei erreichtem Limit läuft der Vorrat weiter – er kostet nichts.</div>
-        ${!s.kiEingerichtet ? '<div class="note warn">Kein API-Schlüssel hinterlegt. GitHub-Secret ANTHROPIC_API_KEY anlegen und neu deployen – bis dahin arbeitet der Assistent ohne KI.</div>' : ''}
+        ${!s.kiEingerichtet ? '<div class="note warn">Kein API-Schlüssel hinterlegt. GitHub-Secret KENNZEICHEN_ANTHROPIC_API_KEY anlegen und neu deployen – bis dahin arbeitet der Assistent ohne KI.</div>' : ''}
         <div class="note">Kosten = Token × Listenpreis des Modells, also eine Schätzung. Verbindlich ist die Abrechnung in der Claude Console.</div>
       </section>
 
