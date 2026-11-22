@@ -1,0 +1,45 @@
+Return-Path: <bounce-000000@versand.shop.example.com>
+Received: from versand.shop.example.com (versand.shop.example.com [192.0.2.10])
+	by mx.example.net (Postfix) with ESMTPS id 4XbT5c2Lq9z1
+	for <info@kfz-zulassungsprofis.de>; Sun, 22 Nov 2026 07:10:05 +0100 (CET)
+From: Kennzeichen-Shop Beispiel <newsletter@shop.example.com>
+To: info@kfz-zulassungsprofis.de
+Subject: Black-Week: 20 % auf alle Kennzeichenhalter
+Date: Sun, 22 Nov 2026 07:09:58 +0100
+Message-ID: <nl-20261122-000000@versand.shop.example.com>
+List-Id: Kennzeichen-Shop Newsletter <newsletter.shop.example.com>
+List-Unsubscribe: <https://shop.example.com/abmelden?id=000000>,
+ <mailto:abmelden@shop.example.com>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Precedence: bulk
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="nl_grenze_20261122"
+
+--nl_grenze_20261122
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Black-Week im Kennzeichen-Shop
+
+20 % auf alle Kennzeichenhalter =E2=80=93 nur bis Sonntag.
+Jetzt bestellen: https://shop.example.com/black-week
+
+Sie erhalten diese E-Mail, weil Sie unseren Newsletter abonniert haben.
+Abmelden: https://shop.example.com/abmelden?id=3D000000
+
+--nl_grenze_20261122
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html lang=3D"de"><head><meta charset=3D"utf-8"><title>Black=
+-Week</title><style>body{margin:0;font-family:Arial} .knopf{background:#c00=
+;color:#fff}</style></head><body><div style=3D"display:none;max-height:0;ov=
+erflow:hidden">Nur bis Sonntag: 20 % auf alle Kennzeichenhalter</div><table=
+ width=3D"600"><tr><td><h1>Black-Week im Kennzeichen-Shop</h1><p>20&nbsp;% =
+auf alle Kennzeichenhalter &ndash; nur bis Sonntag.</p><p><a class=3D"knopf=
+" href=3D"https://shop.example.com/black-week">Jetzt bestellen</a></p></td>=
+</tr><tr><td style=3D"font-size:11px">Sie erhalten diese E-Mail, weil Sie u=
+nseren Newsletter abonniert haben. <a href=3D"https://shop.example.com/abme=
+lden?id=3D000000">Abmelden</a></td></tr></table></body></html>
+
+--nl_grenze_20261122--

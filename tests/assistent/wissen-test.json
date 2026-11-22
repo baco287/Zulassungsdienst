@@ -1,0 +1,468 @@
+{
+  "stand": "2026-11-20",
+  "firma": {
+    "name": "KFZ-Zulassungsprofis",
+    "rechtsform": "„KFZ-Zulassungsprofis“ ist ein Angebot der Volt Gas UG (haftungsbeschränkt).",
+    "sitz": "Sitz der Gesellschaft: Berlin",
+    "anschrift": "Beispielstraße 1, 10115 Berlin",
+    "register": "Amtsgericht Beispielstadt, HRB 000000",
+    "vertretung": "Geschäftsführer: Max Beispiel",
+    "telefon": "030 0000000",
+    "email": "info@kfz-zulassungsprofis.de",
+    "web": "https://kfz-zulassungsprofis.de",
+    "servicezeiten": "Mo–Fr 8:00–18:00 Uhr"
+  },
+  "leistungen": [
+    {
+      "slug": "neuzulassung",
+      "name": "Neuzulassung",
+      "kurz": "Fabrikneues oder importiertes Fahrzeug erstmals zulassen – ohne eigenen Termin bei der Zulassungsstelle.",
+      "beschreibung": "Wir übernehmen die vollständige Erstzulassung Ihres Fahrzeugs: Prüfung der Unterlagen, Beantragung bei der zuständigen Zulassungsbehörde, Kennzeichen und Versand aller Dokumente zu Ihnen nach Hause oder in Ihr Autohaus. Sie sparen sich Termin, Wartezeit und Behördengang – und die Zulassung selbst ist in der Regel in 10–30 Minuten erledigt.",
+      "preis": "110,00 €",
+      "preis_hinweis": "Inkl. amtlicher Gebühren und Versand. Kennzeichenschilder zzgl. 29,00 € pro Paar.",
+      "preis_auf_anfrage": false,
+      "unterlagen": [
+        "Zulassungsbescheinigung Teil II (Fahrzeugbrief) oder CoC-Papier",
+        "eVB-Nummer Ihrer Kfz-Versicherung",
+        "SEPA-Mandat für die Kfz-Steuer",
+        "Personalausweis oder Reisepass (Kopie/Scan)",
+        "Bei Firmen: Gewerbeanmeldung bzw. Handelsregisterauszug",
+        "Vollmacht (stellen wir Ihnen digital bereit)"
+      ],
+      "dauer": "10–30 Minuten, zuzüglich Versand (neue Kennzeichen meist 1–3 Werktage)"
+    },
+    {
+      "slug": "ummeldung",
+      "name": "Ummeldung",
+      "kurz": "Umzug oder neues Kennzeichen? Wir melden Ihr Fahrzeug auf die neue Adresse oder den neuen Zulassungsbezirk um.",
+      "beschreibung": "Nach einem Umzug muss das Fahrzeug auf die neue Anschrift umgemeldet werden. Wir erledigen die Ummeldung bei der zuständigen Behörde, kümmern uns auf Wunsch um neue Kennzeichen (oder die Mitnahme Ihres bisherigen Kennzeichens) und senden Ihnen die aktualisierten Papiere zu.",
+      "preis": "110,00 €",
+      "preis_hinweis": "Inkl. amtlicher Gebühren und Versand. Neue Kennzeichenschilder zzgl. 29,00 € pro Paar – bei Kennzeichenmitnahme entfällt das.",
+      "preis_auf_anfrage": false,
+      "unterlagen": [
+        "Zulassungsbescheinigung Teil I (Fahrzeugschein)",
+        "Zulassungsbescheinigung Teil II (Fahrzeugbrief)",
+        "eVB-Nummer (bei Versichererwechsel; manche Behörden verlangen sie auch sonst)",
+        "Personalausweis mit neuer Adresse oder Meldebescheinigung",
+        "SEPA-Mandat für die Kfz-Steuer",
+        "Vollmacht (stellen wir Ihnen digital bereit)"
+      ],
+      "dauer": "10–30 Minuten, zuzüglich Versand (neue Kennzeichen meist 1–3 Werktage)"
+    },
+    {
+      "slug": "abmeldung",
+      "name": "Abmeldung",
+      "kurz": "Fahrzeug verkauft, stillgelegt oder verschrottet? Die Außerbetriebsetzung erledigen wir meist in 10–30 Minuten.",
+      "beschreibung": "Die Abmeldung (Außerbetriebsetzung) ist der schnellste Vorgang: Sie übermitteln uns die Sicherheitscodes von Fahrzeugschein und Kennzeichen – wir melden Ihr Fahrzeug digital bei der Zulassungsbehörde ab und Sie erhalten die Abmeldebestätigung per E-Mail. Ganz ohne Versand, in der Regel in 10–30 Minuten.",
+      "preis": "34,00 €",
+      "preis_hinweis": "Komplettpreis inkl. amtlicher Gebühren – vollständig digital, kein Versand nötig.",
+      "preis_auf_anfrage": false,
+      "unterlagen": [
+        "Zulassungsbescheinigung Teil I mit freigelegtem Sicherheitscode",
+        "Beide Kennzeichen mit freigelegten Sicherheitscodes der Stempelplaketten",
+        "Bei Verwertung: Verwertungsnachweis des zertifizierten Demontagebetriebs"
+      ],
+      "dauer": "meist in 10–30 Minuten"
+    },
+    {
+      "slug": "wiederzulassung",
+      "name": "Wiederzulassung",
+      "kurz": "Abgemeldetes Fahrzeug wieder in Betrieb nehmen – wir kümmern uns um neue Kennzeichen und alle Formalitäten.",
+      "beschreibung": "Ein stillgelegtes Fahrzeug soll zurück auf die Straße? Wir prüfen, welche Unterlagen die Behörde für die Wiederzulassung verlangt (u. a. gültige HU), beantragen die Zulassung und organisieren Kennzeichen und Versand.",
+      "preis": "110,00 €",
+      "preis_hinweis": "Inkl. amtlicher Gebühren und Versand. Kennzeichenschilder zzgl. 29,00 € pro Paar.",
+      "preis_auf_anfrage": false,
+      "unterlagen": [
+        "Zulassungsbescheinigung Teil I und II",
+        "Abmeldebescheinigung (falls vorhanden)",
+        "Nachweis gültige Hauptuntersuchung (HU)",
+        "eVB-Nummer Ihrer Kfz-Versicherung",
+        "SEPA-Mandat für die Kfz-Steuer",
+        "Personalausweis oder Reisepass"
+      ],
+      "dauer": "10–30 Minuten, zuzüglich Versand (neue Kennzeichen meist 1–3 Werktage)"
+    },
+    {
+      "slug": "halterwechsel",
+      "name": "Halterwechsel / Umschreibung",
+      "kurz": "Gebrauchtwagen gekauft? Wir schreiben das Fahrzeug auf den neuen Halter um – auf Wunsch mit Wunschkennzeichen.",
+      "beschreibung": "Beim Kauf eines Gebrauchtwagens muss das Fahrzeug auf die neue Halterin oder den neuen Halter umgeschrieben werden. Wir übernehmen die komplette Umschreibung samt neuer Kennzeichen (Schilder zzgl. 29,00 €) – so ist das Fahrzeug schnell und rechtssicher auf Sie zugelassen.",
+      "preis": "110,00 €",
+      "preis_hinweis": "Inkl. amtlicher Gebühren und Versand. Kennzeichenschilder zzgl. 29,00 € pro Paar.",
+      "preis_auf_anfrage": false,
+      "unterlagen": [
+        "Zulassungsbescheinigung Teil I und II",
+        "Kaufvertrag oder Übergabeprotokoll",
+        "eVB-Nummer der Versicherung des neuen Halters",
+        "Nachweis gültige Hauptuntersuchung (HU)",
+        "Personalausweis des neuen Halters",
+        "SEPA-Mandat für die Kfz-Steuer"
+      ],
+      "dauer": "10–30 Minuten, zuzüglich Versand (neue Kennzeichen meist 1–3 Werktage)"
+    },
+    {
+      "slug": "adressaenderung",
+      "name": "Adressänderung",
+      "kurz": "Nur die Anschrift hat sich geändert? Wir aktualisieren Ihre Fahrzeugpapiere schnell und unkompliziert.",
+      "beschreibung": "Bei einem Umzug innerhalb desselben Zulassungsbezirks genügt die Änderung der Adresse in der Zulassungsbescheinigung. Wir erledigen das für Sie digital – Sie erhalten die aktualisierten Papiere bequem per Post.",
+      "preis": "64,00 €",
+      "preis_hinweis": "Komplettpreis inkl. amtlicher Gebühren und Versand der aktualisierten Papiere.",
+      "preis_auf_anfrage": false,
+      "unterlagen": [
+        "Zulassungsbescheinigung Teil I",
+        "Personalausweis mit neuer Adresse oder Meldebescheinigung"
+      ],
+      "dauer": "10–30 Minuten, zuzüglich Versand"
+    },
+    {
+      "slug": "kurzzeitkennzeichen",
+      "name": "Kurzzeitkennzeichen",
+      "kurz": "Für Überführungs- und Probefahrten: 5 Tage gültiges Kurzzeitkennzeichen, schnell organisiert.",
+      "beschreibung": "Sie möchten ein Fahrzeug überführen oder Probe fahren, das nicht zugelassen ist? Wir beantragen Ihr Kurzzeitkennzeichen (5-Tages-Kennzeichen) inklusive Schilder – auf Wunsch mit Express-Versand oder Abholung.",
+      "preis": "",
+      "preis_hinweis": "Preis auf Anfrage – abhängig von Behörde, Versicherung und Versandart.",
+      "preis_auf_anfrage": true,
+      "unterlagen": [
+        "Personalausweis oder Reisepass",
+        "eVB-Nummer für Kurzzeitkennzeichen",
+        "Fahrzeugdokumente (ZB I/II oder CoC), falls vorhanden",
+        "Nachweis gültige HU (für Fahrten über die Probefahrt hinaus)"
+      ],
+      "dauer": "1–2 Werktage, Express möglich, zuzüglich Versand"
+    },
+    {
+      "slug": "saisonkennzeichen",
+      "name": "Saisonkennzeichen",
+      "kurz": "Motorrad, Cabrio oder Wohnmobil nur einen Teil des Jahres nutzen – Steuer und Versicherung sparen.",
+      "beschreibung": "Mit einem Saisonkennzeichen ist Ihr Fahrzeug nur in einem festgelegten Zeitraum (z. B. April bis Oktober) zugelassen. Sie sparen Steuer und Versicherung und müssen nicht jährlich an- und abmelden. Wir richten den Saisonzeitraum bei der Zulassung direkt mit ein.",
+      "preis": "",
+      "preis_hinweis": "Aufpreis zur jeweiligen Zulassungsleistung – auf Anfrage.",
+      "preis_auf_anfrage": true,
+      "unterlagen": [
+        "Unterlagen der jeweiligen Zulassungsleistung (siehe Neuzulassung/Umschreibung)",
+        "Gewünschter Saisonzeitraum (2–11 Monate)"
+      ],
+      "dauer": "wie zugrunde liegende Zulassung"
+    },
+    {
+      "slug": "wunschkennzeichen",
+      "name": "Wunschkennzeichen",
+      "kurz": "Ihre Initialen, Ihr Geburtsjahr, Ihr Wunschkürzel – wir prüfen, reservieren und lassen Ihr Wunschkennzeichen zuteilen.",
+      "beschreibung": "Wir prüfen die Verfügbarkeit Ihres Wunschkennzeichens, reservieren es bei der Zulassungsstelle und übernehmen die Zuteilung im Rahmen Ihrer Zulassung. Geprägte Schilder liefern wir auf Wunsch für 29,00 € pro Paar mit.",
+      "preis": "12,00 €",
+      "preis_hinweis": "Zusatz zu jeder Zulassung – Verfügbarkeitsprüfung, Reservierung und Zuteilung. Die amtliche Gebühr ist enthalten; Kennzeichenschilder liefern wir auf Wunsch für 29,00 € pro Paar.",
+      "preis_auf_anfrage": false,
+      "unterlagen": [
+        "Ihr Wunschkürzel (2–3 Alternativen empfohlen)",
+        "Unterlagen der zugrunde liegenden Zulassungsleistung"
+      ],
+      "dauer": "im Rahmen der Zulassung"
+    },
+    {
+      "slug": "ersatz-dokumente",
+      "name": "Ersatz bei Verlust (Dokumente & Kennzeichen)",
+      "kurz": "Fahrzeugschein, Fahrzeugbrief oder Kennzeichen verloren? Wir kümmern uns um Ersatz und Neubeantragung.",
+      "beschreibung": "Der Verlust von Zulassungsbescheinigungen oder Kennzeichen ist ärgerlich – und mit Behördenformalitäten wie eidesstattlicher Versicherung verbunden. Wir führen Sie durch den Prozess, bereiten alle Erklärungen vor und beantragen die Ersatzdokumente bzw. neuen Kennzeichen.",
+      "preis": "",
+      "preis_hinweis": "Preis auf Anfrage – abhängig vom Dokument (ZB I, ZB II, Kennzeichen) und Behörde.",
+      "preis_auf_anfrage": true,
+      "unterlagen": [
+        "Personalausweis oder Reisepass",
+        "Verbliebene Fahrzeugdokumente",
+        "Eidesstattliche Versicherung zum Verlust (bereiten wir vor)",
+        "Bei Diebstahl: polizeiliche Verlustanzeige"
+      ],
+      "dauer": "3–10 Werktage (behördenabhängig), zuzüglich Versand"
+    },
+    {
+      "slug": "gewerbekunden",
+      "name": "Zulassungsservice für Autohäuser & Gewerbe",
+      "kurz": "Staffelpreise, Sammelaufträge und feste Abläufe für Autohäuser, Händler und Fuhrparks.",
+      "beschreibung": "Für Autohäuser, Gebrauchtwagenhändler und Fuhrparkbetreiber bieten wir feste Konditionen, Sammelabwicklung und auf Wunsch tägliche Abholung Ihrer Zulassungsunterlagen. Sprechen Sie uns an – wir erstellen Ihnen ein individuelles Angebot mit Staffelpreisen.",
+      "preis": "",
+      "preis_hinweis": "Individuelle Staffelpreise – Angebot auf Anfrage.",
+      "preis_auf_anfrage": true,
+      "unterlagen": [
+        "Gewerbeanmeldung bzw. Handelsregisterauszug",
+        "Rahmenvollmacht (stellen wir bereit)",
+        "Fahrzeugunterlagen je Vorgang"
+      ],
+      "dauer": "nach Vereinbarung"
+    },
+    {
+      "slug": "abhol-bringservice",
+      "name": "Abhol- & Bringservice",
+      "kurz": "Wir holen Ihre Unterlagen ab und bringen Kennzeichen und Papiere direkt zu Ihnen – regional vor Ort.",
+      "beschreibung": "In unserer Region holen wir Ihre Originalunterlagen persönlich ab und liefern fertige Kennzeichen und Dokumente direkt an Ihre Tür oder in Ihr Autohaus. Außerhalb der Region übernehmen versicherte Versanddienstleister die Zustellung.",
+      "preis": "",
+      "preis_hinweis": "Preis nach Entfernung – auf Anfrage.",
+      "preis_auf_anfrage": true,
+      "unterlagen": [
+        "Adresse für Abholung/Zustellung",
+        "Terminwunsch"
+      ],
+      "dauer": "nach Vereinbarung"
+    }
+  ],
+  "zusatz": [
+    {
+      "schluessel": "kennzeichenschilder",
+      "name": "Kennzeichenschilder (1 Paar, geprägt, inkl. Versand)",
+      "preis": "29,00 €",
+      "hinweis": "Neue Kennzeichenschilder kommen per Post – meist in 1–3 Werktagen. Fahren dürfen Sie erst, wenn die Kennzeichenschilder am Fahrzeug montiert sind. Wenn es eilt: Mit Ihrer zugeteilten Kennzeichen-Kombination können Sie die Schilder auch direkt bei einem Schildermacher in Ihrer Nähe prägen lassen."
+    },
+    {
+      "schluessel": "wunschkennzeichen",
+      "name": "Wunschkennzeichen-Service (Prüfung, Reservierung, Zuteilung)",
+      "preis": "12,00 €",
+      "hinweis": "Die amtliche Gebühr für Reservierung und Zuteilung (12,80 €) ist gesetzlich festgelegt und bleibt unverändert. Sie ist in unserem Preis von 12,00 € enthalten – den Differenzbetrag übernimmt KFZ-Zulassungsprofis."
+    }
+  ],
+  "aktion": {
+    "name": "Gründerrabatt",
+    "gueltig_bis": "2026-12-31",
+    "text": "Gründerrabatt: Neuzulassung, Ummeldung, Halterwechsel und Wiederzulassung bis 31.12.2026 für 110,00 €.",
+    "leistungen": [
+      "neuzulassung",
+      "ummeldung",
+      "halterwechsel",
+      "wiederzulassung"
+    ]
+  },
+  "preis_hinweis": "Alle Preise inkl. MwSt. Bei Komplettpreisen sind amtliche Gebühren und versicherter Versand bereits enthalten. Neue Kennzeichenschilder liefern wir auf Wunsch für 29,00 € pro Paar mit – bei Kennzeichenmitnahme oder eigenem Schildermacher entfällt das. Sonderfälle (z. B. Sondergrößen, Express, auswärtige Behörden) weisen wir vorab transparent aus – Sie erhalten immer eine verbindliche Festpreis-Bestätigung, bevor wir starten.",
+  "zeiten": {
+    "bearbeitung": "meist 10–30 Minuten",
+    "kennzeichen_versand": "in der Regel 1–3 Werktage",
+    "bedingung": "Die Bearbeitungszeit gilt ab vollständigen, lesbaren Unterlagen und Zahlungseingang, innerhalb unserer Servicezeiten.",
+    "uebersicht": "Bearbeitung meist 10–30 Minuten, neue Kennzeichen per Post in 1–3 Werktagen"
+  },
+  "nicht_zusagen": [
+    "Dauer der Identitätsprüfung",
+    "Dauer unserer Unterlagenprüfung",
+    "Versanddienstleister",
+    "Versanddauer von Papieren und Plaketten",
+    "Antwortzeit",
+    "Verfahren der Identitätsprüfung",
+    "Ob eine Neuzulassung in jedem Einzelfall möglich ist",
+    "Einzelheiten zur Lieferung der Kennzeichenschilder",
+    "feste Ansprechperson mit Namen",
+    "Abwicklung bei jeder einzelnen Zulassungsbehörde"
+  ],
+  "faq": [
+    {
+      "frage": "Wie funktioniert die Online-Zulassung über KFZ-Zulassungsprofis?",
+      "antwort": "Sie wählen Ihre Leistung aus, übermitteln uns Ihre Unterlagen digital (Fotos oder Scans genügen) und erteilen uns eine Vollmacht. Wir prüfen alles, führen den Vorgang bei der zuständigen Zulassungsbehörde durch und senden Ihnen Kennzeichen und Papiere zu – bei Abmeldungen erhalten Sie die Bestätigung meist in 10–30 Minuten per E-Mail.",
+      "im_prompt": false
+    },
+    {
+      "frage": "Brauche ich einen Personalausweis mit Online-Funktion (eID)?",
+      "antwort": "Nein, die Online-Ausweisfunktion mit PIN, die AusweisApp oder ein Kartenleser sind bei uns nicht nötig. Damit wir den Antrag für Sie stellen dürfen, schreibt das Gesetz eine qualifiziert elektronisch signierte Vollmacht vor (§ 38 FZV). Dafür bestätigen Sie einmalig digital Ihre Identität mit Ihrem Ausweis und unterschreiben – den Link schicken wir Ihnen. Für eine Abmeldung ist das nicht nötig.",
+      "im_prompt": true
+    },
+    {
+      "frage": "Was kostet die Zulassung insgesamt?",
+      "antwort": "Neuzulassung, Umschreibung oder Wiederzulassung kosten bei uns 110,00 € – amtliche Gebühren und versicherter Versand sind bereits enthalten. Werden neue Kennzeichenschilder benötigt, kommen 29,00 € pro Paar dazu; bei Kennzeichenmitnahme entfällt das. Die Abmeldung kostet 34,00 € inklusive Gebühren. Alle Preise verstehen sich inkl. MwSt. Keine versteckten Kosten; Sonderfälle weisen wir vor Beauftragung transparent aus.",
+      "im_prompt": false
+    },
+    {
+      "frage": "Wie lange dauert eine Zulassung?",
+      "antwort": "Die Bearbeitung Ihres Vorgangs dauert meist 10–30 Minuten, innerhalb unserer Servicezeiten (Mo–Fr 8:00–18:00 Uhr). Über jeden Antrag entscheidet die zuständige Behörde; in Einzelfällen kann es deshalb länger dauern. Papiere und neue Kennzeichenschilder kommen per Post – die Schilder in der Regel in 1–3 Werktagen.",
+      "im_prompt": false
+    },
+    {
+      "frage": "Wann kommen meine Kennzeichen?",
+      "antwort": "Die Bearbeitung dauert meist 10–30 Minuten. Neue Kennzeichenschilder, die Sie bei uns mitbestellen, kommen per Post – das dauert in der Regel 1–3 Werktage. Fahren dürfen Sie erst, wenn die Kennzeichenschilder am Fahrzeug montiert sind. Die Bearbeitungszeit gilt ab vollständigen, lesbaren Unterlagen und Zahlungseingang, innerhalb unserer Servicezeiten. Wenn es eilt: Mit Ihrer zugeteilten Kennzeichen-Kombination können Sie die Schilder auch direkt bei einem Schildermacher in Ihrer Nähe prägen lassen. Behalten Sie Ihr bisheriges Kennzeichen, brauchen Sie keine neuen Schilder.",
+      "im_prompt": false
+    },
+    {
+      "frage": "Wie und wann bezahle ich?",
+      "antwort": "Mit Ihrer Festpreis-Bestätigung erhalten Sie unsere Rechnung. Sie zahlen bequem per Überweisung; erst nach Zahlungseingang reichen wir den Vorgang bei der Behörde ein bzw. versenden Kennzeichen und Dokumente. Weitere Zahlungsarten (z. B. PayPal) sind in Vorbereitung. Alle Preise inkl. MwSt.",
+      "im_prompt": true
+    },
+    {
+      "frage": "Ummeldung, Umschreibung, Halterwechsel – was ist der Unterschied?",
+      "antwort": "Ummeldung: Sie sind umgezogen und das Fahrzeug bleibt auf Sie zugelassen. Halterwechsel (auch Umschreibung genannt): Das Fahrzeug wechselt den Besitzer, z. B. nach einem Gebrauchtwagenkauf. Adressänderung: Nur die Anschrift in den Papieren wird aktualisiert. Ummeldung und Halterwechsel kosten bei uns 110,00 € komplett, die reine Adressänderung 64,00 € – wählen Sie im Zweifel einfach eine Leistung aus, wir prüfen den passenden Vorgang für Sie.",
+      "im_prompt": true
+    },
+    {
+      "frage": "In welchen Regionen ist KFZ-Zulassungsprofis tätig?",
+      "antwort": "Digitale Vorgänge wickeln wir deutschlandweit ab. Den persönlichen Abhol- und Bringservice bieten wir regional an – sprechen Sie uns einfach an.",
+      "im_prompt": true
+    },
+    {
+      "frage": "Was ist die eVB-Nummer und woher bekomme ich sie?",
+      "antwort": "Die eVB-Nummer (elektronische Versicherungsbestätigung) ist der 7-stellige Nachweis Ihrer Kfz-Haftpflicht. Sie erhalten sie kostenlos von Ihrer Versicherung – meist sofort online oder telefonisch. Ohne eVB ist keine Zulassung möglich.",
+      "im_prompt": true
+    },
+    {
+      "frage": "Kann ich mein bisheriges Kennzeichen behalten?",
+      "antwort": "Ja, in den meisten Fällen. Seit einigen Jahren können Kennzeichen bundesweit bei Umzug oder Halterwechsel mitgenommen werden. Wir prüfen das für Ihren Fall und beraten Sie, ob sich die Mitnahme lohnt.",
+      "im_prompt": true
+    },
+    {
+      "frage": "Wie übermittle ich meine Unterlagen sicher?",
+      "antwort": "Über unser Auftragsformular oder – wenn Sie es bequemer mögen – per WhatsApp. Ihre Daten werden ausschließlich zur Auftragsabwicklung verwendet, verschlüsselt übertragen und nach Abschluss gemäß den gesetzlichen Fristen gelöscht. Details finden Sie in unserer Datenschutzerklärung.",
+      "im_prompt": true
+    },
+    {
+      "frage": "Was passiert, wenn die Behörde meinen Antrag ablehnt?",
+      "antwort": "Das kommt selten vor – meist fehlt dann ein Dokument, das wir vorab mit Ihnen klären. Sollte ein Vorgang tatsächlich nicht durchführbar sein, berechnen wir Ihnen keinen Servicepreis – Sie tragen lediglich bereits verauslagte amtliche Gebühren.",
+      "im_prompt": true
+    },
+    {
+      "frage": "Bieten Sie Sonderkonditionen für Autohäuser und Händler?",
+      "antwort": "Ja. Für gewerbliche Kunden mit regelmäßigem Volumen bieten wir Staffelpreise, Sammelabwicklung und feste Ansprechpartner. Fordern Sie einfach ein individuelles Angebot an.",
+      "im_prompt": true
+    },
+    {
+      "frage": "Welche Unterlagen brauche ich?",
+      "antwort": "Das hängt vom Vorgang ab. Für eine Zulassung sind es in der Regel die Zulassungsbescheinigung Teil I bzw. Teil II, die eVB-Nummer Ihrer Kfz-Versicherung, ein SEPA-Mandat für die Kfz-Steuer und ein Ausweisdokument. Für eine Abmeldung genügen die Zulassungsbescheinigung Teil I und beide Kennzeichen mit freigelegten Sicherheitscodes. Die genaue Liste sehen Sie im Auftragsassistenten, sobald Sie Ihre Leistung gewählt haben.",
+      "im_prompt": false
+    },
+    {
+      "frage": "Muss ich einen Termin vereinbaren oder persönlich zur Zulassungsstelle?",
+      "antwort": "Nein. Sie buchen keinen Termin und müssen nicht persönlich erscheinen. Ihre Unterlagen reichen Sie als Foto oder Scan ein, den Antrag stellen wir mit Ihrer Vollmacht bei der zuständigen Zulassungsbehörde. Sollte Ihr Vorgang ausnahmsweise nicht auf diesem Weg möglich sein, sagen wir Ihnen das, bevor Sie etwas beauftragen.",
+      "im_prompt": true
+    },
+    {
+      "frage": "Wann beginnt die Bearbeitung meines Auftrags?",
+      "antwort": "Sobald drei Dinge vorliegen: Ihre Bestätigung des Festpreises, der Zahlungseingang und die vollständigen, lesbaren Unterlagen – samt Vollmacht, wo sie nötig ist. Erst dann reichen wir den Vorgang bei der Behörde ein. Ab diesem Zeitpunkt gelten auch unsere Zeitangaben.",
+      "im_prompt": true
+    },
+    {
+      "frage": "Ab wann darf ich mit dem Fahrzeug fahren?",
+      "antwort": "Erst wenn das Fahrzeug zugelassen ist und die Kennzeichenschilder montiert sind – die eVB-Nummer allein genügt nicht. Nach einer Online-Zulassung erhalten Sie von uns den vorläufigen Zulassungsnachweis. Mit ihm dürfen Sie im Inland bereits fahren, bis Plaketten und Papiere per Post bei Ihnen sind; wie lange er gilt, steht auf dem Nachweis selbst. Neue Kennzeichenschilder kommen per Post – meist in 1–3 Werktagen. Wenn es eilt: Mit Ihrer zugeteilten Kennzeichen-Kombination können Sie die Schilder auch direkt bei einem Schildermacher in Ihrer Nähe prägen lassen.",
+      "im_prompt": true
+    },
+    {
+      "frage": "Kann ich den Auftrag am Smartphone erledigen?",
+      "antwort": "Ja. Das Auftragsformular funktioniert auf dem Smartphone genauso wie am Computer. Ihre Unterlagen fotografieren Sie direkt mit der Kamera und laden die Bilder hoch – oder Sie schicken sie uns per WhatsApp.",
+      "im_prompt": true
+    },
+    {
+      "frage": "Was passiert, wenn Unterlagen oder Angaben fehlen?",
+      "antwort": "Wir prüfen Ihre Unterlagen, bevor wir etwas bei der Behörde einreichen. Fehlt ein Dokument oder ist ein Foto nicht lesbar, melden wir uns bei Ihnen und sagen genau, was wir noch brauchen. Nachreichen können Sie über die Seite „Unterlagen hochladen“ oder per WhatsApp. Unsere Zeitangaben gelten ab vollständigen, lesbaren Unterlagen und Zahlungseingang.",
+      "im_prompt": true
+    },
+    {
+      "frage": "Kann ich meinen Auftrag stornieren?",
+      "antwort": "Ihre Anfrage ist kostenlos und unverbindlich – ein Auftrag entsteht erst, wenn Sie unsere Festpreis-Bestätigung annehmen. Danach haben Sie als Verbraucherin oder Verbraucher ein gesetzliches Widerrufsrecht von vierzehn Tagen. Haben wir auf Ihren Wunsch schon vor Ablauf dieser Frist begonnen, zahlen Sie nur den bis dahin erbrachten Teil; ist der Vorgang vollständig erledigt, kann das Widerrufsrecht vorzeitig erlöschen. Einzelheiten und ein Musterformular stehen in unserer Widerrufsbelehrung. Melden Sie sich am besten sofort, wenn sich bei Ihnen etwas ändert.",
+      "im_prompt": true
+    },
+    {
+      "frage": "Ich weiß nicht, welchen Vorgang ich brauche – was nun?",
+      "antwort": "Kein Problem. Beschreiben Sie uns kurz Ihre Situation – etwa „umgezogen“, „Auto gekauft“ oder „Fahrzeug stilllegen“ – per WhatsApp, per E-Mail oder im Nachrichtenfeld des Auftragsformulars. Wir nennen Ihnen den passenden Vorgang und die nötigen Unterlagen, bevor Sie etwas beauftragen.",
+      "im_prompt": true
+    },
+    {
+      "frage": "Wann sind Sie erreichbar – auch am Wochenende?",
+      "antwort": "Unsere Servicezeiten sind Mo–Fr 8:00–18:00 Uhr. Eine Anfrage können Sie jederzeit absenden, auch abends und am Wochenende – online oder per WhatsApp. Wir bearbeiten sie in unseren Servicezeiten. Die Zulassungsbehörden arbeiten an Werktagen; darauf beziehen sich auch unsere Zeitangaben.",
+      "im_prompt": false
+    },
+    {
+      "frage": "Ist KFZ-Zulassungsprofis eine Behörde?",
+      "antwort": "Nein. KFZ-Zulassungsprofis ist ein privater Zulassungsdienst. Wir handeln in Ihrem Auftrag und mit Ihrer Vollmacht. Über jede Zulassung, Umschreibung oder Abmeldung entscheidet die zuständige Zulassungsbehörde.",
+      "im_prompt": false
+    },
+    {
+      "frage": "Was ist der Unterschied zum i-Kfz-Portal der Zulassungsbehörde?",
+      "antwort": "Im i-Kfz-Portal stellen Sie den Antrag selbst und zahlen nur die amtlichen Gebühren. Dafür müssen Sie sich elektronisch ausweisen – meist mit Online-Ausweisfunktion, PIN und AusweisApp – und alle Angaben selbst richtig eintragen. Bei uns geben Sie den Vorgang ab: Wir prüfen Ihre Unterlagen, stellen den Antrag mit Ihrer Vollmacht und beantworten Ihre Fragen, zum Festpreis. Wer das Portal sicher bedienen kann, kommt dort günstiger weg. Wer sich Zeit und Fehlversuche sparen möchte, ist bei uns richtig.",
+      "im_prompt": true
+    },
+    {
+      "frage": "Welche Fahrzeuge können Sie zulassen?",
+      "antwort": "Pkw, Transporter, Anhänger und Krafträder laufen bei uns über denselben digitalen Ablauf. Bei einer Zulassung auf eine Firma benötigen wir zusätzlich den Handelsregisterauszug oder die Gewerbeanmeldung. Bei Importfahrzeugen oder anderen Besonderheiten fragen Sie am besten vorab kurz an – wir sagen Ihnen, ob und wie der Vorgang möglich ist.",
+      "im_prompt": true
+    },
+    {
+      "frage": "Woran erkenne ich echte Nachrichten von KFZ-Zulassungsprofis?",
+      "antwort": "Unsere Website erreichen Sie ausschließlich unter kfz-zulassungsprofis.de. E-Mails kommen von Adressen mit der Endung @kfz-zulassungsprofis.de, WhatsApp-Nachrichten von der Nummer 030 0000000. Jede Online-Anfrage erhält eine Referenz, die mit „KZP-“ beginnt. Rechnungen tragen dieselben Anbieterangaben wie unser Impressum. Sind Sie unsicher, fragen Sie über die Kontaktdaten auf dieser Website nach, bevor Sie zahlen oder Unterlagen senden.",
+      "im_prompt": true
+    }
+  ],
+  "links": {
+    "auftrag:neuzulassung": "https://kfz-zulassungsprofis.de/auftrag/?leistung=neuzulassung&utm_source=email-assistent",
+    "leistung:neuzulassung": "https://kfz-zulassungsprofis.de/leistungen/neuzulassung/",
+    "auftrag:ummeldung": "https://kfz-zulassungsprofis.de/auftrag/?leistung=ummeldung&utm_source=email-assistent",
+    "leistung:ummeldung": "https://kfz-zulassungsprofis.de/leistungen/ummeldung/",
+    "auftrag:abmeldung": "https://kfz-zulassungsprofis.de/auftrag/?leistung=abmeldung&utm_source=email-assistent",
+    "leistung:abmeldung": "https://kfz-zulassungsprofis.de/leistungen/abmeldung/",
+    "auftrag:wiederzulassung": "https://kfz-zulassungsprofis.de/auftrag/?leistung=wiederzulassung&utm_source=email-assistent",
+    "leistung:wiederzulassung": "https://kfz-zulassungsprofis.de/leistungen/wiederzulassung/",
+    "auftrag:halterwechsel": "https://kfz-zulassungsprofis.de/auftrag/?leistung=halterwechsel&utm_source=email-assistent",
+    "leistung:halterwechsel": "https://kfz-zulassungsprofis.de/leistungen/halterwechsel/",
+    "auftrag:adressaenderung": "https://kfz-zulassungsprofis.de/auftrag/?leistung=adressaenderung&utm_source=email-assistent",
+    "leistung:adressaenderung": "https://kfz-zulassungsprofis.de/leistungen/adressaenderung/",
+    "auftrag:kurzzeitkennzeichen": "https://kfz-zulassungsprofis.de/auftrag/?leistung=kurzzeitkennzeichen&utm_source=email-assistent",
+    "leistung:kurzzeitkennzeichen": "https://kfz-zulassungsprofis.de/leistungen/kurzzeitkennzeichen/",
+    "auftrag:saisonkennzeichen": "https://kfz-zulassungsprofis.de/auftrag/?leistung=saisonkennzeichen&utm_source=email-assistent",
+    "leistung:saisonkennzeichen": "https://kfz-zulassungsprofis.de/leistungen/saisonkennzeichen/",
+    "auftrag:wunschkennzeichen": "https://kfz-zulassungsprofis.de/auftrag/?leistung=wunschkennzeichen&utm_source=email-assistent",
+    "leistung:wunschkennzeichen": "https://kfz-zulassungsprofis.de/leistungen/wunschkennzeichen/",
+    "auftrag:ersatz-dokumente": "https://kfz-zulassungsprofis.de/auftrag/?leistung=ersatz-dokumente&utm_source=email-assistent",
+    "leistung:ersatz-dokumente": "https://kfz-zulassungsprofis.de/leistungen/ersatz-dokumente/",
+    "leistung:gewerbekunden": "https://kfz-zulassungsprofis.de/leistungen/gewerbekunden/",
+    "leistung:abhol-bringservice": "https://kfz-zulassungsprofis.de/leistungen/abhol-bringservice/",
+    "auftrag": "https://kfz-zulassungsprofis.de/auftrag/?utm_source=email-assistent",
+    "preise": "https://kfz-zulassungsprofis.de/preise/",
+    "unterlagen": "https://kfz-zulassungsprofis.de/unterlagen/",
+    "faq": "https://kfz-zulassungsprofis.de/faq/",
+    "kontakt": "https://kfz-zulassungsprofis.de/kontakt/",
+    "ablauf": "https://kfz-zulassungsprofis.de/ablauf/"
+  },
+  "platzhalter": {
+    "PREIS:neuzulassung": "110,00 €",
+    "UNTERLAGEN:neuzulassung": "- Zulassungsbescheinigung Teil II (Fahrzeugbrief) oder CoC-Papier\n- eVB-Nummer Ihrer Kfz-Versicherung\n- SEPA-Mandat für die Kfz-Steuer\n- Personalausweis oder Reisepass (Kopie/Scan)\n- Bei Firmen: Gewerbeanmeldung bzw. Handelsregisterauszug\n- Vollmacht (stellen wir Ihnen digital bereit)",
+    "LINK:auftrag:neuzulassung": "https://kfz-zulassungsprofis.de/auftrag/?leistung=neuzulassung&utm_source=email-assistent",
+    "LINK:leistung:neuzulassung": "https://kfz-zulassungsprofis.de/leistungen/neuzulassung/",
+    "PREIS:ummeldung": "110,00 €",
+    "UNTERLAGEN:ummeldung": "- Zulassungsbescheinigung Teil I (Fahrzeugschein)\n- Zulassungsbescheinigung Teil II (Fahrzeugbrief)\n- eVB-Nummer (bei Versichererwechsel; manche Behörden verlangen sie auch sonst)\n- Personalausweis mit neuer Adresse oder Meldebescheinigung\n- SEPA-Mandat für die Kfz-Steuer\n- Vollmacht (stellen wir Ihnen digital bereit)",
+    "LINK:auftrag:ummeldung": "https://kfz-zulassungsprofis.de/auftrag/?leistung=ummeldung&utm_source=email-assistent",
+    "LINK:leistung:ummeldung": "https://kfz-zulassungsprofis.de/leistungen/ummeldung/",
+    "PREIS:abmeldung": "34,00 €",
+    "UNTERLAGEN:abmeldung": "- Zulassungsbescheinigung Teil I mit freigelegtem Sicherheitscode\n- Beide Kennzeichen mit freigelegten Sicherheitscodes der Stempelplaketten\n- Bei Verwertung: Verwertungsnachweis des zertifizierten Demontagebetriebs",
+    "LINK:auftrag:abmeldung": "https://kfz-zulassungsprofis.de/auftrag/?leistung=abmeldung&utm_source=email-assistent",
+    "LINK:leistung:abmeldung": "https://kfz-zulassungsprofis.de/leistungen/abmeldung/",
+    "PREIS:wiederzulassung": "110,00 €",
+    "UNTERLAGEN:wiederzulassung": "- Zulassungsbescheinigung Teil I und II\n- Abmeldebescheinigung (falls vorhanden)\n- Nachweis gültige Hauptuntersuchung (HU)\n- eVB-Nummer Ihrer Kfz-Versicherung\n- SEPA-Mandat für die Kfz-Steuer\n- Personalausweis oder Reisepass",
+    "LINK:auftrag:wiederzulassung": "https://kfz-zulassungsprofis.de/auftrag/?leistung=wiederzulassung&utm_source=email-assistent",
+    "LINK:leistung:wiederzulassung": "https://kfz-zulassungsprofis.de/leistungen/wiederzulassung/",
+    "PREIS:halterwechsel": "110,00 €",
+    "UNTERLAGEN:halterwechsel": "- Zulassungsbescheinigung Teil I und II\n- Kaufvertrag oder Übergabeprotokoll\n- eVB-Nummer der Versicherung des neuen Halters\n- Nachweis gültige Hauptuntersuchung (HU)\n- Personalausweis des neuen Halters\n- SEPA-Mandat für die Kfz-Steuer",
+    "LINK:auftrag:halterwechsel": "https://kfz-zulassungsprofis.de/auftrag/?leistung=halterwechsel&utm_source=email-assistent",
+    "LINK:leistung:halterwechsel": "https://kfz-zulassungsprofis.de/leistungen/halterwechsel/",
+    "PREIS:adressaenderung": "64,00 €",
+    "UNTERLAGEN:adressaenderung": "- Zulassungsbescheinigung Teil I\n- Personalausweis mit neuer Adresse oder Meldebescheinigung",
+    "LINK:auftrag:adressaenderung": "https://kfz-zulassungsprofis.de/auftrag/?leistung=adressaenderung&utm_source=email-assistent",
+    "LINK:leistung:adressaenderung": "https://kfz-zulassungsprofis.de/leistungen/adressaenderung/",
+    "UNTERLAGEN:kurzzeitkennzeichen": "- Personalausweis oder Reisepass\n- eVB-Nummer für Kurzzeitkennzeichen\n- Fahrzeugdokumente (ZB I/II oder CoC), falls vorhanden\n- Nachweis gültige HU (für Fahrten über die Probefahrt hinaus)",
+    "LINK:auftrag:kurzzeitkennzeichen": "https://kfz-zulassungsprofis.de/auftrag/?leistung=kurzzeitkennzeichen&utm_source=email-assistent",
+    "LINK:leistung:kurzzeitkennzeichen": "https://kfz-zulassungsprofis.de/leistungen/kurzzeitkennzeichen/",
+    "UNTERLAGEN:saisonkennzeichen": "- Unterlagen der jeweiligen Zulassungsleistung (siehe Neuzulassung/Umschreibung)\n- Gewünschter Saisonzeitraum (2–11 Monate)",
+    "LINK:auftrag:saisonkennzeichen": "https://kfz-zulassungsprofis.de/auftrag/?leistung=saisonkennzeichen&utm_source=email-assistent",
+    "LINK:leistung:saisonkennzeichen": "https://kfz-zulassungsprofis.de/leistungen/saisonkennzeichen/",
+    "PREIS:wunschkennzeichen": "12,00 €",
+    "UNTERLAGEN:wunschkennzeichen": "- Ihr Wunschkürzel (2–3 Alternativen empfohlen)\n- Unterlagen der zugrunde liegenden Zulassungsleistung",
+    "LINK:auftrag:wunschkennzeichen": "https://kfz-zulassungsprofis.de/auftrag/?leistung=wunschkennzeichen&utm_source=email-assistent",
+    "LINK:leistung:wunschkennzeichen": "https://kfz-zulassungsprofis.de/leistungen/wunschkennzeichen/",
+    "UNTERLAGEN:ersatz-dokumente": "- Personalausweis oder Reisepass\n- Verbliebene Fahrzeugdokumente\n- Eidesstattliche Versicherung zum Verlust (bereiten wir vor)\n- Bei Diebstahl: polizeiliche Verlustanzeige",
+    "LINK:auftrag:ersatz-dokumente": "https://kfz-zulassungsprofis.de/auftrag/?leistung=ersatz-dokumente&utm_source=email-assistent",
+    "LINK:leistung:ersatz-dokumente": "https://kfz-zulassungsprofis.de/leistungen/ersatz-dokumente/",
+    "UNTERLAGEN:gewerbekunden": "- Gewerbeanmeldung bzw. Handelsregisterauszug\n- Rahmenvollmacht (stellen wir bereit)\n- Fahrzeugunterlagen je Vorgang",
+    "LINK:leistung:gewerbekunden": "https://kfz-zulassungsprofis.de/leistungen/gewerbekunden/",
+    "UNTERLAGEN:abhol-bringservice": "- Adresse für Abholung/Zustellung\n- Terminwunsch",
+    "LINK:leistung:abhol-bringservice": "https://kfz-zulassungsprofis.de/leistungen/abhol-bringservice/",
+    "PREIS:kennzeichenschilder": "29,00 €",
+    "LINK:auftrag": "https://kfz-zulassungsprofis.de/auftrag/?utm_source=email-assistent",
+    "LINK:preise": "https://kfz-zulassungsprofis.de/preise/",
+    "LINK:unterlagen": "https://kfz-zulassungsprofis.de/unterlagen/",
+    "LINK:faq": "https://kfz-zulassungsprofis.de/faq/",
+    "LINK:kontakt": "https://kfz-zulassungsprofis.de/kontakt/",
+    "LINK:ablauf": "https://kfz-zulassungsprofis.de/ablauf/",
+    "ZEIT:bearbeitung": "meist 10–30 Minuten",
+    "ZEIT:kennzeichen_versand": "in der Regel 1–3 Werktage",
+    "ZEIT:bedingung": "Die Bearbeitungszeit gilt ab vollständigen, lesbaren Unterlagen und Zahlungseingang, innerhalb unserer Servicezeiten.",
+    "SERVICEZEITEN": "Mo–Fr 8:00–18:00 Uhr",
+    "TELEFON": "030 0000000"
+  }
+}

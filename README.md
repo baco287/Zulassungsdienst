@@ -127,3 +127,23 @@ Prüfungen und offene Schritte: `docs/migration/MIGRATION.md`.
 ## Webanalyse
 
 Standardmäßig aus. Einschalten und Datenschutzhinweise: `docs/TRACKING.md`.
+
+## KI-Assistent für E-Mail
+
+Ordnet eingehende E-Mails ein und bereitet Antwort-Entwürfe vor – gesendet wird nur per Klick
+im Admin-Bereich (`/assistent/`, gleicher Login wie `/analytics/`). Läuft als PHP auf dem
+all-inkl-Webspace (`public/assistent/`), die Bibliotheken stehen in `server/assistent/`.
+
+- Betrieb in einfachen Worten: `docs/ki-assistent/BETRIEB.md`
+- Aufbau und Festlegungen: `docs/ki-assistent/BAUPLAN.md`
+- Wissensbasis: entsteht beim Build aus den Website-Daten (`app/assistent-wissen.json/route.ts`).
+  `scripts/assistent-bauen.mjs` prüft sie gegen `config/preise.json` und die gebauten Seiten;
+  im Produktiv-Deploy legt es sie zusammen mit Zugang und Bibliotheken in den gesperrten
+  Ordner `assistent/intern/`, im Staging-Build entfernt es den Assistenten.
+- Geplanter Abruf alle fünf Minuten: `.github/workflows/assistent-abruf.yml`
+
+| Befehl | Zweck |
+|---|---|
+| `php tests/assistent/regeln-test.php` | kostenlose Tests ohne Netz und ohne KI (laufen auch im Deploy) |
+| `node scripts/assistent-bauen.mjs out` | nach `npm run build`: Wissensbasis prüfen, Assistent aus `out/` entfernen |
+| `bash scripts/ki-schluessel-einrichten.sh` | Claude-Schlüssel hinterlegen oder tauschen, danach neu veröffentlichen |

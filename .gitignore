@@ -23,3 +23,10 @@ analytics-daten/
 *.tsbuildinfo
 next-env.d.ts
 .claude/settings.local.json
+
+# KI-Assistent: Daten bei lokalen Tests, Bibliotheken und vom Deploy erzeugte Dateien – nie einchecken
+assistent-daten/
+server/assistent/vendor/
+public/assistent/intern/zugang-daten.php
+public/assistent/intern/wissen.json
+public/assistent/intern/vendor-*.zip

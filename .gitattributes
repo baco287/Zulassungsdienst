@@ -1,0 +1,2 @@
+# Die Beispiel-Mails des KI-Assistenten brauchen ihre CRLF-Zeilenenden unverändert (MIME, Tests).
+tests/assistent/mails/*.eml -text

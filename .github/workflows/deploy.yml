@@ -14,7 +14,10 @@ concurrency:
 
 jobs:
   # ── Staging: GitHub Pages (baco287.github.io/Zulassungsdienst) ──────────
+  # Nur von main: Ein manuell gestarteter Lauf auf einem anderen Zweig würde sonst einen Stand
+  # ohne die Änderungen aus main veröffentlichen (mirror --delete entfernt sie auf dem Server).
   deploy-pages:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -32,6 +35,20 @@ jobs:
         env:
           NEXT_PUBLIC_BASE_PATH: /Zulassungsdienst
           NEXT_PUBLIC_STAGING: "1" 
+
+      # KI-Assistent (docs/ki-assistent/): Wissensbasis prüfen, dann Assistent und
+      # Wissensbasis aus dem Staging-Build entfernen – auf GitHub Pages läuft kein PHP.
+      # Ein Befund der Wissensprüfung (etwa ein Link auf eine umbenannte Seite) hält die
+      # Staging-Website nicht auf; er erscheint als Warnung (Bauplan 7.10).
+      - name: KI-Assistent prüfen und aus dem Staging-Build entfernen
+        continue-on-error: true
+        run: |
+          node scripts/assistent-bauen.mjs out || echo "::warning::KI-Assistent – die Wissensprüfung hat etwas gefunden (siehe oben). Die Staging-Website wird trotzdem veröffentlicht."
+
+      # Zweite Sicherung: Was auch immer oben geschah, auf GitHub Pages gehört weder PHP noch die Wissensbasis.
+      - name: KI-Assistent sicher aus dem Staging-Build entfernen
+        if: always()
+        run: rm -rf out/assistent out/assistent-wissen.json out/assistent-stand.txt
 
       - name: Preise im Build prüfen (Staging, ohne Freigabe-Pflicht)
         run: node scripts/check-preise.mjs --out
@@ -53,6 +70,7 @@ jobs:
   #               Weiterleitungs-.htaccess (deploy/alte-domain/) in den Ordner
   #               der alten Domain. Dort wird nichts gelöscht.
   deploy-allinkl:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     env:
       HAS_FTP: ${{ secrets.FTP_PASSWORD }}
@@ -97,6 +115,49 @@ jobs:
         env:
           # Vorschau: Seiten tragen noindex, das Formular funktioniert trotzdem.
           NEXT_PUBLIC_NOINDEX: ${{ steps.mig.outputs.stufe == 'live' && '0' || '1' }}
+
+      # ── KI-Assistent für E-Mail (public/assistent/, docs/ki-assistent/BETRIEB.md) ──
+      # Grundsatz: Der Assistent darf die Website nie aufhalten. Beide Schritte laufen
+      # deshalb mit continue-on-error. Schlägt einer fehl, geht die Website trotzdem
+      # live; der Ordner assistent/ wird dann weder hochgeladen noch auf dem Server
+      # angefasst (siehe Upload-Schritt), dort läuft die bisherige Fassung weiter.
+      #
+      # Fingerabdruck der Wissensbasis neben die Website (assistent-stand.txt, außerhalb von
+      # assistent/): Scheitert der Assistenten-Schritt unten, erkennt der Server daran, dass seine
+      # Wissensbasis nicht mehr zur Website passt, und sperrt die Preise. Darf nie scheitern.
+      - name: Fingerabdruck der Wissensbasis ablegen (KI-Assistent)
+        if: env.HAS_FTP != ''
+        continue-on-error: true
+        run: node scripts/assistent-bauen.mjs out --stand
+
+      # PHP 8.5 wie auf dem Webspace – für die Syntaxprüfung und die kostenlosen Tests.
+      - name: PHP 8.5 einrichten (KI-Assistent)
+        if: env.HAS_FTP != ''
+        continue-on-error: true
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.5"
+          extensions: pdo_sqlite, mbstring, iconv, zip
+          tools: composer
+          coverage: none
+
+      # Reihenfolge beachten: Composer erst NACH dem Build. Die Bibliotheken bringen
+      # eigene TypeScript-Dateien mit, über die die Typprüfung von `next build` stolpert.
+      - name: KI-Assistent prüfen und für den Upload vorbereiten
+        id: assistent
+        if: env.HAS_FTP != ''
+        continue-on-error: true
+        env:
+          # Bewusst unter anderem Namen: Composer und die Tests sollen den Schlüssel nicht
+          # vorfinden (sie rufen die KI nie auf) – nur das Bau-Skript bekommt ihn.
+          KI_SCHLUESSEL: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          set -euo pipefail
+          php -r 'exit(PHP_VERSION_ID >= 80500 ? 0 : 1);' || { echo "PHP 8.5 steht nicht bereit (gefunden: $(php -r 'echo PHP_VERSION;'))."; exit 1; }
+          composer install --no-dev --no-interaction --optimize-autoloader --working-dir=server/assistent
+          find public/assistent tests/assistent -type f -name '*.php' -print0 | xargs -0 -r -n 1 php -l
+          php tests/assistent/regeln-test.php
+          ANTHROPIC_API_KEY="$KI_SCHLUESSEL" node scripts/assistent-bauen.mjs out --produktion
 
       # Zugangsdaten für den Mailversand des Formulars (public/api/auftrag.php).
       # Nur in diesem Job, nie im GitHub-Pages-Build – sonst wären sie öffentlich.
@@ -168,6 +229,7 @@ jobs:
           STUFE: ${{ steps.mig.outputs.stufe }}
           NEU_ORDNER: ${{ steps.mig.outputs.neu }}
           ALT_ORDNER: ${{ steps.mig.outputs.alt }}
+          ASSISTENT_ERGEBNIS: ${{ steps.assistent.outcome }}
         run: |
           set -o pipefail
           [ -n "$NEU_ORDNER" ] && [ -n "$ALT_ORDNER" ] || { echo "Zielordner fehlen" | tee /tmp/lftp.log; exit 1; }
@@ -175,6 +237,16 @@ jobs:
           ALT_BEFEHL=""
           if [ "$STUFE" = "live" ]; then
             ALT_BEFEHL="mirror -R --verbose=1 ./deploy/alte-domain/ $ALT_ORDNER/;"
+          fi
+          # KI-Assistent: Ist sein Bauschritt gescheitert, wird sein Ordner nicht hochgeladen
+          # und auf dem Server nicht angefasst (auch nicht gelöscht) – beides gehört zusammen.
+          ASSISTENT_AUSNAHME=""
+          ASSISTENT_STAND="wird mit hochgeladen"
+          if [ "$ASSISTENT_ERGEBNIS" != "success" ]; then
+            rm -rf out/assistent out/assistent-wissen.json
+            ASSISTENT_AUSNAHME="--exclude ^assistent/"
+            ASSISTENT_STAND="NICHT aktualisiert (Bauschritt: ${ASSISTENT_ERGEBNIS:-unbekannt}), Ordner auf dem Server bleibt unberührt"
+            echo "::error::KI-Assistent wurde nicht aktualisiert – auf dem Server läuft die bisherige Fassung mit der bisherigen Wissensbasis weiter. Ursache steht im Schritt „KI-Assistent prüfen und für den Upload vorbereiten“. Die Website wird trotzdem veröffentlicht."
           fi
           sudo apt-get update -qq
           sudo apt-get install -y -qq lftp
@@ -193,6 +265,7 @@ jobs:
           chmod 600 ~/.netrc
           # Hauptnutzer wurzelt auf "/" – Website liegt im Domain-Ordner.
           echo "Stufe: $STUFE · Ziel: $NEU_ORDNER · alte Domain: ${ALT_BEFEHL:-unverändert}" | tee -a /tmp/lftp.log
+          echo "KI-Assistent: $ASSISTENT_STAND" | tee -a /tmp/lftp.log
           lftp -d -e "
             set ftp:ssl-force true;
             set ftp:ssl-protect-data true;
@@ -203,7 +276,7 @@ jobs:
             open $FTP_SERVER;
             pwd;
             mirror -R --parallel=6 --verbose=1 ./out/_next/ $NEU_ORDNER/_next/;
-            mirror -R --parallel=6 --delete --verbose=1 --exclude ^_next/ ./out/ $NEU_ORDNER/;
+            mirror -R --parallel=6 --delete --verbose=1 --exclude ^_next/ $ASSISTENT_AUSNAHME ./out/ $NEU_ORDNER/;
             mirror -R --parallel=6 --delete --verbose=1 ./out/_next/ $NEU_ORDNER/_next/;
             $ALT_BEFEHL
             bye
@@ -220,12 +293,13 @@ jobs:
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           [ -f /tmp/lftp.log ] || echo 'Kein lftp.log – Fehler vor dem Deploy (Build oder Preisprüfung), siehe Actions-Log.' > /tmp/lftp.log
           python3 - <<'PYEOF'
           import os
           text = open('/tmp/lftp.log', encoding='utf-8', errors='replace').read()
-          for key in ('FTP_PASSWORD', 'FTP_USERNAME', 'FTP_SERVER', 'SMTP_PASSWORD'):
+          for key in ('FTP_PASSWORD', 'FTP_USERNAME', 'FTP_SERVER', 'SMTP_PASSWORD', 'ANTHROPIC_API_KEY'):
               val = os.environ.get(key, '')
               if val:
                   text = text.replace(val, f'<{key}>')

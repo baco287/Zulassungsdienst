@@ -140,6 +140,83 @@ export default function DatenschutzPage() {
         </p>
       </section>
       <section>
+        <h2>3a. KI-gestützte Bearbeitung von E-Mail-Anfragen</h2>
+        <p>
+          Damit wir E-Mails an {site.contact.email} zügig beantworten können, setzen wir
+          ein KI-Sprachmodell ein. Es ordnet eingehende Nachrichten ein (zum Beispiel
+          als Frage zu Preisen, Unterlagen oder einem laufenden Auftrag) und bereitet
+          einen Antwort-Entwurf vor.{" "}
+          <strong>
+            Jede Antwort wird vor dem Versand von einer Mitarbeiterin oder einem
+            Mitarbeiter gelesen, bei Bedarf geändert und freigegeben.
+          </strong>{" "}
+          Die KI versendet nichts selbst; eine automatisierte Entscheidung im Sinne
+          von Art. 22 DSGVO findet nicht statt.
+        </p>
+        <h3>Eingesetzter Dienst</h3>
+        <p>
+          Wir nutzen dafür den KI-Dienst „Claude“ des Anbieters Anthropic.
+          Vertragspartner für Kunden im Europäischen Wirtschaftsraum ist die Anthropic
+          Ireland, Limited (Irland); die Verarbeitung erfolgt auf Servern in den USA.
+          Mit dem Anbieter besteht ein Vertrag über Auftragsverarbeitung nach Art. 28
+          DSGVO als Bestandteil seiner Geschäftsbedingungen. Die Übermittlung in die USA
+          erfolgt auf Grundlage der Standardvertragsklauseln der Europäischen Kommission
+          (Art. 46 Abs. 2 lit. c DSGVO). Nach Angaben von Anthropic werden die
+          übermittelten Inhalte nicht zum Training von KI-Modellen verwendet und in der
+          Regel nach 30 Tagen gelöscht.
+        </p>
+        <h3>Welche Daten übermittelt werden – und welche nicht</h3>
+        <ul>
+          <li>Übermittelt werden der Betreff und der Text Ihrer E-Mail (ohne zitierte
+            frühere Nachrichten, sehr lange Texte gekürzt) – bei einem laufenden
+            Schriftwechsel auch Kurzfassungen früherer Nachrichten, unsere letzte Antwort
+            und noch unbeantwortete frühere E-Mails von Ihnen. Sehr kurze Antworten wie
+            „Danke“ oder „Ja, bitte“ gehen nicht an den KI-Dienst.</li>
+          <li>Anhänge, zum Beispiel Ausweis- oder Fahrzeugdokumente, werden nicht
+            übermittelt – auch angehängte Textdateien nicht. Das Modell erfährt lediglich,
+            ob und welche Art von Anhang (etwa Bild oder PDF) beigefügt ist.</li>
+          <li>Kontonummern (IBAN), Fahrzeug-Identifizierungsnummern (am Stück oder mit
+            vorangestelltem Stichwort wie „FIN“ auch gegliedert geschrieben) und lange
+            Ziffernfolgen werden vor der Übermittlung unkenntlich gemacht.</li>
+          <li>Name und E-Mail-Adresse aus dem Absender Ihrer E-Mail werden nicht
+            übermittelt. Grußformel und Signatur am Ende Ihrer Nachricht (etwa Name,
+            Anschrift, Telefonnummer) entfernen wir vorher, soweit sie sich erkennen
+            lassen. Namen und Angaben, die Sie im Text selbst nennen, können übermittelt
+            werden.</li>
+          <li>Anfragen, die über unser Auftragsformular eingehen, werden nicht an den
+            KI-Dienst übermittelt.</li>
+        </ul>
+        <h3>Speicherung bei uns</h3>
+        <p>
+          Zu den E-Mails, die in unserem Postfach eingehen, speichern wir Absender,
+          Betreff, den bereinigten und gekürzten Text (ohne Zitate, ohne erkennbare
+          Grußformel und Signatur; Kontonummern und Fahrzeug-Identifizierungsnummern
+          unkenntlich gemacht), die Einordnung und – sofern
+          einer erstellt wurde – den Antwort-Entwurf in einer Datenbank auf unserem
+          Webserver in Deutschland (siehe Abschnitt 2), damit unsere Mitarbeiter die
+          Nachricht einordnen und den Entwurf prüfen können. Spätestens nach 90 Tagen
+          werden diese Angaben vollständig gelöscht; übrig bleiben nur Kostenzahlen der
+          KI-Aufrufe und ein Protokoll unserer Arbeitsschritte, beides ohne Bezug zu Ihrer
+          Nachricht. Anhänge werden dabei nicht gespeichert. Ihre E-Mail selbst bleibt wie
+          jede andere E-Mail in unserem Postfach. Haben Sie der KI-Bearbeitung
+          widersprochen oder sortieren wir E-Mails Ihrer Adresse dauerhaft aus (etwa
+          Werbung), speichern wir Ihre E-Mail-Adresse in einer Liste, solange das dafür
+          erforderlich ist.
+        </p>
+        <h3>Rechtsgrundlage und Widerspruch</h3>
+        <p>
+          Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, soweit Ihre Nachricht einen
+          Auftrag oder dessen Anbahnung betrifft, im Übrigen unser berechtigtes Interesse
+          an einer zügigen und einheitlichen Beantwortung von Anfragen (Art. 6 Abs. 1
+          lit. f DSGVO). Wenn Sie nicht möchten, dass Ihre Nachrichten mit
+          KI-Unterstützung bearbeitet werden, können Sie dem jederzeit formlos
+          widersprechen – eine kurze E-Mail an {site.contact.email} genügt. Ihre
+          weiteren Nachrichten bearbeiten dann ausschließlich unsere Mitarbeiter; das
+          gilt auch für Nachrichten, die zu diesem Zeitpunkt schon bei uns eingegangen
+          sind.
+        </p>
+      </section>
+      <section>
         <h2>4. WhatsApp-Kommunikation</h2>
         <p>
           Wenn Sie uns über WhatsApp kontaktieren, verarbeitet WhatsApp (Meta Platforms

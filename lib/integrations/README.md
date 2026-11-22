@@ -69,6 +69,28 @@ Vor dem ersten Livegang im all-inkl-KAS zu prüfen:
 Empfängeradresse und Limits stehen als Konstanten am Kopf von
 `public/api/auftrag.php`.
 
+## KI-Assistent für eingehende E-Mails
+
+Seit November 2026 liest ein Assistent das Postfach mit, ordnet Mails ein und bereitet
+Antwort-Entwürfe vor. Er sendet nie von selbst: Jede Antwort wird im Admin-Bereich
+(`/assistent/`) gelesen und per Klick freigegeben.
+
+| Baustein | Ort | Zweck |
+|---|---|---|
+| Admin-Bereich und Endpunkte | `public/assistent/` | Oberfläche, Verarbeitungslauf (`lauf.php`), Logik unter `intern/` (per `.htaccess` gesperrt) |
+| Wissensbasis | `app/assistent-wissen.json/route.ts` | Preise, Unterlagen, Zeiten, FAQ und Links aus denselben Quellen wie die Seiten |
+| Bau-Skript | `scripts/assistent-bauen.mjs` | prüft die Wissensbasis, legt Zugang und Bibliotheken ab, schreibt das Manifest |
+| Bibliotheken | `server/assistent/` | Composer-Paketliste (Claude-SDK, IMAP); `vendor/` wird nicht eingecheckt, der Deploy holt es per Composer |
+| Abruf | `.github/workflows/assistent-abruf.yml` | stößt alle fünf Minuten den Verarbeitungslauf an |
+
+Formular-Mails aus `auftrag.php` erkennt der Assistent an Absender und Referenz; sie gehen
+nicht an die KI. Anhänge werden weder an die KI übermittelt noch vom Assistenten gespeichert –
+die Aussage oben zum Dokumentenarchiv gilt unverändert. Gespeichert werden gekürzte Mailtexte
+und Entwürfe in einer SQLite-Datei außerhalb des Webroots (`assistent-daten/`), befristet auf
+90 Tage. Die Datenschutzerklärung beschreibt das in Abschnitt 3a.
+
+Betrieb: `docs/ki-assistent/BETRIEB.md` · Aufbau: `docs/ki-assistent/BAUPLAN.md`
+
 ## Geplante Ausbaustufen
 
 | Modul | Datei | Zweck |

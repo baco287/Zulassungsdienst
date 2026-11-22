@@ -1,0 +1,10 @@
+# KI-Assistent – interner Ordner: nichts hier ist direkt abrufbar.
+#
+# Hier liegen die Klassen, die Wissensbasis, das Archiv der Bibliotheken und (vom Deploy
+# erzeugt) zugang-daten.php mit dem Claude-Schlüssel. Die Endpunkte eine Ebene höher binden
+# die Dateien per PHP ein; das läuft am Webserver vorbei und ist von dieser Sperre nicht
+# betroffen.
+#
+# Bewusst ohne <IfModule>: Fehlt dem Server die Anweisung, antwortet er mit einem Fehler
+# statt die Dateien auszuliefern – die Sperre fällt also nie stillschweigend weg.
+Require all denied

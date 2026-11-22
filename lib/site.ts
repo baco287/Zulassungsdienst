@@ -35,6 +35,8 @@ export const site = {
     street: "Pappelallee 64",
     zipCity: "10437 Berlin",
     register: "Amtsgericht Charlottenburg (Berlin), HRB 289458 B",
+    /** Sitz der Gesellschaft (Registergericht Berlin) – Pflichtangabe im Fuß jeder Mail des KI-Assistenten. */
+    seat: "Berlin",
     vatId:
       "Die Umsatzsteuer-Identifikationsnummer (§ 27a UStG) ist beantragt und wird nach Erteilung ergänzt.",
     responsible: "Ahmet Kerim Akan",

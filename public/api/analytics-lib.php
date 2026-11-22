@@ -327,24 +327,60 @@ function kzp_basic_credentials(): array
     return [null, null];
 }
 
-/** Fehlversuche je Anschluss: höchstens 10 in 15 Minuten. */
-function kzp_login_versuche(string $ip, bool $fehlschlag): int
+/**
+ * Anschluss zu einer IP-Adresse: IPv4 unverändert, IPv6 als /64-Netz (so viel bekommt ein
+ * einzelner Anschluss – sonst hätte jede Adresse darin eigene zehn Versuche).
+ */
+function kzp_login_anschluss(string $ip): string
 {
-    $pfad = sys_get_temp_dir() . '/kzp-analytics-login-' . hash('sha256', $ip) . '.txt';
+    $bin = @inet_pton(trim($ip));
+    if (!is_string($bin) || strlen($bin) !== 16) {
+        return trim($ip);
+    }
+    if (str_starts_with($bin, str_repeat("\0", 10) . "\xff\xff")) {
+        return (string) inet_ntop(substr($bin, 12));
+    }
+    return bin2hex(substr($bin, 0, 8)) . '/64';
+}
+
+/**
+ * Fehlversuche je Anschluss: höchstens 10 in 15 Minuten. $aenderung +1 reserviert einen Versuch
+ * VOR dem Vergleich (so kommen auch gleichzeitige Versuche nicht an der Grenze vorbei), -1 gibt
+ * ihn nach einem richtigen Login zurück, 0 liest nur. Lesen und Schreiben unter einer Dateisperre.
+ * Derselbe Login schützt auch den KI-Assistenten (public/assistent/intern/Admin.php).
+ */
+function kzp_login_versuche(string $ip, int $aenderung): int
+{
+    $pfad = sys_get_temp_dir() . '/kzp-analytics-login-' . hash('sha256', kzp_login_anschluss($ip)) . '.txt';
     $jetzt = time();
-    $treffer = [];
-    if (is_readable($pfad)) {
-        foreach (explode(',', (string) file_get_contents($pfad)) as $t) {
+    $datei = @fopen($pfad, 'c+');
+    if ($datei === false) {
+        return 0;
+    }
+    try {
+        flock($datei, LOCK_EX);
+        $treffer = [];
+        foreach (explode(',', (string) stream_get_contents($datei)) as $t) {
             if ((int) $t > $jetzt - 900) {
                 $treffer[] = (int) $t;
             }
         }
+        if ($aenderung > 0) {
+            $treffer[] = $jetzt;
+        } elseif ($aenderung < 0 && $treffer !== []) {
+            array_pop($treffer);
+        }
+        if ($aenderung !== 0) {
+            ftruncate($datei, 0);
+            rewind($datei);
+            fwrite($datei, implode(',', $treffer));
+            fflush($datei);
+        }
+        return count($treffer);
+    } finally {
+        flock($datei, LOCK_UN);
+        fclose($datei);
     }
-    if ($fehlschlag) {
-        $treffer[] = $jetzt;
-        @file_put_contents($pfad, implode(',', $treffer), LOCK_EX);
-    }
-    return count($treffer);
 }
 
 /** Bricht mit 401/429/503 ab, wenn kein gültiger Login vorliegt. */
@@ -361,18 +397,19 @@ function kzp_require_auth(): void
         exit;
     }
     $ip = (string) ($_SERVER['REMOTE_ADDR'] ?? 'unbekannt');
-    if (kzp_login_versuche($ip, false) >= 10) {
+    [$u, $p] = kzp_basic_credentials();
+    // Mit Anmeldedaten: erst den Versuch zählen, dann vergleichen. Ist die Grenze erreicht, wird
+    // gar nicht mehr verglichen.
+    $stand = $u === null ? kzp_login_versuche($ip, 0) : kzp_login_versuche($ip, 1) - 1;
+    if ($stand >= 10) {
         http_response_code(429);
         header('Content-Type: text/plain; charset=utf-8');
         echo 'Zu viele Fehlversuche. Bitte in 15 Minuten erneut versuchen.';
         exit;
     }
-    [$u, $p] = kzp_basic_credentials();
     if ($u !== null && hash_equals($z['user'], $u) && hash_equals($z['pass'], (string) $p)) {
+        kzp_login_versuche($ip, -1);
         return;
-    }
-    if ($u !== null) {
-        kzp_login_versuche($ip, true);
     }
     header('WWW-Authenticate: Basic realm="KFZ-Zulassungsprofis Analytics", charset="UTF-8"');
     http_response_code(401);

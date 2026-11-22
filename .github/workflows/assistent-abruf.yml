@@ -1,0 +1,92 @@
+name: KI-Assistent – Postfach abrufen
+
+# Stößt alle fünf Minuten den Verarbeitungslauf des KI-Assistenten an
+# (public/assistent/lauf.php): neue E-Mails einlesen, einordnen, höchstens einen
+# Antwort-Entwurf vorbereiten. Gesendet wird dabei nie etwas – das macht ein Mensch
+# im Admin-Bereich. Betrieb und schnellere Alternative (Cronjob im all-inkl-KAS):
+# docs/ki-assistent/BETRIEB.md.
+#
+# Hinweise:
+# - GitHub startet geplante Läufe oft einige Minuten verspätet und schaltet sie ab,
+#   wenn im Repository 60 Tage lang nichts geändert wurde.
+# - Repository und Logs sind öffentlich: Ausgegeben wird nur der HTTP-Status,
+#   nie die Antwort des Servers.
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+# Der Lauf braucht weder den Quelltext noch Schreibrechte im Repository.
+permissions: {}
+
+# Läufe stapeln sich nicht: Ein laufender Abruf wird zu Ende geführt, dahinter wartet
+# höchstens einer.
+concurrency:
+  group: assistent-abruf
+  cancel-in-progress: false
+
+jobs:
+  abruf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: Verarbeitungslauf anstoßen
+        env:
+          # Derselbe Login wie beim Analytics-Dashboard.
+          NUTZER: ${{ secrets.ANALYTICS_USER }}
+          PASSWORT: ${{ secrets.ANALYTICS_PASSWORD }}
+        run: |
+          if [ -z "$NUTZER" ] || [ -z "$PASSWORT" ]; then
+            echo "Kein Login hinterlegt (Secrets ANALYTICS_USER und ANALYTICS_PASSWORD) – Abruf übersprungen."
+            exit 0
+          fi
+
+          # Die Anmeldung geht über die Standardeingabe an curl, damit sie weder in der
+          # Befehlszeile noch im Log erscheint. Der Antwortkörper wird verworfen.
+          abruf() {
+            printf 'Authorization: Basic %s\n' "$(printf '%s:%s' "$NUTZER" "$PASSWORT" | base64 | tr -d '\n')" \
+              | curl --silent --output /dev/null --write-out '%{http_code}' --max-time 55 \
+                  --header @- 'https://kfz-zulassungsprofis.de/assistent/lauf.php' 2>/dev/null
+          }
+
+          CODE=0
+          STATUS="$(abruf)" || CODE=$?
+          if [ "$CODE" -ne 0 ]; then
+            # Einmal nachfassen: Ein kurzer Netzaussetzer soll keinen Fehlalarm auslösen.
+            # Doppelte Arbeit entsteht nicht – der Server lässt nie zwei Läufe zugleich zu.
+            echo "Netzfehler (curl-Code $CODE) – zweiter Versuch in 20 Sekunden."
+            sleep 20
+            CODE=0
+            STATUS="$(abruf)" || CODE=$?
+          fi
+
+          if [ "$CODE" -ne 0 ]; then
+            echo "::error::Der Server war nicht erreichbar (curl-Code $CODE)."
+            exit 1
+          fi
+
+          # Alles unter 500 gilt als erledigt – auch „pausiert“ oder „läuft bereits“ sind
+          # gewöhnliche Antworten. Auffälliges erscheint nur als Hinweis am Lauf.
+          echo "HTTP-Status: $STATUS"
+          case "$STATUS" in
+            2??)
+              ;;
+            503)
+              echo "::error::Der KI-Assistent meldet eine Dauerstörung (HTTP 503) – meist ist das letzte Veröffentlichen unvollständig. Bitte „Build & Deploy“ erneut starten; Näheres steht in der Störungs-Mail im Postfach."
+              exit 1
+              ;;
+            5??)
+              echo "::error::Der Verarbeitungslauf meldet einen Serverfehler (HTTP $STATUS)."
+              exit 1
+              ;;
+            401|403)
+              echo "::warning::Der Server lehnt den Login ab (HTTP $STATUS) – Secrets ANALYTICS_USER und ANALYTICS_PASSWORD prüfen."
+              ;;
+            404)
+              echo "::warning::Der KI-Assistent ist auf dem Server nicht vorhanden (HTTP 404) – wurde er schon veröffentlicht?"
+              ;;
+            *)
+              echo "::warning::Unerwartete Antwort des Servers (HTTP $STATUS)."
+              ;;
+          esac

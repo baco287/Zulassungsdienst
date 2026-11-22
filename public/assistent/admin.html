@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="format-detection" content="telephone=no, email=no, address=no">
+<title>KI-Assistent · KFZ-Zulassungsprofis</title>
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="admin.css">
+<script src="admin.js" defer></script>
+</head>
+<body>
+
+<header class="kopf">
+  <div class="kopf__innen">
+    <div class="marke">
+      <span class="marke__schild" aria-hidden="true"><b>KI</b></span>
+      <span class="marke__text">
+        <strong>KI-Assistent</strong>
+        <small>KFZ-Zulassungsprofis · E-Mail</small>
+      </span>
+    </div>
+    <button type="button" class="wer" id="wer-knopf" title="Namen ändern">
+      <span class="wer__frage">Es bearbeitet</span>
+      <span class="wer__name" id="wer-name">noch niemand</span>
+    </button>
+  </div>
+</header>
+
+<main class="seite">
+
+  <!-- Kopfbereich: Zustand in einem Satz, Schalter, Verbrauch gegen die Limits -->
+  <section class="stand" id="stand" data-art="laden" aria-label="Zustand der KI">
+    <div class="stand__text">
+      <p class="stand__satz" id="stand-satz" role="status">Wird geladen …</p>
+      <p class="stand__zusatz" id="stand-zusatz"></p>
+      <button type="button" class="knopf knopf--klein stand__aktion" id="k-sperre" hidden>Sperre aufheben</button>
+    </div>
+    <button type="button" class="schalter schalter--gross" id="ki-schalter" role="switch" aria-checked="false" disabled>
+      <span class="schalter__bahn" aria-hidden="true"><span class="schalter__knopf"></span></span>
+      <span class="schalter__wort" id="ki-schalter-wort">KI aus</span>
+    </button>
+    <dl class="stand__zahlen">
+      <div class="zahl">
+        <dt>Verbrauch heute</dt>
+        <dd>
+          <span class="zahl__wert" id="heute-wert">–</span>
+          <span class="balken" id="heute-balken" aria-hidden="true"><i></i></span>
+        </dd>
+      </div>
+      <div class="zahl">
+        <dt>Verbrauch im Monat</dt>
+        <dd>
+          <span class="zahl__wert" id="monat-wert">–</span>
+          <span class="balken" id="monat-balken" aria-hidden="true"><i></i></span>
+        </dd>
+      </div>
+      <div class="zahl zahl--wartend">
+        <dt>Entwürfe warten</dt>
+        <dd><span class="zahl__gross" id="wartend">–</span></dd>
+      </div>
+    </dl>
+  </section>
+
+  <div class="banner banner--rot" id="unklar-banner" hidden>
+    <strong>Versand unklar.</strong>
+    <span id="unklar-text"></span>
+  </div>
+
+  <div class="reiter" role="tablist" aria-label="Bereiche">
+    <button type="button" role="tab" class="reiter__knopf" id="tab-posteingang" data-reiter="posteingang" aria-controls="bereich-posteingang" aria-selected="true">Posteingang</button>
+    <button type="button" role="tab" class="reiter__knopf" id="tab-verbrauch" data-reiter="verbrauch" aria-controls="bereich-verbrauch" aria-selected="false" tabindex="-1">Verbrauch</button>
+    <button type="button" role="tab" class="reiter__knopf" id="tab-einstellungen" data-reiter="einstellungen" aria-controls="bereich-einstellungen" aria-selected="false" tabindex="-1">Einstellungen</button>
+  </div>
+
+  <!-- Posteingang -->
+  <section class="bereich" id="bereich-posteingang" role="tabpanel" aria-labelledby="tab-posteingang">
+    <div id="liste-ansicht">
+      <div class="filter" role="group" aria-label="Welche Mails zeigen">
+        <button type="button" class="chip" data-filter="offen" aria-pressed="true">Zu erledigen</button>
+        <button type="button" class="chip" data-filter="alle" aria-pressed="false">Alle</button>
+        <button type="button" class="chip" data-filter="ohne_ki" aria-pressed="false">Ohne KI aussortiert</button>
+      </div>
+      <ul class="liste" id="liste"></ul>
+      <p class="leer" id="liste-leer" hidden></p>
+      <div class="blaettern" id="blaettern" hidden>
+        <button type="button" class="knopf knopf--klein" id="liste-neuere">Neuere</button>
+        <span id="liste-seite"></span>
+        <button type="button" class="knopf knopf--klein" id="liste-aeltere">Ältere</button>
+      </div>
+    </div>
+
+    <div id="detail-ansicht" hidden>
+      <button type="button" class="knopf knopf--klein knopf--leise" id="detail-zurueck">Zurück zur Liste</button>
+      <div id="detail" tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- Verbrauch -->
+  <section class="bereich" id="bereich-verbrauch" role="tabpanel" aria-labelledby="tab-verbrauch" hidden>
+    <div id="verbrauch"><p class="leer">Wird geladen …</p></div>
+  </section>
+
+  <!-- Einstellungen -->
+  <section class="bereich" id="bereich-einstellungen" role="tabpanel" aria-labelledby="tab-einstellungen" hidden>
+
+    <form class="gruppe" id="f-grenzen" novalidate>
+      <h2>Kosten begrenzen</h2>
+      <p class="klein">Ist eine Grenze erreicht, entstehen keine neuen Entwürfe mehr. Mails gehen dabei nicht verloren – sie warten, oder Sie antworten selbst.</p>
+      <div class="felder">
+        <label class="feld">
+          <span class="feld__name">Höchstens im Monat (US-Dollar)</span>
+          <input class="eingabe" type="text" inputmode="decimal" autocomplete="off" data-schluessel="limit_monat_usd" id="e-limit_monat_usd">
+        </label>
+        <label class="feld">
+          <span class="feld__name">Höchstens am Tag (US-Dollar)</span>
+          <input class="eingabe" type="text" inputmode="decimal" autocomplete="off" data-schluessel="limit_tag_usd" id="e-limit_tag_usd">
+        </label>
+        <label class="feld">
+          <span class="feld__name">KI-Aufrufe am Tag, höchstens</span>
+          <input class="eingabe" type="text" inputmode="numeric" autocomplete="off" data-schluessel="limit_aufrufe_tag" id="e-limit_aufrufe_tag">
+        </label>
+        <label class="feld">
+          <span class="feld__name">KI-Aufrufe je Absender am Tag</span>
+          <input class="eingabe" type="text" inputmode="numeric" autocomplete="off" data-schluessel="limit_je_absender_tag" id="e-limit_je_absender_tag">
+        </label>
+      </div>
+      <div class="gruppe__fuss">
+        <button type="submit" class="knopf knopf--haupt">Speichern</button>
+        <span class="rueckmeldung" role="status"></span>
+      </div>
+    </form>
+
+    <div class="gruppe">
+      <h2>Arbeitsweise</h2>
+      <div class="schaltzeile">
+        <button type="button" class="schalter" role="switch" aria-checked="false" data-schluessel="eskalation_sonnet" id="e-eskalation_sonnet" aria-labelledby="l-eskalation">
+          <span class="schalter__bahn" aria-hidden="true"><span class="schalter__knopf"></span></span>
+        </button>
+        <div>
+          <p class="schaltzeile__name" id="l-eskalation">Stärkeres Modell bei schwierigen Fällen</p>
+          <p class="klein">Mehrere Anliegen in einer Mail oder ein heikler Ton: Dann überarbeitet das stärkere Modell den Entwurf. Ein solcher Aufruf kostet deutlich mehr als ein normaler.</p>
+        </div>
+      </div>
+      <div class="schaltzeile">
+        <button type="button" class="schalter" role="switch" aria-checked="false" data-schluessel="hinweis_mail" id="e-hinweis_mail" aria-labelledby="l-hinweis">
+          <span class="schalter__bahn" aria-hidden="true"><span class="schalter__knopf"></span></span>
+        </button>
+        <div>
+          <p class="schaltzeile__name" id="l-hinweis">Hinweis-Mail, wenn Entwürfe warten</p>
+          <p class="klein">Höchstens eine Mail je halbe Stunde ans eigene Postfach. Sie nennt nur die Anzahl, keinen Kundeninhalt.</p>
+        </div>
+      </div>
+      <p class="rueckmeldung" id="schalter-rueckmeldung" role="status"></p>
+    </div>
+
+    <form class="gruppe" id="f-text" novalidate>
+      <h2>Gruß und Absender</h2>
+      <p class="klein">Die Anrede („Guten Tag …“), den Gruß und die Fußzeile setzt das Programm unter jede Antwort.</p>
+      <div class="felder">
+        <label class="feld">
+          <span class="feld__name">Gruß</span>
+          <input class="eingabe" type="text" autocomplete="off" maxlength="80" data-schluessel="gruss" id="e-gruss">
+        </label>
+        <label class="feld">
+          <span class="feld__name">Absenderzeile unter dem Gruß</span>
+          <input class="eingabe" type="text" autocomplete="off" maxlength="120" data-schluessel="absender_name" id="e-absender_name">
+        </label>
+        <label class="feld feld--breit">
+          <span class="feld__name">Fußzeile</span>
+          <textarea class="eingabe" rows="6" maxlength="1500" data-schluessel="fuss" id="e-fuss" placeholder="Leer lassen: Es gelten die Pflichtangaben aus dem Impressum der Website."></textarea>
+        </label>
+      </div>
+      <div class="gruppe__fuss">
+        <button type="submit" class="knopf knopf--haupt">Speichern</button>
+        <span class="rueckmeldung" role="status"></span>
+      </div>
+    </form>
+
+    <form class="gruppe" id="f-aufbewahrung" novalidate>
+      <h2>Aufbewahrung</h2>
+      <p class="klein">Nach dieser Frist löscht der Assistent alles, was er zu einer Mail gespeichert hat: Text, Betreff, Absender, Einordnung und Entwürfe. Höchstens 90 Tage – so steht es in der Datenschutzerklärung. Das Postfach selbst bleibt, wie es ist.</p>
+      <div class="felder">
+        <label class="feld">
+          <span class="feld__name">Gespeicherte Mails löschen nach (Tagen, 7 bis 90)</span>
+          <input class="eingabe" type="text" inputmode="numeric" autocomplete="off" data-schluessel="aufbewahrung_text_tage" id="e-aufbewahrung_text_tage">
+        </label>
+      </div>
+      <div class="gruppe__fuss">
+        <button type="submit" class="knopf knopf--haupt">Speichern</button>
+        <span class="rueckmeldung" role="status"></span>
+      </div>
+    </form>
+
+    <div class="gruppe">
+      <h2>Absenderregeln</h2>
+      <p class="klein">Für Absender, bei denen die KI nichts entwerfen soll: Werbung ignorieren oder bestimmte Kunden immer selbst beantworten – das ist auch der Weg, wenn jemand der KI-Bearbeitung widerspricht. Die Regel gilt sofort, auch für Mails, die schon warten.</p>
+      <ul class="regeln" id="regeln"></ul>
+      <form class="felder felder--regel" id="f-regel" novalidate>
+        <label class="feld">
+          <span class="feld__name">Adresse oder @Domain</span>
+          <input class="eingabe" type="text" inputmode="email" autocomplete="off" autocapitalize="off" spellcheck="false" id="regel-muster" placeholder="name@example.org oder @example.org">
+        </label>
+        <label class="feld">
+          <span class="feld__name">Was soll geschehen?</span>
+          <select class="eingabe" id="regel-art">
+            <option value="ignorieren">Ignorieren (kein Entwurf)</option>
+            <option value="immer_mensch">Immer selbst beantworten</option>
+          </select>
+        </label>
+        <label class="feld">
+          <span class="feld__name">Notiz (freiwillig, keine Namen oder Inhalte)</span>
+          <input class="eingabe" type="text" autocomplete="off" maxlength="120" id="regel-notiz" placeholder="z. B. Widerspruch vom 22.11.">
+        </label>
+        <div class="feld feld--knopf">
+          <button type="submit" class="knopf">Regel hinzufügen</button>
+        </div>
+      </form>
+      <p class="rueckmeldung" id="regel-rueckmeldung" role="status"></p>
+    </div>
+
+    <div class="gruppe">
+      <h2>Abruf und Selbsttest</h2>
+      <p class="klein">Der Abruf läuft alle 5 Minuten von selbst. Der Selbsttest prüft Postfach, Mailversand und die Verbindung zur KI – er kostet nichts.</p>
+      <div class="knoepfe">
+        <button type="button" class="knopf" id="k-abrufen">Jetzt abrufen</button>
+        <button type="button" class="knopf" id="k-selbsttest">Selbsttest starten</button>
+      </div>
+      <p class="rueckmeldung" id="abruf-rueckmeldung" role="status"></p>
+      <ul class="pruefliste" id="selbsttest" aria-live="polite"></ul>
+    </div>
+
+    <form class="gruppe gruppe--achtung" id="f-loeschen" novalidate>
+      <h2>Daten eines Kunden löschen</h2>
+      <p class="klein">Löscht alle gespeicherten Mails, Einordnungen und Entwürfe zu einer Adresse aus dem Assistenten. Das lässt sich nicht rückgängig machen. Die Mails im Postfach bleiben – dort löschen Sie von Hand.</p>
+      <div class="felder">
+        <label class="feld">
+          <span class="feld__name">E-Mail-Adresse des Kunden</span>
+          <input class="eingabe" type="text" inputmode="email" autocomplete="off" autocapitalize="off" spellcheck="false" id="loeschen-adresse" placeholder="name@example.org">
+        </label>
+        <div class="feld feld--knopf">
+          <button type="submit" class="knopf knopf--rot">Daten löschen</button>
+        </div>
+      </div>
+      <p class="rueckmeldung" id="loeschen-rueckmeldung" role="status"></p>
+    </form>
+
+    <p class="klein technik" id="technik"></p>
+  </section>
+
+</main>
+
+<!-- Ein Dialog für alles: Name, Rückfragen, Grund beim Verwerfen. Inhalt setzt admin.js als Text. -->
+<dialog class="dialog" id="dialog" aria-labelledby="dialog-titel">
+  <form method="dialog" id="dialog-form">
+    <h2 id="dialog-titel"></h2>
+    <div class="dialog__inhalt" id="dialog-inhalt"></div>
+    <div class="dialog__knoepfe" id="dialog-knoepfe"></div>
+  </form>
+</dialog>
+
+<div class="meldung" id="meldung" role="status" aria-live="polite" hidden></div>
+
+<noscript>
+  <p class="ohne-js">Diese Seite braucht JavaScript. Bitte im Browser einschalten und die Seite neu laden.</p>
+</noscript>
+
+</body>
+</html>

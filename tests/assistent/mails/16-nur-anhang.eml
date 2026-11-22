@@ -1,0 +1,28 @@
+From: Olaf Ohnetext <olaf.ohnetext@example.org>
+To: info@kfz-zulassungsprofis.de
+Subject: Scan
+Date: Sun, 22 Nov 2026 07:47:26 +0100
+Message-ID: <scan-0747-d0@example.org>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_anhang_0747_"
+
+--=_anhang_0747_
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+--=_anhang_0747_
+Content-Type: image/png; name="scan-seite-1.png"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="scan-seite-1.png"
+
+iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6
+kgAAAABJRU5ErkJggg==
+--=_anhang_0747_
+Content-Type: application/pdf; name="vollmacht.pdf"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="vollmacht.pdf"
+
+JVBERi0xLjQKMSAwIG9iago8PCAvVHlwZSAvQ2F0YWxvZyA+PgplbmRvYmoKdHJhaWxlcgo8PCAv
+Um9vdCAxIDAgUiA+PgolJUVPRgo=
+--=_anhang_0747_--
