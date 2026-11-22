@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef, useState, type KeyboardEvent, type ReactNode } from "react";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
-import { AlertCircle, ChevronDown, Copy, Loader2, Lock, Mail } from "lucide-react";
+import { AlertCircle, ChevronDown, CircleCheck, Copy, FileText, Loader2, Lock, Mail, Search } from "lucide-react";
 import { sortedServices, getService } from "@/lib/services";
 import {
   calculateOrderPrice,
@@ -27,6 +27,7 @@ import type { OrderRequest } from "@/lib/types";
 import { track } from "@/lib/analytics";
 import DocumentUpload from "./DocumentUpload";
 import Haken from "./ui/Haken";
+import SchildErledigt from "./ui/SchildErledigt";
 import PaymentMethods from "./checkout/PaymentMethods";
 import WhatsAppIcon from "./WhatsAppIcon";
 
@@ -571,48 +572,55 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
       <motion.div
         {...(reduced ? {} : { initial: { opacity: 0, y: 12 }, animate: { opacity: 1, y: 0 } })}
         ref={stepContainerRef}
-        // Links: Breite des blauen Bands (.tafel 0.875rem, ab md 3.5rem) plus Innenabstand.
-        // Ein einfaches px-* würde den reservierten Platz überschreiben – der Text läge unter dem Band.
-        className="tafel tafel-breit max-w-3xl py-7 pl-[2.125rem] pr-5 sm:py-10 sm:pl-[3.125rem] sm:pr-9 md:pl-[5.75rem]"
+        className="mx-auto max-w-[60rem] rounded-[1.25rem] border-2 border-navy bg-white px-4 pb-8 pt-6 text-center shadow-[0_30px_60px_-40px_rgb(4_24_63_/_0.45)] sm:px-12 sm:pb-11 sm:pt-7"
       >
-        <Haken className="h-[1.375rem] w-[1.8125rem]" />
-        <h2 tabIndex={-1} className="mt-4 text-2xl font-bold text-navy focus:outline-none focus-visible:outline-none sm:text-3xl">
+        <SchildErledigt className="mx-auto h-auto w-[10.5rem] sm:w-[13rem]" />
+        <h2
+          tabIndex={-1}
+          className="h-abschnitt mt-4 text-navy focus:outline-none focus-visible:outline-none sm:text-[2.75rem]"
+        >
           Ihre Anfrage ist eingegangen
         </h2>
-        <p className="mt-3 max-w-[38em] leading-relaxed text-ink-700">
-          Wir haben Ihre Anfrage erhalten und melden uns innerhalb unserer
-          Servicezeiten ({site.contact.hours}) mit der verbindlichen
-          Festpreis-Bestätigung. Erst danach starten wir.
+        <p className="mx-auto mt-4 max-w-[50rem] text-[1.0625rem] leading-relaxed text-ink-600 sm:text-[1.1875rem]">
+          Wir haben Ihre Anfrage erhalten und melden uns innerhalb unserer Servicezeiten{" "}
+          <span className="whitespace-nowrap">({site.contact.hours})</span> mit der verbindlichen Festpreis-Bestätigung. Erst danach starten wir
+          mit der Bearbeitung.
         </p>
 
-        <p className="mt-6 inline-flex flex-col rounded-lg border border-line bg-canvas px-5 py-3">
-          <span className="text-sm font-medium text-ink-600">Ihre Referenz</span>
-          <span className="font-display text-xl font-bold tracking-wide text-navy" translate="no">{result.reference}</span>
-        </p>
-
-        {files.length > 0 ? (
-          <p className="mt-4 text-sm font-medium text-accent-700">
+        <div className="mt-7 inline-flex items-center gap-3 rounded-xl border border-line bg-canvas px-4 py-3.5 text-left sm:gap-5 sm:px-8 sm:py-4">
+          <FileText className="h-8 w-8 shrink-0 text-brand-600 sm:h-10 sm:w-10" strokeWidth={1.6} aria-hidden />
+          <span className="flex flex-col">
+            <span className="text-[0.9375rem] text-ink-600">Ihre Referenz</span>
+            <span className="whitespace-nowrap font-display text-lg font-bold tracking-wide text-navy sm:text-[1.75rem]" translate="no">
+              {result.reference}
+            </span>
+          </span>
+        </div>
+        {files.length > 0 && (
+          <p className="mt-3 text-[0.9375rem] font-medium text-ink-600">
             {files.length} {files.length === 1 ? "Unterlage wurde" : "Unterlagen wurden"} mitgesendet.
-          </p>
-        ) : (
-          <p className="mt-4 text-sm text-ink-600">
-            Ihre Unterlagen können Sie uns direkt im Chat schicken – einfach abfotografieren.
           </p>
         )}
 
-        <ol className="mt-7 max-w-[38em] space-y-3 text-[15px] text-ink-700">
+        <ol className="mx-auto mt-8 max-w-[49.5rem] text-left">
           {[
-            "Wir prüfen Ihre Angaben und senden Ihnen die Festpreis-Bestätigung.",
-            cfg && values.serviceSlug !== "abmeldung"
-              ? "Für die Vollmacht bestätigen Sie einmalig digital Ihre Identität – den Link erhalten Sie von uns."
-              : "Fehlt noch etwas, melden wir uns bei Ihnen.",
-            "Wir reichen den Antrag bei der zuständigen Behörde ein und halten Sie auf dem Laufenden.",
-          ].map((text, i) => (
-            <li key={text} className="flex items-start gap-3">
-              <span className="flex h-6 w-6 shrink-0 items-center justify-center font-display text-lg font-bold text-brand-600" aria-hidden>
-                {i + 1}
+            { Icon: Search, titel: "Wir prüfen Ihre Angaben.", text: "Wir prüfen Ihre Unterlagen und Angaben auf Vollständigkeit." },
+            { Icon: Mail, titel: "Sie erhalten die Festpreis-Bestätigung.", text: "Sie bekommen unsere verbindliche Festpreis-Bestätigung mit allen Details." },
+            { Icon: CircleCheck, titel: "Wir reichen den Antrag ein.", text: "Wir reichen den Antrag bei der zuständigen Behörde ein und halten Sie auf dem Laufenden." },
+          ].map(({ Icon, titel, text }, i, alle) => (
+            <li key={titel} className="flex gap-4 sm:gap-5">
+              <span className="flex flex-col items-center" aria-hidden>
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-wa-50 text-navy sm:h-[3.25rem] sm:w-[3.25rem]">
+                  <Icon className="h-6 w-6" strokeWidth={2} />
+                </span>
+                {i < alle.length - 1 && <span className="my-1 w-0.5 flex-1 rounded-full bg-ink-200" />}
               </span>
-              {text}
+              <span className={`pt-1.5 ${i < alle.length - 1 ? "pb-5" : ""}`}>
+                <span className="block text-[1.0625rem] font-bold text-navy sm:text-lg">
+                  {i + 1}. {titel}
+                </span>
+                <span className="mt-0.5 block text-[0.9375rem] leading-relaxed text-ink-600 sm:text-base">{text}</span>
+              </span>
             </li>
           ))}
         </ol>
@@ -621,14 +629,14 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
           href={followUpWhatsAppLink(result.reference, service?.name)}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-wa btn-lg mt-8 w-full sm:w-auto"
+          className="btn btn-wa btn-lg mt-8 w-full max-w-[30.5rem] gap-2 px-4 text-[0.9375rem] sm:gap-2.5 sm:px-7 sm:text-lg"
         >
-          <WhatsAppIcon className="h-5 w-5" />
+          <WhatsAppIcon className="h-5 w-5 sm:h-6 sm:w-6" />
           Im WhatsApp-Chat fortsetzen
         </a>
-        <p className="mt-3 text-sm text-ink-600">
-          Lieber per E-Mail? Schreiben Sie uns mit Ihrer Referenz an{" "}
-          <a href={`mailto:${site.contact.email}`} className="link">
+        <p className="mt-4 text-[0.9375rem] leading-relaxed text-ink-600 sm:text-base">
+          Oder per E-Mail? Schreiben Sie uns mit Ihrer Referenz an{" "}
+          <a href={`mailto:${site.contact.email}`} className="link whitespace-nowrap">
             {site.contact.email}
           </a>
           .

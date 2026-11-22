@@ -75,6 +75,7 @@
   --color-muted: #3d4a5f;
   --color-wa: #25d366;
   --color-wa-ink: #0e7a5f;
+  --color-wa-50: #e9f7f0; /* helles Grün hinter den Schritt-Symbolen der Bestätigung */
   --color-danger: #c4281c;
   --color-danger-50: #fdf3f2;
 
