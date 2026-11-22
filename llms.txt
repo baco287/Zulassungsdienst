@@ -454,6 +454,7 @@ Kundinnen und Kunden beauftragen über das Online-Formular (Unterlagen als Foto 
 
 - [Kfz-Steuer-Rechner](https://kfz-zulassungsprofis.de/rechner/kfz-steuer/)
 - [Behördengang-Rechner](https://kfz-zulassungsprofis.de/rechner/behoerdengang/)
+- [Wunschkennzeichen-Generator](https://kfz-zulassungsprofis.de/wunschkennzeichen-generator/): KI-Kennzeichenassistent – schlägt nach Ort, Initialen, Zahl oder Datum zulässige Kombinationen vor und zeigt sie als Kennzeichen. Vorschläge sind Ideen; die Verfügbarkeit bestätigt nur die Zulassungsbehörde.
 - [Vollmacht Kfz-Zulassung](https://kfz-zulassungsprofis.de/vorlagen/vollmacht-zulassung/)
 - [Unterlagen-Checkliste](https://kfz-zulassungsprofis.de/vorlagen/checkliste-zulassung/)
 - [Zulassung per WhatsApp](https://kfz-zulassungsprofis.de/zulassung-per-whatsapp/)
