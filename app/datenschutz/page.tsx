@@ -139,6 +139,57 @@ export default function DatenschutzPage() {
           oder Post ist gleichwertig möglich.
         </p>
       </section>
+      <section id="kennzeichenassistent" className="scroll-mt-24">
+        <h2>3a. KI-Kennzeichenassistent</h2>
+        <p>
+          Mit dem Kennzeichenassistenten (Wunschkennzeichen-Generator) können Sie ohne Anmeldung Ideen für ein
+          Wunschkennzeichen entwickeln. Die Nutzung ist freiwillig.
+        </p>
+        <h3>Verarbeitung in Ihrem Browser</h3>
+        <p>
+          Initialen, Namen, Daten und Zahlen, die der Assistent erkennt, verarbeitet er in Ihrem Browser; daraus werden
+          nur Buchstaben und Ziffern für die Vorschläge gebildet. Was Sie über die Schaltflächen „Meine Initialen“, „Mein
+          Name“, „Geburtstag oder Jahrestag“, „Meine Glückszahl“ und „Für uns zwei“ eingeben, verlässt Ihren Browser
+          nicht. Den Zulassungsbezirk, den Sie wählen, zählen wir ohne Bezug zu Ihrer Person für unsere
+          Reichweitenmessung; Kombinationen zählen wir dabei nicht.
+        </p>
+        <p>
+          Wenn Sie Kennzeichen merken, speichert Ihr Browser die Merkliste lokal auf Ihrem Gerät (Kombination und
+          Bezirk, höchstens zwölf Einträge). Wählen Sie ein Kennzeichen aus, legt der Browser die Auswahl bis zum
+          Schließen des Tabs ab, höchstens zwei Stunden lang, damit das Auftragsformular sie übernehmen kann. Beides
+          dient ausschließlich der von Ihnen gewünschten Funktion (§ 25 Abs. 2 Nr. 2 TDDDG); Sie können die Merkliste
+          jederzeit über „Merkliste leeren“ löschen.
+        </p>
+        <h3>KI-Ideen über einen Dienstleister</h3>
+        <p>
+          Tippen Sie einen Wunsch frei ein, den der Assistent nicht selbst versteht (etwa ein Hobby), oder nutzen Sie
+          „KI, überrasche mich!“, lassen wir Ideen von einem KI-Sprachmodell erstellen. Dazu überträgt unser Webserver an
+          Anthropic (Claude API): den nicht verstandenen Teil Ihres Textes (höchstens 300 Zeichen), das gewählte
+          Kennzeichenkürzel, den gewünschten Stil und die bereits genannten Buchstaben und Ziffern. Vom Assistenten
+          erkannte Namen und Datumsangaben schneiden wir vorher heraus; erkannte E-Mail-Adressen, Internetadressen und
+          Telefonnummern werden entfernt oder die Anfrage wird abgelehnt. Ihre IP-Adresse und Kontaktdaten übermitteln
+          wir nicht. Bitte tippen Sie keine Adressen und keine Namen anderer Personen ein – was der Assistent nicht als
+          Name erkennt, kann im übertragenen Text stehen bleiben.
+        </p>
+        <p>
+          Anthropic verarbeitet die Daten in unserem Auftrag (Art. 28 DSGVO). Dabei kann eine Übermittlung in die USA
+          stattfinden; sie ist durch Standardvertragsklauseln der EU-Kommission abgesichert. Rechtsgrundlage ist unser
+          berechtigtes Interesse, Ihnen eine komfortable Ideenfindung anzubieten (Art. 6 Abs. 1 lit. f DSGVO). Die
+          Vorschläge der KI sind unverbindliche Ideen; eine automatisierte Entscheidung mit rechtlicher Wirkung findet
+          nicht statt.
+        </p>
+        <h3>Was wir speichern</h3>
+        <p>
+          Wir speichern weder Ihre Texte noch die Ihnen vorgeschlagenen oder von Ihnen gewählten Kombinationen. Für
+          „KI, überrasche mich!“ halten wir je Kennzeichenkürzel, Stil und Kennzeichenart bis zu 30 Tage einen
+          allgemeinen Vorrat an KI-Ideen vor – ohne Bezug zu einer Anfrage oder Person. Zur Kostenkontrolle
+          protokollieren wir je KI-Anfrage den Zeitpunkt, das Kennzeichenkürzel, den Stil, den Umfang (Anzahl der
+          verarbeiteten Textbausteine), die geschätzten Kosten und das Ergebnis. Diese Einträge löschen wir automatisch,
+          sobald sie älter als 14 Monate sind (bei der nächsten Nutzung des Assistenten oder unserer Auswertung). Zum
+          Schutz vor Missbrauch zählt der Server Anfragen je Anschluss über einen nicht rückrechenbaren Kennwert; er
+          wird nach Ablauf seines Zeitfensters (höchstens 24 Stunden) bei der nächsten Anfrage gelöscht.
+        </p>
+      </section>
       <section>
         <h2>3a. KI-gestützte Bearbeitung von E-Mail-Anfragen</h2>
         <p>
@@ -244,6 +295,10 @@ export default function DatenschutzPage() {
           <li>die zuständige Zulassungsbehörde sowie</li>
           <li>gegebenenfalls Versanddienstleister und Kennzeichenhersteller.</li>
         </ul>
+        <p>
+          Für den Kennzeichenassistenten setzen wir zusätzlich einen KI-Dienstleister ein; Einzelheiten stehen in
+          Abschnitt 3a.
+        </p>
         <p>
           Eine Weitergabe zu anderen Zwecken, etwa zu Werbezwecken, erfolgt nicht.
         </p>

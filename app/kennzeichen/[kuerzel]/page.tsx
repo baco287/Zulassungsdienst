@@ -127,7 +127,10 @@ export default async function KennzeichenDetail({ params }: { params: Promise<{ 
             {P.wunschkennzeichen} zusätzlich.
           </p>
           <p className="mt-2 text-sm text-ink-600">{wunschkennzeichenHinweis}</p>
-          <p className="mt-3 text-sm">
+          <p className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm">
+            <Link href={`/wunschkennzeichen-generator/#kuerzel=${k.slug}`} className="font-semibold text-brand-700 underline underline-offset-2">
+              Ideen für Ihr {k.code}-Wunschkennzeichen finden
+            </Link>
             <Link href="/ratgeber/wunschkennzeichen-reservieren/" className="font-semibold text-brand-700 underline underline-offset-2">
               So funktioniert die Reservierung
             </Link>

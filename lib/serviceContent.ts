@@ -387,7 +387,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       {
         question: "Wie lange bleibt ein Wunschkennzeichen reserviert?",
         answer:
-          "Je nach Zulassungsstelle in der Regel 30 bis 90 Tage. Da wir die Reservierung direkt mit Ihrer Zulassung verbinden, spielt die Frist für Sie praktisch keine Rolle.",
+          "Das legt jede Zulassungsbehörde selbst fest – von 14 Tagen (Hamburg) bis rund sechs Monaten (Köln). Da wir die Reservierung direkt mit Ihrer Zulassung verbinden, spielt die Frist für Sie praktisch keine Rolle.",
       },
       {
         question: "Welche Kombinationen sind nicht erlaubt?",
@@ -395,6 +395,11 @@ export const serviceContent: Record<string, ServiceContent> = {
           "Kombinationen mit verbotenen Kürzeln (z. B. NS-Bezüge wie HJ, SS, NSDAP) vergeben die Behörden nicht. Auch die Länge ist begrenzt: maximal 8 Zeichen inklusive Unterscheidungszeichen des Bezirks.",
       },
     ],
+    ctaLink: {
+      href: "/wunschkennzeichen-generator/",
+      label: "Wunschkennzeichen finden",
+      text: "Noch keine Idee für Ihre Kombination? Unser KI-Kennzeichenassistent schlägt nach Initialen, Zahl oder Datum zulässige Kombinationen für Ihren Bezirk vor und zeigt sie als Kennzeichen – kostenlos und ohne Anmeldung.",
+    },
     related: ["neuzulassung", "halterwechsel", "ummeldung"],
     guides: ["wunschkennzeichen-reservieren", "kennzeichen-mitnehmen", "was-kostet-eine-kfz-zulassung"],
     keywords: ["Wunschkennzeichen reservieren", "Wunschkennzeichen Kosten", "Kennzeichen prägen lassen"],

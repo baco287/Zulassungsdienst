@@ -1,0 +1,5 @@
+{
+  "stand": "2026-11-22",
+  "pflege": "Angebundene Quellen für die Echtzeit-Verfügbarkeitsprüfung von Wunschkennzeichen. Ein Eintrag darf nur auf aktiv: true stehen, wenn (1) ein Vertrag oder eine ausdrückliche Erlaubnis des Betreibers vorliegt, (2) der Adapter in public/api/kennzeichen-verfuegbarkeit.php eingetragen ist und (3) die Abfrage erfolgreich getestet wurde. Ohne aktiven Eintrag zeigt der Assistent für alle Bezirke „Prüfung erforderlich“ und verweist auf die Behörde. Anleitung: docs/KENNZEICHEN-ASSISTENT.md, Abschnitt „Verfügbarkeitsprüfung anbinden“.",
+  "anbieter": []
+}

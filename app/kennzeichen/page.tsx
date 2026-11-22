@@ -57,6 +57,10 @@ export default function KennzeichenPage() {
           ))}
         </dl>
         <p className="mt-10 text-sm text-ink-600">
+          <Link href="/wunschkennzeichen-generator/" className="font-semibold text-brand-700 underline underline-offset-2">
+            Wunschkennzeichen-Generator: Ideen für Ihr Kürzel
+          </Link>{" "}
+          ·{" "}
           <Link href="/zulassungsstelle/" className="font-semibold text-brand-700 underline underline-offset-2">
             Zur Übersicht der Zulassungsstellen
           </Link>{" "}

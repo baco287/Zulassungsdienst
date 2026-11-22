@@ -43,6 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/datensicherheit",
     "/zulassungsstelle",
     "/kennzeichen",
+    "/wunschkennzeichen-generator",
   ].map((path) => ({
     url: `${site.url}${path}/`,
     lastModified: contentUpdated,

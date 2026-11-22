@@ -25,7 +25,9 @@ import {
 import { istHauptleistung, vorgaenge } from "@/lib/vorgaenge";
 import type { OrderRequest } from "@/lib/types";
 import { track } from "@/lib/analytics";
+import { leseUebergabe, schreibeUebergabe, uebergabeZeile, type Uebergabe } from "@/lib/kennzeichen/merkliste";
 import DocumentUpload from "./DocumentUpload";
+import KennzeichenSchild from "./kennzeichen/KennzeichenSchild";
 import Haken from "./ui/Haken";
 import SchildErledigt from "./ui/SchildErledigt";
 import PaymentMethods from "./checkout/PaymentMethods";
@@ -43,6 +45,12 @@ import WhatsAppIcon from "./WhatsAppIcon";
  * Zusatzleistungen (Kennzeichenschilder, Wunschkennzeichen) werden als Zeilen
  * an die Anmerkung angehängt – so kommen sie ohne Änderung am Server im
  * Posteingang an. Preise stammen ausschließlich aus config/preise.json.
+ *
+ * Kommt jemand aus dem Kennzeichenassistenten (/wunschkennzeichen-generator/), bringt
+ * er sein gewähltes Kennzeichen mit (lib/kennzeichen/merkliste.ts, Übergabe). Es steht
+ * dann oben im Formular und geht als Zeile in die Anmerkung. Der kostenpflichtige
+ * Wunschkennzeichen-Service ist nur dann schon angehakt, wenn er im Assistenten
+ * ausdrücklich gewählt wurde – sonst bleibt das Kästchen leer.
  *
  * Schlägt die Zustellung fehl, erscheinen die Direktkanäle (vorbefülltes
  * WhatsApp bzw. mailto:), damit niemand im Nichts landet.
@@ -158,8 +166,8 @@ const serviceLabels: Record<string, string> = Object.fromEntries(
   sortedServices.map((s) => [s.slug, s.shortName ?? s.name])
 );
 
-/** Hängt gewählte Zusatzleistungen als Klartext an die Anmerkung an. */
-function mitExtras(v: OrderRequest, extras: Extras): OrderRequest {
+/** Hängt gewählte Zusatzleistungen und das Kennzeichen aus dem Assistenten als Klartext an die Anmerkung an. */
+function mitExtras(v: OrderRequest, extras: Extras, wunsch: Uebergabe | null = null): OrderRequest {
   const cfg = leistungsPreis(v.serviceSlug);
   const zeilen: string[] = [];
   if (cfg?.schilderMoeglich) {
@@ -172,6 +180,8 @@ function mitExtras(v: OrderRequest, extras: Extras): OrderRequest {
   if (cfg?.wunschkennzeichenMoeglich && extras.wunschkennzeichen) {
     zeilen.push(`Wunschkennzeichen-Service: ja (${P.wunschkennzeichen})`);
   }
+  // Nur bei Leistungen mit neuem Kennzeichen – in einer Abmeldung hätte die Zeile nichts zu suchen.
+  if (wunsch && cfg?.wunschkennzeichenMoeglich) zeilen.push(uebergabeZeile(wunsch));
   if (zeilen.length === 0) return v;
   return { ...v, message: [v.message.trim(), ...zeilen].filter(Boolean).join("\n") };
 }
@@ -203,6 +213,8 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
   const [direction, setDirection] = useState(0);
   const [values, setValues] = useState<OrderRequest>(initial);
   const [extras, setExtras] = useState<Extras>({ schilder: false, wunschkennzeichen: false });
+  /** Gewähltes Kennzeichen aus dem Kennzeichenassistenten, falls jemand von dort kommt. */
+  const [wunsch, setWunsch] = useState<Uebergabe | null>(null);
   const [files, setFiles] = useState<File[]>([]);
   const [errors, setErrors] = useState<Errors>({});
   const [sending, setSending] = useState(false);
@@ -279,6 +291,16 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
       markStarted(deeplink);
       track("service_selected", { service: deeplink, position: "deeplink" });
     }
+    // Kennzeichen aus dem Assistenten übernehmen. Den Service nur anhaken, wenn er dort
+    // ausdrücklich gewählt wurde und die Leistung ihn anbietet.
+    const uebergabe = leseUebergabe();
+    if (uebergabe) {
+      setWunsch(uebergabe);
+      const leistung = deeplink ?? entwurf?.values.serviceSlug ?? "";
+      if (uebergabe.serviceGewaehlt && leistungsPreis(leistung)?.wunschkennzeichenMoeglich) {
+        setExtras((x) => ({ ...x, wunschkennzeichen: true }));
+      }
+    }
     setGeladen(true);
   }, []);
 
@@ -306,7 +328,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
         : null,
     [cfg, values.serviceSlug, extras]
   );
-  const sendValues = useMemo(() => mitExtras(values, extras), [values, extras]);
+  const sendValues = useMemo(() => mitExtras(values, extras, wunsch), [values, extras, wunsch]);
   const messageText = useMemo(
     () => buildMessage(sendValues, result?.reference),
     [sendValues, result?.reference]
@@ -317,7 +339,11 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
       markStarted(value);
       track("service_selected", { service: value, position: "formular" });
       // Zusatzleistungen gehören zur gewählten Leistung – beim Wechsel zurücksetzen.
-      setExtras({ schilder: false, wunschkennzeichen: false });
+      // Der im Kennzeichenassistenten gewählte Service bleibt, wenn die neue Leistung ihn anbietet.
+      setExtras({
+        schilder: false,
+        wunschkennzeichen: Boolean(wunsch?.serviceGewaehlt && leistungsPreis(value)?.wunschkennzeichenMoeglich),
+      });
     }
     setValues((v) => ({ ...v, [key]: value }));
     setErrors((e) => ({ ...e, [key]: undefined, contact: undefined }));
@@ -413,6 +439,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
     }
     if (outcome.ok) {
       schreibeEntwurf(null);
+      schreibeUebergabe(null);
       stepChanged.current = true;
       tracking.current.submitted = true;
       track("order_submitted", {
@@ -481,7 +508,17 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                   <input
                     type="checkbox"
                     checked={extras.wunschkennzeichen}
-                    onChange={(e) => setExtras((x) => ({ ...x, wunschkennzeichen: e.target.checked }))}
+                    onChange={(e) => {
+                      const an = e.target.checked;
+                      setExtras((x) => ({ ...x, wunschkennzeichen: an }));
+                      // Die Entscheidung hier gilt: Sonst würde Neuladen oder ein Wechsel der Leistung
+                      // den im Assistenten gewählten Service wieder anhaken.
+                      if (wunsch && wunsch.serviceGewaehlt !== an) {
+                        const neu = { ...wunsch, serviceGewaehlt: an };
+                        setWunsch(neu);
+                        schreibeUebergabe(neu);
+                      }
+                    }}
                     className="mt-0.5 h-5 w-5 shrink-0 cursor-pointer accent-navy"
                   />
                   <span className="min-w-0 flex-1">
@@ -490,7 +527,10 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                       <span className="text-[15px] font-bold tabular-nums text-navy">+ {P.wunschkennzeichen}</span>
                     </span>
                     <span className="mt-0.5 block text-sm leading-snug text-ink-600">
-                      Prüfung, Reservierung und Zuteilung – die amtliche Gebühr ist enthalten. Ihre Wunschkombination nennen Sie uns unter „Anmerkungen“ oder im Chat.
+                      Prüfung, Reservierung und Zuteilung – die amtliche Gebühr ist enthalten.{" "}
+                      {wunsch
+                        ? `Ihre Wunschkombination ${wunsch.kuerzel}-${wunsch.buchstaben} ${wunsch.ziffern}${wunsch.zusatz} haben wir aus dem Kennzeichenassistenten übernommen.`
+                        : "Ihre Wunschkombination nennen Sie uns unter „Anmerkungen“ oder im Chat."}
                     </span>
                   </span>
                 </label>
@@ -648,6 +688,32 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
   return (
     <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_21.5rem] lg:items-start">
       <div className="card p-5 sm:p-8">
+        {wunsch && (!values.serviceSlug || cfg?.wunschkennzeichenMoeglich) && (
+          <div className="mb-7 grid gap-x-5 gap-y-3 rounded-[var(--radius-card)] border border-line bg-canvas p-4 sm:grid-cols-[13.5rem_minmax(0,1fr)] sm:items-center">
+            <KennzeichenSchild kuerzel={wunsch.kuerzel} buchstaben={wunsch.buchstaben} ziffern={wunsch.ziffern} zusatz={wunsch.zusatz} className="max-w-[16rem]" />
+            <div>
+              <p className="text-[15px] font-semibold text-navy">Ihr Wunschkennzeichen aus dem Kennzeichenassistenten</p>
+              <p className="mt-1 text-sm leading-snug text-ink-600">
+                Zulassungsbezirk {wunsch.bezirkName}. Noch nicht reserviert –{" "}
+                {extras.wunschkennzeichen
+                  ? "wir fragen es mit dem Wunschkennzeichen-Service bei der Behörde an."
+                  : cfg?.wunschkennzeichenMoeglich
+                    ? "mit dem Wunschkennzeichen-Service (bei den Zusatzleistungen) fragen wir es bei der Behörde an."
+                    : "wir geben Ihren Wunsch mit dem Auftrag weiter."}
+              </p>
+              <button
+                type="button"
+                className="link mt-1 inline-flex min-h-11 items-center text-sm"
+                onClick={() => {
+                  setWunsch(null);
+                  schreibeUebergabe(null);
+                }}
+              >
+                Kennzeichen entfernen
+              </button>
+            </div>
+          </div>
+        )}
         {/* Fortschrittsanzeige: vier Spalten mit Linie oben, wie der Ablauf auf der Startseite */}
         <ol className="mb-8 grid grid-cols-4 gap-2 sm:gap-4" aria-label="Fortschritt">
           {stepLabels.map((label, i) => {
