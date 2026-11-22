@@ -239,7 +239,14 @@ function einmalEinrichten(): void {
         const a = t && t.closest ? t.closest("a[href]") : null;
         if (!a) return;
         const href = String(a.getAttribute("href") || "");
-        const typ = /^tel:/i.test(href) ? "tel" : /wa\.me|whatsapp/i.test(href) ? "whatsapp" : /^mailto:/i.test(href) ? "mail" : "";
+        // wa.me ohne Rufnummer („wa.me/?text=…“) ist Teilen an Dritte, keine Kontaktaufnahme mit uns.
+        const typ = /^tel:/i.test(href)
+          ? "tel"
+          : /wa\.me\/\d|api\.whatsapp\.com\/send\?phone=\d|whatsapp:\/\/send\?phone=\d/i.test(href)
+            ? "whatsapp"
+            : /^mailto:/i.test(href)
+              ? "mail"
+              : "";
         if (!typ) return;
         senden("contact_click", { meta: { type: typ, id: linkText(a, typ) } }, true);
       } catch {

@@ -30,6 +30,7 @@ const mehrLeistungen = [
   { href: "/kfz-zulassung-ohne-eid", label: "Zulassung ohne eID" },
   { href: "/gewerbe", label: "Für Gewerbe" },
   { href: "/zulassung-per-whatsapp", label: "Zulassung per WhatsApp" },
+  { href: "/wunschkennzeichen-generator", label: "Wunschkennzeichen finden" },
 ];
 
 const mobileExtra = [

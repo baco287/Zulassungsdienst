@@ -38,6 +38,8 @@ const KZP_EVENTS = [
     // Auftrags-Assistent
     'order_start', 'order_step', 'order_step_error', 'order_abandon',
     'order_submit_attempt', 'order_error', 'order_submitted', 'documents_uploaded', 'contact_form_submit',
+    // Kennzeichenassistent (lib/kennzeichen/statistik.ts) – nie mit der Kombination selbst
+    'kza_start', 'kza_vorschlaege', 'kza_pruefung', 'kza_merken', 'kza_teilen', 'kza_auswahl', 'kza_uebergabe',
     // nur serverseitig (api/auftrag.php nach Antwort des Mailservers)
     'order_confirmed_server', 'documents_confirmed_server', 'order_failed_server',
 ];
@@ -170,6 +172,7 @@ const KZP_META_KEYS = [
     'reason' => 40, 'fields' => 120, 'kind' => 20, 'audience' => 20, 'files' => 5, 'code' => 5,
     'dur' => 7, 'scroll' => 3, 'load' => 6,
     'msg' => 140, 'src' => 40, 'line' => 7,
+    'bezirk' => 80, 'modus' => 20, 'quelle' => 12, 'n' => 3,
     'landing' => 120, 'ref' => 80, 'clid' => 20,
     'utm_source' => 80, 'utm_medium' => 80, 'utm_campaign' => 80, 'utm_content' => 80, 'utm_term' => 80,
 ];

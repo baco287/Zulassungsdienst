@@ -13,7 +13,8 @@
     "check:daten": "node scripts/check-daten.mjs",
     "check:daten:build": "node scripts/check-daten.mjs --out",
     "check:site": "node scripts/check-site.mjs",
-    "seo:crawl": "python scripts/seo-crawl.py"
+    "seo:crawl": "python scripts/seo-crawl.py",
+    "test:kennzeichen": "node scripts/test-kennzeichen.mjs"
   },
   "dependencies": {
     "framer-motion": "^12.0.0",

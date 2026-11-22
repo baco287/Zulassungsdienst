@@ -26,6 +26,7 @@ const wissen: FooterLink[] = [
   { href: "/faq", label: "Häufige Fragen" },
   { href: "/zulassungsstelle", label: "Zulassungsstellen" },
   { href: "/kennzeichen", label: "Kennzeichenkürzel" },
+  { href: "/wunschkennzeichen-generator", label: "Wunschkennzeichen-Generator" },
   { href: "/rechner", label: "Rechner & Tools" },
   { href: "/vorlagen", label: "Vorlagen & Downloads" },
 ];

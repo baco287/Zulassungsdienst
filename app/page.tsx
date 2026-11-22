@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Hero from "@/components/home/Hero";
 import TrustBar from "@/components/home/TrustBar";
+import KennzeichenTeaser from "@/components/home/KennzeichenTeaser";
 import ProcessSection from "@/components/home/ProcessSection";
 import EidSection from "@/components/home/EidSection";
 import PricingSection from "@/components/home/PricingSection";
@@ -32,14 +33,15 @@ export const metadata: Metadata = {
  * config/preise.json, Zeiten in config/betrieb.json.
  *
  * Reihenfolge = Entscheidungsweg: Nutzen und Kennzeichen-Auswahl → Vertrauen →
- * Ablauf → „ohne eID“ → Preistafel und was im Preis steckt → Datensicherheit →
- * Fragen → Abschluss.
+ * Kennzeichenassistent (unser Erkennungsmerkmal) → Ablauf → „ohne eID“ → Preistafel
+ * und was im Preis steckt → Datensicherheit → Fragen → Abschluss.
  */
 export default function HomePage() {
   return (
     <>
       <Hero />
       <TrustBar />
+      <KennzeichenTeaser />
       <ProcessSection />
       <EidSection />
       <PricingSection />

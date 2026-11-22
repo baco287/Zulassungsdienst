@@ -77,6 +77,7 @@ export function GET() {
   lines.push(
     `- [Kfz-Steuer-Rechner](${u("/rechner/kfz-steuer/")})`,
     `- [Behördengang-Rechner](${u("/rechner/behoerdengang/")})`,
+    `- [Wunschkennzeichen-Generator](${u("/wunschkennzeichen-generator/")}): KI-Kennzeichenassistent – schlägt nach Ort, Initialen, Zahl oder Datum zulässige Kombinationen vor und zeigt sie als Kennzeichen. Vorschläge sind Ideen; die Verfügbarkeit bestätigt nur die Zulassungsbehörde.`,
     `- [Vollmacht Kfz-Zulassung](${u("/vorlagen/vollmacht-zulassung/")})`,
     `- [Unterlagen-Checkliste](${u("/vorlagen/checkliste-zulassung/")})`,
     `- [Zulassung per WhatsApp](${u("/zulassung-per-whatsapp/")})`,

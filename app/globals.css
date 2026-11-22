@@ -448,6 +448,157 @@ h1, h2, h3, h4 {
     .schild-tab-preis { font-size: 1rem; }
   }
 
+  /* ── Kennzeichen-Vorschau (components/kennzeichen/KennzeichenSchild.tsx) ──
+     Einzeiliges Euro-Kennzeichen im Verhältnis 520 × 110 mm. Alle Maße in cqw der
+     Hülle: Rand, Euro-Feld, Plakettenplatz und Schrift bleiben in jeder Größe im
+     selben Verhältnis. Anders als .schild (Logo-Stil) ist das hier die sachliche
+     Vorschau eines Wunschkennzeichens: schwarzer Rand, EU-Blau, schwarze Schrift. */
+  .kz-huelle { display: block; width: 100%; container-type: inline-size; }
+  .kz {
+    display: grid;
+    grid-template-columns: 8.4cqw minmax(0, 1fr);
+    aspect-ratio: 520 / 110;
+    border: max(2px, 1.1cqw) solid var(--color-punkt);
+    border-radius: 2.5cqw;
+    background: #fff;
+    overflow: hidden;
+    user-select: none;
+  }
+  .kz-eu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.3cqw 0 1.5cqw;
+    background: #003399;
+  }
+  .kz-eu svg { width: 6.2cqw; height: 6.2cqw; }
+  .kz-eu-d {
+    color: #fff;
+    font-family: var(--font-display);
+    font-variation-settings: "wdth" 100;
+    font-size: 5.6cqw;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .kz-feld {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    padding: 0 1.6cqw;
+    color: var(--color-punkt);
+    font-family: var(--font-display);
+    font-variation-settings: "wdth" 62;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.012em;
+    white-space: nowrap;
+  }
+  .kz-plaketten {
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.1cqw;
+    width: 5.6cqw;
+    margin: 0 1.3cqw;
+  }
+  .kz-plakette {
+    width: 5.6cqw;
+    aspect-ratio: 1;
+    border: max(1px, 0.32cqw) solid var(--color-ink-300);
+    border-radius: 50%;
+    background: var(--color-canvas);
+  }
+  .kz-plakette-klein { width: 4.4cqw; }
+  .kz-nummer { display: inline-flex; align-items: center; }
+  .kz-luecke { flex: none; width: 3.2cqw; }
+  .kz-offen { color: var(--color-ink-300); }
+  .kz-wechsel { animation: schildwechsel 0.24s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
+
+  /* ── Kennzeichenassistent (components/kennzeichen/KennzeichenAssistent.tsx) ── */
+  /* Auswahlknopf: Stil, Suchoption, schnelle Antwort. Gewählt = Navy. */
+  .kz-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4375rem;
+    min-height: 2.75rem;
+    padding: 0.4375rem 0.9375rem;
+    border: 1.5px solid var(--color-ink-300);
+    border-radius: 999px;
+    background: #fff;
+    color: var(--color-navy);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1.2;
+    cursor: pointer;
+    transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+  }
+  .kz-chip:hover { border-color: var(--color-navy); }
+  .kz-chip[aria-pressed="true"],
+  .kz-chip[aria-checked="true"] { border-color: var(--color-navy); background: var(--color-navy); color: #fff; }
+  .kz-chip[disabled] { cursor: not-allowed; opacity: 0.55; }
+  .kz-chip-ki { border-color: var(--color-brand-600); color: var(--color-brand-700); }
+  .kz-chip-ki:hover { border-color: var(--color-brand-700); background: var(--color-canvas); }
+
+  /* Gespräch: Assistent links auf heller Fläche, Kunde rechts in Navy. */
+  .kz-nachricht {
+    max-width: 34em;
+    padding: 0.6875rem 0.9375rem;
+    border-radius: 1rem 1rem 1rem 0.3125rem;
+    background: var(--color-canvas);
+    font-size: 0.96875rem;
+    line-height: 1.5;
+  }
+  .kz-nachricht-kunde {
+    margin-left: auto;
+    border-radius: 1rem 1rem 0.3125rem 1rem;
+    background: var(--color-navy);
+    color: #fff;
+  }
+
+  /* Karte eines Vorschlags: Linie statt Schatten, gewählt mit blauem Rand. */
+  .kz-karte {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 1.5px solid var(--color-line);
+    border-radius: var(--radius-3xl);
+    background: #fff;
+    transition: border-color 0.15s ease;
+  }
+  .kz-karte[data-gewaehlt="true"] { border-color: var(--color-brand-600); box-shadow: inset 0 0 0 1.5px var(--color-brand-600); }
+  .kz-karte-neu { animation: msgin 0.3s cubic-bezier(0.21, 0.65, 0.36, 1) both; }
+
+  /* Zustand eines Vorschlags. Farbe allein trägt nie die Aussage – der Text steht immer dabei. */
+  .kz-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4375rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--color-ink-600);
+  }
+  .kz-status::before {
+    content: "";
+    flex: none;
+    width: 0.5625rem;
+    height: 0.5625rem;
+    border: 2px solid var(--color-ink-400);
+    border-radius: 50%;
+  }
+  .kz-status[data-status="pruefung_erforderlich"] { color: var(--color-hinweis-900); }
+  .kz-status[data-status="pruefung_erforderlich"]::before { border-color: var(--color-hinweis-300); background: var(--color-hinweis-300); }
+  .kz-status[data-status="verfuegbar"],
+  .kz-status[data-status="reserviert"] { color: var(--color-wa-ink); }
+  .kz-status[data-status="verfuegbar"]::before,
+  .kz-status[data-status="reserviert"]::before { border-color: var(--color-wa-ink); background: var(--color-wa-ink); }
+  .kz-status[data-status="nicht_verfuegbar"] { color: var(--color-danger); }
+  .kz-status[data-status="nicht_verfuegbar"]::before { border-color: var(--color-danger); background: var(--color-danger); }
+
   /* Schrittnummer als kleines Kennzeichen „D | 01“ (nur für echte Reihenfolgen) */
   .schritt-nr {
     display: inline-flex;

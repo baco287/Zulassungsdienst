@@ -119,6 +119,14 @@ jobs:
           ANALYTICS_PASSWORD: ${{ secrets.ANALYTICS_PASSWORD }}
         run: node scripts/analytics-zugang.mjs out/api/analytics-zugang.php
 
+      # API-Schlüssel für die KI-Ideen des Kennzeichenassistenten (api/kennzeichen-ki.php).
+      # Ohne Secret läuft der Assistent weiter – nur mit dem Generator im Browser, ohne KI.
+      - name: KI-Zugang für den Kennzeichenassistenten ablegen
+        if: env.HAS_FTP != ''
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/ki-zugang.mjs out/api/ki-zugang.php
+
       # Weiterleitungen der alten Domain müssen zu den Seiten im Build passen.
       - name: Weiterleitungsregeln prüfen
         if: env.HAS_FTP != ''
