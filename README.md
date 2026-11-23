@@ -111,6 +111,21 @@ Neu importieren: `npm run import:zulassungsstellen -- docs/recherche/*.json`.
 Ausnahmen (widersprüchliche oder unbelegte Angaben) stehen im Importskript.
 Kennzeichenseiten entstehen automatisch aus den Kürzeln der veröffentlichten Stellen.
 
+## KI-Kennzeichenassistent
+
+Wunschkennzeichen-Generator unter `/wunschkennzeichen-generator/`: Bezirk wählen, Wünsche nennen,
+Vorschläge als Kennzeichen sehen, auswählen und in den Auftrag mitnehmen. Generator und Regelprüfung
+laufen im Browser; KI-Ideen kommen über `public/api/kennzeichen-ki.php` (Claude API, mit Budget und
+Aus-Schalter). Aufbau, Einrichtung, Regelpflege und offene Punkte: `docs/KENNZEICHEN-ASSISTENT.md`.
+
+| Befehl | Zweck |
+|---|---|
+| `npm run test:kennzeichen` | Regeln, Generator, Sprachverständnis, Gleichlauf Browser/Server |
+| `bash scripts/test-kennzeichen-api.sh` | Server-Endpunkte gegen eine API-Attrappe (nach `npm run build`) |
+
+Regeln stehen in `config/kennzeichen-regeln.json` (mit Quelle je Regel), Limits und der Schalter
+„KI pausieren“ im Dashboard unter `/analytics/kennzeichen.php`.
+
 ## Domainumzug (November 2026)
 
 Früher „DeutscheZulassung“ unter deutschezulassung.de. Ablauf, Weiterleitungen,

@@ -16,6 +16,9 @@ mail-zugang.php
 # Zugang zum Analytics-Dashboard, vom Deploy erzeugt – nie einchecken
 public/api/analytics-zugang.php
 analytics-zugang.php
+# API-Schlüssel für die KI-Ideen des Kennzeichenassistenten, vom Deploy erzeugt – nie einchecken
+public/api/ki-zugang.php
+ki-zugang.php
 # Analyse-Datenbank bei lokalen Tests
 analytics-daten/
 # SEO-Autopilot: Prüfdaten (Befunde, Berichte, Search-Console-Zahlen, Notizen).

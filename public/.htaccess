@@ -28,6 +28,13 @@ AddCharset utf-8 .txt
   Require all denied
 </FilesMatch>
 
+# ── Kennzeichenassistent: KI-Zugang und Bibliotheken nur per include, nie direkt abrufbar ──
+# (KI-Ideen: api/kennzeichen-ki.php · Verfügbarkeit: api/kennzeichen-verfuegbarkeit.php –
+#  siehe docs/KENNZEICHEN-ASSISTENT.md)
+<FilesMatch "^(ki-zugang|kennzeichen-lib|kennzeichen-anbieter)\.php$">
+  Require all denied
+</FilesMatch>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
 

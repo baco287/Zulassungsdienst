@@ -1,0 +1,432 @@
+{
+  "stand": "2026-11-22",
+  "pflege": "Regelwerk des Kennzeichenassistenten. Jede Regel trägt Geltungsbereich und Quelle. Als bundesweit gilt nur, was in der Fahrzeug-Zulassungsverordnung (FZV) steht oder von allen Ländern umgesetzt wird. Alles andere ist eine regionale Sperre mit Bundesland oder Kürzel und amtlicher Quelle (Ministerium, Landtag, Behördenseite). Was nur aus der Presse bekannt ist, steht nicht unter 'sperren', sondern höchstens in der Vorsichtsliste – das ist unsere eigene Zurückhaltung beim Vorschlagen, kein behauptetes Verbot. Nach jeder Änderung: npm run test:kennzeichen. Recherchestand und offene Punkte: docs/KENNZEICHEN-ASSISTENT.md.",
+  "format": {
+    "buchstabenMin": 1,
+    "buchstabenMax": 2,
+    "ziffernMin": 1,
+    "ziffernMax": 4,
+    "maxStellen": 8,
+    "quelle": "https://www.gesetze-im-internet.de/fzv_2023/anlage_1.html",
+    "quelleLaenge": "https://www.gesetze-im-internet.de/fzv_2023/anlage_4.html"
+  },
+  "zusatz": {
+    "E": {
+      "name": "E-Kennzeichen",
+      "maxStellenMitZusatz": 8,
+      "text": "Beim E-Kennzeichen sind vor dem E höchstens sieben Stellen möglich (Kürzel, Buchstaben und Ziffern zusammen).",
+      "quelle": "https://www.gesetze-im-internet.de/fzv_2023/anlage_4.html"
+    },
+    "H": {
+      "name": "H-Kennzeichen",
+      "maxStellenMitZusatz": 8,
+      "text": "Beim H-Kennzeichen sind vor dem H höchstens sieben Stellen möglich (Kürzel, Buchstaben und Ziffern zusammen).",
+      "quelle": "https://www.gesetze-im-internet.de/fzv_2023/anlage_4.html"
+    }
+  },
+  "sperren": [
+    {
+      "id": "bund-ns",
+      "geltung": "bundesweit",
+      "bundeslaender": [],
+      "kuerzel": [],
+      "buchstaben": [
+        "HJ",
+        "KZ",
+        "NS",
+        "SA",
+        "SS"
+      ],
+      "ziffern": [],
+      "paare": [],
+      "kombinationen": [],
+      "muster": [],
+      "text": "Die Buchstabenpaare HJ, KZ, NS, SA und SS werden wegen ihres Bezugs zum Nationalsozialismus nicht zugeteilt. Das geht auf eine Empfehlung des Bundes zurück, die alle Länder umgesetzt haben.",
+      "quelle": "https://dserver.bundestag.de/btd/18/006/1800685.pdf"
+    },
+    {
+      "id": "bw-land",
+      "geltung": "regional",
+      "bundeslaender": [
+        "Baden-Württemberg"
+      ],
+      "kuerzel": [],
+      "buchstaben": [],
+      "ziffern": [
+        "1488"
+      ],
+      "paare": [
+        "HH 18",
+        "AH 18",
+        "HH 88",
+        "AH 88"
+      ],
+      "kombinationen": [],
+      "muster": [],
+      "text": "In Baden-Württemberg wird diese Kombination nicht zugeteilt (Vorgabe des Verkehrsministeriums gegen NS-Symbolik).",
+      "quelle": "https://vm.baden-wuerttemberg.de/de/service/presse/pressemitteilung/pid/verkehrsbehoerden-gehen-gegen-ns-symbolik-vor"
+    },
+    {
+      "id": "stuttgart",
+      "geltung": "regional",
+      "bundeslaender": [],
+      "kuerzel": [
+        "S"
+      ],
+      "buchstaben": [
+        "A",
+        "D",
+        "S",
+        "ED",
+        "SD"
+      ],
+      "ziffern": [],
+      "paare": [],
+      "kombinationen": [],
+      "muster": [
+        "^R[A-Z] [0-9]{4}$"
+      ],
+      "text": "Die Zulassungsbehörde Stuttgart vergibt diese Kombination nicht als Wunschkennzeichen.",
+      "quelle": "https://www.stuttgart.de/organigramm/leistungen/kraftfahrzeugkennzeichen-wunschkennzeichen-reservieren.php"
+    },
+    {
+      "id": "berlin-serien",
+      "geltung": "regional",
+      "bundeslaender": [],
+      "kuerzel": [
+        "B"
+      ],
+      "buchstaben": [
+        "SD",
+        "IS"
+      ],
+      "ziffern": [],
+      "paare": [],
+      "kombinationen": [],
+      "muster": [],
+      "text": "Berlin vergibt diese Buchstabenserie nicht.",
+      "quelle": "https://service.berlin.de/dienstleistung/121484/"
+    },
+    {
+      "id": "berlin-2020",
+      "geltung": "regional",
+      "bundeslaender": [],
+      "kuerzel": [
+        "B"
+      ],
+      "buchstaben": [],
+      "ziffern": [],
+      "paare": [
+        "HH 18",
+        "HH 28",
+        "HH 8818",
+        "HH 1888",
+        "HH 1828",
+        "HH 1933",
+        "SH 18",
+        "SH 28",
+        "SH 8818",
+        "SH 1888"
+      ],
+      "kombinationen": [],
+      "muster": [],
+      "text": "Berlin hat diese Kombination seit 2020 gesperrt.",
+      "quelle": "https://www.berlin.de/aktuelles/7381496-958090-senat-gesperrte-autokennzeichen-in-berli.html"
+    },
+    {
+      "id": "brandenburg",
+      "geltung": "regional",
+      "bundeslaender": [
+        "Brandenburg"
+      ],
+      "kuerzel": [],
+      "buchstaben": [],
+      "ziffern": [
+        "8888",
+        "1888",
+        "8818",
+        "888",
+        "188"
+      ],
+      "paare": [
+        "AH 18",
+        "HH 18"
+      ],
+      "kombinationen": [],
+      "muster": [
+        "88$"
+      ],
+      "text": "In Brandenburg wird diese Kombination nach Erlassen des Landes nicht zugeteilt.",
+      "quelle": "https://gruene-fraktion-brandenburg.de/uploads/documents/Kleine_Anfragen/5_Wahlperiode/771_Kl_A_Antw_Rechtsextreme_KFZ_Kennzeichen_AV.pdf",
+      "standQuelle": "2010"
+    },
+    {
+      "id": "hessen",
+      "geltung": "regional",
+      "bundeslaender": [
+        "Hessen"
+      ],
+      "kuerzel": [],
+      "buchstaben": [
+        "SD"
+      ],
+      "ziffern": [],
+      "paare": [],
+      "kombinationen": [],
+      "muster": [],
+      "text": "In Hessen wird das Buchstabenpaar SD nicht zugeteilt.",
+      "quelle": "https://starweb.hessen.de/cache/DRS/20/1/07961.pdf"
+    },
+    {
+      "id": "kassel",
+      "geltung": "regional",
+      "bundeslaender": [],
+      "kuerzel": [
+        "KS"
+      ],
+      "buchstaben": [],
+      "ziffern": [],
+      "paare": [
+        "HH 88",
+        "HH 1933",
+        "AH 204",
+        "AH 2004",
+        "AH 1889"
+      ],
+      "kombinationen": [],
+      "muster": [],
+      "text": "Kassel vergibt diese Kombination nicht mehr.",
+      "quelle": "https://www.kassel.de/service/media/themenseiten/kritische-kennzeichenkombinationen-bei-der-kfz-zulassung.php"
+    },
+    {
+      "id": "rheinland-pfalz",
+      "geltung": "regional",
+      "bundeslaender": [
+        "Rheinland-Pfalz"
+      ],
+      "kuerzel": [],
+      "buchstaben": [],
+      "ziffern": [],
+      "paare": [
+        "HH 88",
+        "HH 18"
+      ],
+      "kombinationen": [],
+      "muster": [],
+      "text": "In Rheinland-Pfalz wird diese Kombination nicht zugeteilt.",
+      "quelle": "https://dokumente.landtag.rlp.de/landtag/drucksachen/14055-17.pdf"
+    },
+    {
+      "id": "niedersachsen",
+      "geltung": "regional",
+      "bundeslaender": [
+        "Niedersachsen"
+      ],
+      "kuerzel": [],
+      "buchstaben": [],
+      "ziffern": [],
+      "paare": [
+        "AH 18",
+        "AH 88",
+        "HH 18",
+        "HH 88",
+        "HH 1933"
+      ],
+      "kombinationen": [],
+      "muster": [],
+      "text": "In Niedersachsen wird diese Kombination nach einem Erlass des Landes nicht zugeteilt.",
+      "quelle": "https://starweb.hessen.de/cache/DRS/20/1/07961.pdf"
+    },
+    {
+      "id": "koeln",
+      "geltung": "regional",
+      "bundeslaender": [],
+      "kuerzel": [
+        "K"
+      ],
+      "buchstaben": [
+        "ZZ",
+        "Z"
+      ],
+      "ziffern": [],
+      "paare": [],
+      "kombinationen": [],
+      "muster": [],
+      "text": "Die Zulassungsbehörde Köln vergibt diese Buchstaben nicht.",
+      "quelle": "https://www.stadt-koeln.de/service/produkte/wunschkennzeichen"
+    },
+    {
+      "id": "heide",
+      "geltung": "regional",
+      "bundeslaender": [],
+      "kuerzel": [
+        "HEI"
+      ],
+      "buchstaben": [
+        "L"
+      ],
+      "ziffern": [],
+      "paare": [],
+      "kombinationen": [],
+      "muster": [],
+      "text": "Die Zulassungsbehörde in Heide vergibt den Buchstaben L nach dem Kürzel HEI nicht.",
+      "quelle": "https://www.luebeck.de/de/rathaus/politik/pil/bi/wicket/resource/org.apache.wicket.Application/doc1660888.pdf"
+    }
+  ],
+  "vorsicht": {
+    "buchstaben": [
+      "SD"
+    ],
+    "ziffern": [
+      "88",
+      "888",
+      "8888",
+      "1888",
+      "8818",
+      "1488",
+      "1828"
+    ],
+    "paare": [
+      "AH 18",
+      "AH 88",
+      "HH 18",
+      "HH 88",
+      "HH 28",
+      "HH 1933",
+      "AH 1933",
+      "AH 1889",
+      "AH 204",
+      "AH 2004",
+      "SH 18",
+      "SH 88"
+    ],
+    "woerter": [
+      "SS",
+      "SA",
+      "KZ",
+      "NS",
+      "HJ",
+      "SD",
+      "NPD",
+      "NSU",
+      "HEIL",
+      "IZAN",
+      "MORD",
+      "SUFF",
+      "KILL",
+      "WAFFE",
+      "BULLE",
+      "HASS",
+      "STASI",
+      "AMOK",
+      "MONGO",
+      "KKK",
+      "ANAL",
+      "ANUS",
+      "HIV",
+      "AIDS",
+      "MILF",
+      "KAKA",
+      "KACK",
+      "MIST",
+      "PEST",
+      "SEX",
+      "SEXY",
+      "WIX",
+      "WIXX",
+      "FICK",
+      "FUCK",
+      "KOT",
+      "TOT",
+      "TOD",
+      "HOMO",
+      "DDR",
+      "RAF",
+      "NAZI",
+      "HITLER",
+      "GAY",
+      "PISS",
+      "PUFF",
+      "NUTTE",
+      "HURE",
+      "DOOF",
+      "DUMM",
+      "DEPP",
+      "IDIOT",
+      "ARSCH",
+      "TITTE",
+      "PENIS",
+      "PO",
+      "WC",
+      "KILLER",
+      "GIFT",
+      "BOMBE",
+      "TERROR",
+      "JUDE",
+      "ISIS",
+      "ISS",
+      "SIEG",
+      "FUEHRER",
+      "REICH",
+      "HAKEN",
+      "DEAD",
+      "DIE",
+      "GUN",
+      "FIST",
+      "SAU",
+      "SCHWEIN",
+      "NIGGA",
+      "NEGER",
+      "ZIGEUNER",
+      "HOHO"
+    ],
+    "text": "Diese Kombination schlagen wir nicht von uns aus vor, weil Zulassungsbehörden sie häufig ablehnen. Verboten ist sie damit nicht überall – die Entscheidung trifft die Behörde."
+  },
+  "kurz": {
+    "bisStellen": 3,
+    "kurztext": "Sehr kurz: Viele Behörden geben solche Kombinationen nur unter Bedingungen heraus.",
+    "text": "Sehr kurze Kombinationen (zwei oder drei Zeichen nach dem Kürzel) geben viele Behörden nur heraus, wenn am Fahrzeug kein normales Schild passt – und oft nicht über die Online-Reservierung. Bundesweit vorgeschrieben ist das nicht; es entscheidet die Zulassungsbehörde.",
+    "quelle": "https://www.stadt-koeln.de/service/produkte/wunschkennzeichen",
+    "weitereQuellen": [
+      "https://service.berlin.de/dienstleistung/121484/",
+      "https://www.landkreis-muenchen.de/buergerservice/dienstleistungen-a-z/dienstleistung/kennzeichen-online-reservieren/",
+      "https://service.duisburg.de/suche/-/vr-bis-detail/dienstleistung/75221/show"
+    ]
+  },
+  "reservierung": {
+    "text": "Wie lange eine Reservierung gilt, legt jede Zulassungsbehörde selbst fest. Die amtlichen Gebühren für Reservierung und Zuteilung sind bundesweit gleich.",
+    "gebuehrQuelle": "https://www.gesetze-im-internet.de/stgebo_2011/anlage.html",
+    "dauer": [
+      {
+        "behoerde": "Hamburg",
+        "dauer": "14 Tage",
+        "quelle": "https://www.hamburg.de/service/info/111146022/"
+      },
+      {
+        "behoerde": "Hannover (Stadt und Region)",
+        "dauer": "28 Tage",
+        "quelle": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/KFZ-Zulassung-in-Stadt-und-Region/Wunschkennzeichen%C2%ADreservierung"
+      },
+      {
+        "behoerde": "Landkreis München",
+        "dauer": "60 Tage",
+        "quelle": "https://www.landkreis-muenchen.de/buergerservice/dienstleistungen-a-z/dienstleistung/kennzeichen-online-reservieren/"
+      },
+      {
+        "behoerde": "Berlin",
+        "dauer": "90 Tage",
+        "quelle": "https://service.berlin.de/dienstleistung/121484/"
+      },
+      {
+        "behoerde": "Stuttgart",
+        "dauer": "180 Tage",
+        "quelle": "https://www.stuttgart.de/organigramm/leistungen/kraftfahrzeugkennzeichen-wunschkennzeichen-reservieren.php"
+      },
+      {
+        "behoerde": "Köln",
+        "dauer": "183 Tage",
+        "quelle": "https://www.stadt-koeln.de/service/produkte/wunschkennzeichen"
+      }
+    ]
+  }
+}

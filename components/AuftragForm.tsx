@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef, useState, type KeyboardEvent, type ReactNode } from "react";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
-import { AlertCircle, ChevronDown, Copy, Loader2, Lock, Mail } from "lucide-react";
+import { AlertCircle, ChevronDown, CircleCheck, Copy, FileText, Loader2, Lock, Mail, Search } from "lucide-react";
 import { sortedServices, getService } from "@/lib/services";
 import {
   calculateOrderPrice,
@@ -25,8 +25,11 @@ import {
 import { istHauptleistung, vorgaenge } from "@/lib/vorgaenge";
 import type { OrderRequest } from "@/lib/types";
 import { track } from "@/lib/analytics";
+import { leseUebergabe, schreibeUebergabe, uebergabeZeile, type Uebergabe } from "@/lib/kennzeichen/merkliste";
 import DocumentUpload from "./DocumentUpload";
+import KennzeichenSchild from "./kennzeichen/KennzeichenSchild";
 import Haken from "./ui/Haken";
+import SchildErledigt from "./ui/SchildErledigt";
 import PaymentMethods from "./checkout/PaymentMethods";
 import WhatsAppIcon from "./WhatsAppIcon";
 
@@ -42,6 +45,12 @@ import WhatsAppIcon from "./WhatsAppIcon";
  * Zusatzleistungen (Kennzeichenschilder, Wunschkennzeichen) werden als Zeilen
  * an die Anmerkung angehängt – so kommen sie ohne Änderung am Server im
  * Posteingang an. Preise stammen ausschließlich aus config/preise.json.
+ *
+ * Kommt jemand aus dem Kennzeichenassistenten (/wunschkennzeichen-generator/), bringt
+ * er sein gewähltes Kennzeichen mit (lib/kennzeichen/merkliste.ts, Übergabe). Es steht
+ * dann oben im Formular und geht als Zeile in die Anmerkung. Der kostenpflichtige
+ * Wunschkennzeichen-Service ist nur dann schon angehakt, wenn er im Assistenten
+ * ausdrücklich gewählt wurde – sonst bleibt das Kästchen leer.
  *
  * Schlägt die Zustellung fehl, erscheinen die Direktkanäle (vorbefülltes
  * WhatsApp bzw. mailto:), damit niemand im Nichts landet.
@@ -157,8 +166,8 @@ const serviceLabels: Record<string, string> = Object.fromEntries(
   sortedServices.map((s) => [s.slug, s.shortName ?? s.name])
 );
 
-/** Hängt gewählte Zusatzleistungen als Klartext an die Anmerkung an. */
-function mitExtras(v: OrderRequest, extras: Extras): OrderRequest {
+/** Hängt gewählte Zusatzleistungen und das Kennzeichen aus dem Assistenten als Klartext an die Anmerkung an. */
+function mitExtras(v: OrderRequest, extras: Extras, wunsch: Uebergabe | null = null): OrderRequest {
   const cfg = leistungsPreis(v.serviceSlug);
   const zeilen: string[] = [];
   if (cfg?.schilderMoeglich) {
@@ -171,6 +180,8 @@ function mitExtras(v: OrderRequest, extras: Extras): OrderRequest {
   if (cfg?.wunschkennzeichenMoeglich && extras.wunschkennzeichen) {
     zeilen.push(`Wunschkennzeichen-Service: ja (${P.wunschkennzeichen})`);
   }
+  // Nur bei Leistungen mit neuem Kennzeichen – in einer Abmeldung hätte die Zeile nichts zu suchen.
+  if (wunsch && cfg?.wunschkennzeichenMoeglich) zeilen.push(uebergabeZeile(wunsch));
   if (zeilen.length === 0) return v;
   return { ...v, message: [v.message.trim(), ...zeilen].filter(Boolean).join("\n") };
 }
@@ -202,6 +213,8 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
   const [direction, setDirection] = useState(0);
   const [values, setValues] = useState<OrderRequest>(initial);
   const [extras, setExtras] = useState<Extras>({ schilder: false, wunschkennzeichen: false });
+  /** Gewähltes Kennzeichen aus dem Kennzeichenassistenten, falls jemand von dort kommt. */
+  const [wunsch, setWunsch] = useState<Uebergabe | null>(null);
   const [files, setFiles] = useState<File[]>([]);
   const [errors, setErrors] = useState<Errors>({});
   const [sending, setSending] = useState(false);
@@ -278,6 +291,16 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
       markStarted(deeplink);
       track("service_selected", { service: deeplink, position: "deeplink" });
     }
+    // Kennzeichen aus dem Assistenten übernehmen. Den Service nur anhaken, wenn er dort
+    // ausdrücklich gewählt wurde und die Leistung ihn anbietet.
+    const uebergabe = leseUebergabe();
+    if (uebergabe) {
+      setWunsch(uebergabe);
+      const leistung = deeplink ?? entwurf?.values.serviceSlug ?? "";
+      if (uebergabe.serviceGewaehlt && leistungsPreis(leistung)?.wunschkennzeichenMoeglich) {
+        setExtras((x) => ({ ...x, wunschkennzeichen: true }));
+      }
+    }
     setGeladen(true);
   }, []);
 
@@ -305,7 +328,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
         : null,
     [cfg, values.serviceSlug, extras]
   );
-  const sendValues = useMemo(() => mitExtras(values, extras), [values, extras]);
+  const sendValues = useMemo(() => mitExtras(values, extras, wunsch), [values, extras, wunsch]);
   const messageText = useMemo(
     () => buildMessage(sendValues, result?.reference),
     [sendValues, result?.reference]
@@ -316,7 +339,11 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
       markStarted(value);
       track("service_selected", { service: value, position: "formular" });
       // Zusatzleistungen gehören zur gewählten Leistung – beim Wechsel zurücksetzen.
-      setExtras({ schilder: false, wunschkennzeichen: false });
+      // Der im Kennzeichenassistenten gewählte Service bleibt, wenn die neue Leistung ihn anbietet.
+      setExtras({
+        schilder: false,
+        wunschkennzeichen: Boolean(wunsch?.serviceGewaehlt && leistungsPreis(value)?.wunschkennzeichenMoeglich),
+      });
     }
     setValues((v) => ({ ...v, [key]: value }));
     setErrors((e) => ({ ...e, [key]: undefined, contact: undefined }));
@@ -412,6 +439,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
     }
     if (outcome.ok) {
       schreibeEntwurf(null);
+      schreibeUebergabe(null);
       stepChanged.current = true;
       tracking.current.submitted = true;
       track("order_submitted", {
@@ -480,7 +508,17 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                   <input
                     type="checkbox"
                     checked={extras.wunschkennzeichen}
-                    onChange={(e) => setExtras((x) => ({ ...x, wunschkennzeichen: e.target.checked }))}
+                    onChange={(e) => {
+                      const an = e.target.checked;
+                      setExtras((x) => ({ ...x, wunschkennzeichen: an }));
+                      // Die Entscheidung hier gilt: Sonst würde Neuladen oder ein Wechsel der Leistung
+                      // den im Assistenten gewählten Service wieder anhaken.
+                      if (wunsch && wunsch.serviceGewaehlt !== an) {
+                        const neu = { ...wunsch, serviceGewaehlt: an };
+                        setWunsch(neu);
+                        schreibeUebergabe(neu);
+                      }
+                    }}
                     className="mt-0.5 h-5 w-5 shrink-0 cursor-pointer accent-navy"
                   />
                   <span className="min-w-0 flex-1">
@@ -489,7 +527,10 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                       <span className="text-[15px] font-bold tabular-nums text-navy">+ {P.wunschkennzeichen}</span>
                     </span>
                     <span className="mt-0.5 block text-sm leading-snug text-ink-600">
-                      Prüfung, Reservierung und Zuteilung – die amtliche Gebühr ist enthalten. Ihre Wunschkombination nennen Sie uns unter „Anmerkungen“ oder im Chat.
+                      Prüfung, Reservierung und Zuteilung – die amtliche Gebühr ist enthalten.{" "}
+                      {wunsch
+                        ? `Ihre Wunschkombination ${wunsch.kuerzel}-${wunsch.buchstaben} ${wunsch.ziffern}${wunsch.zusatz} haben wir aus dem Kennzeichenassistenten übernommen.`
+                        : "Ihre Wunschkombination nennen Sie uns unter „Anmerkungen“ oder im Chat."}
                     </span>
                   </span>
                 </label>
@@ -571,46 +612,55 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
       <motion.div
         {...(reduced ? {} : { initial: { opacity: 0, y: 12 }, animate: { opacity: 1, y: 0 } })}
         ref={stepContainerRef}
-        className="tafel tafel-breit max-w-3xl px-5 py-7 sm:px-9 sm:py-10"
+        className="mx-auto max-w-[60rem] rounded-[1.25rem] border-2 border-navy bg-white px-4 pb-8 pt-6 text-center shadow-[0_30px_60px_-40px_rgb(4_24_63_/_0.45)] sm:px-12 sm:pb-11 sm:pt-7"
       >
-        <Haken className="h-[1.375rem] w-[1.8125rem]" />
-        <h2 tabIndex={-1} className="mt-4 text-2xl font-bold text-navy focus:outline-none focus-visible:outline-none sm:text-3xl">
+        <SchildErledigt className="mx-auto h-auto w-[10.5rem] sm:w-[13rem]" />
+        <h2
+          tabIndex={-1}
+          className="h-abschnitt mt-4 text-navy focus:outline-none focus-visible:outline-none sm:text-[2.75rem]"
+        >
           Ihre Anfrage ist eingegangen
         </h2>
-        <p className="mt-3 max-w-[38em] leading-relaxed text-ink-700">
-          Wir haben Ihre Anfrage erhalten und melden uns innerhalb unserer
-          Servicezeiten ({site.contact.hours}) mit der verbindlichen
-          Festpreis-Bestätigung. Erst danach starten wir.
+        <p className="mx-auto mt-4 max-w-[50rem] text-[1.0625rem] leading-relaxed text-ink-600 sm:text-[1.1875rem]">
+          Wir haben Ihre Anfrage erhalten und melden uns innerhalb unserer Servicezeiten{" "}
+          <span className="whitespace-nowrap">({site.contact.hours})</span> mit der verbindlichen Festpreis-Bestätigung. Erst danach starten wir
+          mit der Bearbeitung.
         </p>
 
-        <p className="mt-6 inline-flex flex-col rounded-lg border border-line bg-canvas px-5 py-3">
-          <span className="text-sm font-medium text-ink-600">Ihre Referenz</span>
-          <span className="font-display text-xl font-bold tracking-wide text-navy" translate="no">{result.reference}</span>
-        </p>
-
-        {files.length > 0 ? (
-          <p className="mt-4 text-sm font-medium text-accent-700">
+        <div className="mt-7 inline-flex items-center gap-3 rounded-xl border border-line bg-canvas px-4 py-3.5 text-left sm:gap-5 sm:px-8 sm:py-4">
+          <FileText className="h-8 w-8 shrink-0 text-brand-600 sm:h-10 sm:w-10" strokeWidth={1.6} aria-hidden />
+          <span className="flex flex-col">
+            <span className="text-[0.9375rem] text-ink-600">Ihre Referenz</span>
+            <span className="whitespace-nowrap font-display text-lg font-bold tracking-wide text-navy sm:text-[1.75rem]" translate="no">
+              {result.reference}
+            </span>
+          </span>
+        </div>
+        {files.length > 0 && (
+          <p className="mt-3 text-[0.9375rem] font-medium text-ink-600">
             {files.length} {files.length === 1 ? "Unterlage wurde" : "Unterlagen wurden"} mitgesendet.
-          </p>
-        ) : (
-          <p className="mt-4 text-sm text-ink-600">
-            Ihre Unterlagen können Sie uns direkt im Chat schicken – einfach abfotografieren.
           </p>
         )}
 
-        <ol className="mt-7 max-w-[38em] space-y-3 text-[15px] text-ink-700">
+        <ol className="mx-auto mt-8 max-w-[49.5rem] text-left">
           {[
-            "Wir prüfen Ihre Angaben und senden Ihnen die Festpreis-Bestätigung.",
-            cfg && values.serviceSlug !== "abmeldung"
-              ? "Für die Vollmacht bestätigen Sie einmalig digital Ihre Identität – den Link erhalten Sie von uns."
-              : "Fehlt noch etwas, melden wir uns bei Ihnen.",
-            "Wir reichen den Antrag bei der zuständigen Behörde ein und halten Sie auf dem Laufenden.",
-          ].map((text, i) => (
-            <li key={text} className="flex items-start gap-3">
-              <span className="flex h-6 w-6 shrink-0 items-center justify-center font-display text-lg font-bold text-brand-600" aria-hidden>
-                {i + 1}
+            { Icon: Search, titel: "Wir prüfen Ihre Angaben.", text: "Wir prüfen Ihre Unterlagen und Angaben auf Vollständigkeit." },
+            { Icon: Mail, titel: "Sie erhalten die Festpreis-Bestätigung.", text: "Sie bekommen unsere verbindliche Festpreis-Bestätigung mit allen Details." },
+            { Icon: CircleCheck, titel: "Wir reichen den Antrag ein.", text: "Wir reichen den Antrag bei der zuständigen Behörde ein und halten Sie auf dem Laufenden." },
+          ].map(({ Icon, titel, text }, i, alle) => (
+            <li key={titel} className="flex gap-4 sm:gap-5">
+              <span className="flex flex-col items-center" aria-hidden>
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-wa-50 text-navy sm:h-[3.25rem] sm:w-[3.25rem]">
+                  <Icon className="h-6 w-6" strokeWidth={2} />
+                </span>
+                {i < alle.length - 1 && <span className="my-1 w-0.5 flex-1 rounded-full bg-ink-200" />}
               </span>
-              {text}
+              <span className={`pt-1.5 ${i < alle.length - 1 ? "pb-5" : ""}`}>
+                <span className="block text-[1.0625rem] font-bold text-navy sm:text-lg">
+                  {i + 1}. {titel}
+                </span>
+                <span className="mt-0.5 block text-[0.9375rem] leading-relaxed text-ink-600 sm:text-base">{text}</span>
+              </span>
             </li>
           ))}
         </ol>
@@ -619,14 +669,14 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
           href={followUpWhatsAppLink(result.reference, service?.name)}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-wa btn-lg mt-8 w-full sm:w-auto"
+          className="btn btn-wa btn-lg mt-8 w-full max-w-[30.5rem] gap-2 px-4 text-[0.9375rem] sm:gap-2.5 sm:px-7 sm:text-lg"
         >
-          <WhatsAppIcon className="h-5 w-5" />
+          <WhatsAppIcon className="h-5 w-5 sm:h-6 sm:w-6" />
           Im WhatsApp-Chat fortsetzen
         </a>
-        <p className="mt-3 text-sm text-ink-600">
-          Lieber per E-Mail? Schreiben Sie uns mit Ihrer Referenz an{" "}
-          <a href={`mailto:${site.contact.email}`} className="link">
+        <p className="mt-4 text-[0.9375rem] leading-relaxed text-ink-600 sm:text-base">
+          Oder per E-Mail? Schreiben Sie uns mit Ihrer Referenz an{" "}
+          <a href={`mailto:${site.contact.email}`} className="link whitespace-nowrap">
             {site.contact.email}
           </a>
           .
@@ -638,6 +688,32 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
   return (
     <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_21.5rem] lg:items-start">
       <div className="card p-5 sm:p-8">
+        {wunsch && (!values.serviceSlug || cfg?.wunschkennzeichenMoeglich) && (
+          <div className="mb-7 grid gap-x-5 gap-y-3 rounded-[var(--radius-card)] border border-line bg-canvas p-4 sm:grid-cols-[13.5rem_minmax(0,1fr)] sm:items-center">
+            <KennzeichenSchild kuerzel={wunsch.kuerzel} buchstaben={wunsch.buchstaben} ziffern={wunsch.ziffern} zusatz={wunsch.zusatz} className="max-w-[16rem]" />
+            <div>
+              <p className="text-[15px] font-semibold text-navy">Ihr Wunschkennzeichen aus dem Kennzeichenassistenten</p>
+              <p className="mt-1 text-sm leading-snug text-ink-600">
+                Zulassungsbezirk {wunsch.bezirkName}. Noch nicht reserviert –{" "}
+                {extras.wunschkennzeichen
+                  ? "wir fragen es mit dem Wunschkennzeichen-Service bei der Behörde an."
+                  : cfg?.wunschkennzeichenMoeglich
+                    ? "mit dem Wunschkennzeichen-Service (bei den Zusatzleistungen) fragen wir es bei der Behörde an."
+                    : "wir geben Ihren Wunsch mit dem Auftrag weiter."}
+              </p>
+              <button
+                type="button"
+                className="link mt-1 inline-flex min-h-11 items-center text-sm"
+                onClick={() => {
+                  setWunsch(null);
+                  schreibeUebergabe(null);
+                }}
+              >
+                Kennzeichen entfernen
+              </button>
+            </div>
+          </div>
+        )}
         {/* Fortschrittsanzeige: vier Spalten mit Linie oben, wie der Ablauf auf der Startseite */}
         <ol className="mb-8 grid grid-cols-4 gap-2 sm:gap-4" aria-label="Fortschritt">
           {stepLabels.map((label, i) => {

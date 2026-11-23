@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Calculator, Scale } from "lucide-react";
+import { Calculator, Scale, Sparkles } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTASection from "@/components/CTASection";
 import Reveal from "@/components/Reveal";
@@ -24,6 +24,13 @@ const tools = [
     title: "Behördengang-Rechner",
     text: "Gebühren, Kennzeichen, Fahrtkosten und Ihre Zeit: Was der Schaltertermin wirklich kostet – ehrlich verglichen mit dem Komplettservice.",
   },
+  {
+    href: "/wunschkennzeichen-generator/",
+    icon: Sparkles,
+    title: "Wunschkennzeichen-Generator",
+    text: "Ort eingeben, Initialen, Zahl oder Datum nennen: Der KI-Kennzeichenassistent zeigt passende Kombinationen sofort als Kennzeichen.",
+    cta: "Assistent öffnen",
+  },
 ] as const;
 
 export default function RechnerPage() {
@@ -46,7 +53,7 @@ export default function RechnerPage() {
 
       <section className="py-14">
         <div className="container-page">
-          <div className="grid gap-6 sm:grid-cols-2">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {tools.map((tool, i) => (
               <Reveal key={tool.href} delay={i * 0.06} className="h-full">
                 <Link
@@ -58,7 +65,7 @@ export default function RechnerPage() {
                   </h2>
                   <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-600">{tool.text}</p>
                   <span className="mt-4 flex items-center gap-1.5 text-sm font-semibold text-brand-700">
-                    Rechner öffnen
+                    {"cta" in tool ? tool.cta : "Rechner öffnen"}
                   </span>
                 </Link>
               </Reveal>
