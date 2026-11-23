@@ -1,6 +1,6 @@
 <?php
 /**
- * Erfassung der eigenen Webanalyse (Gegenstück zu POST /vg/track bei Volt-Gas).
+ * Erfassung der eigenen Webanalyse (Empfänger der Ereignisse aus lib/eigeneAnalyse.ts).
  *
  * Nimmt anonyme Ereignisse aus lib/eigeneAnalyse.ts entgegen (sendBeacon oder fetch, JSON)
  * und speichert sie über api/analytics-lib.php. Antwortet immer mit 204 – Analyse darf die
