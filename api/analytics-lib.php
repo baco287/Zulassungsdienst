@@ -330,6 +330,22 @@ function kzp_basic_credentials(): array
     return [null, null];
 }
 
+/**
+ * Anschluss zu einer IP-Adresse: IPv4 unverändert, IPv6 als /64-Netz (so viel bekommt ein
+ * einzelner Anschluss – sonst hätte jede Adresse darin eigene zehn Versuche).
+ */
+function kzp_login_anschluss(string $ip): string
+{
+    $bin = @inet_pton(trim($ip));
+    if (!is_string($bin) || strlen($bin) !== 16) {
+        return trim($ip);
+    }
+    if (str_starts_with($bin, str_repeat("\0", 10) . "\xff\xff")) {
+        return (string) inet_ntop(substr($bin, 12));
+    }
+    return bin2hex(substr($bin, 0, 8)) . '/64';
+}
+
 /** Benutzer und Passwort stimmen (Vergleich in konstanter Zeit). */
 function kzp_login_richtig(array $z, ?string $u, ?string $p): bool
 {
@@ -347,7 +363,7 @@ function kzp_login_richtig(array $z, ?string $u, ?string $p): bool
  */
 function kzp_login_pruefen(array $z, string $ip, ?string $u, ?string $p): int
 {
-    $pfad = sys_get_temp_dir() . '/kzp-analytics-login-' . hash('sha256', $ip) . '.txt';
+    $pfad = sys_get_temp_dir() . '/kzp-analytics-login-' . hash('sha256', kzp_login_anschluss($ip)) . '.txt';
     $mitZugang = $u !== null;
     $fh = $mitZugang ? @fopen($pfad, 'c+') : (is_file($pfad) ? @fopen($pfad, 'r') : false);
     if ($fh !== false && !flock($fh, $mitZugang ? LOCK_EX : LOCK_SH)) {
