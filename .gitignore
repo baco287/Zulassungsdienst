@@ -21,6 +21,10 @@ public/api/ki-zugang.php
 ki-zugang.php
 # Analyse-Datenbank bei lokalen Tests
 analytics-daten/
+# SEO-Autopilot: Prüfdaten (Befunde, Berichte, Search-Console-Zahlen, Notizen).
+# Das Repository ist öffentlich – diese Daten nie einchecken.
+seo-daten/
+seo-autopilot/data/
 
 # typescript
 *.tsbuildinfo

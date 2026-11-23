@@ -2,8 +2,8 @@
 /**
  * Eigene Webanalyse von KFZ-Zulassungsprofis – gemeinsame Bausteine.
  *
- * Nachbau des Analytics-Systems von Volt-Gas (Tarifrechner: js/tracking.js → POST /vg/track →
- * Tabelle analytics → analytics.html) für den PHP-Webspace bei all-inkl:
+ * Nachbau eines bestehenden Analytics-Systems (Tracking-Skript im Browser → Erfassungs-Endpunkt →
+ * Datenbanktabelle → Dashboard) für den PHP-Webspace bei all-inkl:
  *
  *   Browser  lib/eigeneAnalyse.ts         sendet anonyme Ereignisse an /api/track.php
  *   Server   api/track.php                prüft und speichert sie (diese Datei hilft dabei)
@@ -31,7 +31,7 @@ date_default_timezone_set('Europe/Berlin');
 
 /** Erlaubte Ereignisse. Alles andere verwirft track.php stillschweigend. */
 const KZP_EVENTS = [
-    // Grundlage (wie Volt-Gas)
+    // Grundlage (wie im bestehenden System)
     'session_start', 'page_view', 'page_leave', 'js_error', 'contact_click', 'cta_click',
     // Interesse
     'price_box_view', 'tool_used', 'service_selected', 'b2b_inquiry',
@@ -346,43 +346,61 @@ function kzp_login_anschluss(string $ip): string
     return bin2hex(substr($bin, 0, 8)) . '/64';
 }
 
+/** Benutzer und Passwort stimmen (Vergleich in konstanter Zeit). */
+function kzp_login_richtig(array $z, ?string $u, ?string $p): bool
+{
+    return $u !== null && hash_equals($z['user'], $u) && hash_equals($z['pass'], (string) $p);
+}
+
 /**
- * Fehlversuche je Anschluss: höchstens 10 in 15 Minuten. $aenderung +1 reserviert einen Versuch
- * VOR dem Vergleich (so kommen auch gleichzeitige Versuche nicht an der Grenze vorbei), -1 gibt
- * ihn nach einem richtigen Login zurück, 0 liest nur. Lesen und Schreiben unter einer Dateisperre.
- * Derselbe Login schützt auch den KI-Assistenten (public/assistent/intern/Admin.php).
+ * Prüft den Login mit Zähler für Fehlversuche je Anschluss: höchstens 10 in 15 Minuten.
+ * Zähler lesen, Grenze prüfen, Passwort vergleichen und Fehlversuch schreiben geschehen in EINEM
+ * Schritt unter Dateisperre – sonst sähen gleichzeitige Anfragen denselben alten Stand und es würden
+ * mehr als 10 Passwörter geprüft. Richtige Logins zählen nie (das SEO Center lädt parallel), Anfragen
+ * ohne Zugangsdaten auch nicht (sie lesen nur und legen keine Datei an). Lässt sich die Datei nicht
+ * öffnen oder sperren (Temp-Ordner nicht beschreibbar), wird ohne Zählung geprüft wie bisher.
+ * Ergebnis: 200 (angemeldet), 401 (kein oder falscher Login) oder 429 (gesperrt).
  */
-function kzp_login_versuche(string $ip, int $aenderung): int
+function kzp_login_pruefen(array $z, string $ip, ?string $u, ?string $p): int
 {
     $pfad = sys_get_temp_dir() . '/kzp-analytics-login-' . hash('sha256', kzp_login_anschluss($ip)) . '.txt';
-    $jetzt = time();
-    $datei = @fopen($pfad, 'c+');
-    if ($datei === false) {
-        return 0;
+    $mitZugang = $u !== null;
+    $fh = $mitZugang ? @fopen($pfad, 'c+') : (is_file($pfad) ? @fopen($pfad, 'r') : false);
+    if ($fh !== false && !flock($fh, $mitZugang ? LOCK_EX : LOCK_SH)) {
+        fclose($fh);
+        $fh = false;
+    }
+    if ($fh === false) {
+        return kzp_login_richtig($z, $u, $p) ? 200 : 401;
     }
     try {
-        flock($datei, LOCK_EX);
+        if ($mitZugang) {
+            @chmod($pfad, 0600);
+        }
+        $jetzt = time();
         $treffer = [];
-        foreach (explode(',', (string) stream_get_contents($datei)) as $t) {
+        foreach (explode(',', (string) stream_get_contents($fh)) as $t) {
             if ((int) $t > $jetzt - 900) {
                 $treffer[] = (int) $t;
             }
         }
-        if ($aenderung > 0) {
+        if (count($treffer) >= 10) {
+            return 429;
+        }
+        if (kzp_login_richtig($z, $u, $p)) {
+            return 200;
+        }
+        if ($mitZugang) {
             $treffer[] = $jetzt;
-        } elseif ($aenderung < 0 && $treffer !== []) {
-            array_pop($treffer);
+            ftruncate($fh, 0);
+            rewind($fh);
+            fwrite($fh, implode(',', $treffer));
+            fflush($fh);
         }
-        if ($aenderung !== 0) {
-            ftruncate($datei, 0);
-            rewind($datei);
-            fwrite($datei, implode(',', $treffer));
-            fflush($datei);
-        }
-        return count($treffer);
+        return 401;
     } finally {
-        flock($datei, LOCK_UN);
-        fclose($datei);
+        flock($fh, LOCK_UN);
+        fclose($fh);
     }
 }
 
@@ -399,20 +417,16 @@ function kzp_require_auth(): void
             . "Bitte die GitHub-Secrets ANALYTICS_USER und ANALYTICS_PASSWORD (mind. 10 Zeichen) anlegen und neu deployen.";
         exit;
     }
-    $ip = (string) ($_SERVER['REMOTE_ADDR'] ?? 'unbekannt');
     [$u, $p] = kzp_basic_credentials();
-    // Mit Anmeldedaten: erst den Versuch zählen, dann vergleichen. Ist die Grenze erreicht, wird
-    // gar nicht mehr verglichen.
-    $stand = $u === null ? kzp_login_versuche($ip, 0) : kzp_login_versuche($ip, 1) - 1;
-    if ($stand >= 10) {
+    $ergebnis = kzp_login_pruefen($z, (string) ($_SERVER['REMOTE_ADDR'] ?? 'unbekannt'), $u, $p);
+    if ($ergebnis === 200) {
+        return;
+    }
+    if ($ergebnis === 429) {
         http_response_code(429);
         header('Content-Type: text/plain; charset=utf-8');
         echo 'Zu viele Fehlversuche. Bitte in 15 Minuten erneut versuchen.';
         exit;
-    }
-    if ($u !== null && hash_equals($z['user'], $u) && hash_equals($z['pass'], (string) $p)) {
-        kzp_login_versuche($ip, -1);
-        return;
     }
     header('WWW-Authenticate: Basic realm="KFZ-Zulassungsprofis Analytics", charset="UTF-8"');
     http_response_code(401);

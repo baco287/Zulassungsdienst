@@ -1,0 +1,278 @@
+name: SEO-Autopilot
+
+# Prüft die Live-Website kfz-zulassungsprofis.de (nur lesend) und legt das Ergebnis
+# für das SEO Center unter /seo/ ab. Ändert nichts an der Website und deployt nichts.
+# Beschreibung für den Betrieb: docs/SEO-AUTOPILOT.md
+#
+# Das Repository ist öffentlich, also sind es auch diese Logs. Hier erscheinen nur
+# Zahlen und Statusmeldungen – keine Befundtexte, keine Suchanfragen, keine Adressen.
+# Deshalb werden auch keine Artefakte hochgeladen, nichts wird ins Repository
+# geschrieben und die Shell schreibt ihre Befehle nicht mit.
+
+on:
+  schedule:
+    # Ein Start pro Tag um 04:30 UTC (05:30 Uhr Winterzeit, 06:30 Uhr Sommerzeit).
+    # Welche Art läuft, entscheidet der Schritt "Art bestimmen".
+    # GitHub startet Zeitpläne nur vom Standard-Branch (main) und oft einige Minuten später.
+    - cron: "30 4 * * *"
+  workflow_dispatch:
+    inputs:
+      art:
+        description: "Art des Prüflaufs (auto: am 1. des Monats monthly, montags weekly, sonst daily)"
+        type: choice
+        default: auto
+        options:
+          - auto
+          - daily
+          - weekly
+          - monthly
+
+permissions:
+  contents: read # Repository auschecken
+  actions: read # nachsehen, ob gerade ein Deploy läuft
+
+# Eigene Gruppe: nie zwei Prüfläufe gleichzeitig, ein laufender wird nicht abgebrochen.
+# Nicht die Gruppe "pages" aus deploy.yml verwenden – dort bricht jeder Push laufende Läufe ab.
+concurrency:
+  group: seo-autopilot
+  cancel-in-progress: false
+
+jobs:
+  pruefen:
+    name: Prüflauf
+    runs-on: ubuntu-latest
+    # Obergrenze für den ganzen Job: bis zu 25 Minuten Warten auf einen Deploy
+    # plus höchstens 30 Minuten Prüflauf (eigene Grenze am Schritt) plus Holen und Hochladen
+    # (mit einem zweiten Versuch nach kurzer Pause): 25 + 30 + 5 + 10 + 12 Minuten und etwas Luft.
+    timeout-minutes: 90
+    defaults:
+      run:
+        shell: bash
+    env:
+      # Datumsangaben (Art des Laufs, Fristen in den Prüfregeln) nach deutscher Zeit.
+      TZ: Europe/Berlin
+    steps:
+      # auto → am 1. des Monats monthly, sonst montags weekly, sonst daily.
+      # Der Monats- und der Wochenlauf enthalten alle Prüfungen des Tageslaufs.
+      - name: Art bestimmen
+        id: art
+        env:
+          EINGABE: ${{ inputs.art }}
+        run: |
+          ART="${EINGABE:-auto}"
+          if [ "$ART" = "auto" ]; then
+            TAG=$(TZ=Europe/Berlin date +%d)
+            WOCHENTAG=$(TZ=Europe/Berlin date +%u)
+            if [ "$TAG" = "01" ]; then
+              ART=monthly
+            elif [ "$WOCHENTAG" = "1" ]; then
+              ART=weekly
+            else
+              ART=daily
+            fi
+          fi
+          case "$ART" in
+            daily | weekly | monthly) ;;
+            *)
+              echo "::error::Unbekannte Art des Prüflaufs. Erlaubt sind auto, daily, weekly und monthly."
+              exit 1
+              ;;
+          esac
+          echo "art=$ART" >> "$GITHUB_OUTPUT"
+          echo "Art des Prüflaufs: $ART"
+
+      # Der Prüfstand liegt auf dem Webspace hinter demselben Login wie /analytics/.
+      # Ohne die beiden Secrets kann der Lauf weder den Vorstand holen noch das Ergebnis ablegen.
+      - name: Zugang prüfen
+        env:
+          ANALYTICS_USER: ${{ secrets.ANALYTICS_USER }}
+          ANALYTICS_PASSWORD: ${{ secrets.ANALYTICS_PASSWORD }}
+        run: |
+          FEHLT=""
+          [ -z "$ANALYTICS_USER" ] && FEHLT="$FEHLT ANALYTICS_USER"
+          [ -z "$ANALYTICS_PASSWORD" ] && FEHLT="$FEHLT ANALYTICS_PASSWORD"
+          if [ -n "$FEHLT" ]; then
+            echo "::error::Der SEO-Autopilot kann nicht starten, es fehlen die Secrets:$FEHLT. Er meldet sich mit demselben Login wie das Analytics-Dashboard am SEO Center an. Anlegen unter Settings → Secrets and variables → Actions, siehe docs/SEO-AUTOPILOT.md."
+            exit 1
+          fi
+          echo "Zugang zum SEO Center ist hinterlegt."
+
+      # Während eines Deploys (deploy.yml, "Build & Deploy") liegen auf dem Webspace
+      # minutenlang alte und neue Dateien nebeneinander. Ein Prüflauf in dieser Zeit würde
+      # Fehlalarme melden. Deshalb bis zu 25 Minuten warten, danach trotzdem prüfen.
+      - name: Warten, falls gerade ein Deploy läuft
+        timeout-minutes: 30
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          DEPLOY_WORKFLOW: deploy.yml
+          HOECHSTENS_MINUTEN: "25"
+        run: |
+          MINUTE=0
+          while true; do
+            # Zählt Läufe von "Build & Deploy", die noch nicht fertig sind (in_progress, queued, …).
+            if ! AKTIV=$(gh run list --workflow "$DEPLOY_WORKFLOW" --limit 20 --json status \
+              --jq '[.[] | select(.status != "completed")] | length'); then
+              echo "::warning::Ob gerade ein Deploy läuft, ließ sich nicht abfragen. Der Prüflauf startet trotzdem."
+              exit 0
+            fi
+            if [ "$AKTIV" = "0" ]; then
+              echo "Kein Deploy aktiv (gewartet: $MINUTE Minuten)."
+              exit 0
+            fi
+            if [ "$MINUTE" -ge "$HOECHSTENS_MINUTEN" ]; then
+              echo "::warning::Nach $HOECHSTENS_MINUTEN Minuten läuft immer noch ein Deploy. Der Prüflauf startet trotzdem; einzelne Befunde dieses Laufs können Fehlalarme sein."
+              exit 0
+            fi
+            echo "Ein Deploy läuft noch. Nächste Abfrage in 60 Sekunden (gewartet: $MINUTE von höchstens $HOECHSTENS_MINUTEN Minuten)."
+            sleep 60
+            MINUTE=$((MINUTE + 1))
+          done
+
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      # Der Autopilot braucht nur Node-Bordmittel – es werden keine Pakete installiert.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Zustand des Vorlaufs (Befunde, letzter Crawl, Bearbeitungsstatus aus dem SEO Center)
+      # per HTTPS vom Webspace holen. Ohne ihn wäre jeder Lauf ein Erstlauf: alles gälte
+      # als neu und Meldungen kämen doppelt.
+      # Leere Einstellungen werden entfernt, damit die Standardwerte aus
+      # seo-autopilot/config.js gelten (eine nicht angelegte Variable kommt hier als leerer Text an).
+      - name: Stand holen
+        timeout-minutes: 5
+        env:
+          SEO_CENTER_URL: ${{ vars.SEO_CENTER_URL }}
+          SEO_CENTER_USER: ${{ secrets.ANALYTICS_USER }}
+          SEO_CENTER_PASSWORD: ${{ secrets.ANALYTICS_PASSWORD }}
+        run: |
+          [ -n "$SEO_CENTER_URL" ] || unset SEO_CENTER_URL
+          node seo-autopilot/bin/sync.js pull
+
+      # Crawlt die Live-Website (nur GET/HEAD), wendet die Prüfregeln an, schreibt Berichte
+      # nach seo-autopilot/data/ und verschickt – nur mit SEO_NOTIFY=1 – die Zusammenfassung.
+      #   Actions-Variablen (optional): SEO_NOTIFY, GSC_PROPERTY, SEO_CENTER_URL
+      #   Secrets (optional): SEO_NOTIFY_TO, SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASSWORD, GSC_CREDENTIALS_JSON
+      # SEO_NOTIFY_TO ist ein Secret, keine Variable: GitHub zeigt den env-Block jedes Schritts im
+      # (öffentlichen) Log und maskiert dort nur Secrets – die Empfängeradresse stünde sonst im Klartext darin.
+      # Die SMTP-Secrets sind dieselben wie für das Auftragsformular (deploy.yml).
+      # Reihenfolge bewusst: erst versenden, dann hochladen. Eine kritische Meldung geht damit auch hinaus,
+      # wenn das SEO Center gerade nicht erreichbar ist. Scheitert das Hochladen, folgt ein zweiter Versuch;
+      # scheitert auch der, kann eine Meldung am nächsten Tag noch einmal kommen (lieber doppelt als verloren).
+      - name: Prüflauf
+        id: lauf
+        timeout-minutes: 30
+        env:
+          ART: ${{ steps.art.outputs.art }}
+          SEO_NOTIFY: ${{ vars.SEO_NOTIFY }}
+          SEO_NOTIFY_TO: ${{ secrets.SEO_NOTIFY_TO }}
+          SEO_CENTER_URL: ${{ vars.SEO_CENTER_URL }}
+          GSC_PROPERTY: ${{ vars.GSC_PROPERTY }}
+          GSC_CREDENTIALS_JSON: ${{ secrets.GSC_CREDENTIALS_JSON }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        run: |
+          # Mehrere Empfänger: jede Adresse einzeln maskieren – GitHub maskiert sonst nur den ganzen
+          # Wert des Secrets, nicht eine einzelne Adresse daraus. Getrennt wird wie beim Versand
+          # (lib/smtp.js) an Komma, Semikolon und Leerraum; -d '' liest auch über Zeilenumbrüche.
+          if [ -n "$SEO_NOTIFY_TO" ]; then
+            IFS=$', ;\t\n' read -r -d '' -a EMPFAENGER <<< "$SEO_NOTIFY_TO" || true
+            for ADRESSE in "${EMPFAENGER[@]}"; do
+              if [ -n "$ADRESSE" ]; then echo "::add-mask::$ADRESSE"; fi
+            done
+          fi
+          for NAME in SEO_NOTIFY SEO_NOTIFY_TO SEO_CENTER_URL GSC_PROPERTY GSC_CREDENTIALS_JSON SMTP_HOST SMTP_PORT SMTP_USER SMTP_PASSWORD; do
+            [ -n "${!NAME}" ] || unset "$NAME"
+          done
+          node seo-autopilot/bin/autopilot.js "$ART"
+
+      # Läuft nur nach einem fehlerfreien Prüflauf: Ein abgebrochener Lauf darf den Stand
+      # auf dem Webspace nicht überschreiben. Ziel ist der Ordner seo-daten außerhalb des
+      # Web-Ordners (über /seo/daten.php) – nie das Repository.
+      # Ein Fehlschlag hier beendet den Job noch nicht: Der nächste Schritt versucht es nach
+      # einer Pause noch einmal (z. B. wenn ein Deploy daten.php gerade austauscht).
+      - name: Stand hochladen
+        id: ablage
+        timeout-minutes: 10
+        continue-on-error: true
+        env:
+          SEO_CENTER_URL: ${{ vars.SEO_CENTER_URL }}
+          SEO_CENTER_USER: ${{ secrets.ANALYTICS_USER }}
+          SEO_CENTER_PASSWORD: ${{ secrets.ANALYTICS_PASSWORD }}
+        run: |
+          [ -n "$SEO_CENTER_URL" ] || unset SEO_CENTER_URL
+          node seo-autopilot/bin/sync.js push
+
+      # Zweiter Versuch, nur wenn der erste gescheitert ist. Scheitert auch er, schlägt der Job fehl.
+      # Die Mails sind dann schon verschickt; ihre Meldemarkierungen liegen aber nicht im SEO Center,
+      # deshalb kann der nächste Lauf dieselbe Meldung noch einmal senden.
+      - name: Stand hochladen (zweiter Versuch)
+        id: ablage2
+        if: ${{ steps.lauf.outcome == 'success' && steps.ablage.outcome == 'failure' }}
+        timeout-minutes: 12
+        env:
+          SEO_CENTER_URL: ${{ vars.SEO_CENTER_URL }}
+          SEO_CENTER_USER: ${{ secrets.ANALYTICS_USER }}
+          SEO_CENTER_PASSWORD: ${{ secrets.ANALYTICS_PASSWORD }}
+        run: |
+          [ -n "$SEO_CENTER_URL" ] || unset SEO_CENTER_URL
+          echo "Erster Upload gescheitert – zweiter Versuch in 2 Minuten."
+          sleep 120
+          node seo-autopilot/bin/sync.js push
+
+      # Nur Zahlen aus dem Bericht dieses Laufs. Alles andere steht im SEO Center hinter dem Login.
+      - name: Zusammenfassung
+        if: ${{ !cancelled() }}
+        env:
+          ART: ${{ steps.art.outputs.art }}
+          LAUF: ${{ steps.lauf.outcome }}
+          ABLAGE: ${{ steps.ablage.outcome }}
+          ABLAGE2: ${{ steps.ablage2.outcome }}
+        run: |
+          node -e '
+            const fs = require("fs");
+            const art = /^(daily|weekly|monthly)$/.test(process.env.ART || "") ? process.env.ART : "";
+            const name = { daily: "Tageslauf", weekly: "Wochenlauf", monthly: "Monatslauf" }[art] || "Prüflauf";
+            const zeilen = ["## SEO-Autopilot: " + name, ""];
+            const gelaufen = art !== "" && process.env.LAUF === "success";
+            let b = null;
+            if (gelaufen) {
+              try { b = JSON.parse(fs.readFileSync("seo-autopilot/data/reports/latest-" + art + ".json", "utf8")); } catch { b = null; }
+            }
+            // Nur echte Zahlen ausgeben, nie Text aus dem Bericht (öffentliches Log).
+            const zahl = (v) => (typeof v === "number" && Number.isFinite(v) ? String(v) : "–");
+            if (b && typeof b === "object" && !Array.isArray(b)) {
+              zeilen.push(
+                "| Kennzahl | Wert |",
+                "|---|---|",
+                "| SEO-Status (Score, 0 bis 100) | " + zahl(b.score) + " |",
+                "| Offene Punkte | " + zahl(b.open) + " |",
+                "| davon kritisch | " + zahl(b.kritisch) + " |",
+                "| davon hoch | " + zahl(b.hoch) + " |",
+                "| Neu seit dem letzten Lauf | " + zahl(b.neu) + " |",
+                "| Behoben seit dem letzten Lauf | " + zahl(b.behoben) + " |",
+                ""
+              );
+              if (b.suspicious === true) zeilen.push("Hinweis: Der Lauf wich stark vom Vorlauf ab und ist als unsicher markiert. Es wurde nichts als behoben geschlossen.", "");
+            } else if (gelaufen) {
+              zeilen.push("Der Prüflauf lief durch, sein Bericht (latest-" + art + ".json) war aber nicht lesbar.", "");
+            } else {
+              zeilen.push("Kein Ergebnis: Der Prüflauf ist nicht bis zum Ende gelaufen. Das SEO Center zeigt weiter den vorherigen Lauf.");
+            }
+            if (gelaufen) {
+              // Ein gescheiterter Upload kann teilweise abgelegt haben (Befundstand ja, Berichte nein) – das Log nennt jede Datei.
+              zeilen.push(process.env.ABLAGE === "success"
+                ? "Der Stand wurde ins SEO Center hochgeladen."
+                : process.env.ABLAGE2 === "success"
+                  ? "Der Stand wurde ins SEO Center hochgeladen (im zweiten Versuch)."
+                  : "Achtung: Der Stand wurde NICHT vollständig hochgeladen. Das SEO Center zeigt den vorherigen Lauf oder nur einen Teil dieses Laufs; welche Dateien fehlen, steht im Log von „Stand hochladen“. Mails dieses Laufs können sich beim nächsten Lauf wiederholen.");
+            }
+            zeilen.push("", "Einzelheiten stehen im SEO Center unter /seo/ (gleicher Login wie /analytics/). Anleitung: docs/SEO-AUTOPILOT.md");
+            console.log(zeilen.join("\n"));
+          ' >> "$GITHUB_STEP_SUMMARY"

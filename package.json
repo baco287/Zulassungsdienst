@@ -14,6 +14,10 @@
     "check:daten:build": "node scripts/check-daten.mjs --out",
     "check:site": "node scripts/check-site.mjs",
     "seo:crawl": "python scripts/seo-crawl.py",
+    "seo:daily": "node seo-autopilot/bin/autopilot.js daily",
+    "seo:weekly": "node seo-autopilot/bin/autopilot.js weekly",
+    "seo:center": "node seo-autopilot/server.js",
+    "seo:test": "node --test \"seo-autopilot/test/**/*.test.js\"",
     "test:kennzeichen": "node scripts/test-kennzeichen.mjs"
   },
   "dependencies": {
