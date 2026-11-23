@@ -127,3 +127,21 @@ Prüfungen und offene Schritte: `docs/migration/MIGRATION.md`.
 ## Webanalyse
 
 Standardmäßig aus. Einschalten und Datenschutzhinweise: `docs/TRACKING.md`.
+
+## SEO-Autopilot
+
+Prüft jeden Morgen automatisch die Live-Website (Erreichbarkeit, Indexierung, Titel,
+Preise, Marke, Inhalte, FAQ) und zeigt das Ergebnis im SEO Center unter `/seo/` – gleicher
+Login wie `/analytics/`. Er liest nur und ändert nichts an der Website. Zeitplan:
+`.github/workflows/seo-autopilot.yml`.
+
+Betrieb, Benachrichtigungen, Search-Console-Anbindung und Fehlerfälle:
+`docs/SEO-AUTOPILOT.md`. Aufbau und Verträge: `seo-autopilot/README.md`.
+
+| Befehl | Zweck |
+|---|---|
+| `npm run seo:center` | SEO Center lokal ansehen: http://localhost:3500/seo/ |
+| `npm run seo:daily`, `npm run seo:weekly` | Prüflauf vom eigenen Rechner (Ergebnis bleibt lokal in `seo-autopilot/data/`) |
+| `npm run seo:test` | Tests des Autopiloten (ohne Netz) |
+
+Prüfdaten (Befunde, Berichte, Search-Console-Zahlen) gehören nie ins Repository.

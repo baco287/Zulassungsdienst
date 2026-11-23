@@ -7,6 +7,12 @@
       "runtimeArgs": ["run", "dev"],
       "port": 3000,
       "autoPort": true
+    },
+    {
+      "name": "seo-center",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["seo-autopilot/server.js"],
+      "port": 3500
     }
   ]
 }

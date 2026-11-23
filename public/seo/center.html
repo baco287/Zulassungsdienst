@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>SEO Center – KFZ-Zulassungsprofis</title>
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<style>
+  /* Aufbau und Optik wie das Analytics-Dashboard (../analytics/): gleiche Variablen, Sidebar, Karten, Topbar.
+     Keine externen Ressourcen – Schriften, Symbole und Diagramme kommen aus dieser Datei. */
+  :root {
+    --bg: #0A1224; --bg-2: #0D1630;
+    --card: #111C36; --card-2: #16233F; --card-hover: #1A2948;
+    --line: rgba(255,255,255,.07); --line-2: rgba(255,255,255,.12);
+    --text: #E6ECF5; --muted: #8A97AE; --dim: #5B6880;
+    --acc: #4C8DFF; --acc-2: #79A9FF; --acc-dim: rgba(76,141,255,.16); --acc-strong: #2F6FE4;
+    --amber: #F5A500; --amber-dim: rgba(245,165,0,.14);
+    --blue: #38BDF8;  --blue-dim: rgba(56,189,248,.15);
+    --violet: #8B5CF6; --violet-dim: rgba(139,92,246,.16);
+    --green: #10B981; --green-dim: rgba(16,185,129,.16);
+    --red: #EF4444;   --red-dim: rgba(239,68,68,.14);
+    --sidebar-w: 252px; --sidebar-c: 68px; --topbar-h: 64px;
+    --radius: 14px; --radius-s: 10px;
+    --font: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --mono: ui-monospace, Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  [hidden] { display: none !important; }
+  html { color-scheme: dark; }
+  body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 14px; line-height: 1.45; min-height: 100vh; -webkit-font-smoothing: antialiased; }
+  a { color: var(--acc-2); }
+  button, input, select, textarea { font-family: inherit; }
+  :focus-visible { outline: 2px solid var(--acc-2); outline-offset: 2px; border-radius: 4px; }
+  .num { font-variant-numeric: tabular-nums; }
+  .skip { position: absolute; left: -9999px; top: 8px; z-index: 100; background: var(--acc-strong); color: #fff; padding: 8px 14px; border-radius: 8px; font-weight: 700; }
+  .skip:focus { left: 8px; }
+
+  /* Sidebar */
+  .sidebar { position: fixed; inset: 0 auto 0 0; width: var(--sidebar-w); background: var(--bg-2); border-right: 1px solid var(--line); display: flex; flex-direction: column; z-index: 40; transition: width .2s ease, transform .2s ease; }
+  .brand { display: flex; align-items: center; gap: 10px; padding: 18px 18px 14px; height: var(--topbar-h); border-bottom: 1px solid var(--line); white-space: nowrap; overflow: hidden; flex-shrink: 0; }
+  .brand__mark { width: 30px; height: 30px; flex-shrink: 0; border-radius: 9px; background: var(--acc-dim); display: grid; place-items: center; color: var(--acc); }
+  .brand__name { font-weight: 800; font-size: 15px; letter-spacing: -.01em; line-height: 1.15; }
+  .brand__name small { display: block; color: var(--acc-2); font-size: 10.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+  .nav { padding: 10px 12px 14px; display: flex; flex-direction: column; gap: 2px; flex: 1; overflow-y: auto; }
+  .nav__group { font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); padding: 12px 10px 6px; font-weight: 700; white-space: nowrap; overflow: hidden; }
+  .nav a { display: flex; align-items: center; gap: 12px; padding: 9px 12px; border-radius: var(--radius-s); color: var(--muted); text-decoration: none; font-weight: 600; font-size: 13.5px; white-space: nowrap; overflow: hidden; transition: background .15s, color .15s; flex-shrink: 0; }
+  .nav a svg { width: 18px; height: 18px; flex-shrink: 0; }
+  .nav a span { overflow: hidden; text-overflow: ellipsis; }
+  .nav a:hover { background: var(--card); color: var(--text); }
+  .nav a.active { background: var(--acc-dim); color: var(--acc-2); box-shadow: inset 3px 0 0 var(--acc); }
+  .nav .cnt { margin-left: auto; font-size: 11px; font-weight: 700; background: var(--card-2); color: var(--text); padding: 1px 8px; border-radius: 999px; font-variant-numeric: tabular-nums; flex-shrink: 0; }
+  .nav .cnt:empty { display: none; }
+  .sidebar__foot { padding: 12px; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 8px; flex-shrink: 0; }
+  .collapse-btn { width: 100%; display: flex; align-items: center; gap: 10px; padding: 9px 12px; border-radius: var(--radius-s); border: 1px solid var(--line); background: transparent; color: var(--muted); cursor: pointer; font-size: 12.5px; font-weight: 600; white-space: nowrap; overflow: hidden; }
+  .collapse-btn:hover { color: var(--text); border-color: var(--line-2); }
+  body.collapsed .sidebar { width: var(--sidebar-c); }
+  body.collapsed .brand__name, body.collapsed .nav a span, body.collapsed .nav .cnt, body.collapsed .nav__group, body.collapsed .collapse-btn span { display: none; }
+  body.collapsed .nav a { justify-content: center; padding: 10px; }
+  body.collapsed .collapse-btn { justify-content: center; }
+  body.collapsed .collapse-btn svg { transform: rotate(180deg); }
+
+  /* Topbar + Inhalt */
+  .main { margin-left: var(--sidebar-w); min-height: 100vh; transition: margin .2s ease; }
+  body.collapsed .main { margin-left: var(--sidebar-c); }
+  .topbar { position: sticky; top: 0; z-index: 30; height: var(--topbar-h); background: rgba(10,18,36,.85); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); display: flex; align-items: center; gap: 16px; padding: 0 28px; }
+  .topbar__title { display: flex; flex-direction: column; min-width: 0; }
+  .topbar__eyebrow { font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+  .topbar__h1 { font-size: 18px; font-weight: 800; letter-spacing: -.01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .topbar__spacer { flex: 1; }
+  .topbar__meta { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 12px; white-space: nowrap; }
+  .topbar__meta strong { color: var(--text); font-weight: 600; }
+  .burger { display: none; width: 38px; height: 38px; border-radius: 10px; border: 1px solid var(--line-2); background: var(--card); color: var(--text); cursor: pointer; place-items: center; flex-shrink: 0; }
+  .content { padding: 24px 28px 48px; max-width: 1560px; }
+  .content.busy .page { opacity: .45; transition: opacity .15s; }
+  .page { display: none; }
+  .page.active { display: block; }
+  .page-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 18px; flex-wrap: wrap; }
+  .page-head h2 { font-size: 22px; font-weight: 800; letter-spacing: -.015em; }
+  .page-head p { color: var(--muted); font-size: 13px; margin-top: 2px; max-width: 78ch; }
+  .page-err:not(:empty) { margin-bottom: 16px; }
+
+  /* Karten */
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; min-width: 0; }
+  .card__head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+  .card__title { display: flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--text); }
+  .card__title .ic { width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center; flex-shrink: 0; }
+  .card__sub { font-size: 12px; color: var(--muted); font-weight: 500; letter-spacing: 0; text-transform: none; display: block; margin-top: 2px; }
+  .ic--acc { background: var(--acc-dim); color: var(--acc-2); } .ic--amber { background: var(--amber-dim); color: var(--amber); } .ic--blue { background: var(--blue-dim); color: var(--blue); }
+  .ic--violet { background: var(--violet-dim); color: #B8A1FF; } .ic--green { background: var(--green-dim); color: var(--green); }
+  .ic--red { background: var(--red-dim); color: #FF8A8A; } .ic--grey { background: rgba(255,255,255,.06); color: var(--muted); }
+  .grid { display: grid; gap: 16px; margin-bottom: 16px; }
+  .grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .grid--12 { grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); }
+  .stack > * + * { margin-top: 16px; }
+  .mb { margin-bottom: 16px; }
+  .hint { font-size: 12px; color: var(--muted); line-height: 1.5; }
+  .pill { display: inline-flex; align-items: center; gap: 5px; padding: 2px 9px; border-radius: 999px; font-size: 11.5px; font-weight: 700; white-space: nowrap; }
+  .pill--amber { background: var(--amber-dim); color: var(--amber); } .pill--blue { background: var(--blue-dim); color: #7DD3FC; }
+  .pill--violet { background: var(--violet-dim); color: #B8A1FF; } .pill--green { background: var(--green-dim); color: #4ADE9E; }
+  .pill--red { background: var(--red-dim); color: #FF8A8A; } .pill--grey { background: rgba(255,255,255,.07); color: #A9B4C8; }
+  .note { display: flex; gap: 10px; align-items: flex-start; padding: 12px 14px; border-radius: var(--radius-s); background: rgba(255,255,255,.03); border: 1px solid var(--line); font-size: 12.5px; color: #A9B4C8; line-height: 1.5; margin-bottom: 16px; }
+  .note--warn { background: rgba(245,165,0,.06); border-color: rgba(245,165,0,.3); color: #F2D28B; }
+  .note--red { background: var(--red-dim); border-color: rgba(239,68,68,.35); color: #FFB4B4; }
+  .note svg { flex-shrink: 0; margin-top: 1px; }
+  .note b { color: var(--text); }
+  .empty { padding: 24px; text-align: center; color: var(--muted); font-size: 13px; }
+  .loading { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 48px; color: var(--muted); }
+  .spinner { width: 20px; height: 20px; border-radius: 50%; border: 2.5px solid var(--line-2); border-top-color: var(--acc); animation: spin .8s linear infinite; flex-shrink: 0; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .error-box { background: var(--red-dim); border: 1px solid rgba(239,68,68,.35); border-radius: var(--radius-s); padding: 18px; color: #FFB4B4; text-align: center; }
+  .error-box small { display: block; margin-top: 6px; color: #C9D2E0; white-space: pre-wrap; word-break: break-word; }
+  .error-box .btn { margin-top: 12px; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 10px; border: 1px solid var(--line-2); background: var(--card-2); color: var(--text); font-weight: 700; font-size: 13px; cursor: pointer; text-decoration: none; }
+  .btn:hover { background: var(--card-hover); border-color: rgba(255,255,255,.2); }
+  .btn[disabled] { opacity: .6; cursor: default; }
+  .btn--primary { background: var(--acc-strong); border-color: var(--acc-strong); color: #fff; }
+  .btn--primary:hover { background: #2863CF; border-color: #2863CF; }
+  .btn--sm { padding: 6px 10px; font-size: 12px; }
+  .btn.spin svg { animation: spin .8s linear infinite; }
+  .input { background: var(--bg); border: 1px solid var(--line-2); color: var(--text); padding: 8px 12px; border-radius: 10px; font: inherit; font-size: 13px; min-width: 0; }
+  .input:focus { outline: none; border-color: var(--acc); box-shadow: 0 0 0 2px var(--acc-dim); }
+  .input::placeholder { color: var(--muted); opacity: 1; }
+  select.input { padding-right: 28px; max-width: 100%; }
+
+  /* Kennzahlen */
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(176px, 1fr)); gap: 14px; margin-bottom: 18px; }
+  .kpi { position: relative; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 18px 14px; display: flex; flex-direction: column; gap: 6px; min-width: 0; overflow: hidden; color: inherit; text-decoration: none; }
+  a.kpi:hover { background: var(--card-hover); border-color: var(--line-2); }
+  .kpi__top { display: flex; align-items: center; gap: 10px; }
+  .kpi__ic { width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; flex-shrink: 0; }
+  .kpi__label { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 700; line-height: 1.25; }
+  .kpi__value { font-size: 28px; font-weight: 800; letter-spacing: -.02em; line-height: 1.1; white-space: nowrap; }
+  .kpi__sub { font-size: 11.5px; color: var(--muted); }
+  .kpi--blue .kpi__value { color: #7DD3FC; } .kpi--acc .kpi__value { color: var(--acc-2); } .kpi--amber .kpi__value { color: var(--amber); }
+  .kpi--violet .kpi__value { color: #C4B0FF; } .kpi--green .kpi__value { color: #4ADE9E; } .kpi--red .kpi__value { color: #FF8A8A; } .kpi--white .kpi__value { color: var(--text); }
+
+  /* Filterleiste */
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
+  .toolbar .grow { flex: 1 1 200px; max-width: 320px; }
+  .chips { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
+  .chip { background: transparent; border: 1px solid var(--line-2); color: #A9B4C8; padding: 6px 12px; border-radius: 999px; cursor: pointer; font-size: 12px; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; }
+  .chip:hover { color: var(--text); border-color: rgba(255,255,255,.3); }
+  .chip.active { background: var(--acc-strong); color: #fff; border-color: var(--acc-strong); }
+  .chip i { font-style: normal; font-weight: 600; opacity: .85; font-variant-numeric: tabular-nums; }
+
+  /* Tabellen */
+  .tbl-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .tbl { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .tbl th { color: var(--muted); font-weight: 700; text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line-2); white-space: nowrap; font-size: 11.5px; letter-spacing: .04em; text-transform: uppercase; }
+  .tbl td { padding: 9px 10px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .tbl .r { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .tbl tr:last-child td { border-bottom: 0; }
+  .tbl tbody tr:hover td { background: rgba(255,255,255,.025); }
+  .tbl tr.click { cursor: pointer; }
+  .tbl .wrap { overflow-wrap: anywhere; min-width: 180px; }
+  .tbl th.c-prio { min-width: 124px; } .tbl th.c-st { min-width: 132px; }
+  .tbl--eng th, .tbl--eng td { padding-left: 7px; padding-right: 7px; } .tbl--eng .wrap { min-width: 132px; }
+  abbr[title] { text-decoration: none; cursor: help; }
+  .thbtn { background: none; border: 0; color: inherit; font: inherit; letter-spacing: inherit; text-transform: inherit; cursor: pointer; padding: 0; }
+  .thbtn:hover { color: var(--text); }
+  th[aria-sort="ascending"] .thbtn::after { content: ' ↑'; color: var(--acc-2); }
+  th[aria-sort="descending"] .thbtn::after { content: ' ↓'; color: var(--acc-2); }
+  .linkbtn { background: none; border: 0; color: var(--text); font: inherit; font-weight: 700; text-align: left; cursor: pointer; padding: 0; overflow-wrap: anywhere; }
+  .linkbtn:hover { color: var(--acc-2); text-decoration: underline; }
+  .sub { font-size: 12px; color: var(--muted); margin-top: 3px; overflow-wrap: anywhere; }
+  .mono { font-family: var(--mono); font-size: 12px; color: #A9B4C8; overflow-wrap: anywhere; }
+  .mono a { color: var(--acc-2); }
+  .more { display: flex; align-items: center; gap: 12px; margin-top: 12px; flex-wrap: wrap; }
+  .sev { display: inline-block; font-weight: 700; font-size: 11px; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+  .sev--kritisch { background: var(--red-dim); color: #FF8A8A; box-shadow: inset 0 0 0 1px rgba(239,68,68,.45); } .sev--hoch { background: var(--amber-dim); color: var(--amber); }
+  .sev--mittel { background: var(--blue-dim); color: #7DD3FC; } .sev--niedrig, .sev--info { background: rgba(255,255,255,.07); color: #A9B4C8; }
+  .st { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+  .st--offen { background: rgba(255,255,255,.07); color: #A9B4C8; } .st--in_pruefung { background: var(--blue-dim); color: #7DD3FC; }
+  .st--lokal_behoben { background: var(--violet-dim); color: #B8A1FF; } .st--freigegeben { background: var(--green-dim); color: #4ADE9E; }
+  .bar { height: 8px; border-radius: 999px; background: rgba(255,255,255,.06); overflow: hidden; min-width: 60px; }
+  .bar i { display: block; height: 100%; border-radius: 999px; min-width: 3px; background: var(--acc); }
+  .flow { display: flex; gap: 6px; flex-wrap: wrap; }
+  .flow span { padding: 4px 10px; border-radius: 999px; background: rgba(255,255,255,.07); font-size: 12px; color: #A9B4C8; }
+  .flow span.on { background: var(--acc-dim); color: var(--acc-2); font-weight: 700; }
+  .steps { list-style: none; counter-reset: s; }
+  .steps > li { counter-increment: s; display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .steps > li:last-child { border-bottom: 0; }
+  .steps > li::before { content: counter(s); width: 24px; height: 24px; border-radius: 50%; background: var(--card-2); color: var(--text); display: grid; place-items: center; font-size: 12px; font-weight: 800; }
+  .list { list-style: none; }
+  .list li { padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+  .list li:last-child { border-bottom: 0; }
+  .typen { display: grid; grid-template-columns: minmax(90px, auto) minmax(80px, 1fr) auto; gap: 8px 12px; align-items: center; font-size: 13px; }
+  .typen .bar { height: 10px; background: rgba(76,141,255,.2); }
+  details { margin-top: 10px; }
+  details summary { cursor: pointer; color: var(--acc-2); font-weight: 600; font-size: 13px; }
+  details[open] summary { margin-bottom: 8px; }
+  pre { white-space: pre-wrap; overflow-wrap: anywhere; background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius-s); padding: 12px; font-size: 12px; color: var(--text); max-height: 360px; overflow: auto; font-family: var(--mono); }
+  code { background: var(--bg-2); padding: 1px 5px; border-radius: 4px; font-family: var(--mono); font-size: 12px; }
+  .ba { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 8px; }
+  .ba > div { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius-s); padding: 10px 12px; font-size: 12.5px; overflow-wrap: anywhere; }
+  .ba b { display: block; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 6px; }
+  .ba__alt { border-color: rgba(239,68,68,.35) !important; } .ba__neu { border-color: rgba(16,185,129,.35) !important; }
+  .md { font-size: 13.5px; line-height: 1.55; }
+  .md h3 { font-size: 18px; margin: 4px 0 10px; } .md h4 { font-size: 15px; color: var(--acc-2); margin: 20px 0 8px; } .md h5 { font-size: 13.5px; margin: 14px 0 6px; }
+  .md p { margin: 8px 0; overflow-wrap: anywhere; } .md ul, .md ol { padding-left: 20px; margin: 8px 0; } .md li { margin: 6px 0; overflow-wrap: anywhere; }
+  .md .tbl-wrap { margin: 10px 0; }
+
+  /* Diagramme (eigene SVG-Helfer, siehe Charts im Skript) */
+  .chart-box { min-height: 60px; }
+  svg.chart { display: block; max-width: 100%; touch-action: pan-y; outline-offset: 4px; }
+  svg.chart text { font-family: var(--font); font-size: 11px; fill: #8A97AE; font-variant-numeric: tabular-nums; }
+  svg.chart .val { fill: #E6ECF5; font-weight: 700; }
+  .legend { display: flex; gap: 6px 16px; flex-wrap: wrap; margin-top: 8px; font-size: 12px; color: #A9B4C8; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .legend i { width: 14px; height: 3px; border-radius: 2px; flex-shrink: 0; }
+  .legend i.box { height: 10px; width: 10px; border-radius: 3px; }
+  .legend b { color: var(--text); font-variant-numeric: tabular-nums; }
+  .chart-data summary { font-size: 12px; font-weight: 600; color: var(--muted); }
+  .chart-data .tbl-wrap { max-height: 260px; overflow: auto; }
+  .ring { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .ring svg { flex-shrink: 0; }
+  .ring .ring-v { font-size: 28px; font-weight: 800; fill: #E6ECF5; }
+  .ring .ring-l { font-size: 11px; fill: #8A97AE; }
+  .ring-legend { list-style: none; display: grid; grid-template-columns: auto 1fr auto auto; gap: 6px 10px; font-size: 13px; align-items: center; flex: 1 1 180px; }
+  .ring-legend li { display: contents; }
+  .ring-legend i { width: 10px; height: 10px; border-radius: 3px; }
+  .ring-legend b, .ring-legend em { text-align: right; font-variant-numeric: tabular-nums; font-style: normal; }
+  .ring-legend em { color: var(--muted); font-size: 12px; }
+  .chart-tip { position: fixed; z-index: 80; pointer-events: none; background: #16233F; border: 1px solid rgba(255,255,255,.14); border-radius: 10px; padding: 9px 11px; font-size: 12px; color: #C7D0DE; box-shadow: 0 10px 30px rgba(0,0,0,.45); max-width: 280px; }
+  .chart-tip .tip__t { color: var(--text); font-weight: 700; margin-bottom: 5px; }
+  .chart-tip .tip__r { display: flex; align-items: center; gap: 7px; white-space: nowrap; }
+  .chart-tip .tip__r i { width: 12px; height: 3px; border-radius: 2px; flex-shrink: 0; }
+  .chart-tip .tip__r b { color: var(--text); font-variant-numeric: tabular-nums; min-width: 2.2em; text-align: right; }
+
+  /* Detail-Schublade */
+  .backdrop { position: fixed; inset: 0; background: rgba(3,8,20,.6); z-index: 49; opacity: 0; pointer-events: none; transition: opacity .2s; }
+  .backdrop.open { opacity: 1; pointer-events: auto; }
+  .drawer { position: fixed; top: 0; right: 0; width: 660px; max-width: 100%; height: 100%; background: var(--bg-2); border-left: 1px solid var(--line-2); box-shadow: -20px 0 60px rgba(0,0,0,.45); transform: translateX(100%); visibility: hidden; transition: transform .2s, visibility 0s .2s; z-index: 50; overflow-y: auto; overscroll-behavior: contain; padding: 22px 24px 40px; }
+  .drawer.open { transform: none; visibility: visible; transition: transform .2s; }
+  .drawer h2 { font-size: 17px; font-weight: 800; margin: 0 44px 10px 0; overflow-wrap: anywhere; outline: none; }
+  .drawer__x { position: absolute; top: 16px; right: 16px; background: var(--card); border: 1px solid var(--line-2); color: var(--text); border-radius: 9px; width: 34px; height: 34px; cursor: pointer; display: grid; place-items: center; }
+  .drawer__x:hover { background: var(--card-hover); }
+  .drawer .pills { display: flex; gap: 6px; flex-wrap: wrap; }
+  .block { margin-top: 20px; }
+  .block h3 { margin: 0 0 8px; font-size: 11.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; font-weight: 700; }
+  .block p { font-size: 13px; overflow-wrap: anywhere; }
+  .block ul { list-style: none; }
+  .block ul li { margin: 3px 0; }
+  .stufe { border: 1px solid var(--line-2); border-radius: var(--radius-s); padding: 10px 12px; background: var(--card); font-size: 13px; }
+  .formrow { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+  .drawer textarea { width: 100%; min-height: 70px; resize: vertical; margin-top: 4px; }
+  .toast { position: fixed; bottom: 18px; left: 50%; transform: translate(-50%, 20px); background: #1C2B4D; border: 1px solid var(--line-2); color: var(--text); padding: 10px 16px; border-radius: 10px; font-size: 13px; font-weight: 600; opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 90; max-width: calc(100% - 32px); box-shadow: 0 10px 30px rgba(0,0,0,.45); }
+  .toast.on { opacity: 1; transform: translate(-50%, 0); }
+  .toast.bad { border-color: rgba(239,68,68,.5); color: #FFB4B4; }
+  .leer { max-width: 620px; margin: 6vh auto 0; text-align: center; }
+  .leer__ic { width: 64px; height: 64px; border-radius: 18px; background: var(--acc-dim); color: var(--acc-2); display: grid; place-items: center; margin: 0 auto 18px; }
+  .leer h2 { font-size: 22px; font-weight: 800; margin-bottom: 10px; }
+  .leer p { color: #A9B4C8; margin-bottom: 10px; }
+  .leer ul { text-align: left; color: #A9B4C8; margin: 16px auto; max-width: 460px; padding-left: 18px; }
+  .leer li { margin: 6px 0; }
+
+  /* Responsiv */
+  @media (max-width: 1200px) { .grid--3 { grid-template-columns: repeat(2, minmax(0, 1fr)); } .grid--12 { grid-template-columns: minmax(0, 1fr); } }
+  @media (max-width: 980px) {
+    .sidebar { transform: translateX(-100%); width: var(--sidebar-w) !important; visibility: hidden; transition: transform .2s ease, visibility 0s .2s; }
+    body.nav-open .sidebar { transform: translateX(0); box-shadow: 0 0 0 100vw rgba(0,0,0,.5); visibility: visible; transition: transform .2s ease; }
+    body.collapsed .brand__name, body.collapsed .nav a span, body.collapsed .nav__group, body.collapsed .collapse-btn span { display: initial; }
+    body.collapsed .nav .cnt { display: inline-block; } body.collapsed .nav .cnt:empty { display: none; }
+    body.collapsed .nav a { justify-content: flex-start; padding: 9px 12px; }
+    .collapse-btn { display: none; }
+    .main, body.collapsed .main { margin-left: 0; }
+    .burger { display: grid; }
+    .topbar { padding: 0 16px; gap: 10px; }
+    .topbar__meta { display: none; }
+    .content { padding: 16px 16px 40px; }
+    .grid--2, .grid--3, .grid--12 { grid-template-columns: minmax(0, 1fr); }
+    .card { padding: 16px; }
+  }
+  @media (max-width: 720px) {
+    /* Befundtabellen als Kartenliste: jede Zeile ein Block, Spaltenköpfe nur noch für Vorleseprogramme */
+    .tbl--stack thead { position: absolute; left: -9999px; }
+    .tbl--stack, .tbl--stack tbody, .tbl--stack tr, .tbl--stack td { display: block; width: 100%; }
+    .tbl--stack tr { padding: 10px 0; border-bottom: 1px solid var(--line); }
+    .tbl--stack tr:last-child { border-bottom: 0; }
+    .tbl--stack td { border: 0; padding: 3px 0; }
+    .tbl--stack td:empty { display: none; }
+    .tbl--stack td[data-l]::before { content: attr(data-l) ': '; color: var(--muted); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+    .tbl--stack .wrap { min-width: 0; }
+    .ba { grid-template-columns: 1fr; }
+    .drawer { padding: 18px 16px 36px; }
+    .hide-m { display: none !important; }
+  }
+  @media (max-width: 560px) {
+    .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .kpi { padding: 12px 12px 10px; } .kpi__value { font-size: 22px; }
+    .topbar__eyebrow { display: none; }
+    .topbar__h1 { font-size: 16px; }
+    .page-head h2 { font-size: 19px; }
+    .btn--label span { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation-duration: 2s !important; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Zum Inhalt springen</a>
+<div id="app">
+<aside class="sidebar" id="sidebar" aria-label="Navigation">
+  <div class="brand">
+    <div class="brand__mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="10" rx="2"/><rect x="2" y="7" width="5" height="10" rx="2" fill="currentColor" stroke="none"/><path d="M10 12h8" stroke-linecap="round"/></svg></div>
+    <div class="brand__name">KFZ-Zulassungsprofis<small>SEO CENTER</small></div>
+  </div>
+  <nav class="nav" id="nav" aria-label="Ansichten">
+    <div class="nav__group">Menü</div>
+    <a href="#uebersicht" data-page="uebersicht"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span>Übersicht</span></a>
+    <a href="#prioritaet" data-page="prioritaet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg><span>Hohe Priorität</span><i class="cnt" id="cntPrio"></i></a>
+    <a href="#freigabe" data-page="freigabe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.1V12a10 10 0 1 1-5.9-9.1"/><path d="m9 11 3 3L22 4"/></svg><span>Freigabe nötig</span><i class="cnt" id="cntFreigabe"></i></a>
+    <a href="#technik" data-page="technik"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg><span>Technisches SEO</span><i class="cnt" id="cntTechnik"></i></a>
+    <a href="#google" data-page="google"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 6l-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/></svg><span>Google Performance</span></a>
+    <a href="#inhalte" data-page="inhalte"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7V4h16v3M9 20h6M12 4v16"/></svg><span>Inhalte &amp; FAQ</span><i class="cnt" id="cntInhalte"></i></a>
+    <a href="#vorschlaege" data-page="vorschlaege"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.3h6c0-1 .4-1.8 1-2.3A7 7 0 0 0 12 2z"/></svg><span>Optimierungsvorschläge</span></a>
+    <a href="#vergleich" data-page="vergleich"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3 4 7l4 4M4 7h16M16 21l4-4-4-4M20 17H4"/></svg><span>Vorher / Nachher</span></a>
+    <a href="#historie" data-page="historie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Prüfhistorie</span></a>
+    <a href="#berichte" data-page="berichte"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg><span>SEO-Berichte</span></a>
+    <a href="#automatisierung" data-page="automatisierung"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 1l4 4-4 4M3 11V9a4 4 0 0 1 4-4h14M7 23l-4-4 4-4M21 13v2a4 4 0 0 1-4 4H3"/></svg><span>Automatisierung</span></a>
+    <div class="nav__group">Werkzeuge</div>
+    <a href="../analytics/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5M4 19h16M8 15v-4M12 15V8M16 15v-6M20 15v-9"/></svg><span>Analytics</span></a>
+    <a href="/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M10 14 21 3M21 14v7H3V3h7"/></svg><span>Zur Website</span></a>
+  </nav>
+  <div class="sidebar__foot">
+    <button class="collapse-btn" id="collapseBtn" type="button" aria-label="Navigation ein- oder ausklappen"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg><span>Einklappen</span></button>
+  </div>
+</aside>
+
+<div class="main">
+  <header class="topbar">
+    <button class="burger" id="burger" type="button" aria-label="Menü öffnen oder schließen" aria-controls="sidebar" aria-expanded="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <div class="topbar__title">
+      <span class="topbar__eyebrow">SEO Center</span>
+      <h1 class="topbar__h1" id="pageTitle">Übersicht</h1>
+    </div>
+    <div class="topbar__spacer"></div>
+    <div class="topbar__meta"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Letzter Prüflauf <strong id="stand">–</strong></span></div>
+    <button class="btn btn--label" id="refreshBtn" type="button" title="Daten neu laden" aria-label="Daten aktualisieren"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.6-6.4M21 3v6h-6"/></svg><span>Aktualisieren</span></button>
+  </header>
+
+  <main class="content" id="content" tabindex="-1">
+    <div id="zustand" aria-live="polite"><div class="loading"><div class="spinner"></div> Daten werden geladen …</div></div>
+
+    <section class="page" id="page-uebersicht">
+      <div class="page-head"><div><h2>Übersicht</h2><p>Stand der Website aus Sicht des SEO-Autopiloten: die wichtigsten Zahlen, Veränderungen und nächsten Schritte.</p></div></div>
+      <div class="page-err" id="err-uebersicht"></div>
+      <div id="ovHinweise"></div>
+      <div class="kpis" id="ovKpis"></div>
+      <div class="grid grid--3">
+        <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--green" data-ic="check"></span><span>SEO-Gesamtstatus<span class="card__sub">Eigene Berechnung aus den offenen Befunden – keine Google-Kennzahl</span></span></div></div><div class="chart-box" id="chRing"></div><p class="hint" id="ovScoreTxt" style="margin-top:12px"></p></div>
+        <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--blue" data-ic="clock"></span><span>Letzte Prüfung</span></div></div><div id="ovLauf"></div></div>
+        <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--acc" data-ic="trend"></span><span>Search Console<span class="card__sub">Gemessen von Google</span></span></div><a class="btn btn--sm" href="#google">Details →</a></div><div id="ovGsc"></div></div>
+      </div>
+      <div class="grid grid--2">
+        <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--green" data-ic="chart"></span><span>Score-Verlauf<span class="card__sub">0 bis 100 je Bericht</span></span></div></div><div class="chart-box" id="chScore"></div></div>
+        <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--amber" data-ic="swap"></span><span>Veränderungen seit dem letzten Lauf</span></div><a class="btn btn--sm" href="#vergleich">Läufe vergleichen →</a></div><div id="ovAenderungen"></div></div>
+      </div>
+      <div class="grid grid--2">
+        <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--acc" data-ic="chart"></span><span>Offene Punkte je Lauf<span class="card__sub">Letzte Prüfläufe</span></span></div><a class="btn btn--sm" href="#historie">Alle Läufe →</a></div><div class="chart-box" id="chRuns"></div></div>
+        <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--blue" data-ic="globe"></span><span>Statuscodes der geprüften URLs<span class="card__sub">Antwort des Servers beim letzten Crawl</span></span></div></div><div class="chart-box" id="chStatus"></div></div>
+      </div>
+      <div class="card mb" id="ovTypenCard" hidden><div class="card__head"><div class="card__title"><span class="ic ic--violet" data-ic="list"></span><span>Seitentypen<span class="card__sub">Geprüfte Seiten je Typ und wie viele davon für Suchmaschinen indexierbar sind</span></span></div></div><div id="ovTypen"></div></div>
+      <div class="grid grid--2">
+        <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--amber" data-ic="bulb"></span><span>Die wichtigsten Maßnahmen<span class="card__sub">Nach Wirkung sortiert, eine Maßnahme je Ursache</span></span></div></div><div id="ovMassnahmen"></div></div>
+        <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--red" data-ic="repeat"></span><span>Wiederkehrende Probleme<span class="card__sub">Nach „behoben“ erneut aufgetreten</span></span></div></div><div id="ovWieder"></div></div>
+      </div>
+      <div class="card mb"><div class="card__head"><div class="card__title"><span class="ic ic--violet" data-ic="check"></span><span>Bearbeitungsstand der hohen Priorität</span></div><a class="btn btn--sm" href="#prioritaet">Zur Liste →</a></div><div id="ovFlow"></div></div>
+      <div class="card mb"><div class="card__head"><div class="card__title"><span class="ic ic--red" data-ic="warn"></span><span>Kritische Fehler &amp; Warnungen<span class="card__sub">Offene Befunde mit Schweregrad kritisch oder hoch</span></span></div></div><div id="ovKritisch"></div></div>
+      <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--grey" data-ic="list"></span><span>Offene Punkte nach Regel</span></div></div><div id="ovRegeln"></div></div>
+    </section>
+
+    <section class="page" id="page-prioritaet">
+      <div class="page-head"><div><h2>Hohe Priorität</h2><p>Offene Befunde mit Schweregrad kritisch oder hoch – und alles, was gerade bearbeitet wird.</p></div></div>
+      <div class="page-err" id="err-prioritaet"></div>
+      <div class="kpis" id="prKpis"></div>
+      <div class="chips" id="prChips" role="group" aria-label="Bearbeitungsstatus"></div>
+      <div class="toolbar">
+        <label class="hint" for="prArt">Art</label>
+        <select class="input" id="prArt"><option value="">alle Arten</option><option value="technisch">technische Korrektur</option><option value="entscheidung">Entscheidung nötig (Inhalt, Preis, Recht)</option></select>
+        <input class="input grow" id="prQ" type="search" placeholder="Suche in Titel, URL, Regel …" aria-label="Suche">
+        <span class="hint" id="prHinweis"></span>
+      </div>
+      <div class="card"><div id="prTabelle"></div></div>
+      <p class="hint" style="margin-top:12px">Der Bearbeitungsstatus wird von Hand gesetzt und ist unabhängig vom automatischen Status: „Lokal behoben“ heißt, die Korrektur ist vorbereitet und wird erst mit dem nächsten Deploy live – danach schließt der nächste Prüflauf den Befund von selbst.</p>
+    </section>
+
+    <section class="page" id="page-freigabe">
+      <div class="page-head"><div><h2>Freigabe nötig</h2><p>Offene Befunde, die nicht rein technisch sind: Hier braucht es eine Entscheidung, bevor etwas geändert wird.</p></div></div>
+      <div class="page-err" id="err-freigabe"></div>
+      <div class="kpis" id="frKpis"></div>
+      <div class="card mb"><div class="card__head"><div class="card__title"><span class="ic ic--grey" data-ic="info"></span><span>Freigabestufen<span class="card__sub">Der Autopilot ändert nichts an der Website – er ordnet nur ein, wer entscheiden muss</span></span></div></div><div id="frStufen"></div></div>
+      <div class="chips" id="frChips" role="group" aria-label="Freigabestufe"></div>
+      <div class="toolbar"><input class="input grow" id="frQ" type="search" placeholder="Suche in Titel, URL, Regel …" aria-label="Suche"></div>
+      <div class="card"><div id="frTabelle"></div></div>
+    </section>
+
+    <section class="page" id="page-technik">
+      <div class="page-head"><div><h2>Technisches SEO</h2><p>Erreichbarkeit, Indexierbarkeit, Weiterleitungen, Sitemap, Meta-Daten und strukturierte Daten.</p></div></div>
+      <div class="page-err" id="err-technik"></div>
+      <div class="chips" id="teChips" role="group" aria-label="Thema"></div>
+      <div class="toolbar">
+        <select class="input" id="teStatus" aria-label="Status"><option value="offen">nur offene</option><option value="behoben">nur behobene</option><option value="alle">offene und behobene</option></select>
+        <select class="input" id="teSev" aria-label="Schweregrad"><option value="">alle Schweregrade</option><option>kritisch</option><option>hoch</option><option>mittel</option><option>niedrig</option><option>info</option></select>
+        <select class="input" id="teRegel" aria-label="Regel"></select>
+        <input class="input grow" id="teQ" type="search" placeholder="Suche in Titel, URL, Regel …" aria-label="Suche">
+        <span class="hint" id="teInfo"></span>
+      </div>
+      <div class="card"><div id="teTabelle"></div></div>
+    </section>
+
+    <section class="page" id="page-google">
+      <div class="page-head"><div><h2>Google Performance</h2><p>Klicks, Impressionen und Positionen aus der Google Search Console – ausschließlich gemessene Werte, keine Schätzungen.</p></div></div>
+      <div class="page-err" id="err-google"></div>
+      <div id="goBox"></div>
+    </section>
+
+    <section class="page" id="page-inhalte">
+      <div class="page-head"><div><h2>Inhalte &amp; FAQ</h2><p>Preise und Marke, Aussagen und Fristen, veraltete oder doppelte Inhalte sowie Widersprüche in den FAQ.</p></div></div>
+      <div class="page-err" id="err-inhalte"></div>
+      <div class="chips" id="inChips" role="group" aria-label="Thema"></div>
+      <div class="toolbar">
+        <select class="input" id="inStatus" aria-label="Status"><option value="offen">nur offene</option><option value="behoben">nur behobene</option><option value="alle">offene und behobene</option></select>
+        <select class="input" id="inSev" aria-label="Schweregrad"><option value="">alle Schweregrade</option><option>kritisch</option><option>hoch</option><option>mittel</option><option>niedrig</option><option>info</option></select>
+        <select class="input" id="inRegel" aria-label="Regel"></select>
+        <input class="input grow" id="inQ" type="search" placeholder="Suche in Titel, URL, Regel …" aria-label="Suche">
+        <span class="hint" id="inInfo"></span>
+      </div>
+      <div class="card"><div id="inTabelle"></div></div>
+    </section>
+
+    <section class="page" id="page-vorschlaege">
+      <div class="page-head"><div><h2>Optimierungsvorschläge</h2><p>Chancen, die der Wochenlauf aus dem Crawl und – falls verbunden – aus den Google-Daten ableitet.</p></div></div>
+      <div class="page-err" id="err-vorschlaege"></div>
+      <div id="voBox"></div>
+    </section>
+
+    <section class="page" id="page-vergleich">
+      <div class="page-head"><div><h2>Vorher / Nachher</h2><p>Was sich zwischen zwei Prüfläufen verändert hat: neue, behobene und wieder aufgetretene Befunde.</p></div></div>
+      <div class="page-err" id="err-vergleich"></div>
+      <div class="card mb" id="vgLokal" hidden><div class="card__head"><div class="card__title"><span class="ic ic--violet" data-ic="swap"></span><span>Lokaler Stand gegenüber Live<span class="card__sub">Letzter Live-Lauf ↔ Arbeitskopie (nur bei lokalem Check vorhanden)</span></span></div></div><div id="vgLokalBody"></div></div>
+      <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--acc" data-ic="swap"></span><span>Zwei Prüfläufe vergleichen</span></div></div>
+        <div class="toolbar"><label class="hint" for="vgA">Von</label><select class="input" id="vgA"></select><label class="hint" for="vgB">bis</label><select class="input" id="vgB"></select><button class="btn btn--sm btn--primary" id="vgGo" type="button">Vergleichen</button></div>
+        <div id="vgBox"></div>
+      </div>
+    </section>
+
+    <section class="page" id="page-historie">
+      <div class="page-head"><div><h2>Prüfhistorie</h2><p>Alle Prüfläufe mit ihren Ergebnissen.</p></div></div>
+      <div class="page-err" id="err-historie"></div>
+      <div class="card mb"><div class="card__head"><div class="card__title"><span class="ic ic--acc" data-ic="chart"></span><span>Verlauf der offenen Punkte</span></div></div><div class="chart-box" id="chHist"></div></div>
+      <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--grey" data-ic="list"></span><span>Alle Prüfläufe</span></div></div><div id="hiTabelle"></div></div>
+    </section>
+
+    <section class="page" id="page-berichte">
+      <div class="page-head"><div><h2>SEO-Berichte</h2><p>Tages-, Wochen- und Monatsberichte des Autopiloten zum Nachlesen.</p></div></div>
+      <div class="page-err" id="err-berichte"></div>
+      <div class="grid grid--2">
+        <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--blue" data-ic="page"></span><span>Berichte</span></div></div><div id="beListe"></div></div>
+        <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--red" data-ic="chart"></span><span>Fehlerhistorie<span class="card__sub">Offene Befunde je Lauf nach Schweregrad</span></span></div></div><div class="chart-box" id="chFehler"></div><p class="hint" id="beVerlauf" style="margin-top:10px"></p></div>
+      </div>
+      <div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--grey" data-ic="page"></span><span id="beTitel">Bericht</span></div><span id="beRoh"></span></div><div class="md" id="beText"><div class="empty">Bericht auswählen</div></div></div>
+    </section>
+
+    <section class="page" id="page-automatisierung">
+      <div class="page-head"><div><h2>Automatisierung</h2><p>Wann der Autopilot läuft, was ihn absichert und welche Meldungen er verschickt hat.</p></div></div>
+      <div class="page-err" id="err-automatisierung"></div>
+      <div id="auBox"></div>
+    </section>
+  </main>
+</div>
+</div>
+
+<div class="backdrop" id="backdrop"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true">
+  <button class="drawer__x" id="drawerX" type="button" aria-label="Details schließen"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <div id="drawerBody"></div>
+</aside>
+<div class="chart-tip" id="chartTip" hidden></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+'use strict';
+/* ═══════════════════════════════════════════════════════════════════════════
+   SEO Center – KFZ-Zulassungsprofis. Oberfläche des SEO-Autopiloten.
+   Datenquelle: daten.php neben dieser Datei (Login über HTTP-Basic-Auth der Seite, kein Secret im Client).
+   Filter, Sortierung, Laufvergleich und Freigabe-Gruppen entstehen im Browser aus den Datendateien.
+   Einzige Schreiboperation: der Bearbeitungsstatus je Befund.
+   Sicherheit: Alle Daten laufen vor der Ausgabe durch esc(); Links nur mit http(s); keine Inline-Handler.
+   ═══════════════════════════════════════════════════════════════════════════ */
+// Absolut und ohne Zugangsdaten in der Adresse (sonst lehnt fetch() ab, wenn jemand name:passwort@… als Lesezeichen nutzt).
+const API = location.origin + location.pathname.replace(/[^/]*$/, '') + 'daten.php';
+const LOKAL = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
+const SEITE = 50;   // Zeilen je Tabelle, danach „mehr anzeigen“
+
+// ── Kleine Helfer ───────────────────────────────────────────────────────────
+const $ = id => document.getElementById(id);
+const esc = v => String(v == null ? '' : v).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const isId = v => typeof v === 'string' && /^[a-f0-9]{12}$/.test(v);
+const safeUrl = u => (typeof u === 'string' && /^https?:\/\//i.test(u.trim())) ? u.trim() : null;
+const arr = v => Array.isArray(v) ? v : [];
+const eigen = (o, k) => (typeof k === 'string' && Object.prototype.hasOwnProperty.call(o, k)) ? o[k] : undefined;   // nie geerbte Schlüssel (constructor, toString …)
+const obj = v => (v && typeof v === 'object' && !Array.isArray(v)) ? v : {};
+const int = v => { const n = Number(v); return Number.isFinite(n) ? n : 0; };
+const zahl = v => (v == null || v === '' || typeof v === 'boolean' || !Number.isFinite(Number(v))) ? null : Number(v);
+const fmtNum = v => { const n = zahl(v); return n == null ? '–' : n.toLocaleString('de-DE'); };
+const fmtPct = v => { const n = zahl(v); return n == null ? '–' : (100 * n).toLocaleString('de-DE', { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + ' %'; };
+const fmtPos = v => { const n = zahl(v); return n == null ? '–' : n.toLocaleString('de-DE', { minimumFractionDigits: 1, maximumFractionDigits: 1 }); };
+const datum = s => { if (!s) return null; const d = new Date(s); return isNaN(d) ? null : d; };
+const fmtD = s => { const d = datum(s); return d ? d.toLocaleString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' }) : '–'; };
+const fmtTag = s => { const d = datum(s); return d ? d.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' }) : '–'; };
+const zwei = n => String(n).padStart(2, '0');
+const fmtKurz = s => { const d = datum(s); return d ? `${zwei(d.getDate())}.${zwei(d.getMonth() + 1)}. ${zwei(d.getHours())}:${zwei(d.getMinutes())}` : '–'; };
+/** Pfad einer http(s)-Adresse für die Anzeige; alles andere bleibt wörtlich stehen. */
+const pathOf = u => { if (!safeUrl(u)) return String(u == null ? '' : u); try { const p = new URL(u.trim()).pathname; try { return decodeURI(p); } catch (_) { return p; } } catch (_) { return String(u); } };
+const clip = (s, n) => { s = String(s == null ? '' : s); return s.length > n ? s.slice(0, n - 1) + '…' : s; };
+const dec = s => { try { return decodeURIComponent(s); } catch (_) { return s; } };
+const debounce = (fn, ms) => { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; };
+const C = { acc: '#4C8DFF', amber: '#F5A500', blue: '#38BDF8', violet: '#8B5CF6', green: '#10B981', red: '#EF4444' };
+/** Link nur für http(s)-Adressen ohne Platzhalter; alles andere erscheint als Text. */
+function urlHtml(u, text) {
+  const s = safeUrl(u), t = text == null ? pathOf(u) : text;
+  return (s && !s.includes('*')) ? `<a href="${esc(s)}" target="_blank" rel="noopener noreferrer">${esc(t)}</a>` : esc(t);
+}
+const beispielUrls = i => arr(i.examples).map(e => e && typeof e.url === 'string' ? e.url : '').join(' ');
+/** Ort eines Befunds in Listen: Sammelbefunde (key „alle:…“) hängen an der Startseite – dann die betroffenen Seiten zeigen. */
+function ortHtml(i) {
+  const bsp = arr(i.examples).filter(e => e && typeof e === 'object' && e.url);
+  if (String(i.key || '').startsWith('alle:') && bsp.length) {
+    const n = Math.max(bsp.length, Number(i.count) || 0);
+    return urlHtml(bsp[0].url) + (n > 1 ? ` <span class="sub">+ ${fmtNum(n - 1)} weitere</span>` : '');
+  }
+  return urlHtml(i.url);
+}
+
+const ICON = {
+  info: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>',
+  warn: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>',
+  check: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.1V12a10 10 0 1 1-5.9-9.1"/><path d="m9 11 3 3L22 4"/></svg>',
+  chart: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 19V5M4 19h16M8 15v-4M12 15V8M16 15v-6M20 15v-9"/></svg>',
+  clock: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+  trend: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 6l-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/></svg>',
+  globe: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>',
+  list: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>',
+  page: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8"/></svg>',
+  bulb: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.3h6c0-1 .4-1.8 1-2.3A7 7 0 0 0 12 2z"/></svg>',
+  swap: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3 4 7l4 4M4 7h16M16 21l4-4-4-4M20 17H4"/></svg>',
+  repeat: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 1l4 4-4 4M3 11V9a4 4 0 0 1 4-4h14M7 23l-4-4 4-4M21 13v2a4 4 0 0 1-4 4H3"/></svg>',
+  search: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>',
+};
+const note = (art, html) => `<div class="note${art ? ' note--' + art : ''}">${art ? ICON.warn : ICON.info}<span>${html}</span></div>`;
+const lade = text => `<div class="loading"><div class="spinner"></div> ${esc(text)}</div>`;
+const leerBox = text => `<div class="empty">${esc(text)}</div>`;
+
+// ── Festwerte: Schweregrad, Bearbeitungsstatus, Freigabestufen, Ansichten ───
+const SEV = ['kritisch', 'hoch', 'mittel', 'niedrig', 'info'];
+const sevRang = i => { const k = SEV.indexOf(i.severity); return k < 0 ? SEV.length : k; };
+const sevPill = s => `<span class="sev sev--${SEV.includes(s) ? s : 'info'}">${esc(s || 'info')}</span>`;
+const STATES = ['offen', 'in_pruefung', 'lokal_behoben', 'freigegeben'];
+const STATE_LABELS = { offen: 'Offen', in_pruefung: 'In Prüfung', lokal_behoben: 'Lokal behoben', freigegeben: 'Freigegeben' };
+const stPill = st => { st = STATES.includes(st) ? st : 'offen'; return `<span class="st st--${st}">${STATE_LABELS[st]}</span>`; };
+const APPROVAL = {
+  auto:    { kurz: 'technische Korrektur',     pill: 'blue',   text: 'Technische Korrektur – kann ohne inhaltliche Entscheidung umgesetzt werden.' },
+  manuell: { kurz: 'inhaltliche Entscheidung', pill: 'amber',  text: 'Inhaltliche Entscheidung – Formulierung oder Aussage legt der Betreiber fest.' },
+  preis:   { kurz: 'Preisfreigabe',            pill: 'violet', text: 'Preisfreigabe über config/preise.json – Preise werden nur dort geändert und freigegeben.' },
+  recht:   { kurz: 'rechtliche Prüfung',       pill: 'red',    text: 'Rechtliche Prüfung – vor einer Änderung rechtlich prüfen lassen.' },
+};
+const brauchtFreigabe = i => !!(i.approval && i.approval !== 'auto');
+const apprPill = a => { const x = eigen(APPROVAL, a || 'auto'); return x ? `<span class="pill pill--${x.pill}">${x.kurz}</span>` : `<span class="pill pill--amber">${esc(a)}</span>`; };
+const ART = { daily: 'Tageslauf', weekly: 'Wochenlauf', monthly: 'Monatslauf' };
+const artLabel = k => eigen(ART, k) || String(k || '–');
+const GRUPPEN = { technik: 'Technik', meta: 'Meta-Daten', schema: 'Strukturierte Daten', inhalt: 'Inhalte', faq: 'FAQ', kfz: 'Preise & Marke', sonstige: 'Sonstige' };
+const INHALT_GRUPPEN = ['inhalt', 'faq', 'kfz'];
+const SEITENTYP = { start: 'Startseite', leistung: 'Leistungen', ratgeber: 'Ratgeber', stadt: 'Stadtseiten', behoerde: 'Zulassungsstellen', kennzeichen: 'Kennzeichen', gewerbe: 'Gewerbe', rechner: 'Rechner', vorlage: 'Vorlagen', landing: 'Landingpages', recht: 'Rechtliches', hub: 'Übersichtsseiten', sonst: 'Sonstige' };
+/* Themen-Filter: reine Stichwortfilter über die Regel-ID (nicht ausschließend). Welche Regel in welche Ansicht
+   gehört, bestimmt allein uebersicht.ruleGroups; was zu keinem Stichwort passt, steht unter „Weitere“, und
+   Regeln ohne Gruppe erscheinen unter „Sonstige“ – nichts verschwindet. */
+const THEMEN = {
+  technik: [
+    { k: 'links', label: 'Defekte Links & Dateien', t: r => /defekt|redirect|^https$|-404$/.test(r) },
+    { k: 'index', label: 'Indexierbarkeit', t: r => /index|^robots-|gesperrt|verwaist|entwurf/.test(r) },
+    { k: 'canonical', label: 'Canonical', t: r => /canonical/.test(r) },
+    { k: 'sitemap', label: 'Sitemap & robots.txt', t: r => /sitemap|^robots$/.test(r) },
+    { k: 'server', label: 'Server & Weiterleitungen', t: r => /server|erreichbar|status|weiterleitung|langsam|header|geaendert/.test(r) },
+    { k: 'schema', gruppe: 'schema', t: (r, g) => g === 'schema' },   // Namen der Gruppen-Chips kommen aus der Übersicht
+    { k: 'meta', gruppe: 'meta', t: (r, g) => g === 'meta' },
+    { k: 'sonstige', label: 'Sonstige', opt: true, t: (r, g) => !['technik', 'meta', 'schema'].includes(g) },
+    { k: 'weitere', label: 'Weitere Technik', opt: true, rest: true },
+  ],
+  inhalte: [
+    { k: 'preise', label: 'Preise & Aktionen', t: r => /preis|aktion|^soll-/.test(r) },
+    { k: 'marke', label: 'Marke & Pflichtangaben', t: r => /altmarke|mailadresse|platzhalter|render-fehler|entwicklerhinweis|impressum|pruefdatum/.test(r) },
+    { k: 'werbung', label: 'Werbe- & Zeitaussagen', t: r => /werbeaussage|anschein|versprechen|unbelegt|wartezeit|zeitangabe|behoerdenhinweis/.test(r) },
+    { k: 'veraltet', label: 'Veraltetes & Fristen', t: r => /veraltet|abgelaufen|laeuft-aus|copyright|pruefdatum|frist/.test(r) },
+    { k: 'doppelt', label: 'Doppelte & dünne Inhalte', t: r => /duplicate|kannibal|thin|duenn/.test(r) },
+    { k: 'faq', label: 'FAQ & Widersprüche', t: (r, g) => g === 'faq' || /widerspruch/.test(r) },
+    { k: 'text', label: 'Texte & Verlinkung', t: r => /rechtschreibung|keyword|verlinkung/.test(r) },
+    { k: 'weitere', label: 'Weitere', opt: true, rest: true },
+  ],
+};
+const VIEWS = {
+  uebersicht: { titel: 'Übersicht', render: renderUebersicht },
+  prioritaet: { titel: 'Hohe Priorität', render: renderPrio },
+  freigabe: { titel: 'Freigabe nötig', render: renderFreigabe },
+  technik: { titel: 'Technisches SEO', render: () => renderBefunde('technik') },
+  google: { titel: 'Google Performance', render: renderGoogle },
+  inhalte: { titel: 'Inhalte & FAQ', render: () => renderBefunde('inhalte') },
+  vorschlaege: { titel: 'Optimierungsvorschläge', render: renderVorschlaege },
+  vergleich: { titel: 'Vorher / Nachher', render: renderVergleich },
+  historie: { titel: 'Prüfhistorie', render: renderHistorie },
+  berichte: { titel: 'SEO-Berichte', render: renderBerichte },
+  automatisierung: { titel: 'Automatisierung', render: renderAuto },
+};
+const ALIAS = { overview: 'uebersicht', prio: 'prioritaet', approvals: 'freigabe', tech: 'technik', content: 'inhalte', opps: 'vorschlaege', ba: 'vergleich', hist: 'historie', reports: 'berichte', auto: 'automatisierung' };
+const BERICHT_RE = /^(daily|weekly|monthly|latest)-[A-Za-z0-9._-]+\.(md|json)$/;
+
+// ── Zustand ─────────────────────────────────────────────────────────────────
+const S = {
+  ov: {}, ovFehlt: false, issues: [], byId: new Map(), runs: [], review: {}, sugg: new Map(), gruppeVon: new Map(), hinweise: [],
+  geladen: false, leer: false, view: 'uebersicht', seq: 0, lazy: {}, lc: undefined, limit: {}, sort: {}, sortDef: {}, redraw: {},
+  drawerId: null, drawerAlle: false, lastFocus: null, bericht: null, berichte: [], cmp: null,
+  f: { technik: { thema: 'alle', sev: '', status: 'offen', regel: '', q: '' }, inhalte: { thema: 'alle', sev: '', status: 'offen', regel: '', q: '' }, prio: { state: 'alle', art: '', q: '' }, freigabe: { art: 'alle', q: '' } },
+};
+
+// ── Daten holen (Vertrag: daten.php?d=…, ?bericht=…, ?zustand=1, POST ?review=<id>) ──
+class ApiFehler extends Error { constructor(msg, status, detail) { super(msg); this.status = status || 0; this.detail = detail || ''; } }
+const AUTH_TEXT = {
+  401: 'Anmeldung erforderlich – bitte die Seite neu laden und anmelden.',
+  429: 'Zu viele Anmeldeversuche – der Zugang ist vorübergehend gesperrt. Bitte später erneut versuchen.',
+  503: 'Das SEO Center ist auf dem Server noch nicht eingerichtet oder gerade nicht verfügbar.',
+};
+async function anfrage(query, init) {
+  try { return await fetch(API + query, Object.assign({ cache: 'no-store', credentials: 'same-origin' }, init)); }
+  catch (_) { throw new ApiFehler('Der Server ist nicht erreichbar – bitte die Verbindung prüfen und erneut versuchen.', 0); }
+}
+async function fehlerAus(r) {
+  const text = (await r.text().catch(() => '')).trim();
+  let j = null; try { j = JSON.parse(text); } catch (_) {}
+  const klar = text.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 300);
+  if (AUTH_TEXT[r.status]) return new ApiFehler(AUTH_TEXT[r.status], r.status, j ? String(obj(j).error || '') : klar);
+  return new ApiFehler((j && obj(j).error) ? String(j.error) : `Der Server antwortet mit Status ${r.status}.`, r.status, j ? '' : klar);
+}
+/** Datendatei laden. Liefert null, wenn die Datei (noch) fehlt (404 mit fehlt:true). */
+async function getData(name) {
+  const r = await anfrage('?d=' + encodeURIComponent(name), { headers: { Accept: 'application/json' } });
+  if (r.status === 404) { const j = await r.json().catch(() => null); if (j && j.fehlt) return null; throw new ApiFehler((j && j.error) ? String(j.error) : `„${name}“ wurde nicht gefunden (Status 404).`, 404); }
+  if (!r.ok) throw await fehlerAus(r);
+  try { return await r.json(); } catch (_) { throw new ApiFehler(`Die Datei „${name}“ enthält kein gültiges JSON.`, r.status); }
+}
+async function getBericht(datei) {
+  const r = await anfrage('?bericht=' + encodeURIComponent(datei), { headers: { Accept: 'text/markdown, text/plain' } });
+  if (!r.ok) throw await fehlerAus(r);
+  return r.text();
+}
+async function postReview(id, state, note) {
+  if (!isId(id)) throw new ApiFehler('Ungültige Befund-ID.', 400);
+  const r = await anfrage('?review=' + id, { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest', Accept: 'application/json' }, body: JSON.stringify({ state, note }) });
+  if (!r.ok) throw await fehlerAus(r);
+  const d = await r.json().catch(() => null);
+  if (!d || !d.ok) throw new ApiFehler((d && d.error) ? String(d.error) : 'Der Status konnte nicht gespeichert werden.', r.status);
+  return d;
+}
+/** Bei-Bedarf-Daten: einmal je Aktualisierung laden; ein Fehler wird nicht gemerkt (nächster Aufruf versucht es erneut). */
+function lazy(name) { return S.lazy[name] || (S.lazy[name] = getData(name).catch(e => { delete S.lazy[name]; throw e; })); }
+const lazyStill = name => lazy(name).catch(() => null);
+
+// ── Kern-Daten übernehmen und absichern ─────────────────────────────────────
+function normBefund(i) {   // Pflichtfelder absichern, damit Filter und Sortierung nie an fehlenden Feldern scheitern
+  i.id = String(i.id == null ? '' : i.id); i.rule = String(i.rule || 'unbekannt'); i.severity = String(i.severity || 'info');
+  i.status = String(i.status || 'offen'); i.title = String(i.title || '(ohne Titel)'); i.url = typeof i.url === 'string' ? i.url : '';
+  i.first_seen = String(i.first_seen || ''); i.last_seen = String(i.last_seen || '');
+  return i;
+}
+const gruppe = regel => S.gruppeVon.get(regel) || 'sonstige';
+const gruppeLabel = g => { const l = eigen(obj(S.ov.ruleGroupLabels), g); return (typeof l === 'string' && l) ? l : (eigen(GRUPPEN, g) || (g.charAt(0).toUpperCase() + g.slice(1))); };
+const regelLabel = regel => { const l = eigen(obj(S.ov.ruleLabels), regel); return (typeof l === 'string' && l) ? l : regel; };
+const ansichtVon = regel => INHALT_GRUPPEN.includes(gruppe(regel)) ? 'inhalte' : 'technik';
+const rv = id => { const r = S.review[id]; return (r && typeof r === 'object') ? { state: STATES.includes(r.state) ? r.state : 'offen', note: typeof r.note === 'string' ? r.note : '', at: r.at || null, history: arr(r.history) } : { state: 'offen', note: '', at: null, history: [] }; };
+const offene = () => S.issues.filter(i => i.status === 'offen');
+const seiten = i => int(i.count) || 1;
+
+/** Neu (noch offen) und behoben in den letzten 7 Tagen – im Browser gezählt, damit die Zahlen auch ohne neuen Lauf zum heutigen Tag passen. */
+function siebenTage() { const seit = new Date(Date.now() - 7 * 864e5).toISOString(); return { neu: offene().filter(i => i.first_seen >= seit).length, behoben: S.issues.filter(i => i.status === 'behoben' && i.resolved_at >= seit).length }; }
+function eigeneUebersicht() {   // Ersatz, falls uebersicht.json fehlt oder Felder fehlen: direkt aus den Befunden gerechnet
+  const open = offene(), by = s => open.filter(i => i.severity === s).length, last = S.runs[S.runs.length - 1] || null;
+  const sieben = siebenTage(), cnt = {};
+  for (const i of open) cnt[i.rule] = (cnt[i.rule] || 0) + 1;
+  const seit30 = new Date(Date.now() - 30 * 864e5).toISOString();
+  return { base: location.origin, score: null, scoreHistory: [], lastChanges: null, lastRunSuspicious: null, suspiciousReasons: [], topActions: [],
+    recurring: S.issues.filter(i => int(i.reopen_count) >= 2 || (i.reopened_at && i.reopened_at >= seit30)).sort((a, b) => int(b.reopen_count) - int(a.reopen_count)).slice(0, 20),
+    approvalNeeded: open.filter(brauchtFreigabe).length, open: open.length, kritisch: by('kritisch'), hoch: by('hoch'), mittel: by('mittel'), niedrig: by('niedrig'),
+    gepruefte: null, indexable: null, noindex: null, typen: null, neu7: sieben.neu, behoben7: sieben.behoben,
+    letzterLauf: last, laeufe: S.runs.slice(-30), crawlHistory: [], statusVerteilung: {}, byRule: Object.entries(cnt).sort((a, b) => b[1] - a[1]), ruleGroups: {}, ruleLabels: {}, gsc: null, notify: null, zeitplan: null };
+}
+function setKern(k) {
+  const raw = obj(k.iss), map = raw.issues;
+  const liste = Array.isArray(map) ? map : Object.entries(obj(map)).map(([id, v]) => (v && typeof v === 'object') ? (v.id ? v : Object.assign({ id }, v)) : null);
+  S.issues = liste.filter(i => i && typeof i === 'object' && !Array.isArray(i)).map(normBefund);
+  S.byId = new Map(S.issues.filter(i => isId(i.id)).map(i => [i.id, i]));
+  S.runs = arr(raw.runs).filter(r => r && typeof r === 'object' && r.at);
+  S.review = obj(k.rev);
+  S.sugg = new Map(); for (const s of (Array.isArray(k.sug) ? k.sug : arr(obj(k.sug).items))) if (s && typeof s === 'object' && typeof s.id === 'string') S.sugg.set(s.id, s);
+  S.ovFehlt = !k.ov;
+  S.ov = Object.assign(eigeneUebersicht(), obj(k.ov));
+  S.gruppeVon = new Map();
+  for (const [g, ids] of Object.entries(obj(S.ov.ruleGroups))) for (const id of (Array.isArray(ids) ? ids : arr(obj(ids).rules))) if (typeof id === 'string' && !S.gruppeVon.has(id)) S.gruppeVon.set(id, g);
+  S.hinweise = k.hinweise.slice();
+  if (S.ovFehlt) S.hinweise.push('Die Übersichtsdatei fehlt noch – Kennzahlen wurden direkt aus den Befunden berechnet. Score, Zeitplan und Regelgruppen erscheinen nach dem nächsten Prüflauf.');
+  else if (!S.gruppeVon.size && S.issues.length) S.hinweise.push('Die Übersicht enthält keine Regelgruppen – alle Befunde stehen deshalb unter „Technisches SEO → Sonstige“.');
+  S.lazy = {}; S.lc = undefined; S.limit = {}; S.cmp = null; S.bericht = null;
+  const hatBefunde = S.issues.length || S.runs.length, hatLauf = !!obj(k.ov).letzterLauf;
+  S.leer = !hatBefunde && !hatLauf;
+}
+async function ladeKern() {
+  const namen = ['uebersicht', 'issues', 'review', 'suggestions'];
+  const erg = await Promise.allSettled(namen.map(getData));
+  for (const k of [0, 1]) if (erg[k].status === 'rejected') throw erg[k].reason;
+  const hinweise = [], wert = (k, text) => { if (erg[k].status === 'fulfilled') return erg[k].value; const e = erg[k].reason; if (!e || [0, 401, 429, 503].includes(e.status)) throw e; hinweise.push(text + ' ' + e.message); return null; };
+  const rev = wert(2, 'Der Bearbeitungsstatus konnte nicht geladen werden.'), sug = wert(3, 'Die Vorschlagsdaten konnten nicht geladen werden.');
+  return { ov: erg[0].value, iss: erg[1].value, rev, sug, hinweise };
+}
+
+// ── Auswertungen im Browser (früher Server-API: priority, approvals, compare, issue) ──
+function reviewZahlen(ids) { const c = { offen: 0, in_pruefung: 0, lokal_behoben: 0, freigegeben: 0 }; for (const id of ids) c[rv(id).state]++; return c; }
+/** Ergebnisse des lokalen Checks (local-check.json, byId) → Anzeige: [Text in der Schublade, Text in „Hohe Priorität“, Farbe]. */
+const LOKAL_STATUS = { 'lokal behoben': ['lokal behoben', 'behoben', 'green'], 'unverändert': ['lokal unverändert', 'noch offen', 'grey'], 'nicht lokal prüfbar': ['nicht lokal prüfbar', 'nicht lokal prüfbar', 'grey'], 'neu entstanden': ['lokal neu', 'lokal neu', 'amber'] };
+/** Ergebnis des lokalen Checks für einen Befund – null, wenn der Befund im Check nicht vorkommt (live schon behoben oder erst danach entstanden).
+    Ältere local-check.json ohne byId: nur „lokal behoben“ und „neu entstanden“ aus den Listen, sonst nichts behaupten. */
+function lokalStatus(lc, id) {
+  if (!lc) return null;
+  const b = (lc.byId && typeof lc.byId === 'object' && !Array.isArray(lc.byId)) ? lc.byId : null;
+  const v = b ? eigen(b, id) : arr(lc.resolved).some(x => x && x.id === id) ? 'lokal behoben' : arr(lc.added).some(x => x && x.id === id) ? 'neu entstanden' : null;
+  return eigen(LOKAL_STATUS, v) ? v : null;
+}
+/** Hohe Priorität: offen und kritisch/hoch – oder mit gesetztem Bearbeitungsstatus. Sortiert nach Schweregrad, dann betroffenen Seiten. */
+function prioritaet(lc) {
+  const items = S.issues.filter(i => (i.status === 'offen' && (i.severity === 'kritisch' || i.severity === 'hoch')) || rv(i.id).state !== 'offen')
+    .map(i => ({ i, review: rv(i.id), lokal: lokalStatus(lc, i.id), pages: seiten(i) }));
+  items.sort((a, b) => sevRang(a.i) - sevRang(b.i) || b.pages - a.pages);
+  return { items, counts: reviewZahlen(items.map(x => x.i.id)), pagesTotal: items.reduce((a, x) => a + x.pages, 0) };
+}
+/** Freigabepflichtig: offene Punkte mit Freigabestufe ≠ auto. */
+function freigaben() {
+  const items = offene().filter(brauchtFreigabe).sort((a, b) => sevRang(a) - sevRang(b) || seiten(b) - seiten(a));
+  const counts = { recht: 0, preis: 0, manuell: 0, andere: 0 };
+  for (const i of items) counts[Object.prototype.hasOwnProperty.call(counts, i.approval) ? i.approval : 'andere']++;
+  return { items, counts, pages: items.reduce((a, i) => a + seiten(i), 0) };
+}
+/** Zwei Läufe vergleichen (zeitlich geordnet): was im Fenster neu, behoben oder wieder aufgetreten ist. */
+function vergleich(ra, rb) {
+  const [from, to] = ra.at <= rb.at ? [ra, rb] : [rb, ra];
+  const im = t => !!t && t > from.at && t <= to.at;
+  return { from, to, delta: SEV.map(s => ({ severity: s, from: int(obj(from.bySeverity)[s]), to: int(obj(to.bySeverity)[s]) })),
+    neu: S.issues.filter(i => im(i.first_seen)), behoben: S.issues.filter(i => im(i.resolved_at)), wieder: S.issues.filter(i => im(i.reopened_at)) };
+}
+const laeufeGesehen = i => S.runs.filter(r => r.at >= i.first_seen && r.at <= i.last_seen).length;
+/** Offene Befunde auf Seiten mit echter Suchleistung (30 Tage, ab 50 Impressionen). seite = Seite, zu der die Zahlen gehören: bei Sammelbefunden
+    („alle:…“) und Bündeln einer Seitenfamilie („familie:…“, Adresse mit *) die Beispielseite mit den meisten Impressionen. */
+function verkehrsBefunde(g) {
+  const p30 = obj(obj(g.periods)[30]); if (!Array.isArray(p30.pages)) return [];
+  const norm = u => { try { const x = new URL(u); return x.origin + x.pathname.replace(/\/$/, '') + '/'; } catch (_) { return u; } };
+  const perf = new Map(p30.pages.filter(x => x && x.page).map(x => [norm(x.page), x])), out = [];
+  for (const i of offene()) { if (!i.url || i.severity === 'info') continue; const ueberBeispiele = /^(alle|familie):/.test(String(i.key || '')) || i.url.includes('*'); const ziele = ueberBeispiele ? arr(i.examples).map(e => e && e.url).filter(u => typeof u === 'string' && u && !u.includes('*')) : [i.url]; let x = null; for (const z of ziele) { const y = perf.get(norm(z)); if (y && (!x || int(y.impressions) > int(x.impressions))) x = y; } if (!x || int(x.impressions) < 50) continue; out.push({ i, seite: x.page, clicks: x.clicks, impressions: int(x.impressions), position: x.position }); }
+  return out.sort((a, b) => b.impressions - a.impressions || sevRang(a.i) - sevRang(b.i)).slice(0, 50);
+}
+function letzteAenderungen() {
+  const lc = obj(S.ov.lastChanges), lauf = S.runs[S.runs.length - 1] || obj(S.ov.letzterLauf), at = lc.at || lauf.at || null;
+  if (!at) return null;
+  const hole = (v, feld) => Array.isArray(v) ? v.map(x => typeof x === 'string' ? S.byId.get(x) : x).filter(x => x && typeof x === 'object') : S.issues.filter(i => i[feld] === at);
+  const neu = hole(lc.new, 'first_seen'), behoben = hole(lc.resolved, 'resolved_at'), wieder = hole(lc.reopened, 'reopened_at');
+  const n = (v, liste, ausLauf) => zahl(typeof v === 'number' ? v : (liste.length || zahl(ausLauf) || 0));
+  return { at, neu, behoben, wieder, zahlen: { neu: n(lc.new, neu, lauf.new), behoben: n(lc.resolved, behoben, lauf.resolved), wieder: n(lc.reopened, wieder, lauf.reopened) } };
+}
+function unsicherText() {
+  const o = S.ov, l = obj(o.letzterLauf); if (!o.lastRunSuspicious && !l.suspicious) return null;
+  const gruende = arr(o.suspiciousReasons).filter(x => typeof x === 'string' && x);
+  return typeof o.lastRunSuspicious === 'string' ? o.lastRunSuspicious : gruende.length ? gruende.join(' · ') : String(l.note || 'Der Lauf wich deutlich vom Vorlauf ab.');
+}
+function quelldateien(i) {   // Quelldatei(en) des Befunds: Feld file sowie suggestion.generator/source, falls vorhanden
+  const s = obj(S.sugg.get(i.id)), so = obj(typeof i.suggestion === 'object' ? i.suggestion : null), out = [], gesehen = new Set();
+  const add = (art, v) => { for (const x of (Array.isArray(v) ? v : [v])) { if (typeof x !== 'string' || !x.trim() || gesehen.has(art + '|' + x.trim())) continue; gesehen.add(art + '|' + x.trim()); out.push({ art, pfad: x.trim() }); } };
+  add('Datei', i.file); add('Datei', s.file); add('Datei', so.file); add('Generator', s.generator); add('Generator', so.generator); add('Quelle', s.source); add('Quelle', so.source);
+  return out;
+}
+const vorschlagText = i => typeof i.suggestion === 'string' ? i.suggestion : String(obj(i.suggestion).text || obj(i.suggestion).proposed || '');
+/** Beispielseiten einer Maßnahme (topActions[].urls, Pfade oder volle Adressen): ohne Doppelte, höchstens drei. */
+const massnahmeOrte = a => [...new Set(arr(a.urls).filter(u => typeof u === 'string' && u).map(pathOf))].slice(0, 3);
+
+// ── Tabellen mit Begrenzung („mehr anzeigen“) und Sortierung ────────────────
+/** cols: [{ k, t, cls?, sort?, desc? }] – t ist fester Text; zeile(row) liefert fertiges, maskiertes HTML. */
+function tabelle(key, rows, cols, zeile, opt = {}) {
+  if (!rows.length) return leerBox(opt.leer || 'Keine Einträge in dieser Auswahl.');
+  const seite = opt.seite || SEITE; S.sortDef[key] = opt.sort || null;
+  const s = S.sort[key] || opt.sort || null;
+  if (s) { const c = cols.find(x => x.k === s.k && x.sort); if (c) { rows = rows.slice().sort(c.sort); if (!s.asc) rows.reverse(); } }
+  const limit = Math.max(seite, S.limit[key] || 0), teil = rows.slice(0, limit);
+  const kopf = cols.map(c => { const akt = s && s.k === c.k; return `<th scope="col"${c.cls ? ` class="${c.cls}"` : ''}${c.sort ? ` aria-sort="${akt ? (s.asc ? 'ascending' : 'descending') : 'none'}"` : ''}>${c.sort ? `<button type="button" class="thbtn" data-sort="${c.k}" data-list="${key}"${c.desc ? ' data-desc="1"' : ''} title="Sortieren">${c.t}</button>` : c.t}</th>`; }).join('');
+  const mehr = rows.length > limit ? `<div class="more"><button type="button" class="btn btn--sm" data-more="${key}" data-step="${seite}">Weitere ${fmtNum(Math.min(seite, rows.length - limit))} anzeigen</button><span class="hint">${fmtNum(limit)} von ${fmtNum(rows.length)}</span></div>` : '';
+  return `<div class="tbl-wrap"><table class="tbl${opt.cls ? ' ' + opt.cls : ''}"><thead><tr>${kopf}</tr></thead><tbody>${teil.map(zeile).join('')}</tbody></table></div>${mehr}`;
+}
+/** Liste in einen Behälter setzen und merken, wie sie neu gezeichnet wird (für Sortierung und „mehr anzeigen“). */
+function liste(boxId, key, html) { S.redraw[key] = () => { const b = $(boxId); if (b) b.innerHTML = html(); }; S.redraw[key](); }
+const platz = key => `<div id="l-${key}"></div>`;
+
+const kannOeffnen = id => isId(id) && S.byId.has(id);
+const titelKnopf = (id, titel) => kannOeffnen(id) ? `<button type="button" class="linkbtn" data-open="${id}">${esc(titel)}</button>` : `<b>${esc(titel)}</b>`;
+const zeilenAttr = id => kannOeffnen(id) ? ` class="click" data-id="${id}"` : '';
+const BEFUND_SORT = {
+  prio: (a, b) => sevRang(a) - sevRang(b) || seiten(b) - seiten(a),
+  titel: (a, b) => a.title.localeCompare(b.title, 'de'),
+  seit: (a, b) => a.first_seen < b.first_seen ? -1 : a.first_seen > b.first_seen ? 1 : 0,
+  status: (a, b) => STATES.indexOf(rv(a.id).state) - STATES.indexOf(rv(b.id).state),
+};
+/** Große Befundtabelle (Technik, Inhalte, Übersicht). */
+function befundTabelle(key, list, opt) {
+  const cols = [{ k: 'prio', t: 'Prio', cls: 'c-prio', sort: BEFUND_SORT.prio }, { k: 'titel', t: 'Befund', sort: BEFUND_SORT.titel }, { k: 'ort', t: 'URL / Quelldatei' }, { k: 'vorschlag', t: 'Vorschlag &amp; Freigabe', cls: 'hide-m' }, { k: 'status', t: 'Status', cls: 'c-st', sort: BEFUND_SORT.status }];
+  return tabelle(key, list, cols, i => {
+    const r = rv(i.id), q = quelldateien(i), n = seiten(i);
+    return `<tr${zeilenAttr(i.id)}><td>${sevPill(i.severity)}<div class="sub">${esc(regelLabel(i.rule))}${n > 1 ? ` · ${fmtNum(n)} Seiten` : ''}</div></td>` +
+      `<td class="wrap">${titelKnopf(i.id, i.title)}<div class="sub">${esc(clip(i.detail, 200))}</div></td>` +
+      `<td class="wrap mono">${i.url ? ortHtml(i) : ''}${q.slice(0, 2).map(x => `<div>${esc(x.art)}: ${esc(x.pfad)}</div>`).join('')}</td>` +
+      `<td class="wrap hide-m"><div class="sub" style="margin:0 0 5px">${esc(clip(i.proposed || vorschlagText(i), 160))}</div>${apprPill(i.approval)}</td>` +
+      `<td>${stPill(r.state)}<div class="sub">${i.status === 'behoben' ? `behoben ${esc(fmtTag(i.resolved_at))}` : `seit ${esc(fmtTag(i.first_seen))} · ${fmtNum(i.runs)}×`}</div></td></tr>`;
+  }, Object.assign({ cls: 'tbl--stack', sort: { k: 'prio', asc: true } }, opt));
+}
+/** Kurze Befundliste (Veränderungen, Laufvergleich, lokaler Check). Einträge: { id, severity, title, url, count, key?, examples? }.
+    Die URL-Spalte nimmt den vollständigen Befund, wenn die ID bekannt ist – Sammelbefunde zeigen so ihre Seiten statt „/“. */
+function kurzTabelle(key, list, opt) {
+  const cols = [{ k: 'prio', t: 'Prio' }, { k: 'titel', t: 'Befund' }, { k: 'url', t: 'URL', cls: 'hide-m' }];
+  return tabelle(key, arr(list).filter(x => x && typeof x === 'object'), cols, i => {
+    const n = int(i.count), voll = (isId(i.id) && S.byId.get(i.id)) || i;
+    return `<tr${zeilenAttr(i.id)}><td>${sevPill(i.severity)}</td><td class="wrap">${titelKnopf(i.id, i.title || '(ohne Titel)')}${n > 1 ? ` <span class="sub">(${fmtNum(n)} Seiten)</span>` : ''}${i.zusatz ? `<div class="sub">${esc(i.zusatz)}</div>` : ''}</td><td class="wrap mono hide-m">${ortHtml(voll)}</td></tr>`;
+  }, Object.assign({ seite: 20, leer: 'keine', cls: 'tbl--stack' }, opt));
+}
+function kpi({ label, value, sub, tone, icon, href }) {
+  const tag = href ? 'a' : 'div';
+  return `<${tag} class="kpi kpi--${tone}"${href ? ` href="${href}"` : ''}><div class="kpi__top"><span class="kpi__ic ic--${tone === 'white' ? 'grey' : tone}">${ICON[icon] || ''}</span><span class="kpi__label">${label}</span></div><div class="kpi__value">${value}</div><div class="kpi__sub">${sub || ''}</div></${tag}>`;
+}
+const chip = (wert, label, n, aktiv) => `<button type="button" class="chip${wert === aktiv ? ' active' : ''}" data-v="${wert}" aria-pressed="${wert === aktiv}">${label}${n == null ? '' : ` <i>${fmtNum(n)}</i>`}</button>`;
+
+// ── Diagramme: kleine eigene SVG-Helfer (Linie, gestapelte Balken, Ring) ────
+// Vektorgrafik bleibt auf jedem Bildschirm scharf. Jedes Diagramm hat Achsenbeschriftung, Legende mit letztem Wert,
+// Tooltip (Zeiger und Pfeiltasten) und die Werte zusätzlich als Tabelle. Ein Fehler betrifft nur das eine Diagramm.
+const Charts = (() => {
+  const reg = new Map(), FLAECHE = '#111C36', GITTER = 'rgba(255,255,255,.07)';
+  const f1 = n => String(Math.round(n * 10) / 10);
+  const achse = v => Math.abs(v) >= 10000 ? v.toLocaleString('de-DE', { notation: 'compact', maximumFractionDigits: 1 }) : v.toLocaleString('de-DE', { maximumFractionDigits: 2 });
+  function ticks(lo, hi, ganz) {
+    if (!(hi > lo)) hi = lo + 1;
+    const roh = (hi - lo) / 4, mag = Math.pow(10, Math.floor(Math.log10(roh))), n = roh / mag;
+    let step = (n <= 1 ? 1 : n <= 2 ? 2 : n <= 5 ? 5 : 10) * mag; if (ganz && step < 1) step = 1;
+    const a = Math.floor(lo / step) * step, b = Math.ceil(hi / step) * step, out = [];
+    for (let v = a; v <= b + step / 2; v += step) out.push(Math.round(v * 1e6) / 1e6);
+    return out;
+  }
+  function tipZeigen(x, y, titel, zeilen) {   // Inhalte ausschließlich über textContent
+    const t = $('chartTip'); t.textContent = '';
+    const h = document.createElement('div'); h.className = 'tip__t'; h.textContent = titel; t.appendChild(h);
+    for (const z of zeilen) { const r = document.createElement('div'); r.className = 'tip__r'; const k = document.createElement('i'); if (z.farbe) k.style.background = z.farbe; else k.style.visibility = 'hidden'; const w = document.createElement('b'); w.textContent = z.wert; const n = document.createElement('span'); n.textContent = z.name; r.append(k, w, n); t.appendChild(r); }
+    t.hidden = false; const b = t.getBoundingClientRect(), vw = document.documentElement.clientWidth;
+    let left = x + 14; if (left + b.width > vw - 8) left = x - b.width - 14; if (left < 8) left = 8;
+    let top = y - b.height - 12; if (top < 8) top = y + 18;
+    t.style.left = Math.round(left) + 'px'; t.style.top = Math.round(top) + 'px';
+  }
+  const tipWeg = () => { const t = $('chartTip'); if (t) t.hidden = true; };
+  /** Zeiger- und Tastaturbedienung für Diagramme mit x-Positionen. geo: { W, n, idx(svgX), x(i) }; zeige(i|null) → Tooltip-Inhalt. */
+  function bediene(svg, geo, zeige) {
+    let cur = null;
+    const setze = (i, cx, cy) => { cur = i; const t = zeige(i); if (i == null || !t) return tipWeg(); tipZeigen(cx, cy, t.titel, t.zeilen); };
+    const amZeiger = ev => { const r = svg.getBoundingClientRect(); if (!r.width) return; setze(geo.idx((ev.clientX - r.left) * geo.W / r.width), ev.clientX, ev.clientY); };
+    const anPunkt = i => { const r = svg.getBoundingClientRect(); setze(i, r.left + geo.x(i) * r.width / geo.W, r.top + 24); };
+    svg.addEventListener('pointermove', amZeiger); svg.addEventListener('pointerdown', amZeiger);
+    svg.addEventListener('pointerleave', () => setze(null)); svg.addEventListener('blur', () => setze(null));
+    svg.addEventListener('focus', () => { if (cur == null) anPunkt(geo.n - 1); });
+    svg.addEventListener('keydown', ev => {
+      const d = ev.key === 'ArrowLeft' ? -1 : ev.key === 'ArrowRight' ? 1 : ev.key === 'Home' ? -1e9 : ev.key === 'End' ? 1e9 : 0;
+      if (ev.key === 'Escape') return setze(null);
+      if (!d) return; ev.preventDefault(); anPunkt(Math.max(0, Math.min(geo.n - 1, (cur == null ? geo.n - 1 : cur) + d)));
+    });
+  }
+  function rahmen(spec, W, H, labels, werte, gestapeltMax, rechts) {
+    const ganz = werte.every(Number.isInteger);
+    let lo = spec.yMin != null ? spec.yMin : Math.min(0, ...werte), hi = spec.yMax != null ? spec.yMax : Math.max(gestapeltMax == null ? -Infinity : gestapeltMax, ...werte);
+    const tk = ticks(lo, hi, ganz).filter(v => (spec.yMin == null || v >= spec.yMin) && (spec.yMax == null || v <= spec.yMax)); lo = tk[0]; hi = tk[tk.length - 1]; if (!(hi > lo)) hi = lo + 1;
+    const txt = tk.map(achse), mL = Math.max(30, Math.max(...txt.map(t => t.length)) * 6.6 + 14), mR = Math.max(18, rechts || 0), mT = 14, mB = 28, pw = Math.max(40, W - mL - mR), ph = H - mT - mB;
+    const y = v => mT + ph - (v - lo) / (hi - lo) * ph;
+    const gitter = tk.map((v, k) => `<line x1="${f1(mL)}" x2="${f1(mL + pw)}" y1="${f1(y(v))}" y2="${f1(y(v))}" stroke="${GITTER}"/><text x="${f1(mL - 8)}" y="${f1(y(v) + 4)}" text-anchor="end">${esc(txt[k])}</text>`).join('');
+    const breit = (Math.max(...labels.map(l => String(l).length)) * 6.3 + 16) * 1.3, schritt = Math.max(1, Math.ceil(labels.length * breit / pw));
+    return { lo, hi, mL, mR, mT, mB, pw, ph, y, gitter, schritt };
+  }
+  const xLabels = (labels, x, yPos, schritt, W) => labels.map((l, i) => { if ((labels.length - 1 - i) % schritt) return ''; const halb = String(l).length * 3.2 + 2, xx = x(i); return `<line x1="${f1(xx)}" x2="${f1(xx)}" y1="${yPos - 20}" y2="${yPos - 16}" stroke="rgba(255,255,255,.28)"/><text x="${f1(xx)}" y="${yPos}" text-anchor="${xx + halb > W ? 'end' : xx - halb < 0 ? 'start' : 'middle'}">${esc(l)}</text>`; }).join('');
+  const letzter = d => { for (let i = d.length - 1; i >= 0; i--) if (d[i] != null) return i; return -1; };
+  function legende(series, box) {
+    if (series.length < 2) return '';
+    return `<div class="legend">${series.map(s => { const k = letzter(s.data); return `<span><i${box ? ' class="box"' : ''} style="background:${s.color}"></i>${esc(s.name)} <b>${k < 0 ? '–' : esc(fmtNum(s.data[k]))}</b></span>`; }).join('')}</div>`;
+  }
+  function wertTabelle(labels, series, summe) {
+    const max = 60, ab = Math.max(0, labels.length - max);
+    const zeilen = labels.slice(ab).map((l, k) => { const i = ab + k; return `<tr><td>${esc(l)}</td>${series.map(s => `<td class="r">${s.data[i] == null ? '–' : esc(fmtNum(s.data[i]))}</td>`).join('')}${summe ? `<td class="r">${esc(fmtNum(series.reduce((a, s) => a + (s.data[i] || 0), 0)))}</td>` : ''}</tr>`; }).reverse().join('');
+    return `<details class="chart-data"><summary>Werte als Tabelle${ab ? ` (letzte ${max})` : ''}</summary><div class="tbl-wrap"><table class="tbl"><thead><tr><th scope="col">Zeitpunkt</th>${series.map(s => `<th scope="col" class="r">${esc(s.name)}</th>`).join('')}${summe ? '<th scope="col" class="r">Summe</th>' : ''}</tr></thead><tbody>${zeilen}</tbody></table></div></details>`;
+  }
+  const bereinigt = spec => arr(spec.series).map(s => ({ name: String(s.name), color: s.color, area: !!s.area, data: arr(s.data).map(v => (v == null || !Number.isFinite(Number(v))) ? null : Number(v)) }));
+
+  function line(el, spec) {
+    const labels = arr(spec.labels).map(String), series = bereinigt(spec), n = labels.length, werte = series.flatMap(s => s.data.filter(v => v != null));
+    if (!n || !werte.length) { el.innerHTML = leerBox(spec.leer || 'Noch keine Daten für dieses Diagramm.'); return; }
+    // Eine einzelne Reihe bekommt ihren letzten Wert direkt neben den Endpunkt geschrieben (dafür rechts etwas Platz lassen).
+    const kEnd = series.length === 1 ? letzter(series[0].data) : -1, endTxt = kEnd >= 0 ? fmtNum(series[0].data[kEnd]) : '', daneben = kEnd === n - 1 && n > 1;
+    const W = Math.max(280, Math.floor(el.clientWidth)), H = spec.hoehe || 220, R = rahmen(spec, W, H, labels, werte, null, daneben ? endTxt.length * 7 + 18 : 0);
+    const x = i => R.mL + (n === 1 ? R.pw / 2 : R.pw * i / (n - 1));
+    let marks = '';
+    for (const s of series) {
+      const teile = []; let akt = [];
+      s.data.forEach((v, i) => { if (v == null) { if (akt.length) teile.push(akt); akt = []; } else akt.push([x(i), R.y(v)]); }); if (akt.length) teile.push(akt);
+      for (const t of teile) {
+        const d = t.map((p, k) => (k ? 'L' : 'M') + f1(p[0]) + ' ' + f1(p[1])).join('');
+        if (s.area && t.length > 1) marks += `<path d="${d}L${f1(t[t.length - 1][0])} ${f1(R.y(R.lo))}L${f1(t[0][0])} ${f1(R.y(R.lo))}Z" fill="${s.color}" fill-opacity=".1"/>`;
+        if (t.length > 1) marks += `<path d="${d}" fill="none" stroke="${s.color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>`;
+        else marks += `<circle cx="${f1(t[0][0])}" cy="${f1(t[0][1])}" r="3" fill="${s.color}"/>`;
+      }
+      const k = letzter(s.data); if (k >= 0) marks += `<circle cx="${f1(x(k))}" cy="${f1(R.y(s.data[k]))}" r="4" fill="${s.color}" stroke="${FLAECHE}" stroke-width="2"/>`;
+    }
+    let endwert = '';
+    if (kEnd >= 0) { const yy = R.y(series[0].data[kEnd]); endwert = daneben ? `<text class="val" x="${f1(x(kEnd) + 9)}" y="${f1(yy + 4)}">${esc(endTxt)}</text>` : `<text class="val" x="${f1(x(kEnd))}" y="${f1(yy < R.mT + 16 ? yy + 18 : yy - 9)}" text-anchor="middle">${esc(endTxt)}</text>`; }
+    const label = `${spec.titel || 'Diagramm'}: ${series.map(s => { const k = letzter(s.data); return s.name + ' zuletzt ' + (k < 0 ? '–' : fmtNum(s.data[k])); }).join(', ')}. Mit den Pfeiltasten lassen sich die einzelnen Zeitpunkte ablesen.`;
+    el.innerHTML = `<svg class="chart" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" tabindex="0" aria-label="${esc(label)}">${R.gitter}${xLabels(labels, x, H - 8, R.schritt, W)}<line class="fk" x1="0" x2="0" y1="${R.mT}" y2="${R.mT + R.ph}" stroke="rgba(255,255,255,.28)" visibility="hidden"/>${marks}${endwert}<g class="hp" visibility="hidden">${series.map(s => `<circle r="5" fill="${s.color}" stroke="${FLAECHE}" stroke-width="2"/>`).join('')}</g></svg>${legende(series)}${wertTabelle(labels, series)}`;
+    const svg = el.querySelector('svg'), fk = svg.querySelector('.fk'), hp = svg.querySelector('.hp'), pkt = hp.querySelectorAll('circle');
+    bediene(svg, { W, n, x, idx: sx => Math.max(0, Math.min(n - 1, n === 1 ? 0 : Math.round((sx - R.mL) / R.pw * (n - 1)))) }, i => {
+      if (i == null) { fk.setAttribute('visibility', 'hidden'); hp.setAttribute('visibility', 'hidden'); return null; }
+      fk.setAttribute('x1', f1(x(i))); fk.setAttribute('x2', f1(x(i))); fk.setAttribute('visibility', 'visible'); hp.setAttribute('visibility', 'visible');
+      series.forEach((s, k) => { const v = s.data[i]; pkt[k].setAttribute('visibility', v == null ? 'hidden' : 'inherit'); if (v != null) { pkt[k].setAttribute('cx', f1(x(i))); pkt[k].setAttribute('cy', f1(R.y(v))); } });
+      return { titel: labels[i], zeilen: series.map(s => ({ farbe: s.color, name: s.name, wert: s.data[i] == null ? '–' : fmtNum(s.data[i]) })) };
+    });
+  }
+
+  function bars(el, spec) {
+    const labels = arr(spec.labels).map(String), series = bereinigt(spec), n = labels.length, werte = series.flatMap(s => s.data.filter(v => v != null));
+    if (!n || !werte.length) { el.innerHTML = leerBox(spec.leer || 'Noch keine Daten für dieses Diagramm.'); return; }
+    const summe = i => series.reduce((a, s) => a + Math.max(0, s.data[i] || 0), 0), maxSumme = Math.max(...labels.map((_, i) => summe(i)));
+    const W = Math.max(280, Math.floor(el.clientWidth)), H = spec.hoehe || 220, R = rahmen(Object.assign({ yMin: 0 }, spec), W, H, labels, werte.concat(0), maxSumme);
+    const band = R.pw / n, bw = Math.max(3, Math.min(24, band * 0.62)), x = i => R.mL + band * (i + 0.5), basis = R.y(R.lo);
+    let marks = '';
+    for (let i = 0; i < n; i++) {
+      let unten = basis, teile = series.map(s => Math.max(0, s.data[i] || 0)), oberster = -1; teile.forEach((v, k) => { if (v > 0) oberster = k; });
+      marks += `<g class="sp" data-i="${i}">`;
+      teile.forEach((v, k) => {
+        if (v <= 0) return; let h = v / (R.hi - R.lo) * R.ph; const oben = unten - h, luecke = (unten < basis - 0.5 && h > 3) ? 2 : 0;   // 2 px Abstand zwischen gestapelten Teilen
+        const y1 = unten - luecke, x0 = x(i) - bw / 2, hh = Math.max(1, y1 - oben), r = (k === oberster) ? Math.min(4, hh, bw / 2) : 0;
+        marks += r ? `<path d="M${f1(x0)} ${f1(y1)}V${f1(oben + r)}Q${f1(x0)} ${f1(oben)} ${f1(x0 + r)} ${f1(oben)}H${f1(x0 + bw - r)}Q${f1(x0 + bw)} ${f1(oben)} ${f1(x0 + bw)} ${f1(oben + r)}V${f1(y1)}Z" fill="${series[k].color}"/>` : `<rect x="${f1(x0)}" y="${f1(oben)}" width="${f1(bw)}" height="${f1(hh)}" fill="${series[k].color}"/>`;
+        unten = oben;
+      });
+      marks += '</g>';
+    }
+    const label = `${spec.titel || 'Diagramm'}: ${n} Zeitpunkte, zuletzt ${series.map(s => s.name + ' ' + fmtNum(s.data[n - 1] || 0)).join(', ')}. Mit den Pfeiltasten lassen sich die einzelnen Zeitpunkte ablesen.`;
+    el.innerHTML = `<svg class="chart" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" tabindex="0" aria-label="${esc(label)}">${R.gitter}${xLabels(labels, x, H - 8, R.schritt, W)}<rect class="hl" x="0" y="${R.mT}" width="${f1(band)}" height="${R.ph}" fill="rgba(255,255,255,.06)" visibility="hidden"/>${marks}</svg>${legende(series, true)}${wertTabelle(labels, series, series.length > 1)}`;
+    const svg = el.querySelector('svg'), hl = svg.querySelector('.hl');
+    bediene(svg, { W, n, x, idx: sx => Math.max(0, Math.min(n - 1, Math.floor((sx - R.mL) / band))) }, i => {
+      if (i == null) { hl.setAttribute('visibility', 'hidden'); return null; }
+      hl.setAttribute('x', f1(R.mL + band * i)); hl.setAttribute('visibility', 'visible');
+      const z = series.map(s => ({ farbe: s.color, name: s.name, wert: fmtNum(s.data[i] || 0) })); if (series.length > 1) z.push({ name: 'Summe', wert: fmtNum(summe(i)) });
+      return { titel: labels[i], zeilen: z };
+    });
+  }
+
+  function ring(el, spec) {
+    const size = spec.size || 150, sw = spec.breite || 16, r = (size - sw) / 2, U = 2 * Math.PI * r, m = size / 2;
+    const segs = arr(spec.segments).map(s => ({ label: String(s.label), value: Number(s.value), color: s.color })).filter(s => s.value > 0);
+    const sum = segs.reduce((a, s) => a + s.value, 0), total = spec.total || sum, mitte = obj(spec.center);
+    if (!total || (!segs.length && mitte.value == null)) { el.innerHTML = leerBox(spec.leer || 'Noch keine Daten für dieses Diagramm.'); return; }
+    const anteil = v => (100 * v / total).toLocaleString('de-DE', { maximumFractionDigits: v / total < 0.1 ? 1 : 0 }) + ' %';
+    let off = 0; const luecke = segs.length > 1 ? 2 : 0;
+    const boegen = segs.map((s, k) => { const len = s.value / total * U, d = Math.max(1.5, Math.min(U, len) - luecke); const c = `<circle class="seg" data-i="${k}" cx="${m}" cy="${m}" r="${f1(r)}" fill="none" stroke="${s.color}" stroke-width="${sw}" stroke-dasharray="${f1(d)} ${f1(U - d)}" stroke-dashoffset="${f1(-off)}" transform="rotate(-90 ${m} ${m})"/>`; off += len; return c; }).join('');
+    const spur = spec.meter && segs[0] ? `stroke="${segs[0].color}" stroke-opacity=".2"` : 'stroke="rgba(255,255,255,.07)"';
+    const label = `${spec.titel || 'Diagramm'}: ${segs.length ? segs.map(s => s.label + ' ' + fmtNum(s.value) + (spec.meter ? '' : ' (' + anteil(s.value) + ')')).join(', ') : 'kein Wert'}`;
+    const leg = spec.legende === false ? '' : `<ul class="ring-legend">${segs.map(s => `<li><i style="background:${s.color}"></i><span>${esc(s.label)}</span><b>${esc(fmtNum(s.value))}</b><em>${esc(anteil(s.value))}</em></li>`).join('')}</ul>`;
+    el.innerHTML = `<div class="ring"><svg class="chart" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" role="img" aria-label="${esc(label)}"><circle cx="${m}" cy="${m}" r="${f1(r)}" fill="none" ${spur} stroke-width="${sw}"/>${boegen}${mitte.value != null ? `<text class="ring-v" x="${m}" y="${m + (mitte.label ? 4 : 9)}" text-anchor="middle">${esc(mitte.value)}</text>` : ''}${mitte.label ? `<text class="ring-l" x="${m}" y="${m + 22}" text-anchor="middle">${esc(mitte.label)}</text>` : ''}</svg>${leg}</div>`;
+    const svg = el.querySelector('svg');
+    svg.addEventListener('pointermove', ev => { const t = ev.target.closest ? ev.target.closest('.seg') : null; if (!t) return tipWeg(); const s = segs[Number(t.getAttribute('data-i'))]; if (s) tipZeigen(ev.clientX, ev.clientY, s.label, [{ farbe: s.color, name: spec.meter ? 'von ' + fmtNum(total) : anteil(s.value), wert: fmtNum(s.value) }]); });
+    svg.addEventListener('pointerleave', tipWeg);
+  }
+  const ARTEN = { line, bars, ring };
+  function zeichne(id) {
+    const e = reg.get(id), el = $(id); if (!e || !el) return;
+    if (e.typ !== 'ring' && el.clientWidth < 40) { e.offen = true; return; }   // Ansicht gerade unsichtbar: später zeichnen
+    try { ARTEN[e.typ](el, e.spec); e.offen = false; e.breite = el.clientWidth; }
+    catch (err) { e.offen = false; e.breite = el.clientWidth; try { console.warn('[SEO Center] Diagramm ' + id, err); el.innerHTML = leerBox('Dieses Diagramm konnte nicht dargestellt werden – die Zahlen stehen in den Tabellen.'); } catch (_) {} }
+  }
+  return {
+    draw(id, typ, spec) { try { reg.set(id, { typ, spec }); zeichne(id); } catch (_) {} },
+    redraw() { tipWeg(); for (const [id, e] of reg) { const el = $(id); if (el && (e.offen || el.clientWidth !== e.breite)) zeichne(id); } },
+  };
+})();
+const sevSerien = (reihen, namen) => namen.map(([k, name, color, area]) => ({ name, color, area, data: reihen.map(r => k === 'open' ? zahl(r.open) : int(obj(r.bySeverity)[k])) }));
+
+// ── Ansicht: Übersicht ──────────────────────────────────────────────────────
+function renderUebersicht() {
+  const o = S.ov, lauf = obj(o.letzterLauf), sicher = fn => { try { fn(); } catch (e) { console.error('[SEO Center] Übersicht', e); } };
+  sicher(() => {
+    const h = S.hinweise.map(t => note('warn', esc(t))), u = unsicherText();
+    const alt = Date.now() - (typeof lauf.at === 'string' ? Date.parse(lauf.at) : NaN);   // ohne Lauf entsteht keine neue Übersicht – deshalb hier prüfen
+    // gleiche Schwelle wie die Frist des Tageslaufs im Zeitplan (dort ab dann „überfällig“), Vorgabe 3 Tage
+    const fTag = zahl(obj(arr(obj(o.zeitplan).geplant).find(g => obj(g).kind === 'daily')).fristTage), fristTag = fTag > 0 ? fTag : 3;
+    if (alt > fristTag * 864e5) h.push(note('warn', `<b>Seit ${fmtNum(Math.floor(alt / 864e5))} Tagen kein Prüflauf.</b> Der letzte Lauf war am ${esc(fmtD(lauf.at))} – alle Zahlen zeigen diesen Stand. Bitte den Workflow „SEO-Autopilot“ in GitHub prüfen (GitHub pausiert Zeitpläne nach 60 Tagen ohne Aktivität im Repository)${LOKAL ? ' oder den Stand mit <code>node seo-autopilot/bin/sync.js pull</code> holen' : ''}.`));
+    if (u != null) h.push(note('red', `<b>Letzter Lauf unsicher – mögliche Fehlalarme.</b> ${esc(u)}${/[.!?]$/.test(u) ? '' : '.'} Bei einem unsicheren Lauf wird kein Befund als „behoben“ geschlossen.`));
+    $('ovHinweise').innerHTML = h.join('');
+  });
+  sicher(() => { $('ovKpis').innerHTML = [
+    kpi({ label: 'Kritische Fehler', value: fmtNum(o.kritisch), sub: 'sofort beheben', tone: int(o.kritisch) ? 'red' : 'white', icon: 'warn', href: '#prioritaet' }),
+    kpi({ label: 'Warnungen (hoch)', value: fmtNum(o.hoch), sub: 'zeitnah beheben', tone: int(o.hoch) ? 'amber' : 'white', icon: 'warn', href: '#prioritaet' }),
+    kpi({ label: 'Offene Punkte', value: fmtNum(o.open), sub: `mittel ${fmtNum(o.mittel)} · niedrig ${fmtNum(o.niedrig)}`, tone: 'acc', icon: 'list', href: '#technik' }),
+    kpi({ label: 'Freigabe nötig', value: fmtNum(o.approvalNeeded), sub: 'Inhalt · Preis · Recht', tone: 'violet', icon: 'check', href: '#freigabe' }),
+    kpi({ label: 'Geprüfte URLs', value: fmtNum(o.gepruefte), sub: 'im letzten Lauf', tone: 'blue', icon: 'globe' }),
+    kpi({ label: 'Indexierbare Seiten', value: fmtNum(o.indexable), sub: zahl(o.noindex) == null ? 'erscheint nach dem nächsten Lauf' : `${fmtNum(o.noindex)} mit noindex`, tone: 'green', icon: 'search' }),
+  ].join(''); });
+  sicher(() => {
+    const sc = zahl(o.score);
+    Charts.draw('chRing', 'ring', { titel: 'SEO-Score', segments: sc == null ? [] : [{ label: 'SEO-Score', value: Math.max(0.001, Math.min(100, sc)), color: sc >= 80 ? C.green : sc >= 50 ? C.amber : C.red }], total: 100, center: { value: sc == null ? '–' : fmtNum(sc), label: 'von 100' }, legende: false, meter: true, size: 132 });
+    $('ovScoreTxt').textContent = `${fmtNum(o.open)} offene Punkte: kritisch ${fmtNum(o.kritisch)} · hoch ${fmtNum(o.hoch)} · mittel ${fmtNum(o.mittel)} · niedrig ${fmtNum(o.niedrig)}.`;
+  });
+  sicher(() => {
+    const u = unsicherText(), s7 = siebenTage();
+    $('ovLauf').innerHTML = lauf.at ? `<p>${u != null ? '<span class="pill pill--red">unsicher</span>' : '<span class="pill pill--green">abgeschlossen</span>'} <b>${esc(fmtD(lauf.at))}</b> · ${esc(artLabel(lauf.kind))}</p>
+      <ul class="list" style="margin-top:8px"><li>${fmtNum(lauf.findings)} Befunde im Lauf · <b>${fmtNum(lauf.new)}</b> neu · <b>${fmtNum(lauf.resolved)}</b> behoben · <b>${fmtNum(lauf.reopened)}</b> wieder aufgetreten</li>
+      <li>In den letzten 7 Tagen: ${fmtNum(s7.behoben)} behoben, ${fmtNum(s7.neu)} neu</li><li>Website: <span class="mono">${esc(o.base || '')}</span></li></ul>` : '<span class="pill pill--grey">noch kein Lauf</span>';
+  });
+  sicher(() => {
+    const g = obj(o.gsc);
+    $('ovGsc').innerHTML = g.connected ? `<p><span class="pill pill--green">verbunden</span></p><p class="mono" style="margin-top:8px">${esc(g.property || '')}</p>`
+      : `<p><span class="pill pill--grey">nicht verbunden</span></p>${g.reason ? `<p style="margin-top:8px;font-size:13px">${esc(g.reason)}</p>` : ''}<p class="hint" style="margin-top:8px">Ohne Zugang gibt es keine Klicks, Impressionen und Positionen; der Indexierungsstatus bei Google bleibt unbekannt.</p>`;
+  });
+  sicher(() => { const sh = arr(o.scoreHistory).filter(x => x && zahl(x.score) != null); Charts.draw('chScore', 'line', { titel: 'Score-Verlauf', labels: sh.map(x => fmtKurz(x.at)), series: [{ name: 'Score', color: C.green, area: true, data: sh.map(x => x.score) }], yMin: 0, yMax: 100, leer: 'Noch kein Score-Verlauf – er entsteht mit den Berichten.' }); });
+  sicher(() => { const l = arr(o.laeufe).length ? arr(o.laeufe) : S.runs.slice(-30); Charts.draw('chRuns', 'line', { titel: 'Offene Punkte je Lauf', labels: l.map(r => fmtKurz(r.at)), series: sevSerien(l, [['open', 'offen gesamt', C.acc, true], ['kritisch', 'kritisch', C.red], ['hoch', 'hoch', C.amber]]) }); });
+  sicher(() => {
+    const st = Object.entries(obj(o.statusVerteilung)).map(([k, v]) => [String(k), int(v)]).filter(x => x[1] > 0).sort((a, b) => a[0] < b[0] ? -1 : 1);
+    const farbe = k => /^2/.test(k) ? C.green : /^3/.test(k) ? C.blue : /^4/.test(k) ? C.amber : C.red, kopf = st.slice(0, 5), rest = st.slice(5).reduce((a, x) => a + x[1], 0);
+    const segs = kopf.map(([k, v]) => ({ label: 'Status ' + k, value: v, color: farbe(k) })); if (rest) segs.push({ label: 'weitere', value: rest, color: C.violet });
+    Charts.draw('chStatus', 'ring', { titel: 'Statuscodes', segments: segs, center: { value: fmtNum(st.reduce((a, x) => a + x[1], 0)), label: 'URLs' }, leer: 'Noch keine Crawl-Daten.' });
+  });
+  sicher(() => {
+    const t = Object.entries(obj(o.typen)).map(([k, v]) => ({ k, g: int(obj(v).gesamt), ix: int(obj(v).indexable) })).filter(x => x.g > 0).sort((a, b) => b.g - a.g), max = Math.max(1, ...t.map(x => x.g));
+    $('ovTypenCard').hidden = !t.length;
+    $('ovTypen').innerHTML = `<div class="typen">${t.map(x => `<span>${esc(eigen(SEITENTYP, x.k) || x.k)}</span><div class="bar" style="width:${Math.max(4, Math.round(100 * x.g / max))}%" title="indexierbar ${fmtNum(x.ix)} von ${fmtNum(x.g)}"><i style="width:${Math.min(100, Math.round(100 * x.ix / x.g))}%${x.ix ? '' : ';min-width:0'}"></i></div><span class="num"><b>${fmtNum(x.ix)}</b> <span class="hint">von ${fmtNum(x.g)} indexierbar</span></span>`).join('')}</div>`;
+  });
+  sicher(() => {
+    const ta = arr(o.topActions).filter(a => a && typeof a === 'object');
+    $('ovMassnahmen').innerHTML = ta.length ? `<ol class="steps">${ta.map(a => `<li><div>${sevPill(a.severity)} <b>${esc(a.action || a.example || a.rule || '')}</b><div class="sub">${esc(regelLabel(String(a.rule || '')))} · ${fmtNum(a.pages)} Seite(n) · Wirkung ${fmtNum(a.impact)} · ${apprPill(a.approval || (a.needsApproval ? 'manuell' : 'auto'))}</div>${massnahmeOrte(a).length ? `<div class="sub mono">z. B. ${esc(massnahmeOrte(a).join(', '))}</div>` : ''}${S.issues.some(i => i.rule === a.rule) ? `<div class="sub"><a href="#${ansichtVon(a.rule)}?regel=${esc(encodeURIComponent(a.rule))}">Befunde ansehen →</a></div>` : ''}</div></li>`).join('')}</ol>` : leerBox(int(o.open) ? 'Die Maßnahmenliste erscheint nach dem nächsten Prüflauf.' : 'Keine offenen Punkte.');
+  });
+  sicher(() => liste('ovWieder', 'wieder', () => kurzTabelle('wieder', arr(o.recurring).filter(x => x && typeof x === 'object').map(r => Object.assign({}, r, { zusatz: `${fmtNum(r.reopen_count)}× wieder aufgetreten, zuletzt ${fmtTag(r.reopened_at)}` })), { seite: 8, leer: 'Keine wiederkehrenden Probleme – nichts ist nach „behoben“ erneut aufgetreten.' })));
+  sicher(() => {
+    const a = letzteAenderungen();
+    if (!a) { $('ovAenderungen').innerHTML = leerBox('Noch kein Lauf.'); return; }
+    const teile = [['aeNeu', 'Neu', a.neu], ['aeBeh', 'Behoben', a.behoben], ['aeWie', 'Wieder aufgetreten', a.wieder]].filter(t => t[2].length);
+    $('ovAenderungen').innerHTML = `<p class="hint">Lauf ${esc(fmtD(a.at))}</p><p style="margin-top:6px"><span class="pill pill--amber">${fmtNum(a.zahlen.neu)} neu</span> <span class="pill pill--green">${fmtNum(a.zahlen.behoben)} behoben</span> <span class="pill pill--red">${fmtNum(a.zahlen.wieder)} wieder aufgetreten</span></p>${teile.map(([k, t, l], n) => `<details${n === 0 ? ' open' : ''}><summary>${t} (${fmtNum(l.length)})</summary>${platz(k)}</details>`).join('')}`;
+    for (const [k, , l] of teile) liste('l-' + k, k, () => kurzTabelle(k, l, { seite: 10 }));
+  });
+  sicher(() => {
+    const c = reviewZahlen(offene().filter(i => i.severity === 'kritisch' || i.severity === 'hoch').map(i => i.id));
+    $('ovFlow').innerHTML = `<div class="flow">${STATES.map(k => `<span class="${c[k] ? 'on' : ''}">${STATE_LABELS[k]}: ${fmtNum(c[k])}</span>`).join('')}</div>`;
+  });
+  sicher(() => { const krit = offene().filter(i => i.severity === 'kritisch' || i.severity === 'hoch'); liste('ovKritisch', 'ovKrit', () => befundTabelle('ovKrit', krit, { seite: 10, leer: 'Keine kritischen Fehler oder Warnungen offen.' })); });
+  sicher(() => {
+    let br = arr(o.byRule).filter(r => Array.isArray(r) && typeof r[0] === 'string' && zahl(r[1]) != null);
+    if (!br.length) { const cnt = new Map(); for (const i of offene()) cnt.set(i.rule, (cnt.get(i.rule) || 0) + 1); br = [...cnt].sort((a, b) => b[1] - a[1]); }   // Liste fehlt oder hat ein anderes Format: selbst zählen
+    const max = Math.max(1, ...br.map(r => Number(r[1])));
+    liste('ovRegeln', 'regeln', () => tabelle('regeln', br, [{ k: 'r', t: 'Regel' }, { k: 'g', t: 'Bereich', cls: 'hide-m' }, { k: 'n', t: 'Offen', cls: 'r' }, { k: 'b', t: '', cls: 'hide-m' }],
+      ([r, n]) => `<tr><td class="wrap"><a href="#${ansichtVon(r)}?regel=${esc(encodeURIComponent(r))}">${esc(regelLabel(r))}</a>${regelLabel(r) !== r ? `<div class="sub mono">${esc(r)}</div>` : ''}</td><td class="hide-m">${esc(gruppeLabel(gruppe(r)))}</td><td class="r">${fmtNum(n)}</td><td class="hide-m" style="width:36%"><div class="bar"><i style="width:${Math.min(100, Math.round(100 * Number(n) / max))}%"></i></div></td></tr>`, { seite: 12, leer: 'Keine offenen Punkte.' }));
+  });
+}
+
+// ── Ansichten: Technisches SEO / Inhalte & FAQ ──────────────────────────────
+const themaPasst = (view, t, i) => { const g = gruppe(i.rule); return t.rest ? !THEMEN[view].some(x => !x.rest && x.t(i.rule, g)) : t.t(i.rule, g); };
+function renderBefunde(view) {
+  const f = S.f[view], P = view === 'technik' ? 'te' : 'in', inh = view === 'inhalte';
+  const basis = S.issues.filter(i => INHALT_GRUPPEN.includes(gruppe(i.rule)) === inh);
+  const nachStatus = f.status === 'alle' ? basis : basis.filter(i => i.status === f.status);
+  $(P + 'Chips').innerHTML = chip('alle', 'Alle', nachStatus.length, f.thema) + THEMEN[view].map(t => { const n = nachStatus.filter(i => themaPasst(view, t, i)).length; return (t.opt && !n && f.thema !== t.k) ? '' : chip(t.k, esc(t.gruppe ? gruppeLabel(t.gruppe) : t.label), n, f.thema); }).join('');
+  const regeln = new Map(); for (const i of nachStatus) regeln.set(i.rule, (regeln.get(i.rule) || 0) + 1);
+  if (f.regel && !regeln.has(f.regel)) f.regel = '';
+  const sel = $(P + 'Regel');
+  sel.innerHTML = '<option value="">alle Regeln</option>' + [...regeln].sort((a, b) => regelLabel(a[0]).localeCompare(regelLabel(b[0]), 'de')).map(([r, n]) => `<option value="${esc(r)}">${esc(clip(regelLabel(r), 48))} (${fmtNum(n)})</option>`).join('');
+  sel.value = f.regel; $(P + 'Status').value = f.status; $(P + 'Sev').value = f.sev;
+  let list = nachStatus;
+  if (f.thema !== 'alle') { const t = THEMEN[view].find(x => x.k === f.thema); if (t) list = list.filter(i => themaPasst(view, t, i)); }
+  if (f.sev) list = list.filter(i => i.severity === f.sev);
+  if (f.regel) list = list.filter(i => i.rule === f.regel);
+  const q = f.q.trim().toLowerCase(); if (q) list = list.filter(i => (i.title + ' ' + i.url + ' ' + beispielUrls(i) + ' ' + i.rule + ' ' + regelLabel(i.rule) + ' ' + (i.detail || '')).toLowerCase().includes(q));
+  $(P + 'Info').textContent = `${fmtNum(list.length)} von ${fmtNum(basis.length)} Befunden`;
+  const leer = !basis.length ? (inh && !S.gruppeVon.size ? 'Keine Befunde in diesem Bereich – die Regelgruppen fehlen noch in der Übersicht.' : 'Keine Befunde in diesem Bereich.') : f.status === 'offen' ? 'Keine offenen Punkte in dieser Auswahl.' : 'Keine Befunde in dieser Auswahl.';
+  liste(P + 'Tabelle', view, () => befundTabelle(view, list, { leer }));
+}
+
+// ── Ansicht: Hohe Priorität ─────────────────────────────────────────────────
+async function renderPrio() {
+  if (LOKAL && S.lc === undefined) S.lc = await lazyStill('local-check');
+  const lc = (S.lc && S.lc.at) ? S.lc : null, p = prioritaet(lc), f = S.f.prio, c = p.counts;
+  $('prKpis').innerHTML = [
+    kpi({ label: 'Punkte hoher Priorität', value: fmtNum(p.items.length), sub: `${fmtNum(p.pagesTotal)} betroffene Seiten`, tone: 'amber', icon: 'warn' }),
+    kpi({ label: 'In Prüfung', value: fmtNum(c.in_pruefung), sub: 'wird gerade geklärt', tone: 'blue', icon: 'search' }),
+    kpi({ label: 'Lokal behoben', value: fmtNum(c.lokal_behoben), sub: 'wartet auf den nächsten Deploy', tone: 'violet', icon: 'check' }),
+    kpi({ label: 'Freigegeben', value: fmtNum(c.freigegeben), sub: 'Entscheidung getroffen', tone: 'green', icon: 'check' }),
+  ].join('');
+  $('prChips').innerHTML = chip('alle', 'Alle', p.items.length, f.state) + STATES.map(s => chip(s, STATE_LABELS[s], c[s], f.state)).join('');
+  $('prHinweis').textContent = lc ? `Lokaler Vorher-Nachher-Check: ${fmtD(lc.at)}` : '';
+  $('prArt').value = f.art;
+  let list = p.items;
+  if (f.state !== 'alle') list = list.filter(x => x.review.state === f.state);
+  if (f.art) list = list.filter(x => brauchtFreigabe(x.i) === (f.art === 'entscheidung'));
+  const q = f.q.trim().toLowerCase(); if (q) list = list.filter(x => (x.i.title + ' ' + x.i.url + ' ' + beispielUrls(x.i) + ' ' + x.i.rule + ' ' + x.review.note).toLowerCase().includes(q));
+  const cols = [{ k: 'prio', t: 'Prio', cls: 'c-prio', sort: (a, b) => BEFUND_SORT.prio(a.i, b.i) }, { k: 'titel', t: 'Problem', sort: (a, b) => BEFUND_SORT.titel(a.i, b.i) }, { k: 'seiten', t: 'Seiten', cls: 'r', desc: true, sort: (a, b) => a.pages - b.pages }, { k: 'art', t: 'Art' }].concat(lc ? [{ k: 'lokal', t: 'Lokal geprüft' }] : [], [{ k: 'status', t: 'Status', cls: 'c-st', sort: (a, b) => BEFUND_SORT.status(a.i, b.i) }]);
+  liste('prTabelle', 'prio', () => tabelle('prio', list, cols, x => {
+    const i = x.i, q0 = quelldateien(i)[0];
+    return `<tr${zeilenAttr(i.id)}><td>${sevPill(i.severity)}<div class="sub">${esc(regelLabel(i.rule))}</div></td><td class="wrap">${titelKnopf(i.id, i.title)}<div class="sub">${esc(clip(i.detail, 180))}</div>${i.url ? `<div class="mono">${ortHtml(i)}</div>` : ''}</td><td class="r" data-l="Seiten">${fmtNum(x.pages)}</td><td class="wrap">${apprPill(i.approval)}${q0 ? `<div class="sub mono">${esc(q0.pfad)}</div>` : ''}</td>${lc ? `<td data-l="Lokal geprüft">${x.lokal ? `<span class="pill pill--${LOKAL_STATUS[x.lokal][2]}">${LOKAL_STATUS[x.lokal][1]}</span>` : '<span class="hint" title="Im lokalen Check nicht enthalten">–</span>'}</td>` : ''}<td>${stPill(x.review.state)}${i.status === 'behoben' ? ' <span class="pill pill--green">live behoben</span>' : ''}${x.review.note ? `<div class="sub">${esc(clip(x.review.note, 80))}</div>` : ''}</td></tr>`;
+  }, { cls: 'tbl--stack', leer: 'Keine Punkte in dieser Auswahl.' }));
+}
+
+// ── Ansicht: Freigabe nötig ─────────────────────────────────────────────────
+function renderFreigabe() {
+  const a = freigaben(), f = S.f.freigabe;
+  $('frKpis').innerHTML = [
+    kpi({ label: 'Freigabepflichtige Punkte', value: fmtNum(a.items.length), sub: `${fmtNum(a.pages)} betroffene Seiten`, tone: 'amber', icon: 'check' }),
+    kpi({ label: 'Rechtliche Prüfung', value: fmtNum(a.counts.recht), sub: 'vor Änderung prüfen lassen', tone: 'red', icon: 'warn' }),
+    kpi({ label: 'Preisfreigabe', value: fmtNum(a.counts.preis), sub: 'über config/preise.json', tone: 'violet', icon: 'list' }),
+    kpi({ label: 'Inhaltliche Entscheidung', value: fmtNum(a.counts.manuell), sub: 'Betreiber entscheidet', tone: 'blue', icon: 'page' }),
+  ].join('');
+  $('frStufen').innerHTML = `<ul class="list">${['auto', 'manuell', 'preis', 'recht'].map(k => `<li>${apprPill(k)} <span style="margin-left:6px">${esc(APPROVAL[k].text)}</span></li>`).join('')}</ul>`;
+  $('frChips').innerHTML = chip('alle', 'Alle', a.items.length, f.art) + chip('recht', 'Rechtlich', a.counts.recht, f.art) + chip('preis', 'Preis', a.counts.preis, f.art) + chip('manuell', 'Inhaltlich', a.counts.manuell, f.art) + (a.counts.andere || f.art === 'andere' ? chip('andere', 'Weitere', a.counts.andere, f.art) : '');
+  let list = a.items;
+  if (f.art !== 'alle') list = list.filter(i => f.art === 'andere' ? !['recht', 'preis', 'manuell'].includes(i.approval) : i.approval === f.art);
+  const q = f.q.trim().toLowerCase(); if (q) list = list.filter(i => (i.title + ' ' + i.url + ' ' + beispielUrls(i) + ' ' + i.rule).toLowerCase().includes(q));
+  const cols = [{ k: 'prio', t: 'Prio', cls: 'c-prio', sort: BEFUND_SORT.prio }, { k: 'titel', t: 'Punkt', sort: BEFUND_SORT.titel }, { k: 'seiten', t: 'Seiten', cls: 'r', desc: true, sort: (x, y) => seiten(x) - seiten(y) }, { k: 'fr', t: 'Freigabe' }, { k: 'quelle', t: 'Quelldatei', cls: 'hide-m' }, { k: 'status', t: 'Status', sort: BEFUND_SORT.status }];
+  liste('frTabelle', 'freigabe', () => tabelle('freigabe', list, cols, i => `<tr${zeilenAttr(i.id)}><td>${sevPill(i.severity)}<div class="sub">${esc(regelLabel(i.rule))}</div></td><td class="wrap">${titelKnopf(i.id, i.title)}<div class="sub">${esc(clip(i.detail, 160))}</div>${i.url ? `<div class="mono">${ortHtml(i)}</div>` : ''}</td><td class="r" data-l="Seiten">${fmtNum(seiten(i))}</td><td>${apprPill(i.approval)}</td><td class="wrap mono hide-m">${quelldateien(i).slice(0, 2).map(x => `<div>${esc(x.pfad)}</div>`).join('')}</td><td>${stPill(rv(i.id).state)}</td></tr>`, { cls: 'tbl--stack', leer: 'Keine Punkte in dieser Auswahl.' }));
+}
+
+// ── Detail-Schublade ────────────────────────────────────────────────────────
+function drawerHtml(i) {
+  const r = rv(i.id), s = obj(S.sugg.get(i.id)), a = eigen(APPROVAL, i.approval || 'auto'), bsp = arr(i.examples).filter(e => e && typeof e === 'object');
+  const urls = (bsp.length ? bsp.map(e => e.url) : [i.url]).filter(u => typeof u === 'string' && u), zeig = S.drawerAlle ? urls : urls.slice(0, 25);
+  const vt = vorschlagText(i), quellen = quelldateien(i), risiko = i.risk || s.risk;
+  const lokal = lokalStatus((S.lc && S.lc.at) ? S.lc : null, i.id), freigabe = typeof s.freigabe === 'string' ? s.freigabe.trim() : '';
+  const schritte = arr(s.schritte).filter(x => typeof x === 'string' && x.trim());   // Handlungsanleitung aus suggestions.json
+  const mitCode = t => esc(t).replace(/`([^`]+)`/g, '<code>$1</code>');   // erst maskieren, dann nur `Befehl` als Code setzen
+  const ba = (i.current || i.proposed) ? `<div class="ba"><div class="ba__alt"><b>Vorher (aktuell)</b>${esc(i.current || i.detail || '–')}</div><div class="ba__neu"><b>Nachher (Vorschlag)</b>${esc(i.proposed || vt || '–')}</div></div>${i.reason ? `<p class="hint" style="margin-top:6px">${esc(i.reason)}</p>` : ''}` : `<p>${esc(vt || 'Kein konkreter Textvorschlag – Hinweise stehen im Befund und im Bericht.')}</p>`;
+  const bspBA = bsp.filter(e => e.current || e.proposed).slice(0, 5).map(e => `<div class="ba"><div class="ba__alt"><b>${esc(pathOf(e.url))}</b>${esc(e.current || e.detail || '')}</div><div class="ba__neu"><b>Vorschlag</b>${esc(e.proposed || '')}</div></div>`).join('');
+  return `<h2 id="drawerTitle" tabindex="-1">${esc(i.title)}</h2>
+  <div class="pills">${sevPill(i.severity)} <span class="pill pill--grey">${esc(regelLabel(i.rule))}</span> <span class="pill pill--grey">${esc(gruppeLabel(gruppe(i.rule)))}</span> ${i.status === 'behoben' ? '<span class="pill pill--green">Befund behoben</span>' : '<span class="pill pill--amber">Befund offen</span>'} <span class="st st--${r.state}">Bearbeitung: ${STATE_LABELS[r.state]}</span>${lokal ? ` <span class="pill pill--${LOKAL_STATUS[lokal][2]}">${LOKAL_STATUS[lokal][0]}</span>` : ''}</div>
+  <div class="block"><h3>Befund</h3><p>${esc(i.detail || '–')}</p>${regelLabel(i.rule) !== i.rule ? `<p class="hint mono" style="margin-top:4px">Regel: ${esc(i.rule)}</p>` : ''}</div>
+  <div class="block"><h3>Betroffene URLs (${fmtNum(seiten(i))})</h3>${urls.length ? `<ul class="mono" id="drawerUrls" tabindex="-1">${zeig.map(u => `<li>${urlHtml(u)}</li>`).join('')}</ul>${urls.length > zeig.length ? `<button type="button" class="btn btn--sm" id="drawerMehr" style="margin-top:8px">Alle ${fmtNum(urls.length)} anzeigen</button>` : ''}${seiten(i) > urls.length ? `<p class="hint" style="margin-top:6px">Aufgelistet sind ${fmtNum(urls.length)} Beispiele von ${fmtNum(seiten(i))} betroffenen Seiten.</p>` : ''}` : '<p class="hint">Keine einzelne URL – der Befund betrifft die Website insgesamt oder eine Quelldatei.</p>'}</div>
+  <div class="block"><h3>Quelldatei(en)</h3>${quellen.length ? `<ul class="mono">${quellen.map(x => `<li>${esc(x.art)}: ${esc(x.pfad)}</li>`).join('')}</ul>` : '<p class="hint">Keine Quelldatei hinterlegt – die Stelle ergibt sich aus der betroffenen URL.</p>'}</div>
+  <div class="block"><h3>Freigabestufe</h3><div class="stufe">${apprPill(i.approval)}<p style="margin-top:6px">${a ? esc(a.text) : 'Unbekannte Freigabestufe – bitte vor einer Änderung klären, wer entscheidet.'}</p>${freigabe ? `<p class="hint" style="margin-top:6px">${esc(freigabe)}</p>` : ''}${risiko ? `<p class="hint" style="margin-top:6px">Risiko: ${esc(risiko)}</p>` : ''}</div></div>
+  <div class="block"><h3>Änderungsvorschlag · Vorher / Nachher</h3>${ba}${bspBA}</div>
+  ${schritte.length ? `<div class="block"><h3>Nächste Schritte</h3><ol class="steps">${schritte.map(x => `<li><div>${mitCode(x)}</div></li>`).join('')}</ol></div>` : ''}
+  <div class="block"><h3>Bearbeitungsstatus</h3><div class="formrow"><label class="hint" for="rvState">Status</label><select class="input" id="rvState">${STATES.map(x => `<option value="${x}"${r.state === x ? ' selected' : ''}>${STATE_LABELS[x]}</option>`).join('')}</select><button type="button" class="btn btn--primary" id="rvSave">Speichern</button></div>
+    <label class="hint" for="rvNote">Notiz (z. B. Entscheidung, wer, wann – höchstens 500 Zeichen)</label><textarea class="input" id="rvNote" maxlength="500">${esc(r.note)}</textarea><p class="hint" id="rvInfo" role="status" style="margin-top:6px">${r.at ? `Zuletzt geändert ${esc(fmtD(r.at))}.` : 'Noch nicht bearbeitet.'} Der Status ist eine Notiz für die Bearbeitung und ändert nichts an der Website.</p></div>
+  <div class="block"><h3>Historie</h3><ul class="hint"><li>Erstmals gesehen ${esc(fmtD(i.first_seen))} · zuletzt ${esc(fmtD(i.last_seen))} · in ${fmtNum(i.runs)} Läufen gemeldet (${fmtNum(laeufeGesehen(i))} Läufe im Zeitraum)</li>${i.reopened_at ? `<li>Wieder aufgetreten ${esc(fmtD(i.reopened_at))}${int(i.reopen_count) ? ` (${fmtNum(i.reopen_count)}×)` : ''}</li>` : ''}${i.resolved_at ? `<li>Behoben ${esc(fmtD(i.resolved_at))}</li>` : ''}${r.history.slice().reverse().filter(h => h && typeof h === 'object').map(h => `<li>${esc(fmtD(h.at))}: ${STATES.includes(h.state) ? STATE_LABELS[h.state] : 'Status geändert'}${h.note ? ` – ${esc(h.note)}` : ''}</li>`).join('')}</ul></div>`;
+}
+function openIssue(id, ohneFokus) {
+  if (!kannOeffnen(id)) { if (isId(id)) toast('Dieser Befund ist im aktuellen Datenstand nicht mehr enthalten.', true); return; }
+  const d = $('drawer'), offen = d.classList.contains('open');
+  if (!offen) S.lastFocus = document.activeElement;
+  const gleich = S.drawerId === id; if (!gleich) S.drawerAlle = false;
+  S.drawerId = id; $('drawerBody').innerHTML = drawerHtml(S.byId.get(id));
+  d.classList.add('open'); d.setAttribute('aria-hidden', 'false'); $('backdrop').classList.add('open'); $('app').inert = true; if (!gleich) d.scrollTop = 0;
+  try { history.replaceState(null, '', '#' + S.view + '/' + id); } catch (_) {}
+  const ziel = $(ohneFokus ? 'drawerUrls' : 'drawerTitle'); if (ziel) ziel.focus({ preventScroll: !!ohneFokus });
+}
+function closeDrawer(ohneHash) {
+  const d = $('drawer'); if (!d.classList.contains('open')) return;
+  d.classList.remove('open'); d.setAttribute('aria-hidden', 'true'); $('backdrop').classList.remove('open'); $('app').inert = false; S.drawerId = null;
+  if (!ohneHash) { try { history.replaceState(null, '', '#' + S.view); } catch (_) {} }
+  const f = S.lastFocus; S.lastFocus = null; if (f && document.contains(f) && f.focus) f.focus();
+}
+async function speichern() {
+  const id = S.drawerId, btn = $('rvSave'); if (!isId(id) || !btn || btn.disabled) return;
+  const state = $('rvState').value, notiz = $('rvNote').value.slice(0, 500); if (!STATES.includes(state)) return;
+  btn.disabled = true; btn.textContent = 'Speichert …';
+  try {
+    const d = await postReview(id, state, notiz);
+    S.review[id] = (d.review && typeof d.review === 'object') ? d.review : { state, note: notiz, at: new Date().toISOString(), history: [] };
+    toast('Status gespeichert'); navZahlen();
+    if (S.drawerId === id) { $('drawerBody').innerHTML = drawerHtml(S.byId.get(id)); const b = $('rvSave'); if (b) b.focus(); }
+    renderView(true);
+  } catch (e) {
+    btn.disabled = false; btn.textContent = 'Speichern';
+    const info = $('rvInfo'); if (info) info.textContent = 'Nicht gespeichert: ' + (e.message || 'unbekannter Fehler') + (e.detail ? ' (' + e.detail + ')' : '');
+    toast('Status wurde nicht gespeichert', true);
+  }
+}
+
+// ── Ansicht: Google Performance ─────────────────────────────────────────────
+const GSC_SPALTEN = { query: ['Suchanfrage', 'text'], page: ['Seite', 'pfad'], clicks: ['Klicks', 'zahl'], prevClicks: ['<abbr title="Klicks im Zeitraum davor">davor</abbr>', 'zahl'], impressions: ['<abbr title="Impressionen">Impr.</abbr>', 'zahl'], prevImpressions: ['<abbr title="Impressionen im Zeitraum davor">Impr. davor</abbr>', 'zahl'], ctr: ['<abbr title="Klickrate">CTR</abbr>', 'pct'], position: ['<abbr title="Durchschnittliche Position">Ø Pos.</abbr>', 'pos'], device: ['Gerät', 'text'], country: ['Land', 'text'], potential: ['<abbr title="Mögliche zusätzliche Klicks je Monat">Potenzial</abbr>', 'zahl'], reason: ['Warum', 'text'] };
+function gscTabelle(key, rows, keys, opt) {
+  // r._html (fertig maskiert) hängt die Bewertung unter die erste Spalte, damit die Tabelle in halbe Kartenbreite passt.
+  const cols = keys.map(k => { const [t, typ] = GSC_SPALTEN[k], zahlig = !['text', 'pfad'].includes(typ); return { k, t, cls: zahlig ? 'r' : '', desc: zahlig, sort: (a, b) => zahlig ? (zahl(a[k]) || 0) - (zahl(b[k]) || 0) : String(a[k] || '').localeCompare(String(b[k] || ''), 'de') }; });
+  const zelle = (r, k) => { const typ = GSC_SPALTEN[k][1], v = r[k]; return typ === 'zahl' ? fmtNum(v) : typ === 'pct' ? fmtPct(v) : typ === 'pos' ? fmtPos(v) : typ === 'pfad' ? `<span class="mono">${esc(pathOf(v))}</span>` : esc(v); };
+  return tabelle(key, arr(rows).filter(r => r && typeof r === 'object'), cols, r => `<tr>${keys.map((k, n) => `<td class="${['text', 'pfad'].includes(GSC_SPALTEN[k][1]) ? 'wrap' : 'r'}">${zelle(r, k)}${n === 0 && r._html ? `<div class="sub">${r._html}</div>` : ''}</td>`).join('')}</tr>`, Object.assign({ seite: 15, leer: 'keine Daten', cls: 'tbl--eng' }, opt));
+}
+const urteil = v => { v = obj(v); if (!v.verdict) return ''; return `<span class="pill pill--${v.significant ? (v.delta > 0 ? 'green' : 'red') : 'grey'}">${esc(v.verdict)}${zahl(v.deltaPct) != null ? ` (${v.deltaPct > 0 ? '+' : ''}${fmtNum(v.deltaPct)} %)` : ''}</span>`; };
+async function renderGoogle() {
+  const box = $('goBox'); box.innerHTML = lade('Search-Console-Daten werden geladen …');
+  const verbunden = !!obj(S.ov.gsc).connected;
+  let g = null, an = null;
+  if (verbunden || S.ovFehlt) [g, an] = await Promise.all([lazy('gsc'), lazyStill('gsc-analysis')]);
+  g = obj(g);
+  if (!g.connected) {
+    const st = Object.assign({}, obj(S.ov.gsc), obj(await lazyStill('gsc-status')), obj(g.status)), noetig = arr(st.needed).filter(x => typeof x === 'string');
+    box.innerHTML = `<div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--grey">${ICON.trend}</span><span>Google Search Console</span></div>${verbunden ? '<span class="pill pill--amber">verbunden, noch keine Daten</span>' : '<span class="pill pill--grey">nicht verbunden</span>'}</div>
+      <p>${esc(verbunden ? 'Der Zugang ist eingerichtet, die Messwerte werden mit dem nächsten Wochenlauf abgerufen.' : (st.reason || 'Es ist kein Zugang zur Search Console hinterlegt.'))}</p>
+      <p class="hint" style="margin-top:8px">Ohne Anbindung zeigt das SEO Center keine Klicks, Impressionen, CTR, Positionen, Suchanfragen oder Einstiegsseiten. Es werden keine geschätzten Werte angezeigt.</p>
+      ${noetig.length ? `<div class="block"><h3>Benötigte Einrichtung</h3><ol class="steps">${noetig.map(x => `<li><div>${esc(x)}</div></li>`).join('')}</ol></div>` : ''}${st.checkedAt ? `<p class="hint" style="margin-top:10px">Zuletzt geprüft: ${esc(fmtD(st.checkedAt))}</p>` : ''}</div>`;
+    return;
+  }
+  const per = obj(g.periods), p30 = obj(per[30]), p90 = obj(per[90]), zeitr = [7, 30, 90].map(d => [d, obj(per[d])]).filter(x => x[1].current);
+  const dl = (a, b) => (!zahl(b)) ? '–' : ((zahl(a) - b) / b * 100).toLocaleString('de-DE', { maximumFractionDigits: 0, signDisplay: 'exceptZero' }) + ' %';
+  const seitenZeilen = arr(p30.pages), gew = seitenZeilen.filter(p => p && p.clicks > p.prevClicks).sort((a, b) => (b.clicks - b.prevClicks) - (a.clicks - a.prevClicks)).slice(0, 10), verl = seitenZeilen.filter(p => p && p.clicks < p.prevClicks).sort((a, b) => (a.clicks - a.prevClicks) - (b.clicks - b.prevClicks)).slice(0, 10);
+  const tag = arr(obj(p90.daily ? p90 : p30).daily).filter(x => x && x.date), tagL = tag.map(x => { const d = datum(x.date); return d ? d.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit' }) : String(x.date); });
+  const kopf = (ic, farbe, titel, sub) => `<div class="card__head"><div class="card__title"><span class="ic ic--${farbe}">${ICON[ic]}</span><span>${titel}${sub ? `<span class="card__sub">${sub}</span>` : ''}</span></div></div>`;
+  const a = obj(an), mitAnalyse = !!a.connected, aS = obj(a.pages), aQ = obj(a.queries), aV = a.visibility ? obj(a.visibility) : null, vb = verkehrsBefunde(g);
+  const mitUrteil = rows => arr(rows).filter(r => r && typeof r === 'object').map(r => Object.assign({}, r, { _html: urteil(r.change) + (r.reason ? ` ${esc(r.reason)}` : '') }));
+  box.innerHTML = `<div class="card mb">${kopf('trend', 'acc', 'Google Search Console', `${esc(g.property || '')} · abgerufen ${esc(fmtD(g.fetchedAt))}${zahl(g.lagDays) != null ? ` · Daten laufen etwa ${fmtNum(g.lagDays)} Tage nach` : ''}`)}
+      <div class="tbl-wrap"><table class="tbl"><thead><tr><th scope="col">Zeitraum</th><th scope="col" class="r">Klicks</th><th scope="col" class="r">Impressionen</th><th scope="col" class="r">CTR</th><th scope="col" class="r">Ø Position</th></tr></thead><tbody>${zeitr.map(([d, p]) => { const c = obj(p.current), v = obj(p.previous), rg = obj(p.range); return `<tr><td>${d} Tage <span class="sub">(${esc(rg.start || '')} – ${esc(rg.end || '')})</span></td><td class="r">${fmtNum(c.clicks)} <span class="sub">(${esc(dl(c.clicks, v.clicks))})</span></td><td class="r">${fmtNum(c.impressions)} <span class="sub">(${esc(dl(c.impressions, v.impressions))})</span></td><td class="r">${fmtPct(c.ctr)} <span class="sub">(vorher ${fmtPct(v.ctr)})</span></td><td class="r">${fmtPos(c.position)} <span class="sub">(vorher ${fmtPos(v.position)})</span></td></tr>`; }).join('')}</tbody></table></div><p class="hint" style="margin-top:8px">In Klammern: Veränderung gegenüber dem gleich langen Zeitraum davor.</p></div>
+    <div class="grid grid--2"><div class="card">${kopf('chart', 'acc', 'Klicks je Tag', 'Verlauf der letzten Wochen')}<div class="chart-box" id="chGscK"></div></div><div class="card">${kopf('chart', 'violet', 'Impressionen je Tag', 'Eigene Skala – nicht mit den Klicks vergleichen')}<div class="chart-box" id="chGscI"></div></div></div>
+    <div class="grid grid--2"><div class="card">${kopf('search', 'blue', 'Top-Suchanfragen', '30 Tage')}${platz('gQ')}</div><div class="card">${kopf('page', 'blue', 'Top-Einstiegsseiten', '30 Tage')}${platz('gP')}</div></div>
+    <div class="grid grid--2"><div class="card">${kopf('trend', 'green', 'Gewinner', 'Klicks 30 Tage gegenüber davor')}${platz('gGew')}</div><div class="card">${kopf('trend', 'red', 'Verlierer', 'Klicks 30 Tage gegenüber davor')}${platz('gVerl')}</div></div>
+    ${(p30.devices || p30.countries) ? `<div class="grid grid--2"><div class="card">${kopf('list', 'grey', 'Geräte', '30 Tage')}${platz('gDev')}</div><div class="card">${kopf('globe', 'grey', 'Länder', '30 Tage')}${platz('gLand')}</div></div>` : ''}
+    ${mitAnalyse ? `<div class="card mb">${kopf('info', 'amber', 'Echte Veränderung oder Schwankung?', 'Bewertung der Google-Zahlen')}<p class="hint">${esc(a.dataNote || '')}<br>${esc(a.method || '')}</p><div class="tbl-wrap" style="margin-top:8px"><table class="tbl"><thead><tr><th scope="col">Zeitraum</th><th scope="col">Klicks</th><th scope="col">Impressionen</th></tr></thead><tbody>${Object.entries(obj(a.totals)).map(([d, t]) => { t = obj(t); return `<tr><td>${esc(d)} Tage</td><td>${fmtNum(t.clicks)} gegenüber ${fmtNum(t.prevClicks)} ${urteil(t.clicksVerdict)}</td><td>${fmtNum(t.impressions)} gegenüber ${fmtNum(t.prevImpressions)} ${urteil(t.impressionsVerdict)}</td></tr>`; }).join('')}</tbody></table></div></div>
+    <div class="grid grid--2"><div class="card">${kopf('check', 'green', 'Erfolgreiche Unterseiten', '30 Tage')}${platz('aStark')}</div><div class="card">${kopf('warn', 'amber', 'Schwache Unterseiten', 'Viel Sichtbarkeit, wenig Klicks')}${platz('aSchwach')}</div></div>
+    <div class="grid grid--2"><div class="card">${kopf('trend', 'green', 'Echte Gewinner')}${platz('aGew')}</div><div class="card">${kopf('trend', 'red', 'Echte Verlierer')}${platz('aVerl')}</div></div>
+    ${aV ? `<div class="grid grid--2"><div class="card">${kopf('search', 'green', 'Neue Sichtbarkeit', '30 Tage')}${platz('vNeuS')}<div class="block"><h3>Neue Suchanfragen</h3>${platz('vNeuQ')}</div></div><div class="card">${kopf('search', 'red', 'Verlorene Sichtbarkeit')}${platz('vWegS')}<div class="block"><h3>Verlorene Suchanfragen</h3>${platz('vWegQ')}</div><p class="hint" style="margin-top:8px">${esc(aV.note || '')}</p></div></div>` : ''}
+    <div class="card mb">${kopf('bulb', 'amber', 'Suchanfragen mit Potenzial', '30 Tage')}${platz('aPot')}<p class="hint" style="margin-top:8px">Potenzial = Impressionen × (übliche Klickrate drei Positionen weiter oben − aktuelle Klickrate). Richtwert, keine Prognose.</p></div>` : note('', 'Die Bewertung „echte Veränderung oder Schwankung“ liegt noch nicht vor – sie entsteht mit dem nächsten Wochenlauf.')}
+    ${vb.length ? `<div class="card">${kopf('warn', 'red', 'Offene Befunde auf Seiten mit Suchleistung', 'Befund aus dem Prüflauf · Zahlen von Google (30 Tage)')}${platz('gBef')}</div>` : ''}`;
+  Charts.draw('chGscK', 'line', { titel: 'Klicks je Tag', labels: tagL, series: [{ name: 'Klicks', color: C.acc, area: true, data: tag.map(x => x.clicks) }] });
+  Charts.draw('chGscI', 'line', { titel: 'Impressionen je Tag', labels: tagL, series: [{ name: 'Impressionen', color: C.violet, area: true, data: tag.map(x => x.impressions) }] });
+  const L = (k, rows, keys, opt) => { if ($('l-' + k)) liste('l-' + k, k, () => gscTabelle(k, rows, keys, opt)); };
+  L('gQ', p30.queries, ['query', 'clicks', 'prevClicks', 'impressions', 'ctr', 'position']); L('gP', p30.pages, ['page', 'clicks', 'prevClicks', 'impressions', 'ctr', 'position']);
+  L('gGew', gew, ['page', 'prevClicks', 'clicks'], { leer: 'keine' }); L('gVerl', verl, ['page', 'prevClicks', 'clicks'], { leer: 'keine' });
+  L('gDev', p30.devices, ['device', 'clicks', 'impressions', 'ctr', 'position']); L('gLand', p30.countries, ['country', 'clicks', 'impressions', 'ctr', 'position']);
+  if (mitAnalyse) {
+    const sp = ['page', 'clicks', 'prevClicks', 'impressions', 'ctr', 'position'], kein = { leer: 'keine (zu wenig Daten oder keine Auffälligkeit)' };
+    L('aStark', mitUrteil(aS.strong), sp, kein); L('aSchwach', mitUrteil(aS.weak), sp, kein); L('aGew', mitUrteil(aS.winners), sp, kein); L('aVerl', mitUrteil(aS.losers), sp, kein);
+    if (aV) { L('vNeuS', mitUrteil(aV.newPages), sp, kein); L('vNeuQ', aV.newQueries, ['query', 'clicks', 'impressions', 'position'], { leer: 'keine' }); L('vWegS', aV.lostPages, ['page', 'prevClicks', 'prevImpressions'], { leer: 'keine' }); L('vWegQ', aV.lostQueries, ['query', 'prevClicks', 'prevImpressions'], { leer: 'keine' }); }
+    L('aPot', aQ.opportunities, ['query', 'clicks', 'impressions', 'ctr', 'position', 'potential', 'reason'], { leer: 'keine' });
+  }
+  if (vb.length) liste('l-gBef', 'gBef', () => tabelle('gBef', vb, [{ k: 'p', t: 'Prio' }, { k: 't', t: 'Befund' }, { k: 's', t: 'Seite', cls: 'hide-m' }, { k: 'i', t: 'Impr. 30 T.', cls: 'r', desc: true, sort: (x, y) => x.impressions - y.impressions }, { k: 'k', t: 'Klicks', cls: 'r' }, { k: 'o', t: 'Ø Pos.', cls: 'r' }],
+    x => `<tr${zeilenAttr(x.i.id)}><td>${sevPill(x.i.severity)}</td><td class="wrap">${titelKnopf(x.i.id, x.i.title)}</td><td class="wrap mono hide-m">${urlHtml(x.seite || x.i.url)}</td><td class="r">${fmtNum(x.impressions)}</td><td class="r">${fmtNum(x.clicks)}</td><td class="r">${fmtPos(x.position)}</td></tr>`, { seite: 20 }));
+}
+
+// ── Ansicht: Optimierungsvorschläge ─────────────────────────────────────────
+async function renderVorschlaege() {
+  const box = $('voBox'); box.innerHTML = lade('Vorschläge werden geladen …');
+  const o = obj(await lazy('opportunities')), items = arr(o.items).filter(x => x && typeof x === 'object');
+  if (!items.length) { box.innerHTML = `<div class="card">${leerBox('Noch keine Chancen abgeleitet. Sie entstehen mit dem Wochenlauf; Chancen aus Google-Daten gibt es nur mit verbundener Search Console.')}</div>`; return; }
+  box.innerHTML = `<div class="card"><div class="card__head"><div class="card__title"><span class="ic ic--amber">${ICON.bulb}</span><span>Vorschläge nach Priorität<span class="card__sub">${fmtNum(items.length)} Chancen · Stand ${esc(fmtD(o.at))}</span></span></div></div>${platz('opps')}</div>`;
+  liste('l-opps', 'opps', () => tabelle('opps', items, [{ k: 'p', t: 'Prio', sort: (a, b) => sevRang({ severity: a.priority }) - sevRang({ severity: b.priority }) }, { k: 't', t: 'Chance' }, { k: 'm', t: 'Maßnahmen' }, { k: 'q', t: 'Quelle' }],
+    x => `<tr><td>${sevPill(x.priority)}</td><td class="wrap"><b>${esc(x.title || '')}</b><div class="sub">${esc(x.detail || '')}</div>${x.url ? `<div class="mono">${urlHtml(x.url)}</div>` : ''}</td><td class="wrap">${arr(x.actions).length ? `<ul class="list">${arr(x.actions).map(a => `<li>${esc(a)}</li>`).join('')}</ul>` : ''}</td><td><span class="pill pill--${x.source === 'gsc' ? 'blue' : 'grey'}">${x.source === 'gsc' ? 'Google-Daten' : 'eigene Auswertung'}</span></td></tr>`, { cls: 'tbl--stack', seite: 25 }));
+}
+
+// ── Ansicht: Vorher / Nachher ───────────────────────────────────────────────
+function lokalHtml(lc) {
+  const vor = obj(lc.before), nach = obj(lc.after), nv = obj(lc.notComparable), nvZahl = int(nv.open);
+  const nvRegeln = Object.entries(obj(nv.byRule)).filter(([, n]) => int(n) > 0).map(([r, n]) => `${regelLabel(r)} ${fmtNum(n)}`).join(', ');
+  return `${arr(lc.hinweise).filter(t => typeof t === 'string' && t).map(t => note('warn', esc(t))).join('')}<p class="hint">Live-Lauf ${esc(fmtD(lc.liveRunAt))} ↔ lokaler Check ${esc(fmtD(lc.at))} · ${fmtNum(lc.pagesChecked)} Seiten lokal geprüft (${fmtNum(lc.pagesWithoutLocalFile)} ohne lokale Datei) · ${fmtNum(arr(lc.rulesEvaluated).length)} Regeln${arr(lc.rulesSkipped).length ? ` · nicht lokal prüfbar: ${esc(arr(lc.rulesSkipped).join('; '))}` : ''}</p>
+    ${nvZahl ? `<p class="hint" style="margin-top:6px">${fmtNum(nvZahl)} weitere offene Live-Befunde sind am Build nicht prüfbar und stehen nicht unter „Vorher“${nvRegeln ? ` (${esc(nvRegeln)})` : ''} – sie bestätigt erst der nächste Prüflauf nach dem Deploy.</p>` : ''}
+    <div class="kpis" style="margin:12px 0">${[['red', vor.open, 'Vorher (live)', nvZahl ? `offen im Regelumfang · ${fmtNum(nvZahl)} nicht lokal prüfbar` : 'offen im Regelumfang'], ['green', nach.open, 'Nachher (lokal)', 'offen im Regelumfang'], ['violet', arr(lc.resolved).length, 'Lokal behoben', 'verschwindet live nach Deploy'], ['amber', arr(lc.added).length, 'Neu entstanden', 'lokal, bitte prüfen']].map(([tone, v, l, s]) => kpi({ label: l, value: fmtNum(v), sub: s, tone, icon: 'swap' })).join('')}</div>
+    <div class="tbl-wrap"><table class="tbl"><thead><tr><th scope="col">Schweregrad</th><th scope="col" class="r">Vorher (live)</th><th scope="col" class="r">Nachher (lokal)</th></tr></thead><tbody>${SEV.slice(0, 4).map(s => `<tr><td>${sevPill(s)}</td><td class="r">${fmtNum(int(obj(vor.bySeverity)[s]))}</td><td class="r">${fmtNum(int(obj(nach.bySeverity)[s]))}</td></tr>`).join('')}</tbody></table></div>
+    <div class="grid grid--2" style="margin:14px 0 0"><div class="block" style="margin:0"><h3>Lokal behoben (${fmtNum(arr(lc.resolved).length)})</h3>${platz('lcBeh')}</div><div class="block" style="margin:0"><h3>Neu entstanden (${fmtNum(arr(lc.added).length)})</h3>${platz('lcNeu')}</div></div>${lc.note ? `<p class="hint" style="margin-top:10px">${esc(lc.note)}</p>` : ''}`;
+}
+async function renderVergleich() {
+  if (S.lc === undefined) S.lc = await lazyStill('local-check');
+  const lc = (S.lc && S.lc.at) ? S.lc : null;
+  $('vgLokal').hidden = !lc;
+  if (lc) { $('vgLokalBody').innerHTML = lokalHtml(lc); liste('l-lcBeh', 'lcBeh', () => kurzTabelle('lcBeh', lc.resolved, { seite: 10 })); liste('l-lcNeu', 'lcNeu', () => kurzTabelle('lcNeu', lc.added, { seite: 10 })); }
+  const runs = S.runs, opt = runs.map((r, k) => `<option value="${k}">${esc(fmtD(r.at))} · ${esc(artLabel(r.kind))} · ${fmtNum(r.open)} offen</option>`).join('');
+  $('vgA').innerHTML = opt; $('vgB').innerHTML = opt; $('vgGo').disabled = runs.length < 2;
+  if (runs.length < 2) { $('vgBox').innerHTML = leerBox('Ein Vergleich ist ab dem zweiten Prüflauf möglich.'); return; }
+  if (!S.cmp || S.cmp.a >= runs.length || S.cmp.b >= runs.length) {   // Vorgabe: letzter Lauf gegen den Lauf rund eine Woche davor (sonst den ältesten)
+    const letzter = runs.length - 1, grenze = new Date(new Date(runs[letzter].at).getTime() - 7 * 864e5).toISOString(); let a = 0;
+    for (let k = letzter - 1; k >= 0; k--) if (runs[k].at <= grenze) { a = k; break; }
+    S.cmp = { a, b: letzter };
+  }
+  $('vgA').value = String(S.cmp.a); $('vgB').value = String(S.cmp.b);
+  zeigeVergleich();
+}
+function zeigeVergleich() {
+  const runs = S.runs, a = runs[int($('vgA').value)], b = runs[int($('vgB').value)], box = $('vgBox'); if (!a || !b) return;
+  S.cmp = { a: int($('vgA').value), b: int($('vgB').value) };
+  if (a === b) { box.innerHTML = leerBox('Bitte zwei verschiedene Läufe wählen.'); return; }
+  const c = vergleich(a, b), dz = n => (n > 0 ? '+' : '') + fmtNum(n);
+  box.innerHTML = `<div class="tbl-wrap"><table class="tbl"><thead><tr><th scope="col">Schweregrad</th><th scope="col" class="r">${esc(fmtD(c.from.at))}<br>${esc(artLabel(c.from.kind))}</th><th scope="col" class="r">${esc(fmtD(c.to.at))}<br>${esc(artLabel(c.to.kind))}</th><th scope="col" class="r">Veränderung</th></tr></thead><tbody>${c.delta.map(d => `<tr><td>${sevPill(d.severity)}</td><td class="r">${fmtNum(d.from)}</td><td class="r">${fmtNum(d.to)}</td><td class="r">${dz(d.to - d.from)}</td></tr>`).join('')}<tr><td><b>gesamt offen</b></td><td class="r">${fmtNum(c.from.open)}</td><td class="r">${fmtNum(c.to.open)}</td><td class="r"><b>${dz(int(c.to.open) - int(c.from.open))}</b></td></tr></tbody></table></div>
+    <div class="grid grid--2" style="margin:16px 0 0"><div class="block" style="margin:0"><h3>Neu (${fmtNum(c.neu.length)})</h3>${platz('cmpNeu')}</div><div class="block" style="margin:0"><h3>Behoben (${fmtNum(c.behoben.length)})</h3>${platz('cmpBeh')}</div></div>${c.wieder.length ? `<div class="block"><h3>Wieder aufgetreten (${fmtNum(c.wieder.length)})</h3>${platz('cmpWie')}</div>` : ''}`;
+  for (const [k, l] of [['cmpNeu', c.neu], ['cmpBeh', c.behoben], ['cmpWie', c.wieder]]) { delete S.limit[k]; if ($('l-' + k)) liste('l-' + k, k, () => kurzTabelle(k, l)); }
+}
+
+// ── Ansicht: Prüfhistorie ───────────────────────────────────────────────────
+async function crawlVerlauf() { const ch = arr(await lazyStill('crawl-history')); return (ch.length ? ch : arr(S.ov.crawlHistory)).filter(x => x && typeof x === 'object' && x.at); }
+async function renderHistorie() {
+  const runs = S.runs, sicht = runs.slice(-120);
+  Charts.draw('chHist', 'line', { titel: 'Verlauf der offenen Punkte', hoehe: 240, labels: sicht.map(r => fmtKurz(r.at)), series: sevSerien(sicht, [['open', 'offen gesamt', C.acc, true], ['kritisch', 'kritisch', C.red], ['hoch', 'hoch', C.amber]]), leer: 'Noch keine Läufe.' });
+  $('hiTabelle').innerHTML = lade('Läufe werden geladen …');
+  const ch = (await crawlVerlauf()).map(x => ({ x, t: new Date(x.at).getTime() }));
+  const crawlZu = r => { const t = new Date(r.at).getTime(); let best = null, d = 15001; for (const c of ch) { const dd = Math.abs(c.t - t); if (dd < d && (!c.x.kind || !r.kind || c.x.kind === r.kind)) { d = dd; best = c.x; } } return obj(best); };
+  const bs = (r, s) => fmtNum(int(obj(r.bySeverity)[s]));
+  const cols = [['Zeit', ''], ['Art', ''], ['Befunde', 'r'], ['neu', 'r'], ['behoben', 'r'], ['wieder', 'r'], ['offen', 'r'], ['kritisch', 'r'], ['hoch', 'r'], ['mittel', 'r'], ['niedrig', 'r'], ['URLs', 'r'], ['indexierbar', 'r'], ['Score', 'r']].map(([t, cls], k) => ({ k: 'c' + k, t, cls }));
+  liste('hiTabelle', 'runs', () => tabelle('runs', runs.slice().reverse(), cols, r => { const c = crawlZu(r); return `<tr><td style="white-space:nowrap">${esc(fmtD(r.at))}${r.suspicious ? ' <span class="pill pill--red">unsicher</span>' : ''}</td><td>${esc(artLabel(r.kind))}</td><td class="r">${fmtNum(r.findings)}</td><td class="r">${fmtNum(r.new)}</td><td class="r">${fmtNum(r.resolved)}</td><td class="r">${fmtNum(r.reopened)}</td><td class="r"><b>${fmtNum(r.open)}</b></td><td class="r">${bs(r, 'kritisch')}</td><td class="r">${bs(r, 'hoch')}</td><td class="r">${bs(r, 'mittel')}</td><td class="r">${bs(r, 'niedrig')}</td><td class="r">${fmtNum(c.crawled)}</td><td class="r">${fmtNum(c.indexable)}</td><td class="r">${fmtNum(c.score)}</td></tr>`; }, { seite: 30, leer: 'Noch keine Läufe.' }));
+}
+
+// ── Ansicht: SEO-Berichte ───────────────────────────────────────────────────
+/** Markdown der Berichte: erst alles maskieren, dann nur feste Tags setzen (Überschriften, Listen, Tabellen, fett, Code). */
+function mdToHtml(md) {
+  const inl = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/`([^`]+)`/g, '<code>$1</code>').replace(/(^|[\s(])_([^_]+)_(?=$|[\s).,;:!?])/g, '$1<i>$2</i>');
+  const out = []; let abs = [], lst = null, tab = null;
+  const ende = () => {
+    if (abs.length) { out.push('<p>' + abs.join('<br>') + '</p>'); abs = []; }
+    if (lst) { out.push(`<${lst.typ}>` + lst.punkte.map(p => '<li>' + p.join('<br>') + '</li>').join('') + `</${lst.typ}>`); lst = null; }
+    if (tab) { const [kopf, ...zeilen] = tab.zeilen; out.push('<div class="tbl-wrap"><table class="tbl">' + (tab.mitKopf ? '<thead><tr>' + kopf.map(c => `<th scope="col">${c}</th>`).join('') + '</tr></thead>' : '') + '<tbody>' + (tab.mitKopf ? zeilen : tab.zeilen).map(z => '<tr>' + z.map(c => `<td>${c}</td>`).join('') + '</tr>').join('') + '</tbody></table></div>'); tab = null; }
+  };
+  for (const roh of String(md == null ? '' : md).replace(/\r/g, '').split('\n')) {
+    const z = roh.replace(/\s+$/, ''); let m;
+    if (!z.trim()) { ende(); continue; }
+    if ((m = /^(#{1,4})\s+(.*)$/.exec(z))) { ende(); const h = Math.min(5, m[1].length + 2); out.push(`<h${h}>${inl(m[2])}</h${h}>`); continue; }
+    if (/^\|.*\|$/.test(z.trim())) {
+      if (abs.length || lst) ende(); const zellen = z.trim().slice(1, -1).split('|').map(c => c.trim());
+      if (zellen.every(c => /^:?-{2,}:?$/.test(c))) { if (tab && tab.zeilen.length === 1) tab.mitKopf = true; continue; }
+      (tab = tab || { zeilen: [], mitKopf: false }).zeilen.push(zellen.map(inl)); continue;
+    }
+    if ((m = /^\s*([-*•]|\d+\.)\s+(.*)$/.exec(z))) { const typ = /\d/.test(m[1]) ? 'ol' : 'ul'; if (abs.length || tab || (lst && lst.typ !== typ)) ende(); (lst = lst || { typ, punkte: [] }).punkte.push([inl(m[2])]); continue; }
+    if (lst && /^\s{2,}\S/.test(z)) { lst.punkte[lst.punkte.length - 1].push(inl(z.trim())); continue; }
+    if (lst || tab) ende();
+    abs.push(inl(z));
+  }
+  ende(); return out.join('');
+}
+const berichtDatei = f => { f = String(f || ''); if (!BERICHT_RE.test(f)) return null; return f.replace(/\.json$/, '.md'); };
+async function zeigeBericht(datei) {
+  const box = $('beText'); datei = berichtDatei(datei); if (!datei) return;
+  const eintrag = arr(S.berichte).find(r => berichtDatei(r.file) === datei);
+  S.bericht = datei; box.innerHTML = lade('Bericht wird geladen …');
+  $('beTitel').textContent = eintrag ? `${artLabel(eintrag.kind)} vom ${fmtD(eintrag.at)}` : 'Bericht';
+  $('beRoh').innerHTML = `<a class="btn btn--sm" href="${esc(API)}?bericht=${esc(encodeURIComponent(datei))}" target="_blank" rel="noopener">Als Text öffnen</a>`;
+  document.querySelectorAll('#beListe [data-bericht]').forEach(b => b.setAttribute('aria-current', String(b.getAttribute('data-bericht') === datei)));
+  try { const text = await getBericht(datei); if (S.bericht === datei) box.innerHTML = mdToHtml(text) || leerBox('Der Bericht ist leer.'); }
+  catch (e) { if (S.bericht === datei) box.innerHTML = fehlerHtml(e); }
+}
+async function renderBerichte() {
+  $('beListe').innerHTML = lade('Berichte werden geladen …');
+  const [idx, ch] = await Promise.all([lazy('reports'), crawlVerlauf()]);
+  const list = arr(idx).filter(r => r && typeof r === 'object' && berichtDatei(r.file)).sort((a, b) => String(b.at || '').localeCompare(String(a.at || '')));
+  S.berichte = list;
+  const cols = [['Datum', ''], ['Art', ''], ['Score', 'r'], ['offen', 'r'], ['krit. / hoch', 'r'], ['neu / behoben', 'r']].map(([t, cls], k) => ({ k: 'c' + k, t, cls }));
+  liste('beListe', 'berichte', () => tabelle('berichte', list, cols, r => { const f = berichtDatei(r.file); return `<tr><td><button type="button" class="linkbtn" style="white-space:nowrap" data-bericht="${esc(f)}" aria-current="${f === S.bericht}">${esc(fmtD(r.at))}</button></td><td>${esc(artLabel(r.kind))}</td><td class="r">${fmtNum(r.score)}</td><td class="r">${fmtNum(r.open)}</td><td class="r">${fmtNum(int(r.kritisch))} / ${fmtNum(int(r.hoch))}</td><td class="r">${fmtNum(int(r.neu))} / ${fmtNum(int(r.behoben))}</td></tr>`; }, { seite: 15, leer: 'Noch keine Berichte.' }));
+  const h = ch.slice(-30);
+  Charts.draw('chFehler', 'bars', { titel: 'Fehlerhistorie', labels: h.map(x => fmtKurz(x.at)), series: sevSerien(h, [['kritisch', 'kritisch', C.red], ['hoch', 'hoch', C.amber], ['mittel', 'mittel', C.blue]]), leer: 'Noch kein Verlauf.' });
+  $('beVerlauf').textContent = h.length >= 2 ? `Offene Punkte: ${fmtNum(h[h.length - 2].open)} → ${fmtNum(h[h.length - 1].open)} (${fmtD(h[h.length - 2].at)} → ${fmtD(h[h.length - 1].at)}). Niedrige Befunde und Hinweise sind im Diagramm nicht enthalten.` : 'Ein Vorher-Nachher-Vergleich ist ab dem zweiten Lauf möglich.';
+  if (!list.length) { $('beText').innerHTML = leerBox('Noch keine Berichte vorhanden.'); $('beRoh').innerHTML = ''; $('beTitel').textContent = 'Bericht'; return; }
+  const wahl = list.find(r => berichtDatei(r.file) === S.bericht) || list[0];
+  await zeigeBericht(wahl.file);
+}
+
+// ── Ansicht: Automatisierung ────────────────────────────────────────────────
+/** Status eines geplanten Laufs zum Zeitpunkt des Aufrufs: Die Übersicht entsteht nur bei einem Lauf – bleiben alle Läufe aus,
+    muss „überfällig“ hier entstehen. Ältere Übersichten ohne letzter/fristTage: Text aus den Daten. */
+function laufStatus(x) {
+  const t = typeof x.letzter === 'string' ? Date.parse(x.letzter) : NaN, frist = zahl(x.fristTage);
+  if (!Number.isFinite(t) || frist == null || frist <= 0) return x.status;
+  return `${Date.now() - t > frist * 864e5 ? 'überfällig' : 'aktiv'} · zuletzt ${fmtTag(x.letzter)}`;
+}
+async function renderAuto() {
+  const box = $('auBox'), o = S.ov, zp = obj(o.zeitplan), gepl = arr(zp.geplant), vers = obj(o.notify).enabled;
+  const zeile = x => { if (typeof x === 'string') return `<tr><td class="wrap" colspan="3">${esc(x)}</td></tr>`; x = obj(x); const st = laufStatus(x); return `<tr><td class="wrap">${esc(x.name || x.titel || '')}${x.cmd ? `<div class="sub mono">${esc(x.cmd)}</div>` : ''}</td><td class="wrap">${esc(x.zeit || x.wann || '')}${x.cron ? `<div class="sub mono">${esc(x.cron)}</div>` : ''}</td><td>${st ? `<span class="pill pill--${/^(aktiv|läuft|eingerichtet)/i.test(String(st).trim()) ? 'green' : /^überfällig/i.test(String(st).trim()) ? 'red' : /^noch kein/i.test(String(st).trim()) ? 'grey' : 'amber'}">${esc(st)}</span>` : ''}</td></tr>`; };
+  box.innerHTML = `<div class="card mb"><div class="card__head"><div class="card__title"><span class="ic ic--acc">${ICON.repeat}</span><span>Geplante Läufe<span class="card__sub">Der Autopilot prüft die Website nur lesend und ändert nichts daran</span></span></div></div>
+      ${gepl.length ? `<div class="tbl-wrap"><table class="tbl"><thead><tr><th scope="col">Aufgabe</th><th scope="col">Wann</th><th scope="col">Status</th></tr></thead><tbody>${gepl.map(zeile).join('')}</tbody></table></div>` : leerBox('Der Zeitplan erscheint nach dem nächsten Prüflauf.')}
+      ${zp.hinweis ? `<p class="hint" style="margin-top:10px">${esc(zp.hinweis)}</p>` : ''}${arr(zp.schutz).length ? `<div class="block"><h3>Absicherung</h3><ul class="list">${arr(zp.schutz).map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}</div>
+    <div class="card mb"><div class="card__head"><div class="card__title"><span class="ic ic--amber">${ICON.info}</span><span>Benachrichtigungen<span class="card__sub">Meldungen des Autopiloten (Postausgang)</span></span></div>${vers ? '<span class="pill pill--green">Versand aktiv</span>' : '<span class="pill pill--grey">Versand aus – nur Vorbereitung</span>'}</div><div id="auMeldungen">${lade('Meldungen werden geladen …')}</div></div>
+    <div class="card mb"><div class="card__head"><div class="card__title"><span class="ic ic--grey">${ICON.list}</span><span>Datenstand<span class="card__sub">Welche Dateien auf dem Server liegen</span></span></div></div><div id="auZustand">${lade('Datenstand wird geladen …')}</div></div>
+    ${note('', `Das SEO Center liest nur Daten. Einzige Schreiboperation ist der Bearbeitungsstatus je Befund. Google-Daten gibt es nur bei verbundener Search Console.${o.erzeugt ? ` Übersicht erzeugt ${esc(fmtD(o.erzeugt))}` : ''}${o.version ? ` · Version ${esc(o.version)}` : ''}`)}`;
+  const meldungen = lazy('notifications').then(n => {
+    const list = arr(n).filter(x => x && typeof x === 'object').reverse();
+    liste('auMeldungen', 'meldungen', () => tabelle('meldungen', list, [['Zeit', ''], ['Kanal', ''], ['Betreff', ''], ['gesendet', '']].map(([t, cls], k) => ({ k: 'c' + k, t, cls })), x => `<tr><td style="white-space:nowrap">${esc(fmtD(x.at))}</td><td>${esc(x.channel || '')}</td><td class="wrap">${x.body ? `<details style="margin:0"><summary>${esc(x.subject || '(ohne Betreff)')}</summary><pre>${esc(x.body)}</pre></details>` : esc(x.subject || '')}</td><td>${x.sent ? '<span class="pill pill--green">ja</span>' : '<span class="pill pill--grey">nein</span>'}</td></tr>`, { seite: 20, leer: 'Noch keine Meldungen.' }));
+  }).catch(e => { $('auMeldungen').innerHTML = fehlerHtml(e); });
+  const zustand = anfrage('?zustand=1', { headers: { Accept: 'application/json' } }).then(async r => { if (!r.ok) throw await fehlerAus(r); return r.json(); }).then(z => {
+    z = obj(z); const d = Object.entries(obj(z.dateien)).map(([n, v]) => ({ n, bytes: zahl(obj(v).bytes), at: obj(v).geaendert })).sort((a, b) => a.n.localeCompare(b.n));
+    $('auZustand').innerHTML = `<p>${z.schreibbar === false ? '<span class="pill pill--red">Datenordner nicht schreibbar</span>' : '<span class="pill pill--green">Datenordner schreibbar</span>'} <span class="pill pill--grey">${fmtNum(z.berichte)} Berichte</span></p>${d.length ? `<div class="tbl-wrap" style="margin-top:10px"><table class="tbl"><thead><tr><th scope="col">Datei</th><th scope="col" class="r">Größe</th><th scope="col">Geändert</th></tr></thead><tbody>${d.map(x => `<tr><td class="mono">${esc(x.n)}</td><td class="r">${x.bytes == null ? '–' : fmtNum(Math.max(1, Math.round(x.bytes / 1024))) + ' KB'}</td><td>${esc(fmtD(x.at))}</td></tr>`).join('')}</tbody></table></div>` : leerBox('Noch keine Dateien vorhanden.')}`;
+  }).catch(() => { $('auZustand').innerHTML = leerBox('Der Datenstand ließ sich nicht abfragen.'); });
+  await Promise.all([meldungen, zustand]);
+}
+
+// ── Rahmen: Meldungen, Navigation, Laden ────────────────────────────────────
+function fehlerHtml(e, mitKnopf) {
+  const msg = (e && e.message) ? e.message : 'Unbekannter Fehler';
+  return `<div class="error-box" role="alert">${esc(msg)}${e && e.detail ? `<small>Meldung des Servers: ${esc(e.detail)}</small>` : ''}${mitKnopf ? `<div><button type="button" class="btn" data-neu="${e && e.status === 401 ? 'seite' : '1'}">${e && e.status === 401 ? 'Seite neu laden' : 'Erneut versuchen'}</button></div>` : ''}</div>`;
+}
+let toastTimer = 0;
+function toast(text, schlecht) { const t = $('toast'); t.textContent = text; t.className = 'toast on' + (schlecht ? ' bad' : ''); clearTimeout(toastTimer); toastTimer = setTimeout(() => { t.className = 'toast' + (schlecht ? ' bad' : ''); }, schlecht ? 5000 : 2600); }
+function navZahlen() {
+  const off = offene(), inh = off.filter(i => INHALT_GRUPPEN.includes(gruppe(i.rule))).length;
+  const setze = (id, n) => { const e = $(id); if (e) e.textContent = S.leer || !S.geladen ? '' : fmtNum(n); };
+  setze('cntPrio', prioritaet(null).items.length); setze('cntFreigabe', off.filter(brauchtFreigabe).length); setze('cntTechnik', off.length - inh); setze('cntInhalte', inh);
+}
+function leerHtml() {
+  return `<div class="card leer"><div class="leer__ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+    <h2>Noch kein Prüflauf vorhanden</h2>
+    <p>Der erste Lauf startet automatisch zum nächsten geplanten Termin des SEO-Autopiloten. Sobald er durch ist, erscheinen hier die Ergebnisse – dann genügt ein Klick auf „Aktualisieren“.</p>
+    <ul><li>Befunde zu Technik, Meta-Daten, Preisen, Marke und Inhalten</li><li>Verlauf der offenen Punkte und der SEO-Score</li><li>Tages-, Wochen- und Monatsberichte</li></ul>
+    <p><button type="button" class="btn btn--primary" data-neu="1">Aktualisieren</button></p></div>`;
+}
+/** Aktive Ansicht zeichnen. Fehler einer Ansicht bleiben in dieser Ansicht. */
+async function renderView(leise) {
+  if (!S.geladen || S.leer) return;
+  const v = S.view, err = $('err-' + v); if (err) err.innerHTML = '';
+  try { await VIEWS[v].render(); }
+  catch (e) { console.error('[SEO Center] ' + v, e); if (err) err.innerHTML = fehlerHtml(e, true); }
+  if (!leise) Charts.redraw();
+}
+function navAktiv() {
+  document.querySelectorAll('#nav a[data-page]').forEach(a => { const akt = a.dataset.page === S.view; a.classList.toggle('active', akt); if (akt) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
+  $('pageTitle').textContent = VIEWS[S.view].titel;
+  document.title = VIEWS[S.view].titel + ' – SEO Center – KFZ-Zulassungsprofis';
+}
+function menue(auf) { document.body.classList.toggle('nav-open', auf); $('burger').setAttribute('aria-expanded', String(auf)); }
+function leseHash() {
+  const [pfad, query = ''] = location.hash.replace(/^#\/?/, '').split('?'), teile = pfad.split('/').map(dec);
+  const view = eigen(VIEWS, teile[0]) ? teile[0] : (eigen(ALIAS, teile[0]) || 'uebersicht');
+  let regel = null; try { regel = new URLSearchParams(query).get('regel'); } catch (_) {}
+  return { view, id: isId(teile[1]) ? teile[1] : null, regel };
+}
+function route() {
+  const h = leseHash(), wechsel = h.view !== S.view;
+  S.view = h.view;
+  document.querySelectorAll('.page').forEach(p => p.classList.toggle('active', !S.leer && S.geladen && p.id === 'page-' + S.view));
+  navAktiv(); menue(false);
+  if (h.regel && (S.view === 'technik' || S.view === 'inhalte') && S.issues.some(i => i.rule === h.regel)) { Object.assign(S.f[S.view], { regel: h.regel, thema: 'alle', sev: '', q: '' }); $((S.view === 'technik' ? 'te' : 'in') + 'Q').value = ''; delete S.limit[S.view]; }
+  if (wechsel) { closeDrawer(true); window.scrollTo(0, 0); }
+  renderView().then(() => { if (h.id && S.geladen && !S.leer) { if (S.drawerId !== h.id) openIssue(h.id); } else if (!h.id) closeDrawer(true); });
+}
+async function start() {
+  const seq = ++S.seq, btn = $('refreshBtn'), inhalt = $('content'), z = $('zustand'), erst = !S.geladen;
+  btn.disabled = true; btn.classList.add('spin'); inhalt.classList.add('busy'); inhalt.setAttribute('aria-busy', 'true');
+  if (erst) z.innerHTML = lade('Daten werden geladen …');
+  try {
+    const kern = await ladeKern(); if (seq !== S.seq) return;
+    setKern(kern); S.geladen = true;
+    z.innerHTML = S.leer ? leerHtml() : '';
+    const lauf = obj(S.ov.letzterLauf); $('stand').textContent = (!S.leer && lauf.at) ? fmtD(lauf.at) : '–';
+    if (S.drawerId) { if (!S.leer && S.byId.has(S.drawerId)) $('drawerBody').innerHTML = drawerHtml(S.byId.get(S.drawerId)); else closeDrawer(); }
+    navZahlen(); route();
+    if (!erst) toast('Daten aktualisiert');
+  } catch (e) {
+    if (seq !== S.seq) return;
+    console.error('[SEO Center] Laden', e);
+    if (erst) z.innerHTML = fehlerHtml(e, true); else { z.innerHTML = fehlerHtml(e, true); toast('Aktualisieren fehlgeschlagen – es wird der bisherige Stand gezeigt.', true); }
+  } finally { if (seq === S.seq) { btn.disabled = false; btn.classList.remove('spin'); inhalt.classList.remove('busy'); inhalt.removeAttribute('aria-busy'); } }
+}
+
+// ── Ereignisse (alles über addEventListener, keine Inline-Handler) ──────────
+document.querySelectorAll('[data-ic]').forEach(e => { e.innerHTML = ICON[e.dataset.ic] || ''; });
+document.querySelector('.skip').addEventListener('click', e => { e.preventDefault(); $('content').focus(); });
+window.addEventListener('hashchange', route);
+window.addEventListener('resize', debounce(() => Charts.redraw(), 150));
+$('refreshBtn').addEventListener('click', start);
+$('burger').addEventListener('click', () => { const auf = !document.body.classList.contains('nav-open'); menue(auf); if (auf) { const a = document.querySelector('#nav a.active') || document.querySelector('#nav a'); setTimeout(() => a.focus(), 60); } });
+$('collapseBtn').addEventListener('click', () => { document.body.classList.toggle('collapsed'); try { localStorage.setItem('kzps_collapsed', document.body.classList.contains('collapsed') ? '1' : '0'); } catch (_) {} setTimeout(() => Charts.redraw(), 240); });
+$('drawerX').addEventListener('click', () => closeDrawer());
+$('backdrop').addEventListener('click', () => closeDrawer());
+document.addEventListener('keydown', e => {
+  const d = $('drawer'), offen = d.classList.contains('open');
+  if (e.key === 'Escape') { if (offen) { e.preventDefault(); closeDrawer(); } else if (document.body.classList.contains('nav-open')) { menue(false); $('burger').focus(); } return; }
+  if (e.key === 'Tab' && offen) {   // Fokus bleibt in der Schublade
+    const f = [...d.querySelectorAll('a[href], button:not([disabled]), select, textarea, input, [tabindex="0"]')].filter(x => x.offsetParent !== null); if (!f.length) return;
+    const erstes = f[0], letztes = f[f.length - 1], akt = document.activeElement;
+    if (!d.contains(akt) || (e.shiftKey && (akt === erstes || akt === $('drawerTitle')))) { e.preventDefault(); (e.shiftKey ? letztes : erstes).focus(); }
+    else if (!e.shiftKey && akt === letztes) { e.preventDefault(); erstes.focus(); }
+  }
+});
+document.addEventListener('click', e => {
+  const t = e.target;
+  if (document.body.classList.contains('nav-open') && !t.closest('.sidebar') && !t.closest('#burger')) menue(false);
+  const neu = t.closest('[data-neu]');
+  if (neu) { if (neu.dataset.neu === 'seite') location.reload(); else start(); return; }
+  const mehr = t.closest('[data-more]');
+  if (mehr) { const k = mehr.dataset.more, step = int(mehr.dataset.step) || SEITE, alt = Math.max(step, S.limit[k] || 0), box = mehr.closest('.more').parentElement; S.limit[k] = alt + step; if (S.redraw[k]) S.redraw[k](); const z = box && box.querySelectorAll('tbody tr')[alt]; const f = z && z.querySelector('button, a'); if (f) f.focus(); return; }
+  const sort = t.closest('[data-sort]');
+  if (sort) { const k = sort.dataset.list, cur = S.sort[k] || S.sortDef[k]; S.sort[k] = { k: sort.dataset.sort, asc: cur && cur.k === sort.dataset.sort ? !cur.asc : !sort.dataset.desc }; if (S.redraw[k]) S.redraw[k](); const neu = document.querySelector(`[data-list="${k}"][data-sort="${sort.dataset.sort}"]`); if (neu) neu.focus(); return; }
+  const ber = t.closest('[data-bericht]');
+  if (ber) { zeigeBericht(ber.dataset.bericht); return; }
+  if (t.closest('#rvSave')) return speichern();
+  if (t.closest('#drawerMehr')) { S.drawerAlle = true; if (S.drawerId) openIssue(S.drawerId, true); return; }
+  if (t.closest('#vgGo')) return zeigeVergleich();
+  const auf = t.closest('[data-open]');
+  if (auf) return openIssue(auf.dataset.open);
+  if (t.closest('a, button, select, input, textarea, summary, label')) return;
+  const z = t.closest('tr[data-id]');
+  if (z && !String(window.getSelection ? window.getSelection() : '')) openIssue(z.dataset.id);
+});
+// Filterleisten: [Behälter-Präfix, Ansicht, Zustand]
+function filterBinden(P, view, f, felder) {
+  // Das Suchfeld ist die Quelle für f.q: so geht eine noch nicht übernommene Eingabe nicht verloren, wenn direkt danach ein anderer Filter wechselt.
+  const neu = () => { f.q = $(P + 'Q').value; delete S.limit[view === 'prioritaet' ? 'prio' : view]; if (S.view === view) renderView(true); };
+  $(P + 'Chips').addEventListener('click', e => { const b = e.target.closest('.chip'); if (!b) return; f[felder.chip] = b.dataset.v; neu(); const n = $(P + 'Chips').querySelector(`[data-v="${b.dataset.v}"]`); if (n) n.focus(); });
+  for (const [id, feld] of Object.entries(felder.select || {})) $(P + id).addEventListener('change', e => { f[feld] = e.target.value; neu(); });
+  $(P + 'Q').addEventListener('input', debounce(neu, 140));
+}
+filterBinden('te', 'technik', S.f.technik, { chip: 'thema', select: { Status: 'status', Sev: 'sev', Regel: 'regel' } });
+filterBinden('in', 'inhalte', S.f.inhalte, { chip: 'thema', select: { Status: 'status', Sev: 'sev', Regel: 'regel' } });
+filterBinden('pr', 'prioritaet', S.f.prio, { chip: 'state', select: { Art: 'art' } });
+filterBinden('fr', 'freigabe', S.f.freigabe, { chip: 'art' });
+$('vgA').addEventListener('change', zeigeVergleich); $('vgB').addEventListener('change', zeigeVergleich);
+try { if (localStorage.getItem('kzps_collapsed') === '1') document.body.classList.add('collapsed'); } catch (_) {}
+S.view = leseHash().view; navAktiv();
+start();
+</script>
+</body>
+</html>

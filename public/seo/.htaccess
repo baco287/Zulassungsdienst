@@ -1,0 +1,21 @@
+# SEO Center (nur mit Login, siehe api/analytics-lib.php)
+DirectoryIndex index.php
+
+# Die Oberfläche wird nur über index.php (nach dem Login) ausgeliefert.
+<Files "center.html">
+  Require all denied
+</Files>
+
+# Läuft PHP als FastCGI, reicht Apache den Login-Kopf sonst nicht an PHP weiter.
+<IfModule mod_setenvif.c>
+  SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
+</IfModule>
+
+# Nichts aus diesem Ordner gehört in Suchmaschinen oder Zwischenspeicher.
+# Die Inhaltsrichtlinie (CSP) der Website gilt hier unverändert: keine fremden Quellen.
+# Bewusst ohne eigene Umschreiberegeln, damit die Weiterleitungen der Website (www,
+# frühere Domain) auch in diesem Ordner greifen.
+<IfModule mod_headers.c>
+  Header always set X-Robots-Tag "noindex, nofollow"
+  Header always set Cache-Control "no-store"
+</IfModule>
