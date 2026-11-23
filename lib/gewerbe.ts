@@ -63,9 +63,9 @@ export const gewerbeSegments: GewerbeSegment[] = [
     services: ["neuzulassung", "halterwechsel", "wunschkennzeichen", "abmeldung"],
     faq: [
       {
-        question: "Wie schnell ist eine Express-Zulassung für eine Auslieferung möglich?",
+        question: "Wie läuft eine Express-Zulassung für eine Auslieferung ab?",
         answer:
-          "Als eilig gekennzeichnete Vorgänge reichen wir bevorzugt ein – je nach Behörde ist die Zulassung oft noch am selben Werktag oder am Folgetag fertig. Sprechen Sie Auslieferungstermine früh mit uns ab, dann planen wir den Vorgang entsprechend ein.",
+          "Als eilig gekennzeichnete Vorgänge reichen wir vorrangig ein. Wie schnell die Behörde entscheidet, können wir nicht beeinflussen – sprechen Sie Auslieferungstermine deshalb früh mit uns ab, dann planen wir den Vorgang entsprechend ein.",
       },
       {
         question: "Übernehmen Sie auch Tageszulassungen?",
@@ -237,7 +237,7 @@ export const gewerbeSegments: GewerbeSegment[] = [
       {
         question: "Wie binden wir Sie technisch an?",
         answer:
-          "Heute per strukturierter Übermittlung (E-Mail/Datei); eine Schnittstellen-Anbindung für automatisierte Vorgänge bereiten wir derzeit vor. Sprechen Sie uns auf Ihre Systeme an.",
+          "Per strukturierter Übermittlung (E-Mail/Datei). Sprechen Sie uns auf Ihre Systeme an.",
       },
     ],
     keywords: [

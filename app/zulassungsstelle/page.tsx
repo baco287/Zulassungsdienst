@@ -4,9 +4,10 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import CTASection from "@/components/CTASection";
 import StellenSuche from "@/components/StellenSuche";
 import { publishedStellen } from "@/lib/zulassungsstellen";
+import { fitTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Zulassungsstellen: Adressen & Zuständigkeit",
+  title: fitTitle("Zulassungsstellen: Adressen & Zuständigkeit"),
   description:
     "Kfz-Zulassungsstellen deutscher Großstädte: zuständige Behörde, Anschrift, Kennzeichen, Terminbuchung und i-Kfz – geprüft anhand der offiziellen Behördenseiten.",
   alternates: { canonical: "/zulassungsstelle/" },

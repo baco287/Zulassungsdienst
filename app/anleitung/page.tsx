@@ -7,10 +7,11 @@ import CTASection from "@/components/CTASection";
 import { anleitungSteps } from "@/lib/anleitung";
 import { site } from "@/lib/site";
 import { ZEIT } from "@/lib/betrieb";
+import { fitTitle } from "@/lib/seo";
 import Haken from "@/components/ui/Haken";
 
 export const metadata: Metadata = {
-  title: "Auto online zulassen – Anleitung mit Bildern",
+  title: fitTitle("Auto online zulassen – Anleitung mit Bildern"),
   description:
     "So läuft die Kfz-Zulassung mit KFZ-Zulassungsprofis: 8 bebilderte Schritte vom Auftrag über Unterlagen und Sicherheitscodes bis zum fertigen Kennzeichen.",
   keywords: [
@@ -22,24 +23,6 @@ export const metadata: Metadata = {
 };
 
 const PDF_PATH = "/downloads/anleitung-online-zulassung.pdf";
-
-const howToJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  name: "Auto online zulassen mit KFZ-Zulassungsprofis – Schritt für Schritt",
-  description:
-    "Bebilderte Anleitung: vom Online-Auftrag über Unterlagen und Sicherheitscodes bis zu Kennzeichen vom lokalen Schildermacher.",
-  inLanguage: "de",
-  totalTime: "P3D",
-  step: anleitungSteps.map((s, i) => ({
-    "@type": "HowToStep",
-    position: i + 1,
-    name: s.title,
-    text: s.text,
-    image: `${site.url}${s.image.src}`,
-    url: `${site.url}/anleitung/#schritt-${i + 1}`,
-  })),
-};
 
 export default function AnleitungPage() {
   return (
@@ -182,17 +165,34 @@ export default function AnleitungPage() {
               {site.contact.email} · Stand 2026, Änderungen vorbehalten
             </p>
           </div>
+
+          <nav aria-label="Weiterlesen" className="no-print border-t-2 border-navy pt-5">
+            <h2 className="font-display text-xl font-bold text-ink-900">Weiterlesen</h2>
+            <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+              {[
+                { href: "/ablauf/", label: "Ablauf der Online-Zulassung in 7 Schritten" },
+                { href: "/ratgeber/fahrzeugpapiere-sicherheitscodes/", label: "Fahrzeugpapiere und Sicherheitscodes erklärt" },
+                { href: "/ratgeber/auto-anmelden-unterlagen/", label: "Auto anmelden: Unterlagen-Checkliste" },
+                { href: "/ratgeber/evb-nummer/", label: "eVB-Nummer: was sie ist und wie Sie sie bekommen" },
+                { href: "/faq/", label: "Häufige Fragen zur Online-Zulassung" },
+              ].map((l) => (
+                <li key={l.href}>
+                  <Link
+                    href={l.href}
+                    className="font-semibold text-brand-700 underline underline-offset-2 hover:text-brand-800"
+                  >
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </section>
 
       <div className="no-print">
         <CTASection />
       </div>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
-      />
     </>
   );
 }

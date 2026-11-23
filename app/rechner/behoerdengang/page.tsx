@@ -8,9 +8,10 @@ import Reveal from "@/components/Reveal";
 import { site } from "@/lib/site";
 import { P } from "@/lib/pricing";
 import { ZEIT } from "@/lib/betrieb";
+import { fitTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Behördengang-Rechner: Was kostet er wirklich?",
+  title: fitTitle("Behördengang-Rechner: Was kostet er wirklich?"),
   description:
     "Gebühren, Kennzeichen, Fahrtkosten und Ihre Zeit: Der Rechner zeigt, was die Kfz-Zulassung am Schalter wirklich kostet – ehrlich verglichen mit dem Zulassungsdienst.",
   keywords: [
@@ -25,7 +26,7 @@ const rechnerFaq = [
   {
     question: "Wie viel Zeit kostet der Behördengang wirklich?",
     answer:
-      "Realistisch 2–4 Stunden: Termin online ergattern, Anfahrt und Parkplatzsuche, Wartezeit trotz Termin, Schaltervorgang, danach oft noch Schilder prägen lassen und zurück zum Stempeln. In Großstädten kommt die tage- bis wochenlange Terminsuche hinzu.",
+      "Realistisch 2–4 Stunden: Termin online ergattern, Anfahrt und Parkplatzsuche, Wartezeit trotz Termin, Schaltervorgang, danach oft noch Schilder prägen lassen und zurück zum Stempeln. Je nach Behörde kommt die Terminsuche mit Vorlauf hinzu.",
   },
   {
     question: "Rechnet sich ein Zulassungsdienst immer?",
@@ -95,7 +96,7 @@ export default function BehoerdengangRechnerPage() {
               </h2>
               <p className="mt-4 leading-relaxed text-ink-700">
                 Wer nur die amtliche Gebühr betrachtet, unterschätzt den Behördengang
-                systematisch: Die Terminsuche kostet in Großstädten oft Wochen Vorlauf,
+                systematisch: Die Terminsuche braucht je nach Behörde Vorlauf,
                 der Termin selbst einen halben Arbeitstag – Anfahrt, Wartezeit,
                 Schaltervorgang, Schilder prägen, zurück zum Stempeln. Berufstätige
                 zahlen das mit Urlaub oder unbezahlter Freizeit. Genau diese Kosten

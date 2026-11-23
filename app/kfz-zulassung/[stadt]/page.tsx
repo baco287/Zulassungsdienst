@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CalendarX2 } from "lucide-react";
+import BehoerdenHinweis from "@/components/BehoerdenHinweis";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTASection from "@/components/CTASection";
 import FaqAccordion from "@/components/FaqAccordion";
@@ -109,6 +110,8 @@ export default async function CityPage({
       <section className="py-14">
         <div className="container-page grid gap-10 lg:grid-cols-[1fr_22rem]">
           <div className="space-y-10">
+            <BehoerdenHinweis className="max-w-3xl" />
+
             <div className="max-w-3xl space-y-4">
               {city.intro.map((para) => (
                 <Reveal key={para.slice(0, 40)}>

@@ -1,6 +1,6 @@
 <?php
 /**
- * Daten-API des Analytics-Dashboards (Gegenstück zu /vg/admin/analytics bei Volt-Gas).
+ * Daten-API des Analytics-Dashboards (analytics/dashboard.html).
  * Nur lesend, nur mit Login (api/analytics-lib.php → kzp_require_auth).
  *
  *   GET daten.php?days=30&compare=1           Kennzahlen des Zeitraums (+ Vorperiode)

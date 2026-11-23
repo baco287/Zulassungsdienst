@@ -75,6 +75,8 @@ export default async function GuidePage({
     dateModified: guide.dateModified,
     inLanguage: "de",
     mainEntityOfPage: pageUrl,
+    // OG-Bild aus ./opengraph-image.tsx (1200×630); og:image trägt zusätzlich einen Build-Hash, die Datei liegt ohne Hash unter derselben Adresse
+    image: [`${pageUrl}opengraph-image`],
     author: {
       "@type": "Person",
       name: site.company.responsible,

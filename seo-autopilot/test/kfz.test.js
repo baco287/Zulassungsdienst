@@ -251,7 +251,7 @@ test('platzhalter-sichtbar, render-fehler, entwicklerhinweis: Positiv- und Negat
     rec('/b/', seite({ main: '<p>Ihr Preis: undefined €, Stadt: {{stadt}}.</p>' })),
     rec('/c/', seite({ main: '<p><a href="http://localhost:3000/kontakt/">Kontakt</a> Entwurf: Text noch offen. Siehe config/preise.json.</p>' })),
     // Negativ: Wörter, die nur ähnlich aussehen; Entwurf nur in Adressen; Entwurfsseite; Fehlerseite
-    rec('/d/', seite({ main: '<p>Musterformular, Mustervollmacht, nicht definiert, Nanometer, Todo-Liste. <a href="https://example.org/entwurf-flyer-final.pdf">Flyer (PDF)</a> https://example.org/entwurf.pdf</p>' })),
+    rec('/d/', seite({ main: '<p>Musterformular, Mustervollmacht, nicht definiert, Nanometer, Todo-Liste, Antwort-Entwurf, Entwurfsfassung, damit wir den Entwurf prüfen. <a href="https://example.org/entwurf-flyer-final.pdf">Flyer (PDF)</a> https://example.org/entwurf.pdf</p>' })),
     rec('/servicebedingungen/', seite({ robots: 'noindex', main: '<p>Entwurf der Servicebedingungen.</p>' })),
     rec('/404/', seite({ main: '<p>undefined [TODO]</p>' })),
   ]));

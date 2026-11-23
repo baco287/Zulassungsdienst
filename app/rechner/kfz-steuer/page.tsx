@@ -36,7 +36,7 @@ const rechnerFaq = [
   {
     question: "Zahlen Elektroautos Kfz-Steuer?",
     answer:
-      "Reine Elektrofahrzeuge mit Erstzulassung bis Ende 2025 sind bis längstens Ende 2030 von der Kfz-Steuer befreit. Danach – und für später zugelassene E-Autos – gilt eine ermäßigte, gewichtsbasierte Steuer.",
+      "Reine Elektrofahrzeuge mit Erstzulassung zwischen dem 18. Mai 2011 und dem 31. Dezember 2030 sind zehn Jahre ab der Erstzulassung von der Kfz-Steuer befreit, längstens bis Ende 2035 (§ 3d KraftStG). Danach – und für später zugelassene E-Autos – gilt eine ermäßigte, gewichtsbasierte Steuer.",
   },
   {
     question: "Bekomme ich Steuer zurück, wenn ich mein Auto abmelde?",

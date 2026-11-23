@@ -15,7 +15,7 @@ import { P } from "@/lib/pricing";
 import { site } from "@/lib/site";
 import { ORG_ID } from "@/lib/catalog";
 import { robotsFor, stelleIndexable } from "@/lib/indexGate";
-import { fitTitle } from "@/lib/seo";
+import { fitTitle, TITLE_MAX } from "@/lib/seo";
 
 export const dynamicParams = false;
 
@@ -42,7 +42,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       // Ohne „Termin“: Die Seite informiert über die Behörde, sie vergibt keine Termine.
       const lang = `Zulassungsstelle ${name}: Adresse & Zuständigkeit`;
       const kurz = `Zulassungsstelle ${name}: Adresse`;
-      return fitTitle(lang).absolute.endsWith(site.name) ? fitTitle(lang) : fitTitle(kurz);
+      const basis = `Zulassungsstelle ${name}`;
+      // Mit Markenzusatz, wenn möglich; sonst die längste Form, die ohne Zusatz in TITLE_MAX passt
+      const mitMarke = [lang, kurz].find((t) => fitTitle(t).absolute.endsWith(site.name));
+      if (mitMarke) return fitTitle(mitMarke);
+      return { absolute: [kurz, basis].find((t) => t.length <= TITLE_MAX) ?? basis };
     })(),
     description,
     alternates: { canonical: `/zulassungsstelle/${z.slug}/` },
@@ -391,6 +395,32 @@ export default async function ZulassungsstellePage({ params }: { params: Promise
                 </div>
               ))}
             </div>
+            <p className="mt-5 text-sm leading-relaxed text-ink-700">
+              Selbst zur Zulassungsstelle {z.stadt}? Unsere{" "}
+              <Link
+                href="/vorlagen/checkliste-zulassung/"
+                className="font-semibold text-brand-700 underline underline-offset-2 hover:text-brand-800"
+              >
+                Checkliste zum Ausdrucken
+              </Link>{" "}
+              hilft beim Zusammenstellen der Unterlagen. Geht jemand anderes für Sie hin, braucht
+              diese Person eine Vollmacht – das{" "}
+              <Link
+                href="/vorlagen/vollmacht-zulassung/"
+                className="font-semibold text-brand-700 underline underline-offset-2 hover:text-brand-800"
+              >
+                Vollmacht-Muster
+              </Link>{" "}
+              können Sie kostenlos ausdrucken. Was der Termin an Zeit und Fahrtkosten wirklich kostet,
+              zeigt der{" "}
+              <Link
+                href="/rechner/behoerdengang/"
+                className="font-semibold text-brand-700 underline underline-offset-2 hover:text-brand-800"
+              >
+                Behördengang-Rechner
+              </Link>
+              .
+            </p>
           </section>
         </Reveal>
 

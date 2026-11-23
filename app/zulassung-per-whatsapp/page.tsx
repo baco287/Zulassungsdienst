@@ -109,23 +109,6 @@ const faq = [
   },
 ];
 
-const howToJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  name: "Kfz-Zulassung per WhatsApp beauftragen",
-  description:
-    "In 5 Schritten per Messenger zur erledigten Kfz-Zulassung: Chat öffnen, Unterlagen abfotografieren, Vollmacht bestätigen – den Behördengang übernimmt KFZ-Zulassungsprofis.",
-  inLanguage: "de",
-  totalTime: "P3D",
-  step: whatsappSteps.map((s, i) => ({
-    "@type": "HowToStep",
-    position: i + 1,
-    name: s.title,
-    text: s.text,
-    url: `${site.url}/zulassung-per-whatsapp/`,
-  })),
-};
-
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -190,8 +173,13 @@ export default function WhatsAppZulassungPage() {
               <div className="flex items-center gap-3">
                 <Maxx pose="wave" className="h-16 w-auto" label="Maxx, das Maskottchen von KFZ-Zulassungsprofis" />
                 <p className="max-w-[12rem] text-sm leading-snug text-ink-600">
-                  <strong className="font-display text-ink-900">Maxx</strong> begleitet
-                  Sie durch den Chat.
+                  <Link
+                    href="/maxx/"
+                    className="font-display font-bold text-ink-900 underline underline-offset-2 hover:text-brand-800"
+                  >
+                    Maxx
+                  </Link>{" "}
+                  begleitet Sie durch den Chat.
                 </p>
               </div>
             </div>
@@ -334,10 +322,6 @@ export default function WhatsAppZulassungPage() {
         </Reveal>
       </section>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}

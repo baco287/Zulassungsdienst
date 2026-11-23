@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MapPin } from "lucide-react";
+import BehoerdenHinweis from "@/components/BehoerdenHinweis";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTASection from "@/components/CTASection";
 import FaqAccordion from "@/components/FaqAccordion";
@@ -91,6 +92,8 @@ export default async function KennzeichenDetail({ params }: { params: Promise<{ 
       </section>
 
       <div className="container-page *:max-w-4xl space-y-10 py-12">
+        <BehoerdenHinweis />
+
         <section className="grid gap-4 sm:grid-cols-2">
           {k.stellen.map((s) => (
             <Link

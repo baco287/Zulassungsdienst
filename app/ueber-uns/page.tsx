@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const values = [
   {
     title: "Digital gedacht",
-    text: "Unsere Prozesse sind von Grund auf für die Online-Abwicklung gebaut – vom Dokumenten-Upload bis zur behördlichen i-Kfz-Schnittstelle. Das macht uns schneller und bequemer als der klassische Weg.",
+    text: "Unsere Prozesse sind von Grund auf für die Online-Abwicklung gebaut – vom Dokumenten-Upload bis zur digitalen Einreichung bei der zuständigen Zulassungsbehörde. Das macht uns schneller und bequemer als der klassische Weg.",
   },
   {
     title: "Persönlich geblieben",
@@ -28,7 +28,7 @@ const values = [
   },
   {
     title: "Ständig besser",
-    text: "Wir automatisieren Schritt für Schritt weiter – Statusbenachrichtigungen, Kundenkonto und Online-Bezahlung sind bereits in Arbeit.",
+    text: "Wir entwickeln unsere Abläufe laufend weiter – damit jeder Auftrag für Sie noch einfacher wird.",
   },
 ];
 
@@ -62,9 +62,8 @@ export default function UeberUnsPage() {
                 abgemeldet – und noch immer bedeutet das für die meisten: Termin ergattern,
                 Wartemarke ziehen, Formulare ausfüllen. KFZ-Zulassungsprofis wurde gegründet, um
                 genau das zu ändern. Wir kombinieren die digitalen Behördenverfahren
-                (i-Kfz) mit einer Software, die Unterlagen prüft, Abläufe automatisiert und
-                Sie über den Stand informiert – während echte Menschen die Fälle
-                betreuen, in denen es individuell wird.
+                (i-Kfz) mit einer Software, die Unterlagen prüft und Abläufe automatisiert –
+                während echte Menschen die Fälle betreuen, in denen es individuell wird.
               </p>
             </div>
           </Reveal>

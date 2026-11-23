@@ -270,7 +270,9 @@ const RENDER = [
 const RENDER_NAME = { undefined: '„undefined“ im Text', nan: '„NaN“ im Text', object: '„[object Object]“ im Text', vorlage: 'Nicht ersetzte Vorlagen-Variable' };
 const ENTWICKLUNG = /\blocalhost\b|\b127\.0\.0\.1\b|github\.io\b|kasserver\.com\b/gi;
 const INTERN = /NEXT_PUBLIC_|config\/(?:preise|betrieb)\.json|OWNER-DECISIONS|\bpreis-ok\b/g;
-const ENTWURF = /\bEntwurf\b/g;
+// „Entwurf“ nur als Status-Kennzeichnung („Entwurf:“, „Entwurf –“, „[Entwurf]“, „(Entwurf)“, „ENTWURF“) – nicht im
+// Fließtext („…den Entwurf prüfen“, Datenschutz zum KI-Assistenten) und nicht in Zusammensetzungen („Antwort-Entwurf“)
+const ENTWURF = /(?<![\w\u00C0-\u017F-])(?:ENTWURF(?![\w\u00C0-\u017F-])|Entwurf(?=\s*[:)\]–—])|(?<=[(\[]\s*)Entwurf(?![\w\u00C0-\u017F-]))/g;
 const URL_IM_TEXT = /\bhttps?:\/\/\S+|\bwww\.\S+|\b[\w.-]+\.(?:de|com|net|org|eu|info)\/\S*/gi;
 const MAIL = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g;
 

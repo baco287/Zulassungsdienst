@@ -4,7 +4,7 @@ import { processSteps } from "@/lib/processSteps";
  * Der Zulassungsablauf („So funktioniert’s“) als nummerierte Liste mit Linien.
  * Früher eine animierte Zeitleiste mit Mini-Grafiken; jetzt ruhig und sofort
  * lesbar. Die Ziffern stehen zu Recht da: Es ist eine feste Reihenfolge.
- * Texte: lib/processSteps.ts (auch Quelle des HowTo-Markups).
+ * Texte: lib/processSteps.ts.
  */
 export default function ProcessTimeline() {
   return (

@@ -46,7 +46,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "Wie und wann bezahle ich?",
     answer:
-      "Mit Ihrer Festpreis-Bestätigung erhalten Sie unsere Rechnung. Sie zahlen bequem per Überweisung; erst nach Zahlungseingang reichen wir den Vorgang bei der Behörde ein bzw. versenden Kennzeichen und Dokumente. Weitere Zahlungsarten (z. B. PayPal) sind in Vorbereitung. Alle Preise inkl. MwSt.",
+      "Mit Ihrer Festpreis-Bestätigung erhalten Sie unsere Rechnung. Sie zahlen bequem per Überweisung; erst nach Zahlungseingang reichen wir den Vorgang bei der Behörde ein bzw. versenden Kennzeichen und Dokumente. Alle Preise inkl. MwSt.",
     category: "preise",
   },
   {
@@ -82,7 +82,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "Was passiert, wenn die Behörde meinen Antrag ablehnt?",
     answer:
-      "Das kommt selten vor – meist fehlt dann ein Dokument, das wir vorab mit Ihnen klären. Sollte ein Vorgang tatsächlich nicht durchführbar sein, berechnen wir Ihnen keinen Servicepreis – Sie tragen lediglich bereits verauslagte amtliche Gebühren.",
+      "Damit es nicht so weit kommt, prüfen wir Ihre Unterlagen vor der Einreichung und klären fehlende Dokumente vorab mit Ihnen. Sollte ein Vorgang tatsächlich nicht durchführbar sein, berechnen wir Ihnen keinen Servicepreis – Sie tragen lediglich bereits verauslagte amtliche Gebühren.",
     category: "preise",
   },
   {

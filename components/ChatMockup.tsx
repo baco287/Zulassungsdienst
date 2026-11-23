@@ -97,7 +97,7 @@ export default function ChatMockup() {
             KFZ-Zulassungsprofis
           </p>
           <p className="text-[11px] text-emerald-400">
-            {typing ? "schreibt …" : "online · antwortet meist sofort"}
+            {typing ? "schreibt …" : "online · Antwort in den Servicezeiten"}
           </p>
         </div>
       </div>

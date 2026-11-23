@@ -1,22 +1,66 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { Fragment } from "react";
 import FaqAccordion from "@/components/FaqAccordion";
 import CTASection from "@/components/CTASection";
 import { faqItems } from "@/lib/faq";
 import type { FaqItem } from "@/lib/types";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { fitTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Häufige Fragen (FAQ) zur Online-Kfz-Zulassung",
+  title: fitTitle("Häufige Fragen (FAQ) zur Online-Kfz-Zulassung"),
   description:
     "Antworten auf die häufigsten Fragen zur Online-Zulassung: Kosten, Dauer, benötigte Dokumente, eVB-Nummer, Kennzeichenmitnahme und mehr.",
 };
 
 /** Themenblöcke in der Reihenfolge, in der Kunden die Fragen meist stellen. */
-const gruppen: { id: string; category: FaqItem["category"]; title: string }[] = [
-  { id: "ablauf", category: "ablauf", title: "Ablauf und Dauer" },
-  { id: "unterlagen", category: "dokumente", title: "Unterlagen und Identität" },
-  { id: "preise", category: "preise", title: "Preise, Zahlung und Storno" },
-  { id: "allgemein", category: "allgemein", title: "Über uns und Allgemeines" },
+const gruppen: {
+  id: string;
+  category: FaqItem["category"];
+  title: string;
+  /** Weiterführende Seiten unter der Themengruppe („Mehr dazu“). */
+  links: { href: string; label: string }[];
+}[] = [
+  {
+    id: "ablauf",
+    category: "ablauf",
+    title: "Ablauf und Dauer",
+    links: [
+      { href: "/ablauf/", label: "Ablauf in 7 Schritten" },
+      { href: "/anleitung/", label: "Anleitung mit Bildern" },
+      { href: "/maxx/", label: "Schnellstart mit Maxx" },
+    ],
+  },
+  {
+    id: "unterlagen",
+    category: "dokumente",
+    title: "Unterlagen und Identität",
+    links: [
+      { href: "/unterlagen/", label: "Unterlagen hochladen" },
+      { href: "/vorlagen/checkliste-zulassung/", label: "Checkliste zum Ausdrucken" },
+      { href: "/ratgeber/evb-nummer/", label: "Ratgeber: eVB-Nummer" },
+    ],
+  },
+  {
+    id: "preise",
+    category: "preise",
+    title: "Preise, Zahlung und Storno",
+    links: [
+      { href: "/preise/", label: "Alle Preise" },
+      { href: "/widerruf/", label: "Widerrufsbelehrung" },
+    ],
+  },
+  {
+    id: "allgemein",
+    category: "allgemein",
+    title: "Über uns und Allgemeines",
+    links: [
+      { href: "/ueber-uns/", label: "Über uns" },
+      { href: "/ratgeber/", label: "Ratgeber" },
+      { href: "/kontakt/", label: "Kontakt" },
+    ],
+  },
 ];
 
 const faqJsonLd = {
@@ -67,6 +111,20 @@ export default function FaqPage() {
                 items={faqItems.filter((f) => f.category === g.category)}
                 initialOpen={i === 0 ? 0 : null}
               />
+              <p className="mt-4 text-sm text-ink-600">
+                Mehr dazu:{" "}
+                {g.links.map((l, j) => (
+                  <Fragment key={l.href}>
+                    {j > 0 && " · "}
+                    <Link
+                      href={l.href}
+                      className="font-semibold text-brand-700 underline underline-offset-2 hover:text-brand-800"
+                    >
+                      {l.label}
+                    </Link>
+                  </Fragment>
+                ))}
+              </p>
             </div>
           ))}
         </div>

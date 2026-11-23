@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTASection from "@/components/CTASection";
 import PrintButton from "@/components/PrintButton";
@@ -111,6 +112,25 @@ export default function ChecklistePage() {
               Nachweise verlangen.
             </p>
           </article>
+          <p className="no-print mt-6 leading-relaxed text-ink-700">
+            Geht jemand anderes für Sie zur Zulassungsstelle, braucht diese Person eine Vollmacht –
+            unser{" "}
+            <Link
+              href="/vorlagen/vollmacht-zulassung/"
+              className="font-semibold text-brand-700 underline underline-offset-2 hover:text-brand-800"
+            >
+              Vollmacht-Muster
+            </Link>{" "}
+            können Sie kostenlos ausdrucken. Was der Behördengang an Zeit und Fahrtkosten kostet,
+            zeigt der{" "}
+            <Link
+              href="/rechner/behoerdengang/"
+              className="font-semibold text-brand-700 underline underline-offset-2 hover:text-brand-800"
+            >
+              Behördengang-Rechner
+            </Link>
+            .
+          </p>
         </div>
       </section>
 

@@ -16,9 +16,10 @@ import { site } from "@/lib/site";
 import { ZEIT } from "@/lib/betrieb";
 import { ORG_ID } from "@/lib/catalog";
 import Haken from "@/components/ui/Haken";
+import { fitTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Zulassungsservice für Autohäuser & Fuhrparks",
+  title: fitTitle("Zulassungsservice für Autohäuser & Fuhrparks"),
   description:
     "Kfz-Zulassungen im Volumen: Sammelabwicklung, Staffelkonditionen und ein fester Ansprechpartner für Autohäuser, Händler, Fuhrparks und Leasing.",
   keywords: [

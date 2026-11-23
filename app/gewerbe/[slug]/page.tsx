@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import BehoerdenHinweis from "@/components/BehoerdenHinweis";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FaqAccordion from "@/components/FaqAccordion";
 import GewerbeCTA from "@/components/GewerbeCTA";
@@ -84,6 +85,8 @@ export default async function GewerbeSegmentPage({
 
       <section className="py-14">
         <div className="container-page">
+          <BehoerdenHinweis className="mb-8 max-w-3xl" />
+
           <div className="max-w-3xl space-y-4">
             {segment.intro.map((para) => (
               <Reveal key={para.slice(0, 40)}>

@@ -162,10 +162,11 @@ export default function KfzSteuerRechner() {
         {fuel === "elektro" ? (
           <p className="flex items-start gap-2 text-sm leading-relaxed text-ink-700">
             <Info className="mt-0.5 h-4 w-4 shrink-0 text-ink-600" aria-hidden />
-            Reine Elektrofahrzeuge mit Erstzulassung bis 31.12.2025 sind von der
-            Kfz-Steuer befreit – längstens bis Ende 2030. Für spätere
-            Erstzulassungen gilt eine ermäßigte, gewichtsbasierte Steuer; den
-            aktuellen Stand prüfen wir gern für Ihr Fahrzeug.
+            Reine Elektrofahrzeuge mit Erstzulassung bis 31.12.2030 sind zehn
+            Jahre ab der Erstzulassung von der Kfz-Steuer befreit – längstens bis
+            Ende 2035. Nach Ablauf der Befreiung und für spätere Erstzulassungen
+            gilt eine ermäßigte, gewichtsbasierte Steuer; den aktuellen Stand
+            prüfen wir gern für Ihr Fahrzeug.
           </p>
         ) : valid ? (
           <div className="flex flex-wrap items-end justify-between gap-4">

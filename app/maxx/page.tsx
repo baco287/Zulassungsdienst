@@ -53,7 +53,7 @@ const steps = [
 ];
 
 const quickPicks = [
-  { slug: "abmeldung", blurb: "Auto weg? Meist noch heute erledigt." },
+  { slug: "abmeldung", blurb: "Auto weg? Abmelden ohne Behördengang." },
   { slug: "halterwechsel", blurb: "Gebrauchten gekauft? Maxx schreibt ihn um." },
   { slug: "ummeldung", blurb: "Umgezogen? Neue Adresse rein, fertig." },
   { slug: "neuzulassung", blurb: "Neues Auto? Ab auf die Straße." },
@@ -192,7 +192,7 @@ export default function MaxxPage() {
             <b className="text-accent-400">0</b> Behördengänge
           </span>
           <span>
-            <b className="text-accent-400">Abmeldung</b> oft noch heute
+            <b className="text-accent-400">Abmeldung</b> ohne Behördentermin
           </span>
         </div>
       </section>
@@ -342,8 +342,8 @@ export default function MaxxPage() {
             Schreib Maxx. Dauert 30 Sekunden.
           </h2>
           <p className="mt-4 max-w-xl text-lg text-ink-300">
-            Ein Satz genügt – Maxx meldet sich innerhalb der Geschäftszeiten meist in
-            wenigen Minuten und sagt dir genau, wie es weitergeht.
+            Ein Satz genügt – Maxx meldet sich in unseren Servicezeiten und sagt dir
+            genau, wie es weitergeht.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <a

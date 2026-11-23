@@ -1,10 +1,10 @@
 /**
- * Eigene Webanalyse – Nachbau des Volt-Gas-Trackings (Tarifrechner: js/tracking.js).
+ * Eigene Webanalyse (ohne Fremddienste).
  *
  * Sendet anonyme Ereignisse an /api/track.php (PHP auf dem eigenen Webspace, siehe
  * public/api/analytics-lib.php). Auswertung: https://kfz-zulassungsprofis.de/analytics/
  *
- * Erfasst wie bei Volt-Gas:
+ * Erfasst:
  *  - session_start beim ersten Seitenaufruf: Einstiegsseite, verweisende Domain,
  *    UTM-Parameter und Klick-IDs (nur ob gclid/fbclid/ttclid vorhanden ist, nicht der Wert)
  *  - page_view bei jedem Seitenwechsel (auch bei clientseitiger Navigation)
@@ -13,9 +13,9 @@
  *  - js_error für unbehandelte Skriptfehler (max. 3 je Seitenladung)
  *  - alle Ereignisse aus lib/analytics.ts (track) – Assistent, Leistung, Preisbox …
  *
- * DATENSCHUTZ – bewusst strenger als bei Volt-Gas:
+ * DATENSCHUTZ – bewusst sparsam:
  *  - keine Cookies und KEIN Speichern im Browser: Die Sitzungskennung lebt nur im Arbeits-
- *    speicher des Tabs (Volt-Gas: sessionStorage + 90-Tage-Cookie vg_attr). Seitenwechsel
+ *    speicher des Tabs. Seitenwechsel
  *    innerhalb der Website bleiben eine Sitzung; ein Neuladen beginnt eine neue.
  *  - nur Pfade ohne Query-Parameter, nur Domain des Referrers, keine IP-Adresse,
  *    keine Formularinhalte; Werte, die nach E-Mail, Telefonnummer oder FIN aussehen,

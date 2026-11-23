@@ -36,7 +36,7 @@ export const cities: City[] = [
     name: "Berlin",
     inName: "in Berlin",
     description:
-      `Kfz-Zulassung in Berlin ohne LABO-Termin: Wir übernehmen Neuzulassung, Ummeldung und Abmeldung bei der Berliner Zulassungsbehörde – digital, zum Festpreis von ${P.zulassung}.`,
+      `Kfz-Zulassung in Berlin ohne LABO-Termin: Wir erledigen Neuzulassung, Ummeldung und Abmeldung bei der Berliner Behörde – Zulassung zum Festpreis von ${P.zulassung}.`,
     intro: [
       "Wer in Berlin ein Auto anmelden will, kennt das Problem: Wer den Vorgang selbst bei der Zulassungsbehörde des LABO (Landesamt für Bürger- und Ordnungsangelegenheiten) erledigt, plant Terminbuchung, Anfahrt und Zeit vor Ort ein. Für Berufstätige heißt das: Urlaubstag opfern oder das Fahrzeug steht.",
       `Wir nehmen Ihnen den kompletten Vorgang ab: Sie fotografieren Ihre Unterlagen, erteilen die digitale Vollmacht – wir führen die Zulassung bei der Berliner Behörde durch und senden Ihnen gestempelte B-Kennzeichen und Papiere nach Hause. Ohne Termin, ohne Wartemarke, in der Regel innerhalb von ${ZEIT.zulassungDativ}.`,
@@ -377,7 +377,7 @@ export const cities: City[] = [
     name: "Hannover",
     inName: "in Hannover",
     description:
-      `Kfz-Zulassung in Hannover ohne Behördengang: Wir übernehmen Ihre Zulassung bei der zuständigen Behörde von Stadt oder Region Hannover – ohne Termin, Festpreis ${P.zulassung}.`,
+      `Kfz-Zulassung in Hannover ohne Behördengang: Wir erledigen Ihre Zulassung bei der Behörde von Stadt oder Region Hannover – ohne Termin, Festpreis ${P.zulassung}.`,
     intro: [
       "Besonderheit in Hannover: Es gibt zwei Zulassungsbehörden. Wer in der Landeshauptstadt wohnt, ist bei der Kraftfahrzeugzulassungsbehörde der Stadt am Schützenplatz richtig; für die übrigen Städte und Gemeinden der Region ist die Region Hannover zuständig. Beide vergeben das Kennzeichen H.",
       "Für Sie spielt die Behördenstruktur keine Rolle: Wir wickeln Ihren Vorgang bei der für Ihren Wohnort zuständigen Stelle ab – ob Sie in der List wohnen, in Laatzen oder in Langenhagen. Papiere und auf Wunsch Kennzeichenschilder kommen versichert zu Ihnen nach Hause.",
@@ -1570,7 +1570,7 @@ export const cities: City[] = [
       {
         question: "Mein Auto ist verkauft – wie melde ich es in Krefeld ab?",
         answer:
-          `Am schnellsten über uns: Sicherheitscodes auf Fahrzeugschein und Kennzeichen freilegen, fotografieren, senden – die Abmeldung ist meist ${ZEIT.abmeldung} erledigt und kostet ${P.abmeldung}. Die Bestätigung fürs Kaufvertrags-Protokoll und die Versicherung erhalten Sie per E-Mail.`,
+          `Bequem über uns: Sicherheitscodes auf Fahrzeugschein und Kennzeichen freilegen, fotografieren, senden – die Abmeldung ist meist ${ZEIT.abmeldung} erledigt und kostet ${P.abmeldung}. Die Bestätigung fürs Kaufvertrags-Protokoll und die Versicherung erhalten Sie per E-Mail.`,
       },
       {
         question: "Kann ich ein KR-Wunschkennzeichen bekommen, ohne selbst zur Behörde zu gehen?",

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const channels = [
   {
     title: "WhatsApp",
-    text: "Der schnellste Weg: Frage stellen, Fotos senden, Antwort erhalten.",
+    text: "Der einfache Weg: Frage stellen, Fotos senden, Antwort erhalten.",
     href: whatsAppLink("Hallo KFZ-Zulassungsprofis, ich habe eine Frage."),
     label: "Chat starten",
     external: true,

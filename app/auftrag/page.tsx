@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
 import Haken from "@/components/ui/Haken";
 import AuftragForm from "@/components/AuftragForm";
+import BehoerdenHinweis from "@/components/BehoerdenHinweis";
 import TrackedLink from "@/components/TrackedLink";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
 import { site, whatsAppLink } from "@/lib/site";
 import { ZEIT } from "@/lib/betrieb";
+import { fitTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Online-Auftrag – Zulassung jetzt beauftragen",
+  title: fitTitle("Online-Auftrag – Zulassung jetzt beauftragen"),
   description:
-    `Beauftragen Sie Ihre Kfz-Zulassung online: Leistung wählen, Daten eingeben, absenden – KFZ-Zulassungsprofis übernimmt den Rest. Unverbindliche Anfrage in ${ZEIT.anfrage}.`,
+    `Beauftragen Sie Ihre Kfz-Zulassung online: Leistung wählen, Daten eingeben, absenden – wir übernehmen den Rest. Unverbindliche Anfrage in ${ZEIT.anfrage}.`,
 };
 
 export default function AuftragPage() {
@@ -32,6 +34,7 @@ export default function AuftragPage() {
             Für die Vollmacht bestätigen Sie Ihre Identität einmalig digital.
           </span>
         </p>
+        <BehoerdenHinweis hell className="mt-5 max-w-[52rem]" />
 
         <div className="mt-8">
           <AuftragForm>

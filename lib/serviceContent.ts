@@ -51,7 +51,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       {
         heading: "Für wen lohnt sich der Zulassungsservice?",
         paragraphs: [
-          "Besonders profitieren Käuferinnen und Käufer von Neuwagen und EU-Importen, Berufstätige ohne Zeit für Behördentermine sowie Autohäuser, die die Zulassung als Service für ihre Kundschaft anbieten möchten. Auch wenn die Online-Zulassung der Behörden (i-Kfz) für Sie nicht infrage kommt – etwa weil Sie keinen Personalausweis mit aktivierter Online-Funktion besitzen oder das Fahrzeug importiert wurde – ist der Zulassungsdienst der schnellste Weg zum Kennzeichen.",
+          "Besonders profitieren Käuferinnen und Käufer von Neuwagen und EU-Importen, Berufstätige ohne Zeit für Behördentermine sowie Autohäuser, die die Zulassung als Service für ihre Kundschaft anbieten möchten. Auch wenn die Online-Zulassung der Behörden (i-Kfz) für Sie nicht infrage kommt – etwa weil Sie keinen Personalausweis mit aktivierter Online-Funktion besitzen oder das Fahrzeug importiert wurde – ist der Zulassungsdienst ein bequemer Weg zum Kennzeichen.",
         ],
       },
     ],
@@ -475,7 +475,7 @@ export const serviceContent: Record<string, ServiceContent> = {
         heading: "Zulassungen im Volumen – planbar und zuverlässig",
         paragraphs: [
           "Für Autohäuser, Gebrauchtwagenhändler, Leasinggesellschaften und Fuhrparkbetreiber ist die Zulassung ein täglicher Kostenfaktor. Wir bieten feste Staffelkonditionen, Sammelabwicklung mehrerer Fahrzeuge und auf Wunsch die tägliche Abholung Ihrer Zulassungsunterlagen. Ihre Vorgänge laufen über eine Rahmenvollmacht – ohne dass für jedes Fahrzeug neue Formulare nötig sind.",
-          "Ein fester Ansprechpartner kennt Ihre Abläufe und Prioritäten. Eilige Kundenfahrzeuge kennzeichnen Sie einfach als Express – die Zulassung erfolgt nach Möglichkeit taggleich, damit Ihre Auslieferung steht.",
+          "Ein fester Ansprechpartner kennt Ihre Abläufe und Prioritäten. Eilige Kundenfahrzeuge kennzeichnen Sie einfach als Express – wir reichen sie vorrangig ein. Wie schnell die Behörde entscheidet, können wir nicht beeinflussen.",
         ],
       },
     ],

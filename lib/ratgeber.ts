@@ -41,7 +41,7 @@ export const guides: Guide[] = [
     description:
       "Amtliche Gebühren, Kennzeichen, Wunschkennzeichen und Zulassungsdienst: Was eine Kfz-Zulassung 2026 wirklich kostet – mit konkreten Beträgen und Spartipps.",
     datePublished: "2026-08-13",
-    dateModified: "2026-11-03",
+    dateModified: "2026-11-23",
     sections: [
       {
         heading: "Die Kosten einer Kfz-Zulassung auf einen Blick",
@@ -68,7 +68,7 @@ export const guides: Guide[] = [
         table: {
           headers: ["Kriterium", "i-Kfz online (selbst)", "Behörde vor Ort", "Zulassungsdienst"],
           rows: [
-            ["Voraussetzungen", "eID-Ausweis mit PIN, Sicherheitscodes, ePayment", "Termin (oft Wochen Vorlauf)", "keine – Fotos der Unterlagen genügen"],
+            ["Voraussetzungen", "eID-Ausweis mit PIN, Sicherheitscodes, ePayment", "Termin (Vorlauf je nach Behörde)", "keine – Fotos der Unterlagen genügen"],
             ["Zeitaufwand", "30–60 Min., wenn alles klappt", "halber Tag inkl. Anfahrt/Wartezeit", "ca. 10 Min. für die Beauftragung"],
             ["Dauer bis zur Zulassung", "sofort (vorläufiger Nachweis), Plaketten per Post", "am Termin selbst", `meist ${ZEIT.zulassung}, Schilder per Post in ${ZEIT.kennzeichenDativ}`],
             ["Gesamtkosten (Zulassung)", euroRange(addRanges(officialFees.onlineRegistration, plateCosts)), euroRange(addRanges(officialFees.counterRegistration, plateCosts)), `${P.zulassung} + ggf. Kennzeichen`],
@@ -79,7 +79,7 @@ export const guides: Guide[] = [
       {
         heading: "Selbst zulassen oder Zulassungsdienst beauftragen?",
         paragraphs: [
-          `Wer Zeit hat, einen Termin bekommt und alle Unterlagen beisammen hat, zahlt beim Selbermachen nur Gebühren und Schilder – zusammen je nach Behörde und Weg ${euroRange([officialFees.onlineRegistration[0] + plateCosts[0], officialFees.counterRegistration[1] + plateCosts[1]])}. Die Realität sieht oft anders aus: Termine sind in vielen Städten Wochen im Voraus ausgebucht, und ein halber Arbeitstag geht schnell verloren.`,
+          `Wer Zeit hat, einen Termin bekommt und alle Unterlagen beisammen hat, zahlt beim Selbermachen nur Gebühren und Schilder – zusammen je nach Behörde und Weg ${euroRange([officialFees.onlineRegistration[0] + plateCosts[0], officialFees.counterRegistration[1] + plateCosts[1]])}. In der Praxis kommt oft etwas dazwischen: Wie schnell es einen Termin gibt, ist je nach Behörde sehr unterschiedlich, und für den Behördengang geht leicht ein halber Arbeitstag verloren.`,
           `Ein Zulassungsdienst übernimmt den kompletten Vorgang gegen einen Servicepreis. Bei KFZ-Zulassungsprofis kosten Neuzulassung, Umschreibung, Ummeldung und Wiederzulassung je ${P.zulassung} – amtliche Gebühren und versicherter Versand sind darin bereits enthalten. Werden neue Kennzeichenschilder benötigt, kommen ${P.kennzeichen} pro Paar dazu. Die Abmeldung kostet ${P.abmeldung} inklusive Gebühren. Sie wissen also vorher genau, was auf Sie zukommt.`,
         ],
       },
@@ -564,14 +564,14 @@ export const guides: Guide[] = [
     slug: "kein-termin-zulassungsstelle",
     title: "Kein Termin bei der Zulassungsstelle?",
     description:
-      "Alle Termine bei der Zulassungsstelle ausgebucht? Vier Wege führen trotzdem zur Zulassung – von Storno-Slots über i-Kfz bis zum Zulassungsdienst ohne Termin.",
+      "Kein freier Termin bei der Zulassungsstelle? Vier Wege führen trotzdem zur Zulassung – von Storno-Slots über i-Kfz bis zum Zulassungsdienst ohne Termin.",
     datePublished: "2026-08-20",
-    dateModified: "2026-11-03",
+    dateModified: "2026-11-23",
     sections: [
       {
-        heading: "Warum Termine bei Zulassungsstellen so knapp sind",
+        heading: "Warum Termine bei Zulassungsstellen knapp sein können",
         paragraphs: [
-          "In vielen Großstädten sind Zulassungstermine Wochen im Voraus ausgebucht: Personalmangel in den Ämtern trifft auf konstant hohe Nachfrage durch Umzüge, Fahrzeugkäufe und Saisongeschäft. Ohne Termin kommt man in den meisten Behörden gar nicht mehr an den Schalter – spontanes Erscheinen führt nur zur Abweisung am Empfang.",
+          "Wie schnell Sie einen Termin bekommen, ist von Behörde zu Behörde sehr unterschiedlich und hängt auch von der Nachfrage ab – etwa durch Umzüge, Fahrzeugkäufe und Saisongeschäft. Ob Sie ohne Termin an den Schalter kommen, regelt jede Behörde selbst; prüfen Sie das vorab auf ihrer Website.",
           "Wer ein frisch gekauftes Auto vor der Tür stehen hat oder eine Frist einhalten muss, braucht deshalb einen Plan B. Vier Optionen gibt es – geordnet von „mit Glück“ bis „funktioniert immer“.",
         ],
       },
@@ -598,7 +598,7 @@ export const guides: Guide[] = [
       {
         heading: "Option 4: Für Eilige – Express-Abwicklung",
         paragraphs: [
-          "Wenn es besonders schnell gehen muss – etwa für eine Fahrzeugübergabe oder einen Auslieferungstermin –, kennzeichnen Sie den Auftrag bei uns als eilig: Express-Vorgänge reichen wir bevorzugt ein, je nach Behörde ist die Zulassung dann noch am selben oder nächsten Werktag fertig.",
+          "Wenn es besonders schnell gehen muss – etwa für eine Fahrzeugübergabe oder einen Auslieferungstermin –, kennzeichnen Sie den Auftrag bei uns als eilig. Eilige Vorgänge reichen wir vorrangig ein; wie schnell die Behörde dann entscheidet, können wir nicht beeinflussen.",
         ],
       },
     ],
@@ -606,7 +606,7 @@ export const guides: Guide[] = [
       {
         question: "Kann ich ohne Termin einfach zur Zulassungsstelle gehen?",
         answer:
-          "In den meisten Städten nicht mehr – der Zugang ist an gebuchte Termine gebunden, spontane Besucher werden abgewiesen. Nur wenige kleinere Behörden vergeben noch Wartemarken vor Ort.",
+          "Das regelt jede Behörde selbst: Manche arbeiten nur mit gebuchten Terminen, andere vergeben auch Wartemarken vor Ort. Prüfen Sie das vor dem Besuch auf der Website Ihrer Zulassungsstelle.",
       },
       {
         question: "Wie komme ich am schnellsten an einen kurzfristigen Behördentermin?",

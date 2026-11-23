@@ -40,9 +40,9 @@ function walk(dir, list = []) {
 
 const files = walk(out);
 const fileSet = new Set(files.map((f) => "/" + relative(out, f).split(sep).join("/")));
-// Admin-Oberflächen (Analytics-Dashboard, SEO Center) sind keine Website-Seiten: Sie liegen
+// Admin-Oberflächen (Analytics-Dashboard, SEO Center, Verwaltung des KI-Assistenten) sind keine Website-Seiten: Sie liegen
 // hinter einem Login, tragen absichtlich noindex, nofollow und haben weder Canonical noch H1.
-const istAdmin = (f) => /^(analytics|seo)[\\/]/.test(relative(out, f));
+const istAdmin = (f) => /^(analytics|seo|assistent)[\\/]/.test(relative(out, f));
 const htmlFiles = files.filter(
   (f) => f.endsWith(".html") && !f.endsWith("404.html") && !/[\\/]_next[\\/]/.test(f) && !/google[0-9a-f]+\.html$/.test(f) && !istAdmin(f)
 );

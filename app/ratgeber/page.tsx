@@ -6,9 +6,10 @@ import Reveal from "@/components/Reveal";
 import { sortedGuides } from "@/lib/ratgeber";
 import { landingPages } from "@/lib/landingpages";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { fitTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Ratgeber – Wissen rund um die Kfz-Zulassung",
+  title: fitTitle("Ratgeber – Wissen rund um die Kfz-Zulassung"),
   description:
     "Kosten, Unterlagen, Fristen und Online-Zulassung: Unser Ratgeber beantwortet die wichtigsten Fragen rund um Anmeldung, Ummeldung und Abmeldung Ihres Fahrzeugs.",
 };

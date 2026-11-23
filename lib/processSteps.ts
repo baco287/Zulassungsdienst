@@ -1,7 +1,6 @@
 /**
  * Die 7 Schritte des Zulassungsablaufs.
- * Gemeinsame Datenquelle für die animierte Timeline (components/ProcessTimeline.tsx)
- * und das HowTo-JSON-LD auf /ablauf.
+ * Datenquelle für die Ablaufliste auf /ablauf/ (components/ProcessTimeline.tsx).
  */
 import { ZEIT } from "@/lib/betrieb";
 export const processSteps = [

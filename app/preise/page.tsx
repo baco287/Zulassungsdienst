@@ -8,6 +8,7 @@ import PriceCalculator from "@/components/PriceCalculator";
 import { ZEIT } from "@/lib/betrieb";
 import type { ServiceCategory } from "@/lib/types";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import BehoerdenHinweis from "@/components/BehoerdenHinweis";
 
 export const metadata: Metadata = {
   title: "Preise für die Kfz-Zulassung online",
@@ -39,6 +40,7 @@ export default function PreisePage() {
 
       <section className="py-14">
         <div className="container-page space-y-12">
+          <BehoerdenHinweis className="max-w-3xl" />
           <PriceCalculator />
           <p className="-mt-6 text-sm text-ink-500">
             Preisstand: {new Date(PRICE_DATE).toLocaleDateString("de-DE")}. Den verbindlichen Endpreis bestätigen wir

@@ -5,6 +5,7 @@ import {
   Clock,
   Info,
 } from "lucide-react";
+import BehoerdenHinweis from "@/components/BehoerdenHinweis";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FaqAccordion from "@/components/FaqAccordion";
 import Reveal from "@/components/Reveal";
@@ -114,6 +115,8 @@ export default async function ServiceDetailPage({
       <section className="py-14">
         <div className="container-page grid gap-10 lg:grid-cols-[1fr_22rem]">
           <div className="space-y-10">
+            <BehoerdenHinweis />
+
             <Reveal>
               <div>
                 <h2 className="font-display text-2xl font-bold text-ink-900">So läuft es ab</h2>

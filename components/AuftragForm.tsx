@@ -26,6 +26,7 @@ import { istHauptleistung, vorgaenge } from "@/lib/vorgaenge";
 import type { OrderRequest } from "@/lib/types";
 import { track } from "@/lib/analytics";
 import { leseUebergabe, schreibeUebergabe, uebergabeZeile, type Uebergabe } from "@/lib/kennzeichen/merkliste";
+import BehoerdenHinweis from "./BehoerdenHinweis";
 import DocumentUpload from "./DocumentUpload";
 import KennzeichenSchild from "./kennzeichen/KennzeichenSchild";
 import Haken from "./ui/Haken";
@@ -1177,6 +1178,8 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                 </span>
               </label>
               <FieldError id="err-consent" message={errors.consent} />
+
+              <BehoerdenHinweis className="mt-5" />
 
               <button type="button" onClick={send} disabled={sending} className="btn btn-primary btn-lg btn-block mt-6">
                 {sending ? (

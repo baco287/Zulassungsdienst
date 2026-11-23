@@ -1,7 +1,7 @@
 import { P } from "./pricing";
 /**
  * Ablauf der Zulassung per Messenger.
- * Gemeinsame Datenquelle für die Landingpage und das HowTo-JSON-LD.
+ * Datenquelle für die Landingpage /zulassung-per-whatsapp/.
  */
 export const whatsappSteps = [
   {
