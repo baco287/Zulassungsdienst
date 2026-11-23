@@ -74,7 +74,7 @@ final class Admin
         'limit_je_absender_tag'  => ['art' => 'ganzzahl', 'min' => 0, 'max' => 100],
         'eskalation_sonnet'      => ['art' => 'schalter'],
         'hinweis_mail'           => ['art' => 'schalter'],
-        // Höchstens 90: Die Datenschutzerklärung (Abschnitt 3a) sagt „nach spätestens 90 Tagen gelöscht“.
+        // Höchstens 90: Die Datenschutzerklärung (Abschnitt 3b) sagt „nach spätestens 90 Tagen gelöscht“.
         'aufbewahrung_text_tage' => ['art' => 'ganzzahl', 'min' => 7, 'max' => Speicher::AUFBEWAHRUNG_TEXT_HOECHSTENS_TAGE],
         'gruss'                  => ['art' => 'zeile',    'min' => 1, 'max' => 80],
         'absender_name'          => ['art' => 'zeile',    'min' => 1, 'max' => 120],

@@ -190,8 +190,8 @@ export default function DatenschutzPage() {
           wird nach Ablauf seines Zeitfensters (höchstens 24 Stunden) bei der nächsten Anfrage gelöscht.
         </p>
       </section>
-      <section>
-        <h2>3a. KI-gestützte Bearbeitung von E-Mail-Anfragen</h2>
+      <section id="ki-email" className="scroll-mt-24">
+        <h2>3b. KI-gestützte Bearbeitung von E-Mail-Anfragen</h2>
         <p>
           Damit wir E-Mails an {site.contact.email} zügig beantworten können, setzen wir
           ein KI-Sprachmodell ein. Es ordnet eingehende Nachrichten ein (zum Beispiel
@@ -267,6 +267,66 @@ export default function DatenschutzPage() {
           sind.
         </p>
       </section>
+      <section id="partner-akquise" className="scroll-mt-24">
+        <h2>3c. Geschäftliche Kontaktaufnahme mit Autohäusern und Kfz-Händlern</h2>
+        <p>
+          Wir stellen Autohäusern und Kfz-Händlern unseren Zulassungsservice für Händler
+          per E-Mail vor, um eine Geschäftsbeziehung anzubahnen. Dieser Abschnitt
+          informiert die angeschriebenen Betriebe und ihre Ansprechpersonen nach
+          Art. 14 DSGVO.
+        </p>
+        <h3>Welche Daten wir verarbeiten und woher sie stammen</h3>
+        <ul>
+          <li>Angaben zum Betrieb: Name, Anschrift, Telefonnummer, Website,
+            Rechtsform und die geschäftliche E-Mail-Adresse.</li>
+          <li>Name und Funktion der Geschäftsführung oder Inhaberin bzw. des Inhabers,
+            soweit sie im Impressum genannt sind, sowie die Anrede, wenn sie dort
+            angegeben ist.</li>
+          <li>Unseren Schriftwechsel mit Ihnen: unsere Nachrichten, Ihre Antworten und
+            Vermerke dazu, etwa ein gewünschter Rückruf.</li>
+        </ul>
+        <p>
+          Die Angaben stammen aus öffentlich zugänglichen Quellen: aus dem Impressum und
+          den Seiten Ihrer Website sowie aus OpenStreetMap (© OpenStreetMap-Mitwirkende,
+          Open Database License).
+        </p>
+        <h3>Zweck und Rechtsgrundlage</h3>
+        <p>
+          Wir verarbeiten die Angaben, um Ihnen unser Angebot für Händler vorzustellen,
+          Ihre Rückmeldung zu beantworten und auf Wunsch ein Telefonat zu vereinbaren.
+          Rechtsgrundlage ist unser berechtigtes Interesse an der Vorstellung unserer
+          Leistungen gegenüber Unternehmen (Art. 6 Abs. 1 lit. f DSGVO,
+          Erwägungsgrund 47).
+        </p>
+        <h3>Wie die Nachrichten entstehen</h3>
+        <p>
+          Die Verarbeitung findet auf einem Rechner in unserem Betrieb statt; die
+          E-Mails versenden und empfangen wir über unseren Mailserver bei ALL-INKL.COM
+          in Deutschland. Beim Formulieren unserer Nachrichten und beim Einordnen Ihrer
+          Antworten unterstützt uns der KI-Dienst „Claude“ von Anthropic (Vertragspartner
+          Anthropic Ireland, Limited; Verarbeitung auf Servern in den USA auf Grundlage
+          der Standardvertragsklauseln nach Art. 46 Abs. 2 lit. c DSGVO; Vertrag über
+          Auftragsverarbeitung als Teil der Geschäftsbedingungen des Anbieters, siehe
+          auch Abschnitt 3b). Dabei werden die oben genannten geschäftlichen Angaben und
+          Ihre Antworten übermittelt. Jede erste Nachricht an einen Betrieb wird vor dem
+          Versand von einem Mitarbeiter gelesen und freigegeben. Antworten auf Ihre
+          Rückmeldungen können automatisch erstellt und versendet werden; sie sind dann
+          als mit KI-Unterstützung erstellt gekennzeichnet, und ein Mitarbeiter liest
+          mit. Eine automatisierte Entscheidung im Sinne von Art. 22 DSGVO findet nicht
+          statt.
+        </p>
+        <h3>Speicherdauer und Widerspruch</h3>
+        <p>
+          Wir speichern die Angaben, solange sie für die Kontaktaufnahme erforderlich
+          sind; entsteht eine Geschäftsbeziehung, gelten die Fristen aus Abschnitt 6.
+          Sie können der Verwendung Ihrer Daten für diese Ansprache jederzeit
+          widersprechen (Art. 21 Abs. 2 DSGVO) – eine kurze Antwort mit „Abmelden“ auf
+          unsere E-Mail oder eine Nachricht an {site.contact.email} genügt. Danach
+          schreiben wir Sie nicht mehr an. Damit das so bleibt, vermerken wir Ihre
+          E-Mail-Adresse bzw. die Domain Ihres Betriebs in einer Sperrliste (Art. 6
+          Abs. 1 lit. f DSGVO). Ihre weiteren Rechte stehen in Abschnitt 7.
+        </p>
+      </section>
       <section>
         <h2>4. WhatsApp-Kommunikation</h2>
         <p>
@@ -296,8 +356,9 @@ export default function DatenschutzPage() {
           <li>gegebenenfalls Versanddienstleister und Kennzeichenhersteller.</li>
         </ul>
         <p>
-          Für den Kennzeichenassistenten setzen wir zusätzlich einen KI-Dienstleister ein; Einzelheiten stehen in
-          Abschnitt 3a.
+          Für den Kennzeichenassistenten, die Bearbeitung von E-Mail-Anfragen und die Kontaktaufnahme mit
+          Autohäusern setzen wir zusätzlich einen KI-Dienstleister ein; Einzelheiten stehen in den Abschnitten 3a,
+          3b und 3c.
         </p>
         <p>
           Eine Weitergabe zu anderen Zwecken, etwa zu Werbezwecken, erfolgt nicht.

@@ -87,7 +87,7 @@ Formular-Mails aus `auftrag.php` erkennt der Assistent an Absender und Referenz;
 nicht an die KI. Anhänge werden weder an die KI übermittelt noch vom Assistenten gespeichert –
 die Aussage oben zum Dokumentenarchiv gilt unverändert. Gespeichert werden gekürzte Mailtexte
 und Entwürfe in einer SQLite-Datei außerhalb des Webroots (`assistent-daten/`), befristet auf
-90 Tage. Die Datenschutzerklärung beschreibt das in Abschnitt 3a.
+90 Tage. Die Datenschutzerklärung beschreibt das in Abschnitt 3b.
 
 Betrieb: `docs/ki-assistent/BETRIEB.md` · Aufbau: `docs/ki-assistent/BAUPLAN.md`
 

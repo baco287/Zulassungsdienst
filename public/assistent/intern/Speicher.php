@@ -59,7 +59,7 @@ final class Speicher
     public const AUFBEWAHRUNG_PROTOKOLL_TAGE = 760;
 
     /**
-     * Längste Aufbewahrung gespeicherter Mails. Die Datenschutzerklärung (Abschnitt 3a) sagt
+     * Längste Aufbewahrung gespeicherter Mails. Die Datenschutzerklärung (Abschnitt 3b) sagt
      * „spätestens nach 90 Tagen gelöscht“ – ein größerer Wert in der Einstellung gilt nicht.
      */
     public const AUFBEWAHRUNG_TEXT_HOECHSTENS_TAGE = 90;
@@ -247,7 +247,7 @@ final class Speicher
      * Löschfristen. Darf bei jedem Lauf aufgerufen werden, wirkt aber höchstens einmal in
      * 24 Stunden. Nach aufbewahrung_text_tage werden Nachrichten VOLLSTÄNDIG gelöscht – samt
      * Einordnung und Entwürfen. So verschwinden mit dem Text auch Betreff, Adressen, Name,
-     * Zusammenfassung und gesendete Antwort (Datenschutzerklärung Abschnitt 3a). Verbrauchs- und
+     * Zusammenfassung und gesendete Antwort (Datenschutzerklärung Abschnitt 3b). Verbrauchs- und
      * Ereigniszeilen enthalten keinen Inhalt; sie bleiben für die Kostenübersicht, verlieren
      * aber den Bezug zur Nachricht (wie beim Löschen eines Kunden, Admin::kundeLoeschen).
      * Gerade belegte Nachrichten (laufender Versand oder KI-Schritt) nimmt der nächste Lauf mit.
