@@ -27,6 +27,7 @@ const options: SchildOption[] = vorgaenge.flatMap((v) => {
       slug: v.slug,
       label: v.label,
       preis: kurz(e.preisText),
+      streichpreis: e.streichpreisText ? kurz(e.streichpreisText) : null,
       enthalten: `Festpreis inklusive ${aufzaehlung(teile)}`,
       dauer: dauerKurz(v.slug),
       zusatz:

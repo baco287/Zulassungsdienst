@@ -164,6 +164,9 @@ const normBetrag = s => (String(s).includes(',') ? String(s) : s + ',00');
 const UNGEFAEHR_VOR = /(?:\bca\.?|\bcirca|\betwa|\brund|\bungefähr|\bbis|\bstatt|[–-]|\bzwischen\s+\d[\d.,]*(?:\s?€)?\s+und)\s*$/i;
 const SPANNE_NACH = /^\s*(?:–|-|bis)\s*\d/;
 const FREMD_ZWISCHEN = /Schalter|Behörde|amtlich|Gebühr|Steuer|Versicherung|Schildermacher|Markt|vor Ort/i;
+// Freigegebener Streichpreis einer laufenden Aktion steht als „bisher 129,00 €“ bzw. „statt 129,00 €“ vor dem Aktionspreis
+const STREICH_VOR = /\b(?:bisher|statt)\s*$/i;
+const istFreigegebenerStreichpreis = (text, i, betrag, M) => !!(M && M.P.streichpreis && normBetrag(betrag) === M.P.streichpreis && STREICH_VOR.test(text.slice(Math.max(0, i - 12), i)));
 const ungefaehr = (text, i, len) => UNGEFAEHR_VOR.test(text.slice(Math.max(0, i - 24), i)) || SPANNE_NACH.test(text.slice(i + len, i + len + 8));
 
 /** Prüfmuster für Eigenpreise aufbauen (einmal je Lauf). */
@@ -205,6 +208,7 @@ function preisTreffer(text, M) {
   for (const mu of M.muster) for (const m of text.matchAll(mu.re)) {
     const roh = m[mu.betrag]; const v = normBetrag(roh); const iZahl = m.index + m[0].lastIndexOf(roh);
     if (ungefaehr(text, iZahl, m.index + m[0].length - iZahl)) continue;
+    if (istFreigegebenerStreichpreis(text, iZahl, roh, M)) continue;
     if (mu.zwischen && FREMD_ZWISCHEN.test(m[mu.zwischen] || '')) continue;
     if (M.altSet.has(v) || v === M.aktionsPreis || M.P.amtlich.has(v)) continue; // Altpreis/Aktionspreis melden die Regeln oben; amtliche Gebühr ist kein Eigenpreis
     // Leistung nur, wenn das Muster sie selbst festlegt („Abmeldung 34,00 €“). Bei „Zulassung, Ummeldung und Abmeldung –
@@ -350,7 +354,7 @@ function run(ctx) {
     // 2) Streichpreise und Widerspruch zum Gebührenhinweis (eigener Text, Description, strukturierte Daten)
     for (const [ort, text] of quellen) {
       if (ort === 'Seitenkopf (Menü)' || ort === 'Seitenfuß') continue;
-      for (const m of text.matchAll(STREICHPREIS)) { const s = satzUm(text, m.index); if (STREICH_AUSNAHME.test(s)) continue; S.add('streichpreis', 'streichpreis', rec, { current: m[0], detail: `${ort}: „${ausschnitt(text, m.index, m[0].length)}“` }); break; }
+      for (const m of text.matchAll(STREICHPREIS)) { const s = satzUm(text, m.index); if (STREICH_AUSNAHME.test(s)) continue; const b = /\d{2,3}(?:,\d{2})?(?=\s?(?:€|Euro\b))/.exec(m[0]); if (b && istFreigegebenerStreichpreis(m[0], b.index, b[0], M)) continue; S.add('streichpreis', 'streichpreis', rec, { current: m[0], detail: `${ort}: „${ausschnitt(text, m.index, m[0].length)}“` }); break; }
       for (const m of text.matchAll(GEBUEHR_WIDERSPRUCH)) { S.add('preis-gebuehren-widerspruch', 'zzgl-gebuehr', rec, { current: m[0], detail: `${ort}: „${ausschnitt(text, m.index, m[0].length)}“` }); break; }
     }
 

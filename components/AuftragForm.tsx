@@ -12,6 +12,7 @@ import {
   leistungsPreis,
   P,
   PRICE_CONFIG,
+  streichpreisText,
 } from "@/lib/pricing";
 import { dauerKurz, ZEIT } from "@/lib/betrieb";
 import { site, whatsAppLink } from "@/lib/site";
@@ -31,6 +32,7 @@ import DocumentUpload from "./DocumentUpload";
 import KennzeichenSchild from "./kennzeichen/KennzeichenSchild";
 import Haken from "./ui/Haken";
 import SchildErledigt from "./ui/SchildErledigt";
+import Streichpreis from "./ui/Streichpreis";
 import PaymentMethods from "./checkout/PaymentMethods";
 import WhatsAppIcon from "./WhatsAppIcon";
 
@@ -560,7 +562,10 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
             {price.items.map((item) => (
               <li key={item.key} className="flex items-start justify-between gap-4 py-2.5 text-ink-800">
                 <span>{item.label}</span>
-                <span className="shrink-0 font-semibold tabular-nums">{centsToEuro(item.cents)}</span>
+                <span className="shrink-0 font-semibold tabular-nums">
+                  <Streichpreis betrag={streichpreisText(item.key)} />
+                  {centsToEuro(item.cents)}
+                </span>
               </li>
             ))}
           </ul>
@@ -801,6 +806,7 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                           <span className="flex items-baseline justify-between gap-4">
                             <span className="text-[1.0625rem] font-semibold text-navy">{v.label}</span>
                             <span className="shrink-0 text-[1.0625rem] font-semibold tabular-nums text-navy">
+                              <Streichpreis betrag={streichpreisText(s.slug)} />
                               {s.price.serviceFee !== null ? euro(s.price.serviceFee) : "auf Anfrage"}
                             </span>
                           </span>

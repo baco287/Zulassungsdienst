@@ -1,25 +1,26 @@
 {
   "$kommentar": "Zentrale Preiskonfiguration von KFZ-Zulassungsprofis. Einzige Quelle für alle Preise der Website (Seiten, Preisrechner, Anfrageformular, llms.txt). Nach jeder Änderung: 'stand' aktualisieren, 'freigabe' prüfen, dann bauen und deployen. Beträge brutto in Euro inkl. MwSt.",
-  "stand": "2026-11-20",
+  "stand": "2026-11-24",
   "freigabe": {
     "freigegeben": true,
-    "freigegebenVon": "Sezer (Chat-Anweisung „Gründerrabatt: Zulassung 110 € bis 31.12.2026“)",
-    "freigegebenAm": "2026-11-20",
-    "hinweis": "Gründerrabatt: Neuzulassung, Ummeldung, Halterwechsel und Wiederzulassung vom 20.11. bis 31.12.2026 für 110 € (regulär 128 €, siehe 'aktion'). Übrige Beträge unverändert seit 06.11.2026. Der Produktiv-Deploy bricht ab, solange 'freigegeben' false ist."
+    "freigegebenVon": "Sezer (Chat-Anweisung 24.11.2026: „Preise von 129 € streichen und 89 € machen“, bis 31.12.2026; Streichpreis 129 € nach Hinweis auf das Abmahnrisiko ausdrücklich gewählt)",
+    "freigegebenAm": "2026-11-24",
+    "hinweis": "Gründerrabatt: Neuzulassung, Ummeldung, Halterwechsel und Wiederzulassung vom 24.11. bis 31.12.2026 für 89 €, angezeigt mit durchgestrichenen 129 € (siehe 'aktion'). Preisverlauf: 129 € bis 03.11., 127,89 € bis 06.11., 128 € bis 20.11., 110 € bis 24.11.2026. Übrige Beträge unverändert seit 06.11.2026. Der Produktiv-Deploy bricht ab, solange 'freigegeben' false ist."
   },
   "aktion": {
     "name": "Gründerrabatt",
     "gueltigBis": "2026-12-31",
     "leistungen": ["neuzulassung", "ummeldung", "halterwechsel", "wiederzulassung"],
     "regulaererPreis": 128,
-    "$hinweis": "Nach Ablauf (ab 01.01.2027) die vier Preise wieder auf 'regulaererPreis' setzen, diesen Block entfernen und neu deployen – die statische Website stellt nicht von selbst um."
+    "streichpreis": 129,
+    "$hinweis": "Nach Ablauf (ab 01.01.2027) die vier Preise wieder auf 'regulaererPreis' setzen, diesen Block entfernen und neu deployen – die statische Website stellt nicht von selbst um. 'streichpreis' erscheint durchgestrichen neben dem Aktionspreis (nur in den Preisanzeigen, nicht in Fließtexten); ohne diesen Eintrag gibt es keinen Streichpreis. Rechtlich heikel: 129 € galt zuletzt bis 03.11.2026, danach lagen die Preise darunter (§ 5 UWG, § 11 PAngV)."
   },
   "mwstSatz": 0.19,
   "leistungen": {
-    "neuzulassung": { "preis": 110, "enthaeltAmtlicheGebuehren": true, "enthaeltVersand": true, "schilderMoeglich": true, "wunschkennzeichenMoeglich": true },
-    "ummeldung": { "preis": 110, "enthaeltAmtlicheGebuehren": true, "enthaeltVersand": true, "schilderMoeglich": true, "wunschkennzeichenMoeglich": true },
-    "halterwechsel": { "preis": 110, "enthaeltAmtlicheGebuehren": true, "enthaeltVersand": true, "schilderMoeglich": true, "wunschkennzeichenMoeglich": true },
-    "wiederzulassung": { "preis": 110, "enthaeltAmtlicheGebuehren": true, "enthaeltVersand": true, "schilderMoeglich": true, "wunschkennzeichenMoeglich": true },
+    "neuzulassung": { "preis": 89, "enthaeltAmtlicheGebuehren": true, "enthaeltVersand": true, "schilderMoeglich": true, "wunschkennzeichenMoeglich": true },
+    "ummeldung": { "preis": 89, "enthaeltAmtlicheGebuehren": true, "enthaeltVersand": true, "schilderMoeglich": true, "wunschkennzeichenMoeglich": true },
+    "halterwechsel": { "preis": 89, "enthaeltAmtlicheGebuehren": true, "enthaeltVersand": true, "schilderMoeglich": true, "wunschkennzeichenMoeglich": true },
+    "wiederzulassung": { "preis": 89, "enthaeltAmtlicheGebuehren": true, "enthaeltVersand": true, "schilderMoeglich": true, "wunschkennzeichenMoeglich": true },
     "abmeldung": { "preis": 34, "enthaeltAmtlicheGebuehren": true, "enthaeltVersand": false, "schilderMoeglich": false, "wunschkennzeichenMoeglich": false },
     "adressaenderung": { "preis": 64, "enthaeltAmtlicheGebuehren": true, "enthaeltVersand": true, "schilderMoeglich": false, "wunschkennzeichenMoeglich": false }
   },

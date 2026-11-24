@@ -8,12 +8,15 @@ import { site, whatsAppLink } from "@/lib/site";
 import { track } from "@/lib/analytics";
 import WhatsAppIcon from "./WhatsAppIcon";
 import Logo from "./Logo";
+import Streichpreis from "./ui/Streichpreis";
 
 export interface HeaderService {
   slug: string;
   label: string;
   href: string;
   preis: string;
+  /** Durchgestrichener Vergleichspreis während einer Aktion, sonst null. */
+  streichpreis: string | null;
 }
 
 const nav = [
@@ -142,7 +145,10 @@ export default function HeaderNav({ services }: { services: HeaderService[] }) {
                         <span className="font-display text-[1.0625rem] font-semibold text-navy decoration-2 underline-offset-4 group-hover:underline">
                           {s.label}
                         </span>
-                        <span className="text-[15px] tabular-nums text-ink-600">{s.preis}</span>
+                        <span className="whitespace-nowrap text-[15px] tabular-nums text-ink-600">
+                          <Streichpreis betrag={s.streichpreis} />
+                          {s.preis}
+                        </span>
                       </Link>
                     </li>
                   ))}
@@ -229,7 +235,10 @@ export default function HeaderNav({ services }: { services: HeaderService[] }) {
                     className="flex min-h-[3.25rem] items-baseline justify-between gap-4 py-3.5"
                   >
                     <span className="font-display text-[1.0625rem] font-semibold text-navy">{s.label}</span>
-                    <span className="text-[15px] tabular-nums text-ink-600">{s.preis}</span>
+                    <span className="whitespace-nowrap text-[15px] tabular-nums text-ink-600">
+                      <Streichpreis betrag={s.streichpreis} />
+                      {s.preis}
+                    </span>
                   </Link>
                 </li>
               ))}

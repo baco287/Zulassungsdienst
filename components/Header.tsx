@@ -14,6 +14,7 @@ const services: HeaderService[] = vorgaenge.map((v) => {
     label: v.label,
     href: e?.detailHref ?? `/leistungen/${v.slug}/`,
     preis: e?.preisText ?? "auf Anfrage",
+    streichpreis: e?.streichpreisText ?? null,
   };
 });
 

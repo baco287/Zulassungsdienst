@@ -117,16 +117,22 @@ export const wunschkennzeichenHinweis =
 
 /**
  * Befristete Aktion aus config/preise.json (z. B. Gründerrabatt), sonst null.
- * Die Aktionspreise stehen direkt in `leistungen`; dieser Block liefert nur Name
- * und Enddatum für den Hinweistext. Bewusst ohne Streichpreis („statt …“): Nach
- * § 11 PAngV muss der Vergleichspreis der niedrigste der letzten 30 Tage sein
- * (bis 06.11.2026 galten 127,89 € statt 128 €).
+ * Die Aktionspreise stehen direkt in `leistungen`; dieser Block liefert Name und
+ * Enddatum für den Hinweistext und optional den Streichpreis.
+ *
+ * Streichpreis: Nach § 11 PAngV bzw. § 5 UWG muss ein Vergleichspreis tatsächlich
+ * zuvor verlangt worden sein (für Waren: der niedrigste der letzten 30 Tage). Der
+ * Eintrag `streichpreis` ist deshalb eine bewusste Entscheidung der Geschäftsführung
+ * (siehe `freigabe` in config/preise.json). Er erscheint nur in den Preisanzeigen
+ * (Komponente <Streichpreis>), nicht in Fließtexten, Meta-Texten, JSON-LD oder llms.txt.
  */
 interface Aktion {
   name: string;
   gueltigBis: string;
   leistungen: string[];
   regulaererPreis: number;
+  /** Durchgestrichener Vergleichspreis neben dem Aktionspreis (optional). */
+  streichpreis?: number;
 }
 export const AKTION: Aktion | null = (preise as { aktion?: Aktion }).aktion ?? null;
 
@@ -145,6 +151,26 @@ function aufzaehlung(teile: string[]): string {
 export const aktionsHinweis: string = AKTION
   ? `${AKTION.name}: ${aufzaehlung(AKTION.leistungen.map((s) => AKTION_LABELS[s] ?? s))} bis ${AKTION.gueltigBis.split("-").reverse().join(".")} für ${P.zulassung}.`
   : "";
+
+/**
+ * Durchgestrichener Vergleichspreis einer Leistung während der Aktion, sonst null.
+ * Nur wenn `aktion.streichpreis` gesetzt ist, die Leistung zur Aktion gehört und
+ * der Streichpreis über dem aktuellen Preis liegt.
+ */
+export function streichpreis(slug: string): number | null {
+  const alt = AKTION?.streichpreis;
+  if (typeof alt !== "number" || !AKTION?.leistungen.includes(slug)) return null;
+  const aktuell = leistungsPreis(slug)?.preis;
+  return aktuell !== undefined && alt > aktuell ? alt : null;
+}
+
+/** Streichpreis als Text wie euro(), mit `kurz` ohne „,00“; sonst null. */
+export function streichpreisText(slug: string, kurz = false): string | null {
+  const alt = streichpreis(slug);
+  if (alt === null) return null;
+  const text = euro(alt);
+  return kurz ? text.replace(/,00(?=\s*€)/, "") : text;
+}
 
 /** Hinweistext, der neben Preisangaben erscheint. */
 export const priceDisclaimer = `${aktionsHinweis ? `${aktionsHinweis} ` : ""}Alle Preise inkl. MwSt. Bei Komplettpreisen sind amtliche Gebühren und versicherter Versand bereits enthalten. Neue Kennzeichenschilder liefern wir auf Wunsch für ${P.kennzeichen} pro Paar mit – bei Kennzeichenmitnahme oder eigenem Schildermacher entfällt das. Sonderfälle (z. B. Sondergrößen, Express, auswärtige Behörden) weisen wir vorab transparent aus – Sie erhalten immer eine verbindliche Festpreis-Bestätigung, bevor wir starten.`;

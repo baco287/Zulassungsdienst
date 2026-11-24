@@ -9,8 +9,10 @@ import {
   centsToEuro,
   leistungsPreis,
   P,
+  streichpreisText,
   type SchilderOption,
 } from "@/lib/pricing";
+import Streichpreis from "@/components/ui/Streichpreis";
 import { getService } from "@/lib/services";
 import { track } from "@/lib/analytics";
 import { useToolUsed } from "@/lib/useToolUsed";
@@ -115,7 +117,10 @@ export default function PriceCalculator() {
                 {result.items.map((item) => (
                   <li key={item.key} className="flex justify-between gap-4 py-2.5 text-ink-800">
                     <span>{item.label}</span>
-                    <span className="font-medium tabular-nums">{centsToEuro(item.cents)}</span>
+                    <span className="shrink-0 font-medium tabular-nums">
+                      <Streichpreis betrag={streichpreisText(item.key)} />
+                      {centsToEuro(item.cents)}
+                    </span>
                   </li>
                 ))}
               </ul>

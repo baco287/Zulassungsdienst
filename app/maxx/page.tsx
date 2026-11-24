@@ -7,7 +7,8 @@ import Maxx from "@/components/Maxx";
 import Reveal from "@/components/Reveal";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
 import { getService } from "@/lib/services";
-import { euro } from "@/lib/pricing";
+import { euro, streichpreisText } from "@/lib/pricing";
+import Streichpreis from "@/components/ui/Streichpreis";
 import { site, whatsAppLink } from "@/lib/site";
 import { P } from "@/lib/pricing";
 import { ZEIT } from "@/lib/betrieb";
@@ -252,6 +253,7 @@ export default function MaxxPage() {
                   <div className="shrink-0 text-right">
                     {service!.price.serviceFee !== null && service!.price.verified && (
                       <p className="font-display text-lg font-bold text-brand-700">
+                        <Streichpreis betrag={streichpreisText(service!.slug)} className="block text-[0.8em] leading-tight" />
                         {euro(service!.price.serviceFee)}
                       </p>
                     )}

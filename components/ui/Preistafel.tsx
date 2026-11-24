@@ -4,6 +4,7 @@ import TrackView from "@/components/TrackView";
 import { dauerKurz } from "@/lib/betrieb";
 import { getCatalogEntry } from "@/lib/catalog";
 import { vorgaenge } from "@/lib/vorgaenge";
+import Streichpreis from "@/components/ui/Streichpreis";
 
 /**
  * Die Preistafel: alle Hauptleistungen mit Kurztext, Bearbeitungszeit, Festpreis
@@ -59,6 +60,7 @@ export default function Preistafel({
                 </p>
                 <p className="pt-preis">
                   <span className="sr-only">Festpreis: </span>
+                  <Streichpreis betrag={e.streichpreisText} />
                   {e.preisText}
                 </p>
                 <TrackedLink

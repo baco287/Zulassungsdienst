@@ -3,7 +3,8 @@ import Link from "next/link";
 import CTASection from "@/components/CTASection";
 import Reveal from "@/components/Reveal";
 import { categoryLabels, sortedServices } from "@/lib/services";
-import { euro, euroRange, officialFees, P, plateCosts, plateFee, PRICE_DATE, priceDisclaimer, wunschkennzeichenHinweis } from "@/lib/pricing";
+import { euro, euroRange, officialFees, P, plateCosts, plateFee, PRICE_DATE, priceDisclaimer, streichpreisText, wunschkennzeichenHinweis } from "@/lib/pricing";
+import Streichpreis from "@/components/ui/Streichpreis";
 import PriceCalculator from "@/components/PriceCalculator";
 import { ZEIT } from "@/lib/betrieb";
 import type { ServiceCategory } from "@/lib/types";
@@ -79,6 +80,7 @@ export default function PreisePage() {
                           <td className="px-5 py-4 text-right">
                             {s.price.serviceFee !== null ? (
                               <span className="font-display font-bold text-ink-900">
+                                <Streichpreis betrag={streichpreisText(s.slug)} />
                                 {s.slug === "wunschkennzeichen"
                                   ? `+ ${euro(s.price.serviceFee)}`
                                   : s.price.inclusive

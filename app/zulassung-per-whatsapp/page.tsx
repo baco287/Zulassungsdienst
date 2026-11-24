@@ -16,7 +16,8 @@ import Reveal from "@/components/Reveal";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
 import { getService } from "@/lib/services";
 import { whatsappSteps } from "@/lib/whatsappFlow";
-import { euro } from "@/lib/pricing";
+import { euro, streichpreisText } from "@/lib/pricing";
+import Streichpreis from "@/components/ui/Streichpreis";
 import { site, whatsAppLink } from "@/lib/site";
 import { P } from "@/lib/pricing";
 import { ZEIT } from "@/lib/betrieb";
@@ -264,9 +265,14 @@ export default function WhatsAppZulassungPage() {
                       {service.shortName ?? service.name}
                     </p>
                     <p className="mt-1 text-sm text-ink-500">
-                      {service.price.serviceFee !== null && service.price.verified
-                        ? `${euro(service.price.serviceFee)} komplett`
-                        : "Preis auf Anfrage"}
+                      {service.price.serviceFee !== null && service.price.verified ? (
+                        <>
+                          <Streichpreis betrag={streichpreisText(service.slug)} />
+                          {euro(service.price.serviceFee)} komplett
+                        </>
+                      ) : (
+                        "Preis auf Anfrage"
+                      )}
                     </p>
                   </div>
                 </Link>

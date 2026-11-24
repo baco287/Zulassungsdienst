@@ -85,15 +85,19 @@ function preiseAus(p, heute) {
     const unbekannt = a.leistungen.filter(s => !(s in konfiguriert));
     if (unbekannt.length) throw fehler(D, `„aktion.leistungen“ nennt unbekannte Leistung(en): ${unbekannt.join(', ')}`);
     const tageBisEnde = tageZwischen(heute, a.gueltigBis);
-    aktion = { name: String(a.name || 'Aktion'), aktiv: tageBisEnde >= 0, preis: konfiguriert[a.leistungen[0]], regulaer: a.regulaererPreis, gueltigBis: a.gueltigBis, gueltigBisText: tagDeutsch(a.gueltigBis), tageBisEnde, leistungen: a.leistungen.slice() };
+    if (a.streichpreis !== undefined && (!istZahl(a.streichpreis) || !(a.streichpreis > 0))) throw fehler(D, '„aktion.streichpreis“ ist keine positive Zahl');
+    aktion = { name: String(a.name || 'Aktion'), aktiv: tageBisEnde >= 0, preis: konfiguriert[a.leistungen[0]], regulaer: a.regulaererPreis, streichpreis: istZahl(a.streichpreis) ? a.streichpreis : null, gueltigBis: a.gueltigBis, gueltigBisText: tagDeutsch(a.gueltigBis), tageBisEnde, leistungen: a.leistungen.slice() };
   }
   // Gültiger Preis je Leistung: nach Ablauf der Aktion wieder der reguläre Preis
   const leistungen = {};
   for (const [slug, preis] of Object.entries(konfiguriert)) leistungen[slug] = aktion && !aktion.aktiv && aktion.leistungen.includes(slug) ? aktion.regulaer : preis;
   const erlaubt = new Set([...Object.values(leistungen), ...Object.values(zusatz)].map(fmt));
-  // Altpreise: feste Liste, dazu während einer Aktion der reguläre Preis (Streichpreise sind nicht vorgesehen)
+  // Altpreise: feste Liste, dazu während einer Aktion der reguläre Preis. Ausnahme: der in der Konfiguration
+  // freigegebene Streichpreis („aktion.streichpreis“) – er steht während der Aktion durchgestrichen neben dem
+  // Aktionspreis („bisher … €, jetzt … €“). Nach dem Ende der Aktion ist er wieder ein Altpreis.
   const alt = ALTPREISE.slice();
   if (aktion && aktion.aktiv) alt.push(fmt(aktion.regulaer));
+  const streichpreis = aktion && aktion.aktiv && aktion.streichpreis !== null ? fmt(aktion.streichpreis) : null;
   // Amtliche Gebühren (Orientierungswerte) – sind keine Eigenpreise und dürfen neben ihnen stehen
   const amtlich = new Set();
   for (const v of Object.values(p.amtlicheGebuehren || {})) if (Array.isArray(v)) for (const n of v) if (istZahl(n)) amtlich.add(fmt(n));
@@ -104,8 +108,8 @@ function preiseAus(p, heute) {
     kennzeichen: zusatz.kennzeichenschilder,
     wunschkennzeichen: zusatz.wunschkennzeichen,
     leistungen, zusatz, erlaubt,
-    alt: [...new Set(alt)].filter(s => !erlaubt.has(s)),
-    aktion, amtlich,
+    alt: [...new Set(alt)].filter(s => !erlaubt.has(s) && s !== streichpreis),
+    aktion, amtlich, streichpreis,
     mwstSatz: istZahl(p.mwstSatz) ? p.mwstSatz : null,
     stand: istTag(p.stand) ? p.stand : null,
     freigegeben: !!(p.freigabe && p.freigabe.freigegeben === true),

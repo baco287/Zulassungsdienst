@@ -4,12 +4,15 @@ import { useRef, useState, type KeyboardEvent } from "react";
 import Link from "next/link";
 import TrackedLink from "@/components/TrackedLink";
 import { track } from "@/lib/analytics";
+import Streichpreis from "@/components/ui/Streichpreis";
 
 export interface SchildOption {
   slug: string;
   label: string;
   /** Kurzer Preis für Auswahl und Schild (glatte Beträge ohne „,00“). */
   preis: string;
+  /** Durchgestrichener Vergleichspreis während einer Aktion (kurz, ohne „,00“), sonst null. */
+  streichpreis: string | null;
   /** Was im Festpreis enthalten ist, ein Satz. */
   enthalten: string;
   /** Bearbeitungszeit aus lib/betrieb.ts (dauerKurz). */
@@ -119,7 +122,10 @@ export default function SchildAuswahl({
               onKeyDown={onKey}
             >
               {x.label}
-              <span className="schild-tab-preis">{x.preis}</span>
+              <span className="schild-tab-preis">
+                <Streichpreis betrag={x.streichpreis} />
+                {x.preis}
+              </span>
             </button>
           );
         })}
@@ -128,6 +134,7 @@ export default function SchildAuswahl({
       <div className="mt-5 grid gap-x-6 gap-y-2 sm:mt-6 sm:grid-cols-[auto_minmax(0,1fr)] sm:items-center" aria-live="polite">
         <p className="font-display text-[2.375rem] font-bold leading-none tracking-[-0.02em] tabular-nums [font-variation-settings:'wdth'_108] sm:text-[2.875rem]">
           <span className="sr-only">{o.label}: Festpreis </span>
+          <Streichpreis betrag={o.streichpreis} className="text-[0.55em] tracking-normal" />
           {o.preis}
         </p>
         <p className="text-[0.9375rem] leading-snug text-ink-600">

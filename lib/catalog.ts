@@ -10,7 +10,7 @@
  * hierüber, damit sichtbare Angaben und Schema-Markup immer übereinstimmen.
  */
 import { services } from "./services";
-import { PRICE_CONFIG, PRICE_DATE, PRICES, officialFees, euro, type LeistungsPreis } from "./pricing";
+import { PRICE_CONFIG, PRICE_DATE, PRICES, officialFees, euro, streichpreisText, type LeistungsPreis } from "./pricing";
 import { BETRIEB, BETRIEB_STAND, zeitphasen, type Zeitphasen } from "./betrieb";
 import { site } from "./site";
 import type { Service } from "./types";
@@ -26,6 +26,8 @@ export interface CatalogEntry {
   /** Endpreis brutto in Euro; null = auf Anfrage. */
   preis: number | null;
   preisText: string;
+  /** Durchgestrichener Vergleichspreis während einer Aktion (formatiert wie preisText), sonst null. */
+  streichpreisText: string | null;
   amtlicheGebuehren: { enthalten: boolean; spanne: [number, number] | null };
   versand: { enthalten: boolean; kosten: number };
   kennzeichen: { moeglich: boolean; preis: number | null };
@@ -62,6 +64,7 @@ function toEntry(s: Service): CatalogEntry {
     lang: s.description,
     preis,
     preisText: preis !== null ? euro(preis) : "auf Anfrage",
+    streichpreisText: preis !== null ? streichpreisText(s.slug) : null,
     amtlicheGebuehren: {
       enthalten: lp?.enthaeltAmtlicheGebuehren ?? false,
       spanne: gebuehrenSpanne(s.slug),

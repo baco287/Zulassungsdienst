@@ -13,7 +13,8 @@ import SecurityCodeGuide from "@/components/SecurityCodeGuide";
 import { getService, services } from "@/lib/services";
 import { getServiceContent } from "@/lib/serviceContent";
 import { getGuide } from "@/lib/ratgeber";
-import { euro, euroRange, leistungsPreis, P, priceDisclaimer, plateFee } from "@/lib/pricing";
+import { euro, euroRange, leistungsPreis, P, priceDisclaimer, plateFee, streichpreisText } from "@/lib/pricing";
+import Streichpreis from "@/components/ui/Streichpreis";
 import { site, whatsAppLink } from "@/lib/site";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
 import { getCatalogEntry, preisBestandteile, serviceJsonLd as serviceJsonLd_ } from "@/lib/catalog";
@@ -101,7 +102,10 @@ export default async function ServiceDetailPage({
                 Auftrag starten
               </TrackedLink>
               <p className="text-sm text-ink-700">
-                <span className="font-display text-xl font-bold text-navy">{eintrag.preisText}</span>{" "}
+                <span className="whitespace-nowrap font-display text-xl font-bold text-navy">
+                  <Streichpreis betrag={eintrag.streichpreisText} />
+                  {eintrag.preisText}
+                </span>{" "}
                 {preisBestandteile(eintrag)}
                 {dauerKurz(service.slug) && (
                   <span className="block">Bearbeitung: {dauerKurz(service.slug)}</span>
@@ -275,6 +279,7 @@ export default async function ServiceDetailPage({
                         : "Servicepreis KFZ-Zulassungsprofis"}
                   </dt>
                   <dd className="text-right font-display text-lg font-bold text-navy">
+                    <Streichpreis betrag={streichpreisText(service.slug)} className="block text-[0.8em] leading-tight" />
                     {p.serviceFee !== null
                       ? service.slug === "wunschkennzeichen"
                         ? `+ ${euro(p.serviceFee)}`

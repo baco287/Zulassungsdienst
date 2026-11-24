@@ -8,7 +8,8 @@
  *
  * Geprüft wird:
  *  1. config/preise.json ist vollständig und plausibel.
- *  2. Kein Altpreis (129 €, 34,90 €, 28,90 €, 90 € …) steht noch irgendwo im Code.
+ *  2. Kein Altpreis (129 €, 34,90 €, 28,90 €, 90 € …) steht noch irgendwo im Code
+ *     (Ausnahme im Build: der Streichpreis einer laufenden Aktion, aktion.streichpreis).
  *  3. Kein aktueller Preis ist als Zahl fest eingetragen (alle Beträge kommen
  *     aus der Konfiguration – sonst veralten sie bei der nächsten Änderung).
  *  4. Mit --out: Die gebauten Seiten enthalten die aktuellen Preise und keine Altpreise.
@@ -41,6 +42,31 @@ for (const required of ["neuzulassung", "ummeldung", "halterwechsel", "wiederzul
   if (!config.leistungen?.[required]) errors.push(`Leistung ${required} fehlt in config/preise.json`);
 }
 if (!/^\d{4}-\d{2}-\d{2}$/.test(config.stand ?? "")) errors.push("'stand' muss ein ISO-Datum sein");
+
+/* Streichpreis der laufenden Aktion (config/preise.json → aktion.streichpreis): Er steht
+   bewusst durchgestrichen auf der Website und gilt im Build nicht als vergessener Altpreis,
+   solange die Aktion läuft. Danach schlägt die Prüfung wieder an. */
+const heute = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Berlin" }).format(new Date());
+const aktion = config.aktion ?? null;
+let streichpreis = null;
+if (aktion && aktion.streichpreis !== undefined) {
+  if (typeof aktion.streichpreis !== "number" || !(aktion.streichpreis > 0)) {
+    errors.push("aktion.streichpreis muss eine positive Zahl sein");
+  } else {
+    const aktionsPreise = (aktion.leistungen ?? []).map((slug) => config.leistungen?.[slug]?.preis);
+    if (aktionsPreise.some((n) => typeof n !== "number" || n >= aktion.streichpreis)) {
+      errors.push("aktion.streichpreis muss über den Aktionspreisen liegen");
+    }
+    if (aktion.gueltigBis >= heute) {
+      streichpreis = aktion.streichpreis;
+      warn.push(
+        `Streichpreis ${aktion.streichpreis.toFixed(2).replace(".", ",")} € wird bis ${aktion.gueltigBis.split("-").reverse().join(".")} durchgestrichen angezeigt (freigegeben: ${config.freigabe?.freigegebenVon ?? "unbekannt"}).`
+      );
+    }
+  }
+}
+const istStreichpreis = (betrag) =>
+  streichpreis !== null && Number(betrag.replace(/[^\d,]/g, "").replace(",", ".")) === streichpreis;
 
 const wunsch = config.zusatzleistungen?.wunschkennzeichen?.preis;
 const amtlichWunsch = config.amtlicheGebuehren?.wunschkennzeichen?.[0];
@@ -95,7 +121,7 @@ if (args.has("--out")) {
     let oldHits = 0;
     for (const file of html) {
       const text = readFileSync(file, "utf8").replace(/ /g, " ");
-      const m = text.match(/(?<![\d,.])(129(,00)? ?€|34,90 ?€|28,90 ?€)/);
+      const m = [...text.matchAll(/(?<![\d,.])(129(,00)? ?€|34,90 ?€|28,90 ?€)/g)].find((x) => !istStreichpreis(x[0]));
       if (m) {
         oldHits++;
         if (oldHits <= 10) errors.push(`Build: Altpreis „${m[0]}“ in ${file.slice(out.length)}`);
@@ -115,6 +141,9 @@ if (args.has("--out")) {
       for (const n of list) {
         if (!text.includes(`${fmt(n)} €`)) errors.push(`Build: ${page} zeigt ${fmt(n)} € nicht an`);
       }
+    }
+    if (streichpreis !== null && !readFileSync(join(out, "index.html"), "utf8").includes("data-streichpreis")) {
+      errors.push("Build: index.html zeigt den Streichpreis der Aktion nicht an");
     }
     console.log(`Build geprüft: ${html.length} Dateien`);
   }

@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { getService } from "@/lib/services";
-import { euro, leistungsPreis, P, wunschkennzeichenHinweis } from "@/lib/pricing";
+import { euro, leistungsPreis, P, streichpreisText, wunschkennzeichenHinweis } from "@/lib/pricing";
 import { ZEIT } from "@/lib/betrieb";
+import Streichpreis from "@/components/ui/Streichpreis";
 
 /** Reihenfolge der online bestellbaren Leistungen. */
 const SLUGS = ["neuzulassung", "halterwechsel", "ummeldung", "wiederzulassung", "abmeldung", "adressaenderung"] as const;
@@ -56,6 +57,7 @@ export default function ServicePriceGrid({ showExtras = true }: { showExtras?: b
                 </p>
                 <p className="pt-preis">
                   <span className="sr-only">Festpreis: </span>
+                  <Streichpreis betrag={streichpreisText(slug)} />
                   {euro(price.preis)}
                 </p>
                 <Link

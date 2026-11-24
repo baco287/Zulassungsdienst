@@ -222,6 +222,27 @@ test('streichpreis und preis-gebuehren-widerspruch: Eigenaussagen ja, amtliche V
   assert.deepEqual(nach(out, 'preis-alt').map(f => f.examples.map(e => e.url)), [[base + '/d/']]);
 });
 
+test('streichpreis: der freigegebene Streichpreis der laufenden Aktion („bisher 129,00 €, jetzt 89,00 €“) ist kein Befund – andere Vergleichspreise und das Aktionsende schon', () => {
+  const repo = fs.mkdtempSync(path.join(os.tmpdir(), 'seo-kfz-streich-'));
+  fs.mkdirSync(path.join(repo, 'config'));
+  const neu = { preis: 89 };
+  fs.writeFileSync(path.join(repo, 'config', 'preise.json'), JSON.stringify({ ...PREISE, aktion: { ...PREISE.aktion, streichpreis: 129 }, leistungen: { ...PREISE.leistungen, neuzulassung: neu, ummeldung: neu, halterwechsel: neu, wiederzulassung: neu } }));
+  fs.writeFileSync(path.join(repo, 'config', 'betrieb.json'), JSON.stringify(BETRIEB));
+  const kopf = '<a href="/leistungen/neuzulassung/">Neuzulassung <del><span>bisher </span>129,00 €</del><span>, jetzt </span>89,00 €</a><a href="/leistungen/abmeldung/">Abmeldung 34,00 €</a>';
+  const seiten = () => [
+    rec('/', seite({ kopf, main: '<p>Neuzulassung: Festpreis bisher 129 €, jetzt 89 €</p><p>Ummeldung <span>Festpreis: </span><del>bisher 129,00 €</del>, jetzt 89,00 €</p>' })),
+    rec('/x/', seite({ kopf, main: '<p>Ummeldung jetzt 89,00 € statt 110,00 €.</p>' })),
+  ];
+  const aktiv = merke(lauf(seiten(), '2026-11-24', { soll: soll.load({ repoRoot: repo }, '2026-11-24') }));
+  assert.deepEqual(nach(aktiv, 'preis-alt'), []);
+  assert.deepEqual(nach(aktiv, 'preis-abweichend'), []);
+  assert.deepEqual(nach(aktiv, 'streichpreis').map(f => f.examples.map(e => e.url)), [[base + '/x/']]);
+  // Nach dem Ende der Aktion ist der Streichpreis wieder ein Altpreis und ein unzulässiger Vergleichspreis
+  const danach = merke(lauf(seiten(), '2027-01-02', { soll: soll.load({ repoRoot: repo }, '2027-01-02') }));
+  assert.ok(nach(danach, 'preis-alt').some(f => f.key === 'alt:129,00'));
+  assert.deepEqual(nach(danach, 'streichpreis').map(f => f.examples.map(e => e.url).sort()), [[base + '/', base + '/x/']]);
+});
+
 test('altmarke-sichtbar und alte-mailadresse: Text, Links, Meta, JSON-LD; nicht „deutsche Zulassung…“ und keine Behördenadresse', () => {
   const out = merke(lauf([
     rec('/a/', seite({ main: '<p>Willkommen bei DeutscheZulassung.</p>' })),

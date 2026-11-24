@@ -13,7 +13,8 @@ import WhatsAppIcon from "@/components/WhatsAppIcon";
 import { getLandingPage, landingPages } from "@/lib/landingpages";
 import { getGuide } from "@/lib/ratgeber";
 import { getService } from "@/lib/services";
-import { euro, leistungsPreis, P, schemaPrice } from "@/lib/pricing";
+import { euro, leistungsPreis, P, schemaPrice, streichpreisText } from "@/lib/pricing";
+import Streichpreis from "@/components/ui/Streichpreis";
 import { site, whatsAppLink } from "@/lib/site";
 import { ORG_ID } from "@/lib/catalog";
 import { fitTitle } from "@/lib/seo";
@@ -157,7 +158,10 @@ export default async function LandingPageView({ params }: { params: Promise<{ la
                 <p className="font-display text-sm font-semibold text-ink-600">
                   {primary.shortName ?? primary.name} über uns
                 </p>
-                <p className="mt-2 font-display text-4xl font-bold text-ink-900">{euro(primaryPrice.preis)}</p>
+                <p className="mt-2 font-display text-4xl font-bold text-ink-900">
+                  <Streichpreis betrag={streichpreisText(primary.slug)} className="text-[0.6em]" />
+                  {euro(primaryPrice.preis)}
+                </p>
                 <p className="mt-1 text-xs leading-relaxed text-ink-500">
                   Festpreis inkl. MwSt. und amtlicher Gebühren
                   {primaryPrice.enthaeltVersand ? ", inkl. Versand" : ""}
