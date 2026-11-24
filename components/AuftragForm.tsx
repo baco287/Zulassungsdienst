@@ -123,10 +123,14 @@ function validateStep(step: number, v: OrderRequest): Errors {
     if (v.email.trim() !== "" && !hasEmail) {
       e.email = "Diese E-Mail-Adresse sieht nicht gültig aus. Beispiel: name@beispiel.de";
     }
-    // Ein Kontaktweg genügt: Wer über WhatsApp kommt, hat oft keine E-Mail
-    // zur Hand – zwei Pflichtfelder kosten hier unnötig Abschlüsse.
-    if (!hasEmail && !hasPhone && !e.email) {
-      e.contact = "Bitte hinterlassen Sie eine E-Mail-Adresse oder eine Telefonnummer.";
+    // Die Telefonnummer ist Pflicht (Vorgabe des Betreibers, 24.11.2026): Rückfragen zu
+    // Unterlagen klären sich per Anruf oder WhatsApp am schnellsten. Die E-Mail bleibt
+    // freiwillig – wer über WhatsApp kommt, hat oft keine zur Hand.
+    if (!hasPhone) {
+      e.phone =
+        v.phone.trim() === ""
+          ? "Bitte geben Sie eine Telefonnummer an, unter der wir Sie erreichen."
+          : "Diese Telefonnummer ist zu kurz. Beispiel: 0151 23456789";
     }
     if (!/^\d{5}$/.test(v.zip.trim())) e.zip = "Bitte eine Postleitzahl mit 5 Ziffern angeben.";
     if (v.city.trim().length < 2) e.city = "Bitte Ihren Wohnort angeben.";
@@ -155,13 +159,13 @@ const FIELD_STEP: Record<string, number> = {
 const FOCUS_ID: Partial<Record<ErrorKey, string>> = {
   name: "name",
   email: "email",
-  contact: "email",
+  contact: "phone",
   phone: "phone",
   zip: "zip",
   city: "city",
   consent: "consent",
 };
-const ERROR_ORDER: ErrorKey[] = ["serviceSlug", "name", "email", "contact", "phone", "zip", "city", "consent"];
+const ERROR_ORDER: ErrorKey[] = ["serviceSlug", "name", "phone", "contact", "email", "zip", "city", "consent"];
 
 const serviceLabels: Record<string, string> = Object.fromEntries(
   sortedServices.map((s) => [s.slug, s.shortName ?? s.name])
@@ -915,42 +919,21 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
               </div>
 
               <fieldset className="mt-5">
-                <legend className="field-label">Wie erreichen wir Sie? *</legend>
+                <legend className="field-label">Wie erreichen wir Sie?</legend>
                 <p id="hint-contact" className="-mt-0.5 mb-3 text-sm text-ink-600">
-                  E-Mail oder Telefon – eines von beidem genügt.
+                  Unter der Telefonnummer melden wir uns bei Rückfragen – per Anruf oder WhatsApp.
                 </p>
                 <div className="grid gap-4 sm:grid-cols-2">
                   <div>
-                    <label htmlFor="email" className="field-label">
-                      E-Mail-Adresse
-                    </label>
-                    <input
-                      id="email" name="email" spellCheck={false}
-                      type="email"
-                      inputMode="email"
-                      autoComplete="email"
-                      value={values.email}
-                      onChange={(e) => set("email", e.target.value)}
-                      aria-invalid={!!errors.email || !!errors.contact}
-                      aria-describedby={
-                        ["hint-contact", errors.email && "err-email", errors.contact && "err-contact"]
-                          .filter(Boolean)
-                          .join(" ")
-                      }
-                      className="field"
-                      placeholder="z. B. name@beispiel.de"
-                    />
-                    <FieldError id="err-email" message={errors.email} />
-                  </div>
-                  <div>
                     <label htmlFor="phone" className="field-label">
-                      Telefon / WhatsApp
+                      Telefon / WhatsApp *
                     </label>
                     <input
                       id="phone" name="phone"
                       type="tel"
                       inputMode="tel"
                       autoComplete="tel"
+                      required
                       value={values.phone}
                       onChange={(e) => set("phone", e.target.value)}
                       aria-invalid={!!errors.phone || !!errors.contact}
@@ -963,6 +946,24 @@ export default function AuftragForm({ children }: { children?: ReactNode }) {
                       placeholder="z. B. 0151 23456789"
                     />
                     <FieldError id="err-phone" message={errors.phone} />
+                  </div>
+                  <div>
+                    <label htmlFor="email" className="field-label">
+                      E-Mail-Adresse <span className="font-normal text-ink-600">(optional)</span>
+                    </label>
+                    <input
+                      id="email" name="email" spellCheck={false}
+                      type="email"
+                      inputMode="email"
+                      autoComplete="email"
+                      value={values.email}
+                      onChange={(e) => set("email", e.target.value)}
+                      aria-invalid={!!errors.email}
+                      aria-describedby={errors.email ? "err-email" : undefined}
+                      className="field"
+                      placeholder="z. B. name@beispiel.de"
+                    />
+                    <FieldError id="err-email" message={errors.email} />
                   </div>
                 </div>
                 <FieldError id="err-contact" message={errors.contact} />
