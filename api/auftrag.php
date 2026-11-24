@@ -182,13 +182,17 @@ if (mb_strlen($f['name']) < 3) {
     fail(422, 'Bitte geben Sie Ihren Namen an.', 'name');
 }
 
-// Ein Kontaktweg genügt - wer über WhatsApp kommt, hat oft keine E-Mail zur Hand.
+// Auftrag: Telefonnummer ist Pflicht (Vorgabe des Betreibers, 24.11.2026), E-Mail freiwillig.
+// Nachgereichte Unterlagen: ein Kontaktweg genügt - der Auftrag ist dort schon bekannt.
 $hasEmail = $f['email'] !== '' && filter_var($f['email'], FILTER_VALIDATE_EMAIL) !== false;
 $digits   = preg_replace('/\D/', '', $f['phone']);
 $hasPhone = is_string($digits) && strlen($digits) >= 6;
 
 if ($f['email'] !== '' && !$hasEmail) {
     fail(422, 'Diese E-Mail-Adresse sieht nicht gültig aus.', 'email');
+}
+if ($kind === 'auftrag' && !$hasPhone) {
+    fail(422, 'Bitte geben Sie eine Telefonnummer an, unter der wir Sie erreichen.', 'phone');
 }
 if (!$hasEmail && !$hasPhone) {
     fail(422, 'Bitte hinterlassen Sie eine E-Mail-Adresse oder eine Telefonnummer.', 'contact');
