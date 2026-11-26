@@ -205,7 +205,9 @@ export function GET() {
     stand: [PRICE_DATE, BETRIEB_STAND].sort().at(-1)!,
     firma: {
       name: site.name,
-      rechtsform: site.company.brandNote,
+      // Firma mit Rechtsform (§ 35a GmbHG) – ohne den Satz „… ist ein Angebot der …“
+      // (Sezer, 26.11.2026: im Mail-Fuß weglassen; der Firmenname selbst muss bleiben).
+      rechtsform: site.company.legalName,
       anschrift: `${site.company.street}, ${site.company.zipCity}`,
       // Sitz der Gesellschaft: Pflichtangabe in Geschäftsbriefen (§ 35a GmbHG), steht im Mail-Fuß.
       sitz: `Sitz der Gesellschaft: ${site.company.seat}`,
