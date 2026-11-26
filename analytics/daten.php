@@ -113,7 +113,7 @@ try {
                    MAX(CASE WHEN event = 'session_start' THEN meta END) AS herkunft,
                    MAX(device) AS device,
                    MAX(NULLIF(referrer, '')) AS referrer,
-                   MAX(NULLIF(service, '')) AS service,
+                   NULL AS service,
                    $S AS stage
             FROM events
             WHERE session_id != '' AND created_at >= :from
@@ -129,6 +129,7 @@ try {
 
         // Klickpfad je Session (Seitenfolge) – in PHP zusammengesetzt, unabhängig von der SQLite-Version.
         $pfade = [];
+        $leistung = [];
         if ($rows) {
             $ids = array_column($rows, 'session_id');
             $platz = implode(',', array_fill(0, count($ids), '?'));
@@ -136,8 +137,20 @@ try {
                                  WHERE event = 'page_view' AND session_id IN ($platz) ORDER BY id", $ids) as $pv) {
                 $pfade[$pv['session_id']][] = $pv['path'];
             }
+            // Leistung je Session: die des zugestellten Auftrags, sonst die zuletzt gewählte.
+            // MAX(service) nähme bei mehreren angeklickten Leistungen die alphabetisch letzte
+            // (Neuzulassung statt der bestellten Abmeldung).
+            foreach (alle($pdo, "SELECT session_id, service, event FROM events
+                                 WHERE service != '' AND session_id IN ($platz) ORDER BY id", $ids) as $ev) {
+                $sid = $ev['session_id'];
+                $zugestellt = $ev['event'] === 'order_confirmed_server';
+                if ($zugestellt || empty($leistung[$sid]['zugestellt'])) {
+                    $leistung[$sid] = ['service' => $ev['service'], 'zugestellt' => $zugestellt];
+                }
+            }
         }
         foreach ($rows as &$r) {
+            $r['service'] = $leistung[$r['session_id']]['service'] ?? null;
             $r['pfad'] = mb_substr(implode(' > ', $pfade[$r['session_id']] ?? []), 0, 400);
             $r['started_at'] = iso($r['started_at']);
             $r['ended_at'] = iso($r['ended_at']);
